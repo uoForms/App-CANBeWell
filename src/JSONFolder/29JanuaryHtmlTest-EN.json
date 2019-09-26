@@ -1,0 +1,121 @@
+[
+  {
+    "Test": "Bone mineral density:",
+    "Patient/Provider Text": "If you have risk factors below age 65 this may be done.                                                                                                                                                                                               An x-ray detector scans your spine and hip.\n You receive a very small amount of radiation, \n approximately the same amount you are exposed to if you fly from Toronto to Vancouver.\n[[What is your risk; https://osteoporosis.ca/risk/#page-1]]\n[[More;https://www.mayoclinic.org/diseases-conditions/osteoporosis/in-depth/osteoporosis-risks/art-20304597]]",
+    "Gender": "all",
+    "Minimum age": 50,
+    "Maximum age": 64
+  },
+  {
+    "Test": "Bone mineral density:",
+    "Patient/Provider Text": "For patients age 65 and over.                                                                                                                                                                                             \n An x-ray detector scans your spine and hip.\n You receive a very small amount of radiation, \n approximately the same amount you are exposed to if you fly from Toronto to Vancouver.\n[[More info; http://www.osteoporosis.ca/osteoporosis-and-you/diagnosis/testing/]]",
+    "Gender": "all",
+    "Minimum age": 65,
+    "Maximum age": 150
+  },
+  {
+    "Test": "Cholesterol blood test",
+    "Patient/Provider Text": "This measures different types of fat in your blood( good and bad cholesterol and triglycerides).",
+    "Gender": "m",
+    "Minimum age": 40,
+    "Maximum age": 150
+  },
+  {
+    "Test": "Cholesterol blood test",
+    "Patient/Provider Text": "This measures different types of fat in your blood( good and bad cholesterol and triglycerides).",
+    "Gender": "f",
+    "Minimum age": 50,
+    "Maximum age": 150
+  },
+  {
+    "Test": "Colorectal cancer screening",
+    "Patient/Provider Text": "Sometimes called the \"poop test\". \nYou collect a small sample of stool(feces) at home which is processed in a lab.\nIf blood is detected a colonoscopy is recommended to detect if there is cancer.\n[[more info; http://www.cancer.ca/en/cancer-information/cancer-type/colorectal/screening/?region=on#ixzz4vIhpstWx/]]\nFlexible sigmoidoscopy is another test available in some areas for cancer screening. It carries less risks than a colonoscopy.\n[[more info; https://my.clevelandclinic.org/health/diagnostics/4953-flexible-sigmoidoscopy]]",
+    "Gender": "all",
+    "Minimum age": 50,
+    "Maximum age": 74
+  },
+  {
+    "Test": "Heart risk score",
+    "Patient/Provider Text": "Your provider uses your [[age , sex , other risk factors; https://myhealth.alberta.ca/Alberta/Pages/Heart-Disease-Risk-Calculator.aspx]]: to measure your risk of having a heart attack.\n\n[[Other calculator; http://chd.bestsciencemedicine.com/calc2.html]]",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Test": "Low dose CT scan :",
+    "Patient/Provider Text": "To detect lung cancer in certain patients only.\nThis is not available in most locations in Canada yet, speak to your provider.\nAn x-ray machine scans the lungs\nIt uses low doses of radiation to make a series of  pictures of the lungs.",
+    "Gender": "all",
+    "Minimum age": 55,
+    "Maximum age": 74
+  },
+  {
+    "Test": "Mammograms:",
+    "Patient/Provider Text": "A mammogram is an xray of the breasts.\nRadiation has been cut back to a very [[small dose; https://www.cancer.org/cancer/breast-cancer/screening-tests-and-early-detection/mammograms/mammogram-basics.html/]].\nYou receive radiation from your environment every day. A screening mammogram contains the amount of radiation you would get from your natural environment in 7 weeks. \nThis is done for prevention every 2 years age 50 to 74 for patients with no symptoms or risks.I",
+    "Gender": "f",
+    "Minimum age": 50,
+    "Maximum age": 74
+  },
+  {
+    "Test": "Memory test",
+    "Patient/Provider Text": "The MOCA (Montreal Cognitive Assesement) or MMSE (Mini-Mental State Examination)\n are tests given to patients who may have memory problems. \nEach is a series of questions and takes around 10-15 minutes.",
+    "Gender": "all",
+    "Minimum age": 65,
+    "Maximum age": 150
+  },
+  {
+    "Test": "Pap test",
+    "Patient/Provider Text": "For women age 21 or 25 to age 69.\nStarting age depends on your province or territory (21 or 25).\nThis requires a pelvic exam by your health provider.\n A brush is used to collect cells from the cervix.",
+    "Gender": "f",
+    "Minimum age": 21,
+    "Maximum age": 69
+  },
+  {
+    "Test": "Pros/Cons of tests",
+    "Patient/Provider Text": "More tests are not always  good for your health,\nsee these links: [[more info 1; https://www.youtube.com/watch?v=8c7qTsVVxXw]]\n[[more info 2; https://choosingwiselycanada.org/]]\n[[more info 3; https://choosingwiselycanada.org/perspective/cwc-goes-mobile/]]",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Test": "Rubella and Varicella immunity",
+    "Patient/Provider Text": "This is a blood test to see if you are immune (protected) against rubella(german measles) or varicella (chicken pox). \nif you are non immune you may become infected with rubella during a pregnancy\nwhich could cause birth defects or serious health problems for you.",
+    "Gender": "f",
+    "Minimum age": 18,
+    "Maximum age": 50
+  },
+  {
+    "Test": "STI tests:",
+    "Patient/Provider Text": "If sexually active testing for stis includes: \n•Women: a pelvic exam or a urine test; and blood tests. \n•Men: a urine test and blood tests\nUrine test tests are for Chlamydia and Gonorrhea. \nThe test done by pelvic exam in women is for Chlamydia and Gonorrhea\nBlood tests: it is recommended to include tests for HIV, Syphilis, Hepatitis B, and some include Hepatitis C.",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Test": "Sugar blood test",
+    "Patient/Provider Text": "This measures your blood sugar level if you are at risk for diabetes.\nThis shows if you are diabetic, pre-diabetic or normal.",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Test": "Ultrasound for AAA:",
+    "Patient/Provider Text": "AAAmeans Abdominal Aortic Aneurysm.\n Men age 65-80 may benefit from an ultrasound to detect AAA.\nLink below is from the UK, differences in Canada are:\n•We stop at age 80.\n•You should see your health care provider to discuss if this test is right for you.\n\n [[more; https://www.nhs.uk/Conditions/abdominal-aortic-aneurysm-screening/Documents/AAA_screening_patient_decision_aid_printable_version_January_2014.pdf]]",
+    "Gender": "m",
+    "Minimum age": 65,
+    "Maximum age": 80
+  },
+  {
+    "Test": "When to stop testing?",
+    "Patient/Provider Text": "As we age, testing for cancer or other diseases can cause more harm than good.\nIt depends on your overall health, speak to your provider.",
+    "Gender": "all",
+    "Minimum age": 75,
+    "Maximum age": 150
+  },
+  {
+    "Test": "When to stop testing?",
+    "Patient/Provider Text": "As we age, testing for cancer or other diseases can cause more harm than good.\nIt depends on your overall health, speak to your provider.",
+    "Gender": "all",
+    "Minimum age": 75,
+    "Maximum age": 150
+  }
+]

@@ -1,0 +1,121 @@
+[
+  {
+    "Test": "Avantages/inconvénients des tests",
+    "Patient/Provider Text": "Effectuer un grand nombre de tests n’est pas toujours bon pour la santé (voir les liens suivants) : [[plus de renseignements 1; https://www.youtube.com/watch?v=8c7qTsVVxXw]]\n[[plus de renseignements 2; https://choisiravecsoin.org/]]\n[[plus de renseignements 3; https://choosingwiselycanada.org/perspective/cwc-goes-mobile/]]",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Test": "Quand faut-il arrêter de faire passer des tests?",
+    "Patient/Provider Text": "Avec le vieillissement, les tests de dépistage du cancer ou d’autres maladies peuvent causer plus de tort qu’autre chose.\nÉtant donné que cela dépend de votre état de santé général, parlez-en avec votre professionnel de la santé.",
+    "Gender": "all",
+    "Minimum age": 75,
+    "Maximum age": 150
+  },
+  {
+    "Test": "Densité minérale osseuse :",
+    "Patient/Provider Text": "Si vous présentez des facteurs de risque avant l’a?e de 65 ans, on pourrait vous faire passer cette évaluation.                                                                                                                                                                                               Un détecteur à rayons X examine votre colonne vertébrale et vos hanches.\n Vous recevez une très petite quantité de\nradiation, soit environ la même que celle à laquelle vous seriez exposé lors d’un vol Toronto-Vancouver.\n[[Quel est votre risque?; https://osteoporosis.ca/risk/#page-1]]\n[[plus de renseignements; https://www.mayoclinic.org/diseases-conditions/osteoporosis/in-depth/osteoporosis-risks/art-20304597]]",
+    "Gender": "all",
+    "Minimum age": 50,
+    "Maximum age": 64
+  },
+  {
+    "Test": "Densité minérale osseuse :",
+    "Patient/Provider Text": "Pour les patients de 65 ans ou plus.                                                                                                                                                                                             \n Un détecteur à rayons X examine votre colonne vertébrale et vos hanches.\n Vous recevez une très petite quantité de \nradiation, soit environ le même quantité à laquelle vous vous exposeriez lors d’un vol Toronto-Vancouver.\n[[plus de renseignements; http://www.osteoporosis.ca/osteoporosis-and-you/diagnosis/testing/]]",
+    "Gender": "all",
+    "Minimum age": 65,
+    "Maximum age": 150
+  },
+  {
+    "Test": "Dosage du cholestérol sanguin",
+    "Patient/Provider Text": "Ce test mesure différents types de gras dans votre sang (le bon et le mauvais cholestérol, ainsi que les triglycérides).",
+    "Gender": "m",
+    "Minimum age": 40,
+    "Maximum age": 150
+  },
+  {
+    "Test": "Dosage du cholestérol sanguin",
+    "Patient/Provider Text": "Ce test mesure différents types de gras dans votre sang (le bon et le mauvais cholestérol, ainsi que les triglycérides).",
+    "Gender": "f",
+    "Minimum age": 50,
+    "Maximum age": 150
+  },
+  {
+    "Test": "Dépistage du cancer colorectal.",
+    "Patient/Provider Text": "Aussi appelé « analyse des selles ». \nVous prélevez un petit échantillon de selles (fèces) à la maison, qui est ensuite analysé en laboratoire.\nEn cas de détection de sang, une coloscopie est recommandée pour détecter un cancer éventuel.\n[[plus de renseignements; http://www.cancer.ca/fr-ca/cancer-information/cancer-type/colorectal/screening/?region=on/]]\nLa sigmoïdoscopie flexible est un autre examen offert dans certaines régions pour dépister le cancer. Elle comporte moins de risques que la coloscopie.\n[[plus de renseignements; https://my.clevelandclinic.org/health/diagnostics/4953-flexible-sigmoidoscopy]]",
+    "Gender": "all",
+    "Minimum age": 50,
+    "Maximum age": 74
+  },
+  {
+    "Test": "Score de risque cardiaque",
+    "Patient/Provider Text": "Votre professionnel de la santé utilise votre [[age, sexe , d’autres facteurs de risque; https://myhealth.alberta.ca/Alberta/Pages/Heart-Disease-Risk-Calculator.aspx]] pour établir votre risque de crise cardiaque.\n\n[[autre calculateur; http://chd.bestsciencemedicine.com/calc2.html]]",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Test": "Tomodensitométrie (TDM) à faible dose :",
+    "Patient/Provider Text": "Pour détecter le cancer du poumon chez certains patients seulement.\nCet examen n’est pas encore offert dans la plupart des régions au Canada; en parler avec votre professionnel de la santé.\nUn appareil de radiographie examine les poumons\nIl utilise de faibles doses de radiation pour obtenir une série d’images des poumons.",
+    "Gender": "all",
+    "Minimum age": 55,
+    "Maximum age": 74
+  },
+  {
+    "Test": "Mammographie :",
+    "Patient/Provider Text": "Une mammographie est une radiographie des seins.\nLa radiation a été réduite à une très [[petite dose; https://www.cancer.org/cancer/breast-cancer/screening-tests-and-early-detection/mammograms/mammogram-basics.html/]].\nTous les jours, vous recevez de la radiation provenant de votre milieu. Une mammographie de dépistage expose à une quantité de radiation à laquelle vous seriez exposé dans votre milieu naturel au cours d’une période de 7 semaines. \nOn la réalise à titre de prévention tous les 2 ans chez les patients de 50 à 74 ans qui ne présentent aucun symptôme ou risque.",
+    "Gender": "f",
+    "Minimum age": 50,
+    "Maximum age": 74
+  },
+  {
+    "Test": "Test de la mémoire",
+    "Patient/Provider Text": "Les tests MOCA (Montreal Cognitive Assesement) et MMSE (Mini-Mental State Examination)\nservent à évaluer des patients ayant des troubles de la mémoire. \nIl faut environ 10 à 15 minutes pour terminer ces tests, qui consistent en une série de questions.",
+    "Gender": "all",
+    "Minimum age": 65,
+    "Maximum age": 150
+  },
+  {
+    "Test": "Test de Pap",
+    "Patient/Provider Text": "Destiné aux femmes de 21 ans ou de 25 à 69 ans.\nL’âge inférieur de la tranche dépend de votre province ou territoire (21 ou 25).\nIl s’agit d’un examen pelvien effectué par votre professionnel de la santé.\n Une brosse est utilisée pour recueillir des cellules du col de l’utérus.",
+    "Gender": "f",
+    "Minimum age": 21,
+    "Maximum age": 69
+  },
+  {
+    "Test": "Vaccination contre la rubéole et la varicelle",
+    "Patient/Provider Text": "Il s’agit d’une analyse sanguine visant à vérifier si vous êtes protégé contre la rubéole ou la varicelle. \nSi vous ne l’êtes pas, vous pourriez être infectée par la rubéole pendant la grossesse,\nce qui pourrait provoquer des anomalies congénitales ou vous causer de graves problèmes de santé.",
+    "Gender": "f",
+    "Minimum age": 18,
+    "Maximum age": 50
+  },
+  {
+    "Test": "Dépistage des ITS :",
+    "Patient/Provider Text": "Chez les personnes sexuellement actives, le dépistage comporte les éléments suivants : \n• Femmes : un examen pelvien ou une analyse d’urine; et des analyses de sang. \n• Hommes : Une analyse d’urine et des analyses de sang\nDes analyses d’urine portant sur la chlamydiose et la gonorrhée \nL’examen pelvien chez la femme porte sur la chlamydiose et la gonorrhée \nAnalyses de sang : il est recommandé d’inclure des tests de dépistage du VIH, de la syphilis, de l’hépatite B et, dans certains cas, de l’hépatite C.",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Test": "Analyse de la glycémie",
+    "Patient/Provider Text": "Cette analyse mesure votre taux de sucre dans le sang, si vous êtes à risque de diabète.\nLes résultats montrent si vous êtes diabétique, prédiabétique ou non diabétique.",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Test": "Échographie de détection de l’AAA :",
+    "Patient/Provider Text": "AAA signifie « anévrisme de l’aorte abdominale ».\n Les hommes de 65 à 80 ans pourraient retirer des bienfaits d’une échographie de détection de l’AAA.\nLe contenu de la page dont le lien figure ci-dessous concerne le Royaume-Uni; voici les différences au Canada :\n• Nous arrêtons ce dépistage à 80 ans.\n• Vous devez consulter votre professionnel de la santé pour discuter si ce test vous convient.\n\n [[plus de renseignements; https://www.nhs.uk/Conditions/abdominal-aortic-aneurysm-screening/Documents/AAA_screening_patient_decision_aid_printable_version_January_2014.pdf]]",
+    "Gender": "m",
+    "Minimum age": 65,
+    "Maximum age": 80
+  },
+  {
+    "Test": "Quand faut-il arrêter de faire passer des tests?",
+    "Patient/Provider Text": "Avec le vieillissement, les tests de dépistage du cancer ou d’autres maladies peuvent causer plus de tort qu'autre chose.\nÉtant donné que cela dépend de votre état de santé général, parlez-en avec votre professionnel de la santé.",
+    "Gender": "all",
+    "Minimum age": 75,
+    "Maximum age": 150
+  }
+]
