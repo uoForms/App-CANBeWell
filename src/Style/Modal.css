@@ -1,0 +1,42 @@
+/* The gray background*/
+.backdrop {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: rgba(0,0,0,0.3);
+  padding: 25px;
+}
+
+/* The modal "window"*/
+.myModal {
+  position: fixed;
+  left: 0%;
+  right: 0%;
+  background-color: #fff;
+  border-radius: 15px;
+  width: 99%;
+  max-width: 500px;
+  max-height: 80%;
+  margin: 0px auto;
+  text-align: center;
+  padding: 30px;
+  font-weight: 300;
+}
+
+
+h1{
+  margin: 10px;
+}
+
+.myModalBody {
+  text-align: left;
+  font-size: 20px;
+  margin-bottom: 0rem;
+}
+
+.myModalButton {
+  text-align: center;
+  padding: 10px;
+}
