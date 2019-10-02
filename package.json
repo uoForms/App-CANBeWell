@@ -2,15 +2,15 @@
   "name": "web-app-can_be_well",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://quickforms2.eecs.uottawa.ca/canbewell/Fr",
+  "homepage": "https://https://canbewell-uottawa.web.app/",
   "dependencies": {
-    "bootstrap": "^4.1.1",
-    "firebase": "^5.1.0",
-    "react": "^16.3.2",
-    "react-bootstrap": "^0.32.1",
-    "react-cookie": "^3.0.8",
-    "react-dom": "^16.3.2",
-    "react-native-popup-dialog": "^0.16.1",
+    "bootstrap": "^4.3.1",
+    "firebase": "^5.11.1",
+    "react": "^16.10.1",
+    "react-bootstrap": "^0.32.4",
+    "react-cookie": "^3.1.2",
+    "react-dom": "^16.10.1",
+    "react-native-popup-dialog": "^0.16.6",
     "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.4",
     "react-sidebar": "^2.3.2"
@@ -24,7 +24,6 @@
   "browserslist": {
     "production": [
       ">0.2%",
-      "not dead",
       "not op_mini all"
     ],
     "development": [
