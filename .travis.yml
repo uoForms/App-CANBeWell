@@ -19,3 +19,10 @@ deploy:
   provider: firebase
   token:
     secure: "1/zx7-2Gl0rXuH1mYw_hAXZhgpdRVW1xPa9VdWohYlu44"
+
+notifications:
+  email:
+    recipients:
+      - yjian118@uottawa.ca
+    on_success: change
+    on_failure: always
