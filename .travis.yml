@@ -4,7 +4,7 @@ node_js:
 before_install:
 - curl --compressed -o- -L https://yarnpkg.com/install.sh | bash
 - export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-- yarn add firebase-tools
+- yarn global add firebase-tools --prefix /usr/local
 install:
 - yarn install
 - CI=false yarn build
