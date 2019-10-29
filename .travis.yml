@@ -1,31 +1,25 @@
 language: node_js
 node_js:
- - 11
-
+- 11
 before_install:
-  - curl --compressed -o- -L https://yarnpkg.com/install.sh | bash
-  - export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-
+- curl --compressed -o- -L https://yarnpkg.com/install.sh | bash
+- export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 install:
-  - yarn install
-  - CI=false yarn build
-
+- yarn install
+- CI=false yarn build
 cache:
   directories:
-    - "node_modules"
-
-
+  - node_modules
 deploy:
   skip_cleanup: true
   provider: firebase
   token:
-    secure: "PpwUa2cBzsjuwvfFV7MZ1FdrFT+9512guYEZZ2ZnBaWA9db67lSl7wmH6HHAH0NSkE0gpUDnJ4feNGyteSGWrkUqb5/yV8M3SxgP4Q8TAI34ooMeywDmE6S34AVX0z3y1bNnYmJscgxUtWqbsithN2aiXuhbsMDffjnZfcygvrQl3u/WunL5sGyrvjuIA48xnfdjTUO4BHk9D8R7QKdNzNUsWPBdxz/HvahFMQUow9zXp4ed5H7kgqqyutGFbzr8Fd8x9cYwYcBmleAH5Nrtd8826dm2vY+VeRq5rv++pPWKQKiHXemahci7JTCeIbiNXj1CrekRHZIfu89BhSRrGQDKOmbXDBguJh3fzISKhEm3/pCe6/661/VwbkgFjpjrljUwQLw2jjEX5phIqJ1YbnKKmmxS+hFZ5bgyQetOz2Hf22WfWMnWMyXGBUlLsyUZcmpiWRxKTDMGaRX/5mHA2oHwTUo+mehA8q2+uBTHfcYAmCsRW5gunPzNT8QpRViRtFBy1ss3URfWwLxFwOVQNQ86HVfd5Ch7BblfvcG5lo7dLAKoBMpwDzLQ9BEsgh1DZ4CMrblqZn1T8wPqgdQnbuMhqxqc281Z74H6fY+12jzzTpuaZpC30sMmDNag0YUJDSt3jkaIRKzEy8xClhG0G/GZe0bfWsPL0Yme02BykHs="
-
-  
+    secure: qxpJvq8lL5sbz10uC+0a7CjUN0MTFxTeAPJ1tVanCZVlHRKQbsghTl3vLpX0KKn1kbsSbfdCXIvBdVjnfiSXW7lz7xEBVMFgHaMEBxk4vFb8r6pZE/tyFYsWdnf7kNBsQwSp7b4ViJWiZlYTrA2VTpBNNacbpEg28uAXp2MMctwq6HCQItFU+AcSTb+8HYVaj9zyCOSmaFpFbfoMXyxtAYVxDSjuKfFZ8Jgp81sm+2Y7vCM4KOZwZVJz4jovz5gVzPwg/M84CWyBX5TRz1+Zdjmvl2v56fZWACVP1ZkQHL51RwdDqxOLvFXA3xmh3W6KBC6/4+OnJJtelPWT4KPJDYB3U0MEgfAyHGF15epmszm4NEEx8vG0kiyaTKabXbfgwxLzGJ6Jw4lPhVqnXUoD2VX0uomIq6qs42DfrcKen6j7wjCEjphxWde6pFa+EU4k8vt/XniXVHRzar3Yzf19M6wGXSJ0wYaDaz90i9+v47OVQBG0W6C/CKHU+D0LhvYaLrHZ5dU4F2T4kDiMK5kYRlokG2Ls2HjW0tGfSogRJT8yW3D0FkY87enPXMEDhGTtQomhbkU7dvf9VAfN8CQ5r5QadTgqBoBrI1GxcReTamzZ3NnNMPAIsD1pCNaugrfGnyCzrvdBehmvfZZisDsYykhlUSls+a+CqSX4kNoxuh0=
 
 notifications:
   email:
     recipients:
-      - yjian118@uottawa.ca
+    - yjian118@uottawa.ca
     on_success: change
     on_failure: always
+  
