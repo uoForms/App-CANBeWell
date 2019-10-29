@@ -11,8 +11,5 @@ install:
 cache:
   directories:
   - node_modules
-deploy:
-  provider: script
-  script: bash scripts/deploy.sh
-  on:
-    branch: master
+after_success:
+- firebase deploy --token $FIREBASE_TOKEN --non-interactive
