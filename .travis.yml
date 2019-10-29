@@ -4,20 +4,12 @@ node_js:
 before_install:
 - curl --compressed -o- -L https://yarnpkg.com/install.sh | bash
 - export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+- yarn add firebase-tools
 install:
 - yarn install
 - CI=false yarn build
 cache:
   directories:
   - node_modules
-deploy:
-  skip_cleanup: true
-  provider: firebase
-  token:
-    secure: Oo/RHoVpDXtFy59XhK790sTh4DjTeHRmJvdLJjKhn1VfvdV8LMzKCjjclxMLrEzlJ2cBqxQxiwt0j8eYfcRVu6lzobCvgkg+Qo0lHtr59DkBPGMQuDxOipT/Om/LPGZ5ZfuHwg3gtuK9YhzS2LKvZd4dni6BmgazBKjQYzqlfZK9kX3saQwlm+aYiEW0uw9spYeioAqGfl1K78QOSsnSRJhagVq5xwPM+hc8d/J3875x6dyENqJudV0ubEXVVZCn7/VH0+DJZcpTilU0adKxZ13LvxOPnYGBE21RymyrBeZ4G3ip2J8FljnNt9rumRsCHsxy091C6nTLDkC4bRGzRoBqCf+oDJxT0rhQUKxoUQ0n+UVZYBEevN+cd8RJBHgX7ITvug9fAG/298EU00AtqajS0AP9nvldKsenJYV7M1mSFVfYhJ+bi+kph8Zz/MvnbNg1gv6eOOIFlYl2V080nWOeVTsq0AMzRL41fslf+m4u3D1Kp2wfPL866G/I0aFHoff2zxqD4ktonPqHW/r0OLNdMuNi8Paz7HcWmZ4yZxUOOLSWs+7mDd9bff6gjUWDE5oRcbRSlZCFDtNwsZC/DoaUwuCEuuyJLNFQXKFQFlT/TyE76q7QoymXv8ZZBmp8vp4IRqUiTsicm8VmKaj85L67LRt2IEE0PlKfxpThbjU=
-notifications:
-  email:
-    recipients:
-    - yjian118@uottawa.ca
-    on_success: change
-    on_failure: always
+after_success:
+- firebase deploy --token $FIREBASE_TOKEN --non-interactive
