@@ -16,10 +16,12 @@ cache:
 
 
 deploy:
+  skip_cleanup: true
   provider: firebase
   token:
     secure: "PpwUa2cBzsjuwvfFV7MZ1FdrFT+9512guYEZZ2ZnBaWA9db67lSl7wmH6HHAH0NSkE0gpUDnJ4feNGyteSGWrkUqb5/yV8M3SxgP4Q8TAI34ooMeywDmE6S34AVX0z3y1bNnYmJscgxUtWqbsithN2aiXuhbsMDffjnZfcygvrQl3u/WunL5sGyrvjuIA48xnfdjTUO4BHk9D8R7QKdNzNUsWPBdxz/HvahFMQUow9zXp4ed5H7kgqqyutGFbzr8Fd8x9cYwYcBmleAH5Nrtd8826dm2vY+VeRq5rv++pPWKQKiHXemahci7JTCeIbiNXj1CrekRHZIfu89BhSRrGQDKOmbXDBguJh3fzISKhEm3/pCe6/661/VwbkgFjpjrljUwQLw2jjEX5phIqJ1YbnKKmmxS+hFZ5bgyQetOz2Hf22WfWMnWMyXGBUlLsyUZcmpiWRxKTDMGaRX/5mHA2oHwTUo+mehA8q2+uBTHfcYAmCsRW5gunPzNT8QpRViRtFBy1ss3URfWwLxFwOVQNQ86HVfd5Ch7BblfvcG5lo7dLAKoBMpwDzLQ9BEsgh1DZ4CMrblqZn1T8wPqgdQnbuMhqxqc281Z74H6fY+12jzzTpuaZpC30sMmDNag0YUJDSt3jkaIRKzEy8xClhG0G/GZe0bfWsPL0Yme02BykHs="
-    
+
+  
 
 notifications:
   email:
