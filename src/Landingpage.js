@@ -1,14 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import App from './App';
+
 import calllogo from './assets/Logos/logo_03-02.png';
 
 
 class LandingPage extends React.Component {
 
-    constructor(props) {
+    constructor(props) 
+    {
+
         super(props);
-     this.state={
+     this.state=
+     {
        language:""
      }
   this.handleChange= this.handleChange.bind(this);
@@ -35,6 +39,14 @@ class LandingPage extends React.Component {
            
            {this.state.language =="" || null ?(
                    <div>
+                     <h3>Do not use this app for health advice.<br /></h3>
+                     <h5>It is still under development.<br />
+Ask your health care provider for all health advice.<br />
+<br /></h5>
+
+<h3>Ne pas utiliser cette application pour des conseils de santé.<br /></h3>
+<h5>L’appli  est encore en développement.<br />
+Veuillez consulter votre professionnel de la santé.</h5>
   <div><img  src={calllogo} alt="CANBeWellLogo"/></div>
         
         <div class="langButton">
@@ -47,7 +59,10 @@ class LandingPage extends React.Component {
             </div>
                    </div>
                  ):(
-                   <div><App appLanguage={this.state.language}/> </div>
+
+                   <div>
+                    <App appLanguage={this.state.language}/> 
+                                      </div>
                  )}
                
              </div>

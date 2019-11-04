@@ -2,20 +2,23 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import '../Button.css';
 import TestsModal from './TestsModal';
-import TestList from '../JSONFolder/29JanuaryHtmlTest-FR.json';
+import TestListFR from '../JSONFolder/29JanuaryHtmlTest-FR.json';
+import TestListEN from '../JSONFolder/29JanuaryHtmlTest-EN.json';
 
 class Tests extends React.Component {
 
   constructor(props) {
     super(props);
     this.state = {
-      isOpen: false
+      isOpen: false,
+      TestList: this.props.userConfig.language== "french"?TestListFR:TestListEN
     };
   }
 
   toggleModal = () => {
     this.setState({
       isOpen: !this.state.isOpen
+      
     });
   }
 
@@ -39,7 +42,7 @@ class Tests extends React.Component {
       <div>
         <button className="button button2" onClick={this.helpClicked}>?</button>
 
-        <FilterableTestTable tests={this.props.data(TestList,this.props.userConfig)} text={this.props.lang.test_search_bar_placeholder} />
+        <FilterableTestTable tests={this.props.data(this.state.TestList,this.props.userConfig)} text={this.props.lang.test_search_bar_placeholder} />
 
         <TestsModal show={this.state.isOpen}
           onClose={this.toggleModal}
