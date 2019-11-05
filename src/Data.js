@@ -1,14 +1,38 @@
 //import {getUserInfo} from './UserInfo';
-import TopicList from './JSONFolder/17MarchHtmlTopic-EN.json';
+import React from 'react';
+import PropTypes from 'prop-types';
+import TopicListFR from './JSONFolder/17MarchHtmlTopic-FR.json';
+import TopicListEN from './JSONFolder/28Oct19HtmlTopic-EN.json';
 //import Images from 'http://quickforms2.eecs.uottawa.ca/';
 import Lang from './Lang/Lang.json';
+import LandingPage from './Landingpage';
 
 
 
-class Data {
 
+class Data
+{
+      
   ////////////////////////////////////////////Get One topics //////////////////////////////////////////////////
-  getTopic(button,userInfo){
+  getTopic(button,userInfo)
+
+  {
+  console.log(userInfo.language);
+  console.log(this.applanguage);
+  var app_language1 = userInfo.language;
+  var topicList ="";
+  if( app_language1 == "french")
+  {
+  topicList = TopicListFR;
+  console.log(topicList)
+  }
+  else if ( app_language1 == "english")
+  {
+  topicList = TopicListEN;
+  }
+    
+
+  {
     //Get user info from UserInfo.js
     //var UserInfo = getUserInfo();
     var UserInfo = userInfo;
@@ -58,8 +82,13 @@ class Data {
       return filteredList;
 
     }
+   
+
 
     function findTopicToDisplay(arra1) {
+      
+
+
       var j = 0,
       topicList = [],
       TopicListItem = [];
@@ -93,9 +122,11 @@ class Data {
       return TopicListItem;
     }
 
-    TopicItem = findTopicToDisplay(filterListArray(TopicList));
+    TopicItem = findTopicToDisplay(filterListArray(topicList));
+    
 
     return(TopicItem);
+  }
 
 
   }

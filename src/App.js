@@ -40,8 +40,11 @@ class App extends Component {
       age: null,
       language: null
     };// = getUserInfo();
-    let DataToDisplay = new Data();
+    let DataToDisplay = new Data(this.props.appLanguage);
+    console.log(this.props.appLanguage);
+    //DataToDisplay.props = this.props.applanguage;
     var app_language = this.props.appLanguage;
+    
     this.state = {
       isOpen: false,
       configurationIsOpen: false, //used to be isOpen

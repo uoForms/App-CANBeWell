@@ -2,18 +2,22 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import '../Button.css';
 import TopicsModal from './TopicsModal';
-import TopicList from '../JSONFolder/17MarchHtmlTopic-FR.json';
+import TopicListFR from '../JSONFolder/17MarchHtmlTopic-FR.json';
+import TopicListEN from '../JSONFolder/28Oct19HtmlTopic-EN.json';
 
 class Topics extends React.Component {
 
-  constructor(props) {
+  constructor(props) 
+  {
     super(props);
-    this.state = {
-      isOpen: false
-    };
+    this.state = 
+    {
+      isOpen: false,
+      TopicList: this.props.userConfig.language== "french"?TopicListFR:TopicListEN
+    }
   }
-
-  toggleModal = () => {
+  toggleModal = () => 
+  {
     this.setState({
       isOpen: !this.state.isOpen
     });
@@ -40,7 +44,7 @@ class Topics extends React.Component {
         {/*your help button in the right hand corner*/}
         {/*<button className="button button2" onClick={this.helpClicked}>?</button>*/}
 
-        <FilterableTopicTable topics={this.props.data(TopicList,this.props.userConfig)} text={this.props.lang.topic_search_bar_placeholder} />
+        <FilterableTopicTable topics={this.props.data(this.state.TopicList,this.props.userConfig)} text={this.props.lang.topic_search_bar_placeholder} />
 
         {/*help dialog box*/}
         <TopicsModal show={this.state.isOpen}
