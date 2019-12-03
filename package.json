@@ -8,7 +8,7 @@
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.15.1",
     "firebase": "^7.5.0",
-    "react": "^16.10.1",
+    "react": "^16.12.0",
     "react-bootstrap": "^0.32.4",
     "react-cookie": "^4.0.1",
     "react-dom": "^16.12.0",
