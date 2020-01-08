@@ -1,4 +1,3 @@
-//import React from 'react';
 import ReactDOM from 'react-dom';
 import React from 'react';
 import './index.css';
@@ -17,26 +16,3 @@ import LandingPage from './Landingpage';
 //firebase.initializeApp(DB_CONFIG);
 //ReactDOM.render(<Router routes={routes} />, document.getElementById('root'));
 ReactDOM.render(<CookiesProvider><LandingPage/></CookiesProvider>, document.getElementById('root'));
-
-/*ReactDOM.render(
-  <Router basename="/canbewell">
-    <div>
-      <Route exact path={`${process.env.PUBLIC_URL}/`} component={Logo}/>
-      <Route path={`${process.env.PUBLIC_URL}/App`} component={App} />
-    </div>
-  </Router>, document.getElementById('root'));*/
-
-  //registerServiceWorker();
-
-  /*ReactDOM.render(
-
-  <Route exact path={`${process.env.PUBLIC_URL}/`} component={Logo}/>
-  <Route path={`${process.env.PUBLIC_URL}/#/App`} component={App} />
-
-
-                  <Router>
-                  <Switch><Route path='/' component={Home}>
-                    <Route exact component={logo}/>
-                    <Route path='home' component={App}/>
-                    <Route Path='*' component={logo}/>
-                  </Route></Switch></Router>, document.getElementById('root'));*/
