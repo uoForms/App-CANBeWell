@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-//import firebase from 'firebase/app';
-//import * as firebase from 'firebase';
 import Lang from './Lang/Lang.json';
 import { withCookies, Cookies } from 'react-cookie';
 import { instanceOf } from 'prop-types';
@@ -205,7 +203,7 @@ class App extends Component {
   }
 
   goBack(){
-    window.location.href='http://quickforms2.eecs.uottawa.ca/canbewell/'; //go back to canBeWell Logo
+    window.location.href='./index.html'; //go back to canBeWell Logo
   }
 
   //Set age
