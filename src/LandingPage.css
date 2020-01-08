@@ -1,0 +1,9 @@
+.landing-logo {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    overflow: hidden;
+    width: 100vw;
+}
