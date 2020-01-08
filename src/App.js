@@ -203,7 +203,7 @@ class App extends Component {
   }
 
   goBack(){
-    window.location.href='./Landingpage.js'; //go back to canBeWell Logo
+    window.location.href='./index.html'; //go back to canBeWell Logo
   }
 
   //Set age
