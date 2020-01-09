@@ -72,7 +72,7 @@ class TestRow extends React.Component {
 
   render() {
 
-    const Image = "http://quickforms2.eecs.uottawa.ca/canbewell/";
+    const Image = "./";
     var sujectArray = [];
     var bodys = this.props.test.body;
     var mIndex = 0;

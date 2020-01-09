@@ -11,7 +11,7 @@ class BodyModal extends React.Component {
   }
 
   getsubjectArray = (display) =>{
-    const Image = "http://quickforms2.eecs.uottawa.ca/canbewell/";
+    const Image = "./";
     var subjectArray = [];
     //kind of redendant sorry
     var topicsToDisplay = display;

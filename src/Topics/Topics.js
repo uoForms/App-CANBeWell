@@ -76,7 +76,7 @@ class TopicRow extends React.Component {
 
   render() {
 
-    const Image = "http://quickforms2.eecs.uottawa.ca/canbewell/";
+    const Image = "./";
     //all the subjects
     var sujectArray = [];
     var bodys = this.props.topic.body;

@@ -32,7 +32,7 @@ class InstructionModal extends React.Component {
   }
 
   goBack(){
-    window.location.href='http://quickforms2.eecs.uottawa.ca/canbewell/';
+    window.location.href='./index.html';
   }
 
   handlePatientProviderChange(event) {

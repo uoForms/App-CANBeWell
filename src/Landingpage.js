@@ -1,10 +1,8 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import App from './App';
 
 import './LandingPage.css';
 import calllogo from './assets/Logos/logo_03-02.png';
-import { app } from 'firebase';
 
 
 class LandingPage extends React.Component {
