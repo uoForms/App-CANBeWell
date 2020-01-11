@@ -68,7 +68,7 @@ class Anatomy extends React.Component {
     if (organ !== "") {
       try {
         console.log(organ);
-        Event("Organ", organ, organ+"clicked")
+        Event("Organ", organ, organ+" clicked")
         document.getElementById(organ).style.visibility = "visible";
       } catch (err) { }
     }
