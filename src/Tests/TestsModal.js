@@ -6,7 +6,7 @@ class TestsModal extends React.Component {
   render() {
 
     // Render info about the user
-    if(!this.props.show) {
+    if (!this.props.show) {
       return null;
     }
 
@@ -27,7 +27,7 @@ class TestsModal extends React.Component {
       maxWidth: 500,
       minHeight: 300,
       margin: '0 auto',
-      textAlign:'center',
+      textAlign: 'center',
       padding: 30
     };
 

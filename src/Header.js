@@ -1,5 +1,5 @@
 // Header.js
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
 export default class Header extends Component {
 
@@ -16,11 +16,11 @@ export default class Header extends Component {
     });
   }
 
-    render(){
-        return (
-          <div className="header">
-            <a className={this.state.sidebarOpen} onClick={this.toggleSidebar} href="#body">Sidebar</a>
-          </div>
-        )
-    }
+  render() {
+    return (
+      <div className="header">
+        <a className={this.state.sidebarOpen} onClick={this.toggleSidebar} href="#body">Sidebar</a>
+      </div>
+    )
+  }
 }
