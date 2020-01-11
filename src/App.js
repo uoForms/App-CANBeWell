@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import Lang from './Lang/Lang.json';
 import { withCookies, Cookies } from 'react-cookie';
 import { instanceOf } from 'prop-types';
+
+import Lang from './Lang/Lang.json';
 import './App.css';
 import './Button.css';
 import './Style/checkbox.css';
@@ -42,7 +43,7 @@ class App extends Component {
     console.log(this.props.appLanguage);
     //DataToDisplay.props = this.props.applanguage;
     var app_language = this.props.appLanguage;
-    
+
     this.state = {
       isOpen: false,
       configurationIsOpen: false, //used to be isOpen
@@ -64,7 +65,7 @@ class App extends Component {
       //allowToClose: false, //obselete! we use to make the user agree before they could press agree
     };
 
-    console.log("in the contructor: " +  (typeof this.state.allAgesSelected) );
+    console.log("in the contructor: " + (typeof this.state.allAgesSelected));
 
     this.handleChange = this.handleChange.bind(this);
     this.handleGenderChange = this.handleGenderChange.bind(this);
@@ -74,20 +75,20 @@ class App extends Component {
 
   }
 
-  componentDidMount(){
+  componentDidMount() {
     document.getElementById("body").classList = 'active';
-    try{
-      if(this.state.user == "patient"){
+    try {
+      if (this.state.user == "patient") {
         document.getElementById("disclaimer").innerHTML = this.state.lang.patientDisclaimer;
         document.getElementById("genderSelector").style.display = "block";
       }
-      else if(this.state.user == "provider"){
+      else if (this.state.user == "provider") {
         document.getElementById("disclaimer").innerHTML = this.state.lang.providerDisclaimer;
         document.getElementById("genderSelector").style.display = "block";
       }
-    }catch(err){}
+    } catch (err) { }
 
-    console.log("when mounted: " +  this.state.allAgesSelected );
+    console.log("when mounted: " + this.state.allAgesSelected);
 
     /*if(this.state.allAgesSelected){
       document.getElementById("myCheck").style.backgroundColor = "#CCCCCC";
@@ -109,31 +110,31 @@ class App extends Component {
 
   //toggle the config modif
   toggleConfigurationModal = () => {
-    var genders = ["male","female","all_genders"];
-    if(genders.includes(this.state.gender) && ((this.state.age>=18 && this.state.age<=149) || this.state.allAgesSelected)){
+    var genders = ["male", "female", "all_genders"];
+    if (genders.includes(this.state.gender) && ((this.state.age >= 18 && this.state.age <= 149) || this.state.allAgesSelected)) {
       this.setState({
         configurationIsOpen: !this.state.configurationIsOpen
       });
       document.getElementById("config_help").style.display = "none";
     }
-    else{
+    else {
       document.getElementById("config_help").style.display = "block";
     }
   }
 
   toggleIntrutionModal = () => {
     //if(this.state.allowToClose){
-    var genders = ["male","female","all_genders"];
+    var genders = ["male", "female", "all_genders"];
 
-    if(genders.includes(this.state.gender) && ((this.state.age>=18 && this.state.age<=149) || this.state.allAgesSelected)){
+    if (genders.includes(this.state.gender) && ((this.state.age >= 18 && this.state.age <= 149) || this.state.allAgesSelected)) {
       const { cookies } = this.props;
-      cookies.set('_onboarded', true , { path: '/' });
+      cookies.set('_onboarded', true, { path: '/' });
       this.setState({
         instructionIsOpen: !this.state.instructionIsOpen
       });
       document.getElementById("help").style.display = "none";
     }
-    else{
+    else {
       document.getElementById("help").style.display = "block";
     }
     //}
@@ -175,7 +176,7 @@ class App extends Component {
     });
 
     document.getElementById("body").classList = '';
-    document.getElementById("topic").classList = 'active' ;
+    document.getElementById("topic").classList = 'active';
     document.getElementById("test").classList = '';
   }
   testsClicked = (e) => {
@@ -191,42 +192,42 @@ class App extends Component {
   }
 
   genderIconClicked = () => {
-        this.setState({
-          configurationIsOpen: !this.state.configurationIsOpen,
-          headerText: this.state.lang.configuration_header,
-          buttonText: this.state.lang.config_modal_agree
-        });
-        //Remove bouncing animation once clicked
-        if ( document.getElementById("genderIcon").classList.contains('drop-down') ){
-          document.getElementById("genderIcon").classList.remove('drop-down');
-        }
+    this.setState({
+      configurationIsOpen: !this.state.configurationIsOpen,
+      headerText: this.state.lang.configuration_header,
+      buttonText: this.state.lang.config_modal_agree
+    });
+    //Remove bouncing animation once clicked
+    if (document.getElementById("genderIcon").classList.contains('drop-down')) {
+      document.getElementById("genderIcon").classList.remove('drop-down');
+    }
   }
 
-  goBack(){
-    window.location.href='./index.html'; //go back to canBeWell Logo
+  goBack() {
+    window.location.href = './index.html'; //go back to canBeWell Logo
   }
 
   //Set age
-  handleChange(event){
+  handleChange(event) {
     const { cookies } = this.props;
-    cookies.set('age', event.target.value , { path: '/' });
-    this.setState({age: event.target.value});
+    cookies.set('age', event.target.value, { path: '/' });
+    this.setState({ age: event.target.value });
     //setAge(Number(event.target.value));
   }
 
   //set all ages
-  handleAllAgesSelected(event){
+  handleAllAgesSelected(event) {
     const { cookies } = this.props;
-    cookies.set('_all_ages_selected', !this.state.allAgesSelected , { path: '/' });
+    cookies.set('_all_ages_selected', !this.state.allAgesSelected, { path: '/' });
 
     var allAges = !this.state.allAgesSelected ? "all ages" : "";
-    cookies.set('age', allAges , { path: '/' });
+    cookies.set('age', allAges, { path: '/' });
 
     this.setState({
       allAgesSelected: (!this.state.allAgesSelected)
     }, () => {
-      this.setState({age: allAges}); //Call back once setState is done
-      console.log("in the handler: " +  (typeof this.state.allAgesSelected) );
+      this.setState({ age: allAges }); //Call back once setState is done
+      console.log("in the handler: " + (typeof this.state.allAgesSelected));
       /*if(this.state.allAgesSelected){
         document.getElementById('myCheck').style.backgroundColor = "#CCCCCC";
       }else{
@@ -238,26 +239,26 @@ class App extends Component {
   //set User
   handlePatientProviderChange(event) {
     const { cookies } = this.props;
-    cookies.set('user', event.target.value , { path: '/' });
+    cookies.set('user', event.target.value, { path: '/' });
     //change disclaimer text
-    if(event.target.value == "patient"){
+    if (event.target.value == "patient") {
       document.getElementById("disclaimer").innerHTML = this.state.lang.patientDisclaimer;
       document.getElementById("genderSelector").style.display = "block";
 
-      if(this.state.allAgesSelected){
+      if (this.state.allAgesSelected) {
         const { cookies } = this.props;
-        cookies.set('_all_ages_selected', !this.state.allAgesSelected , { path: '/' });
+        cookies.set('_all_ages_selected', !this.state.allAgesSelected, { path: '/' });
         var allAges = "";
-        cookies.set('age', allAges , { path: '/' });
+        cookies.set('age', allAges, { path: '/' });
 
         this.setState({
           allAgesSelected: (!this.state.allAgesSelected)
         }, () => {
-          this.setState({age: allAges}); //Call back once setState is done
+          this.setState({ age: allAges }); //Call back once setState is done
         });
       }
     }
-    else if(event.target.value == "provider"){
+    else if (event.target.value == "provider") {
       document.getElementById("disclaimer").innerHTML = this.state.lang.providerDisclaimer;
       document.getElementById("genderSelector").style.display = "block";
     }
@@ -271,25 +272,25 @@ class App extends Component {
 
   handlePatientProviderChangeFromConfig(mEvent) {
     const { cookies } = this.props;
-    cookies.set('user', mEvent.target.value , { path: '/' });
+    cookies.set('user', mEvent.target.value, { path: '/' });
 
     //setPatientProvider(mEvent.target.value);
     this.setState({
       user: mEvent.target.value
     });
 
-    if(mEvent.target.value == "patient" && this.state.allAgesSelected){
+    if (mEvent.target.value == "patient" && this.state.allAgesSelected) {
 
-        const { cookies } = this.props;
-        cookies.set('_all_ages_selected', !this.state.allAgesSelected , { path: '/' });
-        var allAges = "";
-        cookies.set('age', allAges , { path: '/' });
+      const { cookies } = this.props;
+      cookies.set('_all_ages_selected', !this.state.allAgesSelected, { path: '/' });
+      var allAges = "";
+      cookies.set('age', allAges, { path: '/' });
 
-        this.setState({
-          allAgesSelected: (!this.state.allAgesSelected)
-        }, () => {
-          this.setState({age: allAges}); //Call back once setState is done
-        });
+      this.setState({
+        allAgesSelected: (!this.state.allAgesSelected)
+      }, () => {
+        this.setState({ age: allAges }); //Call back once setState is done
+      });
     }
 
   }
@@ -298,7 +299,7 @@ class App extends Component {
   handleGenderChange(changeEvent) {
 
     const { cookies } = this.props;
-    cookies.set('gender', changeEvent.target.value , { path: '/' });
+    cookies.set('gender', changeEvent.target.value, { path: '/' });
     //setGender(changeEvent.target.value);
     this.setState({
       gender: changeEvent.target.value
@@ -322,12 +323,12 @@ class App extends Component {
   }
 
   suggestedAppsClicked = () => {
-        this.setState({
-          isOpen: !this.state.isOpen,
-          headerText: this.state.lang.side_nav_suggested_apps,
-          bodyText: this.state.lang.side_nav_suggested_apps,
-          buttonText: this.state.lang.config_modal_agree
-        });
+    this.setState({
+      isOpen: !this.state.isOpen,
+      headerText: this.state.lang.side_nav_suggested_apps,
+      bodyText: this.state.lang.side_nav_suggested_apps,
+      buttonText: this.state.lang.config_modal_agree
+    });
   }
   calculatorsClicked = () => {
     this.setState({
@@ -367,9 +368,9 @@ class App extends Component {
 
     //var userInfo = getUserInfo();
     var userInfo = {
-      gender:this.state.gender,
-      patient_provider:this.state.user,
-      age:this.state.age,
+      gender: this.state.gender,
+      patient_provider: this.state.user,
+      age: this.state.age,
       language: this.state.language //TODO plese change that VERY important
     };
 
@@ -407,7 +408,7 @@ class App extends Component {
       maxWidth: '99%',
       minHeight: '95%',
       margin: '0 auto',
-      textAlign:'center',
+      textAlign: 'center',
       padding: 10,
       fontSize: '20px',
       overflow: 'scroll',
@@ -418,7 +419,7 @@ class App extends Component {
       maxWidth: '90%',
       maxHeight: '150px',
       margin: '0 auto',
-      textAlign:'center',
+      textAlign: 'center',
       padding: 10,
       overflowY: 'scroll',
       overflowX: 'hidden',
@@ -426,31 +427,31 @@ class App extends Component {
       fontSize: '15px'
     };
 
-    if(this.state.user == "patient"){
+    if (this.state.user == "patient") {
       allagescheckboxStyle.display = "none";
     }
-    else if(this.state.user == "provider"){
+    else if (this.state.user == "provider") {
       allagescheckboxStyle.display = "block";
     }
 
     var instructionModal = [];
     var configurationModal = [];
 
-    if(this.state.instructionIsOpen){
+    if (this.state.instructionIsOpen) {
       instructionModal = [
-      <div key="1" className="backdrop" style={backdropStyle}>
-      <div className="myModal" style={myModalStyle}>
+        <div key="1" className="backdrop" style={backdropStyle}>
+          <div className="myModal" style={myModalStyle}>
 
-        <div className="footer">
-          <p>{this.state.lang.instruction_modal_header}</p>
+            <div className="footer">
+              <p>{this.state.lang.instruction_modal_header}</p>
 
-          {/*select user*/}
+              {/*select user*/}
               <div className="radio">
                 <form>
                   {this.state.lang.user_selector}
                   <label >
-                   <input type="radio" value="patient" checked={this.state.user === 'patient'} onChange={this.handlePatientProviderChange} />
-                   {this.state.lang.patient}
+                    <input type="radio" value="patient" checked={this.state.user === 'patient'} onChange={this.handlePatientProviderChange} />
+                    {this.state.lang.patient}
                   </label>
                   <label>
                     <input type="radio" value="provider" checked={this.state.user === 'provider'} onChange={this.handlePatientProviderChange} />
@@ -464,7 +465,7 @@ class App extends Component {
                   <div id="genderSelector" className="radio">
                     {this.state.lang.gender_selector}
                     <label>
-                      <input type="radio" value="male" checked={this.state.gender == 'male'} onChange={this.handleGenderChange}/>
+                      <input type="radio" value="male" checked={this.state.gender == 'male'} onChange={this.handleGenderChange} />
                       {this.state.lang.male}
                     </label>
                     <label>
@@ -472,7 +473,7 @@ class App extends Component {
                       {this.state.lang.female}
                     </label>
                     <label>
-                      <input type="radio" value="all_genders" checked={this.state.gender == 'all_genders'} onChange={this.handleGenderChange}/>
+                      <input type="radio" value="all_genders" checked={this.state.gender == 'all_genders'} onChange={this.handleGenderChange} />
                       {this.state.lang.all_genders}
                     </label>
                   </div>
@@ -483,11 +484,11 @@ class App extends Component {
                 <form>
                   <div>
                     {this.state.lang.age_selector}
-                    <input id='abc' type="text" value={this.state.age == "all ages" ?  this.state.lang.all_ages : this.state.age} onChange={this.handleChange} disabled = {this.state.allAgesSelected} placeholder={this.state.lang.age_selector_place_holder}/>
-                    <label style = {allagescheckboxStyle}>
-                      <input id='myCheck' type="checkbox" checked = {this.state.allAgesSelected} onChange={this.handleAllAgesSelected}/>{this.state.lang.all_ages}
+                    <input id='abc' type="text" value={this.state.age == "all ages" ? this.state.lang.all_ages : this.state.age} onChange={this.handleChange} disabled={this.state.allAgesSelected} placeholder={this.state.lang.age_selector_place_holder} />
+                    <label style={allagescheckboxStyle}>
+                      <input id='myCheck' type="checkbox" checked={this.state.allAgesSelected} onChange={this.handleAllAgesSelected} />{this.state.lang.all_ages}
                     </label>
-                    <label id="help" className = "checkAge">
+                    <label id="help" className="checkAge">
                       <h5>{this.state.lang.age_help}</h5>
                     </label>
                   </div>
@@ -502,19 +503,19 @@ class App extends Component {
               <b>{this.state.lang.disclaimer_header}</b>
 
               <div style={myDisclaimerStyle}>
-                <p>{this.state.lang.disclaimer}</p><br/>
-                <p id="disclaimer">{this.state.lang.patientDisclaimer}</p><br/>
+                <p>{this.state.lang.disclaimer}</p><br />
+                <p id="disclaimer">{this.state.lang.patientDisclaimer}</p><br />
                 <p>{this.state.lang.important}</p>
               </div>
             </div>
           </div>
         </div>
       ];
-    }else{
+    } else {
       instructionModal = [null];
     }
 
-    if(this.state.configurationIsOpen == true){
+    if (this.state.configurationIsOpen == true) {
       configurationModal = [
         <div key="2" className="backdrop" >
           <div className="myModal">
@@ -528,11 +529,11 @@ class App extends Component {
                     {this.state.lang.user_selector}
                     <label>
                       <input type="radio" value="patient" checked={this.state.user === 'patient'} onChange={this.handlePatientProviderChangeFromConfig} />
-                        {this.state.lang.patient}
+                      {this.state.lang.patient}
                     </label>
                     <label>
                       <input type="radio" value="provider" checked={this.state.user === 'provider'} onChange={this.handlePatientProviderChangeFromConfig} />
-                        {this.state.lang.provider}
+                      {this.state.lang.provider}
                     </label>
                   </form>
                 </div>
@@ -540,9 +541,9 @@ class App extends Component {
                 <div>
                   <form>
                     <div id="genderSelector" className="radio">
-                    {this.state.lang.gender_selector}
+                      {this.state.lang.gender_selector}
                       <label>
-                        <input type="radio" value="male" checked={this.state.gender == 'male'} onChange={this.handleGenderChange}/>
+                        <input type="radio" value="male" checked={this.state.gender == 'male'} onChange={this.handleGenderChange} />
                         {this.state.lang.male}
                       </label>
 
@@ -552,7 +553,7 @@ class App extends Component {
                       </label>
 
                       <label>
-                        <input type="radio" value="all_genders" checked={this.state.gender == 'all_genders'} onChange={this.handleGenderChange}/>
+                        <input type="radio" value="all_genders" checked={this.state.gender == 'all_genders'} onChange={this.handleGenderChange} />
                         {this.state.lang.all_genders}
                       </label>
                     </div>
@@ -563,12 +564,12 @@ class App extends Component {
                   <form>
                     <div>
                       {this.state.lang.age_selector}
-                      <input id='abc' type="text" value={this.state.age == "all ages" ?  this.state.lang.all_ages : this.state.age} onChange={this.handleChange} disabled = {this.state.allAgesSelected} placeholder={this.state.lang.age_selector_place_holder}/>
-                      <label style = {allagescheckboxStyle}>
-                            <input id = 'check' type="checkbox" checked = {this.state.allAgesSelected} onChange={this.handleAllAgesSelected}/>{this.state.lang.all_ages}
+                      <input id='abc' type="text" value={this.state.age == "all ages" ? this.state.lang.all_ages : this.state.age} onChange={this.handleChange} disabled={this.state.allAgesSelected} placeholder={this.state.lang.age_selector_place_holder} />
+                      <label style={allagescheckboxStyle}>
+                        <input id='check' type="checkbox" checked={this.state.allAgesSelected} onChange={this.handleAllAgesSelected} />{this.state.lang.all_ages}
                       </label>
                       <label id="config_help" className="checkAge">
-                            <h5>{this.state.lang.age_help}</h5>
+                        <h5>{this.state.lang.age_help}</h5>
                       </label>
                     </div>
                   </form>
@@ -582,14 +583,14 @@ class App extends Component {
           </div>
         </div>
       ];
-    }else{
+    } else {
       configurationModal = [null];
     }
 
     return (
       <div>
 
-    {/*<SideBar lang={this.state.lang}></SideBar>*/} {/*TODO must fix this modal in the back ground*/}
+        {/*<SideBar lang={this.state.lang}></SideBar>*/} {/*TODO must fix this modal in the back ground*/}
 
         <div>
           <div id="mySidenav" className="sidenav">
@@ -616,19 +617,19 @@ class App extends Component {
         {/*display user's info*/}
         <div onClick={this.genderIconClicked} className="userInfoStyle">
           <h3>
-            {this.state.lang.display_gender} : {this.state.lang[this.state.gender]}<br/>
-            {this.state.lang.display_age} : {this.state.age == "all ages" ?  this.state.lang.all_ages : this.state.age}
+            {this.state.lang.display_gender} : {this.state.lang[this.state.gender]}<br />
+            {this.state.lang.display_age} : {this.state.age == "all ages" ? this.state.lang.all_ages : this.state.age}
           </h3>
         </div>
 
         <div>
-          <MyBody showBody={this.state.bodyView} userConfig={userInfo} getText={this.state.data.getTopic} lang = {this.state.lang}></MyBody>
-          <Tests showTests={this.state.testsView} userConfig={userInfo} data={this.state.data.getListOfTests} lang = {this.state.lang}></Tests>
-          <Topics showTopics={this.state.topicsView} userConfig={userInfo} data={this.state.data.getListOfTopics} lang = {this.state.lang}></Topics>
+          <MyBody showBody={this.state.bodyView} userConfig={userInfo} getText={this.state.data.getTopic} lang={this.state.lang}></MyBody>
+          <Tests showTests={this.state.testsView} userConfig={userInfo} data={this.state.data.getListOfTests} lang={this.state.lang}></Tests>
+          <Topics showTopics={this.state.topicsView} userConfig={userInfo} data={this.state.data.getListOfTopics} lang={this.state.lang}></Topics>
         </div>
 
         <button style={fixedStyle}>
-          <img id="genderIcon" src={IconGender} className="drop-down" alt="IconGender" onClick={this.genderIconClicked} width="75" height="75"/>
+          <img id="genderIcon" src={IconGender} className="drop-down" alt="IconGender" onClick={this.genderIconClicked} width="75" height="75" />
         </button>
         {/*modals*/}
         <div>{instructionModal}</div>
@@ -637,9 +638,9 @@ class App extends Component {
         <MyModal show={this.state.isOpen}
           onClose={this.toggleModal}
           header={this.state.headerText}
-          body = {this.state.bodyText}
+          body={this.state.bodyText}
           button={this.state.buttonText}
-          lang = {this.state.lang}>
+          lang={this.state.lang}>
         </MyModal>
 
         {/*<InstructionModal show={this.state.instructionIsOpen}

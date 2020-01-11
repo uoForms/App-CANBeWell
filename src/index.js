@@ -15,4 +15,4 @@ import LandingPage from './Landingpage';
 
 //firebase.initializeApp(DB_CONFIG);
 //ReactDOM.render(<Router routes={routes} />, document.getElementById('root'));
-ReactDOM.render(<CookiesProvider><LandingPage/></CookiesProvider>, document.getElementById('root'));
+ReactDOM.render(<CookiesProvider><LandingPage /></CookiesProvider>, document.getElementById('root'));
