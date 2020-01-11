@@ -5,9 +5,6 @@ import ReactGA from 'react-ga';
 import './LandingPage.css';
 import calllogo from './assets/Logos/logo_03-02.png';
 
-ReactGA.initialize('UA-151893001-1');
-ReactGA.pageview(window.location.pathname + window.location.search);
-
 class LandingPage extends React.Component {
   constructor(props) {
     super(props);
@@ -26,6 +23,11 @@ class LandingPage extends React.Component {
   handleChange2() {
     this.setState({ language: "french" })
     localStorage.setItem("app_language", this.state.language);
+  }
+  componentDidMount(){
+    ReactGA.initialize('UA-151893001-1');
+    ReactGA.set({ page: window.location.pathname });
+    ReactGA.pageview( window.location.pathname );
   }
 
   render() {
