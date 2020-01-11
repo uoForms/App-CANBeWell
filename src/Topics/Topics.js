@@ -7,34 +7,32 @@ import TopicListEN from '../JSONFolder/28Oct19HtmlTopic-EN.json';
 
 class Topics extends React.Component {
 
-  constructor(props) 
-  {
+  constructor(props) {
     super(props);
-    this.state = 
+    this.state =
     {
       isOpen: false,
-      TopicList: this.props.userConfig.language== "french"?TopicListFR:TopicListEN
+      TopicList: this.props.userConfig.language == "french" ? TopicListFR : TopicListEN
     }
   }
-  toggleModal = () => 
-  {
+  toggleModal = () => {
     this.setState({
       isOpen: !this.state.isOpen
     });
   }
 
   helpClicked = () => {
-        this.setState({
-          isOpen: !this.state.isOpen,
-          headerText: this.props.lang.topic_help_header,
-          bodyText: this.props.lang.topic_help_body,
-          buttonText: this.props.lang.config_modal_agree,
-        });
+    this.setState({
+      isOpen: !this.state.isOpen,
+      headerText: this.props.lang.topic_help_header,
+      bodyText: this.props.lang.topic_help_body,
+      buttonText: this.props.lang.config_modal_agree,
+    });
   }
 
   render() {
 
-    if(!this.props.showTopics) {
+    if (!this.props.showTopics) {
       return null;
     }
 
@@ -44,7 +42,7 @@ class Topics extends React.Component {
         {/*your help button in the right hand corner*/}
         {/*<button className="button button2" onClick={this.helpClicked}>?</button>*/}
 
-        <FilterableTopicTable topics={this.props.data(this.state.TopicList,this.props.userConfig)} text={this.props.lang.topic_search_bar_placeholder} />
+        <FilterableTopicTable topics={this.props.data(this.state.TopicList, this.props.userConfig)} text={this.props.lang.topic_search_bar_placeholder} />
 
         {/*help dialog box*/}
         <TopicsModal show={this.state.isOpen}
@@ -88,13 +86,13 @@ class TopicRow extends React.Component {
       var bodyArrayToDisplay = [];
       var subjectArrayToDisplay = [];
 
-      for(var i = 0; i < subject.length; i++){
-        if(subject[i] == '[['){
-          var link = subject[i+1].split(';');
-          try{
-            if(link[0] === "image" || link[0] === "images"){
+      for (var i = 0; i < subject.length; i++) {
+        if (subject[i] == '[[') {
+          var link = subject[i + 1].split(';');
+          try {
+            if (link[0] === "image" || link[0] === "images") {
               var adress = Image + link[1].trim();
-              subjectArrayToDisplay.push(<div><img className="imageFromFolder" src={adress} alt="photo"/></div>);
+              subjectArrayToDisplay.push(<div><img className="imageFromFolder" src={adress} alt="photo" /></div>);
             }
             /*else if(link[1].indexOf("topic") === 0 || link[1].indexOf("topic") === 1){
               link[1] = link[1].replace('topic://', '').trim();
@@ -104,29 +102,29 @@ class TopicRow extends React.Component {
               link[1] = link[1].replace('test://', '').trim();
               subjectArrayToDisplay.push(<span onClick={(id) => this.openDetails(link[1])}><font color="Yellow">{link[0]}</font></span>);
             }*/
-            else{
+            else {
               subjectArrayToDisplay.push(<a href={link[1]} target="_blank"><font color="Yellow">{link[0]}</font></a>);
             }
             i++;
-          }catch(err){}
+          } catch (err) { }
         }
-        else if(subject[i] == '\n'){
-          subjectArrayToDisplay.push(<br/>);
+        else if (subject[i] == '\n') {
+          subjectArrayToDisplay.push(<br />);
         }
-        else if (subject[i] !== ']]' ){
+        else if (subject[i] !== ']]') {
           subjectArrayToDisplay.push(subject[i]);
         }
 
       }
 
-      for(var i = 0; i < bodyArray.length; i++){
-        if(bodyArray[i] == '[['){
-          var link = bodyArray[i+1].split(';');
+      for (var i = 0; i < bodyArray.length; i++) {
+        if (bodyArray[i] == '[[') {
+          var link = bodyArray[i + 1].split(';');
 
-          try{
-            if(link[0] === "image" || link[0] === "images"){
+          try {
+            if (link[0] === "image" || link[0] === "images") {
               var adress = Image.concat(link[1].trim());
-              bodyArrayToDisplay.push(<div><img className="imageFromFolder" src={adress} alt="photo"/></div>);
+              bodyArrayToDisplay.push(<div><img className="imageFromFolder" src={adress} alt="photo" /></div>);
             }
             /*else if(link[1].indexOf("topic") === 0 || link[1].indexOf("topic") === 1){
               link[1] = link[1].replace('topic://', '').trim();
@@ -136,26 +134,26 @@ class TopicRow extends React.Component {
               link[1] = link[1].replace('test://', '').trim();
               bodyArrayToDisplay.push(<span onClick={(id) => this.openDetails(link[1])}><font color="Yellow">{link[0]}</font></span>);
             }*/
-            else{
-              if(link[1] == null){
+            else {
+              if (link[1] == null) {
                 bodyArrayToDisplay.push(<a href={link[0]} target="_blank"><font color="Yellow">{link[0]}</font></a>);
               }
-              else{
+              else {
                 bodyArrayToDisplay.push(<a href={link[1]} target="_blank"><font color="Yellow">{link[0]}</font></a>);
               }
             }
             i++;
-          }catch(err){}
+          } catch (err) { }
         }
-        else if(bodyArray[i] == '\n'){
-          bodyArrayToDisplay.push(<br/>);
+        else if (bodyArray[i] == '\n') {
+          bodyArrayToDisplay.push(<br />);
         }
-        else if ( bodyArray[i] !== ']]' ){
+        else if (bodyArray[i] !== ']]') {
           bodyArrayToDisplay.push(bodyArray[i]);
         }
 
       }
-      sujectArray.push(<div className="topicBody"><b>{subjectArrayToDisplay}<br/></b>{bodyArrayToDisplay}</div>);
+      sujectArray.push(<div className="topicBody"><b>{subjectArrayToDisplay}<br /></b>{bodyArrayToDisplay}</div>);
     });
 
 
@@ -185,7 +183,7 @@ class TopicTable extends React.Component {
       width: '99%',
       minHeight: 50,
       margin: '0 auto',
-      textAlign:'left',
+      textAlign: 'left',
       padding: 10,
       color: 'white'
     };
@@ -198,10 +196,10 @@ class TopicTable extends React.Component {
         return;
       }
       rows.push(<div key={index} style={backdroplistItemStyle}>
-                  <div style={listItemStyle}>
-                    <TopicRow topic={topic}/>
-                  </div>
-                </div>);
+        <div style={listItemStyle}>
+          <TopicRow topic={topic} />
+        </div>
+      </div>);
       index++;
     });
     return (
@@ -262,7 +260,7 @@ class FilterableTopicTable extends React.Component {
         <SearchBar
           filterText={this.state.filterText}
           onFilterTextInput={this.handleFilterTextInput}
-          text = {this.props.text}
+          text={this.props.text}
         />
         <TopicTable
           topics={this.props.topics}

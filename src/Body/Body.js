@@ -16,7 +16,7 @@ class MyBody extends React.Component {
       isOpen: false,
       width: 0,
       height: 0,
-      display: [{name: "" , body: [{subject: "", text: ""}]}],
+      display: [{ name: "", body: [{ subject: "", text: "" }] }],
     };
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
   }
@@ -46,19 +46,19 @@ class MyBody extends React.Component {
   }
 
   helpClicked = () => {
-        this.setState({
-          help: !this.state.help,
-          headerText: "Help",
-          bodyText: "Here what you need to do on page Body",
-          buttonText: "Got It?",
-          displayConfigOption: false
-        });
+    this.setState({
+      help: !this.state.help,
+      headerText: "Help",
+      bodyText: "Here what you need to do on page Body",
+      buttonText: "Got It?",
+      displayConfigOption: false
+    });
   }
 
 
   render() {
 
-    if(!this.props.showBody) {
+    if (!this.props.showBody) {
       return null;
     }
 
@@ -70,7 +70,7 @@ class MyBody extends React.Component {
 
         <div align="center"><h4 className="instruction">{this.props.lang.body_general_instruction}</h4></div>
         <div>
-          <Anatomy gender={this.props.userConfig.gender} userInfo = {this.props.userConfig} getDisplay={this.props.getText} lang={this.props.lang}></Anatomy>
+          <Anatomy gender={this.props.userConfig.gender} userInfo={this.props.userConfig} getDisplay={this.props.getText} lang={this.props.lang}></Anatomy>
         </div>
 
         <BodyHelpModal

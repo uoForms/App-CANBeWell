@@ -25,23 +25,23 @@ class InstructionModal extends React.Component {
     this.handleAllAgesSelected = this.handleAllAgesSelected.bind(this);
   }
 
-  handleChange(event){
-    this.setState({value: event.target.value});
+  handleChange(event) {
+    this.setState({ value: event.target.value });
     setAge(Number(event.target.value));
 
   }
 
-  goBack(){
-    window.location.href='./index.html';
+  goBack() {
+    window.location.href = './index.html';
   }
 
   handlePatientProviderChange(event) {
 
-    if(event.target.value == "patient"){
+    if (event.target.value == "patient") {
       document.getElementById("disclaimer").innerHTML = this.props.lang.patientDisclaimer;
       document.getElementById("genderSelector").style.display = "block";
     }
-    else if(event.target.value == "provider"){
+    else if (event.target.value == "provider") {
       document.getElementById("disclaimer").innerHTML = this.props.lang.providerDisclaimer;
       document.getElementById("genderSelector").style.display = "block";
     }
@@ -53,12 +53,12 @@ class InstructionModal extends React.Component {
 
   }
 
-  handleAllAgesSelected(event){
+  handleAllAgesSelected(event) {
 
     this.setState({
       allAgesSelected: !this.state.allAgesSelected
     }, () => {
-      this.setState({value: this.state.allAgesSelected ? "all ages" : ""}); //Call back once setState is done
+      this.setState({ value: this.state.allAgesSelected ? "all ages" : "" }); //Call back once setState is done
       setAge(this.state.allAgesSelected ? "all ages" : "");
 
     });
@@ -76,7 +76,7 @@ class InstructionModal extends React.Component {
   render() {
 
     // Render intruction view
-    if(!this.props.show) {
+    if (!this.props.show) {
       return null;
     }
 
@@ -105,7 +105,7 @@ class InstructionModal extends React.Component {
       maxWidth: '99%',
       minHeight: '95%',
       margin: '0 auto',
-      textAlign:'center',
+      textAlign: 'center',
       padding: 10,
       fontSize: '20px',
       overflow: 'scroll',
@@ -116,7 +116,7 @@ class InstructionModal extends React.Component {
       maxWidth: '90%',
       maxHeight: '150px',
       margin: '0 auto',
-      textAlign:'center',
+      textAlign: 'center',
       padding: 10,
       overflowY: 'scroll',
       overflowX: 'hidden',
@@ -133,31 +133,31 @@ class InstructionModal extends React.Component {
     var myBoolean_allAge = false;
 
 
-    if(this.state.selectedPatientProvider == "patient"){
+    if (this.state.selectedPatientProvider == "patient") {
       allagescheckboxStyle.display = "none";
       checkAge.display = "block";
     }
-    else if(this.state.selectedPatientProvider == "provider"){
+    else if (this.state.selectedPatientProvider == "provider") {
       allagescheckboxStyle.display = "block";
       checkAge.display = "none";
       myBoolean_allAge = true;
     }
 
-    if(this.state.selectedGender == "male"){
+    if (this.state.selectedGender == "male") {
       myBoolean_gender = true;
     }
-    else if(this.state.selectedGender == "female"){
+    else if (this.state.selectedGender == "female") {
       myBoolean_gender = true;
     }
-    else if(this.state.selectedGender == "all_genders"){
+    else if (this.state.selectedGender == "all_genders") {
       myBoolean_gender = true;
     }
 
-    if((this.state.selectAge<18 && this.state.selectAge>149)){
+    if ((this.state.selectAge < 18 && this.state.selectAge > 149)) {
       checkAge.display = "block";
       myBoolean_gender = false;
     }
-    else if((this.state.selectAge>=18 && this.state.selectAge<=149)){
+    else if ((this.state.selectAge >= 18 && this.state.selectAge <= 149)) {
       checkAge.display = "none";
       myBoolean_age = true;
     }
@@ -170,26 +170,26 @@ class InstructionModal extends React.Component {
             <p>{this.props.lang.instruction_modal_header}</p>
 
             {/*select user*/}
-                <div className="radio">
-                <form>
+            <div className="radio">
+              <form>
                 {this.props.lang.user_selector}
-                  <label>
-                   <input type="radio" value="patient" checked={this.state.selectedPatientProvider === 'patient'} onChange={this.handlePatientProviderChange} />
-                    {this.props.lang.patient}
-                  </label>
-                  <label>
-                    <input type="radio" value="provider" checked={this.state.selectedPatientProvider === 'provider'} onChange={this.handlePatientProviderChange} />
-                    {this.props.lang.provider}
-                  </label>
-                  </form>
-                </div>
+                <label>
+                  <input type="radio" value="patient" checked={this.state.selectedPatientProvider === 'patient'} onChange={this.handlePatientProviderChange} />
+                  {this.props.lang.patient}
+                </label>
+                <label>
+                  <input type="radio" value="provider" checked={this.state.selectedPatientProvider === 'provider'} onChange={this.handlePatientProviderChange} />
+                  {this.props.lang.provider}
+                </label>
+              </form>
+            </div>
             {/*select gender*/}
             <div>
               <form>
-                <div id="genderSelector"className="radio">
+                <div id="genderSelector" className="radio">
                   {this.props.lang.gender_selector}
                   <label>
-                    <input type="radio" value="male" checked={this.state.selectedGender == 'male'} onChange={this.handleGenderChange}/>
+                    <input type="radio" value="male" checked={this.state.selectedGender == 'male'} onChange={this.handleGenderChange} />
                     {this.props.lang.male}
                   </label>
 
@@ -199,7 +199,7 @@ class InstructionModal extends React.Component {
                   </label>
 
                   <label>
-                    <input type="radio" value="all_genders" checked={this.state.selectedGender == 'all_genders'} onChange={this.handleGenderChange}/>
+                    <input type="radio" value="all_genders" checked={this.state.selectedGender == 'all_genders'} onChange={this.handleGenderChange} />
                     {this.props.lang.other}
                   </label>
                 </div>
@@ -210,18 +210,18 @@ class InstructionModal extends React.Component {
               <form>
                 <div>
                   {this.props.lang.age_selector}
-                  <input id='abc' type="text" value={this.state.value} onChange={this.handleChange} placeholder={this.props.lang.age_selector_place_holder}/>
-                  <label style = {allagescheckboxStyle}>
-                    <input type="checkbox"  checked={this.state.allAgesSelected} onChange={this.handleAllAgesSelected}/>{this.props.lang.all_ages}
+                  <input id='abc' type="text" value={this.state.value} onChange={this.handleChange} placeholder={this.props.lang.age_selector_place_holder} />
+                  <label style={allagescheckboxStyle}>
+                    <input type="checkbox" checked={this.state.allAgesSelected} onChange={this.handleAllAgesSelected} />{this.props.lang.all_ages}
                   </label>
-                  <label style = {checkAge}>
+                  <label style={checkAge}>
                     <h5>{this.props.lang.age_help}</h5>
                   </label>
                 </div>
               </form>
             </div>
             <div>
-              <button onClick={this.props.onClose} disabled= {!(myBoolean_gender && (myBoolean_age || myBoolean_allAge))}>{this.props.lang.agree}</button>
+              <button onClick={this.props.onClose} disabled={!(myBoolean_gender && (myBoolean_age || myBoolean_allAge))}>{this.props.lang.agree}</button>
               <button onClick={this.goBack} type="button">{this.props.lang.disagree}</button>
             </div>
             <b>{this.props.lang.disclaimer_header}</b>
@@ -230,7 +230,7 @@ class InstructionModal extends React.Component {
             </div>
 
             <div>
-              <button onClick={this.props.onClose} disabled= {!(myBoolean_gender && (myBoolean_age || myBoolean_allAge))}>{this.props.lang.agree}</button>
+              <button onClick={this.props.onClose} disabled={!(myBoolean_gender && (myBoolean_age || myBoolean_allAge))}>{this.props.lang.agree}</button>
               <button onClick={this.goBack} type="button">{this.props.lang.disagree}</button>
             </div>
           </div>
