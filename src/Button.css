@@ -90,9 +90,9 @@ div.fixed {
 }
 
 .langButtonStyle{
-  background-color: transparent;
-  border-color: #d7df48;
-  color: #d7df48;
+  background-color: #0a99ecc9;
+  border-color: #0a99ecc9;
+  color: #F0F0F0;
   padding: 15px 25px 15px 25px;
   margin: 5px 10px 5px 10px;
   border-radius: 25px;
