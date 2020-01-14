@@ -38,26 +38,26 @@ class LandingPage extends React.Component {
     console.log("test:" + localStorage.getItem("app_language"));
     console.log("test:" + this.state.language);
     return (
-      <div>
+      <div class="landing-page">
         {this.state.language == "" || null ? (
           <div>
             <Container>
             <Row>
             <Col xs={6}>
-              <Card border="light" style={{ border: 0 ,width: '40vw' }}>
+              <Card border="light" style={{ border: 0 ,width: '45vw'}}>
                 <Card.Body>
-                  <Card.Title>Do not use this app for health advice.<br /></Card.Title>
-                  <Card.Text>It is still under development.
+                  <Card.Title style={{ textAlign: 'left'}}>Do not use this app for health advice.<br /></Card.Title>
+                  <Card.Text style={{ textAlign: 'left'}}>It is still under development.
                     Ask your health care provider for all health advice.
               </Card.Text>
                 </Card.Body>
               </Card>
               </Col>
               <Col xs={6}>
-              <Card border="light" style={{ border: 0, width: '40vw' }}>
+              <Card border="light" style={{ border: 0, width: '45vw' }}>
                 <Card.Body>
-                  <Card.Title>Ne pas utiliser cette application pour des conseils de santé.</Card.Title>
-                  <Card.Text>L’appli  est encore en développement.
+                 <Card.Title style={{ textAlign: 'left'}}>Ne pas utiliser cette application pour des conseils de santé.</Card.Title>
+                 <Card.Text style={{ textAlign: 'left'}}>L’appli  est encore en développement.
                     Veuillez consulter votre professionnel de la santé.</Card.Text>
                 </Card.Body>
               </Card>
