@@ -4,6 +4,8 @@ import App from './App';
 import { PageView, initGA, Event } from './Tracking';
 import './LandingPage.css';
 import calllogo from './assets/Logos/logo_03-02.png';
+import { Card, Row, Col, Container } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 class LandingPage extends React.Component {
   constructor(props) {
@@ -39,18 +41,34 @@ class LandingPage extends React.Component {
       <div>
         {this.state.language == "" || null ? (
           <div>
-            <h3>Do not use this app for health advice.<br /></h3>
-            <h5>It is still under development.<br />
-              Ask your health care provider for all health advice.<br />
-              <br /></h5>
-            <h3>Ne pas utiliser cette application pour des conseils de santé.<br /></h3>
-            <h5>L’appli  est encore en développement.<br />
-              Veuillez consulter votre professionnel de la santé.</h5>
-            <div>
+            <Container>
+            <Row>
+            <Col xs={6}>
+              <Card border="light" style={{ border: 0 ,width: '40vw' }}>
+                <Card.Body>
+                  <Card.Title>Do not use this app for health advice.<br /></Card.Title>
+                  <Card.Text>It is still under development.
+                    Ask your health care provider for all health advice.
+              </Card.Text>
+                </Card.Body>
+              </Card>
+              </Col>
+              <Col xs={6}>
+              <Card border="light" style={{ border: 0, width: '40vw' }}>
+                <Card.Body>
+                  <Card.Title>Ne pas utiliser cette application pour des conseils de santé.</Card.Title>
+                  <Card.Text>L’appli  est encore en développement.
+                    Veuillez consulter votre professionnel de la santé.</Card.Text>
+                </Card.Body>
+              </Card>
+              </Col>
+              </Row>
+            </Container>
+            <div class="center">
               <img class="landing-logo" src={calllogo} alt="CANBeWellLogo" />
             </div>
             <div className="langButton">
-              <button class="langButtonStyle" onClick={this.handleChange} >English</button>
+              <button class="langButtonStyle" onClick={this.handleChange} >English </button>
               <button class="langButtonStyle" onClick={this.handleChange2}>Francais</button>
             </div>
           </div>
