@@ -35,6 +35,7 @@ class App extends Component {
 
     const { cookies } = props;
     var userInfo = {
+      userID: null,
       gender: null,
       patient_provider: null,
       age: null,
@@ -46,6 +47,7 @@ class App extends Component {
     var app_language = this.props.appLanguage;
 
     this.state = {
+      userID: cookies.get('userID'),
       isOpen: false,
       configurationIsOpen: false, //used to be isOpen
       bodyView: true,
@@ -90,6 +92,17 @@ class App extends Component {
     } catch (err) { }
 
     console.log("when mounted: " + this.state.allAgesSelected);
+
+    if (this.state.userID === undefined) {
+      const { cookies } = this.props;
+      let d = new Date();
+      console.log(d.getTime());
+      let exdays = 90;
+      d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+      cookies.set('userID', d.getTime(), { path: "/" , expires: d});
+    }
+
+    console.log("the userID in cookie is " + this.state.userID);
 
     /*if(this.state.allAgesSelected){
       document.getElementById("myCheck").style.backgroundColor = "#CCCCCC";
@@ -371,6 +384,7 @@ class App extends Component {
 
     //var userInfo = getUserInfo();
     var userInfo = {
+      userID: this.state.userID,
       gender: this.state.gender,
       patient_provider: this.state.user,
       age: this.state.age,
