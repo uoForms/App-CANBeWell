@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { withCookies, Cookies } from 'react-cookie';
 import { instanceOf } from 'prop-types';
 
-import { PageView, initGA, Event } from './Tracking';
+import { PageView, initGA, GaEvent } from './Tracking';
 import Lang from './Lang/Lang.json';
 import './App.css';
 import './Button.css';
@@ -180,7 +180,7 @@ class App extends Component {
     document.getElementById("body").classList = 'active';
     document.getElementById("topic").classList = '';
     document.getElementById("test").classList = '';
-    Event("Menu", "Body", "Body Menu");
+    GaEvent("Menu", "Body", "Body Menu");
   }
   topicsClicked = (e) => {
     this.setState({
@@ -192,7 +192,7 @@ class App extends Component {
     document.getElementById("body").classList = '';
     document.getElementById("topic").classList = 'active';
     document.getElementById("test").classList = '';
-    Event("Menu", "Topic", "Topic Menu")
+    GaEvent("Menu", "Topic", "Topic Menu")
   }
   testsClicked = (e) => {
     this.setState({
@@ -204,7 +204,7 @@ class App extends Component {
     document.getElementById("body").classList = '';
     document.getElementById("topic").classList = '';
     document.getElementById("test").classList = 'active';
-    Event("Menu", "Test", "Test menu")
+    GaEvent("Menu", "Test", "Test menu")
   }
 
   genderIconClicked = () => {

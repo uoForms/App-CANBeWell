@@ -16,7 +16,7 @@ export const PageView = () => {
  * @param {string} label 
  */
 
-export const Event = (category, action, label) => {
+export const GaEvent = (category, action, label) => {
     ReactGA.event({
       category: category,
       action: action,

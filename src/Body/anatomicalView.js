@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import BodyModal from './BodyModal';
-import { PageView, initGA, Event } from '../Tracking';
+import { PageView, initGA, GaEvent } from '../Tracking';
 
 //Import Male PNG
 import Male from '../assets/MaleBody/male_all-01.png';
@@ -68,7 +68,7 @@ class Anatomy extends React.Component {
     if (organ !== "") {
       try {
         console.log(organ);
-        Event("Organ", organ, organ+" clicked")
+        GaEvent("Icon", organ, organ+" clicked")
         document.getElementById(organ).style.visibility = "visible";
       } catch (err) { }
     }
