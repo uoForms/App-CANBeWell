@@ -3,7 +3,6 @@ import { withCookies, Cookies } from 'react-cookie';
 import { instanceOf } from 'prop-types';
 import ReactGA from "react-ga";
 
-import { GaEvent } from './Tracking';
 import Lang from './Lang/Lang.json';
 import './App.css';
 import './Button.css';
@@ -105,6 +104,9 @@ class App extends Component {
     cookies.set('userID', clientId , { path: "/" });
     console.log("the userID in cookie is " + this.state.userID);
 
+    //count a pageview of body 
+    ReactGA.pageview('body');
+
     /*if(this.state.allAgesSelected){
       document.getElementById("myCheck").style.backgroundColor = "#CCCCCC";
     }else{
@@ -181,7 +183,7 @@ class App extends Component {
     document.getElementById("body").classList = 'active';
     document.getElementById("topic").classList = '';
     document.getElementById("test").classList = '';
-    GaEvent("Menu", "Body", "Body Menu");
+    ReactGA.pageview('body');
   }
   topicsClicked = (e) => {
     this.setState({
@@ -193,7 +195,7 @@ class App extends Component {
     document.getElementById("body").classList = '';
     document.getElementById("topic").classList = 'active';
     document.getElementById("test").classList = '';
-    GaEvent("Menu", "Topic", "Topic Menu")
+    ReactGA.pageview('topic');
   }
   testsClicked = (e) => {
     this.setState({
@@ -205,7 +207,7 @@ class App extends Component {
     document.getElementById("body").classList = '';
     document.getElementById("topic").classList = '';
     document.getElementById("test").classList = 'active';
-    GaEvent("Menu", "Test", "Test menu")
+    ReactGA.pageview('test');
   }
 
   genderIconClicked = () => {
