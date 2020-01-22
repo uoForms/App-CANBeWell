@@ -1,7 +1,9 @@
 import ReactGA from "react-ga";
 
 export const initGA = (trackingID) => {           
-    ReactGA.initialize(trackingID); 
+    ReactGA.initialize(
+      trackingID,
+      {'cookieExpires': 864000}); //Set ga cookie expires time as 10 days 
  }
 
 export const PageView = () => {  
