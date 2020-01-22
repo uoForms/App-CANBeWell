@@ -42,7 +42,7 @@ class App extends Component {
       language: null
     };// = getUserInfo();
     let DataToDisplay = new Data(this.props.appLanguage);
-    console.log(this.props.appLanguage);
+    //console.log(this.props.appLanguage);
     //DataToDisplay.props = this.props.applanguage;
     var app_language = this.props.appLanguage;
 
@@ -68,7 +68,7 @@ class App extends Component {
       //allowToClose: false, //obselete! we use to make the user agree before they could press agree
     };
 
-    console.log("in the contructor: " + (typeof this.state.allAgesSelected));
+    //console.log("in the contructor: " + (typeof this.state.allAgesSelected));
 
     this.handleChange = this.handleChange.bind(this);
     this.handleGenderChange = this.handleGenderChange.bind(this);
@@ -91,7 +91,7 @@ class App extends Component {
       }
     } catch (err) { }
 
-    console.log("when mounted: " + this.state.allAgesSelected);
+    //console.log("when mounted: " + this.state.allAgesSelected);
 
     // The following steps is to get clientID from google analytics and save it to cookies
     const { cookies } = this.props;
@@ -99,10 +99,10 @@ class App extends Component {
     ReactGA.ga(
       function(tracker){        
         clientId = tracker.get('clientId');
-        console.log(clientId);
+        //console.log(clientId);
     });   
     cookies.set('userID', clientId , { path: "/" });
-    console.log("the userID in cookie is " + this.state.userID);
+    //console.log("the userID in cookie is " + this.state.userID);
 
     //count a pageview of body 
     ReactGA.pageview('body');

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import App from './App';
-import { PageView, initGA, GaEvent, } from './Tracking';
+import { PageView, initGA } from './Tracking';
 import './LandingPage.css';
 import calllogo from './assets/Logos/logo_03-02.png';
 
@@ -19,12 +19,10 @@ class LandingPage extends React.Component {
     this.setState({ language: "english" })
     localStorage.setItem("app_language", this.state.language);
     //return (<App app_language={this.state.language} />)
-    GaEvent("Language", "English", "English user info");
   }
   handleChange2() {
     this.setState({ language: "french" })
     localStorage.setItem("app_language", this.state.language);
-    GaEvent("Language", "French", "French user info");
   }
   componentDidMount() {
     initGA('UA-151893001-1');
@@ -33,8 +31,8 @@ class LandingPage extends React.Component {
 
   render() {
     // Render nothing if the "show" prop is false
-    console.log("test:" + localStorage.getItem("app_language"));
-    console.log("test:" + this.state.language);
+    //console.log("test:" + localStorage.getItem("app_language"));
+    //console.log("test:" + this.state.language);
     return (
       <div>
         {this.state.language == "" || null ? (
