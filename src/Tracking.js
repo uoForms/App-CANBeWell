@@ -23,3 +23,14 @@ export const GaEvent = (category, action, label) => {
       label: label
     });
   };
+
+export const GaModalView = ( virtual_url ) => {
+    ReactGA.modalview( virtual_url );
+};
+
+export const GaGetID = () => {
+    ReactGA.ga(
+      function(tracker){
+        return tracker.get('clientId');
+    });
+};

@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { withCookies, Cookies } from 'react-cookie';
 import { instanceOf } from 'prop-types';
+import ReactGA from "react-ga";
 
-import { PageView, initGA, GaEvent } from './Tracking';
+import { GaEvent } from './Tracking';
 import Lang from './Lang/Lang.json';
 import './App.css';
 import './Button.css';
@@ -93,15 +94,15 @@ class App extends Component {
 
     console.log("when mounted: " + this.state.allAgesSelected);
 
-    if (this.state.userID === undefined) {
-      const { cookies } = this.props;
-      let d = new Date();
-      console.log(d.getTime());
-      let exdays = 90;
-      d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-      cookies.set('userID', d.getTime(), { path: "/" , expires: d});
-    }
-
+    // The following steps is to get clientID from google analytics and save it to cookies
+    const { cookies } = this.props;
+    var clientId = null;
+    ReactGA.ga(
+      function(tracker){        
+        clientId = tracker.get('clientId');
+        console.log(clientId);
+    });   
+    cookies.set('userID', clientId , { path: "/" });
     console.log("the userID in cookie is " + this.state.userID);
 
     /*if(this.state.allAgesSelected){

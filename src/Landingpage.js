@@ -1,7 +1,7 @@
 import React from 'react';
 
 import App from './App';
-import { PageView, initGA, GaEvent } from './Tracking';
+import { PageView, initGA, GaEvent, } from './Tracking';
 import './LandingPage.css';
 import calllogo from './assets/Logos/logo_03-02.png';
 
