@@ -1,5 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import ReactGA from "react-ga"; 
+
+import { GaEvent } from '../Tracking';
 import '../Button.css';
 import TestsModal from './TestsModal';
 import TestListFR from '../JSONFolder/29JanuaryHtmlTest-FR.json';
@@ -23,6 +26,7 @@ class Tests extends React.Component {
   }
 
   helpClicked = () => {
+    console.log(this.props.userConfig.gender);
     this.setState({
       isOpen: !this.state.isOpen,
       headerText: this.props.lang.test_help_header,
@@ -42,7 +46,12 @@ class Tests extends React.Component {
       <div>
         <button className="button button2" onClick={this.helpClicked}>?</button>
 
-        <FilterableTestTable tests={this.props.data(this.state.TestList, this.props.userConfig)} text={this.props.lang.test_search_bar_placeholder} />
+        <FilterableTestTable 
+          tests={
+            this.props.data(this.state.TestList, this.props.userConfig)
+            } 
+          userConfig = {this.props.userConfig}
+          text={this.props.lang.test_search_bar_placeholder} />
 
         <TestsModal show={this.state.isOpen}
           onClose={this.toggleModal}
@@ -65,9 +74,23 @@ Tests.propTypes = {
 
 class TestRow extends React.Component {
 
-  openDetails = (id) => {
-    var details = document.getElementById(id);
-    details.open = true;
+  rowToggled = ( title ) => {
+    console.log( title );
+    var pageviewURL = "tests/" + title;
+    console.log(pageviewURL);
+    ReactGA.pageview(pageviewURL);
+    var label = {
+      nav: 'tests',
+      user: this.props.userInfo.userID,
+      gender: this.props.userInfo.gender,
+      age: this.props.userInfo.age,
+      language: this.props.userInfo.language,
+      role: this.props.userInfo.patient_provider,
+      category: title
+    }
+    var labelString = JSON.stringify(label);
+    console.log(labelString);
+    GaEvent("tests", title, labelString);
   }
 
   render() {
@@ -119,7 +142,10 @@ class TestRow extends React.Component {
 
 
     return (
-      <details id={this.props.test.name}>
+      <details 
+        id={this.props.test.name}
+        onToggle = { () => this.rowToggled(this.props.test.name) }
+      >
         <summary><font size="+1"><b>{this.props.test.name}</b></font></summary>
         <div>{sujectArray}</div>
       </details>
@@ -157,7 +183,9 @@ class TestTable extends React.Component {
       rows.push(<div key={index} style={backdroplistItemStyle}>
         <div style={listItemStyle}>
           <TestRow
-            test={test} />
+            test={test} 
+            userInfo = {this.props.userConfig}
+            />
         </div>
       </div>);
       index++;
@@ -225,6 +253,7 @@ class FilterableTestTable extends React.Component {
         <TestTable
           tests={this.props.tests}
           filterText={this.state.filterText}
+          userConfig={this.props.userConfig}
         />
       </div>
     );

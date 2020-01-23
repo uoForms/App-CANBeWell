@@ -1,5 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import ReactGA from "react-ga"; 
+
+import { GaEvent } from '../Tracking';
 import '../Button.css';
 import TopicsModal from './TopicsModal';
 import TopicListFR from '../JSONFolder/17MarchHtmlTopic-FR.json';
@@ -42,7 +45,10 @@ class Topics extends React.Component {
         {/*your help button in the right hand corner*/}
         {/*<button className="button button2" onClick={this.helpClicked}>?</button>*/}
 
-        <FilterableTopicTable topics={this.props.data(this.state.TopicList, this.props.userConfig)} text={this.props.lang.topic_search_bar_placeholder} />
+        <FilterableTopicTable 
+          topics={this.props.data(this.state.TopicList, this.props.userConfig)} 
+          userConfig={this.props.userConfig}
+          text={this.props.lang.topic_search_bar_placeholder} />
 
         {/*help dialog box*/}
         <TopicsModal show={this.state.isOpen}
@@ -66,11 +72,24 @@ Topics.propTypes = {
 
 class TopicRow extends React.Component {
 
-  //open another topic/test
-  /*openDetails = (id) => {
-    var details = document.getElementById(id);
-    details.open = true;
-  }*/
+  rowToggled = ( title ) => {
+    console.log( title );
+    var pageviewURL = "topics/" + title;
+    console.log(pageviewURL);
+    ReactGA.pageview(pageviewURL);
+    var label = {
+      nav: 'topics',
+      user: this.props.userInfo.userID,
+      gender: this.props.userInfo.gender,
+      age: this.props.userInfo.age,
+      language: this.props.userInfo.language,
+      role: this.props.userInfo.patient_provider,
+      category: title
+    }
+    var labelString = JSON.stringify(label);
+    console.log(labelString);
+    GaEvent("topics", title, labelString);
+  }
 
   render() {
 
@@ -158,7 +177,10 @@ class TopicRow extends React.Component {
 
 
     return (
-      <details id={this.props.topic.name}>
+      <details 
+        id={this.props.topic.name}
+        onToggle = { () => this.rowToggled(this.props.topic.name) }
+      >
         <summary><font size="+1"><b>{this.props.topic.name}</b></font></summary>
         <div>{'\n'}{sujectArray}</div>
       </details>
@@ -197,7 +219,9 @@ class TopicTable extends React.Component {
       }
       rows.push(<div key={index} style={backdroplistItemStyle}>
         <div style={listItemStyle}>
-          <TopicRow topic={topic} />
+          <TopicRow 
+            topic={topic}
+            userInfo={this.props.userConfig} />
         </div>
       </div>);
       index++;
@@ -264,6 +288,7 @@ class FilterableTopicTable extends React.Component {
         />
         <TopicTable
           topics={this.props.topics}
+          userConfig={this.props.userConfig}
           filterText={this.state.filterText}
         />
       </div>

@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import ReactGA from "react-ga"; 
+
 import BodyModal from './BodyModal';
-import { PageView, initGA, Event } from '../Tracking';
+import { GaEvent } from '../Tracking';
 
 //Import Male PNG
 import Male from '../assets/MaleBody/male_all-01.png';
@@ -49,9 +51,10 @@ class Anatomy extends React.Component {
 
   constructor(props) {
     super(props);
+
     this.state = {
       isOpen: false,
-      display: []//{name: "" , body: [{subject: "", text: ""}]}
+      display: [],//{name: "" , body: [{subject: "", text: ""}]}
     };
   }
 
@@ -68,7 +71,21 @@ class Anatomy extends React.Component {
     if (organ !== "") {
       try {
         console.log(organ);
-        Event("Organ", organ, organ+" clicked")
+        var pageviewURL = "body/" + button;
+        console.log(pageviewURL);
+        ReactGA.pageview(pageviewURL);
+        var label = {
+          nav: 'body',
+          user: this.props.userInfo.userID,
+          gender: this.props.userInfo.gender,
+          age: this.props.userInfo.age,
+          language: this.props.userInfo.language,
+          role: this.props.userInfo.patient_provider,
+          category: button
+        }
+        var labelString = JSON.stringify(label);
+        console.log(labelString);
+        GaEvent("body", button, labelString);
         document.getElementById(organ).style.visibility = "visible";
       } catch (err) { }
     }
@@ -93,6 +110,22 @@ class Anatomy extends React.Component {
   }
 
   iconClicked = (button, text) => {
+
+    var pageviewURL = "body/" + button;
+    console.log(pageviewURL);
+    ReactGA.pageview(pageviewURL);
+    var label = {
+      nav: 'body',
+      user: this.props.userInfo.userID,
+      gender: this.props.userInfo.gender,
+      age: this.props.userInfo.age,
+      language: this.props.userInfo.language,
+      role: this.props.userInfo.patient_provider,
+      category: button
+    }
+    var labelString = JSON.stringify(label);
+    console.log(labelString);
+    GaEvent("body", button, labelString);
 
     this.setState({
       organSelected: text

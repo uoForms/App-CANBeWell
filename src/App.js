@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { withCookies, Cookies } from 'react-cookie';
 import { instanceOf } from 'prop-types';
+import ReactGA from "react-ga";
 
-import { PageView, initGA, Event } from './Tracking';
 import Lang from './Lang/Lang.json';
 import './App.css';
 import './Button.css';
@@ -42,7 +42,7 @@ class App extends Component {
       language: null
     };// = getUserInfo();
     let DataToDisplay = new Data(this.props.appLanguage);
-    console.log(this.props.appLanguage);
+    //console.log(this.props.appLanguage);
     //DataToDisplay.props = this.props.applanguage;
     var app_language = this.props.appLanguage;
 
@@ -68,7 +68,7 @@ class App extends Component {
       //allowToClose: false, //obselete! we use to make the user agree before they could press agree
     };
 
-    console.log("in the contructor: " + (typeof this.state.allAgesSelected));
+    //console.log("in the contructor: " + (typeof this.state.allAgesSelected));
 
     this.handleChange = this.handleChange.bind(this);
     this.handleGenderChange = this.handleGenderChange.bind(this);
@@ -91,18 +91,21 @@ class App extends Component {
       }
     } catch (err) { }
 
-    console.log("when mounted: " + this.state.allAgesSelected);
+    //console.log("when mounted: " + this.state.allAgesSelected);
 
-    if (this.state.userID === undefined) {
-      const { cookies } = this.props;
-      let d = new Date();
-      console.log(d.getTime());
-      let exdays = 90;
-      d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-      cookies.set('userID', d.getTime(), { path: "/" , expires: d});
-    }
+    // The following steps is to get clientID from google analytics and save it to cookies
+    const { cookies } = this.props;
+    var clientId = null;
+    ReactGA.ga(
+      function(tracker){        
+        clientId = tracker.get('clientId');
+        //console.log(clientId);
+    });   
+    cookies.set('userID', clientId , { path: "/" });
+    //console.log("the userID in cookie is " + this.state.userID);
 
-    console.log("the userID in cookie is " + this.state.userID);
+    //count a pageview of body 
+    ReactGA.pageview('body');
 
     /*if(this.state.allAgesSelected){
       document.getElementById("myCheck").style.backgroundColor = "#CCCCCC";
@@ -180,7 +183,7 @@ class App extends Component {
     document.getElementById("body").classList = 'active';
     document.getElementById("topic").classList = '';
     document.getElementById("test").classList = '';
-    Event("Menu", "Body", "Body Menu");
+    ReactGA.pageview('body');
   }
   topicsClicked = (e) => {
     this.setState({
@@ -192,7 +195,7 @@ class App extends Component {
     document.getElementById("body").classList = '';
     document.getElementById("topic").classList = 'active';
     document.getElementById("test").classList = '';
-    Event("Menu", "Topic", "Topic Menu")
+    ReactGA.pageview('topic');
   }
   testsClicked = (e) => {
     this.setState({
@@ -204,7 +207,7 @@ class App extends Component {
     document.getElementById("body").classList = '';
     document.getElementById("topic").classList = '';
     document.getElementById("test").classList = 'active';
-    Event("Menu", "Test", "Test menu")
+    ReactGA.pageview('test');
   }
 
   genderIconClicked = () => {
