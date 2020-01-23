@@ -81,7 +81,7 @@ class Anatomy extends React.Component {
           age: this.props.userInfo.age,
           language: this.props.userInfo.language,
           role: this.props.userInfo.patient_provider,
-          icon: button
+          category: button
         }
         var labelString = JSON.stringify(label);
         console.log(labelString);
@@ -121,7 +121,7 @@ class Anatomy extends React.Component {
       age: this.props.userInfo.age,
       language: this.props.userInfo.language,
       role: this.props.userInfo.patient_provider,
-      icon: button
+      category: button
     }
     var labelString = JSON.stringify(label);
     console.log(labelString);
