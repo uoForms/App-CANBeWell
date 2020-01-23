@@ -77,7 +77,7 @@ class Anatomy extends React.Component {
         var label = {
           nav: 'body',
           user: this.props.userInfo.userID,
-          gender: this.props.gender,
+          gender: this.props.userInfo.gender,
           age: this.props.userInfo.age,
           language: this.props.userInfo.language,
           role: this.props.userInfo.patient_provider,
@@ -117,7 +117,7 @@ class Anatomy extends React.Component {
     var label = {
       nav: 'body',
       user: this.props.userInfo.userID,
-      gender: this.props.gender,
+      gender: this.props.userInfo.gender,
       age: this.props.userInfo.age,
       language: this.props.userInfo.language,
       role: this.props.userInfo.patient_provider,
