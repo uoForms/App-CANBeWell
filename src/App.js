@@ -97,11 +97,11 @@ class App extends Component {
     const { cookies } = this.props;
     var clientId = null;
     ReactGA.ga(
-      function(tracker){        
+      function (tracker) {
         clientId = tracker.get('clientId');
         //console.log(clientId);
-    });   
-    cookies.set('userID', clientId , { path: "/" });
+      });
+    cookies.set('userID', clientId, { path: "/" });
     //console.log("the userID in cookie is " + this.state.userID);
 
     //count a pageview of body 
@@ -492,10 +492,12 @@ class App extends Component {
                       <input type="radio" value="female" checked={this.state.gender == 'female'} onChange={this.handleGenderChange} />
                       {this.state.lang.female}
                     </label>
-                    <label>
-                      <input type="radio" value="all_genders" checked={this.state.gender == 'all_genders'} onChange={this.handleGenderChange} />
-                      {this.state.lang.all_genders}
-                    </label>
+                    {this.state.user === 'provider' || null ?
+                      (<label>
+                        <input type="radio" value="all_genders" checked={this.state.gender == 'all_genders'} onChange={this.handleGenderChange} />
+                          {this.state.lang.all_genders}
+                      </label>) : (<label></label>)
+                    }
                   </div>
                 </form>
               </div>
@@ -572,10 +574,13 @@ class App extends Component {
                         {this.state.lang.female}
                       </label>
 
-                      <label>
+                      {this.state.user === 'provider' || null ?
+                      (<label>
                         <input type="radio" value="all_genders" checked={this.state.gender == 'all_genders'} onChange={this.handleGenderChange} />
-                        {this.state.lang.all_genders}
-                      </label>
+                          {this.state.lang.all_genders}
+                      </label>) : (<label></label>)
+                      }
+
                     </div>
                   </form>
                 </div>
