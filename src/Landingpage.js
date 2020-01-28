@@ -44,9 +44,11 @@ class LandingPage extends React.Component {
             <Col xs={6}>
               <Card border="light" style={{ border: 0 ,width: '45vw'}}>
                 <Card.Body>
-                  <Card.Title style={{ textAlign: 'left'}}>Do not use this app for health advice.<br /></Card.Title>
-                  <Card.Text style={{ textAlign: 'left'}}>It is still under development.
-                    Ask your health care provider for all health advice.
+                  <Card.Title style={{ textAlign: 'left'}}>
+                    •	Do you want to be healthy? If yes, this Canadian app is for YOU!  <br />
+                    •	Did you know that health advice in Canada is different from other countries? And it changes with time? 
+                    </Card.Title>
+                  <Card.Text style={{ textAlign: 'left'}}>We find the best science for being healthy and update this app regularly. Start by choosing your language below.
               </Card.Text>
                 </Card.Body>
               </Card>
@@ -54,9 +56,13 @@ class LandingPage extends React.Component {
               <Col xs={6}>
               <Card border="light" style={{ border: 0, width: '45vw' }}>
                 <Card.Body>
-                 <Card.Title style={{ textAlign: 'left'}}>Ne pas utiliser cette application pour des conseils de santé.</Card.Title>
-                 <Card.Text style={{ textAlign: 'left'}}>L’appli  est encore en développement.
-                    Veuillez consulter votre professionnel de la santé.</Card.Text>
+                 <Card.Title style={{ textAlign: 'left'}}>
+                  •	Voulez-vous être en santé? Si oui utilisez cette appli canadienne !<br />
+                  •	Saviez-vous que les conseils pour la santé sont différents au Canada qu’ailleurs? Et que ces conseils changent souvent?
+                 </Card.Title>
+                 <Card.Text style={{ textAlign: 'left'}}>
+                 Ici nous résumons les conseils basés sur la science et nous faisons une mise a jour régulière. Choisissez votre langue préférée pour commencer. 
+                 </Card.Text>
                 </Card.Body>
               </Card>
               </Col>
