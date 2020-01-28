@@ -198,10 +198,12 @@ class InstructionModal extends React.Component {
                     {this.props.lang.female}
                   </label>
 
-                  <label>
-                    <input type="radio" value="all_genders" checked={this.state.selectedGender == 'all_genders'} onChange={this.handleGenderChange} />
-                    {this.props.lang.other}
-                  </label>
+                  {/* {this.state.selectedPatientProvider === 'provider' || null ?
+                    (<label>
+                      <input type="radio" value="all_genders" checked={this.state.selectedGender == 'all_genders'} onChange={this.handleGenderChange} />
+                      {this.props.lang.other}
+                    </label>) : (<label></label>)
+                    } */}
                 </div>
               </form>
             </div>
