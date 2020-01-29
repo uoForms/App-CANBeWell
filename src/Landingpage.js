@@ -42,7 +42,7 @@ class LandingPage extends React.Component {
             <Container>
             <Row>
             <Col xs={6}>
-              <Card border="light" style={{ border: 0 ,width: '42vw'}}>
+              <Card border="light" style={{ border: 0 ,width: '45vw'}}>
                 <Card.Body>
                   <Card.Title style={{ textAlign: 'left'}}>
                   Do you want to be healthy and prevent disease? If yes, this Canadian app is for YOU! 
@@ -51,7 +51,7 @@ class LandingPage extends React.Component {
               </Card>
               </Col>
               <Col xs={6}>
-              <Card border="light" style={{ border: 0, width: '42vw' }}>
+              <Card border="light" style={{ border: 0, width: '45vw' }}>
                 <Card.Body>
                  <Card.Title style={{ textAlign: 'left'}}>
                  Voulez-vous être en santé et prévenir les maladies? Si oui utilisez cette appli canadienne !

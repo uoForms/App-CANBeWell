@@ -92,8 +92,10 @@ div.fixed {
 .langButtonStyle{
   background-color: #0a99ecc9;
   border-color: #0a99ecc9;
+  font-size: larger;
+  font-weight: bolder;
   color: #F0F0F0;
-  padding: 15px 25px 15px 25px;
+  padding: 10px 15px 10px 15px;
   margin: 5px 10px 5px 10px;
   border-radius: 25px;
 }
