@@ -79,10 +79,32 @@ export const matchUserDevice = () => {
     else if ( clientNav.userAgent.indexOf('Windows') != -1 ){
       clientOS = 'Windows'; 
     } 
-    
+
     return {
       OS: clientOS,
       Device: clientDevice,
       Browser: clientBrowser
     }
+};
+
+export const GaUserEvent = ( nav, category, userInfo) => {
+  var pageviewURL = nav + "/" + category;
+    console.log(pageviewURL);
+    ReactGA.pageview(pageviewURL);
+    var deviceInfo = matchUserDevice(); 
+    var label = {
+      nav: nav,
+      user: userInfo.userID,
+      gender: userInfo.gender,
+      age: userInfo.age,
+      language: userInfo.language,
+      role: userInfo.patient_provider,
+      category: category,
+      os: deviceInfo.OS,
+      device: deviceInfo.Device,
+      browser: deviceInfo.Browser
+    }
+    var labelString = JSON.stringify(label);
+    console.log(labelString);
+    GaEvent( nav, category, labelString);
 };

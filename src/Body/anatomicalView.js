@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import ReactGA from "react-ga"; 
 
 import BodyModal from './BodyModal';
-import { GaEvent, matchUserDevice } from '../Tracking';
+import { GaUserEvent } from '../Tracking';
 
 //Import Male PNG
 import Male from '../assets/MaleBody/male_all-01.png';
@@ -70,26 +70,7 @@ class Anatomy extends React.Component {
   organClicked = (button, text, organ) => {
     if (organ !== "") {
       try {
-        console.log(organ);
-        var pageviewURL = "body/" + text;
-        console.log(pageviewURL);
-        ReactGA.pageview(pageviewURL);
-        var deviceInfo = matchUserDevice(); 
-        var label = {
-          nav: 'body',
-          user: this.props.userInfo.userID,
-          gender: this.props.userInfo.gender,
-          age: this.props.userInfo.age,
-          language: this.props.userInfo.language,
-          role: this.props.userInfo.patient_provider,
-          category: text,
-          os: deviceInfo.OS,
-          device: deviceInfo.Device,
-          browser: deviceInfo.Browser
-        }
-        var labelString = JSON.stringify(label);
-        console.log(labelString);
-        GaEvent("body", button, labelString);
+        GaUserEvent( "topics", text, this.props.userInfo);
         document.getElementById(organ).style.visibility = "visible";
       } catch (err) { }
     }
@@ -115,25 +96,7 @@ class Anatomy extends React.Component {
 
   iconClicked = (button, text) => {
 
-    var pageviewURL = "body/" + text;
-    console.log(pageviewURL);
-    ReactGA.pageview(pageviewURL);
-    var deviceInfo = matchUserDevice(); 
-    var label = {
-      nav: 'body',
-      user: this.props.userInfo.userID,
-      gender: this.props.userInfo.gender,
-      age: this.props.userInfo.age,
-      language: this.props.userInfo.language,
-      role: this.props.userInfo.patient_provider,
-      category: text,
-      os: deviceInfo.OS,
-      device: deviceInfo.Device,
-      browser: deviceInfo.Browser
-    }
-    var labelString = JSON.stringify(label);
-    console.log(labelString);
-    GaEvent("body", button, labelString);
+    GaUserEvent( "topics", text, this.props.userInfo);
 
     this.setState({
       organSelected: text
