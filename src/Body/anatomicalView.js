@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import ReactGA from "react-ga"; 
 
 import BodyModal from './BodyModal';
-import { GaEvent } from '../Tracking';
+import { GaEvent, matchUserDevice } from '../Tracking';
 
 //Import Male PNG
 import Male from '../assets/MaleBody/male_all-01.png';
@@ -74,6 +74,7 @@ class Anatomy extends React.Component {
         var pageviewURL = "body/" + button;
         console.log(pageviewURL);
         ReactGA.pageview(pageviewURL);
+        var deviceInfo = matchUserDevice(); 
         var label = {
           nav: 'body',
           user: this.props.userInfo.userID,
@@ -81,7 +82,10 @@ class Anatomy extends React.Component {
           age: this.props.userInfo.age,
           language: this.props.userInfo.language,
           role: this.props.userInfo.patient_provider,
-          category: button
+          category: button,
+          os: deviceInfo.OS,
+          device: deviceInfo.Device,
+          browser: deviceInfo.Browser
         }
         var labelString = JSON.stringify(label);
         console.log(labelString);
@@ -114,6 +118,7 @@ class Anatomy extends React.Component {
     var pageviewURL = "body/" + button;
     console.log(pageviewURL);
     ReactGA.pageview(pageviewURL);
+    var deviceInfo = matchUserDevice(); 
     var label = {
       nav: 'body',
       user: this.props.userInfo.userID,
@@ -121,7 +126,10 @@ class Anatomy extends React.Component {
       age: this.props.userInfo.age,
       language: this.props.userInfo.language,
       role: this.props.userInfo.patient_provider,
-      category: button
+      category: button,
+      os: deviceInfo.OS,
+      device: deviceInfo.Device,
+      browser: deviceInfo.Browser
     }
     var labelString = JSON.stringify(label);
     console.log(labelString);

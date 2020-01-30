@@ -105,10 +105,8 @@ class App extends Component {
     //count a pageview of body 
     ReactGA.pageview('body');
 
-    /// The following is get the device info from mobile-detect.js    
-    
-    var deviceInfo = matchUserDevice();
-    
+    /// The following is get the device info from tracking.js    
+    var deviceInfo = matchUserDevice();   
     console.log(deviceInfo);
     /*if(this.state.allAgesSelected){
       document.getElementById("myCheck").style.backgroundColor = "#CCCCCC";

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ReactGA from "react-ga"; 
 
-import { GaEvent } from '../Tracking';
+import { GaEvent, matchUserDevice } from '../Tracking';
 import '../Button.css';
 import TopicsModal from './TopicsModal';
 import TopicListFR from '../JSONFolder/17MarchHtmlTopic-FR.json';
@@ -77,6 +77,7 @@ class TopicRow extends React.Component {
     var pageviewURL = "topics/" + title;
     console.log(pageviewURL);
     ReactGA.pageview(pageviewURL);
+    var deviceInfo = matchUserDevice(); 
     var label = {
       nav: 'topics',
       user: this.props.userInfo.userID,
@@ -84,7 +85,10 @@ class TopicRow extends React.Component {
       age: this.props.userInfo.age,
       language: this.props.userInfo.language,
       role: this.props.userInfo.patient_provider,
-      category: title
+      category: title,
+      os: deviceInfo.OS,
+      device: deviceInfo.Device,
+      browser: deviceInfo.Browser
     }
     var labelString = JSON.stringify(label);
     console.log(labelString);
