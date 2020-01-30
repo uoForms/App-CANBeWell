@@ -71,7 +71,7 @@ class Anatomy extends React.Component {
     if (organ !== "") {
       try {
         console.log(organ);
-        var pageviewURL = "body/" + button;
+        var pageviewURL = "body/" + text;
         console.log(pageviewURL);
         ReactGA.pageview(pageviewURL);
         var deviceInfo = matchUserDevice(); 
@@ -82,7 +82,7 @@ class Anatomy extends React.Component {
           age: this.props.userInfo.age,
           language: this.props.userInfo.language,
           role: this.props.userInfo.patient_provider,
-          category: button,
+          category: text,
           os: deviceInfo.OS,
           device: deviceInfo.Device,
           browser: deviceInfo.Browser
@@ -115,7 +115,7 @@ class Anatomy extends React.Component {
 
   iconClicked = (button, text) => {
 
-    var pageviewURL = "body/" + button;
+    var pageviewURL = "body/" + text;
     console.log(pageviewURL);
     ReactGA.pageview(pageviewURL);
     var deviceInfo = matchUserDevice(); 
@@ -126,7 +126,7 @@ class Anatomy extends React.Component {
       age: this.props.userInfo.age,
       language: this.props.userInfo.language,
       role: this.props.userInfo.patient_provider,
-      category: button,
+      category: text,
       os: deviceInfo.OS,
       device: deviceInfo.Device,
       browser: deviceInfo.Browser
