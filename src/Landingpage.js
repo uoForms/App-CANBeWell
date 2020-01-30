@@ -4,7 +4,10 @@ import App from './App';
 import { PageView, initGA } from './Tracking';
 import './LandingPage.css';
 import calllogo from './assets/Logos/logo_03-02.png';
-import { Card, Row, Col, Container } from 'react-bootstrap';
+import Card from 'react-bootstrap/Card';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 class LandingPage extends React.Component {
