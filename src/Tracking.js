@@ -1,4 +1,5 @@
 import ReactGA from "react-ga";
+import MobileDetect from 'mobile-detect';
 
 export const initGA = (trackingID) => {           
     ReactGA.initialize(
@@ -35,4 +36,53 @@ export const GaGetID = () => {
       function(tracker){
         return tracker.get('clientId');
     });
+};
+
+export const matchBrowser = () =>{
+  var nAgt = window.navigator.userAgent;
+  var browserName = 'other';
+  if (nAgt.indexOf("Opera")!=-1) {
+    browserName = "Opera";
+  }
+  else if (nAgt.indexOf("MSIE")!=-1) {
+    browserName = "Microsoft Internet Explorer";
+  }
+  else if (nAgt.indexOf("Chrome")!=-1) {
+    browserName = "Chrome";
+  }
+  else if (nAgt.indexOf("Safari")!=-1) {
+    browserName = "Safari";
+  }
+  else if (nAgt.indexOf("Firefox")!=-1) {
+    browserName = "Firefox";
+  }
+  return browserName;
+};
+
+export const matchUserDevice = () => {
+  var clientNav = window.navigator;
+    var md = new MobileDetect(clientNav.userAgent)
+    var mobileBrowser = md.userAgent();
+    var clientOS = 'Other';
+    var clientDevice = 'Desktop';
+    var clientBrowser = matchBrowser();
+    // dectect os
+    if ( mobileBrowser ){
+      clientOS = md.os();
+      clientDevice = md.phone() ? md.phone() : md.tablet();
+      clientBrowser = mobileBrowser;
+    }
+    else if ( clientNav.userAgent.indexOf('Mac') != -1 ){
+      clientOS = 'MacOS';
+      clientDevice = 'Mac';       
+    }
+    else if ( clientNav.userAgent.indexOf('Windows') != -1 ){
+      clientOS = 'Windows'; 
+    } 
+    
+    return {
+      OS: clientOS,
+      Device: clientDevice,
+      Browser: clientBrowser
+    }
 };
