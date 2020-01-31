@@ -493,12 +493,12 @@ class App extends Component {
                       <input type="radio" value="female" checked={this.state.gender == 'female'} onChange={this.handleGenderChange} />
                       {this.state.lang.female}
                     </label>
-                    {this.state.user === 'provider' || null ?
+                    {/*this.state.user === 'provider' || null ?
                       (<label>
                         <input type="radio" value="all_genders" checked={this.state.gender == 'all_genders'} onChange={this.handleGenderChange} />
                           {this.state.lang.all_genders}
                       </label>) : (<label></label>)
-                    }
+                    */}
                   </div>
                 </form>
               </div>
@@ -575,12 +575,12 @@ class App extends Component {
                         {this.state.lang.female}
                       </label>
 
-                      {this.state.user === 'provider' || null ?
+                      {/*this.state.user === 'provider' || null ?
                       (<label>
                         <input type="radio" value="all_genders" checked={this.state.gender == 'all_genders'} onChange={this.handleGenderChange} />
                           {this.state.lang.all_genders}
                       </label>) : (<label></label>)
-                      }
+                      */}
 
                     </div>
                   </form>

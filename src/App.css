@@ -42,6 +42,7 @@ body {
 
 .topicBody{
   margin-bottom: 12px;
+  font-size: medium;
 }
 
 .instruction{
@@ -254,7 +255,13 @@ body {
   padding: 0px;
   width: 99%;
 }
-
+details {
+  font-size: 1.5em;
+}
+summary {
+  font-size: 1.5em;
+  font-weight: bolder; 
+}
 summary::-webkit-details-marker {
   display: none
 }
