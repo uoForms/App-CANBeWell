@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ReactGA from "react-ga"; 
 
-import { GaEvent } from '../Tracking';
+import { GaUserEvent } from '../Tracking';
 import '../Button.css';
 import TestsModal from './TestsModal';
 import TestListFR from '../JSONFolder/29JanuaryHtmlTest-FR.json';
@@ -75,22 +75,7 @@ Tests.propTypes = {
 class TestRow extends React.Component {
 
   rowToggled = ( title ) => {
-    console.log( title );
-    var pageviewURL = "tests/" + title;
-    console.log(pageviewURL);
-    ReactGA.pageview(pageviewURL);
-    var label = {
-      nav: 'tests',
-      user: this.props.userInfo.userID,
-      gender: this.props.userInfo.gender,
-      age: this.props.userInfo.age,
-      language: this.props.userInfo.language,
-      role: this.props.userInfo.patient_provider,
-      category: title
-    }
-    var labelString = JSON.stringify(label);
-    console.log(labelString);
-    GaEvent("tests", title, labelString);
+    GaUserEvent( "tests", title, this.props.userInfo);
   }
 
   render() {

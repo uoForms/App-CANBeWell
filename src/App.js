@@ -3,6 +3,7 @@ import { withCookies, Cookies } from 'react-cookie';
 import { instanceOf } from 'prop-types';
 import ReactGA from "react-ga";
 
+import { matchUserDevice } from './Tracking';
 import Lang from './Lang/Lang.json';
 import './App.css';
 import './Button.css';
@@ -20,8 +21,6 @@ import IconGender from './listicon.png';
 //import {setPatientProvider} from './UserInfo';
 //import {setAge} from './UserInfo';
 //import {getUserInfo} from './UserInfo';
-
-
 
 
 class App extends Component {
@@ -45,6 +44,7 @@ class App extends Component {
     //console.log(this.props.appLanguage);
     //DataToDisplay.props = this.props.applanguage;
     var app_language = this.props.appLanguage;
+
 
     this.state = {
       userID: cookies.get('userID'),
@@ -90,10 +90,9 @@ class App extends Component {
         document.getElementById("genderSelector").style.display = "block";
       }
     } catch (err) { }
-
     //console.log("when mounted: " + this.state.allAgesSelected);
 
-    // The following steps is to get clientID from google analytics and save it to cookies
+    /// The following steps is to get clientID from google analytics and save it to cookies
     const { cookies } = this.props;
     var clientId = null;
     ReactGA.ga(
@@ -103,10 +102,12 @@ class App extends Component {
       });
     cookies.set('userID', clientId, { path: "/" });
     //console.log("the userID in cookie is " + this.state.userID);
-
     //count a pageview of body 
     ReactGA.pageview('body');
 
+    /// The following is get the device info from tracking.js    
+    var deviceInfo = matchUserDevice();   
+    console.log(deviceInfo);
     /*if(this.state.allAgesSelected){
       document.getElementById("myCheck").style.backgroundColor = "#CCCCCC";
     }else{
