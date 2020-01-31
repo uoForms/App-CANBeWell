@@ -7,7 +7,7 @@
     "bootstrap": "^4.4.1",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.15.1",
-    "firebase": "^7.6.1",
+    "firebase": "^7.8.0",
     "mobile-detect": "^1.4.4",
     "node-pre-gyp": "^0.14.0",
     "react": "^16.12.0",
