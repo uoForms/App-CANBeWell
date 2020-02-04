@@ -5,8 +5,8 @@ import ReactGA from "react-ga";
 import { GaUserEvent } from '../Tracking';
 import '../Button.css';
 import TopicsModal from './TopicsModal';
-import TopicListFR from '../JSONFolder/17MarchHtmlTopic-FR.json';
-import TopicListEN from '../JSONFolder/28Oct19HtmlTopic-EN.json';
+import TopicListFR from '../JSONFolder/HtmlTopic-FR.json';
+import TopicListEN from '../JSONFolder/HtmlTopic-EN.json';
 
 class Topics extends React.Component {
 

@@ -5,8 +5,8 @@ import ReactGA from "react-ga";
 import { GaUserEvent } from '../Tracking';
 import '../Button.css';
 import TestsModal from './TestsModal';
-import TestListFR from '../JSONFolder/29JanuaryHtmlTest-FR.json';
-import TestListEN from '../JSONFolder/29JanuaryHtmlTest-EN.json';
+import TestListFR from '../JSONFolder/HtmlTest-FR.json';
+import TestListEN from '../JSONFolder/HtmlTest-EN.json';
 
 class Tests extends React.Component {
 
