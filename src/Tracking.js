@@ -1,5 +1,6 @@
 import ReactGA from "react-ga";
 import MobileDetect from 'mobile-detect';
+import { db } from './firebase';
 
 export const initGA = (trackingID) => {           
     ReactGA.initialize(
@@ -99,7 +100,7 @@ export const GaUserEvent = ( nav, category, userInfo) => {
       age: userInfo.age,
       language: userInfo.language,
       role: userInfo.patient_provider,
-      category: category,
+      category: category.replace("/", " or "),
       os: deviceInfo.OS,
       device: deviceInfo.Device,
       browser: deviceInfo.Browser
@@ -107,4 +108,18 @@ export const GaUserEvent = ( nav, category, userInfo) => {
     var labelString = JSON.stringify(label);
     console.log(labelString);
     GaEvent( nav, category, labelString);
+    writeClick(label);
 };
+
+export const writeClick = ( label ) =>{
+  let data = {
+    user: label.user,
+    gender: label.gender,
+    age: label.age,
+    language: label.language,
+    os: label.os,
+    device: label.device,
+    browser: label.browser
+  }
+  db.ref(label.role + '/' + label.nav + '/' + label.category).push(data)
+}
