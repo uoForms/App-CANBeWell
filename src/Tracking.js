@@ -100,7 +100,7 @@ export const GaUserEvent = ( nav, category, userInfo) => {
       age: userInfo.age,
       language: userInfo.language,
       role: userInfo.patient_provider,
-      category: category,
+      category: category.replace("/", " or "),
       os: deviceInfo.OS,
       device: deviceInfo.Device,
       browser: deviceInfo.Browser
