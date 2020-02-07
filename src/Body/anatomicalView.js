@@ -70,7 +70,7 @@ class Anatomy extends React.Component {
   organClicked = (button, text, organ) => {
     if (organ !== "") {
       try {
-        GaUserEvent( "topics", text, this.props.userInfo);
+        GaUserEvent( "body", text, this.props.userInfo);
         document.getElementById(organ).style.visibility = "visible";
       } catch (err) { }
     }
@@ -96,7 +96,7 @@ class Anatomy extends React.Component {
 
   iconClicked = (button, text) => {
 
-    GaUserEvent( "topics", text, this.props.userInfo);
+    GaUserEvent( "body", text, this.props.userInfo);
 
     this.setState({
       organSelected: text

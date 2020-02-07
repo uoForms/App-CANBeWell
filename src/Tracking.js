@@ -108,7 +108,7 @@ export const GaUserEvent = ( nav, category, userInfo) => {
     var labelString = JSON.stringify(label);
     console.log(labelString);
     GaEvent( nav, category, labelString);
-    writeClick(label)；
+    writeClick(label);
 };
 
 export const writeClick = ( label ) =>{
@@ -121,5 +121,5 @@ export const writeClick = ( label ) =>{
     device: label.device,
     browser: label.browser
   }
-  db.ref('role/' + label.role + '/nav' + label.nav + '/category' + label.category).push(data)
+  db.ref(label.role + '/' + label.nav + '/' + label.category).push(data)
 }
