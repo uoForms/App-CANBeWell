@@ -90,7 +90,6 @@ export const matchUserDevice = () => {
 
 export const GaUserEvent = ( nav, category, userInfo) => {
   var pageviewURL = nav + "/" + category;
-    console.log(pageviewURL);
     ReactGA.pageview(pageviewURL);
     var deviceInfo = matchUserDevice(); 
     var label = {
@@ -105,10 +104,48 @@ export const GaUserEvent = ( nav, category, userInfo) => {
       device: deviceInfo.Device,
       browser: deviceInfo.Browser
     }
-    var labelString = JSON.stringify(label);
-    console.log(labelString);
-    GaEvent( nav, category, labelString);
+    //var labelString = JSON.stringify(label);
+    let eventCatagory = getEventCatagory(label);
+    let eventAction = getEventAction(label);
+    let eventLabel = getEventLabel(label);
+    GaEvent( eventCatagory, eventAction, eventLabel);
     writeClick(label);
+};
+
+export const getEventCatagory = (label) => {
+  let role = label.role;
+  let nav = label.nav;
+  let category = label.category;
+  let string = role + '-' + nav + '-' + category
+  return string;
+};
+
+export const getEventAction = (label) => {
+  let os = label.os;
+  var browser = 'other'
+  switch(label.browser){
+    case 'Safari': 
+      browser = 'Safari';
+      break;
+    case 'Chrome':
+      browser = 'Chrome';
+      break;
+  }
+  let string = os + '-' + browser;
+  return string;
+};
+
+export const getEventLabel = (label) => {
+  var age = null;
+  if ( label.age === "all ages")
+    age = 'all ages';
+  else if ( label.age <= 30 )
+    age = 'Yong';
+  else if ( label.age <= 60 )
+    age = 'Middle age';
+  else age = 'Senior';
+  let string = label.gender + '-' + age + '-' + label.language;
+  return string;
 };
 
 export const writeClick = ( label ) =>{
