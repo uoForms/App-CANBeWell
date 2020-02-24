@@ -3,7 +3,6 @@ import { withCookies, Cookies } from 'react-cookie';
 import { instanceOf } from 'prop-types';
 import ReactGA from "react-ga";
 
-import { matchUserDevice } from './Tracking';
 import Lang from './Lang/Lang.json';
 import './App.css';
 import './Button.css';
@@ -38,7 +37,9 @@ class App extends Component {
       gender: null,
       patient_provider: null,
       age: null,
-      language: null
+      language: null,
+      lng: null,
+      lat: null
     };// = getUserInfo();
     let DataToDisplay = new Data(this.props.appLanguage);
     //DataToDisplay.props = this.props.applanguage;
@@ -64,6 +65,8 @@ class App extends Component {
       allAgesSelected: (cookies.get('_all_ages_selected') == "true") ? true : false,
       user: cookies.get('user') || 'patient',
       gender: cookies.get('gender'),
+      longitude: false,
+      latitude: false,
       //allowToClose: false, //obselete! we use to make the user agree before they could press agree
     };
 
@@ -98,26 +101,14 @@ class App extends Component {
     cookies.set('userID', clientId, { path: "/" });
     //count a pageview of body 
     ReactGA.pageview('body');
-
-    /// The following is get the device info from tracking.js    
-    var deviceInfo = matchUserDevice();   ;
-    /*if(this.state.allAgesSelected){
-      document.getElementById("myCheck").style.backgroundColor = "#CCCCCC";
-    }else{
-      document.getElementById("myCheck").style.backgroundColor = "#FFFFFF";
-    }*/
-    //TODO include ref to the database
-    /*const rootRef = firebase.database().ref().child('liver');
-    const topicsRef = rootRef.child('heading');
-    topicsRef.on('value', snap => {
+    
+    navigator.geolocation.getCurrentPosition(location => {
       this.setState({
-        topics: snap.val()
-      })
-    });*/
+        latitude: location.coords.latitude,
+        longitude: location.coords.longitude
+      });
+    });
   }
-
-  /*componentDidUpdate(){
-  }*/
 
   //toggle the config modif
   toggleConfigurationModal = () => {
@@ -384,7 +375,9 @@ class App extends Component {
       gender: this.state.gender,
       patient_provider: this.state.user,
       age: this.state.age,
-      language: this.state.language //TODO plese change that VERY important
+      language: this.state.language, //TODO plese change that VERY important
+      longitude: this.state.longitude,
+      latitude: this.state.latitude,
     };
 
     const fixedStyle = {

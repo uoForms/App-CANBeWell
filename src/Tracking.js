@@ -102,7 +102,9 @@ export const GaUserEvent = ( nav, category, userInfo) => {
       category: category.replace("/", " or "),
       os: deviceInfo.OS,
       device: deviceInfo.Device,
-      browser: deviceInfo.Browser
+      browser: deviceInfo.Browser,
+      longitude: userInfo.longitude,
+      latitude: userInfo.latitude,
     }
     //var labelString = JSON.stringify(label);
     let eventCatagory = getEventCatagory(label);
@@ -159,7 +161,9 @@ export const writeClick = ( label ) =>{
     category: label.category,
     os: label.os,
     device: label.device,
-    browser: label.browser
+    browser: label.browser,
+    longitude: label.longitude,
+    latitude: label.latitude
   };
   let date = formatDate( Date.now() );
   db.ref( date ).push(data)
