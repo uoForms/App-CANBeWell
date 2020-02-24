@@ -3,7 +3,7 @@ import { withCookies, Cookies } from 'react-cookie';
 import { instanceOf } from 'prop-types';
 import ReactGA from "react-ga";
 
-import { matchUserDevice } from './analytics/Tracking';
+import { matchUserDevice } from './Tracking';
 import Lang from './Lang/Lang.json';
 import './App.css';
 import './Button.css';
