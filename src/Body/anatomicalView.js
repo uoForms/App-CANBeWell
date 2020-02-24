@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import ReactGA from "react-ga"; 
 
 import BodyModal from './BodyModal';
-import { GaUserEvent } from '../Analytics/Tracking';
+import { GaUserEvent } from '../analytics/Tracking';
 
 //Import Male PNG
 import Male from '../assets/MaleBody/male_all-01.png';

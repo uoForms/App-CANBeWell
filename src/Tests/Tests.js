@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ReactGA from "react-ga"; 
 
-import { GaUserEvent } from '../Analytics/Tracking';
+import { GaUserEvent } from '../analytics/Tracking';
 import '../Button.css';
 import TestsModal from './TestsModal';
 import TestListFR from '../JSONFolder/HtmlTest-FR.json';
