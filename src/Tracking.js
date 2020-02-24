@@ -142,7 +142,7 @@ export const getEventLabel = (label) => {
   if ( label.age === "all ages")
     age = 'all ages';
   else if ( label.age <= 30 )
-    age = 'Yong';
+    age = 'Young';
   else if ( label.age <= 60 )
     age = 'Middle age';
   else age = 'Senior';
