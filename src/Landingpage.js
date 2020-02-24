@@ -1,7 +1,7 @@
 import React from 'react';
 
 import App from './App';
-import { PageView, initGA } from './analytic/Trackingng';
+import { PageView, initGA } from './Analytics/Tracking';
 import './LandingPage.css';
 import calllogo from './assets/Logos/logo_03-02.png';
 import Card from 'react-bootstrap/Card';
