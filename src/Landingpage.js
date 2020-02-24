@@ -1,7 +1,7 @@
 import React from 'react';
 
 import App from './App';
-import { PageView, initGA } from './Tracking';
+import { PageView, initGA } from './analytic/Trackingng';
 import './LandingPage.css';
 import calllogo from './assets/Logos/logo_03-02.png';
 import Card from 'react-bootstrap/Card';
@@ -32,6 +32,18 @@ class LandingPage extends React.Component {
   componentDidMount() {
     initGA('UA-151893001-1');
     PageView();
+
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(displayLocationInfo);
+    } else {
+      console.log('Cannot get location');
+    }
+    function displayLocationInfo(position) {
+      const lng = position.coords.longitude;
+      const lat = position.coords.latitude;
+    
+      console.log(`longitude: ${ lng } | latitude: ${ lat }`);
+    }
   }
 
   render() {

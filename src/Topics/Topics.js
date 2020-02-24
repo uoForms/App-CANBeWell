@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ReactGA from "react-ga"; 
 
-import { GaUserEvent } from '../Tracking';
+import { GaUserEvent } from '../analytics/Tracking';
 import '../Button.css';
 import TopicsModal from './TopicsModal';
 import TopicListFR from '../JSONFolder/HtmlTopic-FR.json';
