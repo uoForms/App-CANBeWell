@@ -150,13 +150,30 @@ export const getEventLabel = (label) => {
 
 export const writeClick = ( label ) =>{
   let data = {
+    nav: label.nav,
     user: label.user,
     gender: label.gender,
     age: label.age,
     language: label.language,
+    role: label.role,
+    category: label.category,
     os: label.os,
     device: label.device,
     browser: label.browser
-  }
-  db.ref(label.role + '/' + label.nav + '/' + label.category).push(data)
+  };
+  let date = formatDate( Date.now() );
+  db.ref( date ).push(data)
+}
+
+export const formatDate = ( date ) => {
+  let d = new Date(date),
+      mon = '' + ( d.getMonth() + 1 ),
+      day = '' + d.getDate(),
+      year = d.getFullYear();
+  
+  if( mon.length < 2)
+    mon = '0' + mon;
+  if( day.length < 2)
+    day = '0' + day;
+  return year + mon + day;
 }
