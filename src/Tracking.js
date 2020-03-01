@@ -151,8 +151,22 @@ export const getEventLabel = (label) => {
 };
 
 export const writeClick = ( label ) =>{
+  let data = {
+    nav: label.nav,
+    user: label.user,
+    gender: label.gender,
+    age: label.age,
+    language: label.language,
+    role: label.role,
+    category: label.category,
+    os: label.os,
+    device: label.device,
+    browser: label.browser,
+    longitude: label.longitude,
+    latitude: label.latitude
+  };
   let date = formatDate( Date.now() );
-  db.ref( date ).push(label);
+  db.ref( date ).push(data)
 }
 
 export const formatDate = ( date ) => {
