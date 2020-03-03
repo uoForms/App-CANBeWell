@@ -69,13 +69,12 @@ class App extends Component {
       latitude: false,
       //allowToClose: false, //obselete! we use to make the user agree before they could press agree
     };
-
+    
     this.handleChange = this.handleChange.bind(this);
     this.handleGenderChange = this.handleGenderChange.bind(this);
     this.handlePatientProviderChange = this.handlePatientProviderChange.bind(this);
     this.handlePatientProviderChangeFromConfig = this.handlePatientProviderChangeFromConfig.bind(this);
     this.handleAllAgesSelected = this.handleAllAgesSelected.bind(this);
-
   }
 
   componentDidMount() {
@@ -639,9 +638,9 @@ class App extends Component {
           <Topics showTopics={this.state.topicsView} userConfig={userInfo} data={this.state.data.getListOfTopics} lang={this.state.lang}></Topics>
         </div>
 
-        <button style={fixedStyle}>
+        {/* <button style={fixedStyle}>
           <img id="genderIcon" src={IconGender} className="drop-down" alt="IconGender" onClick={this.genderIconClicked} width="75" height="75" />
-        </button>
+        </button> */}
         {/*modals*/}
         <div>{instructionModal}</div>
         <div>{configurationModal}</div>
