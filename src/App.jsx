@@ -201,9 +201,9 @@ class App extends Component {
       buttonText: this.state.lang.config_modal_agree
     });
     //Remove bouncing animation once clicked
-    if (document.getElementById("genderIcon").classList.contains('drop-down')) {
+    /* if (document.getElementById("genderIcon").classList.contains('drop-down')) {
       document.getElementById("genderIcon").classList.remove('drop-down');
-    }
+    } */
   }
 
   goBack() {
