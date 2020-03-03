@@ -4,10 +4,7 @@ import App from './App';
 import { PageView, initGA } from './Tracking';
 import './LandingPage.css';
 import calllogo from './assets/Logos/logo_03-02.png';
-import Card from 'react-bootstrap/Card';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Container from 'react-bootstrap/Container';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 class LandingPage extends React.Component {
@@ -37,37 +34,27 @@ class LandingPage extends React.Component {
   render() {
     // Render nothing if the "show" prop is false
     return (
-      <div class="landing-page">
+      <div className="landing-page">
         {this.state.language == "" || null ? (
           <div>
-            <Container>
-            <Row>
-            <Col xs={6}>
-              <Card border="light" style={{ border: 0 ,width: '45vw'}}>
-                <Card.Body>
-                  <Card.Title style={{ textAlign: 'left'}}>
-                  Do you want to be healthy and prevent disease? If yes, this Canadian app is for YOU! 
-                  </Card.Title>
-                </Card.Body>
-              </Card>
-              </Col>
-              <Col xs={6}>
-              <Card border="light" style={{ border: 0, width: '45vw' }}>
-                <Card.Body>
-                 <Card.Title style={{ textAlign: 'left'}}>
-                 Voulez-vous être en santé et prévenir les maladies? Si oui utilisez cette appli canadienne !
-                 </Card.Title>
-                </Card.Body>
-              </Card>
-              </Col>
-              </Row>
-            </Container>
             <div class="center">
               <img class="landing-logo" src={calllogo} alt="CANBeWellLogo" />
             </div>
             <div className="langButton">
               <button class="langButtonStyle" onClick={this.handleChange} >English </button>
               <button class="langButtonStyle" onClick={this.handleChange2}>Francais</button>
+            </div>
+            <div className="landingpage-notice-row">
+              <div className="landingpage-notice-column">
+                <div className="landing-notice">
+                  A reliable resource by Canadian Family Physicians to help you stay healthy
+                </div>
+              </div>
+              <div className="landingpage-notice-column">
+                <div className="landing-notice">
+                  TODO
+                </div>
+              </div>
             </div>
           </div>
         ) : (
