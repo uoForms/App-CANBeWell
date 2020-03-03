@@ -3,7 +3,6 @@ import { withCookies, Cookies } from 'react-cookie';
 import { instanceOf } from 'prop-types';
 import ReactGA from "react-ga";
 
-import { matchUserDevice } from './Tracking';
 import Lang from './Lang/Lang.json';
 import './App.css';
 import './Button.css';
@@ -38,10 +37,11 @@ class App extends Component {
       gender: null,
       patient_provider: null,
       age: null,
-      language: null
+      language: null,
+      lng: null,
+      lat: null
     };// = getUserInfo();
     let DataToDisplay = new Data(this.props.appLanguage);
-    //console.log(this.props.appLanguage);
     //DataToDisplay.props = this.props.applanguage;
     var app_language = this.props.appLanguage;
 
@@ -65,17 +65,16 @@ class App extends Component {
       allAgesSelected: (cookies.get('_all_ages_selected') == "true") ? true : false,
       user: cookies.get('user') || 'patient',
       gender: cookies.get('gender'),
+      longitude: false,
+      latitude: false,
       //allowToClose: false, //obselete! we use to make the user agree before they could press agree
     };
-
-    //console.log("in the contructor: " + (typeof this.state.allAgesSelected));
-
+    
     this.handleChange = this.handleChange.bind(this);
     this.handleGenderChange = this.handleGenderChange.bind(this);
     this.handlePatientProviderChange = this.handlePatientProviderChange.bind(this);
     this.handlePatientProviderChangeFromConfig = this.handlePatientProviderChangeFromConfig.bind(this);
     this.handleAllAgesSelected = this.handleAllAgesSelected.bind(this);
-
   }
 
   componentDidMount() {
@@ -90,7 +89,6 @@ class App extends Component {
         document.getElementById("genderSelector").style.display = "block";
       }
     } catch (err) { }
-    //console.log("when mounted: " + this.state.allAgesSelected);
 
     /// The following steps is to get clientID from google analytics and save it to cookies
     const { cookies } = this.props;
@@ -98,33 +96,18 @@ class App extends Component {
     ReactGA.ga(
       function (tracker) {
         clientId = tracker.get('clientId');
-        //console.log(clientId);
       });
     cookies.set('userID', clientId, { path: "/" });
-    //console.log("the userID in cookie is " + this.state.userID);
     //count a pageview of body 
     ReactGA.pageview('body');
-
-    /// The following is get the device info from tracking.js    
-    var deviceInfo = matchUserDevice();   
-    console.log(deviceInfo);
-    /*if(this.state.allAgesSelected){
-      document.getElementById("myCheck").style.backgroundColor = "#CCCCCC";
-    }else{
-      document.getElementById("myCheck").style.backgroundColor = "#FFFFFF";
-    }*/
-    //TODO include ref to the database
-    /*const rootRef = firebase.database().ref().child('liver');
-    const topicsRef = rootRef.child('heading');
-    topicsRef.on('value', snap => {
+    
+    /* navigator.geolocation.getCurrentPosition(location => {
       this.setState({
-        topics: snap.val()
-      })
-    });*/
+        latitude: location.coords.latitude,
+        longitude: location.coords.longitude
+      });
+    }); */
   }
-
-  /*componentDidUpdate(){
-  }*/
 
   //toggle the config modif
   toggleConfigurationModal = () => {
@@ -247,7 +230,6 @@ class App extends Component {
       allAgesSelected: (!this.state.allAgesSelected)
     }, () => {
       this.setState({ age: allAges }); //Call back once setState is done
-      console.log("in the handler: " + (typeof this.state.allAgesSelected));
       /*if(this.state.allAgesSelected){
         document.getElementById('myCheck').style.backgroundColor = "#CCCCCC";
       }else{
@@ -392,7 +374,9 @@ class App extends Component {
       gender: this.state.gender,
       patient_provider: this.state.user,
       age: this.state.age,
-      language: this.state.language //TODO plese change that VERY important
+      language: this.state.language, //TODO plese change that VERY important
+      longitude: this.state.longitude,
+      latitude: this.state.latitude,
     };
 
     const fixedStyle = {
@@ -654,9 +638,9 @@ class App extends Component {
           <Topics showTopics={this.state.topicsView} userConfig={userInfo} data={this.state.data.getListOfTopics} lang={this.state.lang}></Topics>
         </div>
 
-        <button style={fixedStyle}>
+        {/* <button style={fixedStyle}>
           <img id="genderIcon" src={IconGender} className="drop-down" alt="IconGender" onClick={this.genderIconClicked} width="75" height="75" />
-        </button>
+        </button> */}
         {/*modals*/}
         <div>{instructionModal}</div>
         <div>{configurationModal}</div>

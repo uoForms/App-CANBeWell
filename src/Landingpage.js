@@ -8,7 +8,6 @@ import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
-import { db } from './firebase';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 class LandingPage extends React.Component {
@@ -33,13 +32,10 @@ class LandingPage extends React.Component {
   componentDidMount() {
     initGA('UA-151893001-1');
     PageView();
-    console.log(db);
   }
 
   render() {
     // Render nothing if the "show" prop is false
-    //console.log("test:" + localStorage.getItem("app_language"));
-    //console.log("test:" + this.state.language);
     return (
       <div class="landing-page">
         {this.state.language == "" || null ? (

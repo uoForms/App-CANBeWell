@@ -90,7 +90,6 @@ export const matchUserDevice = () => {
 
 export const GaUserEvent = ( nav, category, userInfo) => {
   var pageviewURL = nav + "/" + category;
-    console.log(pageviewURL);
     ReactGA.pageview(pageviewURL);
     var deviceInfo = matchUserDevice(); 
     var label = {
@@ -103,23 +102,69 @@ export const GaUserEvent = ( nav, category, userInfo) => {
       category: category.replace("/", " or "),
       os: deviceInfo.OS,
       device: deviceInfo.Device,
-      browser: deviceInfo.Browser
+      browser: deviceInfo.Browser,
+      longitude: userInfo.longitude,
+      latitude: userInfo.latitude,
     }
-    var labelString = JSON.stringify(label);
-    console.log(labelString);
-    GaEvent( nav, category, labelString);
+    //var labelString = JSON.stringify(label);
+    let eventCatagory = getEventCatagory(label);
+    let eventAction = getEventAction(label);
+    let eventLabel = getEventLabel(label);
+    GaEvent( eventCatagory, eventAction, eventLabel);
     writeClick(label);
 };
 
-export const writeClick = ( label ) =>{
-  let data = {
-    user: label.user,
-    gender: label.gender,
-    age: label.age,
-    language: label.language,
-    os: label.os,
-    device: label.device,
-    browser: label.browser
+export const getEventCatagory = (label) => {
+  let role = label.role;
+  let nav = label.nav;
+  let category = label.category;
+  let string = role + '-' + nav + '-' + category
+  return string;
+};
+
+export const getEventAction = (label) => {
+  let os = label.os;
+  var browser = 'other'
+  switch(label.browser){
+    case 'Safari': 
+      browser = 'Safari';
+      break;
+    case 'Chrome':
+      browser = 'Chrome';
+      break;
   }
-  db.ref(label.role + '/' + label.nav + '/' + label.category).push(data)
+  let string = os + '-' + browser;
+  return string;
+};
+
+export const getEventLabel = (label) => {
+  var age = null;
+  if ( label.age === "all ages")
+    age = 'all ages';
+  else if ( label.age <= 30 )
+    age = 'Young';
+  else if ( label.age <= 60 )
+    age = 'Middle age';
+  else age = 'Senior';
+  let string = label.gender + '-' + age + '-' + label.language;
+  return string;
+};
+
+export const writeClick = ( label ) =>{
+  let data = JSON.parse( JSON.stringify(label));
+  let date = formatDate( Date.now() );
+  db.ref( date ).push(data);
+}
+
+export const formatDate = ( date ) => {
+  let d = new Date(date),
+      mon = '' + ( d.getMonth() + 1 ),
+      day = '' + d.getDate(),
+      year = d.getFullYear();
+  
+  if( mon.length < 2)
+    mon = '0' + mon;
+  if( day.length < 2)
+    day = '0' + day;
+  return year + mon + day;
 }

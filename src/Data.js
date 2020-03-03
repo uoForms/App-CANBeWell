@@ -14,13 +14,10 @@ class Data {
 
   ////////////////////////////////////////////Get One topics //////////////////////////////////////////////////
   getTopic(button, userInfo) {
-    console.log(userInfo.language);
-    console.log(this.applanguage);
     var app_language1 = userInfo.language;
     var topicList = "";
     if (app_language1 == "french") {
       topicList = TopicListFR;
-      console.log(topicList)
     }
     else if (app_language1 == "english") {
       topicList = TopicListEN;
@@ -90,7 +87,6 @@ class Data {
 
         const nonApplicaple = ["NA", "N/A", " NA", "NA ", " NA "];
 
-        console.log(userInfo);
         var text = Lang[userInfo.language];
 
 
