@@ -28,6 +28,7 @@
     word-wrap:break-word; 
     word-break: normal; 
     overflow: hidden;
+    font-size: 3vw;
 }
 .landingpage-notice-column {
     float: left;

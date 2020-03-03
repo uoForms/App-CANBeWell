@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { withCookies, Cookies } from 'react-cookie';
 import { instanceOf } from 'prop-types';
 import ReactGA from "react-ga";
+import { IoIosSettings } from "react-icons/io";
+import { AiOutlineExclamationCircle } from "react-icons/ai";
 
 import Lang from './Lang/Lang.json';
 import './App.css';
@@ -201,9 +203,9 @@ class App extends Component {
       buttonText: this.state.lang.config_modal_agree
     });
     //Remove bouncing animation once clicked
-    if (document.getElementById("genderIcon").classList.contains('drop-down')) {
+    /* if (document.getElementById("genderIcon").classList.contains('drop-down')) {
       document.getElementById("genderIcon").classList.remove('drop-down');
-    }
+    } */
   }
 
   goBack() {
@@ -624,12 +626,17 @@ class App extends Component {
           </h3>
         </div>
 
+        <div className = "userinfo-row">
         {/*display user's info*/}
         <div onClick={this.genderIconClicked} className="userInfoStyle">
-          <h3>
-            {this.state.lang.display_gender} : {this.state.lang[this.state.gender]}<br />
-            {this.state.lang.display_age} : {this.state.age == "all ages" ? this.state.lang.all_ages : this.state.age}
-          </h3>
+            {this.state.lang[this.state.user]} <IoIosSettings /> <br />
+            {/*this.state.lang.display_gender*/} {this.state.lang[this.state.gender]} | {this.state.age == "all ages" ? this.state.lang.all_ages : this.state.age}
+            {/*this.state.lang.display_age*/} : 
+        </div>
+        <div className="suvey-reminder">
+          <AiOutlineExclamationCircle />
+          {this.state.language === "english" ? "Take the survey" : "Prenez le sondage"}
+        </div>
         </div>
 
         <div>

@@ -280,8 +280,36 @@ details[open] summary:after {
   content: "-";
 }
 
+.userinfo-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .userInfoStyle{
+  float: left;
   cursor: pointer;
+  position: relative;
+  text-align: left;
+  width: 33vw;
+  height: 20vw;
+  font-size: 4vw;
+  word-wrap:break-word; 
+  word-break: normal; 
+  overflow: hidden;
+}
+
+.suvey-reminder{
+  float: right;
+  cursor: pointer;
+  position: relative;
+  text-align: right;
+  width: 40vw;
+  height: 15vw;
+  font-size: 4vw;
+  word-wrap:break-word; 
+  word-break: normal; 
+  overflow: hidden;
 }
 
 /*scrollbar*/
