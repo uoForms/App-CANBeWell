@@ -102,12 +102,12 @@ class App extends Component {
     //count a pageview of body 
     ReactGA.pageview('body');
     
-    navigator.geolocation.getCurrentPosition(location => {
+    /* navigator.geolocation.getCurrentPosition(location => {
       this.setState({
         latitude: location.coords.latitude,
         longitude: location.coords.longitude
       });
-    });
+    }); */
   }
 
   //toggle the config modif
