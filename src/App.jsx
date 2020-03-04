@@ -40,8 +40,8 @@ class App extends Component {
       patient_provider: null,
       age: null,
       language: null,
-      lng: null,
-      lat: null
+      region: null,
+      city: null
     };// = getUserInfo();
     let DataToDisplay = new Data(this.props.appLanguage);
     //DataToDisplay.props = this.props.applanguage;
@@ -67,8 +67,8 @@ class App extends Component {
       allAgesSelected: (cookies.get('_all_ages_selected') == "true") ? true : false,
       user: cookies.get('user') || 'patient',
       gender: cookies.get('gender'),
-      longitude: false,
-      latitude: false,
+      region: false,
+      city: false,
       //allowToClose: false, //obselete! we use to make the user agree before they could press agree
     };
     
@@ -109,6 +109,25 @@ class App extends Component {
         longitude: location.coords.longitude
       });
     }); */
+    var city =null, region=null;
+    window.fetch('http://ip-api.com/json')
+      .then(
+        function success(response) {
+          console.log('User\'s Location Data is ', response);
+          console.log('User\'s Country', response.country);
+        city = response.city;
+        region = response.regionName;
+      },
+
+      function fail(data, status) {
+          console.log('Request failed.  Returned status of',
+                      status);
+      }
+      );
+      this.setState({
+        region:region,
+        city:city,
+      });
   }
 
   //toggle the config modif
@@ -377,8 +396,8 @@ class App extends Component {
       patient_provider: this.state.user,
       age: this.state.age,
       language: this.state.language, //TODO plese change that VERY important
-      longitude: this.state.longitude,
-      latitude: this.state.latitude,
+      region: this.state.region,
+      city: this.state.city,
     };
 
     const fixedStyle = {

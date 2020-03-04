@@ -103,8 +103,8 @@ export const GaUserEvent = ( nav, category, userInfo) => {
       os: deviceInfo.OS,
       device: deviceInfo.Device,
       browser: deviceInfo.Browser,
-      longitude: userInfo.longitude,
-      latitude: userInfo.latitude,
+      region: userInfo.region,
+      city: userInfo.city,
     }
     //var labelString = JSON.stringify(label);
     let eventCatagory = getEventCatagory(label);
