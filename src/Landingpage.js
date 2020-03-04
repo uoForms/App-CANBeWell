@@ -47,12 +47,12 @@ class LandingPage extends React.Component {
             <div className="landingpage-notice-row">
               <div className="landingpage-notice-column">
                 <div className="landing-notice">
-                  A reliable resource by Canadian Family Physicians to help you stay healthy
+                  A reliable resource by Canadian family physicians to help you stay healthy
                 </div>
               </div>
               <div className="landingpage-notice-column">
                 <div className="landing-notice">
-                  TODO
+                  Rester en santé avec cette ressource créée par des médecins de famille canadiens
                 </div>
               </div>
             </div>
