@@ -109,24 +109,14 @@ class App extends Component {
         longitude: location.coords.longitude
       });
     }); */
-    var city =null, region=null;
-    window.fetch('http://ip-api.com/json')
-      .then(
-        function success(response) {
-          console.log('User\'s Location Data is ', response);
-          console.log('User\'s Country', response.country);
-        city = response.city;
-        region = response.regionName;
-      },
-
-      function fail(data, status) {
-          console.log('Request failed.  Returned status of',
-                      status);
-      }
-      );
-      this.setState({
-        region:region,
-        city:city,
+    
+    window.fetch('https://ipapi.co/json/').then(
+      (jsonStr) =>{
+        console.log(jsonStr.city)
+        this.setState({
+          city: jsonStr.city,
+          region: jsonStr.region
+        })
       });
   }
 
