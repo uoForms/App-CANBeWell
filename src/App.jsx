@@ -71,7 +71,7 @@ class App extends Component {
       city: false,
       //allowToClose: false, //obselete! we use to make the user agree before they could press agree
     };
-    
+
     this.handleChange = this.handleChange.bind(this);
     this.handleGenderChange = this.handleGenderChange.bind(this);
     this.handlePatientProviderChange = this.handlePatientProviderChange.bind(this);
@@ -102,22 +102,22 @@ class App extends Component {
     cookies.set('userID', clientId, { path: "/" });
     //count a pageview of body 
     ReactGA.pageview('body');
-    
+
     /* navigator.geolocation.getCurrentPosition(location => {
       this.setState({
         latitude: location.coords.latitude,
         longitude: location.coords.longitude
       });
     }); */
-    
-    window.fetch('https://ipapi.co/json/').then(
-      (jsonStr) =>{
-        console.log(jsonStr.city)
+
+    window.fetch('https://ipapi.co/json/')
+      .then(response => response.json())
+      .then(data =>{
         this.setState({
-          city: jsonStr.city,
-          region: jsonStr.region
-        })
-      });
+          city: data.city,
+          region: data.region,
+        });}
+      );
   }
 
   //toggle the config modif
@@ -635,17 +635,17 @@ class App extends Component {
           </h3>
         </div>
 
-        <div className = "userinfo-row">
-        {/*display user's info*/}
-        <div onClick={this.genderIconClicked} className="userInfoStyle">
+        <div className="userinfo-row">
+          {/*display user's info*/}
+          <div onClick={this.genderIconClicked} className="userInfoStyle">
             {this.state.lang[this.state.user]} <IoIosSettings /> <br />
             {/*this.state.lang.display_gender*/} {this.state.lang[this.state.gender]} | {this.state.age == "all ages" ? this.state.lang.all_ages : this.state.age}
-            {/*this.state.lang.display_age*/} : 
+            {/*this.state.lang.display_age*/} :
         </div>
-        <div className="suvey-reminder">
-          <AiOutlineExclamationCircle />
-          {this.state.language === "english" ? "Take the survey" : "Prenez le sondage"}
-        </div>
+          <div className="suvey-reminder">
+            <AiOutlineExclamationCircle />
+            {this.state.language === "english" ? "Take the survey" : "Prenez le sondage"}
+          </div>
         </div>
 
         <div>
