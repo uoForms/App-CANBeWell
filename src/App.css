@@ -292,8 +292,7 @@ details[open] summary:after {
   position: relative;
   text-align: left;
   width: 33vw;
-  height: 20vw;
-  font-size: 3vw;
+  height: auto;
   word-wrap:break-word; 
   word-break: normal; 
   overflow: hidden;
@@ -305,8 +304,7 @@ details[open] summary:after {
   position: relative;
   text-align: right;
   width: 40vw;
-  height: 15vw;
-  font-size: 3vw;
+  height: auto;
   word-wrap:break-word; 
   word-break: normal; 
   overflow: hidden;

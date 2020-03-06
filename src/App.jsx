@@ -112,11 +112,12 @@ class App extends Component {
 
     window.fetch('https://ipapi.co/json/')
       .then(response => response.json())
-      .then(data =>{
+      .then(data => {
         this.setState({
           city: data.city,
           region: data.region,
-        });}
+        });
+      }
       );
   }
 
@@ -638,13 +639,17 @@ class App extends Component {
         <div className="userinfo-row">
           {/*display user's info*/}
           <div onClick={this.genderIconClicked} className="userInfoStyle">
-            {this.state.lang[this.state.user]} <IoIosSettings /> <br />
-            {/*this.state.lang.display_gender*/} {this.state.lang[this.state.gender]} | {this.state.age == "all ages" ? this.state.lang.all_ages : this.state.age}
-            {/*this.state.lang.display_age*/} :
-        </div>
+            <h4>
+              {this.state.lang[this.state.user]} <IoIosSettings /> <br />
+              {/*this.state.lang.display_gender*/} {this.state.lang[this.state.gender]} | {this.state.age == "all ages" ? this.state.lang.all_ages : this.state.age}
+              {/*this.state.lang.display_age*/} :
+            </h4>
+          </div>
           <div className="suvey-reminder">
-            <AiOutlineExclamationCircle />
-            {this.state.language === "english" ? "Take the survey" : "Prenez le sondage"}
+            <h4>
+              <AiOutlineExclamationCircle />
+              {this.state.language === "english" ? "Take the survey" : "Prenez le sondage"}
+            </h4>
           </div>
         </div>
 
