@@ -101,7 +101,7 @@ class App extends Component {
       });
     cookies.set('userID', clientId, { path: "/" });
     //count a pageview of body 
-    ReactGA.pageview('body');
+    //ReactGA.pageview('body');
 
     /* navigator.geolocation.getCurrentPosition(location => {
       this.setState({
@@ -179,7 +179,7 @@ class App extends Component {
     document.getElementById("body").classList = 'active';
     document.getElementById("topic").classList = '';
     document.getElementById("test").classList = '';
-    ReactGA.pageview('body');
+    //ReactGA.pageview('body');
   }
   topicsClicked = (e) => {
     this.setState({
@@ -191,7 +191,7 @@ class App extends Component {
     document.getElementById("body").classList = '';
     document.getElementById("topic").classList = 'active';
     document.getElementById("test").classList = '';
-    ReactGA.pageview('topic');
+    //ReactGA.pageview('topic');
   }
   testsClicked = (e) => {
     this.setState({
@@ -203,7 +203,7 @@ class App extends Component {
     document.getElementById("body").classList = '';
     document.getElementById("topic").classList = '';
     document.getElementById("test").classList = 'active';
-    ReactGA.pageview('test');
+    //ReactGA.pageview('test');
   }
 
   genderIconClicked = () => {
