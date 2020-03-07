@@ -1,14 +1,7 @@
-//import {getUserInfo} from './UserInfo';
-import React from 'react';
 import PropTypes from 'prop-types';
 import TopicListFR from './JSONFolder/HtmlTopic-FR.json';
 import TopicListEN from './JSONFolder/HtmlTopic-EN.json';
-//import Images from 'http://quickforms2.eecs.uottawa.ca/';
 import Lang from './Lang/Lang.json';
-import LandingPage from './Landingpage';
-
-
-
 
 class Data {
 
@@ -78,9 +71,6 @@ class Data {
 
 
       function findTopicToDisplay(arra1) {
-
-
-
         var j = 0,
           topicList = [],
           TopicListItem = [];

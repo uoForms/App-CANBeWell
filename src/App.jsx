@@ -41,10 +41,12 @@ class App extends Component {
       age: null,
       language: null,
       region: null,
-      city: null
+      city: null,
+      preNav: null,
+      preCat: null,
+      preTime: null
     };// = getUserInfo();
     let DataToDisplay = new Data(this.props.appLanguage);
-    //DataToDisplay.props = this.props.applanguage;
     var app_language = this.props.appLanguage;
 
 
@@ -67,8 +69,11 @@ class App extends Component {
       allAgesSelected: (cookies.get('_all_ages_selected') == "true") ? true : false,
       user: cookies.get('user') || 'patient',
       gender: cookies.get('gender'),
-      region: false,
-      city: false,
+      region: null,
+      city: null,
+      preNav: null,
+      preCat: null,
+      preTime: null
       //allowToClose: false, //obselete! we use to make the user agree before they could press agree
     };
 
@@ -77,6 +82,7 @@ class App extends Component {
     this.handlePatientProviderChange = this.handlePatientProviderChange.bind(this);
     this.handlePatientProviderChangeFromConfig = this.handlePatientProviderChangeFromConfig.bind(this);
     this.handleAllAgesSelected = this.handleAllAgesSelected.bind(this);
+    this.pageViewStateUpdater = this.pageViewStateUpdater.bind(this);
   }
 
   componentDidMount() {
@@ -119,6 +125,15 @@ class App extends Component {
         });
       }
       );
+  }
+
+  pageViewStateUpdater = ( nav, cat, time ) => {
+    console.log(cat+"app.js callback");
+    this.setState({
+      preNav: nav,
+      preCat: cat,
+      preTime: time,
+    });
   }
 
   //toggle the config modif
@@ -379,7 +394,6 @@ class App extends Component {
   }
 
   render() {
-
     //var userInfo = getUserInfo();
     var userInfo = {
       userID: this.state.userID,
@@ -389,6 +403,9 @@ class App extends Component {
       language: this.state.language, //TODO plese change that VERY important
       region: this.state.region,
       city: this.state.city,
+      preNav: this.state.preNav,
+      preCat: this.state.preCat,
+      preTime: this.state.preTime
     };
 
     const fixedStyle = {
@@ -654,9 +671,21 @@ class App extends Component {
         </div>
 
         <div>
-          <MyBody showBody={this.state.bodyView} userConfig={userInfo} getText={this.state.data.getTopic} lang={this.state.lang}></MyBody>
-          <Tests showTests={this.state.testsView} userConfig={userInfo} data={this.state.data.getListOfTests} lang={this.state.lang}></Tests>
-          <Topics showTopics={this.state.topicsView} userConfig={userInfo} data={this.state.data.getListOfTopics} lang={this.state.lang}></Topics>
+          <MyBody 
+            showBody={this.state.bodyView} 
+            userConfig={userInfo} 
+            getText={this.state.data.getTopic} 
+            lang={this.state.lang}
+            pageViewStateUpdater = {this.pageViewStateUpdater}></MyBody>
+          <Tests 
+            showTests={this.state.testsView} 
+            userConfig={userInfo} 
+            data={this.state.data.getListOfTests} 
+            lang={this.state.lang} ></Tests>
+          <Topics showTopics={this.state.topicsView} 
+            userConfig={userInfo} 
+            data={this.state.data.getListOfTopics} 
+            lang={this.state.lang} ></Topics>
         </div>
 
         {/* <button style={fixedStyle}>

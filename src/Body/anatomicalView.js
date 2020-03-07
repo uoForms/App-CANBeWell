@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ReactGA from "react-ga"; 
+import ReactGA from "react-ga";
 
 import BodyModal from './BodyModal';
-import { GaUserEvent } from '../Tracking';
+import { PageViewTimer, GaUserEvent } from '../Tracking';
 
 //Import Male PNG
 import Male from '../assets/MaleBody/male_all-01.png';
@@ -70,9 +70,21 @@ class Anatomy extends React.Component {
   organClicked = (button, text, organ) => {
     if (organ !== "") {
       try {
-        GaUserEvent( "body", text, this.props.userInfo);
+        console.log(this.props);
+        let timerResult = PageViewTimer(
+          this.props.userInfo.preCat,
+          this.props.userInfo.preTime);
+        let currTime = timerResult.currTime,
+          timeDiff = timerResult.timeDiff;
+        let currNav = "body", currCat = text;
+        GaUserEvent(this.props.userInfo, timeDiff);
+
+        this.props.pageViewStateUpdater(currNav, currCat, currTime);
+
         document.getElementById(organ).style.visibility = "visible";
-      } catch (err) { }
+      } catch (err) {
+        console.log(err);
+      }
     }
     this.setState({
       organSelected: text
@@ -96,7 +108,16 @@ class Anatomy extends React.Component {
 
   iconClicked = (button, text) => {
 
-    GaUserEvent( "body", text, this.props.userInfo);
+    console.log(this.props);
+    let timerResult = PageViewTimer(
+      this.props.userInfo.preCat,
+      this.props.userInfo.preTime);
+    let currTime = timerResult.currTime,
+      timeDiff = timerResult.timeDiff;
+    let currNav = "body", currCat = text;
+    GaUserEvent(this.props.userInfo, timeDiff);
+
+    this.props.pageViewStateUpdater(currNav, currCat, currTime);
 
     this.setState({
       organSelected: text
