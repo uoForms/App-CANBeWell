@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { withCookies, Cookies } from 'react-cookie';
 import { instanceOf } from 'prop-types';
 import ReactGA from "react-ga";
+import { IoIosSettings } from "react-icons/io";
+import { AiOutlineExclamationCircle } from "react-icons/ai";
 
 import Lang from './Lang/Lang.json';
 import './App.css';
@@ -38,8 +40,8 @@ class App extends Component {
       patient_provider: null,
       age: null,
       language: null,
-      lng: null,
-      lat: null
+      region: null,
+      city: null
     };// = getUserInfo();
     let DataToDisplay = new Data(this.props.appLanguage);
     //DataToDisplay.props = this.props.applanguage;
@@ -65,11 +67,11 @@ class App extends Component {
       allAgesSelected: (cookies.get('_all_ages_selected') == "true") ? true : false,
       user: cookies.get('user') || 'patient',
       gender: cookies.get('gender'),
-      longitude: false,
-      latitude: false,
+      region: false,
+      city: false,
       //allowToClose: false, //obselete! we use to make the user agree before they could press agree
     };
-    
+
     this.handleChange = this.handleChange.bind(this);
     this.handleGenderChange = this.handleGenderChange.bind(this);
     this.handlePatientProviderChange = this.handlePatientProviderChange.bind(this);
@@ -100,13 +102,23 @@ class App extends Component {
     cookies.set('userID', clientId, { path: "/" });
     //count a pageview of body 
     ReactGA.pageview('body');
-    
+
     /* navigator.geolocation.getCurrentPosition(location => {
       this.setState({
         latitude: location.coords.latitude,
         longitude: location.coords.longitude
       });
     }); */
+
+    window.fetch('https://ipapi.co/json/')
+      .then(response => response.json())
+      .then(data => {
+        this.setState({
+          city: data.city,
+          region: data.region,
+        });
+      }
+      );
   }
 
   //toggle the config modif
@@ -375,8 +387,8 @@ class App extends Component {
       patient_provider: this.state.user,
       age: this.state.age,
       language: this.state.language, //TODO plese change that VERY important
-      longitude: this.state.longitude,
-      latitude: this.state.latitude,
+      region: this.state.region,
+      city: this.state.city,
     };
 
     const fixedStyle = {
@@ -624,12 +636,21 @@ class App extends Component {
           </h3>
         </div>
 
-        {/*display user's info*/}
-        <div onClick={this.genderIconClicked} className="userInfoStyle">
-          <h3>
-            {this.state.lang.display_gender} : {this.state.lang[this.state.gender]}<br />
-            {this.state.lang.display_age} : {this.state.age == "all ages" ? this.state.lang.all_ages : this.state.age}
-          </h3>
+        <div className="userinfo-row">
+          {/*display user's info*/}
+          <div onClick={this.genderIconClicked} className="userInfoStyle">
+            <h4>
+              {this.state.lang[this.state.user]} <IoIosSettings /> <br />
+              {/*this.state.lang.display_gender*/} {this.state.lang[this.state.gender]} | {this.state.age == "all ages" ? this.state.lang.all_ages : this.state.age}
+              {/*this.state.lang.display_age*/} :
+            </h4>
+          </div>
+          <div className="suvey-reminder">
+            <h4>
+              <AiOutlineExclamationCircle />
+              {this.state.language === "english" ? "Take the survey" : "Prenez le sondage"}
+            </h4>
+          </div>
         </div>
 
         <div>

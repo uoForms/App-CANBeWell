@@ -81,7 +81,7 @@ div.fixed {
 
 .langButton{
   text-align: center;
-  position: absolute;
+  position: relative;
   width: 100%;
   overflow:auto;
   background-color: white;
