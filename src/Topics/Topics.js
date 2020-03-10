@@ -92,7 +92,7 @@ class TopicRow extends React.Component {
     let currTime = timerResult.currTime,
       timeDiff = timerResult.timeDiff;
     let currNav = "topics", currCat = title;
-    GaUserEvent(this.props.userInfo, timeDiff);
+    GaUserEvent(currNav, currCat, this.props.userInfo, timeDiff, this.props.userInfo.preTime, currTime);
     this.props.pageViewStateUpdater(currNav, currCat, currTime);
   }
 

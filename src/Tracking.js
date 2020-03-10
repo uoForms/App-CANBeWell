@@ -101,13 +101,34 @@ export const matchUserDevice = () => {
   }
 };
 
-export const GaUserEvent = (userInfo, timeDiff) => {
-  let pageviewURL = userInfo.preNav + "/" + userInfo.preCat
+export const GaUserEvent = (currNav, currCat, userInfo, timeDiff, preTime, currTime) => {
+  let pageviewURL = currNav + "/" + currCat;
+  ReactGA.pageview(pageviewURL);
+  var deviceInfo = matchUserDevice();
+  let date = formatDate(Date.now());
+  var label = {
+    nav: currNav,
+    user: userInfo.userID,
+    gender: userInfo.gender,
+    age: userInfo.age,
+    language: userInfo.language,
+    role: userInfo.patient_provider,
+    category: currCat.replace("/", " or "),
+    os: deviceInfo.OS,
+    device: deviceInfo.Device,
+    browser: deviceInfo.Browser,
+    region: userInfo.region,
+    city: userInfo.city,
+    date: date,
+  }
+  let eventCatagory = getEventCatagory(label);
+  let eventAction = getEventAction(label);
+  let eventLabel = getEventLabel(label);
+  GaEvent(eventCatagory, eventAction, eventLabel);
+
   if (userInfo.preCat != null) {
-    ReactGA.pageview(pageviewURL);
-    var deviceInfo = matchUserDevice();
-    let date = formatDate(Date.now());
-    var label = {
+    writeClick(label, currTime);
+    var preLabel = {
       nav: userInfo.preNav,
       user: userInfo.userID,
       gender: userInfo.gender,
@@ -120,17 +141,17 @@ export const GaUserEvent = (userInfo, timeDiff) => {
       browser: deviceInfo.Browser,
       region: userInfo.region,
       city: userInfo.city,
-      pageviewtime: timeDiff,
       date: date,
+      pageviewtime: timeDiff,
     }
-    //var labelString = JSON.stringify(label);
-    let eventCatagory = getEventCatagory(label);
-    let eventAction = getEventAction(label);
-    let eventLabel = getEventLabel(label);
-    GaEvent(eventCatagory, eventAction, eventLabel);
-    writeClick(label);
+    writeClick(preLabel, preTime);
+  }
+  else {
+
+    writeClick(label, currTime);
   }
 };
+
 
 export const getEventCatagory = (label) => {
   let role = label.role;
@@ -168,10 +189,11 @@ export const getEventLabel = (label) => {
   return string;
 };
 
-export const writeClick = (label) => {
+export const writeClick = (label, currTime) => {
   let data = JSON.parse(JSON.stringify(label));
-  db.ref(data.date).push(data);
+  db.ref(data.date + '/' + currTime).set(data);
 }
+
 
 export const formatDate = (date) => {
   let d = new Date(date),
