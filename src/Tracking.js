@@ -106,6 +106,7 @@ export const GaUserEvent = (userInfo, timeDiff) => {
   if (userInfo.preCat != null) {
     ReactGA.pageview(pageviewURL);
     var deviceInfo = matchUserDevice();
+    let date = formatDate(Date.now());
     var label = {
       nav: userInfo.preNav,
       user: userInfo.userID,
@@ -119,7 +120,8 @@ export const GaUserEvent = (userInfo, timeDiff) => {
       browser: deviceInfo.Browser,
       region: userInfo.region,
       city: userInfo.city,
-      pageviewtime: timeDiff
+      pageviewtime: timeDiff,
+      date: date,
     }
     //var labelString = JSON.stringify(label);
     let eventCatagory = getEventCatagory(label);
@@ -168,8 +170,7 @@ export const getEventLabel = (label) => {
 
 export const writeClick = (label) => {
   let data = JSON.parse(JSON.stringify(label));
-  let date = formatDate(Date.now());
-  db.ref(date).push(data);
+  db.ref(data.date).push(data);
 }
 
 export const formatDate = (date) => {

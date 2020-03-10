@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ReactGA from "react-ga"; 
 
-import { GaUserEvent } from '../Tracking';
+import { PageViewTimer, GaUserEvent } from '../Tracking';
 import '../Button.css';
 import TopicsModal from './TopicsModal';
 import TopicListFR from '../JSONFolder/HtmlTopic-FR.json';
@@ -17,11 +16,15 @@ class Topics extends React.Component {
       isOpen: false,
       TopicList: this.props.userConfig.language == "french" ? TopicListFR : TopicListEN
     }
+    this.pageViewStateUpdater = this.pageViewStateUpdater.bind(this);
   }
   toggleModal = () => {
     this.setState({
       isOpen: !this.state.isOpen
     });
+  }
+  pageViewStateUpdater = (nav, cat, time) => {
+    this.props.pageViewStateUpdater(nav, cat, time);
   }
 
   helpClicked = () => {
@@ -40,7 +43,6 @@ class Topics extends React.Component {
     }
 
     return (
-
       <div>
         {/*your help button in the right hand corner*/}
         {/*<button className="button button2" onClick={this.helpClicked}>?</button>*/}
@@ -48,7 +50,9 @@ class Topics extends React.Component {
         <FilterableTopicTable 
           topics={this.props.data(this.state.TopicList, this.props.userConfig)} 
           userConfig={this.props.userConfig}
-          text={this.props.lang.topic_search_bar_placeholder} />
+          text={this.props.lang.topic_search_bar_placeholder} 
+          pageViewStateUpdater = {this.pageViewStateUpdater}
+          />
 
         {/*help dialog box*/}
         <TopicsModal show={this.state.isOpen}
@@ -72,12 +76,27 @@ Topics.propTypes = {
 
 class TopicRow extends React.Component {
 
+  constructor(props) {
+    super(props);
+    this.pageViewStateUpdater = this.pageViewStateUpdater.bind(this);
+  }
+
+  pageViewStateUpdater = (nav, cat, time) => {
+    this.props.pageViewStateUpdater(nav, cat, time);
+  }
+
   rowToggled = ( title ) => {
-    GaUserEvent( "topics", title, this.props.userInfo);
+    let timerResult = PageViewTimer(
+      this.props.userInfo.preCat,
+      this.props.userInfo.preTime);
+    let currTime = timerResult.currTime,
+      timeDiff = timerResult.timeDiff;
+    let currNav = "topics", currCat = title;
+    GaUserEvent(this.props.userInfo, timeDiff);
+    this.props.pageViewStateUpdater(currNav, currCat, currTime);
   }
 
   render() {
-
     const Image = "./";
     //all the subjects
     var sujectArray = [];
@@ -174,6 +193,13 @@ class TopicRow extends React.Component {
 }
 
 class TopicTable extends React.Component {
+  constructor(props) {
+    super(props);
+    this.pageViewStateUpdater = this.pageViewStateUpdater.bind(this);
+  }
+  pageViewStateUpdater = (nav, cat, time) => {
+    this.props.pageViewStateUpdater(nav, cat, time);
+  }
   render() {
 
     const backdroplistItemStyle = {
@@ -206,7 +232,9 @@ class TopicTable extends React.Component {
         <div style={listItemStyle}>
           <TopicRow 
             topic={topic}
-            userInfo={this.props.userConfig} />
+            userInfo={this.props.userConfig} 
+            pageViewStateUpdater = {this.pageViewStateUpdater}
+            />
         </div>
       </div>);
       index++;
@@ -252,7 +280,11 @@ class FilterableTopicTable extends React.Component {
     };
 
     this.handleFilterTextInput = this.handleFilterTextInput.bind(this);
+    this.pageViewStateUpdater = this.pageViewStateUpdater.bind(this);
+  }
 
+  pageViewStateUpdater = (nav, cat, time) => {
+    this.props.pageViewStateUpdater(nav, cat, time);
   }
 
   handleFilterTextInput(filterText) {
@@ -275,6 +307,7 @@ class FilterableTopicTable extends React.Component {
           topics={this.props.topics}
           userConfig={this.props.userConfig}
           filterText={this.state.filterText}
+          pageViewStateUpdater = {this.pageViewStateUpdater}
         />
       </div>
     );

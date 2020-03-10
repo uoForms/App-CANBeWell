@@ -36,7 +36,6 @@ class MyBody extends React.Component {
 
   pageViewStateUpdater = (nav, cat, time) => {
     this.props.pageViewStateUpdater(nav, cat, time);
-    console.log(cat+"in body.js");
   }
 
   toggleModal = () => {

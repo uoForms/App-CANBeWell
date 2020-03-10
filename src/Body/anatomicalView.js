@@ -70,7 +70,6 @@ class Anatomy extends React.Component {
   organClicked = (button, text, organ) => {
     if (organ !== "") {
       try {
-        console.log(this.props);
         let timerResult = PageViewTimer(
           this.props.userInfo.preCat,
           this.props.userInfo.preTime);
@@ -107,8 +106,6 @@ class Anatomy extends React.Component {
   }
 
   iconClicked = (button, text) => {
-
-    console.log(this.props);
     let timerResult = PageViewTimer(
       this.props.userInfo.preCat,
       this.props.userInfo.preTime);

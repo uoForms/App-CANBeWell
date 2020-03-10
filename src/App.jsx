@@ -681,11 +681,13 @@ class App extends Component {
             showTests={this.state.testsView} 
             userConfig={userInfo} 
             data={this.state.data.getListOfTests} 
-            lang={this.state.lang} ></Tests>
+            lang={this.state.lang} 
+            pageViewStateUpdater = {this.pageViewStateUpdater}></Tests>
           <Topics showTopics={this.state.topicsView} 
             userConfig={userInfo} 
             data={this.state.data.getListOfTopics} 
-            lang={this.state.lang} ></Topics>
+            lang={this.state.lang} 
+            pageViewStateUpdater = {this.pageViewStateUpdater}></Topics>
         </div>
 
         {/* <button style={fixedStyle}>
