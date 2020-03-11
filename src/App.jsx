@@ -4,6 +4,7 @@ import { instanceOf } from 'prop-types';
 import ReactGA from "react-ga";
 import { IoIosSettings } from "react-icons/io";
 import { AiOutlineExclamationCircle } from "react-icons/ai";
+import {Button, ButtonToolbar} from 'react-bootstrap'
 
 import Lang from './Lang/Lang.json';
 import './App.css';
@@ -655,19 +656,19 @@ class App extends Component {
 
         <div className="userinfo-row">
           {/*display user's info*/}
-          <div onClick={this.genderIconClicked} className="userInfoStyle">
+          <Button variant="outline-success" size='lg' onClick={this.genderIconClicked} className="userInfoStyle">
             <h4>
-              {this.state.lang[this.state.user]} <IoIosSettings /> <br />
+              <IoIosSettings /> {this.state.lang[this.state.user]}
               {/*this.state.lang.display_gender*/} {this.state.lang[this.state.gender]} | {this.state.age == "all ages" ? this.state.lang.all_ages : this.state.age}
-              {/*this.state.lang.display_age*/} :
+              {/*this.state.lang.display_age*/} 
             </h4>
-          </div>
-          <div className="suvey-reminder">
+          </Button>
+          <Button variant="outline-success" size='lg' className="suvey-reminder">
             <h4>
               <AiOutlineExclamationCircle />
               {this.state.language === "english" ? "Take the survey" : "Prenez le sondage"}
             </h4>
-          </div>
+          </Button>
         </div>
 
         <div>
