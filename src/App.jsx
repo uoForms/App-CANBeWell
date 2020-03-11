@@ -656,14 +656,14 @@ class App extends Component {
 
         <div className="userinfo-row">
           {/*display user's info*/}
-          <Button variant="outline-success" size='lg' onClick={this.genderIconClicked} className="userInfoStyle">
+          <Button variant="outline-dark" size='lg' onClick={this.genderIconClicked} className="userInfoStyle">
             <h4>
               <IoIosSettings /> {this.state.lang[this.state.user]}
               {/*this.state.lang.display_gender*/} {this.state.lang[this.state.gender]} | {this.state.age == "all ages" ? this.state.lang.all_ages : this.state.age}
               {/*this.state.lang.display_age*/} 
             </h4>
           </Button>
-          <Button variant="outline-success" size='lg' className="suvey-reminder">
+          <Button variant="outline-dark" size='lg' className="suvey-reminder">
             <h4>
               {this.state.language === "english" ? "Take the survey" : "Prenez le sondage"}
               <AiOutlineExclamationCircle />
