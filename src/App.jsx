@@ -665,8 +665,8 @@ class App extends Component {
           </Button>
           <Button variant="outline-success" size='lg' className="suvey-reminder">
             <h4>
-              <AiOutlineExclamationCircle />
               {this.state.language === "english" ? "Take the survey" : "Prenez le sondage"}
+              <AiOutlineExclamationCircle />
             </h4>
           </Button>
         </div>
