@@ -78,7 +78,7 @@ export const matchUserDevice = () => {
   var md = new MobileDetect(clientNav.userAgent)
   var mobileBrowser = md.userAgent();
   var clientOS = 'Other';
-  var clientDevice = 'Desktop';
+  var clientDevice = 'WindowsPC';
   var clientBrowser = matchBrowser();
   // dectect os
   if (mobileBrowser) {
@@ -92,6 +92,10 @@ export const matchUserDevice = () => {
   }
   else if (clientNav.userAgent.indexOf('Windows') != -1) {
     clientOS = 'Windows';
+    clientDevice = 'WindowsPC'
+  }
+  if (clientOS === 'AndroidOS' ) {
+    clientDevice = 'AndroidPhone'
   }
 
   return {
@@ -107,13 +111,13 @@ export const GaUserEvent = (currNav, currCat, userInfo, timeDiff, preTime, currT
   var deviceInfo = matchUserDevice();
   let date = formatDate(Date.now());
   var label = {
-    nav: currNav,
+    navigation: currNav,
     user: userInfo.userID,
     gender: userInfo.gender,
     age: userInfo.age,
     language: userInfo.language,
     role: userInfo.patient_provider,
-    category: currCat.replace("/", " or "),
+    item: currCat.replace("/", " or "),
     os: deviceInfo.OS,
     device: deviceInfo.Device,
     browser: deviceInfo.Browser,
@@ -129,13 +133,13 @@ export const GaUserEvent = (currNav, currCat, userInfo, timeDiff, preTime, currT
   if (userInfo.preCat != null) {
     writeClick(label, currTime);
     var preLabel = {
-      nav: userInfo.preNav,
+      navigation: userInfo.preNav,
       user: userInfo.userID,
       gender: userInfo.gender,
       age: userInfo.age,
       language: userInfo.language,
       role: userInfo.patient_provider,
-      category: userInfo.preCat.replace("/", " or "),
+      item: userInfo.preCat.replace("/", " or "),
       os: deviceInfo.OS,
       device: deviceInfo.Device,
       browser: deviceInfo.Browser,
