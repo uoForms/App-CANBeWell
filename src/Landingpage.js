@@ -27,7 +27,8 @@ class LandingPage extends React.Component {
     localStorage.setItem("app_language", this.state.language);
   }
   componentDidMount() {
-    initGA('UA-151893001-1');
+    initGA('UA-151893001-2');
+    //PageView();
   }
 
   render() {
