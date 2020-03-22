@@ -290,24 +290,12 @@ details[open] summary:after {
   float: left;
   cursor: pointer;
   position: relative;
-  text-align: left;
-  width: 33vw;
-  height: auto;
-  word-wrap:break-word; 
-  word-break: normal; 
-  overflow: hidden;
 }
 
 .suvey-reminder{
   float: right;
   cursor: pointer;
   position: relative;
-  text-align: right;
-  width: 40vw;
-  height: auto;
-  word-wrap:break-word; 
-  word-break: normal; 
-  overflow: hidden;
 }
 
 /*scrollbar*/

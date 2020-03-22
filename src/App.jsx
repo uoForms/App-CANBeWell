@@ -4,6 +4,7 @@ import { instanceOf } from 'prop-types';
 import ReactGA from "react-ga";
 import { IoIosSettings } from "react-icons/io";
 import { AiOutlineExclamationCircle } from "react-icons/ai";
+import {Button, ButtonToolbar} from 'react-bootstrap'
 
 import Lang from './Lang/Lang.json';
 import './App.css';
@@ -41,10 +42,12 @@ class App extends Component {
       age: null,
       language: null,
       region: null,
-      city: null
+      city: null,
+      preNav: null,
+      preCat: null,
+      preTime: null
     };// = getUserInfo();
     let DataToDisplay = new Data(this.props.appLanguage);
-    //DataToDisplay.props = this.props.applanguage;
     var app_language = this.props.appLanguage;
 
 
@@ -67,8 +70,11 @@ class App extends Component {
       allAgesSelected: (cookies.get('_all_ages_selected') == "true") ? true : false,
       user: cookies.get('user') || 'patient',
       gender: cookies.get('gender'),
-      region: false,
-      city: false,
+      region: null,
+      city: null,
+      preNav: null,
+      preCat: null,
+      preTime: null
       //allowToClose: false, //obselete! we use to make the user agree before they could press agree
     };
 
@@ -77,6 +83,7 @@ class App extends Component {
     this.handlePatientProviderChange = this.handlePatientProviderChange.bind(this);
     this.handlePatientProviderChangeFromConfig = this.handlePatientProviderChangeFromConfig.bind(this);
     this.handleAllAgesSelected = this.handleAllAgesSelected.bind(this);
+    this.pageViewStateUpdater = this.pageViewStateUpdater.bind(this);
   }
 
   componentDidMount() {
@@ -101,7 +108,7 @@ class App extends Component {
       });
     cookies.set('userID', clientId, { path: "/" });
     //count a pageview of body 
-    ReactGA.pageview('body');
+    //ReactGA.pageview('body');
 
     /* navigator.geolocation.getCurrentPosition(location => {
       this.setState({
@@ -119,6 +126,15 @@ class App extends Component {
         });
       }
       );
+  }
+
+  pageViewStateUpdater = ( nav, cat, time ) => {
+    console.log(cat+"app.js callback");
+    this.setState({
+      preNav: nav,
+      preCat: cat,
+      preTime: time,
+    });
   }
 
   //toggle the config modif
@@ -179,7 +195,7 @@ class App extends Component {
     document.getElementById("body").classList = 'active';
     document.getElementById("topic").classList = '';
     document.getElementById("test").classList = '';
-    ReactGA.pageview('body');
+    //ReactGA.pageview('body');
   }
   topicsClicked = (e) => {
     this.setState({
@@ -191,7 +207,7 @@ class App extends Component {
     document.getElementById("body").classList = '';
     document.getElementById("topic").classList = 'active';
     document.getElementById("test").classList = '';
-    ReactGA.pageview('topic');
+    //ReactGA.pageview('topic');
   }
   testsClicked = (e) => {
     this.setState({
@@ -203,7 +219,7 @@ class App extends Component {
     document.getElementById("body").classList = '';
     document.getElementById("topic").classList = '';
     document.getElementById("test").classList = 'active';
-    ReactGA.pageview('test');
+    //ReactGA.pageview('test');
   }
 
   genderIconClicked = () => {
@@ -379,7 +395,6 @@ class App extends Component {
   }
 
   render() {
-
     //var userInfo = getUserInfo();
     var userInfo = {
       userID: this.state.userID,
@@ -389,6 +404,9 @@ class App extends Component {
       language: this.state.language, //TODO plese change that VERY important
       region: this.state.region,
       city: this.state.city,
+      preNav: this.state.preNav,
+      preCat: this.state.preCat,
+      preTime: this.state.preTime
     };
 
     const fixedStyle = {
@@ -638,25 +656,39 @@ class App extends Component {
 
         <div className="userinfo-row">
           {/*display user's info*/}
-          <div onClick={this.genderIconClicked} className="userInfoStyle">
+          <Button variant="outline-dark" size='lg' onClick={this.genderIconClicked} className="userInfoStyle">
             <h4>
-              {this.state.lang[this.state.user]} <IoIosSettings /> <br />
+              <IoIosSettings /> {this.state.lang[this.state.user]}
               {/*this.state.lang.display_gender*/} {this.state.lang[this.state.gender]} | {this.state.age == "all ages" ? this.state.lang.all_ages : this.state.age}
-              {/*this.state.lang.display_age*/} :
+              {/*this.state.lang.display_age*/} 
             </h4>
-          </div>
-          <div className="suvey-reminder">
+          </Button>
+          <Button variant="outline-dark" size='lg' className="suvey-reminder">
             <h4>
-              <AiOutlineExclamationCircle />
               {this.state.language === "english" ? "Take the survey" : "Prenez le sondage"}
+              <AiOutlineExclamationCircle />
             </h4>
-          </div>
+          </Button>
         </div>
 
         <div>
-          <MyBody showBody={this.state.bodyView} userConfig={userInfo} getText={this.state.data.getTopic} lang={this.state.lang}></MyBody>
-          <Tests showTests={this.state.testsView} userConfig={userInfo} data={this.state.data.getListOfTests} lang={this.state.lang}></Tests>
-          <Topics showTopics={this.state.topicsView} userConfig={userInfo} data={this.state.data.getListOfTopics} lang={this.state.lang}></Topics>
+          <MyBody 
+            showBody={this.state.bodyView} 
+            userConfig={userInfo} 
+            getText={this.state.data.getTopic} 
+            lang={this.state.lang}
+            pageViewStateUpdater = {this.pageViewStateUpdater}></MyBody>
+          <Tests 
+            showTests={this.state.testsView} 
+            userConfig={userInfo} 
+            data={this.state.data.getListOfTests} 
+            lang={this.state.lang} 
+            pageViewStateUpdater = {this.pageViewStateUpdater}></Tests>
+          <Topics showTopics={this.state.topicsView} 
+            userConfig={userInfo} 
+            data={this.state.data.getListOfTopics} 
+            lang={this.state.lang} 
+            pageViewStateUpdater = {this.pageViewStateUpdater}></Topics>
         </div>
 
         {/* <button style={fixedStyle}>

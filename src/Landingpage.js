@@ -27,8 +27,7 @@ class LandingPage extends React.Component {
     localStorage.setItem("app_language", this.state.language);
   }
   componentDidMount() {
-    initGA('UA-151893001-1');
-    PageView();
+    initGA('UA-151893001-2');
   }
 
   render() {
@@ -42,7 +41,7 @@ class LandingPage extends React.Component {
             </div>
             <div className="langButton">
               <button class="langButtonStyle" onClick={this.handleChange} >English </button>
-              <button class="langButtonStyle" onClick={this.handleChange2}>Francais</button>
+              <button class="langButtonStyle" onClick={this.handleChange2}>Français</button>
             </div>
             <div className="landingpage-notice-row">
               <div className="landingpage-notice-column">

@@ -19,6 +19,7 @@ class MyBody extends React.Component {
       display: [{ name: "", body: [{ subject: "", text: "" }] }],
     };
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+    this.pageViewStateUpdater = this.pageViewStateUpdater.bind(this);
   }
   componentDidMount() {
     this.updateWindowDimensions();
@@ -31,6 +32,10 @@ class MyBody extends React.Component {
 
   updateWindowDimensions() {
     this.setState({ width: window.innerWidth, height: window.innerHeight });
+  }
+
+  pageViewStateUpdater = (nav, cat, time) => {
+    this.props.pageViewStateUpdater(nav, cat, time);
   }
 
   toggleModal = () => {
@@ -70,7 +75,13 @@ class MyBody extends React.Component {
 
         <div align="center"><h4 className="instruction">{this.props.lang.body_general_instruction}</h4></div>
         <div>
-          <Anatomy gender={this.props.userConfig.gender} userInfo={this.props.userConfig} getDisplay={this.props.getText} lang={this.props.lang}></Anatomy>
+          <Anatomy 
+            gender={this.props.userConfig.gender} 
+            userInfo={this.props.userConfig} 
+            getDisplay={this.props.getText} 
+            lang={this.props.lang}
+            pageViewStateUpdater = {this.pageViewStateUpdater}
+            ></Anatomy>
         </div>
 
         <BodyHelpModal

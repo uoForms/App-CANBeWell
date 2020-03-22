@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ReactGA from "react-ga"; 
 
-import { GaUserEvent } from '../Tracking';
+import { PageViewTimer, GaUserEvent } from '../Tracking';
 import '../Button.css';
 import TestsModal from './TestsModal';
 import TestListFR from '../JSONFolder/HtmlTest-FR.json';
@@ -16,6 +15,11 @@ class Tests extends React.Component {
       isOpen: false,
       TestList: this.props.userConfig.language == "french" ? TestListFR : TestListEN
     };
+    this.pageViewStateUpdater = this.pageViewStateUpdater.bind(this);
+  }
+
+  pageViewStateUpdater = (nav, cat, time) => {
+    this.props.pageViewStateUpdater(nav, cat, time);
   }
 
   toggleModal = () => {
@@ -51,7 +55,8 @@ class Tests extends React.Component {
             this.props.data(this.state.TestList, this.props.userConfig)
             } 
           userConfig = {this.props.userConfig}
-          text={this.props.lang.test_search_bar_placeholder} />
+          text={this.props.lang.test_search_bar_placeholder}
+          pageViewStateUpdater = {this.pageViewStateUpdater} />
 
         <TestsModal show={this.state.isOpen}
           onClose={this.toggleModal}
@@ -74,8 +79,24 @@ Tests.propTypes = {
 
 class TestRow extends React.Component {
 
+  constructor(props) {
+    super(props);
+    this.pageViewStateUpdater = this.pageViewStateUpdater.bind(this);
+  }
+
+  pageViewStateUpdater = (nav, cat, time) => {
+    this.props.pageViewStateUpdater(nav, cat, time);
+  }
+
   rowToggled = ( title ) => {
-    GaUserEvent( "tests", title, this.props.userInfo);
+    let timerResult = PageViewTimer(
+      this.props.userInfo.preCat,
+      this.props.userInfo.preTime);
+    let currTime = timerResult.currTime,
+      timeDiff = timerResult.timeDiff;
+    let currNav = "tests", currCat = title;
+    GaUserEvent(currNav, currCat ,this.props.userInfo, timeDiff, this.props.userInfo.preTime, currTime);
+    this.props.pageViewStateUpdater(currNav, currCat, currTime);
   }
 
   render() {
@@ -85,8 +106,6 @@ class TestRow extends React.Component {
     var bodys = this.props.test.body;
     var mIndex = 0;
     bodys.forEach((body) => {
-
-
       var bodyArray = body.text.split(/(\[\[|\]\]|\n)/g);
       var bodyArrayToDisplay = [];
 
@@ -139,14 +158,20 @@ class TestRow extends React.Component {
 }
 
 class TestTable extends React.Component {
-  render() {
+  constructor(props) {
+    super(props);
+    this.pageViewStateUpdater = this.pageViewStateUpdater.bind(this);
+  }
 
+  pageViewStateUpdater = (nav, cat, time) => {
+    this.props.pageViewStateUpdater(nav, cat, time);
+  }
+
+  render() {
     const backdroplistItemStyle = {
       padding: 5
     };
-
     const blueist = '#27AAE1';
-
     const listItemStyle = {
       backgroundColor: blueist,
       fontWeight: 300,
@@ -170,6 +195,7 @@ class TestTable extends React.Component {
           <TestRow
             test={test} 
             userInfo = {this.props.userConfig}
+            pageViewStateUpdater = {this.pageViewStateUpdater}
             />
         </div>
       </div>);
@@ -216,8 +242,9 @@ class FilterableTestTable extends React.Component {
     };
 
     this.handleFilterTextInput = this.handleFilterTextInput.bind(this);
-
+    this.pageViewStateUpdater = this.pageViewStateUpdater.bind(this);
   }
+  
 
   handleFilterTextInput(filterText) {
     //Call to setState to update the UI
@@ -225,6 +252,10 @@ class FilterableTestTable extends React.Component {
       filterText: filterText
     });
     //React knows the state has changed, and calls render() method again to learn what should be on the screen
+  }
+
+  pageViewStateUpdater = (nav, cat, time) => {
+    this.props.pageViewStateUpdater(nav, cat, time);
   }
 
   render() {
@@ -239,6 +270,7 @@ class FilterableTestTable extends React.Component {
           tests={this.props.tests}
           filterText={this.state.filterText}
           userConfig={this.props.userConfig}
+          pageViewStateUpdater = {this.pageViewStateUpdater}
         />
       </div>
     );
