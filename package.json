@@ -42,6 +42,6 @@
     ]
   },
   "devDependencies": {
-    "react-native-testing-library": "^1.11.1"
+    "react-native-testing-library": "^1.13.0"
   }
 }
