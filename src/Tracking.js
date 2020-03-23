@@ -159,9 +159,9 @@ export const GaUserEvent = (currNav, currCat, userInfo, timeDiff, preTime, currT
 
 export const getEventCatagory = (label) => {
   let role = label.role;
-  let nav = label.nav;
-  let category = label.category;
-  let string = role + '-' + nav + '-' + category
+  let navigation = label.navigation;
+  let item = label.item;
+  let string = role + '-' + navigation + '-' + item
   return string;
 };
 
