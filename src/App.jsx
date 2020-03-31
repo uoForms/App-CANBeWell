@@ -105,7 +105,10 @@ class App extends Component {
     ReactGA.ga(
       function (tracker) {
         clientId = tracker.get('clientId');
-      });
+      }
+    );
+    if(clientId = null)
+      clientId = Date.now().toString();
     cookies.set('userID', clientId, { path: "/" });
     //count a pageview of body 
     //ReactGA.pageview('body');
