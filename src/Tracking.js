@@ -5,7 +5,7 @@ import { db } from './firebase';
 export const initGA = (trackingID) => {
   ReactGA.initialize(
     trackingID,
-    { 'cookieExpires': 864000 }); //Set ga cookie expires time as 10 days 
+  ); 
 }
 
 export const PageViewTimer = (prePage, preTime) => {
