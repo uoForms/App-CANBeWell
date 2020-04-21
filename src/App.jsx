@@ -109,7 +109,9 @@ class App extends Component {
       }
     );
     if(clientId = null)
+      uuidv4();
       clientId = uuidv4();
+      console.log(clientId)
     cookies.set('userID', clientId, { path: "/" });
     //count a pageview of body 
     //ReactGA.pageview('body');
