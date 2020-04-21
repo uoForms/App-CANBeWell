@@ -5,6 +5,7 @@ import ReactGA from "react-ga";
 import { IoIosSettings } from "react-icons/io";
 import { AiOutlineExclamationCircle } from "react-icons/ai";
 import {Button, ButtonToolbar} from 'react-bootstrap'
+import { v4 as uuidv4 } from 'uuid';
 
 import Lang from './Lang/Lang.json';
 import './App.css';
@@ -19,6 +20,7 @@ import MyBody from './Body/Body.js';
 import Tests from './Tests/Tests.js';
 import Topics from './Topics/Topics.js';
 import IconGender from './listicon.png';
+import { unstable_renderSubtreeIntoContainer } from 'react-dom';
 //import {setGender} from './UserInfo';
 //import {setPatientProvider} from './UserInfo';
 //import {setAge} from './UserInfo';
@@ -101,15 +103,12 @@ class App extends Component {
 
     /// The following steps is to get clientID from google analytics and save it to cookies
     const { cookies } = this.props;
-    var clientId = null;
-    ReactGA.ga(
-      function (tracker) {
-        clientId = tracker.get('clientId');
-      }
-    );
-    if(clientId = null)
-      clientId = Date.now().toString();
-    cookies.set('userID', clientId, { path: "/" });
+    if( !cookies.get('userID') ) 
+    {
+        cookies.set('userID', uuidv4(), { path: "/" });
+    }
+    console.log(cookies.get('userID'))
+    
     //count a pageview of body 
     //ReactGA.pageview('body');
 

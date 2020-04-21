@@ -7,7 +7,7 @@
 /.vscode
 
 # misc
-.DS_Store
+*.DS_Store
 .env.local
 .env.development.local
 .env.test.local
@@ -18,3 +18,4 @@ yarn-error.log*
 
 /src/firebase.jsx
 firebase.json
+.travis.yml
