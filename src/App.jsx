@@ -5,6 +5,7 @@ import ReactGA from "react-ga";
 import { IoIosSettings } from "react-icons/io";
 import { AiOutlineExclamationCircle } from "react-icons/ai";
 import {Button, ButtonToolbar} from 'react-bootstrap'
+import { v4 as uuidv4 } from 'uuid';
 
 import Lang from './Lang/Lang.json';
 import './App.css';
@@ -108,7 +109,7 @@ class App extends Component {
       }
     );
     if(clientId = null)
-      clientId = Date.now().toString();
+      clientId = uuidv4();
     cookies.set('userID', clientId, { path: "/" });
     //count a pageview of body 
     //ReactGA.pageview('body');
