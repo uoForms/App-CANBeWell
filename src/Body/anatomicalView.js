@@ -43,6 +43,7 @@ import fallsIcon from '../assets/Icons/icon_falls.png';
 import immunizationIcon from '../assets/Icons/icon_immunization.png';
 import phyactIcon from '../assets/Icons/icon_physact.png';
 import sunExposureIcon from '../assets/Icons/icon_sunexposure.png';
+import covidIcon from '../assets/Icons/icon_covid.png';
 
 import './Body.css';
 import '../App.css';
@@ -190,6 +191,8 @@ class Anatomy extends React.Component {
               <button id="immunizationButton" className="immunization" onClick={(button, text, organ) => this.iconClicked("needle in arm", this.props.lang.needle_in_arm)}><img src={immunizationIcon} alt="immunizationIcon" /></button>
               <button id="sunExposureButton" className="sunExposure" onClick={(button, text, organ) => this.iconClicked("sun", this.props.lang.sun)}><img src={sunExposureIcon} alt="sunExposureIcon" /></button>
               <button id="phyActivityButton" className="phyActivity" onClick={(button, text, organ) => this.iconClicked("figure outside body walking", this.props.lang.figure_outside_body_walking)}><img src={phyactIcon} alt="physicalActivityIcon" /></button>
+              <button id="covidButton" className="covid" onClick={(button, text, organ) => this.iconClicked("covid", this.props.lang.covid)}><img src={covidIcon} alt="covidIcon" /></button>
+              
             </div>
           </div>
           <h1 style={fixedStyle}>{this.state.organSelected}</h1>
@@ -245,6 +248,7 @@ class Anatomy extends React.Component {
               <button className="immunization" onClick={(button, text) => this.iconClicked("needle in arm", this.props.lang.needle_in_arm)}><img src={immunizationIcon} alt="immunizationIcon" /></button>
               <button className="sunExposure" onClick={(button, text) => this.iconClicked("sun", this.props.lang.sun)}><img src={sunExposureIcon} alt="sunExposureIcon" /></button>
               <button className="phyActivity" onClick={(button, text) => this.iconClicked("figure outside body walking", this.props.lang.figure_outside_body_walking)}><img src={phyactIcon} alt="physicalActivityIcon" /></button>
+              <button id="covidButton" className="covid" onClick={(button, text) => this.iconClicked("covid", this.props.lang.covid)}><img src={covidIcon} alt="covidIcon" /></button>
             </div>
           </div>
           <h1 style={fixedStyle}>{this.state.organSelected}</h1>
@@ -298,6 +302,7 @@ class Anatomy extends React.Component {
               <button id="immunizationButton" className="immunization" onClick={(button, text) => this.iconClicked("needle in arm", this.props.lang.needle_in_arm)}><img src={immunizationIcon} alt="immunizationIcon" /></button>
               <button id="sunExposureButton" className="sunExposure" onClick={(button, text) => this.iconClicked("sun", this.props.lang.sun)}><img src={sunExposureIcon} alt="sunExposureIcon" /></button>
               <button id="phyActivityButton" className="phyActivity" onClick={(button, text) => this.iconClicked("figure outside body walking", this.props.lang.figure_outside_body_walking)}><img src={phyactIcon} alt="physicalActivityIcon" /></button>
+              <button id="covidButton" className="covid" onClick={(button, text) => this.iconClicked("covid", this.props.lang.covid)}><img src={covidIcon} alt="covidIcon" /></button>
             </div>
           </div>
           <h1 style={fixedStyle}>{this.state.organSelected}</h1>
