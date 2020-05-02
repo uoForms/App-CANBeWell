@@ -56,6 +56,7 @@
     "hip":"Falls",
     "needle_in_arm": "Immunization",
     "sun": "Sun Exposure",
+    "covid": "Covid",
     "figure_outside_body_walking": "Physical Activity",
     "topic_search_bar_placeholder": "Search topic...",
     "test_search_bar_placeholder": "Search test...",
