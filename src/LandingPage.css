@@ -17,6 +17,23 @@
     height: auto;
 }
 
+.landing-update {
+  position: relative;
+  text-align: center;
+  margin-top: 2vw;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: auto;
+  word-wrap:break-word; 
+  word-break: normal; 
+  overflow: hidden;
+  font-size: large;
+  font-weight: bolder;
+  font-style: unset;
+  color: crimson;
+}
+
 .landing-notice {
     position: relative;
     text-align: center;
