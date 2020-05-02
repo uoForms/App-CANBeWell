@@ -289,50 +289,18 @@ details[open] summary:after {
 .userInfoStyle{
   float: left;
   cursor: pointer;
-  /*position: relative;*/
-  max-width: 175px;
-  color: #2c87f0;
+  position: relative;
+  /*max-width: 160px;*/
   }
 
 .survey-reminder {
     float: right;
     cursor: pointer;
-    /*position: relative;*/
-    max-width: 150px;
-    background: #4bff04;
-    }
-.survey-reminder a.link {
-  float: right;
-  cursor: pointer;
-  /*position: relative;*/
-  max-width: 150px;
-  color: #4bff04;
-  background: #4bff04;
-}
-.survey-reminder a.visited {
-  float: right;
-  cursor: pointer;
-  /*position: relative;*/
-  max-width: 150px;
-  color: #4bff04;
-  background: #4bff04;
-}
-.survey-reminder a.hover {
-  float: right;
-  cursor: pointer;
-  /*position: relative;*/
-  max-width: 150px;
-  color: #4bff04;
-  background: #4bff04;
-}
-.survey-reminder a.active {
-  float: right;
-  cursor: pointer;
-  /*position: relative;*/
-  max-width: 150px;
-  color: #4bff04;
-  background: #4bff04;
-}
+    position: relative;
+  /*max-width: 150px;*/
+  }
+
+
 
 /*scrollbar*/
 /* width */
