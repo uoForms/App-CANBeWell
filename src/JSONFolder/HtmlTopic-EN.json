@@ -167,7 +167,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150,
-    "Button": "COVID-19"
+    "Button": "Covid"
   },
   {
     "Topic heading": "COVID-19",
@@ -177,7 +177,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150,
-    "Button": "COVID-19"
+    "Button": "Covid"
   },
   {
     "Topic heading": "Diabetes type 2",
