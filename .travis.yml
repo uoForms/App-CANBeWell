@@ -26,3 +26,5 @@ deploy:
   on:
     branch: 
     - analytics-test
+    - transgender
+    
