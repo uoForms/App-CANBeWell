@@ -622,8 +622,8 @@
   {
     "Topic heading": "Substance Abuse",
     "Subject": "Alcohol",
-    "General Patient Text": "•Women: have 10 or less drinks a week \n•Men: Have 15 or less drinks per week\nWhat is a “drink”?\n\n [[image;images/size_of_drink.jpg]]\n[[more;https://www.camh.ca/-/media/files/canadas-low-risk-guidelines-pdf.pdf]]",
-    "Health Provider Text": "•Women: have 10 or less drinks a week\n•Men: have 15 or less drinks per week\nWhat is a \"drink\"?\n\n [[image;images/size_of_drink.jpg]]\n\n[[Source; https://www.camh.ca/-/media/files/canadas-low-risk-guidelines-pdf.pdf]]\nScreening for misuse and behavioural counseling [[USPSTF B (2018); https://www.uspreventiveservicestaskforce.org/Page/Document/UpdateSummaryFinal/unhealthy-alcohol-use-in-adolescents-and-adults-screening-and-behavioral-counseling-interventions?ds=1&s=alcohol]]",
+    "General Patient Text": "•Women: have 10 or less drinks a week \n•Men: Have 15 or less drinks per week\nWhat is a “drink”?\n\n [[image;images/size_of_drink_en.jpg]]\n[[more;https://www.camh.ca/-/media/files/canadas-low-risk-guidelines-pdf.pdf]]",
+    "Health Provider Text": "•Women: have 10 or less drinks a week\n•Men: have 15 or less drinks per week\nWhat is a \"drink\"?\n\n [[image;images/size_of_drink_en.jpg]]\n\n[[Source; https://www.camh.ca/-/media/files/canadas-low-risk-guidelines-pdf.pdf]]\nScreening for misuse and behavioural counseling [[USPSTF B (2018); https://www.uspreventiveservicestaskforce.org/Page/Document/UpdateSummaryFinal/unhealthy-alcohol-use-in-adolescents-and-adults-screening-and-behavioral-counseling-interventions?ds=1&s=alcohol]]",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150,
