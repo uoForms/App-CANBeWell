@@ -89,7 +89,8 @@ div.fixed {
   height: auto;
 }
 
-.langButtonStyle{
+
+.langLandButtonStyle{
   background-color: #0a99ecc9;
   border-color: #0a99ecc9;
   font-size: larger;
@@ -98,4 +99,6 @@ div.fixed {
   padding: 10px 15px 10px 15px;
   margin: 5px 10px 5px 10px;
   border-radius: 25px;
+  width: 80px;
+  height: 45px ;
 }

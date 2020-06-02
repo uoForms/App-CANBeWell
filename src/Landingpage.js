@@ -43,8 +43,10 @@ class LandingPage extends React.Component {
               <img class="landing-logo" src={calllogo} alt="CANBeWellLogo" />
             </div>
             <div className="langButton">
-              <button class="langButtonStyle" onClick={this.handleChange} >English </button>
-              <button class="langButtonStyle" onClick={this.handleChange2}>Français</button>
+              <button class="langLandButtonStyle" onClick={this.handleChange} >English </button>
+              
+              <button class="langLandButtonStyle" onClick={this.handleChange2}>Français</button>
+             
             </div>
             <div className="landingpage-notice-row">
               <div className="landingpage-notice-column">

@@ -665,7 +665,7 @@ class App extends Component {
               {/*this.state.lang.display_age*/} 
             </h4>
           </Button>
-          <Button variant="outline-dark" href="https://www.surveymonkey.ca/r/95ZW3VZ" size='lg' className="survey-reminder">
+          <Button variant="outline-dark" href="https://www.surveymonkey.ca/r/95ZW3VZ" size='lg' className="survey-reminder" target="_blank">
            <h4>
             {this.state.language === "english" ? "Take the Survey" : "Prenez le sondage"}
               <AiOutlineExclamationCircle />
