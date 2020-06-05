@@ -44,7 +44,6 @@ class LandingPage extends React.Component {
             </div>
             <div className="langButton">
               <button class="langLandButtonStyle" onClick={this.handleChange} >English </button>
-              
               <button class="langLandButtonStyle" onClick={this.handleChange2}>Français</button>
              
             </div>
