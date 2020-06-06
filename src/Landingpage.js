@@ -28,7 +28,7 @@ class LandingPage extends React.Component {
   }
   componentDidMount() {
     initGA('UA-151893001-2');
-    /* This tracking number is related to Google Analytics for test, the production tracking number is :UA-151893001-1"
+    /* This tracking number is related to Google Analytics for test, the production tracking number is :UA-151893001-1" */
   }
 
   render() {
