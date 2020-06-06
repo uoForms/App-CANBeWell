@@ -86,15 +86,9 @@ class SideBar extends React.Component {
           {/*<span onClick={(userLang) => this.selectLanguage("english")}>En/</span>
               <span onClick={(userLang) => this.selectLanguage("french")}>Fr</span>*/}
         </div>
-        {/*This is your sidenav stuff*/}
-        <div id="mySidenav" className="sidenav">
-          <a className="closebtn" onClick={this.closeNav}>&times;</a>
-          <a onClick={this.suggestedAppsClicked}>{this.props.lang.side_nav_suggested_apps}</a>
-          <a onClick={this.calculatorsClicked}>{this.props.lang.side_nav_calculators}</a>
-          <a onClick={this.disclaimerClicked}>{this.props.lang.side_nav_disclaimer}</a>
-          <a onClick={this.aboutClicked}>{this.props.lang.side_nav_about}</a>
-          <a onClick={this.settingsClicked}>{this.props.lang.side_nav_settings}</a>
-        </div>
+        
+        
+       
 
         <MyModal show={this.state.isOpen}
           onClose={this.toggleModal}
