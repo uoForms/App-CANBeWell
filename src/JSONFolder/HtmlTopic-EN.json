@@ -173,7 +173,7 @@
     "Topic heading": "COVID-19",
     "Subject": "PREVENT COVID-19",
     "General Patient Text": "n/a",
-    "Health Provider Text": "FOR PATIENT INFORMATION FOR PREVENTION SELECT \"PATIENT\" AT THE BEGINNING OF THE APP NOT PROVIDER\n\nUSEFUL LINKS\n[[PUBLIC HEALTH AGENCY OF CANADA; https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/health-professionals.html#cg]] \n[[The Lancet; https://www.thelancet.com/coronavirus/archive?]]\n[[NEJM; https://www.nejm.org/coronavirus]]\n[[COVID-19 Evidence Alerts from McMaster; https://plus.mcmaster.ca/COVID-19]]\n[[Oxford COVID-19 Evidence Service; https://www.cebm.net/oxford-covid-19-evidence-service/]]\n[[BMJ's Coronavirus (covid-19) Hub; https://www.bmj.com/coronavirus]]\n[[JAMA;https://jamanetwork.com/collections/46099/coronavirus-covid19]]",
+    "Health Provider Text": "FOR PREVENTION INFORMATION FOR PATIENTS, Tap on the word \"Provider\" in the top left corner of the screen and select \"Patient\".\n\nUSEFUL LINKS:\n[[•PUBLIC HEALTH AGENCY OF CANADA; https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/health-professionals.html#cg]] \n[[•The Lancet; https://www.thelancet.com/coronavirus/archive?]]\n[[•NEJM; https://www.nejm.org/coronavirus]]\n[[•COVID-19 Evidence Alerts from McMaster; https://plus.mcmaster.ca/COVID-19]]\n[[•Oxford COVID-19 Evidence Service; https://www.cebm.net/oxford-covid-19-evidence-service/]]\n[[•BMJ's Coronavirus (covid-19) Hub; https://www.bmj.com/coronavirus]]\n[[•JAMA;https://jamanetwork.com/collections/46099/coronavirus-covid19]]",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150,
