@@ -38,9 +38,13 @@ class LandingPage extends React.Component {
         {this.state.language == "" || null ? (
           <div>
             <div class="center">
+            <div className="landing-trans">
+            TRANSGENDER Branch
+            </div>
             <div className="landing-update">
             Mise à jour COVID Updated
             </div>
+            
               <img class="landing-logo" src={calllogo} alt="CANBeWellLogo" />
             </div>
             <div className="langButton">

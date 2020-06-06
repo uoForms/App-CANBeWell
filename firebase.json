@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "canbewell-test",
+    "site": "canbewell2-transgender",
     "public": "build",
     "ignore": [
       "firebase.json",
