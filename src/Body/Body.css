@@ -303,22 +303,6 @@
    left: 79%;
    width: 7%;
  }
-
- .mainRunner .maleGenital{
-    top: 51%;
-    left: 47.8%;
-    width: 7.8%;
-    
-
-}
-
-.mainRunner .femaleGenital{
-    top: 50%;
-    left: 50%;
-    width: 7.4%;
-   
-  }
-
  #icons img:hover > div#organ {
     width: 3000%;
   }
