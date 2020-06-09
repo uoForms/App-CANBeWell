@@ -38,7 +38,7 @@ class LandingPage extends React.Component {
           <div>
             <div class="center">
             <div className="landing-update">
-            Mise à jour COVID Updated
+            Mise à jour COVID Updated - (Test Branch)
             </div>
               <img class="landing-logo" src={calllogo} alt="CANBeWellLogo" />
             </div>
