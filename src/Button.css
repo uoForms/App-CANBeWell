@@ -96,9 +96,9 @@ div.fixed {
   font-size: larger;
   font-weight: bolder;
   color: #F0F0F0;
-  padding: 5px 15px 5px 15px;
+  padding: 10px 15px 10px 15px;
   margin: 5px 10px 5px 10px;
   border-radius: 25px;
   width: 80px;
-  height: 40px ;
+  height: 45px ;
 }
