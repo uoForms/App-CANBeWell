@@ -345,7 +345,8 @@ class App extends Component {
     });
   }
 
-  //sideBar func
+  //sideBar func   ---- Temporary comment
+  /*
   openNav = () => {
     document.getElementById("mySidenav").style.width = "250px";
   }
@@ -394,7 +395,7 @@ class App extends Component {
       bodyText: this.state.lang.side_nav_settings,
       buttonText: this.state.lang.config_modal_agree
     });
-  }
+  } */
 
   render() {
     //var userInfo = getUserInfo();
@@ -438,7 +439,7 @@ class App extends Component {
       right: 0,
       padding: '10px'
     };
-
+      
     // The modal "window"
     const myModalStyle = {
       backgroundColor: '#fff',
@@ -481,6 +482,7 @@ class App extends Component {
 
             <div className="footer">
               <p>{this.state.lang.instruction_modal_header}</p>
+              
 
               {/*select user*/}
               <div className="radio">
@@ -632,8 +634,9 @@ class App extends Component {
     return (
       <div>
 
-        {/*<SideBar lang={this.state.lang}></SideBar>*/} {/*TODO must fix this modal in the back ground*/}
-
+      
+       {/*<SideBar lang={this.state.lang}></SideBar>*/} {/*TODO must fix this modal in the back ground*/}
+      {/* Black Sidebar on the main page }
         <div>
           <div id="mySidenav" className="sidenav">
             <a className="closebtn" onClick={this.closeNav}>&times;</a>
@@ -646,7 +649,7 @@ class App extends Component {
           <div className="header" style={spanStyle}>
             <span onClick={this.openNav}> &#9776;</span>
           </div>
-        </div>
+    </div> */}
         {/*this is your header tab*/}
         <div className="topnav">
           <h3>
