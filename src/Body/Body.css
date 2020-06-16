@@ -105,6 +105,7 @@
        height: 5%;
    }
   
+
    .mainRunner .femaleGenitalia{
     top: 50%;
     left: 49.5%;
@@ -180,6 +181,7 @@
    left: 48%;
    width: 5%;
    height: 3%;
+  
   }
   
   .mainRunner .genitalia{
@@ -297,6 +299,11 @@
        width: 7%;
    }
   
+   .mainRunner .trans{
+    top: 6%;
+    left: 31%;
+    width: 7%;
+}
   
    .mainRunner .phyActivity{
      top: 12%;

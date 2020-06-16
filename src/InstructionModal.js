@@ -152,8 +152,11 @@ class InstructionModal extends React.Component {
     else if (this.state.selectedGender == "all_genders") {
       myBoolean_gender = true;
     }
+    else if (this.state.selectedGender == "nonbinary") {
+      myBoolean_gender = true;
+    }
 
-    if ((this.state.selectAge < 18 && this.state.selectAge > 149)) {
+    if ((this.state.selectAge < 18 && this.state.selectAge > 150)) {
       checkAge.display = "block";
       myBoolean_gender = false;
     }
@@ -196,6 +199,11 @@ class InstructionModal extends React.Component {
                   <label>
                     <input type="radio" value="female" checked={this.state.selectedGender == 'female'} onChange={this.handleGenderChange} />
                     {this.props.lang.female}
+                  </label>
+
+                  <label>
+                    <input type="radio" value="nonbinary" checked={this.state.selectedGender == 'nonbinary'} onChange={this.handleGenderChange} />
+                    {this.props.lang.nonbinary}
                   </label>
 
                   {/* {this.state.selectedPatientProvider === 'provider' || null ?

@@ -141,8 +141,8 @@ class App extends Component {
 
   //toggle the config modif
   toggleConfigurationModal = () => {
-    var genders = ["male", "female", "all_genders"];
-    if (genders.includes(this.state.gender) && ((this.state.age >= 18 && this.state.age <= 149) || this.state.allAgesSelected)) {
+    var genders = ["male", "female", "all_genders" , "nonbinary"];
+    if (genders.includes(this.state.gender) && ((this.state.age >= 18 && this.state.age <= 150) || this.state.allAgesSelected)) {
       this.setState({
         configurationIsOpen: !this.state.configurationIsOpen
       });
@@ -155,9 +155,9 @@ class App extends Component {
 
   toggleIntrutionModal = () => {
     //if(this.state.allowToClose){
-    var genders = ["male", "female", "all_genders"];
+    var genders = ["male", "female", "all_genders" , "nonbinary"];
 
-    if (genders.includes(this.state.gender) && ((this.state.age >= 18 && this.state.age <= 149) || this.state.allAgesSelected)) {
+    if (genders.includes(this.state.gender) && ((this.state.age >= 18 && this.state.age <= 150) || this.state.allAgesSelected)) {
       const { cookies } = this.props;
       cookies.set('_onboarded', true, { path: '/' });
       this.setState({
@@ -345,7 +345,8 @@ class App extends Component {
     });
   }
 
-  //sideBar func
+  //sideBar func - Commented
+  
   openNav = () => {
     document.getElementById("mySidenav").style.width = "250px";
   }
@@ -501,14 +502,22 @@ class App extends Component {
                 <form>
                   <div id="genderSelector" className="radio">
                     {this.state.lang.gender_selector}
+
                     <label>
                       <input type="radio" value="male" checked={this.state.gender == 'male'} onChange={this.handleGenderChange} />
                       {this.state.lang.male}
                     </label>
+
                     <label>
                       <input type="radio" value="female" checked={this.state.gender == 'female'} onChange={this.handleGenderChange} />
                       {this.state.lang.female}
                     </label>
+
+                    <label>
+                      <input type="radio" value="nonbinary" checked={this.state.gender == 'nonbinary'} onChange={this.handleGenderChange} />
+                      {this.state.lang.nonbinary}
+                    </label>
+                    
                     {/*this.state.user === 'provider' || null ?
                       (<label>
                         <input type="radio" value="all_genders" checked={this.state.gender == 'all_genders'} onChange={this.handleGenderChange} />
@@ -579,6 +588,7 @@ class App extends Component {
 
                 <div>
                   <form>
+
                     <div id="genderSelector" className="radio">
                       {this.state.lang.gender_selector}
                       <label>
@@ -591,6 +601,10 @@ class App extends Component {
                         {this.state.lang.female}
                       </label>
 
+                    <label>
+                      <input type="radio" value="nonbinary" checked={this.state.gender == 'nonbinary'} onChange={this.handleGenderChange} />
+                      {this.state.lang.nonbinary}
+                    </label>
                       {/*this.state.user === 'provider' || null ?
                       (<label>
                         <input type="radio" value="all_genders" checked={this.state.gender == 'all_genders'} onChange={this.handleGenderChange} />
@@ -633,9 +647,9 @@ class App extends Component {
       <div>
 
         {/*<SideBar lang={this.state.lang}></SideBar>*/} {/*TODO must fix this modal in the back ground*/}
-
+        
         <div>
-          <div id="mySidenav" className="sidenav">
+         {/* <div id="mySidenav" className="sidenav">
             <a className="closebtn" onClick={this.closeNav}>&times;</a>
             <a onClick={this.suggestedAppsClicked}>{this.state.lang.side_nav_suggested_apps}</a>
             <a onClick={this.calculatorsClicked}>{this.state.lang.side_nav_calculators}</a>
@@ -645,8 +659,9 @@ class App extends Component {
           </div>
           <div className="header" style={spanStyle}>
             <span onClick={this.openNav}> &#9776;</span>
-          </div>
-        </div>
+    </div> */}
+    </div> 
+
         {/*this is your header tab*/}
         <div className="topnav">
           <h3>

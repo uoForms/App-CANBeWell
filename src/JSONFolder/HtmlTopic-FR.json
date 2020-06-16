@@ -180,6 +180,16 @@
     "Maximum age": 150
   },
   {
+    "Button": "trans",
+    "Topic heading": "Non-Binary FR",
+    "Subject": "nonbinary subj FR",
+    "General Patient Text": "nonbinary patient FR",
+    "Health Provider Text": "nonbinary provider FR ",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
     "Button": "Pancreas",
     "Topic heading": "Diabète de type 2",
     "Subject": "Prévenir le diabète",

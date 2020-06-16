@@ -180,6 +180,16 @@
     "Button": "Covid"
   },
   {
+    "Button": "trans",
+    "Topic heading": "Non-Binary EN",
+    "Subject": "nonbinary subj EN",
+    "General Patient Text": "nonbinary patient EN",
+    "Health Provider Text": "nonbinary provider EN ",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
     "Topic heading": "Diabetes type 2",
     "Subject": "Prevent diabetes",
     "General Patient Text": "•Eat a healthy diet\n•Be physically active\n•Keep your BMI healthy :18.5-24\n [[bmi; https://www.unlockfood.ca/en/Articles/Weight-Loss/BMI-Calculator.aspx]]",
