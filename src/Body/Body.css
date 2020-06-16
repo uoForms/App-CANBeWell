@@ -358,3 +358,14 @@
     /*left: 30px;*/
   }
   
+  #FemaleUterus
+  {
+      /*width: 100%;*/
+      position: absolute;
+      left: 10px;
+      top:40px;
+      right:104px;
+      bottom:50px;
+      object-fit: contain;
+   /*   visibility: hidden; */ 
+  }
