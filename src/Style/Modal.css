@@ -40,3 +40,14 @@ h1{
   text-align: center;
   padding: 10px;
 }
+.mydetailsItem{
+  font-size: 1em;
+  font-weight: normal;
+}
+.mysummaryItem{
+  font-size: 1em;
+  font-weight: normal;
+}
+.myModalCloseButton{
+  padding-top: 15px;
+}
