@@ -174,7 +174,17 @@
     "Topic heading": "COVID-19",
     "Subject": "PRÉVENEZ LE  COVID-19",
     "General Patient Text": "n/a",
-    "Health Provider Text": "•POUR LES INFORMATIONS AUX PATIENTS VOIR LE CHOIX \"PATIENT\"  AU LIEU DE \"CLINICIEN\"\n•LIENS UTILES\n[[AGENCE DE SANTÉ PUBLIQUE DU CANADA; https://www.canada.ca/fr/sante-publique/services/maladies/maladie-coronavirus-covid-19.html]] \n[[Sommaires de la recherche publiées chaque semaine; https://www.cpd-umanitoba.com/covid-19-resources/]]\n[[The Lancet; https://www.thelancet.com/coronavirus/archive?]]\n[[NEJM; https://www.nejm.org/coronavirus]]",
+    "Health Provider Text": "•POUR LES INFORMATIONS AUX PATIENTS VOIR LE CHOIX \"PATIENT\"  AU LIEU DE \"CLINICIEN\"\n•LIENS UTILES\n[[AGENCE DE SANTÉ PUBLIQUE DU CANADA; https://www.canada.ca/fr/sante-publique/services/maladies/maladie-coronavirus-covid-19.html]] \n[[The Lancet; https://www.thelancet.com/coronavirus/archive?]]\n[[NEJM; https://www.nejm.org/coronavirus]][[McMaster COVID-19 données probantes; https://plus.mcmaster.ca/COVID-19]]\n[[Oxford COVID-19 Données Probantes; https://www.cebm.net/oxford-covid-19-evidence-service/]]\n[[BMJ Coronavirus; https://www.bmj.com/coronavirus]]\n[[JAMA;https://jamanetwork.com/collections/46099/coronavirus-covid19]]",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "trans",
+    "Topic heading": "Non-Binary FR",
+    "Subject": "nonbinary subj FR",
+    "General Patient Text": "nonbinary patient FR",
+    "Health Provider Text": "nonbinary provider FR ",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150

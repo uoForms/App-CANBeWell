@@ -17,6 +17,20 @@
     height: auto;
 }
 
+.landing-trans {
+  position: relative;
+  text-align: center;
+  margin-top: 2vw;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  height: auto;
+  font-size: normal;
+  font-weight: bolder;
+  font-style: unset;
+  color: rgb(13, 194, 58);
+}
+
 .landing-update {
   position: relative;
   text-align: center;

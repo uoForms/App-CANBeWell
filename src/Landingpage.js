@@ -28,6 +28,7 @@ class LandingPage extends React.Component {
   }
   componentDidMount() {
     initGA('UA-151893001-2');
+    /* This tracking number is related to Google Analytics for test, the production tracking number is :UA-151893001-1" */
   }
 
   render() {
@@ -37,14 +38,19 @@ class LandingPage extends React.Component {
         {this.state.language == "" || null ? (
           <div>
             <div class="center">
+            <div className="landing-trans">
+            TRANSGENDER Branch
+            </div>
             <div className="landing-update">
             Mise à jour COVID Updated
             </div>
+            
               <img class="landing-logo" src={calllogo} alt="CANBeWellLogo" />
             </div>
             <div className="langButton">
-              <button class="langButtonStyle" onClick={this.handleChange} >English </button>
-              <button class="langButtonStyle" onClick={this.handleChange2}>Français</button>
+              <button class="langLandButtonStyle" onClick={this.handleChange} >English </button>
+              <button class="langLandButtonStyle" onClick={this.handleChange2}>Français</button>
+             
             </div>
             <div className="landingpage-notice-row">
               <div className="landingpage-notice-column">
