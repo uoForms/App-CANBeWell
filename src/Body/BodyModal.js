@@ -9,7 +9,8 @@ class BodyModal extends React.Component {
     super(props);
     this.state = {
       topicDisplayed: [],
-      subject:[]
+      subject:[],
+      isToggle: true,
     };
   }
   getTopicNAme=(display)=>{
@@ -143,7 +144,7 @@ class BodyModal extends React.Component {
             try {
               if (link[0] === "image" || link[0] === "images") {
                 var adress = Image + link[1].trim();
-                bodyArrayToDisplay.push(<div><img className="imageFromFolder" src={adress} alt="" /></div>);
+                bodyArrayToDisplay.push(<div><img className="imageFromFolder" id={i} src={adress} alt="" /></div>);
               }
               /*else if(link[1].indexOf("topic") === 0 || link[1].indexOf("topic") === 1){
                 var id = topic.name + k;
@@ -176,7 +177,6 @@ class BodyModal extends React.Component {
   //     //this.pro
   }
 toggle=(display)=>{
-  console.log("efdvdfdfds",display);
   // var divSub=document.getElementById("subject");
   // console.log("divv",divSub);
   // if(divSub.style.display=="none"){
@@ -187,12 +187,23 @@ toggle=(display)=>{
     
   //   divSub.style.display="none";
   // }
+  
   var sub = [];
-  sub=this.getsubjectArray(display);
-  this.setState({
-    subject:sub
+  sub = this.getsubjectArray(display);
+  this.setState(prevState => ({
+    isToggle: !prevState.isToggle,
+  }))
+  if(!this.state.isToggle) {
+    this.setState({
+      subject: [],
+    })
+  } else {
+    this.setState({
+      subject: sub,
+    })
+  }
 
-  })
+
     
   
 }
@@ -243,11 +254,12 @@ toggle=(display)=>{
             id={topicname}
             onClick={()=>this.toggle(this.props.display)} 
           >
+            {/* {this.state.isToggle? "ON" : "OFF"} */}
             <summary><font size="+1"><b>{topicname}</b></font></summary>
         {/* <div id="subject" style="display:none">{'\n'}{subject}</div>
        */}
       </details>
-            {this.state.subject}
+      {this.state.subject}
             <div>
               <button className="button3" onClick={this.props.onClose}>{this.props.button}</button>
             </div>
