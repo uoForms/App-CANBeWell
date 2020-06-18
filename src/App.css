@@ -310,17 +310,17 @@ details[open] summary:after {
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background:#b3b0b0;/*#f1f1f1;8*/
     border-radius: 5px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #888;
+    background:rgba(0,0,0,0.3);/* #888;*/
     border-radius: 5px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: #555;/*#62676b*/
 }
