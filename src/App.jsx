@@ -142,7 +142,7 @@ class App extends Component {
   //toggle the config modif
   toggleConfigurationModal = () => {
     var genders = ["male", "female", "all_genders"];
-    if (genders.includes(this.state.gender) && ((this.state.age >= 18 && this.state.age <= 149) || this.state.allAgesSelected)) {
+    if (genders.includes(this.state.gender) && ((this.state.age >= 18 && this.state.age <= 150) || this.state.allAgesSelected)) {
       this.setState({
         configurationIsOpen: !this.state.configurationIsOpen
       });
@@ -157,7 +157,7 @@ class App extends Component {
     //if(this.state.allowToClose){
     var genders = ["male", "female", "all_genders"];
 
-    if (genders.includes(this.state.gender) && ((this.state.age >= 18 && this.state.age <= 149) || this.state.allAgesSelected)) {
+    if (genders.includes(this.state.gender) && ((this.state.age >= 18 && this.state.age <= 150) || this.state.allAgesSelected)) {
       const { cookies } = this.props;
       cookies.set('_onboarded', true, { path: '/' });
       this.setState({

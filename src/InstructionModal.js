@@ -153,11 +153,11 @@ class InstructionModal extends React.Component {
       myBoolean_gender = true;
     }
 
-    if ((this.state.selectAge < 18 && this.state.selectAge > 149)) {
+    if ((this.state.selectAge < 18 && this.state.selectAge > 150)) {
       checkAge.display = "block";
       myBoolean_gender = false;
     }
-    else if ((this.state.selectAge >= 18 && this.state.selectAge <= 149)) {
+    else if ((this.state.selectAge >= 18 && this.state.selectAge <= 150)) {
       checkAge.display = "none";
       myBoolean_age = true;
     }
