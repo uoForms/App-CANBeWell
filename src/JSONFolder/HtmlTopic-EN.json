@@ -162,92 +162,23 @@
   {
     "Topic heading": "COVID-19",
     "Subject": "PREVENT COVID-19",
-    "General Patient Text": "ARE YOU WORRIED YOU HAVE COVID-19?\nclick [[here; https://ca.thrive.health/covid19/en]]",
+    "General Patient Text": "ARE YOU WORRIED YOU HAVE COVID-19?\nclick [[here; https://ca.thrive.health/covid19/en]]\n\nINFORMATION ABOUT OLDER ADULTS AND VULNERABLE POPULATIONS\n•check with your local public health agency or city,town or community for organizations that can help you get food, support, care and more \n•click on this [[link; https://www.canada.ca/content/dam/phac-aspc/documents/services/publications/diseases-conditions/coronavirus/covid-19-vulnerable-populations/covid-19-vulnerable-populations-eng.pdf]]\n\nALL CANADIANS MUST\n•follow the instructions of your local public health agency\n•stay at home as much as possible\n•limit contact with people at higher risk, such as older adults and those in poor health\n•if you leave your home, always keep a distance of at least 2 arms lengths (approximately 2    metres) from others\n•wash your hands frequently with soap and water for at least 20 seconds\n•if soap is not available use an alcohol-based hand sanitizer\n•for more information click on this [[link; https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/prevention-risks.html?topic=tilelink]]\n\n\nCLEANING\nClean high-touch hard surfaces often, using either regular household cleaners or diluted bleach.\n•Diluted bleach recipe: 250 mL (1 cup) of water per 5 mL (1 teaspoon) of bleach. Directions are based on bleach that is 5% sodium hypochlorite, to give a 0.1% sodium hypochlorite solution. Never mix bleach with other chemical products and use it in a well-ventilated area. \n•click on [[list of approved disinfectants; https://www.canada.ca/en/health-canada/services/drugs-health-products/disinfectants/covid-19/list.html]]\n\nMASKS\nclick on [[information on masks; https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/prevention-risks/about-non-medical-masks-face-coverings.html]]\n\nDIFFERENCE BETWEEN QUARANTINE AND ISOLATION\nClick on [[Public Health Agency of Canada; https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/prevention-risks.html?topic=tilelink]]\n\nPHYSICAL DISTANCING\nclick on [[what is physical distancing?; https://www.canada.ca/content/dam/phac-aspc/documents/services/publications/diseases-conditions/social-distancing-infograph/social-distancing-infograph-eng.pdf]]\n\nHYGIENE\nclick on [[more; https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/prevention-risks.html?topic=tilelink]]",
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150,
-    "Button": "COVID"
+    "Button": "Covid"
   },
-  {
-    "Topic heading": "COVID-19",
-    "Subject": "PREVENT COVID-19",
-    "General Patient Text": "INFORMATION ABOUT OLDER ADULTS AND VULNERABLE POPULATIONS\n•check with your local public health agency or city,town or community for organizations that can help you get food, support, care and more \n•click on this [[link; https://www.canada.ca/content/dam/phac-aspc/documents/services/publications/diseases-conditions/coronavirus/covid-19-vulnerable-populations/covid-19-vulnerable-populations-eng.pdf]]",
-    "Health Provider Text": "n/a",
-    "Gender": "all",
-    "Minimum age": 18,
-    "Maximum age": 150,
-    "Button": "COVID"
-  },
-  {
-    "Topic heading": "COVID-19",
-    "Subject": "PREVENT COVID-19",
-    "General Patient Text": "ALL CANADIANS MUST\n•follow the instructions of your local public health agency\n•stay at home as much as possible\n•limit contact with people at higher risk, such as older adults and those in poor health\n•if you leave your home, always keep a distance of at least 2 arms lengths (approximately 2    metres) from others\n•wash your hands frequently with soap and water for at least 20 seconds\n•if soap is not available use an alcohol-based hand sanitizer\n•for more information click on this [[link; https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/prevention-risks.html?topic=tilelink]]",
-    "Health Provider Text": "n/a",
-    "Gender": "all",
-    "Minimum age": 18,
-    "Maximum age": 150,
-    "Button": "COVID"
-  },
-  {
-    "Topic heading": "COVID-19",
-    "Subject": "PREVENT COVID-19",
-    "General Patient Text": "CLEANING\nClean high-touch hard surfaces often, using either regular household cleaners or diluted bleach. •diluted bleach recipe: 250 mL (1 cup) of water per 5 mL (1 teaspoon) of bleach. Directions are based on bleach that is 5% sodium hypochlorite, to give a 0.1% sodium hypochlorite solution. Never mix bleach with other chemical products and use it in a well-ventilated area. \n•click on [[list of approved disinfectants; https://www.canada.ca/en/health-canada/services/drugs-health-products/disinfectants/covid-19/list.html]]",
-    "Health Provider Text": "n/a",
-    "Gender": "all",
-    "Minimum age": 18,
-    "Maximum age": 150,
-    "Button": "COVID"
-  },
-  {
-    "Topic heading": "COVID-19",
-    "Subject": "PREVENT COVID-19",
-    "General Patient Text": "MASKS\nclick on [[information on masks; https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/prevention-risks/about-non-medical-masks-face-coverings.html]]",
-    "Health Provider Text": "n/a",
-    "Gender": "all",
-    "Minimum age": 18,
-    "Maximum age": 150,
-    "Button": "COVID"
-  },
-  {
-    "Topic heading": "COVID-19",
-    "Subject": "PREVENT COVID-19",
-    "General Patient Text": "DIFFERENCE BETWEEN QUARANTINE AND ISOLATION\nClick on [[Public Health Agency of Canada; https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/prevention-risks.html?topic=tilelink]]",
-    "Health Provider Text": "n/a",
-    "Gender": "all",
-    "Minimum age": 18,
-    "Maximum age": 150,
-    "Button": "COVID"
-  },
-  {
-    "Topic heading": "COVID-19",
-    "Subject": "PREVENT COVID-19",
-    "General Patient Text": "PHYSICAL DISTANCING\nclick on [[what is physical distancing?; https://www.canada.ca/content/dam/phac-aspc/documents/services/publications/diseases-conditions/social-distancing-infograph/social-distancing-infograph-eng.pdf]]",
-    "Health Provider Text": "n/a",
-    "Gender": "all",
-    "Minimum age": 18,
-    "Maximum age": 150,
-    "Button": "COVID"
-  },
-  {
-    "Topic heading": "COVID-19",
-    "Subject": "PREVENT COVID-19",
-    "General Patient Text": "HYGIENE\nclick on [[more; https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/prevention-risks.html?topic=tilelink]]",
-    "Health Provider Text": "n/a",
-    "Gender": "all",
-    "Minimum age": 18,
-    "Maximum age": 150,
-    "Button": "COVID"
-  },
+
   {
     "Topic heading": "COVID-19",
     "Subject": "PREVENT COVID-19",
     "General Patient Text": "n/a",
-    "Health Provider Text": "•FOR PATIENT INFORMATION FOR PREVENTION SELECT \"PATIENT\" AT THE BEGINNING OF THE APP NOT PROVIDER\n\n•USEFUL LINKS\n[[PUBLIC HEALTH AGENCY OF CANADA; https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/health-professionals.html#cg]] \n[[The Lancet; https://www.thelancet.com/coronavirus/archive?]]\n[[NEJM; https://www.nejm.org/coronavirus]]\n[[COVID-19 Evidence Alerts from McMaster; https://plus.mcmasterca/COVID-19]]\n[[Oxford COVID-19 Evidence Service; https://www.cebm.net/oxford-covid-19-evidence-service/]]\n[[BMJ's Coronavirus (covid-19) Hub; https://www.bmj.com/coronavirus]]\n[[JAMA;https://jamanetwork.com/collections/46099/coronavirus-covid19]]",
+    "Health Provider Text": "FOR PREVENTION INFORMATION FOR PATIENTS, Tap on the word \"Provider\" in the top left corner of the screen and select \"Patient\".\n\nUSEFUL LINKS:\n[[•PUBLIC HEALTH AGENCY OF CANADA; https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/health-professionals.html#cg]] \n[[•The Lancet; https://www.thelancet.com/coronavirus/archive?]]\n[[•NEJM; https://www.nejm.org/coronavirus]]\n[[•COVID-19 Evidence Alerts from McMaster; https://plus.mcmaster.ca/COVID-19]]\n[[•Oxford COVID-19 Evidence Service; https://www.cebm.net/oxford-covid-19-evidence-service/]]\n[[•BMJ's Coronavirus (covid-19) Hub; https://www.bmj.com/coronavirus]]\n[[•JAMA;https://jamanetwork.com/collections/46099/coronavirus-covid19]]",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150,
-    "Button": "COVID"
+    "Button": "Covid"
   },
   {
     "Topic heading": "Diabetes type 2",
