@@ -375,7 +375,7 @@ class App extends Component {
     this.setState({
       isOpen: !this.state.isOpen,
       headerText: this.state.lang.side_nav_disclaimer,
-      bodyText: this.state.user === "patient" ? this.state.lang.disclaimer + this.state.lang.patientDisclaimer + this.state.lang.important : this.state.lang.disclaimer + this.state.lang.providerDisclaimer + this.state.lang.important,
+      bodyText: this.state.user === "patient" ? this.state.lang.privacypolicy + this.state.lang.disclaimer + this.state.lang.patientDisclaimer + this.state.lang.important : this.state.lang.privacypolicy + this.state.lang.disclaimer + this.state.lang.providerDisclaimer + this.state.lang.important,
       buttonText: this.state.lang.config_modal_agree
     });
   }
@@ -542,6 +542,7 @@ class App extends Component {
               <b>{this.state.lang.disclaimer_header}</b>
 
               <div style={myDisclaimerStyle}>
+                <p>{this.state.lang.privacypolicy}</p>
                 <p>{this.state.lang.disclaimer}</p><br />
                 <p id="disclaimer">{this.state.lang.patientDisclaimer}</p><br />
                 <p>{this.state.lang.important}</p>
