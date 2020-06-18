@@ -79,7 +79,7 @@ div.fixed {
   overflow: auto;
 }
 
-.langButton{
+.landingButtons{
   text-align: center;
   position: relative;
   width: 100%;
@@ -87,6 +87,18 @@ div.fixed {
   background-color: white;
   display: block;
   height: auto;
+}
+
+.videoButton{
+  background-color: #d7df21;
+  border-color: #d7df21;
+  font-size: larger;
+  font-weight: bolder;
+  color: white;
+  text-shadow: 0 0 3px #000000, 0 0 3px #3a4103;
+  padding: 10px 15px 10px 15px;
+  margin: 10px 45px 10px 35px ;
+  border-radius: 25px;
 }
 
 
@@ -97,7 +109,7 @@ div.fixed {
   font-weight: bolder;
   color: #F0F0F0;
   padding: 10px 15px 10px 15px;
-  margin: 5px 10px 5px 10px;
+  margin: 5px 20px 5px 10px;
   border-radius: 25px;
   width: 80px;
   height: 45px ;
