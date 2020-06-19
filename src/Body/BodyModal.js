@@ -162,7 +162,7 @@ class BodyModal extends React.Component {
       left: '0%',
       top: '10%',
       right: '0%',
-      minHeight: '40%',
+      //minHeight: '40%',
       margin: '0 auto',
       textAlign: 'left',
       padding: 20,
