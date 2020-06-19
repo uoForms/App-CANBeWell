@@ -345,7 +345,8 @@ class App extends Component {
     });
   }
 
-  //sideBar func
+  //sideBar func - Temporary commented June 2020
+  /*
   openNav = () => {
     document.getElementById("mySidenav").style.width = "250px";
   }
@@ -395,6 +396,7 @@ class App extends Component {
       buttonText: this.state.lang.config_modal_agree
     });
   }
+  */
 
   render() {
     //var userInfo = getUserInfo();
@@ -634,7 +636,7 @@ class App extends Component {
       <div>
 
         {/*<SideBar lang={this.state.lang}></SideBar>*/} {/*TODO must fix this modal in the back ground*/}
-
+        {/* Black Sidebar on the main page - Commented June 2020 }
         <div>
           <div id="mySidenav" className="sidenav">
             <a className="closebtn" onClick={this.closeNav}>&times;</a>
@@ -647,7 +649,8 @@ class App extends Component {
           <div className="header" style={spanStyle}>
             <span onClick={this.openNav}> &#9776;</span>
           </div>
-        </div>
+    </div> */}
+
         {/*this is your header tab*/}
         <div className="topnav">
           <h3>
