@@ -42,13 +42,13 @@ class LandingPage extends React.Component {
       <div className="landing-page">
         {this.state.language == "" || null ? (
           <div>
-            <div class="center">
-            <div className="landing-update">
-            Mise à jour COVID Updated(Test)
-            </div>
-              <img class="landing-logo" src={calllogo} alt="CANBeWellLogo" />
-            </div>
-            
+            <div class="landing-update">
+            Mise à jour COVID Updated &nbsp;
+            <button class="videoButton" src={videoland} onClick={this.openVideo}>Video</button>
+                        </div>
+
+           <img class="landing-logo" src={calllogo} alt="CANBeWellLogo" />
+                  
             <div className="landingButtons">
               
               <button class="langLandButtonStyle" onClick={this.handleChange} >English</button>
@@ -57,11 +57,6 @@ class LandingPage extends React.Component {
             </div>
 
             <div className="landingpage-notice-row"> </div>
-
-            <div className="landingButtons">
-              <button class="videoButton" src={videoland} onClick={this.openVideo}>Video</button>
-              <button class="videoButton" src={videoland}>Vidéo</button>
-            </div>
 
             <div className="landingpage-notice-row">
               <div className="landingpage-notice-column">
