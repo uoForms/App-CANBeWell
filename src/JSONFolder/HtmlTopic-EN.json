@@ -363,7 +363,7 @@
     "Topic heading": "Heart disease",
     "Subject": "Prevention",
     "General Patient Text": "n/a",
-    "Health Provider Text": "Physical activity\nmore potent than statins in preventing heart disease\nsee our physical activity section \n\nLipid screening: \n•before 40 in men and 50 in women if risk factors \n[[risk factors according to Simplified lipid guidelines see Screening page 2; http://www.cfp.ca/content/cfp/61/10/857.full.pdf]]\n[[risk factors according to CCS see Figure 1; http://www.onlinecjc.ca/article/S0828-282X(16)30732-2/pdf]]\nNOTE: in women Hypertensive diseases of pregnancy (including preeclampsia, pregnancy induced hypertension are considered additional cvs risk factors see [[link; https://www.jogc.com/article/S1701-2163(18)30836-3/abstract]]\n•for men age 40+:repeat every 3-5 years if N\n•for women age 50+ or at menopause:repeat every 3-5 years  if N\n•age 75 + healthy: discouraged as have not been validated at this age\n•[[Canadian Simplified Lipid Guidelines by family physicans; ]]\n•[[Canadian Cardiology guideline; http://www.onlinecjc.ca/article/S0828-282X(16)30732-2/pdf]]",
+    "Health Provider Text": "Physical activity\nmore potent than statins in preventing heart disease\nsee our physical activity section \n\nLipid screening: \n•before 40 in men and 50 in women if risk factors \n[[risk factors according to Simplified lipid guidelines see Screening page 2; http://www.cfp.ca/content/cfp/61/10/857.full.pdf]]\n[[risk factors according to CCS see Figure 1; http://www.onlinecjc.ca/article/S0828-282X(16)30732-2/pdf]]\nNOTE: in women Hypertensive diseases of pregnancy (including preeclampsia, pregnancy induced hypertension are considered additional cvs risk factors see [[link; https://www.jogc.com/article/S1701-2163(18)30836-3/abstract]]\n•for men age 40+:repeat every 3-5 years if N\n•for women age 50+ or at menopause:repeat every 3-5 years  if N\n•age 75 + healthy: discouraged as have not been validated at this age\n•[[Canadian Simplified Lipid Guidelines by family physicans;http://www.cfp.ca/content/cfp/61/10/857.full.pdf ]]\n•[[Canadian Cardiology guideline; http://www.onlinecjc.ca/article/S0828-282X(16)30732-2/pdf]]",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150,
@@ -490,10 +490,10 @@
     "Button": "Lung"
   },
   {
-    "Topic heading": "lung",
+    "Topic heading": "Lung",
     "Subject": "Smoking",
     "General Patient Text": "n/a",
-    "Health Provider Text": "•Ask all patients about tobacco use, \n•Advise stopping this,\n•Use behavioral  interventions\n•As needed use approved pharmacotherapy to promote cessation.\n[[USPSTF A (2013); https://www.uspreventiveservicestaskforce.org/Page/Document/UpdateSummaryFinal/tobacco-use-in-adults-and-pregnant-women-counseling-and-interventions1]]\n[[video; https://www.youtube.com/watch?v=URiKA7CKtfc]]",
+    "Health Provider Text": "•Ask all patients about tobacco use, \n•Advise stopping this,\n•Use behavioral  interventions\n•As needed use approved pharmacotherapy to promote cessation.\n[[USPSTF A (2013); https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/tobacco-use-in-adults-and-pregnant-women-counseling-and-interventions]]\n[[video; https://www.youtube.com/watch?v=URiKA7CKtfc]]",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150,
@@ -520,7 +520,7 @@
     "Button": "Brain"
   },
   {
-    "Topic heading": "Memory problems / Dementia",
+    "Topic heading": "Memory problems/ Dementia",
     "Subject": "Prevention of Dementia",
     "General Patient Text": "•Be physically active\n•Eat a healthy diet\n•Maintain a healthy weight/BMI\n•Don’t smoke or drink excessive alcohol\n•Keep your blood pressure, blood sugar and cholesterol in a healthy range\n•Stay connected socially\n•Challenge your brain with games, learning\n•Reduce stress\n•Protect your head with a helmet in sports \n\n[[more; http://alzheimer.ca/en/simcoecounty/About-dementia/Alzheimer-s-disease/Risk-factors]]",
     "Health Provider Text": "Recommend your patients:\n•Be physically active\n•Eat a healthy diet\n•Maintain a healthy weight/BMI\n•Don’t smoke or drink excessive alcohol\n•Keep their blood pressure, blood sugar and cholesterol in a healthy range\n•Stay connected socially\n•Challenge their brain with games, learning\n•Reduce stress\n•Protect their head with a helmet in sports \n[[more; http://alzheimer.ca/en/simcoecounty/About-dementia/Alzheimer-s-disease/Risk-factors]]",
@@ -742,8 +742,8 @@
   {
     "Topic heading": "Substance Abuse",
     "Subject": "Drug Abuse",
-    "General Patient Text": "Get help if you are addicted to a substance/gambling.\nEach province or territory has a help line: [[more; https://www.canada.ca/en/health-canada/services/substance-abuse/get-help/get-help-with-drug-abuse.html]]",
-    "Health Provider Text": "Help available for patients addicted to a substance/gambling:\neach province or territory has a help line: [[more; https://www.canada.ca/en/health-canada/services/substance-use/get-help/get-help-problematic-substance-use.html]]:\nscreening and counseling USPSTF I (2018) under review",
+    "General Patient Text": "Get help if you are addicted to a substance/gambling.\nEach province or territory has a help line: [[more; https://www.canada.ca/en/health-canada/services/substance-use/get-help/get-help-problematic-substance-use.html]]",
+    "Health Provider Text": "Help available for patients addicted to a substance/gambling:\neach province or territory has a help line: [[more; https://www.canada.ca/en/health-canada/services/substance-use/get-help/get-help-problematic-substance-use.html]]:\nScreening and counseling USPSTF I (2018) under review",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150,

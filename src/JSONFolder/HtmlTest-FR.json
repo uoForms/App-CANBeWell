@@ -22,7 +22,7 @@
   },
   {
     "Test": "Densité minérale osseuse",
-    "Patient/Provider Text": "Pour les patients de 65 ans ou plus.\nUn détecteur à rayons X examine votre colonne vertébrale et vos hanches.\nVous recevez une très petite quantité de \nradiation, soit environ le même quantité à laquelle vous vous exposeriez lors d’un vol Toronto-Vancouver.\n[[plus de renseignements; http://www.osteoporosis.ca/osteoporosis-and-you/diagnosis/testing/]]",
+    "Patient/Provider Text": "Pour les patients de 65 ans ou plus.\nUn détecteur à rayons X examine votre colonne vertébrale et vos hanches.\nVous recevez une très petite quantité de \nradiation, soit environ le même quantité à laquelle vous vous exposeriez lors d’un vol Toronto-Vancouver.\n[[plus de renseignements; https://osteoporosis.ca/about-the-disease/diagnosis/why-should-i-get-tested/]]",
     "Gender": "all",
     "Minimum age": 65,
     "Maximum age": 150
