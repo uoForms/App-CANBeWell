@@ -71,7 +71,7 @@
   },
   {
     "Test": "Pros/ Cons of tests",
-    "Patient/Provider Text": "More tests are not always  good for your health,\nsee these links: [[more info 1; https://www.youtube.com/watch?v=8c7qTsVVxXw]]\n[[more info 2; https://choosingwiselycanada.org/]]\n[[more info 3; https://choosingwiselycanada.org/perspective/cwc-goes-mobile/]]",
+    "Patient/Provider Text": "More tests are not always  good for your health,\nsee these links: [[more info 1; https://www.youtube.com/watch?v=8c7qTsVVxXw]]\n[[more info 2; https://choosingwiselycanada.org/]]",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
