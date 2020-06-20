@@ -193,7 +193,7 @@
     "Topic heading": "COVID-19",
     "Subject": "Elderly and vulnerable groups",
     "General Patient Text": "•If you need food, financial help or other services phone 211[[see where 211 is available; https://211.ca/]]\n•Check with your local public health agency or city, town or community for organizations that can help you get food, support, care and more \n•Article for older adults and their caregivers: [[link; file:///Users/cleomavriplis/Downloads/443-Article%20Text-5392-1-10-20200402.pdf]]",
-    "Health Provider Text": "",
+    "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150,
@@ -274,10 +274,10 @@
     "Subject": "Updated research",
     "General Patient Text": "n/a",
     "Health Provider Text": "APPRAISED EVIDENCE\n[[MCMASTER EBM; https://plus.mcmasterca/COVID-19]]\n[[OXFORD Evidence Service; https://www.cebm.net/oxford-covid-19-evidence-service/]]\n\nJOURNALS\n[[CMAJ; https://www.cmaj.ca/covid-19]]\n[[BMJ's Coronavirus (covid-19) Hub; https://www.bmj.com/coronavirus]]\n[[JAMA;https://jamanetwork.com/collections/46099/coronavirus-covid19]]\n[[NEJM; https://www.nejm.org/coronavirus]]\n[[The Lancet; https://www.thelancet.com/coronavirus/archive?]]\n\nPUBLIC HEALTH AGENCY OF CANADA\n[[For health professionals; https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/health-professionals.html]]",
-    "Gender": "",
-    "Minimum age": "",
-    "Maximum age": "",
-    "Button": ""
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150,
+    "Button": "Covid"
   },
   {
     "Topic heading": "Diabetes Type 2",
@@ -490,7 +490,7 @@
     "Button": "Lung"
   },
   {
-    "Topic heading": "Lung",
+    "Topic heading": "lung",
     "Subject": "Smoking",
     "General Patient Text": "n/a",
     "Health Provider Text": "•Ask all patients about tobacco use, \n•Advise stopping this,\n•Use behavioral  interventions\n•As needed use approved pharmacotherapy to promote cessation.\n[[USPSTF A (2013); https://www.uspreventiveservicestaskforce.org/Page/Document/UpdateSummaryFinal/tobacco-use-in-adults-and-pregnant-women-counseling-and-interventions1]]\n[[video; https://www.youtube.com/watch?v=URiKA7CKtfc]]",
@@ -520,7 +520,7 @@
     "Button": "Brain"
   },
   {
-    "Topic heading": "Memory problems/ Dementia",
+    "Topic heading": "Memory problems / Dementia",
     "Subject": "Prevention of Dementia",
     "General Patient Text": "•Be physically active\n•Eat a healthy diet\n•Maintain a healthy weight/BMI\n•Don’t smoke or drink excessive alcohol\n•Keep your blood pressure, blood sugar and cholesterol in a healthy range\n•Stay connected socially\n•Challenge your brain with games, learning\n•Reduce stress\n•Protect your head with a helmet in sports \n\n[[more; http://alzheimer.ca/en/simcoecounty/About-dementia/Alzheimer-s-disease/Risk-factors]]",
     "Health Provider Text": "Recommend your patients:\n•Be physically active\n•Eat a healthy diet\n•Maintain a healthy weight/BMI\n•Don’t smoke or drink excessive alcohol\n•Keep their blood pressure, blood sugar and cholesterol in a healthy range\n•Stay connected socially\n•Challenge their brain with games, learning\n•Reduce stress\n•Protect their head with a helmet in sports \n[[more; http://alzheimer.ca/en/simcoecounty/About-dementia/Alzheimer-s-disease/Risk-factors]]",
