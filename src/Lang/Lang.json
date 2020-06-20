@@ -1,6 +1,7 @@
 {
   "english":{
     "instruction_modal_header": "Choose:",
+    "privacypolicy": "No personally identifiable information is collected by this app.  The app collects aggregate data on what devices, browsers, and geographic regions are accessing the app; and what items are clicked on in the app.",
     "about": "This app will help you find reliable information on preventing health problems in Canadian adults. Developed by the University of Ottawa, Department of Family Medicine.",
     "disclaimer": "This app is for patients and health care providers in Canada only. This app displays information about preventing diseases, or screening (finding diseases early), in Canadian adults 18 years and older. This app does not take into account a patient’s personal risk factors, family history, symptoms or other individual characteristics. The information provided is to help patients and providers find evidence-based recommendations for baseline prevention.",
     "patientDisclaimer":"The information and content provided by this application is for information purposes only. Nothing contained within this application is intended to replace the services of a physician or trained health care professional. If you have questions about any medical matter, you should consult your doctor or other health care provider. You hereby agree that you shall not make any health or medical related decision based in whole or in part on anything contained within the application without consulting your health care provider" ,
@@ -15,7 +16,7 @@
     "all_genders": "All Genders",
     "all_ages": "All ages",
     "age_selector": "Age: ",
-    "age_help": "Please select a gender and age between 18 and 149",
+    "age_help": "Please select a gender and age between 18 and 150",
     "age_selector_place_holder": "Enter patient age",
     "agree": "Accept",
     "disagree": "Decline",
@@ -64,6 +65,7 @@
   },
   "french":{
     "instruction_modal_header": "Choisir:",
+    "privacypolicy":"Aucune information personnellement identifiable n'est recueillie par cette application mobile. L’application recueille seulement des données agrégées sur les appareils, les navigateurs et les régions géographiques qui accèdent à l’application ainsi que sur les éléments qui sont cliqués dans l'application.",
     "about": "Cette application vous aidera à trouver des informations fiables sur la prévention des problèmes de santé chez les adultes canadiens. Développé par le Département de médecine familiale de l'Université d'Ottawa.",
     "disclaimer": "Cette application est destinée aux patients et professionnels de la santé au Canada seulement. Cette application affiche des informations sur la prévention des maladies ou le dépistage (détection précoce des maladies) chez les adultes canadiens de 18 ans et plus. Cette application ne tient pas compte des facteurs de risque personnels, des antécédents familiaux, des symptômes ou d’autres caractéristiques individuelles du patient. Les informations contenues dans l’application sont fournies dans le but d’aider les patients et les cliniciens à trouver des recommandations basées sur les preuves pour la prévention de base.",
     "patientDisclaimer":"Les renseignements et le contenu fournis par cette application servent uniquement à titre d’information. Rien du contenu de cette application n’est destiné à remplacer les services d’un médecin ou d’un professionnel de soins de santé formé. Si vous avez des questions d’ordre médical, il est important que vous consultiez un médecin ou un autre professionnel de la santé. Vous consentez par la présente à ne prendre aucune décision d’ordre médicale ou connexe à la santé, fondée en totalité ou en partie sur le contenu de l’application, sans d’abord avoir consulté un professionnel de la santé." ,
@@ -78,7 +80,7 @@
     "all_genders": "Tous les genres",
     "all_ages": "Tous ages",
     "age_selector": "Âge: ",
-    "age_help": "Veuillez choisir un genre et un âge entre 18 et 149 ans",
+    "age_help": "Veuillez choisir un genre et un âge entre 18 et 150 ans",
     "age_selector_place_holder": "Entrez l'âge du patient",
     "agree": "Acceptez",
     "disagree": "Refusez",

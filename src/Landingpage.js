@@ -4,6 +4,7 @@ import App from './App';
 import { PageView, initGA } from './Tracking';
 import './LandingPage.css';
 import calllogo from './assets/Logos/logo_20-05-02.png';
+import videoland from './videos/videojune20.mp4';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -26,9 +27,13 @@ class LandingPage extends React.Component {
     this.setState({ language: "french" })
     localStorage.setItem("app_language", this.state.language);
   }
+
+  openVideo(){
+    window.open(videoland);
+  }
+
   componentDidMount() {
-    initGA('UA-151893001-2');
-    /* This tracking number is related to Google Analytics for test, the production tracking number is :UA-151893001-1" */
+    initGA('UA-151893001-1');
   }
 
   render() {
@@ -37,26 +42,31 @@ class LandingPage extends React.Component {
       <div className="landing-page">
         {this.state.language == "" || null ? (
           <div>
-            <div class="center">
-            <div className="landing-update">
-            Mise à jour COVID Updated
-            </div>
-              <img class="landing-logo" src={calllogo} alt="CANBeWellLogo" />
-            </div>
-            <div className="langButton">
-              <button class="langLandButtonStyle" onClick={this.handleChange} >English </button>
+            <div class="landing-update">
+            Mise à jour COVID Updated&nbsp;
+            <button class="videoButton" src={videoland} onClick={this.openVideo}>Video</button>
+                        </div>
+
+           <img class="landing-logo" src={calllogo} alt="CANBeWellLogo" />
+                  
+            <div className="landingButtons">
+              
+              <button class="langLandButtonStyle" onClick={this.handleChange} >English</button>
               <button class="langLandButtonStyle" onClick={this.handleChange2}>Français</button>
              
             </div>
+
+            <div className="landingpage-notice-row"> </div>
+
             <div className="landingpage-notice-row">
               <div className="landingpage-notice-column">
                 <div className="landing-notice">
-                  A reliable resource by Canadian family physicians to help you stay healthy
+                A reliable resource by Canadian health care providers to help you stay healthy
                 </div>
               </div>
               <div className="landingpage-notice-column">
                 <div className="landing-notice">
-                  Rester en santé avec cette ressource créée par des médecins de famille canadiens
+                Rester en santé avec cette ressource créée par vos professionnels de la santé canadiens
                 </div>
               </div>
             </div>

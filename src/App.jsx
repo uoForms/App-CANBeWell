@@ -142,7 +142,7 @@ class App extends Component {
   //toggle the config modif
   toggleConfigurationModal = () => {
     var genders = ["male", "female", "all_genders"];
-    if (genders.includes(this.state.gender) && ((this.state.age >= 18 && this.state.age <= 149) || this.state.allAgesSelected)) {
+    if (genders.includes(this.state.gender) && ((this.state.age >= 18 && this.state.age <= 150) || this.state.allAgesSelected)) {
       this.setState({
         configurationIsOpen: !this.state.configurationIsOpen
       });
@@ -157,7 +157,7 @@ class App extends Component {
     //if(this.state.allowToClose){
     var genders = ["male", "female", "all_genders"];
 
-    if (genders.includes(this.state.gender) && ((this.state.age >= 18 && this.state.age <= 149) || this.state.allAgesSelected)) {
+    if (genders.includes(this.state.gender) && ((this.state.age >= 18 && this.state.age <= 150) || this.state.allAgesSelected)) {
       const { cookies } = this.props;
       cookies.set('_onboarded', true, { path: '/' });
       this.setState({
@@ -345,7 +345,7 @@ class App extends Component {
     });
   }
 
-  //sideBar func   ---- Temporary comment
+  //sideBar func - Temporary commented June 2020
   /*
   openNav = () => {
     document.getElementById("mySidenav").style.width = "250px";
@@ -376,7 +376,7 @@ class App extends Component {
     this.setState({
       isOpen: !this.state.isOpen,
       headerText: this.state.lang.side_nav_disclaimer,
-      bodyText: this.state.user === "patient" ? this.state.lang.disclaimer + this.state.lang.patientDisclaimer + this.state.lang.important : this.state.lang.disclaimer + this.state.lang.providerDisclaimer + this.state.lang.important,
+      bodyText: this.state.user === "patient" ? this.state.lang.privacypolicy + this.state.lang.disclaimer + this.state.lang.patientDisclaimer + this.state.lang.important : this.state.lang.privacypolicy + this.state.lang.disclaimer + this.state.lang.providerDisclaimer + this.state.lang.important,
       buttonText: this.state.lang.config_modal_agree
     });
   }
@@ -395,7 +395,8 @@ class App extends Component {
       bodyText: this.state.lang.side_nav_settings,
       buttonText: this.state.lang.config_modal_agree
     });
-  } */
+  }
+  */
 
   render() {
     //var userInfo = getUserInfo();
@@ -439,7 +440,7 @@ class App extends Component {
       right: 0,
       padding: '10px'
     };
-      
+
     // The modal "window"
     const myModalStyle = {
       backgroundColor: '#fff',
@@ -482,7 +483,6 @@ class App extends Component {
 
             <div className="footer">
               <p>{this.state.lang.instruction_modal_header}</p>
-              
 
               {/*select user*/}
               <div className="radio">
@@ -544,6 +544,7 @@ class App extends Component {
               <b>{this.state.lang.disclaimer_header}</b>
 
               <div style={myDisclaimerStyle}>
+                <p>{this.state.lang.privacypolicy}</p>
                 <p>{this.state.lang.disclaimer}</p><br />
                 <p id="disclaimer">{this.state.lang.patientDisclaimer}</p><br />
                 <p>{this.state.lang.important}</p>
@@ -634,9 +635,8 @@ class App extends Component {
     return (
       <div>
 
-      
-       {/*<SideBar lang={this.state.lang}></SideBar>*/} {/*TODO must fix this modal in the back ground*/}
-      {/* Black Sidebar on the main page }
+        {/*<SideBar lang={this.state.lang}></SideBar>*/} {/*TODO must fix this modal in the back ground*/}
+        {/* Black Sidebar on the main page - Commented June 2020 }
         <div>
           <div id="mySidenav" className="sidenav">
             <a className="closebtn" onClick={this.closeNav}>&times;</a>
@@ -650,6 +650,7 @@ class App extends Component {
             <span onClick={this.openNav}> &#9776;</span>
           </div>
     </div> */}
+
         {/*this is your header tab*/}
         <div className="topnav">
           <h3>

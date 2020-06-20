@@ -25,7 +25,4 @@ deploy:
   script: bash scripts/deploy.sh
   on:
     branch: 
-    - master
-    # - transgender-test
-    # This part controls which branch will be delpoyed automatically, so here it will only deploy analytics-test, 
-    # if you want to deploy any other, added accordingly
+    - analytics-test

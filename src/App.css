@@ -310,13 +310,13 @@ details[open] summary:after {
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: #b3b0b000;
     border-radius: 5px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #888;
+    background: rgba(0,0,0,0.3);
     border-radius: 5px;
 }
 

@@ -86,8 +86,6 @@ class SideBar extends React.Component {
           {/*<span onClick={(userLang) => this.selectLanguage("english")}>En/</span>
               <span onClick={(userLang) => this.selectLanguage("french")}>Fr</span>*/}
         </div>
-        
-        
         {/*This is your sidenav stuff*/}
         <div id="mySidenav" className="sidenav">
           <a className="closebtn" onClick={this.closeNav}>&times;</a>
