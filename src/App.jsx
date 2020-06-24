@@ -345,8 +345,8 @@ class App extends Component {
     });
   }
 
-  //sideBar func - Commented
-  
+  //sideBar func - Temporary commented June 2020
+  /*
   openNav = () => {
     document.getElementById("mySidenav").style.width = "250px";
   }
@@ -376,7 +376,7 @@ class App extends Component {
     this.setState({
       isOpen: !this.state.isOpen,
       headerText: this.state.lang.side_nav_disclaimer,
-      bodyText: this.state.user === "patient" ? this.state.lang.disclaimer + this.state.lang.patientDisclaimer + this.state.lang.important : this.state.lang.disclaimer + this.state.lang.providerDisclaimer + this.state.lang.important,
+      bodyText: this.state.user === "patient" ? this.state.lang.privacypolicy + this.state.lang.disclaimer + this.state.lang.patientDisclaimer + this.state.lang.important : this.state.lang.privacypolicy + this.state.lang.disclaimer + this.state.lang.providerDisclaimer + this.state.lang.important,
       buttonText: this.state.lang.config_modal_agree
     });
   }
@@ -396,6 +396,7 @@ class App extends Component {
       buttonText: this.state.lang.config_modal_agree
     });
   }
+  */
 
   render() {
     //var userInfo = getUserInfo();
@@ -551,6 +552,7 @@ class App extends Component {
               <b>{this.state.lang.disclaimer_header}</b>
 
               <div style={myDisclaimerStyle}>
+                <p>{this.state.lang.privacypolicy}</p>
                 <p>{this.state.lang.disclaimer}</p><br />
                 <p id="disclaimer">{this.state.lang.patientDisclaimer}</p><br />
                 <p>{this.state.lang.important}</p>
@@ -647,7 +649,7 @@ class App extends Component {
       <div>
 
         {/*<SideBar lang={this.state.lang}></SideBar>*/} {/*TODO must fix this modal in the back ground*/}
-        
+        {/* Black Sidebar on the main page - Commented June 2020 }
         <div>
          {/* <div id="mySidenav" className="sidenav">
             <a className="closebtn" onClick={this.closeNav}>&times;</a>
@@ -659,8 +661,8 @@ class App extends Component {
           </div>
           <div className="header" style={spanStyle}>
             <span onClick={this.openNav}> &#9776;</span>
+          </div>
     </div> */}
-    </div> 
 
         {/*this is your header tab*/}
         <div className="topnav">
