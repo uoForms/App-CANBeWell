@@ -262,12 +262,12 @@ summary {
   font-size: 1.5em;
   font-weight: bolder; 
 }
-summary::-webkit-details-marker {
+/* summary::-webkit-details-marker {
   display: none
-}
+} */
 summary:after {
   border-radius: 5px;
-  content: "+";
+  /* content: "+"; */
   color: #fff;
   float: right;
   font-size: 1.5em;
@@ -276,9 +276,9 @@ summary:after {
   text-align: center;
   width: 20px;
 }
-details[open] summary:after {
+/* details[open] summary:after {
   content: "-";
-}
+} */
 
 .userinfo-row:after {
   content: "";
