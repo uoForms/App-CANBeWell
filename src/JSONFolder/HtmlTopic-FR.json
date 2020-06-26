@@ -173,7 +173,7 @@
     "Button": "Colon",
     "Topic heading": "Cancer colorectal",
     "Subject": "Les tests de détection du cancer de stade précoce pourraient ne pas être utiles à 75 ans ou plus",
-    "General Patient Text": "La plupart des gens n’ont pas nécessairement besoin de subir un dépistage à ce stade-ci;\ndiscuter avec votre professionnel de la santé si vous préférez vous soumettre à un dépistage.\n[[plus de renseignements; https://canadiantaskforce.ca/tools-resources/colorectal-cancer-for-patients-2/]]\n",
+    "General Patient Text": "La plupart des gens n’ont pas nécessairement besoin de subir un dépistage à ce stade-ci;\ndiscuter avec votre professionnel de la santé si vous préférez vous soumettre à un dépistage.\n[[plus de renseignements; https://canadiantaskforce.ca/tools-resources/colorectal-cancer-for-patients-2/]]",
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 75,
@@ -253,8 +253,8 @@
     "Button": "Colon",
     "Topic heading": "Cancer du côlon ou de l’intestin",
     "Subject": "Prévention du cancer du côlon",
-    "General Patient Text": "•Être physiquement actif\n•Maintenir un poids corporel santé [[IMC; unlockfood.ca/fr/Articles/Perdre-du-poids/Evaluez-votre-IMC.aspx?aliaspath=%2fen%2fArticles%2fWeight-Management%2fBMI-Calculator]]\n•Ne pas fumer et éviter la fumée secondaire\n•[[plus de renseignements sur la prévention du cancer du côlon; http://www.cancer.ca/fr-ca/cancer-information/cancer-type/colorectal/risks/reducing-your-risk/?region=on]]",
-    "Health Provider Text": "À recommander aux patients:\n•Être physiquement actif\n•Maintenir un poids corporel santé [[IMC; unlockfood.ca/fr/Articles/Perdre-du-poids/Evaluez-votre-IMC.aspx?aliaspath=%2fen%2fArticles%2fWeight-Management%2fBMI-Calculator]]\n•Limiter la consommation d’alcool (voir les lignes directrices sur la consommation saine)\n•Ne pas fumer et éviter la fumée secondaire\n•Limiter sa consommation de viande rouge et de viande transformée\n•Manger des aliments riches en fibres\n•Réduire le temps passé assis\n[[source; http://www.cancer.ca/fr-ca/cancer-information/cancer-type/colorectal/risks/reducing-your-risk/?region=on]]",
+    "General Patient Text": "•Être physiquement actif\n•Maintenir un poids corporel santé [[IMC; https://www.unlockfood.ca/fr/Articles/Perdre-du-poids/Evaluez-votre-IMC.aspx?aliaspath=%2fen%2fArticles%2fWeight-Management%2fBMI-Calculator]]\n•Ne pas fumer et éviter la fumée secondaire\n•[[plus de renseignements sur la prévention du cancer du côlon; http://www.cancer.ca/fr-ca/cancer-information/cancer-type/colorectal/risks/reducing-your-risk/?region=on]]",
+    "Health Provider Text": "À recommander aux patients:\n•Être physiquement actif\n•Maintenir un poids corporel santé [[IMC; https://www.unlockfood.ca/fr/Articles/Perdre-du-poids/Evaluez-votre-IMC.aspx?aliaspath=%2fen%2fArticles%2fWeight-Management%2fBMI-Calculator]]\n•Limiter la consommation d’alcool (voir les lignes directrices sur la consommation saine)\n•Ne pas fumer et éviter la fumée secondaire\n•Limiter sa consommation de viande rouge et de viande transformée\n•Manger des aliments riches en fibres\n•Réduire le temps passé assis\n[[source; http://www.cancer.ca/fr-ca/cancer-information/cancer-type/colorectal/risks/reducing-your-risk/?region=on]]",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 49
@@ -631,10 +631,20 @@
   },
   {
     "Button": "Covid",
-    "Topic heading": "PRÉVENEZ LE  COVID-19",
-    "Subject": "Populations Vulnérables",
+    "Topic heading": "COVID-19",
+    "Subject": "Populations vulnérables",
     "General Patient Text": "n/a",
-    "Health Provider Text": "•POUR LES INFORMATIONS AUX PATIENTS VOIR LE CHOIX \"PATIENT\" AU LIEU DE \"CLINICIE   \n•LIENS UTILES\n[[AGENCE DE SANTÉ PUBLIQUE DU CANADA; https://www.canada.ca/fr/sante-publique/services/maladies/maladie-coronavirus-covid-19.html]] \n[[The Lancet; https://www.thelancet.com/coronavirus/archive?]]\n[[NEJM; https://www.nejm.org/coronavirus]]\n[[McMaster COVID-19 données probantes; https://plus.mcmaster.ca/COVID-19]]\n[[Oxford COVID-19 Données Probantes; https://www.cebm.net/oxford-covid-19-evidence-service/]]\n[[BMJ Coronavirus; https://www.bmj.com/coronavirus]]\n[[JAMA;https://jamanetwork.com/collections/46099/coronavirus-covid19]]",
+    "Health Provider Text": "•DEPISTAGE DE LA PAUVRETÉ: \nAvez-vous de la difficulté avec vos dépenses en fin de mois?\n•TROUVER DE L'AIDE:\nComposer le 211 sur votre téléphone dans certaines régions\nQuébec:  http://www.211quebecregions.ca/\nailleurs au Canada: https://211.ca/\nDiriger vos patients vers leur unité de santé publique locale\n•[[AIDE DU GOUVERNEMENT DU CANADA; https://www.canada.ca/fr/services/prestations/covid-19-prestations-urgence.html]]",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Covid",
+    "Topic heading": "COVID-19",
+    "Subject": "Recherche",
+    "General Patient Text": "n/a",
+    "Health Provider Text": "ÉTUDES ÉVALUÉES POUR LEUR QUALITÉ\n[[MCMASTER EBM; https://plus.mcmaster.ca/COVID-19]]\n[[OXFORD Evidence Service; https://www.cebm.net/oxford-covid-19-evidence-service/]]\n\nPÉRIODIQUES\n[[CMAJ; https://www.cmaj.ca/covid-19]]\n[[BMJ's Coronavirus (covid-19) Hub; https://www.bmj.com/coronavirus]]\n[[JAMA;https://jamanetwork.com/collections/46099/coronavirus-covid19]]\n[[NEJM; https://www.nejm.org/coronavirus]]\n[[The Lancet; https://www.thelancet.com/coronavirus/archive?]]\n\n[[AGENCE DE LA SANTÉ PUBLIQUE DU CANADA; https://www.canada.ca/fr/sante-publique/services/maladies/maladie-coronavirus-covid-19.html]]",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150

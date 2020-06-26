@@ -192,7 +192,7 @@
   {
     "Topic heading": "COVID-19",
     "Subject": "Elderly and vulnerable groups",
-    "General Patient Text": "•If you need food, financial help or other services phone 211.\n[[See where 211 is available; https://211.ca/]]\n•Check with your local public health agency or city, town or community for organizations that can help you get food, support, care and more \n•Article for older adults and their caregivers: [[link; https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7136027/pdf/cgj-8-149.pdf]]",
+    "General Patient Text": "•If you need food, financial help or other services phone 211.\n[[See where 211 is available; https://211.ca/]]\n•Check with your local public health agency or city, town or community for organizations that can help you get food, support, care and more \n•Article for older adults and their caregivers: [[link; file:///Users/cleomavriplis/Downloads/443-Article%20Text-5392-1-10-20200402.pdf]]",
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
@@ -263,7 +263,7 @@
     "Topic heading": "COVID-19",
     "Subject": "Vulnerable populations",
     "General Patient Text": "n/a",
-    "Health Provider Text": "•Poverty screening question: “Do you ever have difficulty making ends meet at the end of the month?” [[reference; https://portal.cfpc.ca/resourcesdocs/uploadedFiles/CPD/Poverty_flow-Tool-Final-2016v4-Ontario.pdf\n•If your patient needs social, community or health services  phone 211 if available in your area  [[website; https://211.ca/]]\n•Check your local public health agenciy website for information for these groups\n•[[Synopsis of research by Public Health Ontario; https://www.publichealthontario.ca/-/media/documents/ncov/covid-wwksf/2020/05/what-we-know-social-determinants-health.pdf?la=en]]",
+    "Health Provider Text": "•Poverty screening question: “Do you ever have difficulty making ends meet at the end of the month?” [[reference; https://portal.cfpc.ca/resourcesdocs/uploadedFiles/CPD/Poverty_flow-Tool-Final-2016v4-Ontario.pdf\n•If your patient needs social, community or health services  phone 211 if available in your area  [[website; https://211.ca/]]\n•[[Government of Canada benefits; https://www.canada.ca/en/services/benefits/covid19-emergency-benefits.html]]\n•Check your local public health agenciy website for information for these groups\n•[[Synopsis of research by Public Health Ontario; https://www.publichealthontario.ca/-/media/documents/ncov/covid-wwksf/2020/05/what-we-know-social-determinants-health.pdf?la=en]]",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150,
