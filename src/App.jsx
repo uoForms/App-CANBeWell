@@ -397,7 +397,15 @@ class App extends Component {
     });
   }
   */
-
+ helpClicked = () => {
+  
+  this.setState({
+    isOpen: !this.state.isOpen,
+    headerText: this.state.lang.config_modal_help_header,
+    bodyText: this.state.lang.config_modal_help_body,
+    buttonText: this.state.lang.config_modal_agree,
+  });
+}
   render() {
     //var userInfo = getUserInfo();
     var userInfo = {
@@ -478,9 +486,12 @@ class App extends Component {
 
     if (this.state.instructionIsOpen) {
       instructionModal = [
+        
         <div key="1" className="backdrop" style={backdropStyle}>
           <div className="myModal" style={myModalStyle}>
-
+          <div>
+            <button className="button button2" onClick={this.helpClicked}>?</button>
+            </div>
             <div className="footer">
               <p>{this.state.lang.instruction_modal_header}</p>
 
@@ -636,6 +647,9 @@ class App extends Component {
                 <div className="myModalButton">
                   <button onClick={this.toggleConfigurationModal}>{this.state.lang.config_modal_agree}</button>
                 </div>
+                <div>
+                 <button className="button button2" onClick={this.helpClicked}>?</button>
+                 </div>
               </div>
             </div>
           </div>
