@@ -29,17 +29,15 @@ class Tests extends React.Component {
     });
   }
 
- /*This line is commented
- Used for help icon that appeared on test tab which is no more needed
-     helpClicked = () => {
-     console.log(this.props.userConfig.gender);
-     this.setState({
+  helpClicked = () => {
+    console.log(this.props.userConfig.gender);
+    this.setState({
       isOpen: !this.state.isOpen,
       headerText: this.props.lang.test_help_header,
       bodyText: this.props.lang.test_help_body,
       buttonText: this.props.lang.config_modal_agree,
     });
-  }*/
+  }
 
   render() {
 
@@ -50,8 +48,7 @@ class Tests extends React.Component {
     return (
 
       <div>
-        {/*Used for help icon that appeared on test tab which is no more needed*/}
-        {/*This line is commented <button className="button button2" onClick={this.helpClicked}>?</button>*/}
+        {/*<button className="button button2" onClick={this.helpClicked}>?</button>*/}
 
         <FilterableTestTable 
           tests={
