@@ -48,7 +48,7 @@ class Tests extends React.Component {
     return (
 
       <div>
-        {/*<button className="button button2" onClick={this.helpClicked}>?</button>*/}
+        <button className="button button2" onClick={this.helpClicked}>?</button>
 
         <FilterableTestTable 
           tests={
@@ -63,7 +63,7 @@ class Tests extends React.Component {
           header={this.state.headerText}
           body={this.state.bodyText}
           button={this.state.buttonText}
-          displayConfig={this.state.displayConfigOption}>
+          displayConfig={this.state.displayConfigOption}>>
         </TestsModal>
       </div>
     );
