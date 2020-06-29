@@ -173,7 +173,7 @@
     "Button": "Colon",
     "Topic heading": "Cancer colorectal",
     "Subject": "Les tests de détection du cancer de stade précoce pourraient ne pas être utiles à 75 ans ou plus",
-    "General Patient Text": "La plupart des gens n’ont pas nécessairement besoin de subir un dépistage à ce stade-ci;\ndiscuter avec votre professionnel de la santé si vous préférez vous soumettre à un dépistage.\n[[plus de renseignements; https://canadiantaskforce.ca/tools-resources/colorectal-cancer-for-patients-2/]]\n",
+    "General Patient Text": "La plupart des gens n’ont pas nécessairement besoin de subir un dépistage à ce stade-ci;\ndiscuter avec votre professionnel de la santé si vous préférez vous soumettre à un dépistage.\n[[plus de renseignements; https://canadiantaskforce.ca/tools-resources/colorectal-cancer-for-patients-2/]]",
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 75,
@@ -253,8 +253,8 @@
     "Button": "Colon",
     "Topic heading": "Cancer du côlon ou de l’intestin",
     "Subject": "Prévention du cancer du côlon",
-    "General Patient Text": "•Être physiquement actif\n•Maintenir un poids corporel santé [[IMC; unlockfood.ca/fr/Articles/Perdre-du-poids/Evaluez-votre-IMC.aspx?aliaspath=%2fen%2fArticles%2fWeight-Management%2fBMI-Calculator]]\n•Ne pas fumer et éviter la fumée secondaire\n•[[plus de renseignements sur la prévention du cancer du côlon; http://www.cancer.ca/fr-ca/cancer-information/cancer-type/colorectal/risks/reducing-your-risk/?region=on]]",
-    "Health Provider Text": "À recommander aux patients:\n•Être physiquement actif\n•Maintenir un poids corporel santé [[IMC; unlockfood.ca/fr/Articles/Perdre-du-poids/Evaluez-votre-IMC.aspx?aliaspath=%2fen%2fArticles%2fWeight-Management%2fBMI-Calculator]]\n•Limiter la consommation d’alcool (voir les lignes directrices sur la consommation saine)\n•Ne pas fumer et éviter la fumée secondaire\n•Limiter sa consommation de viande rouge et de viande transformée\n•Manger des aliments riches en fibres\n•Réduire le temps passé assis\n[[source; http://www.cancer.ca/fr-ca/cancer-information/cancer-type/colorectal/risks/reducing-your-risk/?region=on]]",
+    "General Patient Text": "•Être physiquement actif\n•Maintenir un poids corporel santé [[IMC; https://www.unlockfood.ca/fr/Articles/Perdre-du-poids/Evaluez-votre-IMC.aspx?aliaspath=%2fen%2fArticles%2fWeight-Management%2fBMI-Calculator]]\n•Ne pas fumer et éviter la fumée secondaire\n•[[plus de renseignements sur la prévention du cancer du côlon; http://www.cancer.ca/fr-ca/cancer-information/cancer-type/colorectal/risks/reducing-your-risk/?region=on]]",
+    "Health Provider Text": "À recommander aux patients:\n•Être physiquement actif\n•Maintenir un poids corporel santé [[IMC; https://www.unlockfood.ca/fr/Articles/Perdre-du-poids/Evaluez-votre-IMC.aspx?aliaspath=%2fen%2fArticles%2fWeight-Management%2fBMI-Calculator]]\n•Limiter la consommation d’alcool (voir les lignes directrices sur la consommation saine)\n•Ne pas fumer et éviter la fumée secondaire\n•Limiter sa consommation de viande rouge et de viande transformée\n•Manger des aliments riches en fibres\n•Réduire le temps passé assis\n[[source; http://www.cancer.ca/fr-ca/cancer-information/cancer-type/colorectal/risks/reducing-your-risk/?region=on]]",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 49
@@ -551,8 +551,8 @@
   },
   {
     "Button": "Covid",
-    "Topic heading": "PRÉVENEZ LE  COVID-19",
-    "Subject": "Êtes-vous inquiet d'avoir le COVID-19?",
+    "Topic heading": "PRÉVENEZ LA COVID-19",
+    "Subject": "Êtes-vous inquiet d'avoir la COVID-19?",
     "General Patient Text": "Cliquez sur ce [[lien; https://ca.thrive.health/covid19/fr00]]",
     "Health Provider Text": "n/a",
     "Gender": "all",
@@ -561,7 +561,7 @@
   },
   {
     "Button": "Covid",
-    "Topic heading": "PRÉVENEZ LE  COVID-19",
+    "Topic heading": "PRÉVENEZ LA COVID-19",
     "Subject": "Informations pour les personnes agées et les populations vulnérables",
     "General Patient Text": "•vérifier avec votre agence de santé publique locale ou votre ville, village ou communauté pour des organisations qui peuvent vous aider à obtenir de la nourriture, du support et des soins.\n•cliquer [[ici; https://www.canada.ca/content/dam/phac-aspc/documents/services/diseases-maladies/vulnerable-populations-covid-19/vulnerable-fra.pdf]]",
     "Health Provider Text": "n/a",
@@ -571,7 +571,7 @@
   },
   {
     "Button": "Covid",
-    "Topic heading": "PRÉVENEZ LE  COVID-19",
+    "Topic heading": "PRÉVENEZ LA COVID-19",
     "Subject": "Tous les Canadiens doivent",
     "General Patient Text": "•suivre les conseils de leur agence de santé publique locale\n•rester à la maison le plus possible\n•limiter les contacts avec les personnes présentant un risque plus élevé (comme les aînés et les personnes en mauvaise santé)\n•à l'exterieur toujours garder une distance d'au moins 2 longueurs de bras (environ 2 mètres) entre vous et les autres \n•laver vos mains souvent avec de l'eau et du savon (au moins 20 secondes) \n•si le savon n'est pas disponible utiliser un désinfectant à main à base d'alcool.\n•informations supplementaires: cliquez sur  ce \n[[lien; https://www.canada.ca/fr/sante-publique/services/maladies/2019-nouveau-coronavirus/prevention-risques.html]]",
     "Health Provider Text": "n/a",
@@ -581,7 +581,7 @@
   },
   {
     "Button": "Covid",
-    "Topic heading": "PRÉVENEZ LE  COVID-19",
+    "Topic heading": "PRÉVENEZ LA COVID-19",
     "Subject": "Nettoyage",
     "General Patient Text": "•Nettoyer souvent les surfaces dures fréquemment touchées, que ce soit avec des produits d'entretien ménager ordinaires ou avec de l'eau de Javel diluée conformément aux instructions figurant sur l'étiquette. \n•La solution d'eau de Javel devrait être préparée conformément aux instructions figurant sur l'étiquette ou selon un ratio de 250 ml (1 tasse) d'eau pour 5 ml (1 cuillère à thé) d'eau de Javel. Les instructions sont fondées sur de l'eau de Javel contenant de l'hypochlorite de sodium à 5 %, qui donnerait une solution d'hypochlorite de sodium de 0,1 %. Ne mélangez jamais de l'eau de Javel avec d'autres produits chimiques.\n•Cliquez sur [[la liste des désinfectants de Santé Canada; https://www.canada.ca/fr/sante-canada/services/medicaments-produits-sante/desinfectants/covid-19/liste.html#tbl1]]",
     "Health Provider Text": "n/a",
@@ -591,7 +591,7 @@
   },
   {
     "Button": "Covid",
-    "Topic heading": "PRÉVENEZ LE  COVID-19",
+    "Topic heading": "PRÉVENEZ LA COVID-19",
     "Subject": "Masques",
     "General Patient Text": "Cliquez sur [[informations sur les masques; https://www.canada.ca/fr/sante-publique/services/maladies/2019-nouveau-coronavirus/prevention-risques/a-propos-masques-couvre-visage-non-medicaux.html",
     "Health Provider Text": "n/a",
@@ -601,7 +601,7 @@
   },
   {
     "Button": "Covid",
-    "Topic heading": "PRÉVENEZ LE  COVID-19",
+    "Topic heading": "PRÉVENEZ LA COVID-19",
     "Subject": "Difference entre la quarantaine et l'lsolement",
     "General Patient Text": "Cliquez sur [[lien; https://www.canada.ca/fr/sante-publique/services/maladies/2019-nouveau-coronavirus/prevention-risques.html]]",
     "Health Provider Text": "n/a",
@@ -611,7 +611,7 @@
   },
   {
     "Button": "Covid",
-    "Topic heading": "PRÉVENEZ LE  COVID-19",
+    "Topic heading": "PRÉVENEZ LA COVID-19",
     "Subject": "Éloignement Physique",
     "General Patient Text": "Cliquez sur ce [[lien; https://www.canada.ca/content/dam/phac-aspc/documents/services/publications/diseases-conditions/coronavirus/social-distancing/social-distancing-fra.pdf]]",
     "Health Provider Text": "n/a",
@@ -621,7 +621,7 @@
   },
   {
     "Button": "Covid",
-    "Topic heading": "PRÉVENEZ LE  COVID-19",
+    "Topic heading": "PRÉVENEZ LA COVID-19",
     "Subject": "Hygiène",
     "General Patient Text": "Cliquez sur [[Santé publique Canada; https://www.canada.ca/fr/sante-publique/services/maladies/2019-nouveau-coronavirus/prevention-risques.html]]",
     "Health Provider Text": "n/a",
@@ -631,10 +631,20 @@
   },
   {
     "Button": "Covid",
-    "Topic heading": "PRÉVENEZ LE  COVID-19",
-    "Subject": "Populations Vulnérables",
+    "Topic heading": "PRÉVENEZ LA COVID-19",
+    "Subject": "Populations vulnérables",
     "General Patient Text": "n/a",
-    "Health Provider Text": "•POUR LES INFORMATIONS AUX PATIENTS VOIR LE CHOIX \"PATIENT\" AU LIEU DE \"CLINICIE   \n•LIENS UTILES\n[[AGENCE DE SANTÉ PUBLIQUE DU CANADA; https://www.canada.ca/fr/sante-publique/services/maladies/maladie-coronavirus-covid-19.html]] \n[[The Lancet; https://www.thelancet.com/coronavirus/archive?]]\n[[NEJM; https://www.nejm.org/coronavirus]]\n[[McMaster COVID-19 données probantes; https://plus.mcmaster.ca/COVID-19]]\n[[Oxford COVID-19 Données Probantes; https://www.cebm.net/oxford-covid-19-evidence-service/]]\n[[BMJ Coronavirus; https://www.bmj.com/coronavirus]]\n[[JAMA;https://jamanetwork.com/collections/46099/coronavirus-covid19]]",
+    "Health Provider Text": "•DEPISTAGE DE LA PAUVRETÉ: \nAvez-vous de la difficulté avec vos dépenses en fin de mois?\n•TROUVER DE L'AIDE:\nComposer le 211 sur votre téléphone dans certaines régions\nQuébec:  http://www.211quebecregions.ca/\nailleurs au Canada: https://211.ca/\nDiriger vos patients vers leur unité de santé publique locale\n•[[AIDE DU GOUVERNEMENT DU CANADA; https://www.canada.ca/fr/services/prestations/covid-19-prestations-urgence.html]]",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Covid",
+    "Topic heading": "PRÉVENEZ LA COVID-19",
+    "Subject": "Recherche",
+    "General Patient Text": "n/a",
+    "Health Provider Text": "ÉTUDES ÉVALUÉES POUR LEUR QUALITÉ\n[[MCMASTER EBM; https://plus.mcmaster.ca/COVID-19]]\n[[OXFORD Evidence Service; https://www.cebm.net/oxford-covid-19-evidence-service/]]\n\nPÉRIODIQUES\n[[CMAJ; https://www.cmaj.ca/covid-19]]\n[[BMJ's Coronavirus (covid-19) Hub; https://www.bmj.com/coronavirus]]\n[[JAMA;https://jamanetwork.com/collections/46099/coronavirus-covid19]]\n[[NEJM; https://www.nejm.org/coronavirus]]\n[[The Lancet; https://www.thelancet.com/coronavirus/archive?]]\n\n[[AGENCE DE LA SANTÉ PUBLIQUE DU CANADA; https://www.canada.ca/fr/sante-publique/services/maladies/maladie-coronavirus-covid-19.html]]",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150

@@ -48,7 +48,8 @@ class Tests extends React.Component {
     return (
 
       <div>
-        <button className="button button2" onClick={this.helpClicked}>?</button>
+        {/*Help button commented (on Test box)- 27 June 2020 */}
+        {/*<button className="button button2" onClick={this.helpClicked}>?</button>*/}
 
         <FilterableTestTable 
           tests={
