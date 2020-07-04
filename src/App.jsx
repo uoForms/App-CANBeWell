@@ -60,6 +60,7 @@ class App extends Component {
       bodyView: true,
       topicsView: false,
       testsView: false,
+      visible: true,
       language: app_language,
       lang: (typeof userInfo.language == "string") ? Lang[userInfo.language] : Lang[app_language],
       data: DataToDisplay,
@@ -76,7 +77,13 @@ class App extends Component {
       city: null,
       preNav: null,
       preCat: null,
-      preTime: null
+      preTime: null,
+      Surgeries: false,
+      Breasts: false,
+      Cervical: false,
+      showMe: true
+      
+
       //allowToClose: false, //obselete! we use to make the user agree before they could press agree
     };
 
@@ -86,6 +93,12 @@ class App extends Component {
     this.handlePatientProviderChangeFromConfig = this.handlePatientProviderChangeFromConfig.bind(this);
     this.handleAllAgesSelected = this.handleAllAgesSelected.bind(this);
     this.pageViewStateUpdater = this.pageViewStateUpdater.bind(this);
+    this.handleGenderChange = this.handleGenderChange.bind(this);
+    this.oncheckchange=this.oncheckchange.bind(this)
+  }
+operation()
+  {
+   alert("hi")
   }
 
   componentDidMount() {
@@ -339,6 +352,22 @@ class App extends Component {
 
   }
 
+  //set nonbinary
+  oncheckchange(e) {
+console.log(e.target.checked)
+this.setState({
+  [e.target.value] : e.target.checked
+})
+/*
+    const { cookies } = this.props;
+    cookies.set('nonbinary', changeEvent.target.value, { path: '/' });
+    //setnonbinary(changeEvent.target.value);
+    this.setState({
+      nonbinary: changeEvent.target.value
+      */
+    
+  }
+
   toggleModal = () => {
     this.setState({
       isOpen: !this.state.isOpen
@@ -538,9 +567,27 @@ class App extends Component {
                     */}
                   </div>
                 </form>
+                {/*select type*/}
+                {
+                  this.state.showMe?
+            <div>
+               <input type="checkbox" value="Surgeries" 
+                      checked={this.state.Surgeries} onChange={this.oncheckchange} />Surgeries
+                      {/* {this.state.lang.nonbinary} */}
+               <input type="checkbox" value="Breasts" 
+                      checked={this.state.Breasts} onChange={this.oncheckchange} /> Breasts
+                      {/* {this.state.lang.nonbinary} */}
+               <input type="checkbox" value="Cervical"
+                       checked={this.state.Cervical} onChange={this.oncheckchange} /> Cervical
+                      {/* {this.state.lang.nonbinary} */}
+                  
+                  </div>
+                  :null
+                  }
+                  <button onclick={()=>this.operation()}>Click Me</button>
               </div>
               {/*select age*/}
-              <div >
+                <div>
                 <form>
                   <div>
                     {this.state.lang.age_selector}
