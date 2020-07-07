@@ -112,6 +112,13 @@ operation()
         document.getElementById("disclaimer").innerHTML = this.state.lang.providerDisclaimer;
         document.getElementById("genderSelector").style.display = "block";
       }
+      console.log("gender::::",this.state.gender);
+      if(this.state.gender==="nonbinary"){
+        document.getElementById("field_selection").style.display = "block";
+      }
+      else {
+        document.getElementById("field_selection").style.display = "none";
+      }
     } catch (err) { }
 
     /// The following steps is to get clientID from google analytics and save it to cookies
@@ -349,6 +356,13 @@ operation()
     this.setState({
       gender: changeEvent.target.value
     });
+    console.log("gender::::",this.state.gender);
+    if(this.state.gender=="nonbinary"){
+        document.getElementById("field_selection").style.display = "block";
+    }
+    else{
+      document.getElementById("field_selection").style.display = "none";
+    }
 
   }
 
@@ -467,6 +481,9 @@ this.setState({
     var allagescheckboxStyle = {
       display: 'block',
     };
+    // var fieldselectionStyle = {
+    //   display:"none",
+    // };
 
     // The gray background
     const backdropStyle = {
@@ -509,6 +526,12 @@ this.setState({
     else if (this.state.user == "provider") {
       allagescheckboxStyle.display = "block";
     }
+    // if(this.state.gender=="nonbinary"){
+    //   fieldselectionStyle.display="block";
+    // }
+    // else{
+    //   fieldselectionStyle.display="none";
+    // }
 
     var instructionModal = [];
     var configurationModal = [];
@@ -570,7 +593,7 @@ this.setState({
                 {/*select type*/}
                 {
                   this.state.showMe?
-            <div>
+            <div id="field_selection">
                <input type="checkbox" value="Surgeries" 
                       checked={this.state.Surgeries} onChange={this.oncheckchange} />Surgeries
                       {/* {this.state.lang.nonbinary} */}
@@ -584,7 +607,6 @@ this.setState({
                   </div>
                   :null
                   }
-                  <button onclick={()=>this.operation()}>Click Me</button>
               </div>
               {/*select age*/}
                 <div>
