@@ -74,7 +74,7 @@
     "Topic heading": "Activité sexuelle et Prostate",
     "Subject": "Depistage du cancer de la prostate",
     "General Patient Text": "n/a",
-    "Health Provider Text": "•GECSSP (2014):Aucun depistage\n[[Résumé pour patients 1000 personnes; https://canadiantaskforce.ca/wp-content/uploads/2016/12/CTFPHC_Prostate-Cancer_HarmsBenefits_French_FINAL]]\n[[Résumé pour patients texte; https://canadiantaskforce.ca/wp-content/uploads/2016/10/2014-prostate-cancer-patient-faq-french160111.pdf]]\n\n•USPSTF (2018): Discuter avec votre patient.(recommandation C)\nIncorpore des données probantes plus récentes:\n[[Résumé pour patients; pdf/prostate-cancer-infographic-5.pdf]]\n[[Informations supplémentaires; https://www.uspreventiveservicestaskforce.org/Page/Document/UpdateSummaryFinal/prostate-cancer-screening1?ds=1&s=prostate]]",
+    "Health Provider Text": "•GECSSP (2014):Aucun depistage\n[[Résumé pour patients 1000 personnes; https://canadiantaskforce.ca/wp-content/uploads/2016/12/CTFPHC_Prostate-Cancer_HarmsBenefits_French_FINAL.pdf]]\n[[Résumé pour patients texte; https://canadiantaskforce.ca/wp-content/uploads/2016/10/2014-prostate-cancer-patient-faq-french160111.pdf]]\n\n•USPSTF (2018): Discuter avec votre patient.(recommandation C)\nIncorpore des données probantes plus récentes:\n[[Résumé pour patients; pdf/prostate-cancer-infographic-5.pdf]]\n[[Informations supplémentaires; https://www.uspreventiveservicestaskforce.org/uspstf/document/RecommendationStatementFinal/prostate-cancer-screening]]",
     "Gender": "m",
     "Minimum age": 55,
     "Maximum age": 69
@@ -113,7 +113,7 @@
     "Button": "Genitalia",
     "Topic heading": "Activité sexuelle et Prostate",
     "Subject": "Depistage du cancer de la prostate",
-    "General Patient Text": "•Au Canada le depistage du cancer de la prostate avec la prise de sang APS n'est pas recommandé.\n[[Résumé; https://canadiantaskforce.ca/wp-content/uploads/2016/10/2014-prostate-cancer-patient-faq-french160111.pdf]]\n[[Résumé visuel; https://canadiantaskforce.ca/wp-content/uploads/2016/12/CTFPHC_Prostate-Cancer_HarmsBenefits_French_FINAL.pdf]]\n\n•Aux Etats-Unis il est recommandé d'en discuter avec votre professionnel de la santé. Il y a des bénéfices mais aussi des conséquences et préjudices graves.\n[[ Vidéo; https://www.uspreventiveservicestaskforce.org/Page/Document/UpdateSummaryFinal/prostate-cancer-screening1?ds=1&s=prostate]]\n[[Résumé patient; pdf/prostate-cancer-infographic-5.pdf]]",
+    "General Patient Text": "•Au Canada le depistage du cancer de la prostate avec la prise de sang APS n'est pas recommandé.\n[[Résumé; https://canadiantaskforce.ca/wp-content/uploads/2016/10/2014-prostate-cancer-patient-faq-french160111.pdf]]\n[[Résumé visuel; https://canadiantaskforce.ca/wp-content/uploads/2016/12/CTFPHC_Prostate-Cancer_HarmsBenefits_French_FINAL.pdf]]\n\n•Aux Etats-Unis il est recommandé d'en discuter avec votre professionnel de la santé. Il y a des bénéfices mais aussi des conséquences et préjudices graves.\n[[ Vidéo; https://www.uspreventiveservicestaskforce.org/uspstf/document/RecommendationStatementFinal/prostate-cancer-screening]]\n[[Résumé patient; pdf/prostate-cancer-infographic-5.pdf]]",
     "Health Provider Text": "n/a",
     "Gender": "m",
     "Minimum age": 55,
@@ -504,7 +504,7 @@
     "Topic heading": "Planification familiale",
     "Subject": "État de santé avant la conception chez toutes les femmes en âge de procréer",
     "General Patient Text": "n/a",
-    "Health Provider Text": "•Recommander la prise de 0,4 à 1 mg d’acide folique par jour à toutes les femmes en âge de procréer, car de nombreuses grossesses sont non planifiées.\n [[plus de renseignements; https://www.uspreventiveservicestaskforce.org/Page/Document/UpdateSummaryFinal/folic-acid-for-the-prevention-of-neural-tube-defects-preventive-medication/]]\n\nVÉRIFIER L'IMMUNITÉ:\n•contre la rubéole\n• contre la varicelle\n•contre  l’hépatite B et au VIH\nchez les femmes en âge de procréer\n[[plus de renseignements; https://cep.health/clinical-products/preconception/]]\n\nÂGE MATERNEL AVANCÉ: discuter de\n•La diminution de la fertilité chez les femmes après 32 ans\n•Les technologies d’aide à la reproduction ne peuvent garantir une naissance vivante. \n\n[[SOGC 2017; https://www.jogc.com/article/S1701-2163(16)39639-6/fulltext]]",
+    "Health Provider Text": "•Recommander la prise de 0,4 à 1 mg d’acide folique par jour à toutes les femmes en âge de procréer, car de nombreuses grossesses sont non planifiées.\n [[plus de renseignements; https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/folic-acid-for-the-prevention-of-neural-tube-defects-preventive-medication?ds=1&s=neural%20tube%20defects]]\n\nVÉRIFIER L'IMMUNITÉ:\n•contre la rubéole\n• contre la varicelle\n•contre  l’hépatite B et au VIH\nchez les femmes en âge de procréer\n[[plus de renseignements; https://cep.health/clinical-products/preconception/]]\n\nÂGE MATERNEL AVANCÉ: discuter de\n•La diminution de la fertilité chez les femmes après 32 ans\n•Les technologies d’aide à la reproduction ne peuvent garantir une naissance vivante. \n\n[[SOGC 2017; https://www.jogc.com/article/S1701-2163(16)39639-6/fulltext]]",
     "Gender": "f",
     "Minimum age": 18,
     "Maximum age": 49
