@@ -374,7 +374,7 @@
     "Topic heading": "Family Planning",
     "Subject": "Preconception health for all women of childbearing age",
     "General Patient Text": "n/a",
-    "Health Provider Text": "[[Complete preconception health care tool; http://thehub.utoronto.ca/family/wp-content/uploads/2016/12/Preconception_Health_Care_Tool.pdf]]\n\nAdvise folic acid 0.4-1 m/day \nfor all women of childbearing age,\nas many pregnancies unplanned \n[[more; https://www.jogc.com/article/S1701-2163(15)30230-9/pdf]]\n\nScreen for:\n•Rubella immunity\n•Varicella immunity\n•Hepatitis B and HIV disease\nin women of childbearing age,\n[[more; http://thehub.utoronto.ca/family/wp-content/uploads/2016/12/Preconception_Health_Care_Tool.pdf]]\n\nDelayed child-bearing: discuss\n•Decreasing fertility for women after age 32 \n•Assistive reproductive technologies cannot guarantee a live birth. \n[[more at SOGC guideline 2017; https://www.jogc.com/article/S1701-2163(17)30936-2/pdf]]",
+    "Health Provider Text": "[[Complete preconception health care tool; https://med-fom-obgyn.sites.olt.ubc.ca/files/2019/02/Preconception-Tool_-Nov2015-CEP_.pdf]]\n\nAdvise folic acid 0.4-1 m/day \nfor all women of childbearing age,\nas many pregnancies unplanned \n[[more; https://www.jogc.com/article/S1701-2163(15)30230-9/pdf]]\n\nScreen for:\n•Rubella immunity\n•Varicella immunity\n•Hepatitis B and HIV disease\nin women of childbearing age,\n[[more; http://thehub.utoronto.ca/family/wp-content/uploads/2016/12/Preconception_Health_Care_Tool.pdf]]\n\nDelayed child-bearing: discuss\n•Decreasing fertility for women after age 32 \n•Assistive reproductive technologies cannot guarantee a live birth. \n[[more at SOGC guideline 2017; https://www.jogc.com/article/S1701-2163(17)30936-2/pdf]]",
     "Gender": "f",
     "Minimum age": 18,
     "Maximum age": 49
@@ -704,7 +704,7 @@
     "Topic heading": "Sex & Prostate",
     "Subject": "Screening for Prostate Cancer",
     "General Patient Text": "n/a",
-    "Health Provider Text": "•Canadian task force (2014): Do not screen.\n[[Canadian patient handout 1000 person; https://canadiantaskforce.ca/wp-content/uploads/2016/05/2014-prostate-cancer-harms-and-benefits-colour-en.pdf]]\n[[Canadian patient handout;  https://canadiantaskforce.ca/wp-content/uploads/2016/12/CTFPHC_Prostate-Cancer_HarmsBenefits_FINAL.pdf]]\n\n•US Task Force(2018): Discuss with your patient.(C recommendation)\nIncorporates more recent research.\n[[US patient handout; pdf/prostate-cancer-infographic-5.pdf]]\n[[More info; https://www.uspreventiveservicestaskforce.org/Page/Document/UpdateSummaryFinal/prostate-cancer-screening1?ds=1&s=prostate]]",
+    "Health Provider Text": "•Canadian task force (2014): Do not screen.\n[[Canadian patient handout 1000 person; https://canadiantaskforce.ca/wp-content/uploads/2016/05/2014-prostate-cancer-harms-and-benefits-colour-en.pdf]]\n[[Canadian patient handout;  https://canadiantaskforce.ca/wp-content/uploads/2016/12/CTFPHC_Prostate-Cancer_HarmsBenefits_FINAL.pdf]]\n\n•US Task Force(2018): Discuss with your patient.(C recommendation)\nIncorporates more recent research.\n[[US patient handout; pdf/prostate-cancer-infographic-5.pdf]]\n[[More info; https://www.uspreventiveservicestaskforce.org/uspstf/document/RecommendationStatementFinal/prostate-cancer-screening]]",
     "Gender": "m",
     "Minimum age": 55,
     "Maximum age": 69
@@ -743,7 +743,7 @@
     "Button": "Genitalia",
     "Topic heading": "Sex & Prostate",
     "Subject": "Testing for Prostate Cancer",
-    "General Patient Text": "•In Canada testing for finding prostate cancer early is not recommended.\n[[Canadian patient handout; https://canadiantaskforce.ca/wp-content/uploads/2016/05/2014-prostate-cancer-patient-faq-colour-en.pdf]]\n\n•In the US it is  recommended to discuss testing for prostate cancer with your health care provider.There are some benefits and some harms.\n[[Video and more info; https://www.uspreventiveservicestaskforce.org/Page/Document/UpdateSummaryFinal/prostate-cancer-screening1?ds=1&s=prostate]]\n[[US patient handout; pdf/prostate-cancer-infographic-5.pdf]]",
+    "General Patient Text": "•In Canada testing for finding prostate cancer early is not recommended.\n[[Canadian patient handout; https://canadiantaskforce.ca/wp-content/uploads/2016/05/2014-prostate-cancer-patient-faq-colour-en.pdf]]\n\n•In the US it is  recommended to discuss testing for prostate cancer with your health care provider.There are some benefits and some harms.\n[[Video and more info; https://www.uspreventiveservicestaskforce.org/uspstf/document/RecommendationStatementFinal/prostate-cancer-screening]]\n[[US patient handout; pdf/prostate-cancer-infographic-5.pdf]]",
     "Health Provider Text": "n/a",
     "Gender": "m",
     "Minimum age": 55,
