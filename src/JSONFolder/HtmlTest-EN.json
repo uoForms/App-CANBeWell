@@ -85,7 +85,7 @@
   },
   {
     "Test": "STI tests",
-    "Patient/Provider Text": "If sexually active testing for stis includes: \nâ€¢Women: a pelvic exam or a urine test; and blood tests. \nâ€¢Men: a urine test and blood tests\nUrine test tests are for Chlamydia and Gonorrhea. \nThe test done by pelvic exam in women is for Chlamydia and Gonorrhea\nBlood tests: it is recommended to include tests for HIV, Syphilis, Hepatitis B, and some include Hepatitis C.",
+    "Patient/Provider Text": "If sexually active testing for stis includes: \n•Women: a pelvic exam or a urine test; and blood tests. \n•Men: a urine test and blood tests\nUrine test tests are for Chlamydia and Gonorrhea. \nThe test done by pelvic exam in women is for Chlamydia and Gonorrhea\nBlood tests: it is recommended to include tests for HIV, Syphilis, Hepatitis B, and some include Hepatitis C.",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
@@ -99,7 +99,7 @@
   },
   {
     "Test": "Ultrasound for AAA",
-    "Patient/Provider Text": "AAAmeans Abdominal Aortic Aneurysm.\n Men age 65-80 may benefit from an ultrasound to detect AAA.\nLink below is from the UK, differences in Canada are:\nâ€¢We stop at age 80.\nâ€¢You should see your health care provider to discuss if this test is right for you.\n\n [[more; https://www.nhs.uk/Conditions/abdominal-aortic-aneurysm-screening/Documents/AAA_screening_patient_decision_aid_printable_version_January_2014.pdf]]",
+    "Patient/Provider Text": "AAAmeans Abdominal Aortic Aneurysm.\n Men age 65-80 may benefit from an ultrasound to detect AAA.\nLink below is from the UK, differences in Canada are:\n•We stop at age 80.\n•You should see your health care provider to discuss if this test is right for you.\n\n [[more; https://www.nhs.uk/Conditions/abdominal-aortic-aneurysm-screening/Documents/AAA_screening_patient_decision_aid_printable_version_January_2014.pdf]]",
     "Gender": "m",
     "Minimum age": 65,
     "Maximum age": 80
