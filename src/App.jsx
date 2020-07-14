@@ -144,7 +144,7 @@ operation()
       }
       );
   }
-  
+
   fieldSelectionDisplayHandle=(gender)=>{
     if(gender==="nonbinary"){
       document.getElementById("field_selection").style.display = "block";
@@ -588,8 +588,8 @@ this.setState({
                   </div>
                 </form>
                 {/*select type*/}
-                {
-                  this.state.showMe?
+            <div>
+            <form>
             <div id="field_selection">
                <input type="checkbox" value="Surgeries" 
                       checked={this.state.Surgeries} onChange={this.oncheckchange} />Surgeries
@@ -601,9 +601,9 @@ this.setState({
                        checked={this.state.Cervical} onChange={this.oncheckchange} /> Cervical
                       {/* {this.state.lang.nonbinary} */}
                   
-                  </div>
-                  :null
-                  }
+              </div>
+              </form>
+              </div>
               </div>
               {/*select age*/}
                 <div>
