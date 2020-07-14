@@ -112,13 +112,8 @@ operation()
         document.getElementById("disclaimer").innerHTML = this.state.lang.providerDisclaimer;
         document.getElementById("genderSelector").style.display = "block";
       }
-      console.log("gender::::",this.state.gender);
-      if(this.state.gender==="nonbinary"){
-        document.getElementById("field_selection").style.display = "block";
-      }
-      else {
-        document.getElementById("field_selection").style.display = "none";
-      }
+
+      this.fieldSelectionDisplayHandle(this.state.gender);
     } catch (err) { }
 
     /// The following steps is to get clientID from google analytics and save it to cookies
@@ -149,7 +144,15 @@ operation()
       }
       );
   }
-
+  
+  fieldSelectionDisplayHandle=(gender)=>{
+    if(gender==="nonbinary"){
+      document.getElementById("field_selection").style.display = "block";
+    }
+    else {
+      document.getElementById("field_selection").style.display = "none";
+    }
+  }
   pageViewStateUpdater = ( nav, cat, time ) => {
     console.log(cat+"app.js callback");
     this.setState({
@@ -356,14 +359,8 @@ operation()
     this.setState({
       gender: changeEvent.target.value
     });
-    console.log("gender::::",this.state.gender);
-    if(this.state.gender=="nonbinary"){
-        document.getElementById("field_selection").style.display = "block";
-    }
-    else{
-      document.getElementById("field_selection").style.display = "none";
-    }
 
+    this.fieldSelectionDisplayHandle(changeEvent.target.value);
   }
 
   //set nonbinary
