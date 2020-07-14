@@ -587,23 +587,21 @@ this.setState({
                     */}
                   </div>
                 </form>
-                {/*select type*/}
-            <div>
-            <form>
-            <div id="field_selection">
-               <input type="checkbox" value="Surgeries" 
-                      checked={this.state.Surgeries} onChange={this.oncheckchange} />Surgeries
-                      {/* {this.state.lang.nonbinary} */}
-               <input type="checkbox" value="Breasts" 
-                      checked={this.state.Breasts} onChange={this.oncheckchange} /> Breasts
-                      {/* {this.state.lang.nonbinary} */}
-               <input type="checkbox" value="Cervical"
-                       checked={this.state.Cervical} onChange={this.oncheckchange} /> Cervical
-                      {/* {this.state.lang.nonbinary} */}
-                  
-              </div>
-              </form>
-              </div>
+                {/*Field selection based on gender*/}
+                <form>
+                <div id="field_selection">
+                  <input type="checkbox" value="Surgeries" 
+                          checked={this.state.Surgeries} onChange={this.oncheckchange} />Surgeries
+                          {/* {this.state.lang.nonbinary} */}
+                  <input type="checkbox" value="Breasts" 
+                          checked={this.state.Breasts} onChange={this.oncheckchange} /> Breasts
+                          {/* {this.state.lang.nonbinary} */}
+                  <input type="checkbox" value="Cervical"
+                          checked={this.state.Cervical} onChange={this.oncheckchange} /> Cervical
+                          {/* {this.state.lang.nonbinary} */}
+                      
+                  </div>
+                  </form>
               </div>
               {/*select age*/}
                 <div>
@@ -692,6 +690,21 @@ this.setState({
                       */}
 
                     </div>
+                  </form>
+                  {/*Field selection based on gender*/}
+                  <form>
+                    <div id="field_selection">
+                      <input type="checkbox" value="Surgeries" 
+                              checked={this.state.Surgeries} onChange={this.oncheckchange} />Surgeries
+                              {/* {this.state.lang.nonbinary} */}
+                      <input type="checkbox" value="Breasts" 
+                              checked={this.state.Breasts} onChange={this.oncheckchange} /> Breasts
+                              {/* {this.state.lang.nonbinary} */}
+                      <input type="checkbox" value="Cervical"
+                              checked={this.state.Cervical} onChange={this.oncheckchange} /> Cervical
+                              {/* {this.state.lang.nonbinary} */}
+                          
+                      </div>
                   </form>
                 </div>
                 {/*select age*/}
