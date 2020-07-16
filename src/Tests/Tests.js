@@ -49,8 +49,8 @@ Used for help icon that appeared on test tab which is no more needed
     return (
 
       <div>
-        {/*This line was commented Used for help icon that appeared on test tab which is no more needed
-        <button className="button button2" onClick={this.helpClicked}>?</button>*/}
+        {/*Help button commented (on Test box)- 27 June 2020 */}
+        {/*<button className="button button2" onClick={this.helpClicked}>?</button>*/}
 
         <FilterableTestTable 
           tests={
