@@ -492,8 +492,8 @@
   {
     "Button": "Ovary",
     "Topic heading": "Planification familiale",
-    "Subject": "Discuter de la façon dont votre âge influe sur la fertilité avec votre professionnel de la santé\n[[Recommandations des obstetriciens du Canada; https://www.jogc.com/article/S1701-2163(16)39639-6/fulltext]]",
-    "General Patient Text": "[[plus de renseignements; https://sogc.org/fr/ressources-et-publications/brochures-deducation-publique.html?id=1]]",
+    "Subject": "Discuter de la façon dont votre âge influe sur la fertilité avec votre professionnel de la santé\n[[Recommandations des obstetriciens du Canada;]] https://www.jogc.com/article/S1701-2163(16)39639-6/fulltext",
+    "General Patient Text": "[[plus de renseignements; https://www.sogc.org/fr/Pour-le-public/fr/content/public-resources/ressources-a-lintention-du-public.aspx?hkey=1180038b-a220-437b-9fe7-7878bc27fcdb]]",
     "Health Provider Text": "n/a",
     "Gender": "f",
     "Minimum age": 18,
@@ -561,9 +561,9 @@
   },
   {
     "Button": "Covid",
-    "Topic heading": "PRÉVENEZ LA  COVID-19",
+    "Topic heading": "PRÉVENEZ LA COVID-19",
     "Subject": "Informations pour les aînés et les populations vulnérables",
-    "General Patient Text": "•[[Les aînés et les aidants naturels; https://www.canada.ca/fr/sante-publique/services/maladies/maladie-coronavirus-covid-19/ressources-aines-aidants-naturels.html]]\n\n\n•Si vous avez besoin de nourriture ou d'autre aide :\nComposer le 211 sur votre téléphone dans certaines régions\nQuébec:  http://www.211quebecregions.ca/\nAilleurs au Canada: https://211.ca/\n\n•OU vérifier avec votre agence de santé publique locale ou votre ville , village ou communauté \n[[Information COVID-19 par province ou territoire; https://www.canada.ca/fr/sante-publique/services/maladies/2019-nouveau-coronavirus/symptomes/ressources-provinces-territoires-covid-19.html]]\n\n•[[Aide financière du gouvernement du Canada; https://www.canada.ca/fr/services/prestations/covid-19-prestations-urgence.html]]",
+    "General Patient Text": "•[[Les aînés et les aidants naturels; https://www.canada.ca/fr/sante-publique/services/maladies/maladie-coronavirus-covid-19/ressources-aines-aidants-naturels.html]]\n\n\n•Si vous avez besoin de nourriture ou d'autre aide :\nComposer le 211 sur votre téléphone dans certaines régions\nQuébec:  [[http://www.211quebecregions.ca/]]\nAilleurs au Canada: [[https://211.ca/]]\n\n•OU vérifier avec votre agence de santé publique locale ou votre ville , village ou communauté \n[[Information COVID-19 par province ou territoire; https://www.canada.ca/fr/sante-publique/services/maladies/2019-nouveau-coronavirus/symptomes/ressources-provinces-territoires-covid-19.html]]\n\n•[[Aide financière du gouvernement du Canada; https://www.canada.ca/fr/services/prestations/covid-19-prestations-urgence.html]]",
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
@@ -571,9 +571,9 @@
   },
   {
     "Button": "Covid",
-    "Topic heading": "PRÉVENEZ LA  COVID-19",
+    "Topic heading": "PRÉVENEZ LA COVID-19",
     "Subject": "Premières Nations, Métis et Inuit",
-    "General Patient Text": "•[[ Informations generales regroupées sur le site de santé publique d'Ottawa; https://www.santepubliqueottawa.ca/fr/public-health-topics/resources-for-first-nations-inuit-and-m-tis-community-members.aspx]]\n\n•[[ Vidéo prevenir la COVID-19; https://www.youtube.com/watch?v=7uCl_rodkaQ&feature=youtu.be]]\n\n•{{Vidéo pour inuit sur distanciation physique; https://www.youtube.com/watch?v=bk2fp5rS-kg&feature=youtu.be]]\n\n•[[Diabète et COVID en anglais;  http://nada.ca/?page_id=3172]]",
+    "General Patient Text": "•[[ Informations generales regroupées sur le site de santé publique d'Ottawa; https://www.santepubliqueottawa.ca/fr/public-health-topics/resources-for-first-nations-inuit-and-m-tis-community-members.aspx]]\n\n•[[ Vidéo prevenir la COVID-19; https://www.youtube.com/watch?v=7uCl_rodkaQ&feature=youtu.be]]\n\n•[[Vidéo pour inuit sur distanciation physique; https://www.youtube.com/watch?v=bk2fp5rS-kg&feature=youtu.be]]\n\n•[[Diabète et COVID en anglais;  http://nada.ca/?page_id=3172]]",
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
@@ -581,7 +581,7 @@
   },
   {
     "Button": "Covid",
-    "Topic heading": "PRÉVENEZ LA  COVID-19",
+    "Topic heading": "PRÉVENEZ LA COVID-19",
     "Subject": "COVID-19 Español, arabe,mandarin et autres lengues",
     "General Patient Text": "[[Informations sur la COVID-19 dans différentes langues; https://www.ottawapublichealth.ca/en/public-health-topics/multilingual-resources.aspx]]",
     "Health Provider Text": "n/a",
@@ -684,7 +684,7 @@
     "Topic heading": "Santé des os",
     "Subject": "Densité minerale osseuse.",
     "General Patient Text": "Si vous êtes âgé de moins de 65 ans, envisager de passer cette évaluation dans les circonstances suivantes seulement:\nvous présentez des [[facteurs de risque; https://www.canada.ca/fr/sante-publique/services/maladies-chroniques/osteoporose.html]]",
-    "Health Provider Text": "<65 and envisager une densite minerale osseuse seulement si le patient présente des risques [[https://osteoporosis.ca/wp-content/uploads/Quick_Reference_Guide_October_2010.pdf]] ou utiliser [[OST; http://www.cfp.ca/content/61/7/612]]",
+    "Health Provider Text": "<65 and envisager une densite minerale osseuse seulement si le patient présente des risques [[osteoporosis.ca; https://osteoporosis.ca/wp-content/uploads/Quick_Reference_Guide_October_2010.pdf]] ou utiliser [[OST; http://www.cfp.ca/content/61/7/612]]",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 64
