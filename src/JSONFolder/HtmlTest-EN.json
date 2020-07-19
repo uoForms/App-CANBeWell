@@ -6,7 +6,7 @@
     "Minimum age": 50,
     "Maximum age": 64
   },
-   {
+  {
     "Test": "Bone mineral density",
     "Patient/Provider Text": "For patients age 65 and over.\nAn x-ray detector scans your spine and hip.\nYou receive a very small amount of radiation,\napproximately the same amount you are exposed to if you fly from Toronto to Vancouver.\n[[More info; https://osteoporosis.ca/about-the-disease/diagnosis/why-should-i-get-tested/]]",
     "Gender": "all",
@@ -34,7 +34,7 @@
     "Minimum age": 50,
     "Maximum age": 74
   },
-    {
+  {
     "Test": "Heart risk score",
     "Patient/Provider Text": "Your provider uses your [[age, sex, other risk factors; https://myhealth.alberta.ca/Alberta/Pages/Heart-Disease-Risk-Calculator.aspx]]: to measure your risk of having a heart attack.\n\n[[Other calculator; http://chd.bestsciencemedicine.com/calc2.html]]",
     "Gender": "all",
@@ -71,7 +71,7 @@
   },
   {
     "Test": "Pros/ Cons of tests",
-    "Patient/Provider Text": "More tests are not always  good for your health,\nsee these links: [[more info 1; https://www.youtube.com/watch?v=8c7qTsVVxXw]]\n[[more info 2; https://choosingwiselycanada.org/]]",
+    "Patient/Provider Text": "More tests are not always  good for your health,\nsee these links: [[more info 1; https://www.youtube.com/watch?v=8c7qTsVVxXw]]\n[[more info 2;https://choosingwiselycanada.org/health-check-ups//]]\n[[more info 3; https://choosingwiselycanada.org/family-medicine/]]",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
