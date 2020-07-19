@@ -1,5 +1,125 @@
 [
   {
+    "Button": "Covid",
+    "Topic heading": "COVID-19",
+    "Subject": "Êtes-vous inquiet d'avoir la COVID-19?",
+    "General Patient Text": "Cliquez sur ce [[lien; https://ca.thrive.health/covid19/fr]]",
+    "Health Provider Text": "n/a",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Covid",
+    "Topic heading": "COVID-19",
+    "Subject": "Informations pour les aînés et les populations vulnérables",
+    "General Patient Text": "•[[Les aînés et les aidants naturels; https://www.canada.ca/fr/sante-publique/services/maladies/maladie-coronavirus-covid-19/ressources-aines-aidants-naturels.html]]\n•Si vous avez besoin de nourriture ou d'autre aide :\nComposer le 211 sur votre téléphone dans certaines régions\nQuébec: [[http://www.211quebecregions.ca/;http://www.211quebecregions.ca/]]\nAilleurs au Canada: [[https://211.ca/;https://211.ca/]]\n•OU vérifier avec votre agence de santé publique locale ou votre ville , village ou communauté\n[[Information COVID-19 par province ou territoire; https://www.canada.ca/fr/sante-publique/services/maladies/2019-nouveau-coronavirus/symptomes/ressources-provinces-territoires-covid-19.html]]\n•[[Aide financière du gouvernement du Canada; https://www.canada.ca/fr/services/prestations/covid-19-prestations-urgence.html]]",
+    "Health Provider Text": "n/a",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Covid",
+    "Topic heading": "COVID-19",
+    "Subject": "Premières Nations, Métis et Inuit",
+    "General Patient Text": "•[[Informations generales regroupées sur le site de santé publique d'Ottawa; https://www.santepubliqueottawa.ca/fr/public-health-topics/resources-for-first-nations-inuit-and-m-tis-community-members.aspx]]\n•[[Vidéo 1; https://www.youtube.com/watch?v=7uCl_rodkaQ&feature=youtu.be]]\n•[[Vidéo 2; https://www.youtube.com/watch?v=bk2fp5rS-kg&feature=youtu.be]]\n•[[Diabète et COVID en anglais;  http://nada.ca/?page_id=3172]]",
+    "Health Provider Text": "n/a",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Covid",
+    "Topic heading": "COVID-19",
+    "Subject": "COVID-19 Español, arabe,mandarin et autres lengues",
+    "General Patient Text": "[[Informations sur la COVID-19 dans différentes langues; https://www.santepubliqueottawa.ca/fr/public-health-topics/multilingual-resources.aspx]]",
+    "Health Provider Text": "n/a",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Covid",
+    "Topic heading": "COVID-19",
+    "Subject": "Tous les Canadiens",
+    "General Patient Text": "•[[Information par province ou territoire; https://www.canada.ca/fr/sante-publique/services/maladies/2019-nouveau-coronavirus/symptomes/ressources-provinces-territoires-covid-19.html]]\n•suivre les conseils de leur agence de santé publique locale\n•rester à la maison le plus possible\n•limiter les contacts avec les personnes présentant un risque plus élevé (comme les aînés et les personnes en mauvaise santé)\n•à l'exterieur toujours garder une distance d'au moins 2 longueurs de bras (environ 2 mètres) entre vous et les autres\n•laver vos mains souvent avec de l'eau et du savon (au moins 20 secondes)\n•si le savon n'est pas disponible utiliser un désinfectant à main à base d'alcool.\n•informations supplementaires: cliquez sur  ce\n[[lien; https://www.canada.ca/fr/sante-publique/services/maladies/2019-nouveau-coronavirus/prevention-risques.html]]",
+    "Health Provider Text": "n/a",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Covid",
+    "Topic heading": "COVID-19",
+    "Subject": "Nettoyage",
+    "General Patient Text": "•Nettoyer souvent les surfaces dures fréquemment touchées, que ce soit avec des produits d'entretien ménager ordinaires ou avec de l'eau de Javel diluée conformément aux instructions figurant sur l'étiquette.\n•Cliquez sur [[la liste des désinfectants de Santé Canada; https://www.canada.ca/fr/sante-canada/services/medicaments-produits-sante/desinfectants/covid-19/liste.html#tbl1]]\n•La solution d'eau de Javel devrait être préparée conformément aux instructions figurant sur l'étiquette ou selon un ratio de 250 ml (1 tasse) d'eau pour 5 ml (1 cuillère à thé) d'eau de Javel. Les instructions sont fondées sur de l'eau de Javel contenant de l'hypochlorite de sodium à 5 %, qui donnerait une solution d'hypochlorite de sodium de 0,1 %. Ne mélangez jamais de l'eau de Javel avec d'autres produits chimiques.",
+    "Health Provider Text": "n/a",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Covid",
+    "Topic heading": "COVID-19",
+    "Subject": "Masques",
+    "General Patient Text": "•[[VIDÉO; https://www.canada.ca/fr/sante-publique/services/video/covid-19-bien-porter-masque-non-medical-couvre-visage.html]]\n•[[Conseils sur les masques; https://www.canada.ca/content/dam/hc-sc/documents/services/publications/diseases-and-conditions/covid-19-safely-use-non-medical-mask-face-covering/covid-19-safely-use-non-medical-mask-face-covering-fr.pdf]]\n•[[Limites des masques; https://www.canada.ca/fr/sante-publique/services/maladies/2019-nouveau-coronavirus/prevention-risques/a-propos-masques-couvre-visage-non-medicaux.html#_Limitations]]\n•Ne pas porter un masque avec une sous-pape d'expiration.",
+    "Health Provider Text": "n/a",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Covid",
+    "Topic heading": "COVID-19",
+    "Subject": "Difference entre la quarantaine et l'lsolement",
+    "General Patient Text": "Cliquez sur ce [[lien; https://www.canada.ca/fr/sante-publique/services/maladies/2019-nouveau-coronavirus/prevention-risques.html#auto]]",
+    "Health Provider Text": "n/a",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Covid",
+    "Topic heading": "COVID-19",
+    "Subject": "Distanciation Physique",
+    "General Patient Text": "Rester à 2 mètres ou 6 pieds ou un bâton de hockey des autres.\n[[Vidéo; https://www.youtube.com/watch?v=VJxlsSLuWbo]]",
+    "Health Provider Text": "n/a",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Covid",
+    "Topic heading": "COVID-19",
+    "Subject": "Hygiène",
+    "General Patient Text": "Cliquez sur [[Santé publique Canada; https://www.canada.ca/fr/sante-publique/services/maladies/2019-nouveau-coronavirus/prevention-risques.html]]",
+    "Health Provider Text": "n/a",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Covid",
+    "Topic heading": "COVID-19",
+    "Subject": "Populations vulnérables",
+    "General Patient Text": "n/a",
+    "Health Provider Text": "•POUR DEPISTER  LA PAUVRETÉ:\nposer la question:\nAvez-vous de la difficulté avec vos dépenses en fin de mois?\n•Trouver des services sociaux et de santé locaux pour votre patient:\nComposer le 211 sur votre téléphone dans certaines régions\nQuébec: [[http://www.211quebecregions.ca/;http://www.211quebecregions.ca/]]\nAilleurs au Canada: [[https://211.ca/;https://211.ca/]]\n• OU diriger vos patients vers leur unité de santé publique locale.\n•[[Aide financière du Canada; https://www.canada.ca/fr/services/prestations/covid-19-prestations-urgence.html]]\n•[[Premières nations, Métis et Inuit; https://www.santepubliqueottawa.ca/fr/public-health-topics/resources-for-first-nations-inuit-and-m-tis-community-members.aspx]]\ninformations nationales et pour Ottawa\n•[[Différentes langues; https://www.santepubliqueottawa.ca/fr/public-health-topics/multilingual-resources.aspx]]",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Covid",
+    "Topic heading": "COVID-19",
+    "Subject": "Recherche sur la COVID-19",
+    "General Patient Text": "n/a",
+    "Health Provider Text": "ÉTUDES ÉVALUÉES POUR LEUR QUALITÉ\n[[MCMASTER EBM; https://plus.mcmaster.ca/COVID-19]]\n[[OXFORD Evidence Service; https://www.cebm.net/oxford-covid-19-evidence-service/]]\n\nPÉRIODIQUES\n[[CMAJ; https://www.cmaj.ca/covid-19]]\n[[BMJ's Coronavirus (covid-19) Hub; https://www.bmj.com/coronavirus]]\n[[JAMA;https://jamanetwork.com/collections/46099/coronavirus-covid19]]\n[[NEJM; https://www.nejm.org/coronavirus]]\n[[The Lancet; https://www.thelancet.com/coronavirus/archive?]]\n\n[[AGENCE DE LA SANTÉ PUBLIQUE DU CANADA; https://www.canada.ca/fr/sante-publique/services/maladies/maladie-coronavirus-covid-19.html]]",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
     "Button": "Figure outside body walking",
     "Topic heading": "Activité physique",
     "Subject": "Recommandations",
@@ -103,7 +223,7 @@
     "Button": "Genitalia",
     "Topic heading": "Activité sexuelle et Prostate",
     "Subject": "Prevenir le cancer de la prostate",
-    "General Patient Text": "Prevenir le cancer de la prostate:\n•Manger sainement\n•Etre physiquement actif\n•Maintenir un poids santé\n[[Qu'est-ce que le cancer de la prostate?; http://www.cancer.ca/fr-ca/cancer-information/cancer-type/prostate/prostate-cancer/?region=on]]\n[[Facteurs de risque;  http://www.cancer.ca/fr-ca/cancer-information/cancer-type/prostate/risks/?region=on]]\n\nPour des informations sur le test du cancer de la prostate (APS) consulter notre appli: Homee ages 55 à 69, activité sexuelle et prostate.",
+    "General Patient Text": "•Manger sainement\n•Etre physiquement actif\n•Maintenir un poids santé\n[[Qu'est-ce que le cancer de la prostate?; http://www.cancer.ca/fr-ca/cancer-information/cancer-type/prostate/prostate-cancer/?region=on]]\n[[Facteurs de risque;  http://www.cancer.ca/fr-ca/cancer-information/cancer-type/prostate/risks/?region=on]]\n\nPour des informations sur le test du cancer de la prostate (APS) consulter notre appli: Homee ages 55 à 69, activité sexuelle et prostate.",
     "Health Provider Text": "n/a",
     "Gender": "m",
     "Minimum age": 18,
@@ -493,7 +613,7 @@
     "Button": "Ovary",
     "Topic heading": "Planification familiale",
     "Subject": "Discuter de la façon dont votre âge influe sur la fertilité avec votre professionnel de la santé\n[[Recommandations des obstetriciens du Canada;https://www.jogc.com/article/S1701-2163(16)39639-6/fulltext]]",
-    "General Patient Text": "[[plus de renseignements; https://www.sogc.org/fr/Pour-le-public/fr/content/public-resources/ressources-a-lintention-du-public.aspx?hkey=1180038b-a220-437b-9fe7-7878bc27fcdb]]",
+    "General Patient Text": "[[plus de renseignements; https://www.jogc.com/article/S1701-2163(16)39639-6/fulltext]]",
     "Health Provider Text": "n/a",
     "Gender": "f",
     "Minimum age": 18,
@@ -545,126 +665,6 @@
     "Subject": "Dépistage du cancer du poumon",
     "General Patient Text": "n/a",
     "Health Provider Text": "Le dépistage à l’aide d’une TDM à faible dose\nest recommandé par le Groupe d’étude canadien chez certains patients de 55 à 74 ans,\nMAIS aucun programme à l’échelle des provinces ou des territoires n’a encre été mis en place; seuls certains projets pilotes ont été mis en œuvre dans certaines régions.\nLes coûts et le rapport avantages/inconvénients sont en cours d’examen.\n\nCritères d’inclusion du Groupe d’étude canadien:\n•Âge: 55-74 ans\n•Antécédents de 30 paquets-années ou plus\n•Fumeur\n•Abandon du tabagisme remontant à moins de 15 ans\n•Dépistage annuel, jusqu’à 3 fois consécutives \n\n[[Recommandation du Groupe d’étude canadien; https://canadiantaskforce.ca/guidelines/published-guidelines/lung-cancer/]]",
-    "Gender": "all",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Covid",
-    "Topic heading": "PRÉVENEZ LA COVID-19",
-    "Subject": "Êtes-vous inquiet d'avoir la COVID-19?",
-    "General Patient Text": "Cliquez sur ce [[lien; https://ca.thrive.health/covid19/fr00]]",
-    "Health Provider Text": "n/a",
-    "Gender": "all",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Covid",
-    "Topic heading": "PRÉVENEZ LA COVID-19",
-    "Subject": "Informations pour les aînés et les populations vulnérables",
-    "General Patient Text": "•[[Les aînés et les aidants naturels; https://www.canada.ca/fr/sante-publique/services/maladies/maladie-coronavirus-covid-19/ressources-aines-aidants-naturels.html]]\n\n\n•Si vous avez besoin de nourriture ou d'autre aide :\nComposer le 211 sur votre téléphone dans certaines régions\nQuébec:  [[http://www.211quebecregions.ca/]]\nAilleurs au Canada: [[https://211.ca/]]\n\n•OU vérifier avec votre agence de santé publique locale ou votre ville , village ou communauté \n[[Information COVID-19 par province ou territoire; https://www.canada.ca/fr/sante-publique/services/maladies/2019-nouveau-coronavirus/symptomes/ressources-provinces-territoires-covid-19.html]]\n\n•[[Aide financière du gouvernement du Canada; https://www.canada.ca/fr/services/prestations/covid-19-prestations-urgence.html]]",
-    "Health Provider Text": "n/a",
-    "Gender": "all",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Covid",
-    "Topic heading": "PRÉVENEZ LA COVID-19",
-    "Subject": "Premières Nations, Métis et Inuit",
-    "General Patient Text": "•[[ Informations generales regroupées sur le site de santé publique d'Ottawa; https://www.santepubliqueottawa.ca/fr/public-health-topics/resources-for-first-nations-inuit-and-m-tis-community-members.aspx]]\n\n•[[ Vidéo prevenir la COVID-19; https://www.youtube.com/watch?v=7uCl_rodkaQ&feature=youtu.be]]\n\n•[[Vidéo pour inuit sur distanciation physique; https://www.youtube.com/watch?v=bk2fp5rS-kg&feature=youtu.be]]\n\n•[[Diabète et COVID en anglais;  http://nada.ca/?page_id=3172]]",
-    "Health Provider Text": "n/a",
-    "Gender": "all",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Covid",
-    "Topic heading": "PRÉVENEZ LA COVID-19",
-    "Subject": "COVID-19 Español, arabe,mandarin et autres lengues",
-    "General Patient Text": "[[Informations sur la COVID-19 dans différentes langues; https://www.ottawapublichealth.ca/en/public-health-topics/multilingual-resources.aspx]]",
-    "Health Provider Text": "n/a",
-    "Gender": "all",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Covid",
-    "Topic heading": "PRÉVENEZ LA COVID-19",
-    "Subject": "Tous les Canadiens",
-    "General Patient Text": "•[[Information par province ou territoire; https://www.canada.ca/fr/sante-publique/services/maladies/2019-nouveau-coronavirus/symptomes/ressources-provinces-territoires-covid-19.html]]\n\n•suivre les conseils de leur agence de santé publique locale\n\n•rester à la maison le plus possible\n\n•limiter les contacts avec les personnes présentant un risque plus élevé (comme les aînés et les personnes en mauvaise santé)\n\n•à l'exterieur toujours garder une distance d'au moins 2 longueurs de bras (environ 2 mètres) entre vous et les autres \n\n•laver vos mains souvent avec de l'eau et du savon (au moins 20 secondes) \n\n•si le savon n'est pas disponible utiliser un désinfectant à main à base d'alcool.\n•informations supplementaires: cliquez sur  ce \n[[lien; https://www.canada.ca/fr/sante-publique/services/maladies/2019-nouveau-coronavirus/prevention-risques.html]]",
-    "Health Provider Text": "n/a",
-    "Gender": "all",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Covid",
-    "Topic heading": "PRÉVENEZ LA COVID-19",
-    "Subject": "Nettoyage",
-    "General Patient Text": "•Nettoyer souvent les surfaces dures fréquemment touchées, que ce soit avec des produits d'entretien ménager ordinaires ou avec de l'eau de Javel diluée conformément aux instructions figurant sur l'étiquette. \n\n•Cliquez sur [[la liste des désinfectants de Santé Canada; https://www.canada.ca/fr/sante-canada/services/medicaments-produits-sante/desinfectants/covid-19/liste.html#tbl1]]\n\n•La solution d'eau de Javel devrait être préparée conformément aux instructions figurant sur l'étiquette ou selon un ratio de 250 ml (1 tasse) d'eau pour 5 ml (1 cuillère à thé) d'eau de Javel. Les instructions sont fondées sur de l'eau de Javel contenant de l'hypochlorite de sodium à 5 %, qui donnerait une solution d'hypochlorite de sodium de 0,1 %. Ne mélangez jamais de l'eau de Javel avec d'autres produits chimiques.",
-    "Health Provider Text": "n/a",
-    "Gender": "all",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Covid",
-    "Topic heading": "PRÉVENEZ LA COVID-19",
-    "Subject": "Masques",
-    "General Patient Text": "•[[VIDÉO; https://www.canada.ca/fr/sante-publique/services/video/covid-19-bien-porter-masque-non-medical-couvre-visage.html]]\n\n•[[Conseils sur les masques; https://www.canada.ca/content/dam/hc-sc/documents/services/publications/diseases-and-conditions/covid-19-safely-use-non-medical-mask-face-covering/covid-19-safely-use-non-medical-mask-face-covering-fr.pdf]]\n\n•[[Limites des masques; https://www.canada.ca/fr/sante-publique/services/maladies/2019-nouveau-coronavirus/prevention-risques/a-propos-masques-couvre-visage-non-medicaux.html#_Limitations]]\n\n•Ne pas porter un masque avec une sous-pape d'expiration.",
-    "Health Provider Text": "n/a",
-    "Gender": "all",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Covid",
-    "Topic heading": "PRÉVENEZ LA COVID-19",
-    "Subject": "Difference entre la quarantaine et l'lsolement",
-    "General Patient Text": "Cliquez sur [[lien; https://www.canada.ca/fr/sante-publique/services/maladies/2019-nouveau-coronavirus/prevention-risques.html#auto]]",
-    "Health Provider Text": "n/a",
-    "Gender": "all",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Covid",
-    "Topic heading": "PRÉVENEZ LA COVID-19",
-    "Subject": "Distanciation Physique",
-    "General Patient Text": "Rester à 2 mètres ou 6 pieds ou un bâton de hockey des autres.\n\n[[Vidéo; https://www.youtube.com/watch?v=VJxlsSLuWbo]]",
-    "Health Provider Text": "n/a",
-    "Gender": "all",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Covid",
-    "Topic heading": "PRÉVENEZ LA COVID-19",
-    "Subject": "Hygiène",
-    "General Patient Text": "Cliquez sur [[Santé publique Canada; https://www.canada.ca/fr/sante-publique/services/maladies/2019-nouveau-coronavirus/prevention-risques.html]]",
-    "Health Provider Text": "n/a",
-    "Gender": "all",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Covid",
-    "Topic heading": "PRÉVENEZ LA COVID-19",
-    "Subject": "Populations vulnérables",
-    "General Patient Text": "n/a",
-    "Health Provider Text": "•POUR DEPISTER  LA PAUVRETÉ: \nposer la question:\nAvez-vous de la difficulté avec vos dépenses en fin de mois?\n\n•Trouver des services sociaux et de santé locaux pour votre patient:\nComposer le 211 sur votre téléphone dans certaines régions\nQuébec:  http://www.211quebecregions.ca/\nailleurs au Canada: https://211.ca/\n\n• OU diriger vos patients vers leur unité de santé publique locale. \n\n•[[Aide financière du Canada; https://www.canada.ca/fr/services/prestations/covid-19-prestations-urgence.html]]\n\n•[[Premières nations, Métis et Inuit; https://www.santepubliqueottawa.ca/fr/public-health-topics/resources-for-first-nations-inuit-and-m-tis-community-members.aspx]]\ninformations nationales et pour Ottawa\n\n•[[Différentes langues; https://www.santepubliqueottawa.ca/fr/public-health-topics/multilingual-resources.aspx]]",
-    "Gender": "all",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Covid",
-    "Topic heading": "PRÉVENEZ LA COVID-19",
-    "Subject": "Recherche sur la COVID-19",
-    "General Patient Text": "n/a",
-    "Health Provider Text": "ÉTUDES ÉVALUÉES POUR LEUR QUALITÉ\n[[MCMASTER EBM; https://plus.mcmaster.ca/COVID-19]]\n[[OXFORD Evidence Service; https://www.cebm.net/oxford-covid-19-evidence-service/]]\n\nPÉRIODIQUES\n[[CMAJ; https://www.cmaj.ca/covid-19]]\n[[BMJ's Coronavirus (covid-19) Hub; https://www.bmj.com/coronavirus]]\n[[JAMA;https://jamanetwork.com/collections/46099/coronavirus-covid19]]\n[[NEJM; https://www.nejm.org/coronavirus]]\n[[The Lancet; https://www.thelancet.com/coronavirus/archive?]]\n\n[[AGENCE DE LA SANTÉ PUBLIQUE DU CANADA; https://www.canada.ca/fr/sante-publique/services/maladies/maladie-coronavirus-covid-19.html]]",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
