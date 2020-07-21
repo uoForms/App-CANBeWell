@@ -41,7 +41,8 @@ class Data {
           transMale: genderCharArray.includes("fm"),
           transFemale: genderCharArray.includes("mf"),
           allGenders: genderCharArray.includes("all"),
-          nonbinary: genderCharArray.includes("nb")
+          nonbinary: genderCharArray.includes("nb"),
+          transgender: genderCharArray.includes("tg")
         };
         return genderObj;
       }
@@ -54,7 +55,7 @@ class Data {
           for (var i = 0; i < list.length; i++) {
             if ((list[i]['Minimum age'] <= UserInfo.age && UserInfo.age <= list[i]['Maximum age']) || (UserInfo.age == "all ages") || (UserInfo.age == null)) {
               var jsonGender = handleGenderString(list[i]['Gender']);
-              if ((UserInfo.gender == "male" && jsonGender.male) || (UserInfo.gender == "female" && jsonGender.female) || (jsonGender.allGenders) || (UserInfo.gender == null) || (UserInfo.gender == "all_genders") || (UserInfo.gender == "nonbinary")) {
+              if ((UserInfo.gender == "male" && jsonGender.male) || (UserInfo.gender == "female" && jsonGender.female) || (jsonGender.allGenders) || (UserInfo.gender == null) || (UserInfo.gender == "all_genders") || (UserInfo.gender == "nonbinary")|| (UserInfo.gender == "transgender")) {
                 if (list[i]["Button"].toLowerCase() == button) {
                   filteredList.push(
                     list[i]
@@ -225,7 +226,7 @@ class Data {
         for (var i = 0; i < list.length; i++) {
           if ((list[i]['Minimum age'] <= UserInfo.age && UserInfo.age <= list[i]['Maximum age']) || (UserInfo.age == "all ages") || (UserInfo.age == null)) {
             var jsonGender = handleGenderString(list[i]['Gender']);
-            if ((UserInfo.gender == "male" && jsonGender.male) || (UserInfo.gender == "female" && jsonGender.female) || (jsonGender.allGenders) || (UserInfo.gender == null) || (UserInfo.gender == "all_genders") || (UserInfo.gender == "nonbinary")) {
+            if ((UserInfo.gender == "male" && jsonGender.male) || (UserInfo.gender == "female" && jsonGender.female) || (jsonGender.allGenders) || (UserInfo.gender == null) || (UserInfo.gender == "all_genders") || (UserInfo.gender == "nonbinary")|| (UserInfo.gender == "transgender")) {
               filteredList.push(list[i]);
             }
           }

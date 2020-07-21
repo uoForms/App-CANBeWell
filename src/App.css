@@ -299,7 +299,10 @@ summary:after {
     position: relative;
   /*max-width: 150px;*/
   }
-
+.abc{
+  margin-left: 15%;
+  
+}
 
 
 /*scrollbar*/

@@ -78,9 +78,9 @@ class App extends Component {
       preNav: null,
       preCat: null,
       preTime: null,
-      Surgeries: false,
-      Breasts: false,
-      Cervical: false,
+      // Top_Surgery : false,
+      // Bottom_Surgery : false,
+      // Hormone_Therapy: false,
       showMe: true
       
 
@@ -152,7 +152,22 @@ operation()
     else {
       document.getElementById("field_selection").style.display = "none";
     }
+    if(gender==="transgender"){
+      document.getElementById("field_selection2").style.display = "block";
+    }
+    else {
+      document.getElementById("field_selection2").style.display = "none";
+    }
   }
+
+  // fieldSelectionDisplayHandle=(gender)=>{
+  //   if(gender==="transgender"){
+  //     document.getElementById("field_selection2").style.display = "block";
+  //   }
+  //   else {
+  //     document.getElementById("field_selection2").style.display = "none";
+  //   }
+  // }
   pageViewStateUpdater = ( nav, cat, time ) => {
     console.log(cat+"app.js callback");
     this.setState({
@@ -164,7 +179,7 @@ operation()
 
   //toggle the config modif
   toggleConfigurationModal = () => {
-    var genders = ["male", "female", "all_genders" , "nonbinary"];
+    var genders = ["male", "female", "all_genders" , "nonbinary","transgender"];
     if (genders.includes(this.state.gender) && ((this.state.age >= 18 && this.state.age <= 150) || this.state.allAgesSelected)) {
       this.setState({
         configurationIsOpen: !this.state.configurationIsOpen
@@ -178,7 +193,7 @@ operation()
 
   toggleIntrutionModal = () => {
     //if(this.state.allowToClose){
-    var genders = ["male", "female", "all_genders" , "nonbinary"];
+    var genders = ["male", "female", "all_genders" , "nonbinary","transgender"];
 
     if (genders.includes(this.state.gender) && ((this.state.age >= 18 && this.state.age <= 150) || this.state.allAgesSelected)) {
       const { cookies } = this.props;
@@ -379,6 +394,21 @@ this.setState({
     
   }
 
+    //set transgender
+    oncheckchange(f) {
+      console.log(f.target.checked)
+      this.setState({
+        [f.target.value] : f.target.checked
+      })
+      /*
+          const { cookies } = this.props;
+          cookies.set('transgender', changeEvent.target.value, { path: '/' });
+          //settransgender(changeEvent.target.value);
+          this.setState({
+            transgender: changeEvent.target.value
+            */
+          
+        }
   toggleModal = () => {
     this.setState({
       isOpen: !this.state.isOpen
@@ -548,63 +578,20 @@ this.setState({
               <div className="radio">
                 <form>
                   {this.state.lang.user_selector}
+                   
                   <label >
                     <input type="radio" value="patient" checked={this.state.user === 'patient'} onChange={this.handlePatientProviderChange} />
                     {this.state.lang.patient}
                   </label>
+                   
                   <label>
                     <input type="radio" value="provider" checked={this.state.user === 'provider'} onChange={this.handlePatientProviderChange} />
                     {this.state.lang.provider}
                   </label>
                 </form>
               </div>
-              {/*select gender*/}
-              <div>
-                <form>
-                  <div id="genderSelector" className="radio">
-                    {this.state.lang.gender_selector}
-
-                    <label>
-                      <input type="radio" value="male" checked={this.state.gender == 'male'} onChange={this.handleGenderChange} />
-                      {this.state.lang.male}
-                    </label>
-
-                    <label>
-                      <input type="radio" value="female" checked={this.state.gender == 'female'} onChange={this.handleGenderChange} />
-                      {this.state.lang.female}
-                    </label>
-
-                    <label>
-                      <input type="radio" value="nonbinary" checked={this.state.gender == 'nonbinary'} onChange={this.handleGenderChange} />
-                      {this.state.lang.nonbinary}
-                    </label>
-                    
-                    {/*this.state.user === 'provider' || null ?
-                      (<label>
-                        <input type="radio" value="all_genders" checked={this.state.gender == 'all_genders'} onChange={this.handleGenderChange} />
-                          {this.state.lang.all_genders}
-                      </label>) : (<label></label>)
-                    */}
-                  </div>
-                </form>
-                {/*Field selection based on gender*/}
-                <form>
-                <div id="field_selection">
-                  <input type="checkbox" value="Surgeries" 
-                          checked={this.state.Surgeries} onChange={this.oncheckchange} />Surgeries
-                          {/* {this.state.lang.nonbinary} */}
-                  <input type="checkbox" value="Breasts" 
-                          checked={this.state.Breasts} onChange={this.oncheckchange} /> Breasts
-                          {/* {this.state.lang.nonbinary} */}
-                  <input type="checkbox" value="Cervical"
-                          checked={this.state.Cervical} onChange={this.oncheckchange} /> Cervical
-                          {/* {this.state.lang.nonbinary} */}
-                      
-                  </div>
-                  </form>
-              </div>
               {/*select age*/}
-                <div>
+              <div>
                 <form>
                   <div>
                     {this.state.lang.age_selector}
@@ -618,6 +605,79 @@ this.setState({
                   </div>
                 </form>
               </div>
+              {/*select gender*/}
+              <div>
+                <form>
+                  <div id="genderSelector" className="radio">
+                    {this.state.lang.gender_selector}
+                     
+
+                    <label>
+                      <input type="radio"  value="male" checked={this.state.gender == 'male'} onChange={this.handleGenderChange} />
+                      {this.state.lang.male}
+                    </label>
+                     
+
+                    <label>
+                      <input type="radio" value="female" checked={this.state.gender == 'female'} onChange={this.handleGenderChange} />
+                      {this.state.lang.female}
+                    </label>
+                     
+
+                    <label>
+                      <input type="radio" value="nonbinary" checked={this.state.gender == 'nonbinary'} onChange={this.handleGenderChange} />
+                      {this.state.lang.nonbinary}
+                    </label>
+                     
+
+                    <label>
+                      <input type="radio" value="transgender" checked={this.state.gender == 'transgender'} onChange={this.handleGenderChange} />
+                      {this.state.lang.transgender}
+                    </label>
+                    
+                    {/*this.state.user === 'provider' || null ?
+                      (<label>
+                        <input type="radio" value="all_genders" checked={this.state.gender == 'all_genders'} onChange={this.handleGenderChange} />
+                          {this.state.lang.all_genders}
+                      </label>) : (<label></label>)
+                    */}
+                  </div>
+                </form>
+                {/*Field selection based on gender*/}
+              <form>
+                <div id="field_selection" >
+                  <input type="checkbox" value="Top_Surgery" 
+                          checked={this.state.Surgeries} onChange={this.oncheckchange} />Top Surgery
+                          {/* {this.state.lang.nonbinary} */}
+                           
+                  <input type="checkbox" value="Bottom_Surgery" 
+                          checked={this.state.Breasts} onChange={this.oncheckchange} /> Bottom Surgery
+                          {/* {this.state.lang.nonbinary} */}
+                           
+                  <input type="checkbox" value="Hormone_Therapy"
+                          checked={this.state.Cervical} onChange={this.oncheckchange} /> Hormone Therapy
+                          {/* {this.state.lang.nonbinary} */}
+                      
+                 </div>
+              </form>
+              <form>
+                <div id="field_selection2" >
+                  <input type="checkbox" value="Top_Surgery" 
+                          checked={this.state.Surgeries} onChange={this.oncheckchange} />Top Surgery
+                          {/* {this.state.lang.transgender} */}
+                           
+                  <input type="checkbox" value="Bottom_Surgery" 
+                          checked={this.state.Breasts} onChange={this.oncheckchange} /> Bottom Surgery
+                          {/* {this.state.lang.transgender} */}
+                           
+                  <input type="checkbox" value="Hormone_Therapy"
+                          checked={this.state.Cervical} onChange={this.oncheckchange} /> Hormone Therapy
+                          {/* {this.state.lang.transgender} */}
+                      
+                 </div>
+              </form>
+            </div>
+              
 
               <div>
                 <button id="agree" onClick={this.toggleIntrutionModal}>{this.state.lang.agree}</button>
@@ -650,61 +710,19 @@ this.setState({
               <h1>{this.state.lang.configuration_header}</h1>
               <div className="myModalBody">
                 <div className="radio">
+                  
                   <form>
                     {this.state.lang.user_selector}
+                     
                     <label>
                       <input type="radio" value="patient" checked={this.state.user === 'patient'} onChange={this.handlePatientProviderChangeFromConfig} />
                       {this.state.lang.patient}
                     </label>
+                     
                     <label>
                       <input type="radio" value="provider" checked={this.state.user === 'provider'} onChange={this.handlePatientProviderChangeFromConfig} />
                       {this.state.lang.provider}
                     </label>
-                  </form>
-                </div>
-
-                <div>
-                  <form>
-
-                    <div id="genderSelector" className="radio">
-                      {this.state.lang.gender_selector}
-                      <label>
-                        <input type="radio" value="male" checked={this.state.gender == 'male'} onChange={this.handleGenderChange} />
-                        {this.state.lang.male}
-                      </label>
-
-                      <label>
-                        <input type="radio" value="female" checked={this.state.gender == 'female'} onChange={this.handleGenderChange} />
-                        {this.state.lang.female}
-                      </label>
-
-                    <label>
-                      <input type="radio" value="nonbinary" checked={this.state.gender == 'nonbinary'} onChange={this.handleGenderChange} />
-                      {this.state.lang.nonbinary}
-                    </label>
-                      {/*this.state.user === 'provider' || null ?
-                      (<label>
-                        <input type="radio" value="all_genders" checked={this.state.gender == 'all_genders'} onChange={this.handleGenderChange} />
-                          {this.state.lang.all_genders}
-                      </label>) : (<label></label>)
-                      */}
-
-                    </div>
-                  </form>
-                  {/*Field selection based on gender*/}
-                  <form>
-                    <div id="field_selection">
-                      <input type="checkbox" value="Surgeries" 
-                              checked={this.state.Surgeries} onChange={this.oncheckchange} />Surgeries
-                              {/* {this.state.lang.nonbinary} */}
-                      <input type="checkbox" value="Breasts" 
-                              checked={this.state.Breasts} onChange={this.oncheckchange} /> Breasts
-                              {/* {this.state.lang.nonbinary} */}
-                      <input type="checkbox" value="Cervical"
-                              checked={this.state.Cervical} onChange={this.oncheckchange} /> Cervical
-                              {/* {this.state.lang.nonbinary} */}
-                          
-                      </div>
                   </form>
                 </div>
                 {/*select age*/}
@@ -722,6 +740,78 @@ this.setState({
                     </div>
                   </form>
                 </div>
+
+                <div>
+                  <form>
+
+                    <div id="genderSelector" className="radio">
+                      {this.state.lang.gender_selector}
+                       
+                      <label>
+                        <input type="radio" value="male" checked={this.state.gender == 'male'} onChange={this.handleGenderChange} />
+                        {this.state.lang.male}
+                      </label>
+                       
+                      <label>
+                        <input type="radio" value="female" checked={this.state.gender == 'female'} onChange={this.handleGenderChange} />
+                        {this.state.lang.female}
+                      </label>
+                       
+
+                    <label>
+                      <input type="radio" value="nonbinary" checked={this.state.gender == 'nonbinary'} onChange={this.handleGenderChange} />
+                      {this.state.lang.nonbinary}
+                    </label>
+                     
+
+                    <label>
+                      <input type="radio" value="transgender" checked={this.state.gender == 'transgender'} onChange={this.handleGenderChange} />
+                      {this.state.lang.transgender}
+                    </label>
+                      {/*this.state.user === 'provider' || null ?
+                      (<label>
+                        <input type="radio" value="all_genders" checked={this.state.gender == 'all_genders'} onChange={this.handleGenderChange} />
+                          {this.state.lang.all_genders}
+                      </label>) : (<label></label>)
+                      */}
+
+                    </div>
+                  </form>
+                  {/*Field selection based on gender*/}
+                  <form>
+                    <div id="field_selection" >
+                      <input type="checkbox" value="Top_Surgery" 
+                              checked={this.state.Surgeries} onChange={this.oncheckchange} />Top Surgery
+                              {/* {this.state.lang.nonbinary} */}
+                               
+                      <input type="checkbox" value="Bottom_Surgery" 
+                              checked={this.state.Breasts} onChange={this.oncheckchange} /> Bottom Surgery
+                              {/* {this.state.lang.nonbinary} */}
+                               
+                      <input type="checkbox" value="Hormone_Therapy"
+                              checked={this.state.Cervical} onChange={this.oncheckchange} /> Hormone Therapy
+                              {/* {this.state.lang.nonbinary} */}
+                          
+                      </div>
+                  </form>
+                  <form>
+                    <div id="field_selection2" >
+                      <input type="checkbox" value="Top_Surgery" 
+                              checked={this.state.Surgeries} onChange={this.oncheckchange} />Top Surgery
+                              {/* {this.state.lang.nonbinary} */}
+                               
+                      <input type="checkbox" value="Bottom_Surgery" 
+                              checked={this.state.Breasts} onChange={this.oncheckchange} /> Bottom Surgery
+                              {/* {this.state.lang.nonbinary} */}
+                               
+                      <input type="checkbox" value="Hormone_Therapy"
+                              checked={this.state.Cervical} onChange={this.oncheckchange} /> Hormone Therapy
+                              {/* {this.state.lang.nonbinary} */}
+                          
+                      </div>
+                  </form>
+                </div>
+                
                 {/*close button*/}
                 <div className="myModalButton">
                   <button onClick={this.toggleConfigurationModal}>{this.state.lang.config_modal_agree}</button>
