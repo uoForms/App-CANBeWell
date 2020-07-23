@@ -266,7 +266,7 @@
    .mainRunner .brain{
        top: 6%;
        left: 54%;
-       width: 7%;
+       width: 10%;
    }
   
    .mainRunner .exam{
@@ -290,13 +290,13 @@
    .mainRunner .sunExposure{
        top: 6%;
        left: 9%;
-       width: 7%;
+       width: 10%;
    }
   
    .mainRunner .covid{
        top: 12%;
        left: 31%;
-       width: 7%;
+       width: 14%;
    }
   
    .mainRunner .trans{
