@@ -43,7 +43,7 @@ import fallsIcon from '../assets/Icons/icon_falls.png';
 import immunizationIcon from '../assets/Icons/icon_immunization.png';
 import phyactIcon from '../assets/Icons/icon_physact.png';
 import sunExposureIcon from '../assets/Icons/icon_sunexposure.png';
-import covidIcon from '../assets/Icons/icon_covid.png';
+import covidIcon from '../assets/Icons/icon_covid_new.png';
 
 import './Body.css';
 import '../App.css';
