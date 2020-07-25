@@ -21,6 +21,7 @@
     "Top_Surgery" :"Top Surgery",
     "Bottom_Surgery" :"Bottom Surgery",
     "Hormone_Therapy": "Hormone Therapy",
+    "Surgery":"Surgery",
     "all_ages": "All ages",
     "age_selector": "Age: ",
     "age_help": "Please select a gender and age between 18 and 150",

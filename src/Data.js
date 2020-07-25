@@ -136,7 +136,9 @@ class Data {
         male: genderCharArray.includes("m"),
         transMale: genderCharArray.includes("fm"),
         transFemale: genderCharArray.includes("mf"),
-        allGenders: genderCharArray.includes("all")
+        allGenders: genderCharArray.includes("all"),
+        nonbinary: genderCharArray.includes("nb"),
+        transgender: genderCharArray.includes("tg")
       };
       return genderObj;
     }
@@ -148,7 +150,7 @@ class Data {
         for (var i = 0; i < list.length; i++) {
           if ((list[i]['Minimum age'] <= UserInfo.age && UserInfo.age <= list[i]['Maximum age']) || (UserInfo.age == "all ages") || (UserInfo.age == null)) {
             var jsonGender = handleGenderString(list[i]['Gender']);
-            if ((UserInfo.gender == "male" && jsonGender.male) || (UserInfo.gender == "female" && jsonGender.female) || (jsonGender.allGenders) || (UserInfo.gender == null) || (UserInfo.gender == "all_genders")) {
+            if ((UserInfo.gender == "male" && jsonGender.male) || (UserInfo.gender == "female" && jsonGender.female) || (UserInfo.gender == "transgender" && jsonGender.transgender) || (UserInfo.gender == "nonbinary" && jsonGender.nonbinary) || (jsonGender.allGenders) || (UserInfo.gender == null) || (UserInfo.gender == "all_genders")) {
               filteredList.push(
                 list[i]
               );
@@ -214,7 +216,9 @@ class Data {
         male: genderCharArray.includes("m"),
         transMale: genderCharArray.includes("fm"),
         transFemale: genderCharArray.includes("mf"),
-        allGenders: genderCharArray.includes("all")
+        allGenders: genderCharArray.includes("all"),
+        nonbinary: genderCharArray.includes("nb"),
+        transgender: genderCharArray.includes("tg")
       };
       return genderObj;
     }

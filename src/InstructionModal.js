@@ -21,6 +21,7 @@ class InstructionModal extends React.Component {
 
     this.handleChange = this.handleChange.bind(this);
     this.handleGenderChange = this.handleGenderChange.bind(this);
+    this.handlegcheckChange = this.handlegcheckChange.bind(this);
     this.handlePatientProviderChange = this.handlePatientProviderChange.bind(this);
     this.handleAllAgesSelected = this.handleAllAgesSelected.bind(this);
   }
@@ -53,6 +54,17 @@ class InstructionModal extends React.Component {
 
   }
 
+  handlegcheckChange(event){
+
+    this.setState({
+      allAgesSelected: !this.state.allAgesSelected
+    }, () => {
+      this.setState({ value: this.state.allAgesSelected ? "all ages" : "" }); //Call back once setState is done
+      setAge(this.state.allAgesSelected ? "all ages" : "");
+
+    });
+  }
+
   handleAllAgesSelected(event) {
 
     this.setState({
@@ -72,6 +84,15 @@ class InstructionModal extends React.Component {
     });
 
   }
+
+  // handlegcheckChange(changeEvent) {
+
+  //   oncheckchange(changeEvent.target.value);
+  //   this.setState({
+  //     selectedcheckbox: changeEvent.target.value
+  //   });
+
+  // }
 
   render() {
 
@@ -127,7 +148,9 @@ class InstructionModal extends React.Component {
     var UserInfo = getUserInfo();
     this.state.selectedPatientProvider = UserInfo.patient_provider;
     this.state.selectedGender = UserInfo.gender;
+    this.state.selectedcheckbox = UserInfo.gender;
     this.state.selectAge = UserInfo.age;
+    this.state.selectedcheckbox=UserInfo.gcheck;
     var myBoolean_age = false;
     var myBoolean_gender = false;
     var myBoolean_allAge = false;

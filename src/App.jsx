@@ -47,7 +47,8 @@ class App extends Component {
       city: null,
       preNav: null,
       preCat: null,
-      preTime: null
+      preTime: null,
+      gcheck:null
     };// = getUserInfo();
     let DataToDisplay = new Data(this.props.appLanguage);
     var app_language = this.props.appLanguage;
@@ -146,18 +147,18 @@ operation()
   }
 
   fieldSelectionDisplayHandle=(gender)=>{
-    if(gender==="nonbinary"){
+    if(gender==="nonbinary"|| gender==="transgender"){
       document.getElementById("field_selection").style.display = "block";
     }
     else {
       document.getElementById("field_selection").style.display = "none";
     }
-    if(gender==="transgender"){
-      document.getElementById("field_selection2").style.display = "block";
-    }
-    else {
-      document.getElementById("field_selection2").style.display = "none";
-    }
+    // if(gender==="transgender"){
+    //   document.getElementById("field_selection2").style.display = "block";
+    // }
+    // else {
+    //   document.getElementById("field_selection2").style.display = "none";
+    // }
   }
 
   // fieldSelectionDisplayHandle=(gender)=>{
@@ -488,7 +489,8 @@ this.setState({
       city: this.state.city,
       preNav: this.state.preNav,
       preCat: this.state.preCat,
-      preTime: this.state.preTime
+      preTime: this.state.preTime,
+      gcheck:this.state.gcheck
     };
 
     const fixedStyle = {
@@ -591,6 +593,7 @@ this.setState({
                   </label>
                 </form>
               </div>
+              
               {/*select age*/}
               <div>
                 <form>
@@ -645,38 +648,40 @@ this.setState({
                   </div>
                 </form>
                 {/*Field selection based on gender*/}
+             
               <form>
-                <div id="field_selection" >
-                  <input type="checkbox" value="Top_Surgery" 
-                          checked={this.state.Surgeries} onChange={this.oncheckchange} />Top Surgery
-                          {/* {this.state.lang.nonbinary} */}
-                          <br/>
-                  <input type="checkbox" value="Bottom_Surgery" 
-                          checked={this.state.Breasts} onChange={this.oncheckchange} /> Bottom Surgery
-                          {/* {this.state.lang.nonbinary} */}
-                          <br/>
-                  <input type="checkbox" value="Hormone_Therapy"
-                          checked={this.state.Cervical} onChange={this.oncheckchange} /> Hormone Therapy
-                          {/* {this.state.lang.nonbinary} */}
-                      
-                 </div>
-              </form>
-              <form>
+                    <div id="field_selection" >
+                      <input type="checkbox" value="Top_Surgery" 
+                              checked={this.state.gcheck} onChange={this.oncheckchange} />Top Surgery
+                              {/* {this.state.lang.nonbinary} */}
+                               <br/>
+                      <input type="checkbox" value="Bottom_Surgery" 
+                              checked={this.state.gcheck} onChange={this.oncheckchange} /> Bottom Surgery
+                              {/* {this.state.lang.nonbinary} */}
+                               <br/>
+                      <input type="checkbox" value="Hormone_Therapy"
+                              checked={this.state.gcheck} onChange={this.oncheckchange} /> Hormone Therapy
+                              {/* {this.state.lang.nonbinary} */}
+                          
+                      </div>
+                  </form>
+              {/* <form>
                 <div id="field_selection2" >
                   <input type="checkbox" value="Top_Surgery" 
-                          checked={this.state.Surgeries} onChange={this.oncheckchange} />Top Surgery
-                          {/* {this.state.lang.transgender} */}
+                          checked={this.state.gcheck} onChange={this.oncheckchange} />Top Surgery
+                          //  {this.state.lang.transgender} 
                           <br/>
                   <input type="checkbox" value="Bottom_Surgery" 
-                          checked={this.state.Breasts} onChange={this.oncheckchange} /> Bottom Surgery
-                          {/* {this.state.lang.transgender} */}
+                          checked={this.state.gcheck} onChange={this.oncheckchange} /> Bottom Surgery
+                          //  {this.state.lang.transgender} 
                           <br/>
                   <input type="checkbox" value="Hormone_Therapy"
-                          checked={this.state.Cervical} onChange={this.oncheckchange} /> Hormone Therapy
-                          {/* {this.state.lang.transgender} */}
+                          checked={this.state.gcheck} onChange={this.oncheckchange} /> Hormone Therapy
+                          //  {this.state.lang.transgender} 
                       
                  </div>
-              </form>
+              </form> */}
+              
             </div>
               
 
@@ -713,7 +718,7 @@ this.setState({
               <div className="myModalBody">
                 <div className="radio">
                   
-                  <form>
+                <form>
                     {this.state.lang.user_selector}
                      <br/>
                     <label>
@@ -783,35 +788,35 @@ this.setState({
                   <form>
                     <div id="field_selection" >
                       <input type="checkbox" value="Top_Surgery" 
-                              checked={this.state.Surgeries} onChange={this.oncheckchange} />Top Surgery
+                              checked={this.state.gcheck} onChange={this.oncheckchange} />Top Surgery
                               {/* {this.state.lang.nonbinary} */}
                                <br/>
                       <input type="checkbox" value="Bottom_Surgery" 
-                              checked={this.state.Breasts} onChange={this.oncheckchange} /> Bottom Surgery
+                              checked={this.state.gcheck} onChange={this.oncheckchange} /> Bottom Surgery
                               {/* {this.state.lang.nonbinary} */}
                                <br/>
                       <input type="checkbox" value="Hormone_Therapy"
-                              checked={this.state.Cervical} onChange={this.oncheckchange} /> Hormone Therapy
+                              checked={this.state.gcheck} onChange={this.oncheckchange} /> Hormone Therapy
                               {/* {this.state.lang.nonbinary} */}
                           
                       </div>
                   </form>
-                  <form>
-                    <div id="field_selection2" >
-                      <input type="checkbox" value="Top_Surgery" 
-                              checked={this.state.Surgeries} onChange={this.oncheckchange} />Top Surgery
-                              {/* {this.state.lang.transgender} */}
-                              <br/>
-                      <input type="checkbox" value="Bottom_Surgery" 
-                              checked={this.state.Breasts} onChange={this.oncheckchange} /> Bottom Surgery
-                              {/* {this.state.lang.transgender} */}
-                              <br/>
-                      <input type="checkbox" value="Hormone_Therapy"
-                              checked={this.state.Cervical} onChange={this.oncheckchange} /> Hormone Therapy
-                              {/* {this.state.lang.transgender} */}
-                          
-                      </div>
-                  </form>
+                 {/* <form>
+                <div id="field_selection2" >
+                  <input type="checkbox" value="Top_Surgery" 
+                          checked={this.state.gcheck} onChange={this.oncheckchange} />Top Surgery
+                          //  {this.state.lang.transgender} 
+                          <br/>
+                  <input type="checkbox" value="Bottom_Surgery" 
+                          checked={this.state.gcheck} onChange={this.oncheckchange} /> Bottom Surgery
+                          //  {this.state.lang.transgender} 
+                          <br/>
+                  <input type="checkbox" value="Hormone_Therapy"
+                          checked={this.state.gcheck} onChange={this.oncheckchange} /> Hormone Therapy
+                          //  {this.state.lang.transgender} 
+                      
+                 </div>
+              </form> */}
                 </div>
                 
                 {/*close button*/}
