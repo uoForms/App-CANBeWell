@@ -30,6 +30,27 @@ class Data {
         pat_prov = "Health Provider Text";
       }
 
+
+      //Added by Melika : for surgeries and hormone options
+      var top_surg;
+      var bot_surg;
+      var hormonet;
+      if ( UserInfo.top_surgery === true)
+        {
+          top_surg = "Top Surgeries Text";
+        }
+
+      if ( UserInfo.bot_surgery === true)
+        {
+          bot_surg = "Bottom Surgeries Text";
+        }
+
+      if ( UserInfo.hormone === true)
+        {
+          hormonet = "Hormone Therapy Text";
+        }
+
+
       var TopicItem = [];
 
       function handleGenderString(genderString) {
@@ -91,13 +112,13 @@ class Data {
           for (var i = 0; i < arra1.length; i++) {
             if (!topicList.includes(arra1[i]["Topic heading"]) && !nonApplicaple.includes(arra1[i][pat_prov].toUpperCase())) {
               topicList.push(arra1[i]["Topic heading"]);
-              TopicListItem.push({ name: arra1[i]["Topic heading"], body: [] });
-              TopicListItem[j].body.push({ subject: arra1[i]['Subject'], text: arra1[i][pat_prov] });
+              TopicListItem.push({ name: arra1[i]["Topic heading"], body: [] }); 
+              TopicListItem[j].body.push({ subject: arra1[i]['Subject'], text: arra1[i][pat_prov], text: arra1[i][top_surg]}); //melikachanges //, text: arra1[i][top_surg], text: arra1[i][bot_surg], text: arra1[i][hormonet]
               j++;
             }
             else if (topicList.includes(arra1[i]["Topic heading"]) && !nonApplicaple.includes(arra1[i][pat_prov].toUpperCase())) {
               let index = topicList.findIndex(topic => topic === arra1[i]["Topic heading"]);
-              TopicListItem[index].body.push({ subject: arra1[i]['Subject'], text: arra1[i][pat_prov] });
+              TopicListItem[index].body.push({ subject: arra1[i]['Subject'], text: arra1[i][pat_prov],text:arra1[i][top_surg]}); //melikachange :  text: arra1[i][top_surg], text: arra1[i][bot_surg], text: arra1[i][hormonet] 
             }
           }
         }
@@ -125,6 +146,28 @@ class Data {
     } else if (UserInfo.patient_provider == "provider") {
       pat_prov = "Health Provider Text";
     }
+    
+    //Added by Melika : for surgeries and hormone options
+      var top_surg;
+      var bot_surg;
+      var hormonet;
+      if ( UserInfo.isTopSurgery === true)
+        {
+          top_surg = "Top Surgeries Text";
+        }
+
+      if ( UserInfo.bot_surgery === true)
+        {
+          bot_surg = "Bottom Surgeries Text";
+        }
+
+      if ( UserInfo.hormone === true)
+        {
+          hormonet = "Hormone Therapy Text";
+        }
+
+
+    
 
     var TopicsItemList = [];
 

@@ -3,7 +3,10 @@ var userInfo = {
   gender: null,
   patient_provider: null,
   age: null,
-  gcheck: null ,// added by rishang,cbw2.0
+  //gcheck: null ,// added by rishang,cbw2.0
+  isTopSurgery:null,  //these 3 lines by Melika,cbw2.0
+  isBottomSurgery:null,
+  isHormoneTherapy:null,    
   language: null
 };
 
@@ -19,13 +22,28 @@ function setAge(age){
     userInfo.age = age;
 }
 
-function setLanguage(language){
-    userInfo.language = language;
+function setTopSurgery(isTopSurgery){
+    userInfo.isTopSurgery = isTopSurgery;
 }
 
-function oncheckchange(gcheck) {
-  userInfo.gcheck = gcheck;
+function setBottomSurgery(isBottomSurgery){
+  userInfo.isBottomSurgery = isBottomSurgery;
 }
+
+function setHormoneTherapy(isHormoneTherapy ){
+  userInfo.isHormoneTherapy  = isHormoneTherapy ;
+}
+
+function setLanguage(language){
+  userInfo.language = language;
+}
+
+
+//function oncheckchange(gcheck) { Rishang
+ // userInfo.gcheck = gcheck;
+//}
+
+
 
 var getUserInfo = function() {
   return(userInfo);
@@ -38,4 +56,6 @@ export {setGender};
 export {setPatientProvider};
 export {setAge};
 export {setLanguage};
-export (oncheckchange);
+export {isTopSurgery};
+export {isBottomSurgery};
+export {isHormoneTherapy};

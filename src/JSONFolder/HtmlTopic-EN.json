@@ -1,200 +1,27 @@
 [
   {
-    "Button": "aorta",
-    "Topic heading": "Abdominal Aortic Aneurysm Screen",
-    "Subject": "Screen men age 65-80 with ultrasound once",
-    "General Patient Text": "n/a",
-    "Health Provider Text": "[[Weak recommendation by canadian task force; https://canadiantaskforce.ca/guidelines/published-guidelines/abdominal-aortic-aneurysm/]]",
-    "Gender": "m",
-    "Minimum age": 65,
-    "Maximum age": 80
-  },
-  {
-    "Button": "aorta",
-    "Topic heading": "Aorta: the body's main blood vessel",
-    "Subject": "Talk to your \nprovider to see \nif you need a test",
-    "General Patient Text": "Your provider may ask for\nan ultrasound of your belly\nto detect a bulge in the main blood vessel \n(the bulge is nicknamed AAA \nfor short or\nAbdominal Aortic Aneurysm)\nIf the bulge grows it can burst and cause death.",
-    "Health Provider Text": "n/a",
-    "Gender": "m",
-    "Minimum age": 65,
-    "Maximum age": 80
-  },
-  {
-    "Button": "Figure outside body walking",
-    "Topic heading": "Be active",
-    "Subject": "Benefits of physical activity",
-    "General Patient Text": "Physical activity\nprevents heart disease, cancer, depression and [[more; https://www.reframehealthlab.com/23-and-12-hours/]]",
-    "Health Provider Text": "n/a",
-    "Gender": "all",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Figure outside body walking",
-    "Topic heading": "Be active",
-    "Subject": "Recommended physical activity",
-    "General Patient Text": "The recommended minimum amount of physical activity\nis 150 minutes a week of moderate intensity exercise. \nDefinition of moderate intensity:\nwhile you are active you have enough breath to say a short sentence but not enough to sing\n•[[more info for age 18-64; http://www.csep.ca/CMFiles/Guidelines/CSEP_PAGuidelines_adults_en.pdf]]\n•[[more info for age 65+; http://csepguidelines.ca/wp-content/uploads/2018/03/CSEP_PAGuidelines_older-adults_en.pdf]]",
-    "Health Provider Text": "n/a",
-    "Gender": "all",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Bone",
-    "Topic heading": "Bone health",
-    "Subject": "Exercises",
-    "General Patient Text": "[[Recommendations; https://osteoporosis.ca/bone-health-osteoporosis/exercises-for-healthy-bones/]]",
-    "Health Provider Text": "[[Recommendations; https://osteoporosis.ca/bone-health-osteoporosis/exercises-for-healthy-bones/]]",
-    "Gender": "all",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Bone",
-    "Topic heading": "Bone health",
-    "Subject": "Bone Density Test",
-    "General Patient Text": "Below age 65: only recommended if: you have [[risk factors; https://www.canada.ca/en/public-health/services/chronic-diseases/osteoporosis.html]]",
-    "Health Provider Text": "If patient has  [[risk factors; http://www.osteoporosis.ca/multimedia/pdf/Quick_Reference_Guide_October_2010.pdf]] or use [[OST; http://www.cfp.ca/content/61/7/612]]",
-    "Gender": "all",
-    "Minimum age": 18,
-    "Maximum age": 64
-  },
-  {
-    "Button": "Bone",
-    "Topic heading": "Bone health",
-    "Subject": "Bone Density Test",
-    "General Patient Text": "Recommended for everyone 65 or older\nYour provider will determine when to repeat it\n[[more info; https://choosingwiselycanada.org/bone-density-tests/]]\n[[calculator for 10 year fracture risk; https://www.sheffield.ac.uk/FRAX/tool.jsp?country=19 ]]",
-    "Health Provider Text": "Recommended for everyone 65 or older:\n•[[osteoporosis.ca; http://www.cmaj.ca/content/cmaj/early/2010/10/12/cmaj.100771.full.pdf]]\n•Or use [[OST; http://www.cfp.ca/content/61/7/612]]\n•Frequency of retesting [[not more than every 2 years; https://choosingwiselycanada.org/rheumatology/]]\n[[decision aid; https://osteoporosisdecisionaid.mayoclinic.org/]]",
-    "Gender": "all",
-    "Minimum age": 65,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Breast",
-    "Topic heading": "Breast Cancer",
-    "Subject": "Prevent Breast Cancer",
-    "General Patient Text": "•Limit alcohol (see our substance use info)\n•Don't smoke\n•Control your weight\n•Be physically active (see our physical activity info for this)\n•Breastfeed if you are able\n•Limit time on hormone therapy\n[[more; https://www.mycanceriq.ca/Cancers/Risk]]\n\nClick on this [[link to know if you are at high risk of breast cancer; https://www.cancer.ca/en/prevention-and-screening/reduce-cancer-risk/find-cancer-early/get-screened-for-breast-cancer/at-high-risk-for-breast-cancer/?region=on]]\n\nMammograms for healthy women below age 50 \nwith no symptoms, no breast problems\nand no additional risks \nis not recommended.\n[[risks; http://www.cancer.ca/en/cancer-information/cancer-type/breast/risks/?region=on]]\n[[harms of mammograms; https://www.youtube.com/watch?v=UZlY6Q4m-MM]]\nDISCUSS WITH YOUR HEALTH CARE PROVIDER.",
-    "Health Provider Text": "n/a",
-    "Gender": "f",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Breast",
-    "Topic heading": "Breast Cancer",
-    "Subject": "Get tested for Breast Cancer \nat age 50-74",
-    "General Patient Text": "Get a mammogram every 2 years:\nYou may need one earlier or more often\nif you have risks or symptoms.\n[[more; http://www.cancer.ca/en/cancer-information/cancer-type/breast/risks/?region=on]]",
-    "Health Provider Text": "n/a",
-    "Gender": "f",
-    "Minimum age": 50,
-    "Maximum age": 74
-  },
-  {
-    "Button": "Breast",
-    "Topic heading": "Breast Cancer",
-    "Subject": "Age 75 and over",
-    "General Patient Text": "Research does not recommend mammograms age 75 and over, \nbut if you are healthy you may discuss further testing with your health care provider.",
-    "Health Provider Text": "n/a",
-    "Gender": "f",
-    "Minimum age": 75,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Breast",
-    "Topic heading": "Breast Cancer",
-    "Subject": "Prevent and screen for Breast Cancer",
-    "General Patient Text": "n/a",
-    "Health Provider Text": "Counsel patients to:\n•Limit alcohol (see our substance use info)\n•Not smoke\n•Control their weight\n•Be physically active (see our app info for this)\n•Breastfeed if able\n•Limit time on hormone therapy\n[[a risk calculator for patients; https://www.mycanceriq.ca/Cancers/Risk]]\n\nScreening Mammogram:\n•Below age 50: Not recommended\n[[canadiantaskforce recomendation; https://canadiantaskforce.ca/guidelines/published-guidelines/breast-cancer-update/]]\n[[tool to explain harms to patient; https://www.youtube.com/watch?v=UZlY6Q4m-MM]]\n[[tool to explain harms to patient; https://canadiantaskforce.ca/tools-resources/breast-cancer-2/breast-cancer-risks-benefits-age-40-49/]]\n•50-74:  Every 2 years\n[[weak recommendation; https://canadiantaskforce.ca/guidelines/published-guidelines/breast-cancer-update/]]\n•75+: Not recommended by canadiantaskforce.ca,but:\n[[CFP  article 2019 on when to stop screening; https://www.cfp.ca/content/cfp/65/8/543.full.pdf]]\n\nHigh risk patients:\n•Known to have a gene mutation that increases their risk for breast cancer (e.g., BRCA1, BRCA2, TP53, PTEN, CDH1)\n•First-degree relatives of someone who has a gene mutation that increases their risk for breast cancer (e.g., BRCA1, BRCA2, TP53, PTEN, CDH1), have already had genetic counselling and have chosen not to have genetic testing\n•Have been assessed by a genetics clinic (using the IBIS or BOADICEA tools) as having a 25% or greater lifetime risk of breast cancer based on personal and family history\n•Have had radiation therapy to the chest to treat another cancer or condition (e.g., Hodgkin lymphoma) before age 30 and at least 8 years ago\n•First-degree relative (parent, brother, sister or child) of a carrier of a gene mutation (e.g. BRCA1, BRCA2, TP53, PTEN, CDH1) and has not had genetic counselling or genetic testing\n•Personal or family history of breast or ovarian cancer suggestive of a hereditary breast cancer syndrome",
-    "Gender": "f",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Uterus",
-    "Topic heading": "Cervical Cancer",
-    "Subject": "Get tested for Cervical Cancer \n(Pap test)",
-    "General Patient Text": "•Women age 25 to 69  (21-69 in some provinces) if have ever been sexually active,\nneed to get a pap test every 3 years if results are normal.\n[[what is cervical cancer;http://www.cancer.ca/en/cancer-information/cancer-type/cervical/cervical-cancer/?region=on]]\n[[more; http://www.cancer.ca/en/cancer-information/cancer-type/cervical/screening/?region=on]]",
-    "Health Provider Text": "Women age 25 to 69 (21-69 in some provinces) if ever have been sexually active,\nneed to get a pap test every 3 years if results are normal.\n[[more; https://canadiantaskforce.ca/guidelines/published-guidelines/cervical-cancer/]]",
-    "Gender": "f",
-    "Minimum age": 21,
-    "Maximum age": 69
-  },
-  {
-    "Button": "Uterus",
-    "Topic heading": "Cervical Cancer",
-    "Subject": "A Pap test may or may not be needed",
-    "General Patient Text": "•After age 69 if 3 normal results in past 10 years can stop",
-    "Health Provider Text": "Stop after age 69 if 3 normal results in past 10 years.\n[[Can Task Force reference; https://canadiantaskforce.ca/guidelines/published-guidelines/cervical-cancer/]]\n[[CFP  article 2019 on when to stop screening; https://www.cfp.ca/content/cfp/65/8/543.full.pdf]]",
-    "Gender": "f",
-    "Minimum age": 70,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Uterus",
-    "Topic heading": "Cervical Cancer",
-    "Subject": "Other ways to prevent Cervical Cancer",
-    "General Patient Text": "•Get the HPV vaccine\nrecommended between age 9 and 26 \nbut can be given at any age\n•Don’t smoke\n•Use condoms\n•Limit your number of sexual partners\n[[more; http://www.cancer.ca/en/cancer-information/cancer-type/cervical/risks/reducing-your-risk/?region=on]]",
-    "Health Provider Text": "•Recommend the HPV vaccine\n(recommended between 9 and 26 \nbut can be given at any age).\n[[Canadian recommendation; https://www.canada.ca/en/public-health/services/publications/healthy-living/update-recommended-human-papillomavirus-vaccine-immunization-schedule.html#sum]]\n•Recommend no smoking, condom use,\nand limiting number of partners.",
-    "Gender": "f",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Colon",
-    "Topic heading": "Colorectal Cancer or Bowel Cancer",
-    "Subject": "Prevent Colon Cancer",
-    "General Patient Text": "•Be physically active\n•Maintain a healthy body weight, [[bmi; https://www.unlockfood.ca/en/Articles/Weight-Loss/BMI-Calculator.aspx]]\n•Be a non-smoker and avoid second hand smoke\n•[[more; http://www.cancer.ca/en/cancer-information/cancer-type/colorectal/risks/reducing-your-risk/?region=on]]",
-    "Health Provider Text": "Recommend patients:\n•Be physically active\n•Maintain a healthy body weight, [[bmi; https://www.unlockfood.ca/en/Articles/Weight-Loss/BMI-Calculator.aspx]]\n•Limit the amount of alcohol they drink (see healthy drinking guidelines)\n•Be a non-smoker and avoid second hand smoke\n•Limit the amount of red and processed meats eaten\n•Eat foods high in fiber \n•Limit sitting time\n[[Source; http://www.cancer.ca/en/cancer-information/cancer-type/colorectal/risks/reducing-your-risk/?region=on]]",
-    "Gender": "all",
-    "Minimum age": 18,
-    "Maximum age": 49
-  },
-  {
-    "Button": "Colon",
-    "Topic heading": "Colorectal Cancer",
-    "Subject": "Screen",
-    "General Patient Text": "n/a",
-    "Health Provider Text": "Age 50-74:\n•FOBT or FIT (depending on province) every 2y or\n•Flexible sigmoidoscopy every 10 years\n•Colonoscopy not recommended in Canada for low risk: 1/2000 risk of perforation, no evidence yet,ongoing RCTs\n[[canadian task force; https://canadiantaskforce.ca/guidelines/published-guidelines/colorectal-cancer/]]\n[[CFP article on when to stop screening; https://www.cfp.ca/content/cfp/65/8/543.full.pdf]]\nFOBT=Fecal occult blood test\nFIT= Fecal immunochemical test\n•Colonoscopy recommended for high risk patients\nClick to see [[Canadian association of gastroenterology guideline 2018; https://www.cag-acg.org/images/publications/CAG_CPG_CRC_Screening_Aug2018.pdf]]",
-    "Gender": "all",
-    "Minimum age": 50,
-    "Maximum age": 74
-  },
-  {
-    "Button": "Colon",
-    "Topic heading": "Colorectal Cancer",
-    "Subject": "Get tested for Bowel Cancer",
-    "General Patient Text": "Age 50 to 74:\n•Do a stool test (\"poop test\") every 2 years\n(see your health care provider for a kit)\n•Or do another test called\nFlexible Sigmoidoscopy every 10 years \n(not common, discuss with your provider if available)\n•Colonoscopy is not recommended if you have no symptoms or family history\nof colon cancer.\nIt has a risk of perforation of the bowel of 1/2000\n\n[[more; https://canadiantaskforce.ca/tools-resources/colorectal-cancer-for-patients-2/]]",
-    "Health Provider Text": "n/a",
-    "Gender": "all",
-    "Minimum age": 50,
-    "Maximum age": 74
-  },
-  {
-    "Button": "Colon",
-    "Topic heading": "Colorectal Cancer",
-    "Subject": "Testing to detect early cancer may not be useful at age 75 and over",
-    "General Patient Text": "Most people do not need to be screened at this time, \ndiscuss with your provider if you prefer to be screened.\n[[more; https://canadiantaskforce.ca/tools-resources/colorectal-cancer-for-patients-2/]]",
-    "Health Provider Text": "n/a",
-    "Gender": "all",
-    "Minimum age": 75,
-    "Maximum age": 150
-  },
-  {
     "Button": "Covid",
     "Topic heading": "COVID-19",
     "Subject": "Are you worried you have COVID-19?",
     "General Patient Text": "Click [[here; https://ca.thrive.health/covid19/en]]",
     "Health Provider Text": "n/a",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
+
   },
   {
     "Button": "Covid",
     "Topic heading": "COVID-19",
     "Subject": "Elderly and vulnerable groups",
-    "General Patient Text": "•[[For the elderly and their caregivers; https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/resources-older-adults-caregivers.html]]\n\n•If you need food or other help phone 211\n if available in your area \n[[211 national website; https://211.ca]]\n\n•Or contact your local public health department,or city/town/municipality\n[[Public health info by province or territory; https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/symptoms/provincial-territorial-resources-covid-19.html]]\n\n•[[Government of Canada Financial Aid; https://www.canada.ca/en/services/benefits/covid19-emergency-benefits.html]]",
+    "General Patient Text": "•[[For the elderly and their caregivers; https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/resources-older-adults-caregivers.html]]\n•If you need food or other help phone 211\n if available in your area \n[[211 national website; https://211.ca]]\n•Or contact your local public health department,or city/town/municipality\n[[Public health info by province or territory; https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/symptoms/provincial-territorial-resources-covid-19.html]]\n•[[Government of Canada Financial Aid; https://www.canada.ca/en/services/benefits/covid19-emergency-benefits.html]]",
     "Health Provider Text": "n/a",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
@@ -203,8 +30,11 @@
     "Button": "Covid",
     "Topic heading": "COVID-19",
     "Subject": "First Nations, Métis, Inuit",
-    "General Patient Text": "[[Video on physical distancing?; https://www.youtube.com/watch?v=bk2fp5rS-kg&feature=youtu.be]]\n\n[[Video on general COVID safety; https://www.youtube.com/watch?v=jefCDf6ccJ4]]\n\n[[Diabetes and COVID-19; http://nada.ca/?page_id=3172]]\n\nSee Ottawa Public Health for links to national information specific to First Nations, Métis and Inuit \n[[Click on; https://www.ottawapublichealth.ca/en/public-health-topics/resources-for-first-nations-inuit-and-m-tis-community-members.aspx]]",
+    "General Patient Text": "•[[National links for First Nations, Métis and Inuit collected on the Ottawa Public Health Website; https://www.ottawapublichealth.ca/en/public-health-topics/resources-for-first-nations-inuit-and-m-tis-community-members.aspx]]\n•[[Video 1; https://www.youtube.com/watch?v=jefCDf6ccJ4]]\n•[[Video 2; https://www.youtube.com/watch?v=bk2fp5rS-kg&feature=youtu.be]]\n•[[Diabetes and COVID-19; http://nada.ca/?page_id=3172]]",
     "Health Provider Text": "n/a",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
@@ -215,6 +45,9 @@
     "Subject": "COVID-19 Español, Arabic, Mandarin and other languages",
     "General Patient Text": "[[Click here; https://www.ottawapublichealth.ca/en/public-health-topics/multilingual-resources.aspx]]",
     "Health Provider Text": "n/a",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
@@ -223,8 +56,11 @@
     "Button": "Covid",
     "Topic heading": "COVID-19",
     "Subject": "All Canadians",
-    "General Patient Text": "•[[Info by province or territory; https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/symptoms/provincial-territorial-resources-covid-19.html]]\n\n•Follow the instructions of your local public health agency\n\n•Stay at home as much as possible\n\n•Limit contact with people at higher risk, such as older adults and those in poor health\n\n•If you leave your home, always keep a distance of at least 2 arms lengths (approximately 2 metres) from others \n\n•Wash your hands frequently with soap and water for at least 20 seconds\n\n•If soap is not available use an alcohol-based hand sanitizer\n\n•For more information click on this [[link; https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/prevention-risks.html?topic=tilelink]]",
+    "General Patient Text": "•[[Info by province or territory; https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/symptoms/provincial-territorial-resources-covid-19.html]]\n•Follow the instructions of your local public health agency\n•Stay at home as much as possible\n•Limit contact with people at higher risk, such as older adults and those in poor health\n•If you leave your home, always keep a distance of at least 2 arms lengths (approximately 2 metres) from others \n•Wash your hands frequently with soap and water for at least 20 seconds\n•If soap is not available use an alcohol-based hand sanitizer\n•For more information click on this [[link; https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/prevention-risks.html?topic=tilelink]]",
     "Health Provider Text": "n/a",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
@@ -235,6 +71,9 @@
     "Subject": "Cleaning",
     "General Patient Text": "Clean high-touch hard surfaces often, using either regular household cleaners or diluted bleach.  \n•Click on [[list of approved disinfectants; https://www.canada.ca/en/health-canada/services/drugs-health-products/disinfectants/covid-19/list.html]]\n•Diluted bleach recipe: 250 mL (1 cup) of water per 5 mL (1 teaspoon) of bleach. Directions are based on bleach that is 5% sodium hypochlorite, to give a 0.1% sodium hypochlorite solution. Never mix bleach with other chemical products and use it in a well-ventilated area.",
     "Health Provider Text": "n/a",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
@@ -243,8 +82,11 @@
     "Button": "Covid",
     "Topic heading": "COVID-19",
     "Subject": "Masks",
-    "General Patient Text": "•[[VIDEO on how to wear a mask; https://www.canada.ca/en/public-health/services/video/covid-19-wear-non-medical-mask-face-covering-properly.html]]\n\n•[[DO's and DON'Ts; https://www.canada.ca/content/dam/hc-sc/documents/services/publications/diseases-and-conditions/covid-19-safely-use-non-medical-mask-face-covering/covid-19-safely-use-non-medical-mask-face-covering-en.pdf]]\n\n•[[LIMITATIONS; https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/prevention-risks/about-non-medical-masks-face-coverings.html#_Limitations]]\n\n•DO NOT wear a mask with an exhalation valve",
+    "General Patient Text": "•[[VIDEO on how to wear a mask; https://www.canada.ca/en/public-health/services/video/covid-19-wear-non-medical-mask-face-covering-properly.html]]\n•[[DO's and DON'Ts; https://www.canada.ca/content/dam/hc-sc/documents/services/publications/diseases-and-conditions/covid-19-safely-use-non-medical-mask-face-covering/covid-19-safely-use-non-medical-mask-face-covering-en.pdf]]\n•[[LIMITATIONS; https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/prevention-risks/about-non-medical-masks-face-coverings.html#_Limitations]]\n•DO NOT wear a mask with an exhalation valve",
     "Health Provider Text": "n/a",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
@@ -255,16 +97,23 @@
     "Subject": "Difference between quarantine and isolation",
     "General Patient Text": "Click on [[Public Health Agency of Canada; https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/prevention-risks.html?topic=tilelink#self]]",
     "Health Provider Text": "n/a",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
+
   },
   {
     "Button": "Covid",
     "Topic heading": "COVID-19",
     "Subject": "Physical Distancing",
-    "General Patient Text": "Stay 2 metres or 6 feet apart, how far is this? 2 arms lengths or an adult hockey stick.\n\n[[Video; https://www.youtube.com/watch?v=UR1LPKDBTPw]]",
+    "General Patient Text": "Stay 2 metres or 6 feet apart, how far is this? 2 arms lengths or an adult hockey stick.\n[[Video; https://www.youtube.com/watch?v=UR1LPKDBTPw]]",
     "Health Provider Text": "n/a",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
@@ -275,9 +124,13 @@
     "Subject": "Hygiene",
     "General Patient Text": "Click on [[more; https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/prevention-risks.html?topic=tilelink]]",
     "Health Provider Text": "n/a",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
+
   },
   {
     "Button": "Covid",
@@ -285,29 +138,363 @@
     "Subject": "Vulnerable populations",
     "General Patient Text": "n/a",
     "Health Provider Text": "•Poverty screening question: “Do you ever have difficulty making ends meet at the end of the month?” [[reference; https://portal.cfpc.ca/resourcesdocs/uploadedFiles/CPD/Poverty_flow-Tool-Final-2016v4-Ontario.pdf\n•If your patient needs social, community or health services  phone 211 if available in your area  [[website; https://211.ca/]]\n•[[Government of Canada benefits; https://www.canada.ca/en/services/benefits/covid19-emergency-benefits.html]]\n•Check your local public health agenciy website for information for these groups\n•[[Synopsis of research by Public Health Ontario; https://www.publichealthontario.ca/-/media/documents/ncov/covid-wwksf/2020/05/what-we-know-social-determinants-health.pdf?la=en]]",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-  },
-  {
-    "Button": "trans",
-    "Topic heading": "Non-Binary EN",
-    "Subject": "nonbinary subj EN",
-    "General Patient Text": "nonbinary patient EN",
-    "Health Provider Text": "nonbinary provider EN ",
-    "Gender": "all",
-    "Minimum age": 18,
-    "Maximum age": 150
+
   },
   {
     "Button": "Covid",
     "Topic heading": "COVID-19",
     "Subject": "Updated research",
     "General Patient Text": "n/a",
-    "Health Provider Text": "APPRAISED EVIDENCE\n[[MCMASTER EBM; https://plus.mcmaster.ca/COVID-19]]\n[[OXFORD Evidence Service; https://www.cebm.net/oxford-covid-19-evidence-service/]]\n\nJOURNALS\n[[CMAJ; https://www.cmaj.ca/covid-19]]\n[[BMJ's Coronavirus (covid-19) Hub; https://www.bmj.com/coronavirus]]\n[[JAMA;https://jamanetwork.com/collections/46099/coronavirus-covid19]]\n[[NEJM; https://www.nejm.org/coronavirus]]\n[[The Lancet; https://www.thelancet.com/coronavirus/archive?]]\n\nPUBLIC HEALTH AGENCY OF CANADA\n[[For health professionals; https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/health-professionals.html]]",
+    "Health Provider Text": "APPRAISED EVIDENCE\n[[MCMASTER EBM; https://plus.mcmaster.ca/COVID-19]]\n[[OXFORD Evidence Service; https://www.cebm.net/oxford-covid-19-evidence-service/]]\nJOURNALS\n[[CMAJ; https://www.cmaj.ca/covid-19]]\n[[BMJ's Coronavirus (covid-19) Hub; https://www.bmj.com/coronavirus]]\n[[JAMA;https://jamanetwork.com/collections/46099/coronavirus-covid19]]\n[[NEJM; https://www.nejm.org/coronavirus]]\n[[The Lancet; https://www.thelancet.com/coronavirus/archive?]]\nPUBLIC HEALTH AGENCY OF CANADA\n[[For health professionals; https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/health-professionals.html]]",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
+
+  },
+  {
+    "Button": "aorta",
+    "Topic heading": "Abdominal Aortic Aneurysm Screen",
+    "Subject": "Screen men age 65-80 with ultrasound once",
+    "General Patient Text": "n/a",
+    "Health Provider Text": "[[Weak recommendation by canadian task force; https://canadiantaskforce.ca/guidelines/published-guidelines/abdominal-aortic-aneurysm/]]",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
+    "Gender": "m",
+    "Minimum age": 65,
+    "Maximum age": 80
+
+  },
+  {
+    "Button": "aorta",
+    "Topic heading": "Aorta: the body's main blood vessel",
+    "Subject": "Talk to your \nprovider to see \nif you need a test",
+    "General Patient Text": "Your provider may ask for\nan ultrasound of your belly\nto detect a bulge in the main blood vessel \n(the bulge is nicknamed AAA \nfor short or\nAbdominal Aortic Aneurysm)\nIf the bulge grows it can burst and cause death.",
+    "Health Provider Text": "n/a",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
+    "Gender": "m",
+    "Minimum age": 65,
+    "Maximum age": 80
+
+  },
+  {
+    "Button": "Figure outside body walking",
+    "Topic heading": "Be active",
+    "Subject": "Benefits of physical activity",
+    "General Patient Text": "Physical activity\nprevents heart disease, cancer, depression and [[more; https://www.reframehealthlab.com/23-and-12-hours/]]",
+    "Health Provider Text": "n/a",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+
+  },
+  {
+    "Button": "Figure outside body walking",
+    "Topic heading": "Be active",
+    "Subject": "Recommended physical activity",
+    "General Patient Text": "The recommended minimum amount of physical activity\nis 150 minutes a week of moderate intensity exercise. \nDefinition of moderate intensity:\nwhile you are active you have enough breath to say a short sentence but not enough to sing\n•[[more info for age 18-64; http://www.csep.ca/CMFiles/Guidelines/CSEP_PAGuidelines_adults_en.pdf]]\n•[[more info for age 65+; http://csepguidelines.ca/wp-content/uploads/2018/03/CSEP_PAGuidelines_older-adults_en.pdf]]",
+    "Health Provider Text": "n/a",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+
+  },
+  {
+    "Button": "Bone",
+    "Topic heading": "Bone health",
+    "Subject": "Exercises",
+    "General Patient Text": "[[Recommendations; https://osteoporosis.ca/bone-health-osteoporosis/exercises-for-healthy-bones/]]",
+    "Health Provider Text": "[[Recommendations; https://osteoporosis.ca/bone-health-osteoporosis/exercises-for-healthy-bones/]]",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+
+  },
+  {
+    "Button": "Bone",
+    "Topic heading": "Bone health",
+    "Subject": "Bone Density Test",
+    "General Patient Text": "Below age 65: only recommended if: you have [[risk factors; https://www.canada.ca/en/public-health/services/chronic-diseases/osteoporosis.html]]",
+    "Health Provider Text": "If patient has  [[risk factors; http://www.osteoporosis.ca/multimedia/pdf/Quick_Reference_Guide_October_2010.pdf]] or use [[OST; http://www.cfp.ca/content/61/7/612]]",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 64
+
+  },
+  {
+    "Button": "Bone",
+    "Topic heading": "Bone health",
+    "Subject": "Bone Density Test",
+    "General Patient Text": "Recommended for everyone 65 or older\nYour provider will determine when to repeat it\n[[more info; https://choosingwiselycanada.org/bone-density-tests/]]\n[[calculator for 10 year fracture risk; https://www.sheffield.ac.uk/FRAX/tool.jsp?country=19 ]]",
+    "Health Provider Text": "Recommended for everyone 65 or older:\n•[[osteoporosis.ca; http://www.cmaj.ca/content/cmaj/early/2010/10/12/cmaj.100771.full.pdf]]\n•Or use [[OST; http://www.cfp.ca/content/61/7/612]]\n•Frequency of retesting [[not more than every 2 years; https://choosingwiselycanada.org/rheumatology/]]\n[[decision aid; https://osteoporosisdecisionaid.mayoclinic.org/]]",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
+    "Gender": "all",
+    "Minimum age": 65,
+    "Maximum age": 150
+
+  },
+  {
+    "Button": "Breast",
+    "Topic heading": "Breast Cancer",
+    "Subject": "Prevent Breast Cancer",
+    "General Patient Text": "•Limit alcohol (see our substance use info)\n•Don't smoke\n•Control your weight\n•Be physically active (see our physical activity info for this)\n•Breastfeed if you are able\n•Limit time on hormone therapy\n[[more; https://www.mycanceriq.ca/Cancers/Risk]]\n\nClick on this [[link to know if you are at high risk of breast cancer; https://www.cancer.ca/en/prevention-and-screening/reduce-cancer-risk/find-cancer-early/get-screened-for-breast-cancer/at-high-risk-for-breast-cancer/?region=on]]\n\nMammograms for healthy women below age 50 \nwith no symptoms, no breast problems\nand no additional risks \nis not recommended.\n[[risks; http://www.cancer.ca/en/cancer-information/cancer-type/breast/risks/?region=on]]\n[[harms of mammograms; https://www.youtube.com/watch?v=UZlY6Q4m-MM]]\nDISCUSS WITH YOUR HEALTH CARE PROVIDER.",
+    "Health Provider Text": "n/a",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
+    "Gender": "f",
+    "Minimum age": 18,
+    "Maximum age": 150
+
+  },
+  {
+    "Button": "Breast",
+    "Topic heading": "Breast Cancer",
+    "Subject": "Get tested for Breast Cancer \nat age 50-74",
+    "General Patient Text": "Get a mammogram every 2 years:\nYou may need one earlier or more often\nif you have risks or symptoms.\n[[more; http://www.cancer.ca/en/cancer-information/cancer-type/breast/risks/?region=on]]",
+    "Health Provider Text": "n/a",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
+    "Gender": "f",
+    "Minimum age": 50,
+    "Maximum age": 74
+
+  },
+  {
+    "Button": "Breast",
+    "Topic heading": "Breast Cancer",
+    "Subject": "Age 75 and over",
+    "General Patient Text": "Research does not recommend mammograms age 75 and over, \nbut if you are healthy you may discuss further testing with your health care provider.",
+    "Health Provider Text": "n/a",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
+    "Gender": "f",
+    "Minimum age": 75,
+    "Maximum age": 150
+
+  },
+  {
+    "Button": "Breast",
+    "Topic heading": "Breast Cancer",
+    "Subject": "Prevent and screen for Breast Cancer",
+    "General Patient Text": "n/a",
+    "Health Provider Text": "Counsel patients to:\n•Limit alcohol (see our substance use info)\n•Not smoke\n•Control their weight\n•Be physically active (see our app info for this)\n•Breastfeed if able\n•Limit time on hormone therapy\n[[a risk calculator for patients; https://www.mycanceriq.ca/Cancers/Risk]]\n\nScreening Mammogram:\n•Below age 50: Not recommended\n[[canadiantaskforce recomendation; https://canadiantaskforce.ca/guidelines/published-guidelines/breast-cancer-update/]]\n[[tool to explain harms to patient; https://www.youtube.com/watch?v=UZlY6Q4m-MM]]\n[[tool to explain harms to patient; https://canadiantaskforce.ca/tools-resources/breast-cancer-2/breast-cancer-risks-benefits-age-40-49/]]\n•50-74:  Every 2 years\n[[weak recommendation; https://canadiantaskforce.ca/guidelines/published-guidelines/breast-cancer-update/]]\n•75+: Not recommended by canadiantaskforce.ca,but:\n[[CFP  article 2019 on when to stop screening; https://www.cfp.ca/content/cfp/65/8/543.full.pdf]]\n\nHigh risk patients:\n•Known to have a gene mutation that increases their risk for breast cancer (e.g., BRCA1, BRCA2, TP53, PTEN, CDH1)\n•First-degree relatives of someone who has a gene mutation that increases their risk for breast cancer (e.g., BRCA1, BRCA2, TP53, PTEN, CDH1), have already had genetic counselling and have chosen not to have genetic testing\n•Have been assessed by a genetics clinic (using the IBIS or BOADICEA tools) as having a 25% or greater lifetime risk of breast cancer based on personal and family history\n•Have had radiation therapy to the chest to treat another cancer or condition (e.g., Hodgkin lymphoma) before age 30 and at least 8 years ago\n•First-degree relative (parent, brother, sister or child) of a carrier of a gene mutation (e.g. BRCA1, BRCA2, TP53, PTEN, CDH1) and has not had genetic counselling or genetic testing\n•Personal or family history of breast or ovarian cancer suggestive of a hereditary breast cancer syndrome",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
+    "Gender": "f",
+    "Minimum age": 18,
+    "Maximum age": 150
+
+  },
+  {
+    "Button": "Breast",
+    "Topic heading": "Breast Cancer",
+    "Subject": "TG - Breast Cancer - General",
+    "General Patient Text": "TG Patient text",
+    "Health Provider Text": "TG Health Provider text",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
+    "Gender": "tg",
+    "Minimum age": 18,
+    "Maximum age": 150
+
+  },
+  {
+    "Button": "Breast",
+    "Topic heading": "Breast Cancer",
+    "Subject": "TG - Breast Cancer with Hormone T.",
+    "General Patient Text": "n/a",
+    "Health Provider Text": "n/a",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "TG Hormone Therapy text",
+    "Gender": "tg",
+    "Minimum age": 18,
+    "Maximum age": 150
+
+  },
+  {
+    "Button": "Breast",
+    "Topic heading": "Breast Cancer",
+    "Subject": "TG - Breast Cancer with Top surgery",
+    "General Patient Text": "n/a",
+    "Health Provider Text": "n/a",
+    "Top Surgeries Text": "TG Top surgery text",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
+    "Gender": "tg",
+    "Minimum age": 18,
+    "Maximum age": 150
+
+  },
+  {
+    "Button": "Breast",
+    "Topic heading": "Breast Cancer",
+    "Subject": "NB -  Breast Cancer - General",
+    "General Patient Text": "NB Patient text",
+    "Health Provider Text": "NB Health Provider text",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
+    "Gender": "nb",
+    "Minimum age": 18,
+    "Maximum age": 150
+
+  },
+  {
+    "Button": "Breast",
+    "Topic heading": "Breast Cancer",
+    "Subject": "NB - Breast Cancer with Hormone T.",
+    "General Patient Text": "n/a",
+    "Health Provider Text": "n/a",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "NB Hormone Therapy text",
+    "Gender": "nb",
+    "Minimum age": 18,
+    "Maximum age": 150
+
+  },
+  {
+    "Button": "Breast",
+    "Topic heading": "Breast Cancer",
+    "Subject": "NB - Breast Cancer with Top surgery",
+    "General Patient Text": "n/a",
+    "Health Provider Text": "n/a",
+    "Top Surgeries Text": "NB Top surgery text",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
+    "Gender": "nb",
+    "Minimum age": 18,
+    "Maximum age": 150
+
+  },
+  {
+    "Button": "Uterus",
+    "Topic heading": "Cervical Cancer",
+    "Subject": "Get tested for Cervical Cancer \n(Pap test)",
+    "General Patient Text": "•Women age 25 to 69  (21-69 in some provinces) if have ever been sexually active,\nneed to get a pap test every 3 years if results are normal.\n[[what is cervical cancer;http://www.cancer.ca/en/cancer-information/cancer-type/cervical/cervical-cancer/?region=on]]\n[[more; http://www.cancer.ca/en/cancer-information/cancer-type/cervical/screening/?region=on]]",
+    "Health Provider Text": "Women age 25 to 69 (21-69 in some provinces) if ever have been sexually active,\nneed to get a pap test every 3 years if results are normal.\n[[more; https://canadiantaskforce.ca/guidelines/published-guidelines/cervical-cancer/]]",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
+    "Gender": "f",
+    "Minimum age": 21,
+    "Maximum age": 69
+
+  },
+  {
+    "Button": "Uterus",
+    "Topic heading": "Cervical Cancer",
+    "Subject": "A Pap test may or may not be needed",
+    "General Patient Text": "•After age 69 if 3 normal results in past 10 years can stop",
+    "Health Provider Text": "Stop after age 69 if 3 normal results in past 10 years.\n[[Can Task Force reference; https://canadiantaskforce.ca/guidelines/published-guidelines/cervical-cancer/]]\n[[CFP  article 2019 on when to stop screening; https://www.cfp.ca/content/cfp/65/8/543.full.pdf]]",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
+    "Gender": "f",
+    "Minimum age": 70,
+    "Maximum age": 150
+
+  },
+  {
+    "Button": "Uterus",
+    "Topic heading": "Cervical Cancer",
+    "Subject": "Other ways to prevent Cervical Cancer",
+    "General Patient Text": "•Get the HPV vaccine\nrecommended between age 9 and 26 \nbut can be given at any age\n•Don’t smoke\n•Use condoms\n•Limit your number of sexual partners\n[[more; http://www.cancer.ca/en/cancer-information/cancer-type/cervical/risks/reducing-your-risk/?region=on]]",
+    "Health Provider Text": "•Recommend the HPV vaccine\n(recommended between 9 and 26 \nbut can be given at any age).\n[[Canadian recommendation; https://www.canada.ca/en/public-health/services/publications/healthy-living/update-recommended-human-papillomavirus-vaccine-immunization-schedule.html#sum]]\n•Recommend no smoking, condom use,\nand limiting number of partners.",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
+    "Gender": "f",
+    "Minimum age": 18,
+    "Maximum age": 150
+
+  },
+  {
+    "Button": "Colon",
+    "Topic heading": "Colorectal Cancer or Bowel Cancer",
+    "Subject": "Prevent Colon Cancer",
+    "General Patient Text": "•Be physically active\n•Maintain a healthy body weight, [[bmi; https://www.unlockfood.ca/en/Articles/Weight-Loss/BMI-Calculator.aspx]]\n•Be a non-smoker and avoid second hand smoke\n•[[more; http://www.cancer.ca/en/cancer-information/cancer-type/colorectal/risks/reducing-your-risk/?region=on]]",
+    "Health Provider Text": "Recommend patients:\n•Be physically active\n•Maintain a healthy body weight, [[bmi; https://www.unlockfood.ca/en/Articles/Weight-Loss/BMI-Calculator.aspx]]\n•Limit the amount of alcohol they drink (see healthy drinking guidelines)\n•Be a non-smoker and avoid second hand smoke\n•Limit the amount of red and processed meats eaten\n•Eat foods high in fiber \n•Limit sitting time\n[[Source; http://www.cancer.ca/en/cancer-information/cancer-type/colorectal/risks/reducing-your-risk/?region=on]]",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 49
+
+  },
+  {
+    "Button": "Colon",
+    "Topic heading": "Colorectal Cancer",
+    "Subject": "Screen",
+    "General Patient Text": "n/a",
+    "Health Provider Text": "Age 50-74:\n•FOBT or FIT (depending on province) every 2y or\n•Flexible sigmoidoscopy every 10 years\n•Colonoscopy not recommended in Canada for low risk: 1/2000 risk of perforation, no evidence yet,ongoing RCTs\n[[canadian task force; https://canadiantaskforce.ca/guidelines/published-guidelines/colorectal-cancer/]]\n[[CFP article on when to stop screening; https://www.cfp.ca/content/cfp/65/8/543.full.pdf]]\nFOBT=Fecal occult blood test\nFIT= Fecal immunochemical test\n•Colonoscopy recommended for high risk patients\nClick to see [[Canadian association of gastroenterology guideline 2018; https://www.cag-acg.org/images/publications/CAG_CPG_CRC_Screening_Aug2018.pdf]]",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
+    "Gender": "all",
+    "Minimum age": 50,
+    "Maximum age": 74
+
+  },
+  {
+    "Button": "Colon",
+    "Topic heading": "Colorectal Cancer",
+    "Subject": "Get tested for Bowel Cancer",
+    "General Patient Text": "Age 50 to 74:\n•Do a stool test (\"poop test\") every 2 years\n(see your health care provider for a kit)\n•Or do another test called\nFlexible Sigmoidoscopy every 10 years \n(not common, discuss with your provider if available)\n•Colonoscopy is not recommended if you have no symptoms or family history\nof colon cancer.\nIt has a risk of perforation of the bowel of 1/2000\n\n[[more; https://canadiantaskforce.ca/tools-resources/colorectal-cancer-for-patients-2/]]",
+    "Health Provider Text": "n/a",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
+    "Gender": "all",
+    "Minimum age": 50,
+    "Maximum age": 74
+
+  },
+  {
+    "Button": "Colon",
+    "Topic heading": "Colorectal Cancer",
+    "Subject": "Testing to detect early cancer may not be useful at age 75 and over",
+    "General Patient Text": "Most people do not need to be screened at this time, \ndiscuss with your provider if you prefer to be screened.\n[[more; https://canadiantaskforce.ca/tools-resources/colorectal-cancer-for-patients-2/]]",
+    "Health Provider Text": "n/a",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
+    "Gender": "all",
+    "Minimum age": 75,
+    "Maximum age": 150
+
   },
   {
     "Button": "Pancreas",
@@ -315,9 +502,13 @@
     "Subject": "Prevent Diabetes",
     "General Patient Text": "•Eat a healthy diet\n•Be physically active\n•Keep your BMI healthy:18.5-24\n[[bmi; https://www.unlockfood.ca/en/Articles/Weight-Loss/BMI-Calculator.aspx]]",
     "Health Provider Text": "Recommend:\n•Healthy diet\n•Physically activity\n•Healthy BMI: 18.5-24\n[[bmi; https://www.unlockfood.ca/en/Articles/Weight-Loss/BMI-Calculator.aspx]]",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
+
   },
   {
     "Button": "Pancreas",
@@ -325,9 +516,13 @@
     "Subject": "Get a blood test for Diabetes if you are at risk",
     "General Patient Text": "You can use a calculator to see if you need one:\n[[calculator 1; https://diabetes.ca/about-diabetes/take-the-test]]\n[[calculator2; https://canadiantaskforce.ca/tools-resources/type-2-diabetes-2/type-2-diabetes-patient-findrisc/]]",
     "Health Provider Text": "n/a",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
+
   },
   {
     "Button": "Pancreas",
@@ -335,9 +530,97 @@
     "Subject": "Screen for Diabetes",
     "General Patient Text": "n/a",
     "Health Provider Text": "Using a calculator is recommended by the Canadian Task Force and is evidence-based.\nYour patient can be emailed this questionnaire or it can be filled in the waiting room.\n•[[FINDRISC online calculator; https://qxmd.com/calculate/calculator_236/findrisc-diabetes-risk-calculator]]\n•[[FINDRISC pdf; https://canadiantaskforce.ca/tools-resources/type-2-diabetes-2/type-2-diabetes-patient-findrisc/]]\n\nor \n•[[CANRISK online calculator;  https://diabetes.ca/about-diabetes/take-the-test]]\n•[[CANRISK pdf  available in different languages; https://canadiantaskforce.ca/tools-resources/type-2-diabetes-2/type-2-diabetes-canrisk/]]",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
+
+  },
+  {
+    "Button": "Uterus",
+    "Topic heading": "Cervical Cancer",
+    "Subject": "TG - Cervical Cancer - General",
+    "General Patient Text": "TG Patient text",
+    "Health Provider Text": "TG Health Provider text",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
+    "Gender": "tg",
+    "Minimum age": 18,
+    "Maximum age": 150
+
+  },
+  {
+    "Button": "Uterus",
+    "Topic heading": "Cervical Cancer",
+    "Subject": "TG - Cervical Cancer with Hormone T.",
+    "General Patient Text": "n/a",
+    "Health Provider Text": "n/a",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "TG Hormone Therapy text",
+    "Gender": "tg",
+    "Minimum age": 18,
+    "Maximum age": 150
+
+  },
+  {
+    "Button": "Uterus",
+    "Topic heading": "Cervical Cancer",
+    "Subject": "TG - Cervical Cancer with Bottom surgery",
+    "General Patient Text": "n/a",
+    "Health Provider Text": "n/a",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "TG Bottom surgery text",
+    "Hormone Therapy Text": "n/a",
+    "Gender": "tg",
+    "Minimum age": 18,
+    "Maximum age": 150
+
+  },
+  {
+    "Button": "Uterus",
+    "Topic heading": "Cervical Cancer",
+    "Subject": "NB - Cervical Cancer - General",
+    "General Patient Text": "NB Patient text",
+    "Health Provider Text": "NB Health Provider text",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
+    "Gender": "nb",
+    "Minimum age": 18,
+    "Maximum age": 150
+
+  },
+  {
+    "Button": "Uterus",
+    "Topic heading": "Cervical Cancer",
+    "Subject": "NB - Cervical Cancer with Hormone T.",
+    "General Patient Text": "n/a",
+    "Health Provider Text": "n/a",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "NB Hormone Therapy text",
+    "Gender": "nb",
+    "Minimum age": 18,
+    "Maximum age": 150
+
+  },
+  {
+    "Button": "Uterus",
+    "Topic heading": "Cervical Cancer",
+    "Subject": "NB - Cervical Cancer with Bottom surgery",
+    "General Patient Text": "n/a",
+    "Health Provider Text": "n/a",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "NB Bottom surgery text",
+    "Hormone Therapy Text": "n/a",
+    "Gender": "nb",
+    "Minimum age": 18,
+    "Maximum age": 150
+
   },
   {
     "Button": "Hip",
@@ -345,9 +628,13 @@
     "Subject": "Prevent falls",
     "General Patient Text": "Bathroom:\n•Make sure you have non slip surfaces or mats\n•Grab bars, bath seat\n•Raised toilet \n•Make sure path is clear from bedroom to bathroom\n\nHome:\n•Get rid of loose rugs or make non-slip\n•Have good lighting and night lights\n\nBe active:\nTai chi,walking, exercise classes etc\n\nMedications:\nDiscuss with your provider if your medications can cause falls\n\n\n[[more; https://www.canada.ca/content/dam/phac-aspc/migration/phac-aspc/seniors-aines/alt-formats/pdf/publications/public/injury-blessure/prevent-eviter/prevent-eviter-e.pdf]]",
     "Health Provider Text": "The American Geriatrics Society\nand British Geriatrics Society recommend asking about\nfalls every year \n[[ref CFP article; http://www.cfp.ca/content/62/9/717]]\n[[more info; https://www.ajpmonline.org/article/S0749-3797(18)31759-8/fulltext]]\n\nFor advice to patients,\nsee in our app patient section on Falls.",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "all",
     "Minimum age": 65,
     "Maximum age": 150
+
   },
   {
     "Button": "Ovary",
@@ -355,9 +642,13 @@
     "Subject": "Take folic acid",
     "General Patient Text": "Take folic acid: 0.4 to 1 mg a day.\nA Vitamin available over the counter in pharmacies.\nFor women of childbearing age, whether planning a pregnancy or not.\n[[folic acid; https://www.cdc.gov/ncbddd/folicacid/recommendations.html]]",
     "Health Provider Text": "n/a",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "f",
     "Minimum age": 18,
     "Maximum age": 49
+
   },
   {
     "Button": "Ovary",
@@ -365,9 +656,13 @@
     "Subject": "Get tested for certain diseases",
     "General Patient Text": "Talk to your health care provider \nabout getting tested before you are pregnant\nfor important diseases: \n•Rubella, Hepatitis B, HIV:can affect your unborn child.\n•Chicken pox: which can be very serious for you in pregnancy.",
     "Health Provider Text": "n/a",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "f",
     "Minimum age": 18,
     "Maximum age": 49
+
   },
   {
     "Button": "Ovary",
@@ -375,9 +670,13 @@
     "Subject": "Discuss how your age affects fertility with your provider",
     "General Patient Text": "Women who delay child-bearing are at increased risk of infertility.\nProspective parents, especially women, should know that their fecundity and fertility begin to decline significantly after 32 years of age. Prospective parents should know that assisted reproductive technologies cannot guarantee a live birth or completely compensate for age-related decline in fertility [[more; https://www.jogc.com/article/S1701-2163(17)30936-2/abstract]]",
     "Health Provider Text": "n/a",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "f",
     "Minimum age": 18,
     "Maximum age": 49
+
   },
   {
     "Button": "Ovary",
@@ -385,9 +684,125 @@
     "Subject": "Preconception health for all women of childbearing age",
     "General Patient Text": "n/a",
     "Health Provider Text": "[[Complete preconception health care tool; https://med-fom-obgyn.sites.olt.ubc.ca/files/2019/02/Preconception-Tool_-Nov2015-CEP_.pdf]]\n\nAdvise folic acid 0.4-1 m/day \nfor all women of childbearing age,\nas many pregnancies unplanned \n[[more; https://www.jogc.com/article/S1701-2163(15)30230-9/pdf]]\n\nScreen for:\n•Rubella immunity\n•Varicella immunity\n•Hepatitis B and HIV disease\nin women of childbearing age,\n[[more; http://thehub.utoronto.ca/family/wp-content/uploads/2016/12/Preconception_Health_Care_Tool.pdf]]\n\nDelayed child-bearing: discuss\n•Decreasing fertility for women after age 32 \n•Assistive reproductive technologies cannot guarantee a live birth. \n[[more at SOGC guideline 2017; https://www.jogc.com/article/S1701-2163(17)30936-2/pdf]]",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "f",
     "Minimum age": 18,
     "Maximum age": 49
+
+  },
+  {
+    "Button": "Ovary",
+    "Topic heading": "Family Planning",
+    "Subject": "TG - Family Planning - General",
+    "General Patient Text": "TG Patient text",
+    "Health Provider Text": "TG Health Provider text",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
+    "Gender": "tg",
+    "Minimum age": 18,
+    "Maximum age": 150
+
+  },
+  {
+    "Button": "Ovary",
+    "Topic heading": "Family Planning",
+    "Subject": "TG - Family Planning with Hormone T.",
+    "General Patient Text": "n/a",
+    "Health Provider Text": "n/a",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "TG Hormone Therapy text",
+    "Gender": "tg",
+    "Minimum age": 18,
+    "Maximum age": 150
+
+  },
+  {
+    "Button": "Ovary",
+    "Topic heading": "Family Planning",
+    "Subject": "TG - Family Planning with Bottom surgery",
+    "General Patient Text": "n/a",
+    "Health Provider Text": "n/a",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "TG Bottom surgery text",
+    "Hormone Therapy Text": "n/a",
+    "Gender": "tg",
+    "Minimum age": 18,
+    "Maximum age": 150
+
+  },
+  {
+    "Button": "Ovary",
+    "Topic heading": "Family Planning",
+    "Subject": "TG - Family Planning with Top surgery",
+    "General Patient Text": "n/a",
+    "Health Provider Text": "n/a",
+    "Top Surgeries Text": "TG Top surgery text",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
+    "Gender": "tg",
+    "Minimum age": 18,
+    "Maximum age": 150
+
+  },
+  {
+    "Button": "Ovary",
+    "Topic heading": "Family Planning",
+    "Subject": "NB - Family Planning - General",
+    "General Patient Text": "NB Patient text",
+    "Health Provider Text": "NB Health Provider text",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
+    "Gender": "nb",
+    "Minimum age": 18,
+    "Maximum age": 150
+
+  },
+  {
+    "Button": "Ovary",
+    "Topic heading": "Family Planning",
+    "Subject": "NB - Family Planning with Hormone T.",
+    "General Patient Text": "n/a",
+    "Health Provider Text": "n/a",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "NB Hormone Therapy text",
+    "Gender": "nb",
+    "Minimum age": 18,
+    "Maximum age": 150
+
+  },
+  {
+    "Button": "Ovary",
+    "Topic heading": "Family Planning",
+    "Subject": "NB - Family Planning with Bottom surgery",
+    "General Patient Text": "n/a",
+    "Health Provider Text": "n/a",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "NB Bottom surgery text",
+    "Hormone Therapy Text": "n/a",
+    "Gender": "nb",
+    "Minimum age": 18,
+    "Maximum age": 150
+
+  },
+  {
+    "Button": "Ovary",
+    "Topic heading": "Family Planning",
+    "Subject": "NB - Family Planning with Top surgery",
+    "General Patient Text": "n/a",
+    "Health Provider Text": "n/a",
+    "Top Surgeries Text": "NB Top surgery text",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
+    "Gender": "nb",
+    "Minimum age": 18,
+    "Maximum age": 150
+
   },
   {
     "Button": "Heart",
@@ -395,9 +810,13 @@
     "Subject": "Prevention",
     "General Patient Text": "n/a",
     "Health Provider Text": "Physical activity\nmore potent than statins in preventing heart disease\nsee our physical activity section \n\nLipid screening: \n•before 40 in men and 50 in women if risk factors \n[[risk factors according to Simplified lipid guidelines see Screening page 2; http://www.cfp.ca/content/cfp/61/10/857.full.pdf]]\n[[risk factors according to CCS see Figure 1; http://www.onlinecjc.ca/article/S0828-282X(16)30732-2/pdf]]\nNOTE: in women Hypertensive diseases of pregnancy (including preeclampsia, pregnancy induced hypertension are considered additional cvs risk factors see [[link; https://www.jogc.com/article/S1701-2163(18)30836-3/abstract]]\n•for men age 40+:repeat every 3-5 years if N\n•for women age 50+ or at menopause:repeat every 3-5 years  if N\n•age 75 + healthy: discouraged as have not been validated at this age\n•[[Canadian Simplified Lipid Guidelines by family physicans;http://www.cfp.ca/content/cfp/61/10/857.full.pdf ]]\n•[[Canadian Cardiology guideline; http://www.onlinecjc.ca/article/S0828-282X(16)30732-2/pdf]]",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
+
   },
   {
     "Button": "Heart",
@@ -405,9 +824,13 @@
     "Subject": "Be active",
     "General Patient Text": "•[[more info for age 18-64; http://www.csep.ca/CMFiles/Guidelines/CSEP_PAGuidelines_adults_en.pdf]]\n•[[more info for age 65+; http://csepguidelines.ca/wp-content/uploads/2018/03/CSEP_PAGuidelines_older-adults_en.pdf]]",
     "Health Provider Text": "n/a",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
+
   },
   {
     "Button": "Heart",
@@ -415,9 +838,13 @@
     "Subject": "Get tested for cholesterol\nbelow age 40",
     "General Patient Text": "Only if you have \nsome health problems:\n•Family history of early heart disease \n•High blood pressure\n•Diabetes\n•Smoking\n•[[and other health problems; https://www.heartandstroke.ca/heart/risk-and-prevention]]\nDiscuss this with your provider.",
     "Health Provider Text": "n/a",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "m",
     "Minimum age": 18,
     "Maximum age": 39
+
   },
   {
     "Button": "Heart",
@@ -425,9 +852,13 @@
     "Subject": "Get tested for cholesterol\nbelow age 50",
     "General Patient Text": "Only if you have the following\n•Family history of early heart disease \n•High blood pressure\n•Diabetes\n•Smoking\n•[[and other health problems; https://www.heartandstroke.ca/heart/risk-and-prevention]]\nDiscuss this with your provider.\n\n(If your menopause happens before age 50\nstart testing  for cholesterol at that time.)",
     "Health Provider Text": "n/a",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "f",
     "Minimum age": 18,
     "Maximum age": 49
+
   },
   {
     "Button": "Heart",
@@ -435,9 +866,13 @@
     "Subject": "Get tested for cholesterol\nabove age 40",
     "General Patient Text": "If the blood test is normal repeat every 3-5 years.",
     "Health Provider Text": "n/a",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "m",
     "Minimum age": 40,
     "Maximum age": 74
+
   },
   {
     "Button": "Heart",
@@ -445,9 +880,41 @@
     "Subject": "Get tested for cholesterol\nabove age 50 for women",
     "General Patient Text": "or at the age of menopause.\nIf the blood test is normal repeat every 3-5 years",
     "Health Provider Text": "n/a",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "f",
     "Minimum age": 50,
     "Maximum age": 74
+
+  },
+  {
+    "Button": "Heart",
+    "Topic heading": "Heart disease",
+    "Subject": "TG - Heart disease",
+    "General Patient Text": "TG Patient text",
+    "Health Provider Text": "TG Health Provider text",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
+    "Gender": "tg",
+    "Minimum age": 18,
+    "Maximum age": 150
+
+  },
+  {
+    "Button": "Heart",
+    "Topic heading": "Heart disease",
+    "Subject": "NB - Heart disease",
+    "General Patient Text": "NB Patient text",
+    "Health Provider Text": "NB Health Provider text",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
+    "Gender": "nb",
+    "Minimum age": 18,
+    "Maximum age": 150
+
   },
   {
     "Button": "Heart",
@@ -455,9 +922,13 @@
     "Subject": "Over age 74\ntesting for cholesterol\nmay or may not \nbe needed",
     "General Patient Text": "•If you are healthy \ndiscuss testing with your practitioner\n(most studies for cholesterol were not done on this age group\n,so you may not need it).\n•If you have health problems \nsome health problems require cholesterol testing\nand others do not,discuss with your provider.",
     "Health Provider Text": "n/a",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "all",
     "Minimum age": 75,
     "Maximum age": 150
+
   },
   {
     "Button": "Heart",
@@ -465,6 +936,9 @@
     "Subject": "Get your heart risk score",
     "General Patient Text": "See your provider and/ or answer this [[questionnaire; https://myhealth.alberta.ca/Alberta/Pages/Heart-Disease-Risk-Calculator.aspx]]",
     "Health Provider Text": "Risk assessment \nmodified Framingham or [[other; http://chd.bestsciencemedicine.com/calc2.html]]\nonly validated between age 30 and 74",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "all",
     "Minimum age": 30,
     "Maximum age": 74
@@ -475,6 +949,9 @@
     "Subject": "Recommendations",
     "General Patient Text": "n/a",
     "Health Provider Text": "Recommend the [[app CanImmunize; https://www.canimmunize.ca/en/home]]\n\nAGE 18 and above (ALL ADULTS)\nThe following schedule assumes the patient has  been vaccinated in childhood\n•Td (Tetanus-diphtheria) every 10 years\n•Tdap(Tetanus,diphtheria, acellular pertussis or whooping cough):once in your lifetime\n•Measles Mumps Rubella:it is advised that  most adults should have  2 doses of this vaccine\n•HPV: recommended for all females and males from ages 9 to 26. The vaccine is also safe over age 26. [[more; https://www.reframehealthlab.com/should-you-get-the-hpv-vaccine/]]\n•Influenza: is recommended for all adults. For high risk groups see CanImmunize app\n•Pneumococcal, varicella,  meningococcal are recommended for some high risk groups seeCANImmunize app\n\nAGE 50+\nShingrix,\nNot covered in many provinces\n[[more; https://www.cdc.gov/vaccines/vpd/shingles/hcp/index.html\n\n\nAGE 60+\nZostavax\nCovered at different ages in some provinces,\nCheck your province's immunization schedule\n\nAGE 65+ \n•Pneumococcal \nPNEU-P-23 advised for all immunocompetent,\nrepeat once in 5 years only if low immunity.\nPNEU-C-13 advised for immunocompetent but not covered in most provinces.\nBE AWARE OF SCHEDULING CORRECT TIME BETWEEN THESE VACCINES\n•Pneu-C-13 vaccine should be provided first followed by Pneu-P-23 vaccine at least 8 weeks later.\n•Adults aged 65 years and older who have previously received Pneu-P-23 can receive Pneu-C-13 vaccine if at least one year has passed since immunization with Pneu-P-23 vaccine.\n\n•Influenza yearly\n\nSOURCE: NACI: [[National Advisory Committe on Immunization; https://www.canada.ca/en/public-health/services/immunization/national-advisory-committee-on-immunization-naci.html]]",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
@@ -485,6 +962,9 @@
     "Subject": "Get immunized",
     "General Patient Text": "For best information download the [[app CanImmunize; https://www.canimmunize.ca/en/home]]\n\nAGE 18-49:\nThis schedule assumes the patient has  been vaccinated in childhood\n•Td (Tetanus-diphtheria) every 10 years\n•Tdap(Tetanus,diphtheria, acellular pertussis or whooping cough):once in your lifetime\n•Measles Mumps Rubella:it is advised that  most adults should have  2 doses of this vaccine\n•HPV: recommended for all females and males from ages 9 to 26. The vaccine is also safe over age 26. [[more; https://www.reframehealthlab.com/should-you-get-the-hpv-vaccine/]]\n•Influenza: is recommended for all adults. For high risk groups see CanImmunize app\n•Pneumococcal, varicella,  meningococcal,shingles are recommended for some high risk groups seeCANImmunize app",
     "Health Provider Text": "n/a",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 49
@@ -495,6 +975,9 @@
     "Subject": "Get immunized",
     "General Patient Text": "For best information download the [[app CanImmunize; https://www.canimmunize.ca/en/home]]\n\nAGE 50 and over:\nThis schedule assumes the patient has  been vaccinated in childhood\n•Td (Tetanus-diphtheria) every 10 years\n•Tdap(Tetanus,diphtheria, acellular pertussis or whooping cough):once in your lifetime\n•Measles Mumps Rubella:it is advised that  most adults should have  2 doses of this vaccine\n•Influenza: is recommended for all adults. For high risk groups see CanImmunize app\n•Pneumococcal, varicella,  meningococcal are recommended for some high risk groups seeCANImmunize app\n•Shingles vaccine: \nShingrix recommended for 50 and over but you may have to pay for this most provinces not funding yet [[Shingrix; https://www.cdc.gov/vaccines/vpd/shingles/public/shingrix/index.html]]\n\nAGE 60 and over:\n•Shingles vaccine: Shingrix or Zostavax, your province may cover Zostavax but not Shingrix,discuss with your provider [[more info; https://www.cdc.gov/vaccines/vpd/shingles/public/shingrix/index.html]]\n\n\nAGE 65and over: \n•Pneumococca: Pneumococcal 23 is paid for by your province,Pneumococcal 13 may not be paid for by your province. Discuss with your doctor\n•Influenza yearly",
     "Health Provider Text": "n/a",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "all",
     "Minimum age": 50,
     "Maximum age": 150
@@ -505,6 +988,9 @@
     "Subject": "Smoking",
     "General Patient Text": "Recommended to quit or reduce.\nGet help with websites, groups, phone lines in each province.\n[[More; http://www.smokershelpline.ca/]]",
     "Health Provider Text": "n/a",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
@@ -515,6 +1001,9 @@
     "Subject": "Testing for Lung Cancer",
     "General Patient Text": "Testing with a CT scan (special xray)\nfor certain smokers or ex smokers\nis suggested by the Canadian Task Force,\nbut no province or territory-wide programs yet in place.\nThere can be harms so this is being studied carefully.\n[[More; http://www.cancer.ca/en/cancer-information/cancer-type/lung/finding-cancer-early/?region=on]]\nSome pilot projects underway, ask your provider.",
     "Health Provider Text": "n/a",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "all",
     "Minimum age": 55,
     "Maximum age": 74
@@ -525,6 +1014,9 @@
     "Subject": "Smoking",
     "General Patient Text": "n/a",
     "Health Provider Text": "•Ask all patients about tobacco use, \n•Advise stopping this,\n•Use behavioral  interventions\n•As needed use approved pharmacotherapy to promote cessation.\n[[USPSTF A (2013); https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/tobacco-use-in-adults-and-pregnant-women-counseling-and-interventions]]\n[[video; https://www.youtube.com/watch?v=URiKA7CKtfc]]",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
@@ -535,6 +1027,9 @@
     "Subject": "Lung Cancer screening",
     "General Patient Text": "n/a",
     "Health Provider Text": "Low dose CT scan screening\nrecommended by Canadian Task Force (CTF)for certain patients 55-74 \nBUT no province or territory-wide programs yet,\nsome pilot projects only in certain areas.\nCosts and Harms/Benefits being studied.\n\nCriteria by CTF for inclusion:\n•Age 55-74\n•30 pack-year history or more\n•Currently smoke\n•Or have quit less than 15 years ago\n•Annual screening, up to 3 consecutive times. \n\n[[CTF recommendation; https://canadiantaskforce.ca/guidelines/published-guidelines/lung-cancer/]]",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
@@ -545,6 +1040,9 @@
     "Subject": "What is Dementia?",
     "General Patient Text": "Dementia is a type of disease \nthat affects memory and thinking. \nThis is different than memory loss from normal aging.\n[[normal aging vs dementia; http://alzheimer.ca/en/Home/About-dementia/What-is-dementia/Normal-aging-vs-dementia]]\nDementia can have different causes:\n•Alzheimer's disease\n•Vascular Dementia (due to strokes)\n•Correctable causes: Thyroid, Vitamin Deficiencies\n[[more; http://alzheimer.ca/en/Home/About-dementia/What-is-dementia]]",
     "Health Provider Text": "n/a",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
@@ -555,6 +1053,9 @@
     "Subject": "Prevention of Dementia",
     "General Patient Text": "•Be physically active\n•Eat a healthy diet\n•Maintain a healthy weight/BMI\n•Don’t smoke or drink excessive alcohol\n•Keep your blood pressure, blood sugar and cholesterol in a healthy range\n•Stay connected socially\n•Challenge your brain with games, learning\n•Reduce stress\n•Protect your head with a helmet in sports \n\n[[more; http://alzheimer.ca/en/simcoecounty/About-dementia/Alzheimer-s-disease/Risk-factors]]",
     "Health Provider Text": "Recommend your patients:\n•Be physically active\n•Eat a healthy diet\n•Maintain a healthy weight/BMI\n•Don’t smoke or drink excessive alcohol\n•Keep their blood pressure, blood sugar and cholesterol in a healthy range\n•Stay connected socially\n•Challenge their brain with games, learning\n•Reduce stress\n•Protect their head with a helmet in sports \n[[more; http://alzheimer.ca/en/simcoecounty/About-dementia/Alzheimer-s-disease/Risk-factors]]",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
@@ -565,6 +1066,9 @@
     "Subject": "Testing available in certain situations",
     "General Patient Text": "Memory testing \nmay be done by your health care provider\nas you age,\nif you or family or friends are concerned.",
     "Health Provider Text": "Screen with MOCA or MMSE if friends, family or patient report memory issues\n[[canadian task force; https://canadiantaskforce.ca/tools-resources/cognitive-impairment-2/cognitive-impairment-clinician-faq/]]",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "all",
     "Minimum age": 50,
     "Maximum age": 150
@@ -575,6 +1079,9 @@
     "Subject": "Information sources",
     "General Patient Text": "To prevent diabetes, obesity, heart disease, cancer and more\n[[Canadian Food Guide; https://food-guide.canada.ca/en/]]\n[[Heart and Stroke; https://www.heartandstroke.ca/get-healthy/healthy-eating]]\n[[Diabetes Canada; https://www.diabetes.ca/nutrition---fitness]]",
     "Health Provider Text": "[[Canadian Food Guide; https://food-guide.canada.ca/en/]]\n[[Heart and Stroke; https://www.heartandstroke.ca/get-healthy/healthy-eating]]\n[[Diabetes Canada; https://www.diabetes.ca/nutrition---fitness]]",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
@@ -585,6 +1092,9 @@
     "Subject": "Eat 5 or more servings of vegetables and fruit a day",
     "General Patient Text": "Some sources say 5 servings or more, some say 7\n[[what is a serving?; http://www.unlockfood.ca/getmedia/255dbbe6-23cd-4adf-9aba-f18310f09e3d/Handy-Servings-Guide-English-for-web-FINAL-October-2015.aspx)of%20vegetables%20and%20fruit/day]]",
     "Health Provider Text": "Some sources say 5 or more servings, some say 7\n[[what is a serving?; http://www.unlockfood.ca/getmedia/255dbbe6-23cd-4adf-9aba-f18310f09e3d/Handy-Servings-Guide-English-for-web-FINAL-October-2015.aspx)of%20vegetables%20and%20fruit/day]] \n[[See evidence; http://jandonline.org/article/S2212-2672(14)01871-1/fulltext]]\nNo specific  CTFPHC guideline but recommended for preventing diabetes,heart disease, cancer etc \nUSPSTF B 2014 for BMI>=25",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
@@ -595,6 +1105,9 @@
     "Subject": "Eat whole grains and limit fat, salt, sugar",
     "General Patient Text": "Use a [[healthy plate; http://www.healthycanadians.gc.ca/eating-nutrition/healthy-eating-saine-alimentation/tips-conseils/interactive-tools-outils-interactifs/eat-well-bien-manger-eng.php]]",
     "Health Provider Text": "Use a [[healthy plate; http://www.healthycanadians.gc.ca/eating-nutrition/healthy-eating-saine-alimentation/tips-conseils/interactive-tools-outils-interactifs/eat-well-bien-manger-eng.php]]:\n[[See evidence; http://jandonline.org/article/S2212-2672(14)01871-1/fulltext]]",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
@@ -605,6 +1118,9 @@
     "Subject": "Recommendations",
     "General Patient Text": "n/a",
     "Health Provider Text": "Physical activity\nprevents heart disease, cancer, depression and [[more; https://www.reframehealthlab.com/23-and-12-hours/]]\n\nThe recommended minimum amount of physical activity\nis 150 minutes a week of moderate intensity exercise. \nDefinition of moderate intensity:\nwhile you are active you have enough breath to say a short sentence but  not enough to sing",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
@@ -615,6 +1131,9 @@
     "Subject": "References/Handouts",
     "General Patient Text": "n/a",
     "Health Provider Text": "•[[more info for age 18-64; http://www.csep.ca/CMFiles/Guidelines/CSEP_PAGuidelines_adults_en.pdf]]\n•[[more info for age 65+; http://csepguidelines.ca/wp-content/uploads/2018/03/CSEP_PAGuidelines_older-adults_en.pdf]]\n\n•[[medical reference; http://www.cmaj.ca/content/174/6/801.full.pdf+html]]",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
@@ -625,6 +1144,9 @@
     "Subject": "Frequency and type of physical exam",
     "General Patient Text": "n/a",
     "Health Provider Text": "IN PATIENTS WITH NO RISK FACTORS, SYMPTOMS, DISEASES OR MEDICATION:\n•Measure blood pressure, height, weight and BMI \n•[[\"at appropriate medical visits\" according to CTFPHC;  https://canadiantaskforce.ca/guidelines/published-guidelines/hypertension/]]\n•[[CHEP guidelines for diagnosis of hypertension; https://guidelines.hypertension.ca/wp-content/uploads/2019/06/Diagnostic_Algorithm_2018-online.jpg]]\n•[[more info on physical exams; https://choosingwiselycanada.org/family-medicine/]]\n\n•Age 18-39 we are recommending patients see their provider every 1-3 years based on above recommendations, this is not evidence-based, this is not for a head to toe exam.\n•Age 40 and above we recommend a visit every 1-2 years as there are more screening tests and  more morbidity, not evidence-based.\n\nIN PATIENTS WITH RISK FACTORS, SYMPTOMS,DISEASES OR MEDICATIONS:\nSEE MORE OFTEN",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
@@ -635,6 +1157,9 @@
     "Subject": "How often?",
     "General Patient Text": "IF YOU ARE HEALTHY WITH NO RISKS FOR DISEASE:\nSee your health care provider every 1-3 years",
     "Health Provider Text": "n/a",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 39
@@ -645,6 +1170,9 @@
     "Subject": "How often?",
     "General Patient Text": "IF YOU ARE HEALTHY WITH NO RISKS FOR DISEASE: see your health care provider every 1-2 years",
     "Health Provider Text": "n/a",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "all",
     "Minimum age": 40,
     "Maximum age": 150
@@ -655,6 +1183,9 @@
     "Subject": "What is needed?",
     "General Patient Text": "•Blood pressure\n•Height, weight, Body Mass Index \n[[bmi; https://www.unlockfood.ca/en/Articles/Weight-Loss/BMI-Calculator.aspx]]\n•Other tests such as Pap Tests for women \n•After 40 more tests required see info in our app\n\n•SEE YOUR PROVIDER MORE OFTEN IF MEASUREMENTS ABNORMAL \n                          \n[[more; https://choosingwiselycanada.org/health-check-ups/]]\n\nIF YOU HAVE HEALTH PROBLEMS, SYMPTOMS, RISK FACTORS OR ARE ON MEDICATION\nyou need a more complete physical exam, more often, discuss with your provider",
     "Health Provider Text": "n/a",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
@@ -665,6 +1196,9 @@
     "Subject": "Prevent Sexually Transmitted Infections (STIs)",
     "General Patient Text": "•Get tested for STIs every year under age 25",
     "Health Provider Text": "n/a",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "f",
     "Minimum age": 18,
     "Maximum age": 24
@@ -675,6 +1209,9 @@
     "Subject": "Prevent Sexually Transmitted Infections (STIs)",
     "General Patient Text": "•Practice safe sex:\nuse a [[condom or other protection; https://www.cdc.gov/teenpregnancy/pdf/Teen-Condom-Fact_Sheet-English-March-2016.pdf]]\n\n•Get tested for STIs:\nif you have a new partner, multiple partners,\nif you do not use protection, have an STI, or are otherwise at risk.\n\n•Get tested for HIV at any age.\n\nMore info:\n[[sexual activity;http://www.sexandu.ca/]]\n[[infections; https://www.canada.ca/en/public-health/services/infectious-diseases/sexual-health-sexually-transmitted-infections/sexually-transmitted-infections-sexual-health-facts-information-public.html#geninfo]]",
     "Health Provider Text": "n/a",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "f",
     "Minimum age": 18,
     "Maximum age": 150
@@ -685,7 +1222,62 @@
     "Subject": "Prevent Sexually Transmitted Infections (STIs)",
     "General Patient Text": "n/a",
     "Health Provider Text": "Safe sex and STI counselling for all sexually active patients.\nSee patient info for reliable websites.\n\nTesting\n•25 years and under screen yearly for chlamydia/gonorrhea if sexually active\n[[USPSTF 2014; https://www.uspreventiveservicestaskforce.org/Page/Document/UpdateSummaryFinal/chlamydia-and-gonorrhea-screening]]\n•25 and over screen according to risk, see below\n•Screen for other STIs according to risk (new partner, multiple partners, serial monogamous relationships,unprotected sex, substance use,sex with blood exchange,sharing sex toys)\n•Offer HIV testing to all:\n[[Public Health Agency of Canada recommendation; https://www.canada.ca/en/public-health/services/hiv-aids/hiv-screening-testing-guide.html]]; supported by USPSTF 2013 and CDC, \n[[CTFPHC recommends only if at risk; https://canadiantaskforce.ca/guidelines/appraised-guidelines/hiv/]]",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "f",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Genitalia",
+    "Topic heading": "Sex",
+    "Subject": "TG - Prevent Sexually Transmitted Infections",
+    "General Patient Text": "TG Patient text",
+    "Health Provider Text": "TG Health Provider text",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
+    "Gender": "tg",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Genitalia",
+    "Topic heading": "Sex",
+    "Subject": "TG - Prevent Sexually Transmitted Infections",
+    "General Patient Text": "TG Patient text",
+    "Health Provider Text": "TG Health Provider text",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "TG Bottom surgery text",
+    "Hormone Therapy Text": "n/a",
+    "Gender": "tg",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Genitalia",
+    "Topic heading": "Sex",
+    "Subject": "NB - Prevent Sexually Transmitted Infections",
+    "General Patient Text": "NB Patient text",
+    "Health Provider Text": "NB Health Provider text",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
+    "Gender": "nb",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Genitalia",
+    "Topic heading": "Sex",
+    "Subject": "NB - Prevent Sexually Transmitted Infections",
+    "General Patient Text": "NB Patient text",
+    "Health Provider Text": "NB Health Provider text",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "NB Bottom surgery text",
+    "Hormone Therapy Text": "n/a",
+    "Gender": "nb",
     "Minimum age": 18,
     "Maximum age": 150
   },
@@ -695,6 +1287,9 @@
     "Subject": "Prevent Sexually Transmitted Infections (STIs)",
     "General Patient Text": "n/a",
     "Health Provider Text": "Safe sex and STI counselling for all sexually active patients.\nSee patient info for reliable websites.\n\nTesting\n•25 years and under screen yearly for chlamydia/gonorrhea if sexually active\n[[USPSTF 2014; https://www.uspreventiveservicestaskforce.org/Page/Document/UpdateSummaryFinal/chlamydia-and-gonorrhea-screening]]\n•25 and over screen according to risk, see below\n•screen for other STIs according to risk (new partner, multiple partners, serial monogamous relationships,unprotected sex, substance use,sex with blood exchange,sharing sex toys)\n•offer HIV testing to all:\n[[Public Health Agency of Canada recommendation; https://www.canada.ca/en/public-health/services/hiv-aids/hiv-screening-testing-guide.html]]; supported by USPSTF 2013 and CDC, \n[[CTFPHC recommends only if at risk; https://canadiantaskforce.ca/guidelines/appraised-guidelines/hiv/]]",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "m",
     "Minimum age": 18,
     "Maximum age": 150
@@ -705,6 +1300,9 @@
     "Subject": "Prevent Prostate Cancer",
     "General Patient Text": "n/a",
     "Health Provider Text": "Advise to\n•Eat a healthy diet.\n•Be active most days of the week.\n•Keep a healthy weight.",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "m",
     "Minimum age": 18,
     "Maximum age": 150
@@ -715,6 +1313,9 @@
     "Subject": "Screening for Prostate Cancer",
     "General Patient Text": "n/a",
     "Health Provider Text": "•Canadian task force (2014): Do not screen.\n[[Canadian patient handout 1000 person; https://canadiantaskforce.ca/wp-content/uploads/2016/05/2014-prostate-cancer-harms-and-benefits-colour-en.pdf]]\n[[Canadian patient handout;  https://canadiantaskforce.ca/wp-content/uploads/2016/12/CTFPHC_Prostate-Cancer_HarmsBenefits_FINAL.pdf]]\n\n•US Task Force(2018): Discuss with your patient.(C recommendation)\nIncorporates more recent research.\n[[US patient handout; pdf/prostate-cancer-infographic-5.pdf]]\n[[More info; https://www.uspreventiveservicestaskforce.org/uspstf/document/RecommendationStatementFinal/prostate-cancer-screening]]",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "m",
     "Minimum age": 55,
     "Maximum age": 69
@@ -725,6 +1326,9 @@
     "Subject": "Prevent Sexually Transmitted Infections (STI)",
     "General Patient Text": "•Get tested for STIs  every year under age 25.",
     "Health Provider Text": "n/a",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "m",
     "Minimum age": 18,
     "Maximum age": 24
@@ -735,6 +1339,9 @@
     "Subject": "Prevent Sexually Transmitted Infections (STI)",
     "General Patient Text": "•Practice safe sex:\nuse a [[condom or other protection; https://www.cdc.gov/teenpregnancy/pdf/Teen-Condom-Fact_Sheet-English-March-2016.pdf]]\n\n•Get tested for STIs:\nif you have a new partner, multiple partners,\nif you do not use protection, have an STI,\nor are otherwise at risk.\n\n•Get tested for HIV at any age.\n\nMore info:\n[[sexual activity;http://www.sexandu.ca/]]\n[[infections; https://www.canada.ca/en/public-health/services/infectious-diseases/sexual-health-sexually-transmitted-infections/sexually-transmitted-infections-sexual-health-facts-information-public.html#geninfo]]",
     "Health Provider Text": "n/a",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "m",
     "Minimum age": 18,
     "Maximum age": 150
@@ -743,8 +1350,11 @@
     "Button": "Genitalia",
     "Topic heading": "Sex & Prostate",
     "Subject": "Prevent Prostate Cancer",
-    "General Patient Text": "Prevent Prostate Cancer:\n•Eat a healthy diet.\n•Be active most days of the week.\n•Keep your weight at a healthy level.\n[[What is prostate cancer?; http://www.cancer.ca/en/cancer-information/cancer-type/prostate/prostate-cancer/?region=on]]\n[[Risks; http://www.cancer.ca/en/cancer-information/cancer-type/prostate/risks/?region=on]]\n\nFor information on testing for prostate cancer (psa test) see our app: male ages 55 to 69, sex and prostate section.",
+    "General Patient Text": "•Eat a healthy diet.\n•Be active most days of the week.\n•Keep your weight at a healthy level.\n[[What is prostate cancer?; http://www.cancer.ca/en/cancer-information/cancer-type/prostate/prostate-cancer/?region=on]]\n[[Risks; http://www.cancer.ca/en/cancer-information/cancer-type/prostate/risks/?region=on]]\n\nFor information on testing for prostate cancer (psa test) see our app: male ages 55 to 69, sex and prostate section.",
     "Health Provider Text": "n/a",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "m",
     "Minimum age": 18,
     "Maximum age": 150
@@ -755,9 +1365,13 @@
     "Subject": "Testing for Prostate Cancer",
     "General Patient Text": "•In Canada testing for finding prostate cancer early is not recommended.\n[[Canadian patient handout; https://canadiantaskforce.ca/wp-content/uploads/2016/05/2014-prostate-cancer-patient-faq-colour-en.pdf]]\n\n•In the US it is  recommended to discuss testing for prostate cancer with your health care provider.There are some benefits and some harms.\n[[Video and more info; https://www.uspreventiveservicestaskforce.org/uspstf/document/RecommendationStatementFinal/prostate-cancer-screening]]\n[[US patient handout; pdf/prostate-cancer-infographic-5.pdf]]",
     "Health Provider Text": "n/a",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "m",
     "Minimum age": 55,
     "Maximum age": 69
+
   },
   {
     "Button": "Liver",
@@ -765,9 +1379,13 @@
     "Subject": "Alcohol",
     "General Patient Text": "•Women: have 10 or less drinks a week \n•Men: Have 15 or less drinks per week\nWhat is a “drink”?\n\n[[image;images/size_of_drink.jpg]]\n[[more;https://www.camh.ca/-/media/files/canadas-low-risk-guidelines-pdf.pdf]]",
     "Health Provider Text": "•Women: have 10 or less drinks a week\n•Men: have 15 or less drinks per week\nWhat is a \"drink\"?\n\n[[image;images/size_of_drink.jpg]]\n\n[[Source; https://www.camh.ca/-/media/files/canadas-low-risk-guidelines-pdf.pdf]]\nScreening for misuse and behavioural counseling [[USPSTF B (2018); https://www.uspreventiveservicestaskforce.org/Page/Document/UpdateSummaryFinal/unhealthy-alcohol-use-in-adolescents-and-adults-screening-and-behavioral-counseling-interventions?ds=1&s=alcohol]]",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
+
   },
   {
     "Button": "Liver",
@@ -775,6 +1393,9 @@
     "Subject": "Drug Abuse",
     "General Patient Text": "Get help if you are addicted to a substance/gambling.\nEach province or territory has a help line: [[more; https://www.canada.ca/en/health-canada/services/substance-use/get-help/get-help-problematic-substance-use.html]]",
     "Health Provider Text": "Help available for patients addicted to a substance/gambling:\neach province or territory has a help line: [[more; https://www.canada.ca/en/health-canada/services/substance-use/get-help/get-help-problematic-substance-use.html]]:\nScreening and counseling USPSTF I (2018) under review",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
@@ -785,6 +1406,9 @@
     "Subject": "Stop Skin Cancer",
     "General Patient Text": "•Wear protective clothing\n•Limit time in the sun (worst time: between 10 am and 3 pm) \n•Wear sunscreen (minimum SPF 30) \n[[More info; https://www.canada.ca/en/public-health/services/sun-safety/skin-cancer.html]]",
     "Health Provider Text": "To prevent Melanoma:\nDecrease exposure to sun with:protective clothing, sunscreen min SPF 30\n[[CTFPHC appraised guideline 2014;https://canadiantaskforce.ca/guidelines/appraised-guidelines/melanoma/]]",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
@@ -795,6 +1419,9 @@
     "Subject": "See an Optometrist",
     "General Patient Text": "n/a",
     "Health Provider Text": "Vision screening:\nConsensus only recommendation from Canadian Ophthalmol Society 2007\nCurrently in many provinces this would be done by optometrists\nNew guideline available soon.\n\nIf high risk more frequent screening advised than below.\nHIgh risk:African American, high myopia,diabetes or hypertension.\n\n•18-40 every 10 years\n•41-55 every 5 years\n•56-64 every 3 years\n•65 and above every year\n\n\n[[current guideline under review; https://c2-preview.prosites.com/187380/wy/docs/COSVisionScreeningCPGEng_Feb07.pdf]]",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
@@ -805,6 +1432,9 @@
     "Subject": "See an Optometrist",
     "General Patient Text": "•Age 18-40: Every 10 years",
     "Health Provider Text": "n/a",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 40
@@ -815,6 +1445,9 @@
     "Subject": "See an Optometrist",
     "General Patient Text": "•Age 41-55: Every 5 years",
     "Health Provider Text": "n/a",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "all",
     "Minimum age": 41,
     "Maximum age": 55
@@ -825,6 +1458,9 @@
     "Subject": "See an Optometrist",
     "General Patient Text": "•Age 56 to 64: Every 3 years",
     "Health Provider Text": "n/a",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "all",
     "Minimum age": 56,
     "Maximum age": 64
@@ -835,6 +1471,9 @@
     "Subject": "See an Optometrist",
     "General Patient Text": "Above age 65: Annually",
     "Health Provider Text": "n/a",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "all",
     "Minimum age": 65,
     "Maximum age": 150
@@ -845,6 +1484,9 @@
     "Subject": "Age 18 only",
     "General Patient Text": "•Calcium: 1300 mg/day; Vitamin D: 600 IU/ day\nPregnant or lactating same as above\n•Folic acid: 0.4 to 1 mg a day for women 3 months before and after conception or always\n[[more information on folic acid; https://www.canada.ca/en/public-health/services/pregnancy/folic-acid.html]]\n[[take more folic acid if; https://www.canada.ca/en/public-health/services/pregnancy/folic-acid.html#a4]]",
     "Health Provider Text": "•Calcium: 1300 mg/day; Vitamin D: 600 IU/ day\nPregnant or lactating same as above\n•Folic acid: 0.4 to 1 mg a day for women 3 months before and after conception or always\n[[more information on folic acid; https://www.canada.ca/en/public-health/services/pregnancy/folic-acid.html]]\n[[take more folic acid if; https://www.canada.ca/en/public-health/services/pregnancy/folic-acid.html#a4]]\n[[SOGC guideline; https://www.jogc.com/article/S1701-2163(15)30230-9/pdf]]",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "f",
     "Minimum age": 18,
     "Maximum age": 18
@@ -855,6 +1497,9 @@
     "Subject": "Age 19-49",
     "General Patient Text": "•Calcium: 1000mg/day; Vitamin D: 400-1000 IU/day\nPregnant or lactating same as 18 year old\n•Folic acid: 0.4 to 1 mg a day for women 3 months before and after conception or always\n[[more information on folic acid; https://www.canada.ca/en/public-health/services/pregnancy/folic-acid.html]]\n[[take more folic acid if; https://www.canada.ca/en/public-health/services/pregnancy/folic-acid.html#a4]]",
     "Health Provider Text": "•Calcium: 1000mg/day; Vitamin D: 400-1000 IU/day\nPregnant or lactating same as 18 year old\n•Folic acid: 0.4 to 1 mg a day for women 3 months before and after conception or always\n[[more information on folic acid; https://www.canada.ca/en/public-health/services/pregnancy/folic-acid.html]]\n[[take more folic acid if; https://www.canada.ca/en/public-health/services/pregnancy/folic-acid.html#a4]]\n[[SOGC guideline; https://www.jogc.com/article/S1701-2163(15)30230-9/pdf]]",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "f",
     "Minimum age": 19,
     "Maximum age": 49
@@ -862,9 +1507,38 @@
   {
     "Button": "Bone",
     "Topic heading": "Vitamins, Minerals",
+    "Subject": "TG - Vitamin",
+    "General Patient Text": "TG Patient text",
+    "Health Provider Text": "TG Health Provider text",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
+    "Gender": "tg",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Bone",
+    "Topic heading": "Vitamins, Minerals",
+    "Subject": "NB - Vitamin",
+    "General Patient Text": "NB Patient text",
+    "Health Provider Text": "NB Health Provider text",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
+    "Gender": "nb",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Bone",
+    "Topic heading": "Vitamins, Minerals",
     "Subject": "Age 18 only",
     "General Patient Text": "•Calcium: 1300 mg/day; Vitamin D: 600 IU/ day",
     "Health Provider Text": "•Calcium: 1300 mg/day; Vitamin D: 600 IU/ day",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "m",
     "Minimum age": 18,
     "Maximum age": 18
@@ -875,6 +1549,9 @@
     "Subject": "Age 19-49",
     "General Patient Text": "•Calcium: 1000mg/day; Vitamin D: 400-1000 IU/day",
     "Health Provider Text": "•Calcium: 1000mg/day; Vitamin D: 400-1000 IU/day",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "m",
     "Minimum age": 19,
     "Maximum age": 49
@@ -885,6 +1562,9 @@
     "Subject": "Age 50 and above",
     "General Patient Text": "•Calcium: 1200mg/day; Vitamin D: 800-2000 IU/day",
     "Health Provider Text": "•Calcium: 1200mg/day; Vitamin D: 800-2000 IU/day",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "all",
     "Minimum age": 50,
     "Maximum age": 150
@@ -895,6 +1575,9 @@
     "Subject": "All ages",
     "General Patient Text": "Better to get calcium from food rather than supplements.\n[[More; https://osteoporosis.ca/bone-health-osteoporosis/calcium-calculator/#page-1]]\nIf you take a Calcium supplement take no more than 500 mg a day.\n\nVitamin D:\nTaking more than 2000 IU a day of vitamin D should be done under medical supervision \n[[more info; https://osteoporosis.ca/bone-health-osteoporosis/calcium-and-vitamin-d/]]",
     "Health Provider Text": "Better to get Calcium from food rather than supplements.\nif supplement needed to consider to 500 mg max\ntaking more than 2000 IU a day of Vitamin D should be done under medical supervision \n\n[[more info; https://osteoporosis.ca/bone-health-osteoporosis/calcium-and-vitamin-d/]]",
+    "Top Surgeries Text": "n/a",
+    "Bottom Surgeries Text": "n/a",
+    "Hormone Therapy Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
