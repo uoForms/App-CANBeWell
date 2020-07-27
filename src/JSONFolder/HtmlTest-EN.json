@@ -1,5 +1,12 @@
 [
   {
+    "Test": "Pros/ Cons of tests",
+    "Patient/Provider Text": "More tests are not always  good for your health,\nsee these links: [[more info 1; https://www.youtube.com/watch?v=8c7qTsVVxXw]]\n[[more info 2;https://choosingwiselycanada.org/health-check-ups//]]\n[[more info 3; https://choosingwiselycanada.org/family-medicine/]]",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
     "Test": "Bone mineral density",
     "Patient/Provider Text": "If you have risk factors below age 65 this may be done.\nAn x-ray detector scans your spine and hip.\n You receive a very small amount of radiation,\napproximately the same amount you are exposed to if you fly from Toronto to Vancouver.\n[[What is your risk; https://osteoporosis.ca/risk/#page-1]]\n[[More;https://www.mayoclinic.org/diseases-conditions/osteoporosis/in-depth/osteoporosis-risks/art-20304597]]",
     "Gender": "all",
@@ -68,13 +75,6 @@
     "Gender": "f",
     "Minimum age": 21,
     "Maximum age": 69
-  },
-  {
-    "Test": "Pros/ Cons of tests",
-    "Patient/Provider Text": "More tests are not always  good for your health,\nsee these links: [[more info 1; https://www.youtube.com/watch?v=8c7qTsVVxXw]]\n[[more info 2;https://choosingwiselycanada.org/health-check-ups//]]\n[[more info 3; https://choosingwiselycanada.org/family-medicine/]]",
-    "Gender": "all",
-    "Minimum age": 18,
-    "Maximum age": 150
   },
   {
     "Test": "Rubella and Varicella immunity",
