@@ -150,6 +150,7 @@
     "Maximum age": 49
   },
   {
+
     "Button": "Colon",
     "Topic heading": "Colorectal Cancer",
     "Subject": "Screen",
@@ -295,7 +296,27 @@
     "Subject": "nonbinary subj EN",
     "General Patient Text": "nonbinary patient EN",
     "Health Provider Text": "nonbinary provider EN ",
-    "Gender": "all",
+    "Gender": "nb",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "heart",
+    "Topic heading": "trans EN",
+    "Subject": "trans subj EN",
+    "General Patient Text": "trans patient EN",
+    "Health Provider Text": "trans provider EN ",
+    "Gender": "tg",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "trans",
+    "Topic heading": "trans EN",
+    "Subject": "trans subj EN",
+    "General Patient Text": "trans patient EN",
+    "Health Provider Text": "trans provider EN ",
+    "Gender": "tg",
     "Minimum age": 18,
     "Maximum age": 150
   },

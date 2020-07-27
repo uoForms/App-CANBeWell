@@ -38,4 +38,4 @@ export {setGender};
 export {setPatientProvider};
 export {setAge};
 export {setLanguage};
-export (oncheckchange);
+export {oncheckchange};
