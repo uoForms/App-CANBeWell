@@ -636,11 +636,12 @@ class App extends Component {
              
               <form>
                     <div id="field_selection" style={fieldSelectionDiv}>
+                      Options:<br/>
+                      <input type="checkbox" checked={this.state.isHormoneTherapy} onChange={this.onChangeHormoneTherapy} /> Hormone Therapy
+                               <br/>
                       <input type="checkbox" checked={this.state.isTopSurgery} onChange={this.onChangeTopSurgery} />Top Surgery
                                <br/>
                       <input type="checkbox" checked={this.state.isBottomSurgery} onChange={this.onChangeBottomSurgery} /> Bottom Surgery
-                               <br/>
-                      <input type="checkbox" checked={this.state.isHormoneTherapy} onChange={this.onChangeHormoneTherapy} /> Hormone Therapy
                     </div>
                   </form>
               </div>
@@ -748,11 +749,14 @@ class App extends Component {
                   {/*Field selection based on gender*/}
                   <form>
                     <div id="field_selection" style={fieldSelectionDiv}>
+                    Options: <br/>
+                    
+                      <input type="checkbox" checked={this.state.isHormoneTherapy} onChange={this.onChangeHormoneTherapy} /> Hormone Therapy
+                               <br/>
                       <input type="checkbox" checked={this.state.isTopSurgery} onChange={this.onChangeTopSurgery} />Top Surgery
                                <br/>
                       <input type="checkbox" checked={this.state.isBottomSurgery} onChange={this.onChangeBottomSurgery} /> Bottom Surgery
-                               <br/>
-                      <input type="checkbox" checked={this.state.isHormoneTherapy} onChange={this.onChangeHormoneTherapy} /> Hormone Therapy
+                               
                     </div>
                   </form>
                 </div>
