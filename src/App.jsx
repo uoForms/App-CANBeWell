@@ -397,7 +397,7 @@ class App extends Component {
     });
   }
 
-  //sideBar func - Temporary commented June 2020
+  //Black sideBar func - Temporary commented June 2020
   /*
   openNav = () => {
     document.getElementById("mySidenav").style.width = "250px";
