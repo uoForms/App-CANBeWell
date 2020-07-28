@@ -371,34 +371,6 @@
 
   },
   {
-    "Button": "Breast",
-    "Topic heading": "Breast Cancer",
-    "Subject": "NB - Breast Cancer with Hormone T.",
-    "General Patient Text": "n/a",
-    "Health Provider Text": "n/a",
-    "Top Surgeries Text": "4",
-    "Bottom Surgeries Text": "5",
-    "Hormone Therapy Text": "NB Hormone Therapy text",
-    "Gender": "nb",
-    "Minimum age": 18,
-    "Maximum age": 150
-
-  },
-  {
-    "Button": "Breast",
-    "Topic heading": "Breast Cancer",
-    "Subject": "NB - Breast Cancer with Top surgery",
-    "General Patient Text": "n/a",
-    "Health Provider Text": "n/a",
-    "Top Surgeries Text": "NB Top surgery text",
-    "Bottom Surgeries Text": "6",
-    "Hormone Therapy Text": "7",
-    "Gender": "nb",
-    "Minimum age": 18,
-    "Maximum age": 150
-
-  },
-  {
     "Button": "Uterus",
     "Topic heading": "Cervical Cancer",
     "Subject": "Get tested for Cervical Cancer \n(Pap test)",
