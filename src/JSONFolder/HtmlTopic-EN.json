@@ -11,7 +11,6 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-
   },
   {
     "Button": "Covid",
@@ -103,7 +102,6 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-
   },
   {
     "Button": "Covid",
@@ -130,7 +128,6 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-
   },
   {
     "Button": "Covid",
@@ -144,21 +141,19 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-
   },
   {
     "Button": "Covid",
     "Topic heading": "COVID-19",
     "Subject": "Updated research",
     "General Patient Text": "n/a",
-    "Health Provider Text": "APPRAISED EVIDENCE\n[[MCMASTER EBM; https://plus.mcmaster.ca/COVID-19]]\n[[OXFORD Evidence Service; https://www.cebm.net/oxford-covid-19-evidence-service/]]\nJOURNALS\n[[CMAJ; https://www.cmaj.ca/covid-19]]\n[[BMJ's Coronavirus (covid-19) Hub; https://www.bmj.com/coronavirus]]\n[[JAMA;https://jamanetwork.com/collections/46099/coronavirus-covid19]]\n[[NEJM; https://www.nejm.org/coronavirus]]\n[[The Lancet; https://www.thelancet.com/coronavirus/archive?]]\nPUBLIC HEALTH AGENCY OF CANADA\n[[For health professionals; https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/health-professionals.html]]",
+    "Health Provider Text": "APPRAISED EVIDENCE\n[[MCMASTER EBM; https://plus.mcmaster.ca/COVID-19]]\n[[OXFORD Evidence Service; https://www.cebm.net/oxford-covid-19-evidence-service/]]\nJOURNALS\n[[CMAJ; https://www.cmaj.ca/covid-19]]\n[[BMJ; https://www.bmj.com/coronavirus]]\n[[JAMA;https://jamanetwork.com/collections/46099/coronavirus-covid19]]\n[[NEJM; https://www.nejm.org/coronavirus]]\n[[The Lancet; https://www.thelancet.com/coronavirus/archive?]]\nPUBLIC HEALTH AGENCY OF CANADA\n[[For health professionals; https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/health-professionals.html]]",
     "Top Surgeries Text": "n/a",
     "Bottom Surgeries Text": "n/a",
     "Hormone Therapy Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-
   },
   {
     "Button": "aorta",
@@ -172,7 +167,6 @@
     "Gender": "m",
     "Minimum age": 65,
     "Maximum age": 80
-
   },
   {
     "Button": "aorta",
@@ -186,7 +180,6 @@
     "Gender": "m",
     "Minimum age": 65,
     "Maximum age": 80
-
   },
   {
     "Button": "Figure outside body walking",
@@ -200,7 +193,6 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-
   },
   {
     "Button": "Figure outside body walking",
@@ -214,7 +206,6 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-
   },
   {
     "Button": "Bone",
@@ -228,7 +219,6 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-
   },
   {
     "Button": "Bone",
@@ -242,7 +232,6 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 64
-
   },
   {
     "Button": "Bone",
@@ -256,7 +245,6 @@
     "Gender": "all",
     "Minimum age": 65,
     "Maximum age": 150
-
   },
   {
     "Button": "Breast",
@@ -270,7 +258,6 @@
     "Gender": "f",
     "Minimum age": 18,
     "Maximum age": 150
-
   },
   {
     "Button": "Breast",
@@ -284,7 +271,6 @@
     "Gender": "f",
     "Minimum age": 50,
     "Maximum age": 74
-
   },
   {
     "Button": "Breast",
@@ -298,7 +284,6 @@
     "Gender": "f",
     "Minimum age": 75,
     "Maximum age": 150
-
   },
   {
     "Button": "Breast",
@@ -312,63 +297,32 @@
     "Gender": "f",
     "Minimum age": 18,
     "Maximum age": 150
-
   },
   {
     "Button": "Breast",
     "Topic heading": "Breast Cancer",
-    "Subject": "TG - Breast Cancer - General",
-    "General Patient Text": "TG Patient text",
-    "Health Provider Text": "TG Health Provider text",
-    "Top Surgeries Text": "n/a",
-    "Bottom Surgeries Text": "n/a",
-    "Hormone Therapy Text": "n/a",
+    "Subject": "TG - Subject",
+    "General Patient Text": "General TG text - Patient",
+    "Health Provider Text": "General TG text - Provider",
+    "Top Surgeries Text": "TG - with top surgery",
+    "Bottom Surgeries Text": "TG - with Bottom Surgery",
+    "Hormone Therapy Text": "TG - with Hormone Therapy",
     "Gender": "tg",
     "Minimum age": 18,
     "Maximum age": 150
-
   },
   {
     "Button": "Breast",
     "Topic heading": "Breast Cancer",
-    "Subject": "TG - Breast Cancer with Hormone T.",
-    "General Patient Text": "n/a",
-    "Health Provider Text": "n/a",
-    "Top Surgeries Text": "n/a",
-    "Bottom Surgeries Text": "n/a",
-    "Hormone Therapy Text": "TG Hormone Therapy text",
-    "Gender": "tg",
-    "Minimum age": 18,
-    "Maximum age": 150
-
-  },
-  {
-    "Button": "Breast",
-    "Topic heading": "Breast Cancer",
-    "Subject": "TG - Breast Cancer with Top surgery",
-    "General Patient Text": "n/a",
-    "Health Provider Text": "n/a",
-    "Top Surgeries Text": "TG Top surgery text",
-    "Bottom Surgeries Text": "n/a",
-    "Hormone Therapy Text": "n/a",
-    "Gender": "tg",
-    "Minimum age": 18,
-    "Maximum age": 150
-
-  },
-  {
-    "Button": "Breast",
-    "Topic heading": "Breast Cancer",
-    "Subject": "NB -  Breast Cancer - General",
-    "General Patient Text": "NB Patient text",
-    "Health Provider Text": "NB Health Provider text",
-    "Top Surgeries Text": "1",
-    "Bottom Surgeries Text": "2",
-    "Hormone Therapy Text": "NB Hormone Therapy text",
+    "Subject": "NB - Subject",
+    "General Patient Text": "General NB Text - Patient",
+    "Health Provider Text": "General NB Text - Provider",
+    "Top Surgeries Text": "NB- with top surgery",
+    "Bottom Surgeries Text": "NB - with Bottom Surgery",
+    "Hormone Therapy Text": "NB - with Hormone Therapy",
     "Gender": "nb",
     "Minimum age": 18,
     "Maximum age": 150
-
   },
   {
     "Button": "Uterus",
@@ -382,7 +336,6 @@
     "Gender": "f",
     "Minimum age": 21,
     "Maximum age": 69
-
   },
   {
     "Button": "Uterus",
@@ -396,7 +349,6 @@
     "Gender": "f",
     "Minimum age": 70,
     "Maximum age": 150
-
   },
   {
     "Button": "Uterus",
@@ -410,7 +362,32 @@
     "Gender": "f",
     "Minimum age": 18,
     "Maximum age": 150
-
+  },
+  {
+    "Button": "Uterus",
+    "Topic heading": "Cervical Cancer",
+    "Subject": "TG - Subject",
+    "General Patient Text": "General TG text - Patient",
+    "Health Provider Text": "General TG text - Provider",
+    "Top Surgeries Text": "TG - with top surgery",
+    "Bottom Surgeries Text": "TG - with Bottom Surgery",
+    "Hormone Therapy Text": "TG - with Hormone Therapy",
+    "Gender": "tg",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Uterus",
+    "Topic heading": "Cervical Cancer",
+    "Subject": "NB - Subject",
+    "General Patient Text": "General NB Text - Patient",
+    "Health Provider Text": "General NB Text - Provider",
+    "Top Surgeries Text": "NB- with top surgery",
+    "Bottom Surgeries Text": "NB - with Bottom Surgery",
+    "Hormone Therapy Text": "NB - with Hormone Therapy",
+    "Gender": "nb",
+    "Minimum age": 18,
+    "Maximum age": 150
   },
   {
     "Button": "Colon",
@@ -424,7 +401,6 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 49
-
   },
   {
     "Button": "Colon",
@@ -438,7 +414,6 @@
     "Gender": "all",
     "Minimum age": 50,
     "Maximum age": 74
-
   },
   {
     "Button": "Colon",
@@ -452,7 +427,6 @@
     "Gender": "all",
     "Minimum age": 50,
     "Maximum age": 74
-
   },
   {
     "Button": "Colon",
@@ -466,7 +440,6 @@
     "Gender": "all",
     "Minimum age": 75,
     "Maximum age": 150
-
   },
   {
     "Button": "Pancreas",
@@ -480,7 +453,6 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-
   },
   {
     "Button": "Pancreas",
@@ -494,7 +466,6 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-
   },
   {
     "Button": "Pancreas",
@@ -508,62 +479,6 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-
-  },
-  {
-    "Button": "Uterus",
-    "Topic heading": "Cervical Cancer",
-    "Subject": "TG - Cervical Cancer - General",
-    "General Patient Text": "n/a",
-    "Health Provider Text": "TG Health Provider text",
-    "Top Surgeries Text": "top surgery",
-    "Bottom Surgeries Text": "bottom surgery",
-    "Hormone Therapy Text": "hormone",
-    "Gender": "tg",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Uterus",
-    "Topic heading": "Cervical Cancer",
-    "Subject": "NB - Cervical Cancer - General",
-    "General Patient Text": "NB Patient text",
-    "Health Provider Text": "NB Health Provider text",
-    "Top Surgeries Text": "n/a",
-    "Bottom Surgeries Text": "n/a",
-    "Hormone Therapy Text": "n/a",
-    "Gender": "nb",
-    "Minimum age": 18,
-    "Maximum age": 150
-
-  },
-  {
-    "Button": "Uterus",
-    "Topic heading": "Cervical Cancer",
-    "Subject": "NB - Cervical Cancer with Hormone T.",
-    "General Patient Text": "n/a",
-    "Health Provider Text": "n/a",
-    "Top Surgeries Text": "n/a",
-    "Bottom Surgeries Text": "n/a",
-    "Hormone Therapy Text": "NB Hormone Therapy text",
-    "Gender": "nb",
-    "Minimum age": 18,
-    "Maximum age": 150
-
-  },
-  {
-    "Button": "Uterus",
-    "Topic heading": "Cervical Cancer",
-    "Subject": "NB - Cervical Cancer with Bottom surgery",
-    "General Patient Text": "n/a",
-    "Health Provider Text": "n/a",
-    "Top Surgeries Text": "n/a",
-    "Bottom Surgeries Text": "NB Bottom surgery text",
-    "Hormone Therapy Text": "n/a",
-    "Gender": "nb",
-    "Minimum age": 18,
-    "Maximum age": 150
-
   },
   {
     "Button": "Hip",
@@ -577,7 +492,6 @@
     "Gender": "all",
     "Minimum age": 65,
     "Maximum age": 150
-
   },
   {
     "Button": "Ovary",
@@ -591,7 +505,6 @@
     "Gender": "f",
     "Minimum age": 18,
     "Maximum age": 49
-
   },
   {
     "Button": "Ovary",
@@ -605,7 +518,6 @@
     "Gender": "f",
     "Minimum age": 18,
     "Maximum age": 49
-
   },
   {
     "Button": "Ovary",
@@ -619,7 +531,6 @@
     "Gender": "f",
     "Minimum age": 18,
     "Maximum age": 49
-
   },
   {
     "Button": "Ovary",
@@ -633,119 +544,32 @@
     "Gender": "f",
     "Minimum age": 18,
     "Maximum age": 49
-
   },
   {
     "Button": "Ovary",
     "Topic heading": "Family Planning",
-    "Subject": "TG - Family Planning - General",
-    "General Patient Text": "TG Patient text",
-    "Health Provider Text": "TG Health Provider text",
-    "Top Surgeries Text": "n/a",
-    "Bottom Surgeries Text": "n/a",
-    "Hormone Therapy Text": "n/a",
+    "Subject": "TG - Subject",
+    "General Patient Text": "General TG text - Patient",
+    "Health Provider Text": "General TG text - Provider",
+    "Top Surgeries Text": "TG - with top surgery",
+    "Bottom Surgeries Text": "TG - with Bottom Surgery",
+    "Hormone Therapy Text": "TG - with Hormone Therapy",
     "Gender": "tg",
     "Minimum age": 18,
     "Maximum age": 150
-
   },
   {
     "Button": "Ovary",
     "Topic heading": "Family Planning",
-    "Subject": "TG - Family Planning with Hormone T.",
-    "General Patient Text": "n/a",
-    "Health Provider Text": "n/a",
-    "Top Surgeries Text": "n/a",
-    "Bottom Surgeries Text": "n/a",
-    "Hormone Therapy Text": "TG Hormone Therapy text",
-    "Gender": "tg",
-    "Minimum age": 18,
-    "Maximum age": 150
-
-  },
-  {
-    "Button": "Ovary",
-    "Topic heading": "Family Planning",
-    "Subject": "TG - Family Planning with Bottom surgery",
-    "General Patient Text": "n/a",
-    "Health Provider Text": "n/a",
-    "Top Surgeries Text": "n/a",
-    "Bottom Surgeries Text": "TG Bottom surgery text",
-    "Hormone Therapy Text": "n/a",
-    "Gender": "tg",
-    "Minimum age": 18,
-    "Maximum age": 150
-
-  },
-  {
-    "Button": "Ovary",
-    "Topic heading": "Family Planning",
-    "Subject": "TG - Family Planning with Top surgery",
-    "General Patient Text": "n/a",
-    "Health Provider Text": "n/a",
-    "Top Surgeries Text": "TG Top surgery text",
-    "Bottom Surgeries Text": "n/a",
-    "Hormone Therapy Text": "n/a",
-    "Gender": "tg",
-    "Minimum age": 18,
-    "Maximum age": 150
-
-  },
-  {
-    "Button": "Ovary",
-    "Topic heading": "Family Planning",
-    "Subject": "NB - Family Planning - General",
-    "General Patient Text": "NB Patient text",
-    "Health Provider Text": "NB Health Provider text",
-    "Top Surgeries Text": "n/a",
-    "Bottom Surgeries Text": "n/a",
-    "Hormone Therapy Text": "n/a",
+    "Subject": "NB - Subject",
+    "General Patient Text": "General NB Text - Patient",
+    "Health Provider Text": "General NB Text - Provider",
+    "Top Surgeries Text": "NB- with top surgery",
+    "Bottom Surgeries Text": "NB - with Bottom Surgery",
+    "Hormone Therapy Text": "NB - with Hormone Therapy",
     "Gender": "nb",
     "Minimum age": 18,
     "Maximum age": 150
-
-  },
-  {
-    "Button": "Ovary",
-    "Topic heading": "Family Planning",
-    "Subject": "NB - Family Planning with Hormone T.",
-    "General Patient Text": "n/a",
-    "Health Provider Text": "n/a",
-    "Top Surgeries Text": "n/a",
-    "Bottom Surgeries Text": "n/a",
-    "Hormone Therapy Text": "NB Hormone Therapy text",
-    "Gender": "nb",
-    "Minimum age": 18,
-    "Maximum age": 150
-
-  },
-  {
-    "Button": "Ovary",
-    "Topic heading": "Family Planning",
-    "Subject": "NB - Family Planning with Bottom surgery",
-    "General Patient Text": "n/a",
-    "Health Provider Text": "n/a",
-    "Top Surgeries Text": "n/a",
-    "Bottom Surgeries Text": "NB Bottom surgery text",
-    "Hormone Therapy Text": "n/a",
-    "Gender": "nb",
-    "Minimum age": 18,
-    "Maximum age": 150
-
-  },
-  {
-    "Button": "Ovary",
-    "Topic heading": "Family Planning",
-    "Subject": "NB - Family Planning with Top surgery",
-    "General Patient Text": "n/a",
-    "Health Provider Text": "n/a",
-    "Top Surgeries Text": "NB Top surgery text",
-    "Bottom Surgeries Text": "n/a",
-    "Hormone Therapy Text": "n/a",
-    "Gender": "nb",
-    "Minimum age": 18,
-    "Maximum age": 150
-
   },
   {
     "Button": "Heart",
@@ -759,7 +583,6 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-
   },
   {
     "Button": "Heart",
@@ -773,7 +596,6 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-
   },
   {
     "Button": "Heart",
@@ -787,7 +609,6 @@
     "Gender": "m",
     "Minimum age": 18,
     "Maximum age": 39
-
   },
   {
     "Button": "Heart",
@@ -801,7 +622,6 @@
     "Gender": "f",
     "Minimum age": 18,
     "Maximum age": 49
-
   },
   {
     "Button": "Heart",
@@ -815,7 +635,6 @@
     "Gender": "m",
     "Minimum age": 40,
     "Maximum age": 74
-
   },
   {
     "Button": "Heart",
@@ -829,35 +648,6 @@
     "Gender": "f",
     "Minimum age": 50,
     "Maximum age": 74
-
-  },
-  {
-    "Button": "Heart",
-    "Topic heading": "Heart disease",
-    "Subject": "TG - Heart disease",
-    "General Patient Text": "TG Patient text",
-    "Health Provider Text": "TG Health Provider text",
-    "Top Surgeries Text": "n/a",
-    "Bottom Surgeries Text": "n/a",
-    "Hormone Therapy Text": "n/a",
-    "Gender": "tg",
-    "Minimum age": 18,
-    "Maximum age": 150
-
-  },
-  {
-    "Button": "Heart",
-    "Topic heading": "Heart disease",
-    "Subject": "NB - Heart disease",
-    "General Patient Text": "NB Patient text",
-    "Health Provider Text": "NB Health Provider text",
-    "Top Surgeries Text": "n/a",
-    "Bottom Surgeries Text": "n/a",
-    "Hormone Therapy Text": "hormone",
-    "Gender": "nb",
-    "Minimum age": 18,
-    "Maximum age": 150
-
   },
   {
     "Button": "Heart",
@@ -871,7 +661,6 @@
     "Gender": "all",
     "Minimum age": 75,
     "Maximum age": 150
-
   },
   {
     "Button": "Heart",
@@ -885,6 +674,32 @@
     "Gender": "all",
     "Minimum age": 30,
     "Maximum age": 74
+  },
+  {
+    "Button": "Heart",
+    "Topic heading": "Heart disease",
+    "Subject": "TG - Subject",
+    "General Patient Text": "General TG text - Patient",
+    "Health Provider Text": "General TG text - Provider",
+    "Top Surgeries Text": "TG - with top surgery",
+    "Bottom Surgeries Text": "TG - with Bottom Surgery",
+    "Hormone Therapy Text": "TG - with Hormone Therapy",
+    "Gender": "tg",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Heart",
+    "Topic heading": "Heart disease",
+    "Subject": "NB - Subject",
+    "General Patient Text": "General NB Text - Patient",
+    "Health Provider Text": "General NB Text - Provider",
+    "Top Surgeries Text": "NB- with top surgery",
+    "Bottom Surgeries Text": "NB - with Bottom Surgery",
+    "Hormone Therapy Text": "NB - with Hormone Therapy",
+    "Gender": "nb",
+    "Minimum age": 18,
+    "Maximum age": 150
   },
   {
     "Button": "Needle in arm",
@@ -1174,58 +989,6 @@
   },
   {
     "Button": "Genitalia",
-    "Topic heading": "Sex",
-    "Subject": "TG - Prevent Sexually Transmitted Infections",
-    "General Patient Text": "TG Patient text",
-    "Health Provider Text": "TG Health Provider text",
-    "Top Surgeries Text": "n/a",
-    "Bottom Surgeries Text": "n/a",
-    "Hormone Therapy Text": "n/a",
-    "Gender": "tg",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Genitalia",
-    "Topic heading": "Sex",
-    "Subject": "TG - Prevent Sexually Transmitted Infections",
-    "General Patient Text": "TG Patient text",
-    "Health Provider Text": "TG Health Provider text",
-    "Top Surgeries Text": "n/a",
-    "Bottom Surgeries Text": "TG Bottom surgery text",
-    "Hormone Therapy Text": "n/a",
-    "Gender": "tg",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Genitalia",
-    "Topic heading": "Sex",
-    "Subject": "NB - Prevent Sexually Transmitted Infections",
-    "General Patient Text": "NB Patient text",
-    "Health Provider Text": "NB Health Provider text",
-    "Top Surgeries Text": "n/a",
-    "Bottom Surgeries Text": "n/a",
-    "Hormone Therapy Text": "n/a",
-    "Gender": "nb",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Genitalia",
-    "Topic heading": "Sex",
-    "Subject": "NB - Prevent Sexually Transmitted Infections",
-    "General Patient Text": "NB Patient text",
-    "Health Provider Text": "NB Health Provider text",
-    "Top Surgeries Text": "n/a",
-    "Bottom Surgeries Text": "NB Bottom surgery text",
-    "Hormone Therapy Text": "n/a",
-    "Gender": "nb",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Genitalia",
     "Topic heading": "Sex & Prostate",
     "Subject": "Prevent Sexually Transmitted Infections (STIs)",
     "General Patient Text": "n/a",
@@ -1314,7 +1077,32 @@
     "Gender": "m",
     "Minimum age": 55,
     "Maximum age": 69
-
+  },
+  {
+    "Button": "Genitalia",
+    "Topic heading": "Sex & Genital area",
+    "Subject": "TG - Subject",
+    "General Patient Text": "General TG text - Patient",
+    "Health Provider Text": "General TG text - Provider",
+    "Top Surgeries Text": "TG - with top surgery",
+    "Bottom Surgeries Text": "TG - with Bottom Surgery",
+    "Hormone Therapy Text": "TG - with Hormone Therapy",
+    "Gender": "tg",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Genitalia",
+    "Topic heading": "Sex & Genital area",
+    "Subject": "NB - Subject",
+    "General Patient Text": "General NB Text - Patient",
+    "Health Provider Text": "General NB Text - Provider",
+    "Top Surgeries Text": "NB- with top surgery",
+    "Bottom Surgeries Text": "NB - with Bottom Surgery",
+    "Hormone Therapy Text": "NB - with Hormone Therapy",
+    "Gender": "nb",
+    "Minimum age": 18,
+    "Maximum age": 150
   },
   {
     "Button": "Liver",
@@ -1328,7 +1116,6 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-
   },
   {
     "Button": "Liver",
@@ -1450,32 +1237,6 @@
   {
     "Button": "Bone",
     "Topic heading": "Vitamins, Minerals",
-    "Subject": "TG - Vitamin",
-    "General Patient Text": "TG Patient text",
-    "Health Provider Text": "TG Health Provider text",
-    "Top Surgeries Text": "n/a",
-    "Bottom Surgeries Text": "n/a",
-    "Hormone Therapy Text": "n/a",
-    "Gender": "tg",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Bone",
-    "Topic heading": "Vitamins, Minerals",
-    "Subject": "NB - Vitamin",
-    "General Patient Text": "NB Patient text",
-    "Health Provider Text": "NB Health Provider text",
-    "Top Surgeries Text": "n/a",
-    "Bottom Surgeries Text": "n/a",
-    "Hormone Therapy Text": "n/a",
-    "Gender": "nb",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Bone",
-    "Topic heading": "Vitamins, Minerals",
     "Subject": "Age 18 only",
     "General Patient Text": "•Calcium: 1300 mg/day; Vitamin D: 600 IU/ day",
     "Health Provider Text": "•Calcium: 1300 mg/day; Vitamin D: 600 IU/ day",
@@ -1522,6 +1283,32 @@
     "Bottom Surgeries Text": "n/a",
     "Hormone Therapy Text": "n/a",
     "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Bone",
+    "Topic heading": "Vitamins, Minerals",
+    "Subject": "TG - Subject",
+    "General Patient Text": "General TG text - Patient",
+    "Health Provider Text": "General TG text - Provider",
+    "Top Surgeries Text": "TG - with top surgery",
+    "Bottom Surgeries Text": "TG - with Bottom Surgery",
+    "Hormone Therapy Text": "TG - with Hormone Therapy",
+    "Gender": "tg",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Bone",
+    "Topic heading": "Vitamins, Minerals",
+    "Subject": "NB - Subject",
+    "General Patient Text": "General NB Text - Patient",
+    "Health Provider Text": "General NB Text - Provider",
+    "Top Surgeries Text": "NB- with top surgery",
+    "Bottom Surgeries Text": "NB - with Bottom Surgery",
+    "Hormone Therapy Text": "NB - with Hormone Therapy",
+    "Gender": "nb",
     "Minimum age": 18,
     "Maximum age": 150
   }
