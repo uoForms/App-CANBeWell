@@ -1,12 +1,19 @@
 [
   {
+    "Test": "Pros/ Cons of tests",
+    "Patient/Provider Text": "More tests are not always  good for your health,\nsee these links: [[more info 1; https://www.youtube.com/watch?v=8c7qTsVVxXw]]\n[[more info 2;https://choosingwiselycanada.org/health-check-ups//]]\n[[more info 3; https://choosingwiselycanada.org/family-medicine/]]",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
     "Test": "Bone mineral density",
     "Patient/Provider Text": "If you have risk factors below age 65 this may be done.\nAn x-ray detector scans your spine and hip.\n You receive a very small amount of radiation,\napproximately the same amount you are exposed to if you fly from Toronto to Vancouver.\n[[What is your risk; https://osteoporosis.ca/risk/#page-1]]\n[[More;https://www.mayoclinic.org/diseases-conditions/osteoporosis/in-depth/osteoporosis-risks/art-20304597]]",
     "Gender": "all",
     "Minimum age": 50,
     "Maximum age": 64
   },
-   {
+  {
     "Test": "Bone mineral density",
     "Patient/Provider Text": "For patients age 65 and over.\nAn x-ray detector scans your spine and hip.\nYou receive a very small amount of radiation,\napproximately the same amount you are exposed to if you fly from Toronto to Vancouver.\n[[More info; https://osteoporosis.ca/about-the-disease/diagnosis/why-should-i-get-tested/]]",
     "Gender": "all",
@@ -34,7 +41,7 @@
     "Minimum age": 50,
     "Maximum age": 74
   },
-    {
+  {
     "Test": "Heart risk score",
     "Patient/Provider Text": "Your provider uses your [[age, sex, other risk factors; https://myhealth.alberta.ca/Alberta/Pages/Heart-Disease-Risk-Calculator.aspx]]: to measure your risk of having a heart attack.\n\n[[Other calculator; http://chd.bestsciencemedicine.com/calc2.html]]",
     "Gender": "all",
@@ -70,13 +77,6 @@
     "Maximum age": 69
   },
   {
-    "Test": "Pros/ Cons of tests",
-    "Patient/Provider Text": "More tests are not always  good for your health,\nsee these links: [[more info 1; https://www.youtube.com/watch?v=8c7qTsVVxXw]]\n[[more info 2; https://choosingwiselycanada.org/]]",
-    "Gender": "all",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
     "Test": "Rubella and Varicella immunity",
     "Patient/Provider Text": "This is a blood test to see if you are immune (protected) against rubella(german measles) or varicella (chicken pox). \nif you are non immune you may become infected with rubella during a pregnancy\nwhich could cause birth defects or serious health problems for you.",
     "Gender": "f",
@@ -85,7 +85,7 @@
   },
   {
     "Test": "STI tests",
-    "Patient/Provider Text": "If sexually active testing for stis includes: \n•Women: a pelvic exam or a urine test; and blood tests. \n•Men: a urine test and blood tests\nUrine test tests are for Chlamydia and Gonorrhea. \nThe test done by pelvic exam in women is for Chlamydia and Gonorrhea\nBlood tests: it is recommended to include tests for HIV, Syphilis, Hepatitis B, and some include Hepatitis C.",
+    "Patient/Provider Text": "If sexually active testing for stis includes: \nâ€¢Women: a pelvic exam or a urine test; and blood tests. \nâ€¢Men: a urine test and blood tests\nUrine test tests are for Chlamydia and Gonorrhea. \nThe test done by pelvic exam in women is for Chlamydia and Gonorrhea\nBlood tests: it is recommended to include tests for HIV, Syphilis, Hepatitis B, and some include Hepatitis C.",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
@@ -99,7 +99,7 @@
   },
   {
     "Test": "Ultrasound for AAA",
-    "Patient/Provider Text": "AAAmeans Abdominal Aortic Aneurysm.\n Men age 65-80 may benefit from an ultrasound to detect AAA.\nLink below is from the UK, differences in Canada are:\n•We stop at age 80.\n•You should see your health care provider to discuss if this test is right for you.\n\n [[more; https://www.nhs.uk/Conditions/abdominal-aortic-aneurysm-screening/Documents/AAA_screening_patient_decision_aid_printable_version_January_2014.pdf]]",
+    "Patient/Provider Text": "AAAmeans Abdominal Aortic Aneurysm.\n Men age 65-80 may benefit from an ultrasound to detect AAA.\nLink below is from the UK, differences in Canada are:\nâ€¢We stop at age 80.\nâ€¢You should see your health care provider to discuss if this test is right for you.\n\n [[more; https://www.nhs.uk/Conditions/abdominal-aortic-aneurysm-screening/Documents/AAA_screening_patient_decision_aid_printable_version_January_2014.pdf]]",
     "Gender": "m",
     "Minimum age": 65,
     "Maximum age": 80
