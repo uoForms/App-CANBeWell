@@ -244,12 +244,38 @@ class Data {
           result.push(arra1[i]["Topic heading"]);
           TopicListBundle.push({ name: arra1[i]["Topic heading"], body: [] });
           TopicListBundle[j].body.push({ subject: arra1[i]['Subject'], text: arra1[i][pat_prov] });
+          
+          if ( UserInfo.isTopSurgery === true && !nonApplicaple.includes(arra1[i][top_surg].toUpperCase())){
+            TopicListBundle[j].body.push({ subject: arra1[i]['Subject'], text: arra1[i][top_surg]});
+          }
+
+          if ( UserInfo.isBottomSurgery === true && !nonApplicaple.includes(arra1[i][bot_surg].toUpperCase())){
+            TopicListBundle[j].body.push({ subject: arra1[i]['Subject'], text: arra1[i][bot_surg]});
+          }
+
+          if ( UserInfo.isHormoneTherapy === true && !nonApplicaple.includes(arra1[i][hormonet].toUpperCase())){
+            TopicListBundle[j].body.push({ subject: arra1[i]['Subject'], text: arra1[i][hormonet]});
+          }
+
           j++;
         }
         else if (result.includes(arra1[i]["Topic heading"]) && !nonApplicaple.includes(arra1[i][pat_prov].toUpperCase())) {
 
           let index = result.findIndex(topic => topic === arra1[i]["Topic heading"]);
           TopicListBundle[index].body.push({ subject: arra1[i]['Subject'], text: arra1[i][pat_prov] });
+                    
+          if ( UserInfo.isTopSurgery === true && !nonApplicaple.includes(arra1[i][top_surg].toUpperCase())){
+            TopicListBundle[index].body.push({ subject: arra1[i]['Subject'], text: arra1[i][top_surg]});
+          }
+
+          if ( UserInfo.isBottomSurgery === true && !nonApplicaple.includes(arra1[i][bot_surg].toUpperCase())){
+            TopicListBundle[index].body.push({ subject: arra1[i]['Subject'], text: arra1[i][bot_surg]});
+          }
+
+          if ( UserInfo.isHormoneTherapy === true && !nonApplicaple.includes(arra1[i][hormonet].toUpperCase())){
+            TopicListBundle[index].body.push({ subject: arra1[i]['Subject'], text: arra1[i][hormonet]});
+          }
+          //RISHANG this was for topic part
         }
       }
 
