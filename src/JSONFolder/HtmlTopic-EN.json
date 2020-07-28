@@ -364,7 +364,7 @@
     "Health Provider Text": "NB Health Provider text",
     "Top Surgeries Text": "1",
     "Bottom Surgeries Text": "2",
-    "Hormone Therapy Text": "3",
+    "Hormone Therapy Text": "NB Hormone Therapy text",
     "Gender": "nb",
     "Minimum age": 18,
     "Maximum age": 150
@@ -542,43 +542,14 @@
     "Button": "Uterus",
     "Topic heading": "Cervical Cancer",
     "Subject": "TG - Cervical Cancer - General",
-    "General Patient Text": "TG Patient text",
+    "General Patient Text": "n/a",
     "Health Provider Text": "TG Health Provider text",
-    "Top Surgeries Text": "n/a",
-    "Bottom Surgeries Text": "n/a",
-    "Hormone Therapy Text": "n/a",
+    "Top Surgeries Text": "top surgery",
+    "Bottom Surgeries Text": "bottom surgery",
+    "Hormone Therapy Text": "hormone",
     "Gender": "tg",
     "Minimum age": 18,
     "Maximum age": 150
-
-  },
-  {
-    "Button": "Uterus",
-    "Topic heading": "Cervical Cancer",
-    "Subject": "TG - Cervical Cancer with Hormone T.",
-    "General Patient Text": "n/a",
-    "Health Provider Text": "n/a",
-    "Top Surgeries Text": "n/a",
-    "Bottom Surgeries Text": "n/a",
-    "Hormone Therapy Text": "TG Hormone Therapy text",
-    "Gender": "tg",
-    "Minimum age": 18,
-    "Maximum age": 150
-
-  },
-  {
-    "Button": "Uterus",
-    "Topic heading": "Cervical Cancer",
-    "Subject": "TG - Cervical Cancer with Bottom surgery",
-    "General Patient Text": "n/a",
-    "Health Provider Text": "n/a",
-    "Top Surgeries Text": "n/a",
-    "Bottom Surgeries Text": "TG Bottom surgery text",
-    "Hormone Therapy Text": "n/a",
-    "Gender": "tg",
-    "Minimum age": 18,
-    "Maximum age": 150
-
   },
   {
     "Button": "Uterus",
@@ -910,7 +881,7 @@
     "Health Provider Text": "NB Health Provider text",
     "Top Surgeries Text": "n/a",
     "Bottom Surgeries Text": "n/a",
-    "Hormone Therapy Text": "n/a",
+    "Hormone Therapy Text": "hormone",
     "Gender": "nb",
     "Minimum age": 18,
     "Maximum age": 150
