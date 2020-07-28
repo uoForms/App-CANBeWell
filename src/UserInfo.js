@@ -59,3 +59,4 @@ export {setLanguage};
 export {isTopSurgery};
 export {isBottomSurgery};
 export {isHormoneTherapy};
+export {oncheckchange};
