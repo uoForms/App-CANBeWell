@@ -6,7 +6,7 @@ import BodyModal from './BodyModal';
 import { PageViewTimer, GaUserEvent } from '../Tracking';
 
 //Import Male PNG
-import Male from '../assets/MaleBody/male_all-01.png';
+import Male from '../assets/MaleBody/male_body.png';
 import MaleAorta from '../assets/MaleBody/male_aorta-01.png';
 import MaleBowel from '../assets/MaleBody/male_bowel-01.png';
 import MaleEyes from '../assets/MaleBody/male_eyes-01.png';
@@ -19,7 +19,7 @@ import MaleStomach from '../assets/MaleBody/male_stomach-01.png';
 import MaleGenitalia from '../assets/MaleBody/male_genitalia-01.png';
 
 //Import Female PNG
-import Female from '../assets/FemaleBody/female_anatomy.png';
+import Female from '../assets/FemaleBody/female_anatomy2.png';
 import FemaleAorta from '../assets/FemaleBody/female_aorta-01.png';
 import FemaleBowel from '../assets/FemaleBody/female_bowel-01.png';
 import FemaleBreast from '../assets/FemaleBody/female_breast-01.png';
@@ -31,23 +31,9 @@ import FemaleLungs from '../assets/FemaleBody/female_lungs-01.png';
 import FemalePancreas from '../assets/FemaleBody/female_pancreas-01.png';
 import FemaleStomach from '../assets/FemaleBody/female_stomach-01.png';
 import FemaleUterus from '../assets/FemaleBody/female_uterus-01.png';
+import FemaleOvary from '../assets/FemaleBody/female_ovary.png';
 import FemaleGenitalia from '../assets/FemaleBody/female_genitalia-01.png';
 
-//Import Trans and non-binary PNG
-import TransBody from '../assets/TransBody/trans_body.png';
-import TransAorta from '../assets/TransBody/trans_aorta.png';
-import TransBowel from '../assets/TransBody/trans_bowel.png';
-import TransBreast from '../assets/TransBody/trans_breast.png';
-import TransEyes from '../assets/TransBody/trans_eyes.png';
-import TransHeart from '../assets/TransBody/trans_heart.png';
-import TransBone from '../assets/TransBody/trans_bone.png';
-import TransLiver from '../assets/TransBody/trans_liver.png';
-import TransLungs from '../assets/TransBody/trans_lung.png';
-import TransPancreas from '../assets/TransBody/trans_pancreas.png';
-import TransStomach from '../assets/TransBody/trans_stomach.png';
-import TransUterus from '../assets/TransBody/trans_uterus.png';
-
-//import TransGenital from '../assets/Icons/male_genital.png';
 
 //Import male/female
 import MaleFemale from '../assets/Male-Female/femManV1.png';
@@ -60,10 +46,8 @@ import immunizationIcon from '../assets/Icons/icon_immunization.png';
 import phyactIcon from '../assets/Icons/icon_physact.png';
 import sunExposureIcon from '../assets/Icons/icon_sunexposure.png';
 import covidIcon from '../assets/Icons/icon_covid_new.png';
-import genitaliaIcon from '../assets/Icons/male_genital.png';
-import transGenital from '../assets/TransBody/icon_trans.png';
-import fgenitaliaIcon from '../assets/Icons/female_genital.png';
-import transIcon from '../assets/Icons/icon_trans.png';
+import FemaleGenital from '../assets/Icons/female_genital.png';
+import MaleGenital from '../assets/Icons/male_genital.png';
 
 import './Body.css';
 import '../App.css';
@@ -203,7 +187,7 @@ class Anatomy extends React.Component {
             <button id="stomachButton" className="maleStomach" onClick={(button, text, organ) => this.organClicked("stomach", this.props.lang.stomach, "MaleStomach")} />
             <button id="aortaButton" className="maleAorta" onClick={(button, text, organ) => this.organClicked("aorta", this.props.lang.aorta, "MaleAorta")}></button>
             <button id="heartButton" className="maleHeart" onClick={(button, text, organ) => this.organClicked("heart", this.props.lang.heart, "MaleHeart")} />
-            <button id="genitaliaButton" className="maleGenitalia" onClick={(button, text, organ) => this.organClicked("genitalia", this.props.lang.genitalia, "MaleGenitalia")} />
+            {/* <button id="genitaliaButton" className="maleGenitalia" onClick={(button, text, organ) => this.organClicked("genitalia", this.props.lang.genitalia, "MaleGenitalia")} /> */}
             <div className="icons">
               <button id="brainButton" className="brain" onClick={(button, text, organ) => this.iconClicked("brain", this.props.lang.brain)}><img src={brainIcon} alt="brainIcon" /></button>
               <button id="examButton" className="exam" onClick={(button, text, organ) => this.iconClicked("physical exam", this.props.lang.stethoscope)}><img src={examIcon} alt="examIcon" /></button>
@@ -211,6 +195,7 @@ class Anatomy extends React.Component {
               <button id="immunizationButton" className="immunization" onClick={(button, text, organ) => this.iconClicked("needle in arm", this.props.lang.needle_in_arm)}><img src={immunizationIcon} alt="immunizationIcon" /></button>
               <button id="sunExposureButton" className="sunExposure" onClick={(button, text, organ) => this.iconClicked("sun", this.props.lang.sun)}><img src={sunExposureIcon} alt="sunExposureIcon" /></button>
               <button id="phyActivityButton" className="phyActivity" onClick={(button, text, organ) => this.iconClicked("figure outside body walking", this.props.lang.figure_outside_body_walking)}><img src={phyactIcon} alt="physicalActivityIcon" /></button>
+              <button id="maleGenitalia" className="maleGenitalia" onClick={(button, text) => this.iconClicked("genitalia", this.props.lang.genitalia)}><img src={MaleGenital} alt="MaleGenitalia" /> </button>
               <button id="covidButton" className="covid" onClick={(button, text, organ) => this.iconClicked("covid", this.props.lang.covid)}><img src={covidIcon} alt="covidIcon" /></button>
               <button id="genitaliaButton" className="maleGenital" onClick={(button, text, organ) => this.iconClicked("genitalia", this.props.lang.genitalia)}><img src={genitaliaIcon} alt="genitaliaIcon" /> </button>
              </div>
@@ -247,6 +232,7 @@ class Anatomy extends React.Component {
             <img id="FemalePancreas" className="organ" src={FemalePancreas} alt="FemalePancreas" />
             <img id="FemaleStomach" className="organ" src={FemaleStomach} alt="FemaleStomach" />
             <img id="FemaleUterus" className="organ" src={FemaleUterus} alt="FemaleUterus" />
+            <img id="FemaleOvary" className="organ" src={FemaleOvary} alt="FemaleOvary" />
 
             <button className="femaleBowel" onClick={(button, text, organ) => this.organClicked("colon", this.props.lang.bowel, "FemaleBowel")} />
             <button className="femaleEyes" onClick={(button, text, organ) => this.organClicked("eye", this.props.lang.eyes, "FemaleEyes")} />
@@ -259,8 +245,8 @@ class Anatomy extends React.Component {
             <button className="femaleAorta" onClick={(button, text, organ) => this.organClicked("aorta", this.props.lang.aorta, "FemaleAorta")}></button>
             <button className="femaleHeart" onClick={(button, text, organ) => this.organClicked("heart", this.props.lang.heart, "FemaleHeart")} />
             <button className="uterus" onClick={(button, text, organ) => this.organClicked("uterus", this.props.lang.uterus, "FemaleUterus")} />
-            <button className="ovary" onClick={(button, text, organ) => this.organClicked("ovary", this.props.lang.ovary, "")} />
-            <button id="genitaliaButton" className="femaleGenitalia" onClick={(button, text, organ) => this.organClicked("genitalia", this.props.lang.genitalia, "FemaleGenitalia")} />
+            <button className="ovary" onClick={(button, text, organ) => this.organClicked("ovary", this.props.lang.ovary, "FemaleOvary")} />
+            {/* <button id="genitaliaButton" className="femaleGenitalia" onClick={(button, text, organ) => this.organClicked("genitalia", this.props.lang.genitalia, "FemaleGenitalia")} /> */}
             <div className="icons">
               <button className="brain" onClick={(button, text) => this.iconClicked("brain", this.props.lang.brain)}><img src={brainIcon} alt="brainIcon" /></button>
               <button className="exam" onClick={(button, text) => this.iconClicked("physical exam", this.props.lang.stethoscope)}><img src={examIcon} alt="examIcon" /></button>
@@ -269,8 +255,7 @@ class Anatomy extends React.Component {
               <button className="sunExposure" onClick={(button, text) => this.iconClicked("sun", this.props.lang.sun)}><img src={sunExposureIcon} alt="sunExposureIcon" /></button>
               <button className="phyActivity" onClick={(button, text) => this.iconClicked("figure outside body walking", this.props.lang.figure_outside_body_walking)}><img src={phyactIcon} alt="physicalActivityIcon" /></button>
               <button id="covidButton" className="covid" onClick={(button, text) => this.iconClicked("covid", this.props.lang.covid)}><img src={covidIcon} alt="covidIcon" /></button>
-              {/*<button id="genitaliaButton" className="femaleGenital" onClick={(button, text) => this.iconClicked("genitalia", this.props.lang.genitalia)}><img src={fgenitaliaIcon} alt="fgenitaliaIcon" /> </button>*/}
-          
+              <button id="femaleGenitalian" className="femaleGenitalia" onClick={(button, text) => this.iconClicked("genitalia", this.props.lang.genitalia)}><img src={FemaleGenital} alt="GenitalF" /> </button>
             </div>
           </div>
           <h1 style={fixedStyle}>{this.state.organSelected}</h1>
