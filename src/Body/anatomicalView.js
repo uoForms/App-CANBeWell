@@ -30,7 +30,7 @@ import FemaleLiver from '../assets/FemaleBody/female_liver.png';
 import FemaleLungs from '../assets/FemaleBody/female_lungs-01.png';
 import FemalePancreas from '../assets/FemaleBody/female_pancreas-01.png';
 import FemaleStomach from '../assets/FemaleBody/female_stomach-01.png';
-import FemaleUterus from '../assets/FemaleBody/female_uterus_ovary.png';
+import FemaleUterus from '../assets/FemaleBody/female_uterus-01.png';
 import FemaleOvary from '../assets/FemaleBody/female_ovary.png';
 import FemaleGenitalia from '../assets/FemaleBody/female_genitalia-01.png';
 
