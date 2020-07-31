@@ -85,6 +85,7 @@ class TopicRow extends React.Component {
     this.props.pageViewStateUpdater(nav, cat, time);
   }
 
+  
   rowToggled = ( title ) => {
     let timerResult = PageViewTimer(
       this.props.userInfo.preCat,
@@ -101,13 +102,27 @@ class TopicRow extends React.Component {
     //all the subjects
     var sujectArray = [];
     var bodys = this.props.topic.body;
+    const blueist = '#27AAE1';
+    const listItemStyle = {
+      backgroundColor: blueist,
+      fontWeight: 300,
+      borderRadius: 15,
+      width: '100%',
+      minHeight: 50,
+      margin: '3px',
+      textAlign: 'left',
+      padding: '10px',
+      color: 'white'
+    };
     bodys.forEach((body) => {
 
+      
 
       var bodyArray = body.text.split(/(\[\[|\]\]|\n)/g);
       var subject = body.subject.split(/(\[\[|\]\]|\n)/g);
       var bodyArrayToDisplay = [];
       var subjectArrayToDisplay = [];
+      var outerTextToDisplay = [];
 
       for (var i = 0; i < subject.length; i++) {
         if (subject[i] == '[[') {
@@ -176,18 +191,44 @@ class TopicRow extends React.Component {
         }
 
       }
-      sujectArray.push(<div className="topicBody"><b>{subjectArrayToDisplay}<br /></b>{bodyArrayToDisplay}</div>);
+      // sujectArray.push(<div className="topicBody"><b>{subjectArrayToDisplay}<br /></b>{bodyArrayToDisplay}</div>);
+      sujectArray.push(
+        <div className="topicBody" style={listItemStyle}>
+          <details id={this.props.topic.name} class="mydetailsItem">
+            <summary class="mysummaryItem">
+              <font size="+1">
+                {/*<p> <b> */}
+                {subjectArrayToDisplay}
+                {/* </b> </p>*/}
+              </font>
+            </summary>
+            <br />
+            {bodyArrayToDisplay}
+            {outerTextToDisplay}
+          </details>
+        </div>
+      );
     });
 
 
     return (
+      // sujectArray.push(<div className="topicBody" >
       <details 
-        id={this.props.topic.name}
-        onToggle = { () => this.rowToggled(this.props.topic.name) }
+        id={this.props.topic.name} class="mydetailsItem"
+        onToggle={() => this.rowToggled(this.props.topic.name)}
       >
-        <summary><font size="+1"><b>{this.props.topic.name}</b></font></summary>
-        <div>{'\n'}{sujectArray}</div>
+        <summary>
+          <font size="+1">
+            <b>{this.props.topic.name}</b>
+          </font>
+        </summary>
+        <div>
+          {"\n"}
+          {sujectArray}
+        </div>
       </details>
+      // </div>
+      // )
     );
   }
 }
