@@ -15,7 +15,7 @@ class Topics extends React.Component {
     {
       isOpen: false,
       TopicList: this.props.userConfig.language == "french" ? TopicListFR : TopicListEN
-    }
+      }
     this.pageViewStateUpdater = this.pageViewStateUpdater.bind(this);
   }
   toggleModal = () => {
@@ -85,6 +85,7 @@ class TopicRow extends React.Component {
     this.props.pageViewStateUpdater(nav, cat, time);
   }
 
+  
   rowToggled = ( title ) => {
     let timerResult = PageViewTimer(
       this.props.userInfo.preCat,
@@ -97,17 +98,57 @@ class TopicRow extends React.Component {
   }
 
   render() {
+    
+    
     const Image = "./";
     //all the subjects
     var sujectArray = [];
     var bodys = this.props.topic.body;
+    const blueist = '#27AAE1';
+    const listItemStyle = {
+      backgroundColor: blueist,
+      fontWeight: 300,
+      borderRadius: 15,
+      width: '100%',
+      minHeight: 50,
+      margin: '3px',
+      textAlign: 'left',
+      padding: '10px',
+      color: 'white'
+    };
+    
+    // The gray background
+    const backdropStyle = {
+      top: 0,
+      bottom: 0,
+      left: 0,
+      right: 0,
+      //zIndex: 3,
+    };
+
+    // The modal "window"
+    const myModalStyle = {
+      backgroundColor: '#808080',
+      width: '90%',
+      left: '0%',
+      top: '10%',
+      right: '0%',
+      //minHeight: '40%',
+      margin: '0 auto',
+      textAlign: 'left',
+      padding: 20,
+      color: 'white',
+      overflowY: 'auto'
+    };
     bodys.forEach((body) => {
 
+      
 
       var bodyArray = body.text.split(/(\[\[|\]\]|\n)/g);
       var subject = body.subject.split(/(\[\[|\]\]|\n)/g);
       var bodyArrayToDisplay = [];
       var subjectArrayToDisplay = [];
+      var outerTextToDisplay = [];
 
       for (var i = 0; i < subject.length; i++) {
         if (subject[i] == '[[') {
@@ -176,18 +217,66 @@ class TopicRow extends React.Component {
         }
 
       }
-      sujectArray.push(<div className="topicBody"><b>{subjectArrayToDisplay}<br /></b>{bodyArrayToDisplay}</div>);
+      // sujectArray.push(<div className="topicBody"><b>{subjectArrayToDisplay}<br /></b>{bodyArrayToDisplay}</div>);
+      sujectArray.push(
+        
+        <div>
+        <div id="myBackdrop" onClick={this.props.onClose} className="backdrop" style={backdropStyle}>
+          <div>
+            <button className="button4" onClick={this.props.onClose}>X</button>
+          </div>
+        </div>
+        <div className="myModal" style={myModalStyle}>
+          <div>
+            { 
+            
+            <div className="topicBody" style={listItemStyle}>
+          <details id={this.props.topic.name} class="mydetailsItem">
+            <summary class="mysummaryItem">
+              <font size="+1">
+                {/*<p> <b> */}
+                {subjectArrayToDisplay}
+                {/* </b> </p>*/}
+              </font>
+            </summary>
+            <br />
+            {bodyArrayToDisplay}
+            {outerTextToDisplay}
+          </details>
+            </div>
+        
+        }
+            <div className="myModalCloseButton">
+              <button className="button3" onClick={this.props.onClose}>{this.props.button}</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+       
+      );
     });
 
 
     return (
+      // sujectArray.push(<div className="topicBody" >
       <details 
-        id={this.props.topic.name}
-        onToggle = { () => this.rowToggled(this.props.topic.name) }
+        id={this.props.topic.name} class="mydetailsItem"
+        onToggle={() => this.rowToggled(this.props.topic.name)}
       >
-        <summary><font size="+1"><b>{this.props.topic.name}</b></font></summary>
-        <div>{'\n'}{sujectArray}</div>
+        <summary>
+          <font size="+1">
+            <b>{this.props.topic.name}</b>
+          </font>
+        </summary>
+        <div>
+          {"\n"}
+          {sujectArray}
+        </div>
       </details>
+      // </div>
+      // )
     );
   }
 }
