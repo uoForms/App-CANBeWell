@@ -107,9 +107,9 @@
   
 
    .mainRunner .femaleGenitalia{
-    top: 50%;
+    top: 49.5%;
     left: 49.5%;
-    width: 10%;
+    width: 7%;
     height: 4%;
   }
   
@@ -177,11 +177,10 @@
   }
   
   .mainRunner .maleGenitalia{
-   top: 51%;
-   left: 48%;
-   width: 5%;
-   height: 3%;
-  
+   top: 50.7%;
+   left: 47.5%;
+   width: 7%;
+   height: 4%;
   }
   
   .mainRunner .genitalia{
@@ -363,14 +362,14 @@
     /*left: 30px;*/
   }
   
-  #FemaleUterus
+  /* #FemaleUterus
   {
       /*width: 100%;*/
-      position: absolute;
+      /* position: absolute;
       left: 10px;
       top:40px;
-      right:104px;
-      bottom:50px;
-      object-fit: contain;
+      right:60px;
+      bottom:50px; */
+      /* object-fit: contain; */
    /*   visibility: hidden; */ 
-  }
+  /* } */
