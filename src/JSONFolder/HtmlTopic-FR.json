@@ -104,7 +104,7 @@
     "Topic heading": "COVID-19",
     "Subject": "Populations vulnérables",
     "General Patient Text": "n/a",
-    "Health Provider Text": "•POUR DEPISTER  LA PAUVRETÉ:\nposer la question:\nAvez-vous de la difficulté avec vos dépenses en fin de mois?\n•Trouver des services sociaux et de santé locaux pour votre patient:\nComposer le 211 sur votre téléphone dans certaines régions\nQuébec: [[http://www.211quebecregions.ca/;http://www.211quebecregions.ca/]]\nAilleurs au Canada: [[https://211.ca/;https://211.ca/]]\n• OU diriger vos patients vers leur unité de santé publique locale.\n•[[Aide financière du Canada; https://www.canada.ca/fr/services/prestations/covid-19-prestations-urgence.html]]\n•[[Premières nations, Métis et Inuit; https://www.santepubliqueottawa.ca/fr/public-health-topics/resources-for-first-nations-inuit-and-m-tis-community-members.aspx]]\ninformations nationales et pour Ottawa\n•[[Différentes langues; https://www.santepubliqueottawa.ca/fr/public-health-topics/multilingual-resources.aspx]]",
+    "Health Provider Text": "•POUR DEPISTER  LA PAUVRETÉ:\nposer la question:\nAvez-vous de la difficulté avec vos dépenses en fin de mois?\n\n•Trouver des services sociaux et de santé locaux pour votre patient:\nComposer le 211 sur votre téléphone dans certaines régions\nQuébec: [[http://www.211quebecregions.ca/;http://www.211quebecregions.ca/]]\nAilleurs au Canada: [[https://211.ca/;https://211.ca/]]\n\n•OU diriger vos patients vers leur unité de santé publique locale.\n\n•[[Aide financière du Canada; https://www.canada.ca/fr/services/prestations/covid-19-prestations-urgence.html]]\n\n•[[Premières nations, Métis et Inuit; https://www.santepubliqueottawa.ca/fr/public-health-topics/resources-for-first-nations-inuit-and-m-tis-community-members.aspx]]\ninformations nationales et pour Ottawa\n\n•[[Différentes langues; https://www.santepubliqueottawa.ca/fr/public-health-topics/multilingual-resources.aspx]]",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
@@ -114,7 +114,7 @@
     "Topic heading": "COVID-19",
     "Subject": "Recherche sur la COVID-19",
     "General Patient Text": "n/a",
-    "Health Provider Text": "ÉTUDES ÉVALUÉES POUR LEUR QUALITÉ\n[[MCMASTER EBM; https://plus.mcmaster.ca/COVID-19]]\n[[OXFORD Evidence Service; https://www.cebm.net/oxford-covid-19-evidence-service/]]\n\nPÉRIODIQUES\n[[CMAJ; https://www.cmaj.ca/covid-19]]\n[[BMJ's Coronavirus (covid-19) Hub; https://www.bmj.com/coronavirus]]\n[[JAMA;https://jamanetwork.com/collections/46099/coronavirus-covid19]]\n[[NEJM; https://www.nejm.org/coronavirus]]\n[[The Lancet; https://www.thelancet.com/coronavirus/archive?]]\n\n[[AGENCE DE LA SANTÉ PUBLIQUE DU CANADA; https://www.canada.ca/fr/sante-publique/services/maladies/maladie-coronavirus-covid-19.html]]",
+    "Health Provider Text": "ÉTUDES ÉVALUÉES POUR LEUR QUALITÉ\n[[MCMASTER EBM; https://plus.mcmaster.ca/COVID-19]]\n[[OXFORD Evidence Service; https://www.cebm.net/oxford-covid-19-evidence-service/]]\n\nPÉRIODIQUES\n[[CMAJ; https://www.cmaj.ca/covid-19]]\n[[BMJ; https://www.bmj.com/coronavirus]]\n[[JAMA;https://jamanetwork.com/collections/46099/coronavirus-covid19]]\n[[NEJM; https://www.nejm.org/coronavirus]]\n[[The Lancet; https://www.thelancet.com/coronavirus/archive?]]\n\n[[AGENCE DE LA SANTÉ PUBLIQUE DU CANADA; https://www.canada.ca/fr/sante-publique/services/maladies/maladie-coronavirus-covid-19.html]]",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
