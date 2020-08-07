@@ -15,7 +15,7 @@ class Topics extends React.Component {
     {
       isOpen: false,
       TopicList: this.props.userConfig.language == "french" ? TopicListFR : TopicListEN
-      }
+    }
     this.pageViewStateUpdater = this.pageViewStateUpdater.bind(this);
   }
   toggleModal = () => {
@@ -68,6 +68,7 @@ class Topics extends React.Component {
 }
 
 Topics.propTypes = {
+  onClose: PropTypes.func.isRequired,
   showTopics: PropTypes.bool,
   userConfig: PropTypes.object,
   data: PropTypes.func.isRequired,
@@ -98,8 +99,6 @@ class TopicRow extends React.Component {
   }
 
   render() {
-    
-    
     const Image = "./";
     //all the subjects
     var sujectArray = [];
@@ -116,6 +115,7 @@ class TopicRow extends React.Component {
       padding: '10px',
       color: 'white'
     };
+
     
     // The gray background
     const backdropStyle = {
@@ -138,8 +138,9 @@ class TopicRow extends React.Component {
       textAlign: 'left',
       padding: 20,
       color: 'white',
-      overflowY: 'auto'
+      overflowY: 'scroll'
     };
+    
     bodys.forEach((body) => {
 
       
@@ -219,18 +220,7 @@ class TopicRow extends React.Component {
       }
       // sujectArray.push(<div className="topicBody"><b>{subjectArrayToDisplay}<br /></b>{bodyArrayToDisplay}</div>);
       sujectArray.push(
-        
-        <div>
-        <div id="myBackdrop" onClick={this.props.onClose} className="backdrop" style={backdropStyle}>
-          <div>
-            <button className="button4" onClick={this.props.onClose}>X</button>
-          </div>
-        </div>
-        <div className="myModal" style={myModalStyle}>
-          <div>
-            { 
-            
-            <div className="topicBody" style={listItemStyle}>
+        <div className="topicBody" style={listItemStyle}>
           <details id={this.props.topic.name} class="mydetailsItem">
             <summary class="mysummaryItem">
               <font size="+1">
@@ -243,18 +233,7 @@ class TopicRow extends React.Component {
             {bodyArrayToDisplay}
             {outerTextToDisplay}
           </details>
-            </div>
-        
-        }
-            <div className="myModalCloseButton">
-              <button className="button3" onClick={this.props.onClose}>{this.props.button}</button>
-            </div>
-          </div>
         </div>
-      </div>
-
-
-       
       );
     });
 
@@ -271,15 +250,27 @@ class TopicRow extends React.Component {
           </font>
         </summary>
         <div>
-          {"\n"}
-          {sujectArray}
+        <div id="myBackdrop" onClick={this.props.onClose} className="backdrop" style={backdropStyle}>
+          <div>
+            <button className="button4" onClick={this.props.onClose}> </button>
+          </div>
         </div>
+        <div className="myModal" style={myModalStyle}>
+          <div>
+            {sujectArray}
+            <div className="myModalCloseButton">
+              <button className="button3" onClick={this.props.onClose}>{this.props.button}</button>
+            </div>
+          </div>
+        </div>
+      </div>
       </details>
       // </div>
       // )
     );
   }
 }
+
 
 class TopicTable extends React.Component {
   constructor(props) {
