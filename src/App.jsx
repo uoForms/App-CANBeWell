@@ -559,20 +559,19 @@ class App extends Component {
             <button className="button button2" onClick={this.helpClicked}>?</button>
             </div>
             <div className="footer">
-              <p>{this.state.lang.instruction_modal_header}</p>
+              <p id="choose_mod">{this.state.lang.instruction_modal_header}</p>
 
               {/*select user*/}
               <div className="radio">
                 <form>
-                  {this.state.lang.user_selector}
-                   <br/>
-                  <label >
+                  <p id="user_mod">{this.state.lang.user_selector}</p>
+                   <label id="pat_mod">
                     <input type="radio" value="patient" checked={this.state.user === 'patient'} onChange={this.handlePatientProviderChange} />
                     {this.state.lang.patient}
                   </label>
                   <br/>
                    
-                  <label>
+                  <label id="prov_mod">
                     <input type="radio" value="provider" checked={this.state.user === 'provider'} onChange={this.handlePatientProviderChange} />
                     {this.state.lang.provider}
                   </label>
@@ -584,7 +583,7 @@ class App extends Component {
                 <form>
                   <div>
                     {this.state.lang.age_selector}
-                    <input id='abc' type="text" value={this.state.age == "all ages" ? this.state.lang.all_ages : this.state.age} onChange={this.handleChange} disabled={this.state.allAgesSelected} placeholder={this.state.lang.age_selector_place_holder} />
+                    <input id='abcd' type="text" value={this.state.age == "all ages" ? this.state.lang.all_ages : this.state.age} onChange={this.handleChange} disabled={this.state.allAgesSelected} placeholder={this.state.lang.age_selector_place_holder} />
                     <label style={allagescheckboxStyle}>
                       <input id='myCheck' type="checkbox" checked={this.state.allAgesSelected} onChange={this.handleAllAgesSelected} />{this.state.lang.all_ages}
                     </label>
@@ -596,52 +595,54 @@ class App extends Component {
               </div>
               {/*select gender*/}
               <div>
-                <form>
-                  <div id="genderSelector" className="radio">
-                    {this.state.lang.gender_selector}
-                    <br/>
+              <form>
 
-                    <label>
-                      <input type="radio"  value="male" checked={this.state.gender == 'male'} onChange={this.handleGenderChange} />
-                      {this.state.lang.male}
-                    </label>
-                    <br/>
+                    <div id="genderSelector" className="radio">
+                     <p id="gender_mod"> {this.state.lang.gender_selector}</p>
+                       
+                      <label id="male_radio">
+                        <input type="radio" value="male" checked={this.state.gender == 'male'} onChange={this.handleGenderChange} />
+                        {this.state.lang.male}
+                      </label>
+                      <br/>
+                      <label id="female_radio">
+                        <input type="radio" value="female" checked={this.state.gender == 'female'} onChange={this.handleGenderChange} />
+                        {this.state.lang.female}
+                      </label>
+                      <br/>
 
-                    <label>
-                      <input type="radio" value="female" checked={this.state.gender == 'female'} onChange={this.handleGenderChange} />
-                      {this.state.lang.female}
-                    </label>
-                    <br/>
-
-                    <label>
-                      <input type="radio" value="nonbinary" checked={this.state.gender == 'nonbinary'} onChange={this.handleGenderChange} />
+                    <label id="nb_radio">
+                      <input  type="radio" value="nonbinary" checked={this.state.gender == 'nonbinary'} onChange={this.handleGenderChange} />
                       {this.state.lang.nonbinary}
                     </label>
                     <br/>
 
-                    <label>
+                    <label id="trans_radio">
                       <input type="radio" value="transgender" checked={this.state.gender == 'transgender'} onChange={this.handleGenderChange} />
                       {this.state.lang.transgender}
                     </label>
-                    <br/>
-                    {/*this.state.user === 'provider' || null ?
+                      {/*this.state.user === 'provider' || null ?
                       (<label>
                         <input type="radio" value="all_genders" checked={this.state.gender == 'all_genders'} onChange={this.handleGenderChange} />
                           {this.state.lang.all_genders}
                       </label>) : (<label></label>)
-                    */}
-                  </div>
-                </form>
+                      */}
+
+                    </div>
+                  </form>
                 {/*Field selection based on gender*/}
              
               <form>
                     <div id="field_selection" style={fieldSelectionDiv}>
-                      Options:<br/>
-                      <input type="checkbox" checked={this.state.isHormoneTherapy} onChange={this.onChangeHormoneTherapy} /> Hormone Therapy
+                      <p id="opt_mod">Options:</p>
+                      <label id="horm_mod">
+                      <input type="checkbox" checked={this.state.isHormoneTherapy} onChange={this.onChangeHormoneTherapy} /> Hormone Therapy </label>
                                <br/>
-                      <input type="checkbox" checked={this.state.isTopSurgery} onChange={this.onChangeTopSurgery} />Top Surgery
+                     <label id="top_mod">
+                      <input type="checkbox" checked={this.state.isTopSurgery} onChange={this.onChangeTopSurgery} /> Top Surgery </label>
                                <br/>
-                      <input type="checkbox" checked={this.state.isBottomSurgery} onChange={this.onChangeBottomSurgery} /> Bottom Surgery
+                      <label id="bott_mod">
+                      <input type="checkbox" checked={this.state.isBottomSurgery} onChange={this.onChangeBottomSurgery} /> Bottom Surgery </label>
                     </div>
                   </form>
               </div>
@@ -716,12 +717,12 @@ class App extends Component {
                     <div id="genderSelector" className="radio">
                       {this.state.lang.gender_selector}
                        <br/>
-                      <label>
+                      <label id="male_radio">
                         <input type="radio" value="male" checked={this.state.gender == 'male'} onChange={this.handleGenderChange} />
                         {this.state.lang.male}
                       </label>
                       <br/>
-                      <label>
+                      <label id="female_radio">
                         <input type="radio" value="female" checked={this.state.gender == 'female'} onChange={this.handleGenderChange} />
                         {this.state.lang.female}
                       </label>
@@ -753,7 +754,7 @@ class App extends Component {
                     
                       <input type="checkbox" checked={this.state.isHormoneTherapy} onChange={this.onChangeHormoneTherapy} /> Hormone Therapy
                                <br/>
-                      <input type="checkbox" checked={this.state.isTopSurgery} onChange={this.onChangeTopSurgery} />Top Surgery
+                      <input type="checkbox" checked={this.state.isTopSurgery} onChange={this.onChangeTopSurgery} /> Top Surgery
                                <br/>
                       <input type="checkbox" checked={this.state.isBottomSurgery} onChange={this.onChangeBottomSurgery} /> Bottom Surgery
                                

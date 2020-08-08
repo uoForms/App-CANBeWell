@@ -55,6 +55,7 @@ body {
   display: none;
 }
 
+
 @keyframes shake {
   10%, 90% {
     transform: translate3d(-1px, 0, 0);
@@ -224,6 +225,69 @@ body {
     padding-top: 60px;
 }
 
+
+
+
+#male_radio{
+  margin-right:  56px;
+}
+
+#female_radio{
+  margin-right:  35px;
+}
+
+#trans_radio{
+  margin-right:  -11px;
+}
+
+#nb_radio{
+  margin-right:  -2px;
+}
+
+#gender_mod{
+  margin-right: 192px;
+}
+
+
+#choose_mod{
+  margin-right: 32px;
+  font-weight: 900;
+}
+#user_mod{
+  margin-right: 213px;
+}
+
+#opt_mod{
+  margin-right: 192px;
+}
+
+#pat_mod{
+  margin-right: 40px;
+}
+
+#prov_mod{
+  margin-right: 28px;
+}
+
+
+#horm_mod{
+  margin-right: -64px;
+  font-weight: normal;
+}
+
+#top_mod{
+  margin-right: -10px;
+  font-weight: normal;
+}
+
+#bott_mod{
+  margin-right: -46px;
+  font-weight: normal;
+}
+
+
+
+
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -302,6 +366,12 @@ summary:after {
 .abc{
   margin-left: 15%;
   
+}
+
+#abcd{
+  margin-right: 30px; 
+  height: auto;
+  width: 184px;
 }
 
 
