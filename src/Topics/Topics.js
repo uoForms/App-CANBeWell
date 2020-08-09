@@ -41,7 +41,7 @@ class Topics extends React.Component {
     if (!this.props.showTopics) {
       return null;
     }
-
+    console.log("propsTOPICS:::",this.props,"proptypes::",PropTypes);
     return (
       <div>
         {/*your help button in the right hand corner*/}
@@ -52,6 +52,8 @@ class Topics extends React.Component {
           userConfig={this.props.userConfig}
           text={this.props.lang.topic_search_bar_placeholder} 
           pageViewStateUpdater = {this.pageViewStateUpdater}
+          btnText={this.props.lang.close_body_modal}
+          onClose={this.props.onClose}
           />
 
         {/*help dialog box*/}
@@ -96,10 +98,15 @@ class TopicRow extends React.Component {
     let currNav = "topics", currCat = title;
     GaUserEvent(currNav, currCat, this.props.userInfo, timeDiff, this.props.userInfo.preTime, currTime);
     this.props.pageViewStateUpdater(currNav, currCat, currTime);
+    //this.setState({
+          //this.props.isOpen= !this.props.isOpen,
+          //this.props.show=this.props.isOpen
+        //});
   }
 
   render() {
     const Image = "./";
+    console.log("props:::",this.props,"proptypes::",PropTypes);
     //all the subjects
     var sujectArray = [];
     var bodys = this.props.topic.body;
@@ -252,14 +259,14 @@ class TopicRow extends React.Component {
         <div>
         <div id="myBackdrop" onClick={this.props.onClose} className="backdrop" style={backdropStyle}>
           <div>
-            <button className="button4" onClick={this.props.onClose}> </button>
+            <button className="button4" onClick={this.props.onClose}>X</button>
           </div>
         </div>
         <div className="myModal" style={myModalStyle}>
           <div>
             {sujectArray}
             <div className="myModalCloseButton">
-              <button className="button3" onClick={this.props.onClose}>{this.props.button}</button>
+              <button className="button3" onClick={this.props.onClose}>{this.props.btnText}</button>
             </div>
           </div>
         </div>
@@ -281,7 +288,7 @@ class TopicTable extends React.Component {
     this.props.pageViewStateUpdater(nav, cat, time);
   }
   render() {
-
+    console.log("propsFILTERTOPICSTABLE:::",this.props,"proptypes::",PropTypes);
     const backdroplistItemStyle = {
       padding: 5
     };
@@ -314,6 +321,8 @@ class TopicTable extends React.Component {
             topic={topic}
             userInfo={this.props.userConfig} 
             pageViewStateUpdater = {this.pageViewStateUpdater}
+            btnText={this.props.btnText}
+            onClose={this.props.onClose}
             />
         </div>
       </div>);
@@ -376,6 +385,7 @@ class FilterableTopicTable extends React.Component {
   }
 
   render() {
+    console.log("propsFILTERTOPICS:::",this.props,"proptypes::",PropTypes);
     return (
       <div>
         <SearchBar
@@ -388,6 +398,8 @@ class FilterableTopicTable extends React.Component {
           userConfig={this.props.userConfig}
           filterText={this.state.filterText}
           pageViewStateUpdater = {this.pageViewStateUpdater}
+          btnText={this.props.btnText}
+          onClose={this.props.onClose}
         />
       </div>
     );
