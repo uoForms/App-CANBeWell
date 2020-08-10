@@ -97,7 +97,7 @@ class TopicRow extends React.Component {
       isOpen: !this.state.isOpen
     });
   }  
-  rowToggled = ( title ) => {
+  rowClicked = ( title ) => {
     let timerResult = PageViewTimer(
       this.props.userInfo.preCat,
       this.props.userInfo.preTime);
@@ -108,8 +108,7 @@ class TopicRow extends React.Component {
     this.props.pageViewStateUpdater(currNav, currCat, currTime);
     this.setState({
       isOpen: !this.state.isOpen,
-      display: this.props.topic.body//,
-     // displayConfigOption: false
+      display: this.props.topic.body
     });
   }
   render() {  
@@ -118,21 +117,16 @@ class TopicRow extends React.Component {
       <div>
       <div
         id={this.props.topic.name} class="mydetailsItemdiv"
-        onClick={() => this.rowToggled(this.props.topic.name)}
+        onClick={() => this.rowClicked(this.props.topic.name)}
         >{this.props.topic.name}</div>
-        {/* <summary>
-          <font size="+1">
-          <b>{this.props.topic.name}</b>
-          </font>
-        </summary> */}
+
         <div>
             <TopicModal 
               show={this.state.isOpen}
               onClose={this.toggleModal}
               display={this.state.display}
               button={this.props.btnText}
-              //displayConfig={this.state.displayConfigOption}
-              getTopic={this.props.topic}>
+              getTopic={this.props.topic.name}>
             </TopicModal>
           </div>
       </div>
