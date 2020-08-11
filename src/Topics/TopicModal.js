@@ -10,9 +10,11 @@ class TopicModal extends React.Component {
 getsubjectArray=(display)=>{
     const Image = "./";
     //all the subjects
-    var sujectArray = [];
+    var subjectArray = [];
     var bodys = display;
+    
     const blueist = '#27AAE1';
+
     const listItemStyle = {
       backgroundColor: blueist,
       fontWeight: 300,
@@ -24,10 +26,8 @@ getsubjectArray=(display)=>{
       padding: '10px',
       color: 'white'
     };
-
-    bodys.forEach((body) => {
-
-      
+    subjectArray.push(<div><h3>{this.props.getTopic}</h3></div>);
+    bodys.forEach((body) => {      
 
       var bodyArray = body.text.split(/(\[\[|\]\]|\n)/g);
       var subject = body.subject.split(/(\[\[|\]\]|\n)/g);
@@ -86,7 +86,7 @@ getsubjectArray=(display)=>{
         }
 
       }
-      sujectArray.push(
+      subjectArray.push(
         <div className="topicBody" style={listItemStyle}>
           <details id={this.props.topic} class="mydetailsItem">
             <summary class="mysummaryItem">
@@ -103,12 +103,10 @@ getsubjectArray=(display)=>{
         </div>
       );
     });
-return sujectArray;
+return subjectArray;
 }
 
   render() {
-    console.log("topicMODA:::::",this.props)
-    
     if (!this.props.show) {
       return null;
     }
