@@ -40,6 +40,7 @@ class App extends Component {
     var userInfo = {
       userID: null,
       gender: null,
+      Tgender:null,
       patient_provider: null,
       age: null,
       language: null,
@@ -81,6 +82,7 @@ class App extends Component {
       allAgesSelected: (cookies.get('_all_ages_selected') == "true") ? true : false,
       user: cookies.get('user') || 'patient',
       gender: cookies.get('gender'),
+      Tgender: cookies.get('Tgender'),
       region: null,
       city: null,
       preNav: null,
@@ -130,6 +132,8 @@ class App extends Component {
       }
 
       this.fieldSelectionDisplayHandle(this.state.gender);
+      // this.fieldSelectionDisplayHandleTgender(this.state.Tgender);
+
     } catch (err) { }
 
     /// The following steps is to get clientID from google analytics and save it to cookies
@@ -161,6 +165,7 @@ class App extends Component {
       );
   }
 
+  
   fieldSelectionDisplayHandle=(gender)=>{
     if(gender==="nonbinary"|| gender==="transgender"){
       document.getElementById("field_selection").style.display = "block";
@@ -173,7 +178,8 @@ class App extends Component {
   fieldSelectionDisplayHandleTgender=(Tgender)=>{
     if(Tgender==="TgenderY"){
       document.getElementById("field_selection").style.display = "block";
-    }
+    
+      }
     else {
       document.getElementById("field_selection").style.display = "none";
     }
@@ -540,6 +546,15 @@ class App extends Component {
     buttonText: this.state.lang.config_modal_agree,
   });
  }
+ HelpClicked2 = () => {
+  
+  this.setState({
+    isOpen: !this.state.isOpen,
+    headerText: this.state.lang.config_modal_help_header,
+    bodyText: this.state.lang.config_modal_help_body,
+    buttonText: this.state.lang.config_modal_agree,
+  });
+ }
   render() {
     //var userInfo = getUserInfo();
     var userInfo = {
@@ -644,7 +659,7 @@ class App extends Component {
         <div key="1" className="backdrop" style={backdropStyle}>
           <div className="myModal" style={myModalStyle}>
           <div>
-            <button className="button button2" onClick={this.helpClicked}>?</button>
+            <button className="button button23" onClick={this.helpClicked}>?</button>
             </div>
             <div className="footer">
               <p id="choose_mod">{this.state.lang.instruction_modal_header}</p>
@@ -686,7 +701,8 @@ class App extends Component {
               <form>
 
                     <div id="genderSelector" className="radio">
-                     <p id="gender_mod"> {this.state.lang.gender_selector}</p>
+                     <div className="gender_mod"> {this.state.lang.gender_selector}</div>
+                     
                        
                       <label id="male_radio">
                         <input type="radio" value="male" checked={this.state.gender == 'male'} onChange={this.handleGenderChange} />
@@ -831,6 +847,9 @@ class App extends Component {
 
                     <div id="genderSelector" className="radio">
                       {this.state.lang.gender_selector}
+                                       
+                 {console.log('error in function cde:')}
+                
                        <br/>
                       <label id="male_radio">
                         <input type="radio" value="male" checked={this.state.gender == 'male'} onChange={this.handleGenderChange} />
@@ -908,7 +927,7 @@ class App extends Component {
                   <button onClick={this.toggleConfigurationModal}>{this.state.lang.config_modal_agree}</button>
                 </div>
                 <div>
-                 <button className="button button2" onClick={this.helpClicked}>?</button>
+                 <button className="button button22" onClick={this.helpClicked}>?</button>
                  </div>
               </div>
             </div>
