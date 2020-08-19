@@ -35,7 +35,6 @@ class Data {
       var top_surg;
       var bot_surg;
       var hormonet;
-      // var Estrogen;
       if ( UserInfo.isTopSurgery === true)
         {
           top_surg = "Top Surgeries Text";
@@ -50,11 +49,6 @@ class Data {
         {
           hormonet = "Hormone Therapy Text";
         }
-
-        // if ( UserInfo.isEstrogen === true)
-        // {
-        //   Estrogen = "Estrogen Text";
-        // }
 
 
       var TopicItem = [];
@@ -132,10 +126,6 @@ class Data {
               if ( UserInfo.isHormoneTherapy === true && !nonApplicaple.includes(arra1[i][hormonet].toUpperCase())){
               TopicListItem[j].body.push({ subject: arra1[i]['Subject'], text: arra1[i][hormonet]});
               }
-
-              // if ( UserInfo.isEstrogen === true && !nonApplicaple.includes(arra1[i][Estrogen].toUpperCase())){
-              //   TopicListItem[j].body.push({ subject: arra1[i]['Subject'], text: arra1[i][Estrogen]});
-              //   }
               j++;
             }
             else if (topicList.includes(arra1[i]["Topic heading"]) && !nonApplicaple.includes(arra1[i][pat_prov].toUpperCase())) {
@@ -153,10 +143,6 @@ class Data {
               if ( UserInfo.isHormoneTherapy === true && !nonApplicaple.includes(arra1[i][hormonet].toUpperCase())){
                 TopicListItem[index].body.push({ subject: arra1[i]['Subject'], text: arra1[i][hormonet]});
               }
-
-              // if ( UserInfo.isEstrogen === true && !nonApplicaple.includes(arra1[i][Estrogen].toUpperCase())){
-              //   TopicListItem[index].body.push({ subject: arra1[i]['Subject'], text: arra1[i][Estrogen]});
-              // }
             }
           }
         }
@@ -189,7 +175,6 @@ class Data {
       var top_surg;
       var bot_surg;
       var hormonet;
-      // var Estrogen;
       if ( UserInfo.isTopSurgery === true)
       {
         top_surg = "Top Surgeries Text";
@@ -204,12 +189,6 @@ class Data {
       {
         hormonet = "Hormone Therapy Text";
       }
-
-      // if ( UserInfo.isEstrogen === true)
-      // {
-      //   hormonet = "Estrogen Text";
-      // }
-
 
 
 
@@ -278,10 +257,6 @@ class Data {
             TopicListBundle[j].body.push({ subject: arra1[i]['Subject'], text: arra1[i][hormonet]});
           }
 
-          // if ( UserInfo.isEstrogen === true && !nonApplicaple.includes(arra1[i][Estrogen].toUpperCase())){
-          //   TopicListBundle[j].body.push({ subject: arra1[i]['Subject'], text: arra1[i][Estrogen]});
-          // }
-
           j++;
         }
         else if (result.includes(arra1[i]["Topic heading"]) && !nonApplicaple.includes(arra1[i][pat_prov].toUpperCase())) {
@@ -300,10 +275,6 @@ class Data {
           if ( UserInfo.isHormoneTherapy === true && !nonApplicaple.includes(arra1[i][hormonet].toUpperCase())){
             TopicListBundle[index].body.push({ subject: arra1[i]['Subject'], text: arra1[i][hormonet]});
           }
-
-          // if ( UserInfo.isEstrogen === true && !nonApplicaple.includes(arra1[i][Estrogen].toUpperCase())){
-          //   TopicListBundle[index].body.push({ subject: arra1[i]['Subject'], text: arra1[i][Estrogen]});
-          // }
           //RISHANG this was for topic part
         }
       }
