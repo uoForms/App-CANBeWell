@@ -175,15 +175,15 @@ class App extends Component {
     }
   }
 
-  fieldSelectionDisplayHandleTgender=(Tgender)=>{
-    if(Tgender==="TgenderY"){
-      document.getElementById("field_selection").style.display = "block";
+  // fieldSelectionDisplayHandleTgender=(Tgender)=>{
+  //   if(Tgender==="birth_male"){
+  //     document.getElementById("field_selection").style.display = "block";
     
-      }
-    else {
-      document.getElementById("field_selection").style.display = "none";
-    }
-  }
+  //     }
+  //   else {
+  //     document.getElementById("field_selection").style.display = "none";
+  //   }
+  // }
 
   pageViewStateUpdater = ( nav, cat, time ) => {
     console.log(cat+"app.js callback");
@@ -196,8 +196,8 @@ class App extends Component {
 
   //toggle the config modif
   toggleConfigurationModal = () => {
-    var genders = ["male", "female", "all_genders" , "nonbinary","transgender"];
-    var Tgender =["TgenderY","TgenderN"];
+    var genders = ["male", "female", "all_genders" , "nonbinary","transgender"]; //
+    var Tgender =["birth_male","birth_female"];
     if (genders.includes(this.state.gender) && ((this.state.age >= 18 && this.state.age <= 150) || this.state.allAgesSelected)) {
       this.setState({
         configurationIsOpen: !this.state.configurationIsOpen
@@ -212,7 +212,7 @@ class App extends Component {
   toggleIntrutionModal = () => {
     //if(this.state.allowToClose){
     var genders = ["male", "female", "all_genders" , "nonbinary","transgender"];
-    var Tgender =["TgenderY","TgenderN"];
+    var Tgender =["birth_male","birth_female"];
     if (genders.includes(this.state.gender) && ((this.state.age >= 18 && this.state.age <= 150) || this.state.allAgesSelected)) {
       const { cookies } = this.props;
       cookies.set('_onboarded', true, { path: '/' });
@@ -387,13 +387,13 @@ class App extends Component {
   handleGenderChange(changeEvent) {
 
     const { cookies } = this.props;
-    cookies.set('gender', changeEvent.target.value, { path: '/' });
+    cookies.set('gender', changeEvent.target.value, { path: '/' });//curr gender //assigned sex
     //setGender(changeEvent.target.value);
     this.setState({
       gender: changeEvent.target.value
     });
 
-    this.fieldSelectionDisplayHandle(changeEvent.target.value);
+    // this.fieldSelectionDisplayHandle(changeEvent.target.value);
   }
 
 
@@ -406,7 +406,7 @@ class App extends Component {
       Tgender: TchangeEvent.target.value
     });
 
-    this.fieldSelectionDisplayHandleTgender(TchangeEvent.target.value);
+    // this.fieldSelectionDisplayHandleTgender(TchangeEvent.target.value);
   }
   //set fields selected based on gender   
   // onChangeTopSurgery(event) {
@@ -702,6 +702,7 @@ class App extends Component {
 
                     <div id="genderSelector" className="radio">
                      <div className="gender_mod"> {this.state.lang.gender_selector}</div>
+                     {/* <p><button className="button button23" onClick={this.helpClicked}>?</button></p> */}
                      
                        
                       <label id="male_radio">
@@ -720,10 +721,10 @@ class App extends Component {
                       {this.state.lang.nonbinary}
                     </label>
                     <br/>
-                    <label id="trans_radio">
+                    {/* <label id="trans_radio">
                       <input type="radio" value="transgender" checked={this.state.gender == 'transgender'} onChange={this.handleGenderChange} />
                       {this.state.lang.transgender}
-                    </label>
+                    </label> */}
                       {/*this.state.user === 'provider' || null ?
                       (<label>
                         <input type="radio" value="all_genders" checked={this.state.gender == 'all_genders'} onChange={this.handleGenderChange} />
@@ -738,20 +739,20 @@ class App extends Component {
                    <div id="TgenderSelector" className="radio">
                       {this.state.lang.Tgender_selector}
                       <label>
-                      <input type="radio" value="TgenderY" checked={this.state.Tgender == 'TgenderY' && this.state.gender} onChange={this.handleTransGenderChange} />
-                      {this.state.lang.TgenderY}
+                      <input type="radio" value="birth_male" checked={this.state.Tgender == 'birth_male' && this.state.gender} onChange={this.handleTransGenderChange} />
+                      {this.state.lang.birth_male}
                       </label>
                       <label>
-                      <input type="radio" value="TgenderN" checked={this.state.Tgender == 'TgenderN'} onChange={this.handleTransGenderChange} />
-                      {this.state.lang.TgenderN}
+                      <input type="radio" value="birth_female" checked={this.state.Tgender == 'birth_female'} onChange={this.handleTransGenderChange} />
+                      {this.state.lang.birth_female}
                      </label>
                      </div>
                 {/*Field selection based on gender*/}
              
-              <form>
+              {/* <form>
                     <div id="field_selection" style={fieldSelectionDiv}>
                       <p id="opt_mod">Interventions:</p>
-                      {/* <label id="horm_mod">
+                      {<label id="horm_mod">
                       <input type="checkbox" checked={this.state.isHormoneTherapy} onChange={this.onChangeHormoneTherapy} /> Hormone Therapy </label>
                                <br/>
                      <label id="top_mod">
@@ -759,7 +760,7 @@ class App extends Component {
                                <br/>
                       <label id="bott_mod">
                       <input type="checkbox" checked={this.state.isBottomSurgery} onChange={this.onChangeBottomSurgery} /> Bottom Surgery </label>
-                                <br/> */}
+                                <br/> }
                       <label id="bott_mod">
                       <input type="checkbox" checked={this.state.isEstrogen} onChange={this.onChangeisEstrogen} /> Estrogen </label>
                       <br/>
@@ -775,7 +776,8 @@ class App extends Component {
                       <label id="bott_mod">
                       <input type="checkbox" checked={this.state.isProstate} onChange={this.onChangeisProstate} /> Prostate </label>
                     </div>
-                  </form>
+                  </form> */}
+              
               </div>
               
 
@@ -847,9 +849,8 @@ class App extends Component {
 
                     <div id="genderSelector" className="radio">
                       {this.state.lang.gender_selector}
-                                       
-                 {console.log('error in function cde:')}
-                
+                      {/* <button className="button button22" onClick={this.helpClicked}>?</button>               */}
+                                
                        <br/>
                       <label id="male_radio">
                         <input type="radio" value="male" checked={this.state.gender == 'male'} onChange={this.handleGenderChange} />
@@ -867,10 +868,10 @@ class App extends Component {
                       {this.state.lang.nonbinary}
                     </label>
                     <br/>
-                   <label>
+                   {/* <label>
                       <input type="radio" value="transgender" checked={this.state.gender == 'transgender'} onChange={this.handleGenderChange} />
                       {this.state.lang.transgender}
-                    </label>
+                    </label> */}
                       {/*this.state.user === 'provider' || null ?
                       (<label>
                         <input type="radio" value="all_genders" checked={this.state.gender == 'all_genders'} onChange={this.handleGenderChange} />
@@ -884,25 +885,25 @@ class App extends Component {
                     <div id="TgenderSelector" className="radio">
                       {this.state.lang.Tgender_selector}
                       <label>
-                      <input type="radio" value="TgenderY" checked={this.state.Tgender == 'TgenderY' && this.state.gender} onChange={this.handleTransGenderChange} />
-                      {this.state.lang.TgenderY}
+                      <input type="radio" value="birth_male" checked={this.state.Tgender == 'birth_male' && this.state.gender} onChange={this.handleTransGenderChange} />
+                      {this.state.lang.birth_male}
                       </label>
                       <label>
-                      <input type="radio" value="TgenderN" checked={this.state.Tgender == 'TgenderN'} onChange={this.handleTransGenderChange} />
-                      {this.state.lang.TgenderN}
+                      <input type="radio" value="birth_female" checked={this.state.Tgender == 'birth_female'} onChange={this.handleTransGenderChange} />
+                      {this.state.lang.birth_female}
                      </label>
                      </div>
                   {/*Field selection based on gender*/}
-                  <form>
+                  {/* <form>
                     <div id="field_selection" style={fieldSelectionDiv}>
                     Interventions: <br/>
                     
-                      {/* <input type="checkbox" checked={this.state.isHormoneTherapy} onChange={this.onChangeHormoneTherapy} /> Hormone Therapy
+                      <input type="checkbox" checked={this.state.isHormoneTherapy} onChange={this.onChangeHormoneTherapy} /> Hormone Therapy
                                <br/>
                       <input type="checkbox" checked={this.state.isTopSurgery} onChange={this.onChangeTopSurgery} /> Top Surgery
                                <br/>
                       <input type="checkbox" checked={this.state.isBottomSurgery} onChange={this.onChangeBottomSurgery} /> Bottom Surgery
-                      <br/> */}
+                      <br/>
                       <label id="bott_mod">
                       <input type="checkbox" checked={this.state.isEstrogen} onChange={this.onChangeisEstrogen} /> Estrogen </label>
                       <br/>
@@ -919,7 +920,7 @@ class App extends Component {
                       <input type="checkbox" checked={this.state.isProstate} onChange={this.onChangeisProstate} /> Prostate </label>
                                
                     </div>
-                  </form>
+                  </form> */}
                   </div>
                 
                 {/*close button*/}

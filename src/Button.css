@@ -81,8 +81,17 @@
   position: absolute;
   transition: 0.5s ease;
   right: 53%;
-  top: 33.5%;
+  top: 29.5%;
   z-index: 10;
+  
+}
+
+@media only screen and (max-width: 45%) {
+  .button23 {
+    right: 59%;
+    top: 38.5%;
+    /* z-index: 5; */
+  }
 }
 
 .button3 {
