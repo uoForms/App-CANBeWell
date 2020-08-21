@@ -23,7 +23,7 @@
     "Button": "Covid",
     "Topic heading": "COVID-19",
     "Subject": "First Nations, Métis, Inuit",
-    "General Patient Text": "•[[National links for First Nations, Métis and Inuit collected on the Ottawa Public Health Website; https://www.ottawapublichealth.ca/en/public-health-topics/resources-for-first-nations-inuit-and-m-tis-community-members.aspx]]\n•[[Video 1; https://www.youtube.com/watch?v=jefCDf6ccJ4]]\n•[[Video 2; https://www.youtube.com/watch?v=bk2fp5rS-kg&feature=youtu.be]]\n•[[Diabetes and COVID-19; http://nada.ca/?page_id=3172]]",
+    "General Patient Text": "•[[First Nations; https://www.afn.ca/coronavirus/#factsheet]]\n•[[Métis; https://metisnation.ca/covid19/]]\n•[[Inuit; https://www.itk.ca/what-we-do/covid19/]]\n•[[Native Women’s Association of Canada; https://www.nwac.ca/covid19/]]\n•[[National Collaboration on Indigenous Health; https://www.nccih.ca/485/NCCIH_in_the_News.nccih?id=450]]\n•[[Video 1; https://www.youtube.com/watch?v=jefCDf6ccJ4]]\n•[[Video 2; https://www.youtube.com/watch?v=bk2fp5rS-kg&feature=youtu.be]]\n•[[Diabetes and COVID-19; http://nada.ca/?page_id=3172]]",
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
@@ -133,7 +133,7 @@
     "Button": "aorta",
     "Topic heading": "Aorta: the body's main blood vessel",
     "Subject": "Talk to your provider to see if you need a test",
-    "General Patient Text": "Your provider may ask for\nan ultrasound of your belly\nto detect a bulge in the main blood vessel \n(the bulge is nicknamed AAA \nfor short or\nAbdominal Aortic Aneurysm)\nIf the bulge grows it can burst and cause death.",
+    "General Patient Text": "Your provider may ask for an ultrasound of your belly\nto detect a bulge in the main blood vessel \n(the bulge is nicknamed AAA \nfor short or\nAbdominal Aortic Aneurysm)\nIf the bulge grows it can burst and cause death.",
     "Health Provider Text": "n/a",
     "Gender": "m",
     "Minimum age": 65,
@@ -297,6 +297,16 @@
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 75,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Pancreas",
+    "Topic heading": "Diabetes Type 2",
+    "Subject": "National Indigenous Diabetes Association",
+    "General Patient Text": "[[National Indigenous Diabetes Association; http://nada.ca/]]\n[[Food and Nutrition; http://nada.ca/?page_id=1563]]",
+    "Health Provider Text": "n/a",
+    "Gender": "all",
+    "Minimum age": 18,
     "Maximum age": 150
   },
   {
