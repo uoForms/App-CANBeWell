@@ -176,7 +176,7 @@ class Anatomy extends React.Component {
       zIndex: 3
     };
 
-    if (this.props.gender === "male") {
+    if (this.props.gender === "male" && this.props.Tgender === "birth_male") {
       return (
         <div>
           <div className="mainRunner">
@@ -231,7 +231,7 @@ class Anatomy extends React.Component {
         </div>
       );
     }
-    else if (this.props.gender === "female") {
+    else if (this.props.gender === "female" && this.props.Tgender === "birth_female") {
       return (
         <div>
           <div className="mainRunner">
@@ -354,7 +354,7 @@ class Anatomy extends React.Component {
     //end of nonbinary
 
 //birthchangesstart
-else if (this.props.gender === "male" && this.props.Tgender === "birth_female" || this.props.gender === "female" && this.props.Tgender === "birth_male" )  {
+else if ((this.props.gender === "male" && this.props.Tgender === "birth_female") || (this.props.gender === "female" && this.props.Tgender === "birth_male"))  {
       return (
         <div>
           <div className="mainRunner">

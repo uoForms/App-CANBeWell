@@ -388,7 +388,7 @@ class App extends Component {
 
     const { cookies } = this.props;
     cookies.set('gender', changeEvent.target.value, { path: '/' });//curr gender //assigned sex
-    //setGender(changeEvent.target.value);
+    
     this.setState({
       gender: changeEvent.target.value
     });
@@ -401,7 +401,7 @@ class App extends Component {
 
     const { cookies } = this.props;
     cookies.set('Tgender', TchangeEvent.target.value, { path: '/' });
-    //setGender(changeEvent.target.value);
+
     this.setState({
       Tgender: TchangeEvent.target.value
     });
@@ -739,7 +739,7 @@ class App extends Component {
                    <div id="TgenderSelector" className="radio">
                       {this.state.lang.Tgender_selector}
                       <label>
-                      <input type="radio" value="birth_male" checked={this.state.Tgender == 'birth_male' && this.state.gender} onChange={this.handleTransGenderChange} />
+                      <input type="radio" value="birth_male" checked={this.state.Tgender == 'birth_male'} onChange={this.handleTransGenderChange} />
                       {this.state.lang.birth_male}
                       </label>
                       <label>
@@ -885,7 +885,7 @@ class App extends Component {
                     <div id="TgenderSelector" className="radio">
                       {this.state.lang.Tgender_selector}
                       <label>
-                      <input type="radio" value="birth_male" checked={this.state.Tgender == 'birth_male' && this.state.gender} onChange={this.handleTransGenderChange} />
+                      <input type="radio" value="birth_male" checked={this.state.Tgender == 'birth_male'} onChange={this.handleTransGenderChange} />
                       {this.state.lang.birth_male}
                       </label>
                       <label>
