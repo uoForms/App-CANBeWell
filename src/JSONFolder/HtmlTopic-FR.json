@@ -23,7 +23,7 @@
     "Button": "Covid",
     "Topic heading": "COVID-19",
     "Subject": "Premières Nations, Métis et Inuit",
-    "General Patient Text": "•[[Informations generales regroupées sur le site de santé publique d'Ottawa; https://www.santepubliqueottawa.ca/fr/public-health-topics/resources-for-first-nations-inuit-and-m-tis-community-members.aspx]]\n•[[Vidéo 1; https://www.youtube.com/watch?v=7uCl_rodkaQ&feature=youtu.be]]\n•[[Vidéo 2; https://www.youtube.com/watch?v=bk2fp5rS-kg&feature=youtu.be]]\n•[[Diabète et COVID en anglais;  http://nada.ca/?page_id=3172]]",
+    "General Patient Text": "•[[Premières Nations; https://www.afn.ca/fr/coronavirus/]]\n•[[Centre de collaboration nationale de la santé autochtone; https://www.ccnsa.ca/543/Nouvelles_du_CCNSA.nccih?id=451]]\n•[[Métis; https://metisnation.ca/covid19/]]\n•[[Inuit; https://www.itk.ca/what-we-do/covid19/]]\n•[[Association des femmes autochtones du Canada; https://www.nwac.ca/covid19/]]\n•[[Vidéo 1; https://www.youtube.com/watch?v=7uCl_rodkaQ&feature=youtu.be]]\n•[[Vidéo 2; https://www.youtube.com/watch?v=bk2fp5rS-kg&feature=youtu.be]]\n•[[Diabète et COVID en anglais;  http://nada.ca/?page_id=3172]]",
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
@@ -397,6 +397,16 @@
     "Health Provider Text": "L’American Geriatrics Society\net la British Geriatrics Society recommandent de poser des questions sur les\nchutes tous les ans\n[[réf. de l’article de la revue MFC; http://www.cfp.ca/content/62/9/e508]]\n[[plus de renseignements; https://www.ajpmonline.org/article/S0749-3797(18)31759-8/fulltext]]\n\nPour conseiller les patients,\nvoir la section sur les chutes dans l’application.",
     "Gender": "all",
     "Minimum age": 65,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Pancreas",
+    "Topic heading": "Diabète de type 2",
+    "Subject": "Association Nationale Autochtone Diabète",
+    "General Patient Text": "•[[Association Nationale Autochtone Diabète;  http://nada.ca/]]\n•[[Nutrition;http://nada.ca/?page_id=1563]]",
+    "Health Provider Text": "n/a",
+    "Gender": "all",
+    "Minimum age": 18,
     "Maximum age": 150
   },
   {
