@@ -840,7 +840,9 @@ class App extends Component {
             userConfig={userInfo} 
             data={this.state.data.getListOfTopics} 
             lang={this.state.lang} 
-            pageViewStateUpdater = {this.pageViewStateUpdater}></Topics>
+            pageViewStateUpdater = {this.pageViewStateUpdater}
+            onClose={this.toggleModal}
+            button={this.state.buttonText}></Topics>
         </div>
 
         {/* <button style={fixedStyle}>
