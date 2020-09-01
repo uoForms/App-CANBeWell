@@ -13,7 +13,7 @@
     "patient": "Patient",
     "provider": "Provider",
     "gender_selector": "Gender: ",
-    "Tgender_selector": "Sex assigned at birth ",
+    "Tgender_selector": "Sex assigned at birth: ",
     "male": "Male",
     "female": "Female",
     "nonbinary": "Non-Binary",
