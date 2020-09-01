@@ -54,4 +54,5 @@ h1{
 .mydetailsItemdiv{
   font-size: medium;
   font-weight: bold;
+  cursor: pointer;
 }
