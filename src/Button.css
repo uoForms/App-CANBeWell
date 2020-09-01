@@ -59,8 +59,8 @@
   text-decoration: none;
   position: absolute;
   transition: 0.5s ease;
-  right: 53%;
-  top: -1%;
+  right: 75%;
+  top: 40%;
 }
 
 .button23 {
@@ -80,9 +80,9 @@
   text-decoration: none;
   position: absolute;
   transition: 0.5s ease;
-  right: 53%;
+  right: 52%;
   top: 29.5%;
-  z-index: 10;
+  z-index: 5;
   
 }
 

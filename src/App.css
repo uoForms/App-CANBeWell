@@ -229,23 +229,39 @@ body {
 
 
 #male_radio{
-  margin-right:  56px;
+  margin-right:  186px;
 }
 
+#birth_male_mod{
+  margin-right:  184px;
+}
+
+#female_male_mod{
+  margin-right:  164px;
+}
+
+
 #female_radio{
-  margin-right:  35px;
+  margin-right:  166px;
 }
 
 #trans_radio{
-  margin-right:  -11px;
+  margin-right:  118px;
 }
 
 #nb_radio{
-  margin-right:  -2px;
+  margin-right:  129px;
 }
 
 #gender_mod{
   margin-right: 192px;
+}
+
+.Tgender_mod{
+  margin-right: 94px;
+  position: relative;
+  padding: 1px 2px 3px 1px;
+  
 }
 
 
@@ -262,11 +278,11 @@ body {
 }
 
 #pat_mod{
-  margin-right: 40px;
+  margin-right: 170px;
 }
 
 #prov_mod{
-  margin-right: 28px;
+  margin-right: 159px;
 }
 
 
