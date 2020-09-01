@@ -894,7 +894,7 @@
     "Topic heading": "Sex & Prostate",
     "Subject": "Prostate Cancer",
     "General Patient Text": "Patient: No screening",
-    "Health Provider Text": "Patient: No screening",
+    "Health Provider Text": "Provider: No screening",
     "Gender": "af",
     "Minimum age": 18,
     "Maximum age": 150
@@ -1104,7 +1104,7 @@
     "Topic heading": "Osteoporosis",
     "Subject": "Osteoporosis",
     "General Patient Text": "Patient: Generally same as cis patients but considered high risk if not on ANY hormones for prolonged periods (e.g. no estrogen or testosterone)",
-    "Health Provider Text": "Patient: Generally same as cis patients but considered high risk if not on ANY hormones for prolonged periods (e.g. no estrogen or testosterone)",
+    "Health Provider Text": "Provider: Generally same as cis patients but considered high risk if not on ANY hormones for prolonged periods (e.g. no estrogen or testosterone)",
     "Gender": "am",
     "Minimum age": 18,
     "Maximum age": 150
