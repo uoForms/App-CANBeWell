@@ -40,6 +40,7 @@ class App extends Component {
     var userInfo = {
       userID: null,
       gender: null,
+      Tgender:null,
       patient_provider: null,
       age: null,
       language: null,
@@ -48,9 +49,14 @@ class App extends Component {
       preNav: null,
       preCat: null,
       preTime: null,
-      isTopSurgery:null,
-      isBottomSurgery:null,
-      isHormoneTherapy:null
+      // isTopSurgery:null,
+      // isBottomSurgery:null,
+      // isHormoneTherapy:null,
+      isEstrogen:null,
+      isTestosterone:null,
+      isBreasts:null,
+      isVaginaCervix:null,
+      isProstate:null
     };// = getUserInfo();
     let DataToDisplay = new Data(this.props.appLanguage);
     var app_language = this.props.appLanguage;
@@ -76,14 +82,20 @@ class App extends Component {
       allAgesSelected: (cookies.get('_all_ages_selected') == "true") ? true : false,
       user: cookies.get('user') || 'patient',
       gender: cookies.get('gender'),
+      Tgender: cookies.get('Tgender'),
       region: null,
       city: null,
       preNav: null,
       preCat: null,
       preTime: null,
-      isTopSurgery: (cookies.get('isTopSurgery') == "true") ? true : false,//cookies.get('isTopSurgery'),
-      isBottomSurgery:(cookies.get('isBottomSurgery') == "true") ? true : false,//cookies.get('isBottomSurgery'),
-      isHormoneTherapy: (cookies.get('isHormoneTherapy') == "true") ? true : false,//cookies.get('isHormoneTherapy'),
+      // isTopSurgery: (cookies.get('isTopSurgery') == "true") ? true : false,//cookies.get('isTopSurgery'),
+      // isBottomSurgery:(cookies.get('isBottomSurgery') == "true") ? true : false,//cookies.get('isBottomSurgery'),
+      // isHormoneTherapy: (cookies.get('isHormoneTherapy') == "true") ? true : false,//cookies.get('isHormoneTherapy'),
+      isEstrogen: (cookies.get('isEstrogen') == "true") ? true : false,//cookies.get('isEstrogen'),
+      isTestosterone: (cookies.get('isEstrogen') == "true") ? true : false,//cookies.get('isTestosterone'),
+      isBreasts: (cookies.get('isEstrogen') == "true") ? true : false,//cookies.get('isBreasts'),
+      isVaginaCervix: (cookies.get('isEstrogen') == "true") ? true : false,//cookies.get('isVaginaCervix'),
+      isProstate: (cookies.get('isEstrogen') == "true") ? true : false,//cookies.get('isProstate'),
       showMe: true
       
 
@@ -96,10 +108,15 @@ class App extends Component {
     this.handlePatientProviderChangeFromConfig = this.handlePatientProviderChangeFromConfig.bind(this);
     this.handleAllAgesSelected = this.handleAllAgesSelected.bind(this);
     this.pageViewStateUpdater = this.pageViewStateUpdater.bind(this);
-    this.handleGenderChange = this.handleGenderChange.bind(this);
-    this.onChangeTopSurgery=this.onChangeTopSurgery.bind(this);
-    this.onChangeBottomSurgery=this.onChangeBottomSurgery.bind(this);
-    this.onChangeHormoneTherapy=this.onChangeHormoneTherapy.bind(this);
+    this.handleTransGenderChange = this.handleTransGenderChange.bind(this);
+    // this.onChangeTopSurgery=this.onChangeTopSurgery.bind(this);
+    // this.onChangeBottomSurgery=this.onChangeBottomSurgery.bind(this);
+    // this.onChangeHormoneTherapy=this.onChangeHormoneTherapy.bind(this);
+    this.onChangeisEstrogen=this.onChangeisEstrogen.bind(this);
+    this.onChangeisTestosterone=this.onChangeisTestosterone.bind(this);
+    this.onChangeisBreasts=this.onChangeisBreasts.bind(this);
+    this.onChangeisVaginaCervix=this.onChangeisVaginaCervix.bind(this);
+    this.onChangeisProstate=this.onChangeisProstate.bind(this);
   }
 
   componentDidMount() {
@@ -115,6 +132,8 @@ class App extends Component {
       }
 
       this.fieldSelectionDisplayHandle(this.state.gender);
+      // this.fieldSelectionDisplayHandleTgender(this.state.Tgender);
+
     } catch (err) { }
 
     /// The following steps is to get clientID from google analytics and save it to cookies
@@ -146,6 +165,7 @@ class App extends Component {
       );
   }
 
+  
   fieldSelectionDisplayHandle=(gender)=>{
     if(gender==="nonbinary"|| gender==="transgender"){
       document.getElementById("field_selection").style.display = "block";
@@ -154,6 +174,16 @@ class App extends Component {
       document.getElementById("field_selection").style.display = "none";
     }
   }
+
+  // fieldSelectionDisplayHandleTgender=(Tgender)=>{
+  //   if(Tgender==="birth_male"){
+  //     document.getElementById("field_selection").style.display = "block";
+    
+  //     }
+  //   else {
+  //     document.getElementById("field_selection").style.display = "none";
+  //   }
+  // }
 
   pageViewStateUpdater = ( nav, cat, time ) => {
     console.log(cat+"app.js callback");
@@ -166,7 +196,8 @@ class App extends Component {
 
   //toggle the config modif
   toggleConfigurationModal = () => {
-    var genders = ["male", "female", "all_genders" , "nonbinary","transgender"];
+    var genders = ["male", "female", "all_genders" , "nonbinary","transgender"]; //
+    var Tgender =["birth_male","birth_female"];
     if (genders.includes(this.state.gender) && ((this.state.age >= 18 && this.state.age <= 150) || this.state.allAgesSelected)) {
       this.setState({
         configurationIsOpen: !this.state.configurationIsOpen
@@ -181,7 +212,7 @@ class App extends Component {
   toggleIntrutionModal = () => {
     //if(this.state.allowToClose){
     var genders = ["male", "female", "all_genders" , "nonbinary","transgender"];
-
+    var Tgender =["birth_male","birth_female"];
     if (genders.includes(this.state.gender) && ((this.state.age >= 18 && this.state.age <= 150) || this.state.allAgesSelected)) {
       const { cookies } = this.props;
       cookies.set('_onboarded', true, { path: '/' });
@@ -356,38 +387,95 @@ class App extends Component {
   handleGenderChange(changeEvent) {
 
     const { cookies } = this.props;
-    cookies.set('gender', changeEvent.target.value, { path: '/' });
-    //setGender(changeEvent.target.value);
+    cookies.set('gender', changeEvent.target.value, { path: '/' });//curr gender //assigned sex
+    
     this.setState({
       gender: changeEvent.target.value
     });
 
-    this.fieldSelectionDisplayHandle(changeEvent.target.value);
+    // this.fieldSelectionDisplayHandle(changeEvent.target.value);
   }
 
+
+  handleTransGenderChange(TchangeEvent) {
+
+    const { cookies } = this.props;
+    cookies.set('Tgender', TchangeEvent.target.value, { path: '/' });
+
+    this.setState({
+      Tgender: TchangeEvent.target.value
+    });
+
+    // this.fieldSelectionDisplayHandleTgender(TchangeEvent.target.value);
+  }
   //set fields selected based on gender   
-  onChangeTopSurgery(event) {
+  // onChangeTopSurgery(event) {
+  //   const { cookies } = this.props;
+  //   cookies.set('isTopSurgery', !this.state.isTopSurgery, { path: '/' });
+
+  //   this.setState({
+  //     isTopSurgery: (!this.state.isTopSurgery)
+  //   });
+  // }
+  // onChangeBottomSurgery(event) {
+  //   const { cookies } = this.props;
+  //   cookies.set('isBottomSurgery', !this.state.isBottomSurgery, { path: '/' });
+
+  //   this.setState({
+  //     isBottomSurgery: (!this.state.isBottomSurgery)
+  //   });
+  // }
+  // onChangeHormoneTherapy(event) {
+  //   const { cookies } = this.props;
+  //   cookies.set('isHormoneTherapy', !this.state.isHormoneTherapy, { path: '/' });
+
+  //   this.setState({
+  //     isHormoneTherapy: (!this.state.isHormoneTherapy)
+  //   });
+  // }
+
+  onChangeisEstrogen(event) {
     const { cookies } = this.props;
-    cookies.set('isTopSurgery', !this.state.isTopSurgery, { path: '/' });
+    cookies.set('isEstrogen', !this.state.isEstrogen, { path: '/' });
 
     this.setState({
-      isTopSurgery: (!this.state.isTopSurgery)
+      isEstrogen: (!this.state.isEstrogen)
     });
   }
-  onChangeBottomSurgery(event) {
+
+  onChangeisTestosterone(event) {
     const { cookies } = this.props;
-    cookies.set('isBottomSurgery', !this.state.isBottomSurgery, { path: '/' });
+    cookies.set('isTestosterone  ', !this.state.isTestosterone  , { path: '/' });
 
     this.setState({
-      isBottomSurgery: (!this.state.isBottomSurgery)
+      isTestosterone: (!this.state.isTestosterone)
     });
   }
-  onChangeHormoneTherapy(event) {
+
+  onChangeisBreasts(event) {
     const { cookies } = this.props;
-    cookies.set('isHormoneTherapy', !this.state.isHormoneTherapy, { path: '/' });
+    cookies.set('isBreasts', !this.state.isBreasts, { path: '/' });
 
     this.setState({
-      isHormoneTherapy: (!this.state.isHormoneTherapy)
+      isBreasts: (!this.state.isBreasts)
+    });
+  }
+
+  onChangeisVaginaCervix(event) {
+    const { cookies } = this.props;
+    cookies.set('isVaginaCervix', !this.state.isVaginaCervix, { path: '/' });
+
+    this.setState({
+      isVaginaCervix: (!this.state.isVaginaCervix)
+    });
+  }
+
+  onChangeisProstate(event) {
+    const { cookies } = this.props;
+    cookies.set('isProstate', !this.state.isProstate, { path: '/' });
+
+    this.setState({
+      isProstate: (!this.state.isProstate)
     });
   }
 
@@ -402,11 +490,9 @@ class App extends Component {
   openNav = () => {
     document.getElementById("mySidenav").style.width = "250px";
   }
-
   closeNav = () => {
     document.getElementById("mySidenav").style.width = "0px";
   }
-
   suggestedAppsClicked = () => {
     this.setState({
       isOpen: !this.state.isOpen,
@@ -424,7 +510,6 @@ class App extends Component {
     });
   }
   disclaimerClicked = () => {
-
     this.setState({
       isOpen: !this.state.isOpen,
       headerText: this.state.lang.side_nav_disclaimer,
@@ -458,11 +543,21 @@ class App extends Component {
     buttonText: this.state.lang.config_modal_agree,
   });
  }
+ HelpClicked2 = () => {
+  
+  this.setState({
+    isOpen: !this.state.isOpen,
+    headerText: this.state.lang.config_modal_help_header,
+    bodyText: this.state.lang.config_modal_help_body,
+    buttonText: this.state.lang.config_modal_agree,
+  });
+ }
   render() {
     //var userInfo = getUserInfo();
     var userInfo = {
       userID: this.state.userID,
       gender: this.state.gender,
+      Tgender:this.state.Tgender,
       patient_provider: this.state.user,
       age: this.state.age,
       language: this.state.language, //TODO plese change that VERY important
@@ -471,9 +566,14 @@ class App extends Component {
       preNav: this.state.preNav,
       preCat: this.state.preCat,
       preTime: this.state.preTime,
-      isTopSurgery:this.state.isTopSurgery,
-      isBottomSurgery:this.state.isBottomSurgery,
-      isHormoneTherapy:this.state.isHormoneTherapy
+      // isTopSurgery:this.state.isTopSurgery,
+      // isBottomSurgery:this.state.isBottomSurgery,
+      // isHormoneTherapy:this.state.isHormoneTherapy,
+      isEstrogen:this.state.isEstrogen,
+      isTestosterone:this.state.isTestosterone,
+      isBreasts:this.state.isBreasts,
+      isVaginaCervix:this.state.isVaginaCervix,
+      isProstate:this.state.isProstate,
     };
 
     const fixedStyle = {
@@ -556,7 +656,9 @@ class App extends Component {
         <div key="1" className="backdrop" style={backdropStyle}>
           <div className="myModal" style={myModalStyle}>
           <div>
-            <button className="button button2" onClick={this.helpClicked}>?</button>
+            {/* this is the original button, works fine 
+            but i have applied css zindex and positioned it over other div which is trick that doesnt aligns with screen size */}
+            <button className="button button23" onClick={this.helpClicked}>?</button>
             </div>
             <div className="footer">
               <p id="choose_mod">{this.state.lang.instruction_modal_header}</p>
@@ -598,7 +700,10 @@ class App extends Component {
               <form>
 
                     <div id="genderSelector" className="radio">
-                     <p id="gender_mod"> {this.state.lang.gender_selector}</p>
+                     <div className="gender_mod"> {this.state.lang.gender_selector}</div>
+                     {/* this button is crack takes me to the landing page */}
+                     <p><button className="button button22" onClick={this.helpClicked}>?</button></p> 
+                     
                        
                       <label id="male_radio">
                         <input type="radio" value="male" checked={this.state.gender == 'male'} onChange={this.handleGenderChange} />
@@ -616,11 +721,10 @@ class App extends Component {
                       {this.state.lang.nonbinary}
                     </label>
                     <br/>
-
-                    <label id="trans_radio">
+                    {/* <label id="trans_radio">
                       <input type="radio" value="transgender" checked={this.state.gender == 'transgender'} onChange={this.handleGenderChange} />
                       {this.state.lang.transgender}
-                    </label>
+                    </label> */}
                       {/*this.state.user === 'provider' || null ?
                       (<label>
                         <input type="radio" value="all_genders" checked={this.state.gender == 'all_genders'} onChange={this.handleGenderChange} />
@@ -630,12 +734,25 @@ class App extends Component {
 
                     </div>
                   </form>
+                  {/* {Are you a Transgender} */}
+                   {/* {Are you a Transgender} */}
+                   <div id="TgenderSelector" className="radio">
+                      {this.state.lang.Tgender_selector}
+                      <label>
+                      <input type="radio" value="birth_male" checked={this.state.Tgender == 'birth_male'} onChange={this.handleTransGenderChange} />
+                      {this.state.lang.birth_male}
+                      </label>
+                      <label>
+                      <input type="radio" value="birth_female" checked={this.state.Tgender == 'birth_female'} onChange={this.handleTransGenderChange} />
+                      {this.state.lang.birth_female}
+                     </label>
+                     </div>
                 {/*Field selection based on gender*/}
              
-              <form>
+              {/* <form>
                     <div id="field_selection" style={fieldSelectionDiv}>
-                      <p id="opt_mod">Options:</p>
-                      <label id="horm_mod">
+                      <p id="opt_mod">Interventions:</p>
+                      {<label id="horm_mod">
                       <input type="checkbox" checked={this.state.isHormoneTherapy} onChange={this.onChangeHormoneTherapy} /> Hormone Therapy </label>
                                <br/>
                      <label id="top_mod">
@@ -643,8 +760,24 @@ class App extends Component {
                                <br/>
                       <label id="bott_mod">
                       <input type="checkbox" checked={this.state.isBottomSurgery} onChange={this.onChangeBottomSurgery} /> Bottom Surgery </label>
+                                <br/> }
+                      <label id="bott_mod">
+                      <input type="checkbox" checked={this.state.isEstrogen} onChange={this.onChangeisEstrogen} /> Estrogen </label>
+                      <br/>
+                      <label id="bott_mod">
+                      <input type="checkbox" checked={this.state.isTestosterone} onChange={this.onChangeisTestosterone} /> Testosterone </label>
+                      <br/>
+                      <label id="bott_mod">
+                      <input type="checkbox" checked={this.state.isBreasts} onChange={this.onChangeisBreasts} /> Breasts </label>
+                      <br/>
+                      <label id="bott_mod">
+                      <input type="checkbox" checked={this.state.isVaginaCervix} onChange={this.onChangeisVaginaCervix} /> Vagina and/or cervix </label>
+                      <br/>
+                      <label id="bott_mod">
+                      <input type="checkbox" checked={this.state.isProstate} onChange={this.onChangeisProstate} /> Prostate </label>
                     </div>
-                  </form>
+                  </form> */}
+              
               </div>
               
 
@@ -716,6 +849,8 @@ class App extends Component {
 
                     <div id="genderSelector" className="radio">
                       {this.state.lang.gender_selector}
+                      {/* <button className="button button22" onClick={this.helpClicked}>?</button>               */}
+                                
                        <br/>
                       <label id="male_radio">
                         <input type="radio" value="male" checked={this.state.gender == 'male'} onChange={this.handleGenderChange} />
@@ -733,11 +868,10 @@ class App extends Component {
                       {this.state.lang.nonbinary}
                     </label>
                     <br/>
-
-                    <label>
+                   {/* <label>
                       <input type="radio" value="transgender" checked={this.state.gender == 'transgender'} onChange={this.handleGenderChange} />
                       {this.state.lang.transgender}
-                    </label>
+                    </label> */}
                       {/*this.state.user === 'provider' || null ?
                       (<label>
                         <input type="radio" value="all_genders" checked={this.state.gender == 'all_genders'} onChange={this.handleGenderChange} />
@@ -747,27 +881,54 @@ class App extends Component {
 
                     </div>
                   </form>
+                    {/* {Are you a Transgender} */}
+                    <div id="TgenderSelector" className="radio">
+                      {this.state.lang.Tgender_selector}
+                      <label>
+                      <input type="radio" value="birth_male" checked={this.state.Tgender == 'birth_male'} onChange={this.handleTransGenderChange} />
+                      {this.state.lang.birth_male}
+                      </label>
+                      <label>
+                      <input type="radio" value="birth_female" checked={this.state.Tgender == 'birth_female'} onChange={this.handleTransGenderChange} />
+                      {this.state.lang.birth_female}
+                     </label>
+                     </div>
                   {/*Field selection based on gender*/}
-                  <form>
+                  {/* <form>
                     <div id="field_selection" style={fieldSelectionDiv}>
-                    Options: <br/>
+                    Interventions: <br/>
                     
                       <input type="checkbox" checked={this.state.isHormoneTherapy} onChange={this.onChangeHormoneTherapy} /> Hormone Therapy
                                <br/>
                       <input type="checkbox" checked={this.state.isTopSurgery} onChange={this.onChangeTopSurgery} /> Top Surgery
                                <br/>
                       <input type="checkbox" checked={this.state.isBottomSurgery} onChange={this.onChangeBottomSurgery} /> Bottom Surgery
+                      <br/>
+                      <label id="bott_mod">
+                      <input type="checkbox" checked={this.state.isEstrogen} onChange={this.onChangeisEstrogen} /> Estrogen </label>
+                      <br/>
+                      <label id="bott_mod">
+                      <input type="checkbox" checked={this.state.isTestosterone} onChange={this.onChangeisTestosterone} /> Testosterone </label>
+                      <br/>
+                      <label id="bott_mod">
+                      <input type="checkbox" checked={this.state.isBreasts} onChange={this.onChangeisBreasts} /> Breasts </label>
+                      <br/>
+                      <label id="bott_mod">
+                      <input type="checkbox" checked={this.state.isVaginaCervix} onChange={this.onChangeisVaginaCervix} /> Vagina and/or cervix </label>
+                      <br/>
+                      <label id="bott_mod">
+                      <input type="checkbox" checked={this.state.isProstate} onChange={this.onChangeisProstate} /> Prostate </label>
                                
                     </div>
-                  </form>
-                </div>
+                  </form> */}
+                  </div>
                 
                 {/*close button*/}
                 <div className="myModalButton">
                   <button onClick={this.toggleConfigurationModal}>{this.state.lang.config_modal_agree}</button>
                 </div>
                 <div>
-                 <button className="button button2" onClick={this.helpClicked}>?</button>
+                 <button className="button button22" onClick={this.helpClicked}>?</button>
                  </div>
               </div>
             </div>
@@ -840,7 +1001,9 @@ class App extends Component {
             userConfig={userInfo} 
             data={this.state.data.getListOfTopics} 
             lang={this.state.lang} 
-            pageViewStateUpdater = {this.pageViewStateUpdater}></Topics>
+            pageViewStateUpdater = {this.pageViewStateUpdater}
+            onClose={this.toggleModal}
+            button={this.state.buttonText}></Topics>
         </div>
 
         {/* <button style={fixedStyle}>

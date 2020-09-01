@@ -6,6 +6,7 @@ import '../Button.css';
 import TopicsModal from './TopicsModal';
 import TopicListFR from '../JSONFolder/HtmlTopic-FR.json';
 import TopicListEN from '../JSONFolder/HtmlTopic-EN.json';
+import TopicModal from './TopicModal';
 
 class Topics extends React.Component {
 
@@ -41,7 +42,6 @@ class Topics extends React.Component {
     if (!this.props.showTopics) {
       return null;
     }
-
     return (
       <div>
         {/*your help button in the right hand corner*/}
@@ -52,6 +52,8 @@ class Topics extends React.Component {
           userConfig={this.props.userConfig}
           text={this.props.lang.topic_search_bar_placeholder} 
           pageViewStateUpdater = {this.pageViewStateUpdater}
+          btnText={this.props.lang.close_body_modal}
+          onClose={this.props.onClose}
           />
 
         {/*help dialog box*/}
@@ -68,6 +70,7 @@ class Topics extends React.Component {
 }
 
 Topics.propTypes = {
+  onClose: PropTypes.func.isRequired,
   showTopics: PropTypes.bool,
   userConfig: PropTypes.object,
   data: PropTypes.func.isRequired,
@@ -78,15 +81,23 @@ class TopicRow extends React.Component {
 
   constructor(props) {
     super(props);
+    this.state =
+    {
+      isOpen: false,
+      display: [],
+    }
     this.pageViewStateUpdater = this.pageViewStateUpdater.bind(this);
   }
 
   pageViewStateUpdater = (nav, cat, time) => {
     this.props.pageViewStateUpdater(nav, cat, time);
   }
-
-  
-  rowToggled = ( title ) => {
+  toggleModal = () => {
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
+  }  
+  rowClicked = ( title ) => {
     let timerResult = PageViewTimer(
       this.props.userInfo.preCat,
       this.props.userInfo.preTime);
@@ -95,143 +106,34 @@ class TopicRow extends React.Component {
     let currNav = "topics", currCat = title;
     GaUserEvent(currNav, currCat, this.props.userInfo, timeDiff, this.props.userInfo.preTime, currTime);
     this.props.pageViewStateUpdater(currNav, currCat, currTime);
-  }
-
-  render() {
-    const Image = "./";
-    //all the subjects
-    var sujectArray = [];
-    var bodys = this.props.topic.body;
-    const blueist = '#27AAE1';
-    const listItemStyle = {
-      backgroundColor: blueist,
-      fontWeight: 300,
-      borderRadius: 15,
-      width: '100%',
-      minHeight: 50,
-      margin: '3px',
-      textAlign: 'left',
-      padding: '10px',
-      color: 'white'
-    };
-    bodys.forEach((body) => {
-
-      
-
-      var bodyArray = body.text.split(/(\[\[|\]\]|\n)/g);
-      var subject = body.subject.split(/(\[\[|\]\]|\n)/g);
-      var bodyArrayToDisplay = [];
-      var subjectArrayToDisplay = [];
-      var outerTextToDisplay = [];
-
-      for (var i = 0; i < subject.length; i++) {
-        if (subject[i] == '[[') {
-          var link = subject[i + 1].split(';');
-          try {
-            if (link[0] === "image" || link[0] === "images") {
-              var adress = Image + link[1].trim();
-              subjectArrayToDisplay.push(<div><img className="imageFromFolder" src={adress} alt="photo" /></div>);
-            }
-            /*else if(link[1].indexOf("topic") === 0 || link[1].indexOf("topic") === 1){
-              link[1] = link[1].replace('topic://', '').trim();
-              subjectArrayToDisplay.push(<span onClick={(id) => this.openDetails(link[1])}><font color="Yellow">{link[0]}</font></span>);
-            }
-            else if(link[1].indexOf("test") === 0 || link[1].indexOf("test") === 1){
-              link[1] = link[1].replace('test://', '').trim();
-              subjectArrayToDisplay.push(<span onClick={(id) => this.openDetails(link[1])}><font color="Yellow">{link[0]}</font></span>);
-            }*/
-            else {
-              subjectArrayToDisplay.push(<a href={link[1]} target="_blank"><font color="Yellow">{link[0]}</font></a>);
-            }
-            i++;
-          } catch (err) { }
-        }
-        else if (subject[i] == '\n') {
-          subjectArrayToDisplay.push(<br />);
-        }
-        else if (subject[i] !== ']]') {
-          subjectArrayToDisplay.push(subject[i]);
-        }
-
-      }
-
-      for (var i = 0; i < bodyArray.length; i++) {
-        if (bodyArray[i] == '[[') {
-          var link = bodyArray[i + 1].split(';');
-
-          try {
-            if (link[0] === "image" || link[0] === "images") {
-              var adress = Image.concat(link[1].trim());
-              bodyArrayToDisplay.push(<div><img className="imageFromFolder" src={adress} alt="photo" /></div>);
-            }
-            /*else if(link[1].indexOf("topic") === 0 || link[1].indexOf("topic") === 1){
-              link[1] = link[1].replace('topic://', '').trim();
-              bodyArrayToDisplay.push(<span onClick={(id) => this.openDetails(link[1])}><font color="Yellow">{link[0]}</font></span>);
-            }
-            else if(link[1].indexOf("test") === 0 || link[1].indexOf("test") === 1){
-              link[1] = link[1].replace('test://', '').trim();
-              bodyArrayToDisplay.push(<span onClick={(id) => this.openDetails(link[1])}><font color="Yellow">{link[0]}</font></span>);
-            }*/
-            else {
-              if (link[1] == null) {
-                bodyArrayToDisplay.push(<a href={link[0]} target="_blank"><font color="Yellow">{link[0]}</font></a>);
-              }
-              else {
-                bodyArrayToDisplay.push(<a href={link[1]} target="_blank"><font color="Yellow">{link[0]}</font></a>);
-              }
-            }
-            i++;
-          } catch (err) { }
-        }
-        else if (bodyArray[i] == '\n') {
-          bodyArrayToDisplay.push(<br />);
-        }
-        else if (bodyArray[i] !== ']]') {
-          bodyArrayToDisplay.push(bodyArray[i]);
-        }
-
-      }
-      // sujectArray.push(<div className="topicBody"><b>{subjectArrayToDisplay}<br /></b>{bodyArrayToDisplay}</div>);
-      sujectArray.push(
-        <div className="topicBody" style={listItemStyle}>
-          <details id={this.props.topic.name} class="mydetailsItem">
-            <summary class="mysummaryItem">
-              <font size="+1">
-                {/*<p> <b> */}
-                {subjectArrayToDisplay}
-                {/* </b> </p>*/}
-              </font>
-            </summary>
-            <br />
-            {bodyArrayToDisplay}
-            {outerTextToDisplay}
-          </details>
-        </div>
-      );
+    this.setState({
+      isOpen: !this.state.isOpen,
+      display: this.props.topic.body
     });
-
+  }
+  render() {  
 
     return (
-      // sujectArray.push(<div className="topicBody" >
-      <details 
-        id={this.props.topic.name} class="mydetailsItem"
-        onToggle={() => this.rowToggled(this.props.topic.name)}
-      >
-        <summary>
-          <font size="+1">
-            <b>{this.props.topic.name}</b>
-          </font>
-        </summary>
+      <div>
+      <div
+        id={this.props.topic.name} class="mydetailsItemdiv"
+        onClick={() => this.rowClicked(this.props.topic.name)}
+        >{this.props.topic.name}</div>
+
         <div>
-          {"\n"}
-          {sujectArray}
-        </div>
-      </details>
-      // </div>
-      // )
+            <TopicModal 
+              show={this.state.isOpen}
+              onClose={this.toggleModal}
+              display={this.state.display}
+              button={this.props.btnText}
+              getTopic={this.props.topic.name}>
+            </TopicModal>
+          </div>
+      </div>
     );
   }
 }
+
 
 class TopicTable extends React.Component {
   constructor(props) {
@@ -242,7 +144,6 @@ class TopicTable extends React.Component {
     this.props.pageViewStateUpdater(nav, cat, time);
   }
   render() {
-
     const backdroplistItemStyle = {
       padding: 5
     };
@@ -275,6 +176,8 @@ class TopicTable extends React.Component {
             topic={topic}
             userInfo={this.props.userConfig} 
             pageViewStateUpdater = {this.pageViewStateUpdater}
+            btnText={this.props.btnText}
+            onClose={this.props.onClose}
             />
         </div>
       </div>);
@@ -349,6 +252,8 @@ class FilterableTopicTable extends React.Component {
           userConfig={this.props.userConfig}
           filterText={this.state.filterText}
           pageViewStateUpdater = {this.pageViewStateUpdater}
+          btnText={this.props.btnText}
+          onClose={this.props.onClose}
         />
       </div>
     );
