@@ -705,7 +705,7 @@ class App extends Component {
                     <div id="genderSelector" className="radio">
                      <div className="gender_mod"> {this.state.lang.gender_selector}</div>
                      {/* this button is crack takes me to the landing page */}
-                     <p><button className="button button22" onClick={this.helpClicked}>?</button></p> 
+                     {/* <p><button className="button button23" onClick={this.helpClicked}>?</button></p>  */}
                      
                        
                       <label id="male_radio">
@@ -740,12 +740,14 @@ class App extends Component {
                   {/* {Are you a Transgender} */}
                    {/* {Are you a Transgender} */}
                    <div id="TgenderSelector" className="radio">
-                      {this.state.lang.Tgender_selector}
-                      <label>
+                   <div className="Tgender_mod"> {this.state.lang.Tgender_selector}</div>
+                      
+                      <label id="birth_male_mod">
                       <input type="radio" value="birth_male" checked={this.state.Tgender == 'birth_male'} onChange={this.handleTransGenderChange} />
                       {this.state.lang.birth_male}
                       </label>
-                      <label>
+                      <br/>
+                      <label id="female_male_mod">
                       <input type="radio" value="birth_female" checked={this.state.Tgender == 'birth_female'} onChange={this.handleTransGenderChange} />
                       {this.state.lang.birth_female}
                      </label>
@@ -887,11 +889,13 @@ class App extends Component {
                     {/* {Are you a Transgender} */}
                     <div id="TgenderSelector" className="radio">
                       {this.state.lang.Tgender_selector}
-                      <label>
+                      <br/>
+                      <label id="birth_male_mod">
                       <input type="radio" value="birth_male" checked={this.state.Tgender == 'birth_male'} onChange={this.handleTransGenderChange} />
                       {this.state.lang.birth_male}
                       </label>
-                      <label>
+                      <br/>
+                      <label id="female_male_mod">
                       <input type="radio" value="birth_female" checked={this.state.Tgender == 'birth_female'} onChange={this.handleTransGenderChange} />
                       {this.state.lang.birth_female}
                      </label>
