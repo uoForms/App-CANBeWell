@@ -32,7 +32,7 @@
   {
     "Button": "Covid",
     "Topic heading": "COVID-19",
-    "Subject": "COVID-19 Español, Arabic, Mandarin and other languages",
+    "Subject": "COVID-19 Espa?ol, Arabic, Mandarin and other languages",
     "General Patient Text": "[[Click here; https://www.ottawapublichealth.ca/en/public-health-topics/multilingual-resources.aspx]]",
     "Health Provider Text": "n/a",
     "Gender": "all",
@@ -104,7 +104,7 @@
     "Topic heading": "COVID-19",
     "Subject": "Vulnerable populations",
     "General Patient Text": "n/a",
-    "Health Provider Text": "•Poverty screening question: “Do you ever have difficulty making ends meet at the end of the month?” [[reference; https://portal.cfpc.ca/resourcesdocs/uploadedFiles/CPD/Poverty_flow-Tool-Final-2016v4-Ontario.pdf\n\n•If your patient needs social, community or health services  phone https://csvjson.com/csv2json#211 if available in your area  [[website; https://211.ca/]]\n\n•[[Government of Canada benefits; https://www.canada.ca/en/services/benefits/covid19-emergency-benefits.html]]\n\n•Check your local public health agency website for information for these groups\n\n•[[First Nations, Métis and Inuit; https://www.ottawapublichealth.ca/en/public-health-topics/resources-for-first-nations-inuit-and-m-tis-community-members.aspx]]\nNational and Ottawa-specific information\n\n•[[Different languages; https://www.ottawapublichealth.ca/en/public-health-topics/multilingual-resources.aspx]]",
+    "Health Provider Text": "•Poverty screening question: “Do you ever have difficulty making ends meet at the end of the month?” [[reference; https://portal.cfpc.ca/resourcesdocs/uploadedFiles/CPD/Poverty_flow-Tool-Final-2016v4-Ontario.pdf\n\n•If your patient needs social, community or health services  phone 211 if available in your area  [[website; https://211.ca/]]\n\n•[[Government of Canada benefits; https://www.canada.ca/en/services/benefits/covid19-emergency-benefits.html]]\n\n•Check your local public health agency website for information for these groups\n\n•[[First Nations, Métis and Inuit; https://www.ottawapublichealth.ca/en/public-health-topics/resources-for-first-nations-inuit-and-m-tis-community-members.aspx]]\nNational and Ottawa-specific information\n\n•[[Different languages; https://www.ottawapublichealth.ca/en/public-health-topics/multilingual-resources.aspx]]",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
@@ -505,26 +505,6 @@
     "Subject": "Ovarian cancer",
     "General Patient Text": "Patient: No screening",
     "Health Provider Text": "Provider: No screening",
-    "Gender": "am",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Ovary",
-    "Topic heading": "Contraception",
-    "Subject": "Contraception (Subject)",
-    "General Patient Text": "Patient: Any hormonal/barrier methods can used (no contraindications with testosterone)",
-    "Health Provider Text": "Provider: Any hormonal/barrier methods can used (no contraindications with testosterone)",
-    "Gender": "af",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Ovary",
-    "Topic heading": "Contraception",
-    "Subject": "Contraception (Subject)",
-    "General Patient Text": "Patient: Use barrier method (or have partner use hormonal contraception) if no bottom surgery and having intercourse with partner who could get pregnant",
-    "Health Provider Text": "Provider: Use barrier method (or have partner use hormonal contraception) if no bottom surgery and having intercourse with partner who could get pregnant",
     "Gender": "am",
     "Minimum age": 18,
     "Maximum age": 150
@@ -936,6 +916,26 @@
     "General Patient Text": "3rd body Prostate cancer-patient",
     "Health Provider Text": "3rd body prostate cancer-provider",
     "Gender": "nb",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Genitalia",
+    "Topic heading": "Sex",
+    "Subject": "Contraception (Subject)",
+    "General Patient Text": "Patient: Any hormonal/barrier methods can used (no contraindications with testosterone)",
+    "Health Provider Text": "Provider: Any hormonal/barrier methods can used (no contraindications with testosterone)",
+    "Gender": "af",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Genitalia",
+    "Topic heading": "Sex",
+    "Subject": "Contraception (Subject)",
+    "General Patient Text": "Patient: Use barrier method (or have partner use hormonal contraception) if no bottom surgery and having intercourse with partner who could get pregnant",
+    "Health Provider Text": "Provider: Use barrier method (or have partner use hormonal contraception) if no bottom surgery and having intercourse with partner who could get pregnant",
+    "Gender": "am",
     "Minimum age": 18,
     "Maximum age": 150
   },

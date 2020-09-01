@@ -32,7 +32,7 @@ h1{
 
 .myModalBody {
   text-align: left;
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 0rem;
 }
 
@@ -50,4 +50,8 @@ h1{
 }
 .myModalCloseButton{
   padding-top: 15px;
+}
+.mydetailsItemdiv{
+  font-size:medium;
+  font-weight: bold;
 }
