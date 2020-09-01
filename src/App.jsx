@@ -659,6 +659,8 @@ class App extends Component {
         <div key="1" className="backdrop" style={backdropStyle}>
           <div className="myModal" style={myModalStyle}>
           <div>
+            {/* this is the original button, works fine 
+            but i have applied css zindex and positioned it over other div which is trick that doesnt aligns with screen size */}
             <button className="button button23" onClick={this.helpClicked}>?</button>
             </div>
             <div className="footer">
@@ -702,7 +704,8 @@ class App extends Component {
 
                     <div id="genderSelector" className="radio">
                      <div className="gender_mod"> {this.state.lang.gender_selector}</div>
-                     {/* <p><button className="button button23" onClick={this.helpClicked}>?</button></p> */}
+                     {/* this button is crack takes me to the landing page */}
+                     <p><button className="button button22" onClick={this.helpClicked}>?</button></p> 
                      
                        
                       <label id="male_radio">

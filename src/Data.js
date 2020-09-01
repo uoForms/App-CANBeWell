@@ -69,7 +69,10 @@ class Data {
           transFemale: genderCharArray.includes("mf"),
           allGenders: genderCharArray.includes("all"),
           nonbinary: genderCharArray.includes("nb"),
-          transgender: genderCharArray.includes("tg")
+          transgender: genderCharArray.includes("tg"),
+          afab:genderCharArray.includes("af"),
+          amab:genderCharArray.includes("am")
+
         };
         return genderObj;
       }
@@ -82,7 +85,7 @@ class Data {
           for (var i = 0; i < list.length; i++) {
             if ((list[i]['Minimum age'] <= UserInfo.age && UserInfo.age <= list[i]['Maximum age']) || (UserInfo.age == "all ages") || (UserInfo.age == null)) {
               var jsonGender = handleGenderString(list[i]['Gender']);
-              if ((UserInfo.gender == "male" && jsonGender.male) || (UserInfo.gender == "female" && jsonGender.female) || (jsonGender.allGenders) || (UserInfo.gender == null) || (UserInfo.gender == "all_genders") || (UserInfo.gender == "nonbinary" && jsonGender.nonbinary)|| (UserInfo.gender == "transgender" && jsonGender.transgender)) {
+              if ((UserInfo.gender == "male" && jsonGender.male) || (UserInfo.gender == "female" && jsonGender.female) || (jsonGender.allGenders) || (UserInfo.gender == null) || (UserInfo.gender == "all_genders") || (UserInfo.gender == "nonbinary" && jsonGender.nonbinary)|| (UserInfo.gender == "transgender" && jsonGender.transgender) || (UserInfo.Tgender == "birth_male" && jsonGender.amab) || (UserInfo.Tgender == "birth_female" && jsonGender.afab)) {
                 if (list[i]["Button"].toLowerCase() == button) {
                   filteredList.push(
                     list[i]
@@ -227,7 +230,10 @@ class Data {
         transFemale: genderCharArray.includes("mf"),
         allGenders: genderCharArray.includes("all"),
         nonbinary: genderCharArray.includes("nb"),
-        transgender: genderCharArray.includes("tg")
+        transgender: genderCharArray.includes("tg"),
+        afab:genderCharArray.includes("af"),
+          amab:genderCharArray.includes("am")
+
       };
       return genderObj;
     }
@@ -239,7 +245,7 @@ class Data {
         for (var i = 0; i < list.length; i++) {
           if ((list[i]['Minimum age'] <= UserInfo.age && UserInfo.age <= list[i]['Maximum age']) || (UserInfo.age == "all ages") || (UserInfo.age == null)) {
             var jsonGender = handleGenderString(list[i]['Gender']);
-            if ((UserInfo.gender == "male" && jsonGender.male) || (UserInfo.gender == "female" && jsonGender.female) || (UserInfo.gender == "transgender" && jsonGender.transgender) || (UserInfo.gender == "nonbinary" && jsonGender.nonbinary) || (jsonGender.allGenders) || (UserInfo.gender == null) || (UserInfo.gender == "all_genders")) {
+            if ((UserInfo.gender == "male" && jsonGender.male) || (UserInfo.gender == "female" && jsonGender.female) || (UserInfo.gender == "transgender" && jsonGender.transgender) || (UserInfo.gender == "nonbinary" && jsonGender.nonbinary) || (jsonGender.allGenders) || (UserInfo.gender == null) || (UserInfo.gender == "all_genders") || (UserInfo.Tgender == "birth_male" && jsonGender.amab) || (UserInfo.Tgender == "birth_female" && jsonGender.afab)) {
               filteredList.push(
                 list[i]
               );
@@ -341,7 +347,9 @@ class Data {
         transFemale: genderCharArray.includes("mf"),
         allGenders: genderCharArray.includes("all"),
         nonbinary: genderCharArray.includes("nb"),
-        transgender: genderCharArray.includes("tg")
+        transgender: genderCharArray.includes("tg"),
+        afab:genderCharArray.includes("af"),
+        amab:genderCharArray.includes("am")
       };
       return genderObj;
     }
@@ -353,7 +361,7 @@ class Data {
         for (var i = 0; i < list.length; i++) {
           if ((list[i]['Minimum age'] <= UserInfo.age && UserInfo.age <= list[i]['Maximum age']) || (UserInfo.age == "all ages") || (UserInfo.age == null)) {
             var jsonGender = handleGenderString(list[i]['Gender']);
-            if ((UserInfo.gender == "male" && jsonGender.male) || (UserInfo.gender == "female" && jsonGender.female) || (jsonGender.allGenders) || (UserInfo.gender == null) || (UserInfo.gender == "all_genders") ||(UserInfo.gender == "nonbinary" && jsonGender.nonbinary)|| (UserInfo.gender == "transgender" && jsonGender.transgender)) {
+            if ((UserInfo.gender == "male" && jsonGender.male) || (UserInfo.gender == "female" && jsonGender.female) || (jsonGender.allGenders) || (UserInfo.gender == null) || (UserInfo.gender == "all_genders") ||(UserInfo.gender == "nonbinary" && jsonGender.nonbinary)|| (UserInfo.gender == "transgender" && jsonGender.transgender) || (UserInfo.Tgender == "birth_male" && jsonGender.amab) || (UserInfo.Tgender == "birth_female" && jsonGender.afab)) {
               filteredList.push(list[i]);
             }
           }
