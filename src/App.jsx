@@ -132,6 +132,7 @@ class App extends Component {
       }
 
       this.fieldSelectionDisplayHandle(this.state.gender);
+      // this.fieldSelectionDisplayHandleTgender(this.state.Tgender);
 
     } catch (err) { }
 
@@ -173,6 +174,16 @@ class App extends Component {
       document.getElementById("field_selection").style.display = "none";
     }
   }
+
+  // fieldSelectionDisplayHandleTgender=(Tgender)=>{
+  //   if(Tgender==="birth_male"){
+  //     document.getElementById("field_selection").style.display = "block";
+    
+  //     }
+  //   else {
+  //     document.getElementById("field_selection").style.display = "none";
+  //   }
+  // }
 
   pageViewStateUpdater = ( nav, cat, time ) => {
     console.log(cat+"app.js callback");
@@ -382,6 +393,7 @@ class App extends Component {
       gender: changeEvent.target.value
     });
 
+    // this.fieldSelectionDisplayHandle(changeEvent.target.value);
   }
 
 
@@ -393,6 +405,8 @@ class App extends Component {
     this.setState({
       Tgender: TchangeEvent.target.value
     });
+
+    // this.fieldSelectionDisplayHandleTgender(TchangeEvent.target.value);
   }
   //set fields selected based on gender   
   // onChangeTopSurgery(event) {
@@ -578,7 +592,6 @@ class App extends Component {
 
     var allagescheckboxStyle = {
       display: 'block',
-      'margin-right':'140px',
     };
     var fieldSelectionDiv = {
       display: 'block',
@@ -632,6 +645,7 @@ class App extends Component {
     else {
       fieldSelectionDiv.display = "none";
     }
+    //this.fieldSelectionDisplayHandle(this.state.user.gender);
 
     var instructionModal = [];
     var configurationModal = [];
@@ -642,6 +656,9 @@ class App extends Component {
         <div key="1" className="backdrop" style={backdropStyle}>
           <div className="myModal" style={myModalStyle}>
           <div>
+            {/* this is the original button, works fine 
+            but i have applied css zindex and positioned it over other div which is trick that doesnt aligns with screen size */}
+            <button className="button button23" onClick={this.helpClicked}>?</button>
             </div>
             <div className="footer">
               <p id="choose_mod">{this.state.lang.instruction_modal_header}</p>
@@ -683,12 +700,11 @@ class App extends Component {
               <form>
 
                     <div id="genderSelector" className="radio">
-                     <div className="gender_mod"> {this.state.lang.gender_selector}
-                        {/* this is the original button, works fine 
-                        but i have applied css zindex and positioned it over other div which is trick that doesnt aligns with screen size */}
+                     <div className="gender_mod"> {this.state.lang.gender_selector}</div>
                      {/* this button is crack takes me to the landing page */}
-                       <button className="button button23" onClick={this.helpClicked}>?</button> 
-                     </div>                    
+                     {/* <p><button className="button button23" onClick={this.helpClicked}>?</button></p>  */}
+                     
+                       
                       <label id="male_radio">
                         <input type="radio" value="male" checked={this.state.gender == 'male'} onChange={this.handleGenderChange} />
                         {this.state.lang.male}
@@ -721,9 +737,7 @@ class App extends Component {
                   {/* {Are you a Transgender} */}
                    {/* {Are you a Transgender} */}
                    <div id="TgenderSelector" className="radio">
-                   <div className="Tgender_mod"> {this.state.lang.Tgender_selector}
-                          <button className="button button24" onClick={this.helpClicked}>?</button> 
-                   </div>
+                   <div className="Tgender_mod"> {this.state.lang.Tgender_selector}</div>
                       
                       <label id="birth_male_mod">
                       <input type="radio" value="birth_male" checked={this.state.Tgender == 'birth_male'} onChange={this.handleTransGenderChange} />
@@ -837,7 +851,8 @@ class App extends Component {
 
                     <div id="genderSelector" className="radio">
                       {this.state.lang.gender_selector}
-                        <button className="button button22" onClick={this.helpClicked}>?</button>
+                      {/* <button className="button button22" onClick={this.helpClicked}>?</button>               */}
+                                
                        <br/>
                       <label id="male_radio">
                         <input type="radio" value="male" checked={this.state.gender == 'male'} onChange={this.handleGenderChange} />
@@ -871,7 +886,6 @@ class App extends Component {
                     {/* {Are you a Transgender} */}
                     <div id="TgenderSelector" className="radio">
                       {this.state.lang.Tgender_selector}
-                      <button className="button button25" onClick={this.helpClicked}>?</button>
                       <br/>
                       <label id="birth_male_mod">
                       <input type="radio" value="birth_male" checked={this.state.Tgender == 'birth_male'} onChange={this.handleTransGenderChange} />
@@ -917,6 +931,9 @@ class App extends Component {
                 <div className="myModalButton">
                   <button onClick={this.toggleConfigurationModal}>{this.state.lang.config_modal_agree}</button>
                 </div>
+                <div>
+                 <button className="button button22" onClick={this.helpClicked}>?</button>
+                 </div>
               </div>
             </div>
           </div>

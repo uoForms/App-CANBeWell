@@ -253,12 +253,12 @@ body {
   margin-right:  129px;
 }
 
-.gender_mod{
-  margin-right: 156px;
+#gender_mod{
+  margin-right: 192px;
 }
 
 .Tgender_mod{
-  margin-right: 46px;
+  margin-right: 94px;
   position: relative;
   padding: 1px 2px 3px 1px;
   
@@ -412,9 +412,4 @@ summary:after {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
-}
-@media only screen and (max-width: 291px) {
-  .gender_mod{
-    margin-right: 156px;
-  }
 }
