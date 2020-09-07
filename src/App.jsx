@@ -131,7 +131,7 @@ class App extends Component {
         document.getElementById("genderSelector").style.display = "block";
       }
 
-      this.fieldSelectionDisplayHandle(this.state.gender);
+     // this.fieldSelectionDisplayHandle(this.state.gender);
 
     } catch (err) { }
 
@@ -165,14 +165,14 @@ class App extends Component {
   }
 
   
-  fieldSelectionDisplayHandle=(gender)=>{
-    if(gender==="nonbinary"|| gender==="transgender"){
-      document.getElementById("field_selection").style.display = "block";
-    }
-    else {
-      document.getElementById("field_selection").style.display = "none";
-    }
-  }
+  // fieldSelectionDisplayHandle=(gender)=>{
+  //   if(gender==="nonbinary"|| gender==="transgender"){
+  //     document.getElementById("field_selection").style.display = "block";
+  //   }
+  //   else {
+  //     document.getElementById("field_selection").style.display = "none";
+  //   }
+  // }
 
   pageViewStateUpdater = ( nav, cat, time ) => {
     console.log(cat+"app.js callback");
@@ -524,17 +524,17 @@ class App extends Component {
   
   this.setState({
     isOpen: !this.state.isOpen,
-    headerText: this.state.lang.config_modal_help_header,
-    bodyText: this.state.lang.config_modal_help_body,
+    headerText: this.state.lang.config_modal_Gender_help_header,
+    bodyText: this.state.lang.config_modal_Gender_help_body,
     buttonText: this.state.lang.config_modal_agree,
   });
  }
- HelpClicked2 = () => {
+ helpClicked2 = () => {
   
   this.setState({
     isOpen: !this.state.isOpen,
-    headerText: this.state.lang.config_modal_help_header,
-    bodyText: this.state.lang.config_modal_help_body,
+    headerText: this.state.lang.config_modal_SexAtBirth_help_header,
+    bodyText: this.state.lang.config_modal_SexAtBirth_help_body,
     buttonText: this.state.lang.config_modal_agree,
   });
  }
@@ -680,8 +680,6 @@ class App extends Component {
               </div>
               {/*select gender*/}
               <div>
-              <form>
-
                     <div id="genderSelector" className="radio">
                      <div className="gender_mod"> {this.state.lang.gender_selector}
                         {/* this is the original button, works fine 
@@ -717,12 +715,11 @@ class App extends Component {
                       */}
 
                     </div>
-                  </form>
                   {/* {Are you a Transgender} */}
                    {/* {Are you a Transgender} */}
                    <div id="TgenderSelector" className="radio">
                    <div className="Tgender_mod"> {this.state.lang.Tgender_selector}
-                          <button className="button button24" onClick={this.helpClicked}>?</button> 
+                          <button className="button button24" onClick={this.helpClicked2}>?</button> 
                    </div>
                       
                       <label id="birth_male_mod">
@@ -833,8 +830,6 @@ class App extends Component {
                 </div>
 
                 <div>
-                  <form>
-
                     <div id="genderSelector" className="radio">
                       {this.state.lang.gender_selector}
                         <button className="button button22" onClick={this.helpClicked}>?</button>
@@ -867,11 +862,10 @@ class App extends Component {
                       */}
 
                     </div>
-                  </form>
                     {/* {Are you a Transgender} */}
                     <div id="TgenderSelector" className="radio">
                       {this.state.lang.Tgender_selector}
-                      <button className="button button25" onClick={this.helpClicked}>?</button>
+                      <button className="button button25" onClick={this.helpClicked2}>?</button>
                       <br/>
                       <label id="birth_male_mod">
                       <input type="radio" value="birth_male" checked={this.state.Tgender == 'birth_male'} onChange={this.handleTransGenderChange} />

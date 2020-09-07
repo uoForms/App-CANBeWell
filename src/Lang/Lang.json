@@ -1,8 +1,10 @@
 {
   "english":{
     "instruction_modal_header": "Choose:",
-    "config_modal_help_header": "Definitions",
-    "config_modal_help_body": "Non-binary is a spectrum of gender identities that are not exclusively masculine or feminine‍—‌identities that are outside the gender binary. \n Transgender people have a gender identity or gender expression that differs from their sex assigned at birth",
+    "config_modal_Gender_help_header": "Definitions",
+    "config_modal_SexAtBirth_help_header": "Definitions",
+    "config_modal_Gender_help_body": "Gender identity is a person's internal sense of whether they are female, male, both or neither. Transgender (“trans”) people are people whose gender identity differs from the gender they were assigned at birth. For example, a trans woman may have been assigned male at birth but identifies as, and is, a woman. Non-binary people are people whose gender identity is not solely male or female; they may identify as having multiple genders, having a gender that blends elements of both male and female, not having a gender at all, or shifting between genders. People who are not trans are cisgender (cis).",
+    "config_modal_SexAtBirth_help_body":"Some transgender and non-binary people choose to start hormone therapy and/or undergo gender-affirming surgery as part of their transition. Regardless of whether they choose to transition, trans patients need adequate preventive care and screening just as cisgender patients do. We request that all patients identify their sex assigned at birth as it allows us to ensure that the recommendations provided are relevant to them.",
     "privacypolicy": "No personally identifiable information is collected by this app.  The app collects aggregate data on what devices, browsers, and geographic regions are accessing the app; and what items are clicked on in the app.",
     "about": "This app will help you find reliable information on preventing health problems in Canadian adults. Developed by the University of Ottawa, Department of Family Medicine.",
     "disclaimer": "This app is for patients and health care providers in Canada only. This app displays information about preventing diseases, or screening (finding diseases early), in Canadian adults 18 years and older. This app does not take into account a patient’s personal risk factors, family history, symptoms or other individual characteristics. The information provided is to help patients and providers find evidence-based recommendations for baseline prevention.",
