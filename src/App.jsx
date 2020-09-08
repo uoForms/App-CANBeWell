@@ -644,7 +644,7 @@ class App extends Component {
           <div>
             </div>
             <div className="footer">
-              <p id="choose_mod">{this.state.lang.instruction_modal_header}</p>
+              <p id="choose_mod"><strong>{this.state.lang.instruction_modal_header} </strong></p>
 
               {/*select user*/}
               <div className="radio">
@@ -798,7 +798,7 @@ class App extends Component {
 
             <div>
 
-              <h1>{this.state.lang.configuration_header}</h1>
+              <h1><strong>{this.state.lang.configuration_header}</strong></h1>
               <div className="myModalBody">
                 <div className="radio">
                   
