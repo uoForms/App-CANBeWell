@@ -22,7 +22,8 @@
   margin: 0px auto;
   text-align: center;
   padding: 30px;
-  font-weight: 300;
+  /*font-weight: 300;*/
+  font-weight: bold;
 }
 
 
@@ -33,6 +34,7 @@ h1{
 .myModalBody {
   text-align: left;
   font-size: 18px;
+  font-weight: bold;
   margin-bottom: 0rem;
 }
 
