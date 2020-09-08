@@ -91,7 +91,7 @@
     "patient": "Patient",
     "provider": "Clinicien",
     "gender_selector": "Genre: ",
-    "Tgender_selector": "Sexe attribué à la naissance",
+    "Tgender_selector": "Sexe attribué à la naissance: ",
     "male": "Homme",
     "female": "Femme",
     "nonbinary": "Non binaire" ,

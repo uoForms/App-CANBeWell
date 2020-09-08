@@ -255,11 +255,13 @@ body {
 
 .gender_mod{
   margin-right: 156px;
+  font-weight: lighter; 
 }
 
 .Tgender_mod{
   margin-right: 46px;
   position: relative;
+  font-weight: lighter; 
   padding: 1px 2px 3px 1px;
   
 }
