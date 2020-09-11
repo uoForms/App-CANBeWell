@@ -117,14 +117,24 @@ class MyModal extends React.Component {
       overflow: 'scroll',
       whiteSpace: 'pre-line'
     };
+    // The gray background
+    const backdropStyle = {
+      top: 0,
+      bottom: 0,
+      left: 0,
+      right: 0,
+      //zIndex: 3,
+    };
   
     return (
-      <div className="backdrop" >
+      <div id="myBackdrop" onClick={this.props.onClose} className="backdrop" style={backdropStyle}>
         <div className="myModal" style={myModalStyle}>
           {this.props.children}
 
           <div>
-
+          <div>
+            <button className="helpbuttonClose" onClick={this.props.onClose}>X</button>
+          </div>
             <h1>{this.props.header}</h1>
             <div className="myModalBody">
             <p>{this.props.body}</p>

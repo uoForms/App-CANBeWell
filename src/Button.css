@@ -154,6 +154,10 @@
   border-radius: 50%;
   background-color:rgb(14, 145, 200);
 }
+.helpbuttonClose{
+  margin-right: -90%;
+  margin-top: -20%;
+}
 
 div.fixed {
     position: fixed;
