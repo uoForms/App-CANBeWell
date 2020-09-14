@@ -75,10 +75,14 @@
     "figure_outside_body_walking": "Physical Activity",
     "topic_search_bar_placeholder": "Search topic...",
     "test_search_bar_placeholder": "Search test...",
-    "topic_is_not_applicable": "No content is available for current age and gender."
+    "topic_is_not_applicable": "There are no recommendations at this time for your age and gender."
   },
   "french":{
     "instruction_modal_header": "Choisir:",
+    "config_modal_Gender_help_header": "Plus d'information",
+    "config_modal_SexAtBirth_help_header": "Plus d'information",
+    "config_modal_Gender_help_body": "Geschlechtsidentität ist das innere Gefühl einer Person, ob sie weiblich, männlich, beides oder keines von beiden ist. Transgender (“Transsexuelle”) sind Menschen, deren Geschlechtsidentität sich von dem Geschlecht unterscheidet, das ihnen bei der Geburt zugewiesen wurde. Eine Transfrau kann zum Beispiel bei der Geburt als männlich eingestuft worden sein, identifiziert sich aber als Frau und ist eine Frau. Nicht-binäre Menschen sind Menschen, deren Geschlechtsidentität nicht ausschließlich männlich oder weiblich ist; sie können sich als Personen mit mehreren Geschlechtern identifizieren, die ein Geschlecht haben, das Elemente von männlich und weiblich vermischt, die überhaupt kein Geschlecht haben oder die zwischen den Geschlechtern wechseln. Menschen, die nicht trans sind, sind cis-Geschlechter (cis).",
+    "config_modal_SexAtBirth_help_body":"Einige transsexuelle und nichtbinäre Menschen entscheiden sich im Rahmen ihres Übergangs für eine Hormontherapie und/oder unterziehen sich einer geschlechtsangleichenden Operation. Unabhängig davon, ob sie sich für den Übergang entscheiden, benötigen Transgender-Patienten ebenso wie cis-Patienten eine adäquate Prävention und Vorsorge. Wir bitten alle Patienten, ihr bei der Geburt zugewiesenes Geschlecht anzugeben, da wir so sicherstellen können, dass die gegebenen Empfehlungen für sie relevant sind.",
     "config_modal_help_header": "Définitions",
     "config_modal_help_body": "Le non binaire: être non binaire, c'est une personne dont l'identité sexuelle ne correspond pas au sexe féminin ou masculin, qui se définit en dehors de la dualité homme-femme.\nTransgenre: Qui concerne les personnes dont l'identité sexuelle psychique ne correspond pas au sexe biologique.",
     "privacypolicy":"Aucune information personnellement identifiable n'est recueillie par cette application mobile. L’application recueille seulement des données agrégées sur les appareils, les navigateurs et les régions géographiques qui accèdent à l’application ainsi que sur les éléments qui sont cliqués dans l'application.",
@@ -150,6 +154,6 @@
     "figure_outside_body_walking": "Activité physique",
     "topic_search_bar_placeholder": "Rechercher un sujet...",
     "test_search_bar_placeholder": "Rechercher un test...",
-    "topic_is_not_applicable": "Ce sujet ne s'applique pas a vous"
+    "topic_is_not_applicable": "Il n'y a actuellement aucune recommandation concernant votre âge et votre sexe."
   }
 }
