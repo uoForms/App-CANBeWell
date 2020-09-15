@@ -186,22 +186,16 @@ class App extends Component {
   //toggle the config modif
   toggleConfigurationModal = () => {
     debugger;
-    var genders = ["male", "female", "all_genders" , "nonbinary","transgender"]; //
+    var genders = ["male", "female", "all_genders" , "nonbinary","transgender"]; 
     var Tgenders =["birth_male","birth_female"];
     if (genders.includes(this.state.gender) && ((this.state.age >= 18 && this.state.age <= 150) || this.state.allAgesSelected) && Tgenders.includes(this.state.Tgender)) {
       this.setState({
         configurationIsOpen: !this.state.configurationIsOpen
       });
       document.getElementById("config_agehelp").style.display = "none";
-      document.getElementById("config_help").style.display = "none";
-    }
-    else if(!genders.includes(this.state.gender)  || (!Tgenders.includes(this.state.Tgender)) || (!this.state.allAgesSelected && (this.state.age ==''))){
-      document.getElementById("config_agehelp").style.display = "none";
-      document.getElementById("config_help").style.display = "block";
     }
     else{
       document.getElementById("config_agehelp").style.display = "block";
-      document.getElementById("config_help").style.display = "none";
     }
   }
 
@@ -892,9 +886,6 @@ class App extends Component {
                       {this.state.lang.birth_female}
                      </label>
                      </div>
-                     <label id="config_help" className="checkAge">
-                        <h5>{this.state.lang.ageandgender_help}</h5>
-                      </label>
                       <label id="config_agehelp" className="checkAge">
                         <h5>{this.state.lang.age_help}</h5>
                       </label>
