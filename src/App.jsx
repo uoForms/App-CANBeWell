@@ -185,6 +185,7 @@ class App extends Component {
 
   //toggle the config modif
   toggleConfigurationModal = () => {
+    debugger;
     var genders = ["male", "female", "all_genders" , "nonbinary","transgender"]; 
     var Tgenders =["birth_male","birth_female"];
     if (genders.includes(this.state.gender) && ((this.state.age >= 18 && this.state.age <= 150) || this.state.allAgesSelected) && Tgenders.includes(this.state.Tgender)) {
@@ -200,6 +201,7 @@ class App extends Component {
 
   toggleIntrutionModal = () => {
     //if(this.state.allowToClose){
+      debugger;
     var genders = ["male", "female", "all_genders" , "nonbinary","transgender"];
     var Tgenders =["birth_male","birth_female"];
     if (genders.includes(this.state.gender) && ((this.state.age >= 18 && this.state.age <= 150) || this.state.allAgesSelected) && Tgenders.includes(this.state.Tgender) ) {
@@ -967,13 +969,12 @@ class App extends Component {
               {/*this.state.lang.display_age*/} 
             </h4>
           </Button>
-          {/* Temporary commented
           <Button variant="outline-dark" href="https://www.surveymonkey.ca/r/95ZW3VZ" size='lg' className="survey-reminder" target="_blank">
            <h4>
             {this.state.language === "english" ? "Take the Survey" : "Prenez le sondage"}
               <AiOutlineExclamationCircle />
             </h4>
-          </Button> */}
+          </Button>
         </div>
 
         <div>
