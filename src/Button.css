@@ -54,11 +54,13 @@
 }
 
 .button4{
-  position: fixed;
-  top: 1%;
-  right: 1%;
+  /*position: fixed;*/
+  margin-right: 2px;
+  margin-top: 2px;
+  /*top: 1%;
+  right: 1%;*/
   color: white;
-  /*float: right;*/
+  float: right;
   border-radius: 50%;
   background-color:rgb(14, 145, 200);
 }
