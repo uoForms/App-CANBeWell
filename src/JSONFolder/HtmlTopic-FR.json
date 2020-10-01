@@ -803,7 +803,7 @@
     "Button": "Liver",
     "Topic heading": "Prévenez les maladies du foie",
     "Subject": "Hepatite C",
-    "General Patient Text": "Le Groupe d'étude canadien de soins de santé préventifs recommande:\nDe faire une prise de sang pour l'hépatite C si vous êtes parmi les suivants:\n•Usage actuel ou antécédents d’utilisation de drogues injectables\n• A été incarcéré\n•Est né, a voyagé ou a résidé dans un pays où le VHC est endémique (voir la carte ci-contre) voir la carte ci-dessous (données de 2017)\nscreenshot french map\nscreenshot french words under map",
+    "General Patient Text": "Le Groupe d'étude canadien de soins de santé préventifs recommande:\nDe faire une prise de sang pour l'hépatite C si vous êtes parmi les suivants:\n•Usage actuel ou antécédents d’utilisation de drogues injectables\n• A été incarcéré\n•Est né, a voyagé ou a résidé dans un pays où le VHC est endémique (voir la carte ci-contre) voir la carte ci-dessous (données de 2017)\n[[image;images/hepatitis_fr1.png]]\n[[image;images/hepatitis_fr2.png]]",
     "Health Provider Text": "Le GECSSP recommande le dépistage seulement si le patient présente des facteurs de risque:\n[[GECSSP2017 voir les risques et la  carte des pays endémiques ; https://canadiantaskforce.ca/wp-content/uploads/2017/04/CTFPHC_Hepatitis-C_Clinician-FAQ_v10_FINAL_FRENCH-1.pdf]]\n[[Article 2019; https://www.cfp.ca/content/cfp/65/3/195.full.pdf]]",
     "Gender": "all",
     "Minimum age": 18,
