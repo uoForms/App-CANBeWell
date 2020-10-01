@@ -24,7 +24,7 @@
     "Topic heading": "COVID-19",
     "Subject": "Do you need help with food, shelter or finances?",
     "General Patient Text": "•If you need food:\nPhone 211 or \nClick on [[211.ca; https://211.ca]] and \nSearch by province and\nEnter the topic: food \nEnter your postal code\n\n•If you need help with money during COVID\n[[Government of Canada; https://www.canada.ca/en/department-finance/economic-response-plan.html]]\n[[Benefit finder; https://covid-benefits.alpha.canada.ca/en/start]]\n\n•If you need other services such as:\nHousing, Help with disabilities, or more\nPhone 211 or \nClick on [[211.ca; https://211.ca]] and \nSearch by province",
-    "Health Provider Text": "",
+    "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
@@ -54,7 +54,7 @@
     "Topic heading": "COVID-19",
     "Subject": "Finances",
     "General Patient Text": "If you need help with money:\n•[[Government of Canada; https://www.canada.ca/en/department-finance/economic-response-plan.html]]\n•[[Benefit finder; https://covid-benefits.alpha.canada.ca/en/start]]",
-    "Health Provider Text": "",
+    "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
@@ -74,7 +74,7 @@
     "Topic heading": "COVID-19",
     "Subject": "Mental Health",
     "General Patient Text": "[[Click here; https://ca.portal.gs/]]",
-    "Health Provider Text": "",
+    "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
@@ -84,7 +84,7 @@
     "Topic heading": "COVID-19",
     "Subject": "Apps",
     "General Patient Text": "[[Click here; https://www.canada.ca/en/government/system/digital-government/digital-government-response-to-covid-19.html]]",
-    "Health Provider Text": "",
+    "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
@@ -843,7 +843,7 @@
     "Button": "Liver",
     "Topic heading": "Prevent liver disease",
     "Subject": "Hepatitis C",
-    "General Patient Text": "The Canadian Task Force recommends getting a Hepatitis C test if  you are in one of the following groups:\n(more groups in next tab)\n•people who inject drugs or use drugs in their nose;\n\n•prisoners or people who have previously been in prison\n\n•people with HIV infection;\n \n•people who were born, lived or travelled in countries where Hepatitis C is common:[[image;images/hepatitis_en1.jpg]]",
+    "General Patient Text": "The Canadian Task Force recommends getting a Hepatitis C test if  you are in one of the following groups:\n(more groups in next tab)\n•people who inject drugs or use drugs in their nose;\n\n•prisoners or people who have previously been in prison\n\n•people with HIV infection;\n \n•people who were born, lived or travelled in countries where Hepatitis C is common:\n[[image;images/hepatitis_en.jpg]]",
     "Health Provider Text": "Screen individuals at risk \n[[CTFPHC 2017; https://canadiantaskforce.ca/wp-content/uploads/2017/04/CTFPHC_Hepatitis-C_Clinician-FAQ_v10_FINAL-1.pdf]]\n[[ Summary  CFP 2019 by Public Health Agency of Canada; https://www.cfp.ca/content/cfp/65/3/195.full.pdf]]",
     "Gender": "all",
     "Minimum age": 18,
@@ -854,7 +854,7 @@
     "Topic heading": "Prevent liver disease",
     "Subject": "Hepatitis C additional information",
     "General Patient Text": "Other groups needing a test:\n•people who received infected blood products\n•people who had invasive procedurew with inadequate infection control practices\n•people who have had tattoos or piercings\n•children born to mothers infected with Hepatitis C\n•people with sexual partners infected with Hepatitis C",
-    "Health Provider Text": "",
+    "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
