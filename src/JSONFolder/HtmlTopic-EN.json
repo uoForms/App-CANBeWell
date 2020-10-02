@@ -8,7 +8,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-},
+  },
   {
     "Button": "Covid",
     "Topic heading": "COVID-19",
@@ -18,7 +18,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-},
+  },
   {
     "Button": "Covid",
     "Topic heading": "COVID-19",
@@ -28,7 +28,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-},
+  },
   {
     "Button": "Covid",
     "Topic heading": "COVID-19",
@@ -38,7 +38,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-},
+  },
   {
     "Button": "Covid",
     "Topic heading": "COVID-19",
@@ -48,7 +48,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-},
+  },
   {
     "Button": "Covid",
     "Topic heading": "COVID-19",
@@ -58,7 +58,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-},
+  },
   {
     "Button": "Covid",
     "Topic heading": "COVID-19",
@@ -68,27 +68,27 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-},
+  },
   {
     "Button": "Covid",
     "Topic heading": "COVID-19",
     "Subject": "Mental Health",
     "General Patient Text": "[[Click here; https://ca.portal.gs/]]",
-    "Health Provider Text": "n/a",
+    "Health Provider Text": "",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-},
+  },
   {
     "Button": "Covid",
     "Topic heading": "COVID-19",
     "Subject": "Apps",
     "General Patient Text": "[[Click here; https://www.canada.ca/en/government/system/digital-government/digital-government-response-to-covid-19.html]]",
-    "Health Provider Text": "n/a",
+    "Health Provider Text": "",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-},
+  },
   {
     "Button": "Covid",
     "Topic heading": "COVID-19",
@@ -98,7 +98,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-},
+  },
   {
     "Button": "Covid",
     "Topic heading": "COVID-19",
@@ -108,7 +108,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-},
+  },
   {
     "Button": "Covid",
     "Topic heading": "COVID-19",
@@ -118,7 +118,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-},
+  },
   {
     "Button": "Covid",
     "Topic heading": "COVID-19",
@@ -128,7 +128,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-},
+  },
   {
     "Button": "Covid",
     "Topic heading": "COVID-19",
@@ -138,7 +138,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-},
+  },
   {
     "Button": "Covid",
     "Topic heading": "COVID-19",
@@ -148,7 +148,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-},
+  },
   {
     "Button": "Covid",
     "Topic heading": "COVID-19",
@@ -158,7 +158,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-},
+  },
   {
     "Button": "Covid",
     "Topic heading": "COVID-19",
@@ -168,7 +168,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-},
+  },
   {
     "Button": "Covid",
     "Topic heading": "COVID-19",
@@ -178,7 +178,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-},
+  },
   {
     "Button": "aorta",
     "Topic heading": "Abdominal Aortic Aneurysm Screen",
@@ -188,67 +188,67 @@
     "Gender": "m",
     "Minimum age": 65,
     "Maximum age": 80
-},
+  },
   {
     "Button": "aorta",
-    "Topic heading": "Aorta: the body's main blood vessel",
+    "Topic heading": "Aorta: The body's main blood vessel",
     "Subject": "Talk to your provider to see if you need a test",
     "General Patient Text": "Your provider may ask for an ultrasound of your belly\nto detect a bulge in the main blood vessel \n(the bulge is nicknamed AAA \nfor short or\nAbdominal Aortic Aneurysm)\nIf the bulge grows it can burst and cause death.",
     "Health Provider Text": "n/a",
     "Gender": "m",
     "Minimum age": 65,
     "Maximum age": 80
-},
+  },
   {
     "Button": "Figure outside body walking",
-    "Topic heading": "Be active",
+    "Topic heading": "Be Active",
     "Subject": "Benefits of physical activity",
     "General Patient Text": "Physical activity\nprevents heart disease, cancer, depression and [[more; https://www.reframehealthlab.com/23-and-12-hours/]]",
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-},
+  },
   {
     "Button": "Figure outside body walking",
-    "Topic heading": "Be active",
+    "Topic heading": "Be Active",
     "Subject": "Recommended physical activity",
     "General Patient Text": "The recommended minimum amount of physical activity\nis 150 minutes a week of moderate intensity exercise. \nDefinition of moderate intensity:\nwhile you are active you have enough breath to say a short sentence but not enough to sing\n•[[more info for age 18-64; http://www.csep.ca/CMFiles/Guidelines/CSEP_PAGuidelines_adults_en.pdf]]\n•[[more info for age 65+; http://csepguidelines.ca/wp-content/uploads/2018/03/CSEP_PAGuidelines_older-adults_en.pdf]]",
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-},
+  },
   {
     "Button": "Bone",
-    "Topic heading": "Bone health",
+    "Topic heading": "Bone Health",
     "Subject": "Exercises",
     "General Patient Text": "[[Recommendations; https://osteoporosis.ca/bone-health-osteoporosis/exercises-for-healthy-bones/]]",
     "Health Provider Text": "[[Recommendations; https://osteoporosis.ca/bone-health-osteoporosis/exercises-for-healthy-bones/]]",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-},
+  },
   {
     "Button": "Bone",
-    "Topic heading": "Bone health",
+    "Topic heading": "Bone Health",
     "Subject": "Bone Density Test",
     "General Patient Text": "Below age 65: only recommended if: you have [[risk factors; https://www.canada.ca/en/public-health/services/chronic-diseases/osteoporosis.html]]",
     "Health Provider Text": "If patient has  [[risk factors; http://www.osteoporosis.ca/multimedia/pdf/Quick_Reference_Guide_October_2010.pdf]] or use [[OST; http://www.cfp.ca/content/61/7/612]]",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 64
-},
+  },
   {
     "Button": "Bone",
-    "Topic heading": "Bone health",
+    "Topic heading": "Bone Health",
     "Subject": "Bone Density Test",
     "General Patient Text": "Recommended for everyone 65 or older\nYour provider will determine when to repeat it\n[[more info; https://choosingwiselycanada.org/bone-density-tests/]]\n[[calculator for 10 year fracture risk; https://www.sheffield.ac.uk/FRAX/tool.jsp?country=19 ]]",
     "Health Provider Text": "Recommended for everyone 65 or older:\n•[[osteoporosis.ca; http://www.cmaj.ca/content/cmaj/early/2010/10/12/cmaj.100771.full.pdf]]\n•Or use [[OST; http://www.cfp.ca/content/61/7/612]]\n•Frequency of retesting [[not more than every 2 years; https://choosingwiselycanada.org/rheumatology/]]\n[[decision aid; https://osteoporosisdecisionaid.mayoclinic.org/]]",
     "Gender": "all",
     "Minimum age": 65,
     "Maximum age": 150
-},
+  },
   {
     "Button": "Breast",
     "Topic heading": "Breast Cancer",
@@ -258,7 +258,7 @@
     "Gender": "f",
     "Minimum age": 18,
     "Maximum age": 150
-},
+  },
   {
     "Button": "Breast",
     "Topic heading": "Breast Cancer",
@@ -268,7 +268,7 @@
     "Gender": "f",
     "Minimum age": 50,
     "Maximum age": 74
-},
+  },
   {
     "Button": "Breast",
     "Topic heading": "Breast Cancer",
@@ -278,7 +278,7 @@
     "Gender": "f",
     "Minimum age": 75,
     "Maximum age": 150
-},
+  },
   {
     "Button": "Breast",
     "Topic heading": "Breast Cancer",
@@ -288,7 +288,7 @@
     "Gender": "f",
     "Minimum age": 18,
     "Maximum age": 150
-},
+  },
   {
     "Button": "Uterus",
     "Topic heading": "Cervical Cancer",
@@ -298,7 +298,7 @@
     "Gender": "f",
     "Minimum age": 21,
     "Maximum age": 69
-},
+  },
   {
     "Button": "Uterus",
     "Topic heading": "Cervical Cancer",
@@ -308,7 +308,7 @@
     "Gender": "f",
     "Minimum age": 70,
     "Maximum age": 150
-},
+  },
   {
     "Button": "Uterus",
     "Topic heading": "Cervical Cancer",
@@ -318,7 +318,7 @@
     "Gender": "f",
     "Minimum age": 18,
     "Maximum age": 150
-},
+  },
   {
     "Button": "Colon",
     "Topic heading": "Colorectal Cancer or Bowel Cancer",
@@ -328,7 +328,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 49
-},
+  },
   {
     "Button": "Colon",
     "Topic heading": "Colorectal Cancer",
@@ -338,7 +338,7 @@
     "Gender": "all",
     "Minimum age": 50,
     "Maximum age": 74
-},
+  },
   {
     "Button": "Colon",
     "Topic heading": "Colorectal Cancer",
@@ -348,7 +348,7 @@
     "Gender": "all",
     "Minimum age": 50,
     "Maximum age": 74
-},
+  },
   {
     "Button": "Colon",
     "Topic heading": "Colorectal Cancer",
@@ -358,7 +358,7 @@
     "Gender": "all",
     "Minimum age": 75,
     "Maximum age": 150
-},
+  },
   {
     "Button": "Pancreas",
     "Topic heading": "Diabetes Type 2",
@@ -368,7 +368,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-},
+  },
   {
     "Button": "Pancreas",
     "Topic heading": "Diabetes Type 2",
@@ -378,7 +378,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-},
+  },
   {
     "Button": "Pancreas",
     "Topic heading": "Diabetes Type 2",
@@ -388,7 +388,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-},
+  },
   {
     "Button": "Pancreas",
     "Topic heading": "Diabetes Type 2",
@@ -398,17 +398,17 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-},
+  },
   {
     "Button": "Hip",
-    "Topic heading": "Falls in the elderly",
+    "Topic heading": "Falls in the Elderly",
     "Subject": "Prevent falls",
     "General Patient Text": "Bathroom:\n•Make sure you have non slip surfaces or mats\n•Grab bars, bath seat\n•Raised toilet \n•Make sure path is clear from bedroom to bathroom\n\nHome:\n•Get rid of loose rugs or make non-slip\n•Have good lighting and night lights\n\nBe active:\nTai chi,walking, exercise classes etc\n\nMedications:\nDiscuss with your provider if your medications can cause falls\n\n\n[[more; https://www.canada.ca/content/dam/phac-aspc/migration/phac-aspc/seniors-aines/alt-formats/pdf/publications/public/injury-blessure/prevent-eviter/prevent-eviter-e.pdf]]",
     "Health Provider Text": "The American Geriatrics Society\nand British Geriatrics Society recommend asking about\nfalls every year \n[[ref CFP article; http://www.cfp.ca/content/62/9/717]]\n[[more info; https://www.ajpmonline.org/article/S0749-3797(18)31759-8/fulltext]]\n\nFor advice to patients,\nsee in our app patient section on Falls.",
     "Gender": "all",
     "Minimum age": 65,
     "Maximum age": 150
-},
+  },
   {
     "Button": "Ovary",
     "Topic heading": "Family Planning",
@@ -418,7 +418,7 @@
     "Gender": "f",
     "Minimum age": 18,
     "Maximum age": 49
-},
+  },
   {
     "Button": "Ovary",
     "Topic heading": "Family Planning",
@@ -428,7 +428,7 @@
     "Gender": "f",
     "Minimum age": 18,
     "Maximum age": 49
-},
+  },
   {
     "Button": "Ovary",
     "Topic heading": "Family Planning",
@@ -438,7 +438,7 @@
     "Gender": "f",
     "Minimum age": 18,
     "Maximum age": 49
-},
+  },
   {
     "Button": "Ovary",
     "Topic heading": "Family Planning",
@@ -448,87 +448,107 @@
     "Gender": "f",
     "Minimum age": 18,
     "Maximum age": 49
-},
+  },
   {
     "Button": "Heart",
-    "Topic heading": "Heart disease",
+    "Topic heading": "Heart Disease",
     "Subject": "Prevention",
     "General Patient Text": "n/a",
     "Health Provider Text": "Physical activity\nmore potent than statins in preventing heart disease\nsee our physical activity section \n\nLipid screening: \n•before 40 in men and 50 in women if risk factors \n[[risk factors according to Simplified lipid guidelines see Screening page 2; http://www.cfp.ca/content/cfp/61/10/857.full.pdf]]\n[[risk factors according to CCS see Figure 1; http://www.onlinecjc.ca/article/S0828-282X(16)30732-2/pdf]]\nNOTE: in women Hypertensive diseases of pregnancy (including preeclampsia, pregnancy induced hypertension are considered additional cvs risk factors see [[link; https://www.jogc.com/article/S1701-2163(18)30836-3/abstract]]\n•for men age 40+:repeat every 3-5 years if N\n•for women age 50+ or at menopause:repeat every 3-5 years  if N\n•age 75 + healthy: discouraged as have not been validated at this age\n•[[Canadian Simplified Lipid Guidelines by family physicans;http://www.cfp.ca/content/cfp/61/10/857.full.pdf ]]\n•[[Canadian Cardiology guideline; http://www.onlinecjc.ca/article/S0828-282X(16)30732-2/pdf]]",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-},
+  },
   {
     "Button": "Heart",
-    "Topic heading": "Heart disease",
+    "Topic heading": "Heart Disease",
     "Subject": "Be active",
     "General Patient Text": "•[[more info for age 18-64; http://www.csep.ca/CMFiles/Guidelines/CSEP_PAGuidelines_adults_en.pdf]]\n•[[more info for age 65+; http://csepguidelines.ca/wp-content/uploads/2018/03/CSEP_PAGuidelines_older-adults_en.pdf]]",
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-},
+  },
   {
     "Button": "Heart",
-    "Topic heading": "Heart disease",
+    "Topic heading": "Heart Disease",
     "Subject": "Get tested for cholesterol\nbelow age 40",
     "General Patient Text": "Only if you have \nsome health problems:\n•Family history of early heart disease \n•High blood pressure\n•Diabetes\n•Smoking\n•[[and other health problems; https://www.heartandstroke.ca/heart/risk-and-prevention]]\nDiscuss this with your provider.",
     "Health Provider Text": "n/a",
     "Gender": "m",
     "Minimum age": 18,
     "Maximum age": 39
-},
+  },
   {
     "Button": "Heart",
-    "Topic heading": "Heart disease",
+    "Topic heading": "Heart Disease",
     "Subject": "Get tested for cholesterol\nbelow age 50",
     "General Patient Text": "Only if you have the following\n•Family history of early heart disease \n•High blood pressure\n•Diabetes\n•Smoking\n•[[and other health problems; https://www.heartandstroke.ca/heart/risk-and-prevention]]\nDiscuss this with your provider.\n\n(If your menopause happens before age 50\nstart testing  for cholesterol at that time.)",
     "Health Provider Text": "n/a",
     "Gender": "f",
     "Minimum age": 18,
     "Maximum age": 49
-},
+  },
   {
     "Button": "Heart",
-    "Topic heading": "Heart disease",
+    "Topic heading": "Heart Disease",
     "Subject": "Get tested for cholesterol\nabove age 40",
     "General Patient Text": "If the blood test is normal repeat every 3-5 years.",
     "Health Provider Text": "n/a",
     "Gender": "m",
     "Minimum age": 40,
     "Maximum age": 74
-},
+  },
   {
     "Button": "Heart",
-    "Topic heading": "Heart disease",
+    "Topic heading": "Heart Disease",
     "Subject": "Get tested for cholesterol\nabove age 50 for women",
     "General Patient Text": "or at the age of menopause.\nIf the blood test is normal repeat every 3-5 years",
     "Health Provider Text": "n/a",
     "Gender": "f",
     "Minimum age": 50,
     "Maximum age": 74
-},
+  },
   {
     "Button": "Heart",
-    "Topic heading": "Heart disease",
+    "Topic heading": "Heart Disease",
     "Subject": "Over age 74\ntesting for cholesterol\nmay or may not \nbe needed",
     "General Patient Text": "•If you are healthy \ndiscuss testing with your practitioner\n(most studies for cholesterol were not done on this age group\n,so you may not need it).\n•If you have health problems \nsome health problems require cholesterol testing\nand others do not,discuss with your provider.",
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 75,
     "Maximum age": 150
-},
+  },
   {
     "Button": "Heart",
-    "Topic heading": "Heart disease",
+    "Topic heading": "Heart Disease",
     "Subject": "Get your heart risk score",
-    "General Patient Text": "See your provider and/ or answer this [[questionnaire; https://myhealth.alberta.ca/Alberta/Pages/Heart-Disease-Risk-Calculator.aspx]]",
+    "General Patient Text": "See your provider and/ or answer this [[questionnaire; https://myhealthcheckup.com]]",
     "Health Provider Text": "Risk assessment \nmodified Framingham or [[other; http://chd.bestsciencemedicine.com/calc2.html]]\nonly validated between age 30 and 74",
     "Gender": "all",
     "Minimum age": 30,
     "Maximum age": 74
-},
+  },
+  {
+    "Button": "Heart",
+    "Topic heading": "Heart Disease",
+    "Subject": "Smoking",
+    "General Patient Text": "Recommended to quit or reduce.\nGet help with websites, groups, phone lines in each province.\n[[More; http://www.smokershelpline.ca/]]",
+    "Health Provider Text": "n/a",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Heart",
+    "Topic heading": "Heart Disease",
+    "Subject": "Smoking",
+    "General Patient Text": "n/a",
+    "Health Provider Text": "•Ask all patients about tobacco use, \n•Advise stopping this,\n•Use behavioral  interventions\n•As needed use approved pharmacotherapy to promote cessation.\n[[USPSTF A (2013); https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/tobacco-use-in-adults-and-pregnant-women-counseling-and-interventions]]\n[[video; https://www.youtube.com/watch?v=URiKA7CKtfc]]",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
   {
     "Button": "Needle in arm",
     "Topic heading": "Immunization",
@@ -538,7 +558,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-},
+  },
   {
     "Button": "Needle in arm",
     "Topic heading": "Immunization",
@@ -548,7 +568,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 49
-},
+  },
   {
     "Button": "Needle in arm",
     "Topic heading": "Immunization",
@@ -558,7 +578,47 @@
     "Gender": "all",
     "Minimum age": 50,
     "Maximum age": 150
-},
+  },
+  {
+    "Button": "Liver",
+    "Topic heading": "Liver/Alcohol/Drugs",
+    "Subject": "Alcohol",
+    "General Patient Text": "•Women: have 10 or less drinks a week \n•Men: Have 15 or less drinks per week\nWhat is a “drink”?\n\n[[image;images/size_of_drink.jpg]]\n[[more;https://www.camh.ca/-/media/files/canadas-low-risk-guidelines-pdf.pdf]]",
+    "Health Provider Text": "•Women: have 10 or less drinks a week\n•Men: have 15 or less drinks per week\nWhat is a \"drink\"?\n\n[[image;images/size_of_drink.jpg]]\n\n[[Source; https://www.camh.ca/-/media/files/canadas-low-risk-guidelines-pdf.pdf]]\nScreening for misuse and behavioural counseling [[USPSTF B (2018); https://www.uspreventiveservicestaskforce.org/Page/Document/UpdateSummaryFinal/unhealthy-alcohol-use-in-adolescents-and-adults-screening-and-behavioral-counseling-interventions?ds=1&s=alcohol]]",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Liver",
+    "Topic heading": "Liver/Alcohol/Drugs",
+    "Subject": "Drug Abuse",
+    "General Patient Text": "Get help if you are addicted to a substance/gambling.\nEach province or territory has a help line: [[more; https://www.canada.ca/en/health-canada/services/substance-use/get-help/get-help-problematic-substance-use.html]]",
+    "Health Provider Text": "Help available for patients addicted to a substance/gambling:\neach province or territory has a help line: [[more; https://www.canada.ca/en/health-canada/services/substance-use/get-help/get-help-problematic-substance-use.html]]:\nScreening and counseling USPSTF I (2018) under review",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Liver",
+    "Topic heading": "Liver/Alcohol/Drugs",
+    "Subject": "Hepatitis C",
+    "General Patient Text": "The Canadian Task Force recommends getting a Hepatitis C test if  you are in one of the following groups:\n(more groups in next tab)\n•people who inject drugs or use drugs in their nose\n\n•prisoners or people who have previously been in prison\n\n•people with HIV infection\n \n•people who were born, lived or travelled in countries where Hepatitis C is common: \n\n[[image;images/hepatitis_en1.png]]\n[[image;images/hepatitis_en2.png]]",
+    "Health Provider Text": "Screen individuals at risk \n•[[CTFPHC 2017; https://canadiantaskforce.ca/wp-content/uploads/2017/04/CTFPHC_Hepatitis-C_Clinician-FAQ_v10_FINAL-1.pdf]] See risks and map for endemic countries \n•[[Summary  CFP 2019 by Public Health Agency of Canada; https://www.cfp.ca/content/cfp/65/3/195.full.pdf]]",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Liver",
+    "Topic heading": "Liver/Alcohol/Drugs",
+    "Subject": "Hepatitis C additional information",
+    "General Patient Text": "Other groups needing a test:\n•people who received infected blood products\n•people who had invasive procedure with inadequate infection control practices\n•people who have had tattoos or piercings\n•children born to mothers infected with Hepatitis C\n•people with sexual partners infected with Hepatitis C",
+    "Health Provider Text": "n/a",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
   {
     "Button": "Lung",
     "Topic heading": "Lung",
@@ -568,7 +628,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-},
+  },
   {
     "Button": "Lung",
     "Topic heading": "Lung",
@@ -578,9 +638,9 @@
     "Gender": "all",
     "Minimum age": 55,
     "Maximum age": 74
-},
+  },
   {
-    "Button": "lung",
+    "Button": "Lung",
     "Topic heading": "Lung",
     "Subject": "Smoking",
     "General Patient Text": "n/a",
@@ -588,9 +648,9 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-},
+  },
   {
-    "Button": "lung",
+    "Button": "Lung",
     "Topic heading": "Lung",
     "Subject": "Lung Cancer screening",
     "General Patient Text": "n/a",
@@ -598,37 +658,37 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-},
+  },
   {
     "Button": "Brain",
-    "Topic heading": "Memory problems/ Dementia",
+    "Topic heading": "Memory problems/Dementia",
     "Subject": "What is Dementia?",
     "General Patient Text": "Dementia is a type of disease \nthat affects memory and thinking. \nThis is different than memory loss from normal aging.\n[[normal aging vs dementia; http://alzheimer.ca/en/Home/About-dementia/What-is-dementia/Normal-aging-vs-dementia]]\nDementia can have different causes:\n•Alzheimer's disease\n•Vascular Dementia (due to strokes)\n•Correctable causes: Thyroid, Vitamin Deficiencies\n[[more; http://alzheimer.ca/en/Home/About-dementia/What-is-dementia]]",
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-},
+  },
   {
     "Button": "Brain",
-    "Topic heading": "Memory problems/ Dementia",
+    "Topic heading": "Memory problems/Dementia",
     "Subject": "Prevention of Dementia",
     "General Patient Text": "•Be physically active\n•Eat a healthy diet\n•Maintain a healthy weight/BMI\n•Don’t smoke or drink excessive alcohol\n•Keep your blood pressure, blood sugar and cholesterol in a healthy range\n•Stay connected socially\n•Challenge your brain with games, learning\n•Reduce stress\n•Protect your head with a helmet in sports \n\n[[more; http://alzheimer.ca/en/simcoecounty/About-dementia/Alzheimer-s-disease/Risk-factors]]",
     "Health Provider Text": "Recommend your patients:\n•Be physically active\n•Eat a healthy diet\n•Maintain a healthy weight/BMI\n•Don’t smoke or drink excessive alcohol\n•Keep their blood pressure, blood sugar and cholesterol in a healthy range\n•Stay connected socially\n•Challenge their brain with games, learning\n•Reduce stress\n•Protect their head with a helmet in sports \n[[more; http://alzheimer.ca/en/simcoecounty/About-dementia/Alzheimer-s-disease/Risk-factors]]",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-},
+  },
   {
     "Button": "Brain",
-    "Topic heading": "Memory problems/ Dementia",
+    "Topic heading": "Memory problems/Dementia",
     "Subject": "Testing available in certain situations",
     "General Patient Text": "Memory testing \nmay be done by your health care provider\nas you age,\nif you or family or friends are concerned.",
     "Health Provider Text": "Screen with MOCA or MMSE if friends, family or patient report memory issues\n[[canadian task force; https://canadiantaskforce.ca/tools-resources/cognitive-impairment-2/cognitive-impairment-clinician-faq/]]",
     "Gender": "all",
     "Minimum age": 50,
     "Maximum age": 150
-},
+  },
   {
     "Button": "Stomach",
     "Topic heading": "Nutrition",
@@ -638,7 +698,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-},
+  },
   {
     "Button": "Stomach",
     "Topic heading": "Nutrition",
@@ -648,7 +708,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-},
+  },
   {
     "Button": "Stomach",
     "Topic heading": "Nutrition",
@@ -658,27 +718,27 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-},
+  },
   {
     "Button": "Figure outside body walking",
-    "Topic heading": "Physical activity",
+    "Topic heading": "Physical Activity",
     "Subject": "Recommendations",
     "General Patient Text": "n/a",
     "Health Provider Text": "Physical activity\nprevents heart disease, cancer, depression and [[more; https://www.reframehealthlab.com/23-and-12-hours/]]\n\nThe recommended minimum amount of physical activity\nis 150 minutes a week of moderate intensity exercise. \nDefinition of moderate intensity:\nwhile you are active you have enough breath to say a short sentence but  not enough to sing",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-},
+  },
   {
     "Button": "Figure outside body walking",
-    "Topic heading": "Physical activity",
+    "Topic heading": "Physical Activity",
     "Subject": "References/Handouts",
     "General Patient Text": "n/a",
     "Health Provider Text": "•[[more info for age 18-64; http://www.csep.ca/CMFiles/Guidelines/CSEP_PAGuidelines_adults_en.pdf]]\n•[[more info for age 65+; http://csepguidelines.ca/wp-content/uploads/2018/03/CSEP_PAGuidelines_older-adults_en.pdf]]\n\n•[[medical reference; http://www.cmaj.ca/content/174/6/801.full.pdf+html]]",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-},
+  },
   {
     "Button": "Physical Exam",
     "Topic heading": "Physical Exam",
@@ -688,7 +748,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-},
+  },
   {
     "Button": "Physical Exam",
     "Topic heading": "Physical Exam",
@@ -698,7 +758,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 39
-},
+  },
   {
     "Button": "Physical Exam",
     "Topic heading": "Physical Exam",
@@ -708,7 +768,7 @@
     "Gender": "all",
     "Minimum age": 40,
     "Maximum age": 150
-},
+  },
   {
     "Button": "Physical Exam",
     "Topic heading": "Physical Exam",
@@ -718,7 +778,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-},
+  },
   {
     "Button": "Genitalia",
     "Topic heading": "Sex",
@@ -728,7 +788,7 @@
     "Gender": "f",
     "Minimum age": 18,
     "Maximum age": 24
-},
+  },
   {
     "Button": "Genitalia",
     "Topic heading": "Sex",
@@ -738,7 +798,7 @@
     "Gender": "f",
     "Minimum age": 18,
     "Maximum age": 150
-},
+  },
   {
     "Button": "Genitalia",
     "Topic heading": "Sex",
@@ -748,7 +808,7 @@
     "Gender": "f",
     "Minimum age": 18,
     "Maximum age": 150
-},
+  },
   {
     "Button": "Genitalia",
     "Topic heading": "Sex & Prostate",
@@ -758,7 +818,7 @@
     "Gender": "m",
     "Minimum age": 18,
     "Maximum age": 150
-},
+  },
   {
     "Button": "Genitalia",
     "Topic heading": "Sex & Prostate",
@@ -768,7 +828,7 @@
     "Gender": "m",
     "Minimum age": 18,
     "Maximum age": 150
-},
+  },
   {
     "Button": "Genitalia",
     "Topic heading": "Sex & Prostate",
@@ -778,7 +838,7 @@
     "Gender": "m",
     "Minimum age": 55,
     "Maximum age": 69
-},
+  },
   {
     "Button": "Genitalia",
     "Topic heading": "Sex & Prostate",
@@ -788,7 +848,7 @@
     "Gender": "m",
     "Minimum age": 18,
     "Maximum age": 24
-},
+  },
   {
     "Button": "Genitalia",
     "Topic heading": "Sex & Prostate",
@@ -798,7 +858,7 @@
     "Gender": "m",
     "Minimum age": 18,
     "Maximum age": 150
-},
+  },
   {
     "Button": "Genitalia",
     "Topic heading": "Sex & Prostate",
@@ -808,7 +868,7 @@
     "Gender": "m",
     "Minimum age": 18,
     "Maximum age": 150
-},
+  },
   {
     "Button": "Genitalia",
     "Topic heading": "Sex & Prostate",
@@ -818,47 +878,7 @@
     "Gender": "m",
     "Minimum age": 55,
     "Maximum age": 69
-},
-  {
-    "Button": "Liver",
-    "Topic heading": "Prevent liver disease",
-    "Subject": "Alcohol",
-    "General Patient Text": "•Women: have 10 or less drinks a week \n•Men: Have 15 or less drinks per week\nWhat is a “drink”?\n\n[[image;images/size_of_drink.jpg]]\n[[more;https://www.camh.ca/-/media/files/canadas-low-risk-guidelines-pdf.pdf]]",
-    "Health Provider Text": "•Women: have 10 or less drinks a week\n•Men: have 15 or less drinks per week\nWhat is a \"drink\"?\n\n[[image;images/size_of_drink.jpg]]\n\n[[Source; https://www.camh.ca/-/media/files/canadas-low-risk-guidelines-pdf.pdf]]\nScreening for misuse and behavioural counseling [[USPSTF B (2018); https://www.uspreventiveservicestaskforce.org/Page/Document/UpdateSummaryFinal/unhealthy-alcohol-use-in-adolescents-and-adults-screening-and-behavioral-counseling-interventions?ds=1&s=alcohol]]",
-    "Gender": "all",
-    "Minimum age": 18,
-    "Maximum age": 150
-},
-  {
-    "Button": "Liver",
-    "Topic heading": "Prevent liver disease",
-    "Subject": "Drug Abuse",
-    "General Patient Text": "Get help if you are addicted to a substance/gambling.\nEach province or territory has a help line: [[more; https://www.canada.ca/en/health-canada/services/substance-use/get-help/get-help-problematic-substance-use.html]]",
-    "Health Provider Text": "Help available for patients addicted to a substance/gambling:\neach province or territory has a help line: [[more; https://www.canada.ca/en/health-canada/services/substance-use/get-help/get-help-problematic-substance-use.html]]:\nScreening and counseling USPSTF I (2018) under review",
-    "Gender": "all",
-    "Minimum age": 18,
-    "Maximum age": 150
-},
-  {
-    "Button": "Liver",
-    "Topic heading": "Prevent liver disease",
-    "Subject": "Hepatitis C",
-    "General Patient Text": "The Canadian Task Force recommends getting a Hepatitis C test if  you are in one of the following groups:\n(more groups in next tab)\n•people who inject drugs or use drugs in their nose;\n\n•prisoners or people who have previously been in prison\n\n•people with HIV infection;\n \n•people who were born, lived or travelled in countries where Hepatitis C is common:[[image;images/hepatitis_en1.png]]\n[[image;images/hepatitis_en2.png]]",
-    "Health Provider Text": "Screen individuals at risk \n[[CTFPHC 2017; https://canadiantaskforce.ca/wp-content/uploads/2017/04/CTFPHC_Hepatitis-C_Clinician-FAQ_v10_FINAL-1.pdf]]\n[[ Summary  CFP 2019 by Public Health Agency of Canada; https://www.cfp.ca/content/cfp/65/3/195.full.pdf]]",
-    "Gender": "all",
-    "Minimum age": 18,
-    "Maximum age": 150
-},
-  {
-    "Button": "Liver",
-    "Topic heading": "Prevent liver disease",
-    "Subject": "Hepatitis C additional information",
-    "General Patient Text": "Other groups needing a test:\n•people who received infected blood products\n•people who had invasive procedurew with inadequate infection control practices\n•people who have had tattoos or piercings\n•children born to mothers infected with Hepatitis C\n•people with sexual partners infected with Hepatitis C",
-    "Health Provider Text": "n/a",
-    "Gender": "all",
-    "Minimum age": 18,
-    "Maximum age": 150
-},
+  },
   {
     "Button": "Sun",
     "Topic heading": "Sun Exposure",
@@ -868,7 +888,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-},
+  },
   {
     "Button": "Eye",
     "Topic heading": "Vision",
@@ -878,7 +898,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-},
+  },
   {
     "Button": "Eye",
     "Topic heading": "Vision",
@@ -888,7 +908,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 40
-},
+  },
   {
     "Button": "Eye",
     "Topic heading": "Vision",
@@ -898,7 +918,7 @@
     "Gender": "all",
     "Minimum age": 41,
     "Maximum age": 55
-},
+  },
   {
     "Button": "Eye",
     "Topic heading": "Vision",
@@ -908,7 +928,7 @@
     "Gender": "all",
     "Minimum age": 56,
     "Maximum age": 64
-},
+  },
   {
     "Button": "Eye",
     "Topic heading": "Vision",
@@ -918,7 +938,7 @@
     "Gender": "all",
     "Minimum age": 65,
     "Maximum age": 150
-},
+  },
   {
     "Button": "Bone",
     "Topic heading": "Vitamins, Minerals",
@@ -928,7 +948,7 @@
     "Gender": "f",
     "Minimum age": 18,
     "Maximum age": 18
-},
+  },
   {
     "Button": "Bone",
     "Topic heading": "Vitamins, Minerals",
@@ -938,7 +958,7 @@
     "Gender": "f",
     "Minimum age": 19,
     "Maximum age": 49
-},
+  },
   {
     "Button": "Bone",
     "Topic heading": "Vitamins, Minerals",
@@ -948,7 +968,7 @@
     "Gender": "m",
     "Minimum age": 18,
     "Maximum age": 18
-},
+  },
   {
     "Button": "Bone",
     "Topic heading": "Vitamins, Minerals",
@@ -958,7 +978,7 @@
     "Gender": "m",
     "Minimum age": 19,
     "Maximum age": 49
-},
+  },
   {
     "Button": "Bone",
     "Topic heading": "Vitamins, Minerals",
@@ -968,7 +988,7 @@
     "Gender": "all",
     "Minimum age": 50,
     "Maximum age": 150
-},
+  },
   {
     "Button": "Bone",
     "Topic heading": "Vitamins, Minerals",
@@ -977,6 +997,6 @@
     "Health Provider Text": "Better to get Calcium from food rather than supplements.\nif supplement needed to consider to 500 mg max\ntaking more than 2000 IU a day of Vitamin D should be done under medical supervision \n\n[[more info; https://osteoporosis.ca/bone-health-osteoporosis/calcium-and-vitamin-d/]]",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150 
-}
+    "Maximum age": 150
+  }
 ]
