@@ -550,6 +550,16 @@
     "Maximum age": 150
   },
   {
+    "Button": "Sun",
+    "Topic heading": "Exposition au soleil",
+    "Subject": "Prévention du cancer de la peau",
+    "General Patient Text": "•Portez des vêtements protecteurs\n•Limiter le temps passé au soleil (pire période: entre 10 h et 15 h)\n•Utiliser un écran solaire (FPS 30 au minimum)\n[[plus de renseignements; https://www.canada.ca/fr/sante-publique/services/securite-soleil/cancer-peau.html]]",
+    "Health Provider Text": "Prévention du mélanome:\nRéduire l’exposition au soleil à l’aide de vêtements de protection et d’un écran solaire FPS 30 au minimum\n[[Lignes directrices évaluées par le GECSSP (2014); https://canadiantaskforce.ca/lignesdirectrives/appraised-guidelines/melanome/?lang=fr]]",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
     "Button": "Liver",
     "Topic heading": "Foie/Alcool/Drogues",
     "Subject": "Alcool",
@@ -585,16 +595,6 @@
     "Subject": "Hepatite C-Informations supplémentaires",
     "General Patient Text": "Autres categories de personnes à risque de l'hépatite C:\n•A reçu des soins de santé à un endroit où les précautions universelles sont inadéquates\n•A reçu une transfusion sanguine, des produits du sang ou une greffe d’organe avant 1992\n•Patient hémodialysé\n•Individu qui a été blessé par une aiguille\n •Autres risques parfois associés à l’exposition au VHC, comme :\nPratiques sexuelles à risque élevé, sans abris,utilisation de drogues intranasales ou par inhalation, tatouage, perçage corporel, partage d’instruments tranchants ou du matériel d’hygiène personnelle avec une personne atteinte du VHC.",
     "Health Provider Text": "n/a",
-    "Gender": "all",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Sun",
-    "Topic heading": "Exposition au soleil",
-    "Subject": "Prévention du cancer de la peau",
-    "General Patient Text": "•Portez des vêtements protecteurs\n•Limiter le temps passé au soleil (pire période: entre 10 h et 15 h)\n•Utiliser un écran solaire (FPS 30 au minimum)\n[[plus de renseignements; https://www.canada.ca/fr/sante-publique/services/securite-soleil/cancer-peau.html]]",
-    "Health Provider Text": "Prévention du mélanome:\nRéduire l’exposition au soleil à l’aide de vêtements de protection et d’un écran solaire FPS 30 au minimum\n[[Lignes directrices évaluées par le GECSSP (2014); https://canadiantaskforce.ca/lignesdirectrives/appraised-guidelines/melanome/?lang=fr]]",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
