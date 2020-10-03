@@ -482,7 +482,7 @@
   {
     "Button": "aorta",
     "Topic heading": "Dépistage d’un anévrisme de l’aorte abdominale",
-    "Subject": "Dépister les hommes de 65 à 80 ans une fois à l’aide d’une échographie.",
+    "Subject": "Dépister les hommes de 65 à 80 ans une fois à l’aide d’une échographie",
     "General Patient Text": "n/a",
     "Health Provider Text": "[[faible recommandation de la part du Groupe d’étude canadien; https://canadiantaskforce.ca/guidelines/published-guidelines/abdominal-aortic-aneurysm/]]",
     "Gender": "m",
@@ -662,7 +662,7 @@
   {
     "Button": "Heart",
     "Topic heading": "Maladie cardiaque",
-    "Subject": "Après l’âge de 74 ans.\nle dosage du cholestérol\npourrait être nécessaire\nou non:",
+    "Subject": "Après l’âge de 74 ans.\nle dosage du cholestérol\npourrait être nécessaire\nou non",
     "General Patient Text": "•Si vous êtes en bonne santé\nEn discuter avec votre praticien\n(étant donné que la plupart des études sur le cholestérol n’ont pas été menées auprès de ce \ngroupe d’âge, vous n’aurez peut-être pas besoin de vous y prêter).\n•Si vous avez des problèmes de santé \nCertains problèmes de la santé exigent le\ndosage du cholestérol, alors que d’autres non; en discuter avec le professionnel de la santé.",
     "Health Provider Text": "n/a",
     "Gender": "all",
@@ -772,7 +772,7 @@
   {
     "Button": "Bone",
     "Topic heading": "Santé des os",
-    "Subject": "Densité minerale osseuse.",
+    "Subject": "Densité minerale osseuse",
     "General Patient Text": "Si vous êtes âgé de moins de 65 ans, envisager de passer cette évaluation dans les circonstances suivantes seulement:\nvous présentez des [[facteurs de risque; https://www.canada.ca/fr/sante-publique/services/maladies-chroniques/osteoporose.html]]",
     "Health Provider Text": "<65 and envisager une densite minerale osseuse seulement si le patient présente des risques [[osteoporosis.ca; https://osteoporosis.ca/wp-content/uploads/Quick_Reference_Guide_October_2010.pdf]] ou utiliser [[OST; http://www.cfp.ca/content/61/7/612]]",
     "Gender": "all",
@@ -782,7 +782,7 @@
   {
     "Button": "Bone",
     "Topic heading": "Santé des os",
-    "Subject": "Densité minérale osseuse:",
+    "Subject": "Densité minérale osseuse",
     "General Patient Text": "Recommandé pour les 65 ans et plus.\nVotre professionnel de la santé déterminera le moment où reprendre l’évaluation\n[[plus d’information; https://choosingwiselycanada.org/bone-density-tests/]]\n[[calculateur du risque de fracture sur 10 ans; https://www.sheffield.ac.uk/FRAX/tool.jsp?country=19]]",
     "Health Provider Text": "Recommandé pour les 65 ans et plus.\n•[[osteoporosis.ca; https://osteoporosis.ca/wp-content/uploads/Quick_Reference_Guide_October_2010.pdf]]\n•ou utiliser [[OST; http://www.cfp.ca/content/61/7/612]]\n•Fréquence de la reprise de l’évaluation [[pas plus souvent que tous les 2 ans; https://choosingwiselycanada.org/rheumatology/]]\n[[aide à la décision; https://osteoporosisdecisionaid.mayoclinic.org/]]",
     "Gender": "all",
