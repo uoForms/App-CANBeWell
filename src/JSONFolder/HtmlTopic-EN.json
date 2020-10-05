@@ -74,7 +74,7 @@
     "Topic heading": "COVID-19",
     "Subject": "Mental Health",
     "General Patient Text": "[[Click here; https://ca.portal.gs/]]",
-    "Health Provider Text": "",
+    "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
@@ -84,7 +84,7 @@
     "Topic heading": "COVID-19",
     "Subject": "Apps",
     "General Patient Text": "[[Click here; https://www.canada.ca/en/government/system/digital-government/digital-government-response-to-covid-19.html]]",
-    "Health Provider Text": "",
+    "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
