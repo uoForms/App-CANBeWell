@@ -96,13 +96,16 @@ div.fixed {
 .videoButton{
   position: relative;
   text-align: center;
-  background-color: #d6df21;
+  background-color: #e7f120;
   border-color: #d7df21;
   color: rgb(14, 145, 200);
   text-shadow: black;
-  border-radius: 15px;
+  border-radius: 14px;
   font-weight: bold;
-  font-size: 16px;
+  height: 32px;
+  overflow: hidden;
+  width: min-content;
+  font-size: 12px;
   }
 
 
