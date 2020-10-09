@@ -60,7 +60,6 @@ class Anatomy extends React.Component {
     this.state = {
       isOpen: false,
       display: [],//{name: "" , body: [{subject: "", text: ""}]}
-      previousorganClicked:"",
     };
   }
 
@@ -85,9 +84,7 @@ class Anatomy extends React.Component {
         GaUserEvent(currNav, currCat, this.props.userInfo, timeDiff, this.props.userInfo.preTime, currTime);
 
         this.props.pageViewStateUpdater(currNav, currCat, currTime);
-        if(this.state.previousorganClicked!=""){
-          document.getElementById(this.state.previousorganClicked).style.visibility = "hidden";
-        }
+
         document.getElementById(organ).style.visibility = "visible";
       } catch (err) {
         console.log(err);
@@ -98,18 +95,16 @@ class Anatomy extends React.Component {
     });
 
     setTimeout(function () {
-      // if (organ != "") {
-      //   try {
-      //     document.getElementById(organ).style.visibility = "hidden";
-      //   } catch (err) { }
-      // }
+      if (organ != "") {
+        try {
+          document.getElementById(organ).style.visibility = "hidden";
+        } catch (err) { }
+      }
       this.setState({
         isOpen: !this.state.isOpen,
         display: this.props.getDisplay(button, this.props.userInfo),
         buttonText: this.props.lang.close_body_modal,
-        displayConfigOption: false,
-        previousorganClicked:organ
-
+        displayConfigOption: false
       });
     }.bind(this), 1000);
 
@@ -125,9 +120,7 @@ class Anatomy extends React.Component {
     GaUserEvent(currNav, currCat, this.props.userInfo, timeDiff, this.props.userInfo.preTime, currTime);
 
     this.props.pageViewStateUpdater(currNav, currCat, currTime);
-    if(this.state.previousorganClicked!=""){
-      document.getElementById(this.state.previousorganClicked).style.visibility = "hidden";
-    }
+
     this.setState({
       organSelected: text
     });
