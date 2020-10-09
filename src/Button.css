@@ -49,17 +49,21 @@
   border-radius: 5px;
   background-color: #F57C00;
   color: white;
-
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .button4{
-  position: fixed;
-  top: 1%;
-  right: 1%;
+  position: relative;
+  /*margin-right: 2px;*/
+  margin-top: -8px;
+  /*top: 1%;
+  right: 1%;*/
   color: white;
-  /*float: right;*/
+  float: right;
   border-radius: 50%;
   background-color:rgb(14, 145, 200);
+  font-size: 15px;
 }
 
 div.fixed {
@@ -92,17 +96,16 @@ div.fixed {
 .videoButton{
   position: relative;
   text-align: center;
-  background-color: #d6df21;
+  background-color: #e7f120;
   border-color: #d7df21;
-  color: white;
-  font-size: small;
-  text-shadow: 0 0 3px #000000, 0 0 3px #3a4103;
-  border-radius: 15px;
-  font-style: normal;
-  height: auto;
+  color: rgb(14, 145, 200);
+  text-shadow: black;
+  border-radius: 14px;
+  font-weight: bold;
+  height: 32px;
   overflow: hidden;
-  font-weight: normal;
-  font-size: 11px;
+  width: min-content;
+  font-size: 12px;
   }
 
 
