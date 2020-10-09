@@ -61,7 +61,7 @@
     "figure_outside_body_walking": "Physical Activity",
     "topic_search_bar_placeholder": "Search topic...",
     "test_search_bar_placeholder": "Search test...",
-    "topic_is_not_applicable": "No content is available for current age and gender."
+    "topic_is_not_applicable": "There are no recommendations at this time for your age and gender."
   },
   "french":{
     "instruction_modal_header": "Choisir:",
@@ -125,6 +125,6 @@
     "figure_outside_body_walking": "Activité physique",
     "topic_search_bar_placeholder": "Rechercher un sujet...",
     "test_search_bar_placeholder": "Rechercher un test...",
-    "topic_is_not_applicable": "Ce sujet ne s'applique pas a vous"
+    "topic_is_not_applicable": "Il n'y a actuellement aucune recommandation pour votre âge et votre genre."
   }
 }
