@@ -33,7 +33,7 @@ class LandingPage extends React.Component {
   }
 
   componentDidMount() {
-    initGA('UA-151893001-1');
+    initGA('224433707');
   }
 
   render() {
