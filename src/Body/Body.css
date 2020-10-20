@@ -31,14 +31,14 @@
  .mainRunner .femaleBowel {
      top: 42%;
      left: 50%;
-     width: 23%;
-     height: 10%;
+     width: 21%;
+     height: 6%;
  }
 
  .mainRunner .breast{
      top: 29%;
-     left: 43%;
-     width: 11%;
+     left: 42%;
+     width: 8%;
      height: 6%;
  }
 
@@ -50,10 +50,10 @@
  }
 
  .mainRunner .femaleHeart{
-     top: 25.5%;
-     left: 53%;
-     width: 11%;
-     height: 6%;
+     top: 26.5%;
+     left: 56%;
+     width: 9%;
+     height: 5%;
  }
 
  .mainRunner .femaleBone{
@@ -71,24 +71,24 @@
  }
 
  .mainRunner .femaleLungs{
-     top: 25%;
+     top: 23%;
      left: 50%;
-     width: 25%;
-     height: 10%;
+     width: 23%;
+     height: 7%;
  }
 
  .mainRunner .femalePancreas{
-     top: 36.5%;
-     left: 55%;
-     width: 10%;
-     height: 4%;
+     top: 36%;
+     left: 56%;
+     width: 9%;
+     height: 3.5%;
  }
 
  .mainRunner .femaleStomach{
-     top: 32%;
-     left: 54%;
-     width: 9%;
-     height: 6%;
+     top: 31%;
+     left: 56%;
+     width: 8%;
+     height: 4%;
  }
 
  .mainRunner .ovary{
@@ -100,8 +100,8 @@
 
  .mainRunner .uterus{
      top: 46%;
-     left: 50%;
-     width: 10%;
+     left: 49%;
+     width: 7%;
      height: 5%;
  }
 
