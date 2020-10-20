@@ -113,17 +113,17 @@
 }
 
 .mainRunner .maleAorta {
-    top: 32%;
-    left: 48%;
-    width: 4%;
-    height: 20%;
+    top: 31%;
+    left: 47.5%;
+    width: 3%;
+    height: 14%;
 }
 
 .mainRunner .maleBowel {
-    top: 43%;
+    top: 42.8%;
     left: 48%;
     width: 22%;
-    height: 12%;
+    height: 9%;
 }
 
 .mainRunner .maleEyes{
@@ -134,10 +134,10 @@
 }
 
 .mainRunner .maleHeart{
-    top: 25.5%;
-    left: 51%;
-    width: 10%;
-    height: 6%;
+    top: 24.5%;
+    left: 54%;
+    width: 7%;
+    height: 7%;
 }
 
 .mainRunner .maleBone{
@@ -148,31 +148,31 @@
 }
 
 .mainRunner .maleLiver {
-    top: 35%;
-    left: 43%;
-    width: 12%;
-    height: 4%;
+    top: 32%;
+    left: 41%;
+    width: 9%;
+    height: 3%;
 }
 
 .mainRunner .maleLungs{
-    top: 25%;
+    top: 22%;
     left: 48%;
     width: 23%;
     height: 9%;
 }
 
 .mainRunner .malePancreas{
-    top: 37%;
-    left: 53%;
-    width: 12%;
-    height: 5%;
+    top: 35%;
+    left: 54%;
+    width: 9%;
+    height: 3.5%;
 }
 
 .mainRunner .maleStomach{
-    top: 32%;
-    left: 51%;
-    width: 11%;
-    height: 6%;
+    top: 30.9%;
+    left: 55%;
+    width: 8%;
+    height: 4%;
 }
 
 .mainRunner .maleGenitalia{
@@ -200,7 +200,7 @@
 .mainRunner .aorta {
     top: 30%;
     left: 49.75%;
-    width: 4%;
+    width: 3%;
     height: 20%;
 }
 
@@ -240,10 +240,10 @@
 }
 
 .mainRunner .lungs{
-    top: 25%;
-    left: 50%;
-    width: 25%;
-    height: 10%;
+    top: 22%;
+    left: 47%;
+    width: 23%;
+    height: 8%;
 }
 
 .mainRunner .pancreas{
