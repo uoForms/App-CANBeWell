@@ -187,7 +187,7 @@ class BodyModal extends React.Component {
 
     return (
       <div>
-        <div id="myBackdrop" onClick={this.props.onClose} className="backdrop" style={backdropStyle}> 
+        <div id="myBackdrop" onClick={this.props.onClose} className="backdrop" style={backdropStyle}>
         </div>
         <div className="myModal" style={myModalStyle}>
           <div>

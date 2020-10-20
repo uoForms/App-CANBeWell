@@ -12,8 +12,18 @@
   {
     "Button": "Covid",
     "Topic heading": "COVID-19",
-    "Subject": "Informations pour les aînés et les populations vulnérables",
+    "Subject": "Pour les aînés",
     "General Patient Text": "•[[Les aînés et les aidants naturels; https://www.canada.ca/fr/sante-publique/services/maladies/maladie-coronavirus-covid-19/ressources-aines-aidants-naturels.html]]\n•Si vous avez besoin de nourriture ou d'autre aide :\nComposer le 211 sur votre téléphone dans certaines régions\nQuébec: [[http://www.211quebecregions.ca/;http://www.211quebecregions.ca/]]\nAilleurs au Canada: [[https://211.ca/;https://211.ca/]]\n•OU vérifier avec votre agence de santé publique locale ou votre ville , village ou communauté\n[[Information COVID-19 par province ou territoire; https://www.canada.ca/fr/sante-publique/services/maladies/2019-nouveau-coronavirus/symptomes/ressources-provinces-territoires-covid-19.html]]\n•[[Aide financière du gouvernement du Canada; https://www.canada.ca/fr/services/prestations/covid-19-prestations-urgence.html]]",
+    "Health Provider Text": "n/a",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Covid",
+    "Topic heading": "COVID-19",
+    "Subject": "Aide pour  la nourriture, le logement, les finances",
+    "General Patient Text": "• Si vous avez besoin de nourriture\nAppeler le 211 ou Cliquez sur [[211.ca/fr; https://211.ca/fr/]]\nTrouver votre province , région et le sujet nourriture\n\n•Si vous avez besoin d'argent pendant la pandémie \n[[Gouvernement du Canada; https://www.canada.ca/fr/ministere-finances/plan-intervention-economique.html]]\n\n•Si vous avez des problèmes de logement \nAppeler le 211 ou ou Cliquez sur [[211.ca/fr; https://211.ca/fr/]]\nTrouver votre province , région et le sujet qui vous concerne",
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
@@ -42,8 +52,28 @@
   {
     "Button": "Covid",
     "Topic heading": "COVID-19",
+    "Subject": "Finances",
+    "General Patient Text": "Trouver de l'aide financière:\n•[[Gouvernement du Canada; https://www.canada.ca/fr/ministere-finances/plan-intervention-economique.html]]\n\n•[[Outil de recherche; https://covid-prestations.alpha.canada.ca/fr/debut]]",
+    "Health Provider Text": "n/a",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Covid",
+    "Topic heading": "COVID-19",
     "Subject": "Tous les Canadiens",
     "General Patient Text": "•[[Information par province ou territoire; https://www.canada.ca/fr/sante-publique/services/maladies/2019-nouveau-coronavirus/symptomes/ressources-provinces-territoires-covid-19.html]]\n•suivre les conseils de leur agence de santé publique locale\n•rester à la maison le plus possible\n•limiter les contacts avec les personnes présentant un risque plus élevé (comme les aînés et les personnes en mauvaise santé)\n•à l'exterieur toujours garder une distance d'au moins 2 longueurs de bras (environ 2 mètres) entre vous et les autres\n•laver vos mains souvent avec de l'eau et du savon (au moins 20 secondes)\n•si le savon n'est pas disponible utiliser un désinfectant à main à base d'alcool.\n•informations supplementaires: cliquez sur  ce\n[[lien; https://www.canada.ca/fr/sante-publique/services/maladies/2019-nouveau-coronavirus/prevention-risques.html]]",
+    "Health Provider Text": "n/a",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Covid",
+    "Topic heading": "COVID-19",
+    "Subject": "Santé mentale",
+    "General Patient Text": "Cliquez [[ici; https://ca.portal.gs/?lang=fr-ca]]",
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
@@ -115,6 +145,16 @@
     "Subject": "Recherche sur la COVID-19",
     "General Patient Text": "n/a",
     "Health Provider Text": "ÉTUDES ÉVALUÉES POUR LEUR QUALITÉ\n[[MCMASTER EBM; https://plus.mcmaster.ca/COVID-19]]\n[[OXFORD Evidence Service; https://www.cebm.net/oxford-covid-19-evidence-service/]]\n\nPÉRIODIQUES\n[[CMAJ; https://www.cmaj.ca/covid-19]]\n[[BMJ; https://www.bmj.com/coronavirus]]\n[[JAMA;https://jamanetwork.com/collections/46099/coronavirus-covid19]]\n[[NEJM; https://www.nejm.org/coronavirus]]\n[[The Lancet; https://www.thelancet.com/coronavirus/archive?]]\n\n[[AGENCE DE LA SANTÉ PUBLIQUE DU CANADA; https://www.canada.ca/fr/sante-publique/services/maladies/maladie-coronavirus-covid-19.html]]",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Covid",
+    "Topic heading": "COVID-19",
+    "Subject": "Le dépistage pendant et après la COVID-19",
+    "General Patient Text": "n/a",
+    "Health Provider Text": "[[Article dans Le médecin de famille canadien; https://www.cfp.ca/content/cfp/66/8/571.full.pdf]]",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
@@ -592,7 +632,7 @@
   {
     "Button": "aorta",
     "Topic heading": "Dépistage d’un anévrisme de l’aorte abdominale",
-    "Subject": "Dépister les hommes de 65 à 80 ans une fois à l’aide d’une échographie.",
+    "Subject": "Dépister les hommes de 65 à 80 ans une fois à l’aide d’une échographie",
     "General Patient Text": "n/a",
     "Health Provider Text": "[[faible recommandation de la part du Groupe d’étude canadien; https://canadiantaskforce.ca/guidelines/published-guidelines/abdominal-aortic-aneurysm/]]",
     "Gender": "m",
@@ -670,6 +710,46 @@
     "Maximum age": 150
   },
   {
+    "Button": "Liver",
+    "Topic heading": "Foie/Alcool/Drogues",
+    "Subject": "Alcool",
+    "General Patient Text": "•Femmes: 10 consommations ou moins par semaine\n•Hommes: 15 consommations ou moins par semaine\nQu'est-ce qu'une consommation?\n\n[[image;images/size_of_drink_fr.jpg]]\n[[plus de renseignements; http://www.ccsa.ca/Resource%20Library/2012-Canada-Low-Risk-Alcohol-Drinking-Guidelines-Brochure-fr.pdf]]",
+    "Health Provider Text": "•Femmes: 10 consommations ou moins par semaine\n•Hommes: 15 consommations ou moins par semaine\nQu'est-ce qu'une consommation?\n\n[[image;images/size_of_drink_fr.jpg]]\n\n[[source; http://www.ccsa.ca/Resource%20Library/2012-Canada-Low-Risk-Alcohol-Drinking-Guidelines-Brochure-fr.pdf]]\nDépistage d’usage abusif et counselling en matière de comportement [[USPSTF B (2018); https://www.uspreventiveservicestaskforce.org/Page/Document/UpdateSummaryFinal/unhealthy-alcohol-use-in-adolescents-and-adults-screening-and-behavioral-counseling-interventions?ds=1&s=alcohol]]",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Liver",
+    "Topic heading": "Foie/Alcool/Drogues",
+    "Subject": "Consommation de drogues",
+    "General Patient Text": "Obtenir de l’aide si vous êtes dépendants à une substance/au jeu.\nChaque province ou territoire dispose d’une ligne d’assistance: [[plus de renseignements; https://www.canada.ca/fr/sante-canada/services/dependance-aux-drogues/obtenir-aide/obtenir-aide-problemes-consommation-drogues.html]]",
+    "Health Provider Text": "De l’aide est offerte aux patients dépendants à une substance/au jeu:\nchaque province ou territoire dispose d’une ligne d’assistance: [[plus de renseignements; https://www.canada.ca/fr/sante-canada/services/dependance-aux-drogues/obtenir-aide/obtenir-aide-problemes-consommation-drogues.html]]:\ndépistage et counselling de l’USPSTF I (2018) en cours d’examen",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Liver",
+    "Topic heading": "Foie/Alcool/Drogues",
+    "Subject": "Hepatite C",
+    "General Patient Text": "Le Groupe d'étude canadien de soins de santé préventifs recommande:\nDe faire une prise de sang pour l'hépatite C si vous êtes parmi les suivants:\n•Usage actuel ou antécédents d’utilisation de drogues injectables\n• A été incarcéré\n•Est né, a voyagé ou a résidé dans un pays où le VHC est endémique (voir la carte ci-contre) voir la carte ci-dessous (données de 2017)\n[[image;images/hepatitis_fr1.png]]\n[[image;images/hepatitis_fr2.png]]",
+    "Health Provider Text": "Le GECSSP recommande le dépistage seulement si le patient présente des facteurs de risque:\n•[[GECSSP2017 voir les risques et la  carte des pays endémiques ; https://canadiantaskforce.ca/wp-content/uploads/2017/04/CTFPHC_Hepatitis-C_Clinician-FAQ_v10_FINAL_FRENCH-1.pdf]]\n•[[Article 2019; https://www.cfp.ca/content/cfp/65/3/195.full.pdf]]",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Liver",
+    "Topic heading": "Foie/Alcool/Drogues",
+    "Subject": "Hepatite C-Informations supplémentaires",
+    "General Patient Text": "Autres categories de personnes à risque de l'hépatite C:\n•A reçu des soins de santé à un endroit où les précautions universelles sont inadéquates\n•A reçu une transfusion sanguine, des produits du sang ou une greffe d’organe avant 1992\n•Patient hémodialysé\n•Individu qui a été blessé par une aiguille\n •Autres risques parfois associés à l’exposition au VHC, comme :\nPratiques sexuelles à risque élevé, sans abris,utilisation de drogues intranasales ou par inhalation, tatouage, perçage corporel, partage d’instruments tranchants ou du matériel d’hygiène personnelle avec une personne atteinte du VHC.",
+    "Health Provider Text": "n/a",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
     "Button": "Heart",
     "Topic heading": "Maladie cardiaque",
     "Subject": "Prévention",
@@ -732,7 +812,7 @@
   {
     "Button": "Heart",
     "Topic heading": "Maladie cardiaque",
-    "Subject": "Après l’âge de 74 ans.\nle dosage du cholestérol\npourrait être nécessaire\nou non:",
+    "Subject": "Après l’âge de 74 ans.\nle dosage du cholestérol\npourrait être nécessaire\nou non",
     "General Patient Text": "•Si vous êtes en bonne santé\nEn discuter avec votre praticien\n(étant donné que la plupart des études sur le cholestérol n’ont pas été menées auprès de ce \ngroupe d’âge, vous n’aurez peut-être pas besoin de vous y prêter).\n•Si vous avez des problèmes de santé \nCertains problèmes de la santé exigent le\ndosage du cholestérol, alors que d’autres non; en discuter avec le professionnel de la santé.",
     "Health Provider Text": "n/a",
     "Gender": "all",
@@ -872,7 +952,7 @@
   {
     "Button": "Bone",
     "Topic heading": "Santé des os",
-    "Subject": "Densité minerale osseuse.",
+    "Subject": "Densité minerale osseuse",
     "General Patient Text": "Si vous êtes âgé de moins de 65 ans, envisager de passer cette évaluation dans les circonstances suivantes seulement:\nvous présentez des [[facteurs de risque; https://www.canada.ca/fr/sante-publique/services/maladies-chroniques/osteoporose.html]]",
     "Health Provider Text": "<65 and envisager une densite minerale osseuse seulement si le patient présente des risques [[osteoporosis.ca; https://osteoporosis.ca/wp-content/uploads/Quick_Reference_Guide_October_2010.pdf]] ou utiliser [[OST; http://www.cfp.ca/content/61/7/612]]",
     "Gender": "all",
@@ -882,7 +962,7 @@
   {
     "Button": "Bone",
     "Topic heading": "Santé des os",
-    "Subject": "Densité minérale osseuse:",
+    "Subject": "Densité minérale osseuse",
     "General Patient Text": "Recommandé pour les 65 ans et plus.\nVotre professionnel de la santé déterminera le moment où reprendre l’évaluation\n[[plus d’information; https://choosingwiselycanada.org/bone-density-tests/]]\n[[calculateur du risque de fracture sur 10 ans; https://www.sheffield.ac.uk/FRAX/tool.jsp?country=19]]",
     "Health Provider Text": "Recommandé pour les 65 ans et plus.\n•[[osteoporosis.ca; https://osteoporosis.ca/wp-content/uploads/Quick_Reference_Guide_October_2010.pdf]]\n•ou utiliser [[OST; http://www.cfp.ca/content/61/7/612]]\n•Fréquence de la reprise de l’évaluation [[pas plus souvent que tous les 2 ans; https://choosingwiselycanada.org/rheumatology/]]\n[[aide à la décision; https://osteoporosisdecisionaid.mayoclinic.org/]]",
     "Gender": "all",
@@ -921,7 +1001,7 @@
   },
   {
     "Button": "Brain",
-    "Topic heading": "Troubles de la mémoire/démence",
+    "Topic heading": "Troubles de la mémoire/Démence",
     "Subject": "Qu’est-ce que la démence?",
     "General Patient Text": "La démence est un type de maladie\nqui touche la mémoire et la pensée. \nIl s’agit d’un trouble de la mémoire différent de celui lié au vieillissement normal.\n[[vieillissement normal par rapport à la maladie d’Alzheimer; http://alzheimer.ca/fr/Home/About-dementia/What-is-dementia/Normal-aging-vs-dementia]]\n Les causes de la démence peuvent être multiples:\n•Maladie d’Alzheimer\n•Démence vasculaire (attribuable à un AVC)\n•Causes modifiables: thyroïde, carences vitaminiques\n[[plus de renseignements; http://alzheimer.ca/fr/Home/About-dementia/What-is-dementia]];",
     "Health Provider Text": "n/a",
@@ -931,7 +1011,7 @@
   },
   {
     "Button": "Brain",
-    "Topic heading": "Troubles de la mémoire/démence",
+    "Topic heading": "Troubles de la mémoire/Démence",
     "Subject": "Prévention de la démence",
     "General Patient Text": "•Être physiquement actif\n•Manger sainement\n•Maintenir un poids/IMC santé\n•Ne pas fumer ni consommer d’alcool de manière excessive\n•Maintenir sa tension artérielle, sa glycémie et son taux de cholestérol dans les intervalles jugés sains\n•Entretenir des liens sociaux\n•Mettre son cerveau au défi avec des jeux, l’acquisition de nouvelles connaissances\n•Réduire son niveau de stress\n•Protéger sa tête en utilisant un casque durant la pratique de sports\n[[plus de renseignements; https://alzheimer.ca/fr/Home/About-dementia/Alzheimer-s-disease/Risk-factors]]",
     "Health Provider Text": "À recommander à vos patients:\n•Être physiquement actif\n•Manger sainement\n•Maintenir un poids/IMC santé\n•Ne pas fumer ni consommer d’alcool de manière excessive\n•Maintenir sa tension artérielle, sa glycémie et son taux de cholestérol dans les intervalles jugés sains\n•Entretenir des liens sociaux\n•Mettre son cerveau au défi avec des jeux, l’acquisition de nouvelles connaissances\n•Réduire son niveau de stress\n•Protéger sa tête en utilisant un casque durant la pratique de sports\n[[plus de renseignements; https://alzheimer.ca/fr/Home/About-dementia/Alzheimer-s-disease/Risk-factors]]",
@@ -941,32 +1021,12 @@
   },
   {
     "Button": "Brain",
-    "Topic heading": "Troubles de la mémoire/démence",
+    "Topic heading": "Troubles de la mémoire/Démence",
     "Subject": "Tests offerts dans certaines situations",
     "General Patient Text": "Des tests de mémoire\npeuvent être réalisés par votre professionnel de la santé\nlorsque vous avancez en âge,\nou encore que vous-même, des membres de votre famille ou vos amis vous inquiétez\npar rapport au déclin de votre mémoire.",
     "Health Provider Text": "Dépister ce problème de santé à l’aide des échelles MOCA ou MMSE lorsque des amis, des membres de la famille ou le patient même signalent des troubles de la mémoire\n[[Groupe d’étude canadien; https://canadiantaskforce.ca/tools-resources/cognitive-impairment-2/cognitive-impairment-clinician-faq/]]",
     "Gender": "all",
     "Minimum age": 50,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Liver",
-    "Topic heading": "Toxicomanie",
-    "Subject": "Alcool",
-    "General Patient Text": "•Femmes: 10 consommations ou moins par semaine\n•Hommes: 15 consommations ou moins par semaine\nQu'est-ce qu'une consommation?\n\n[[image;images/size_of_drink_fr.jpg]]\n[[plus de renseignements; http://www.ccsa.ca/Resource%20Library/2012-Canada-Low-Risk-Alcohol-Drinking-Guidelines-Brochure-fr.pdf]]",
-    "Health Provider Text": "•Femmes: 10 consommations ou moins par semaine\n•Hommes: 15 consommations ou moins par semaine\nQu'est-ce qu'une consommation?\n\n[[image;images/size_of_drink_fr.jpg]]\n\n[[source; http://www.ccsa.ca/Resource%20Library/2012-Canada-Low-Risk-Alcohol-Drinking-Guidelines-Brochure-fr.pdf]]\nDépistage d’usage abusif et counselling en matière de comportement [[USPSTF B (2018); https://www.uspreventiveservicestaskforce.org/Page/Document/UpdateSummaryFinal/unhealthy-alcohol-use-in-adolescents-and-adults-screening-and-behavioral-counseling-interventions?ds=1&s=alcohol]]",
-    "Gender": "all",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Liver",
-    "Topic heading": "Toxicomanie",
-    "Subject": "Consommation de drogues",
-    "General Patient Text": "Obtenir de l’aide si vous êtes dépendants à une substance/au jeu.\nChaque province ou territoire dispose d’une ligne d’assistance: [[plus de renseignements; https://www.canada.ca/fr/sante-canada/services/dependance-aux-drogues/obtenir-aide/obtenir-aide-problemes-consommation-drogues.html]]",
-    "Health Provider Text": "De l’aide est offerte aux patients dépendants à une substance/au jeu:\nchaque province ou territoire dispose d’une ligne d’assistance: [[plus de renseignements; https://www.canada.ca/fr/sante-canada/services/dependance-aux-drogues/obtenir-aide/obtenir-aide-problemes-consommation-drogues.html]]:\ndépistage et counselling de l’USPSTF I (2018) en cours d’examen",
-    "Gender": "all",
-    "Minimum age": 18,
     "Maximum age": 150
   },
   {
@@ -1051,7 +1111,7 @@
   },
   {
     "Button": "Bone",
-    "Topic heading": "Vitamines, minéraux",
+    "Topic heading": "Vitamines, Minéraux",
     "Subject": "Âge: 18 ans",
     "General Patient Text": "•Calcium: 1 300 mg/jour; vitamine D: 600 UI/ jour\nPour les femmes enceintes ou allaitantes, voir ci-dessus\n•Acide folique: 0.4 à 1 mg par jour \n[[informations sur l'acide folique; https://www.canada.ca/fr/sante-publique/services/grossesse/acide-folique.html\n[[Dois-je prendre plus d'acide folique?; https://www.canada.ca/fr/sante-publique/services/grossesse/acide-folique.html#a4]]",
     "Health Provider Text": "•Calcium: 1 300 mg/jour; vitamine D: 600 UI/ jour\nPour les femmes enceintes ou allaitantes, même indication que ci-dessus",
@@ -1061,7 +1121,7 @@
   },
   {
     "Button": "Bone",
-    "Topic heading": "Vitamines, minéraux",
+    "Topic heading": "Vitamines, Minéraux",
     "Subject": "Âge: 19-49 ans",
     "General Patient Text": "•Calcium: 1 000 mg/jour; vitamine D: 400-1 000 UI/jour\nPour les femmes enceintes ou allaitantes, dosage d'une femme de 18 ans\n\n•Acide folique: 0.4 à 1 mg par jour \n[[informations sur l'acide folique; https://www.canada.ca/fr/sante-publique/services/grossesse/acide-folique.html\n[[Dois-je prendre plus d'acide folique?; https://www.canada.ca/fr/sante-publique/services/grossesse/acide-folique.html#a4]]",
     "Health Provider Text": "•Calcium: 1 000 mg/jour; vitamine D: 400-1 000 UI/jour\nPour les femmes enceintes ou allaitantes, dosage d'une femme de 18 ans\n\n•Acide folique: 0.4 à 1 mg par jour \n[[informations sur l'acide folique; https://www.canada.ca/fr/sante-publique/services/grossesse/acide-folique.html\n[[Dois-je prendre plus d'acide folique?; https://www.canada.ca/fr/sante-publique/services/grossesse/acide-folique.html#a4]]\n[[Ligne directrice; https://www.jogc.com/article/S1701-2163(15)30230-9/pdf]]",
@@ -1071,7 +1131,7 @@
   },
   {
     "Button": "Bone",
-    "Topic heading": "Vitamines, minéraux",
+    "Topic heading": "Vitamines, Minéraux",
     "Subject": "Âge 18 ans",
     "General Patient Text": "•Calcium: 1 300 mg/jour; vitamine D: 600 UI/ jour",
     "Health Provider Text": "•Calcium: 1 300 mg/jour; vitamine D: 600 UI/ jour",
@@ -1081,7 +1141,7 @@
   },
   {
     "Button": "Bone",
-    "Topic heading": "Vitamines, minéraux",
+    "Topic heading": "Vitamines, Minéraux",
     "Subject": "Âge: 19-49 ans",
     "General Patient Text": "•Calcium: 1 000 mg/jour; vitamine D: 400-1 000 UI/jour",
     "Health Provider Text": "•Calcium: 1 000 mg/jour; vitamine D: 400-1 000 UI/jour",
@@ -1091,7 +1151,7 @@
   },
   {
     "Button": "Bone",
-    "Topic heading": "Vitamines, minéraux",
+    "Topic heading": "Vitamines, Minéraux",
     "Subject": "Âge: 50 ans et plus",
     "General Patient Text": "•Calcium: 1 200mg/jour; vitamine D: 800-2 000 UI/jour",
     "Health Provider Text": "•Calcium: 1 200mg/jour; vitamine D: 800-2 000 UI/jour",
@@ -1101,7 +1161,7 @@
   },
   {
     "Button": "Bone",
-    "Topic heading": "Vitamines, minéraux",
+    "Topic heading": "Vitamines, Minéraux",
     "Subject": "Tous âges",
     "General Patient Text": "Il est préférence d’obtenir le calcium de source alimentaire que de suppléments\nS’il faut supplémenter, envisager une dose maximale de 500 mg\nLa prise de plus de 2 000 UI de vitamine D par jour doit faire l’objet d’une surveillance médicale\n\n[[pour plus de renseignements; https://osteoporosecanada.ca/sante-des-os-et-osteoporose/calcium-et-vitamine-d/]]",
     "Health Provider Text": "Il est préférence d’obtenir le calcium de source alimentaire que de suppléments\nS’il faut supplémenter, envisager une dose maximale de 500 mg\nLa prise de plus de 2 000 UI de vitamine D par jour doit faire l’objet d’une surveillance médicale\n\n[[pour plus de renseignements;  https://osteoporosecanada.ca/sante-des-os-et-osteoporose/calcium-et-vitamine-d/]]",

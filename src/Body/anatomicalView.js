@@ -140,7 +140,9 @@ class Anatomy extends React.Component {
     GaUserEvent(currNav, currCat, this.props.userInfo, timeDiff, this.props.userInfo.preTime, currTime);
 
     this.props.pageViewStateUpdater(currNav, currCat, currTime);
-
+    if(this.state.previousorganClicked!=""){
+      document.getElementById(this.state.previousorganClicked).style.visibility = "hidden";
+    }
     this.setState({
       organSelected: text
     });
