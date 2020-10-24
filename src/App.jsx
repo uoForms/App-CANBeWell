@@ -626,6 +626,9 @@ class App extends Component {
       background: '#f2f2f2',
       fontSize: '15px'
     };
+    const termsOfUseStyle={
+      'margin-top':'10px'
+    };
 
     if (this.state.user == "patient") {
       allagescheckboxStyle.display = "none";
@@ -777,12 +780,7 @@ class App extends Component {
               </div>
               
 
-              <div>
-                <button id="agree" onClick={this.toggleIntrutionModal}>{this.state.lang.agree}</button>
-                <button onClick={this.goBack} type="button">{this.state.lang.disagree}</button>
-              </div>
-              
-
+              <div className="termsOfUse" style={termsOfUseStyle}>
               <b>{this.state.lang.disclaimer_header}</b>
 
               <div style={myDisclaimerStyle}>
@@ -791,8 +789,13 @@ class App extends Component {
                 <p id="disclaimer">{this.state.lang.patientDisclaimer}</p><br />
                 <p>{this.state.lang.important}</p>
               </div>
+              </div>
+              <div>
+                <button id="agree" className="buttonAgreeToTerms" onClick={this.toggleIntrutionModal}>{this.state.lang.agree}</button>
+                {/* <button onClick={this.goBack} type="button">{this.state.lang.disagree}</button> */}
+              </div>
             </div>
-          </div>
+            </div>
         </div>
       ];
     } else {

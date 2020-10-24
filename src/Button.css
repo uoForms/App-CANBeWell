@@ -163,6 +163,9 @@
   margin-top: -20%;
 }
 
+.buttonAgreeToTerms{
+  margin-top: 18px;
+}
 div.fixed {
     position: fixed;
     bottom: 0;
