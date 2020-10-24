@@ -22,24 +22,24 @@
 }
 
  .mainRunner .femaleAorta {
-     top: 30%;
+     top: 32%;
      left: 49.75%;
      width: 4%;
-     height: 20%;
+     height: 13%;
  }
 
  .mainRunner .femaleBowel {
-     top: 42%;
+     top: 41%;
      left: 50%;
-     width: 21%;
-     height: 6%;
+     width: 23%;
+     height: 7%;
  }
 
  .mainRunner .breast{
      top: 29%;
-     left: 42%;
-     width: 8%;
-     height: 6%;
+     left: 43%;
+     width: 10%;
+     height: 7%;
  }
 
  .mainRunner .femaleEyes{
@@ -50,10 +50,10 @@
  }
 
  .mainRunner .femaleHeart{
-     top: 26.5%;
-     left: 56%;
-     width: 9%;
-     height: 5%;
+     top: 25.5%;
+     left: 55%;
+     width: 8%;
+     height: 6%;
  }
 
  .mainRunner .femaleBone{
@@ -66,7 +66,7 @@
  .mainRunner .femaleLiver {
      top: 35%;
      left: 44%;
-     width: 10%;
+     width: 9%;
      height: 4%;
  }
 
@@ -81,11 +81,11 @@
      top: 36%;
      left: 56%;
      width: 9%;
-     height: 3.5%;
+     height: 3%;
  }
 
  .mainRunner .femaleStomach{
-     top: 31%;
+     top: 32%;
      left: 56%;
      width: 8%;
      height: 4%;
