@@ -1,5 +1,4 @@
 import React from 'react';
-
 import App from './App';
 import { PageView, initGA } from './Tracking';
 import './LandingPage.css';

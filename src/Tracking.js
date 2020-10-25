@@ -1,12 +1,24 @@
 import ReactGA from "react-ga";
+import React from "react";
 import MobileDetect from 'mobile-detect';
 import { db } from './firebase';
+/*import $ from jQuery;*/
 
 export const initGA = (trackingID) => {
   ReactGA.initialize(
-    trackingID,
+    trackingID = 'UA-151893001-3',
   ); 
 }
+
+/*export const sendOutbound = (event) => {
+  event.preventDefault();
+  ReactGA.event({
+   category: 'Externallinks',
+   action: 'ClickonLink',
+   label: 'clicks'
+ });
+ <a href= {'https://www.canada.ca/en/public-health/services/video/covid-19-wear-non-medical-mask-face-covering-properly.html'} onClick={sendOutbound}></a>
+}*/
 
 export const PageViewTimer = (prePage, preTime) => {
   let currTime = Date.now();
@@ -33,13 +45,14 @@ export const PageViewTimer = (prePage, preTime) => {
  * @param {string} label 
  */
 
-export const GaEvent = (category, action, label) => {
+const GaEvent = (category, action, label) => {
   ReactGA.event({
     category: category,
     action: action,
     label: label
   });
 };
+export default GaEvent;
 
 export const GaModalView = (virtual_url) => {
   ReactGA.modalview(virtual_url);
@@ -51,6 +64,18 @@ export const GaGetID = () => {
       return tracker.get('clientId');
     });
 };
+
+/*export const outBound = () => {
+var hostname = window.location.hostname; 
+jQuery("body a").click(function(){
+
+      if(jQuery(this).attr("href").indexOf(hostname)== -1){
+
+           ga('send', 'event', {'eventCategory': "Outbound Links", 'eventAction': "OnClick", 'eventLabel': jQuery(this).attr("href")});
+
+      }
+});
+}*/
 
 export const matchBrowser = () => {
   var nAgt = window.navigator.userAgent;
