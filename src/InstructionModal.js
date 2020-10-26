@@ -85,6 +85,12 @@ class InstructionModal extends React.Component {
 
   }
 
+  onKeyUp(event) {
+    if (event.charCode === 13) {
+      this.setState({ inputValue: event.target.value });
+    }
+  }
+
   // handlegcheckChange(changeEvent) {
 
   //   oncheckchange(changeEvent.target.value);
@@ -109,6 +115,9 @@ class InstructionModal extends React.Component {
       display: 'block',
     };
 
+    var voidActionAge = {
+      display: 'block',
+    };
 
     // The gray background
     const backdropStyle = {
@@ -159,10 +168,12 @@ class InstructionModal extends React.Component {
     if (this.state.selectedPatientProvider == "patient") {
       allagescheckboxStyle.display = "none";
       checkAge.display = "block";
+      voidActionAge.display = "block";
     }
     else if (this.state.selectedPatientProvider == "provider") {
       allagescheckboxStyle.display = "block";
       checkAge.display = "none";
+      voidActionAge.display = "block"
       myBoolean_allAge = true;
     }
 
@@ -184,10 +195,12 @@ class InstructionModal extends React.Component {
 
     if ((this.state.selectAge < 18 && this.state.selectAge > 150)) {
       checkAge.display = "block";
+      voidActionAge.display = "block";
       myBoolean_gender = false;
     }
     else if ((this.state.selectAge >= 18 && this.state.selectAge <= 150)) {
       checkAge.display = "none";
+      voidActionAge.display = "block";
       myBoolean_age = true;
     }
 
@@ -251,13 +264,18 @@ class InstructionModal extends React.Component {
               <form>
                 <div>
                   {this.props.lang.age_selector}
-                  <input id='abc' type="text" value={this.state.value} onChange={this.handleChange} placeholder={this.props.lang.age_selector_place_holder} />
+                  <input id='abc' type="text" value={this.state.value} onChange={this.handleChange} placeholder={this.props.lang.age_selector_place_holder} /* onKeyPress={e => { if (e.key === 'Enter') e.preventDefault();}} */ onKeyUp={this.onKeyUpValue.bind(this)} />
                   <label style={allagescheckboxStyle}>
                     <input type="checkbox" checked={this.state.allAgesSelected} onChange={this.handleAllAgesSelected} />{this.props.lang.all_ages}
                   </label>
                   <label style={checkAge}>
                     <h5>{this.props.lang.age_help}</h5>
                   </label>
+
+                  <label style={voidActionAge}>
+                    <h5>{this.props.lang.age_void}</h5>
+                  </label>
+
                 </div>
               </form>
             </div>
