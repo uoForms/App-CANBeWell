@@ -77,6 +77,7 @@ class Anatomy extends React.Component {
       isOpen: false,
       display: [],//{name: "" , body: [{subject: "", text: ""}]}
       previousorganClicked:"",
+      organSelected:""
     };
   }
 
@@ -102,7 +103,10 @@ class Anatomy extends React.Component {
 
         this.props.pageViewStateUpdater(currNav, currCat, currTime);
         if(this.state.previousorganClicked!=""){
-          document.getElementById(this.state.previousorganClicked).style.visibility = "hidden";
+          var clickedElement = document.getElementById(this.state.previousorganClicked);
+          if(clickedElement != null){
+            clickedElement.style.visibility = "hidden";
+          }
         }
         document.getElementById(organ).style.visibility = "visible";
       } catch (err) {
@@ -110,7 +114,8 @@ class Anatomy extends React.Component {
       }
     }
     this.setState({
-      organSelected: text
+      organSelected: text,
+      previousorganClicked:organ
     });
 
     setTimeout(function () {
@@ -123,10 +128,9 @@ class Anatomy extends React.Component {
         isOpen: !this.state.isOpen,
         display: this.props.getDisplay(button, this.props.userInfo),
         buttonText: this.props.lang.close_body_modal,
-        displayConfigOption: false,
-        previousorganClicked:organ
+        displayConfigOption: false
       });
-    }.bind(this), 1000);
+    }.bind(this), 100);
 
   }
 
@@ -141,10 +145,14 @@ class Anatomy extends React.Component {
 
     this.props.pageViewStateUpdater(currNav, currCat, currTime);
     if(this.state.previousorganClicked!=""){
-      document.getElementById(this.state.previousorganClicked).style.visibility = "hidden";
+      var clickedElement = document.getElementById(this.state.previousorganClicked);
+          if(clickedElement != null){
+            clickedElement.style.visibility = "hidden";
+          }
     }
     this.setState({
-      organSelected: text
+      organSelected: text,
+      previousorganClicked:""
     });
     if(this.state.previousorganClicked!=""){
       document.getElementById(this.state.previousorganClicked).style.visibility = "hidden";
@@ -156,7 +164,7 @@ class Anatomy extends React.Component {
         buttonText: this.props.lang.close_body_modal,
         displayConfigOption: false
       });
-    }.bind(this), 1000);
+    }.bind(this), 100);
 
   }
   //not used anymore, caused the "double click" problem on phone

@@ -984,12 +984,20 @@ class App extends Component {
         </div>
 
         <div>
-          <MyBody 
+          {this.state.configurationIsOpen && <MyBody 
             showBody={this.state.bodyView} 
             userConfig={userInfo} 
             getText={this.state.data.getTopic} 
             lang={this.state.lang}
-            pageViewStateUpdater = {this.pageViewStateUpdater}></MyBody>
+            pageViewStateUpdater = {this.pageViewStateUpdater}></MyBody>}
+
+            {!this.state.configurationIsOpen && <MyBody 
+            showBody={this.state.bodyView} 
+            userConfig={userInfo} 
+            getText={this.state.data.getTopic} 
+            lang={this.state.lang}
+            pageViewStateUpdater = {this.pageViewStateUpdater}></MyBody>}
+          
           <Tests 
             showTests={this.state.testsView} 
             userConfig={userInfo} 
