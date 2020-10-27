@@ -51,7 +51,7 @@
 
  .mainRunner .femaleHeart{
      top: 25.5%;
-     left: 55%;
+     left: 54%;
      width: 8%;
      height: 6%;
  }
@@ -64,17 +64,17 @@
  }
 
  .mainRunner .femaleLiver {
-     top: 35%;
-     left: 44%;
+     top: 34.5%;
+     left: 43%;
      width: 9%;
      height: 4%;
  }
 
  .mainRunner .femaleLungs{
-     top: 23%;
+     top: 25%;
      left: 50%;
      width: 23%;
-     height: 7%;
+     height: 8%;
  }
 
  .mainRunner .femalePancreas{
@@ -101,7 +101,7 @@
  .mainRunner .uterus{
      top: 46%;
      left: 49%;
-     width: 7%;
+     width: 5%;
      height: 5%;
  }
 
