@@ -66,6 +66,9 @@
   font-size: 15px;
 }
 
+.buttonAgreeToTerms{
+  margin-top: 18px;
+}
 div.fixed {
     position: fixed;
     bottom: 0;
