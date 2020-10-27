@@ -42,7 +42,7 @@
   {
     "Button": "Covid",
     "Topic heading": "COVID-19",
-    "Subject": "COVID-19 Espa?ol, Arabic, Mandarin and other languages",
+    "Subject": "COVID-19 Español, Arabic, Mandarin and other languages",
     "General Patient Text": "[[Click here; https://www.ottawapublichealth.ca/en/public-health-topics/multilingual-resources.aspx]]",
     "Health Provider Text": "n/a",
     "Gender": "all",
@@ -290,56 +290,6 @@
     "Maximum age": 150
   },
   {
-    "Button": "Breast",
-    "Topic heading": "Breast Cancer",
-    "Subject": "AFAB w/o top surgery",
-    "General Patient Text": "Patient: Mammography q2 yrs from age 50-75",
-    "Health Provider Text": "Provider: Mammography q2 yrs from age 50-75",
-    "Gender": "af",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Breast",
-    "Topic heading": "Breast Cancer",
-    "Subject": "AFAB w/ top surgery",
-    "General Patient Text": "Patient: Consider mammography q2 yrs from age 50-75 if leftover breast tissue; likely not needed",
-    "Health Provider Text": "Provider: Consider mammography q2 yrs from age 50-75 if leftover breast tissue; likely not needed",
-    "Gender": "af",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Breast",
-    "Topic heading": "Breast Cancer",
-    "Subject": "AMAB w/o top surgery",
-    "General Patient Text": "Patient: Consider breast exam/ mammography q2 yrs from age 50-75 if on estrogen for more than 3-5 yrs",
-    "Health Provider Text": "Provider: Consider breast exam/ mammography q2 yrs from age 50-75 if on estrogen for more than 3-5 yrs",
-    "Gender": "am",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Breast",
-    "Topic heading": "Breast Cancer",
-    "Subject": "AMAB w/ top surgery",
-    "General Patient Text": "Patient: Breast exam/mammography q2 yrs from age 50-75",
-    "Health Provider Text": "Provider: Breast exam/mammography q2 yrs from age 50-75",
-    "Gender": "am",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Breast",
-    "Topic heading": "Breast Cancer",
-    "Subject": "Breast cancer screening",
-    "General Patient Text": "3rd body breast cancer-patient",
-    "Health Provider Text": "3rd body breast cancer-provider",
-    "Gender": "nb",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
     "Button": "Uterus",
     "Topic heading": "Cervical Cancer",
     "Subject": "Get tested for Cervical Cancer \n(Pap test)",
@@ -366,56 +316,6 @@
     "General Patient Text": "•Get the HPV vaccine\nrecommended between age 9 and 26 \nbut can be given at any age\n•Don’t smoke\n•Use condoms\n•Limit your number of sexual partners\n[[more; http://www.cancer.ca/en/cancer-information/cancer-type/cervical/risks/reducing-your-risk/?region=on]]",
     "Health Provider Text": "•Recommend the HPV vaccine\n(recommended between 9 and 26 \nbut can be given at any age).\n[[Canadian recommendation; https://www.canada.ca/en/public-health/services/publications/healthy-living/update-recommended-human-papillomavirus-vaccine-immunization-schedule.html#sum]]\n•Recommend no smoking, condom use,\nand limiting number of partners.",
     "Gender": "f",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Uterus",
-    "Topic heading": "Cervical Cancer",
-    "Subject": "AFAB w/o bottom surgery",
-    "General Patient Text": "Patient: Pap test q3 yrs from age 21-70 (Ontario)",
-    "Health Provider Text": "Provider: Pap test q3 yrs from age 21-70 (Ontario)",
-    "Gender": "af",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Uterus",
-    "Topic heading": "Cervical Cancer",
-    "Subject": "AFAB w/ bottom surgery",
-    "General Patient Text": "Patient: Screen if cervix still present (depends on type of bottom surgery)",
-    "Health Provider Text": "Provider: Screen if cervix still present (depends on type of bottom surgery)",
-    "Gender": "af",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Uterus",
-    "Topic heading": "Cervical Cancer",
-    "Subject": "AMAB w/o bottom surgery",
-    "General Patient Text": "Patient: No screening necessary",
-    "Health Provider Text": "Provider: No screening necessary",
-    "Gender": "am",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Uterus",
-    "Topic heading": "Cervical Cancer",
-    "Subject": "AMAB w/ bottom surgery",
-    "General Patient Text": "Patient: Consider Pap test q3 yrs from age 21-70, particularly if neovagina made from penile tissue",
-    "Health Provider Text": "Provider: Consider Pap test q3 yrs from age 21-70, particularly if neovagina made from penile tissue",
-    "Gender": "am",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Uterus",
-    "Topic heading": "Cervical Cancer",
-    "Subject": "Cervical Cancer Screening",
-    "General Patient Text": "3rd body cervical cancer-patient",
-    "Health Provider Text": "3rd body cervical cancer-provider",
-    "Gender": "nb",
     "Minimum age": 18,
     "Maximum age": 150
   },
@@ -548,36 +448,6 @@
     "Gender": "f",
     "Minimum age": 18,
     "Maximum age": 49
-  },
-  {
-    "Button": "Ovary",
-    "Topic heading": "Family Planning",
-    "Subject": "Ovarian cancer",
-    "General Patient Text": "Patient: Same as cis women/discuss with provider (not all bottom surgeries include oophorectomy)",
-    "Health Provider Text": "Provider: Same as cis women/discuss with provider (not all bottom surgeries include oophorectomy)",
-    "Gender": "af",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Ovary",
-    "Topic heading": "Family Planning",
-    "Subject": "Ovarian cancer",
-    "General Patient Text": "Patient: No screening",
-    "Health Provider Text": "Provider: No screening",
-    "Gender": "am",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Ovary",
-    "Topic heading": "Family Planning",
-    "Subject": "Family Planning",
-    "General Patient Text": "3rd body Family planning-patient",
-    "Health Provider Text": "3rd body Family planning-provider",
-    "Gender": "nb",
-    "Minimum age": 18,
-    "Maximum age": 150
   },
   {
     "Button": "Heart",
@@ -1010,76 +880,6 @@
     "Maximum age": 69
   },
   {
-    "Button": "Genitalia",
-    "Topic heading": "Sex & Prostate",
-    "Subject": "Prostate Cancer",
-    "General Patient Text": "Patient: No screening",
-    "Health Provider Text": "Provider: No screening",
-    "Gender": "af",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Genitalia",
-    "Topic heading": "Sex & Prostate",
-    "Subject": "Prostate Cancer",
-    "General Patient Text": "Patient:  Same as cis men/discuss with provider (bottom surgery does not remove the prostate)",
-    "Health Provider Text": "Provider:  Same as cis men/discuss with provider (bottom surgery does not remove the prostate)",
-    "Gender": "am",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Genitalia",
-    "Topic heading": "Sex & Prostate",
-    "Subject": "Prostate Cancer",
-    "General Patient Text": "3rd body Prostate cancer-patient",
-    "Health Provider Text": "3rd body prostate cancer-provider",
-    "Gender": "nb",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Genitalia",
-    "Topic heading": "Sex",
-    "Subject": "Contraception (Subject)",
-    "General Patient Text": "Patient: Any hormonal/barrier methods can used (no contraindications with testosterone)",
-    "Health Provider Text": "Provider: Any hormonal/barrier methods can used (no contraindications with testosterone)",
-    "Gender": "af",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Genitalia",
-    "Topic heading": "Sex",
-    "Subject": "Contraception (Subject)",
-    "General Patient Text": "Patient: Use barrier method (or have partner use hormonal contraception) if no bottom surgery and having intercourse with partner who could get pregnant",
-    "Health Provider Text": "Provider: Use barrier method (or have partner use hormonal contraception) if no bottom surgery and having intercourse with partner who could get pregnant",
-    "Gender": "am",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Liver",
-    "Topic heading": "Substance Abuse",
-    "Subject": "Alcohol",
-    "General Patient Text": "•Women: have 10 or less drinks a week \n•Men: Have 15 or less drinks per week\nWhat is a “drink”?\n\n[[image;images/size_of_drink.jpg]]\n[[more;https://www.camh.ca/-/media/files/canadas-low-risk-guidelines-pdf.pdf]]",
-    "Health Provider Text": "•Women: have 10 or less drinks a week\n•Men: have 15 or less drinks per week\nWhat is a \"drink\"?\n\n[[image;images/size_of_drink.jpg]]\n\n[[Source; https://www.camh.ca/-/media/files/canadas-low-risk-guidelines-pdf.pdf]]\nScreening for misuse and behavioural counseling [[USPSTF B (2018); https://www.uspreventiveservicestaskforce.org/Page/Document/UpdateSummaryFinal/unhealthy-alcohol-use-in-adolescents-and-adults-screening-and-behavioral-counseling-interventions?ds=1&s=alcohol]]",
-    "Gender": "all",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Liver",
-    "Topic heading": "Substance Abuse",
-    "Subject": "Drug Abuse",
-    "General Patient Text": "Get help if you are addicted to a substance/gambling.\nEach province or territory has a help line: [[more; https://www.canada.ca/en/health-canada/services/substance-use/get-help/get-help-problematic-substance-use.html]]",
-    "Health Provider Text": "Help available for patients addicted to a substance/gambling:\neach province or territory has a help line: [[more; https://www.canada.ca/en/health-canada/services/substance-use/get-help/get-help-problematic-substance-use.html]]:\nScreening and counseling USPSTF I (2018) under review",
-    "Gender": "all",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
     "Button": "Sun",
     "Topic heading": "Sun Exposure",
     "Subject": "Stop Skin Cancer",
@@ -1196,36 +996,6 @@
     "General Patient Text": "Better to get calcium from food rather than supplements.\n[[More; https://osteoporosis.ca/bone-health-osteoporosis/calcium-calculator/#page-1]]\nIf you take a Calcium supplement take no more than 500 mg a day.\n\nVitamin D:\nTaking more than 2000 IU a day of vitamin D should be done under medical supervision \n[[more info; https://osteoporosis.ca/bone-health-osteoporosis/calcium-and-vitamin-d/]]",
     "Health Provider Text": "Better to get Calcium from food rather than supplements.\nif supplement needed to consider to 500 mg max\ntaking more than 2000 IU a day of Vitamin D should be done under medical supervision \n\n[[more info; https://osteoporosis.ca/bone-health-osteoporosis/calcium-and-vitamin-d/]]",
     "Gender": "all",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Bone",
-    "Topic heading": "Osteoporosis",
-    "Subject": "Osteoporosis",
-    "General Patient Text": "3rd body osteopororsis-patient",
-    "Health Provider Text": "3rd body osteopororsis-provider",
-    "Gender": "nb",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Bone",
-    "Topic heading": "Osteoporosis",
-    "Subject": "Osteoporosis",
-    "General Patient Text": "Patient: Generally same as cis patients but considered high risk if not on ANY hormones for prolonged periods (e.g. no estrogen or testosterone)",
-    "Health Provider Text": "Provider: Generally same as cis patients but considered high risk if not on ANY hormones for prolonged periods (e.g. no estrogen or testosterone)",
-    "Gender": "af",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Bone",
-    "Topic heading": "Osteoporosis",
-    "Subject": "Osteoporosis",
-    "General Patient Text": "Patient: Generally same as cis patients but considered high risk if not on ANY hormones for prolonged periods (e.g. no estrogen or testosterone)",
-    "Health Provider Text": "Provider: Generally same as cis patients but considered high risk if not on ANY hormones for prolonged periods (e.g. no estrogen or testosterone)",
-    "Gender": "am",
     "Minimum age": 18,
     "Maximum age": 150
   }
