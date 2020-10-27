@@ -685,7 +685,8 @@ class App extends Component {
                 <form>
                   <div>
                     {this.state.lang.age_selector}
-                    <input id='abcd' type="text" value={this.state.age == "all ages" ? this.state.lang.all_ages : this.state.age} onChange={this.handleChange} disabled={this.state.allAgesSelected} placeholder={this.state.lang.age_selector_place_holder} onKeyPress={e => { if (e.key === 'Enter') e.preventDefault();}} />
+                    {/* <input id='abcd' type="text" value={this.state.age == "all ages" ? this.state.lang.all_ages : this.state.age} onChange={this.handleChange} disabled={this.state.allAgesSelected} placeholder={this.state.lang.age_selector_place_holder} onKeyPress={e => { if (e.key === 'Enter') e.preventDefault();}} /> */}
+                    <input id='abc' type="text" value={this.state.age == "all ages" ? this.state.lang.all_ages : this.state.age} onChange={this.handleChange} disabled={this.state.allAgesSelected} placeholder={this.state.lang.age_selector_place_holder} onKeyPress={e => { if (e.key === 'Enter') e.preventDefault();}} />
                     <label style={allagescheckboxStyle}>
                       <input id='myCheck' type="checkbox" checked={this.state.allAgesSelected} onChange={this.handleAllAgesSelected} />{this.state.lang.all_ages}
                     </label>
@@ -880,8 +881,8 @@ class App extends Component {
                       */}
 
                     </div>
-                    {/* {Are you a Transgender} */}
-                    <div id="TgenderSelector" className="radio">
+                     {/* {Are you a Transgender} */}
+                     <div id="TgenderSelector" className="radio">
                       {this.state.lang.Tgender_selector}<strong>
                       <button className="button button25" onClick={this.helpClicked2}>?</button></strong>
                       <br/>
@@ -898,6 +899,7 @@ class App extends Component {
                       <label id="config_agehelp" className="checkAge">
                         <h5>{this.state.lang.age_help}</h5>
                       </label>
+                     
                   {/*Field selection based on gender*/}
                   {/* <form>
                     <div id="field_selection" style={fieldSelectionDiv}>

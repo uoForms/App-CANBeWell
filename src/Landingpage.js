@@ -62,18 +62,18 @@ class LandingPage extends React.Component {
             <div className="landingpage-notice-row">
               <div className="landingpage-notice-column">
                <div className="landing-notice-privacystmnt-english">
-                <a href= "/pdf/iCanBeWell_PrivacyPolicy.pdf">{"PrivacyStatement"}</a>
+                 A reliable resource by Canadian health care providers to help you stay healthy
                 </div>
                 <div className="landing-notice-privacystmnt-english">
-                 A reliable resource by Canadian health care providers to help you stay healthy
+                <a href= "/pdf/iCanBeWell_PrivacyPolicy.pdf" target="_blank">{"PrivacyStatement"}</a>
                 </div>
               </div>
               <div className="landingpage-notice-column">
                 <div className="landing-notice-privacystmnt-french">
-                <a href= "/pdf/Politiquedeconfidentialité.pdf">{"Déclaration de confidentialité"}</a>
+                  Rester en santé avec cette ressource créée par vos professionnels de la santé canadiens
                 </div>
                 <div className="landing-notice-privacystmnt-french">
-                  Rester en santé avec cette ressource créée par vos professionnels de la santé canadiens
+                <a href= "/pdf/Politiquedeconfidentialité.pdf" target="_blank">{"Déclaration de confidentialité"}</a>
                 </div>
               </div>
             </div>
