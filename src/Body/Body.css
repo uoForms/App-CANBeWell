@@ -106,10 +106,10 @@
 }
 
 .mainRunner .maleAorta {
-    top: 31%;
+    top: 32%;
     left: 47.5%;
-    width: 3%;
-    height: 14%;
+    width: 2%;
+    height: 13%;
 }
 
 .mainRunner .maleBowel {
@@ -127,8 +127,8 @@
 }
 
 .mainRunner .maleHeart{
-    top: 24.5%;
-    left: 54%;
+    top: 25.5%;
+    left: 52%;
     width: 7%;
     height: 7%;
 }
@@ -141,30 +141,30 @@
 }
 
 .mainRunner .maleLiver {
-    top: 32%;
+    top: 35%;
     left: 41%;
-    width: 9%;
+    width: 10%;
     height: 3%;
 }
 
 .mainRunner .maleLungs{
-    top: 22%;
+    top: 25%;
     left: 48%;
-    width: 23%;
-    height: 9%;
+    width: 25%;
+    height: 10%;
 }
 
 .mainRunner .malePancreas{
-    top: 35%;
+    top: 36.5%;
     left: 54%;
     width: 9%;
-    height: 3.5%;
+    height: 3%;
 }
 
 .mainRunner .maleStomach{
-    top: 30.9%;
-    left: 55%;
-    width: 8%;
+    top: 32.9%;
+    left: 54%;
+    width: 9%;
     height: 4%;
 }
 
