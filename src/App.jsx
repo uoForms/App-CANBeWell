@@ -465,6 +465,9 @@ class App extends Component {
       background: '#f2f2f2',
       fontSize: '15px'
     };
+    const termsOfUseStyle={
+      'margin-top':'10px'
+    };
 
     if (this.state.user == "patient") {
       allagescheckboxStyle.display = "none";
@@ -521,11 +524,11 @@ class App extends Component {
                 </form>
               </div>
               {/*select age*/}
-              <div >
+              <div>
                 <form>
                   <div>
                     {this.state.lang.age_selector}
-                    <input id='abc' type="text" value={this.state.age == "all ages" ? this.state.lang.all_ages : this.state.age} onChange={this.handleChange} disabled={this.state.allAgesSelected} placeholder={this.state.lang.age_selector_place_holder} />
+                    <input id='abc' type="text" value={this.state.age == "all ages" ? this.state.lang.all_ages : this.state.age} onChange={this.handleChange} disabled={this.state.allAgesSelected} placeholder={this.state.lang.age_selector_place_holder} onKeyPress={e => { if (e.key === 'Enter') e.preventDefault();}} />
                     <label style={allagescheckboxStyle}>
                       <input id='myCheck' type="checkbox" checked={this.state.allAgesSelected} onChange={this.handleAllAgesSelected} />{this.state.lang.all_ages}
                     </label>
@@ -536,11 +539,7 @@ class App extends Component {
                 </form>
               </div>
 
-              <div>
-                <button id="agree" onClick={this.toggleIntrutionModal}>{this.state.lang.agree}</button>
-                <button onClick={this.goBack} type="button">{this.state.lang.disagree}</button>
-              </div>
-
+              <div className="termsOfUse" style={termsOfUseStyle}>
               <b>{this.state.lang.disclaimer_header}</b>
 
               <div style={myDisclaimerStyle}>
@@ -549,8 +548,13 @@ class App extends Component {
                 <p id="disclaimer">{this.state.lang.patientDisclaimer}</p><br />
                 <p>{this.state.lang.important}</p>
               </div>
+              </div>
+              <div>
+                <button id="agree" className="buttonAgreeToTerms" onClick={this.toggleIntrutionModal}>{this.state.lang.agree}</button>
+                {/* <button onClick={this.goBack} type="button">{this.state.lang.disagree}</button> */}
+              </div>
             </div>
-          </div>
+            </div>
         </div>
       ];
     } else {
@@ -609,7 +613,7 @@ class App extends Component {
                   <form>
                     <div>
                       {this.state.lang.age_selector}
-                      <input id='abc' type="text" value={this.state.age == "all ages" ? this.state.lang.all_ages : this.state.age} onChange={this.handleChange} disabled={this.state.allAgesSelected} placeholder={this.state.lang.age_selector_place_holder} />
+                      <input id='abc' type="text" value={this.state.age == "all ages" ? this.state.lang.all_ages : this.state.age} onChange={this.handleChange} disabled={this.state.allAgesSelected} placeholder={this.state.lang.age_selector_place_holder} onKeyPress={e => { if (e.key === 'Enter') e.preventDefault();}} />
                       <label style={allagescheckboxStyle}>
                         <input id='check' type="checkbox" checked={this.state.allAgesSelected} onChange={this.handleAllAgesSelected} />{this.state.lang.all_ages}
                       </label>
