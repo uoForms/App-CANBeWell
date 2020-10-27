@@ -124,7 +124,6 @@ export const GaUserEvent = (currNav, currCat, userInfo, timeDiff, preTime, currT
     region: userInfo.region,
     city: userInfo.city,
     date: date,
-    gcheck: userInfo.gcheck
   }
   let eventCatagory = getEventCatagory(label);
   let eventAction = getEventAction(label);
@@ -148,7 +147,6 @@ export const GaUserEvent = (currNav, currCat, userInfo, timeDiff, preTime, currT
       city: userInfo.city,
       date: date,
       pageviewtime: timeDiff,
-      gcheck: userInfo.gcheck
     }
     writeClick(preLabel, preTime);
   }

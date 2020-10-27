@@ -55,7 +55,6 @@ body {
   display: none;
 }
 
-
 @keyframes shake {
   10%, 90% {
     transform: translate3d(-1px, 0, 0);
@@ -225,87 +224,6 @@ body {
     padding-top: 60px;
 }
 
-
-
-
-#male_radio{
-  margin-right:  186px;
-}
-
-#birth_male_mod{
-  margin-right:  184px;
-}
-
-#female_male_mod{
-  margin-right:  164px;
-}
-
-
-#female_radio{
-  margin-right:  166px;
-}
-
-#trans_radio{
-  margin-right:  118px;
-}
-
-#nb_radio{
-  margin-right:  129px;
-}
-
-.gender_mod{
-  margin-right: 156px;
-  font-weight: lighter; 
-}
-
-.Tgender_mod{
-  margin-right: 46px;
-  position: relative;
-  font-weight: lighter; 
-  padding: 1px 2px 3px 1px;
-  
-}
-
-
-#choose_mod{
-  margin-right: 32px;
-  font-weight: 900;
-}
-#user_mod{
-  margin-right: 213px;
-}
-
-#opt_mod{
-  margin-right: 192px;
-}
-
-#pat_mod{
-  margin-right: 170px;
-}
-
-#prov_mod{
-  margin-right: 159px;
-}
-
-
-#horm_mod{
-  margin-right: -64px;
-  font-weight: normal;
-}
-
-#top_mod{
-  margin-right: -10px;
-  font-weight: normal;
-}
-
-#bott_mod{
-  margin-right: -46px;
-  font-weight: normal;
-}
-
-
-
-
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -381,16 +299,7 @@ summary:after {
     position: relative;
   /*max-width: 150px;*/
   }
-.abc{
-  margin-left: 15%;
-  
-}
 
-#abcd{
-  margin-right: 30px; 
-  height: auto;
-  width: 184px;
-}
 
 
 /*scrollbar*/
@@ -414,9 +323,4 @@ summary:after {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
-}
-@media only screen and (max-width: 291px) {
-  .gender_mod{
-    margin-right: 156px;
-  }
 }

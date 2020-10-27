@@ -21,7 +21,6 @@ class InstructionModal extends React.Component {
 
     this.handleChange = this.handleChange.bind(this);
     this.handleGenderChange = this.handleGenderChange.bind(this);
-    this.handlegcheckChange = this.handlegcheckChange.bind(this);
     this.handlePatientProviderChange = this.handlePatientProviderChange.bind(this);
     this.handleAllAgesSelected = this.handleAllAgesSelected.bind(this);
   }
@@ -54,17 +53,6 @@ class InstructionModal extends React.Component {
 
   }
 
-  handlegcheckChange(event){
-
-    this.setState({
-      allAgesSelected: !this.state.allAgesSelected
-    }, () => {
-      this.setState({ value: this.state.allAgesSelected ? "all ages" : "" }); //Call back once setState is done
-      setAge(this.state.allAgesSelected ? "all ages" : "");
-
-    });
-  }
-
   handleAllAgesSelected(event) {
 
     this.setState({
@@ -85,21 +73,6 @@ class InstructionModal extends React.Component {
 
   }
 
-  onKeyUp(event) {
-    if (event.charCode === 13) {
-      this.setState({ inputValue: event.target.value });
-    }
-  }
-
-  // handlegcheckChange(changeEvent) {
-
-  //   oncheckchange(changeEvent.target.value);
-  //   this.setState({
-  //     selectedcheckbox: changeEvent.target.value
-  //   });
-
-  // }
-
   render() {
 
     // Render intruction view
@@ -115,9 +88,6 @@ class InstructionModal extends React.Component {
       display: 'block',
     };
 
-    var voidActionAge = {
-      display: 'block',
-    };
 
     // The gray background
     const backdropStyle = {
@@ -157,9 +127,7 @@ class InstructionModal extends React.Component {
     var UserInfo = getUserInfo();
     this.state.selectedPatientProvider = UserInfo.patient_provider;
     this.state.selectedGender = UserInfo.gender;
-    this.state.selectedcheckbox = UserInfo.gender;
     this.state.selectAge = UserInfo.age;
-    this.state.selectedcheckbox=UserInfo.gcheck;
     var myBoolean_age = false;
     var myBoolean_gender = false;
     var myBoolean_allAge = false;
@@ -168,12 +136,10 @@ class InstructionModal extends React.Component {
     if (this.state.selectedPatientProvider == "patient") {
       allagescheckboxStyle.display = "none";
       checkAge.display = "block";
-      voidActionAge.display = "block";
     }
     else if (this.state.selectedPatientProvider == "provider") {
       allagescheckboxStyle.display = "block";
       checkAge.display = "none";
-      voidActionAge.display = "block"
       myBoolean_allAge = true;
     }
 
@@ -186,21 +152,13 @@ class InstructionModal extends React.Component {
     else if (this.state.selectedGender == "all_genders") {
       myBoolean_gender = true;
     }
-    else if (this.state.selectedGender == "nonbinary") {
-      myBoolean_gender = true;
-    }
-    else if (this.state.selectedGender == "transgender") {
-      myBoolean_gender = true;
-    }
 
     if ((this.state.selectAge < 18 && this.state.selectAge > 150)) {
       checkAge.display = "block";
-      voidActionAge.display = "block";
       myBoolean_gender = false;
     }
     else if ((this.state.selectAge >= 18 && this.state.selectAge <= 150)) {
       checkAge.display = "none";
-      voidActionAge.display = "block";
       myBoolean_age = true;
     }
 
@@ -240,16 +198,6 @@ class InstructionModal extends React.Component {
                     {this.props.lang.female}
                   </label>
 
-                  <label>
-                    <input type="radio" value="nonbinary" checked={this.state.selectedGender == 'nonbinary'} onChange={this.handleGenderChange} />
-                    {this.props.lang.nonbinary}
-                  </label>
-                  
-                  <label>
-                    <input type="radio" value="transgender" checked={this.state.selectedGender == 'transgender'} onChange={this.handleGenderChange} />
-                    {this.props.lang.transgender}
-                  </label>
-
                   {/* {this.state.selectedPatientProvider === 'provider' || null ?
                     (<label>
                       <input type="radio" value="all_genders" checked={this.state.selectedGender == 'all_genders'} onChange={this.handleGenderChange} />
@@ -264,18 +212,13 @@ class InstructionModal extends React.Component {
               <form>
                 <div>
                   {this.props.lang.age_selector}
-                  <input id='abc' type="text" value={this.state.value} onChange={this.handleChange} placeholder={this.props.lang.age_selector_place_holder} /* onKeyPress={e => { if (e.key === 'Enter') e.preventDefault();}} */ onKeyUp={this.onKeyUpValue.bind(this)} />
+                  <input id='abc' type="text" value={this.state.value} onChange={this.handleChange} placeholder={this.props.lang.age_selector_place_holder} />
                   <label style={allagescheckboxStyle}>
                     <input type="checkbox" checked={this.state.allAgesSelected} onChange={this.handleAllAgesSelected} />{this.props.lang.all_ages}
                   </label>
                   <label style={checkAge}>
                     <h5>{this.props.lang.age_help}</h5>
                   </label>
-
-                  <label style={voidActionAge}>
-                    <h5>{this.props.lang.age_void}</h5>
-                  </label>
-
                 </div>
               </form>
             </div>

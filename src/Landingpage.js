@@ -41,10 +41,7 @@ class LandingPage extends React.Component {
     return (
       <div className="landing-page">
         {this.state.language == "" || null ? (
-            <div class="center">
-            <div className="landing-trans">
-            TRANSGENDER Branch
-            </div>
+          <div>
             <div class="landing-update">
             Mise à jour COVID Updated&nbsp;
             <button class="videoButton" src={videoland} onClick={this.openVideo}>Video</button>
@@ -59,22 +56,17 @@ class LandingPage extends React.Component {
              
             </div>
 
-            
+            <div className="landingpage-notice-row"> </div>
+
             <div className="landingpage-notice-row">
               <div className="landingpage-notice-column">
-               <div className="landing-notice-privacystmnt-english">
-                <a href= "/pdf/iCanBeWell_PrivacyPolicy.pdf">{"PrivacyStatement"}</a>
-                </div>
-                <div className="landing-notice-privacystmnt-english">
-                 A reliable resource by Canadian health care providers to help you stay healthy
+                <div className="landing-notice">
+                A reliable resource by Canadian health care providers to help you stay healthy
                 </div>
               </div>
               <div className="landingpage-notice-column">
-                <div className="landing-notice-privacystmnt-french">
-                <a href= "/pdf/Politiquedeconfidentialité.pdf">{"Déclaration de confidentialité"}</a>
-                </div>
-                <div className="landing-notice-privacystmnt-french">
-                  Rester en santé avec cette ressource créée par vos professionnels de la santé canadiens
+                <div className="landing-notice">
+                Rester en santé avec cette ressource créée par vos professionnels de la santé canadiens
                 </div>
               </div>
             </div>

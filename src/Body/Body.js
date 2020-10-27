@@ -76,8 +76,7 @@ class MyBody extends React.Component {
         <div align="center"><h4 className="instruction">{this.props.lang.body_general_instruction}</h4></div>
         <div>
           <Anatomy 
-            gender={this.props.userConfig.gender}
-            Tgender={this.props.userConfig.Tgender} 
+            gender={this.props.userConfig.gender} 
             userInfo={this.props.userConfig} 
             getDisplay={this.props.getText} 
             lang={this.props.lang}
