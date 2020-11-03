@@ -72,7 +72,7 @@ class LandingPage extends React.Component {
                 Rester en santé avec cette ressource créée par vos professionnels de la santé canadiens
                 </div>
                 <div className="landing-notice-privacystmnt-french">
-                <a href= "/pdf/Politiquedeconfidentialité.pdf" target="_blank">{"Déclaration de confidentialité"}</a>
+                <a href= "/pdf/Politiquedeconfidentialité.pdf" target="_blank">{"Politique de confidentialité"}</a>
                 </div>
               </div>
             </div>
