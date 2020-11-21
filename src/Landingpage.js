@@ -65,7 +65,8 @@ class LandingPage extends React.Component {
                  A reliable resource by Canadian health care providers to help you stay healthy
                 </div>
                 <div className="landing-notice-privacystmnt-english">
-                <a href= "/iCanBeWell_PrivacyPolicy.htm" target="_blank">{"PrivacyStatement"}</a>
+                {/*<a href= "/iCanBeWell_PrivacyPolicy.htm" target="_blank">{"PrivacyStatement"}</a>*/}
+                <a href= "http://icanbewell.ca/iCanBeWell_PrivacyPolicy.htm" target="_blank">{"PrivacyStatement"}</a>
                 </div>
               </div>
               <div className="landingpage-notice-column">
@@ -73,7 +74,8 @@ class LandingPage extends React.Component {
                   Rester en santé avec cette ressource créée par vos professionnels de la santé canadiens
                 </div>
                 <div className="landing-notice-privacystmnt-french">
-                <a href= "/Politiquedeconfidentialité.htm" target="_blank">{"Politique de confidentialité"}</a>
+                {/*<a href= "/Politiquedeconfidentialité.htm" target="_blank">{"Politique de confidentialité"}</a>*/}
+                <a href= "http://icanbewell.ca/Politiquedeconfidentialité.htm" target="_blank">{"Politique de confidentialité"}</a>
                 </div>
               </div>
             </div>
