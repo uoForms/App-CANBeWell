@@ -61,7 +61,7 @@ export const GaModalView = (virtual_url) => {
 export const GaGetID = () => {
   ReactGA.ga(
     function (tracker) {
-      return tracker.get('clientId');
+      return tracker = tracker.get('clientId');
     });
 };
 
@@ -137,7 +137,8 @@ export const GaUserEvent = (currNav, currCat, userInfo, timeDiff, preTime, currT
   let date = formatDate(Date.now());
   var label = {
     navigation: currNav,
-    user: userInfo.userID,
+    userid: userInfo.userID,
+    sessionid: userInfo.sessionID,
     gender: userInfo.gender,
     age: userInfo.age,
     language: userInfo.language,
@@ -161,6 +162,7 @@ export const GaUserEvent = (currNav, currCat, userInfo, timeDiff, preTime, currT
     var preLabel = {
       navigation: userInfo.preNav,
       user: userInfo.userID,
+      sessionid: userInfo.sessionID,
       gender: userInfo.gender,
       age: userInfo.age,
       language: userInfo.language,
@@ -238,3 +240,4 @@ export const formatDate = (date) => {
     day = '0' + day;
   return year + mon + day;
 }
+

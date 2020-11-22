@@ -40,6 +40,7 @@ class App extends Component {
     const { cookies } = props;
     var userInfo = {
       userID: null,
+      sessionID:null,
       gender: null,
       Tgender:null,
       patient_provider: null,
@@ -65,6 +66,7 @@ class App extends Component {
 
     this.state = {
       userID: cookies.get('userID'),
+      sessionID: cookies.get('sessionID'),
       isOpen: false,
       configurationIsOpen: false, //used to be isOpen
       bodyView: true,
@@ -138,12 +140,21 @@ class App extends Component {
 
     /// The following steps is to get clientID from google analytics and save it to cookies
     const { cookies } = this.props;
-    if( !cookies.get('userID') ) 
+    var clientId = null;
+    ReactGA.ga(
+      function (tracker) {
+        clientId = tracker.get('clientId');
+      }
+    );
+    cookies.set('userID', clientId, { path: "/" });
+    console.log('userid:',cookies.get('userID'))
+
+    if( !cookies.get('sessionID') ) 
     {
-        cookies.set('userID', uuidv4(), { path: "/" });
+        cookies.set('sessionID', uuidv4().toString(), { path: "/" });
     }
-    console.log(cookies.get('userID'))
-    
+    //console.log(JSON.parse(cookies.get('userID')))
+    console.log('sessionid:',cookies.get('sessionID'))
     //count a pageview of body 
     //ReactGA.pageview('body');
 
@@ -557,6 +568,7 @@ class App extends Component {
     //var userInfo = getUserInfo();
     var userInfo = {
       userID: this.state.userID,
+      sessionID:this.state.sessionID,
       gender: this.state.gender,
       Tgender:this.state.Tgender,
       patient_provider: this.state.user,
