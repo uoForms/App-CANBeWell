@@ -118,7 +118,6 @@ class App extends Component {
     {
         cookies.set('sessionID', uuidv4().toString(), { path: "/" });
     }
-    //console.log(JSON.parse(cookies.get('userID')))
     console.log('sessionid:',cookies.get('sessionID'))
     //count a pageview of body 
     //ReactGA.pageview('body');
