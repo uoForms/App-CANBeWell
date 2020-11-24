@@ -24,7 +24,7 @@ import { unstable_renderSubtreeIntoContainer } from 'react-dom';
 //import {setGender} from './UserInfo';
 //import {setPatientProvider} from './UserInfo';
 //import {setAge} from './UserInfo';
-//import {getUserInfo} from './UserInfo';
+import {getUserInfo} from './UserInfo';
 
 
 class App extends Component {
@@ -49,7 +49,7 @@ class App extends Component {
       preNav: null,
       preCat: null,
       preTime: null
-    };// = getUserInfo();
+    }; // =getUserInfo();
     let DataToDisplay = new Data(this.props.appLanguage);
     var app_language = this.props.appLanguage;
 
@@ -78,6 +78,7 @@ class App extends Component {
       city: null,
       preNav: null,
       preCat: null,
+      userID: null,
       preTime: null
       //allowToClose: false, //obselete! we use to make the user agree before they could press agree
     };
@@ -409,7 +410,7 @@ class App extends Component {
   */
 
   render() {
-    //var userInfo = getUserInfo();
+    var userInfo = getUserInfo();
     var userInfo = {
       userID: this.state.userID,
       sessionID:this.state.sessionID,
