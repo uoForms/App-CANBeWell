@@ -6,7 +6,7 @@ import { db } from './firebase';
 
 export const initGA = (trackingID) => {
   ReactGA.initialize(
-    trackingID = 'UA-151893001-3',
+    trackingID = 'UA-151893001-1',
   ); 
 }
 
