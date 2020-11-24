@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 //import {setGender} from './UserInfo';
 //import {setPatientProvider} from './UserInfo';
 //import {setAge} from './UserInfo';
-//import {getUserInfo} from './UserInfo';
+import {getUserInfo} from './UserInfo';
 import './Style/Modal.css';
 
 class MyModal extends React.Component {
@@ -74,7 +74,7 @@ class MyModal extends React.Component {
       display: 'block',
     };
 
-    /*var myBoolean_gender = false;
+    var myBoolean_gender = false;
     var myBoolean_age = false;
     var myBoolean_allAge = false;
 
@@ -111,7 +111,7 @@ class MyModal extends React.Component {
     else if((this.state.selectAge>=18 && this.state.selectAge<=149)){
       checkAge.display = "none";
       myBoolean_age = true;
-    }*/
+    }
 
     const myModalStyle = {
       overflow: 'scroll',

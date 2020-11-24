@@ -25,7 +25,7 @@ import { unstable_renderSubtreeIntoContainer } from 'react-dom';
 //import {setGender} from './UserInfo';
 //import {setPatientProvider} from './UserInfo';
 //import {setAge} from './UserInfo';
-//import {getUserInfo} from './UserInfo';
+import {getUserInfo} from './UserInfo';
 
 
 class App extends Component {
@@ -53,12 +53,14 @@ class App extends Component {
       preTime: null,
       // isTopSurgery:null,
       // isBottomSurgery:null,
-      // isHormoneTherapy:null,
-      isEstrogen:null,
-      isTestosterone:null,
-      isBreasts:null,
-      isVaginaCervix:null,
-      isProstate:null
+      // isHormoneTherapy:null
+      //these might not be needed verify later
+      // :)
+      // isEstrogen:null,
+      // isTestosterone:null,
+      // isBreasts:null,
+      // isVaginaCervix:null,
+      // isProstate:null
     };// = getUserInfo();
     let DataToDisplay = new Data(this.props.appLanguage);
     var app_language = this.props.appLanguage;
@@ -94,11 +96,13 @@ class App extends Component {
       // isTopSurgery: (cookies.get('isTopSurgery') == "true") ? true : false,//cookies.get('isTopSurgery'),
       // isBottomSurgery:(cookies.get('isBottomSurgery') == "true") ? true : false,//cookies.get('isBottomSurgery'),
       // isHormoneTherapy: (cookies.get('isHormoneTherapy') == "true") ? true : false,//cookies.get('isHormoneTherapy'),
-      isEstrogen: (cookies.get('isEstrogen') == "true") ? true : false,//cookies.get('isEstrogen'),
-      isTestosterone: (cookies.get('isEstrogen') == "true") ? true : false,//cookies.get('isTestosterone'),
-      isBreasts: (cookies.get('isEstrogen') == "true") ? true : false,//cookies.get('isBreasts'),
-      isVaginaCervix: (cookies.get('isEstrogen') == "true") ? true : false,//cookies.get('isVaginaCervix'),
-      isProstate: (cookies.get('isEstrogen') == "true") ? true : false,//cookies.get('isProstate'),
+      //these might not be needed verify later
+      // :)
+      // isEstrogen: (cookies.get('isEstrogen') == "true") ? true : false,//cookies.get('isEstrogen'),
+      // isTestosterone: (cookies.get('isEstrogen') == "true") ? true : false,//cookies.get('isTestosterone'),
+      // isBreasts: (cookies.get('isEstrogen') == "true") ? true : false,//cookies.get('isBreasts'),
+      // isVaginaCervix: (cookies.get('isEstrogen') == "true") ? true : false,//cookies.get('isVaginaCervix'),
+      // isProstate: (cookies.get('isEstrogen') == "true") ? true : false,//cookies.get('isProstate'),
       showMe: true
       
 
@@ -564,7 +568,7 @@ class App extends Component {
   });
  }
   render() {
-    //var userInfo = getUserInfo();
+    var userInfo = getUserInfo();
     var userInfo = {
       userID: this.state.userID,
       sessionID:this.state.sessionID,
