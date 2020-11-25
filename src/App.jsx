@@ -112,7 +112,11 @@ class App extends Component {
         clientId = tracker.get('clientId');
       }
     );
-    cookies.set('userID', clientId, { path: "/" });
+    if( !cookies.get('userID') ) 
+    {
+      cookies.set('userID', clientId, { path: "/" });
+    }
+      
     console.log('userid:',cookies.get('userID'))
 
     if( !cookies.get('sessionID') ) 
