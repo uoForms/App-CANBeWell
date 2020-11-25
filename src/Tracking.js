@@ -136,7 +136,7 @@ export const GaUserEvent = (currNav, currCat, userInfo, timeDiff, preTime, currT
   let date = formatDate(Date.now());
   var label = {
     navigation: currNav,
-    userid: userInfo.userID,
+    user: userInfo.userID,
     sessionid: userInfo.sessionID,
     gender: userInfo.gender,
     age: userInfo.age,
@@ -159,7 +159,7 @@ export const GaUserEvent = (currNav, currCat, userInfo, timeDiff, preTime, currT
     writeClick(label, currTime);
     var preLabel = {
       navigation: userInfo.preNav,
-      userid: userInfo.userID,
+      user: userInfo.userID,
       sessionid: userInfo.sessionID,
       gender: userInfo.gender,
       age: userInfo.age,

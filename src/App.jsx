@@ -413,7 +413,7 @@ class App extends Component {
     var userInfo = getUserInfo();
     var userInfo = {
       userID: this.state.userID,
-      sessionID:this.state.sessionID,
+      sessionID: this.state.sessionID,
       gender: this.state.gender,
       patient_provider: this.state.user,
       age: this.state.age,
