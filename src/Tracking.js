@@ -64,7 +64,6 @@ export const GaGetID = () => {
       return tracker = tracker.get('clientId');
     });
 };
-
 /*export const outBound = () => {
 var hostname = window.location.hostname; 
 jQuery("body a").click(function(){
@@ -161,7 +160,7 @@ export const GaUserEvent = (currNav, currCat, userInfo, timeDiff, preTime, currT
     writeClick(label, currTime);
     var preLabel = {
       navigation: userInfo.preNav,
-      user: userInfo.userID,
+      userid: userInfo.userID,
       sessionid: userInfo.sessionID,
       gender: userInfo.gender,
       age: userInfo.age,
@@ -226,7 +225,6 @@ export const writeClick = (label, currTime) => {
   let data = JSON.parse(JSON.stringify(label));
   db.ref(data.date + '/' + currTime).set(data);
 }
-
 
 export const formatDate = (date) => {
   let d = new Date(date),
