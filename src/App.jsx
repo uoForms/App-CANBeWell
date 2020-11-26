@@ -108,7 +108,7 @@ class App extends Component {
     {
         cookies.set('userID', uuidv4(), { path: "/" });
     }
-    console.log(cookies.get('userID'))
+    console.log("USERRRRRR::",cookies.get('userID'))
     
     //count a pageview of body 
     //ReactGA.pageview('body');
@@ -413,6 +413,7 @@ class App extends Component {
       preCat: this.state.preCat,
       preTime: this.state.preTime
     };
+    console.log("user:::",userInfo);
 
     const fixedStyle = {
       position: 'fixed',

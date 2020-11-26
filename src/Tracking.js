@@ -106,6 +106,7 @@ export const matchUserDevice = () => {
 };
 
 export const GaUserEvent = (currNav, currCat, userInfo, timeDiff, preTime, currTime) => {
+  console.log("FIREBASE DATA::::",userInfo);
   let pageviewURL = currNav + "/" + currCat;
   ReactGA.pageview(pageviewURL);
   var deviceInfo = matchUserDevice();
