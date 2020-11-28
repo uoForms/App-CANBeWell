@@ -163,7 +163,10 @@ class App extends Component {
     }
     console.log('sessionid:',cookies.get('sessionID'))
     //setstate()
-
+    this.setState({
+      userID:cookies.get('userID'),
+      sessionID:cookies.get('sessionID')
+    });
     //count a pageview of body 
     //ReactGA.pageview('body');
 
@@ -576,8 +579,8 @@ class App extends Component {
   render() {
     var userInfo = getUserInfo();
     var userInfo = {
-      userID: cookies.get('userID'),//this.state.userID,
-      sessionID: cookies.get('sessionID'),//this.state.sessionID,
+      userID: this.state.userID,
+      sessionID: this.state.sessionID,
       gender: this.state.gender,
       Tgender:this.state.Tgender,
       patient_provider: this.state.user,
