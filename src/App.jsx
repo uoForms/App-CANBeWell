@@ -124,6 +124,8 @@ class App extends Component {
         cookies.set('sessionID', uuidv4().toString(), { path: "/" });
     }
     console.log('sessionid:',cookies.get('sessionID'))
+    //setstate()
+
     //count a pageview of body 
     //ReactGA.pageview('body');
 
@@ -416,8 +418,8 @@ class App extends Component {
   render() {
     var userInfo = getUserInfo();
     var userInfo = {
-      userID: this.state.userID,
-      sessionID: this.state.sessionID,
+      userID: cookies.get('userID'),//this.state.userID,
+      sessionID: cookies.get('sessionID'),//this.state.sessionID,
       gender: this.state.gender,
       patient_provider: this.state.user,
       age: this.state.age,
