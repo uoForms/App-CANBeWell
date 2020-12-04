@@ -74,8 +74,8 @@ class LandingPage extends React.Component {
                   Rester en santé avec cette ressource créée par vos professionnels de la santé canadiens
                 </div>
                 <div className="landing-notice-privacystmnt-french">
-                {/*<a href= "/Politiquedeconfidentialité.htm" target="_blank">{"Politique de confidentialité"}</a>*/}
-                <a href= "http://icanbewell.ca/Politiquedeconfidentialite.htm" >{"Politique de confidentialité"}</a>
+                {/*<a href= "/politiquedeconfidentialite.htm" target="_blank">{"Politique de confidentialité"}</a>*/}
+                <a href= "http://icanbewell.ca/politiquedeconfidentialite.htm" >{"Politique de confidentialité"}</a>
                 </div>
               </div>
             </div>
