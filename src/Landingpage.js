@@ -75,7 +75,7 @@ class LandingPage extends React.Component {
                 </div>
                 <div className="landing-notice-privacystmnt-french">
                 {/*<a href= "/Politiquedeconfidentialité.htm" target="_blank">{"Politique de confidentialité"}</a>*/}
-                <a href= "http://icanbewell.ca/FrenchPrivacyPolicy.htm" >{"Politique de confidentialité"}</a>
+                <a href= "http://icanbewell.ca/Politiquedeconfidentialite.htm" >{"Politique de confidentialité"}</a>
                 </div>
               </div>
             </div>
