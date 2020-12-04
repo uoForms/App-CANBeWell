@@ -25,7 +25,7 @@ import { unstable_renderSubtreeIntoContainer } from 'react-dom';
 //import {setGender} from './UserInfo';
 //import {setPatientProvider} from './UserInfo';
 //import {setAge} from './UserInfo';
-//import {getUserInfo} from './UserInfo';
+import {getUserInfo} from './UserInfo';
 
 
 class App extends Component {
@@ -40,6 +40,7 @@ class App extends Component {
     const { cookies } = props;
     var userInfo = {
       userID: null,
+      sessionID:null,
       gender: null,
       patient_provider: null,
       age: null,
@@ -49,13 +50,14 @@ class App extends Component {
       preNav: null,
       preCat: null,
       preTime: null
-    };// = getUserInfo();
+    }; // =getUserInfo();
     let DataToDisplay = new Data(this.props.appLanguage);
     var app_language = this.props.appLanguage;
 
 
     this.state = {
       userID: cookies.get('userID'),
+      sessionID: cookies.get('sessionID'),
       isOpen: false,
       configurationIsOpen: false, //used to be isOpen
       bodyView: true,
@@ -77,6 +79,7 @@ class App extends Component {
       city: null,
       preNav: null,
       preCat: null,
+      userID: null,
       preTime: null
       //allowToClose: false, //obselete! we use to make the user agree before they could press agree
     };
@@ -104,12 +107,29 @@ class App extends Component {
 
     /// The following steps is to get clientID from google analytics and save it to cookies
     const { cookies } = this.props;
+    var clientId = null;
+    ReactGA.ga(
+      function (tracker) {
+        clientId = tracker.get('clientId');
+      }
+    );
     if( !cookies.get('userID') ) 
     {
-        cookies.set('userID', uuidv4(), { path: "/" });
+      cookies.set('userID', clientId, { path: "/" });
     }
-    console.log(cookies.get('userID'))
-    
+      
+    console.log('userid:',cookies.get('userID'))
+
+    if( !cookies.get('sessionID') ) 
+    {
+        cookies.set('sessionID', uuidv4().toString(), { path: "/" });
+    }
+    console.log('sessionid:',cookies.get('sessionID'))
+    //setstate()
+    this.setState({
+      userID:cookies.get('userID'),
+      sessionID:cookies.get('sessionID')
+    });
     //count a pageview of body 
     //ReactGA.pageview('body');
 
@@ -400,9 +420,10 @@ class App extends Component {
   */
 
   render() {
-    //var userInfo = getUserInfo();
+    var userInfo = getUserInfo();
     var userInfo = {
       userID: this.state.userID,
+      sessionID: this.state.sessionID,
       gender: this.state.gender,
       patient_provider: this.state.user,
       age: this.state.age,

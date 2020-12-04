@@ -1,5 +1,4 @@
 import React from 'react';
-
 import App from './App';
 import { PageView, initGA } from './Tracking';
 import './LandingPage.css';
@@ -33,7 +32,7 @@ class LandingPage extends React.Component {
   }
 
   componentDidMount() {
-    initGA('UA-151893001-1');
+    initGA('UA-151893001-3');
   }
 
   render() {
@@ -43,7 +42,7 @@ class LandingPage extends React.Component {
         {this.state.language == "" || null ? (
           <div>
             <div class="landing-update">
-            Mise à jour COVID Updated&nbsp;
+            NMise à jour COVID Updated&nbsp;
             <button class="videoButton" src={videoland} onClick={this.openVideo}>Video</button>
                         </div>
 

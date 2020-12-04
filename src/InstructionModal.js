@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 //import {setGender} from './UserInfo';
 //import {setPatientProvider} from './UserInfo';
 //import {setAge} from './UserInfo';
-//import {getUserInfo} from './UserInfo';
+import {getUserInfo} from './UserInfo';
 //import DisclaimerText from './Disclaimer.json';
 import './Style/checkbox.css';
 

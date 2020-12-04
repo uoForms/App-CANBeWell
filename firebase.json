@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "canbewell-test",
+    "site": "canbewell-teamtest",
     "public": "build",
     "ignore": [
       "firebase.json",
