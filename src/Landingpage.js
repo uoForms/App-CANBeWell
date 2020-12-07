@@ -45,7 +45,7 @@ class LandingPage extends React.Component {
             TRANSGENDER Branch
             </div>
             <div class="landing-update">
-            NMise à jour COVID Updated&nbsp;
+            Mise à jour COVID Updated&nbsp;
             <button class="videoButton" src={videoland} onClick={this.openVideo}>Video</button>
                         </div>
 
