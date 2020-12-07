@@ -96,11 +96,11 @@ class App extends Component {
     document.getElementById("body").classList = 'active';
     try {
       if (this.state.user == "patient") {
-        document.getElementById("disclaimer").innerHTML = this.state.lang.patientDisclaimer;
+        //document.getElementById("disclaimer").innerHTML = this.state.lang.patientDisclaimer;
         document.getElementById("genderSelector").style.display = "block";
       }
       else if (this.state.user == "provider") {
-        document.getElementById("disclaimer").innerHTML = this.state.lang.providerDisclaimer;
+        //document.getElementById("disclaimer").innerHTML = this.state.lang.providerDisclaimer;
         document.getElementById("genderSelector").style.display = "block";
       }
     } catch (err) { }
@@ -295,7 +295,7 @@ class App extends Component {
     cookies.set('user', event.target.value, { path: '/' });
     //change disclaimer text
     if (event.target.value == "patient") {
-      document.getElementById("disclaimer").innerHTML = this.state.lang.patientDisclaimer;
+      //document.getElementById("disclaimer").innerHTML = this.state.lang.patientDisclaimer;
       document.getElementById("genderSelector").style.display = "block";
 
       if (this.state.allAgesSelected) {
@@ -312,7 +312,7 @@ class App extends Component {
       }
     }
     else if (event.target.value == "provider") {
-      document.getElementById("disclaimer").innerHTML = this.state.lang.providerDisclaimer;
+      //document.getElementById("disclaimer").innerHTML = this.state.lang.providerDisclaimer;
       document.getElementById("genderSelector").style.display = "block";
     }
     //setPatientProvider(event.target.value);
@@ -570,10 +570,6 @@ class App extends Component {
               <b>{this.state.lang.disclaimer_header}</b>
 
               <div style={myDisclaimerStyle}>
-              {/* <p>{this.state.lang.privacypolicy}</p>
-                <p>{this.state.lang.disclaimer}</p><br />
-                <p id="disclaimer">{this.state.lang.patientDisclaimer}</p><br />
-                <p>{this.state.lang.important}</p> */}
                         <p>
                             <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.accpetanceheading}</div>
                             <div dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(this.state.lang.acceptanceInitialStatement)}}></div>
