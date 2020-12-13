@@ -6,6 +6,7 @@ import { IoIosSettings } from "react-icons/io";
 import { AiOutlineExclamationCircle } from "react-icons/ai";
 import {Button, ButtonToolbar} from 'react-bootstrap'
 import { v4 as uuidv4 } from 'uuid';
+import DOMPurify from 'dompurify'
 
 import Lang from './Lang/Lang.json';
 import './App.css';
@@ -24,7 +25,7 @@ import { unstable_renderSubtreeIntoContainer } from 'react-dom';
 //import {setGender} from './UserInfo';
 //import {setPatientProvider} from './UserInfo';
 //import {setAge} from './UserInfo';
-//import {getUserInfo} from './UserInfo';
+import {getUserInfo} from './UserInfo';
 
 
 class App extends Component {
@@ -39,6 +40,7 @@ class App extends Component {
     const { cookies } = props;
     var userInfo = {
       userID: null,
+      sessionID:null,
       gender: null,
       patient_provider: null,
       age: null,
@@ -48,13 +50,14 @@ class App extends Component {
       preNav: null,
       preCat: null,
       preTime: null
-    };// = getUserInfo();
+    }; // =getUserInfo();
     let DataToDisplay = new Data(this.props.appLanguage);
     var app_language = this.props.appLanguage;
 
 
     this.state = {
       userID: cookies.get('userID'),
+      sessionID: cookies.get('sessionID'),
       isOpen: false,
       configurationIsOpen: false, //used to be isOpen
       bodyView: true,
@@ -76,6 +79,7 @@ class App extends Component {
       city: null,
       preNav: null,
       preCat: null,
+      userID: null,
       preTime: null
       //allowToClose: false, //obselete! we use to make the user agree before they could press agree
     };
@@ -92,23 +96,40 @@ class App extends Component {
     document.getElementById("body").classList = 'active';
     try {
       if (this.state.user == "patient") {
-        document.getElementById("disclaimer").innerHTML = this.state.lang.patientDisclaimer;
+        //document.getElementById("disclaimer").innerHTML = this.state.lang.patientDisclaimer;
         document.getElementById("genderSelector").style.display = "block";
       }
       else if (this.state.user == "provider") {
-        document.getElementById("disclaimer").innerHTML = this.state.lang.providerDisclaimer;
+        //document.getElementById("disclaimer").innerHTML = this.state.lang.providerDisclaimer;
         document.getElementById("genderSelector").style.display = "block";
       }
     } catch (err) { }
 
     /// The following steps is to get clientID from google analytics and save it to cookies
     const { cookies } = this.props;
+    var clientId = null;
+    ReactGA.ga(
+      function (tracker) {
+        clientId = tracker.get('clientId');
+      }
+    );
     if( !cookies.get('userID') ) 
     {
-        cookies.set('userID', uuidv4(), { path: "/" });
+      cookies.set('userID', clientId, { path: "/" });
     }
-    console.log(cookies.get('userID'))
-    
+      
+    console.log('userid:',cookies.get('userID'))
+
+    if( !cookies.get('sessionID') ) 
+    {
+        cookies.set('sessionID', uuidv4().toString(), { path: "/" });
+    }
+    console.log('sessionid:',cookies.get('sessionID'))
+    //setstate()
+    this.setState({
+      userID:cookies.get('userID'),
+      sessionID:cookies.get('sessionID')
+    });
     //count a pageview of body 
     //ReactGA.pageview('body');
 
@@ -274,7 +295,7 @@ class App extends Component {
     cookies.set('user', event.target.value, { path: '/' });
     //change disclaimer text
     if (event.target.value == "patient") {
-      document.getElementById("disclaimer").innerHTML = this.state.lang.patientDisclaimer;
+      //document.getElementById("disclaimer").innerHTML = this.state.lang.patientDisclaimer;
       document.getElementById("genderSelector").style.display = "block";
 
       if (this.state.allAgesSelected) {
@@ -291,7 +312,7 @@ class App extends Component {
       }
     }
     else if (event.target.value == "provider") {
-      document.getElementById("disclaimer").innerHTML = this.state.lang.providerDisclaimer;
+      //document.getElementById("disclaimer").innerHTML = this.state.lang.providerDisclaimer;
       document.getElementById("genderSelector").style.display = "block";
     }
     //setPatientProvider(event.target.value);
@@ -399,9 +420,10 @@ class App extends Component {
   */
 
   render() {
-    //var userInfo = getUserInfo();
+    var userInfo = getUserInfo();
     var userInfo = {
       userID: this.state.userID,
+      sessionID: this.state.sessionID,
       gender: this.state.gender,
       patient_provider: this.state.user,
       age: this.state.age,
@@ -456,15 +478,23 @@ class App extends Component {
     // The modal "window"
     const myDisclaimerStyle = {
       maxWidth: '90%',
-      maxHeight: '150px',
+      maxHeight: '250px',
       margin: '0 auto',
-      textAlign: 'center',
+      textAlign: 'left',
       padding: 10,
       overflowY: 'scroll',
       overflowX: 'hidden',
       background: '#f2f2f2',
-      fontSize: '15px'
+      fontSize: '18px',
+      fontWeight:'12px',
     };
+    const termsOfUseStyle={
+      'margin-top':'10px'
+    };
+    const underlineTextTermsOfUse={
+      'text-decoration': 'underline',
+      'font-weight': '400'
+    }
 
     if (this.state.user == "patient") {
       allagescheckboxStyle.display = "none";
@@ -521,11 +551,11 @@ class App extends Component {
                 </form>
               </div>
               {/*select age*/}
-              <div >
+              <div>
                 <form>
                   <div>
                     {this.state.lang.age_selector}
-                    <input id='abc' type="text" value={this.state.age == "all ages" ? this.state.lang.all_ages : this.state.age} onChange={this.handleChange} disabled={this.state.allAgesSelected} placeholder={this.state.lang.age_selector_place_holder} />
+                    <input id='abc' type="text" value={this.state.age == "all ages" ? this.state.lang.all_ages : this.state.age} onChange={this.handleChange} disabled={this.state.allAgesSelected} placeholder={this.state.lang.age_selector_place_holder} onKeyPress={e => { if (e.key === 'Enter') e.preventDefault();}} />
                     <label style={allagescheckboxStyle}>
                       <input id='myCheck' type="checkbox" checked={this.state.allAgesSelected} onChange={this.handleAllAgesSelected} />{this.state.lang.all_ages}
                     </label>
@@ -536,21 +566,99 @@ class App extends Component {
                 </form>
               </div>
 
-              <div>
-                <button id="agree" onClick={this.toggleIntrutionModal}>{this.state.lang.agree}</button>
-                <button onClick={this.goBack} type="button">{this.state.lang.disagree}</button>
-              </div>
-
+              <div className="termsOfUse" style={termsOfUseStyle}>
               <b>{this.state.lang.disclaimer_header}</b>
 
               <div style={myDisclaimerStyle}>
-                <p>{this.state.lang.privacypolicy}</p>
-                <p>{this.state.lang.disclaimer}</p><br />
-                <p id="disclaimer">{this.state.lang.patientDisclaimer}</p><br />
-                <p>{this.state.lang.important}</p>
+                        <p>
+                            <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.accpetanceheading}</div>
+                            <div dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(this.state.lang.acceptanceInitialStatement)}}></div>
+                            <div dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(this.state.lang.acceptanceAgreeStatement)}}></div>
+                            <div>{this.state.lang.acceptanceText}</div>
+                        </p>
+                        <p>
+                            <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.modificationHeading}</div>
+                            <div>{this.state.lang.modificationText1}</div>
+                            <div>{this.state.lang.modificationText2}</div>
+                        </p>
+                        <p>
+                            <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.websiteContentSpecificationHeading}</div>
+                            <div dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(this.state.lang.websiteContentSpecificationText)}}></div>
+                        </p>
+                        <p>
+                            <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.websiteSecurityHeading}</div>
+                            <div>{this.state.lang.websiteSecurityText1}</div>
+                            <div>{this.state.lang.websiteSecurityText2}</div>
+                        </p>
+                        <p>
+                            <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.rightsAndOwnershipHeading}</div>
+                            <div>{this.state.lang.rightsAndOwnershipText1}</div>
+                            <div>{this.state.lang.rightsAndOwnershipText2}</div>
+                            <div>{this.state.lang.rightsAndOwnershipText3}</div>
+                            <div>{this.state.lang.rightsAndOwnershipText4}</div>
+                            <div>{this.state.lang.rightsAndOwnershipText5}</div>
+                            <div>{this.state.lang.rightsAndOwnershipText6}</div>
+                            <div>{this.state.lang.rightsAndOwnershipText7}</div>
+                        </p>
+                        <p>
+                            <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.conditionsHeading}</div>
+                            <div>{this.state.lang.conditionsText}</div>
+                        </p>
+                        <p>
+                            <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.legalActionsHeading}</div>
+                            <div>{this.state.lang.legalActionsText}</div>
+                        </p>
+                        <p>
+                            <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.cookiesHeading}</div>
+                            <div>{this.state.lang.cookiesText}</div>
+                        </p>
+                        <p>
+                            <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.thirdPartyWebHeading}</div>
+                            <div>{this.state.lang.thirdPartyWebText}</div>
+                        </p>
+                        <p>
+                            <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.geographicRestricationsHeading}</div>
+                            <div dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(this.state.lang.geographicRestricationsText)}}></div>
+                        </p>
+                        <p>
+                            <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.noRelianceHeading}</div>
+                            <div>{this.state.lang.noRelianceText1}</div>
+                            <div>{this.state.lang.noRelianceText2}</div>
+                            <div>{this.state.lang.noRelianceText3}</div>
+                        </p>
+                        <p>
+                            <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.disclaimerWarrantiesHeading}</div>
+                            <div dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(this.state.lang.disclaimerWarrantiesText1)}}></div>
+                            <div>{this.state.lang.disclaimerWarrantiesText2}</div>
+                        </p>
+                        <p>
+                            <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.limitationHeading}</div>
+                            <div>{this.state.lang.limitationText}</div>
+                        </p>
+                        <p>
+                            <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.indemnificationHeading}</div>
+                            <div>{this.state.lang.indemnificationText}</div>
+                        </p>
+                        <p>
+                            <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.lawAndJurisdictionHeading}</div>
+                            <div>{this.state.lang.lawAndJurisdictionText1}</div>
+                            <div>{this.state.lang.lawAndJurisdictionText2}</div>
+                        </p>
+                        <p>
+                            <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.entireAgreementHeading}</div>
+                            <div>{this.state.lang.entireAgreementText}</div>
+                        </p>
+                        <p>
+                            <div>{this.state.lang.dateofAgreement}</div>
+                        </p>
+              </div>             
+              </div> 
+              <div>
+                <button id="agree" className="buttonAgreeToTerms" onClick={this.toggleIntrutionModal}>{this.state.lang.agree}</button>
+                {/* <button onClick={this.goBack} type="button">{this.state.lang.disagree}</button> */}
               </div>
             </div>
-          </div>
+            </div>
         </div>
       ];
     } else {
@@ -609,7 +717,7 @@ class App extends Component {
                   <form>
                     <div>
                       {this.state.lang.age_selector}
-                      <input id='abc' type="text" value={this.state.age == "all ages" ? this.state.lang.all_ages : this.state.age} onChange={this.handleChange} disabled={this.state.allAgesSelected} placeholder={this.state.lang.age_selector_place_holder} />
+                      <input id='abc' type="text" value={this.state.age == "all ages" ? this.state.lang.all_ages : this.state.age} onChange={this.handleChange} disabled={this.state.allAgesSelected} placeholder={this.state.lang.age_selector_place_holder} onKeyPress={e => { if (e.key === 'Enter') e.preventDefault();}} />
                       <label style={allagescheckboxStyle}>
                         <input id='check' type="checkbox" checked={this.state.allAgesSelected} onChange={this.handleAllAgesSelected} />{this.state.lang.all_ages}
                       </label>
@@ -678,12 +786,20 @@ class App extends Component {
         </div>
 
         <div>
-          <MyBody 
+          {this.state.configurationIsOpen && <MyBody 
             showBody={this.state.bodyView} 
             userConfig={userInfo} 
             getText={this.state.data.getTopic} 
             lang={this.state.lang}
-            pageViewStateUpdater = {this.pageViewStateUpdater}></MyBody>
+            pageViewStateUpdater = {this.pageViewStateUpdater}></MyBody>}
+
+            {!this.state.configurationIsOpen && <MyBody 
+            showBody={this.state.bodyView} 
+            userConfig={userInfo} 
+            getText={this.state.data.getTopic} 
+            lang={this.state.lang}
+            pageViewStateUpdater = {this.pageViewStateUpdater}></MyBody>}
+          
           <Tests 
             showTests={this.state.testsView} 
             userConfig={userInfo} 
