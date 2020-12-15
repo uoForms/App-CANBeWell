@@ -28,8 +28,7 @@ class Tests extends React.Component {
 
     });
   }
-/* 
-Used for help icon that appeared on test tab which is no more needed
+
   helpClicked = () => {
     console.log(this.props.userConfig.gender);
     this.setState({
@@ -39,7 +38,7 @@ Used for help icon that appeared on test tab which is no more needed
       buttonText: this.props.lang.config_modal_agree,
     });
   }
-*/
+
   render() {
 
     if (!this.props.showTests) {
@@ -65,7 +64,7 @@ Used for help icon that appeared on test tab which is no more needed
           header={this.state.headerText}
           body={this.state.bodyText}
           button={this.state.buttonText}
-          displayConfig={this.state.displayConfigOption}>
+          displayConfig={this.state.displayConfigOption}>>
         </TestsModal>
       </div>
     );

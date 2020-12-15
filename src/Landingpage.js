@@ -1,5 +1,4 @@
 import React from 'react';
-
 import App from './App';
 import { PageView, initGA } from './Tracking';
 import './LandingPage.css';
@@ -33,7 +32,7 @@ class LandingPage extends React.Component {
   }
 
   componentDidMount() {
-    initGA('UA-151893001-1');
+    initGA('UA-151893001-3');
   }
 
   render() {
@@ -41,10 +40,7 @@ class LandingPage extends React.Component {
     return (
       <div className="landing-page">
         {this.state.language == "" || null ? (
-            <div class="center">
-            <div className="landing-trans">
-            TRANSGENDER Branch
-            </div>
+          <div>
             <div class="landing-update">
             Mise à jour COVID Updated&nbsp;
             <button class="videoButton" src={videoland} onClick={this.openVideo}>Video</button>
@@ -63,13 +59,21 @@ class LandingPage extends React.Component {
 
             <div className="landingpage-notice-row">
               <div className="landingpage-notice-column">
-                <div className="landing-notice">
+                <div className="landing-notice-privacystmnt-english">
                 A reliable resource by Canadian health care providers to help you stay healthy
+                </div>
+                <div className="landing-notice-privacystmnt-english">
+                {/*<a href= "/iCanBeWell_PrivacyPolicy.htm" target="_blank">{"PrivacyStatement"}</a>*/}
+                <a href= "https://canbewell-uottawa.web.app/iCanBeWell_PrivacyPolicy.htm" >{"Privacy Statement"}</a>
                 </div>
               </div>
               <div className="landingpage-notice-column">
-                <div className="landing-notice">
+                <div className="landing-notice-privacystmnt-french">
                 Rester en santé avec cette ressource créée par vos professionnels de la santé canadiens
+                </div>
+                <div className="landing-notice-privacystmnt-french">
+                {/*<a href= "/politiquedeconfidentialite.htm" target="_blank">{"Politique de confidentialité"}</a>*/}
+                <a href= "https://canbewell-uottawa.web.app/politiquedeconfidentialite.htm" >{"Politique de confidentialité"}</a>
                 </div>
               </div>
             </div>

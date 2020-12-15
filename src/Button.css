@@ -42,99 +42,6 @@
   top: 0%;
 }
 
-.button22 {
-
-  /*background-color: #BCDBEA;*/
-  background: #808080;
-  background-image: -webkit-linear-gradient(top, #F0F0F0, #808080);
-  background-image: -moz-linear-gradient(top, #F0F0F0, #808080);
-  background-image: -ms-linear-gradient(top, #F0F0F0, #808080);
-  background-image: -o-linear-gradient(top, #F0F0F0, #808080);
-  background-image: linear-gradient(to bottom, #F0F0F0, #808080);
-  border-radius: 50%;
-  font-family: Arial;
-  color: #000000;
-  font-size: 11px;
-  padding: 5px 10px 5px 10px;
-  text-decoration: none;
-  /* position: absolute; */
-  transition: 0.5s ease;
-  /* left: 75%; */
-  top: auto;
-}
-
-.button23 {
-
-  /*background-color: #BCDBEA;*/
-  background: #808080;
-  background-image: -webkit-linear-gradient(top, #F0F0F0, #808080);
-  background-image: -moz-linear-gradient(top, #F0F0F0, #808080);
-  background-image: -ms-linear-gradient(top, #F0F0F0, #808080);
-  background-image: -o-linear-gradient(top, #F0F0F0, #808080);
-  background-image: linear-gradient(to bottom, #F0F0F0, #808080);
-  border-radius: 50%;
-  font-family: Arial;
-  color: #000000;
-  font-size: 11px;
-  padding: 5px 10px 5px 10px;
-  text-decoration: none;
-  /* position: absolute; */
-  transition: 0.5s ease;
-  /* left: 45.5%; */
-  top: auto;
-  /* z-index: 5; */
-  
-}
-
-/* @media only screen and (max-width: 291px) {
-  .button23 {
-    left: 59%;
-    top: 38.5%;
-    /* z-index: 5; 
-  }
-} */
-.button25 {
-  /*background-color: #BCDBEA;*/
-  background: #808080;
-  background-image: -webkit-linear-gradient(top, #F0F0F0, #808080);
-  background-image: -moz-linear-gradient(top, #F0F0F0, #808080);
-  background-image: -ms-linear-gradient(top, #F0F0F0, #808080);
-  background-image: -o-linear-gradient(top, #F0F0F0, #808080);
-  background-image: linear-gradient(to bottom, #F0F0F0, #808080);
-  border-radius: 50%;
-  font-family: Arial;
-  color: #000000;
-  font-size: 11px;
-  padding: 5px 10px 5px 10px;
-  text-decoration: none;
-  /* position: absolute; */
-  transition: 0.5s ease;
-  /* left: 75%; */
-  top: auto;
-}
-
-.button24 {
-
-  /*background-color: #BCDBEA;*/
-  background: #808080;
-  background-image: -webkit-linear-gradient(top, #F0F0F0, #808080);
-  background-image: -moz-linear-gradient(top, #F0F0F0, #808080);
-  background-image: -ms-linear-gradient(top, #F0F0F0, #808080);
-  background-image: -o-linear-gradient(top, #F0F0F0, #808080);
-  background-image: linear-gradient(to bottom, #F0F0F0, #808080);
-  border-radius: 50%;
-  font-family: Arial;
-  color: #000000;
-  font-size: 11px;
-  padding: 5px 10px 5px 10px;
-  text-decoration: none;
-  /* position: absolute; */
-  transition: 0.5s ease;
-  /* left: 45.5%; */
-  top: auto;
-  /* z-index: 5; */
-  
-}
 .button3 {
   padding: 5px 10px;
   border: none;
@@ -158,11 +65,10 @@
   background-color:rgb(14, 145, 200);
   font-size: 15px;
 }
-.helpbuttonClose{
-  margin-right: -90%;
-  margin-top: -20%;
-}
 
+.buttonAgreeToTerms{
+  margin-top: 18px;
+}
 div.fixed {
     position: fixed;
     bottom: 0;

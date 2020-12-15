@@ -30,27 +30,6 @@ class Data {
         pat_prov = "Health Provider Text";
       }
 
-
-      //Added by Melika : for surgeries and hormone options
-      var top_surg;
-      var bot_surg;
-      var hormonet;
-      if ( UserInfo.isTopSurgery === true)
-        {
-          top_surg = "Top Surgeries Text";
-        }
-
-      if ( UserInfo.isBottomSurgery === true)
-        {
-          bot_surg = "Bottom Surgeries Text";
-        }
-
-      if ( UserInfo.isHormoneTherapy === true)
-        {
-          hormonet = "Hormone Therapy Text";
-        }
-
-
       var TopicItem = [];
 
       function handleGenderString(genderString) {
@@ -61,12 +40,7 @@ class Data {
           male: genderCharArray.includes("m"),
           transMale: genderCharArray.includes("fm"),
           transFemale: genderCharArray.includes("mf"),
-          allGenders: genderCharArray.includes("all"),
-          nonbinary: genderCharArray.includes("nb"),
-          transgender: genderCharArray.includes("tg"),
-          afab:genderCharArray.includes("af"),
-          amab:genderCharArray.includes("am")
-
+          allGenders: genderCharArray.includes("all")
         };
         return genderObj;
       }
@@ -79,7 +53,7 @@ class Data {
           for (var i = 0; i < list.length; i++) {
             if ((list[i]['Minimum age'] <= UserInfo.age && UserInfo.age <= list[i]['Maximum age']) || (UserInfo.age == "all ages") || (UserInfo.age == null)) {
               var jsonGender = handleGenderString(list[i]['Gender']);
-              if ((UserInfo.gender == "male" && jsonGender.male) || (UserInfo.gender == "female" && jsonGender.female) || (jsonGender.allGenders) || (UserInfo.gender == null) || (UserInfo.gender == "all_genders") || (UserInfo.gender == "nonbinary" && jsonGender.nonbinary)|| (UserInfo.gender == "transgender" && jsonGender.transgender) || (UserInfo.Tgender == "birth_male" && jsonGender.amab) || (UserInfo.Tgender == "birth_female" && jsonGender.afab)) {
+              if ((UserInfo.gender == "male" && jsonGender.male) || (UserInfo.gender == "female" && jsonGender.female) || (jsonGender.allGenders) || (UserInfo.gender == null) || (UserInfo.gender == "all_genders")) {
                 if (list[i]["Button"].toLowerCase() == button) {
                   filteredList.push(
                     list[i]
@@ -116,36 +90,12 @@ class Data {
             if (!topicList.includes(arra1[i]["Topic heading"]) && !nonApplicaple.includes(arra1[i][pat_prov].toUpperCase())) {
               topicList.push(arra1[i]["Topic heading"]);
               TopicListItem.push({ name: arra1[i]["Topic heading"], body: [] });
-              TopicListItem[j].body.push({ subject: arra1[i]['Subject'], text: arra1[i][pat_prov]});
-
-              if ( UserInfo.isTopSurgery === true && !nonApplicaple.includes(arra1[i][top_surg].toUpperCase())){
-                TopicListItem[j].body.push({ subject: arra1[i]['Subject'], text: arra1[i][top_surg]});
-              }
-
-              if ( UserInfo.isBottomSurgery === true && !nonApplicaple.includes(arra1[i][bot_surg].toUpperCase())){
-              TopicListItem[j].body.push({ subject: arra1[i]['Subject'], text: arra1[i][bot_surg]});
-              }
-
-              if ( UserInfo.isHormoneTherapy === true && !nonApplicaple.includes(arra1[i][hormonet].toUpperCase())){
-              TopicListItem[j].body.push({ subject: arra1[i]['Subject'], text: arra1[i][hormonet]});
-              }
+              TopicListItem[j].body.push({ subject: arra1[i]['Subject'], text: arra1[i][pat_prov] });
               j++;
             }
             else if (topicList.includes(arra1[i]["Topic heading"]) && !nonApplicaple.includes(arra1[i][pat_prov].toUpperCase())) {
               let index = topicList.findIndex(topic => topic === arra1[i]["Topic heading"]);
-              TopicListItem[index].body.push({ subject: arra1[i]['Subject'], text: arra1[i][pat_prov]}); //melikachange :  text: arra1[i][top_surg], text: arra1[i][bot_surg], text: arra1[i][hormonet] 
-              
-              if ( UserInfo.isTopSurgery === true && !nonApplicaple.includes(arra1[i][top_surg].toUpperCase())){
-                TopicListItem[index].body.push({ subject: arra1[i]['Subject'], text: arra1[i][top_surg]});
-              }
-
-              if ( UserInfo.isBottomSurgery === true && !nonApplicaple.includes(arra1[i][bot_surg].toUpperCase())){
-                TopicListItem[index].body.push({ subject: arra1[i]['Subject'], text: arra1[i][bot_surg]});
-              }
-
-              if ( UserInfo.isHormoneTherapy === true && !nonApplicaple.includes(arra1[i][hormonet].toUpperCase())){
-                TopicListItem[index].body.push({ subject: arra1[i]['Subject'], text: arra1[i][hormonet]});
-              }
+              TopicListItem[index].body.push({ subject: arra1[i]['Subject'], text: arra1[i][pat_prov] });
             }
           }
         }
@@ -173,29 +123,6 @@ class Data {
     } else if (UserInfo.patient_provider == "provider") {
       pat_prov = "Health Provider Text";
     }
-    
-    //Added by Melika : for surgeries and hormone options
-      var top_surg;
-      var bot_surg;
-      var hormonet;
-      if ( UserInfo.isTopSurgery === true)
-      {
-        top_surg = "Top Surgeries Text";
-      }
-
-    if ( UserInfo.isBottomSurgery === true)
-      {
-        bot_surg = "Bottom Surgeries Text";
-      }
-
-    if ( UserInfo.isHormoneTherapy === true)
-      {
-        hormonet = "Hormone Therapy Text";
-      }
-
-
-
-    
 
     var TopicsItemList = [];
 
@@ -207,12 +134,7 @@ class Data {
         male: genderCharArray.includes("m"),
         transMale: genderCharArray.includes("fm"),
         transFemale: genderCharArray.includes("mf"),
-        allGenders: genderCharArray.includes("all"),
-        nonbinary: genderCharArray.includes("nb"),
-        transgender: genderCharArray.includes("tg"),
-        afab:genderCharArray.includes("af"),
-          amab:genderCharArray.includes("am")
-
+        allGenders: genderCharArray.includes("all")
       };
       return genderObj;
     }
@@ -224,7 +146,7 @@ class Data {
         for (var i = 0; i < list.length; i++) {
           if ((list[i]['Minimum age'] <= UserInfo.age && UserInfo.age <= list[i]['Maximum age']) || (UserInfo.age == "all ages") || (UserInfo.age == null)) {
             var jsonGender = handleGenderString(list[i]['Gender']);
-            if ((UserInfo.gender == "male" && jsonGender.male) || (UserInfo.gender == "female" && jsonGender.female) || (UserInfo.gender == "transgender" && jsonGender.transgender) || (UserInfo.gender == "nonbinary" && jsonGender.nonbinary) || (jsonGender.allGenders) || (UserInfo.gender == null) || (UserInfo.gender == "all_genders") || (UserInfo.Tgender == "birth_male" && jsonGender.amab) || (UserInfo.Tgender == "birth_female" && jsonGender.afab)) {
+            if ((UserInfo.gender == "male" && jsonGender.male) || (UserInfo.gender == "female" && jsonGender.female) || (jsonGender.allGenders) || (UserInfo.gender == null) || (UserInfo.gender == "all_genders")) {
               filteredList.push(
                 list[i]
               );
@@ -250,38 +172,12 @@ class Data {
           result.push(arra1[i]["Topic heading"]);
           TopicListBundle.push({ name: arra1[i]["Topic heading"], body: [] });
           TopicListBundle[j].body.push({ subject: arra1[i]['Subject'], text: arra1[i][pat_prov] });
-          
-          if ( UserInfo.isTopSurgery === true && !nonApplicaple.includes(arra1[i][top_surg].toUpperCase())){
-            TopicListBundle[j].body.push({ subject: arra1[i]['Subject'], text: arra1[i][top_surg]});
-          }
-
-          if ( UserInfo.isBottomSurgery === true && !nonApplicaple.includes(arra1[i][bot_surg].toUpperCase())){
-            TopicListBundle[j].body.push({ subject: arra1[i]['Subject'], text: arra1[i][bot_surg]});
-          }
-
-          if ( UserInfo.isHormoneTherapy === true && !nonApplicaple.includes(arra1[i][hormonet].toUpperCase())){
-            TopicListBundle[j].body.push({ subject: arra1[i]['Subject'], text: arra1[i][hormonet]});
-          }
-
           j++;
         }
         else if (result.includes(arra1[i]["Topic heading"]) && !nonApplicaple.includes(arra1[i][pat_prov].toUpperCase())) {
 
           let index = result.findIndex(topic => topic === arra1[i]["Topic heading"]);
           TopicListBundle[index].body.push({ subject: arra1[i]['Subject'], text: arra1[i][pat_prov] });
-                    
-          if ( UserInfo.isTopSurgery === true && !nonApplicaple.includes(arra1[i][top_surg].toUpperCase())){
-            TopicListBundle[index].body.push({ subject: arra1[i]['Subject'], text: arra1[i][top_surg]});
-          }
-
-          if ( UserInfo.isBottomSurgery === true && !nonApplicaple.includes(arra1[i][bot_surg].toUpperCase())){
-            TopicListBundle[index].body.push({ subject: arra1[i]['Subject'], text: arra1[i][bot_surg]});
-          }
-
-          if ( UserInfo.isHormoneTherapy === true && !nonApplicaple.includes(arra1[i][hormonet].toUpperCase())){
-            TopicListBundle[index].body.push({ subject: arra1[i]['Subject'], text: arra1[i][hormonet]});
-          }
-          //RISHANG this was for topic part
         }
       }
 
@@ -316,11 +212,7 @@ class Data {
         male: genderCharArray.includes("m"),
         transMale: genderCharArray.includes("fm"),
         transFemale: genderCharArray.includes("mf"),
-        allGenders: genderCharArray.includes("all"),
-        nonbinary: genderCharArray.includes("nb"),
-        transgender: genderCharArray.includes("tg"),
-        afab:genderCharArray.includes("af"),
-        amab:genderCharArray.includes("am")
+        allGenders: genderCharArray.includes("all")
       };
       return genderObj;
     }
@@ -332,7 +224,7 @@ class Data {
         for (var i = 0; i < list.length; i++) {
           if ((list[i]['Minimum age'] <= UserInfo.age && UserInfo.age <= list[i]['Maximum age']) || (UserInfo.age == "all ages") || (UserInfo.age == null)) {
             var jsonGender = handleGenderString(list[i]['Gender']);
-            if ((UserInfo.gender == "male" && jsonGender.male) || (UserInfo.gender == "female" && jsonGender.female) || (jsonGender.allGenders) || (UserInfo.gender == null) || (UserInfo.gender == "all_genders") ||(UserInfo.gender == "nonbinary" && jsonGender.nonbinary)|| (UserInfo.gender == "transgender" && jsonGender.transgender) || (UserInfo.Tgender == "birth_male" && jsonGender.amab) || (UserInfo.Tgender == "birth_female" && jsonGender.afab)) {
+            if ((UserInfo.gender == "male" && jsonGender.male) || (UserInfo.gender == "female" && jsonGender.female) || (jsonGender.allGenders) || (UserInfo.gender == null) || (UserInfo.gender == "all_genders")) {
               filteredList.push(list[i]);
             }
           }

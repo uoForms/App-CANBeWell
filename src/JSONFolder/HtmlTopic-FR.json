@@ -280,56 +280,6 @@
     "Maximum age": 69
   },
   {
-    "Button": "Genitalia",
-    "Topic heading": "Sex & Prostate",
-    "Subject": "Prostate Cancer",
-    "General Patient Text": "Patient: No screening",
-    "Health Provider Text": "Provider: No screening",
-    "Gender": "af",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Genitalia",
-    "Topic heading": "Sex & Prostate",
-    "Subject": "Prostate Cancer",
-    "General Patient Text": "Patient:  Same as cis men/discuss with provider (bottom surgery does not remove the prostate)",
-    "Health Provider Text": "Provider:  Same as cis men/discuss with provider (bottom surgery does not remove the prostate)",
-    "Gender": "am",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Genitalia",
-    "Topic heading": "Sex & Prostate",
-    "Subject": "Prostate Cancer",
-    "General Patient Text": "3rd body Prostate cancer-patient",
-    "Health Provider Text": "3rd body prostate cancer-provider",
-    "Gender": "nb",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Genitalia",
-    "Topic heading": "Sex",
-    "Subject": "Contraception (Subject)",
-    "General Patient Text": "Patient: Any hormonal/barrier methods can used (no contraindications with testosterone)",
-    "Health Provider Text": "Provider: Any hormonal/barrier methods can used (no contraindications with testosterone)",
-    "Gender": "af",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Genitalia",
-    "Topic heading": "Sex",
-    "Subject": "Contraception (Subject)",
-    "General Patient Text": "Patient: Use barrier method (or have partner use hormonal contraception) if no bottom surgery and having intercourse with partner who could get pregnant",
-    "Health Provider Text": "Provider: Use barrier method (or have partner use hormonal contraception) if no bottom surgery and having intercourse with partner who could get pregnant",
-    "Gender": "am",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
     "Button": "Stomach",
     "Topic heading": "Alimentation",
     "Subject": "Sources d'information",
@@ -430,56 +380,6 @@
     "Maximum age": 150
   },
   {
-    "Button": "Breast",
-    "Topic heading": "Breast Cancer",
-    "Subject": "AFAB w/o top surgery",
-    "General Patient Text": "Patient: Mammography q2 yrs from age 50-75",
-    "Health Provider Text": "Provider: Mammography q2 yrs from age 50-75",
-    "Gender": "af",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Breast",
-    "Topic heading": "Breast Cancer",
-    "Subject": "AFAB w/ top surgery",
-    "General Patient Text": "Patient: Consider mammography q2 yrs from age 50-75 if leftover breast tissue; likely not needed",
-    "Health Provider Text": "Provider: Consider mammography q2 yrs from age 50-75 if leftover breast tissue; likely not needed",
-    "Gender": "af",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Breast",
-    "Topic heading": "Breast Cancer",
-    "Subject": "AMAB w/o top surgery",
-    "General Patient Text": "Patient: Consider breast exam/ mammography q2 yrs from age 50-75 if on estrogen for more than 3-5 yrs",
-    "Health Provider Text": "Provider: Consider breast exam/ mammography q2 yrs from age 50-75 if on estrogen for more than 3-5 yrs",
-    "Gender": "am",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Breast",
-    "Topic heading": "Breast Cancer",
-    "Subject": "AMAB w/ top surgery",
-    "General Patient Text": "Patient: Breast exam/mammography q2 yrs from age 50-75",
-    "Health Provider Text": "Provider: Breast exam/mammography q2 yrs from age 50-75",
-    "Gender": "am",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Breast",
-    "Topic heading": "Breast Cancer",
-    "Subject": "Breast cancer screening",
-    "General Patient Text": "3rd body breast cancer-patient",
-    "Health Provider Text": "3rd body breast cancer-provider",
-    "Gender": "nb",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
     "Button": "Uterus",
     "Topic heading": "Cancer du col de l’utérus",
     "Subject": "Passer un test de dépistage du cancer du col de l’utérus\n(test de Pap)",
@@ -506,56 +406,6 @@
     "General Patient Text": "•Obtenir le vaccin contre le VPH\nrecommandé entre l’âge de 9 et 26 ans,\nmais qui peut être administré à n’importe quel âge\n•Ne pas fumer\n•Utiliser des condoms\n•Limiter le nombre de partenaires sexuels\n•[[plus de renseignements; http://www.cancer.ca/fr-ca/cancer-information/cancer-type/cervical/risks/reducing-your-risk/?region=on]]",
     "Health Provider Text": "•Recommander le vaccin contre le VPH\n(le vaccin est recommandé entre l’âge de 9 \net 26 ans, mais peut être administré à tout âge).\n[[recommandation canadienne; https://www.canada.ca/fr/sante-publique/services/publications/vie-saine/mise-a-jour-recommandation-visant-calendrier-immunisation-vaccin-contre-virus-papillome-humain.html#som]]\n•Recommander de ne pas fumer, d’utiliser un \ncondom et de limiter le nombre de partenaires.",
     "Gender": "f",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Uterus",
-    "Topic heading": "Cervical Cancer",
-    "Subject": "AFAB w/o bottom surgery",
-    "General Patient Text": "Patient: Pap test q3 yrs from age 21-70 (Ontario)",
-    "Health Provider Text": "Provider: Pap test q3 yrs from age 21-70 (Ontario)",
-    "Gender": "af",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Uterus",
-    "Topic heading": "Cervical Cancer",
-    "Subject": "AFAB w/ bottom surgery",
-    "General Patient Text": "Patient: Screen if cervix still present (depends on type of bottom surgery)",
-    "Health Provider Text": "Provider: Screen if cervix still present (depends on type of bottom surgery)",
-    "Gender": "af",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Uterus",
-    "Topic heading": "Cervical Cancer",
-    "Subject": "AMAB w/o bottom surgery",
-    "General Patient Text": "Patient: No screening necessary",
-    "Health Provider Text": "Provider: No screening necessary",
-    "Gender": "am",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Uterus",
-    "Topic heading": "Cervical Cancer",
-    "Subject": "AMAB w/ bottom surgery",
-    "General Patient Text": "Patient: Consider Pap test q3 yrs from age 21-70, particularly if neovagina made from penile tissue",
-    "Health Provider Text": "Provider: Consider Pap test q3 yrs from age 21-70, particularly if neovagina made from penile tissue",
-    "Gender": "am",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Uterus",
-    "Topic heading": "Cervical Cancer",
-    "Subject": "Cervical Cancer Screening",
-    "General Patient Text": "3rd body cervical cancer-patient",
-    "Health Provider Text": "3rd body cervical cancer-provider",
-    "Gender": "nb",
     "Minimum age": 18,
     "Maximum age": 150
   },
@@ -870,36 +720,6 @@
     "Maximum age": 49
   },
   {
-    "Button": "Ovary",
-    "Topic heading": "Family Planning",
-    "Subject": "Ovarian cancer",
-    "General Patient Text": "Patient: Same as cis women/discuss with provider (not all bottom surgeries include oophorectomy)",
-    "Health Provider Text": "Provider: Same as cis women/discuss with provider (not all bottom surgeries include oophorectomy)",
-    "Gender": "af",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Ovary",
-    "Topic heading": "Family Planning",
-    "Subject": "Ovarian cancer",
-    "General Patient Text": "Patient: No screening",
-    "Health Provider Text": "Provider: No screening",
-    "Gender": "am",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Ovary",
-    "Topic heading": "Family Planning",
-    "Subject": "Family Planning",
-    "General Patient Text": "3rd body Family planning-patient",
-    "Health Provider Text": "3rd body Family planning-provider",
-    "Gender": "nb",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
     "Button": "Lung",
     "Topic heading": "Poumon",
     "Subject": "Tabagisme",
@@ -967,36 +787,6 @@
     "Health Provider Text": "Recommandé pour les 65 ans et plus.\n•[[osteoporosis.ca; https://osteoporosis.ca/wp-content/uploads/Quick_Reference_Guide_October_2010.pdf]]\n•ou utiliser [[OST; http://www.cfp.ca/content/61/7/612]]\n•Fréquence de la reprise de l’évaluation [[pas plus souvent que tous les 2 ans; https://choosingwiselycanada.org/rheumatology/]]\n[[aide à la décision; https://osteoporosisdecisionaid.mayoclinic.org/]]",
     "Gender": "all",
     "Minimum age": 65,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Bone",
-    "Topic heading": "Osteoporosis",
-    "Subject": "Osteoporosis",
-    "General Patient Text": "3rd body osteopororsis-patient",
-    "Health Provider Text": "3rd body osteopororsis-provider",
-    "Gender": "nb",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Bone",
-    "Topic heading": "Osteoporosis",
-    "Subject": "Osteoporosis",
-    "General Patient Text": "Patient: Generally same as cis patients but considered high risk if not on ANY hormones for prolonged periods (e.g. no estrogen or testosterone)",
-    "Health Provider Text": "Provider: Generally same as cis patients but considered high risk if not on ANY hormones for prolonged periods (e.g. no estrogen or testosterone)",
-    "Gender": "af",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Bone",
-    "Topic heading": "Osteoporosis",
-    "Subject": "Osteoporosis",
-    "General Patient Text": "Patient: Generally same as cis patients but considered high risk if not on ANY hormones for prolonged periods (e.g. no estrogen or testosterone)",
-    "Health Provider Text": "Provider: Generally same as cis patients but considered high risk if not on ANY hormones for prolonged periods (e.g. no estrogen or testosterone)",
-    "Gender": "am",
-    "Minimum age": 18,
     "Maximum age": 150
   },
   {

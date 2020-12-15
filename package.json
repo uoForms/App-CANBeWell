@@ -6,10 +6,12 @@
   "dependencies": {
     "bootstrap": "^4.4.1",
     "build": "^0.1.4",
+    "dompurify": "^2.2.0",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.15.1",
     "firebase": "^7.9.3",
     "firebase-tools": "^7.12.1",
+    "jquery": "^3.5.1",
     "mobile-detect": "^1.4.4",
     "node-pre-gyp": "^0.14.0",
     "react": "^16.13.0",
