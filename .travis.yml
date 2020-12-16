@@ -7,11 +7,10 @@ before_install:
 - yarn global add firebase-tools
 - rm -r ./src/JSONFolder
 - mkdir ./src/JSONFolder
-- curl -L -o ./src/JSONFolder/HtmlTopic-EN.json "https://drive.google.com/uc?export=download&id=1KmTemPnVDmXcxMKrJ48y0jAoG5MYl58f"
-- curl -L -o ./src/JSONFolder/HtmlTopic-FR.json "https://drive.google.com/uc?export=download&id=1lru1LitepXYPCvdovo11xz8s7MdZhBzI"
-- curl -L -o ./src/JSONFolder/HtmlTest-FR.json "https://drive.google.com/uc?export=download&id=1iapSdfbUYnUDn6nrDavN536rey-1tiBD"
-- curl -L -o ./src/JSONFolder/HtmlTest-EN.json "https://drive.google.com/uc?export=download&id=1eNwhPOhb9koID2G_c53O7yu3iQ2pJJZR"
-
+- curl -L -o ./src/JSONFolder/HtmlTopic-EN.json "https://drive.google.com/uc?export=download&id=1AiD5PFUWIslrR3l7fcnJTkubTen4ahLG"
+- curl -L -o ./src/JSONFolder/HtmlTopic-FR.json "https://drive.google.com/uc?export=download&id=1XUnoeG-4wpCupuklp5TwzfFnVpVXpia0"
+- curl -L -o ./src/JSONFolder/HtmlTest-FR.json "https://drive.google.com/uc?export=download&id=1IxoZKvlw286aPchmfWpk26x1mMnQme0Y"
+- curl -L -o ./src/JSONFolder/HtmlTest-EN.json "https://drive.google.com/uc?export=download&id=1N6LrThVQs6PjG_QkowvNYJV1ENX6Wgs8"
 
 install:
 - yarn install
@@ -25,4 +24,7 @@ deploy:
   script: bash scripts/deploy.sh
   on:
     branch: 
-    - master
+    - transgender
+    # - transgender-test
+    # This part controls which branch will be delpoyed automatically, so here it will only deploy analytics-test, 
+    # if you want to deploy any other, added accordingly
