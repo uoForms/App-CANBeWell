@@ -1,6 +1,6 @@
 {
-  "short_name": "CANBeWell",
-  "name": "CANBeWell 1.0",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "favicon.ico",

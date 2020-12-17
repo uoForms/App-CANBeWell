@@ -1,24 +1,12 @@
 import ReactGA from "react-ga";
-import React from "react";
 import MobileDetect from 'mobile-detect';
 import { db } from './firebase';
-/*import $ from jQuery;*/
 
 export const initGA = (trackingID) => {
   ReactGA.initialize(
     trackingID,
   ); 
 }
-
-/*export const sendOutbound = (event) => {
-  event.preventDefault();
-  ReactGA.event({
-   category: 'Externallinks',
-   action: 'ClickonLink',
-   label: 'clicks'
- });
- <a href= {'https://www.canada.ca/en/public-health/services/video/covid-19-wear-non-medical-mask-face-covering-properly.html'} onClick={sendOutbound}></a>
-}*/
 
 export const PageViewTimer = (prePage, preTime) => {
   let currTime = Date.now();
@@ -45,14 +33,13 @@ export const PageViewTimer = (prePage, preTime) => {
  * @param {string} label 
  */
 
-const GaEvent = (category, action, label) => {
+export const GaEvent = (category, action, label) => {
   ReactGA.event({
     category: category,
     action: action,
     label: label
   });
 };
-export default GaEvent;
 
 export const GaModalView = (virtual_url) => {
   ReactGA.modalview(virtual_url);
@@ -61,20 +48,9 @@ export const GaModalView = (virtual_url) => {
 export const GaGetID = () => {
   ReactGA.ga(
     function (tracker) {
-      return tracker = tracker.get('clientId');
+      return tracker.get('clientId');
     });
 };
-/*export const outBound = () => {
-var hostname = window.location.hostname; 
-jQuery("body a").click(function(){
-
-      if(jQuery(this).attr("href").indexOf(hostname)== -1){
-
-           ga('send', 'event', {'eventCategory': "Outbound Links", 'eventAction': "OnClick", 'eventLabel': jQuery(this).attr("href")});
-
-      }
-});
-}*/
 
 export const matchBrowser = () => {
   var nAgt = window.navigator.userAgent;
@@ -136,8 +112,7 @@ export const GaUserEvent = (currNav, currCat, userInfo, timeDiff, preTime, currT
   let date = formatDate(Date.now());
   var label = {
     navigation: currNav,
-    userid: userInfo.userID,
-    sessionid: userInfo.sessionID,
+    user: userInfo.userID,
     gender: userInfo.gender,
     age: userInfo.age,
     language: userInfo.language,
@@ -149,6 +124,7 @@ export const GaUserEvent = (currNav, currCat, userInfo, timeDiff, preTime, currT
     region: userInfo.region,
     city: userInfo.city,
     date: date,
+    gcheck: userInfo.gcheck
   }
   let eventCatagory = getEventCatagory(label);
   let eventAction = getEventAction(label);
@@ -159,8 +135,7 @@ export const GaUserEvent = (currNav, currCat, userInfo, timeDiff, preTime, currT
     writeClick(label, currTime);
     var preLabel = {
       navigation: userInfo.preNav,
-      userid: userInfo.userID,
-      sessionid: userInfo.sessionID,
+      user: userInfo.userID,
       gender: userInfo.gender,
       age: userInfo.age,
       language: userInfo.language,
@@ -173,6 +148,7 @@ export const GaUserEvent = (currNav, currCat, userInfo, timeDiff, preTime, currT
       city: userInfo.city,
       date: date,
       pageviewtime: timeDiff,
+      gcheck: userInfo.gcheck
     }
     writeClick(preLabel, preTime);
   }
@@ -224,6 +200,7 @@ export const writeClick = (label, currTime) => {
   db.ref(data.date + '/' + currTime).set(data);
 }
 
+
 export const formatDate = (date) => {
   let d = new Date(date),
     mon = '' + (d.getMonth() + 1),
@@ -236,4 +213,3 @@ export const formatDate = (date) => {
     day = '0' + day;
   return year + mon + day;
 }
-
