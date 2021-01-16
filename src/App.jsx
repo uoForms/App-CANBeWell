@@ -485,7 +485,7 @@ class App extends Component {
       overflowY: 'scroll',
       overflowX: 'hidden',
       background: '#f2f2f2',
-      fontSize: '18px',
+      fontSize: '16px',
       fontWeight:'12px',
     };
     const termsOfUseStyle={
@@ -571,26 +571,23 @@ class App extends Component {
 
               <div style={myDisclaimerStyle}>
                         <p>
+                            <div dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(this.state.lang.disclaimerBeforeTermsOfUse)}}></div>
                             <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.accpetanceheading}</div>
                             <div dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(this.state.lang.acceptanceInitialStatement)}}></div>
                             <div dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(this.state.lang.acceptanceAgreeStatement)}}></div>
+                            
                             <div>{this.state.lang.acceptanceText}</div>
-                        </p>
-                        <p>
                             <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.modificationHeading}</div>
                             <div>{this.state.lang.modificationText1}</div>
                             <div>{this.state.lang.modificationText2}</div>
-                        </p>
-                        <p>
+
                             <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.websiteContentSpecificationHeading}</div>
                             <div dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(this.state.lang.websiteContentSpecificationText)}}></div>
-                        </p>
-                        <p>
+
                             <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.websiteSecurityHeading}</div>
                             <div>{this.state.lang.websiteSecurityText1}</div>
                             <div>{this.state.lang.websiteSecurityText2}</div>
-                        </p>
-                        <p>
+
                             <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.rightsAndOwnershipHeading}</div>
                             <div>{this.state.lang.rightsAndOwnershipText1}</div>
                             <div>{this.state.lang.rightsAndOwnershipText2}</div>
@@ -599,56 +596,44 @@ class App extends Component {
                             <div>{this.state.lang.rightsAndOwnershipText5}</div>
                             <div>{this.state.lang.rightsAndOwnershipText6}</div>
                             <div>{this.state.lang.rightsAndOwnershipText7}</div>
-                        </p>
-                        <p>
+
                             <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.conditionsHeading}</div>
                             <div>{this.state.lang.conditionsText}</div>
-                        </p>
-                        <p>
+
                             <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.legalActionsHeading}</div>
                             <div>{this.state.lang.legalActionsText}</div>
-                        </p>
-                        <p>
+
                             <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.cookiesHeading}</div>
                             <div>{this.state.lang.cookiesText}</div>
-                        </p>
-                        <p>
+
                             <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.thirdPartyWebHeading}</div>
                             <div>{this.state.lang.thirdPartyWebText}</div>
-                        </p>
-                        <p>
+
                             <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.geographicRestricationsHeading}</div>
                             <div dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(this.state.lang.geographicRestricationsText)}}></div>
-                        </p>
-                        <p>
+
                             <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.noRelianceHeading}</div>
                             <div>{this.state.lang.noRelianceText1}</div>
                             <div>{this.state.lang.noRelianceText2}</div>
                             <div>{this.state.lang.noRelianceText3}</div>
-                        </p>
-                        <p>
+
                             <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.disclaimerWarrantiesHeading}</div>
                             <div dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(this.state.lang.disclaimerWarrantiesText1)}}></div>
                             <div>{this.state.lang.disclaimerWarrantiesText2}</div>
-                        </p>
-                        <p>
+
                             <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.limitationHeading}</div>
                             <div>{this.state.lang.limitationText}</div>
-                        </p>
-                        <p>
+
                             <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.indemnificationHeading}</div>
                             <div>{this.state.lang.indemnificationText}</div>
-                        </p>
-                        <p>
+
                             <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.lawAndJurisdictionHeading}</div>
                             <div>{this.state.lang.lawAndJurisdictionText1}</div>
                             <div>{this.state.lang.lawAndJurisdictionText2}</div>
-                        </p>
-                        <p>
+
                             <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.entireAgreementHeading}</div>
                             <div>{this.state.lang.entireAgreementText}</div>
-                        </p>
-                        <p>
+
                             <div>{this.state.lang.dateofAgreement}</div>
                         </p>
               </div>             
