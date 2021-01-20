@@ -4,6 +4,8 @@
   "private": true,
   "homepage": "https://canbewell-uottawa.firebaseapp.com/",
   "dependencies": {
+    "@material-ui/core": "^4.11.2",
+    "@material-ui/icons": "^4.11.2",
     "bootstrap": "^4.4.1",
     "build": "^0.1.4",
     "dompurify": "^2.2.0",

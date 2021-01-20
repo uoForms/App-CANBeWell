@@ -66,6 +66,7 @@ class LandingPage extends React.Component {
                 {/*<a href= "/iCanBeWell_PrivacyPolicy.htm" target="_blank">{"PrivacyStatement"}</a>*/}
                 <a href= "https://canbewell-uottawa.web.app/iCanBeWell_PrivacyPolicy.htm" >{"Privacy Statement"}</a>
                 </div>
+                <div id="homescreen-english"></div>
               </div>
               <div className="landingpage-notice-column">
                 <div className="landing-notice-privacystmnt-french">
@@ -75,6 +76,7 @@ class LandingPage extends React.Component {
                 {/*<a href= "/politiquedeconfidentialite.htm" target="_blank">{"Politique de confidentialité"}</a>*/}
                 <a href= "https://canbewell-uottawa.web.app/politiquedeconfidentialite.htm" >{"Politique de confidentialité"}</a>
                 </div>
+                <div id="homescreen-french"></div>
               </div>
             </div>
           </div>

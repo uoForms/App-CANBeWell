@@ -77,7 +77,22 @@
   height: auto;
   font-size: larger;
 }
-
+#homescreen-english{
+  position: relative;
+    text-align: right;
+    margin-right: 60%;
+    width: 80%;
+    height: auto;
+    font-size: larger;
+}
+#homescreen-french{
+  position: relative;
+    text-align: left;
+    margin-left: auto;
+    width: 80%;
+    height: auto;
+    font-size: larger;
+}
 .nowrap{white-space:nowrap;}
 
 

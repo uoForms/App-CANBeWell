@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import { CookiesProvider } from 'react-cookie';
 import LandingPage from './Landingpage';
+import Homescreen from './Homescreen'
 //import routes from './routes';
 //import registerServiceWorker from './registerServiceWorker';
 
@@ -16,3 +17,5 @@ import LandingPage from './Landingpage';
 //firebase.initializeApp(DB_CONFIG);
 //ReactDOM.render(<Router routes={routes} />, document.getElementById('root'));
 ReactDOM.render(<CookiesProvider><LandingPage /></CookiesProvider>, document.getElementById('root'));
+ReactDOM.render(<Homescreen />, document.getElementById('homescreen-english'));
+ReactDOM.render(<Homescreen />, document.getElementById('homescreen-french'));
