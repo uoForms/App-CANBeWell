@@ -3,9 +3,9 @@
   "name": "CANBeWell 1.0",
   "icons": [
     {
-      "src": "%PUBLIC_URL%/logo_03-02.png",
+      "src": "logo_03-02.png",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "type": "image/png"
     }
   ],
   "start_url": "./index.html",
