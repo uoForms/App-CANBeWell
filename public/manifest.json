@@ -3,7 +3,7 @@
   "name": "CANBeWell 1.0",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "%PUBLIC_URL%/logo_03-02.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     }
