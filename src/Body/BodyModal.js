@@ -34,11 +34,7 @@ class BodyModal extends React.Component {
     topicsToDisplay.forEach((topic) => {
       var bodys = topic.body;
       //var subject = body.subject;
-      subjectArray.push(
-        <div>
-          <h3>{topic.name}</h3>
-        </div>
-      );
+      subjectArray.push(<div><h3>{topic.name}</h3></div>);
       var k = 0;
       bodys.forEach((body) => {
         var bodyArray = body.text.split(/(\[\[|\]\]|\n)/g);
@@ -46,23 +42,19 @@ class BodyModal extends React.Component {
         var bodyArrayToDisplay = [];
         var subjectArrayToDisplay = [];
         var outerTextToDisplay = [];
-        var itemID = 0;
+        var itemID = 0;;
         var indexID = "item";
         for (var i = 0; i < subject.length; i++) {
-          if (subject[i] == "[[") {
-            var link = subject[i + 1].split(";");
+          if (subject[i] == '[[') {
+            var link = subject[i + 1].split(';');
             if (link[1] === undefined) {
               link[1] = "undefined";
             }
             //try{
             if (link[0] === "image" || link[0] === "images") {
               var adress = Image + link[1].trim();
-              subjectArrayToDisplay.push(
-                <div key={itemID}>
-                  <img className="imageFromFolder" src={adress} alt="" />
-                </div>
-              );
-            } else {
+              subjectArrayToDisplay.push(<div key={itemID}><img className="imageFromFolder" src={adress} alt="" /></div>);
+            }
             /*else if(link[1].indexOf("topic") === 0 || link[1].indexOf("topic") === 1){
               var id = topic.name + k;
               k++;
@@ -77,33 +69,28 @@ class BodyModal extends React.Component {
               var testOuterText = this.getOuterText(mTest);
               subjectArrayToDisplay.push(<div onClick={(idTarget) => this.togglePopUp(testId)}><font color="Yellow">{link[0]}</font><div id={testId} className="popup"><span className="popuptext"><p>{testOuterText}</p></span></div></div>);
             }*/
-              subjectArrayToDisplay.push(
-                <a href={link[1]} target="_blank" key={itemID}>
-                  <font color="Yellow">{link[0]}</font>
-                </a>
-              );
+            else {
+              subjectArrayToDisplay.push(<a href={link[1]} target="_blank" key={itemID}><font color="Yellow">{link[0]}</font></a>);
             }
             i++;
             //}catch(err){}
-          } else if (subject[i] == "\n") {
+          }
+          else if (subject[i] == '\n') {
             subjectArrayToDisplay.push(<br />);
-          } else if (subject[i] !== "]]") {
+          }
+          else if (subject[i] !== ']]') {
             subjectArrayToDisplay.push(subject[i]);
           }
         }
 
         for (var i = 0; i < bodyArray.length; i++) {
-          if (bodyArray[i] == "[[") {
-            var link = bodyArray[i + 1].split(";");
+          if (bodyArray[i] == '[[') {
+            var link = bodyArray[i + 1].split(';');
             try {
               if (link[0] === "image" || link[0] === "images") {
                 var adress = Image + link[1].trim();
-                bodyArrayToDisplay.push(
-                  <div key={itemID}>
-                    <img className="imageFromFolder" src={adress} alt="" />
-                  </div>
-                );
-              } else {
+                bodyArrayToDisplay.push(<div key={itemID}><img className="imageFromFolder" src={adress} alt="" /></div>);
+              }
               /*else if(link[1].indexOf("topic") === 0 || link[1].indexOf("topic") === 1){
                 var id = topic.name + k;
                 k++;
@@ -114,37 +101,35 @@ class BodyModal extends React.Component {
               else if(link[1].indexOf("test") === 0 || link[1].indexOf("test") === 1){
                 bodyArrayToDisplay.push(<a><font color="Yellow">{link[0]}</font></a>);
               }*/
-                bodyArrayToDisplay.push(
-                  <a href={link[1]} target="_blank" key={itemID}>
-                    <font color="Yellow">{link[0]}</font>
-                  </a>
-                );
+              else {
+                bodyArrayToDisplay.push(<a href={link[1]} target="_blank" key={itemID}><font color="Yellow">{link[0]}</font></a>);
               }
               i++;
-            } catch (err) {}
-          } else if (bodyArray[i] == "\n") {
+            } catch (err) { }
+          }
+          else if (bodyArray[i] == '\n') {
             bodyArrayToDisplay.push(<br />);
-          } else if (bodyArray[i] !== "]]") {
+          }
+          else if (bodyArray[i] !== ']]') {
             bodyArrayToDisplay.push(bodyArray[i]);
           }
+
         }
         indexID = indexID.concat(itemID.toString());
-        subjectArray.push(
-          <div className="topicBody" style={listItemStyle}>
-            <details id={indexID} class="mydetailsItem">
-              <summary class="mysummaryItem">
-                <font size="+1">
-                  {/*<p> <b> */}
-                  {subjectArrayToDisplay}
-                  {/* </b> </p>*/}
-                </font>
-              </summary>
-              <br />
-              {bodyArrayToDisplay}
-              {outerTextToDisplay}
-            </details>
-          </div>
-        );
+        subjectArray.push(<div className="topicBody"  style={listItemStyle}>
+          <details
+            id={indexID} class="mydetailsItem">
+            <summary class="mysummaryItem"><font size="+1"> 
+              {/*<p> <b> */}
+              {subjectArrayToDisplay}
+              {/* </b> </p>*/}
+            
+            </font></summary>
+            <br />
+            {bodyArrayToDisplay}
+            {outerTextToDisplay}
+          </details>
+        </div>);
         itemID++;
       });
     });
@@ -182,7 +167,7 @@ class BodyModal extends React.Component {
       textAlign: 'left',
       padding: 20,
       color: 'white',
-      overflowY: 'auto'
+      overflowY: 'scroll'
     };
 
     return (

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 //import {setGender} from './UserInfo';
 //import {setPatientProvider} from './UserInfo';
 //import {setAge} from './UserInfo';
-//import {getUserInfo} from './UserInfo';
+import {getUserInfo} from './UserInfo';
 //import DisclaimerText from './Disclaimer.json';
 import './Style/checkbox.css';
 
@@ -21,7 +21,6 @@ class InstructionModal extends React.Component {
 
     this.handleChange = this.handleChange.bind(this);
     this.handleGenderChange = this.handleGenderChange.bind(this);
-    this.handlegcheckChange = this.handlegcheckChange.bind(this);
     this.handlePatientProviderChange = this.handlePatientProviderChange.bind(this);
     this.handleAllAgesSelected = this.handleAllAgesSelected.bind(this);
   }
@@ -54,17 +53,6 @@ class InstructionModal extends React.Component {
 
   }
 
-  handlegcheckChange(event){
-
-    this.setState({
-      allAgesSelected: !this.state.allAgesSelected
-    }, () => {
-      this.setState({ value: this.state.allAgesSelected ? "all ages" : "" }); //Call back once setState is done
-      setAge(this.state.allAgesSelected ? "all ages" : "");
-
-    });
-  }
-
   handleAllAgesSelected(event) {
 
     this.setState({
@@ -84,15 +72,6 @@ class InstructionModal extends React.Component {
     });
 
   }
-
-  // handlegcheckChange(changeEvent) {
-
-  //   oncheckchange(changeEvent.target.value);
-  //   this.setState({
-  //     selectedcheckbox: changeEvent.target.value
-  //   });
-
-  // }
 
   render() {
 
@@ -148,9 +127,7 @@ class InstructionModal extends React.Component {
     var UserInfo = getUserInfo();
     this.state.selectedPatientProvider = UserInfo.patient_provider;
     this.state.selectedGender = UserInfo.gender;
-    this.state.selectedcheckbox = UserInfo.gender;
     this.state.selectAge = UserInfo.age;
-    this.state.selectedcheckbox=UserInfo.gcheck;
     var myBoolean_age = false;
     var myBoolean_gender = false;
     var myBoolean_allAge = false;
@@ -173,12 +150,6 @@ class InstructionModal extends React.Component {
       myBoolean_gender = true;
     }
     else if (this.state.selectedGender == "all_genders") {
-      myBoolean_gender = true;
-    }
-    else if (this.state.selectedGender == "nonbinary") {
-      myBoolean_gender = true;
-    }
-    else if (this.state.selectedGender == "transgender") {
       myBoolean_gender = true;
     }
 
@@ -225,16 +196,6 @@ class InstructionModal extends React.Component {
                   <label>
                     <input type="radio" value="female" checked={this.state.selectedGender == 'female'} onChange={this.handleGenderChange} />
                     {this.props.lang.female}
-                  </label>
-
-                  <label>
-                    <input type="radio" value="nonbinary" checked={this.state.selectedGender == 'nonbinary'} onChange={this.handleGenderChange} />
-                    {this.props.lang.nonbinary}
-                  </label>
-                  
-                  <label>
-                    <input type="radio" value="transgender" checked={this.state.selectedGender == 'transgender'} onChange={this.handleGenderChange} />
-                    {this.props.lang.transgender}
                   </label>
 
                   {/* {this.state.selectedPatientProvider === 'provider' || null ?

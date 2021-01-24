@@ -26,7 +26,47 @@
     gtag('config', 'UA-151893001-1');
   </script>
   -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<!--
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151893001-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-151893001-3');
+</script>
+-->
+<!-- Google Analytics -->
+<script>
+  window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+  ga('create', 'UA-151893001-3', 'auto');
+  ga('send', 'pageview');
+  ga('set', 'userId', 'USER_ID');
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0LSJV57PF7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0LSJV57PF7');
+</script>
+
+<script>
+  var captureOutboundLink = function(url) {
+   ga('send', 'event', 'outbound', 'click', url, {
+     'transport': 'beacon',
+     'hitCallback': function(){document.location = url;}
+   });
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+  <!-- End Google Analytics -->
   <!-- End Google Tag Manager -->
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="theme-color" content="#000000">
@@ -56,6 +96,7 @@
     -->
 
   <title>canbewell</title>
+  <a href="https://www.ottawapublichealth.ca/en/public-health-topics/multilingual-resources.aspx" onclick="captureOutboundLink('https://www.ottawapublichealth.ca/en/public-health-topics/multilingual-resources.aspx'); return false;"></a>
 </head>
 
 <body>
@@ -69,7 +110,7 @@
     You need to enable JavaScript to run this app.
   </noscript>
   <div id="root"></div>
-
+  
   <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

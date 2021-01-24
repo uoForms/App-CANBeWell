@@ -17,20 +17,6 @@
     height: auto;
 }
 
-.landing-trans {
-  position: relative;
-  text-align: center;
-  margin-top: 2vw;
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%;
-  height: auto;
-  font-size: normal;
-  font-weight: bolder;
-  font-style: unset;
-  color: rgb(13, 194, 58);
-}
-
 .landing-update {
   position: relative;
   text-align: center;
@@ -72,6 +58,26 @@
     display: table;
     clear: both;
   }
+
+ .landing-notice-privacystmnt-english {
+    position: relative;
+    text-align: right;
+    /*margin-left: 35%;*/
+    margin-right: 50%;
+    width: 80%;
+    height: auto;
+    font-size: larger;
+}
+.landing-notice-privacystmnt-french {
+  position: relative;
+  text-align: left;
+  margin-left: auto;
+  /*margin-right: auto;*/
+  width: 80%;
+  height: auto;
+  font-size: larger;
+}
+
 .nowrap{white-space:nowrap;}
 
 
