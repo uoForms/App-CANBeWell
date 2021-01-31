@@ -4,9 +4,9 @@ var userInfo = {
   patient_provider: null,
   age: null,
   //gcheck: null ,// added by rishang,cbw2.0
-  isTopSurgery:null,  //these 3 lines by Melika,cbw2.0
-  isBottomSurgery:null,
-  isHormoneTherapy:null,    
+  // isTopSurgery:null,  //these 3 lines by Melika,cbw2.0
+  // isBottomSurgery:null,
+  // isHormoneTherapy:null,    
   language: null
 };
 
@@ -56,7 +56,7 @@ export {setGender};
 export {setPatientProvider};
 export {setAge};
 export {setLanguage};
-export {isTopSurgery};
-export {isBottomSurgery};
-export {isHormoneTherapy};
-export {oncheckchange};
+// export {isTopSurgery};
+// export {isBottomSurgery};
+// export {isHormoneTherapy};
+// export {oncheckchange};
