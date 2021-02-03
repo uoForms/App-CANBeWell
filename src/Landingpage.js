@@ -2,8 +2,10 @@ import React from 'react';
 import App from './App';
 import { PageView, initGA } from './Tracking';
 import './LandingPage.css';
-import calllogo from './assets/Logos/logo_20-05-02.png';
+import calllogo from './assets/Logos/logo_21-02-02.png';
 import videoland from './videos/videojune20.mp4';
+import calleng from './assets/Logos/canbewelleng.png';
+import callfren from './assets/Logos/canbewellfren.png';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -41,24 +43,16 @@ class LandingPage extends React.Component {
       <div className="landing-page">
         {this.state.language == "" || null ? (
           <div>
-            <div class="landing-update">
-            Mise à jour COVID Updated&nbsp;
-            <button class="videoButton" src={videoland} onClick={this.openVideo}>Video</button>
-                        </div>
-
+          
            <img class="landing-logo" src={calllogo} alt="CANBeWellLogo" />
-                  
-            <div className="landingButtons">
-              
-              <button class="langLandButtonStyle" onClick={this.handleChange} >English</button>
-              <button class="langLandButtonStyle" onClick={this.handleChange2}>Français</button>
-             
-            </div>
-
+      
             <div className="landingpage-notice-row"> </div>
 
             <div className="landingpage-notice-row">
               <div className="landingpage-notice-column">
+                <div className="landing-button-eng">
+                  <img className="landing-button-img" src={calleng} onClick={this.handleChange} />
+                </div>
                 <div className="landing-notice-privacystmnt-english">
                 A reliable resource by Canadian health care providers to help you stay healthy
                 </div>
@@ -68,6 +62,9 @@ class LandingPage extends React.Component {
                 </div>
               </div>
               <div className="landingpage-notice-column">
+                <div className="landing-button-fren">
+                  <img className="landing-button-img" src={callfren} onClick={this.handleChange2} />
+                </div>
                 <div className="landing-notice-privacystmnt-french">
                 Rester en santé avec cette ressource créée par vos professionnels de la santé canadiens
                 </div>
@@ -76,6 +73,12 @@ class LandingPage extends React.Component {
                 <a href= "https://canbewell-uottawa.web.app/politiquedeconfidentialite.htm" >{"Politique de confidentialité"}</a>
                 </div>
               </div>
+            </div>
+            <div className="landingButtons">
+              
+              <button class="langLandButtonStyle" onClick={this.handleChange} >English</button>
+              <button class="langLandButtonStyle" onClick={this.handleChange2}>Français</button>
+             
             </div>
           </div>
         ) : (

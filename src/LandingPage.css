@@ -34,6 +34,7 @@
   color: crimson;
 }
 
+
 .landing-notice {
     position: relative;
     text-align: center;
@@ -59,6 +60,22 @@
     clear: both;
   }
 
+  .landing-button-eng{
+    position: relative;
+    text-align: right;
+    margin-right: 50%;
+    width: 83%;
+  }
+  .landing-button-fren{
+    position: relative;
+    text-align: left;
+    margin-left: auto;
+    width: 83%;
+  }
+  .landing-button-img{
+    width: 200px;
+    height: auto ;
+  }
  .landing-notice-privacystmnt-english {
     position: relative;
     text-align: right;
