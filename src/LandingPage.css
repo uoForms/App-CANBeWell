@@ -93,6 +93,23 @@
     height: auto;
     font-size: larger;
 }
+@media (max-width: 375px){
+  .homescreen-button-english {
+    text-align: right;
+    margin-top: 20px;
+    }
+}
+@media (min-width: 376px){
+  .homescreen-button-english {
+    text-align: right;
+    }
+}
+  .homescreen-button-french{
+  text-align: left;
+  }
+  .closeButton{
+  text-align: right;
+  }  
 .nowrap{white-space:nowrap;}
 
 
