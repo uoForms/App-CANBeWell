@@ -45,14 +45,17 @@ class LandingPage extends React.Component {
           <div>
           
            <img class="landing-logo" src={calllogo} alt="CANBeWellLogo" />
-      
+                <div className="landing-button">
+                  <a href="#"><img className="landing-button-img" src={callfren} onClick={this.handleChange2} /></a>
+                </div>
+                <div className="landing-button">
+                  <a href="#"><img className="landing-button-img" src={calleng} onClick={this.handleChange} /></a>
+                </div>
             <div className="landingpage-notice-row"> </div>
 
             <div className="landingpage-notice-row">
               <div className="landingpage-notice-column">
-                <div className="landing-button-eng">
-                  <img className="landing-button-img" src={calleng} onClick={this.handleChange} />
-                </div>
+                
                 <div className="landing-notice-privacystmnt-english">
                 A reliable resource by Canadian health care providers to help you stay healthy
                 </div>
@@ -62,9 +65,6 @@ class LandingPage extends React.Component {
                 </div>
               </div>
               <div className="landingpage-notice-column">
-                <div className="landing-button-fren">
-                  <img className="landing-button-img" src={callfren} onClick={this.handleChange2} />
-                </div>
                 <div className="landing-notice-privacystmnt-french">
                 Rester en santé avec cette ressource créée par vos professionnels de la santé canadiens
                 </div>

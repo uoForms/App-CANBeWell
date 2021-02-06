@@ -60,18 +60,11 @@
     clear: both;
   }
 
-  .landing-button-eng{
+  .landing-button{
     position: relative;
-    text-align: right;
-    margin-right: 50%;
-    width: 83%;
+    text-align: center;
   }
-  .landing-button-fren{
-    position: relative;
-    text-align: left;
-    margin-left: auto;
-    width: 83%;
-  }
+  
   .landing-button-img{
     width: 200px;
     height: auto ;
