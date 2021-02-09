@@ -5,7 +5,7 @@
     margin-right: auto;
     height: auto;
     overflow: hidden;
-    width: 50vmax;
+    width: 30vmax;
 }
 
 .landing-page {
@@ -17,6 +17,23 @@
     height: auto;
 }
 
+.landing-button{
+  position: relative;
+  text-align: center;
+  
+}
+
+.landing-button-img{
+  width: 450px;
+  height: auto ;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.landing-button-img:hover{
+  background-color: #D3D3D3;
+  opacity: 0.9;
+}
 .landing-update {
   position: relative;
   text-align: center;
@@ -60,15 +77,6 @@
     clear: both;
   }
 
-  .landing-button{
-    position: relative;
-    text-align: center;
-  }
-  
-  .landing-button-img{
-    width: 200px;
-    height: auto ;
-  }
  .landing-notice-privacystmnt-english {
     position: relative;
     text-align: right;
