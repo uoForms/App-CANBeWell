@@ -25,4 +25,5 @@ deploy:
   script: bash scripts/deploy.sh
   on:
     branch: 
-    - master
+    - new-front-page(master)
+
