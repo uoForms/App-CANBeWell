@@ -51,34 +51,36 @@ class LandingPage extends React.Component {
                 <div className="landing-button">
                   <a href="#"><img className="landing-button-img" src={calleng} onClick={this.handleChange} /></a>
                 </div>
-            <div className="landingpage-notice-row"> </div>
 
-            <div className="landingpage-notice-row">
-              <div className="landingpage-notice-column">
-                
-                <div className="landing-notice-privacystmnt-english">
+                <div className="landing-notice-privacystmnt">
                 A reliable resource by Canadian health care providers to help you stay healthy
                 </div>
-                <div className="landing-notice-privacystmnt-english">
+
+                <div className="landingpage-notice-row"> </div>
+                <div className="landingpage-notice-row">
+              <div className="landingpage-notice-column">
+              <div className="landing-notice-privacystmnt-english">
                 {/*<a href= "/iCanBeWell_PrivacyPolicy.htm" target="_blank">{"PrivacyStatement"}</a>*/}
-                <a href= "https://canbewell-uottawa.web.app/iCanBeWell_PrivacyPolicy.htm" >{"Privacy Statement"}</a>
+                <a href= "https://canbewell-uottawa.web.app/iCanBeWell_PrivacyPolicy.htm" className="landing-notice-english">{"Privacy Statement"} </a>
+                &nbsp;&nbsp;<a href= "#" className="slash">{<h4>&#47;</h4>} </a>
                 </div>
               </div>
               <div className="landingpage-notice-column">
-                <div className="landing-notice-privacystmnt-french">
-                Rester en santé avec cette ressource créée par vos professionnels de la santé canadiens
-                </div>
-                <div className="landing-notice-privacystmnt-french">
+              <div className="landing-notice-privacystmnt-french">
                 {/*<a href= "/politiquedeconfidentialite.htm" target="_blank">{"Politique de confidentialité"}</a>*/}
-                <a href= "https://canbewell-uottawa.web.app/politiquedeconfidentialite.htm" >{"Politique de confidentialité"}</a>
-                </div>
+                &nbsp;
+                <a href= "https://canbewell-uottawa.web.app/politiquedeconfidentialite.htm" className="landing-notice-french">{"Politique de confidentialité"}</a>
+                </div> 
               </div>
             </div>
+
+                <div className="landing-notice-privacystmnt">
+                Rester en santé avec cette ressource créée par vos professionnels de la santé canadiens
+                </div>
+            
             <div className="landingButtons">
-              
               <button class="langLandButtonStyle" onClick={this.handleChange} >English</button>
               <button class="langLandButtonStyle" onClick={this.handleChange2}>Français</button>
-             
             </div>
           </div>
         ) : (
