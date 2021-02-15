@@ -102,7 +102,6 @@
   text-align: right;
   /*margin-left: 35%;*/
   width: 100%;
-  padding-right: 8px;
   height: auto;
   font-size: larger;
 }
@@ -126,6 +125,7 @@
 
 .landing-notice-english{
   width: 60px;
+  text-align: center;
 }
 
 .landing-notice-privacystmnt-french {
@@ -139,7 +139,8 @@ font-size: larger;
 }
 
 .landing-notice-french{
-  width: 100px;
+  width: 95px;
+  text-align: center;
 }
 
 .nowrap{white-space:nowrap;}
