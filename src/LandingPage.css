@@ -55,6 +55,23 @@
   .landingpage-notice-column a{
     font-size: 10px;
   }
+  .landing-update {
+    position: relative;
+    text-align: center;
+    margin-top: 2vw;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: auto;
+    word-wrap:break-word; 
+    word-break: normal; 
+    overflow: hidden;
+    font-size: 14px!important;
+    font-weight: bolder;
+    font-style: unset;
+    color: crimson;
+  }
+  
 }
 
 .landing-update {
@@ -63,7 +80,7 @@
   margin-top: 2vw;
   margin-left: auto;
   margin-right: auto;
-  width: 75%;
+  width: 100%;
   height: auto;
   word-wrap:break-word; 
   word-break: normal; 

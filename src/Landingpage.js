@@ -48,8 +48,8 @@ class LandingPage extends React.Component {
         {this.state.language == "" || null ? (
           <div>
           <div class="landing-update">
-            Mise à jour COVID Updated&nbsp;<br />
-            <button class="videoButton" src={videofr} onClick={this.openVideoen}>Vidéo</button>
+          <button class="videoButton" src={videofr} onClick={this.openVideoen}>Vidéo</button>
+          &nbsp;&nbsp;Mise à jour COVID Updated&nbsp;&nbsp;
             <button class="videoButton" src={videoen} onClick={this.openVideofr}>Video</button>
           </div>
            <img class="landing-logo" src={calllogo} alt="CANBeWellLogo" />
