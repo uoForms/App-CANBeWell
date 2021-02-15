@@ -1,12 +1,12 @@
 .landing-logo {
     position: relative;
     display: block;
-    margin-top: 20px;
+    margin-top: 5px;
     margin-left: auto;
     margin-right: auto;
     height: auto;
     overflow: hidden;
-    width: 40vmax;
+    width: 35vmax;
 }
 
 .landing-page {
