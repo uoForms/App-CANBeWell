@@ -12,6 +12,16 @@
   {
     "Button": "Covid",
     "Topic heading": "COVID-19",
+    "Subject": "Vaccins",
+    "General Patient Text": "•Canada: cliquez [[ici; https://www.canada.ca/fr/sante-publique/services/maladies/maladie-coronavirus-covid-19/vaccins/apercu.html]]\n\n•Provinces: cliquez [[ici; https://www.canada.ca/fr/sante-publique/services/maladies/maladie-coronavirus-covid-19/vaccins/apercu.html#a5]]\n\n•New England Journal of Medicine\n[[Vos questions; https://www.nejm.org/covid-vaccine/faq]]\n\n\n• Vidéo: Comment les vaccins sont créés? \n[[3 min; https://www.canada.ca/fr/sante-publique/services/video/covid-19-comment-vaccins-crees.html]]",
+    "Health Provider Text": "•[[Information pour les professionels; https://www.msss.gouv.qc.ca/professionnels/covid-19/vaccination-contre-la-covid-19/\n\n•[[CCNI; https://www.canada.ca/fr/sante-publique/services/immunisation/comite-consultatif-national-immunisation-ccni/recommandations-utilisation-vaccins-covid-19.html]]\n\n•Canada: cliquez [[ici; https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/vaccines/overview.html]]\n\n•Provinces: cliquez[[ici; https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/vaccines/overview.html#a5]]\n\n•New England Journal of Medicine\n[[FAQ; https://www.nejm.org/covid-vaccine/faq]]\n[[Recherche; https://www.nejm.org/covid-vaccine]]\n\n• Vidéos: Comment les vaccins sont créés?\n[[3 minutes; https://www.canada.ca/fr/sante-publique/services/video/covid-19-comment-vaccins-crees.html]]\n[[7 minutes; https://www.youtube.com/watch?v=2t_mQwTY4WQ&feature=emb_logo]]",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Covid",
+    "Topic heading": "COVID-19",
     "Subject": "Pour les aînés",
     "General Patient Text": "•[[Les aînés et les aidants naturels; https://www.canada.ca/fr/sante-publique/services/maladies/maladie-coronavirus-covid-19/ressources-aines-aidants-naturels.html]]\n•Si vous avez besoin de nourriture ou d'autre aide :\nComposer le 211 sur votre téléphone dans certaines régions\nQuébec: [[http://www.211quebecregions.ca/;http://www.211quebecregions.ca/]]\nAilleurs au Canada: [[https://211.ca/;https://211.ca/]]\n•OU vérifier avec votre agence de santé publique locale ou votre ville , village ou communauté\n[[Information COVID-19 par province ou territoire; https://www.canada.ca/fr/sante-publique/services/maladies/2019-nouveau-coronavirus/symptomes/ressources-provinces-territoires-covid-19.html]]\n•[[Aide financière du gouvernement du Canada; https://www.canada.ca/fr/services/prestations/covid-19-prestations-urgence.html]]",
     "Health Provider Text": "n/a",
@@ -847,6 +857,16 @@
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 50,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Needle in arm",
+    "Topic heading": "Vaccination",
+    "Subject": "Vaccins contre la COVID",
+    "General Patient Text": "•Canada: cliquez [[ici; https://www.canada.ca/fr/sante-publique/services/maladies/maladie-coronavirus-covid-19/vaccins/apercu.html]]\n\n•Provinces: cliquez [[ici; https://www.canada.ca/fr/sante-publique/services/maladies/maladie-coronavirus-covid-19/vaccins/apercu.html#a5]]\n\n•New England Journal of Medicine\n[[Vos questions; https://www.nejm.org/covid-vaccine/faq]]\n\n\n• Vidéo: Comment les vaccins sont créés? \n[[3 min; https://www.canada.ca/fr/sante-publique/services/video/covid-19-comment-vaccins-crees.html]]",
+    "Health Provider Text": "•[[Information pour les professionels; https://www.msss.gouv.qc.ca/professionnels/covid-19/vaccination-contre-la-covid-19/]]\n\n•[[CCNI; https://www.canada.ca/fr/sante-publique/services/immunisation/comite-consultatif-national-immunisation-ccni/recommandations-utilisation-vaccins-covid-19.html]]\n\n•Canada: cliquez [[ici; https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/vaccines/overview.html]]\n\n•Provinces: cliquez[[ici; https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/vaccines/overview.html#a5]]\n\n•New England Journal of Medicine\n[[FAQ; https://www.nejm.org/covid-vaccine/faq]]\n[[Recherche; https://www.nejm.org/covid-vaccine]]\n\n• Vidéos: Comment les vaccins sont créés?\n[[3 minutes; https://www.canada.ca/fr/sante-publique/services/video/covid-19-comment-vaccins-crees.html]]\n[[7 minutes; https://www.youtube.com/watch?v=2t_mQwTY4WQ&feature=emb_logo]]",
+    "Gender": "all",
+    "Minimum age": 18,
     "Maximum age": 150
   },
   {
