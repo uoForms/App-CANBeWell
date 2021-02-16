@@ -7,10 +7,10 @@ before_install:
 - yarn global add firebase-tools
 - rm -r ./src/JSONFolder
 - mkdir ./src/JSONFolder
-- curl -L -o ./src/JSONFolder/HtmlTopic-EN.json "https://drive.google.com/file/d/1-iDX-ziXUhtwrMD5CBya8mHRMw7i1iYB/view?usp=sharing"
-- curl -L -o ./src/JSONFolder/HtmlTopic-FR.json "https://drive.google.com/file/d/1hWUO5nzYAJLIYYSsdsglRH-3mOxE01fE/view?usp=sharing"
-- curl -L -o ./src/JSONFolder/HtmlTest-FR.json "https://drive.google.com/file/d/19jxhUsAnH5xEaBO3-_lORf8vM4BusJXr/view?usp=sharing"
-- curl -L -o ./src/JSONFolder/HtmlTest-EN.json "https://drive.google.com/file/d/1j9dipDuGUYhraYpx2nQjTIYtXEErallE/view?usp=sharing"
+- curl -L -o ./src/JSONFolder/HtmlTopic-EN.json "https://drive.google.com/uc?export=download&id=1KmTemPnVDmXcxMKrJ48y0jAoG5MYl58f"
+- curl -L -o ./src/JSONFolder/HtmlTopic-FR.json "https://drive.google.com/uc?export=download&id=1lru1LitepXYPCvdovo11xz8s7MdZhBzI"
+- curl -L -o ./src/JSONFolder/HtmlTest-FR.json "https://drive.google.com/uc?export=download&id=1iapSdfbUYnUDn6nrDavN536rey-1tiBD"
+- curl -L -o ./src/JSONFolder/HtmlTest-EN.json "https://drive.google.com/uc?export=download&id=1eNwhPOhb9koID2G_c53O7yu3iQ2pJJZR"
 
 
 install:
