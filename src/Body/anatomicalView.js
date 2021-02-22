@@ -47,6 +47,7 @@ import TransLungs from '../assets/TransBody/trans_lung.png';
 import TransPancreas from '../assets/TransBody/trans_pancreas.png';
 import TransStomach from '../assets/TransBody/trans_stomach.png';
 import TransUterus from '../assets/TransBody/trans_uterus.png';
+import TransOvary from '../assets/TransBody/trans_ovary.png';
 
 //import TransGenital from '../assets/Icons/male_genital.png';
 
@@ -331,7 +332,7 @@ class Anatomy extends React.Component {
             <button id="heartButton" className="heart" onClick={(button, text, oran) => this.organClicked("heart", this.props.lang.heart, "Heart")} />
             <button className="uterus" onClick={(button, text, organ) => this.organClicked("uterus", this.props.lang.uterus, "Uterus")} />
             <button className="genitalia" onClick={(button, text, organ) => this.organClicked("genitalia", this.props.lang.genitalia, "")} />
-            <button className="ovary" onClick={(button, text, organ) => this.organClicked("ovary", this.props.lang.ovary, "Uterus")} />
+            <button className="ovary" onClick={(button, text, organ) => this.organClicked("ovary", this.props.lang.ovary, "Ovary")} />
             <div className="icons">
               <button id="brainButton" className="brain" onClick={(button, text) => this.iconClicked("brain", this.props.lang.brain)}><img src={brainIcon} alt="brainIcon" /></button>
               <button id="examButton" className="exam" onClick={(button, text) => this.iconClicked("physical exam", this.props.lang.stethoscope)}><img src={examIcon} alt="examIcon" /></button>
@@ -379,6 +380,7 @@ else if ((this.props.gender === "male" && this.props.Tgender === "birth_female")
             <img id="Pancreas" className="organ" src={TransPancreas} alt="Pancreas" />
             <img  id="Stomach" className="organ" src={TransStomach} alt="Stomach" />
             <img id="Uterus" className="organ" src={TransUterus} alt="Uterus"/>
+            <img id="Ovary" className="organ" src={TransOvary} alt="Ovary"/>
             <img id="Genital" className="organ" src={transGenital} alt="Genitalt"/>
            
 
@@ -394,7 +396,7 @@ else if ((this.props.gender === "male" && this.props.Tgender === "birth_female")
             <button id="heartButton" className="heart" onClick={(button, text, oran) => this.organClicked("heart", this.props.lang.heart, "Heart")} />
             <button className="uterus" onClick={(button, text, organ) => this.organClicked("uterus", this.props.lang.uterus, "Uterus")} />
             <button className="genitalia" onClick={(button, text, organ) => this.organClicked("genitalia", this.props.lang.genitalia, "")} />
-            <button className="ovary" onClick={(button, text, organ) => this.organClicked("ovary", this.props.lang.ovary, "Uterus")} />
+            <button className="ovary" onClick={(button, text, organ) => this.organClicked("ovary", this.props.lang.ovary, "Ovary")} />
             <div className="icons">
               <button id="brainButton" className="brain" onClick={(button, text) => this.iconClicked("brain", this.props.lang.brain)}><img src={brainIcon} alt="brainIcon" /></button>
               <button id="examButton" className="exam" onClick={(button, text) => this.iconClicked("physical exam", this.props.lang.stethoscope)}><img src={examIcon} alt="examIcon" /></button>
@@ -459,7 +461,7 @@ else if ((this.props.gender === "male" && this.props.Tgender === "birth_female")
             <button id="heartButton" className="heart" onClick={(button, text, oran) => this.organClicked("heart", this.props.lang.heart, "Heart")} />
             <button className="uterus" onClick={(button, text, organ) => this.organClicked("uterus", this.props.lang.uterus, "Uterus")} />
             <button className="genitalia" onClick={(button, text, organ) => this.organClicked("genitalia", this.props.lang.genitalia, "")} />
-            <button className="ovary" onClick={(button, text, organ) => this.organClicked("ovary", this.props.lang.ovary, "Uterus")} />
+            <button className="ovary" onClick={(button, text, organ) => this.organClicked("ovary", this.props.lang.ovary, "Ovary")} />
             <div className="icons">
               <button id="brainButton" className="brain" onClick={(button, text) => this.iconClicked("brain", this.props.lang.brain)}><img src={brainIcon} alt="brainIcon" /></button>
               <button id="examButton" className="exam" onClick={(button, text) => this.iconClicked("physical exam", this.props.lang.stethoscope)}><img src={examIcon} alt="examIcon" /></button>
@@ -521,7 +523,7 @@ else if ((this.props.gender === "male" && this.props.Tgender === "birth_female")
             <button id="heartButton" className="heart" onClick={(button, text, oran) => this.organClicked("heart", this.props.lang.heart, "Heart")} />
             <button className="uterus" onClick={(button, text, organ) => this.organClicked("uterus", this.props.lang.uterus, "Uterus")} />
             <button className="genitalia" onClick={(button, text, organ) => this.organClicked("genitalia", this.props.lang.genitalia, "")} />
-            <button className="ovary" onClick={(button, text, organ) => this.organClicked("ovary", this.props.lang.ovary, "")} />
+            <button className="ovary" onClick={(button, text, organ) => this.organClicked("ovary", this.props.lang.ovary, "Ovary")} />
             <div className="icons">
               <button id="brainButton" className="brain" onClick={(button, text) => this.iconClicked("brain", this.props.lang.brain)}><img src={brainIcon} alt="brainIcon" /></button>
               <button id="examButton" className="exam" onClick={(button, text) => this.iconClicked("physical exam", this.props.lang.stethoscope)}><img src={examIcon} alt="examIcon" /></button>
