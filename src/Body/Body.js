@@ -78,6 +78,8 @@ class MyBody extends React.Component {
           <Anatomy 
             gender={this.props.userConfig.gender}
             Tgender={this.props.userConfig.Tgender} 
+            //isTransgender flag
+            isTransgender={this.props.isTransgender}
             userInfo={this.props.userConfig} 
             getDisplay={this.props.getText} 
             lang={this.props.lang}
