@@ -70,7 +70,7 @@ export default function CustomizedDialogs() {
           if(clientOS == 'iOS'){
             return <div>
               <div className="homescreen-button-english">
-                <button onClick={handleClickOpen}>Add to Home Screen</button>
+                <button onClick={handleClickOpen}>Add to Home Screen</button>&nbsp;
                 </div>
           <Dialog onClose={handleClose} aria-labelledby="customized-dialog-title" open={open}>
             <DialogTitle id="customized-dialog-title" onClose={handleClose}>
@@ -78,16 +78,16 @@ export default function CustomizedDialogs() {
             </DialogTitle>
             <DialogContent dividers>
               <Typography gutterBottom>
-               1. Launch “Safari” app.  This does not work from the “Chrome” app.
+               1. Launch Safari app
               </Typography>
               <Typography gutterBottom>
-               2. Enter into the address field the URL of the website you want to create a shortcut to. Tap “Go.”
+               2. Enter the URL www.icanbewell.ca into the address field and tap “Go”
               </Typography>
               <Typography gutterBottom>
-                3. Tap the icon featuring a right-pointing arrow coming out of a box along the top of the Safari window to open a drop-down menu.
+               3. Tap the share button featuring the square with an arrow pointing out of it (at the bottom of the screen on an iPhone, top of screen on an iPad). Safari will open a drop-down menu
               </Typography>
               <Typography gutterBottom>
-                4. Tap “Add to Home Screen.” Enter the name for the shortcut using the on-screen keyboard and tap “Add.” 
+                4. Scroll down the list of actions and tap “Add to Home Screen.” Enter the name for the shortcut and tap “Add” 
               </Typography>
             </DialogContent>
             <DialogActions>
@@ -109,16 +109,16 @@ export default function CustomizedDialogs() {
             </DialogTitle>
             <DialogContent dividers>
               <Typography gutterBottom>
-               1. Launch “Chrome” app.
+               1. Launch Chrome app
               </Typography>
               <Typography gutterBottom>
-               2. Open the canbewell app website.
+               2. Open the www.icanbewell.ca website
               </Typography>
               <Typography gutterBottom>
-                3. Tap the menu icon (3 dots in upper right-hand corner) and tap Add to homescreen.
+                3. Tap the menu icon (3 dots in upper right-hand corner) and tap "Add to home screen"
               </Typography>
               <Typography gutterBottom>
-                4. Enter a name for the shortcut and then Chrome will add it to your home screen.
+                4. Enter a name for the shortcut and then Chrome will add it to your home screen
               </Typography>
             </DialogContent>
             <DialogActions>

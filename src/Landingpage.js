@@ -71,8 +71,7 @@ class LandingPage extends React.Component {
                 {/*<a href= "/iCanBeWell_PrivacyPolicy.htm" target="_blank">{"PrivacyStatement"}</a>*/}
                 <a href= "https://canbewell-uottawa.web.app/iCanBeWell_PrivacyPolicy.htm" className="landing-notice-english">{"Privacy Statement"} </a>
                 &nbsp;<a href= "#" className="slash">{<h4>&#124;</h4>} </a>
-                </div>
-                <div id="homescreen-english"></div>
+              </div>
               </div>
               <div className="landingpage-notice-column">
               <div className="landing-notice-privacystmnt-french">
@@ -81,7 +80,7 @@ class LandingPage extends React.Component {
                 {/* </div> */}
                 {/* <div id="homescreen-french"></div> */}
                 <a href= "https://canbewell-uottawa.web.app/politiquedeconfidentialite.htm" className="landing-notice-french">{"Politique de confidentialité"}</a>
-                <div id="homescreen-french"></div>
+                
                 </div> 
               </div>
             </div>
@@ -89,7 +88,20 @@ class LandingPage extends React.Component {
                 <div className="landing-notice-privacystmnt">
                 Rester en santé avec cette ressource créée par vos professionnels de la santé canadiens
                 </div>
-            
+                <div className="landingpage-notice-row"> </div>
+            <div className="landingpage-notice-row">
+              <div className="landingpage-notice-column">
+                <div className="homescreen-eng">
+                  <div id="homescreen-english"></div>
+              </div>
+              </div>
+              <div className="landingpage-notice-column">
+                <div className="homescreen-fre">
+                <div id="homescreen-french"></div>
+                </div>
+              </div>
+            </div>
+
             <div className="landingButtons">
               <button class="langLandButtonStyle" onClick={this.handleChange} >English</button>
               <button class="langLandButtonStyle" onClick={this.handleChange2}>Français</button>
