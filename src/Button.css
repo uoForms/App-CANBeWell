@@ -207,9 +207,25 @@ div.fixed {
   width: min-content;
   font-size: 12px;
   }
-
+  @media only screen and (min-width:200px) and (max-width:450px){
+    .videoButton{
+      position: relative;
+      text-align: center;
+      background-color: #e7f120;
+      border-color: #d7df21;
+      color: rgb(14, 145, 200);
+      text-shadow: black;
+      border-radius: 14px;
+      font-weight: bold;
+      height: 22px;
+      overflow: hidden;
+      width: min-content;
+      font-size: 12px;
+      }
+  }
 
 .langLandButtonStyle{
+  display: none;
   background-color: #0a99ecc9;
   border-color: #0a99ecc9;
   font-size: larger;

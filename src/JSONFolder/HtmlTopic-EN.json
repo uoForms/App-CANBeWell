@@ -12,6 +12,16 @@
   {
     "Button": "Covid",
     "Topic heading": "COVID-19",
+    "Subject": "Vaccines",
+    "General Patient Text": "•Canada: click [[here; https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/vaccines/overview.html]]\n\n•Provinces: click [[here; https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/vaccines/overview.html#a5]]\n\n•New England Journal of Medicine [[FAQ; https://www.nejm.org/covid-vaccine/faq]]\n\n• Videos: how vaccines are developped \n[[3 minutes; https://www.canada.ca/en/public-health/services/video/covid-19-how-vaccines-developed.html]]\n[[7 minutes; https://www.youtube.com/watch?v=2t_mQwTY4WQ&feature=emb_logo]]",
+    "Health Provider Text": "•Info for professionals [[Centre for Effective Practice; https://cep.health/clinical-products/covid-19-vaccines/]] \n\n•[[NACI; https://www.canada.ca/en/public-health/services/immunization/national-advisory-committee-on-immunization-naci/recommendations-use-covid-19-vaccines.html]]\n\n•Canada: click [[here; https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/vaccines/overview.html]]\n\n•Provinces: click [[here; https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/vaccines/overview.html#a5]]\n\n•New England Journal of Medicine\n[[FAQ; https://www.nejm.org/covid-vaccine/faq]]\n[[Research; https://www.nejm.org/covid-vaccine]]\n\n• Videos: how vaccines are developped \n[[3 minutes; https://www.canada.ca/en/public-health/services/video/covid-19-how-vaccines-developed.html]]\n[[7 minutes; https://www.youtube.com/watch?v=2t_mQwTY4WQ&feature=emb_logo]]",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Covid",
+    "Topic heading": "COVID-19",
     "Subject": "Elderly",
     "General Patient Text": "•Click on: [[For the elderly and their caregivers; https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/resources-older-adults-caregivers.html]]\n\n•If you need food or other help \nPhone 211 or click on [[211 national website; https://211.ca]]\n\n\n•Or contact your local public health department,\nor municipality to find community services\n[[Public health info by province or territory; https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/symptoms/provincial-territorial-resources-covid-19.html]]",
     "Health Provider Text": "n/a",
@@ -707,6 +717,16 @@
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 50,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Needle in arm",
+    "Topic heading": "Immunization",
+    "Subject": "COVID vaccines",
+    "General Patient Text": "•Canada: click [[here; https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/vaccines/overview.html]]\n\n•Provinces: click [[here; https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/vaccines/overview.html#a5]]\n\n•New England Journal of Medicine [[FAQ; https://www.nejm.org/covid-vaccine/faq]]\n\n• Videos: how vaccines are developped \n[[3 minutes; https://www.canada.ca/en/public-health/services/video/covid-19-how-vaccines-developed.html]]\n[[7 minutes; https://www.youtube.com/watch?v=2t_mQwTY4WQ&feature=emb_logo]]",
+    "Health Provider Text": "•Info for professionals [[Centre for Effective Practice; https://cep.health/clinical-products/covid-19-vaccines/]] \n\n•[[NACI; https://www.canada.ca/en/public-health/services/immunization/national-advisory-committee-on-immunization-naci/recommendations-use-covid-19-vaccines.html]]\n\n•Canada: click [[here; https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/vaccines/overview.html]]\n\n•Provinces: click [[here; https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/vaccines/overview.html#a5]]\n\n•New England Journal of Medicine\n[[FAQ; https://www.nejm.org/covid-vaccine/faq]]\n[[Research; https://www.nejm.org/covid-vaccine]]\n\n• Videos: how vaccines are developped \n[[3 minutes; https://www.canada.ca/en/public-health/services/video/covid-19-how-vaccines-developed.html]]\n[[7 minutes; https://www.youtube.com/watch?v=2t_mQwTY4WQ&feature=emb_logo]]",
+    "Gender": "all",
+    "Minimum age": 18,
     "Maximum age": 150
   },
   {
