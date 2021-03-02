@@ -209,7 +209,6 @@ class App extends Component {
 
   //toggle the config modif
   toggleConfigurationModal = () => {
-    debugger;
     var genders = ["male", "female", "all_genders" , "nonbinary","transgender"]; 
     var Tgenders =["birth_male","birth_female"];
     if (genders.includes(this.state.gender) && ((this.state.age >= 18 && this.state.age <= 150) || this.state.allAgesSelected) && Tgenders.includes(this.state.Tgender)) {
@@ -225,7 +224,6 @@ class App extends Component {
 
   toggleIntrutionModal = () => {
     //if(this.state.allowToClose){
-      debugger;
     var genders = ["male", "female", "all_genders" , "nonbinary","transgender"];
     var Tgenders =["birth_male","birth_female"];
     if (genders.includes(this.state.gender) && ((this.state.age >= 18 && this.state.age <= 150) || this.state.allAgesSelected) && Tgenders.includes(this.state.Tgender) ) {
