@@ -201,10 +201,19 @@ text-align: right;
 }
 #homescreen-french{
   font-size: 10px;
-  width: 150px;
+  width: 100%;
   height: auto;
 }
 
+.instructionimg{
+  width: 100%;
+  height: 80%;
+  margin: 5px;
+}
+
+.Diacontent{
+  background-color:#D3D3D3
+}
 .nowrap{white-space:nowrap;}
 
 

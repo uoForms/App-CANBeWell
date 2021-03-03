@@ -1,6 +1,7 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import './Button.css';
+import './LandingPage.css';
 import Dialog from '@material-ui/core/Dialog';
 import MuiDialogTitle from '@material-ui/core/DialogTitle';
 import MuiDialogContent from '@material-ui/core/DialogContent';
@@ -74,21 +75,17 @@ export default function CustomizedDialogs() {
                 </div>
           <Dialog onClose={handleClose} aria-labelledby="customized-dialog-title" open={open}>
             <DialogTitle id="customized-dialog-title" onClose={handleClose}>
-              For Iphone and Ipad
+              For iPhone and iPad
             </DialogTitle>
-            <DialogContent dividers>
-              <Typography gutterBottom>
-               1. Launch Safari app
-              </Typography>
-              <Typography gutterBottom>
-               2. Enter the URL www.icanbewell.ca into the address field and tap “Go”
-              </Typography>
-              <Typography gutterBottom>
-               3. Tap the share button featuring the square with an arrow pointing out of it (at the bottom of the screen on an iPhone, top of screen on an iPad). Safari will open a drop-down menu
-              </Typography>
-              <Typography gutterBottom>
-                4. Scroll down the list of actions and tap “Add to Home Screen.” Enter the name for the shortcut and tap “Add” 
-              </Typography>
+            <DialogContent dividers className="Diacontent">
+              <h4>1. Launch icanbewell.ca via Safari</h4>
+              <img src={require('./images/instruction_1.png')} className="instructionimg" />
+              <h4>2. Tap share icon</h4>
+              <img src={require('./images/instruction_2.png')} className="instructionimg" />
+              <h4>3. Tap "Add to Home Screen"</h4>
+              <img src={require('./images/instruction_3.png')} className="instructionimg" />
+              <h4>4. Tap "Add" button</h4>
+              <img src={require('./images/instruction_4.png')} className="instructionimg" />
             </DialogContent>
             <DialogActions>
               <div className="closeButton">
@@ -101,25 +98,19 @@ export default function CustomizedDialogs() {
           else if(clientOS =='AndroidOS'){
             return <div>
               <div className="homescreen-button-english">
-                <button onClick={handleClickOpen}>Add to Home Screen</button>
+                <button onClick={handleClickOpen}>Add to Home Screen</button>&nbsp;
                 </div>
           <Dialog onClose={handleClose} aria-labelledby="customized-dialog-title" open={open}>
           <DialogTitle id="customized-dialog-title" onClose={handleClose}>
               For Android
             </DialogTitle>
-            <DialogContent dividers>
-              <Typography gutterBottom>
-               1. Launch Chrome app
-              </Typography>
-              <Typography gutterBottom>
-               2. Open the www.icanbewell.ca website
-              </Typography>
-              <Typography gutterBottom>
-                3. Tap the menu icon (3 dots in upper right-hand corner) and tap "Add to home screen"
-              </Typography>
-              <Typography gutterBottom>
-                4. Enter a name for the shortcut and then Chrome will add it to your home screen
-              </Typography>
+            <DialogContent dividers className="Diacontent">
+            <h4>1. Launch icanbewell.ca via Chrome</h4>
+              <img src={require('./images/android_1.jpg')} className="instructionimg" />
+              <h4>2. Tap menu icon</h4>
+              <img src={require('./images/android_2.jpg')} className="instructionimg" />
+              <h4>3. Tap "Add to Home Screen"</h4>
+              <img src={require('./images/android_3.jpg')} className="instructionimg" />
             </DialogContent>
             <DialogActions>
               <div className="closeButton">

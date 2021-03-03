@@ -74,21 +74,17 @@ export default function CustomizedDialogs() {
                 </div>
           <Dialog onClose={handleClose} aria-labelledby="customized-dialog-title" open={open}>
             <DialogTitle id="customized-dialog-title" onClose={handleClose}>
-            Pour Iphone et Ipad
+            Pour iPhone et iPad
             </DialogTitle>
-            <DialogContent dividers>
-              <Typography gutterBottom>
-              1. Lancez l'application Safari
-              </Typography>
-              <Typography gutterBottom>
-              2. Entrez dans le champ d'adresse, www.icanbewell.ca et appuyez sur《Accéder》
-              </Typography>
-              <Typography gutterBottom>
-              3. Appuyez sur l'icône 《Partage》(l'icône est en bas pour iPhone, en haut pour iPad) pour ouvrir un menu déroulant
-              </Typography>
-              <Typography gutterBottom>
-              4. Appuyez sur《Ajouter à l'écran d'accueil》. Saisissez le nom du raccourci à l'aide du clavier à l'écran et appuyez sur 《Ajouter》
-              </Typography>
+            <DialogContent dividers className="Diacontent">
+            <h4>1. Lancez icanbewell.ca via Safari</h4>
+              <img src={require('./images/instruction_1.png')} className="instructionimg" />
+              <h4>2. Appuyez sur l'icône de partage</h4>
+              <img src={require('./images/instruction_2.png')} className="instructionimg" />
+              <h4>3. Appuyez sur "Ajouter sur l'écran d'accueil"</h4>
+              <img src={require('./images/instruction_fren_1.png')} className="instructionimg" />
+              <h4>4. Appuyez sur le bouton "Ajouter"</h4>
+              <img src={require('./images/instruction_fren_2.png')} className="instructionimg" />
             </DialogContent>
             <DialogActions>
               <div className="closeButton">
@@ -101,25 +97,19 @@ export default function CustomizedDialogs() {
           else if(clientOS =='AndroidOS'){
             return <div>
               <div className="homescreen-button-french">
-                <button onClick={handleClickOpen}>Ajouter à l'écran d'accueil</button>
+              &nbsp;<button onClick={handleClickOpen}>Ajouter sur l'écran d'accueil</button>
                 </div>
           <Dialog onClose={handleClose} aria-labelledby="customized-dialog-title" open={open}>
           <DialogTitle id="customized-dialog-title" onClose={handleClose}>
           Pour Android
             </DialogTitle>
-            <DialogContent dividers>
-              <Typography gutterBottom>
-               1. Lancez l'application Chrome
-              </Typography>
-              <Typography gutterBottom>
-              2. Ouvrez le site Web de l'application www.icanbewell.ca
-              </Typography>
-              <Typography gutterBottom>
-              3. Appuyez sur l'icône du menu (3 points dans le coin supérieur droit) et appuyez sur《Ajouter à l'écran d'accueil》
-              </Typography>
-              <Typography gutterBottom>
-              4. Entrez un nom pour le raccourci, puis Chrome l'ajoutera à votre écran d'accueil
-              </Typography>
+            <DialogContent dividers className="Diacontent">
+            <h4>1. Lancez icanbewell.ca via Chrome</h4>
+              <img src={require('./images/android_1.jpg')} className="instructionimg" />
+              <h4>2. Appuyez sur l'icône de menu</h4>
+              <img src={require('./images/android_2.jpg')} className="instructionimg" />
+              <h4>3. Appuyez sur "Ajouter sur l'écran d'accueil"</h4>
+              <img src={require('./images/android_fren_1.png')} className="instructionimg" />
             </DialogContent>
             <DialogActions>
               <div className="closeButton">
