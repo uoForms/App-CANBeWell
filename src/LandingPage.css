@@ -130,6 +130,23 @@
   font-size: larger;
 }
 
+@media (max-width: 375px){
+  .homescreen-button-english {
+    text-align: right;
+    }
+}
+@media (min-width: 376px){
+  .homescreen-button-english {
+    text-align: right;
+    }
+}
+  .homescreen-button-french{
+  text-align: left;
+  }
+  .closeButton{
+  text-align: right;
+  }  
+
 .landing-notice-privacystmnt-english {
   position: relative;
   text-align: right;
@@ -176,6 +193,43 @@ font-size: larger;
   text-align: center;
 }
 
+.homescreen-eng{
+  position: relative;
+  width: 100%;
+  height: auto;
+  font-size: larger;
+}
+#homescreen-english{
+  width: 100%;
+  height: auto;
+  font-size: 10px;
+}
+.homescreen-button-english{
+  width: 100%;
+text-align: right;
+}
+.homescreen-fre{
+  position: relative;
+  text-align: left;
+  width: 100%;
+  height: auto;
+  font-size: larger;
+}
+#homescreen-french{
+  font-size: 10px;
+  width: 100%;
+  height: auto;
+}
+
+.instructionimg{
+  width: 100%;
+  height: 80%;
+  margin: 5px;
+}
+
+.Diacontent{
+  background-color:#D3D3D3
+}
 .nowrap{white-space:nowrap;}
 
 
