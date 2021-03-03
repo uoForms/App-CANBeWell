@@ -47,17 +47,17 @@ class LandingPage extends React.Component {
       <div className="landing-page">
         {this.state.language == "" || null ? (
           <div>
-            <div class="center">
+            <div className="center">
             <div className="landing-trans">
             TRANSGENDER Branch
             </div>
             </div>
-          <div class="landing-update">
-          <button class="videoButton" src={videofr} onClick={this.openVideofr}>Vidéo</button>
+          <div className="landing-update">
+          <button className="videoButton" src={videofr} onClick={this.openVideofr}>Vidéo</button>
           &nbsp;&nbsp;Mise à jour COVID Updated&nbsp;&nbsp;
-            <button class="videoButton" src={videoen} onClick={this.openVideoen}>Video</button>
+            <button className="videoButton" src={videoen} onClick={this.openVideoen}>Video</button>
           </div>
-           <img class="landing-logo" src={calllogo} alt="CANBeWellLogo" />
+           <img className="landing-logo" src={calllogo} alt="CANBeWellLogo" />
                 <div className="landing-button">
                   <a href="#"><img className="landing-button-img" src={callfren} onClick={this.handleChange2} /></a>
                 </div>
@@ -76,12 +76,16 @@ class LandingPage extends React.Component {
                 {/*<a href= "/iCanBeWell_PrivacyPolicy.htm" target="_blank">{"PrivacyStatement"}</a>*/}
                 <a href= "https://canbewell-uottawa.web.app/iCanBeWell_PrivacyPolicy.htm" className="landing-notice-english">{"Privacy Statement"} </a>
                 &nbsp;<a href= "#" className="slash">{<h4>&#124;</h4>} </a>
-                </div>
+              </div>
               </div>
               <div className="landingpage-notice-column">
               <div className="landing-notice-privacystmnt-french">
                 {/*<a href= "/politiquedeconfidentialite.htm" target="_blank">{"Politique de confidentialité"}</a>*/}
+                {/* <a href= "https://canbewell-uottawa.web.app/politiquedeconfidentialite.htm" >{"Politique de confidentialité"}</a> */}
+                {/* </div> */}
+                {/* <div id="homescreen-french"></div> */}
                 <a href= "https://canbewell-uottawa.web.app/politiquedeconfidentialite.htm" className="landing-notice-french">{"Politique de confidentialité"}</a>
+                
                 </div> 
               </div>
             </div>
@@ -89,10 +93,23 @@ class LandingPage extends React.Component {
                 <div className="landing-notice-privacystmnt">
                 Rester en santé avec cette ressource créée par vos professionnels de la santé canadiens
                 </div>
-            
+                <div className="landingpage-notice-row"> </div>
+            <div className="landingpage-notice-row">
+              <div className="landingpage-notice-column">
+                <div className="homescreen-eng">
+                  <div id="homescreen-english"></div>
+              </div>
+              </div>
+              <div className="landingpage-notice-column">
+                <div className="homescreen-fre">
+                <div id="homescreen-french"></div>
+                </div>
+              </div>
+            </div>
+
             <div className="landingButtons">
-              <button class="langLandButtonStyle" onClick={this.handleChange} >English</button>
-              <button class="langLandButtonStyle" onClick={this.handleChange2}>Français</button>
+              <button className="langLandButtonStyle" onClick={this.handleChange} >English</button>
+              <button className="langLandButtonStyle" onClick={this.handleChange2}>Français</button>
             </div>
           </div>
         ) : (

@@ -315,7 +315,6 @@ class Anatomy extends React.Component {
 
       //nonbinary:
       else if (this.props.gender === "nonbinary") {
-        console.log('nonbinary')
         return (
           <div>
             <div className="mainRunner">
@@ -443,10 +442,8 @@ class Anatomy extends React.Component {
 
       //transgender:
       else if (this.props.gender === "transgender") {
-        console.log('transgender')
         return (
           <div>
-            {console.log("abcdef")}
             <div className="mainRunner">
               <img className="body" src={TransBody} alt="transbody" />
               {/*TODO find organs that fits the body*/}
@@ -508,7 +505,6 @@ class Anatomy extends React.Component {
 
 
       else if (this.props.gender === "all_genders") {
-        console.log('allgender')
         return (
           <div>
             <div className="mainRunner">

@@ -26,7 +26,7 @@ import { unstable_renderSubtreeIntoContainer } from 'react-dom';
 //import {setPatientProvider} from './UserInfo';
 //import {setAge} from './UserInfo';
 import {getUserInfo} from './UserInfo';
-
+import {isTransgender} from './config';
 
 class App extends Component {
 
@@ -84,7 +84,7 @@ class App extends Component {
       preCat: null,
       preTime: null,
       showMe: true,
-      isTransgender: true //isTransgender -- Flag
+      isTransgender: isTransgender //isTransgender -- Flag
       //allowToClose: false, //obselete! we use to make the user agree before they could press agree
     };
 
@@ -134,13 +134,10 @@ class App extends Component {
       cookies.set('userID', clientId, { path: "/" });
     }
       
-    console.log('userid:',cookies.get('userID'))
-
     if( !cookies.get('sessionID') ) 
     {
         cookies.set('sessionID', uuidv4().toString(), { path: "/" });
     }
-    console.log('sessionid:',cookies.get('sessionID'))
     //setstate()
     this.setState({
       userID:cookies.get('userID'),
@@ -168,7 +165,6 @@ class App extends Component {
   }
 
   pageViewStateUpdater = ( nav, cat, time ) => {
-    console.log(cat+"app.js callback");
     this.setState({
       preNav: nav,
       preCat: cat,
@@ -208,7 +204,6 @@ class App extends Component {
 
   //Trangender Intruction modal
   toggleIntrutionModal = () => {
-    console.log('Trans');
     //Applying istransgender flag
     if(this.state.isTransgender){
     var genders = ["male", "female", "all_genders" , "nonbinary","transgender"];
@@ -232,11 +227,9 @@ class App extends Component {
     }
   }
   else {
-    console.log('master');
     var genders = ["male", "female", "all_genders"];
 
   if (genders.includes(this.state.gender) && ((this.state.age >= 18 && this.state.age <= 150) || this.state.allAgesSelected)) {
-    console.log('main1');
     const { cookies } = this.props;
     cookies.set('_onboarded', true, { path: '/' });
     this.setState({
@@ -521,7 +514,7 @@ class App extends Component {
 
     var allagescheckboxStyle = {
       display: 'block',
-      'margin-right':'140px',
+      'marginRight':'140px',
     };
     var fieldSelectionDiv = {
       display: 'block',
@@ -563,11 +556,11 @@ class App extends Component {
       fontWeight:'12px',
     };
     const termsOfUseStyle={
-      'margin-top':'10px'
+      'marginTop':'10px'
     };
     const underlineTextTermsOfUse={
-      'text-decoration': 'underline',
-      'font-weight': '400'
+      'textDecoration': 'underline',
+      'fontWeight': '400'
     }
 
     if (this.state.user == "patient") {
@@ -594,7 +587,6 @@ class App extends Component {
     //Transgender choose box
       if (this.state.instructionIsOpen) {
       //Transgender Instruction modal
-      console.log('instruction_Trans');
       instructionModal = [
         
         <div key="1" className="backdrop" style={backdropStyle}>
@@ -784,7 +776,6 @@ class App extends Component {
       //Master Choose box
       if (this.state.instructionIsOpen) {
         //Master Instruction modal
-        console.log("Instruction_Master");
 
       instructionModal = [
       <div key="1" className="backdrop" style={backdropStyle}>
