@@ -583,6 +583,7 @@ class App extends Component {
     var configurationModal = []; // top left choose which appears on main body page
     
  //Applying the isTransgender flag for first pop up choose box
+ console.log("print::::",isTransgender);
   if(this.state.isTransgender){
     //Transgender choose box
       if (this.state.instructionIsOpen) {
