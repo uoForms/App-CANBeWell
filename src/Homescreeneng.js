@@ -110,7 +110,7 @@ export default function CustomizedDialogs() {
               <h4>2. Tap menu icon</h4>
               <img src={require('./images/android_2.jpg')} className="instructionimg" />
               <h4>3. Tap "Add to Home Screen"</h4>
-              <img src={require('./images/android_3.jpg')} className="instructionimg" />
+              <img src={require('./images/android_eng_1.jpg')} className="instructionimg" />
             </DialogContent>
             <DialogActions>
               <div className="closeButton">
