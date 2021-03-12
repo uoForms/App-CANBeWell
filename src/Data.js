@@ -64,8 +64,8 @@ class Data {
           allGenders: genderCharArray.includes("all"),
           nonbinary: genderCharArray.includes("nb"),
           transgender: genderCharArray.includes("tg"),
-          afab:genderCharArray.includes("transfeminine"),
-          amab:genderCharArray.includes("transmasculine")
+          afab:genderCharArray.includes("transmasculine"),
+          amab:genderCharArray.includes("transfeminine")
 
         };
         return genderObj;
