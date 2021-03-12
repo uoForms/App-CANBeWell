@@ -64,8 +64,8 @@ class Data {
           allGenders: genderCharArray.includes("all"),
           nonbinary: genderCharArray.includes("nb"),
           transgender: genderCharArray.includes("tg"),
-          afab:genderCharArray.includes("af"),
-          amab:genderCharArray.includes("am")
+          afab:genderCharArray.includes("transfeminine"),
+          amab:genderCharArray.includes("transmasculine")
 
         };
         return genderObj;
@@ -210,8 +210,8 @@ class Data {
         allGenders: genderCharArray.includes("all"),
         nonbinary: genderCharArray.includes("nb"),
         transgender: genderCharArray.includes("tg"),
-        afab:genderCharArray.includes("af"),
-          amab:genderCharArray.includes("am")
+        afab:genderCharArray.includes("transfeminine"),
+          amab:genderCharArray.includes("transmasculine")
 
       };
       return genderObj;
@@ -319,8 +319,8 @@ class Data {
         allGenders: genderCharArray.includes("all"),
         nonbinary: genderCharArray.includes("nb"),
         transgender: genderCharArray.includes("tg"),
-        afab:genderCharArray.includes("af"),
-        amab:genderCharArray.includes("am")
+        afab:genderCharArray.includes("transfeminine"),
+        amab:genderCharArray.includes("transmasculine")
       };
       return genderObj;
     }
