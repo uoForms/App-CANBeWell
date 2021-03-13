@@ -139,6 +139,8 @@ export const GaUserEvent = (currNav, currCat, userInfo, timeDiff, preTime, currT
     userid: userInfo.userID,
     sessionid: userInfo.sessionID,
     gender: userInfo.gender,
+    //bb---
+    Tgender: userInfo.Tgender,
     age: userInfo.age,
     language: userInfo.language,
     role: userInfo.patient_provider,
@@ -163,6 +165,7 @@ export const GaUserEvent = (currNav, currCat, userInfo, timeDiff, preTime, currT
       userid: userInfo.userID,
       sessionid: userInfo.sessionID,
       gender: userInfo.gender,
+      Tgender: userInfo.Tgender,
       age: userInfo.age,
       language: userInfo.language,
       role: userInfo.patient_provider,
