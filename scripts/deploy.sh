@@ -1,1 +1,1 @@
-firebase deploy --token $FIREBASE_TOKEN --non-interactive
+firebase deploy --token $FIREBASE_TOKEN_TRANS --non-interactive
