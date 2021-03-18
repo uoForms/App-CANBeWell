@@ -79,7 +79,7 @@ class Data {
           for (var i = 0; i < list.length; i++) {
             if ((list[i]['Minimum age'] <= UserInfo.age && UserInfo.age <= list[i]['Maximum age']) || (UserInfo.age == "all ages") || (UserInfo.age == null)) {
               var jsonGender = handleGenderString(list[i]['Gender']);
-              if ((UserInfo.gender == "male" && jsonGender.male) || (UserInfo.gender == "female" && jsonGender.female) || (jsonGender.allGenders) || (UserInfo.gender == null) || (UserInfo.gender == "all_genders") || (UserInfo.gender == "nonbinary" && jsonGender.nonbinary)|| (UserInfo.gender == "transgender" && jsonGender.transgender) || (UserInfo.Tgender == "birth_male" && jsonGender.amab) || (UserInfo.Tgender == "birth_female" && jsonGender.afab)) {
+              if ((UserInfo.gender == "male" && jsonGender.male) || (UserInfo.gender == "female" && jsonGender.female) || (jsonGender.allGenders) || (UserInfo.gender == null) || (UserInfo.gender == "all_genders") || (UserInfo.gender == "nonbinary" && jsonGender.nonbinary)|| (UserInfo.gender == "transgender" && jsonGender.transgender) || (UserInfo.Tgender == "transfeminine" && jsonGender.amab) || (UserInfo.Tgender == "transmasculine" && jsonGender.afab)) {
                 if (list[i]["Button"].toLowerCase() == button) {
                   filteredList.push(
                     list[i]
@@ -224,7 +224,7 @@ class Data {
         for (var i = 0; i < list.length; i++) {
           if ((list[i]['Minimum age'] <= UserInfo.age && UserInfo.age <= list[i]['Maximum age']) || (UserInfo.age == "all ages") || (UserInfo.age == null)) {
             var jsonGender = handleGenderString(list[i]['Gender']);
-            if ((UserInfo.gender == "male" && jsonGender.male) || (UserInfo.gender == "female" && jsonGender.female) || (UserInfo.gender == "transgender" && jsonGender.transgender) || (UserInfo.gender == "nonbinary" && jsonGender.nonbinary) || (jsonGender.allGenders) || (UserInfo.gender == null) || (UserInfo.gender == "all_genders") || (UserInfo.Tgender == "birth_male" && jsonGender.amab) || (UserInfo.Tgender == "birth_female" && jsonGender.afab)) {
+            if ((UserInfo.gender == "male" && jsonGender.male) || (UserInfo.gender == "female" && jsonGender.female) || (UserInfo.gender == "transgender" && jsonGender.transgender) || (UserInfo.gender == "nonbinary" && jsonGender.nonbinary) || (jsonGender.allGenders) || (UserInfo.gender == null) || (UserInfo.gender == "all_genders") || (UserInfo.Tgender == "transfeminine" && jsonGender.amab) || (UserInfo.Tgender == "transmasculine" && jsonGender.afab)) {
               filteredList.push(
                 list[i]
               );
@@ -332,7 +332,7 @@ class Data {
         for (var i = 0; i < list.length; i++) {
           if ((list[i]['Minimum age'] <= UserInfo.age && UserInfo.age <= list[i]['Maximum age']) || (UserInfo.age == "all ages") || (UserInfo.age == null)) {
             var jsonGender = handleGenderString(list[i]['Gender']);
-            if ((UserInfo.gender == "male" && jsonGender.male) || (UserInfo.gender == "female" && jsonGender.female) || (jsonGender.allGenders) || (UserInfo.gender == null) || (UserInfo.gender == "all_genders") ||(UserInfo.gender == "nonbinary" && jsonGender.nonbinary)|| (UserInfo.gender == "transgender" && jsonGender.transgender) || (UserInfo.Tgender == "birth_male" && jsonGender.amab) || (UserInfo.Tgender == "birth_female" && jsonGender.afab)) {
+            if ((UserInfo.gender == "male" && jsonGender.male) || (UserInfo.gender == "female" && jsonGender.female) || (jsonGender.allGenders) || (UserInfo.gender == null) || (UserInfo.gender == "all_genders") ||(UserInfo.gender == "nonbinary" && jsonGender.nonbinary)|| (UserInfo.gender == "transgender" && jsonGender.transgender) || (UserInfo.Tgender == "transfeminine" && jsonGender.amab) || (UserInfo.Tgender == "transmasculine" && jsonGender.afab)) {
               filteredList.push(list[i]);
             }
           }
