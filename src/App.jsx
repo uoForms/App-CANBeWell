@@ -177,7 +177,7 @@ class App extends Component {
     //Transgener configuration modal
    if(this.state.isTransgender){
     var genders = ["male", "female", "all_genders" , "nonbinary","transgender"]; 
-    var Tgenders =["transfeminine","transmasculine"];
+    var Tgenders =["tf","tm"];
     if (genders.includes(this.state.gender) && ((this.state.age >= 18 && this.state.age <= 150) || this.state.allAgesSelected) && Tgenders.includes(this.state.Tgender)) {
       this.setState({
         configurationIsOpen: !this.state.configurationIsOpen
@@ -207,7 +207,7 @@ class App extends Component {
     //Applying istransgender flag
     if(this.state.isTransgender){
     var genders = ["male", "female", "all_genders" , "nonbinary","transgender"];
-    var Tgenders =["transfeminine","transmasculine"];
+    var Tgenders =["tf","tm"];
     if (genders.includes(this.state.gender) && ((this.state.age >= 18 && this.state.age <= 150) || this.state.allAgesSelected) && Tgenders.includes(this.state.Tgender) ) {
       const { cookies } = this.props;
       cookies.set('_onboarded', true, { path: '/' });
@@ -672,13 +672,13 @@ class App extends Component {
                    </div>
                       
                       <label id="birth_male_mod">
-                      <input type="radio" value="transfeminine" checked={this.state.Tgender == 'transfeminine'} onChange={this.handleTransGenderChange} />
-                      {this.state.lang.transfeminine}
+                      <input type="radio" value="tf" checked={this.state.Tgender == 'tf'} onChange={this.handleTransGenderChange} />
+                      {this.state.lang.tf}
                       </label>
                       <br/>
                       <label id="female_male_mod">
-                      <input type="radio" value="transmasculine" checked={this.state.Tgender == 'transmasculine'} onChange={this.handleTransGenderChange} />
-                      {this.state.lang.transmasculine}
+                      <input type="radio" value="tm" checked={this.state.Tgender == 'tm'} onChange={this.handleTransGenderChange} />
+                      {this.state.lang.tm}
                      </label>
                      </div>
                     <label id="help" className="checkAge">
@@ -998,13 +998,13 @@ class App extends Component {
                       <button className="button button25" onClick={this.helpClicked2}>?</button></strong>
                       <br/>
                       <label id="birth_male_mod">
-                      <input type="radio" value="transfeminine" checked={this.state.Tgender == 'transfeminine'} onChange={this.handleTransGenderChange} />
-                      {this.state.lang.transfeminine}
+                      <input type="radio" value="tf" checked={this.state.Tgender == 'tf'} onChange={this.handleTransGenderChange} />
+                      {this.state.lang.tf}
                       </label>
                       <br/>
                       <label id="female_male_mod">
-                      <input type="radio" value="transmasculine" checked={this.state.Tgender == 'transmasculine'} onChange={this.handleTransGenderChange} />
-                      {this.state.lang.transmasculine}
+                      <input type="radio" value="tm" checked={this.state.Tgender == 'tm'} onChange={this.handleTransGenderChange} />
+                      {this.state.lang.tm}
                      </label>
                      </div>
                       <label id="config_agehelp" className="checkAge">

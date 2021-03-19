@@ -305,7 +305,7 @@
     "Subject": "AFAB w/o top surgery",
     "General Patient Text": "Patient: Mammography q2 yrs from age 50-75",
     "Health Provider Text": "Provider: Mammography q2 yrs from age 50-75",
-    "Gender": "transmasculine",
+    "Gender": "tm",
     "Minimum age": 18,
     "Maximum age": 150
   },
@@ -315,7 +315,7 @@
     "Subject": "AFAB w/ top surgery",
     "General Patient Text": "Patient: Consider mammography q2 yrs from age 50-75 if leftover breast tissue; likely not needed",
     "Health Provider Text": "Provider: Consider mammography q2 yrs from age 50-75 if leftover breast tissue; likely not needed",
-    "Gender": "transmasculine",
+    "Gender": "tm",
     "Minimum age": 18,
     "Maximum age": 150
   },
@@ -325,7 +325,7 @@
     "Subject": "AMAB w/o top surgery",
     "General Patient Text": "Patient: Consider breast exam/ mammography q2 yrs from age 50-75 if on estrogen for more than 3-5 yrs",
     "Health Provider Text": "Provider: Consider breast exam/ mammography q2 yrs from age 50-75 if on estrogen for more than 3-5 yrs",
-    "Gender": "transfeminine",
+    "Gender": "tf",
     "Minimum age": 18,
     "Maximum age": 150
   },
@@ -335,7 +335,7 @@
     "Subject": "AMAB w/ top surgery",
     "General Patient Text": "Patient: Breast exam/mammography q2 yrs from age 50-75",
     "Health Provider Text": "Provider: Breast exam/mammography q2 yrs from age 50-75",
-    "Gender": "transfeminine",
+    "Gender": "tf",
     "Minimum age": 18,
     "Maximum age": 150
   },
@@ -385,7 +385,7 @@
     "Subject": "AFAB w/o bottom surgery",
     "General Patient Text": "Patient: Pap test q3 yrs from age 21-70 (Ontario)",
     "Health Provider Text": "Provider: Pap test q3 yrs from age 21-70 (Ontario)",
-    "Gender": "transmasculine",
+    "Gender": "tm",
     "Minimum age": 18,
     "Maximum age": 150
   },
@@ -395,7 +395,7 @@
     "Subject": "AFAB w/ bottom surgery",
     "General Patient Text": "Patient: Screen if cervix still present (depends on type of bottom surgery)",
     "Health Provider Text": "Provider: Screen if cervix still present (depends on type of bottom surgery)",
-    "Gender": "transmasculine",
+    "Gender": "tm",
     "Minimum age": 18,
     "Maximum age": 150
   },
@@ -405,7 +405,7 @@
     "Subject": "AMAB w/o bottom surgery",
     "General Patient Text": "Patient: No screening necessary",
     "Health Provider Text": "Provider: No screening necessary",
-    "Gender": "transfeminine",
+    "Gender": "tf",
     "Minimum age": 18,
     "Maximum age": 150
   },
@@ -415,7 +415,7 @@
     "Subject": "AMAB w/ bottom surgery",
     "General Patient Text": "Patient: Consider Pap test q3 yrs from age 21-70, particularly if neovagina made from penile tissue",
     "Health Provider Text": "Provider: Consider Pap test q3 yrs from age 21-70, particularly if neovagina made from penile tissue",
-    "Gender": "transfeminine",
+    "Gender": "tf",
     "Minimum age": 18,
     "Maximum age": 150
   },
@@ -565,7 +565,7 @@
     "Subject": "Ovarian cancer",
     "General Patient Text": "Patient: Same as cis women/discuss with provider (not all bottom surgeries include oophorectomy)",
     "Health Provider Text": "Provider: Same as cis women/discuss with provider (not all bottom surgeries include oophorectomy)",
-    "Gender": "transmasculine",
+    "Gender": "tm",
     "Minimum age": 18,
     "Maximum age": 150
   },
@@ -575,7 +575,7 @@
     "Subject": "Ovarian cancer",
     "General Patient Text": "Patient: No screening",
     "Health Provider Text": "Provider: No screening",
-    "Gender": "transfeminine",
+    "Gender": "tf",
     "Minimum age": 18,
     "Maximum age": 150
   },
@@ -1035,7 +1035,7 @@
     "Subject": "Prostate Cancer",
     "General Patient Text": "Patient: No screening",
     "Health Provider Text": "Provider: No screening",
-    "Gender": "transmasculine",
+    "Gender": "tm",
     "Minimum age": 18,
     "Maximum age": 150
   },
@@ -1045,7 +1045,7 @@
     "Subject": "Prostate Cancer",
     "General Patient Text": "Patient:  Same as cis men/discuss with provider (bottom surgery does not remove the prostate)",
     "Health Provider Text": "Provider:  Same as cis men/discuss with provider (bottom surgery does not remove the prostate)",
-    "Gender": "transfeminine",
+    "Gender": "tf",
     "Minimum age": 18,
     "Maximum age": 150
   },
@@ -1065,7 +1065,7 @@
     "Subject": "Contraception (Subject)",
     "General Patient Text": "Patient: Any hormonal/barrier methods can used (no contraindications with testosterone)",
     "Health Provider Text": "Provider: Any hormonal/barrier methods can used (no contraindications with testosterone)",
-    "Gender": "transmasculine",
+    "Gender": "tm",
     "Minimum age": 18,
     "Maximum age": 150
   },
@@ -1075,7 +1075,7 @@
     "Subject": "Contraception (Subject)",
     "General Patient Text": "Patient: Use barrier method (or have partner use hormonal contraception) if no bottom surgery and having intercourse with partner who could get pregnant",
     "Health Provider Text": "Provider: Use barrier method (or have partner use hormonal contraception) if no bottom surgery and having intercourse with partner who could get pregnant",
-    "Gender": "transfeminine",
+    "Gender": "tf",
     "Minimum age": 18,
     "Maximum age": 150
   },
@@ -1215,7 +1215,7 @@
     "Subject": "Osteoporosis",
     "General Patient Text": "Patient: Generally same as cis patients but considered high risk if not on ANY hormones for prolonged periods (e.g. no estrogen or testosterone)",
     "Health Provider Text": "Provider: Generally same as cis patients but considered high risk if not on ANY hormones for prolonged periods (e.g. no estrogen or testosterone)",
-    "Gender": "transmasculine",
+    "Gender": "tm",
     "Minimum age": 18,
     "Maximum age": 150
   },
@@ -1225,7 +1225,7 @@
     "Subject": "Osteoporosis",
     "General Patient Text": "Patient: Generally same as cis patients but considered high risk if not on ANY hormones for prolonged periods (e.g. no estrogen or testosterone)",
     "Health Provider Text": "Provider: Generally same as cis patients but considered high risk if not on ANY hormones for prolonged periods (e.g. no estrogen or testosterone)",
-    "Gender": "transfeminine",
+    "Gender": "tf",
     "Minimum age": 18,
     "Maximum age": 150
   }

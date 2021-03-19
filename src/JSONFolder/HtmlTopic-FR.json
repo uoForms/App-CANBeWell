@@ -295,7 +295,7 @@
     "Subject": "Cancer de la prostate",
     "General Patient Text": "Patient: pas de dépistage",
     "Health Provider Text": "Fournisseur: pas de dépistage",
-    "Gender": "transmasculine",
+    "Gender": "tm",
     "Minimum age": 18,
     "Maximum age": 150
   },
@@ -305,7 +305,7 @@
     "Subject": "Cancer de la prostate",
     "General Patient Text": "Patient: Identique aux hommes cis / discuter avec le prestataire (la chirurgie du bas ne retire pas la prostate)",
     "Health Provider Text": "",
-    "Gender": "transfeminine",
+    "Gender": "tf",
     "Minimum age": 18,
     "Maximum age": 150
   },
@@ -325,7 +325,7 @@
     "Subject": "Contraception (sujet)",
     "General Patient Text": "Patient: toutes les méthodes hormonales / barrières peuvent être utilisées (pas de contre-indications avec la testostérone)",
     "Health Provider Text": "Fournisseur: Toutes les méthodes hormonales / barrières peuvent être utilisées (pas de contre-indications avec la testostérone)",
-    "Gender": "transmasculine",
+    "Gender": "tm",
     "Minimum age": 18,
     "Maximum age": 150
   },
@@ -335,7 +335,7 @@
     "Subject": "Contraception (sujet)",
     "General Patient Text": "Patient: utiliser une méthode de barrière (ou demander à un partenaire d'utiliser une contraception hormonale) en l'absence de chirurgie du bas et avoir des relations sexuelles avec un partenaire qui pourrait tomber enceinte",
     "Health Provider Text": "Prestataire: utilisez une méthode de barrière (ou demandez à votre partenaire d'utiliser une contraception hormonale) s'il n'y a pas de chirurgie du bas et si vous avez des relations sexuelles avec un partenaire qui pourrait tomber enceinte",
-    "Gender": "transfeminine",
+    "Gender": "tf",
     "Minimum age": 18,
     "Maximum age": 150
   },
@@ -445,7 +445,7 @@
     "Subject": "AFAB sans chirurgie top",
     "General Patient Text": "Patient: mammographie toutes les 2 ans de 50 à 75 ans",
     "Health Provider Text": "Prestataire: mammographie toutes les 2 ans de 50 à 75 ans",
-    "Gender": "transmasculine",
+    "Gender": "tm",
     "Minimum age": 18,
     "Maximum age": 150
   },
@@ -455,7 +455,7 @@
     "Subject": "AFAB sans chirurgie top",
     "General Patient Text": "Patiente: envisager une mammographie toutes les 2 ans entre 50 et 75 ans en cas de surplus de tissu mammaire; probablement pas nécessaire",
     "Health Provider Text": "Prestataire: envisager une mammographie toutes les 2 ans entre 50 et 75 ans s'il y a des restes de tissu mammaire; probablement pas nécessaire",
-    "Gender": "transmasculine",
+    "Gender": "tm",
     "Minimum age": 18,
     "Maximum age": 150
   },
@@ -465,7 +465,7 @@
     "Subject": "AMAB sans chirurgie supérieure",
     "General Patient Text": "Patiente: envisager un examen des seins / une mammographie toutes les 2 ans entre 50 et 75 ans si elle est sous œstrogène pendant plus de 3 à 5 ans",
     "Health Provider Text": "Prestataire: envisager un examen des seins / une mammographie toutes les 2 ans entre 50 et 75 ans si vous prenez des œstrogènes pendant plus de 3 à 5 ans",
-    "Gender": "transfeminine",
+    "Gender": "tf",
     "Minimum age": 18,
     "Maximum age": 150
   },
@@ -475,7 +475,7 @@
     "Subject": "AMAB sans chirurgie supérieure",
     "General Patient Text": "Patiente: examen des seins / mammographie toutes les 2 ans de 50 à 75 ans",
     "Health Provider Text": "Prestataire: examen des seins / mammographie tous les 2 ans de 50 à 75 ans",
-    "Gender": "transfeminine",
+    "Gender": "tf",
     "Minimum age": 18,
     "Maximum age": 150
   },
@@ -525,7 +525,7 @@
     "Subject": "AFAB avec chirurgie du bas",
     "General Patient Text": "Patient: test Pap aux 3 ans de 21 à 70 ans (Ontario)",
     "Health Provider Text": "Fournisseur: test Pap aux 3 ans de 21 à 70 ans (Ontario)",
-    "Gender": "transmasculine",
+    "Gender": "tm",
     "Minimum age": 18,
     "Maximum age": 150
   },
@@ -535,7 +535,7 @@
     "Subject": "AFAB avec chirurgie du bas",
     "General Patient Text": "Patient: dépistage si le col de l'utérus est toujours présent (dépend du type de chirurgie du bas)",
     "Health Provider Text": "Prestataire: dépistage si le col de l'utérus est toujours présent (dépend du type de chirurgie du bas)",
-    "Gender": "transmasculine",
+    "Gender": "tm",
     "Minimum age": 18,
     "Maximum age": 150
   },
@@ -545,7 +545,7 @@
     "Subject": "AMAB sans chirurgie du bas",
     "General Patient Text": "Patient: aucun dépistage nécessaire",
     "Health Provider Text": "Fournisseur: Aucun dépistage nécessaire",
-    "Gender": "transfeminine",
+    "Gender": "tf",
     "Minimum age": 18,
     "Maximum age": 150
   },
@@ -555,7 +555,7 @@
     "Subject": "AMAB sans chirurgie du bas",
     "General Patient Text": "Patient: envisager un test Pap toutes les 3 ans entre 21 et 70 ans, en particulier si la néovagine est faite de tissu pénien",
     "Health Provider Text": "Prestataire: envisager un test Pap toutes les 3 ans entre 21 et 70 ans, en particulier si le néovagin est fabriqué à partir de tissu pénien",
-    "Gender": "transfeminine",
+    "Gender": "tf",
     "Minimum age": 18,
     "Maximum age": 150
   },
@@ -885,7 +885,7 @@
     "Subject": "Cancer des ovaires",
     "General Patient Text": "Patient: Identique aux femmes cis / discuter avec le prestataire (toutes les chirurgies du bas n'incluent pas l'ovariectomie)",
     "Health Provider Text": "Prestataire: Identique aux femmes cis / discuter avec le prestataire (toutes les chirurgies du bas n'incluent pas l'ovariectomie)",
-    "Gender": "transmasculine",
+    "Gender": "tm",
     "Minimum age": 18,
     "Maximum age": 150
   },
@@ -895,7 +895,7 @@
     "Subject": "Cancer des ovaires",
     "General Patient Text": "Patient: pas de dépistage",
     "Health Provider Text": "Fournisseur: pas de dépistage",
-    "Gender": "transfeminine",
+    "Gender": "tf",
     "Minimum age": 18,
     "Maximum age": 150
   },
@@ -985,7 +985,7 @@
     "Subject": "L'ostéoporose",
     "General Patient Text": "Patient ostéopororique du 3e corps",
     "Health Provider Text": "Fournisseur d'ostéopororsie du 3e corps",
-    "Gender": "transmasculine",
+    "Gender": "tm",
     "Minimum age": 18,
     "Maximum age": 150
   },
@@ -995,7 +995,7 @@
     "Subject": "L'ostéoporose",
     "General Patient Text": "Patient: Généralement identique aux patients cis, mais considéré à risque élevé s'il ne prend AUCUNE hormone pendant des périodes prolongées (par exemple sans œstrogène ou testostérone)",
     "Health Provider Text": "Prestataire: Généralement identique aux patients cis, mais considéré à risque élevé s'ils ne prennent AUCUNE hormone pendant des périodes prolongées (par exemple, pas d'œstrogène ou de testostérone)",
-    "Gender": "transfeminine",
+    "Gender": "tf",
     "Minimum age": 18,
     "Maximum age": 150
   },

@@ -196,7 +196,7 @@ class Anatomy extends React.Component {
     //Applying istrangender flag
     if (this.props.isTransgender) {
       //Transgender Body Options
-      if (this.props.gender === "male" && this.props.Tgender === "transfeminine") {
+      if (this.props.gender === "male" && this.props.Tgender === "tf") {
         return (
           <div>
             <div className="mainRunner">
@@ -252,7 +252,7 @@ class Anatomy extends React.Component {
         );
       }
 
-      else if (this.props.gender === "female" && this.props.Tgender === "transmasculine") {
+      else if (this.props.gender === "female" && this.props.Tgender === "tm") {
         return (
           <div>
             <div className="mainRunner">
@@ -372,7 +372,7 @@ class Anatomy extends React.Component {
       //end of nonbinary
 
       //birthchangesstart
-      else if ((this.props.gender === "male" && this.props.Tgender === "transmasculine") || (this.props.gender === "female" && this.props.Tgender === "transfeminine")) {
+      else if ((this.props.gender === "male" && this.props.Tgender === "tm") || (this.props.gender === "female" && this.props.Tgender === "tf")) {
         return (
           <div>
             <div className="mainRunner">

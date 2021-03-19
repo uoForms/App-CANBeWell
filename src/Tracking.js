@@ -139,7 +139,7 @@ export const GaUserEvent = (currNav, currCat, userInfo, timeDiff, preTime, currT
     userid: userInfo.userID,
     sessionid: userInfo.sessionID,
     gender: userInfo.gender,
-    Tgender: ((userInfo.Tgender === "transmasculine" && userInfo.gender === "female") || (userInfo.Tgender === "transfeminine" && userInfo.gender === "male")) ? userInfo.gender: userInfo.Tgender,
+    Tgender: ((userInfo.Tgender === "tm" && userInfo.gender === "female") || (userInfo.Tgender === "tf" && userInfo.gender === "male")) ? userInfo.gender: userInfo.Tgender,
     age: userInfo.age,
     language: userInfo.language,
     role: userInfo.patient_provider,
