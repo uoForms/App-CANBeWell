@@ -59,11 +59,11 @@ class Data {
         var genderObj = {
           female: genderCharArray.includes("f"),
           male: genderCharArray.includes("m"),
-          // transMale: genderCharArray.includes("fm"),
-          // transFemale: genderCharArray.includes("mf"),
+          transMale: genderCharArray.includes("fm"),
+          transFemale: genderCharArray.includes("mf"),
           allGenders: genderCharArray.includes("all"),
           nonbinary: genderCharArray.includes("nb"),
-          // transgender: genderCharArray.includes("tg"),
+          transgender: genderCharArray.includes("tg"),
           afab:genderCharArray.includes("tm"),
           amab:genderCharArray.includes("tf")
 
@@ -205,11 +205,11 @@ class Data {
       var genderObj = {
         female: genderCharArray.includes("f"),
         male: genderCharArray.includes("m"),
-        // transMale: genderCharArray.includes("fm"),
-        // transFemale: genderCharArray.includes("mf"),
+        transMale: genderCharArray.includes("fm"),
+        transFemale: genderCharArray.includes("mf"),
         allGenders: genderCharArray.includes("all"),
         nonbinary: genderCharArray.includes("nb"),
-        // transgender: genderCharArray.includes("tg"),
+        transgender: genderCharArray.includes("tg"),
         afab:genderCharArray.includes("tm"),
           amab:genderCharArray.includes("tf")
 
@@ -314,11 +314,11 @@ class Data {
       var genderObj = {
         female: genderCharArray.includes("f"),
         male: genderCharArray.includes("m"),
-        // transMale: genderCharArray.includes("fm"),
-        // transFemale: genderCharArray.includes("mf"),
+        transMale: genderCharArray.includes("fm"),
+        transFemale: genderCharArray.includes("mf"),
         allGenders: genderCharArray.includes("all"),
         nonbinary: genderCharArray.includes("nb"),
-        // transgender: genderCharArray.includes("tg"),
+        transgender: genderCharArray.includes("tg"),
         afab:genderCharArray.includes("tf"),
         amab:genderCharArray.includes("tm")
       };
