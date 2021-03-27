@@ -32,7 +32,7 @@
     "ageandgender_help": "Please select a value for each of age, gender and sex assigned at birth",
     "age_help": "Please enter a value between 18 and 150 for age",
     "age_void": "Please enter details and click Accept",
-    "age_selector_place_holder": "Enter patient age",
+    "age_selector_place_holder": "Enter patient ageg",
     "agree": "I accept the terms of use",
     "disclaimerBeforeTermsOfUse":"The Content of the website is not intended to be a substitute for professional medical advice, diagnosis, or treatment. The information provided through the Website applies only to Canadian adults and is not valid for use outside of Canada.",
     "accpetanceheading": "Acceptance of the Website Terms of Use",
