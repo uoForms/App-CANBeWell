@@ -13,6 +13,7 @@
     "important":"The application and all content is copyrighted. You are not allowed to copy, share or distribute. No part of the app can be used for sale.",
     "user_selector": "User: ",
     "patient": "Patient",
+    // Commenting for testing.  
     "provider": "Provider",
     "gender_selector": "Gender: ",
     "Tgender_selector": "Sex assigned at birth: ",
