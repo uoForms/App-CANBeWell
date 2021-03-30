@@ -72,7 +72,7 @@ class App extends Component {
       firstTime: true,
       onboarded: cookies.get('_onboarded'),
       instructionIsOpen: (cookies.get('_onboarded') == "true") ? false : true,
-      age: cookies.get('age'),
+      age: cookies.get('age')>= 18 && cookies.get ('age') <=150? cookies.get('age'): '',
       allAgesSelectedCookie: cookies.get('_all_ages_selected'), //a string for some reason
       allAgesSelected: (cookies.get('_all_ages_selected') == "true") ? true : false,
       user: cookies.get('user') || 'patient',
@@ -227,6 +227,7 @@ class App extends Component {
     }
   }
   else {
+      //Master Intruction modal 
     var genders = ["male", "female", "all_genders"];
 
   if (genders.includes(this.state.gender) && ((this.state.age >= 18 && this.state.age <= 150) || this.state.allAgesSelected)) {
@@ -236,9 +237,15 @@ class App extends Component {
       instructionIsOpen: !this.state.instructionIsOpen
     });
     document.getElementById("help").style.display = "none";
+    document.getElementById("agehelp").style.display = "none";
+  }
+  else if(!genders.includes(this.state.gender)){
+    document.getElementById("help").style.display = "block";
+    document.getElementById("agehelp").style.display = "none";
   }
   else {
-    document.getElementById("help").style.display = "block";
+    document.getElementById("help").style.display = "none";
+    document.getElementById("agehelp").style.display = "block";
   }
 
   } 
@@ -830,7 +837,11 @@ class App extends Component {
                 <label style={allagescheckboxStyle}>
                   <input id='myCheck' type="checkbox" checked={this.state.allAgesSelected} onChange={this.handleAllAgesSelected} />{this.state.lang.all_ages}
                 </label>
+                
                 <label id="help" className="checkAge">
+                  <h5>{this.state.lang.gender_help}</h5>
+                </label>
+                <label id="agehelp" className="checkAge">
                   <h5>{this.state.lang.age_help}</h5>
                 </label>
               </div>
@@ -841,7 +852,7 @@ class App extends Component {
           <b>{this.state.lang.disclaimer_header}</b>
 
           <div style={myDisclaimerStyle}>
-                    <p>
+                    <div>
                         <div dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(this.state.lang.disclaimerBeforeTermsOfUse)}}></div>
                         <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.accpetanceheading}</div>
                         <div dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(this.state.lang.acceptanceInitialStatement)}}></div>
@@ -906,7 +917,7 @@ class App extends Component {
                         <div>{this.state.lang.entireAgreementText}</div>
 
                         <div>{this.state.lang.dateofAgreement}</div>
-                    </p>
+                    </div>
           </div>             
           </div> 
           <div>
