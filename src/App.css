@@ -229,7 +229,9 @@ body {
 
 
 #male_radio{
-  margin-right:  186px;
+  /* margin-right:  186px; */
+  /* margin-right:  160px; */
+  margin-left: -183px;
 }
 
 #birth_male_mod{
@@ -419,4 +421,8 @@ summary:after {
   .gender_mod{
     margin-right: 156px;
   }
+}
+
+.table_row_modal {
+  text-align: left;
 }
