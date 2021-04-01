@@ -178,7 +178,8 @@ export const GaUserEvent = (currNav, currCat, userInfo, timeDiff, preTime, currT
       pageviewtime: timeDiff,
       gcheck: userInfo.gcheck
     }
-    writeClick(preLabel, preTime);
+    //commenting out this call to avoid rewriting the logging values in firebase db -- # issue -330.
+    //writeClick(preLabel, preTime);
   }
   else {
 

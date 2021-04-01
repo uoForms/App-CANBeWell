@@ -1108,22 +1108,22 @@ class App extends Component {
             <a id="test" onClick={this.testsClicked}>{this.state.lang.top_nav_tests}</a>
           </h3>
         </div>
-
+        
         <div className="userinfo-row">
           {/*display user's info*/}
           <Button variant="outline-dark" size='lg' onClick={this.genderIconClicked} className="userInfoStyle">
             <h4>
               <IoIosSettings /> {this.state.lang[this.state.user]}
-              {/*this.state.lang.display_gender*/} {this.state.lang[this.state.gender]} | {this.state.age == "all ages" ? this.state.lang.all_ages : this.state.age}
+               {/*this.state.lang.display_gender*/} {[(this.state.gender == "male"  && this.state.Tgender == "tf") ?  this.state.gender
+               : (this.state.gender == "female" && this.state.Tgender == "tm") ? this.state.gender
+               : (!this.state.isTransgender && (this.state.gender == "male" || this.state.gender == "female" )) ? this.state.gender
+               : (this.state.gender == "male" && this.state.Tgender == "tm") ? "Transmasculine"
+               : (this.state.gender == "female" && this.state.Tgender == "tf") ? "Transfeminine"
+               : (this.state.gender == "nonbinary" ? this.state.gender : this.state.Tgender)]} 
+               | {this.state.age == "all ages" ? this.state.lang.all_ages : this.state.age}
               {/*this.state.lang.display_age*/} 
             </h4>
           </Button>
-          {/* <Button variant="outline-dark" href="https://www.surveymonkey.ca/r/95ZW3VZ" size='lg' className="survey-reminder" target="_blank">
-           <h4>
-            {this.state.language === "english" ? "Take the Survey" : "Prenez le sondage"}
-              <AiOutlineExclamationCircle />
-            </h4>
-          </Button> */}
         </div>
 
         <div>
