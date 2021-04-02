@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import TopicListFR from './JSONFolder/HtmlTopic-FR.json';
 import TopicListEN from './JSONFolder/HtmlTopic-EN.json';
 import Lang from './Lang/Lang.json';
+import {isTransgender} from './config';
 
 class Data {
 
@@ -79,17 +80,58 @@ class Data {
           for (var i = 0; i < list.length; i++) {
             if ((list[i]['Minimum age'] <= UserInfo.age && UserInfo.age <= list[i]['Maximum age']) || (UserInfo.age == "all ages") || (UserInfo.age == null)) {
               var jsonGender = handleGenderString(list[i]['Gender']);
-              if ((UserInfo.gender == "male" && jsonGender.male) || (UserInfo.gender == "female" && jsonGender.female) || (jsonGender.allGenders) || (UserInfo.gender == null) || (UserInfo.gender == "all_genders") || (UserInfo.gender == "nonbinary" && jsonGender.nonbinary)|| (UserInfo.gender == "transgender" && jsonGender.transgender) || (UserInfo.Tgender == "tf" && jsonGender.amab) || (UserInfo.Tgender == "tm" && jsonGender.afab)) {
-                if (list[i]["Button"].toLowerCase() == button) {
-                  filteredList.push(
-                    list[i]
-                  );
+              if(!isTransgender){
+                if((UserInfo.gender == "male" && jsonGender.male) || (UserInfo.gender == "female" && jsonGender.female) || (jsonGender.allGenders) || (UserInfo.gender == null)){
+                  if (list[i]["Button"].toLowerCase() == button) {
+                    filteredList.push(
+                      list[i]
+                    );
+                  }
+                }
+              }
+              if(isTransgender){
+                if(UserInfo.Tgender == "tf" && UserInfo.gender == "male" && jsonGender.male){
+                  if (list[i]["Button"].toLowerCase() == button) {
+                    filteredList.push(
+                      list[i]
+                    );
+                  }
+                }
+                if(UserInfo.Tgender == "tm" && UserInfo.gender == "female" && jsonGender.female){
+                  if (list[i]["Button"].toLowerCase() == button) {
+                    filteredList.push(
+                      list[i]
+                    );
+                  }
+                }
+                if(UserInfo.Tgender == "tm" && UserInfo.gender == "male" && jsonGender.afab){
+                  if (list[i]["Button"].toLowerCase() == button) {
+                    filteredList.push(
+                      list[i]
+                    );
+                  }
+                }
+                if(UserInfo.Tgender == "tf" && UserInfo.gender == "female" && jsonGender.amab){
+                  if (list[i]["Button"].toLowerCase() == button) {
+                    filteredList.push(
+                      list[i]
+                    );
+                  }
+                }
+                if((UserInfo.gender == "nonbinary" && jsonGender.nonbinary) || (jsonGender.allGenders) || (UserInfo.gender == null)){
+                  if (list[i]["Button"].toLowerCase() == button) {
+                    filteredList.push(
+                      list[i]
+                    );
+                  }
                 }
               }
             }
           }
         }
-        catch (err) { }
+        catch (err) {
+          //nothing
+        }
         return filteredList;
 
       }
@@ -224,10 +266,39 @@ class Data {
         for (var i = 0; i < list.length; i++) {
           if ((list[i]['Minimum age'] <= UserInfo.age && UserInfo.age <= list[i]['Maximum age']) || (UserInfo.age == "all ages") || (UserInfo.age == null)) {
             var jsonGender = handleGenderString(list[i]['Gender']);
-            if ((UserInfo.gender == "male" && jsonGender.male) || (UserInfo.gender == "female" && jsonGender.female) || (UserInfo.gender == "transgender" && jsonGender.transgender) || (UserInfo.gender == "nonbinary" && jsonGender.nonbinary) || (jsonGender.allGenders) || (UserInfo.gender == null) || (UserInfo.gender == "all_genders") || (UserInfo.Tgender == "tf" && jsonGender.amab) || (UserInfo.Tgender == "tm" && jsonGender.afab)) {
-              filteredList.push(
-                list[i]
-              );
+            if(!isTransgender){
+              if((UserInfo.gender == "male" && jsonGender.male) || (UserInfo.gender == "female" && jsonGender.female) || (jsonGender.allGenders) || (UserInfo.gender == null)){
+                filteredList.push(
+                  list[i]
+                );
+              }
+            }
+            if(isTransgender){
+              if(UserInfo.Tgender == "tf" && UserInfo.gender == "male" && jsonGender.male){
+                filteredList.push(
+                  list[i]
+                );
+              }
+              if(UserInfo.Tgender == "tm" && UserInfo.gender == "female" && jsonGender.female){
+                filteredList.push(
+                  list[i]
+                );
+              }
+              if(UserInfo.Tgender == "tm" && UserInfo.gender == "male" && jsonGender.afab){
+                filteredList.push(
+                  list[i]
+                );
+              }
+              if(UserInfo.Tgender == "tf" && UserInfo.gender == "female" && jsonGender.amab){
+                filteredList.push(
+                  list[i]
+                );
+              }
+              if((UserInfo.gender == "nonbinary" && jsonGender.nonbinary) || (jsonGender.allGenders) || (UserInfo.gender == null)){
+                filteredList.push(
+                  list[i]
+                );
+              }
             }
           }
         }
@@ -332,8 +403,27 @@ class Data {
         for (var i = 0; i < list.length; i++) {
           if ((list[i]['Minimum age'] <= UserInfo.age && UserInfo.age <= list[i]['Maximum age']) || (UserInfo.age == "all ages") || (UserInfo.age == null)) {
             var jsonGender = handleGenderString(list[i]['Gender']);
-            if ((UserInfo.gender == "male" && jsonGender.male) || (UserInfo.gender == "female" && jsonGender.female) || (jsonGender.allGenders) || (UserInfo.gender == null) || (UserInfo.gender == "all_genders") ||(UserInfo.gender == "nonbinary" && jsonGender.nonbinary)|| (UserInfo.gender == "transgender" && jsonGender.transgender) || (UserInfo.Tgender == "tf" && jsonGender.amab) || (UserInfo.Tgender == "tm" && jsonGender.afab)) {
-              filteredList.push(list[i]);
+            if(!isTransgender){
+              if((UserInfo.gender == "male" && jsonGender.male) || (UserInfo.gender == "female" && jsonGender.female) || (jsonGender.allGenders) || (UserInfo.gender == null)){
+                filteredList.push(list[i]);
+              }
+            }
+            if(isTransgender){
+              if(UserInfo.Tgender == "tf" && UserInfo.gender == "male" && jsonGender.male){
+                filteredList.push(list[i]);
+              }
+              if(UserInfo.Tgender == "tm" && UserInfo.gender == "female" && jsonGender.female){
+                filteredList.push(list[i]);
+              }
+              if(UserInfo.Tgender == "tm" && UserInfo.gender == "male" && jsonGender.afab){
+                filteredList.push(list[i]);
+              }
+              if(UserInfo.Tgender == "tf" && UserInfo.gender == "female" && jsonGender.amab){
+                filteredList.push(list[i]);
+              }
+              if((UserInfo.gender == "nonbinary" && jsonGender.nonbinary) || (jsonGender.allGenders) || (UserInfo.gender == null)){
+                filteredList.push(list[i]);
+              }
             }
           }
         }
