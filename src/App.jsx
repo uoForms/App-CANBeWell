@@ -72,7 +72,7 @@ class App extends Component {
       firstTime: true,
       onboarded: cookies.get('_onboarded'),
       instructionIsOpen: (cookies.get('_onboarded') == "true") ? false : true,
-      age: cookies.get('age'),
+      age: cookies.get('age')>= 18 && cookies.get ('age') <=150? cookies.get('age'): '',
       allAgesSelectedCookie: cookies.get('_all_ages_selected'), //a string for some reason
       allAgesSelected: (cookies.get('_all_ages_selected') == "true") ? true : false,
       user: cookies.get('user') || 'patient',
@@ -227,6 +227,7 @@ class App extends Component {
     }
   }
   else {
+      //Master Intruction modal 
     var genders = ["male", "female", "all_genders"];
 
   if (genders.includes(this.state.gender) && ((this.state.age >= 18 && this.state.age <= 150) || this.state.allAgesSelected)) {
@@ -236,9 +237,15 @@ class App extends Component {
       instructionIsOpen: !this.state.instructionIsOpen
     });
     document.getElementById("help").style.display = "none";
+    document.getElementById("agehelp").style.display = "none";
+  }
+  else if(!genders.includes(this.state.gender)){
+    document.getElementById("help").style.display = "block";
+    document.getElementById("agehelp").style.display = "none";
   }
   else {
-    document.getElementById("help").style.display = "block";
+    document.getElementById("help").style.display = "none";
+    document.getElementById("agehelp").style.display = "block";
   }
 
   } 
@@ -830,7 +837,11 @@ class App extends Component {
                 <label style={allagescheckboxStyle}>
                   <input id='myCheck' type="checkbox" checked={this.state.allAgesSelected} onChange={this.handleAllAgesSelected} />{this.state.lang.all_ages}
                 </label>
+                
                 <label id="help" className="checkAge">
+                  <h5>{this.state.lang.gender_help}</h5>
+                </label>
+                <label id="agehelp" className="checkAge">
                   <h5>{this.state.lang.age_help}</h5>
                 </label>
               </div>
@@ -841,7 +852,7 @@ class App extends Component {
           <b>{this.state.lang.disclaimer_header}</b>
 
           <div style={myDisclaimerStyle}>
-                    <p>
+                    <div>
                         <div dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(this.state.lang.disclaimerBeforeTermsOfUse)}}></div>
                         <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.accpetanceheading}</div>
                         <div dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(this.state.lang.acceptanceInitialStatement)}}></div>
@@ -906,7 +917,7 @@ class App extends Component {
                         <div>{this.state.lang.entireAgreementText}</div>
 
                         <div>{this.state.lang.dateofAgreement}</div>
-                    </p>
+                    </div>
           </div>             
           </div> 
           <div>
@@ -1108,22 +1119,22 @@ class App extends Component {
             <a id="test" onClick={this.testsClicked}>{this.state.lang.top_nav_tests}</a>
           </h3>
         </div>
-        
+
         <div className="userinfo-row">
           {/*display user's info*/}
           <Button variant="outline-dark" size='lg' onClick={this.genderIconClicked} className="userInfoStyle">
             <h4>
               <IoIosSettings /> {this.state.lang[this.state.user]}
-               {/*this.state.lang.display_gender*/} {[(this.state.gender == "male"  && this.state.Tgender == "tf") ?  this.state.gender
-               : (this.state.gender == "female" && this.state.Tgender == "tm") ? this.state.gender
-               : (!this.state.isTransgender && (this.state.gender == "male" || this.state.gender == "female" )) ? this.state.gender
-               : (this.state.gender == "male" && this.state.Tgender == "tm") ? "Transmasculine"
-               : (this.state.gender == "female" && this.state.Tgender == "tf") ? "Transfeminine"
-               : (this.state.gender == "nonbinary" ? this.state.gender : this.state.Tgender)]} 
-               | {this.state.age == "all ages" ? this.state.lang.all_ages : this.state.age}
+              {/*this.state.lang.display_gender*/} {this.state.lang[this.state.gender]} | {this.state.age == "all ages" ? this.state.lang.all_ages : this.state.age}
               {/*this.state.lang.display_age*/} 
             </h4>
           </Button>
+          {/* <Button variant="outline-dark" href="https://www.surveymonkey.ca/r/95ZW3VZ" size='lg' className="survey-reminder" target="_blank">
+           <h4>
+            {this.state.language === "english" ? "Take the Survey" : "Prenez le sondage"}
+              <AiOutlineExclamationCircle />
+            </h4>
+          </Button> */}
         </div>
 
         <div>
