@@ -47,11 +47,11 @@ class LandingPage extends React.Component {
       <div className="landing-page">
         {this.state.language == "" || null ? (
           <div>
-            <div className="center">
+            {/* <div className="center">
             <div className="landing-trans">
             TRANSGENDER Branch
             </div>
-            </div>
+            </div> */}
           <div className="landing-update">
           <button className="videoButton" src={videofr} onClick={this.openVideofr}>Vidéo</button>
           &nbsp;&nbsp;Mise à jour COVID Updated&nbsp;&nbsp;
