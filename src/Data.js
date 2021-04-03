@@ -118,7 +118,21 @@ class Data {
                     );
                   }
                 }
-                if((UserInfo.gender == "nonbinary" && jsonGender.nonbinary) || (jsonGender.allGenders) || (UserInfo.gender == null)){
+                if(UserInfo.Tgender == "tf" && UserInfo.gender == "nonbinary" && jsonGender.amab){
+                  if (list[i]["Button"].toLowerCase() == button) {
+                    filteredList.push(
+                      list[i]
+                    );
+                  }
+                }
+                if(UserInfo.Tgender == "tm" && UserInfo.gender == "nonbinary" && jsonGender.afab){
+                  if (list[i]["Button"].toLowerCase() == button) {
+                    filteredList.push(
+                      list[i]
+                    );
+                  }
+                }
+                if((jsonGender.allGenders) || (UserInfo.gender == null)){
                   if (list[i]["Button"].toLowerCase() == button) {
                     filteredList.push(
                       list[i]
@@ -294,7 +308,17 @@ class Data {
                   list[i]
                 );
               }
-              if((UserInfo.gender == "nonbinary" && jsonGender.nonbinary) || (jsonGender.allGenders) || (UserInfo.gender == null)){
+              if(UserInfo.Tgender == "tf" && UserInfo.gender == "nonbinary" && jsonGender.amab){
+                filteredList.push(
+                  list[i]
+                );
+              }
+              if(UserInfo.Tgender == "tm" && UserInfo.gender == "nonbinary" && jsonGender.afab){
+                filteredList.push(
+                  list[i]
+                );
+              }
+              if((jsonGender.allGenders) || (UserInfo.gender == null)){
                 filteredList.push(
                   list[i]
                 );
@@ -421,7 +445,13 @@ class Data {
               if(UserInfo.Tgender == "tf" && UserInfo.gender == "female" && jsonGender.amab){
                 filteredList.push(list[i]);
               }
-              if((UserInfo.gender == "nonbinary" && jsonGender.nonbinary) || (jsonGender.allGenders) || (UserInfo.gender == null)){
+              if(UserInfo.Tgender == "tf" && UserInfo.gender == "nonbinary" && jsonGender.amab){
+                filteredList.push(list[i]);
+              }
+              if(UserInfo.Tgender == "tm" && UserInfo.gender == "nonbinary" && jsonGender.afab){
+                filteredList.push(list[i]);
+              }
+              if((jsonGender.allGenders) || (UserInfo.gender == null)){
                 filteredList.push(list[i]);
               }
             }
