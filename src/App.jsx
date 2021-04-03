@@ -298,8 +298,11 @@ class App extends Component {
   //Set age
   handleChange(event) {
     const { cookies } = this.props;
+    if (event.target.value>=18 && event.target.value<=150 )
+    {
     cookies.set('age', event.target.value, { path: '/' });
-    this.setState({ age: event.target.value });
+        }
+        this.setState({ age: event.target.value });
     //setAge(Number(event.target.value));
   }
 
