@@ -1117,12 +1117,12 @@ class App extends Component {
           <Button variant="outline-dark" size='lg' onClick={this.genderIconClicked} className="userInfoStyle">
             <h4>
               <IoIosSettings /> {this.state.lang[this.state.user]}
-               {/*this.state.lang.display_gender*/} {[(this.state.gender == "male"  && this.state.Tgender == "tf") ?  this.state.gender
-               : (this.state.gender == "female" && this.state.Tgender == "tm") ? this.state.gender
-               : (!this.state.isTransgender && (this.state.gender == "male" || this.state.gender == "female" )) ? this.state.gender
+               {/*this.state.lang.display_gender*/} {[(this.state.gender == "male"  && this.state.Tgender == "tf") ?  this.state.lang[this.state.gender]
+               : (this.state.gender == "female" && this.state.Tgender == "tm") ? this.state.lang[this.state.gender]
+               : (!this.state.isTransgender && (this.state.gender == "male" || this.state.gender == "female" )) ? this.state.lang[this.state.gender]
                : (this.state.gender == "male" && this.state.Tgender == "tm") ? "Transmasculine"
                : (this.state.gender == "female" && this.state.Tgender == "tf") ? "Transfeminine"
-               : (this.state.gender == "nonbinary" ? this.state.gender : this.state.Tgender)]} 
+               : (this.state.gender == "nonbinary" ? this.state.lang[this.state.gender] : this.state.Tgender)]} 
                | {this.state.age == "all ages" ? this.state.lang.all_ages : this.state.age}
               {/*this.state.lang.display_age*/} 
             </h4>
