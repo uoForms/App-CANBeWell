@@ -1120,6 +1120,8 @@ class App extends Component {
                {/*this.state.lang.display_gender*/} {[(this.state.gender == "male"  && this.state.Tgender == "tf") ?  this.state.lang[this.state.gender]
                : (this.state.gender == "female" && this.state.Tgender == "tm") ? this.state.lang[this.state.gender]
                : (!this.state.isTransgender && (this.state.gender == "male" || this.state.gender == "female" )) ? this.state.lang[this.state.gender]
+               : (this.state.language == 'french' && this.state.gender == "male" && this.state.Tgender == "tm") ? "Transmasculin"
+               : (this.state.language == 'french' && this.state.gender == "female" && this.state.Tgender == "tf") ? "Transféminine"
                : (this.state.gender == "male" && this.state.Tgender == "tm") ? "Transmasculine"
                : (this.state.gender == "female" && this.state.Tgender == "tf") ? "Transfeminine"
                : (this.state.gender == "nonbinary" ? this.state.lang[this.state.gender] : this.state.Tgender)]} 
