@@ -2,14 +2,14 @@ import firebase from 'firebase/app'
 import 'firebase/auth'
 import 'firebase/database'
 
-//Connecting to transgender database
+//connecting to main production
 const firebaseConfig = {
-  apiKey: "AIzaSyCLe-xIVjYyE9EBgQiuvsd4CyB2C7baoe4",
-  authDomain: "transgender-canbewell.firebaseapp.com",
-  databaseURL: "https://transgender-canbewell-default-rtdb.firebaseio.com",
-  projectId: "transgender-canbewell",
-  storageBucket: "transgender-canbewell-default-rtdb.appspot.com",
-  messagingSenderId: "454936296780",
+  apiKey: "AIzaSyAPuIZi-ns_KRkpTjpnEbTnnAYGflqwbwI",
+  authDomain: "canbewell-uottawa.firebaseapp.com",
+  databaseURL: "https://canbewell-uottawa.firebaseio.com",
+  projectId: "canbewell-uottawa",
+  storageBucket: "canbewell-uottawa.appspot.com",
+  messagingSenderId: "813615648464",
   };
 if (!firebase.apps.length) {
   firebase.initializeApp(firebaseConfig)

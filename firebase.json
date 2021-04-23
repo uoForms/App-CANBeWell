@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "canbewell2-transgender",
+    "site": "canbewell-uottawa",
     "public": "build",
     "ignore": [
       "firebase.json",
