@@ -1,1 +1,1 @@
-firebase deploy --token $FIREBASE_TOKEN --non-interactive
+firebase deploy --token $FIREBASE_TOKEN --non-interactive #token for deployment using master branch, refer wiki for more detail
