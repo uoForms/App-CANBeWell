@@ -2,15 +2,15 @@ import firebase from 'firebase/app'
 import 'firebase/auth'
 import 'firebase/database'
 
-//connecting to main production
+//connecting to test database
 const firebaseConfig = {
-  apiKey: "AIzaSyAPuIZi-ns_KRkpTjpnEbTnnAYGflqwbwI",
-  authDomain: "canbewell-uottawa.firebaseapp.com",
-  databaseURL: "https://canbewell-uottawa.firebaseio.com",
-  projectId: "canbewell-uottawa",
-  storageBucket: "canbewell-uottawa.appspot.com",
-  messagingSenderId: "813615648464",
-  };
+  apiKey: "AIzaSyA3szGH387ezJSfbaPJKs9QHzz4QYBSoFw",
+  authDomain: "export-csv-canbewell.firebaseapp.com",
+  databaseURL: "https://export-csv-canbewell.firebaseio.com",
+  projectId: "export-csv-canbewell",
+  storageBucket: "export-csv-canbewell.appspot.com",
+  messagingSenderId: "150585800085",
+};
 if (!firebase.apps.length) {
   firebase.initializeApp(firebaseConfig)
 }
