@@ -125,7 +125,7 @@
     "figure_outside_body_walking": "Physical Activity",
     "topic_search_bar_placeholder": "Search topic...",
     "test_search_bar_placeholder": "Search test...",
-    "topic_is_not_applicable": "There are no recommendations at this time for your age and gender."
+    "topic_is_not_applicable": "Prevent disease with healthy living (healthy eating, physical activity, no smoking). No other specific recommendations at this time."
   },
   "french":{
     "instruction_modal_header": "Choisir:",
@@ -254,6 +254,6 @@
     "figure_outside_body_walking": "Activité physique",
     "topic_search_bar_placeholder": "Rechercher un sujet...",
     "test_search_bar_placeholder": "Rechercher un test...",
-    "topic_is_not_applicable": "Il n'y a actuellement aucune recommandation pour votre âge et votre genre."
+    "topic_is_not_applicable": "Prévenir les maladies par des habitudes de vie saines (une alimentation saine de l'activité physique et aucun tabac). Aucune autre recommandation spécifique pour le moment."
   }
 }
