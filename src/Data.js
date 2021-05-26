@@ -56,7 +56,7 @@ class Data {
 
       function handleGenderString(genderString) {
 
-        var genderCharArray = genderString.split(';');
+        var genderCharArray = genderString.split(';')[0].split(",");
         var genderObj = {
           female: genderCharArray.includes("f"),
           male: genderCharArray.includes("m"),
@@ -257,7 +257,7 @@ class Data {
 
     function handleGenderString(genderString) {
 
-      var genderCharArray = genderString.split(';');
+      var genderCharArray = genderString.split(';')[0].split(",");
       var genderObj = {
         female: genderCharArray.includes("f"),
         male: genderCharArray.includes("m"),
@@ -405,7 +405,7 @@ class Data {
 
     function handleGenderString(genderString) {
 
-      var genderCharArray = genderString.split(';');
+      var genderCharArray = genderString.split(';')[0].split(",");
       var genderObj = {
         female: genderCharArray.includes("f"),
         male: genderCharArray.includes("m"),
