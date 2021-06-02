@@ -338,7 +338,7 @@ class Anatomy extends React.Component {
               <button id="lungsButton" className="lungs" onClick={(button, text, organ) => this.organClicked("lung", this.props.lang.lungs, "Lungs")} />
               <button id="pancreasButton" className="pancreas" onClick={(button, text, organ) => this.organClicked("pancreas", this.props.lang.pancreas, "Pancreas")} />
               <button id="stomachButton" className="stomach" onClick={(button, text, organ) => this.organClicked("stomach", this.props.lang.stomach, "Stomach")} />
-              <button className="breast" onClick={(button, text, organ) => this.organClicked("breast", this.props.lang.breast, "Breast")} />
+              <button className="breast" onClick={(button, text, organ) => this.organClicked("breast/chest", this.props.lang.transbreast, "Breast/Chest")} />
               <button id="aortaButton" className="aorta" onClick={(button, text, organ) => this.organClicked("aorta", this.props.lang.aorta, "Aorta")}></button>
               <button id="heartButton" className="heart" onClick={(button, text, oran) => this.organClicked("heart", this.props.lang.heart, "Heart")} />
               <button className="genitalia" onClick={(button, text, organ) => this.organClicked("genitalia", this.props.lang.genitalia, "")} />
@@ -398,7 +398,7 @@ class Anatomy extends React.Component {
               <button id="lungsButton" className="lungs" onClick={(button, text, organ) => this.organClicked("lung", this.props.lang.lungs, "Lungs")} />
               <button id="pancreasButton" className="pancreas" onClick={(button, text, organ) => this.organClicked("pancreas", this.props.lang.pancreas, "Pancreas")} />
               <button id="stomachButton" className="stomach" onClick={(button, text, organ) => this.organClicked("stomach", this.props.lang.stomach, "Stomach")} />
-              <button className="breast" onClick={(button, text, organ) => this.organClicked("breast", this.props.lang.breast, "Breast")} />
+              <button className="breast" onClick={(button, text, organ) => this.organClicked("breast/chest", this.props.lang.transbreast, "Breast/Chest")} />
               <button id="aortaButton" className="aorta" onClick={(button, text, organ) => this.organClicked("aorta", this.props.lang.aorta, "Aorta")}></button>
               <button id="heartButton" className="heart" onClick={(button, text, oran) => this.organClicked("heart", this.props.lang.heart, "Heart")} />
               <button className="genitalia" onClick={(button, text, organ) => this.organClicked("genitalia", this.props.lang.genitalia, "")} />
@@ -459,7 +459,7 @@ class Anatomy extends React.Component {
               <button id="lungsButton" className="lungs" onClick={(button, text, organ) => this.organClicked("lung", this.props.lang.lungs, "Lungs")} />
               <button id="pancreasButton" className="pancreas" onClick={(button, text, organ) => this.organClicked("pancreas", this.props.lang.pancreas, "Pancreas")} />
               <button id="stomachButton" className="stomach" onClick={(button, text, organ) => this.organClicked("stomach", this.props.lang.stomach, "Stomach")} />
-              <button className="breast" onClick={(button, text, organ) => this.organClicked("breast", this.props.lang.breast, "Breast")} />
+              <button className="breast" onClick={(button, text, organ) => this.organClicked("breast/chest", this.props.lang.transbreast, "Breast/Chest")} />
               <button id="aortaButton" className="aorta" onClick={(button, text, organ) => this.organClicked("aorta", this.props.lang.aorta, "Aorta")}></button>
               <button id="heartButton" className="heart" onClick={(button, text, oran) => this.organClicked("heart", this.props.lang.heart, "Heart")} />
               <button className="genitalia" onClick={(button, text, organ) => this.organClicked("genitalia", this.props.lang.genitalia, "")} />

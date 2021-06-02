@@ -106,6 +106,7 @@
     "bone": "Bone",
     "bowel" :"Bowel",
     "breast":"Breast",
+    "transbreast":"Breast/Chest",
     "eyes" : "Eyes",
     "genitalia":"Sexual Organs",
     "heart" : "Heart",
