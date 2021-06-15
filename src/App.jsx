@@ -694,7 +694,7 @@ class App extends Component {
               
               </div>
               
-
+            <button id="agree" className="buttonAgreeToTerms" onClick={this.toggleIntrutionModal}>{this.state.lang.agree}</button>
               <div className="termsOfUse" style={termsOfUseStyle}>
               <b>{this.state.lang.disclaimer_header}</b>
 
