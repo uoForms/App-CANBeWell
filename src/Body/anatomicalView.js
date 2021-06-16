@@ -321,6 +321,7 @@ class Anatomy extends React.Component {
               <img id="Aorta" className="organ" src={TransAorta} alt="Aorta" />
               <img id="Bowel" className="organ" src={TransBowel} alt="Bowel" />
               <img id="Breast" className="organ" src={TransBreast} alt="Breast" />
+              <img id="Breast/Chest" className="organ" src={TransBreast} alt="Breast/Chest" />
               <img id="Eyes" className="organ" src={TransEyes} alt="Eyes" />
               <img id="Heart" className="organ" src={TransHeart} alt="Heart" />
               <img id="Bone" className="organ" src={TransBone} alt="Bone" />
@@ -381,6 +382,7 @@ class Anatomy extends React.Component {
               <img id="Aorta" className="organ" src={TransAorta} alt="Aorta" />
               <img id="Bowel" className="organ" src={TransBowel} alt="Bowel" />
               <img id="Breast" className="organ" src={TransBreast} alt="Breast" />
+              <img id="Breast/Chest" className="organ" src={TransBreast} alt="Breast/Chest" />
               <img id="Eyes" className="organ" src={TransEyes} alt="Eyes" />
               <img id="Heart" className="organ" src={TransHeart} alt="Heart" />
               <img id="Bone" className="organ" src={TransBone} alt="Bone" />
@@ -442,6 +444,7 @@ class Anatomy extends React.Component {
               <img id="Aorta" className="organ" src={TransAorta} alt="Aorta" />
               <img id="Bowel" className="organ" src={TransBowel} alt="Bowel" />
               <img id="Breast" className="organ" src={TransBreast} alt="Breast" />
+              <img id="Breast/Chest" className="organ" src={TransBreast} alt="Breast/Chest" />
               <img id="Eyes" className="organ" src={TransEyes} alt="Eyes" />
               <img id="Heart" className="organ" src={TransHeart} alt="Heart" />
               <img id="Bone" className="organ" src={TransBone} alt="Bone" />
