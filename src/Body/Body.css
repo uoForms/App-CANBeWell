@@ -19,6 +19,10 @@
     font-size: 0;
     cursor: pointer;
   }
+
+  .mainRunner .fixSelectedOrgan {
+    position: fixed;
+  }
   
   .mainRunner .femaleAorta {
     top: 32%;
