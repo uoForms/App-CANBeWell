@@ -73,7 +73,7 @@ class MyBody extends React.Component {
 
         {/*<button className="button button2" onClick={this.helpClicked}>?</button> */}
 
-        <div align="center"><h4 className="instruction">{this.props.lang.body_general_instruction}</h4></div>
+        <div align="center"><h3 className="instruction">{this.props.lang.body_general_instruction}</h3></div>
         <div>
           <Anatomy 
             gender={this.props.userConfig.gender}
