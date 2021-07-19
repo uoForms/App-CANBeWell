@@ -175,7 +175,7 @@ class BodyModal extends React.Component {
       backgroundColor: '#808080',
       width: '90%',
       left: '0%',
-      top: '10%',
+      top: '6%',
       right: '0%',
       //minHeight: '40%',
       margin: '0 auto',
