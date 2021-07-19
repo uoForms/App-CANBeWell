@@ -235,8 +235,9 @@ class Anatomy extends React.Component {
                 <button id="covidButton" className="covid" onClick={(button, text, organ) => this.iconClicked("covid", this.props.lang.covid)}><img src={covidIcon} alt="covidIcon" /></button>
                 {/* <button id="genitaliaButton" className="maleGenital" onClick={(button, text, organ) => this.iconClicked("genitalia", this.props.lang.genitalia)}><img src={genitaliaIcon} alt="genitaliaIcon" /> </button> */}
               </div>
+              <div className="fixSelectedOrgan"><h1 style={fixedStyle}>{this.state.organSelected}</h1></div>
             </div>
-            <h1 style={fixedStyle}>{this.state.organSelected}</h1>
+            
 
             <div>
               <BodyModal show={this.state.isOpen}
@@ -296,8 +297,9 @@ class Anatomy extends React.Component {
                 {/*<button id="genitaliaButton" className="femaleGenital" onClick={(button, text) => this.iconClicked("genitalia", this.props.lang.genitalia)}><img src={fgenitaliaIcon} alt="fgenitaliaIcon" /> </button>*/}
 
               </div>
+              <div className="fixSelectedOrgan"><h1 style={fixedStyle}>{this.state.organSelected}</h1></div>
             </div>
-            <h1 style={fixedStyle}>{this.state.organSelected}</h1>
+            
 
             <BodyModal show={this.state.isOpen}
               onClose={this.toggleModal}
@@ -355,8 +357,9 @@ class Anatomy extends React.Component {
                 {/*<button id="transButton" className="trans" onClick={(button, text) => this.iconClicked("trans", this.props.lang.covid)}><img src={transIcon} alt="transIcon" /></button>*/}
 
               </div>
+              <div className="fixSelectedOrgan"><h1 style={fixedStyle}>{this.state.organSelected}</h1></div>
             </div>
-            <h1 style={fixedStyle}>{this.state.organSelected}</h1>
+            
 
             <div>
               <BodyModal show={this.state.isOpen}
@@ -416,8 +419,9 @@ class Anatomy extends React.Component {
                 {/*<button id="transButton" className="trans" onClick={(button, text) => this.iconClicked("trans", this.props.lang.covid)}><img src={transIcon} alt="transIcon" /></button>*/}
 
               </div>
+              <div className="fixSelectedOrgan"><h1 style={fixedStyle}>{this.state.organSelected}</h1></div>
             </div>
-            <h1 style={fixedStyle}>{this.state.organSelected}</h1>
+            
 
             <div>
               <BodyModal show={this.state.isOpen}
@@ -478,8 +482,9 @@ class Anatomy extends React.Component {
                 {/*<button id="transButton" className="trans" onClick={(button, text) => this.iconClicked("trans", this.props.lang.covid)}><img src={transIcon} alt="transIcon" /></button>*/}
 
               </div>
+              <div className="fixSelectedOrgan"><h1 style={fixedStyle}>{this.state.organSelected}</h1></div>
             </div>
-            <h1 style={fixedStyle}>{this.state.organSelected}</h1>
+            
 
             <div>
               <BodyModal show={this.state.isOpen}
@@ -538,8 +543,9 @@ class Anatomy extends React.Component {
                 {/*<button id="genitaliaButton" className="maleGenital" onClick={(button, text) => this.iconClicked("genitalia", this.props.lang.genitalia)}><img src={genitaliaIcon} alt="genitaliaIcon" /> </button>*/}
 
               </div>
+              <div className="fixSelectedOrgan"><h1 style={fixedStyle}>{this.state.organSelected}</h1></div>
             </div>
-            <h1 style={fixedStyle}>{this.state.organSelected}</h1>
+            
 
             <div>
               <BodyModal show={this.state.isOpen}
@@ -604,8 +610,9 @@ class Anatomy extends React.Component {
                 <button id="covidButton" className="covid" onClick={(button, text, organ) => this.iconClicked("covid", this.props.lang.covid)}><img src={covidIcon} alt="covidIcon" /></button>
 
               </div>
+              <div className="fixSelectedOrgan"><h1 style={fixedStyle}>{this.state.organSelected}</h1></div>
             </div>
-            <h1 style={fixedStyle}>{this.state.organSelected}</h1>
+            
 
             <div>
               <BodyModal show={this.state.isOpen}
@@ -662,8 +669,9 @@ class Anatomy extends React.Component {
                 <button id="covidButton" className="covid" onClick={(button, text) => this.iconClicked("covid", this.props.lang.covid)}><img src={covidIcon} alt="covidIcon" /></button>
                 <button id="femaleGenitalian" className="femaleGenitalia" onClick={(button, text) => this.iconClicked("genitalia", this.props.lang.genitalia)}><img src={FemaleGenital} alt="GenitalF" /> </button>
               </div>
+              <div className="fixSelectedOrgan"><h1 style={fixedStyle}>{this.state.organSelected}</h1></div>
             </div>
-            <h1 style={fixedStyle}>{this.state.organSelected}</h1>
+            
 
             <BodyModal show={this.state.isOpen}
               onClose={this.toggleModal}
@@ -716,8 +724,9 @@ class Anatomy extends React.Component {
                 <button id="phyActivityButton" className="phyActivity" onClick={(button, text) => this.iconClicked("figure outside body walking", this.props.lang.figure_outside_body_walking)}><img src={phyactIcon} alt="physicalActivityIcon" /></button>
                 <button id="covidButton" className="covid" onClick={(button, text) => this.iconClicked("covid", this.props.lang.covid)}><img src={covidIcon} alt="covidIcon" /></button>
               </div>
+              <div className="fixSelectedOrgan"><h1 style={fixedStyle}>{this.state.organSelected}</h1></div>
             </div>
-            <h1 style={fixedStyle}>{this.state.organSelected}</h1>
+            
 
             <div>
               <BodyModal show={this.state.isOpen}
