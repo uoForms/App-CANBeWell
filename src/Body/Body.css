@@ -267,6 +267,12 @@
     left: 54%;
     width: 7%;
   }
+
+  .mainRunner .brainGear {
+    top: 6%;
+    left: 31%;
+    width: 9%;
+  }
   
   .mainRunner .exam {
     top: 12%;
@@ -288,13 +294,13 @@
   
   .mainRunner .sunExposure {
     top: 6%;
-    left: 9%;
+    left: 15%;
     width: 7%;
   }
   
   .mainRunner .covid {
     top: 12%;
-    left: 31%;
+    left: 23%;
     width: 14%;
   }
   
@@ -303,7 +309,41 @@
     left: 79%;
     width: 7%;
   }
-  
+
+  .mainRunner .money {
+    top: 6%;
+    left: 79%;
+    width: 7%;
+  }
+
+  .mainRunner .sleep {
+    top: 6%;
+    left: 64%;
+    width: 7%;
+  }
+
+  .mainRunner .bp {
+    top: 30.4%;
+    left: 69.7%;
+    width: 17.4%;
+  }
+
+  .mainRunner .bpfemale {
+    top: 31%;
+    left: 70.3%;
+    width: 15.7%;
+  }
+  .mainRunner .bpnb {
+    top: 30%;
+    left: 71.6%;
+    width: 15.7%;
+  }
+  .mainRunner .bptg {
+    top: 30%;
+    left: 71.6%;
+    width: 15.7%;
+  }
+
   #icons img:hover > div#organ {
     width: 3000%;
   }
