@@ -18,20 +18,20 @@ jobs:
       - name: Cypress Upload Screenshots
         uses: actions/upload-artifact@v1
           if: failure()
-          with:
-            name: cypress-screenshots
-            path: cypress/screenshots
+        with:
+          name: cypress-screenshots
+          path: cypress/screenshots
 
       - name: Cypress Upload Videos
-          uses: actions/upload-artifact@v1
-            if: always()
-            with:
-              name: cypress-videos
-              path: cypress/videos
+        uses: actions/upload-artifact@v1
+        if: always()
+        with:
+          name: cypress-videos
+          path: cypress/videos
 
       - name: Cypress Upload Reports
-          uses: actions/upload-artifact@v1
-            if: always()
-            with:
-              name: cypress-reports
-              path: cypress/reports
+        uses: actions/upload-artifact@v1
+        if: always()
+        with:
+          name: cypress-reports
+          path: cypress/reports
