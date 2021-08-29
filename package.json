@@ -35,8 +35,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "cypress": "cypress open --config-file ./cypress/configs/local.json",
-    "cypress-ci": "cypress run --config-file ./cypress/configs/ci.json"
+    "cypress": "cypress open --config-file ./cypress/configs/local.json"
   },
   "browserslist": {
     "production": [
