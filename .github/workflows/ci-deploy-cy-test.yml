@@ -2,7 +2,7 @@ name: Cypress(Deploy Build)
 on:
   push:
     branches:
-      - master
+      - swang-cypress-ci-github-action
 jobs:
   cypress-run:
     runs-on: ubuntu-20.04
