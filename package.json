@@ -34,7 +34,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "cypress": "cypress open --config-file ./cypress/configs/local.json"
   },
   "browserslist": {
     "production": [
@@ -48,6 +49,17 @@
     ]
   },
   "devDependencies": {
+    "@bahmutov/cypress-extends": "^1.1.0",
+    "cy-view": "^1.0.11",
+    "cypress": "^8.3.1",
+    "cypress-failed-log": "^2.9.2",
+    "cypress-get-it": "^1.0.1",
+    "cypress-mochawesome-reporter": "^2.2.1",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-chai-friendly": "^0.7.2",
+    "eslint-plugin-cypress": "^2.11.3",
+    "eslint-plugin-import": "^2.24.2",
     "react-native-testing-library": "^1.11.1"
   }
 }
