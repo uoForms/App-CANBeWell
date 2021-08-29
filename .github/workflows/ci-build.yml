@@ -16,7 +16,7 @@ jobs:
           browser: chrome
 
       - name: Cypress Upload Screenshots
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v2
         if: failure()
         with:
           name: cypress-screenshots
@@ -24,7 +24,7 @@ jobs:
           retention-days: 7
 
       - name: Cypress Upload Reports
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v2
         with:
           name: cypress-reports
           path: cypress/reports
