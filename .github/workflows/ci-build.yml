@@ -11,7 +11,7 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           config-file: cypress/configs/ci-build.json
-          start: yarn start
+          start: DISABLE_ESLINT_PLUGIN=true yarn start
           wait-on: 'http://localhost:3000'
           browser: chrome
 
