@@ -17,19 +17,15 @@ jobs:
 
       - name: Cypress Upload Screenshots
         uses: actions/upload-artifact@v1
-        if: ${{ failure() }}
+        if: failure()
         with:
           name: cypress-screenshots
           path: cypress/screenshots
-
-      - name: Cypress Upload Videos
-        uses: actions/upload-artifact@v1
-        with:
-          name: cypress-videos
-          path: cypress/videos
+          retention-days: 7
 
       - name: Cypress Upload Reports
         uses: actions/upload-artifact@v1
         with:
           name: cypress-reports
           path: cypress/reports
+          retention-days: 7
