@@ -9,9 +9,11 @@ jobs:
 
       - name: Cypress Run
         uses: cypress-io/github-action@v2
+        env:
+          DISABLE_ESLINT_PLUGIN=true
         with:
           config-file: cypress/configs/ci-build.json
-          start: DISABLE_ESLINT_PLUGIN=true yarn start
+          start: yarn start
           wait-on: 'http://localhost:3000'
           browser: chrome
 
