@@ -10,7 +10,7 @@ jobs:
       - name: Cypress Run
         uses: cypress-io/github-action@v2
         env:
-          DISABLE_ESLINT_PLUGIN=true
+          DISABLE_ESLINT_PLUGIN: true
         with:
           config-file: cypress/configs/ci-build.json
           start: yarn start
