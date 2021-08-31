@@ -1,11 +1,5 @@
 {
-  "reporter": "cypress-multi-reporters",
-  "reporterOptions": {
-    "configFile": "cypress/configs/reporter-config.json"
-  },
-  "retries": {
-    "runMode": 3,
-    "openMode": 0
-  },
-  "fixturesFolder": false
+   "reporter": "cypress-mochawesome-reporter",
+   "retries": { "runMode": 3, "openMode": 0 },
+   "fixturesFolder": false
 }

@@ -23,4 +23,3 @@ src/firebase.jsx
 /.idea
 
 cypress/logs/
-/cypress/reports/
