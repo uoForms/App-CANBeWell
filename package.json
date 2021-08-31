@@ -58,6 +58,7 @@
     "cypress-mochawesome-reporter": "^2.2.1",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-loader": "^4.0.2",
     "eslint-plugin-chai-friendly": "^0.7.2",
     "eslint-plugin-cypress": "^2.11.3",
     "eslint-plugin-import": "^2.24.2",

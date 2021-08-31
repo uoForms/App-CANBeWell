@@ -13,7 +13,7 @@ Cypress.Commands.add('assertAttribute', {
     .should('have.attr', attrKey, attrValue);
 });
 
-Cypress.Commands.add('assertUrl', (url, requestType = 'FETCH', expectedStatusCode = 200) => {
+Cypress.Commands.add('assertUrl', (url, requestType = 'GET', expectedStatusCode = 200) => {
   cy.request(requestType, url)
     .should((res) => {
       expect(res.status).to.eq(expectedStatusCode);

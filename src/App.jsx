@@ -594,7 +594,7 @@ class App extends Component {
       instructionModal = [
         
         <div key="1" className="backdrop" style={backdropStyle}>
-          <div className="myModal" style={myModalStyle}>
+          <div className="myModal" style={myModalStyle} test-id="instructionModalRoot">
           <div>
             </div>
             <div className="footer">
@@ -1102,7 +1102,7 @@ class App extends Component {
   
 
     return (
-      <div>
+      <div test-info-locale={this.state.language}>
         {/*this is your header tab*/}
         <div className="topnav">
           <h3>
