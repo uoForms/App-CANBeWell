@@ -1,7 +1,7 @@
 {
-  "reporter": "cypress-mochawesome-reporter",
+  "reporter": "cypress-multi-reporters",
   "reporterOptions": {
-    "saveJson": true
+    "configFile": "cypress/configs/reporter-config.json"
   },
   "retries": {
     "runMode": 3,

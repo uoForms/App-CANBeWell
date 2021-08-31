@@ -36,5 +36,5 @@ jobs:
         if: success() || failure()
         with:
           name: Cypress Tests
-          path: cypress/reports/html/index.json
-          reporter: mocha-json
+          path: '*.xml'
+          reporter: jest-Junit
