@@ -1,0 +1,6 @@
+{
+  "reporterEnabled": "cypress-mochawesome-reporter, @mochajs/json-file-reporter",
+  "mochajsJsonFileReporterReporterOptions": {
+    "output": "cypress/reports/result.json"
+  }
+}

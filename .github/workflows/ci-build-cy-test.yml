@@ -1,5 +1,5 @@
 name: Cypress(Development Build)
-on: [push]
+on: [ push ]
 jobs:
   cypress-run:
     runs-on: ubuntu-20.04
@@ -30,3 +30,11 @@ jobs:
           name: cypress-reports
           path: cypress/reports
           retention-days: 7
+
+      - name: Cypress Test Report Display
+        uses: dorny/test-reporter@v1
+        if: success() || failure()
+        with:
+          name: Cypress Tests
+          path: 'cypress/reports/result.json'
+          reporter: mocha-json
