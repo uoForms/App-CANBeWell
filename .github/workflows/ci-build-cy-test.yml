@@ -36,5 +36,5 @@ jobs:
         if: success() || failure()
         with:
           name: Cypress Tests
-          path: '*.xml'
+          path: 'cypress/reports/junit/*.xml'
           reporter: jest-junit
