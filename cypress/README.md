@@ -2,7 +2,7 @@
 
 This README describes the setup and usage of testing framework for App-CANBeWell.
 
-Last updated: Aug 28 2021
+Last updated: Aug 31 2021
 
 ## Basic
 
@@ -91,7 +91,7 @@ this [page](https://www.selenium.dev/documentation/guidelines/page_object_models
 To create a new page object, please use the following template:
 
 ```javascript
-class NewPageObject {
+class NewPageObject extends <BasePage or OtherPageObject>{
     helperFunction() {
         // code
     }
