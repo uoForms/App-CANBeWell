@@ -1,73 +1,92 @@
-class LandingPage {
-  assertUpdateBannerText() {
-    cy.getTestId('update-banner')
-      .assertVisibleAndContainText('Mise à jour COVID Updated');
-  }
+import BasePage from './basePage'
+import instructionModal from './instructionModal'
 
-  assertUpdateBannerVideoButtonEn() {
-    cy.getTestId('update-banner-en-video')
-      .assertVisibleAndContainText('Video')
-      .assertAttribute('src', '/static/media/video_en.717617d9.mp4')
-      .invoke('attr', 'src')
-      .then((src) => {
-        cy.assertUrl(src);
-      });
-  }
+class LandingPage extends BasePage {
+    updateBannerVideoButton = {
+        src: {
+            [this.locale.en]: '/static/media/video_en.717617d9.mp4',
+            [this.locale.fr]: '/static/media/video_fr.ef3962f4.mp4'
+        },
+        text: {
+            [this.locale.en]: 'Video',
+            [this.locale.fr]: 'Vidéo'
+        }
+    }
+    redirectButtonImageSrc = {
+        [this.locale.en]: '/static/media/canbewelleng.59df6882.png',
+        [this.locale.fr]: '/static/media/canbewellfren.b35390c9.png'
+    }
+    reliableResourceStatement = {
+        [this.locale.en]: 'A reliable resource by Canadian health care providers to help you stay healthy',
+        [this.locale.fr]: 'Rester en santé avec cette ressource créée par vos professionnels de la santé canadiens'
+    }
 
-  assertUpdateBannerVideoButtonFr() {
-    cy.getTestId('update-banner-fr-video')
-      .assertVisibleAndContainText('Vidéo')
-      .assertAttribute('src', '/static/media/video_fr.ef3962f4.mp4')
-      .invoke('attr', 'src')
-      .then((src) => {
-        cy.assertUrl(src);
-      });
-  }
+    privacyStatement = {
+        text: {
+            [this.locale.en]: 'Privacy Statement',
+            [this.locale.fr]: 'Politique de confidentialité'
+        },
+        link: {
+            [this.locale.en]: 'https://canbewell-uottawa.web.app/iCanBeWell_PrivacyPolicy.htm',
+            [this.locale.fr]: 'https://canbewell-uottawa.web.app/politiquedeconfidentialite.htm'
+        }
+    }
 
-  assertLogo() {
-    cy.getTestId('logo')
-      .assertImageVisibleWithSource('/static/media/logo_21-02-02.13561f30.png');
-  }
+    assertUpdateBannerText() {
+        cy.getTestId('update-banner')
+            .assertVisibleAndContainText('Mise à jour COVID Updated');
+    }
 
-  assertRedirectButtonEn() {
-    cy.getTestId('en-redirect-button')
-      .assertImageVisibleWithSource('/static/media/canbewelleng.59df6882.png');
-  }
+    assertUpdateBannerVideoButton(locale) {
+        cy.getTestId(`update-banner-${locale}-video`)
+            .assertVisibleAndContainText(this.updateBannerVideoButton.text[locale])
+            .assertAttribute('src', this.updateBannerVideoButton.src[locale])
+            .invoke('attr', 'src')
+            .then((src) => {
+                cy.assertUrl(src);
+            });
+    }
 
-  assertRedirectButtonFr() {
-    cy.getTestId('fr-redirect-button')
-      .assertImageVisibleWithSource('/static/media/canbewellfren.b35390c9.png');
-  }
+    assertUpdateBannerVideoButtonOpenNewTab(spyAlias, locale) {
+        cy.getTestId(`update-banner-${locale}-video`)
+            .click();
+        cy
+            .get(`@${spyAlias}`)
+            .should('be.calledWith', this.updateBannerVideoButton.src[locale]);
+    }
 
-  assertReliableResourceStatementEn() {
-    cy.getTestId('en-reliable-resource-statement')
-      .assertVisibleAndContainText('A reliable resource by Canadian health care providers to help you stay healthy');
-  }
+    assertLogo() {
+        cy.getTestId('logo')
+            .assertImageVisibleWithSource('/static/media/logo_21-02-02.13561f30.png');
+    }
 
-  assertReliableResourceStatementFr() {
-    cy.getTestId('fr-reliable-resource-statement')
-      .assertVisibleAndContainText('Rester en santé avec cette ressource créée par vos professionnels de la santé canadiens');
-  }
+    assertRedirectButton(locale) {
+        cy.getTestId(`${locale}-redirect-button`)
+            .assertImageVisibleWithSource(this.redirectButtonImageSrc[locale]);
+    }
 
-  assertPrivacyStatementEn() {
-    cy.getTestId('privacy-statement-en')
-      .assertVisibleAndContainText('Privacy Statement')
-      .assertAttribute('href', 'https://canbewell-uottawa.web.app/iCanBeWell_PrivacyPolicy.htm')
-      .invoke('attr', 'href')
-      .then((href) => {
-        cy.assertUrl(href);
-      });
-  }
+    clickRedirectButton(locale) {
+        cy.getTestId(`${locale}-redirect-button`).click();
+        return new instructionModal()
+    }
 
-  assertPrivacyStatementFr() {
-    cy.getTestId('privacy-statement-fr')
-      .assertVisibleAndContainText('Politique de confidentialité')
-      .assertAttribute('href', 'https://canbewell-uottawa.web.app/politiquedeconfidentialite.htm')
-      .invoke('attr', 'href')
-      .then((href) => {
-        cy.assertUrl(href);
-      });
-  }
+    assertReliableResourceStatement(locale) {
+        cy.getTestId(`${locale}-reliable-resource-statement`)
+            .assertVisibleAndContainText(this.reliableResourceStatement[locale]);
+    }
+
+
+    assertPrivacyStatement(locale) {
+        cy.getTestId(`privacy-statement-${locale}`)
+            .assertVisibleAndContainText(this.privacyStatement.text[locale])
+            .assertAttribute('href', this.privacyStatement.link[locale])
+            .invoke('attr', 'href')
+            .then((href) => {
+                cy.assertUrl(href);
+            });
+    }
+
+
 }
 
 export default LandingPage;
