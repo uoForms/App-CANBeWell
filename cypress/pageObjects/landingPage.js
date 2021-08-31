@@ -43,7 +43,8 @@ class LandingPage extends BasePage {
             .assertAttribute('src', this.updateBannerVideoButton.src[locale])
             .invoke('attr', 'src')
             .then((src) => {
-                cy.assertUrl(src);
+                // File size is too big to do GET call
+                cy.assertUrl(src, 'OPTIONS');
             });
     }
 
