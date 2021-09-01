@@ -19,3 +19,7 @@ yarn-error.log*
 firebase.json
 .firebase/hosting.YnVpbGQ.cache
 src/firebase.jsx
+
+/.idea
+
+cypress/logs/
