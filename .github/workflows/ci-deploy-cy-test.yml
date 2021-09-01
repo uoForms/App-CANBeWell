@@ -33,14 +33,6 @@ jobs:
           path: cypress/screenshots
           retention-days: 7
 
-      - name: Cypress Upload Videos
-        uses: actions/upload-artifact@v2
-        if: always()
-        with:
-          name: cypress-videos
-          path: cypress/videos
-          retention-days: 7
-
       - name: Cypress Upload Reports
         uses: actions/upload-artifact@v2
         if: always()

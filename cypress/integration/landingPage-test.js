@@ -4,14 +4,28 @@ import LandingPage from '../pageObjects/landingPage';
 devicesTestWrapper(
   'Landing Page', () => {
     let landingPage;
+    const redirectAlias = 'redirect';
     beforeEach(() => {
       landingPage = new LandingPage();
+      cy
+        .window()
+        .then((win) => {
+          cy.spy(win, 'open')
+            .as(redirectAlias);
+        });
     });
 
     it('Update Banner', () => {
       landingPage.assertUpdateBannerText();
       landingPage.assertUpdateBannerVideoButton(landingPage.locale.en);
       landingPage.assertUpdateBannerVideoButton(landingPage.locale.fr);
+    });
+
+    it('Update Banner Action', () => {
+      //  This test involves new tabs, it is normal that a new browser window pops up during test run.
+      //  You can close it right after
+      landingPage.assertUpdateBannerVideoButtonOpenNewTab(redirectAlias, landingPage.locale.en);
+      landingPage.assertUpdateBannerVideoButtonOpenNewTab(redirectAlias, landingPage.locale.fr);
     });
 
     it('Logo', () => {
