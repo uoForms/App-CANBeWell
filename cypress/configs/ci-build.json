@@ -1,7 +1,5 @@
 {
   "extends": "../../cypress.json",
   "baseUrl": "http://localhost:3000",
-  "watchForFileChanges": false,
-  "screenshotOnRunFailure": false,
   "video": false
 }
