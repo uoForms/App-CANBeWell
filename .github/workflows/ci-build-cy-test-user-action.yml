@@ -15,6 +15,7 @@ jobs:
           wait-on: 'http://localhost:3000'
           browser: chrome
           project: cypress/integration/userActionTests
+          config: integrationFolder=./
 
       - name: Cypress Upload Screenshots
         uses: actions/upload-artifact@v2
