@@ -8,6 +8,11 @@ declare namespace Cypress {
 
         getTestId(id)
 
+
         assertImageVisibleWithSource(source)
+
+        setupCookies(cookies)
+
+        checkGAQueryParams(queryDict)
     }
 }
