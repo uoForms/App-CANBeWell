@@ -1,4 +1,4 @@
-name: Cypress(Deploy Build - Data Analytics - Body - Fr - Patient)
+name: Cypress(Deploy Build - Data Analytics - Body - Fr - Provider - 18)
 on:
   push:
     branches:
@@ -24,7 +24,7 @@ jobs:
         with:
           config-file: cypress/configs/ci-deploy.json
           browser: chrome
-          spec: cypress/integration/dataAnalyticsTests/testSet/bodyPage-test-fr-patient.js
+          spec: cypress/integration/dataAnalyticsTests/testSet/bodyPage-test-fr-provider-18.js
 
       - name: Cypress Upload Screenshots
         uses: actions/upload-artifact@v2

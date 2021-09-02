@@ -1,0 +1,33 @@
+name: Cypress(Development Build - Data Analytics - Body - Fr - Provider - 18)
+on: [ push ]
+jobs:
+  cypress-run:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Cypress Run
+        uses: cypress-io/github-action@v2
+        with:
+          config-file: cypress/configs/ci-build.json
+          start: yarn start
+          wait-on: 'http://localhost:3000'
+          browser: chrome
+          spec: cypress/integration/dataAnalyticsTests/testSet/bodyPage-test-fr-provider-18.js
+
+      - name: Cypress Upload Screenshots
+        uses: actions/upload-artifact@v2
+        if: failure()
+        with:
+          name: cypress-screenshots
+          path: cypress/screenshots
+          retention-days: 7
+
+      - name: Cypress Upload Reports
+        uses: actions/upload-artifact@v2
+        if: always()
+        with:
+          name: cypress-reports
+          path: cypress/reports
+          retention-days: 7

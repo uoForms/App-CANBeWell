@@ -1,8 +1,5 @@
-name: Cypress(Deploy Build - Data Analytics - Body - En - Patient)
-on:
-  push:
-    branches:
-      - master
+name: Cypress(Development Build - Data Analytics - Body - Fr - Patient - 70)
+on: [ push ]
 jobs:
   cypress-run:
     runs-on: ubuntu-20.04
@@ -10,21 +7,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Wait for Deploy
-        uses: lewagon/wait-on-check-action@v1.0.0
-        with:
-          ref: ${{ github.sha }}
-          check-name: 'Travis CI - Branch'
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
-          wait-interval: 10
-          allowed-conclusions: success
-
       - name: Cypress Run
         uses: cypress-io/github-action@v2
         with:
-          config-file: cypress/configs/ci-deploy.json
+          config-file: cypress/configs/ci-build.json
+          start: yarn start
+          wait-on: 'http://localhost:3000'
           browser: chrome
-          spec: cypress/integration/dataAnalyticsTests/testSet/bodyPage-test-en-patient.js
+          spec: cypress/integration/dataAnalyticsTests/testSet/bodyPage-test-fr-patient-70.js
 
       - name: Cypress Upload Screenshots
         uses: actions/upload-artifact@v2

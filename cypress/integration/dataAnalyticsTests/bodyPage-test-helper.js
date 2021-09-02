@@ -7,8 +7,11 @@ function capitalizeString(str) {
     .toLowerCase();
 }
 
-function bodyPageTestSteps(gender, tGender, age, user, landingPage, locale, testId, bodyPage, localeDict, localeId, ageDict) {
+function bodyPageTestSteps(gender, tGender, age, user, landingPage, locale, testId, bodyPage, localeDict, localeId) {
   const localeStrDict = { [landingPage.locale.en]: 'english', [landingPage.locale.fr]: 'french' };
+  const ageDict = {
+    18: 'Young', 50: 'Middle age', 70: 'Senior', 'all ages': 'all ages',
+  };
   cy.setupCookies({
     _onboarded: 'true', ...gender, ...tGender, ...age, ...user,
   });
@@ -43,7 +46,7 @@ function bodyPageTestSteps(gender, tGender, age, user, landingPage, locale, test
     .assertEventGA('@ga-event',
       `${capitalizeString(user)}-Body-${localeDict[localeId]}`,
       'Other-Chrome',
-      `${capitalizeString(gender.gender)}-${ageDict[age.age]}-${capitalizeString(localeStrDict[locale])}`);
+      `${capitalizeString(gender.gender)}-${ageDict[age]}-${capitalizeString(localeStrDict[locale])}`);
 }
 
 function setUpInputData() {
@@ -51,10 +54,7 @@ function setUpInputData() {
   const bodyPage = new BodyPage();
   const genderList = [{ gender: landingPage.gender.male }, { gender: landingPage.gender.female }, { gender: landingPage.gender.nonBinary }];
   const tGenderList = [{ Tgender: landingPage.gender.transFemale }, { Tgender: landingPage.gender.transMale }];
-  const ageList = [{ age: '18' }, { age: '50' }, { age: '70' }, { age: 'all ages' }];
-  const ageDict = {
-    18: 'Young', 50: 'Middle age', 70: 'Senior', 'all ages': 'all ages',
-  };
+
   const buttonListDict = {
     [JSON.stringify([landingPage.gender.male, landingPage.gender.transFemale])]: bodyPage.maleTfButtonInfoList,
     [JSON.stringify([landingPage.gender.male, landingPage.gender.transMale])]: bodyPage.nonBinaryOrMaleTmOrFemaleTfInfoList,
@@ -64,7 +64,7 @@ function setUpInputData() {
     [JSON.stringify([landingPage.gender.nonBinary, landingPage.gender.transMale])]: bodyPage.nonBinaryOrMaleTmOrFemaleTfInfoList,
   };
   return {
-    landingPage, bodyPage, genderList, tGenderList, ageList, ageDict, buttonListDict,
+    landingPage, bodyPage, genderList, tGenderList, buttonListDict,
   };
 }
 
