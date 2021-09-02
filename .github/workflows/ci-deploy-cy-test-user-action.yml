@@ -22,7 +22,7 @@ jobs:
       - name: Cypress Run
         uses: cypress-io/github-action@v2
         with:
-          config-file: cypress/configs/ci-deploy.json
+          config-file: ../../cypress/configs/ci-deploy.json
           browser: chrome
           project: cypress/integration/userActionTests
 
