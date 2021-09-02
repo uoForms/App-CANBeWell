@@ -13,6 +13,5 @@ declare namespace Cypress {
 
         setupCookies(cookies)
 
-        checkGAQueryParams(queryDict)
     }
 }

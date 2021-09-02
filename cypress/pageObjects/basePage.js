@@ -18,10 +18,22 @@ class BasePage {
         })
     }
 
+    checkGAQueryParams(url, queryDict) {
+        const params = new URLSearchParams(new URL(url).search);
+        // eslint-disable-next-line guard-for-in,no-restricted-syntax
+        for (const key in queryDict) {
+            if (queryDict[key] !== null) {
+                expect(params.get(key)).to.equal(queryDict[key]);
+            } else {
+                expect(params.has(key)).to.be.true;
+            }
+        }
+    }
+
     assertPageViewGA(requestAlias, additionalParams) {
-        cy.wait(requestAlias)
-            .its('request.url')
-            .checkGAQueryParams({
+        cy.wait(requestAlias).then((interception) => {
+            expect(interception.response.statusCode).to.equal(200)
+            this.checkGAQueryParams(interception.request.url, {
                 v: '1',
                 t: 'pageview',
                 dt: 'canbewell',
@@ -32,13 +44,16 @@ class BasePage {
                 sr: null,
                 ul: null,
                 ...additionalParams
-            });
+            })
+
+        })
+
     }
 
     assertEventGA(requestAlias, ec, ea, el) {
-        cy.wait(requestAlias)
-            .its('request.url')
-            .checkGAQueryParams({
+        cy.wait(requestAlias).then((interception) => {
+            expect(interception.response.statusCode).to.equal(200)
+            this.checkGAQueryParams(interception.request.url, {
                 v: '1',
                 t: 'event',
                 dt: 'canbewell',
@@ -51,6 +66,7 @@ class BasePage {
                 uid: null,
                 ec, ea, el
             });
+        })
     }
 
     getExpectedDl() {
