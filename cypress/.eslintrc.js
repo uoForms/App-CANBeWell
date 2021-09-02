@@ -18,5 +18,8 @@ module.exports = {
     'import/no-extraneous-dependencies': 'off',
     'class-methods-use-this': 'off',
     'newline-per-chained-call': ['error', { ignoreChainWithDepth: 1 }],
+    'import/no-named-as-default': 'off',
+    'import/no-named-as-default-member': 'off',
+    'max-len': 'off',
   },
 };
