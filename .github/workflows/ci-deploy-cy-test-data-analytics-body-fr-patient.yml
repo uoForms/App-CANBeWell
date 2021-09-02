@@ -1,0 +1,43 @@
+name: Cypress(Deploy Build - Data Analytics - Body - Fr - Patient)
+on:
+  push:
+    branches:
+      - master
+jobs:
+  cypress-run:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Wait for Deploy
+        uses: lewagon/wait-on-check-action@v1.0.0
+        with:
+          ref: ${{ github.sha }}
+          check-name: 'Travis CI - Branch'
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          wait-interval: 10
+          allowed-conclusions: success
+
+      - name: Cypress Run
+        uses: cypress-io/github-action@v2
+        with:
+          config-file: cypress/configs/ci-deploy.json
+          browser: chrome
+          spec: cypress/integration/dataAnalyticsTests/testSet/bodyPage-test-fr-patient.js
+
+      - name: Cypress Upload Screenshots
+        uses: actions/upload-artifact@v2
+        if: failure()
+        with:
+          name: cypress-screenshots
+          path: cypress/screenshots
+          retention-days: 7
+
+      - name: Cypress Upload Reports
+        uses: actions/upload-artifact@v2
+        if: always()
+        with:
+          name: cypress-reports
+          path: cypress/reports
+          retention-days: 7

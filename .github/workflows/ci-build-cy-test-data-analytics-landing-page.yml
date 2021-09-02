@@ -1,5 +1,5 @@
-name: Cypress(Development Build)
-on: [push]
+name: Cypress(Development Build - Data Analytics - Landing Page)
+on: [ push ]
 jobs:
   cypress-run:
     runs-on: ubuntu-20.04
@@ -14,6 +14,7 @@ jobs:
           start: yarn start
           wait-on: 'http://localhost:3000'
           browser: chrome
+          spec: cypress/integration/dataAnalyticsTests/testSet/landingPage-test.js
 
       - name: Cypress Upload Screenshots
         uses: actions/upload-artifact@v2

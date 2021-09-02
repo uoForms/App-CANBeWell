@@ -1,4 +1,4 @@
-name: Cypress(Deploy Build)
+name: Cypress(Deploy Build - Data Analytics - Landing Page)
 on:
   push:
     branches:
@@ -24,6 +24,7 @@ jobs:
         with:
           config-file: cypress/configs/ci-deploy.json
           browser: chrome
+          spec: cypress/integration/dataAnalyticsTests/testSet/landingPage-test.js
 
       - name: Cypress Upload Screenshots
         uses: actions/upload-artifact@v2
