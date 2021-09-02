@@ -22,10 +22,9 @@ jobs:
       - name: Cypress Run
         uses: cypress-io/github-action@v2
         with:
-          config-file: ../../configs/ci-deploy.json
+          config-file: cypress/configs/ci-deploy.json
           browser: chrome
-          project: cypress/integration/userActionTests
-          config: integrationFolder=./
+          config: integrationFolder=cypress/integration/userActionTests
 
       - name: Cypress Upload Screenshots
         uses: actions/upload-artifact@v2

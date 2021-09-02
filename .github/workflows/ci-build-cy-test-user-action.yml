@@ -10,12 +10,11 @@ jobs:
       - name: Cypress Run
         uses: cypress-io/github-action@v2
         with:
-          config-file: ../../configs/ci-build.json
+          config-file: cypress/configs/ci-build.json
           start: yarn start
           wait-on: 'http://localhost:3000'
           browser: chrome
-          project: cypress/integration/userActionTests
-          config: integrationFolder=./
+          config: integrationFolder=cypress/integration/userActionTests
 
       - name: Cypress Upload Screenshots
         uses: actions/upload-artifact@v2
