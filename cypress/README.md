@@ -133,12 +133,12 @@ To create a new page object, please use the following template:
 class NewPageObject extends <BasePage or OtherPageObject>{
     helperFunction() {
     // code
-}
+    }
 
     // ...
 }
 
-    export default NewPageObject;
+export default NewPageObject;
 ```
 
 ### `cypress/plugin`
