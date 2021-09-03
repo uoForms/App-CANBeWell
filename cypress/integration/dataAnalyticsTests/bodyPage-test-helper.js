@@ -8,7 +8,7 @@ function bodyPageTestSteps(gender, tGender, age, user, landingPage, locale, test
     [landingPage.locale.en]: 'English', [landingPage.locale.fr]: 'French',
   };
   const ageDict = {
-    18: 'Young', 50: 'Middle age', 70: 'Senior', 'all ages': 'All Ages',
+    18: 'Young', 50: 'Middle Age', 70: 'Senior', 'all ages': 'All Ages',
   };
   cy.setupCookies({
     _onboarded: 'true', ...gender, ...tGender, ...age, ...user,
