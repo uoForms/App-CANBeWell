@@ -3,8 +3,7 @@ import BodyPage from '../../pageObjects/bodyPage';
 
 function capitalizeString(str) {
   return str.charAt(0)
-    .toUpperCase() + str.slice(1)
-    .toLowerCase();
+    .toUpperCase() + str.slice(1);
 }
 
 function bodyPageTestSteps(gender, tGender, age, user, landingPage, locale, testId, bodyPage, localeDict, localeId) {
@@ -34,7 +33,9 @@ function bodyPageTestSteps(gender, tGender, age, user, landingPage, locale, test
     .as('ga-event');
 
   cy.getTestId(testId)
-    .click();
+  //  The purpose of data analytics test is to check if requests are successful. I dont really care if the button is clickable in Cypress' eye.
+  //  Clickable assertion will be dealt in user action tests.
+    .click({ force: true });
 
   bodyPage
     .assertPageViewGA('@ga-pageview', {
@@ -46,7 +47,8 @@ function bodyPageTestSteps(gender, tGender, age, user, landingPage, locale, test
     .assertEventGA('@ga-event',
       `${capitalizeString(user)}-Body-${localeDict[localeId]}`,
       'Other-Chrome',
-      `${capitalizeString(gender.gender)}-${ageDict[age]}-${capitalizeString(localeStrDict[locale])}`);
+      `${capitalizeString(gender.gender)}-${ageDict[age]}-${capitalizeString(localeStrDict[locale])
+        .replace('/', ' or ')}`);
 }
 
 function setUpInputData() {

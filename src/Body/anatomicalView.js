@@ -420,7 +420,7 @@ class Anatomy extends React.Component {
                                     onClick={(button, text, organ) => this.organClicked("colon", this.props.lang.bowel, "Bowel")}/>
                             <button id="eyesButton" className="eyes" test-id="eyesButton"
                                     onClick={(button, text, organ) => this.organClicked("eye", this.props.lang.eyes, "Eyes")}/>
-                            <button id="boneButton" className="bone" test-id="" boneButton
+                            <button id="boneButton" className="bone" test-id="boneButton"
                                     onClick={(button, text, organ) => this.organClicked("bone", this.props.lang.bone, "Bone")}/>
                             <button id="liverButton" className="liver" test-id="liverButton"
                                     onClick={(button, text, organ) => this.organClicked("liver", this.props.lang.liver, "Liver")}/>
