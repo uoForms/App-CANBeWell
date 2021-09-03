@@ -17,7 +17,7 @@ describe('Body Page Analytics', () => {
     tGenderList.forEach((tGender) => {
       const buttonList = buttonListDict[JSON.stringify([gender.gender, tGender.Tgender])];
       buttonList.forEach(({ testId, localeId }) => {
-        it(`Icon Click With Setting: ${user.user} ${age} ${gender.gender} ${tGender.Tgender} ${locale} ${testId} ${localeId}`, () => {
+        it(`Icon Click With Setting: ${user.user} ${age.age} ${gender.gender} ${tGender.Tgender} ${locale} ${testId} ${localeId}`, () => {
           bodyPageTestSteps(gender, tGender, age, user, landingPage, locale, testId, bodyPage, localeDict, localeId);
         });
       });

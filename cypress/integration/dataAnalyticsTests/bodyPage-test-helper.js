@@ -42,18 +42,18 @@ function bodyPageTestSteps(gender, tGender, age, user, landingPage, locale, test
       uid: null,
     });
   // TODO: remove this when https://github.com/uoForms/App-CANBeWell/issues/413 is resolved
-  let buttonDescriptionText = localeDict[localeId];
-  if (buttonDescriptionText) {
-    buttonDescriptionText = buttonDescriptionText.replace('/', ' or ');
+  if (localeDict[localeId]) {
+    bodyPage
+    //  For whatever reason, ReactGA normalizes input to be title case
+      .assertEventGA('@ga-event',
+        `${capitalize(user.user)}-Body-${capitalize.words(localeDict[localeId])
+          .replace('/', ' or ')
+          .replace('OR', 'or')}`,
+        'Other-Chrome',
+        `${capitalize(gender.gender)}-${ageDict[age.age]}-${localeStrDict[locale]}`);
   } else {
-    buttonDescriptionText = 'Undefined';
+    cy.log('Skip check due to Issue 413');
   }
-  bodyPage
-  //  For whatever reason, ReactGA normalizes input to be title case
-    .assertEventGA('@ga-event',
-      `${capitalize(user.user)}-Body-${capitalize.words(buttonDescriptionText)}`,
-      'Other-Chrome',
-      `${capitalize(gender.gender)}-${ageDict[age.age]}-${localeStrDict[locale]}`);
 }
 
 function setUpInputData() {
