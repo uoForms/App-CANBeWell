@@ -1,15 +1,14 @@
 import LandingPage from '../../pageObjects/landingPage';
 import BodyPage from '../../pageObjects/bodyPage';
 
-function capitalizeString(str) {
-  return str.charAt(0)
-    .toUpperCase() + str.slice(1);
-}
+const capitalize = require('capitalize');
 
 function bodyPageTestSteps(gender, tGender, age, user, landingPage, locale, testId, bodyPage, localeDict, localeId) {
-  const localeStrDict = { [landingPage.locale.en]: 'english', [landingPage.locale.fr]: 'french' };
+  const localeStrDict = {
+    [landingPage.locale.en]: 'English', [landingPage.locale.fr]: 'French',
+  };
   const ageDict = {
-    18: 'Young', 50: 'Middle age', 70: 'Senior', 'all ages': 'all ages',
+    18: 'Young', 50: 'Middle age', 70: 'Senior', 'all ages': 'All Ages',
   };
   cy.setupCookies({
     _onboarded: 'true', ...gender, ...tGender, ...age, ...user,
@@ -42,13 +41,19 @@ function bodyPageTestSteps(gender, tGender, age, user, landingPage, locale, test
       dp: `body/${localeDict[localeId]}`,
       uid: null,
     });
-
+  // TODO: remove this when https://github.com/uoForms/App-CANBeWell/issues/413 is resolved
+  let buttonDescriptionText = localeDict[localeId];
+  if (buttonDescriptionText) {
+    buttonDescriptionText = buttonDescriptionText.replace('/', ' or ');
+  } else {
+    buttonDescriptionText = 'Undefined';
+  }
   bodyPage
+  //  For whatever reason, ReactGA normalizes input to be title case
     .assertEventGA('@ga-event',
-      `${capitalizeString(user)}-Body-${localeDict[localeId]}`,
+      `${capitalize(user.user)}-Body-${capitalize.words(buttonDescriptionText)}`,
       'Other-Chrome',
-      `${capitalizeString(gender.gender)}-${ageDict[age]}-${capitalizeString(localeStrDict[locale])
-        .replace('/', ' or ')}`);
+      `${capitalize(gender.gender)}-${ageDict[age]}-${localeStrDict[locale]}`);
 }
 
 function setUpInputData() {
