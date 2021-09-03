@@ -53,7 +53,7 @@ function bodyPageTestSteps(gender, tGender, age, user, landingPage, locale, test
     .assertEventGA('@ga-event',
       `${capitalize(user.user)}-Body-${capitalize.words(buttonDescriptionText)}`,
       'Other-Chrome',
-      `${capitalize(gender.gender)}-${ageDict[age]}-${localeStrDict[locale]}`);
+      `${capitalize(gender.gender)}-${ageDict[age.age]}-${localeStrDict[locale]}`);
 }
 
 function setUpInputData() {
