@@ -2,7 +2,7 @@ name: Cypress(Deploy Build - User Action)
 'on':
   push:
     branches:
-    - master
+    - dataAnalytics-cypress-setup
 jobs:
   cypress-run:
     runs-on: ubuntu-20.04
