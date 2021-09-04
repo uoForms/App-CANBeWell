@@ -2,7 +2,7 @@ name: Cypress(Deploy Build - Data Analytics - Landing Page)
 'on':
   push:
     branches:
-    - dataAnalytics-cypress-setup
+    - master
 jobs:
   cypress-run:
     runs-on: ubuntu-20.04

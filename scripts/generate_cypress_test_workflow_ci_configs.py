@@ -11,7 +11,7 @@ ci_build_json = "cypress/configs/ci-build.json"
 ci_deploy_json = "cypress/configs/ci-deploy.json"
 local_host = 'http://localhost:3000'
 
-push_on_master = {"push": {"branches": ["dataAnalytics-cypress-setup"]}}
+push_on_master = {"push": {"branches": ["master"]}}
 
 
 def set_up():
