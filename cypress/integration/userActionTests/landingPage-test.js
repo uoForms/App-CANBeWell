@@ -1,5 +1,5 @@
-import devicesTestWrapper from '../support/devicesTestWrapper';
-import LandingPage from '../pageObjects/landingPage';
+import devicesTestWrapper from '../../support/devicesTestWrapper';
+import LandingPage from '../../pageObjects/landingPage';
 
 devicesTestWrapper(
   'Landing Page', () => {

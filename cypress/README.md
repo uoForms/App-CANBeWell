@@ -2,7 +2,7 @@
 
 This README describes the setup and usage of testing framework for App-CANBeWell.
 
-Last updated: Sept 1 2021
+Last updated: Sept 4 2021
 
 ## Basic
 
@@ -12,6 +12,13 @@ The framework is built on top of Cypress.io. For basic usage, please see the fol
 * [Cypress Github Repo](https://github.com/cypress-io/cypress)
 * [Cypress Guides](https://docs.cypress.io/guides/overview/why-cypress)
 * [Cypress API](https://docs.cypress.io/api/table-of-contents)
+
+This framework mainly contains three types of testing:
+
+1. User action testing: It mainly simulates how users would interact with a webpage (e.g., go to a page, click a button
+   and view some text).
+2. Data analytics testing: It mainly verifies that user actions are recorded and logged via Google Analytics.
+3. Text/translation testing: It mainly verifies all the strings displayed are correct.
 
 ## Usage
 
@@ -38,21 +45,31 @@ There is less limitation and the above undesired use case can be avoided complet
 
 #### Development Build
 
-Development build is designed to run on every pushed commits. It is controlled
-by `.github/workflows/ci-build-cy-test.yml`. In this build, the CI will start a localhost server on port 3000 in the
-background. The Cypress test set runs against the said server using Chrome. Once the test execution finished, test
-reports are uploaded as artifacts and stored on GitHub Actions for 7 days. If any test(s) fail, failed screenshot(s) are
-uploaded as well.
+Development build is designed to run on every pushed commits. It is controlled by `.github/workflows/ci-build-*.yml`. In
+this build, the CI will start a localhost server on port 3000 in the background. The Cypress test set runs against the
+said server using Chrome. Once the test execution finished, test reports are uploaded as artifacts and stored on GitHub
+Actions for 7 days. If any test(s) fail, failed screenshot(s) are uploaded as well.
 
 #### Deploy Build
 
-Deploy build is designed to run post deploy. It is controlled by `.github/workflows/ci-deploy-cy-test.yml`. This build
-only triggers when master branch is updated. It will wait for Travis CI deploy to finish and execute the test set
+Deploy build is designed to run post deploy. It is controlled by `.github/workflows/ci-deploy-*.yml`. This build only
+triggers when master branch is updated. It will wait for Travis CI deploy to finish and execute the test set
 against `https://canbewell-test.web.app` using Chrome. Similar to development build, test reports and screenshots are
 uploaded.
 
 Note: Even if a deployment is made against other urls (e.g., real production server), the test set will still be
 executed against `canbewell-test.web.app` to avoid polluting analytical data.
+
+#### Parallelization
+
+For data analytics testing, [Data-driven testing](https://en.wikipedia.org/wiki/Data-driven_testing) strategy is used.
+Due to its unique nature of large dataset, it requires longer compute time. If all tests are running sequentially. each
+test execution will take hours. In order to reduce the wait time. Parallelization is introduced. Cypress.io provides out
+of box parallelization solution. Unfortunately, it is not free. Therefore, we have to create our own
+implementation. `scripts/generate_cypress_test_workflow_ci_configs.py` is a script that generate github action workflow
+configs. Each config contains a subset of total test cases. When the trigger event is triggered, each config will start
+a new running session (or waiting in the queue for an available session slot). This will allow us to run up to 10 test
+cases parallely.
 
 ## Configuration
 
@@ -93,7 +110,9 @@ It contains Cypress config files. See Configuration section for details.
 
 ### `cypress/integration`
 
-It contains test cases. To create a new test, please use the following template:
+#### `/userActionTests`
+
+It contains test cases that cover user actions. To create a new test, please use the following template:
 
 ```javascript
 import devicesTestWrapper from '../support/devicestestWrapper';
@@ -116,6 +135,18 @@ devicesTestWrapper(
 );
 ```
 
+#### `/dataAnalyticsTests`
+
+Due to the need of manual parallelization, the folder structure is slightly more complicated.
+
+##### `/*-helper`
+
+All concrete test steps are described in helper files.
+
+##### `/testSet`
+
+This folder contains all test execution files. Each execution file call the concrete test steps from '/*-helper'.
+
 ### `cypress/logs`
 
 It is not tracked in Git. The purpose of this folder is to collect all failed test log.
@@ -130,9 +161,9 @@ this [page](https://www.selenium.dev/documentation/guidelines/page_object_models
 To create a new page object, please use the following template:
 
 ```javascript
-class NewPageObject extends <BasePage or OtherPageObject>{
+class NewPageObject extends BasePageOrOtherPageObjects {
     helperFunction() {
-    // code
+        // code
     }
 
     // ...
@@ -160,6 +191,9 @@ This file allows us to run the same test case multiple times with different view
 * Tablet Vertical 768x1024
 * Phone Horizontal 736x414
 * Phone Vertical 414x736
+
+Please note: `devicesTestWrapper()` is not used for analytics testing. The difference in viewports has no effect on
+network requests.
 
 #### `index.d.ts`
 
