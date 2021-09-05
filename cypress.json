@@ -1,5 +1,9 @@
 {
-   "reporter": "cypress-mochawesome-reporter",
-   "retries": { "runMode": 3, "openMode": 0 },
-   "fixturesFolder": false
+  "reporter": "cypress-mochawesome-reporter",
+  "retries": {
+    "runMode": 3,
+    "openMode": 0
+  },
+  "fixturesFolder": false,
+  "video": false
 }

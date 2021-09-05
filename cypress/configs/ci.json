@@ -1,4 +1,0 @@
-{
-  "extends": "../../cypress.json",
-  "baseUrl": "https://canbewell-test.web.app"
-}
