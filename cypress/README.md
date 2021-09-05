@@ -163,7 +163,7 @@ To create a new page object, please use the following template:
 ```javascript
 class NewPageObject extends BasePageOrOtherPageObjects {
     helperFunction() {
-        // code
+    // code
     }
 
     // ...
