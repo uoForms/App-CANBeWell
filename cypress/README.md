@@ -110,7 +110,7 @@ It contains Cypress config files. See Configuration section for details.
 
 ### `cypress/integration`
 
-#### `/userActionTests`
+#### `./userActionTests`
 
 It contains test cases that cover user actions. To create a new test, please use the following template:
 
@@ -135,17 +135,17 @@ devicesTestWrapper(
 );
 ```
 
-#### `/dataAnalyticsTests`
+#### `./dataAnalyticsTests`
 
 Due to the need of manual parallelization, the folder structure is slightly more complicated.
 
-##### `/*-helper`
+##### `./*-helper`
 
 All concrete test steps are described in helper files.
 
-##### `/testSet`
+##### `./testSet`
 
-This folder contains all test execution files. Each execution file call the concrete test steps from '/*-helper'.
+This folder contains all test execution files. Each execution file call the concrete test steps from `./*-helper`.
 
 ### `cypress/logs`
 
