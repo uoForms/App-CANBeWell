@@ -52,10 +52,9 @@ Actions for 7 days. If any test(s) fail, failed screenshot(s) are uploaded as we
 
 #### Deploy Build
 
-Deploy build is designed to run post deploy. It is controlled by `.github/workflows/ci-deploy-*.yml`. This build only
-triggers when master branch is updated. It will wait for Travis CI deploy to finish and execute the test set
-against `https://canbewell-test.web.app` using Chrome. Similar to development build, test reports and screenshots are
-uploaded.
+Deploy build is designed to run post deploy. It is controlled by `.github/workflows/ci-deploy-*.yml`. This build is
+triggered every night (UTC 4am) on master branch. It will execute the test set against `https://canbewell-test.web.app`
+using Chrome. Similar to development build, test reports and screenshots are uploaded.
 
 Note: Even if a deployment is made against other urls (e.g., real production server), the test set will still be
 executed against `canbewell-test.web.app` to avoid polluting analytical data.
