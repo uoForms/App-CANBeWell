@@ -1,0 +1,24 @@
+name: Deploy Application
+'on':
+  push:
+    branches:
+      - switch-ci
+jobs:
+  deploy:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '12'
+      - run: curl --compressed -o- -L https://yarnpkg.com/install.sh | bash
+      - run: export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+      - run: yarn global add firebase-tools
+      - run: rm -r ./src/JSONFolder
+      - run: mkdir ./src/JSONFolder
+      - run: curl -L -o ./src/JSONFolder/HtmlTopic-EN.json "https://drive.google.com/uc?export=download&id=1KmTemPnVDmXcxMKrJ48y0jAoG5MYl58f"
+      - run: curl -L -o ./src/JSONFolder/HtmlTopic-FR.json "https://drive.google.com/uc?export=download&id=1lru1LitepXYPCvdovo11xz8s7MdZhBzI"
+      - run: curl -L -o ./src/JSONFolder/HtmlTest-FR.json "https://drive.google.com/uc?export=download&id=1iapSdfbUYnUDn6nrDavN536rey-1tiBD"
+      - run: curl -L -o ./src/JSONFolder/HtmlTest-EN.json "https://drive.google.com/uc?export=download&id=1eNwhPOhb9koID2G_c53O7yu3iQ2pJJZR"
+      - run: yarn install
+      - run: CI=false yarn build
