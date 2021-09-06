@@ -3,7 +3,7 @@ name: Cypress(Deploy Build - Data Analytics - Body - Fr - Patient - 70)
 'on':
   push:
     branches:
-    - switch-cypress-nightly-build
+    - switch-cypress-night-build
 jobs:
   cypress-run:
     runs-on: ubuntu-20.04
