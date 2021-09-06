@@ -1,8 +1,8 @@
-name: Deploy Application
+name: Build Application with Updated JSONFolder
 'on':
   push:
-    branches:
-      - switch-ci
+    branches-ignore:
+      - 'switch-ci'
 jobs:
   deploy:
     runs-on: ubuntu-20.04
@@ -13,7 +13,6 @@ jobs:
           node-version: '12'
       - run: curl --compressed -o- -L https://yarnpkg.com/install.sh | bash
       - run: export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-      - run: yarn global add firebase-tools
       - run: rm -r ./src/JSONFolder
       - run: mkdir ./src/JSONFolder
       - run: curl -L -o ./src/JSONFolder/HtmlTopic-EN.json "https://drive.google.com/uc?export=download&id=1KmTemPnVDmXcxMKrJ48y0jAoG5MYl58f"
@@ -23,4 +22,3 @@ jobs:
       - uses: c-hive/gha-yarn-cache@v2
       - run: yarn install
       - run: CI=false yarn build
-      - run: bash scripts/deploy.sh
