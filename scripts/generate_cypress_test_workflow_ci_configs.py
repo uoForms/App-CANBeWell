@@ -11,7 +11,7 @@ ci_build_json = "cypress/configs/ci-build.json"
 ci_deploy_json = "cypress/configs/ci-deploy.json"
 local_host = 'http://localhost:3000'
 
-push_on_master = {"push": {"branches": ["master"]}}
+nightly_build = {"schedule": [{'cron': '0 4 * * *'}]}
 
 
 def set_up():
@@ -48,18 +48,6 @@ def generate_cypress_upload_step(item_type, condition):
 
 upload_screenshot_step = generate_cypress_upload_step("screenshots", "failure")
 upload_report_step = generate_cypress_upload_step("reports", "always")
-
-wait_for_deploy_step = {
-    "name": "Wait for Deploy",
-    "uses": "lewagon/wait-on-check-action@v1.0.0",
-    "with": {
-        "ref": "${{ github.sha }}",
-        "check-name": 'Travis CI - Branch',
-        "repo-token": "${{ secrets.GITHUB_TOKEN }}",
-        "wait-interval": 10,
-        "allowed-conclusions": "success"
-    }
-}
 
 
 def generate_cypress_run_step(config_file, url=None, spec=None, config=None):
@@ -99,8 +87,8 @@ def generate_deploy_analytics_body(locale, user, age):
     spec = f"cypress/integration/dataAnalyticsTests/testSet/bodyPage-test-{locale}-{user}-{age}.js"
     return generate_file(
         f"Cypress(Deploy Build - Data Analytics - Body - {locale.capitalize()} - {user.capitalize()} - {age})",
-        push_on_master,
-        [check_out_step, wait_for_deploy_step,
+        nightly_build,
+        [check_out_step,
          generate_cypress_run_step(ci_deploy_json, spec=spec),
          upload_screenshot_step, upload_report_step])
 
@@ -118,8 +106,8 @@ def generate_build_analytics_landing():
 def generate_deploy_analytics_landing():
     return generate_file(
         "Cypress(Deploy Build - Data Analytics - Landing Page)",
-        push_on_master,
-        [check_out_step, wait_for_deploy_step,
+        nightly_build,
+        [check_out_step,
          generate_cypress_run_step(ci_deploy_json,
                                    spec="cypress/integration/dataAnalyticsTests/testSet/landingPage-test.js"),
          upload_screenshot_step, upload_report_step])
@@ -138,8 +126,8 @@ def generate_build_user_action():
 def generate_deploy_user_action():
     return generate_file(
         "Cypress(Deploy Build - User Action)",
-        push_on_master,
-        [check_out_step, wait_for_deploy_step,
+        nightly_build,
+        [check_out_step,
          generate_cypress_run_step(ci_deploy_json, config="integrationFolder=cypress/integration/userActionTests"),
          upload_screenshot_step, upload_report_step])
 
