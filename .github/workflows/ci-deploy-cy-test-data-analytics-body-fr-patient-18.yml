@@ -3,6 +3,7 @@ name: Cypress(Deploy Build - Data Analytics - Body - Fr - Patient - 18)
 'on':
   schedule:
   - cron: 0 4 * * *
+  workflow_dispatch:
 jobs:
   cypress-run:
     runs-on: ubuntu-20.04
