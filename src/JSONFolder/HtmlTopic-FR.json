@@ -92,6 +92,26 @@
   {
     "Button": "Covid",
     "Topic heading": "COVID-19",
+    "Subject": "Applications mobiles",
+    "General Patient Text": "[[Cliquez ici; https://www.canada.ca/fr/gouvernement/systeme/gouvernement-numerique/reponse-numerique-du-gouvernement-du-canada-covid-19.html]]",
+    "Health Provider Text": "n/a",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Covid",
+    "Topic heading": "COVID-19",
+    "Subject": "Risques de contracter la COVID-19",
+    "General Patient Text": "[[Cliquez ici; https://www.canada.ca/fr/sante-publique/services/maladies/2019-nouveau-coronavirus/prevention-risques.html#r]]",
+    "Health Provider Text": "n/a",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Covid",
+    "Topic heading": "COVID-19",
     "Subject": "Nettoyage",
     "General Patient Text": "•Nettoyer souvent les surfaces dures fréquemment touchées, que ce soit avec des produits d'entretien ménager ordinaires ou avec de l'eau de Javel diluée conformément aux instructions figurant sur l'étiquette.\n•Cliquez sur [[la liste des désinfectants de Santé Canada; https://www.canada.ca/fr/sante-canada/services/medicaments-produits-sante/desinfectants/covid-19/liste.html#tbl1]]\n•La solution d'eau de Javel devrait être préparée conformément aux instructions figurant sur l'étiquette ou selon un ratio de 250 ml (1 tasse) d'eau pour 5 ml (1 cuillère à thé) d'eau de Javel. Les instructions sont fondées sur de l'eau de Javel contenant de l'hypochlorite de sodium à 5 %, qui donnerait une solution d'hypochlorite de sodium de 0,1 %. Ne mélangez jamais de l'eau de Javel avec d'autres produits chimiques.",
     "Health Provider Text": "n/a",
@@ -290,56 +310,6 @@
     "Maximum age": 69
   },
   {
-    "Button": "Genitalia",
-    "Topic heading": "Sexe et prostate",
-    "Subject": "Cancer de la prostate",
-    "General Patient Text": "Patient: pas de dépistage",
-    "Health Provider Text": "Fournisseur: pas de dépistage",
-    "Gender": "tm",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Genitalia",
-    "Topic heading": "Sexe et prostate",
-    "Subject": "Cancer de la prostate",
-    "General Patient Text": "Patient: Identique aux hommes cis / discuter avec le prestataire (la chirurgie du bas ne retire pas la prostate)",
-    "Health Provider Text": "",
-    "Gender": "tf",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Genitalia",
-    "Topic heading": "Sexe et prostate",
-    "Subject": "Cancer de la prostate",
-    "General Patient Text": "Patient atteint d'un cancer de la prostate au 3e corps",
-    "Health Provider Text": "Fournisseur de cancer de la prostate du 3e corps",
-    "Gender": "nb",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Genitalia",
-    "Topic heading": "Sexe",
-    "Subject": "Contraception (sujet)",
-    "General Patient Text": "Patient: toutes les méthodes hormonales / barrières peuvent être utilisées (pas de contre-indications avec la testostérone)",
-    "Health Provider Text": "Fournisseur: Toutes les méthodes hormonales / barrières peuvent être utilisées (pas de contre-indications avec la testostérone)",
-    "Gender": "tm",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Genitalia",
-    "Topic heading": "Sexe",
-    "Subject": "Contraception (sujet)",
-    "General Patient Text": "Patient: utiliser une méthode de barrière (ou demander à un partenaire d'utiliser une contraception hormonale) en l'absence de chirurgie du bas et avoir des relations sexuelles avec un partenaire qui pourrait tomber enceinte",
-    "Health Provider Text": "Prestataire: utilisez une méthode de barrière (ou demandez à votre partenaire d'utiliser une contraception hormonale) s'il n'y a pas de chirurgie du bas et si vous avez des relations sexuelles avec un partenaire qui pourrait tomber enceinte",
-    "Gender": "tf",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
     "Button": "Stomach",
     "Topic heading": "Alimentation",
     "Subject": "Sources d'information",
@@ -378,6 +348,46 @@
     "Gender": "m",
     "Minimum age": 65,
     "Maximum age": 80
+  },
+  {
+    "Button": "Genitalia",
+    "Topic heading": "Cancer de la prostate",
+    "Subject": "Informations",
+    "General Patient Text": "•\tLes chirurgies du « bas » chez les femmes trans (telle que la vaginoplastie) n’enlèvent pas la prostate, donc vous pourriez quand même développer un cancer de la prostate même si vous avez subi une chirurgie.\n•\tSi vous avez des inquiétudes par rapport à votre prostate, discutez-en avec votre fournisseur de soins de santé.\n•\tAu Canada, le dépistage systématique du cancer de la prostate n’est pas recommandé par le Groupe d’étude canadien sur les soins de santé préventifs.",
+    "Health Provider Text": "•\tLa prostate reste en place, même suite à la chirurgie d’affirmation de genre (p. ex. vaginoplastie); les femmes trans et les personnes faisant partie du spectre transféminin pourraient donc quand même développer un cancer de la prostate.\n•\tLes lignes directrices actuelles pour le dépistage du cancer de la prostate devraient être suivies: au Canada, le dépistage systématique du cancer de la prostate par l’entremise de l’antigène prostatique spécifique (APS, ou « PSA » en anglais) n’est pas recommandé par le Groupe d’étude canadien sur les soins de santé préventifs (GECSSP, ou « CTFPHC » en anglais).",
+    "Gender": "tf",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Genitalia",
+    "Topic heading": "Cancer de la prostate",
+    "Subject": "Ressources",
+    "General Patient Text": "•\t[[Lignes directrices de RHO; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n•\t[[Lignes directrices de Transcare UCSF; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf]]\n•\t[[Lignes directrices de l’Endocrine Society; https://academic.oup.com/jcem/article/102/11/3869/4157558]]",
+    "Health Provider Text": "•\tSi un examen de la prostate est nécessaire chez une femme trans ayant subi une vaginoplastie, il peut être effectué de manière traditionnelle par un toucher rectal, ou en palpant la prostate à travers la paroi antérieure du néo-vagin (UCSF).\n•\t[[Astuces pour l’examen de la prostate chez les femmes trans et les personnes faisant partie du spectre transféminin; https://transcare.ucsf.edu/guidelines/prostate-testicular-cancer]]\n•\t[[Lignes directrices de RHO; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n•\t[[Lignes directrices de Transcare UCSF; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf]]\n•\t[[Lignes directrices de l’Endocrine Society; https://academic.oup.com/jcem/article/102/11/3869/4157558]]",
+    "Gender": "tf",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Genitalia",
+    "Topic heading": "Cancer de la prostate",
+    "Subject": "Informations",
+    "General Patient Text": "Les chirurgies du « bas » pour les hommes trans (telles que la métaidoïoplastie et la phalloplastie) ne créent pas de prostate, donc vous n’êtes pas à risque de développer un cancer de la prostate même si vous avez subi une chirurgie.",
+    "Health Provider Text": "Les hommes trans et les personnes faisant partie du spectre transmasculin n’ont généralement pas de prostate, à moins d’avoir une condition de santé intersexe. De plus, une prostate n’est pas créée pendant la chirurgie d’affirmation de genre (telles la phalloplastie ou la métadoïoplastie), donc le cancer de la prostate n’est pas une possibilité chez ces patients.",
+    "Gender": "tm",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Genitalia",
+    "Topic heading": "Cancer de la prostate",
+    "Subject": "Ressources",
+    "General Patient Text": "",
+    "Health Provider Text": "",
+    "Gender": "tm",
+    "Minimum age": 18,
+    "Maximum age": 150
   },
   {
     "Button": "Colon",
@@ -441,51 +451,41 @@
   },
   {
     "Button": "Breast",
-    "Topic heading": "Cancer du sein",
-    "Subject": "AFAB sans chirurgie top",
-    "General Patient Text": "Patient: mammographie toutes les 2 ans de 50 à 75 ans",
-    "Health Provider Text": "Prestataire: mammographie toutes les 2 ans de 50 à 75 ans",
-    "Gender": "tm",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Breast",
-    "Topic heading": "Cancer du sein",
-    "Subject": "AFAB sans chirurgie top",
-    "General Patient Text": "Patiente: envisager une mammographie toutes les 2 ans entre 50 et 75 ans en cas de surplus de tissu mammaire; probablement pas nécessaire",
-    "Health Provider Text": "Prestataire: envisager une mammographie toutes les 2 ans entre 50 et 75 ans s'il y a des restes de tissu mammaire; probablement pas nécessaire",
-    "Gender": "tm",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Breast",
-    "Topic heading": "Cancer du sein",
-    "Subject": "AMAB sans chirurgie supérieure",
-    "General Patient Text": "Patiente: envisager un examen des seins / une mammographie toutes les 2 ans entre 50 et 75 ans si elle est sous œstrogène pendant plus de 3 à 5 ans",
-    "Health Provider Text": "Prestataire: envisager un examen des seins / une mammographie toutes les 2 ans entre 50 et 75 ans si vous prenez des œstrogènes pendant plus de 3 à 5 ans",
+    "Topic heading": "Cancer du sein/de la poitrine",
+    "Subject": "Informations",
+    "General Patient Text": "•Si vous prenez de l’hormonothérapie d’affirmation de genre (œstrogène +/- progestérone) et avez des seins, vous avez besoin de subir des mammographies de dépistage régulièrement, dépendant de votre âge\n•En Ontario, la recommandation à l’heure actuelle est de passer une mammographie tous les 2 ans de l’âge de 50 à 74 ans\n•Il se peut que certains fournisseurs de soins de santé primaire recommandent que vous ne subissiez une mammographie après l’âge de 50 ans qu’après avoir pris au moins 5 ans d’hormonothérapie d’affirmation de genre",
+    "Health Provider Text": "• Les femmes trans et les personnes faisant partie du spectre transféminin qui prennent des hormones féminines devraient subir un dépistage du cancer du sein tel que recommandé par les lignes directrices pour les femmes cisgenres.\n• En Ontario, la recommandation à l’heure actuelle est de passer une mammographie tous les 2 ans de l’âge de 50 à 74 ans.\n• Certaines lignes directrices (RHO et UCSF) précisent de seulement débuter le dépistage si la patiente prend une hormonothérapie d’affirmation de genre depuis un total de > 5 ans (et même jusqu’à 10 ans d’après l’UCSF), tandis que d’autres ne spécifient pas de durée minimale.",
     "Gender": "tf",
     "Minimum age": 18,
     "Maximum age": 150
   },
   {
     "Button": "Breast",
-    "Topic heading": "Cancer du sein",
-    "Subject": "AMAB sans chirurgie supérieure",
-    "General Patient Text": "Patiente: examen des seins / mammographie toutes les 2 ans de 50 à 75 ans",
-    "Health Provider Text": "Prestataire: examen des seins / mammographie tous les 2 ans de 50 à 75 ans",
+    "Topic heading": "Cancer du sein/de la poitrine",
+    "Subject": "Ressources",
+    "General Patient Text": "• [[Survol du dépistage du cancer du sein chez les femmes trans au Canada; https://www.cancer.ca/fr-ca/prevention-and-screening/reduce-cancer-risk/find-cancer-early/screening-in-lgbtq-communities/trans-women-and-breast-cancer-screening/?region=on]]\n• [[Lignes directrices de RHO; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n• [[Lignes directrices de Transcare UCSF; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf]]\n•\t[[Lignes directrices de l’Endocrine Society; https://academic.oup.com/jcem/article/102/11/3869/4157558]]",
+    "Health Provider Text": "• Notez que l’on préconise la mammographie diagnostique en présence d’implants mammaires, au lieu de la mammographie de dépistage typique (RHO)\n• [[Survol du dépistage du cancer du sein chez les femmes trans au Canada; https://www.cancer.ca/fr-ca/prevention-and-screening/reduce-cancer-risk/find-cancer-early/screening-in-lgbtq-communities/trans-women-and-breast-cancer-screening/?region=on]]\n• [[Lignes directrices de RHO; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n• [[Lignes directrices de Transcare UCSF; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf]]\n• [[Lignes directrices de l’Endocrine Society; https://academic.oup.com/jcem/article/102/11/3869/4157558]]",
     "Gender": "tf",
     "Minimum age": 18,
     "Maximum age": 150
   },
   {
     "Button": "Breast",
-    "Topic heading": "Cancer du sein",
-    "Subject": "Dépistage du cancer du sein",
-    "General Patient Text": "Patiente d'un cancer du sein au 3e corps",
-    "Health Provider Text": "Fournisseur de cancer du sein du 3e corps",
-    "Gender": "nb",
+    "Topic heading": "Cancer du sein/de la poitrine",
+    "Subject": "Informations",
+    "General Patient Text": "•Si vous n’avez pas eu de chirurgie reconstructive de la poitrine (aussi appelé « mastectomie »), vous avez besoin d’une mammographie tous les 2 ans de 50 à 74 ans, si vous vivez en Ontario.\n• Vous avez quand même besoin de mammographies si vous avez subi une réduction mammaire (et non une mastectomie).\n• Si vous avez eu une mastectomie, demandez à votre fournisseur de soins primaires si vous avez besoin d’examens de la poitrine régulièrement; généralement, ce n’est pas le cas.",
+    "Health Provider Text": "• Les hommes trans et les personnes faisant partie du spectre transmasculin qui n’ont pas eu de mastectomie bilatérale devraient subir un dépistage du cancer du sein comme recommandé par les lignes directrices pour les femmes cisgenres.\n• En Ontario, la recommandation à l’heure actuelle est de passer une mammographie tous les 2 ans de l’âge de 50 à 74 ans.\n• Il n’existe actuellement pas d’évidence fiable quant au dépistage du cancer du sein chez les hommes trans et les personnes faisant partie du spectre transmasculin qui n’ont pas eu de mastectomie; considérez discuter des risques inconnus associés au tissu mammaire résiduel, ainsi que des limites techniques de la mammographie (UCSF).\n• Considérez continuer la surveillance pour le cancer du sein sur une base régulière même chez les patients ayant subi une mastectomie bilatérale, étant donné que les mastectomies n’enlèvent typiquement pas le tissu mammaire en entier; l’Endocrine Society suggère d’effectuer des examens péri- et sous-aréolaires annuellement chez les patients ayant subi une mastectomie, alors que l’UCSF recommande de ne pas effectuer d’examens (étant donné que ce n’est pas fondé sur des données probantes).",
+    "Gender": "tm",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Breast",
+    "Topic heading": "Cancer du sein/de la poitrine",
+    "Subject": "Ressources",
+    "General Patient Text": "• [[Survol du dépistage du cancer du sein/de la poitrine chez les hommes trans au Canada; https://www.cancer.ca/fr-ca/prevention-and-screening/reduce-cancer-risk/find-cancer-early/screening-in-lgbtq-communities/trans-men-and-chest-cancer-screening/?region=on]]\n• [[Lignes directrices de RHO; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n• [[Lignes directrices de Transcare UCSF; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf]]\n• [[Lignes directrices de l’Endocrine Society; https://academic.oup.com/jcem/article/102/11/3869/4157558]]",
+    "Health Provider Text": "• Faites attention au vocabulaire que vous employez pour décrire les parties du corps traditionnellement genrées, puisque certains termes pourraient mettre les patients mal à l’aise — considérez leur emboîter le pas et utiliser les mêmes mots qu’eux pour décrire certaines parties du corps (p. ex. certains hommes trans pourraient préférer utiliser le mot « poitrine » à la place de « seins »).\n• Notez que typiquement, les mastectomies n’enlèvent pas le tissu mammaire dans sa totalité et qu’il pourrait donc en rester, ce qui signifie que les patients ayant subi une mastectomie pourraient quand même être à risque de développer un cancer du sein (TransCare BC).\n• Si une anomalie est notée à l’examen d’un homme trans ayant subi une mastectomie, un ultrason +/- une IRM sont généralement indiqués, étant donné que la mammographie est techniquement difficile ou même impossible (RHO).\n• [[Survol du dépistage du cancer du sein chez les hommes trans au Canada; https://www.cancer.ca/fr-ca/prevention-and-screening/reduce-cancer-risk/find-cancer-early/screening-in-lgbtq-communities/trans-men-and-chest-cancer-screening/?region=on]]\n• [[Lignes directrices de RHO; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n• [[Lignes directrices de Transcare UCSF; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf]]\n• [[Lignes directrices de l’Endocrine Society; https://academic.oup.com/jcem/article/102/11/3869/4157558]]",
+    "Gender": "tm",
     "Minimum age": 18,
     "Maximum age": 150
   },
@@ -521,51 +521,41 @@
   },
   {
     "Button": "Uterus",
-    "Topic heading": "Cancer du col de l'utérus",
-    "Subject": "AFAB avec chirurgie du bas",
-    "General Patient Text": "Patient: test Pap aux 3 ans de 21 à 70 ans (Ontario)",
-    "Health Provider Text": "Fournisseur: test Pap aux 3 ans de 21 à 70 ans (Ontario)",
-    "Gender": "tm",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Uterus",
-    "Topic heading": "Cancer du col de l'utérus",
-    "Subject": "AFAB avec chirurgie du bas",
-    "General Patient Text": "Patient: dépistage si le col de l'utérus est toujours présent (dépend du type de chirurgie du bas)",
-    "Health Provider Text": "Prestataire: dépistage si le col de l'utérus est toujours présent (dépend du type de chirurgie du bas)",
-    "Gender": "tm",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Uterus",
-    "Topic heading": "Cancer du col de l'utérus",
-    "Subject": "AMAB sans chirurgie du bas",
-    "General Patient Text": "Patient: aucun dépistage nécessaire",
-    "Health Provider Text": "Fournisseur: Aucun dépistage nécessaire",
+    "Topic heading": "Cancer du col de l’utérus",
+    "Subject": "Informations",
+    "General Patient Text": "• La majorité des femmes trans et les personnes faisant partie du spectre transféminin n’ont pas besoin de dépistage du cancer du col, qu’elles aient eu une vaginoplastie ou non.\n• Dans les très rares cas où un néo-col aurait pu être créé lors de la vaginoplastie, discutez de vos besoins de dépistage avec votre fournisseur de soins de santé.\n• Si vous avez subi une vaginoplastie, votre fournisseur de soins primaires pourrait possiblement suggérer des examens visuels annuels à l’aide d’un spéculum.",
+    "Health Provider Text": "•\tLes femmes trans et les personnes faisant partie du spectre transféminin n’ont généralement pas besoin de subir de dépistage du cancer du col étant donné que la vaginoplastie ne crée typiquement pas un néo-col.\n•\tLe dépistage de la voûte néo-vaginale n’est pas\nrecommandé.\n• Dans les très rares cas où un néo-col aurait pu être créé lors de la vaginoplastie (tel qu’à partir du gland du pénis), considérez suivre les mêmes lignes directrices de dépistage du col de l’utérus que pour les femmes cisgenres (ACOG) (en Ontario, on recommande d’effectuer un test Pap aux 3 ans de l’âge de 21 à 69 ans pour toutes celles ayant déjà été sexuellement actives).\n• Chez les patientes ayant subi une vaginoplastie, considérez effectuer un examen visuel du néo-vagin annuellement à l’aide d’un spéculum, afin de détecter visuellement des anomalies (néoplasiques ou autres) (RHO).",
     "Gender": "tf",
     "Minimum age": 18,
     "Maximum age": 150
   },
   {
     "Button": "Uterus",
-    "Topic heading": "Cancer du col de l'utérus",
-    "Subject": "AMAB sans chirurgie du bas",
-    "General Patient Text": "Patient: envisager un test Pap toutes les 3 ans entre 21 et 70 ans, en particulier si la néovagine est faite de tissu pénien",
-    "Health Provider Text": "Prestataire: envisager un test Pap toutes les 3 ans entre 21 et 70 ans, en particulier si le néovagin est fabriqué à partir de tissu pénien",
+    "Topic heading": "Cancer du col de l’utérus",
+    "Subject": "Ressources",
+    "General Patient Text": "•\t[[Survol du dépistage du cancer du col de l’utérus chez les femmes trans au Canada;  https://www.cancer.ca/fr-ca/prevention-and-screening/reduce-cancer-risk/find-cancer-early/screening-in-lgbtq-communities/trans-women-and-cervical-cancer-screening/?region=on]]\n• [[Lignes directrices de RHO; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n• [[Lignes directrices de Transcare UCSF; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf]]\n• [[Lignes directrices de l’Endocrine Society; https://academic.oup.com/jcem/article/102/11/3869/4157558]]",
+    "Health Provider Text": "• Les néo-vagins peuvent avoir une orientation plus postérieure que les vagins cisgenres, donc il se peut que l’utilisation d’un anoscope plus que d’un speculum soit plus appropriée dans une telle situation (UCSF).\n• [[Survol du dépistage du cancer du col de l’utérus chez les femmes trans au Canada; https://www.cancer.ca/fr- ca/prevention-and-screening/reduce-cancer-risk/find-  cancer-early/screening-in-lgbtq-communities/trans- women-and-cervical-cancer-screening/?region=on]]\n• [[Astuces pour l’examen physique des patientes trans;\nhttps://transcare.ucsf.edu/guidelines/physical-examination]]\n• [[Lignes directrices de RHO; https://www.rainbowhealthontario.ca/wp- content/uploads/woocommerce_uploads/2019/12/Guideli nes-FINAL-Dec-2019-iw2oti.pdf]]\n• [[Lignes directrices de Transcare UCSF; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Tr ansgender-PGACG-6-17-16.pdf]]\n• [[Lignes directrices de l’Endocrine Society; https://academic.oup.com/jcem/article/102/11/3869/4157 558]]",
     "Gender": "tf",
     "Minimum age": 18,
     "Maximum age": 150
   },
   {
     "Button": "Uterus",
-    "Topic heading": "Cancer du col de l'utérus",
-    "Subject": "Dépistage du cancer du col de l'utérus",
-    "General Patient Text": "Patient atteint d'un cancer du col utérin au 3e corps",
-    "Health Provider Text": "Fournisseur de cancer du col utérin du 3e corps",
-    "Gender": "nb",
+    "Topic heading": "Cancer du col de l’utérus",
+    "Subject": "Informations",
+    "General Patient Text": "• Si vous n’avez pas subi de chirurgie pour enlever le col de l’utérus (la partie inférieure de l’utérus menant au vagin), vous avez besoin de dépistage régulier pour le cancer du col de l’utérus.\n• En Ontario, on recommande d’effectuer un test Pap du col de l’utérus aux 3 ans, de l’âge de 21 à 69 ans, pour tous ceux ayant déjà été sexuellement actifs.\n• Si vous croyez que votre col de l’utérus aurait été enlevé pendant une chirurgie (telle une hystérectomie), discutez de la nécessité d’effectuer des tests Pap avec votre fournisseur de soins de santé.",
+    "Health Provider Text": "• Les hommes trans et les personnes faisant partie du spectre transmasculin qui ont encore un col de l’utérus devraient subir un dépistage du cancer du col de l’utérus comme recommandé par les lignes directrices pour les femmes cis.\n• En Ontario, on recommande d’effectuer un test Pap du col de l’utérus aux 3 ans, de l’âge de 21 à 69 ans, pour tous ceux ayant déjà été sexuellement actifs.",
+    "Gender": "tm",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Uterus",
+    "Topic heading": "Cancer du col de l’utérus",
+    "Subject": "Ressources",
+    "General Patient Text": "• [[Survol du dépistage du cancer du col de l’utérus chez les hommes trans au Canada; https://www.cancer.ca/fr-ca/prevention-and-screening/reduce-cancer-risk/find-cancer-early/screening-in-lgbtq-communities/trans-men-and-cervical-cancer-screening/?region=on]]\n• [[Lignes directrices de RHO; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n• [[Lignes directrices de Transcare UCSF; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf]]\n• [[Lignes directrices de l’Endocrine Society; https://academic.oup.com/jcem/article/102/11/3869/4157558]]",
+    "Health Provider Text": "• L’application d’oestrogènes vaginaux pendant une semaine avant le test Pap peut être utile (RHO, UCSF).\n• Si l’examen au spéculum est douloureux ou difficile en raison d’atrophie vaginale, considérez appliquer de la gelée de lidocaïne 2% vaginalement 5 à 10 minutes avant la procédure (RHO).\n• Considérez offrir une petite dose de lorazépam avant la procédure si un patient est particulièrement anxieux par rapport à l’examen (RHO, UCSF).\n• Utilisez un spéculum pédiatrique si possible afin de diminuer l’inconfort.\n• Si l’insertion du spéculum demeure difficile, suggérez de permettre au patient d’insérer le spéculum lui-même, ou même d’observer la procédure à l’aide d’un miroir (UCSF).\n• Veuillez noter que les échantillons Pap insatisfaisants sont beaucoup plus communs chez les hommes trans que chez les femmes cis, et qu’il est possible qu’il soit nécessaire de les répéter; assurez-vous d’indiquer sur la requête de cytologie si le patient prend/prenait de la testostérone (UCSF, RHO), car l’atrophie cervicale peut imiter la dysplasie (WHO).\n• [[Survol du dépistage du cancer du col de l’utérus chez les hommes trans au Canada; https://www.cancer.ca/fr-ca/prevention-and-screening/reduce-cancer-risk/find-cancer-early/screening-in-lgbtq-communities/trans-men-and-cervical-cancer-screening/?region=on]]\n• [[Astuces pour l’examen physique des patients trans; https://transcare.ucsf.edu/guidelines/physical-examination]]\n• [[Astuces pour le test Pap chez les hommes trans; https://www.rainbowhealthontario.ca/wp-content/uploads/2015/07/Tips_Paps_TransMen-1.jpg]]\n• [[Comment améliorer les expériences des hommes trans vis-à-vis les tests Pap; https://transcare.ucsf.edu/guidelines/cervical-cancer\n• [[Lignes directrices de RHO; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n• [[Lignes directrices de Transcare UCSF; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf]]\n• [[Lignes directrices de l’Endocrine Society; https://academic.oup.com/jcem/article/102/11/3869/4157558]]",
+    "Gender": "tm",
     "Minimum age": 18,
     "Maximum age": 150
   },
@@ -760,6 +750,26 @@
     "Maximum age": 150
   },
   {
+    "Button": "Bone",
+    "Topic heading": "L'ostéoporose",
+    "Subject": "L'ostéoporose",
+    "General Patient Text": "Patient ostéopororique du 3e corps",
+    "Health Provider Text": "Fournisseur d'ostéopororsie du 3e corps",
+    "Gender": "tm",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Bone",
+    "Topic heading": "L'ostéoporose",
+    "Subject": "L'ostéoporose",
+    "General Patient Text": "Patient: Généralement identique aux patients cis, mais considéré à risque élevé s'il ne prend AUCUNE hormone pendant des périodes prolongées (par exemple sans œstrogène ou testostérone)",
+    "Health Provider Text": "Prestataire: Généralement identique aux patients cis, mais considéré à risque élevé s'ils ne prennent AUCUNE hormone pendant des périodes prolongées (par exemple, pas d'œstrogène ou de testostérone)",
+    "Gender": "tf",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
     "Button": "Heart",
     "Topic heading": "Maladie cardiaque",
     "Subject": "Prévention",
@@ -840,6 +850,106 @@
     "Maximum age": 74
   },
   {
+    "Button": "Heart",
+    "Topic heading": "Maladie cardiaque",
+    "Subject": "Tabac",
+    "General Patient Text": "Il est recommandé d'arrêter ou de réduire.\nObtenez de l'aide sur les sites Web, les groupes et les lignes téléphoniques.\n[[Information selon la province; w.canada.ca/fr/sante-canada/services/tabagisme-et-tabac/cesser-fumer/services-provinciaux-territoriaux.html]]\n[[Suite; https://www.smokershelpline.ca/fr-ca/home]]",
+    "Health Provider Text": "n/a",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Heart",
+    "Topic heading": "Maladie cardiaque",
+    "Subject": "Tabac",
+    "General Patient Text": "n/a",
+    "Health Provider Text": "• Interrogez tous les patients sur l'usage du tabac,\n• Conseillez d'arrêter le tabac\n• Utiliser des interventions comportementales\n• Au besoin, utiliser une pharmacothérapie approuvée pour favoriser l'arrêt du traitement.\n[[USPSTF A (2013); https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/tobacco-use-in-adults-and-pregnant-women-counseling-and-interventions]]\n[[vidéo d'entrevue motivationelle; https://www.youtube.com/watch?v=URiKA7CKtfc]]",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Heart",
+    "Topic heading": "Maladies cardiovasculaires",
+    "Subject": "Informations",
+    "General Patient Text": "(Peut être les mêmes suggestions que pour les patients cisgenres)",
+    "Health Provider Text": "• Les lignes directrices actuelles pour la population générale quant à l’évaluation des facteurs de risques cardiovasculaires, tel le dépistage du diabète et de la dyslipidémie, devraient aussi être appliquées aux patients trans.\n•Encouragez le sevrage tabagique, la perte de poids, l’activité physique et la gestion adéquate du diabète.",
+    "Gender": "tf",
+    "Minimum age": 75,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Heart",
+    "Topic heading": "Maladies cardiovasculaires",
+    "Subject": "Ressources",
+    "General Patient Text": "(Peut être les mêmes suggestions que pour les patients cisgenres)",
+    "Health Provider Text": "Dépendant de la durée d’utilisation d’hormonothérapie d’affirmation de genre de la patiente, considérez utiliser un calculateur de risque basé soit sur le sexe assigné à la naissance, le genre affirmé, ou une moyenne des deux (UCSF).",
+    "Gender": "tf",
+    "Minimum age": 75,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Heart",
+    "Topic heading": "Maladies cardiovasculaires",
+    "Subject": "Informations",
+    "General Patient Text": "(Peut être les mêmes suggestions que pour les patients cisgenres)",
+    "Health Provider Text": "•Les lignes directrices actuelles pour la population générale quant à l’évaluation des facteurs de risques cardiovasculaires, tel le dépistage du diabète et de la dyslipidémie, devraient aussi être appliquées aux patients trans.\n•Encouragez le sevrage tabagique, la perte de poids, l’activité physique et la gestion adéquate du diabète.",
+    "Gender": "tm",
+    "Minimum age": 75,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Heart",
+    "Topic heading": "Maladies cardiovasculaires",
+    "Subject": "Ressources",
+    "General Patient Text": "(Peut être les mêmes suggestions que pour les patients cisgenres)",
+    "Health Provider Text": "Dépendant de la durée d’utilisation d’hormonothérapie d’affirmation de genre de la patiente, considérez utiliser un calculateur de risque basé soit sur le sexe assigné à la naissance, le genre affirmé, ou une moyenne des deux (UCSF).",
+    "Gender": "tm",
+    "Minimum age": 75,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Bone",
+    "Topic heading": "Ostéoporose",
+    "Subject": "Informations",
+    "General Patient Text": "• La mesure de la densité minérale osseuse est généralement recommandée pour toutes les personnes âgées de 65 ans et plus au Canada.\n• Vous pourriez avoir besoin du dépistage de l’ostéoporose plus tôt si: vous avez subi une orchidectomie (une chirurgie pour enlever les testicules) ou vous preniez un inhibiteur de la testostérone ou de la puberté (comme la spironolactone, la cyprotérone or le Lupron), et vous preniez une basse (ou aucune) dose d’hormonothérapie d’affirmation de genre.\n• Vous pourriez aussi avoir besoin d’un dépistage avant l’âge de 65 ans si vous avez d’autres facteurs de risque, tels que la prise de certains médicaments. Ce sont les mêmes facteurs de risque que pour les patientes cisgenres. Si vous avez des inquiétudes, discutez-en avec votre fournisseur de soins de santé.\n• Voici un calculateur de risque utilisé pour déterminer votre risque de fracture dans les 10 prochaines années: https://www.sheffield.ac.uk/FRAX/. Si vous avez subi une transition médicale, considérez utiliser la moyenne des résultats obtenus avec un calcul pour les femmes et un calcul pour les hommes pour déterminer votre risque.\n• Certains fournisseurs de soins de santé recommandent que toutes les patientes prenant de l’hormonothérapie s’assurent d’avoir un apport quotidien d’au moins 1200 mg de calcium et 1000 IU de vitamine D.",
+    "Health Provider Text": "• Toutes les femmes trans et les personnes faisant partie du spectre transféminin devraient subir un test de densité minérale osseuse tel que recommandé par les lignes directrices pour la population générale.\n• Pour les patientes à bas risque (sans facteurs de risques additionnels) au Canada, le dépistage débute habituellement à l’âge de 65 ans.\n• Comme recommandé par les lignes directrices pour la population générale, la mesure de la densité minérale osseuse devrait être considérée chez les patientes plus jeunes qui présentent des facteurs de risque associés à l’ostéoporose. Pour les femmes trans et les personnes faisant partie du spectre transféminin, cela inclut toute personne qui, peu importe leur âge: \n• A des antécédents d’hypogonadisme/gonadectomie, et des antécédents d’hormonothérapie insuffisante (à dose basse/intermittente) (pendant > 2 ans d’après RHO ou > 5 ans d’après UCSF; Endrocine Society, ISCD et TransCare BC ne spécifient pas de durée minimum d’hormonothérapie insuffisante).\n• A pris un anti-androgène/analogue GnRH en l’absence d’hormones exogènes (RHO, ISCD).\n•N’adhère pas à l’hormonothérapie ou y adhère seulement de façon intermittente (Endocrine Society, TransCare BC).\n• Par contre, l’Endocrine Society suggère considérer effectuer une mesure de la densité minérale osseuse chez toutes les patientes transféminines.\n• RHO (basé en Ontario) recommande que toutes les patientes prenant de l’hormonothérapie s’assurent d’avoir un apport quotidien d’au moins 1200 mg de calcium et 1000 IU de vitamine D.",
+    "Gender": "tf",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Bone",
+    "Topic heading": "Ostéoporose",
+    "Subject": "Ressources",
+    "General Patient Text": "• [[Pour plus d’informations sur l’ostéoporose; https://strwebstgmedia.blob.core.windows.net/media/libmnjci/transgender-people-and-osteoporosis-fact-sheet-march-2018.pdf]]\n• [[Lignes directrices de RHO; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n• [[Lignes directrices de Transcare UCSF; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf]]\n• [[Lignes directrices de l’Endocrine Society; https://academic.oup.com/jcem/article/102/11/3869/4157558]]",
+    "Health Provider Text": "• Considérez évaluer le risque d’ostéoporose des patientes trans à l’aide de la moyenne des résultats obtenus avec un calcul pour les femmes et un calcul pour les hommes [[calculateur de risque; https://www.sheffield.ac.uk/FRAX/]] (UCSF)\n• ISCD suggère que le score Z soit obtenu en comparant les données de la patiente aux données de référence du genre affirmé pour les patientes transgenres binaires (c.-à-d. qui s’identifient uniquement comme femme), ou aux données de référence du genre assigné à la naissance pour les patientes non-binaires (ISCD).\n• [[Lignes directrices de RHO; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n• [[Lignes directrices de Transcare UCSF; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf]]\n• [[Lignes directrices de l’Endocrine Society; https://academic.oup.com/jcem/article/102/11/3869/4157558]]",
+    "Gender": "tf",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Bone",
+    "Topic heading": "Ostéoporose",
+    "Subject": "Informations",
+    "General Patient Text": "•\tLa mesure de la densité minérale osseuse est généralement recommandée pour toutes les personnes âgées de 65 ans et plus au Canada.\n•\tVous pourriez avoir besoin du dépistage de l’ostéoporose plus tôt si: vous avez subi une ovariectomie (une chirurgie pour enlever les ovaires) ou vous preniez un inhibiteur de la puberté (comme le Lupron), et vous preniez une basse (ou aucune) dose d’hormonothérapie d’affirmation de genre.\n•\tVous pourriez aussi avoir besoin d’un dépistage avant l’âge de 65 ans si vous avez d’autres facteurs de risque, tels que la prise de certains médicaments. Ce sont les mêmes facteurs de risque que pour les patients cisgenres. Si vous avez des inquiétudes, discutez-en avec votre fournisseur de soins de santé.\n•\tVoici un calculateur de risque utilisé pour déterminer votre risque de fracture dans les 10 prochaines années: https://www.sheffield.ac.uk/FRAX/. Si vous avez subi une transition médicale, considérez utiliser la moyenne des résultats obtenus avec un calcul pour les femmes et un calcul pour les hommes pour déterminer votre risque.\n•\tCertains fournisseurs de soins de santé recommandent que tous les patients prenant de l’hormonothérapie s’assurent d’avoir un apport quotidien d’au moins 1200 mg de calcium et 1000 IU de vitamine D.",
+    "Health Provider Text": "•\tTous les hommes trans et les personnes faisant partie du spectre transmasculin devraient subir un test de densité minérale osseuse tel que recommandé par les lignes directrices pour la population générale.\n•\tPour les patients à bas risque (sans facteurs de risques additionnels) au Canada, le dépistage débute habituellement à l’âge de 65 ans.\n•\tComme recommandé par les lignes directrices pour la population générale, la mesure de la densité minérale osseuse devrait être considérée chez les patients plus jeunes qui présentent des facteurs de risque associés à l’ostéoporose. Pour les hommes trans et les personnes faisant partie du spectre transmasculin, cela inclut toute personne qui, peu importe leur âge: \n1) A des antécédents d’hypogonadisme/gonadectomie, et des antécédents d’hormonothérapie insuffisante (à dose basse/intermittente) (pendant > 2 ans d’après RHO ou > 5 ans d’après UCSF; Endrocine Society, ISCD et TransCare BC ne spécifient pas de durée minimum d’hormonothérapie insuffisante).\n2) A pris un analogue GnRH en l’absence d’hormones exogènes (RHO, ISCD).\n3) N’adhère pas à l’hormonothérapie ou y adhère seulement de façon intermittente (Endocrine Society, TransCare BC).\n•\tRHO (basé en Ontario) recommande que tous les patients prenant de l’hormonothérapie s’assurent d’avoir un apport quotidien d’au moins 1200 mg de calcium et 1000 IU de vitamine D.",
+    "Gender": "tm",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Bone",
+    "Topic heading": "Ostéoporose",
+    "Subject": "Ressources",
+    "General Patient Text": "• [[Pour plus d’informations sur l’ostéoporose; https://strwebstgmedia.blob.core.windows.net/media/libmnjci/transgender-people-and-osteoporosis-fact-sheet-march-2018.pdf]]\n• [[Lignes directrices de RHO; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n• [[Lignes directrices de Transcare UCSF; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf]]\n• [[Lignes directrices de l’Endocrine Society; https://academic.oup.com/jcem/article/102/11/3869/4157558]]",
+    "Health Provider Text": "•  Considérez évaluer le risque d’ostéoporose des patients trans à l’aide de la moyenne des résultats obtenus avec un calcul pour les femmes et un calcul pour les hommes [[calculateur de risque; https://www.sheffield.ac.uk/FRAX/]] (UCSF)\n•ISCD suggère que le score Z soit obtenu en comparant les données du patient aux données de référence du genre affirmé pour les patients transgenres binaires (c.-à-d. qui s’identifient uniquement comme femme), ou aux données de référence du genre assigné à la naissance pour les patients non-binaires (ISCD).\n• [[Lignes directrices de RHO; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n• [[Lignes directrices de Transcare UCSF; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf]]\n• [[Lignes directrices de l’Endocrine Society; https://academic.oup.com/jcem/article/102/11/3869/4157558]]",
+    "Gender": "tm",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
     "Button": "Ovary",
     "Topic heading": "Planification familiale",
     "Subject": "Prise d’acide folique",
@@ -896,16 +1006,6 @@
     "General Patient Text": "Patient: pas de dépistage",
     "Health Provider Text": "Fournisseur: pas de dépistage",
     "Gender": "tf",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Ovary",
-    "Topic heading": "Planification familiale",
-    "Subject": "Planification familiale",
-    "General Patient Text": "3ème corps planning familial-patient",
-    "Health Provider Text": "Organisme tiers fournisseur de planification familiale",
-    "Gender": "nb",
     "Minimum age": 18,
     "Maximum age": 150
   },
@@ -980,32 +1080,82 @@
     "Maximum age": 150
   },
   {
-    "Button": "Bone",
-    "Topic heading": "L'ostéoporose",
-    "Subject": "L'ostéoporose",
-    "General Patient Text": "Patient ostéopororique du 3e corps",
-    "Health Provider Text": "Fournisseur d'ostéopororsie du 3e corps",
-    "Gender": "tm",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Bone",
-    "Topic heading": "L'ostéoporose",
-    "Subject": "L'ostéoporose",
-    "General Patient Text": "Patient: Généralement identique aux patients cis, mais considéré à risque élevé s'il ne prend AUCUNE hormone pendant des périodes prolongées (par exemple sans œstrogène ou testostérone)",
-    "Health Provider Text": "Prestataire: Généralement identique aux patients cis, mais considéré à risque élevé s'ils ne prennent AUCUNE hormone pendant des périodes prolongées (par exemple, pas d'œstrogène ou de testostérone)",
+    "Button": "Genitalia",
+    "Topic heading": "Santé sexuelle",
+    "Subject": "Informations",
+    "General Patient Text": "•\tLes condoms sont recommandés pour les relations sexuelles anales.\n•\tDépendant de vos pratiques sexuelles, le dépistage pour les infections transmises sexuelles et le VIH pourraient être recommandés. Si vous avez des inquiétudes ou des questions à ce sujet, partagez-les avec votre fournisseur de soins de santé.\n•\tSi vous avez joué le rôle réceptif (« bottom ») lors de relations sexuelles anales, votre fournisseur de soins de santé pourrait vous recommander de subir des tests Pap anaux.\n•\tDiscutez de la prophylaxie pré-exposition (PrEP) avec votre fournisseur de soins de santé si vous avez des contacts sexuels avec les hommes et que vous avez des inquiétudes face à la prévention du VIH.",
+    "Health Provider Text": "•\tLes condoms sont recommandés pour les relations sexuelles anales.\n•\tSoulignez l’importance d’utiliser suffisamment de lubrifiant, pour les femmes trans et les hommes trans qui ont des relations sexuelles avec les hommes.\n•\tDépistez les ITS asymptomatiques basé sur les pratiques et comportements sexuels.\n•\tConsidérez offrir des Pap tests anaux aux 2-3 ans (ou annuellement chez ceux qui sont séropositifs pour le VIH) à ceux qui ont joué un rôle réceptif lors de relations sexuelles anales (RHO).\n•\tUCSF (basé aux États-Unis) suggère que toutes les patientes trans devraient subir un dépistage du VIH au moins une fois, tel que recommandé par certaines lignes directrices américaines.\n•\tDe la prophylaxie pré-exposition (PrEP) quotidienne peut être considérée comme intervention additionnelle possible pour les femmes trans qui ont des relations sexuelles avec les hommes (WHO).\n•\tLa circoncision médicale n’est pas recommandée pour la prévention du VIH chez les femmes trans (WHO).",
     "Gender": "tf",
     "Minimum age": 18,
     "Maximum age": 150
   },
   {
-    "Button": "Bone",
-    "Topic heading": "L'ostéoporose",
-    "Subject": "L'ostéoporose",
-    "General Patient Text": "Patient: Généralement identique aux patients cis, mais considéré à risque élevé s'il ne prend AUCUNE hormone pendant des périodes prolongées (par exemple sans œstrogène ou testostérone)",
-    "Health Provider Text": "Prestataire: Généralement identique aux patients cis, mais considéré à risque élevé s'ils ne prennent AUCUNE hormone pendant des périodes prolongées (par exemple, pas d'œstrogène ou de testostérone)",
-    "Gender": "nb",
+    "Button": "Genitalia",
+    "Topic heading": "Santé sexuelle",
+    "Subject": "Ressources",
+    "General Patient Text": "• [[Lignes directrices de l’OMS; https://apps.who.int/iris/bitstream/handle/10665/128048/9789241507431_eng.pdf?sequence=1]]\n• [[Lignes directrices de RHO; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n• [[Lignes directrices de Transcare UCSF; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf]]",
+    "Health Provider Text": "•Dans la communauté LGBTQ+, les expressions « bottom » et « top » sont souvent employées pour décrire les partenaires jouant un rôle réceptif et pénétrant, respectivement, pendant des relations sexuelles. L’expression « versatile » est utilisée pour décrire quelqu’un qui alterne entre ces deux rôles.\n• [[Lignes directrices de l’OMS; https://apps.who.int/iris/bitstream/handle/10665/128048/9789241507431_eng.pdf?sequence=1]]\n• [[Lignes directrices de RHO; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n• [[Lignes directrices de Transcare UCSF; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf]]",
+    "Gender": "tf",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Genitalia",
+    "Topic heading": "Santé sexuelle",
+    "Subject": "Informations",
+    "General Patient Text": "•\tSi vous prenez de la testostérone et n’avez pas subi d’hystérectomie (chirurgie pour enlever l’utérus), vous devez utiliser une méthode de contraception fiable s’il existe un risque de grossesse basé sur vos pratiques sexuelles, car la testostérone pourrait poser un risque au foétus.\n•\tSi vous essayez ou pouviez tomber enceinte (basé sur vos pratiques sexuelles), vous devriez prendre un supplément d’acide folique. Parlez-en avec votre fournisseur de soins de santé pour déterminer la dose appropriée pour vous.\n•\tLes condoms sont recommandés pour les relations sexuelles anales.\n•\tDépendant de vos pratiques sexuelles, le dépistage pour les infections transmises sexuelles et le VIH pourraient être recommandés. Si vous avez des inquiétudes ou des questions à ce sujet, partagez-les avec votre fournisseur de soins de santé.\n•\tSi vous avez joué le rôle réceptif (« bottom ») lors de relations sexuelles anales, votre fournisseur de soins de santé pourrait vous recommander de subir des tests Pap anaux.",
+    "Health Provider Text": "•\tLes hommes trans et les personnes faisant partie du spectre transmasculin qui prennent de la testostérone et qui n’ont pas subi d’hystérectomie doivent utiliser une méthode de contraception fiable s’il existe un risque de grossesse basé sur les pratiques sexuelles, car la testostérone est un tératogène (RHO).\n•\tS’il existe un risque de grossesse basé sur les pratiques sexuelles, il faut suivre les mêmes recommandations de prise d’acide folique que pour les femmes cis.\n•\tLes condoms sont recommandés pour les relations sexuelles anales.\n•\tSoulignez l’importance d’utiliser suffisamment de lubrifiant, pour les femmes trans et les hommes trans qui ont des relations sexuelles avec les hommes.\n•\tDépistez les ITS asymptomatiques basé sur les pratiques et comportements sexuels.\n•\tConsidérez offrir des Pap tests anaux aux 2-3 ans (ou annuellement chez ceux qui sont séropositifs pour le VIH) à ceux qui ont joué un rôle réceptif lors de relations sexuelles anales (RHO).\n•\tUCSF (basé aux États-Unis) suggère que toutes les patientes trans devraient subir un dépistage du VIH au moins une fois, tel que recommandé par certaines lignes directrices américaines.",
+    "Gender": "tm",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Genitalia",
+    "Topic heading": "Santé sexuelle",
+    "Subject": "Ressources",
+    "General Patient Text": "[[Lignes directrices de l’OMS; https://apps.who.int/iris/bitstream/handle/10665/128048/9789241507431_eng.pdf?sequence=1]]\n[[Lignes directrices de RHO;  https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n[[Lignes directrices de Transcare UCSF; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf]]",
+    "Health Provider Text": "• Dans la communauté LGBTQ+, les expressions « bottom » et « top » sont souvent employées pour décrire les partenaires jouant un rôle réceptif et pénétrant, respectivement, pendant des relations sexuelles. L’expression « versatile » est utilisée pour décrire quelqu’un qui alterne entre ces deux rôles.\n• [[Lignes directrices de l’OMS; https://apps.who.int/iris/bitstream/handle/10665/128048/9789241507431_eng.pdf?sequence=1]]\n• [[Lignes directrices de RHO; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n• [[Lignes directrices de Transcare UCSF; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf]]",
+    "Gender": "tm",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Genitalia",
+    "Topic heading": "Sexe et prostate",
+    "Subject": "Cancer de la prostate",
+    "General Patient Text": "Patient: pas de dépistage",
+    "Health Provider Text": "Fournisseur: pas de dépistage",
+    "Gender": "tm",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Genitalia",
+    "Topic heading": "Sexe et prostate",
+    "Subject": "Cancer de la prostate",
+    "General Patient Text": "Patient: Identique aux hommes cis / discuter avec le prestataire (la chirurgie du bas ne retire pas la prostate)",
+    "Health Provider Text": "",
+    "Gender": "tf",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Genitalia",
+    "Topic heading": "Sexe",
+    "Subject": "Contraception (sujet)",
+    "General Patient Text": "Patient: toutes les méthodes hormonales / barrières peuvent être utilisées (pas de contre-indications avec la testostérone)",
+    "Health Provider Text": "Fournisseur: Toutes les méthodes hormonales / barrières peuvent être utilisées (pas de contre-indications avec la testostérone)",
+    "Gender": "tm",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Genitalia",
+    "Topic heading": "Sexe",
+    "Subject": "Contraception (sujet)",
+    "General Patient Text": "Patient: utiliser une méthode de barrière (ou demander à un partenaire d'utiliser une contraception hormonale) en l'absence de chirurgie du bas et avoir des relations sexuelles avec un partenaire qui pourrait tomber enceinte",
+    "Health Provider Text": "Prestataire: utilisez une méthode de barrière (ou demandez à votre partenaire d'utiliser une contraception hormonale) s'il n'y a pas de chirurgie du bas et si vous avez des relations sexuelles avec un partenaire qui pourrait tomber enceinte",
+    "Gender": "tf",
     "Minimum age": 18,
     "Maximum age": 150
   },
