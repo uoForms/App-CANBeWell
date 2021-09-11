@@ -70,6 +70,14 @@ configs. Each config contains a subset of total test cases. When the trigger eve
 a new running session (or waiting in the queue for an available session slot). This will allow us to run up to 10 test
 cases parallely.
 
+#### Manual Trigger
+
+Even though the deploy build tests are running nightly. It is still a good idea to run the tests right after a
+deployment. Therefore, we also support manual triggers for all test cases. Please refer
+this [document](https://docs.github.com/en/actions/managing-workflow-runs/manually-running-a-workflow#running-a-workflow)
+to learn how to manually execute test cases. In most of the case, depends on the changes, we can only run a subset of
+all test cases. User discretion is required.
+
 ## Configuration
 
 Cypress requires a config file to start. The base file `cypress.json` is defined at root level. It should not be used
