@@ -22,17 +22,20 @@ class BodyModal extends BasePage {
       let parts = line.split(/[[\]]/g);
       parts = parts.filter((part) => part.length > 0);
       // eslint-disable-next-line no-restricted-syntax
-      for (const part in parts) {
+      for (const part of parts) {
         if (part.includes('http')) {
           const [text, url] = part.split(';');
           cy.getTestId('topic')
             .get('[open]')
             .should('include.text', text.trim());
-          cy.get(`[href="${url.trim()}"]`)
+          // Have to add "~" because the url may have leading white space
+          cy.get(`[href~="${url.trim()}"]`)
+            .within(() => {
+              cy.get('font')
+                .assertAttribute('color', 'Yellow');
+            })
             .should('contain', text.trim())
-            .assertAttribute('target', '_blank')
-            .get('font')
-            .assertAttribute('color', 'Yellow');
+            .assertAttribute('target', '_blank');
           cy.assertUrl(url.trim());
         } else {
           cy.getTestId('topic')

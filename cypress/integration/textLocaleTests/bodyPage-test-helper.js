@@ -28,6 +28,9 @@ function generateTestDataSet(props, user) {
   ageSet.add(minAge);
   ageSet.add(maxAge);
   ageSet.add(Math.round((minAge + maxAge) / 2));
+  if (user === 'provider') {
+    ageSet.add('all-age');
+  }
   const genderSet = new Set();
   if (gender === 'all') {
     ['f', 'm', 'tm', 'tf'].forEach((item) => genderSet.add(item));
@@ -70,7 +73,7 @@ function bodyPageTestSteps(age, gender, text, subject, heading, buttonId, locale
   }
 
   cy.setupCookies({
-    _onboarded: 'true', ...genderCookies, age: age.toString(), user,
+    _onboarded: 'true', ...genderCookies, age: Number.isInteger(age) ? age.toString() : age, user,
   });
   new LandingPage()
     .clickRedirectButton(locale);
@@ -80,7 +83,8 @@ function bodyPageTestSteps(age, gender, text, subject, heading, buttonId, locale
   modal.assertModalExist();
   modal.assertHeading(heading);
   modal.assertAndClickSubject(subject);
-  const lines = text.split('\n');
+  let lines = text.split('\n');
+  lines = lines.filter((line) => line.length > 0);
   lines.forEach(modal.assertLineInModal);
 }
 
