@@ -1335,7 +1335,7 @@
     "Subject": "Age 50 and above",
     "General Patient Text": "•Calcium: 1200mg/day; Vitamin D: 800-2000 IU/day",
     "Health Provider Text": "•Calcium: 1200mg/day; Vitamin D: 800-2000 IU/day",
-    "Gender": "m,f",
+    "Gender": "all",
     "Minimum age": 50,
     "Maximum age": 150
   },
@@ -1345,7 +1345,7 @@
     "Subject": "All ages",
     "General Patient Text": "Better to get calcium from food rather than supplements.\n[[More; https://osteoporosis.ca/bone-health-osteoporosis/calcium-calculator/#page-1]]\nIf you take a Calcium supplement take no more than 500 mg a day.\n\nVitamin D:\nTaking more than 2000 IU a day of vitamin D should be done under medical supervision \n[[more info; https://osteoporosis.ca/bone-health-osteoporosis/calcium-and-vitamin-d/]]",
     "Health Provider Text": "Better to get Calcium from food rather than supplements.\nif supplement needed to consider to 500 mg max\ntaking more than 2000 IU a day of Vitamin D should be done under medical supervision \n\n[[more info; https://osteoporosis.ca/bone-health-osteoporosis/calcium-and-vitamin-d/]]",
-    "Gender": "m,f",
+    "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
   }
