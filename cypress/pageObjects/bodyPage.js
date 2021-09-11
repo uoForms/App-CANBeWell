@@ -4,27 +4,32 @@ class BodyPage extends BasePage {
   constructor() {
     super();
     this.commonButtonInfoList = [
-      { testId: 'bowelButton', localeId: 'bowel' },
-      { testId: 'eyesButton', localeId: 'eyes' },
-      { testId: 'boneButton', localeId: 'bone' },
-      { testId: 'liverButton', localeId: 'liver' },
-      { testId: 'lungsButton', localeId: 'lungs' },
-      { testId: 'pancreasButton', localeId: 'pancreas' },
-      { testId: 'stomachButton', localeId: 'stomach' },
-      { testId: 'aortaButton', localeId: 'aorta' },
-      { testId: 'heartButton', localeId: 'heart' },
-      { testId: 'brainButton', localeId: 'brain' },
-      { testId: 'examButton', localeId: 'stethoscope' },
-      { testId: 'fallsButton', localeId: 'hip' },
-      { testId: 'immunizationButton', localeId: 'needle_in_arm' },
-      { testId: 'sunExposureButton', localeId: 'sun' },
-      { testId: 'phyActivityButton', localeId: 'figure_outside_body_walking' },
-      { testId: 'covidButton', localeId: 'covid' },
-      { testId: 'brainGearButton', localeId: 'braingear' },
-      { testId: 'moneyButton', localeId: 'money' },
-      { testId: 'sleepButton', localeId: 'sleep' },
-      { testId: 'bpButton', localeId: 'bp' },
-      { testId: 'genitaliaButton', localeId: 'genitalia' },
+      //  source of truth for buttonText is the json file
+      { testId: 'bowelButton', localeId: 'bowel', buttonText: 'Colon' },
+      { testId: 'eyesButton', localeId: 'eyes', buttonText: 'Eye' },
+      { testId: 'boneButton', localeId: 'bone', buttonText: 'Bone' },
+      { testId: 'liverButton', localeId: 'liver', buttonText: 'Liver' },
+      { testId: 'lungsButton', localeId: 'lungs', buttonText: 'Lung' },
+      { testId: 'pancreasButton', localeId: 'pancreas', buttonText: 'Pancreas' },
+      { testId: 'stomachButton', localeId: 'stomach', buttonText: 'Stomach' },
+      { testId: 'aortaButton', localeId: 'aorta', buttonText: 'aorta' },
+      { testId: 'heartButton', localeId: 'heart', buttonText: 'Heart' },
+      { testId: 'brainButton', localeId: 'brain', buttonText: 'Brain' },
+      { testId: 'examButton', localeId: 'stethoscope', buttonText: 'Physical Exam' },
+      { testId: 'fallsButton', localeId: 'hip', buttonText: 'Hip' },
+      { testId: 'immunizationButton', localeId: 'needle_in_arm', buttonText: 'Needle in arm' },
+      { testId: 'sunExposureButton', localeId: 'sun', buttonText: 'Sun' },
+      {
+        testId: 'phyActivityButton',
+        localeId: 'figure_outside_body_walking',
+        buttonText: 'Figure outside body walking',
+      },
+      { testId: 'covidButton', localeId: 'covid', buttonText: 'Covid' },
+      { testId: 'brainGearButton', localeId: 'braingear', buttonText: 'N/A' },
+      { testId: 'moneyButton', localeId: 'money', buttonText: 'N/A' },
+      { testId: 'sleepButton', localeId: 'sleep', buttonText: 'N/A' },
+      { testId: 'bpButton', localeId: 'bp', buttonText: 'N/A' },
+      { testId: 'genitaliaButton', localeId: 'genitalia', buttonText: 'Genitalia' },
     ];
 
     this.maleTfButtonInfoList = [
@@ -34,14 +39,14 @@ class BodyPage extends BasePage {
 
     this.femaleTmButtonInfoList = [
       ...this.commonButtonInfoList,
-      { testId: 'breastButton', localeId: 'breast' },
-      { testId: 'uterusButton', localeId: 'uterus' },
-      { testId: 'ovaryButton', localeId: 'ovary' },
+      { testId: 'breastButton', localeId: 'breast', buttonText: 'Breast' },
+      { testId: 'uterusButton', localeId: 'uterus', buttonText: 'Uterus' },
+      { testId: 'ovaryButton', localeId: 'ovary', buttonText: 'Ovary' },
     ];
 
     this.nonBinaryOrMaleTmOrFemaleTfInfoList = [
       ...this.commonButtonInfoList,
-      { testId: 'breastButton', localeId: 'transbreast' },
+      { testId: 'breastButton', localeId: 'transbreast', buttonText: 'Breast/Chest' },
     ];
   }
 }
