@@ -53,10 +53,9 @@ class BodyModal extends BasePage {
       parts = parts.filter((part) => part.length > 0);
       // eslint-disable-next-line no-restricted-syntax
       for (const part of parts) {
-        if (part.includes('http')) {
-          cy.log(part);
+        // the pdf is a special case
+        if (part.includes('http') || part.includes('pdf/prostate-cancer-infographic-5.pdf')) {
           const [text, url] = part.split(';');
-          cy.log(url);
           cy.getTestId('topic')
             .get('[open]')
             .should('include.text', text.trim());
@@ -66,7 +65,9 @@ class BodyModal extends BasePage {
               cy.get('font')
                 .assertAttribute('color', 'Yellow');
             })
-            .should('contain', text.trim())
+            .should('contain', text.trim());
+          cy.get(`[href~="${url.trim()}"] font`)
+            .parent('a')
             .assertAttribute('target', '_blank');
           if (skipList.includes(url.trim())) {
             console.log(`Skipping the known broken url: ${url})`);
