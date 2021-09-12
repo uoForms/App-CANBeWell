@@ -7,6 +7,9 @@ describe('Body Page Text Locale', () => {
   const landingPage = new LandingPage();
   const user = 'provider';
   const locale = landingPage.locale.en;
+  beforeEach(() => {
+    cy.visit('/');
+  });
 
   // eslint-disable-next-line no-restricted-syntax
   for (const topic of topics) {
