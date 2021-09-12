@@ -30,7 +30,7 @@ class BodyModal extends BasePage {
     // Using contains() to deal with the multiple headings scenario
     heading.split('\n')
       .forEach((part) => {
-        cy.contains(part)
+        cy.contains('h3', part)
           .should('include.text', part);
       });
   }
@@ -44,6 +44,8 @@ class BodyModal extends BasePage {
       'https://cancer.ca/en/prevention-and-screening/reduce-cancer-risk/make-healthy-choices/have-a-healthy-body-weight/how-do-i-know-if-i-have-a-healthy-body-weight/',
       'https://osteoporosis.ca/bone-health-osteoporosis/exercises-for-healthy-bones/',
       'https://osteoporosecanada.ca/sante-des-os-et-osteoporose/calcium-et-vitamine-d/',
+      'https://www.cancer.ca/fr/prevention-and-screening/reduce-cancer-risk/find-cancer-early/get-screened-for-breast-cancer/at-high-risk-for-breast- cancer/?région=on',
+      'https://www.cancer.ca/fr/prevention-and-screening/reduce-cancer-risk/find-cancer-early/screening-in-lgbtq-communities/trans-men-and-thest-cancer-screening/ ?région=on',
     ];
 
     if (line.includes('[[')) {
