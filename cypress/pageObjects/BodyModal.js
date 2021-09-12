@@ -28,8 +28,11 @@ class BodyModal extends BasePage {
 
   assertHeading(heading) {
     // Using contains() to deal with the multiple headings scenario
-    cy.contains(heading)
-      .should('have.text', heading);
+    heading.split('\n')
+      .forEach((part) => {
+        cy.contains(part)
+          .should('include.text', part);
+      });
   }
 
   assertLineInModal(line) {
@@ -40,6 +43,7 @@ class BodyModal extends BasePage {
       'https://osteoporosis.ca/bone-health-osteoporosis/calcium-and-vitamin-d/',
       'https://cancer.ca/en/prevention-and-screening/reduce-cancer-risk/make-healthy-choices/have-a-healthy-body-weight/how-do-i-know-if-i-have-a-healthy-body-weight/',
       'https://osteoporosis.ca/bone-health-osteoporosis/exercises-for-healthy-bones/',
+      'https://osteoporosecanada.ca/sante-des-os-et-osteoporose/calcium-et-vitamine-d/',
     ];
 
     if (line.includes('[[')) {
@@ -48,7 +52,9 @@ class BodyModal extends BasePage {
       // eslint-disable-next-line no-restricted-syntax
       for (const part of parts) {
         if (part.includes('http')) {
+          cy.log(part);
           const [text, url] = part.split(';');
+          cy.log(url);
           cy.getTestId('topic')
             .get('[open]')
             .should('include.text', text.trim());

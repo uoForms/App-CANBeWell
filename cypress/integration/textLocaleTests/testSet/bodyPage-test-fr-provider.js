@@ -20,7 +20,7 @@ devicesTestWrapper('Body Page Text Locale', () => {
       if (text === 'n/a') {
         break;
       }
-      it(`Run with setting: ${age}, ${gender}, ${locale}, ${user}`, () => {
+      it(`Run with setting: ${age}, ${gender}, ${locale}, ${user} ${buttonId}`, () => {
         bodyPageTestSteps(age, gender, text, subject, heading, buttonId, locale, user);
       });
     }
