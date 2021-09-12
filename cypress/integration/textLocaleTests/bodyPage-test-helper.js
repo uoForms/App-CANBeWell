@@ -28,7 +28,7 @@ function generateTestDataSet(props, user) {
   ageSet.add(minAge);
   ageSet.add(maxAge);
   ageSet.add(Math.round((minAge + maxAge) / 2));
-  if (user === 'provider') {
+  if (user === 'provider' && minAge === 18 && maxAge === 150) {
     ageSet.add('all-age');
   }
   const genderSet = new Set();
