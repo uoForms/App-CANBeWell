@@ -7,13 +7,28 @@ class BodyModal extends BasePage {
   }
 
   assertAndClickSubject(subject) {
-    cy.getTestId('bodyModal')
-      .contains(subject)
-      .click();
+    if (subject.includes('\n')) {
+      const parts = subject.split('\n');
+      parts.forEach((part) => {
+        cy.getTestId('topicSummary')
+          .within(() => {
+            cy.contains(part)
+              .should('exist');
+          });
+      });
+      cy.getTestId('bodyModal')
+        .contains(parts[0])
+        .click();
+    } else {
+      cy.getTestId('bodyModal')
+        .contains(subject)
+        .click();
+    }
   }
 
   assertHeading(heading) {
-    cy.getTestId('heading')
+    // Using contains() to deal with the multiple headings scenario
+    cy.contains(heading)
       .should('have.text', heading);
   }
 

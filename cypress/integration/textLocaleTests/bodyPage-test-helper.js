@@ -66,10 +66,14 @@ function bodyPageTestSteps(age, gender, text, subject, heading, buttonId, locale
   } else if (gender === 'f') {
     genderCookies.gender = bodyPage.gender.female;
     genderCookies.Tgender = bodyPage.gender.transMale;
-  } else {
-    // Only select this combination to verify the text, the gender/Tgenter display should be verified in user action tests
+  } else if (gender === 'tf') {
+    genderCookies.gender = bodyPage.gender.female;
+    genderCookies.Tgender = bodyPage.gender.transFemale;
+  } else if (gender === 'tm') {
     genderCookies.gender = bodyPage.gender.male;
     genderCookies.Tgender = bodyPage.gender.transMale;
+  } else {
+    throw new Error('Unknown gender');
   }
 
   cy.setupCookies({
