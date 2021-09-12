@@ -82,7 +82,9 @@ function bodyPageTestSteps(age, gender, text, subject, heading, buttonId, locale
   new LandingPage()
     .clickRedirectButton(locale);
   cy.getTestId(buttonId)
-    .click();
+  //  The purpose of this test is to bring up the modal. I dont really care if the button is clickable in Cypress' eye.
+  //  Clickable assertion will be dealt in user action tests.
+    .click({ force: true });
   const modal = new BodyModal();
   modal.assertModalExist();
   modal.assertHeading(heading);
