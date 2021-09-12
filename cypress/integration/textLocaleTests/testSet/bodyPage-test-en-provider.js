@@ -6,7 +6,7 @@ const topics = require('../../../../src/JSONFolder/HtmlTopic-EN.json');
 
 devicesTestWrapper('Body Page Text Locale', () => {
   const landingPage = new LandingPage();
-  const user = 'patient';
+  const user = 'provider';
   const locale = landingPage.locale.en;
 
   // eslint-disable-next-line no-restricted-syntax
