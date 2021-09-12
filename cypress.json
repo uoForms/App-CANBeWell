@@ -1,7 +1,7 @@
 {
   "reporter": "cypress-mochawesome-reporter",
   "retries": {
-    "runMode": 0,
+    "runMode": 3,
     "openMode": 0
   },
   "fixturesFolder": false,
