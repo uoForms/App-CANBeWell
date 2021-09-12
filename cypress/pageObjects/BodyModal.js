@@ -51,7 +51,7 @@ class BodyModal extends BasePage {
 
   assertLineInModal(line) {
     // TODO: this list contains known broken links. Once they are addressed, they should be removed from this list
-    const skipList = ['http://csep.ca/CMFiles/Guidelines/CSEP_PAGuidelines_adults_en.pdf',
+    const skipList = ['http://www.csep.ca/CMFiles/Guidelines/CSEP_PAGuidelines_adults_en.pdf',
       'https://www.canada.ca/fr/sante-canada/services/dependance-aux-drogues/obtenir-aide/obtenir-aide-problemes-consommation-drogues.html',
       'https://www.unlockfood.ca/fr/Articles/Perdre-du-poids/Evaluez-votre-IMC.aspx?aliaspath=%2fen%2fArticles%2fWeight-Management%2fBMI-Calculator',
       'http://www.osteoporosis.ca/multimedia/pdf/Quick_Reference_Guide_October_2010.pdf',
