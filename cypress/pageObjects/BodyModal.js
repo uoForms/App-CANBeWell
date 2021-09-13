@@ -6,30 +6,33 @@ class BodyModal extends BasePage {
       .should('exist');
   }
 
-  assertAndClickSubject(subject, text) {
+  assertAndClickSubject(subject, text, age) {
     const clearnedSubject = subject.split(/\s+/)
       .join(' ');
-    if (clearnedSubject.includes('\n')) {
-      const parts = clearnedSubject.split('\n');
+    if (subject.includes('\n')) {
+      const parts = subject.split('\n');
       parts.forEach((part) => {
+        const clearnedPart = part.split(/\s+/)
+          .join(' ');
         cy.getTestId('topicSummary')
           .within(() => {
-            cy.contains('summary', part)
+            cy.contains('summary', clearnedPart)
               .should('exist');
           });
       });
       cy.getTestId('topicSummary')
-        .contains('summary', parts[0])
+        .contains('[test-id="topicSummary"]', parts[0])
         .click();
+
       //  Special cases: duplicated topic summaries
-    } else if (text.includes('Practice safe sex') || text.includes('Pratiquez des relations sexuelles protégées')) {
+    } else if ((text.includes('Practice safe sex') || text.includes('Pratiquez des relations sexuelles protégées')) && age <= 24 && age >= 18) {
       cy.getTestId('topicSummary')
         .eq(1)
         .should('contain', clearnedSubject)
         .click();
     } else {
       cy.getTestId('topicSummary')
-        .contains('summary', clearnedSubject)
+        .contains('[test-id="topicSummary"]', clearnedSubject)
         .click();
     }
   }
@@ -38,7 +41,7 @@ class BodyModal extends BasePage {
     // Using contains() to deal with the multiple headings scenario
     heading.split('\n')
       .forEach((part) => {
-        cy.contains('h3', part)
+        cy.contains('[test-id="heading"]', part)
           .should('include.text', part);
       });
   }

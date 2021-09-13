@@ -92,7 +92,7 @@ function bodyPageTestSteps(age, gender, text, subject, heading, buttonId, locale
   const modal = new BodyModal();
   modal.assertModalExist();
   modal.assertHeading(heading);
-  modal.assertAndClickSubject(subject, text);
+  modal.assertAndClickSubject(subject, text, Number.isInteger(age) ? age : 0);
   let lines = text.split('\n');
   lines = lines.filter((line) => line.length > 0);
   lines.forEach(modal.assertLineInModal);

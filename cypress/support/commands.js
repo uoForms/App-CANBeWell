@@ -2,6 +2,7 @@ Cypress.Commands.add('assertVisibleAndContainText', {
   prevSubject: 'element',
 }, (subject, text) => {
   cy.wrap(subject)
+    .scrollIntoView()
     .should('be.visible')
     .should('contain', text);
 });
