@@ -55,6 +55,7 @@ class BodyModal extends BasePage {
   assertLineInModal(line) {
     // TODO: this list contains known broken links. Once they are addressed, they should be removed from this list
     const skipList = ['http://www.csep.ca/CMFiles/Guidelines/CSEP_PAGuidelines_adults_en.pdf',
+      'https://transcare.ucsf.edu/guidelines/examen-physique',
       'https://www.canada.ca/fr/sante-publique/services/sida-vih/guide-dépistage-vih-dépistage.html',
       'http://www.csep.ca/CMFiles/Guidelines/CSEP_PAGuidelines_adults_fr.pdf',
       'https://www.canada.ca/fr/sante-canada/services/dependance-aux-drogues/obtenir-aide/obtenir-aide-problemes-consommation-drogues.html',
@@ -108,11 +109,14 @@ class BodyModal extends BasePage {
             .assertAttribute('target', '_blank');
           if (skipList.includes(url.trim())) {
             console.log(`Skipping the known broken url: ${url})`);
+          } else if (url.includes('www.sciencedirect.com/science/article/abs/pii/S1094695019301507')) {
+            // Cloudflare blocks the ping, but we should at least check this is not 404
+            cy.assertUrl(url.trim(), 'GET', 403);
           } else {
             // The checked url takes forever to load
             // eslint-disable-next-line chai-friendly/no-unused-expressions
             url
-              .includes('metisnation.ca/covid19') ? cy.assertUrl(url.trim(), 'OPTIONS') : cy.assertUrl(url.trim());
+              .includes('metisnation.ca/covid19' || url.includes('10665/128048/9789241507431_eng.pdf')) ? cy.assertUrl(url.trim(), 'OPTIONS') : cy.assertUrl(url.trim());
           }
         } else {
           cy.getTestId('topic')

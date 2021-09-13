@@ -7,5 +7,5 @@
   "fixturesFolder": false,
   "video": false,
   "defaultCommandTimeout": 10000,
-  "responseTimeout": 60000
+  "responseTimeout": 120000
 }
