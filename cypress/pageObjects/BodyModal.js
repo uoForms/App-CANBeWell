@@ -111,7 +111,7 @@ class BodyModal extends BasePage {
             console.log(`Skipping the known broken url: ${url})`);
           } else if (url.includes('www.sciencedirect.com/science/article/abs/pii/S1094695019301507') || url
             .includes('metisnation.ca/covid19')) {
-            cy.log('Skip due to target site security measure. This is tested via curl with github actions to avoid DDos detection');
+            cy.log('Skip due to target site security measure. Those links will be tested manually');
           } else {
             // The checked url takes forever to load
             // eslint-disable-next-line chai-friendly/no-unused-expressions

@@ -10,10 +10,6 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v2
-    - name: curl
-      uses: wei/curl@master
-      with:
-        args: https://metisnation.ca/covid19/
     - name: Cypress Run
       uses: cypress-io/github-action@v2
       with:
