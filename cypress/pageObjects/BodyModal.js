@@ -71,6 +71,11 @@ class BodyModal extends BasePage {
           .replace('[[', '')
           .replace(']]', '')
           .trim();
+        if (src.includes('hepatitis')) {
+          // Special case
+          cy.getTestId('bodyModal')
+            .scrollTo('bottom');
+        }
         cy.get(`[src="${src}"]`)
           .assertImageVisibleWithSource(src);
         return;
