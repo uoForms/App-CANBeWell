@@ -109,14 +109,13 @@ class BodyModal extends BasePage {
             .assertAttribute('target', '_blank');
           if (skipList.includes(url.trim())) {
             console.log(`Skipping the known broken url: ${url})`);
-          } else if (url.includes('www.sciencedirect.com/science/article/abs/pii/S1094695019301507')) {
-            // Cloudflare blocks the ping, but we should at least check this is not 404
-            cy.assertUrl(url.trim(), 'GET', 403);
+          } else if (url.includes('www.sciencedirect.com/science/article/abs/pii/S1094695019301507') || url
+            .includes('metisnation.ca/covid19')) {
+            cy.log('Skip due to target site security measure. This is tested via curl with github actions to avoid DDos detection');
           } else {
             // The checked url takes forever to load
             // eslint-disable-next-line chai-friendly/no-unused-expressions
-            url
-              .includes('metisnation.ca/covid19' || url.includes('10665/128048/9789241507431_eng.pdf')) ? cy.assertUrl(url.trim(), 'OPTIONS') : cy.assertUrl(url.trim());
+            url.includes('10665/128048/9789241507431_eng.pdf') ? cy.assertUrl(url.trim(), 'OPTIONS') : cy.assertUrl(url.trim());
           }
         } else {
           cy.getTestId('topic')

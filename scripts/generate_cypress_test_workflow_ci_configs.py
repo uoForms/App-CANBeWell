@@ -50,6 +50,13 @@ def generate_cypress_upload_step(item_type, condition):
         }
     }
 
+def generate_curl_step(url):
+    return {
+        "name":"curl",
+        "use":"wei/curl@master",
+        "with":{"args": url}
+    }
+
 
 upload_screenshot_step = generate_cypress_upload_step("screenshots", "failure")
 upload_report_step = generate_cypress_upload_step("reports", "always")
@@ -92,7 +99,7 @@ def generate_build_text_body(locale, user):
     return generate_file(
         f"Cypress(Development Build - Text Locale - Body - {locale.capitalize()} - {user.capitalize()})",
         ["push"],
-        [cancel_previous_run_step, check_out_step,
+        [cancel_previous_run_step, check_out_step, generate_curl_step('https://www.sciencedirect.com/science/article/abs/pii/S1094695019301507'), generate_curl_step("https://metisnation.ca/covid19/"),
          generate_cypress_run_step(ci_build_json, local_host, spec=spec),
          upload_screenshot_step, upload_report_step])
 
@@ -111,7 +118,7 @@ def generate_deploy_text_body(locale, user):
     return generate_file(
         f"Cypress(Deploy Build - Text Locale - Body - {locale.capitalize()} - {user.capitalize()})",
         nightly_build,
-        [check_out_step,
+        [check_out_step, generate_curl_step('https://www.sciencedirect.com/science/article/abs/pii/S1094695019301507'), generate_curl_step("https://metisnation.ca/covid19/"),
          generate_cypress_run_step(ci_deploy_json, spec=spec),
          upload_screenshot_step, upload_report_step])
 
