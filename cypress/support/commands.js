@@ -14,7 +14,11 @@ Cypress.Commands.add('assertAttribute', {
 });
 
 Cypress.Commands.add('assertUrl', (url, requestType = 'GET', expectedStatusCode = 200) => {
-  cy.request(requestType, url)
+  cy.request({
+    url,
+    method: requestType,
+    failOnStatusCode: false,
+  })
     .should((res) => {
       expect(res.status).to.eq(expectedStatusCode);
     });
@@ -31,6 +35,7 @@ Cypress.Commands.add('assertImageVisibleWithSource', {
 Cypress.Commands.add('setupCookies', (cookies) => {
   // eslint-disable-next-line guard-for-in,no-restricted-syntax
   for (const cookie in cookies) {
-    cy.setCookie(cookie, JSON.stringify(cookies[cookie]));
+    cy.setCookie(cookie, JSON.stringify(cookies[cookie])
+      .replaceAll('"', ''));
   }
 });

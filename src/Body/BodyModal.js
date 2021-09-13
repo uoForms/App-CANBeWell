@@ -36,7 +36,7 @@ class BodyModal extends React.Component {
       //var subject = body.subject;
       subjectArray.push(
         <div>
-          <h3>{topic.name}</h3>
+          <h3 test-id="heading">{topic.name}</h3>
         </div>
       );
       var k = 0;
@@ -130,9 +130,9 @@ class BodyModal extends React.Component {
         }
         indexID = indexID.concat(itemID.toString());
         subjectArray.push(
-          <div className="topicBody" style={listItemStyle}>
+          <div className="topicBody" style={listItemStyle} test-id="topic">
             <details id={indexID} class="mydetailsItem">
-              <summary class="mysummaryItem">
+              <summary class="mysummaryItem" test-id="topicSummary">
                 <font size="+1">
                   {/*<p> <b> */}
                   {subjectArrayToDisplay}
@@ -189,7 +189,7 @@ class BodyModal extends React.Component {
       <div>
         <div id="myBackdrop" onClick={this.props.onClose} className="backdrop" style={backdropStyle}>
         </div>
-        <div className="myModal" style={myModalStyle}>
+        <div className="myModal" style={myModalStyle} test-id="bodyModal">
           <div>
             <button className="button4" onClick={this.props.onClose}>X</button>
           </div>

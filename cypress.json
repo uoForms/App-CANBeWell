@@ -6,5 +6,6 @@
   },
   "fixturesFolder": false,
   "video": false,
-  "defaultCommandTimeout": 10000
+  "defaultCommandTimeout": 10000,
+  "responseTimeout": 120000
 }
