@@ -14,7 +14,11 @@ Cypress.Commands.add('assertAttribute', {
 });
 
 Cypress.Commands.add('assertUrl', (url, requestType = 'GET', expectedStatusCode = 200) => {
-  cy.request(requestType, url)
+  cy.request({
+    url,
+    method: requestType,
+    failOnStatusCode: false,
+  })
     .should((res) => {
       expect(res.status).to.eq(expectedStatusCode);
     });
