@@ -2,7 +2,7 @@
 
 This README describes the setup and usage of testing framework for App-CANBeWell.
 
-Last updated: Sept 4 2021
+Last updated: Sept 13 2021
 
 ## Basic
 
@@ -18,7 +18,7 @@ This framework mainly contains three types of testing:
 1. User action testing: It mainly simulates how users would interact with a webpage (e.g., go to a page, click a button
    and view some text).
 2. Data analytics testing: It mainly verifies that user actions are recorded and logged via Google Analytics.
-3. Text/translation testing: It mainly verifies all the strings displayed are correct.
+3. Text/locale testing: It mainly verifies all the strings displayed are correct.
 
 ## Usage
 
@@ -154,6 +154,10 @@ All concrete test steps are described in helper files.
 
 This folder contains all test execution files. Each execution file call the concrete test steps from `./*-helper`.
 
+#### `./textLocaleTests`
+
+Folder structure is very similar to  `./dataAnalyticsTests`
+
 ### `cypress/logs`
 
 It is not tracked in Git. The purpose of this folder is to collect all failed test log.
@@ -199,8 +203,8 @@ This file allows us to run the same test case multiple times with different view
 * Phone Horizontal 736x414
 * Phone Vertical 414x736
 
-Please note: `devicesTestWrapper()` is not used for analytics testing. The difference in viewports has no effect on
-network requests.
+Please note: `devicesTestWrapper()` is not used for the analytics testing not the text/locale testing. The difference in
+viewports has no effect on network requests not parsing translation/display json files.
 
 #### `index.d.ts`
 
@@ -215,7 +219,8 @@ It loads all custom commands and some third party plugins
 ## Style Guide
 
 1. Hide all implementation details in page objects. Ideally, a non-technical collaborator could read the test file and
-   have an idea of what are tested.
+   have an idea of what are tested. Note: Data analytics testing is an exception due to the technical knowledge required
+   to understand the test approach
 2. Insert `test-id` attribute to DOM elements you are trying to retrieve in product code and use `cy.getTestId('<id>')`
    to select the said element. See
    this [best practice](https://docs.cypress.io/guides/references/best-practices#Selecting-Elements) for details.
