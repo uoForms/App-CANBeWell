@@ -53,7 +53,7 @@ def generate_cypress_upload_step(item_type, condition):
 def generate_curl_step(url):
     return {
         "name":"curl",
-        "use":"wei/curl@master",
+        "uses":"wei/curl@master",
         "with":{"args": url}
     }
 
