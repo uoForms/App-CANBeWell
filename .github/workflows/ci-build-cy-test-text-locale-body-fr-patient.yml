@@ -15,10 +15,6 @@ jobs:
     - name: curl
       uses: wei/curl@master
       with:
-        args: https://www.sciencedirect.com/science/article/abs/pii/S1094695019301507
-    - name: curl
-      uses: wei/curl@master
-      with:
         args: https://metisnation.ca/covid19/
     - name: Cypress Run
       uses: cypress-io/github-action@v2
