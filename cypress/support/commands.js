@@ -31,6 +31,7 @@ Cypress.Commands.add('assertImageVisibleWithSource', {
 Cypress.Commands.add('setupCookies', (cookies) => {
   // eslint-disable-next-line guard-for-in,no-restricted-syntax
   for (const cookie in cookies) {
-    cy.setCookie(cookie, JSON.stringify(cookies[cookie]));
+    cy.setCookie(cookie, JSON.stringify(cookies[cookie])
+      .replaceAll('"', ''));
   }
 });

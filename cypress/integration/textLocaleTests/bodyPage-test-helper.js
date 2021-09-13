@@ -29,7 +29,7 @@ function generateTestDataSet(props, user) {
   ageSet.add(maxAge);
   ageSet.add(Math.round((minAge + maxAge) / 2));
   if (user === 'provider' && minAge === 18 && maxAge === 150) {
-    ageSet.add('all-age');
+    ageSet.add('all ages');
   }
   const genderSet = new Set();
   if (gender === 'all') {
@@ -75,9 +75,13 @@ function bodyPageTestSteps(age, gender, text, subject, heading, buttonId, locale
   } else {
     throw new Error('Unknown gender');
   }
+  let allAgeCookie = {};
+  if (age === 'all ages') {
+    allAgeCookie = { _all_ages_selected: true };
+  }
 
   cy.setupCookies({
-    _onboarded: 'true', ...genderCookies, age: Number.isInteger(age) ? age.toString() : age, user,
+    _onboarded: 'true', ...genderCookies, age: Number.isInteger(age) ? age.toString() : age, user, ...allAgeCookie,
   });
   new LandingPage()
     .clickRedirectButton(locale);

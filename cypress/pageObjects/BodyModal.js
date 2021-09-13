@@ -64,11 +64,11 @@ class BodyModal extends BasePage {
 
     if (line.includes('[[')) {
       if (line.includes('image;images/')) {
-        const src = line.replace('image;', '/')
+        const src = line.replace('image;', './')
           .replace('[[', '')
           .replace(']]', '')
           .trim();
-        cy.get(`[src=".${src}"]`)
+        cy.get(`[src="${src}"]`)
           .assertImageVisibleWithSource(src);
         return;
       }
