@@ -13,11 +13,11 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
     - name: curl
-      use: wei/curl@master
+      uses: wei/curl@master
       with:
         args: https://www.sciencedirect.com/science/article/abs/pii/S1094695019301507
     - name: curl
-      use: wei/curl@master
+      uses: wei/curl@master
       with:
         args: https://metisnation.ca/covid19/
     - name: Cypress Run
