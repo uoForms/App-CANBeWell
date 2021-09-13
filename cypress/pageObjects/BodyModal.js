@@ -6,7 +6,10 @@ class BodyModal extends BasePage {
       .should('exist');
   }
 
-  assertAndClickSubject(subject, text, age) {
+  assertAndClickSubject(subject, text, age, user) {
+    //  Special cases: duplicated topic summaries
+    const specialCondition1 = (text.includes('Practice safe sex') || text.includes('Pratiquez des relations sexuelles protégées')) && age <= 24 && age >= 18;
+    const specialCondition2 = text.includes("Il est recommandé d'être a") && user === 'provider';
     const clearnedSubject = subject.split(/\s+/)
       .join(' ');
     if (subject.includes('\n')) {
@@ -23,11 +26,14 @@ class BodyModal extends BasePage {
       cy.getTestId('topicSummary')
         .contains('[test-id="topicSummary"]', parts[0])
         .click();
-
-      //  Special cases: duplicated topic summaries
-    } else if ((text.includes('Practice safe sex') || text.includes('Pratiquez des relations sexuelles protégées')) && age <= 24 && age >= 18) {
+    } else if (specialCondition1) {
       cy.getTestId('topicSummary')
         .eq(1)
+        .should('contain', clearnedSubject)
+        .click();
+    } else if (specialCondition2) {
+      cy.getTestId('topicSummary')
+        .eq(3)
         .should('contain', clearnedSubject)
         .click();
     } else {
