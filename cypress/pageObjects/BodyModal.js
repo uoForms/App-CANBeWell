@@ -83,13 +83,13 @@ class BodyModal extends BasePage {
             .get('[open]')
             .should('include.text', text.trim());
           // All url have a leading space
-          cy.get(`[href=" ${url.trim()}"]`)
+          cy.get(`[href="${url}"]`)
             .within(() => {
               cy.get('font')
                 .assertAttribute('color', 'Yellow');
             })
             .should('contain', text.trim());
-          cy.get(`[href=" ${url.trim()}"] font`)
+          cy.get(`[href="${url}"] font`)
             .parent('a')
             .assertAttribute('target', '_blank');
           if (skipList.includes(url.trim())) {
