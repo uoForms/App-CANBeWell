@@ -96,6 +96,14 @@ def generate_build_text_body(locale, user):
          generate_cypress_run_step(ci_build_json, local_host, spec=spec),
          upload_screenshot_step, upload_report_step])
 
+def generate_build_text_test(locale):
+    spec = f"cypress/integration/textLocaleTests/testSet/testPage-test-{locale}.js"
+    return generate_file(
+        f"Cypress(Development Build - Text Locale - Test - {locale.capitalize()})",
+        ["push"],
+        [cancel_previous_run_step, check_out_step,
+         generate_cypress_run_step(ci_build_json, local_host, spec=spec),
+         upload_screenshot_step, upload_report_step])
 
 def generate_deploy_analytics_body(locale, user, age):
     spec = f"cypress/integration/dataAnalyticsTests/testSet/bodyPage-test-{locale}-{user}-{age}.js"
@@ -110,6 +118,15 @@ def generate_deploy_text_body(locale, user):
     spec = f"cypress/integration/textLocaleTests/testSet/bodyPage-test-{locale}-{user}.js"
     return generate_file(
         f"Cypress(Deploy Build - Text Locale - Body - {locale.capitalize()} - {user.capitalize()})",
+        nightly_build,
+        [check_out_step,
+         generate_cypress_run_step(ci_deploy_json, spec=spec),
+         upload_screenshot_step, upload_report_step])
+
+def generate_deploy_text_test(locale):
+    spec = f"cypress/integration/textLocaleTests/testSet/testPage-test-{locale}.js"
+    return generate_file(
+        f"Cypress(Deploy Build - Text Locale - Test - {locale.capitalize()})",
         nightly_build,
         [check_out_step,
          generate_cypress_run_step(ci_deploy_json, spec=spec),
@@ -169,6 +186,12 @@ def run():
     write_to_file("ci-deploy-cy-test-user-action.yml", generate_deploy_user_action())
 
     for locale in ['en', 'fr']:
+        file_name = f"ci-build-cy-test-text-locale-test-{locale}.yml"
+        content = generate_build_text_test(locale)
+        write_to_file(file_name, content)
+        file_name = f"ci-deploy-cy-test-text-locale-test-{locale}.yml"
+        content = generate_deploy_text_test(locale)
+        write_to_file(file_name, content)
         for user in ['patient', 'provider']:
             file_name = f"ci-build-cy-test-text-locale-body-{locale}-{user}.yml"
             content = generate_build_text_body(locale, user)
