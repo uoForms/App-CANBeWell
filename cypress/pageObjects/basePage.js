@@ -79,6 +79,26 @@ class BasePage {
     const expectedDl = Cypress.config().baseUrl.replace(':3000', '');
     return expectedDl.slice(-1) === '/' ? expectedDl : `${expectedDl}/`;
   }
+
+  generateGenderCookies(gender) {
+    const genderCookies = {};
+    if (gender === 'm') {
+      genderCookies.gender = this.gender.male;
+      genderCookies.Tgender = this.gender.transFemale;
+    } else if (gender === 'f') {
+      genderCookies.gender = this.gender.female;
+      genderCookies.Tgender = this.gender.transMale;
+    } else if (gender === 'tf') {
+      genderCookies.gender = this.gender.female;
+      genderCookies.Tgender = this.gender.transFemale;
+    } else if (gender === 'tm') {
+      genderCookies.gender = this.gender.male;
+      genderCookies.Tgender = this.gender.transMale;
+    } else {
+      throw new Error('Unknown gender');
+    }
+    return genderCookies;
+  }
 }
 
 export default BasePage;

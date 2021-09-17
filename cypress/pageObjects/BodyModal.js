@@ -97,7 +97,6 @@ class BodyModal extends BasePage {
           cy.getTestId('topic')
             .get('[open]')
             .should('include.text', text.trim());
-          // All url have a leading space
           cy.get(`[href="${url}"]`)
             .within(() => {
               cy.get('font')
