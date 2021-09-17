@@ -58,23 +58,9 @@ function generateTestDataSet(props, user) {
 }
 
 function bodyPageTestSteps(age, gender, text, subject, heading, buttonId, locale, user) {
-  const genderCookies = {};
   const bodyPage = new BodyPage();
-  if (gender === 'm') {
-    genderCookies.gender = bodyPage.gender.male;
-    genderCookies.Tgender = bodyPage.gender.transFemale;
-  } else if (gender === 'f') {
-    genderCookies.gender = bodyPage.gender.female;
-    genderCookies.Tgender = bodyPage.gender.transMale;
-  } else if (gender === 'tf') {
-    genderCookies.gender = bodyPage.gender.female;
-    genderCookies.Tgender = bodyPage.gender.transFemale;
-  } else if (gender === 'tm') {
-    genderCookies.gender = bodyPage.gender.male;
-    genderCookies.Tgender = bodyPage.gender.transMale;
-  } else {
-    throw new Error('Unknown gender');
-  }
+  const genderCookies = bodyPage.generateGenderCookies(gender);
+
   let allAgeCookie = {};
   if (age === 'all ages') {
     allAgeCookie = { _all_ages_selected: true };

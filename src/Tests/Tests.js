@@ -148,12 +148,12 @@ class TestRow extends React.Component {
 
 
     return (
-      <details 
+      <details test-id="test-details"
         id={this.props.test.name}
         onToggle = { () => this.rowToggled(this.props.test.name) }
       >
-        <summary><font size="+1"><b>{this.props.test.name}</b></font></summary>
-        <div>{sujectArray}</div>
+        <summary test-id="test-summary"><font size="+1"><b>{this.props.test.name}</b></font></summary>
+        <div test-id="test-content">{sujectArray}</div>
       </details>
     );
   }
