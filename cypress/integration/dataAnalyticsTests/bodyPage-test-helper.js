@@ -48,7 +48,9 @@ function bodyPageTestSteps(gender, tGender, age, user, landingPage, locale, test
       .assertEventGA('@ga-event',
         `${capitalize(user.user)}-Body-${capitalize.words(localeDict[localeId])
           .replace('/', ' or ')
-          .replace('OR', 'or')}`,
+          .replace('Or', 'or')
+          .replace('organes', 'Organes')
+          .replace('organs', 'Organs')}`,
         'Other-Chrome',
         `${capitalize(gender.gender)}-${ageDict[age.age]}-${localeStrDict[locale]}`);
   } else {
