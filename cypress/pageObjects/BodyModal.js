@@ -1,4 +1,5 @@
 import BasePage from './basePage';
+import BodyPage from './bodyPage';
 
 class BodyModal extends BasePage {
   assertModalExist() {
@@ -6,10 +7,10 @@ class BodyModal extends BasePage {
       .should('exist');
   }
 
-  assertAndClickSubject(subject, text, age, user) {
+  assertAndClickSubject(subject, text, age, user, page) {
     //  Special cases: duplicated topic summaries
     const specialCondition1 = (text.includes('Practice safe sex') || text.includes('Pratiquez des relations sexuelles protégées')) && age <= 24 && age >= 18;
-    const specialCondition2 = text.includes("Il est recommandé d'être a") && user === 'provider';
+    const specialCondition2 = text.includes("Il est recommandé d'être a") && user === 'provider' && page instanceof BodyPage;
     const clearnedSubject = subject.split(/\s+/)
       .join(' ');
     if (subject.includes('\n')) {

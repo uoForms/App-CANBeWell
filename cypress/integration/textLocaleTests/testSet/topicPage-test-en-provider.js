@@ -22,7 +22,7 @@ describe('Topic Page Text Locale', () => {
       if (text === 'n/a') {
         break;
       }
-      it(`Run with setting: ${age}, ${gender}, ${locale}, ${user}`, () => {
+      it(`Run with setting: ${age}, ${gender}, ${locale}, ${user} ${heading}`, () => {
         topicPageTestSteps(age, gender, text, subject, heading, locale, user);
       });
     }

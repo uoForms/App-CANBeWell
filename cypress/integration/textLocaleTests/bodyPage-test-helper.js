@@ -43,7 +43,7 @@ function bodyPageTestSteps(age, gender, text, subject, heading, buttonId, locale
   //  The purpose of this test is to bring up the modal. I dont really care if the button is clickable in Cypress' eye.
   //  Clickable assertion will be dealt in user action tests.
     .click({ force: true });
-  assertTopicModal(heading, subject, text, age, user);
+  assertTopicModal(heading, subject, text, age, user, bodyPage);
 }
 
 export {
