@@ -26,7 +26,7 @@ getsubjectArray=(display)=>{
       padding: '10px',
       color: 'white'
     };
-    subjectArray.push(<div><h3>{this.props.getTopic}</h3></div>);
+    subjectArray.push(<div><h3 test-id="heading">{this.props.getTopic}</h3></div>);
     bodys.forEach((body) => {      
 
       var bodyArray = body.text.split(/(\[\[|\]\]|\n)/g);
@@ -88,8 +88,8 @@ getsubjectArray=(display)=>{
       }
       subjectArray.push(
         <div className="topicBody" style={listItemStyle}>
-          <details id={this.props.topic} class="mydetailsItem">
-            <summary class="mysummaryItem">
+          <details id={this.props.topic} class="mydetailsItem" test-id="topic">
+            <summary class="mysummaryItem" test-id="topicSummary">
               <font size="+1">
                 {/*<p> <b> */}
                 {subjectArrayToDisplay}
@@ -140,7 +140,7 @@ return subjectArray;
       <div>
         <div id="myBackdrop" onClick={this.props.onClose} className="backdrop" style={backdropStyle}>
         </div>
-        <div className="myModal" style={myModalStyle}>
+        <div className="myModal" style={myModalStyle} test-id="bodyModal">
           <div>
             <button className="button4" onClick={this.props.onClose}>X</button>
           </div>

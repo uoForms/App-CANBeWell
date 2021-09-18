@@ -1,5 +1,5 @@
-import LandingPage from '../../pageObjects/landingPage';
 import TestPage from '../../pageObjects/testPage';
+import { cookiesSetupAndAccessBodyPage } from './base-test-helper';
 
 function generateTestDataSet(props, user) {
   const test = props.Test;
@@ -39,18 +39,7 @@ function generateTestDataSet(props, user) {
 
 function testPageTestSteps(age, gender, text, test, user, locale) {
   const testPage = new TestPage();
-
-  const genderCookies = testPage.generateGenderCookies(gender);
-  let allAgeCookie = {};
-  if (age === 'all ages') {
-    allAgeCookie = { _all_ages_selected: true };
-  }
-
-  cy.setupCookies({
-    _onboarded: 'true', ...genderCookies, age: Number.isInteger(age) ? age.toString() : age, user, ...allAgeCookie,
-  });
-  new LandingPage()
-    .clickRedirectButton(locale);
+  cookiesSetupAndAccessBodyPage(testPage, gender, age, user, locale);
   cy.getTestId('test')
     .click();
   const page = new TestPage();
