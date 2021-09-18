@@ -1,6 +1,5 @@
 import BodyPage from '../../pageObjects/bodyPage';
-import LandingPage from '../../pageObjects/landingPage';
-import BodyModal from '../../pageObjects/BodyModal';
+import { assertTopicModal, cookiesSetupAndAccessBodyPage, readTopicJsonData } from './base-test-helper';
 
 function getButtonId(gender, buttonText) {
   const bodyPage = new BodyPage();
@@ -16,29 +15,9 @@ function getButtonId(gender, buttonText) {
 }
 
 function generateTestDataSet(props, user) {
-  const button = props.Button;
-  const heading = props['Topic heading'];
-  const subject = props.Subject;
-  const patientText = props['General Patient Text'];
-  const providerText = props['Health Provider Text'];
-  const gender = props.Gender;
-  const minAge = props['Minimum age'];
-  const maxAge = props['Maximum age'];
-  const ageSet = new Set();
-  ageSet.add(minAge);
-  ageSet.add(maxAge);
-  ageSet.add(Math.round((minAge + maxAge) / 2));
-  if (user === 'provider' && minAge === 18 && maxAge === 150) {
-    ageSet.add('all ages');
-  }
-  const genderSet = new Set();
-  if (gender === 'all') {
-    ['f', 'm', 'tm', 'tf'].forEach((item) => genderSet.add(item));
-  } else {
-    gender.split(',')
-      .forEach((item) => genderSet.add(item));
-  }
-  const text = user === 'patient' ? patientText : providerText;
+  const {
+    button, heading, subject, ageSet, genderSet, text,
+  } = readTopicJsonData(props, user);
   const dataSet = [];
   // eslint-disable-next-line no-restricted-syntax
   for (const currentAge of ageSet) {
@@ -59,29 +38,12 @@ function generateTestDataSet(props, user) {
 
 function bodyPageTestSteps(age, gender, text, subject, heading, buttonId, locale, user) {
   const bodyPage = new BodyPage();
-  const genderCookies = bodyPage.generateGenderCookies(gender);
-
-  let allAgeCookie = {};
-  if (age === 'all ages') {
-    allAgeCookie = { _all_ages_selected: true };
-  }
-
-  cy.setupCookies({
-    _onboarded: 'true', ...genderCookies, age: Number.isInteger(age) ? age.toString() : age, user, ...allAgeCookie,
-  });
-  new LandingPage()
-    .clickRedirectButton(locale);
+  cookiesSetupAndAccessBodyPage(bodyPage, gender, age, user, locale);
   cy.getTestId(buttonId)
   //  The purpose of this test is to bring up the modal. I dont really care if the button is clickable in Cypress' eye.
   //  Clickable assertion will be dealt in user action tests.
     .click({ force: true });
-  const modal = new BodyModal();
-  modal.assertModalExist();
-  modal.assertHeading(heading);
-  modal.assertAndClickSubject(subject, text, Number.isInteger(age) ? age : 0, user);
-  let lines = text.split('\n');
-  lines = lines.filter((line) => line.length > 0);
-  lines.forEach(modal.assertLineInModal);
+  assertTopicModal(heading, subject, text, age, user);
 }
 
 export {

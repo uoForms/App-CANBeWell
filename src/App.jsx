@@ -1107,7 +1107,7 @@ class App extends Component {
         <div className="topnav">
           <h3>
             <a id="body" onClick={this.bodyClicked}>{this.state.lang.top_nav_body}</a>
-            <a id="topic" onClick={this.topicsClicked}>{this.state.lang.top_nav_topics}</a>
+            <a id="topic" test-id="topic" onClick={this.topicsClicked}>{this.state.lang.top_nav_topics}</a>
             <a id="test" test-id="test" onClick={this.testsClicked}>{this.state.lang.top_nav_tests}</a>
           </h3>
         </div>
