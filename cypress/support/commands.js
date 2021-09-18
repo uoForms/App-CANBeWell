@@ -14,14 +14,32 @@ Cypress.Commands.add('assertAttribute', {
 });
 
 Cypress.Commands.add('assertUrl', (url, requestType = 'GET', expectedStatusCode = 200) => {
-  cy.request({
-    url,
-    method: requestType,
-    failOnStatusCode: false,
-  })
-    .should((res) => {
-      expect(res.status).to.eq(expectedStatusCode);
+  if (Cypress.mocha.getRunner().suite.ctx.checkedUrls === undefined) {
+    cy.request({
+      url,
+      method: requestType,
+      failOnStatusCode: false,
+    })
+      .should((res) => {
+        expect(res.status).to.eq(expectedStatusCode);
+      });
+    Object.defineProperty(Cypress.mocha.getRunner().suite.ctx, 'checkedUrls', {
+      value: [url],
+      writable: true,
     });
+  } else if (!Cypress.mocha.getRunner().suite.ctx.checkedUrls.includes(url)) {
+    cy.request({
+      url,
+      method: requestType,
+      failOnStatusCode: false,
+    })
+      .should((res) => {
+        expect(res.status).to.eq(expectedStatusCode);
+      });
+    Cypress.mocha.getRunner().suite.ctx.checkedUrls.push(url);
+  } else {
+    cy.log('The url is already checked in a previous test');
+  }
 });
 
 Cypress.Commands.add('assertImageVisibleWithSource', {
