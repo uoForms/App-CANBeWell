@@ -46,6 +46,8 @@ function testPageTestSteps(age, gender, test, user, locale) {
       `${capitalize(user)}-Tests-${capitalize.words(test)
         .replace('/', ' or ')
         .replace('Or', 'or')
+        .replace('organes', 'Organes')
+        .replace('organs', 'Organs')
         .replace('And', 'and')
         .replace('For', 'for')
         .replace('Aaa', 'AAA')
