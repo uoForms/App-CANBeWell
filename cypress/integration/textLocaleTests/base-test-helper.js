@@ -30,11 +30,11 @@ function readTopicJsonData(props, user) {
   };
 }
 
-function assertTopicModal(heading, subject, text, age, user) {
+function assertTopicModal(heading, subject, text, age, user, page) {
   const modal = new BodyModal();
   modal.assertModalExist();
   modal.assertHeading(heading);
-  modal.assertAndClickSubject(subject, text, Number.isInteger(age) ? age : 0, user);
+  modal.assertAndClickSubject(subject, text, Number.isInteger(age) ? age : 0, user, page);
   let lines = text.split('\n');
   lines = lines.filter((line) => line.length > 0);
   lines.forEach(modal.assertLineInModal);

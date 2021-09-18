@@ -29,7 +29,7 @@ function topicPageTestSteps(age, gender, text, subject, heading, locale, user) {
     .click();
   topicPage.clickTopic(heading.replace('\n', ' '));
   // The modals for body and topic pages are exact the same (copy/pasted code). Reusing body modal here.
-  assertTopicModal(heading, subject, text, age, user);
+  assertTopicModal(heading, subject, text, age, user, topicPage);
 }
 
 export {
