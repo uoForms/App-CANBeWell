@@ -99,7 +99,7 @@ This config is used to run test against a live hosted deploy. See Usage section 
 
 ### Eslint
 
-The Cypress folder contains a `.eslintrc.js` file that can be utilized by IDE to enable reformatting
+The Cypress folder contains a `.eslintrc.js` file that can be utilized by IDE to enable reformatting.
 
 The said file can also be used to enforce code style, but it is not planned at the moment.
 
