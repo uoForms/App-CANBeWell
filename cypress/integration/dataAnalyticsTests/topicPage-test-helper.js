@@ -72,7 +72,10 @@ function topicPageTestSteps(age, gender, heading, user, locale) {
         .replace('In', 'in')
         .replace('The', 'the')
         .replace('Covid', 'COVID')
+        .replace('The', 'the')
         .replace('L’Utérus', 'L’utérus')
+        .replace('D’Un', 'D’un')
+        .replace('L’Aorte', 'L’aorte')
         .replace('And', 'and')}`,
       'Other-Chrome',
       `${capitalize(topicPage.generateGenderCookies(gender).gender)}-${getAge(age)}-${localeStrDict[locale]}`);
