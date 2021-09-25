@@ -88,7 +88,7 @@ def generate_build_analytics_body(locale, user, age):
          upload_screenshot_step, upload_report_step])
 
 def generate_build_analytics_topic(locale, user):
-    spec = f"cypress/integration/dataAnalyticsTests/testSet/topicPage-test-{locale}-{user}-.js"
+    spec = f"cypress/integration/dataAnalyticsTests/testSet/topicPage-test-{locale}-{user}.js"
     return generate_file(
         f"Cypress(Development Build - Data Analytics - Topic - {locale.capitalize()} - {user.capitalize()})",
         ["push"],

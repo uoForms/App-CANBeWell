@@ -19,7 +19,7 @@ jobs:
         start: yarn start
         browser: chrome
         wait-on: http://localhost:3000
-        spec: cypress/integration/dataAnalyticsTests/testSet/topicPage-test-en-provider-.js
+        spec: cypress/integration/dataAnalyticsTests/testSet/topicPage-test-en-provider.js
     - name: Cypress Upload Screenshots
       uses: actions/upload-artifact@v2
       if: failure()
