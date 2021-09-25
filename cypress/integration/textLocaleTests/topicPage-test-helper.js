@@ -27,7 +27,7 @@ function topicPageTestSteps(age, gender, text, subject, heading, locale, user) {
   cookiesSetupAndAccessBodyPage(topicPage, gender, age, user, locale);
   cy.getTestId('topic')
     .click();
-  topicPage.clickTopic(heading.replace('\n', ' '));
+  topicPage.clickTopic(heading);
   // The modals for body and topic pages are exact the same (copy/pasted code). Reusing body modal here.
   assertTopicModal(heading, subject, text, age, user, topicPage);
 }

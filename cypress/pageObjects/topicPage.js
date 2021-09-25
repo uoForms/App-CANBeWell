@@ -2,7 +2,8 @@ import BasePage from './basePage';
 
 class TopicPage extends BasePage {
   clickTopic(topic) {
-    cy.contains(topic)
+    // handle a random new line in the topic...
+    cy.contains(topic.replace('\n', ' '))
       .click();
   }
 }
