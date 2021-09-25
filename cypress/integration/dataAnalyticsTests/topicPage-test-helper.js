@@ -71,6 +71,7 @@ function topicPageTestSteps(age, gender, heading, user, locale) {
         .replace('Or', 'or')
         .replace('In', 'in')
         .replace('The', 'the')
+        .replace('the Body', 'The Body')
         .replace('Covid', 'COVID')
         .replace('The', 'the')
         .replace('L’Utérus', 'L’utérus')
