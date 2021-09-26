@@ -240,7 +240,7 @@ def generate_deploy_analytics_landing():
 
 def generate_build_text_body_no_topic():
     return generate_file(
-        "Cypress(Development Build - Text Locale - Body Page - No Topic)",
+        "Cypress(Development Build - Text Locale - Body - No Topic)",
         ["push"],
         [cancel_previous_run_step, check_out_step,
          generate_cypress_run_step(ci_build_json, local_host,
@@ -250,7 +250,7 @@ def generate_build_text_body_no_topic():
 
 def generate_deploy_text_body_no_topic():
     return generate_file(
-        "Cypress(Deploy Build - Text Locale - Body Page - No Topic)",
+        "Cypress(Deploy Build - Text Locale - Body - No Topic)",
         nightly_build,
         [check_out_step,
          generate_cypress_run_step(ci_deploy_json,
