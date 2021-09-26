@@ -33,7 +33,7 @@ function expectedHeadings(age, gender, user, locale) {
   const expectedHeadingSet = new Set();
   // eslint-disable-next-line no-restricted-syntax
   for (const topic of topics) {
-    if (topic['Minimum age'] <= age && topic['Maximum age'] >= age && (topic.Gender.split(',')
+    if (((topic['Minimum age'] <= age && topic['Maximum age'] >= age) || age === 'all ages') && (topic.Gender.split(',')
       .includes(gender) || topic.Gender === 'all')) {
       if (user === 'patient' && topic['General Patient Text'] !== 'n/a') {
         expectedHeadingSet.add(topic['Topic heading'].replace('\n', ''));

@@ -19,15 +19,15 @@ class TopicPage extends BasePage {
         .should('deep.equalInAnyOrder', Array.from(expectedHeadings));
     }
 
-    if (Cypress.mocha.getRunner().suite.ctx.assertedConfigsForHeadings === undefined) {
+    if (Cypress.mocha.getRunner().suite.ctx.assertedConfigsForTopicHeadings === undefined) {
       helper();
-      Object.defineProperty(Cypress.mocha.getRunner().suite.ctx, 'assertedConfigsForHeadings', {
+      Object.defineProperty(Cypress.mocha.getRunner().suite.ctx, 'assertedConfigsForTopicHeadings', {
         value: [cacheId],
         writable: true,
       });
-    } else if (!Cypress.mocha.getRunner().suite.ctx.assertedConfigsForHeadings.includes(cacheId)) {
+    } else if (!Cypress.mocha.getRunner().suite.ctx.assertedConfigsForTopicHeadings.includes(cacheId)) {
       helper();
-      Cypress.mocha.getRunner().suite.ctx.assertedConfigsForHeadings.push(cacheId);
+      Cypress.mocha.getRunner().suite.ctx.assertedConfigsForTopicHeadings.push(cacheId);
     } else {
       cy.log('This config is already checked, skip');
     }
