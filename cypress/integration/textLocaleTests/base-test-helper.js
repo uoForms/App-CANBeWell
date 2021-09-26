@@ -1,4 +1,4 @@
-import BodyModal from '../../pageObjects/BodyModal';
+import BodyModal from '../../pageObjects/bodyModal';
 import LandingPage from '../../pageObjects/landingPage';
 
 function readTopicJsonData(props, user) {
@@ -30,10 +30,13 @@ function readTopicJsonData(props, user) {
   };
 }
 
-function assertTopicModal(heading, subject, text, age, user, page) {
+function assertTopicModal(heading, subject, text, age, user, page, expectedSubjects, subjectsCacheID) {
   const modal = new BodyModal();
   modal.assertModalExist();
   modal.assertHeading(heading);
+  if (expectedSubjects !== undefined && subjectsCacheID !== undefined) {
+    modal.assertSubjects(expectedSubjects, subjectsCacheID);
+  }
   modal.assertAndClickSubject(subject, text, Number.isInteger(age) ? age : 0, user, page);
   let lines = text.split('\n');
   lines = lines.filter((line) => line.length > 0);

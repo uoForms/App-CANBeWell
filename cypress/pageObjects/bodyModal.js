@@ -7,6 +7,31 @@ class BodyModal extends BasePage {
       .should('exist');
   }
 
+  assertSubjects(expectedSubjects, cacheId) {
+    function helper() {
+      // https://glebbahmutov.com/cypress-examples/6.5.0/recipes/get-text-list.html
+      cy.getTestId('topicSummary')
+        .then(($els) => (
+          Cypress.$.makeArray($els)
+            .map((el) => el.innerText)
+        ))
+        .should('deep.equalInAnyOrder', Array.from(expectedSubjects));
+    }
+
+    if (Cypress.mocha.getRunner().suite.ctx.assertedConfigsForTopicSubjects === undefined) {
+      helper();
+      Object.defineProperty(Cypress.mocha.getRunner().suite.ctx, 'assertedConfigsForTopicSubjects', {
+        value: [cacheId],
+        writable: true,
+      });
+    } else if (!Cypress.mocha.getRunner().suite.ctx.assertedConfigsForTopicSubjects.includes(cacheId)) {
+      helper();
+      Cypress.mocha.getRunner().suite.ctx.assertedConfigsForTopicSubjects.push(cacheId);
+    } else {
+      cy.log('This config is already checked, skip');
+    }
+  }
+
   assertAndClickSubject(subject, text, age, user, page) {
     //  Special cases: duplicated topic summaries
     const specialCondition1 = (text.includes('Practice safe sex') || text.includes('Pratiquez des relations sexuelles protégées')) && age <= 24 && age >= 18;

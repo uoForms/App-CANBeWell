@@ -18,7 +18,6 @@ class TestPage extends BasePage {
 
   assertHeadings(expectedHeadings, cacheId) {
     function helper() {
-      cy.log(expectedHeadings);
       // https://glebbahmutov.com/cypress-examples/6.5.0/recipes/get-text-list.html
       cy.getTestId('test-summary')
         .then(($els) => (
