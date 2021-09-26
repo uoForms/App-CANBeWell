@@ -34,9 +34,7 @@ function assertTopicModal(heading, subject, text, age, user, page, expectedSubje
   const modal = new BodyModal();
   modal.assertModalExist();
   modal.assertHeading(heading);
-  if (expectedSubjects !== undefined && subjectsCacheID !== undefined) {
-    modal.assertSubjects(expectedSubjects, subjectsCacheID);
-  }
+  modal.assertSubjects(expectedSubjects, subjectsCacheID);
   modal.assertAndClickSubject(subject, text, Number.isInteger(age) ? age : 0, user, page);
   let lines = text.split('\n');
   lines = lines.filter((line) => line.length > 0);
@@ -62,4 +60,5 @@ export {
   readTopicJsonData,
   assertTopicModal,
   cookiesSetupAndAccessBodyPage,
+
 };

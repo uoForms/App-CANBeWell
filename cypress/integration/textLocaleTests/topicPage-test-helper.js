@@ -60,9 +60,9 @@ function expectedSubjects(age, gender, user, locale, heading) {
     if (((topic['Minimum age'] <= age && topic['Maximum age'] >= age) || age === 'all ages') && (topic.Gender.split(',')
       .includes(gender) || topic.Gender === 'all') && heading === topic['Topic heading']) {
       if (user === 'patient' && topic['General Patient Text'] !== 'n/a') {
-        expectedSubjectSet.push(topic.Subject.replace('\n', ''));
+        expectedSubjectSet.push(topic.Subject);
       } else if (user === 'provider' && topic['Health Provider Text'] !== 'n/a') {
-        expectedSubjectSet.push(topic.Subject.replace('\n', ''));
+        expectedSubjectSet.push(topic.Subject);
       }
     }
   }
