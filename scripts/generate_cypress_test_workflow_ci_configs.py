@@ -296,7 +296,7 @@ def run():
         file_name = f"ci-build-cy-test-text-locale-body-no-topic-config-dependent-{args[0]}-{args[1]}.yml"
         content = generate_build_text_body_no_topic_config_dependent(args[0], args[1])
         write_to_file(file_name, content)
-        file_name = f"ci-build-cy-test-text-locale-body-no-topic-config-dependent-{args[0]}-{args[1]}.yml"
+        file_name = f"ci-deploy-cy-test-text-locale-body-no-topic-config-dependent-{args[0]}-{args[1]}.yml"
         content = generate_deploy_text_body_no_topic_config_dependent(args[0], args[1])
         write_to_file(file_name, content)
 
