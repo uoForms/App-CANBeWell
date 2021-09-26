@@ -24,7 +24,6 @@ class BasePage {
 
   checkGAQueryParams(url, queryDict) {
     const params = new URLSearchParams(new URL(url).search);
-    // eslint-disable-next-line guard-for-in,no-restricted-syntax
     for (const key in queryDict) {
       if (queryDict[key] !== null) {
         expect(params.get(key)).to.equal(queryDict[key]);

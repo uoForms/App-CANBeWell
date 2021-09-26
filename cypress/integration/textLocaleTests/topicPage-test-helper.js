@@ -6,9 +6,7 @@ function generateTestDataSet(props, user) {
     heading, subject, ageSet, genderSet, text,
   } = readTopicJsonData(props, user);
   const dataSet = [];
-  // eslint-disable-next-line no-restricted-syntax
   for (const currentAge of ageSet) {
-    // eslint-disable-next-line no-restricted-syntax
     for (const currentGender of genderSet) {
       dataSet.push({
         age: currentAge,
@@ -31,7 +29,6 @@ function expectedHeadings(age, gender, user, locale) {
   // eslint-disable-next-line global-require,import/no-dynamic-require
   const topics = require(`../../../src/JSONFolder/HtmlTopic-${locale.toUpperCase()}.json`);
   const expectedHeadingSet = new Set();
-  // eslint-disable-next-line no-restricted-syntax
   for (const topic of topics) {
     if (((topic['Minimum age'] <= age && topic['Maximum age'] >= age) || age === 'all ages') && (topic.Gender.split(',')
       .includes(gender) || topic.Gender === 'all')) {
@@ -55,7 +52,6 @@ function expectedSubjects(age, gender, user, locale, heading) {
   // eslint-disable-next-line global-require,import/no-dynamic-require
   const topics = require(`../../../src/JSONFolder/HtmlTopic-${locale.toUpperCase()}.json`);
   const expectedSubjectSet = [];
-  // eslint-disable-next-line no-restricted-syntax
   for (const topic of topics) {
     if (((topic['Minimum age'] <= age && topic['Maximum age'] >= age) || age === 'all ages') && (topic.Gender.split(',')
       .includes(gender) || topic.Gender === 'all') && heading === topic['Topic heading']) {

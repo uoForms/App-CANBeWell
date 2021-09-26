@@ -21,5 +21,7 @@ module.exports = {
     'import/no-named-as-default': 'off',
     'import/no-named-as-default-member': 'off',
     'max-len': 'off',
+    'no-restricted-syntax': 'off',
+    'guard-for-in':'off'
   },
 };

@@ -17,9 +17,7 @@ function generateTestDataSet(props, user) {
     return [];
   }
   const dataSet = [];
-  // eslint-disable-next-line no-restricted-syntax
   for (const currentAge of ageSet) {
-    // eslint-disable-next-line no-restricted-syntax
     for (const currentGender of genderSet) {
       dataSet.push({
         age: currentAge,

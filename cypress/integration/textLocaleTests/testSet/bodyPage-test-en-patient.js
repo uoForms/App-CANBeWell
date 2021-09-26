@@ -11,10 +11,8 @@ describe('Body Page Text Locale', () => {
     cy.visit('/');
   });
 
-  // eslint-disable-next-line no-restricted-syntax
   for (const topic of topics) {
     const dataInputList = generateTestDataSet(topic, user);
-    // eslint-disable-next-line guard-for-in,no-restricted-syntax
     for (const dataInput of dataInputList) {
       const {
         age, gender, text, subject, heading, buttonId,

@@ -22,9 +22,7 @@ function generateTestDataSet(props, user) {
       .forEach((item) => genderSet.add(item));
   }
   const dataSet = [];
-  // eslint-disable-next-line no-restricted-syntax
   for (const currentAge of ageSet) {
-    // eslint-disable-next-line no-restricted-syntax
     for (const currentGender of genderSet) {
       dataSet.push({
         age: currentAge,
@@ -46,7 +44,6 @@ function expectedHeadings(age, gender, locale) {
   // eslint-disable-next-line global-require,import/no-dynamic-require
   const topics = require(`../../../src/JSONFolder/HtmlTest-${locale.toUpperCase()}.json`);
   const expectedHeadingSet = new Set();
-  // eslint-disable-next-line no-restricted-syntax
   for (const topic of topics) {
     if (((topic['Minimum age'] <= age && topic['Maximum age'] >= age) || age === 'all ages') && (topic.Gender.split(',')
       .includes(gender) || topic.Gender === 'all')) {

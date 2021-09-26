@@ -49,7 +49,6 @@ class TestPage extends BasePage {
     if (line.includes('[[')) {
       let parts = line.split(/[[\]]/g);
       parts = parts.filter((part) => part.length > 0);
-      // eslint-disable-next-line no-restricted-syntax
       for (const part of parts) {
         if (part.includes('http')) {
           const [text, url] = part.split(';');

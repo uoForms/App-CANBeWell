@@ -1,6 +1,8 @@
 import BasePage from './basePage';
 import BodyPage from './bodyPage';
 
+const langFile = require('../../src/Lang/Lang.json');
+
 class BodyModal extends BasePage {
   assertModalExist() {
     cy.getTestId('bodyModal')
@@ -69,6 +71,14 @@ class BodyModal extends BasePage {
     }
   }
 
+  assertNoTopic(locale) {
+    const langdList = locale === this.locale.en ? langFile.english : langFile.french;
+    cy.getTestId('heading')
+      .should('have.text', langdList.topic_is_not_applicable);
+    cy.getTestId('topicSummary')
+      .should('not.exist');
+  }
+
   assertHeading(heading) {
     // Using contains() to deal with the multiple headings scenario
     heading.split('\n')
@@ -115,7 +125,6 @@ class BodyModal extends BasePage {
       }
       let parts = line.split(/[[\]]/g);
       parts = parts.filter((part) => part.length > 0);
-      // eslint-disable-next-line no-restricted-syntax
       for (const part of parts) {
         // the pdf is a special case
         if (part.includes('http') || part.includes('pdf/prostate-cancer-infographic-5.pdf')) {
