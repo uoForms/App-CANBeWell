@@ -209,6 +209,25 @@ def generate_deploy_analytics_landing():
                                    spec="cypress/integration/dataAnalyticsTests/testSet/landingPage-test.js"),
          upload_screenshot_step, upload_report_step])
 
+def generate_build_text_body_no_topic():
+    return generate_file(
+        "Cypress(Development Build - Text Locale - Body Page - No Topic)",
+        ["push"],
+        [cancel_previous_run_step, check_out_step,
+         generate_cypress_run_step(ci_build_json, local_host,
+                                   spec="cypress/integration/textLocaleTests/testSet/bodyPage-test-no-topic.js"),
+         upload_screenshot_step, upload_report_step])
+
+
+def generate_deploy_text_body_no_topic():
+    return generate_file(
+        "Cypress(Deploy Build - Text Locale - Body Page - No Topic)",
+        nightly_build,
+        [check_out_step,
+         generate_cypress_run_step(ci_deploy_json,
+                                   spec="cypress/integration/textLocaleTests/testSet/bodyPage-test-no-topic.js"),
+         upload_screenshot_step, upload_report_step])
+
 
 def generate_build_user_action():
     return generate_file(
@@ -239,8 +258,10 @@ def run():
     set_up()
     write_to_file('ci-build-cy-test-data-analytics-landing-page.yml', generate_build_analytics_landing())
     write_to_file('ci-build-cy-test-user-action.yml', generate_build_user_action())
+    write_to_file('ci-build-cy-test-text-locale-body-no-topic.yml', generate_build_text_body_no_topic())
     write_to_file('ci-deploy-cy-test-data-analytics-landing-page.yml', generate_deploy_analytics_landing())
     write_to_file("ci-deploy-cy-test-user-action.yml", generate_deploy_user_action())
+    write_to_file('ci-deploy-cy-test-text-locale-body-no-topic.yml', generate_deploy_text_body_no_topic())
 
     for locale in ['en', 'fr']:
         file_name = f"ci-build-cy-test-text-locale-test-{locale}.yml"
