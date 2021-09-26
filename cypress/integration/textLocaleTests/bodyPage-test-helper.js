@@ -4,8 +4,7 @@ import BodyModal from '../../pageObjects/bodyModal';
 
 function getButtonId(gender, buttonText) {
   const bodyPage = new BodyPage();
-  // eslint-disable-next-line no-nested-ternary
-  const buttonInfoList = gender === 'm' ? bodyPage.maleTfButtonInfoList : (gender === 'f' ? bodyPage.femaleTmButtonInfoList : bodyPage.nonBinaryOrMaleTmOrFemaleTfInfoList);
+  const buttonInfoList = bodyPage.getButtonInfoListByGender(gender);
   for (const info of buttonInfoList) {
     if (info.buttonText === buttonText) {
       return info.testId;
@@ -16,8 +15,7 @@ function getButtonId(gender, buttonText) {
 
 function getButtonText(gender, buttonId) {
   const bodyPage = new BodyPage();
-  // eslint-disable-next-line no-nested-ternary
-  const buttonInfoList = gender === 'm' ? bodyPage.maleTfButtonInfoList : (gender === 'f' ? bodyPage.femaleTmButtonInfoList : bodyPage.nonBinaryOrMaleTmOrFemaleTfInfoList);
+  const buttonInfoList = bodyPage.getButtonInfoListByGender(gender);
   for (const info of buttonInfoList) {
     if (info.testId === buttonId) {
       return info.buttonText;
@@ -94,4 +92,5 @@ export {
   generateTestDataSet,
   bodyPageTestSteps,
   bodyPageNoTopicTestSteps,
+  expectedSubjects, getButtonText,
 };
