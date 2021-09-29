@@ -34,3 +34,10 @@ jobs:
         name: cypress-reports
         path: cypress/reports
         retention-days: 7
+    - name: Cypress Upload Coverage
+      uses: actions/upload-artifact@v2
+      if: success()
+      with:
+        name: cypress-coverage
+        path: cypress/coverage
+        retention-days: 7

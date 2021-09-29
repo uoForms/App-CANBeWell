@@ -6,8 +6,8 @@ class LandingPage extends BasePage {
     super();
     this.updateBannerVideoButton = {
       src: {
-        [this.locale.en]: '/static/media/video_en.717617d9.mp4',
-        [this.locale.fr]: '/static/media/video_fr.ef3962f4.mp4',
+        [this.locale.en]: '/static/media/video_en.3d94c066.mp4',
+        [this.locale.fr]: '/static/media/video_fr.e225eae6.mp4',
       },
       text: {
         [this.locale.en]: 'Video',
@@ -15,8 +15,8 @@ class LandingPage extends BasePage {
       },
     };
     this.redirectButtonImageSrc = {
-      [this.locale.en]: '/static/media/canbewelleng.59df6882.png',
-      [this.locale.fr]: '/static/media/canbewellfren.b35390c9.png',
+      [this.locale.en]: '/static/media/canbewelleng.107fa0a3.png',
+      [this.locale.fr]: '/static/media/canbewellfren.301eb9d6.png',
     };
     this.reliableResourceStatement = {
       [this.locale.en]: 'A reliable resource by Canadian health care providers to help you stay healthy',
@@ -61,7 +61,7 @@ class LandingPage extends BasePage {
 
   assertLogo() {
     cy.getTestId('logo')
-      .assertImageVisibleWithSource('/static/media/logo_21-02-02.13561f30.png');
+      .assertImageVisibleWithSource('/static/media/logo_21-02-02.4e1afa71.png');
   }
 
   assertRedirectButton(locale) {

@@ -2,7 +2,7 @@
 
 This README describes the setup and usage of testing framework for App-CANBeWell.
 
-Last updated: Sept 13 2021
+Last updated: Sept 29 2021
 
 ## Basic
 
@@ -28,6 +28,12 @@ To run tests locally, use:
 
 ```
 yarn cypress
+```
+
+If you want to access coverage data, use:
+
+```
+yarn start-with-cy-coverage
 ```
 
 ### [GitHub Actions](https://docs.github.com/en/actions)
@@ -158,12 +164,6 @@ This folder contains all test execution files. Each execution file call the conc
 
 Folder structure is very similar to  `./dataAnalyticsTests`
 
-### `cypress/logs`
-
-It is not tracked in Git. The purpose of this folder is to collect all failed test log.
-
-To find failed test log in GitHub Actions, please use build log.
-
 ### `cypress/pageObjects`
 
 It contains all page object models. To learn more about page object design pattern, please visit
@@ -215,6 +215,11 @@ If a new custom command is registered, please also update this file.
 #### `index.js`
 
 It loads all custom commands and some third party plugins
+
+### `cypress/<git ignored folders>`
+
+Those folders are not tracked in Git. They are mostly used in the CI env to provide us more insights of the final
+results or debug information if something goes wrong
 
 ## Style Guide
 

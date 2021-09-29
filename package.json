@@ -34,7 +34,7 @@
     "start": "react-scripts start",
     "start-with-cy-coverage": " react-scripts -r @cypress/instrument-cra start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "react-scripts test --env=jsdom --passWithNoTests",
     "eject": "react-scripts eject",
     "cypress": "cypress open --config-file ./cypress/configs/local.json"
   },
@@ -48,6 +48,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "nyc": {
+    "all": true,
+    "include": "src/**/*.js",
+    "report-dir": "cypress/coverage"
   },
   "devDependencies": {
     "@bahmutov/cypress-extends": "^1.1.0",
