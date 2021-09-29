@@ -14,7 +14,7 @@ jobs:
       uses: cypress-io/github-action@v2
       with:
         config-file: cypress/configs/ci-deploy.json
-        start: yarn start
+        start: yarn start-with-cy-coverage
         browser: chrome
         spec: cypress/integration/textLocaleTests/testSet/bodyPage-test-no-topic-config-dependent-126-150.js
     - name: Cypress Upload Screenshots

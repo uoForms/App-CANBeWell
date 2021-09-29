@@ -70,7 +70,7 @@ def generate_cypress_run_step(config_file, url=None, spec=None, config=None):
         "uses": "cypress-io/github-action@v2",
         "with": {
             "config-file": config_file,
-            "start": "yarn start",
+            "start": "yarn start-with-cy-coverage",
             "browser": "chrome",
             **url_dict,
             **spec_or_config

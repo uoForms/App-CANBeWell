@@ -16,7 +16,7 @@ jobs:
       uses: cypress-io/github-action@v2
       with:
         config-file: cypress/configs/ci-build.json
-        start: yarn start
+        start: yarn start-with-cy-coverage
         browser: chrome
         wait-on: http://localhost:3000
         spec: cypress/integration/dataAnalyticsTests/testSet/bodyPage-test-fr-patient-50.js
