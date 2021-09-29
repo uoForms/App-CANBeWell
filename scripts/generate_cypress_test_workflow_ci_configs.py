@@ -87,6 +87,15 @@ def generate_build_analytics_body(locale, user, age):
          generate_cypress_run_step(ci_build_json, local_host, spec=spec),
          upload_screenshot_step, upload_report_step])
 
+def generate_build_analytics_topic(locale, user):
+    spec = f"cypress/integration/dataAnalyticsTests/testSet/topicPage-test-{locale}-{user}.js"
+    return generate_file(
+        f"Cypress(Development Build - Data Analytics - Topic - {locale.capitalize()} - {user.capitalize()})",
+        ["push"],
+        [cancel_previous_run_step, check_out_step,
+         generate_cypress_run_step(ci_build_json, local_host, spec=spec),
+         upload_screenshot_step, upload_report_step])
+
 def generate_build_analytics_test(locale):
     spec = f"cypress/integration/dataAnalyticsTests/testSet/testPage-test-{locale}.js"
     return generate_file(
@@ -131,6 +140,16 @@ def generate_deploy_analytics_body(locale, user, age):
         [check_out_step,
          generate_cypress_run_step(ci_deploy_json, spec=spec),
          upload_screenshot_step, upload_report_step])
+
+def generate_deploy_analytics_topic(locale, user):
+    spec = f"cypress/integration/dataAnalyticsTests/testSet/topicPage-test-{locale}-{user}.js"
+    return generate_file(
+        f"Cypress(Deploy Build - Data Analytics - Topic - {locale.capitalize()} - {user.capitalize()})",
+        nightly_build,
+        [check_out_step,
+         generate_cypress_run_step(ci_deploy_json, spec=spec),
+         upload_screenshot_step, upload_report_step])
+
 
 def generate_deploy_analytics_test(locale):
     spec = f"cypress/integration/dataAnalyticsTests/testSet/testPage-test-{locale}.js"
@@ -236,6 +255,7 @@ def run():
         file_name = f"ci-deploy-cy-test-data-analytics-test-{locale}.yml"
         content = generate_deploy_analytics_test(locale)
         write_to_file(file_name, content)
+
         for user in ['patient', 'provider']:
             file_name = f"ci-build-cy-test-text-locale-body-{locale}-{user}.yml"
             content = generate_build_text_body(locale, user)
@@ -243,12 +263,21 @@ def run():
             file_name = f"ci-deploy-cy-test-text-locale-body-{locale}-{user}.yml"
             content = generate_deploy_text_body(locale, user)
             write_to_file(file_name, content)
+
             file_name = f"ci-build-cy-test-text-locale-topic-{locale}-{user}.yml"
             content = generate_build_text_topic(locale, user)
             write_to_file(file_name, content)
             file_name = f"ci-deploy-cy-test-text-locale-topic-{locale}-{user}.yml"
             content = generate_deploy_text_topic(locale, user)
             write_to_file(file_name, content)
+
+            file_name = f"ci-build-cy-test-data-analytics-topic-{locale}-{user}.yml"
+            content = generate_build_analytics_topic(locale, user)
+            write_to_file(file_name, content)
+            file_name = f"ci-deploy-cy-test-data-analytics-topic-{locale}-{user}.yml"
+            content = generate_deploy_analytics_topic(locale, user)
+            write_to_file(file_name, content)
+
             for age in ['18', '50', '70', 'all-age']:
                 if user == 'patient' and age == 'all-age':
                     continue
