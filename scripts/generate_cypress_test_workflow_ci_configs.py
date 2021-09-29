@@ -64,17 +64,19 @@ def generate_cypress_run_step(config_file, url=None, spec=None, config=None):
         spec_or_config['config'] = config
 
     url_dict = {}
+    start_dict = {}
     if url:
         url_dict["wait-on"] = url
+        start_dict["start"] = "yarn start-with-cy-coverage"
     return {
         "name": "Cypress Run",
         "uses": "cypress-io/github-action@v2",
         "with": {
             "config-file": config_file,
-            "start": "yarn start-with-cy-coverage",
             "browser": "chrome",
             **url_dict,
-            **spec_or_config
+            **spec_or_config,
+            **start_dict
         }
     }
 
