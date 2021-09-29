@@ -2,8 +2,9 @@
   "reporter": "cypress-mochawesome-reporter",
   "reporterOptions": {
    "overwrite": false,
-   "html": true,
-   "json": true
+   "saveHtml": true,
+   "saveJson": true,
+   "charts": true
   },
   "retries": {
     "runMode": 3,
