@@ -221,6 +221,19 @@ It loads all custom commands and some third party plugins
 Those folders are not tracked in Git. They are mostly used in the CI env to provide us more insights of the final
 results or debug information if something goes wrong
 
+## Test Reports
+
+Currently, all Cypress test workflows generate both test result and test coverage report. However, the scope of the
+reports are limited to the tests executed in that one workflow. It is for sure possible to create a new workflow to
+finalize and merge all reports to one. However, due to GitHub access permission limitation, it would require a personal
+access token. Since we do not have a service account and using developers' token creates more logistics challenges than
+the feature's worth, therefore, it is not scheduled to implement yet.
+
+If you would like to know the overall test results and test coverage. Please manually download all artifacts and
+reference [this](https://kristijan-pajtasev.medium.com/cypress-merging-multiple-mochawesome-reports-3eb8fcaaf32c)
+and [this](https://stackoverflow.com/questions/62560224/jest-how-to-merge-coverage-reports-from-different-jest-test-runs)
+to merge reports manually.
+
 ## Style Guide
 
 1. Hide all implementation details in page objects. Ideally, a non-technical collaborator could read the test file and

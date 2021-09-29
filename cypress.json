@@ -1,5 +1,10 @@
 {
   "reporter": "cypress-mochawesome-reporter",
+  "reporterOptions": {
+   "overwrite": false,
+   "html": true,
+   "json": true
+  },
   "retries": {
     "runMode": 3,
     "openMode": 0
