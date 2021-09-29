@@ -24,7 +24,7 @@
     "react-icons": "^3.9.0",
     "react-native-popup-dialog": "^0.18.3",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "1.1.4",
+    "react-scripts": "4.0.3",
     "react-sidebar": "^3.0.2",
     "react-test-renderer": "^16.13.0",
     "travis": "^0.1.1",
@@ -32,6 +32,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "start-with-cy-coverage": " react-scripts -r @cypress/instrument-cra start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
@@ -50,6 +51,9 @@
   },
   "devDependencies": {
     "@bahmutov/cypress-extends": "^1.1.0",
+    "@cypress/code-coverage": "^3.9.11",
+    "@cypress/instrument-cra": "^1.4.0",
+    "babel-plugin-istanbul": "^6.0.0",
     "capitalize": "^2.0.3",
     "cy-view": "^1.0.11",
     "cypress": "^8.3.1",
@@ -63,6 +67,8 @@
     "eslint-plugin-chai-friendly": "^0.7.2",
     "eslint-plugin-cypress": "^2.11.3",
     "eslint-plugin-import": "^2.24.2",
+    "istanbul-lib-coverage": "^3.0.1",
+    "nyc": "^15.1.0",
     "react-native-testing-library": "^1.11.1"
   }
 }

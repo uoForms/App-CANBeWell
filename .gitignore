@@ -23,3 +23,4 @@ src/firebase.jsx
 /.idea
 
 cypress/logs/
+/.nyc_output/
