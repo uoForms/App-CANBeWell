@@ -3,3 +3,5 @@ import 'cypress-mochawesome-reporter/register';
 
 require('cypress-get-it');
 require('cypress-failed-log');
+
+chai.use(require('deep-equal-in-any-order'));

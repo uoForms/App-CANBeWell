@@ -22,9 +22,7 @@ function generateTestDataSet(props, user) {
       .forEach((item) => genderSet.add(item));
   }
   const dataSet = [];
-  // eslint-disable-next-line no-restricted-syntax
   for (const currentAge of ageSet) {
-    // eslint-disable-next-line no-restricted-syntax
     for (const currentGender of genderSet) {
       dataSet.push({
         age: currentAge,
@@ -37,16 +35,35 @@ function generateTestDataSet(props, user) {
   return dataSet;
 }
 
+const headingCache = {};
+
+function expectedHeadings(age, gender, locale) {
+  if (headingCache[`${age}${gender}${locale}`] !== undefined) {
+    return headingCache[`${age}${gender}${locale}`];
+  }
+  // eslint-disable-next-line global-require,import/no-dynamic-require
+  const topics = require(`../../../src/JSONFolder/HtmlTest-${locale.toUpperCase()}.json`);
+  const expectedHeadingSet = new Set();
+  for (const topic of topics) {
+    if (((topic['Minimum age'] <= age && topic['Maximum age'] >= age) || age === 'all ages') && (topic.Gender.split(',')
+      .includes(gender) || topic.Gender === 'all')) {
+      expectedHeadingSet.add(topic.Test.replace(' ;', '\u00a0'));
+    }
+  }
+  headingCache[`${age}${gender}${locale}`] = expectedHeadingSet;
+  return expectedHeadingSet;
+}
+
 function testPageTestSteps(age, gender, text, test, user, locale) {
   const testPage = new TestPage();
   cookiesSetupAndAccessBodyPage(testPage, gender, age, user, locale);
   cy.getTestId('test')
     .click();
-  const page = new TestPage();
-  page.assertAndClickTest(test);
+  testPage.assertHeadings(expectedHeadings(age, gender, locale), `${age}${gender}${locale}`);
+  testPage.assertAndClickTest(test);
   let lines = text.split('\n');
   lines = lines.filter((line) => line.length > 0);
-  lines.forEach(page.assertLineInDropdown);
+  lines.forEach(testPage.assertLineInDropdown);
 }
 
 export {

@@ -10,13 +10,10 @@ describe('Test Page Analytics', () => {
     cy.visit('/');
   });
 
-  // eslint-disable-next-line no-restricted-syntax
   for (const user of ['patient', 'provider']) {
-    // eslint-disable-next-line no-restricted-syntax
     for (const topic of topics) {
       // Same data is generated as text locale tests, reuse the function
       const dataInputList = generateTestDataSet(topic, user);
-      // eslint-disable-next-line guard-for-in,no-restricted-syntax
       for (const dataInput of dataInputList) {
         const {
           age, gender, test,

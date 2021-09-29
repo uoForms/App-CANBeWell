@@ -1,10 +1,37 @@
 import BasePage from './basePage';
 import BodyPage from './bodyPage';
 
+const langFile = require('../../src/Lang/Lang.json');
+
 class BodyModal extends BasePage {
   assertModalExist() {
     cy.getTestId('bodyModal')
       .should('exist');
+  }
+
+  assertSubjects(expectedSubjects, cacheId) {
+    function helper() {
+      // https://glebbahmutov.com/cypress-examples/6.5.0/recipes/get-text-list.html
+      cy.getTestId('topicSummary')
+        .then(($els) => (
+          Cypress.$.makeArray($els)
+            .map((el) => el.innerText)
+        ))
+        .should('deep.equalInAnyOrder', Array.from(expectedSubjects));
+    }
+
+    if (Cypress.mocha.getRunner().suite.ctx.assertedConfigsForTopicSubjects === undefined) {
+      helper();
+      Object.defineProperty(Cypress.mocha.getRunner().suite.ctx, 'assertedConfigsForTopicSubjects', {
+        value: [cacheId],
+        writable: true,
+      });
+    } else if (!Cypress.mocha.getRunner().suite.ctx.assertedConfigsForTopicSubjects.includes(cacheId)) {
+      helper();
+      Cypress.mocha.getRunner().suite.ctx.assertedConfigsForTopicSubjects.push(cacheId);
+    } else {
+      cy.log('This config is already checked, skip');
+    }
   }
 
   assertAndClickSubject(subject, text, age, user, page) {
@@ -42,6 +69,14 @@ class BodyModal extends BasePage {
         .contains('[test-id="topicSummary"]', clearnedSubject)
         .click();
     }
+  }
+
+  assertNoTopic(locale) {
+    const langdList = locale === this.locale.en ? langFile.english : langFile.french;
+    cy.getTestId('heading')
+      .should('have.text', langdList.topic_is_not_applicable);
+    cy.getTestId('topicSummary')
+      .should('not.exist');
   }
 
   assertHeading(heading) {
@@ -90,7 +125,6 @@ class BodyModal extends BasePage {
       }
       let parts = line.split(/[[\]]/g);
       parts = parts.filter((part) => part.length > 0);
-      // eslint-disable-next-line no-restricted-syntax
       for (const part of parts) {
         // the pdf is a special case
         if (part.includes('http') || part.includes('pdf/prostate-cancer-infographic-5.pdf')) {

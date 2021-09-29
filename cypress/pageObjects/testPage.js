@@ -16,6 +16,31 @@ class TestPage extends BasePage {
     }
   }
 
+  assertHeadings(expectedHeadings, cacheId) {
+    function helper() {
+      // https://glebbahmutov.com/cypress-examples/6.5.0/recipes/get-text-list.html
+      cy.getTestId('test-summary')
+        .then(($els) => (
+          Cypress.$.makeArray($els)
+            .map((el) => el.innerText)
+        ))
+        .should('deep.equalInAnyOrder', Array.from(expectedHeadings));
+    }
+
+    if (Cypress.mocha.getRunner().suite.ctx.assertedConfigsForTestHeadings === undefined) {
+      helper();
+      Object.defineProperty(Cypress.mocha.getRunner().suite.ctx, 'assertedConfigsForTestHeadings', {
+        value: [cacheId],
+        writable: true,
+      });
+    } else if (!Cypress.mocha.getRunner().suite.ctx.assertedConfigsForTestHeadings.includes(cacheId)) {
+      helper();
+      Cypress.mocha.getRunner().suite.ctx.assertedConfigsForTestHeadings.push(cacheId);
+    } else {
+      cy.log('This config is already checked, skip');
+    }
+  }
+
   assertLineInDropdown(line) {
     // TODO: this list contains known broken links. Once they are addressed, they should be removed from this list
     const skipList = [
@@ -24,7 +49,6 @@ class TestPage extends BasePage {
     if (line.includes('[[')) {
       let parts = line.split(/[[\]]/g);
       parts = parts.filter((part) => part.length > 0);
-      // eslint-disable-next-line no-restricted-syntax
       for (const part of parts) {
         if (part.includes('http')) {
           const [text, url] = part.split(';');

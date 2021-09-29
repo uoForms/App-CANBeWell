@@ -49,6 +49,11 @@ class BodyPage extends BasePage {
       { testId: 'breastButton', localeId: 'transbreast', buttonText: 'Breast/Chest' },
     ];
   }
+
+  getButtonInfoListByGender(gender) {
+    // eslint-disable-next-line no-nested-ternary
+    return gender === 'm' ? this.maleTfButtonInfoList : (gender === 'f' ? this.femaleTmButtonInfoList : this.nonBinaryOrMaleTmOrFemaleTfInfoList);
+  }
 }
 
 export default BodyPage;

@@ -3767,6 +3767,14 @@ decode-uri-component@^0.2.0:
   resolved "https://registry.npmjs.org/decode-uri-component/-/decode-uri-component-0.2.0.tgz"
   integrity sha1-6zkTMzRYd1y4TNGh+uBiEGu4dUU=
 
+deep-equal-in-any-order@^1.1.13:
+  version "1.1.13"
+  resolved "https://registry.yarnpkg.com/deep-equal-in-any-order/-/deep-equal-in-any-order-1.1.13.tgz#7688ae8c5243c5078100f07104df9104838ec4da"
+  integrity sha512-A0raQ2H80qbMadIkD6Mkpm58lMY9xigkTCQggKHpPFsWbPPpuOwM5qAH8LWT2RjHIghPrZw8uKq6dryuc8styQ==
+  dependencies:
+    lodash.mapvalues "^4.6.0"
+    sort-any "^2.0.0"
+
 deep-equal@^1.0.1:
   version "1.1.1"
   resolved "https://registry.npmjs.org/deep-equal/-/deep-equal-1.1.1.tgz"
@@ -8166,6 +8174,11 @@ lodash.keys@~2.4.1:
     lodash._shimkeys "~2.4.1"
     lodash.isobject "~2.4.1"
 
+lodash.mapvalues@^4.6.0:
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/lodash.mapvalues/-/lodash.mapvalues-4.6.0.tgz#1bafa5005de9dd6f4f26668c30ca37230cc9689c"
+  integrity sha1-G6+lAF3p3W9PJmaMMMo3IwzJaJw=
+
 lodash.memoize@^4.1.2:
   version "4.1.2"
   resolved "https://registry.npmjs.org/lodash.memoize/-/lodash.memoize-4.1.2.tgz"
@@ -11468,6 +11481,13 @@ sockjs@0.3.18:
   dependencies:
     faye-websocket "^0.10.0"
     uuid "^2.0.2"
+
+sort-any@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/sort-any/-/sort-any-2.0.0.tgz#62a5409c9905c9483f03e41e17f46cc451aa7c55"
+  integrity sha512-T9JoiDewQEmWcnmPn/s9h/PH9t3d/LSWi0RgVmXSuDYeZXTZOZ1/wrK2PHaptuR1VXe3clLLt0pD6sgVOwjNEA==
+  dependencies:
+    lodash "^4.17.21"
 
 sort-keys@^1.0.0:
   version "1.1.2"

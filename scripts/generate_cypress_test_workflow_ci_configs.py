@@ -87,6 +87,7 @@ def generate_build_analytics_body(locale, user, age):
          generate_cypress_run_step(ci_build_json, local_host, spec=spec),
          upload_screenshot_step, upload_report_step])
 
+
 def generate_build_analytics_topic(locale, user):
     spec = f"cypress/integration/dataAnalyticsTests/testSet/topicPage-test-{locale}-{user}.js"
     return generate_file(
@@ -95,6 +96,7 @@ def generate_build_analytics_topic(locale, user):
         [cancel_previous_run_step, check_out_step,
          generate_cypress_run_step(ci_build_json, local_host, spec=spec),
          upload_screenshot_step, upload_report_step])
+
 
 def generate_build_analytics_test(locale):
     spec = f"cypress/integration/dataAnalyticsTests/testSet/testPage-test-{locale}.js"
@@ -105,6 +107,7 @@ def generate_build_analytics_test(locale):
          generate_cypress_run_step(ci_build_json, local_host, spec=spec),
          upload_screenshot_step, upload_report_step])
 
+
 def generate_build_text_body(locale, user):
     spec = f"cypress/integration/textLocaleTests/testSet/bodyPage-test-{locale}-{user}.js"
     return generate_file(
@@ -113,6 +116,7 @@ def generate_build_text_body(locale, user):
         [cancel_previous_run_step, check_out_step,
          generate_cypress_run_step(ci_build_json, local_host, spec=spec),
          upload_screenshot_step, upload_report_step])
+
 
 def generate_build_text_topic(locale, user):
     spec = f"cypress/integration/textLocaleTests/testSet/topicPage-test-{locale}-{user}.js"
@@ -123,6 +127,7 @@ def generate_build_text_topic(locale, user):
          generate_cypress_run_step(ci_build_json, local_host, spec=spec),
          upload_screenshot_step, upload_report_step])
 
+
 def generate_build_text_test(locale):
     spec = f"cypress/integration/textLocaleTests/testSet/testPage-test-{locale}.js"
     return generate_file(
@@ -132,6 +137,17 @@ def generate_build_text_test(locale):
          generate_cypress_run_step(ci_build_json, local_host, spec=spec),
          upload_screenshot_step, upload_report_step])
 
+
+def generate_build_text_body_no_topic_config_dependent(start_age, end_age):
+    spec = f"cypress/integration/textLocaleTests/testSet/bodyPage-test-no-topic-config-dependent-{start_age}-{end_age}.js"
+    return generate_file(
+        f"Cypress(Development Build - Text Locale - Body - No Topic - Config Dependent - {start_age}-{end_age}",
+        ["push"],
+        [cancel_previous_run_step, check_out_step,
+         generate_cypress_run_step(ci_build_json, local_host, spec=spec),
+         upload_screenshot_step, upload_report_step])
+
+
 def generate_deploy_analytics_body(locale, user, age):
     spec = f"cypress/integration/dataAnalyticsTests/testSet/bodyPage-test-{locale}-{user}-{age}.js"
     return generate_file(
@@ -140,6 +156,7 @@ def generate_deploy_analytics_body(locale, user, age):
         [check_out_step,
          generate_cypress_run_step(ci_deploy_json, spec=spec),
          upload_screenshot_step, upload_report_step])
+
 
 def generate_deploy_analytics_topic(locale, user):
     spec = f"cypress/integration/dataAnalyticsTests/testSet/topicPage-test-{locale}-{user}.js"
@@ -159,6 +176,7 @@ def generate_deploy_analytics_test(locale):
         [check_out_step,
          generate_cypress_run_step(ci_deploy_json, spec=spec),
          upload_screenshot_step, upload_report_step])
+
 
 def generate_deploy_text_body(locale, user):
     spec = f"cypress/integration/textLocaleTests/testSet/bodyPage-test-{locale}-{user}.js"
@@ -190,6 +208,16 @@ def generate_deploy_text_test(locale):
          upload_screenshot_step, upload_report_step])
 
 
+def generate_deploy_text_body_no_topic_config_dependent(start_age, end_age):
+    spec = f"cypress/integration/textLocaleTests/testSet/bodyPage-test-no-topic-config-dependent-{start_age}-{end_age}.js"
+    return generate_file(
+        f"Cypress(Deploy Build - Text Locale - Body - No Topic - Config Dependent - {start_age}-{end_age}",
+        nightly_build,
+        [check_out_step,
+         generate_cypress_run_step(ci_deploy_json, spec=spec),
+         upload_screenshot_step, upload_report_step])
+
+
 def generate_build_analytics_landing():
     return generate_file(
         "Cypress(Development Build - Data Analytics - Landing Page)",
@@ -207,6 +235,26 @@ def generate_deploy_analytics_landing():
         [check_out_step,
          generate_cypress_run_step(ci_deploy_json,
                                    spec="cypress/integration/dataAnalyticsTests/testSet/landingPage-test.js"),
+         upload_screenshot_step, upload_report_step])
+
+
+def generate_build_text_body_no_topic():
+    return generate_file(
+        "Cypress(Development Build - Text Locale - Body - No Topic)",
+        ["push"],
+        [cancel_previous_run_step, check_out_step,
+         generate_cypress_run_step(ci_build_json, local_host,
+                                   spec="cypress/integration/textLocaleTests/testSet/bodyPage-test-no-topic.js"),
+         upload_screenshot_step, upload_report_step])
+
+
+def generate_deploy_text_body_no_topic():
+    return generate_file(
+        "Cypress(Deploy Build - Text Locale - Body - No Topic)",
+        nightly_build,
+        [check_out_step,
+         generate_cypress_run_step(ci_deploy_json,
+                                   spec="cypress/integration/textLocaleTests/testSet/bodyPage-test-no-topic.js"),
          upload_screenshot_step, upload_report_step])
 
 
@@ -239,8 +287,18 @@ def run():
     set_up()
     write_to_file('ci-build-cy-test-data-analytics-landing-page.yml', generate_build_analytics_landing())
     write_to_file('ci-build-cy-test-user-action.yml', generate_build_user_action())
+    write_to_file('ci-build-cy-test-text-locale-body-no-topic.yml', generate_build_text_body_no_topic())
     write_to_file('ci-deploy-cy-test-data-analytics-landing-page.yml', generate_deploy_analytics_landing())
     write_to_file("ci-deploy-cy-test-user-action.yml", generate_deploy_user_action())
+    write_to_file('ci-deploy-cy-test-text-locale-body-no-topic.yml', generate_deploy_text_body_no_topic())
+
+    for args in [[18, 38], [39, 59], [60, 80], [81, 101], [102, 125], [126, 150]]:
+        file_name = f"ci-build-cy-test-text-locale-body-no-topic-config-dependent-{args[0]}-{args[1]}.yml"
+        content = generate_build_text_body_no_topic_config_dependent(args[0], args[1])
+        write_to_file(file_name, content)
+        file_name = f"ci-deploy-cy-test-text-locale-body-no-topic-config-dependent-{args[0]}-{args[1]}.yml"
+        content = generate_deploy_text_body_no_topic_config_dependent(args[0], args[1])
+        write_to_file(file_name, content)
 
     for locale in ['en', 'fr']:
         file_name = f"ci-build-cy-test-text-locale-test-{locale}.yml"
@@ -287,7 +345,6 @@ def run():
                 file_name = f"ci-deploy-cy-test-data-analytics-body-{locale}-{user}-{age}.yml"
                 content = generate_deploy_analytics_body(locale, user, age)
                 write_to_file(file_name, content)
-
 
 
 def write_to_file(file_name, content):
