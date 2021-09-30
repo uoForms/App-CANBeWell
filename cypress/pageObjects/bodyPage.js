@@ -55,8 +55,9 @@ class BodyPage extends BasePage {
     return gender === 'm' ? this.maleTfButtonInfoList : (gender === 'f' ? this.femaleTmButtonInfoList : this.nonBinaryOrMaleTmOrFemaleTfInfoList);
   }
 
-  assertBodyImageExists() {
-
+  assertInstructionExists(locale) {
+    cy.getTestID('instruction')
+      .should('contain.text', this.localeFile[locale].body_general_instruction);
   }
 }
 

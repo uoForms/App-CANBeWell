@@ -7,6 +7,11 @@ class TopicPage extends BasePage {
       .click();
   }
 
+  assertAtLeastOneHeadingDisplayed() {
+    cy.getTestId('topicRow')
+      .should('exist');
+  }
+
   assertHeadings(expectedHeadings, cacheId) {
     function helper() {
       // https://glebbahmutov.com/cypress-examples/6.5.0/recipes/get-text-list.html

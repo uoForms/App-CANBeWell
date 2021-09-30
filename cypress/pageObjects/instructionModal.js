@@ -5,6 +5,11 @@ class InstructionModal extends BasePage {
     cy.getTestId('instructionModalRoot')
       .should('exist');
   }
+
+  assertModalNotExist() {
+    cy.getTestId('instructionModalRoot')
+      .should('not.exist');
+  }
 }
 
 export default InstructionModal;

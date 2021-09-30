@@ -1,6 +1,8 @@
 import devicesTestWrapper from '../../support/devicesTestWrapper';
 import LandingPage from '../../pageObjects/landingPage';
 import BodyPage from '../../pageObjects/bodyPage';
+import TestPage from '../../pageObjects/testPage';
+import TopicPage from '../../pageObjects/topicPage';
 
 devicesTestWrapper(
   'Body Page', () => {
@@ -20,7 +22,17 @@ devicesTestWrapper(
           landingPage.clickRedirectButton(locale);
         });
         it('Verify Tabs exist', () => {
-          bodyPage.assertHThreeHeaders();
+          bodyPage.assertHThreeHeaders(locale);
+        });
+        it('Go to Test Page', () => {
+          bodyPage.clickTestTab();
+          new TestPage()
+            .assertAtLeastOneHeadingDisplayed();
+        });
+        it('Go to Topic Page', () => {
+          bodyPage.clickTopicTab();
+          new TopicPage()
+            .assertAtLeastOneHeadingDisplayed();
         });
       });
     }
