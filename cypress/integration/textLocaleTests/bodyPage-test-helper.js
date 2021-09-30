@@ -54,8 +54,10 @@ function expectedSubjects(age, gender, user, locale, button) {
   const topics = require(`../../../src/JSONFolder/HtmlTopic-${locale.toUpperCase()}.json`);
   const expectedSubjectSet = [];
   for (const topic of topics) {
-    if (((topic['Minimum age'] <= age && topic['Maximum age'] >= age) || age === 'all ages') && (topic.Gender.split(',')
-      .includes(gender) || topic.Gender === 'all') && button === topic.Button) {
+    const topicGenderList = topic.Gender.split(',');
+    if (((topic['Minimum age'] <= age && topic['Maximum age'] >= age) || age === 'all ages') && (
+      topicGenderList.includes(gender) || topic.Gender === 'all' || (gender === 'nonbinary-m' && topicGenderList.includes('tf')) || (gender === 'nonbinary-f' && topicGenderList
+        .includes('tm'))) && button === topic.Button) {
       if (user === 'patient' && topic['General Patient Text'] !== 'n/a') {
         expectedSubjectSet.push(topic.Subject);
       } else if (user === 'provider' && topic['Health Provider Text'] !== 'n/a') {

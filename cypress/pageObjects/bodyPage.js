@@ -54,6 +54,10 @@ class BodyPage extends BasePage {
     // eslint-disable-next-line no-nested-ternary
     return gender === 'm' ? this.maleTfButtonInfoList : (gender === 'f' ? this.femaleTmButtonInfoList : this.nonBinaryOrMaleTmOrFemaleTfInfoList);
   }
+
+  assertBodyImageExists() {
+
+  }
 }
 
 export default BodyPage;

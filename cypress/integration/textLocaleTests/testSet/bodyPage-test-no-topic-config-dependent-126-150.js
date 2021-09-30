@@ -12,7 +12,7 @@ describe('Body Page Text Locale No Topic Modal', () => {
   // eslint-disable-next-line no-plusplus
   for (let age = 126; age <= 150; age++) {
     for (const user of ['patient', 'provider']) {
-      for (const gender of ['m', 'f', 'tm', 'tf']) {
+      for (const gender of ['m', 'f', 'tm', 'tf', 'nonbinary-m', 'nonbinary-f']) {
         for (const locale of [landingPage.locale.en, landingPage.locale.fr]) {
           const bodyPage = new BodyPage();
           const buttonInfoList = bodyPage.getButtonInfoListByGender(gender)

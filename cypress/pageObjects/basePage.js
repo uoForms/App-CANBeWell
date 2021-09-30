@@ -93,10 +93,40 @@ class BasePage {
     } else if (gender === 'tm') {
       genderCookies.gender = this.gender.male;
       genderCookies.Tgender = this.gender.transMale;
+    } else if (gender === 'nonbinary-m') {
+      genderCookies.gender = this.gender.nonBinary;
+      genderCookies.Tgender = this.gender.transMale;
+    } else if (gender === 'nonbinary-f') {
+      genderCookies.gender = this.gender.nonBinary;
+      genderCookies.Tgender = this.gender.transFemale;
     } else {
       throw new Error('Unknown gender');
     }
     return genderCookies;
+  }
+
+  assertHThreeHeaders() {
+    cy.getTestId('body')
+      .should('exist');
+    cy.getTestId('topic')
+      .should('exist');
+    cy.getTestId('test')
+      .should('exist');
+  }
+
+  clickBodyTab() {
+    cy.getTestId('body')
+      .click();
+  }
+
+  clickTopicTab() {
+    cy.getTestId('topic')
+      .click();
+  }
+
+  clickTestTab() {
+    cy.getTestId('test')
+      .click();
   }
 }
 
