@@ -53,6 +53,7 @@ def generate_cypress_upload_step(item_type, condition):
 
 upload_screenshot_step = generate_cypress_upload_step("screenshots", "failure")
 upload_report_step = generate_cypress_upload_step("reports", "always")
+upload_coverage_step = generate_cypress_upload_step("coverage", "success")
 
 
 def generate_cypress_run_step(config_file, url=None, spec=None, config=None):
@@ -63,17 +64,19 @@ def generate_cypress_run_step(config_file, url=None, spec=None, config=None):
         spec_or_config['config'] = config
 
     url_dict = {}
+    start_dict = {}
     if url:
         url_dict["wait-on"] = url
+        start_dict["start"] = "yarn start-with-cy-coverage"
     return {
         "name": "Cypress Run",
         "uses": "cypress-io/github-action@v2",
         "with": {
             "config-file": config_file,
-            "start": "yarn start",
             "browser": "chrome",
             **url_dict,
-            **spec_or_config
+            **spec_or_config,
+            **start_dict
         }
     }
 
@@ -85,7 +88,7 @@ def generate_build_analytics_body(locale, user, age):
         ["push"],
         [cancel_previous_run_step, check_out_step,
          generate_cypress_run_step(ci_build_json, local_host, spec=spec),
-         upload_screenshot_step, upload_report_step])
+         upload_screenshot_step, upload_report_step,upload_coverage_step])
 
 
 def generate_build_analytics_topic(locale, user):
@@ -95,7 +98,7 @@ def generate_build_analytics_topic(locale, user):
         ["push"],
         [cancel_previous_run_step, check_out_step,
          generate_cypress_run_step(ci_build_json, local_host, spec=spec),
-         upload_screenshot_step, upload_report_step])
+         upload_screenshot_step, upload_report_step,upload_coverage_step])
 
 
 def generate_build_analytics_test(locale):
@@ -105,7 +108,7 @@ def generate_build_analytics_test(locale):
         ["push"],
         [cancel_previous_run_step, check_out_step,
          generate_cypress_run_step(ci_build_json, local_host, spec=spec),
-         upload_screenshot_step, upload_report_step])
+         upload_screenshot_step, upload_report_step,upload_coverage_step])
 
 
 def generate_build_text_body(locale, user):
@@ -115,7 +118,7 @@ def generate_build_text_body(locale, user):
         ["push"],
         [cancel_previous_run_step, check_out_step,
          generate_cypress_run_step(ci_build_json, local_host, spec=spec),
-         upload_screenshot_step, upload_report_step])
+         upload_screenshot_step, upload_report_step,upload_coverage_step])
 
 
 def generate_build_text_topic(locale, user):
@@ -125,7 +128,7 @@ def generate_build_text_topic(locale, user):
         ["push"],
         [cancel_previous_run_step, check_out_step,
          generate_cypress_run_step(ci_build_json, local_host, spec=spec),
-         upload_screenshot_step, upload_report_step])
+         upload_screenshot_step, upload_report_step,upload_coverage_step])
 
 
 def generate_build_text_test(locale):
@@ -135,7 +138,7 @@ def generate_build_text_test(locale):
         ["push"],
         [cancel_previous_run_step, check_out_step,
          generate_cypress_run_step(ci_build_json, local_host, spec=spec),
-         upload_screenshot_step, upload_report_step])
+         upload_screenshot_step, upload_report_step,upload_coverage_step])
 
 
 def generate_build_text_body_no_topic_config_dependent(start_age, end_age):
@@ -145,7 +148,7 @@ def generate_build_text_body_no_topic_config_dependent(start_age, end_age):
         ["push"],
         [cancel_previous_run_step, check_out_step,
          generate_cypress_run_step(ci_build_json, local_host, spec=spec),
-         upload_screenshot_step, upload_report_step])
+         upload_screenshot_step, upload_report_step,upload_coverage_step])
 
 
 def generate_deploy_analytics_body(locale, user, age):
@@ -225,7 +228,7 @@ def generate_build_analytics_landing():
         [cancel_previous_run_step, check_out_step,
          generate_cypress_run_step(ci_build_json, local_host,
                                    spec="cypress/integration/dataAnalyticsTests/testSet/landingPage-test.js"),
-         upload_screenshot_step, upload_report_step])
+         upload_screenshot_step, upload_report_step,upload_coverage_step])
 
 
 def generate_deploy_analytics_landing():
@@ -245,7 +248,7 @@ def generate_build_text_body_no_topic():
         [cancel_previous_run_step, check_out_step,
          generate_cypress_run_step(ci_build_json, local_host,
                                    spec="cypress/integration/textLocaleTests/testSet/bodyPage-test-no-topic.js"),
-         upload_screenshot_step, upload_report_step])
+         upload_screenshot_step, upload_report_step,upload_coverage_step])
 
 
 def generate_deploy_text_body_no_topic():
@@ -265,7 +268,7 @@ def generate_build_user_action():
         [cancel_previous_run_step, check_out_step,
          generate_cypress_run_step(ci_build_json, local_host,
                                    config="integrationFolder=cypress/integration/userActionTests"),
-         upload_screenshot_step, upload_report_step])
+         upload_screenshot_step, upload_report_step,upload_coverage_step])
 
 
 def generate_deploy_user_action():
