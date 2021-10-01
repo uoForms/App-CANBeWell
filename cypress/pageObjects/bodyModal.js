@@ -4,9 +4,65 @@ import BodyPage from './bodyPage';
 const langFile = require('../../src/Lang/Lang.json');
 
 class BodyModal extends BasePage {
+  toggleNthSubject(n) {
+    cy.getTestId('topicSummary')
+      .eq(n)
+      .click('top');
+  }
+
+  assertNthSubjectOpen(n) {
+    cy.getTestId('topicSummary')
+      .eq(n)
+      .parent('[test-id="topic"]')
+      .should('have.attr', 'open');
+  }
+
+  assertNthSubjectClosed(n) {
+    cy.getTestId('topicSummary')
+      .eq(n)
+      .parent('[test-id="topic"]')
+      .should('not.have.attr', 'open');
+  }
+
   assertModalExist() {
     cy.getTestId('bodyModal')
-      .should('exist');
+      .should('be.visible');
+  }
+
+  assertModalNotExist() {
+    cy.getTestId('bodyModal')
+      .should('not.exist');
+  }
+
+  clickBackdropRight() {
+    cy.getTestId('backdrop')
+    //  Use real click because we care about the click x,y location, not the layer
+      .realClick({ position: 'right' });
+  }
+
+  closeModalWithX() {
+    cy.getTestId('xButton')
+      .click();
+  }
+
+  assertCancelText(locale) {
+    cy.getTestId('closeTextButton')
+      .should('have.text', this.localeFile[locale].close_body_modal);
+  }
+
+  closeModalWithTextButton() {
+    cy.getTestId('heading')
+      .invoke('text')
+      .then((text) => {
+        // TODO: remove once https://github.com/uoForms/App-CANBeWell/issues/432 is fixed
+        if (text === 'COVID-19') {
+          cy.getTestId('closeTextButton')
+            .click({ force: true });
+        } else {
+          cy.getTestId('closeTextButton')
+            .click();
+        }
+      });
   }
 
   assertSubjects(expectedSubjects, cacheId) {

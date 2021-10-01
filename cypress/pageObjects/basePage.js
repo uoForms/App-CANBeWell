@@ -110,7 +110,7 @@ class BasePage {
     return genderCookies;
   }
 
-  assertHThreeHeaders(locale) {
+  assertThreeHeaders(locale) {
     cy.getTestId('body')
       .should('exist')
       .should('contain.text', this.localeFile[locale].top_nav_body);
@@ -135,6 +135,16 @@ class BasePage {
   clickTestTab() {
     cy.getTestId('test')
       .click();
+  }
+
+  search(input) {
+    cy.getTestId('searchBarInput')
+      .type(input);
+  }
+
+  clearSearch() {
+    cy.getTestId('searchBarInput')
+      .clear();
   }
 }
 

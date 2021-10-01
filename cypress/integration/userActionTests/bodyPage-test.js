@@ -21,14 +21,17 @@ devicesTestWrapper(
           });
           landingPage.clickRedirectButton(locale);
         });
+
         it('Verify Tabs exist', () => {
-          bodyPage.assertHThreeHeaders(locale);
+          bodyPage.assertThreeHeaders(locale);
         });
+
         it('Go to Test Page', () => {
           bodyPage.clickTestTab();
           new TestPage()
             .assertAtLeastOneHeadingDisplayed();
         });
+
         it('Go to Topic Page', () => {
           bodyPage.clickTopicTab();
           new TopicPage()
