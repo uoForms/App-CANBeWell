@@ -21,6 +21,12 @@ function generateTestDataSet(props, user) {
     gender.split(',')
       .forEach((item) => genderSet.add(item));
   }
+  if (genderSet.has('tf')) {
+    genderSet.add('nonbinary-m');
+  }
+  if (genderSet.has('tm')) {
+    genderSet.add('nonbinary-f');
+  }
   const dataSet = [];
   for (const currentAge of ageSet) {
     for (const currentGender of genderSet) {
@@ -45,8 +51,10 @@ function expectedHeadings(age, gender, locale) {
   const topics = require(`../../../src/JSONFolder/HtmlTest-${locale.toUpperCase()}.json`);
   const expectedHeadingSet = new Set();
   for (const topic of topics) {
-    if (((topic['Minimum age'] <= age && topic['Maximum age'] >= age) || age === 'all ages') && (topic.Gender.split(',')
-      .includes(gender) || topic.Gender === 'all')) {
+    const topicGenderList = topic.Gender.split(',');
+    if (((topic['Minimum age'] <= age && topic['Maximum age'] >= age) || age === 'all ages') && (
+      topicGenderList.includes(gender) || topic.Gender === 'all' || (gender === 'nonbinary-m' && topicGenderList.includes('tf')) || (gender === 'nonbinary-f' && topicGenderList
+        .includes('tm')))) {
       expectedHeadingSet.add(topic.Test.replace(' ;', '\u00a0'));
     }
   }

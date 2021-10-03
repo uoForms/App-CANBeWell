@@ -230,6 +230,7 @@ class SearchBar extends React.Component {
           placeholder={this.props.text}
           value={this.props.filterText}
           onChange={this.handleFilterTextInputChange}
+          test-id="searchBarInput"
         />
       </form>
     );

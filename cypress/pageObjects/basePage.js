@@ -1,3 +1,5 @@
+const localFile = require('../../src/Lang/Lang.json');
+
 class BasePage {
   constructor() {
     this.locale = { en: 'en', fr: 'fr' };
@@ -8,6 +10,9 @@ class BasePage {
       transFemale: 'tf',
       transMale: 'tm',
     };
+    this.localeFile = localFile;
+    this.localeFile.en = this.localeFile.english;
+    this.localeFile.fr = this.localeFile.french;
   }
 
   assertCurrentLocale(expectedLocale) {
@@ -93,10 +98,53 @@ class BasePage {
     } else if (gender === 'tm') {
       genderCookies.gender = this.gender.male;
       genderCookies.Tgender = this.gender.transMale;
+    } else if (gender === 'nonbinary-m') {
+      genderCookies.gender = this.gender.nonBinary;
+      genderCookies.Tgender = this.gender.transFemale;
+    } else if (gender === 'nonbinary-f') {
+      genderCookies.gender = this.gender.nonBinary;
+      genderCookies.Tgender = this.gender.transMale;
     } else {
       throw new Error('Unknown gender');
     }
     return genderCookies;
+  }
+
+  assertThreeHeaders(locale) {
+    cy.getTestId('body')
+      .should('exist')
+      .should('contain.text', this.localeFile[locale].top_nav_body);
+    cy.getTestId('topic')
+      .should('exist')
+      .should('contain.text', this.localeFile[locale].top_nav_topics);
+    cy.getTestId('test')
+      .should('exist')
+      .should('contain.text', this.localeFile[locale].top_nav_tests);
+  }
+
+  clickBodyTab() {
+    cy.getTestId('body')
+      .click();
+  }
+
+  clickTopicTab() {
+    cy.getTestId('topic')
+      .click();
+  }
+
+  clickTestTab() {
+    cy.getTestId('test')
+      .click();
+  }
+
+  search(input) {
+    cy.getTestId('searchBarInput')
+      .type(input);
+  }
+
+  clearSearch() {
+    cy.getTestId('searchBarInput')
+      .clear();
   }
 }
 

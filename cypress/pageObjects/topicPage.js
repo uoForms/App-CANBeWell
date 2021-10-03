@@ -7,6 +7,21 @@ class TopicPage extends BasePage {
       .click();
   }
 
+  assertAtLeastOneHeadingDisplayed() {
+    cy.getTestId('topicRow')
+      .should('exist');
+  }
+
+  assertNoHeadingDisplayed() {
+    cy.getTestId('topicRow')
+      .should('not.exist');
+  }
+
+  assertAtLeastTwoHeadingDisplayed() {
+    cy.getTestId('topicRow')
+      .should('have.length.at.least', 2);
+  }
+
   assertHeadings(expectedHeadings, cacheId) {
     function helper() {
       // https://glebbahmutov.com/cypress-examples/6.5.0/recipes/get-text-list.html
@@ -30,6 +45,18 @@ class TopicPage extends BasePage {
     } else {
       cy.log('This config is already checked, skip');
     }
+  }
+
+  assertSearchExists(locale) {
+    cy.getTestId('searchBarInput')
+      .should('be.visible')
+      .should('have.attr', 'placeholder', this.localeFile[locale].topic_search_bar_placeholder);
+  }
+
+  openNthHeading(n) {
+    cy.getTestId('topicRow')
+      .eq(n)
+      .click();
   }
 }
 

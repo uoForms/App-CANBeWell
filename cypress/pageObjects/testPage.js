@@ -16,6 +16,21 @@ class TestPage extends BasePage {
     }
   }
 
+  assertNoHeadingDisplayed() {
+    cy.getTestId('test-details')
+      .should('not.exist');
+  }
+
+  assertAtLeastOneHeadingDisplayed() {
+    cy.getTestId('test-details')
+      .should('exist');
+  }
+
+  assertAtLeastTwoHeadingDisplayed() {
+    cy.getTestId('test-details')
+      .should('have.length.at.least', 2);
+  }
+
   assertHeadings(expectedHeadings, cacheId) {
     function helper() {
       // https://glebbahmutov.com/cypress-examples/6.5.0/recipes/get-text-list.html
@@ -80,6 +95,30 @@ class TestPage extends BasePage {
         .get('[open]')
         .should('include.text', line.trim());
     }
+  }
+
+  assertSearchExists(locale) {
+    cy.getTestId('searchBarInput')
+      .should('be.visible')
+      .should('have.attr', 'placeholder', this.localeFile[locale].test_search_bar_placeholder);
+  }
+
+  toggleNthHeading(n) {
+    cy.getTestId('test-details')
+      .eq(n)
+      .click('top');
+  }
+
+  assertNthHeadingOpen(n) {
+    cy.getTestId('test-details')
+      .eq(n)
+      .should('have.attr', 'open');
+  }
+
+  assertNthHeadingClosed(n) {
+    cy.getTestId('test-details')
+      .eq(n)
+      .should('not.have.attr', 'open');
   }
 }
 

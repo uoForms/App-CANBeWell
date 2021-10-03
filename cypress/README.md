@@ -18,7 +18,9 @@ This framework mainly contains three types of testing:
 1. User action testing: It mainly simulates how users would interact with a webpage (e.g., go to a page, click a button
    and view some text).
 2. Data analytics testing: It mainly verifies that user actions are recorded and logged via Google Analytics.
-3. Text/locale testing: It mainly verifies all the strings displayed are correct.
+3. Text/locale testing: It mainly verifies all the strings displayed are correct. Sometimes, if the strings are (almost)
+   single time used and are not subjected to [Data-driven testing](https://en.wikipedia.org/wiki/Data-driven_testing)
+   style guideline. We may check the strings during user action tests since we are already on the page.
 
 ## Usage
 

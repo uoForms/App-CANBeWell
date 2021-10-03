@@ -1,5 +1,7 @@
 import devicesTestWrapper from '../../support/devicesTestWrapper';
 import LandingPage from '../../pageObjects/landingPage';
+import BodyPage from '../../pageObjects/bodyPage';
+import InstructionModal from '../../pageObjects/instructionModal';
 
 devicesTestWrapper(
   'Landing Page', () => {
@@ -38,15 +40,49 @@ devicesTestWrapper(
     });
 
     it('Redirect(en) Click', () => {
-      const instructionModal = landingPage.clickRedirectButton(landingPage.locale.en);
+      landingPage.clickRedirectButton(landingPage.locale.en);
+      const instructionModal = new InstructionModal();
       instructionModal.assertCurrentLocale(landingPage.locale.en);
       instructionModal.assertModalExist();
     });
 
     it('Redirect(fr) Click', () => {
-      const instructionModal = landingPage.clickRedirectButton(landingPage.locale.fr);
+      landingPage.clickRedirectButton(landingPage.locale.fr);
+      const instructionModal = new InstructionModal();
       instructionModal.assertCurrentLocale(landingPage.locale.fr);
       instructionModal.assertModalExist();
+    });
+
+    it('Redirect(en) Click (Configured)', () => {
+      cy.setupCookies({
+        _onboarded: 'true',
+        gender: landingPage.gender.male,
+        Tgender: landingPage.gender.transFemale,
+        age: 18,
+        user: 'patient',
+      });
+      landingPage.clickRedirectButton(landingPage.locale.en);
+      const potentialInstructionModal = new InstructionModal();
+      potentialInstructionModal.assertCurrentLocale(landingPage.locale.en);
+      potentialInstructionModal.assertModalNotExist();
+      new BodyPage()
+        .assertInstructionExists(potentialInstructionModal.locale.en);
+    });
+
+    it('Redirect(fr) Click (Configured)', () => {
+      cy.setupCookies({
+        _onboarded: 'true',
+        gender: landingPage.gender.male,
+        Tgender: landingPage.gender.transFemale,
+        age: 18,
+        user: 'patient',
+      });
+      landingPage.clickRedirectButton(landingPage.locale.fr);
+      const potentialInstructionModal = new InstructionModal();
+      potentialInstructionModal.assertCurrentLocale(landingPage.locale.fr);
+      potentialInstructionModal.assertModalNotExist();
+      new BodyPage()
+        .assertInstructionExists(potentialInstructionModal.locale.fr);
     });
 
     it('Reliable Resource Statement', () => {

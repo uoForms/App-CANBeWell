@@ -11,8 +11,7 @@ describe('Body Page Text Locale No Topic Modal', () => {
 
   for (const user of ['patient', 'provider']) {
     for (const locale of [landingPage.locale.en, landingPage.locale.fr]) {
-      // tf is the same as tm, ignore
-      for (const gender of ['m', 'f', 'tm']) {
+      for (const gender of ['m', 'f', 'tm', 'tf', 'nonbinary-m', 'nonbinary-f']) {
         const bodyPage = new BodyPage();
         const buttonInfoList = bodyPage.getButtonInfoListByGender(gender);
         for (const buttonInfo of buttonInfoList) {

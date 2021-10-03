@@ -138,16 +138,16 @@ return subjectArray;
 
     return (
       <div>
-        <div id="myBackdrop" onClick={this.props.onClose} className="backdrop" style={backdropStyle}>
+        <div id="myBackdrop" onClick={this.props.onClose} className="backdrop" style={backdropStyle} test-id="backdrop">
         </div>
         <div className="myModal" style={myModalStyle} test-id="bodyModal">
           <div>
-            <button className="button4" onClick={this.props.onClose}>X</button>
+            <button className="button4" onClick={this.props.onClose} test-id="xButton">X</button>
           </div>
           <div>
             {subject}
             <div className="myModalCloseButton">
-              <button className="button3" onClick={this.props.onClose}>{this.props.button}</button>
+              <button className="button3" test-id="closeTextButton" onClick={this.props.onClose}>{this.props.button}</button>
             </div>
           </div>
         </div>

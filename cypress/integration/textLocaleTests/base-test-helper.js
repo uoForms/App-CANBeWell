@@ -24,6 +24,12 @@ function readTopicJsonData(props, user) {
     gender.split(',')
       .forEach((item) => genderSet.add(item));
   }
+  if (genderSet.has('tf')) {
+    genderSet.add('nonbinary-m');
+  }
+  if (genderSet.has('tm')) {
+    genderSet.add('nonbinary-f');
+  }
   const text = user === 'patient' ? patientText : providerText;
   return {
     button, heading, subject, ageSet, genderSet, text,

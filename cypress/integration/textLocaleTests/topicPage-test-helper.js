@@ -30,12 +30,14 @@ function expectedHeadings(age, gender, user, locale) {
   const topics = require(`../../../src/JSONFolder/HtmlTopic-${locale.toUpperCase()}.json`);
   const expectedHeadingSet = new Set();
   for (const topic of topics) {
-    if (((topic['Minimum age'] <= age && topic['Maximum age'] >= age) || age === 'all ages') && (topic.Gender.split(',')
-      .includes(gender) || topic.Gender === 'all')) {
+    const topicGenderList = topic.Gender.split(',');
+    if (((topic['Minimum age'] <= age && topic['Maximum age'] >= age) || age === 'all ages') && (
+      topicGenderList.includes(gender) || topic.Gender === 'all' || (gender === 'nonbinary-m' && topicGenderList.includes('tf')) || (gender === 'nonbinary-f' && topicGenderList
+        .includes('tm')))) {
       if (user === 'patient' && topic['General Patient Text'] !== 'n/a') {
-        expectedHeadingSet.add(topic['Topic heading'].replace('\n', ''));
+        expectedHeadingSet.add(topic['Topic heading'].replace('\n', ' '));
       } else if (user === 'provider' && topic['Health Provider Text'] !== 'n/a') {
-        expectedHeadingSet.add(topic['Topic heading'].replace('\n', ''));
+        expectedHeadingSet.add(topic['Topic heading'].replace('\n', ' '));
       }
     }
   }
@@ -53,12 +55,14 @@ function expectedSubjects(age, gender, user, locale, heading) {
   const topics = require(`../../../src/JSONFolder/HtmlTopic-${locale.toUpperCase()}.json`);
   const expectedSubjectSet = [];
   for (const topic of topics) {
-    if (((topic['Minimum age'] <= age && topic['Maximum age'] >= age) || age === 'all ages') && (topic.Gender.split(',')
-      .includes(gender) || topic.Gender === 'all') && heading === topic['Topic heading']) {
+    const topicGenderList = topic.Gender.split(',');
+    if (((topic['Minimum age'] <= age && topic['Maximum age'] >= age) || age === 'all ages') && (
+      topicGenderList.includes(gender) || topic.Gender === 'all' || (gender === 'nonbinary-m' && topicGenderList.includes('tf')) || (gender === 'nonbinary-f' && topicGenderList
+        .includes('tm'))) && heading === topic['Topic heading']) {
       if (user === 'patient' && topic['General Patient Text'] !== 'n/a') {
-        expectedSubjectSet.push(topic.Subject);
+        expectedSubjectSet.push(topic.Subject.replace(' \n', '\n'));
       } else if (user === 'provider' && topic['Health Provider Text'] !== 'n/a') {
-        expectedSubjectSet.push(topic.Subject);
+        expectedSubjectSet.push(topic.Subject.replace(' \n', '\n'));
       }
     }
   }

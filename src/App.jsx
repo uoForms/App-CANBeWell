@@ -1106,7 +1106,7 @@ class App extends Component {
         {/*this is your header tab*/}
         <div className="topnav">
           <h3>
-            <a id="body" onClick={this.bodyClicked}>{this.state.lang.top_nav_body}</a>
+            <a id="body"  test-id="body" onClick={this.bodyClicked}>{this.state.lang.top_nav_body}</a>
             <a id="topic" test-id="topic" onClick={this.topicsClicked}>{this.state.lang.top_nav_topics}</a>
             <a id="test" test-id="test" onClick={this.testsClicked}>{this.state.lang.top_nav_tests}</a>
           </h3>

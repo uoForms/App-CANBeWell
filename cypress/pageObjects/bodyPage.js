@@ -54,6 +54,11 @@ class BodyPage extends BasePage {
     // eslint-disable-next-line no-nested-ternary
     return gender === 'm' ? this.maleTfButtonInfoList : (gender === 'f' ? this.femaleTmButtonInfoList : this.nonBinaryOrMaleTmOrFemaleTfInfoList);
   }
+
+  assertInstructionExists(locale) {
+    cy.getTestID('instruction')
+      .should('contain.text', this.localeFile[locale].body_general_instruction);
+  }
 }
 
 export default BodyPage;

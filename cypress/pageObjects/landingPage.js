@@ -1,5 +1,4 @@
 import BasePage from './basePage';
-import InstructionModal from './instructionModal';
 
 class LandingPage extends BasePage {
   constructor() {
@@ -72,7 +71,6 @@ class LandingPage extends BasePage {
   clickRedirectButton(locale) {
     cy.getTestId(`${locale}-redirect-button`)
       .click();
-    return new InstructionModal();
   }
 
   assertReliableResourceStatement(locale) {
