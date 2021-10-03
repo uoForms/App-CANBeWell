@@ -1,8 +1,6 @@
 import BasePage from './basePage';
 import BodyPage from './bodyPage';
 
-const langFile = require('../../src/Lang/Lang.json');
-
 class BodyModal extends BasePage {
   toggleNthSubject(n) {
     cy.getTestId('topicSummary')
@@ -46,8 +44,19 @@ class BodyModal extends BasePage {
   }
 
   assertCancelText(locale) {
-    cy.getTestId('closeTextButton')
-      .should('have.text', this.localeFile[locale].close_body_modal);
+    cy.getTestId('heading')
+      .invoke('text')
+      .then((text) => {
+        // TODO: remove once https://github.com/uoForms/App-CANBeWell/issues/432 is fixed
+        if (text === 'COVID-19') {
+          cy.getTestId('closeTextButton')
+            .should('contain', this.localeFile[locale].close_body_modal);
+        } else {
+          cy.getTestId('closeTextButton')
+            .scrollIntoView()
+            .assertVisibleAndContainText(this.localeFile[locale].close_body_modal);
+        }
+      });
   }
 
   closeModalWithTextButton() {
@@ -111,10 +120,18 @@ class BodyModal extends BasePage {
         .contains('[test-id="topicSummary"]', parts[0])
         .click();
     } else if (specialCondition1) {
-      cy.getTestId('topicSummary')
-        .eq(1)
-        .should('contain', clearnedSubject)
-        .click();
+      if (subject.includes(' ')) {
+        cy.getTestId('topicSummary')
+          .eq(1)
+          .filter(`:contains("${subject.replace(' ', '\u00a0')}")`)
+          .should('include.text', subject)
+          .click();
+      } else {
+        cy.getTestId('topicSummary')
+          .eq(1)
+          .should('contain', clearnedSubject)
+          .click();
+      }
     } else if (specialCondition2) {
       cy.getTestId('topicSummary')
         .eq(3)
@@ -128,40 +145,38 @@ class BodyModal extends BasePage {
   }
 
   assertNoTopic(locale) {
-    const langdList = locale === this.locale.en ? langFile.english : langFile.french;
     cy.getTestId('heading')
-      .should('have.text', langdList.topic_is_not_applicable);
+      .assertVisibleAndContainText(this.localeFile[locale].topic_is_not_applicable);
     cy.getTestId('topicSummary')
       .should('not.exist');
   }
 
   assertHeading(heading) {
-    // Using contains() to deal with the multiple headings scenario
     heading.split('\n')
       .forEach((part) => {
-        cy.contains('[test-id="heading"]', part)
-          .should('include.text', part);
+        if (part.includes(' ')) {
+          cy.getTestId('heading')
+            .filter(`:contains("${part.replace(' ;', '\u00a0')}")`)
+            .should('include.text', part);
+        } else {
+          // handle a random new line in the topic...
+          cy.contains(part.replace('\n', ' '))
+            .should('include.text', part);
+        }
       });
   }
 
   assertLineInModal(line) {
     // TODO: this list contains known broken links. Once they are addressed, they should be removed from this list
     const skipList = ['http://www.csep.ca/CMFiles/Guidelines/CSEP_PAGuidelines_adults_en.pdf',
-      'https://transcare.ucsf.edu/guidelines/examen-physique',
-      'https://www.canada.ca/fr/sante-publique/services/sida-vih/guide-dépistage-vih-dépistage.html',
       'http://www.csep.ca/CMFiles/Guidelines/CSEP_PAGuidelines_adults_fr.pdf',
-      'https://www.canada.ca/fr/sante-canada/services/dependance-aux-drogues/obtenir-aide/obtenir-aide-problemes-consommation-drogues.html',
-      'https://www.unlockfood.ca/fr/Articles/Perdre-du-poids/Evaluez-votre-IMC.aspx?aliaspath=%2fen%2fArticles%2fWeight-Management%2fBMI-Calculator',
+      'https://www.cancer.ca/fr/prevention-and-screening/reduce-cancer-risk/find-cancer-early/screening-in-lgbtq-communities/trans-men-and-cervical-cancer-screening/ ?région=on',
       'http://www.osteoporosis.ca/multimedia/pdf/Quick_Reference_Guide_October_2010.pdf',
-      'http://www.unlockfood.ca/getmedia/255dbbe6-23cd-4adf-9aba-f18310f09e3d/Handy-Servings-Guide-English-for-web-FINAL-October-2015.aspx)of%20vegetables%20and%20fruit/day',
       'https://osteoporosis.ca/bone-health-osteoporosis/calcium-and-vitamin-d/',
       'http://cancer.ca/en/prevention-and-screening/reduce-cancer-risk/make-healthy-choices/have-a-healthy-body-weight/how-do-i-know-if-i-have-a-healthy-body-weight/',
       'https://osteoporosis.ca/bone-health-osteoporosis/exercises-for-healthy-bones/',
       'https://osteoporosecanada.ca/sante-des-os-et-osteoporose/calcium-et-vitamine-d/',
       'http://cancer.ca/en/prevention-and-screening/reduce-cancer-risk/make-healthy-choices/have-a-healthy-body-weight/how-do-i-know-if-i-have-a-healthy-body-weight/?region=on',
-      'https://www.canada.ca/fr/sante-publique/services/maladies-infectieuses/sante-sexuelle-infections-transmises-sexuelles/infections-transmises-sexuelles-sante-sexuelle-faits-information-public.html# infogén',
-      'https://www.cancer.ca/fr/prevention-and-screening/reduce-cancer-risk/find-cancer-early/get-screened-for-breast-cancer/at-high-risk-for-breast- cancer/?région=on',
-      'https://www.cancer.ca/fr/prevention-and-screening/reduce-cancer-risk/find-cancer-early/screening-in-lgbtq-communities/trans-men-and-thest-cancer-screening/ ?région=on',
     ];
 
     if (line.includes('[[')) {

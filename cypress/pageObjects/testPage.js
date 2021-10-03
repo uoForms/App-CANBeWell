@@ -100,7 +100,7 @@ class TestPage extends BasePage {
   assertSearchExists(locale) {
     cy.getTestId('searchBarInput')
       .should('be.visible')
-      .should('have.attr', 'placeholder', this.localeFile[locale].test_search_bar_placeholder);
+      .assertAttribute('placeholder', this.localeFile[locale].test_search_bar_placeholder);
   }
 
   toggleNthHeading(n) {

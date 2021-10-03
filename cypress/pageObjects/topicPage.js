@@ -2,9 +2,18 @@ import BasePage from './basePage';
 
 class TopicPage extends BasePage {
   clickTopic(topic) {
-    // handle a random new line in the topic...
-    cy.contains(topic.replace('\n', ' '))
-      .click();
+    // eslint-disable-next-line no-irregular-whitespace
+    // For whatever reason, there is   in the translation file...
+    if (topic.includes(' ')) {
+      cy.getTestId('topicRow')
+        .filter(`:contains("${topic.replace(' ', '\u00a0')}")`)
+        .should('exist')
+        .click();
+    } else {
+      // handle a random new line in the topic...
+      cy.contains(topic.replace('\n', ' '))
+        .click();
+    }
   }
 
   assertAtLeastOneHeadingDisplayed() {
@@ -23,14 +32,17 @@ class TopicPage extends BasePage {
   }
 
   assertHeadings(expectedHeadings, cacheId) {
+    // Handle NBSP
+    const cleanedHeadings = Array.from(expectedHeadings, (heading) => heading.replace(' ', ' '));
+
     function helper() {
       // https://glebbahmutov.com/cypress-examples/6.5.0/recipes/get-text-list.html
       cy.getTestId('topicRow')
         .then(($els) => (
           Cypress.$.makeArray($els)
-            .map((el) => el.innerText)
+            .map((el) => el.innerText.replace('\u00a0', ' '))
         ))
-        .should('deep.equalInAnyOrder', Array.from(expectedHeadings));
+        .should('deep.equalInAnyOrder', Array.from(cleanedHeadings));
     }
 
     if (Cypress.mocha.getRunner().suite.ctx.assertedConfigsForTopicHeadings === undefined) {
@@ -50,7 +62,7 @@ class TopicPage extends BasePage {
   assertSearchExists(locale) {
     cy.getTestId('searchBarInput')
       .should('be.visible')
-      .should('have.attr', 'placeholder', this.localeFile[locale].topic_search_bar_placeholder);
+      .assertAttribute('placeholder', this.localeFile[locale].topic_search_bar_placeholder);
   }
 
   openNthHeading(n) {

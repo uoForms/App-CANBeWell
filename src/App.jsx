@@ -928,58 +928,58 @@ class App extends Component {
     if (this.state.configurationIsOpen == true) {
       //Transgender configuration modal
       configurationModal = [
-        <div key="2" className="backdrop" >
-          <div className="myModal">
+        <div key="2" className="backdrop" test-id="PostConfigUpdateModalBackdrop">
+          <div className="myModal" test-id="PostConfigUpdateModalRoot">
             <div>
-              <h1><strong>{this.state.lang.configuration_header}</strong></h1>
+              <h1 test-id="PostConfigUpdateModalHeader"><strong>{this.state.lang.configuration_header}</strong></h1>
               <div className="myModalBody">
                 <div className="radio">                  
-                <form>
+                <form test-id="userForm">
                     {this.state.lang.user_selector}
                      <br/>
-                    <label>
-                      <input type="radio" value="patient" checked={this.state.user === 'patient'} onChange={this.handlePatientProviderChangeFromConfig} />
+                    <label test-id="patientLabel">
+                      <input test-id="patientRadio" type="radio" value="patient" checked={this.state.user === 'patient'} onChange={this.handlePatientProviderChangeFromConfig} />
                       {this.state.lang.patient}
                     </label>
                      <br/>
-                    <label>
-                      <input type="radio" value="provider" checked={this.state.user === 'provider'} onChange={this.handlePatientProviderChangeFromConfig} />
+                    <label test-id="providerLabel">
+                      <input test-id="providerRadio" type="radio" value="provider" checked={this.state.user === 'provider'} onChange={this.handlePatientProviderChangeFromConfig} />
                       {this.state.lang.provider}
                     </label>
                   </form>
                 </div>
                 {/*select age*/}
                 <div >
-                  <form>
+                  <form test-id="ageForm">
                     <div>
                       {this.state.lang.age_selector}
 
-                      <input id='abc' type="text" value={this.state.age == "all ages" ? this.state.lang.all_ages : this.state.age} onChange={this.handleChange} disabled={this.state.allAgesSelected} placeholder={this.state.lang.age_selector_place_holder} />
-                      <label style={allagescheckboxStyle}>
-                        <input id='check' type="checkbox" checked={this.state.allAgesSelected} onChange={this.handleAllAgesSelected} />{this.state.lang.all_ages}
+                      <input test-id="ageInput" id='abc' type="text" value={this.state.age == "all ages" ? this.state.lang.all_ages : this.state.age} onChange={this.handleChange} disabled={this.state.allAgesSelected} placeholder={this.state.lang.age_selector_place_holder} />
+                      <label style={allagescheckboxStyle} test-id="allAgeCheckboxLabel">
+                        <input test-id="allAgeCheckbox" id='check' type="checkbox" checked={this.state.allAgesSelected} onChange={this.handleAllAgesSelected} />{this.state.lang.all_ages}
                       </label>
                     </div>
                   </form>
                 </div>
 
                 <div>
-                    <div id="genderSelector" className="radio">
+                    <div id="genderSelector" className="radio" test-id="genderSelectRoot">
                       {this.state.lang.gender_selector}<strong>
-                        <button className="button button22" onClick={this.helpClicked}>?</button></strong>
+                        <button test-id="genderSelectHelp" className="button button22" onClick={this.helpClicked}>?</button></strong>
                        <br/>
-                      <label id="male_radio">
-                        <input type="radio" value="male" checked={this.state.gender == 'male'} onChange={this.handleGenderChange} />
+                      <label id="male_radio" test-id="maleRadioLabel">
+                        <input test-id="maleRadio" type="radio" value="male" checked={this.state.gender == 'male'} onChange={this.handleGenderChange} />
                         {this.state.lang.male}
                       </label>
                       <br/>
-                      <label id="female_radio">
-                        <input type="radio" value="female" checked={this.state.gender == 'female'} onChange={this.handleGenderChange} />
+                      <label id="female_radio" test-id="femaleRadioLabel">
+                        <input test-id="femaleRadio" type="radio" value="female" checked={this.state.gender == 'female'} onChange={this.handleGenderChange} />
                         {this.state.lang.female}
                       </label>
                       <br/>
 
-                    <label>
-                      <input type="radio" value="nonbinary" checked={this.state.gender == 'nonbinary'} onChange={this.handleGenderChange} />
+                    <label test-id="nonBinaryRadioLabel">
+                      <input test-id="nonBinaryRadio" type="radio" value="nonbinary" checked={this.state.gender == 'nonbinary'} onChange={this.handleGenderChange} />
                       {this.state.lang.nonbinary}
                     </label>
                     <br/>
@@ -996,27 +996,27 @@ class App extends Component {
 
                     </div>
                      {/* {Are you a Transgender} */}
-                     <div id="TgenderSelector" className="radio">
+                     <div id="TgenderSelector" className="radio" test-id="tGenderSelectRoot">
                       {this.state.lang.Tgender_selector}<strong>
-                      <button className="button button25" onClick={this.helpClicked2}>?</button></strong>
+                      <button test-id="tGenderSelectHelp" className="button button25" onClick={this.helpClicked2}>?</button></strong>
                       <br/>
-                      <label id="birth_male_mod">
-                      <input type="radio" value="tf" checked={this.state.Tgender == 'tf'} onChange={this.handleTransGenderChange} />
+                      <label id="birth_male_mod" test-id="birthMaleLabel">
+                      <input test-id="birthMale" type="radio" value="tf" checked={this.state.Tgender == 'tf'} onChange={this.handleTransGenderChange} />
                       {this.state.lang.tf}
                       </label>
                       <br/>
-                      <label id="female_male_mod">
-                      <input type="radio" value="tm" checked={this.state.Tgender == 'tm'} onChange={this.handleTransGenderChange} />
+                      <label id="female_male_mod" test-id="birthfemaleLabel">
+                      <input test-id="birthFemale" type="radio" value="tm" checked={this.state.Tgender == 'tm'} onChange={this.handleTransGenderChange} />
                       {this.state.lang.tm}
                      </label>
                      </div>
-                      <label id="config_agehelp" className="checkAge">
+                      <label id="config_agehelp" className="checkAge" test-id="ageError">
                         <h5>{this.state.lang.age_help}</h5>
                       </label>
                   </div>
                 {/*close button*/}
                 <div className="myModalButton">
-                  <button onClick={this.toggleConfigurationModal}>{this.state.lang.config_modal_agree}</button>
+                  <button onClick={this.toggleConfigurationModal} test-id="okButton">{this.state.lang.config_modal_agree}</button>
                 </div>
               </div>
             </div>
@@ -1114,7 +1114,7 @@ class App extends Component {
         
         <div className="userinfo-row">
           {/*display user's info*/}
-          <Button variant="outline-dark" size='lg' onClick={this.genderIconClicked} className="userInfoStyle">
+          <Button variant="outline-dark" size='lg' onClick={this.genderIconClicked} className="userInfoStyle" test-id="postConfigUpdateModalOpenButton">
             <h4>
               <IoIosSettings /> {this.state.lang[this.state.user]}
                {/*this.state.lang.display_gender*/} {[(this.state.gender == "male"  && this.state.Tgender == "tf") ?  this.state.lang[this.state.gender]

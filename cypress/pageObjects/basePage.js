@@ -112,14 +112,13 @@ class BasePage {
 
   assertThreeHeaders(locale) {
     cy.getTestId('body')
-      .should('exist')
-      .should('contain.text', this.localeFile[locale].top_nav_body);
+      .assertVisibleAndContainText(this.localeFile[locale].top_nav_body);
+
     cy.getTestId('topic')
-      .should('exist')
-      .should('contain.text', this.localeFile[locale].top_nav_topics);
+      .assertVisibleAndContainText(this.localeFile[locale].top_nav_topics);
+
     cy.getTestId('test')
-      .should('exist')
-      .should('contain.text', this.localeFile[locale].top_nav_tests);
+      .assertVisibleAndContainText(this.localeFile[locale].top_nav_tests);
   }
 
   clickBodyTab() {
@@ -145,6 +144,11 @@ class BasePage {
   clearSearch() {
     cy.getTestId('searchBarInput')
       .clear();
+  }
+
+  openPostConfigUpdateModal() {
+    cy.getTestId('postConfigUpdateModalOpenButton')
+      .click();
   }
 }
 
