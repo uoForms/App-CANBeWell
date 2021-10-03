@@ -6,7 +6,7 @@ class TopicPage extends BasePage {
     // For whatever reason, there is   in the translation file...
     if (topic.includes(' ')) {
       cy.getTestId('topicRow')
-        .filter(`:contains("${topic.replace(' ;', '\u00a0')}")`)
+        .filter(`:contains("${topic.replace(' ', '\u00a0')}")`)
         .should('exist')
         .click();
     } else {

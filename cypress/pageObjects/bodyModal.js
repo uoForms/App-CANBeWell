@@ -1,8 +1,6 @@
 import BasePage from './basePage';
 import BodyPage from './bodyPage';
 
-const langFile = require('../../src/Lang/Lang.json');
-
 class BodyModal extends BasePage {
   toggleNthSubject(n) {
     cy.getTestId('topicSummary')
@@ -122,10 +120,18 @@ class BodyModal extends BasePage {
         .contains('[test-id="topicSummary"]', parts[0])
         .click();
     } else if (specialCondition1) {
-      cy.getTestId('topicSummary')
-        .eq(1)
-        .should('contain', clearnedSubject)
-        .click();
+      if (subject.includes(' ')) {
+        cy.getTestId('topicSummary')
+          .eq(1)
+          .filter(`:contains("${subject.replace(' ', '\u00a0')}")`)
+          .should('include.text', subject)
+          .click();
+      } else {
+        cy.getTestId('topicSummary')
+          .eq(1)
+          .should('contain', clearnedSubject)
+          .click();
+      }
     } else if (specialCondition2) {
       cy.getTestId('topicSummary')
         .eq(3)
@@ -164,6 +170,7 @@ class BodyModal extends BasePage {
     // TODO: this list contains known broken links. Once they are addressed, they should be removed from this list
     const skipList = ['http://www.csep.ca/CMFiles/Guidelines/CSEP_PAGuidelines_adults_en.pdf',
       'http://www.csep.ca/CMFiles/Guidelines/CSEP_PAGuidelines_adults_fr.pdf',
+      'https://www.cancer.ca/fr/prevention-and-screening/reduce-cancer-risk/find-cancer-early/screening-in-lgbtq-communities/trans-men-and-cervical-cancer-screening/ ?région=on',
       'http://www.osteoporosis.ca/multimedia/pdf/Quick_Reference_Guide_October_2010.pdf',
       'https://osteoporosis.ca/bone-health-osteoporosis/calcium-and-vitamin-d/',
       'http://cancer.ca/en/prevention-and-screening/reduce-cancer-risk/make-healthy-choices/have-a-healthy-body-weight/how-do-i-know-if-i-have-a-healthy-body-weight/',
