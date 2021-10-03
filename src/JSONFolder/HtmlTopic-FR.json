@@ -2,42 +2,46 @@
   {
     "Button": "aorta",
     "Topic heading": "Dépistage d’un anévrisme de l’aorte abdominale",
-    "Subject": "Dépister les hommes de 65 à 80 ans une fois à l’aide d’une échographie",
+    "Subject": "Dépister les hommes de 65 à 80 ans une fois à l’aide d’une échographie",
     "General Patient Text": "n/a",
     "Health Provider Text": "[[faible recommandation de la part du Groupe d’étude canadien; https://canadiantaskforce.ca/guidelines/published-guidelines/abdominal-aortic-aneurysm/]]",
     "Gender": "m",
     "Minimum age": 65,
-    "Maximum age": 80
+    "Maximum age": 80,
+    "": ""
   },
   {
     "Button": "aorta",
     "Topic heading": "Aorte: principal vaisseau sanguin\ndu corps",
     "Subject": "Communiquer avec votre\nprofessionnel de la santé afin \nde vérifier si vous devez passer un test.",
-    "General Patient Text": "Votre professionnel de la santé pourrait demander\n une échographie de votre ventre\n la détection d’une bosse dans le principal vaisseau sanguin\n(la bosse est surnommée AAA,\nabréviation du terme \n« anévrisme de l’aorte abdominale »)\nLorsque la bosse grossit, elle peut éclater et causer la mort.",
+    "General Patient Text": "Votre professionnel de la santé pourrait demander\n une échographie de votre ventre\n la détection d’une bosse dans le principal vaisseau sanguin\n(la bosse est surnommée AAA,\nabréviation du terme \n« anévrisme de l’aorte abdominale »)\nLorsque la bosse grossit, elle peut éclater et causer la mort.",
     "Health Provider Text": "n/a",
     "Gender": "m",
     "Minimum age": 65,
-    "Maximum age": 80
+    "Maximum age": 80,
+    "": ""
   },
   {
     "Button": "Figure outside body walking",
     "Topic heading": "Activité physique",
     "Subject": "Recommandations",
     "General Patient Text": "n/a",
-    "Health Provider Text": "L’activité physique\nprévient la maladie cardiaque, le cancer, la dépression et plus.\n\nIl est recommandé de pratiquer au moins 150 minutes \nd’activité physique par semaine correspondant à de l’exercice d’intensité modérée. \nDéfinition d’«intensité modérée»:\nbien que vous soyez actif, vous avez assez de souffle pour prononcer une phrase courte, mais pas assez pour chanter",
+    "Health Provider Text": "L’activité physique\nprévient la maladie cardiaque, le cancer, la dépression et plus.\n\nIl est recommandé de pratiquer au moins 150 minutes \nd’activité physique par semaine correspondant à de l’exercice d’intensité modérée. \nDéfinition d’«intensité modérée»:\nbien que vous soyez actif, vous avez assez de souffle pour prononcer une phrase courte, mais pas assez pour chanter",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Figure outside body walking",
     "Topic heading": "Activité physique",
     "Subject": "Outils/Références",
     "General Patient Text": "n/a",
-    "Health Provider Text": "[[plus de renseignements pour les personnes de 18 à 64 ans; http://www.csep.ca/CMFiles/Guidelines/CSEP_PAGuidelines_adults_fr.pdf]]\n•[[plus de renseignements pour les personnes de 65 ans ou plus; https://csepguidelines.ca/wp-content/uploads/2018/04/CSEP_PAGuidelines_older-adults_fr.pdf]]\n\n•[[ vidéo en anglais; https://www.reframehealthlab.com/23-and-12-hours/]];\n•[[référence médicale; http://www.cmaj.ca/content/cmaj/174/6/801.full.pdf]]",
+    "Health Provider Text": "[[plus de renseignements pour les personnes de 18 à 64 ans; http://www.csep.ca/CMFiles/Guidelines/CSEP_PAGuidelines_adults_fr.pdf]]\n•[[plus de renseignements pour les personnes de 65 ans ou plus; https://csepguidelines.ca/wp-content/uploads/2018/04/CSEP_PAGuidelines_older-adults_fr.pdf]]\n\n•[[ vidéo en anglais; https://www.reframehealthlab.com/23-and-12-hours/]];\n•[[référence médicale; http://www.cmaj.ca/content/cmaj/174/6/801.full.pdf]]",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Figure outside body walking",
@@ -47,77 +51,85 @@
     "Health Provider Text": "L’activité physique\nprévient la maladie cardiaque, le cancer, la dépression et plus.",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Figure outside body walking",
     "Topic heading": "Être actif",
     "Subject": "Recommandations",
-    "General Patient Text": "Il est recommandé d'être actif au monis 150 minutes par semaine, avec  une intensité  modérée\n•«Intensité modérée»\nSignifie que bien que vous soyez actif, vous avez assez de souffle pour prononcer une phrase courte, mais pas assez pour chanter\n\n•[[Plus de renseignements pour les personnes de 18 à 64 ans; http://www.csep.ca/CMFiles/Guidelines/CSEP_PAGuidelines_adults_fr.pdf]]\n•[[Plus de renseignements pour les personnes de 65 ans ou plus; https://csepguidelines.ca/wp-content/uploads/2018/04/CSEP_PAGuidelines_older-adults_fr.pdf]]",
-    "Health Provider Text": "Il est recommandé d'être actif au monis 150 minutes par semaine, avec  une intensité  modérée\n•«Intensité modérée»\nSignifie que bien que vous soyez actif, vous avez assez de souffle pour prononcer une phrase courte, mais pas assez pour chanter\n\n•[[Plus de renseignements pour les personnes de 18 à 64 ans; http://www.csep.ca/CMFiles/Guidelines/CSEP_PAGuidelines_adults_fr.pdf]]\n•[[Plus de renseignements pour les personnes de 65 ans ou plus; https://csepguidelines.ca/wp-content/uploads/2018/04/CSEP_PAGuidelines_older-adults_fr.pdf]]",
+    "General Patient Text": "Il est recommandé d'être actif au monis 150 minutes par semaine, avec  une intensité  modérée\n•«Intensité modérée»\nSignifie que bien que vous soyez actif, vous avez assez de souffle pour prononcer une phrase courte, mais pas assez pour chanter\n\n•[[Plus de renseignements pour les personnes de 18 à 64 ans; http://www.csep.ca/CMFiles/Guidelines/CSEP_PAGuidelines_adults_fr.pdf]]\n•[[Plus de renseignements pour les personnes de 65 ans ou plus; https://csepguidelines.ca/wp-content/uploads/2018/04/CSEP_PAGuidelines_older-adults_fr.pdf]]",
+    "Health Provider Text": "Il est recommandé d'être actif au monis 150 minutes par semaine, avec  une intensité  modérée\n•«Intensité modérée»\nSignifie que bien que vous soyez actif, vous avez assez de souffle pour prononcer une phrase courte, mais pas assez pour chanter\n\n•[[Plus de renseignements pour les personnes de 18 à 64 ans; http://www.csep.ca/CMFiles/Guidelines/CSEP_PAGuidelines_adults_fr.pdf]]\n•[[Plus de renseignements pour les personnes de 65 ans ou plus; https://csepguidelines.ca/wp-content/uploads/2018/04/CSEP_PAGuidelines_older-adults_fr.pdf]]",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Bone",
     "Topic heading": "Santé des os",
     "Subject": "Informations",
-    "General Patient Text": "• L'exercice physique et une alimentation saine maintiennent vos os solides et préviennent l'ostéoporose.\n• Certaines organisations (Rainbow Health Ontario) recommandent à tous les patients sous hormonothérapie d'assurer un apport quotidien de 1200 mg de calcium (alimentation\n+ supplémentation) et 1000 UI de vitamine D.\nPlus d'informations sur [[calcium et vitamine D; https://osteoporosis.ca/bone-health-osteoporosis/calcium-and-vitamin-d/]]\n\n• Les tests de densité osseuse sont généralement recommandés pour toute personne âgée de 65 ans au Canada.\n\n• Vous pourriez avoir besoin d'un test de densité osseuse plus tôt si : vous avez subi une orchidectomie (ablation des testicules) ou vous êtes/étiez sous testostérone ou un bloqueur de la puberté (comme la spironolactone, la cyprotérone ou le Lupron), et vous ne preniez pas/de faibles doses de l'hormonothérapie.\n\n•Vous pouvez également avoir besoin de tests plus tôt si vous avez d'autres [[facteurs de risque; https://www.canada.ca/fr/sante-publique/services/maladies-chroniques/osteoporose.html]]. Ce sont les mêmes facteurs de risque que pour les patients cisgenres. Discutez de toute préoccupation que vous pourriez avoir avec votre fournisseur de soins primaires.\n\n•Voici un calculateur de risque utilisé pour déterminer votre risque de fracture sur 10 ans : cliquez sur [[ici ; https://www.sheffield.ac.uk/FRAX/]].\n Si vous avez effectué une transition médicale, envisagez d'utiliser une moyenne des calculateurs féminins et masculins pour calculer votre propre risque de fracture.",
-    "Health Provider Text": "•Toutes les femmes trans et les personnes transféminines devraient subir un dépistage avec une densitométrie osseuse ( DMO) conformément aux directives actuelles pour la population générale.\n\n•Pour un patient à faible risque sans facteurs de risque supplémentaires au Canada, le dépistage commence habituellement à l'âge de 65 ans.\n\n•Conformément aux lignes directrices actuelles pour la population générale, le dépistage par densitométrie osseuse doit être envisagé chez les patients plus jeunes qui présentent des [[facteurs de risque d'ostéoporose ; https://www.canada.ca/fr/sante-publique/services/maladies-chroniques/osteoporose.html]]\n\n• Pour les femmes trans et les personnes transféminines, cela inclut également toute personne qui, quel que soit son âge :\n1)A des antécédents d'hypogonadisme/gonadectomie, et des antécédents de remplacement hormonal insuffisant (pas/à faible dose/intermittent) (UCSF recommande > 5 ans sans hormones pour se qualifier ; RHO recommande > 2 ans ; Endrocine Society, ISCD et TransCare BC ne spécifiez pas de durée minimale).\n2) Antécédents de prise d'un analogue anti-androgène/GnRH sans hormones exogènes (RHO, ISCD).\n3) N'adhère pas à l'hormonothérapie ou en a pris par intermittence (Endocrine Society, TransCare BC).\n• D'un autre côté, l'Endocrine Society suggère d'envisager des tests de DMO au départ chez toutes les patientes trans féminines.\n•Le RHO recommande à tous les patients sous hormonothérapie d'assurer un apport quotidien de 1200 mg de calcium et 1000 UI de vitamine D.",
+    "General Patient Text": "• L'exercice physique et une alimentation saine maintiennent vos os solides et préviennent l'ostéoporose.\n• Certaines organisations (Rainbow Health Ontario) recommandent à tous les patients sous hormonothérapie d'assurer un apport quotidien de 1200 mg de calcium (alimentation\n+ supplémentation) et 1000 UI de vitamine D.\nPlus d'informations sur [[calcium et vitamine D; https://osteoporosis.ca/bone-health-osteoporosis/calcium-and-vitamin-d/]]\n\n• Les tests de densité osseuse sont généralement recommandés pour toute personne âgée de 65 ans au Canada.\n\n• Vous pourriez avoir besoin d'un test de densité osseuse plus tôt si : vous avez subi une orchidectomie (ablation des testicules) ou vous êtes/étiez sous testostérone ou un bloqueur de la puberté (comme la spironolactone, la cyprotérone ou le Lupron), et vous ne preniez pas/de faibles doses de l'hormonothérapie.\n\n•Vous pouvez également avoir besoin de tests plus tôt si vous avez d'autres [[facteurs de risque; https://www.canada.ca/fr/sante-publique/services/maladies-chroniques/osteoporose.html]]. Ce sont les mêmes facteurs de risque que pour les patients cisgenres. Discutez de toute préoccupation que vous pourriez avoir avec votre fournisseur de soins primaires.\n\n•Voici un calculateur de risque utilisé pour déterminer votre risque de fracture sur 10 ans : cliquez sur [[ici ; https://www.sheffield.ac.uk/FRAX/]].\n Si vous avez effectué une transition médicale, envisagez d'utiliser une moyenne des calculateurs féminins et masculins pour calculer votre propre risque de fracture.",
+    "Health Provider Text": "•Toutes les femmes trans et les personnes transféminines devraient subir un dépistage avec une densitométrie osseuse ( DMO) conformément aux directives actuelles pour la population générale.\n\n•Pour un patient à faible risque sans facteurs de risque supplémentaires au Canada, le dépistage commence habituellement à l'âge de 65 ans.\n\n•Conformément aux lignes directrices actuelles pour la population générale, le dépistage par densitométrie osseuse doit être envisagé chez les patients plus jeunes qui présentent des [[facteurs de risque d'ostéoporose ; https://www.canada.ca/fr/sante-publique/services/maladies-chroniques/osteoporose.html]]\n\n• Pour les femmes trans et les personnes transféminines, cela inclut également toute personne qui, quel que soit son âge :\n1)A des antécédents d'hypogonadisme/gonadectomie, et des antécédents de remplacement hormonal insuffisant (pas/à faible dose/intermittent) (UCSF recommande > 5 ans sans hormones pour se qualifier ; RHO recommande > 2 ans ; Endrocine Society, ISCD et TransCare BC ne spécifiez pas de durée minimale).\n2) Antécédents de prise d'un analogue anti-androgène/GnRH sans hormones exogènes (RHO, ISCD).\n3) N'adhère pas à l'hormonothérapie ou en a pris par intermittence (Endocrine Society, TransCare BC).\n• D'un autre côté, l'Endocrine Society suggère d'envisager des tests de DMO au départ chez toutes les patientes trans féminines.\n•Le RHO recommande à tous les patients sous hormonothérapie d'assurer un apport quotidien de 1200 mg de calcium et 1000 UI de vitamine D.",
     "Gender": "tf",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Bone",
     "Topic heading": "Santé des os",
     "Subject": "Ressources",
-    "General Patient Text": "•Pour plus d'informations sur l'ostéoporose [[cliquez ici; https://strwebstgmedia.blob.core.windows.net/media/libmnjci/transgender-people-and-osteoporosis-fact-sheet-march-2018.pdf]]\n• [[RHO; https://www.rainbowhealthontario.ca/product/4th-edition-sherbournes-guidelines-for-gender-affirming-primary-care-with-trans-and-non-binary-patients/]]\n• [[Directives UCSF Transcare ; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf]]\n• [[Directives de la Société d'endocrinologie ; https://academic.oup.com/jcem/article/102/11/3869/4157558]]",
+    "General Patient Text": "•Pour plus d'informations sur l'ostéoporose [[cliquez ici; https://strwebstgmedia.blob.core.windows.net/media/libmnjci/transgender-people-and-osteoporosis-fact-sheet-march-2018.pdf]]\n• [[RHO; https://www.rainbowhealthontario.ca/product/4th-edition-sherbournes-guidelines-for-gender-affirming-primary-care-with-trans-and-non-binary-patients/]]\n• [[Directives UCSF Transcare ; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf]]\n• [[Directives de la Société d'endocrinologie ; https://academic.oup.com/jcem/article/102/11/3869/4157558]]",
     "Health Provider Text": "n/a",
     "Gender": "tf",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Bone",
     "Topic heading": "Santé des os",
     "Subject": "Conseils et ressources",
     "General Patient Text": "n/a",
-    "Health Provider Text": "Recommendations de la litérature:\n• L'ISCD (International Society for Clinical Densitometry) suggère en 2019 que le score Z devrait généralement être dérivé d'une comparaison avec les données de référence du sexe affirmé du patient pour les patients transgenres binaires (c'est-à-dire qui s'identifient comme étant uniquement un homme ou une femme), et au sexe attribué à la naissance en mode non binaire patients [[ISCD; https://www.sciencedirect.com/science/article/abs/pii/S1094695019301507]]\n•[[Endocrinol Metab Clin North Am June 2020; https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6487870/]]\n•UCSF 2016: lors de l'évaluation de l'ostéoporose, envisagez d'évaluer le risque en utilisant une moyenne des résultats obtenus à l'aide d'un calculateur féminin et masculin [[calculateur de risque ; https://www.sheffield.ac.uk/FRAX/]]\n[[UCSF; https://transcare.ucsf.edu/guidelines/bone-health-and-osteoporosis]]\n\n• [[Directives RHO ; https://www.rainbowhealthontario.ca/product/4th-edition-sherbournes-guidelines-for-gender-affirming-primary-care-with-trans-and-non-binary-patients/]]\n• [[Directives de la Société d'endocrinologie ; https://academic.oup.com/jcem/article/102/11/3869/4157558]]",
+    "Health Provider Text": "Recommendations de la litérature:\n• L'ISCD (International Society for Clinical Densitometry) suggère en 2019 que le score Z devrait généralement être dérivé d'une comparaison avec les données de référence du sexe affirmé du patient pour les patients transgenres binaires (c'est-à-dire qui s'identifient comme étant uniquement un homme ou une femme), et au sexe attribué à la naissance en mode non binaire patients [[ISCD; https://www.sciencedirect.com/science/article/abs/pii/S1094695019301507]]\n•[[Endocrinol Metab Clin North Am June 2020; https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6487870/]]\n•UCSF 2016: lors de l'évaluation de l'ostéoporose, envisagez d'évaluer le risque en utilisant une moyenne des résultats obtenus à l'aide d'un calculateur féminin et masculin [[calculateur de risque ; https://www.sheffield.ac.uk/FRAX/]]\n[[UCSF; https://transcare.ucsf.edu/guidelines/bone-health-and-osteoporosis]]\n\n• [[Directives RHO ; https://www.rainbowhealthontario.ca/product/4th-edition-sherbournes-guidelines-for-gender-affirming-primary-care-with-trans-and-non-binary-patients/]]\n• [[Directives de la Société d'endocrinologie ; https://academic.oup.com/jcem/article/102/11/3869/4157558]]",
     "Gender": "tf",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Bone",
     "Topic heading": "Santé des os",
     "Subject": "Informations",
-    "General Patient Text": "• L'exercice physique et une alimentation saine maintiennent vos os solides et préviennent l'ostéoporose.\n• Certains fournisseurs (Rainbow Health Ontario) recommandent à tous les patients sous hormonothérapie d'assurer un apport quotidien de 1200 mg de calcium (alimentation\n+ supplémentation) et 1000 UI de vitamine D.\nPlus d'informations sur [[calcium et vitamine D; https://osteoporosis.ca/bone-health-osteoporosis/calcium-and-vitamin-d/]]\n\n• Les tests de densité osseuse sont généralement recommandés pour toute personne âgée de 65 ans au Canada.\n•Vous pourriez avoir besoin d'un test de densité osseuse plus tôt si : vous avez subi une ovariectomie (ablation des ovaires) ou vous êtes/étais sur un bloqueur de la puberté (comme Lupron), et vous ne preniez pas/de faibles doses d'hormonothérapie.\n•Vous pouvez également avoir besoin de tests plus tôt si vous avez d'autres [[facteurs de risque; https://www.canada.ca/fr/sante-publique/services/maladies-chroniques/osteoporose.html]]. Ce sont les mêmes facteurs de risque que pour les patients cisgenres. Discutez de toute préoccupation que vous pourriez avoir avec votre fournisseur de soins primaires.\n•Voici un calculateur de risque utilisé pour déterminer votre risque de fracture sur 10 ans : cliquez sur [[ici ; https://www.sheffield.ac.uk/FRAX/]]. Si vous avez effectué une transition médicale, envisagez d'utiliser une moyenne des calculateurs féminins et masculins pour calculer votre propre risque de fracture.",
-    "Health Provider Text": "•Tous les hommes trans et les personnes du spectre transmasculin doivent subir un dépistage de la densité osseuse conformément aux directives actuelles pour la population générale.\n•Pour un patient à faible risque sans facteurs de risque supplémentaires au Canada, le dépistage commence habituellement à l'âge de 65 ans.\n•Conformément aux directives actuelles pour la population générale, le dépistage par DMO doit être envisagé pour les patients plus jeunes qui présentent des facteurs de risque d'ostéoporose. Pour les hommes trans et les personnes du spectre transmasculin, cela inclut également toute personne qui, quel que soit son âge :\n1)A des antécédents d'hypogonadisme/gonadectomie, et des antécédents de remplacement hormonal insuffisant (pas/faible dose/intermittent) (UCSF recommande > 5 ans sans hormones pour se qualifier ; RHO recommande > 2 ans ; Endocrine Society, ISCD et TransCare BC ne spécifiez pas de durée minimale).\n2) Une histoire de prise d'un analogue de la GnRH sans hormones exogènes (RHO, ISCD).\n3) N'adhère pas à l'hormonothérapie ou en a pris par intermittence (Endocrine Society, TransCare BC).\n•Le RHO recommande à tous les patients sous hormonothérapie d'assurer un apport quotidien de 1200 mg de calcium et 1000 UI de vitamine D.",
+    "General Patient Text": "• L'exercice physique et une alimentation saine maintiennent vos os solides et préviennent l'ostéoporose.\n• Certains fournisseurs (Rainbow Health Ontario) recommandent à tous les patients sous hormonothérapie d'assurer un apport quotidien de 1200 mg de calcium (alimentation\n+ supplémentation) et 1000 UI de vitamine D.\nPlus d'informations sur [[calcium et vitamine D; https://osteoporosis.ca/bone-health-osteoporosis/calcium-and-vitamin-d/]]\n\n• Les tests de densité osseuse sont généralement recommandés pour toute personne âgée de 65 ans au Canada.\n•Vous pourriez avoir besoin d'un test de densité osseuse plus tôt si : vous avez subi une ovariectomie (ablation des ovaires) ou vous êtes/étais sur un bloqueur de la puberté (comme Lupron), et vous ne preniez pas/de faibles doses d'hormonothérapie.\n•Vous pouvez également avoir besoin de tests plus tôt si vous avez d'autres [[facteurs de risque; https://www.canada.ca/fr/sante-publique/services/maladies-chroniques/osteoporose.html]]. Ce sont les mêmes facteurs de risque que pour les patients cisgenres. Discutez de toute préoccupation que vous pourriez avoir avec votre fournisseur de soins primaires.\n•Voici un calculateur de risque utilisé pour déterminer votre risque de fracture sur 10 ans : cliquez sur [[ici ; https://www.sheffield.ac.uk/FRAX/]]. Si vous avez effectué une transition médicale, envisagez d'utiliser une moyenne des calculateurs féminins et masculins pour calculer votre propre risque de fracture.",
+    "Health Provider Text": "•Tous les hommes trans et les personnes du spectre transmasculin doivent subir un dépistage de la densité osseuse conformément aux directives actuelles pour la population générale.\n•Pour un patient à faible risque sans facteurs de risque supplémentaires au Canada, le dépistage commence habituellement à l'âge de 65 ans.\n•Conformément aux directives actuelles pour la population générale, le dépistage par DMO doit être envisagé pour les patients plus jeunes qui présentent des facteurs de risque d'ostéoporose. Pour les hommes trans et les personnes du spectre transmasculin, cela inclut également toute personne qui, quel que soit son âge :\n1)A des antécédents d'hypogonadisme/gonadectomie, et des antécédents de remplacement hormonal insuffisant (pas/faible dose/intermittent) (UCSF recommande > 5 ans sans hormones pour se qualifier ; RHO recommande > 2 ans ; Endocrine Society, ISCD et TransCare BC ne spécifiez pas de durée minimale).\n2) Une histoire de prise d'un analogue de la GnRH sans hormones exogènes (RHO, ISCD).\n3) N'adhère pas à l'hormonothérapie ou en a pris par intermittence (Endocrine Society, TransCare BC).\n•Le RHO recommande à tous les patients sous hormonothérapie d'assurer un apport quotidien de 1200 mg de calcium et 1000 UI de vitamine D.",
     "Gender": "tm",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Bone",
     "Topic heading": "Santé des os",
     "Subject": "Ressources",
-    "General Patient Text": "•Pour plus d'informations sur l'ostéoporose [[cliquez ici; https://strwebstgmedia.blob.core.windows.net/media/libmnjci/transgender-people-and-osteoporosis-fact-sheet-march-2018.pdf]]\n• [[Directives RHO ; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n• [[Directives UCSF Transcare ; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf]]\n• [[Directives de la Société d'endocrinologie ; https://academic.oup.com/jcem/article/102/11/3869/4157558]]",
+    "General Patient Text": "•Pour plus d'informations sur l'ostéoporose [[cliquez ici; https://strwebstgmedia.blob.core.windows.net/media/libmnjci/transgender-people-and-osteoporosis-fact-sheet-march-2018.pdf]]\n• [[Directives RHO ; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n• [[Directives UCSF Transcare ; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf]]\n• [[Directives de la Société d'endocrinologie ; https://academic.oup.com/jcem/article/102/11/3869/4157558]]",
     "Health Provider Text": "n/a",
     "Gender": "tm",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Bone",
     "Topic heading": "Santé des os",
     "Subject": "Conseils et ressources",
     "General Patient Text": "n/a",
-    "Health Provider Text": "Recommendations de la litérature:\n• L'ISCD (International Society for Clinical Densitometry) suggère en 2019 que le score Z devrait généralement être dérivé d'une comparaison avec les données de référence du sexe affirmé du patient pour les patients transgenres binaires (c'est-à-dire qui s'identifient comme étant uniquement un homme ou une femme), et au sexe attribué à la naissance en mode non binaire patients [[ISCD; https://www.sciencedirect.com/science/article/abs/pii/S1094695019301507]]\n•[[Endocrinol Metab Clin North Am June 2020; https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6487870/]]\n•UCSF 2016: lors de l'évaluation de l'ostéoporose, envisagez d'évaluer le risque en utilisant une moyenne des résultats obtenus à l'aide d'un calculateur féminin et masculin [[calculateur de risque ; https://www.sheffield.ac.uk/FRAX/]]\n[[UCSF; https://transcare.ucsf.edu/guidelines/bone-health-and-osteoporosis]]\n\n• [[Directives RHO ; https://www.rainbowhealthontario.ca/product/4th-edition-sherbournes-guidelines-for-gender-affirming-primary-care-with-trans-and-non-binary-patients/]]\n• [[Directives de la Société d'endocrinologie ; https://academic.oup.com/jcem/article/102/11/3869/4157558]]",
+    "Health Provider Text": "Recommendations de la litérature:\n• L'ISCD (International Society for Clinical Densitometry) suggère en 2019 que le score Z devrait généralement être dérivé d'une comparaison avec les données de référence du sexe affirmé du patient pour les patients transgenres binaires (c'est-à-dire qui s'identifient comme étant uniquement un homme ou une femme), et au sexe attribué à la naissance en mode non binaire patients [[ISCD; https://www.sciencedirect.com/science/article/abs/pii/S1094695019301507]]\n•[[Endocrinol Metab Clin North Am June 2020; https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6487870/]]\n•UCSF 2016: lors de l'évaluation de l'ostéoporose, envisagez d'évaluer le risque en utilisant une moyenne des résultats obtenus à l'aide d'un calculateur féminin et masculin [[calculateur de risque ; https://www.sheffield.ac.uk/FRAX/]]\n[[UCSF; https://transcare.ucsf.edu/guidelines/bone-health-and-osteoporosis]]\n\n• [[Directives RHO ; https://www.rainbowhealthontario.ca/product/4th-edition-sherbournes-guidelines-for-gender-affirming-primary-care-with-trans-and-non-binary-patients/]]\n• [[Directives de la Société d'endocrinologie ; https://academic.oup.com/jcem/article/102/11/3869/4157558]]",
     "Gender": "tm",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Bone",
@@ -127,127 +139,140 @@
     "Health Provider Text": "[[Recommendations; https://osteoporosis.ca/bone-health-osteoporosis/exercises-for-healthy-bones/]]",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Bone",
     "Topic heading": "Santé des os",
     "Subject": "Densité minerale osseuse",
-    "General Patient Text": "Moins de 65 ans : recommandé uniquement si : vous avez [[facteurs de risque ; https://www.canada.ca/fr/sante-publique/services/maladies-chroniques/osteoporose.html]]",
-    "Health Provider Text": "Si le patient présente des [[facteurs de risque ; http://www.osteoporosis.ca/multimedia/pdf/Quick_Reference_Guide_October_2010.pdf]] ou utilisez [[OST; http://www.cfp.ca/content/61/7/612]]",
+    "General Patient Text": "Moins de 65 ans : recommandé uniquement si : vous avez [[facteurs de risque ; https://www.canada.ca/fr/sante-publique/services/maladies-chroniques/osteoporose.html]]",
+    "Health Provider Text": "Si le patient présente des [[facteurs de risque ; http://www.osteoporosis.ca/multimedia/pdf/Quick_Reference_Guide_October_2010.pdf]] ou utilisez [[OST; http://www.cfp.ca/content/61/7/612]]",
     "Gender": "m,f",
     "Minimum age": 18,
-    "Maximum age": 64
+    "Maximum age": 64,
+    "": ""
   },
   {
     "Button": "Bone",
     "Topic heading": "Santé des os",
     "Subject": "Densité minérale osseuse",
-    "General Patient Text": "Recommandé pour tous les 65 ans ou plus\nVotre fournisseur déterminera quand le répéter\n[[Plus d'informations; https://choosingwiselycanada.org/bone-density-tests/]]\n[[calculateur pour le risque de fracture à 10 ans ; https://www.sheffield.ac.uk/FRAX/tool.jsp?country=19 ]]",
-    "Health Provider Text": "Recommandé pour tous les 65 ans ou plus :\n•[[ostéoporose.ca; http://www.cmaj.ca/content/cmaj/early/2010/10/12/cmaj.100771.full.pdf]]\n•Ou utilisez [[OST; http://www.cfp.ca/content/61/7/612]]\n•Fréquence des nouveaux tests [[pas plus de tous les 2 ans ; https://choosingwiselycanada.org/rhumatologie/]]\n[[aide à la décision ; https://osteoporosisdecisionaid.mayoclinic.org/]]",
+    "General Patient Text": "Recommandé pour tous les 65 ans ou plus\nVotre fournisseur déterminera quand le répéter\n[[Plus d'informations; https://choosingwiselycanada.org/bone-density-tests/]]\n[[calculateur pour le risque de fracture à 10 ans ; https://www.sheffield.ac.uk/FRAX/tool.jsp?country=19 ]]",
+    "Health Provider Text": "Recommandé pour tous les 65 ans ou plus :\n•[[ostéoporose.ca; http://www.cmaj.ca/content/cmaj/early/2010/10/12/cmaj.100771.full.pdf]]\n•Ou utilisez [[OST; http://www.cfp.ca/content/61/7/612]]\n•Fréquence des nouveaux tests [[pas plus de tous les 2 ans ; https://choosingwiselycanada.org/rhumatologie/]]\n[[aide à la décision ; https://osteoporosisdecisionaid.mayoclinic.org/]]",
     "Gender": "m,f",
     "Minimum age": 65,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Bone",
     "Topic heading": "Vitamines, Minéraux",
-    "Subject": "Âge: 18 ans",
-    "General Patient Text": "•Calcium: 1 300 mg/jour; vitamine D: 600 UI/ jour\nPour les femmes enceintes ou allaitantes, voir ci-dessus\n•Acide folique: 0.4 à 1 mg par jour \n[[informations sur l'acide folique; https://www.canada.ca/fr/sante-publique/services/grossesse/acide-folique.html\n[[Dois-je prendre plus d'acide folique?; https://www.canada.ca/fr/sante-publique/services/grossesse/acide-folique.html#a4]]",
-    "Health Provider Text": "•Calcium: 1 300 mg/jour; vitamine D: 600 UI/ jour\nPour les femmes enceintes ou allaitantes, même indication que ci-dessus",
+    "Subject": "Âge: 18 ans",
+    "General Patient Text": "•Calcium: 1 300 mg/jour; vitamine D: 600 UI/ jour\nPour les femmes enceintes ou allaitantes, voir ci-dessus\n•Acide folique: 0.4 à 1 mg par jour \n[[informations sur l'acide folique; https://www.canada.ca/fr/sante-publique/services/grossesse/acide-folique.html\n[[Dois-je prendre plus d'acide folique?; https://www.canada.ca/fr/sante-publique/services/grossesse/acide-folique.html#a4]]",
+    "Health Provider Text": "•Calcium: 1 300 mg/jour; vitamine D: 600 UI/ jour\nPour les femmes enceintes ou allaitantes, même indication que ci-dessus",
     "Gender": "f",
     "Minimum age": 18,
-    "Maximum age": 18
+    "Maximum age": 18,
+    "": ""
   },
   {
     "Button": "Bone",
     "Topic heading": "Vitamines, Minéraux",
-    "Subject": "Âge: 19-49 ans",
-    "General Patient Text": "•Calcium: 1 000 mg/jour; vitamine D: 400-1 000 UI/jour\nPour les femmes enceintes ou allaitantes, dosage d'une femme de 18 ans\n\n•Acide folique: 0.4 à 1 mg par jour \n[[informations sur l'acide folique; https://www.canada.ca/fr/sante-publique/services/grossesse/acide-folique.html\n[[Dois-je prendre plus d'acide folique?; https://www.canada.ca/fr/sante-publique/services/grossesse/acide-folique.html#a4]]",
-    "Health Provider Text": "•Calcium: 1 000 mg/jour; vitamine D: 400-1 000 UI/jour\nPour les femmes enceintes ou allaitantes, dosage d'une femme de 18 ans\n\n•Acide folique: 0.4 à 1 mg par jour \n[[informations sur l'acide folique; https://www.canada.ca/fr/sante-publique/services/grossesse/acide-folique.html\n[[Dois-je prendre plus d'acide folique?; https://www.canada.ca/fr/sante-publique/services/grossesse/acide-folique.html#a4]]\n[[Ligne directrice; https://www.jogc.com/article/S1701-2163(15)30230-9/pdf]]",
+    "Subject": "Âge: 19-49 ans",
+    "General Patient Text": "•Calcium: 1 000 mg/jour; vitamine D: 400-1 000 UI/jour\nPour les femmes enceintes ou allaitantes, dosage d'une femme de 18 ans\n\n•Acide folique: 0.4 à 1 mg par jour \n[[informations sur l'acide folique; https://www.canada.ca/fr/sante-publique/services/grossesse/acide-folique.html\n[[Dois-je prendre plus d'acide folique?; https://www.canada.ca/fr/sante-publique/services/grossesse/acide-folique.html#a4]]",
+    "Health Provider Text": "•Calcium: 1 000 mg/jour; vitamine D: 400-1 000 UI/jour\nPour les femmes enceintes ou allaitantes, dosage d'une femme de 18 ans\n\n•Acide folique: 0.4 à 1 mg par jour \n[[informations sur l'acide folique; https://www.canada.ca/fr/sante-publique/services/grossesse/acide-folique.html\n[[Dois-je prendre plus d'acide folique?; https://www.canada.ca/fr/sante-publique/services/grossesse/acide-folique.html#a4]]\n[[Ligne directrice; https://www.jogc.com/article/S1701-2163(15)30230-9/pdf]]",
     "Gender": "f",
     "Minimum age": 19,
-    "Maximum age": 49
+    "Maximum age": 49,
+    "": ""
   },
   {
     "Button": "Bone",
     "Topic heading": "Vitamines, Minéraux",
     "Subject": "Âge 18 ans",
-    "General Patient Text": "•Calcium: 1 300 mg/jour; vitamine D: 600 UI/ jour",
-    "Health Provider Text": "•Calcium: 1 300 mg/jour; vitamine D: 600 UI/ jour",
+    "General Patient Text": "•Calcium: 1 300 mg/jour; vitamine D: 600 UI/ jour",
+    "Health Provider Text": "•Calcium: 1 300 mg/jour; vitamine D: 600 UI/ jour",
     "Gender": "m,tm,tf",
     "Minimum age": 18,
-    "Maximum age": 18
+    "Maximum age": 18,
+    "": ""
   },
   {
     "Button": "Bone",
     "Topic heading": "Vitamines, Minéraux",
-    "Subject": "Âge: 19-49 ans",
-    "General Patient Text": "•Calcium: 1 000 mg/jour; vitamine D: 400-1 000 UI/jour",
-    "Health Provider Text": "•Calcium: 1 000 mg/jour; vitamine D: 400-1 000 UI/jour",
+    "Subject": "Âge: 19-49 ans",
+    "General Patient Text": "•Calcium: 1 000 mg/jour; vitamine D: 400-1 000 UI/jour",
+    "Health Provider Text": "•Calcium: 1 000 mg/jour; vitamine D: 400-1 000 UI/jour",
     "Gender": "m,tm,tf",
     "Minimum age": 19,
-    "Maximum age": 49
+    "Maximum age": 49,
+    "": ""
   },
   {
     "Button": "Bone",
     "Topic heading": "Vitamines, Minéraux",
-    "Subject": "Âge: 50 ans et plus",
-    "General Patient Text": "•Calcium: 1 200mg/jour; vitamine D: 800-2 000 UI/jour",
-    "Health Provider Text": "•Calcium: 1 200mg/jour; vitamine D: 800-2 000 UI/jour",
+    "Subject": "Âge: 50 ans et plus",
+    "General Patient Text": "•Calcium: 1 200mg/jour; vitamine D: 800-2 000 UI/jour",
+    "Health Provider Text": "•Calcium: 1 200mg/jour; vitamine D: 800-2 000 UI/jour",
     "Gender": "all",
     "Minimum age": 50,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Bone",
     "Topic heading": "Vitamines, Minéraux",
     "Subject": "Tous âges",
-    "General Patient Text": "Il est préférence d’obtenir le calcium de source alimentaire que de suppléments\nS’il faut supplémenter, envisager une dose maximale de 500 mg\nLa prise de plus de 2 000 UI de vitamine D par jour doit faire l’objet d’une surveillance médicale\n\n[[pour plus de renseignements; https://osteoporosecanada.ca/sante-des-os-et-osteoporose/calcium-et-vitamine-d/]]",
-    "Health Provider Text": "Il est préférence d’obtenir le calcium de source alimentaire que de suppléments\nS’il faut supplémenter, envisager une dose maximale de 500 mg\nLa prise de plus de 2 000 UI de vitamine D par jour doit faire l’objet d’une surveillance médicale\n\n[[pour plus de renseignements;  https://osteoporosecanada.ca/sante-des-os-et-osteoporose/calcium-et-vitamine-d/]]",
+    "General Patient Text": "Il est préférence d’obtenir le calcium de source alimentaire que de suppléments\nS’il faut supplémenter, envisager une dose maximale de 500 mg\nLa prise de plus de 2 000 UI de vitamine D par jour doit faire l’objet d’une surveillance médicale\n\n[[pour plus de renseignements; https://osteoporosecanada.ca/sante-des-os-et-osteoporose/calcium-et-vitamine-d/]]",
+    "Health Provider Text": "Il est préférence d’obtenir le calcium de source alimentaire que de suppléments\nS’il faut supplémenter, envisager une dose maximale de 500 mg\nLa prise de plus de 2 000 UI de vitamine D par jour doit faire l’objet d’une surveillance médicale\n\n[[pour plus de renseignements;  https://osteoporosecanada.ca/sante-des-os-et-osteoporose/calcium-et-vitamine-d/]]",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Breast",
     "Topic heading": "Cancer du sein",
     "Subject": "Prévenir le cancer du sein",
-    "General Patient Text": "• Limitez l'alcool (voir nos informations sur la consommation de substances)\n• Ne fumez pas\n• Contrôlez votre poids\n• Soyez physiquement actif (voir nos informations sur l'activité physique pour cela)\n• Allaitez si vous le pouvez\n• Limiter le temps d'hormonothérapie\n[[Suite; https://www.mycanceriq.ca/Cancers/Risk]]\n\nCliquez sur ce [[lien pour savoir si vous présentez un risque élevé de cancer du sein ; https://www.cancer.ca/fr/prevention-and-screening/reduce-cancer-risk/find-cancer-early/get-screened-for-breast-cancer/at-high-risk-for-breast- cancer/?région=on]]\n\nLes mammographies pour les femmes en bonne santé de moins de 50 ans\nsans symptômes, sans problèmes mammaires\net sans  risques supplémentaires\nn'est pas recommandé.\n[[des risques; http://www.cancer.ca/en/cancer-information/cancer-type/breast/risks/?region=on]]\n[[les méfaits des mammographies ; https://www.youtube.com/watch?v=UZlY6Q4m-MM]]\nDISCUTEZ AVEC VOTRE FOURNISSEUR DE SOINS DE SANTÉ.",
+    "General Patient Text": "• Limitez l'alcool (voir nos informations sur la consommation de substances)\n• Ne fumez pas\n• Contrôlez votre poids\n• Soyez physiquement actif (voir nos informations sur l'activité physique pour cela)\n• Allaitez si vous le pouvez\n• Limiter le temps d'hormonothérapie\n[[Suite; https://www.mycanceriq.ca/Cancers/Risk]]\n\nCliquez sur ce [[lien pour savoir si vous présentez un risque élevé de cancer du sein ; https://www.cancer.ca/en/prevention-and-screening/reduce-cancer-risk/find-cancer-early/get-screened-for-breast-cancer/at-high-risk-for-breast-cancer/?region=on]]\n\nLes mammographies pour les femmes en bonne santé de moins de 50 ans\nsans symptômes, sans problèmes mammaires\net sans  risques supplémentaires\nn'est pas recommandé.\n[[des risques; http://www.cancer.ca/en/cancer-information/cancer-type/breast/risks/?region=on]]\n[[les méfaits des mammographies ; https://www.youtube.com/watch?v=UZlY6Q4m-MM]]\nDISCUTEZ AVEC VOTRE FOURNISSEUR DE SOINS DE SANTÉ.",
     "Health Provider Text": "n/a",
     "Gender": "f",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Breast",
     "Topic heading": "Cancer du sein",
-    "Subject": "Passer un test de dépistage du cancer du sein\nentre 50 et 74 ans",
+    "Subject": "Passer un test de dépistage du cancer du sein\nentre 50 et 74 ans",
     "General Patient Text": "Passez une mammographie à  tous les 2 ans .\nVous pourriez en avoir besoin plus tôt ou plus souvent\nsi vous présentez des risques ou des symptômes.\n[[Suite; http://www.cancer.ca/en/cancer-information/cancer-type/breast/risks/?region=on]]",
     "Health Provider Text": "n/a",
     "Gender": "f",
     "Minimum age": 50,
-    "Maximum age": 74
+    "Maximum age": 74,
+    "": ""
   },
   {
     "Button": "Breast",
     "Topic heading": "Cancer du sein",
-    "Subject": "Âge: 75 ans ou plus",
-    "General Patient Text": "La recherche ne recommande aucune mammographie à partir de 75 ans, \nmais si vous êtes en bonne santé, vous pouvez discuter d’autres examens avec votre professionnel de la santé.",
+    "Subject": "Âge: 75 ans ou plus",
+    "General Patient Text": "La recherche ne recommande aucune mammographie à partir de 75 ans, \nmais si vous êtes en bonne santé, vous pouvez discuter d’autres examens avec votre professionnel de la santé.",
     "Health Provider Text": "n/a",
     "Gender": "f",
     "Minimum age": 75,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Breast",
     "Topic heading": "Cancer du sein",
     "Subject": "Prévention et de dépistage du\ncancer du sein",
     "General Patient Text": "n/a",
-    "Health Provider Text": "Conseiller aux patients de :\n• Limitez l'alcool (voir nos informations sur la consommation de substances)\n•Ne pas fumer\n• Contrôler leur poids\n• Soyez physiquement actif (voir les informations de notre application pour cela)\n• Allaiter si possible\n• Limiter le temps d'hormonothérapie\n[[un calculateur de risque pour les patients ; https://www.mycanceriq.ca/Cancers/Risk]]\n\nMammographie de dépistage :\n• Moins de 50 ans : non recommandé\n[[recommandation du groupe de travail canadien ; https://canadiantaskforce.ca/guidelines/published-guidelines/breast-cancer-update/]]\n[[outil pour expliquer les méfaits au patient ; https://www.youtube.com/watch?v=UZlY6Q4m-MM]]\n[[outil pour expliquer les méfaits au patient ; https://canadiantaskforce.ca/tools-resources/breast-cancer-2/breast-cancer-risks-benefits-age-40-49/]]\n• 50-74 : tous les 2 ans\n[[faible recommandation ; https://canadiantaskforce.ca/guidelines/published-guidelines/breast-cancer-update/]]\n•75+ : Non recommandé par canadiantaskforce.ca, mais :\n[[Article CFP 2019 sur quand arrêter le dépistage ; https://www.cfp.ca/content/cfp/65/8/543.full.pdf]]\n\nPatientes à haut risque :\n• Connue pour avoir une mutation génétique qui augmente son  risque de cancer du sein (par exemple, BRCA1, BRCA2, TP53, PTEN, CDH1)\n• Parents au premier degré d'une personne qui a une mutation génétique qui augmente son risque de cancer du sein (par exemple, BRCA1, BRCA2, TP53, PTEN, CDH1), ont déjà eu un conseil génétique et ont choisi de ne pas subir de test génétique\n• Avoir été évalué par une clinique de génétique (à l'aide des outils IBIS ou BOADICEA) comme ayant un risque à vie de 25 % ou plus de cancer du sein sur la base des antécédents personnels et familiaux\n•Avoir eu une radiothérapie à la poitrine pour traiter un autre cancer ou une autre affection (par exemple, un lymphome hodgkinien) avant l'âge de 30 ans et il y a au moins 8 ans\n• Parent au premier degré (parent, frère, sœur ou enfant) d'un porteur d'une mutation génétique (par exemple BRCA1, BRCA2, TP53, PTEN, CDH1) et n'a pas subi de conseil génétique ou de test génétique\n• Antécédents personnels ou familiaux de cancer du sein ou de l'ovaire suggérant un syndrome de cancer du sein héréditaire",
+    "Health Provider Text": "Conseiller aux patients de :\n• Limitez l'alcool (voir nos informations sur la consommation de substances)\n•Ne pas fumer\n• Contrôler leur poids\n• Soyez physiquement actif (voir les informations de notre application pour cela)\n• Allaiter si possible\n• Limiter le temps d'hormonothérapie\n[[un calculateur de risque pour les patients ; https://www.mycanceriq.ca/Cancers/Risk]]\n\nMammographie de dépistage :\n• Moins de 50 ans : non recommandé\n[[recommandation du groupe de travail canadien ; https://canadiantaskforce.ca/guidelines/published-guidelines/breast-cancer-update/]]\n[[outil pour expliquer les méfaits au patient ; https://www.youtube.com/watch?v=UZlY6Q4m-MM]]\n[[outil pour expliquer les méfaits au patient ; https://canadiantaskforce.ca/tools-resources/breast-cancer-2/breast-cancer-risks-benefits-age-40-49/]]\n• 50-74 : tous les 2 ans\n[[faible recommandation ; https://canadiantaskforce.ca/guidelines/published-guidelines/breast-cancer-update/]]\n•75+ : Non recommandé par canadiantaskforce.ca, mais :\n[[Article CFP 2019 sur quand arrêter le dépistage ; https://www.cfp.ca/content/cfp/65/8/543.full.pdf]]\n\nPatientes à haut risque :\n• Connue pour avoir une mutation génétique qui augmente son  risque de cancer du sein (par exemple, BRCA1, BRCA2, TP53, PTEN, CDH1)\n• Parents au premier degré d'une personne qui a une mutation génétique qui augmente son risque de cancer du sein (par exemple, BRCA1, BRCA2, TP53, PTEN, CDH1), ont déjà eu un conseil génétique et ont choisi de ne pas subir de test génétique\n• Avoir été évalué par une clinique de génétique (à l'aide des outils IBIS ou BOADICEA) comme ayant un risque à vie de 25 % ou plus de cancer du sein sur la base des antécédents personnels et familiaux\n•Avoir eu une radiothérapie à la poitrine pour traiter un autre cancer ou une autre affection (par exemple, un lymphome hodgkinien) avant l'âge de 30 ans et il y a au moins 8 ans\n• Parent au premier degré (parent, frère, sœur ou enfant) d'un porteur d'une mutation génétique (par exemple BRCA1, BRCA2, TP53, PTEN, CDH1) et n'a pas subi de conseil génétique ou de test génétique\n• Antécédents personnels ou familiaux de cancer du sein ou de l'ovaire suggérant un syndrome de cancer du sein héréditaire",
     "Gender": "f",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Breast/Chest",
@@ -257,27 +282,30 @@
     "Health Provider Text": "• Les femmes trans et les personnes transféminines qui suivent un traitement hormonal féminisant devraient subir un dépistage du cancer du sein conformément aux directives actuelles pour les femmes cis.\n• La recommandation actuelle est une mammographie tous les 2 ans à partir de 50-74 ans.\n• Certaines directives (telles que celles de RHO et de l'UCSF) spécifient de ne commencer qu'une fois que la patiente a été sous hormonothérapie féminisante pendant > 5 ans au total (jusqu'à 10 ans selon l'UCSF), tandis que d'autres ne spécifient pas de durée minimale d'utilisation de l'hormone .\n• Notez que la présence d'implants mammaires nécessite généralement une mammographie diagnostique plutôt qu'une mammographie de dépistage de routine (RHO)",
     "Gender": "tf",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Breast/Chest",
     "Topic heading": "Cancer du sein/de la poitrine",
     "Subject": "Ressources",
-    "General Patient Text": "• [[Aperçu du dépistage du cancer du sein chez les femmes trans au Canada; https://www.cancer.ca/fr/prevention-and-screening/reduce-cancer-risk/find-cancer-early/screening-in-lgbtq-communities/trans-women-and-breast-cancer-screening/?région=on/]]\n• [[Directives RHO ; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n• [[Directives UCSF Transcare ; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf ]]\n• [[Directives de la Société d'endocrinologie ; https://academic.oup.com/jcem/article/102/11/3869/4157558]]",
+    "General Patient Text": "• [[Aperçu du dépistage du cancer du sein chez les femmes trans au Canada; https://www.cancer.ca/en/prevention-and-screening/reduce-cancer-risk/find-cancer-early/screening-in-lgbtq-communities/trans-women-and-breast-cancer-screening/?region=on/]]\n• [[Directives RHO ; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n• [[Directives UCSF Transcare ; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf ]]\n• [[Directives de la Société d'endocrinologie ; https://academic.oup.com/jcem/article/102/11/3869/4157558]]",
     "Health Provider Text": "n/a",
     "Gender": "tf",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Breast/Chest",
     "Topic heading": "Breast Cancer",
     "Subject": "Conseils et ressources",
     "General Patient Text": "n/a",
-    "Health Provider Text": "• [[Aperçu du dépistage du cancer du sein chez les femmes trans au Canada; https://www.cancer.ca/fr/prevention-and-screening/reduce-cancer-risk/find-cancer-early/screening-in-lgbtq-communities/trans-women-and-breast-cancer-screening/?région=bc]]\n• [[Directives RHO ; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n• [[Directives UCSF Transcare ; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf]]\n• [[Directives de la Société d'endocrinologie ; https://academic.oup.com/jcem/article/102/11/3869/4157558]]",
+    "Health Provider Text": "• [[Aperçu du dépistage du cancer du sein chez les femmes trans au Canada;  https://www.cancer.ca/en/prevention-and-screening/reduce-cancer-risk/find-cancer-early/screening-in-lgbtq-communities/trans-men-and-chest-cancer-screening/?region=on]]\n• [[Directives RHO ; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n• [[Directives UCSF Transcare ; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf]]\n• [[Directives de la Société d'endocrinologie ; https://academic.oup.com/jcem/article/102/11/3869/4157558]]",
     "Gender": "tf",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Breast/Chest",
@@ -287,97 +315,107 @@
     "Health Provider Text": "• Les hommes trans et les personnes du spectre transmasculin qui n'ont pas subi de mastectomie bilatérale devraient subir un dépistage du cancer du sein, conformément aux directives actuelles pour les femmes cis.\n• La recommandation actuelle pour les femmes cis est une mammographie tous les 2 ans de 50 à 74 ans.\n• Il n'existe actuellement aucune preuve fiable sur le dépistage des hommes trans et des patients transmasculins ayant subi une mastectomie; envisager de discuter des risques inconnus associés au tissu mammaire résiduel, ainsi que des limitations techniques possibles de la mammographie (UCSF).\n• Envisager de continuer à surveiller régulièrement le cancer du sein même après une mastectomie, car les mastectomies n'enlèvent généralement pas le tissu mammaire dans son intégralité ; l'Endocrine Society suggère de procéder à des examens mammaires annuels sous-aréolaires et périaréolaires si la patiente a subi une mastectomie, alors que l'UCSF met en garde contre cela (non fondé sur des preuves).",
     "Gender": "tm",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Breast/Chest",
     "Topic heading": "Cancer du sein/de la poitrine",
     "Subject": "Ressources",
-    "General Patient Text": "• [[Aperçu du dépistage du cancer du sein chez les hommes trans au Canada; https://www.cancer.ca/fr/prevention-and-screening/reduce-cancer-risk/find-cancer-early/screening-in-lgbtq-communities/trans-men-and-thest-cancer-screening/ ?région=on]]\n• [[Directives RHO ; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n• [[Directives UCSF Transcare ; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf]]\n• [[Directives de la Société d'endocrinologie ; https://academic.oup.com/jcem/article/102/11/3869/4157558]]",
+    "General Patient Text": "• [[Aperçu du dépistage du cancer du sein chez les hommes trans au Canada; https://www.cancer.ca/en/prevention-and-screening/reduce-cancer-risk/find-cancer-early/screening-in-lgbtq-communities/trans-men-and-chest-cancer-screening/?region=on]]\n• [[Directives RHO ; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n• [[Directives UCSF Transcare ; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf]]\n• [[Directives de la Société d'endocrinologie ; https://academic.oup.com/jcem/article/102/11/3869/4157558]]",
     "Health Provider Text": "n/a",
     "Gender": "tm",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Breast/Chest",
     "Topic heading": "Breast Cancer",
     "Subject": "Conseils et ressources",
     "General Patient Text": "n/a",
-    "Health Provider Text": "• Soyez attentif au langage que vous utilisez lorsque vous faites référence à des parties du corps traditionnellement genrées, car certains mots peuvent mettre les patients mal à l'aise. \n• Notez que la mastectomie n'implique généralement pas l'ablation de tout le tissu mammaire, et qu'une certaine quantité peut  rester en place, ce qui signifie que les patientes pourraient toujours être à risque de cancer du sein (TransCare BC).\n• Si une anomalie est notée à l'examen d'un homme trans ayant subi une mastectomie, une échographie +/- IRM est indiquée car la mammographie est techniquement difficile ou peut être impossible (RHO).\n• [[Aperçu du dépistage du cancer du sein chez les hommes trans au Canada; https://www.cancer.ca/fr/prevention-and-screening/reduce-cancer-risk/find-cancer-early/screening-in-lgbtq-communities/trans-men-and-thest-cancer-screening/ ?région=on]]\n• [[Directives RHO ; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n• [[Directives UCSF Transcare ; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf]]\n• [[Directives de la Société d'endocrinologie ; https://academic.oup.com/jcem/article/102/11/3869/4157558]]",
+    "Health Provider Text": "• Soyez attentif au langage que vous utilisez lorsque vous faites référence à des parties du corps traditionnellement genrées, car certains mots peuvent mettre les patients mal à l'aise. \n• Notez que la mastectomie n'implique généralement pas l'ablation de tout le tissu mammaire, et qu'une certaine quantité peut  rester en place, ce qui signifie que les patientes pourraient toujours être à risque de cancer du sein (TransCare BC).\n• Si une anomalie est notée à l'examen d'un homme trans ayant subi une mastectomie, une échographie +/- IRM est indiquée car la mammographie est techniquement difficile ou peut être impossible (RHO).\n• [[Aperçu du dépistage du cancer du sein chez les hommes trans au Canada;  https://www.cancer.ca/en/prevention-and-screening/reduce-cancer-risk/find-cancer-early/screening-in-lgbtq-communities/trans-men-and-chest-cancer-screening/?region=on]]\n• [[Directives RHO ; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n• [[Directives UCSF Transcare ; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf]]\n• [[Directives de la Société d'endocrinologie ; https://academic.oup.com/jcem/article/102/11/3869/4157558]]",
     "Gender": "tm",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Uterus",
     "Topic heading": "Cancer du col de l’utérus",
     "Subject": "Passer un test de dépistage du cancer du col de l’utérus\n(test de Pap)",
-    "General Patient Text": "•Les femmes âgées de 25 à 69 ans (de 21 à 69 ans dans certaines provinces) qui sont sexuellement actives\ndoivent passer un test Pap tous les 3 ans lorsque les résultats sont normaux.\n[[Qu’est-ce que le cancer du col de l’utérus?; http://www.cancer.ca/fr-ca/cancer-information/cancer-type/cervical/cervical-cancer/?region=on]]",
-    "Health Provider Text": "Les femmes âgées de 25 à 69 ans (de 21 à 69 ans dans certaines provinces) qui sont sexuellement actives\ndoivent passer un test Pap tous les 3 ans lorsque les résultats sont normaux.\n[[plus de renseignements; https://canadiantaskforce.ca/lignesdirectrives/lignes-directrices-publiees/cancer-du-col-de-luterus/?lang=fr/]]",
+    "General Patient Text": "•Les femmes âgées de 25 à 69 ans (de 21 à 69 ans dans certaines provinces) qui sont sexuellement actives\ndoivent passer un test Pap tous les 3 ans lorsque les résultats sont normaux.\n[[Qu’est-ce que le cancer du col de l’utérus?; http://www.cancer.ca/fr-ca/cancer-information/cancer-type/cervical/cervical-cancer/?region=on]]",
+    "Health Provider Text": "Les femmes âgées de 25 à 69 ans (de 21 à 69 ans dans certaines provinces) qui sont sexuellement actives\ndoivent passer un test Pap tous les 3 ans lorsque les résultats sont normaux.\n[[plus de renseignements; https://canadiantaskforce.ca/lignesdirectrives/lignes-directrices-publiees/cancer-du-col-de-luterus/?lang=fr/]]",
     "Gender": "f",
     "Minimum age": 21,
-    "Maximum age": 69
+    "Maximum age": 69,
+    "": ""
   },
   {
     "Button": "Uterus",
     "Topic heading": "Cancer du col de l’utérus",
     "Subject": "Le dépistage du cancer du col de l’utérus\npourrait ou non être nécessaire",
-    "General Patient Text": "•Après l’âge de 69 ans, on peut mettre fin aux tests après 3 résultats normaux obtenus au cours des 10 dernières années",
-    "Health Provider Text": "Mettre fin aux tests après 3 résultats normaux obtenus au cours des 10 dernières années\n[[plus de renseignements; https://canadiantaskforce.ca/lignesdirectrives/lignes-directrices-publiees/cancer-du-col-de-luterus/?lang=fr/]]",
+    "General Patient Text": "•Après l’âge de 69 ans, on peut mettre fin aux tests après 3 résultats normaux obtenus au cours des 10 dernières années",
+    "Health Provider Text": "Mettre fin aux tests après 3 résultats normaux obtenus au cours des 10 dernières années\n[[plus de renseignements; https://canadiantaskforce.ca/lignesdirectrives/lignes-directrices-publiees/cancer-du-col-de-luterus/?lang=fr/]]",
     "Gender": "f",
     "Minimum age": 70,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Uterus",
     "Topic heading": "Cancer du col de l’utérus",
     "Subject": "Autres moyens de prévenir le cancer du col de l’utérus",
-    "General Patient Text": "•Obtenir le vaccin contre le VPH\nrecommandé entre l’âge de 9 et 26 ans,\nmais qui peut être administré à n’importe quel âge\n•Ne pas fumer\n•Utiliser des condoms\n•Limiter le nombre de partenaires sexuels\n•[[plus de renseignements; http://www.cancer.ca/fr-ca/cancer-information/cancer-type/cervical/risks/reducing-your-risk/?region=on]]",
-    "Health Provider Text": "•Recommander le vaccin contre le VPH\n(le vaccin est recommandé entre l’âge de 9 \net 26 ans, mais peut être administré à tout âge).\n[[recommandation canadienne; https://www.canada.ca/fr/sante-publique/services/publications/vie-saine/mise-a-jour-recommandation-visant-calendrier-immunisation-vaccin-contre-virus-papillome-humain.html#som]]\n•Recommander de ne pas fumer, d’utiliser un \ncondom et de limiter le nombre de partenaires.",
+    "General Patient Text": "•Obtenir le vaccin contre le VPH\nrecommandé entre l’âge de 9 et 26 ans,\nmais qui peut être administré à n’importe quel âge\n•Ne pas fumer\n•Utiliser des condoms\n•Limiter le nombre de partenaires sexuels\n•[[plus de renseignements; http://www.cancer.ca/fr-ca/cancer-information/cancer-type/cervical/risks/reducing-your-risk/?region=on]]",
+    "Health Provider Text": "•Recommander le vaccin contre le VPH\n(le vaccin est recommandé entre l’âge de 9 \net 26 ans, mais peut être administré à tout âge).\n[[recommandation canadienne; https://www.canada.ca/fr/sante-publique/services/publications/vie-saine/mise-a-jour-recommandation-visant-calendrier-immunisation-vaccin-contre-virus-papillome-humain.html#som]]\n•Recommander de ne pas fumer, d’utiliser un \ncondom et de limiter le nombre de partenaires.",
     "Gender": "f",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Colon",
     "Topic heading": "Cancer colorectal",
     "Subject": "Dépistage",
     "General Patient Text": "n/a",
-    "Health Provider Text": "De 50 à 74 ans\n•Test de recherche de sang occulte dans les selles ou examen immunochimique des selles (selon la province) tous les 2 ans\n•Sigmoïdoscopie flexible tous les 10 ans\n•Aucune colonoscopie recommandée au Canada:\nRisque de perforation de 1 sur 2 000, aucune donnée probante pour l’instant, études contrôlées à répartition aléatoire en cours\n\n[[Groupe d’étude canadien; https://canadiantaskforce.ca/lignesdirectrives/lignes-directrices-publiees/cancer-colorectal/?lang=fr]]",
+    "Health Provider Text": "De 50 à 74 ans\n•Test de recherche de sang occulte dans les selles ou examen immunochimique des selles (selon la province) tous les 2 ans\n•Sigmoïdoscopie flexible tous les 10 ans\n•Aucune colonoscopie recommandée au Canada:\nRisque de perforation de 1 sur 2 000, aucune donnée probante pour l’instant, études contrôlées à répartition aléatoire en cours\n\n[[Groupe d’étude canadien; https://canadiantaskforce.ca/lignesdirectrives/lignes-directrices-publiees/cancer-colorectal/?lang=fr]]",
     "Gender": "all",
     "Minimum age": 50,
-    "Maximum age": 74
+    "Maximum age": 74,
+    "": ""
   },
   {
     "Button": "Colon",
     "Topic heading": "Cancer du côlon",
     "Subject": "Passer un test de dépistage du cancer du côlon",
-    "General Patient Text": "De 50 à 74 ans:\n•Se prêter à une analyse des selles tous les 2 ans; en cas de présence de sang dans les selles, vous serez orienté pour passer une coloscopie\n•La coloscopie n’est pas recommandée si vous ne présentez aucun symptôme ou n’avez aucun\nantécédent familial de cancer du côlon. 1 personne sur 2 000 qui subit une coloscopie subira une complication grave.\n\n\n[[plus de renseignements; https://canadiantaskforce.ca/wp-content/uploads/2016/09/ctfphccolorectal-cancerpatient-faqfrenchfinalv2.pdf]]",
+    "General Patient Text": "De 50 à 74 ans:\n•Se prêter à une analyse des selles tous les 2 ans; en cas de présence de sang dans les selles, vous serez orienté pour passer une coloscopie\n•La coloscopie n’est pas recommandée si vous ne présentez aucun symptôme ou n’avez aucun\nantécédent familial de cancer du côlon. 1 personne sur 2 000 qui subit une coloscopie subira une complication grave.\n\n\n[[plus de renseignements; https://canadiantaskforce.ca/wp-content/uploads/2016/09/ctfphccolorectal-cancerpatient-faqfrenchfinalv2.pdf]]",
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 50,
-    "Maximum age": 74
+    "Maximum age": 74,
+    "": ""
   },
   {
     "Button": "Colon",
     "Topic heading": "Cancer colorectal",
-    "Subject": "Les tests de détection du cancer de stade précoce pourraient ne pas être utiles à 75 ans ou plus",
+    "Subject": "Les tests de détection du cancer de stade précoce pourraient ne pas être utiles à 75 ans ou plus",
     "General Patient Text": "La plupart des gens n’ont pas nécessairement besoin de subir un dépistage à ce stade-ci;\ndiscuter avec votre professionnel de la santé si vous préférez vous soumettre à un dépistage.\n[[plus de renseignements; https://canadiantaskforce.ca/tools-resources/colorectal-cancer-for-patients-2/]]",
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 75,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Colon",
     "Topic heading": "Cancer du côlon ou de l’intestin",
     "Subject": "Prévention du cancer du côlon",
-    "General Patient Text": "•Être physiquement actif\n•Maintenir un poids corporel santé [[IMC; https://www.unlockfood.ca/fr/Articles/Perdre-du-poids/Evaluez-votre-IMC.aspx?aliaspath=%2fen%2fArticles%2fWeight-Management%2fBMI-Calculator]]\n•Ne pas fumer et éviter la fumée secondaire\n•[[plus de renseignements sur la prévention du cancer du côlon; http://www.cancer.ca/fr-ca/cancer-information/cancer-type/colorectal/risks/reducing-your-risk/?region=on]]",
-    "Health Provider Text": "À recommander aux patients:\n•Être physiquement actif\n•Maintenir un poids corporel santé [[IMC; https://www.unlockfood.ca/fr/Articles/Perdre-du-poids/Evaluez-votre-IMC.aspx?aliaspath=%2fen%2fArticles%2fWeight-Management%2fBMI-Calculator]]\n•Limiter la consommation d’alcool (voir les lignes directrices sur la consommation saine)\n•Ne pas fumer et éviter la fumée secondaire\n•Limiter sa consommation de viande rouge et de viande transformée\n•Manger des aliments riches en fibres\n•Réduire le temps passé assis\n[[source; http://www.cancer.ca/fr-ca/cancer-information/cancer-type/colorectal/risks/reducing-your-risk/?region=on]]",
+    "General Patient Text": "•Être physiquement actif\n•Maintenir un poids corporel santé [[IMC; http://cancer.ca/en/prevention-and-screening/reduce-cancer-risk/make-healthy-choices/have-a-healthy-body-weight/how-do-i-know-if-i-have-a-healthy-body-weight/?region=on]]\n•Ne pas fumer et éviter la fumée secondaire\n•[[plus de renseignements sur la prévention du cancer du côlon; http://www.cancer.ca/fr-ca/cancer-information/cancer-type/colorectal/risks/reducing-your-risk/?region=on]]",
+    "Health Provider Text": "À recommander aux patients:\n•Être physiquement actif\n•Maintenir un poids corporel santé [[IMC; http://cancer.ca/en/prevention-and-screening/reduce-cancer-risk/make-healthy-choices/have-a-healthy-body-weight/how-do-i-know-if-i-have-a-healthy-body-weight/?region=on]]\n•Limiter la consommation d’alcool (voir les lignes directrices sur la consommation saine)\n•Ne pas fumer et éviter la fumée secondaire\n•Limiter sa consommation de viande rouge et de viande transformée\n•Manger des aliments riches en fibres\n•Réduire le temps passé assis\n[[source; http://www.cancer.ca/fr-ca/cancer-information/cancer-type/colorectal/risks/reducing-your-risk/?region=on]]",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 49
+    "Maximum age": 49,
+    "": ""
   },
   {
     "Button": "Covid",
@@ -387,7 +425,8 @@
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Covid",
@@ -397,7 +436,8 @@
     "Health Provider Text": "•[[Information pour les professionels; https://www.msss.gouv.qc.ca/professionnels/covid-19/vaccination-contre-la-covid-19/\n\n•[[CCNI; https://www.canada.ca/fr/sante-publique/services/immunisation/comite-consultatif-national-immunisation-ccni/recommandations-utilisation-vaccins-covid-19.html]]\n\n•Canada: cliquez [[ici; https://www.canada.ca/fr/sante-publique/services/maladies/maladie-coronavirus-covid-19/vaccins/apercu.html]]\n\n•Provinces: cliquez [[ici; https://www.canada.ca/fr/sante-publique/services/maladies/maladie-coronavirus-covid-19/vaccins/apercu.html#a5]]\n\n•New England Journal of Medicine\n[[FAQ; https://www.nejm.org/covid-vaccine/faq]]\n[[Recherche; https://www.nejm.org/covid-vaccine]]\n\n• Vidéos: Comment les vaccins sont créés?\n[[3 minutes; https://www.canada.ca/fr/sante-publique/services/video/covid-19-comment-vaccins-crees.html]]\n[[7 minutes; https://www.youtube.com/watch?v=2t_mQwTY4WQ&feature=emb_logo]]",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Covid",
@@ -407,7 +447,8 @@
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Covid",
@@ -417,7 +458,8 @@
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Covid",
@@ -427,7 +469,8 @@
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Covid",
@@ -437,7 +480,8 @@
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Covid",
@@ -447,7 +491,8 @@
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Covid",
@@ -457,7 +502,8 @@
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Covid",
@@ -467,7 +513,8 @@
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Covid",
@@ -477,7 +524,8 @@
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Covid",
@@ -487,7 +535,8 @@
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Covid",
@@ -497,7 +546,8 @@
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Covid",
@@ -507,7 +557,8 @@
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Covid",
@@ -517,7 +568,8 @@
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Covid",
@@ -527,7 +579,8 @@
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Covid",
@@ -537,7 +590,8 @@
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Covid",
@@ -547,7 +601,8 @@
     "Health Provider Text": "•POUR DEPISTER  LA PAUVRETÉ:\nposer la question:\nAvez-vous de la difficulté avec vos dépenses en fin de mois?\n\n•Trouver des services sociaux et de santé locaux pour votre patient:\nComposer le 211 sur votre téléphone dans certaines régions\nQuébec: [[http://www.211quebecregions.ca/;http://www.211quebecregions.ca/]]\nAilleurs au Canada: [[https://211.ca/;https://211.ca/]]\n\n•OU diriger vos patients vers leur unité de santé publique locale.\n\n•[[Aide financière du Canada; https://www.canada.ca/fr/services/prestations/covid-19-prestations-urgence.html]]\n\n•[[Premières nations, Métis et Inuit; https://www.santepubliqueottawa.ca/fr/public-health-topics/resources-for-first-nations-inuit-and-m-tis-community-members.aspx]]\ninformations nationales et pour Ottawa\n\n•[[Différentes langues; https://www.santepubliqueottawa.ca/fr/public-health-topics/multilingual-resources.aspx]]",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Covid",
@@ -557,7 +612,8 @@
     "Health Provider Text": "ÉTUDES ÉVALUÉES POUR LEUR QUALITÉ\n[[MCMASTER EBM; https://plus.mcmaster.ca/COVID-19]]\n[[OXFORD Evidence Service; https://www.cebm.net/oxford-covid-19-evidence-service/]]\n\nPÉRIODIQUES\n[[CMAJ; https://www.cmaj.ca/covid-19]]\n[[BMJ; https://www.bmj.com/coronavirus]]\n[[JAMA;https://jamanetwork.com/collections/46099/coronavirus-covid19]]\n[[NEJM; https://www.nejm.org/coronavirus]]\n[[The Lancet; https://www.thelancet.com/coronavirus/archive?]]\n\n[[AGENCE DE LA SANTÉ PUBLIQUE DU CANADA; https://www.canada.ca/fr/sante-publique/services/maladies/maladie-coronavirus-covid-19.html]]",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Covid",
@@ -567,47 +623,52 @@
     "Health Provider Text": "[[Article dans Le médecin de famille canadien; https://www.cfp.ca/content/cfp/66/8/571.full.pdf]]",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Pancreas",
-    "Topic heading": "Diabète de type 2",
+    "Topic heading": "Diabète de type 2",
     "Subject": "Association Nationale Autochtone Diabète",
     "General Patient Text": "•[[Association Nationale Autochtone Diabète;  http://nada.ca/]]\n•[[Nutrition; http://nada.ca/?page_id=1563]]",
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Pancreas",
-    "Topic heading": "Diabète de type 2",
+    "Topic heading": "Diabète de type 2",
     "Subject": "Prévenir le diabète",
-    "General Patient Text": "•Manger sainement\n•Être physiquement actif\n•Maintenir un IMC santé entre 18,5 et 24:\n[[IMC; https://www.unlockfood.ca/fr/Articles/Perdre-du-poids/Evaluez-votre-IMC.aspx?aliaspath=%2fen%2fArticles%2fWeight-Management%2fBMI-Calculator]]",
-    "Health Provider Text": "Recommander\n•Alimentation saine\n•Activité physique\n•IMC santé entre 18,5 et 24\n[[IMC; https://www.unlockfood.ca/fr/Articles/Perdre-du-poids/Evaluez-votre-IMC.aspx?aliaspath=%2fen%2fArticles%2fWeight-Management%2fBMI-Calculator]]",
+    "General Patient Text": "•Manger sainement\n•Être physiquement actif\n•Maintenir un IMC santé entre 18,5 et 24:\n[[IMC; https://www.diabetes.ca/static/bmi-calculator.html]]",
+    "Health Provider Text": "Recommander\n•Alimentation saine\n•Activité physique\n•IMC santé entre 18,5 et 24\n[[IMC; https://www.diabetes.ca/static/bmi-calculator.html]]",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Pancreas",
-    "Topic heading": "Diabète de type 2",
+    "Topic heading": "Diabète de type 2",
     "Subject": "Se prêter à une analyse de sang pour le dépistage du diabète si vous présentez un risque",
-    "General Patient Text": "Vous pouvez utiliser un calculateur pour vérifier si vous avez besoin de vous soumettre à une telle analyse:\n[[calculateur 1; http://www.preventiondiabete.ca/]]\n[[calculateur 2; https://canadiantaskforce.ca/wp-content/uploads/2016/10/2012-type-2-diabetes-patient-findrisc-fr.pdf]]",
+    "General Patient Text": "Vous pouvez utiliser un calculateur pour vérifier si vous avez besoin de vous soumettre à une telle analyse:\n[[calculateur 1; http://www.preventiondiabete.ca/]]\n[[calculateur 2; https://canadiantaskforce.ca/wp-content/uploads/2016/10/2012-type-2-diabetes-patient-findrisc-fr.pdf]]",
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Pancreas",
-    "Topic heading": "Diabète de type 2",
+    "Topic heading": "Diabète de type 2",
     "Subject": "Dépistage du diabète",
     "General Patient Text": "n/a",
-    "Health Provider Text": "La recommandation de l’utilisation \nd’un calculateur par le Groupe d’étude \ncanadien est fondée sur des données probantes:\n•[[FINDRISC; https://canadiantaskforce.ca/wp-content/uploads/2016/10/2012-type-2-diabetes-patient-findrisc-fr.pdf]]\nou \n•[[calculateurs CANRISK offerts dans différentes langues; https://canadiantaskforce.ca/tools-resources/diabete-de-type-2/diabete-de-type-2-canrisk/?lang=fr]]\nou \n•[[CANRISK sur preventiondiabete.ca; http://www.preventiondiabete.ca/]]",
+    "Health Provider Text": "La recommandation de l’utilisation \nd’un calculateur par le Groupe d’étude \ncanadien est fondée sur des données probantes:\n•[[FINDRISC; https://canadiantaskforce.ca/wp-content/uploads/2016/10/2012-type-2-diabetes-patient-findrisc-fr.pdf]]\nou \n•[[calculateurs CANRISK offerts dans différentes langues; https://canadiantaskforce.ca/tools-resources/diabete-de-type-2/diabete-de-type-2-canrisk/?lang=fr]]\nou \n•[[CANRISK sur preventiondiabete.ca; http://www.preventiondiabete.ca/]]",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Hip",
@@ -617,27 +678,30 @@
     "Health Provider Text": "L’American Geriatrics Society\net la British Geriatrics Society recommandent de poser des questions sur les\nchutes tous les ans\n[[réf. de l’article de la revue MFC; http://www.cfp.ca/content/62/9/e508]]\n[[plus de renseignements; https://www.ajpmonline.org/article/S0749-3797(18)31759-8/fulltext]]\n\nPour conseiller les patients,\nvoir la section sur les chutes dans l’application.",
     "Gender": "all",
     "Minimum age": 65,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Ovary",
     "Topic heading": "Planification familiale",
     "Subject": "Prise d’acide folique",
-    "General Patient Text": "Prise d’acide folique: 0,4-1 mg par jour.\nVitamine offerte en vente libre dans les pharmacies.\nPour les femmes en âge de procréer, qui planifient une grossesse ou non.\n [[acide folique; https://www.canada.ca/fr/sante-publique/services/grossesse/acide-folique.html]]",
+    "General Patient Text": "Prise d’acide folique: 0,4-1 mg par jour.\nVitamine offerte en vente libre dans les pharmacies.\nPour les femmes en âge de procréer, qui planifient une grossesse ou non.\n [[acide folique; https://www.canada.ca/fr/sante-publique/services/grossesse/acide-folique.html]]",
     "Health Provider Text": "n/a",
     "Gender": "f",
     "Minimum age": 18,
-    "Maximum age": 49
+    "Maximum age": 49,
+    "": ""
   },
   {
     "Button": "Ovary",
     "Topic heading": "Planification familiale",
     "Subject": "Passer des tests de dépistage de certaines maladies",
-    "General Patient Text": "Parler avec votre professionnel de la santé\nau sujet des tests de dépistage de maladies \nimportantes maladies à passer avant de devenir enceinte: \n•Rubéole, hépatite B, VIH: ces infections peuvent avoir une incidence sur votre enfant à naître.\n•Varicelle: cette infection peut être très grave pour vous durant la grossesse.",
+    "General Patient Text": "Parler avec votre professionnel de la santé\nau sujet des tests de dépistage de maladies \nimportantes maladies à passer avant de devenir enceinte: \n•Rubéole, hépatite B, VIH: ces infections peuvent avoir une incidence sur votre enfant à naître.\n•Varicelle: cette infection peut être très grave pour vous durant la grossesse.",
     "Health Provider Text": "n/a",
     "Gender": "f",
     "Minimum age": 18,
-    "Maximum age": 49
+    "Maximum age": 49,
+    "": ""
   },
   {
     "Button": "Ovary",
@@ -647,47 +711,52 @@
     "Health Provider Text": "n/a",
     "Gender": "f",
     "Minimum age": 18,
-    "Maximum age": 49
+    "Maximum age": 49,
+    "": ""
   },
   {
     "Button": "Ovary",
     "Topic heading": "Planification familiale",
     "Subject": "État de santé avant la conception chez toutes les femmes en âge de procréer",
     "General Patient Text": "n/a",
-    "Health Provider Text": "•Recommander la prise de 0,4 à 1 mg d’acide folique par jour à toutes les femmes en âge de procréer, car de nombreuses grossesses sont non planifiées.\n [[plus de renseignements; https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/folic-acid-for-the-prevention-of-neural-tube-defects-preventive-medication?ds=1&s=neural%20tube%20defects]]\n\nVÉRIFIER L'IMMUNITÉ:\n•contre la rubéole\n• contre la varicelle\n•contre  l’hépatite B et au VIH\nchez les femmes en âge de procréer\n[[plus de renseignements; https://cep.health/clinical-products/preconception/]]\n\nÂGE MATERNEL AVANCÉ: discuter de\n•La diminution de la fertilité chez les femmes après 32 ans\n•Les technologies d’aide à la reproduction ne peuvent garantir une naissance vivante. \n\n[[SOGC 2017; https://www.jogc.com/article/S1701-2163(16)39639-6/fulltext]]",
+    "Health Provider Text": "•Recommander la prise de 0,4 à 1 mg d’acide folique par jour à toutes les femmes en âge de procréer, car de nombreuses grossesses sont non planifiées.\n [[plus de renseignements; https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/folic-acid-for-the-prevention-of-neural-tube-defects-preventive-medication?ds=1&s=neural%20tube%20defects]]\n\nVÉRIFIER L'IMMUNITÉ:\n•contre la rubéole\n• contre la varicelle\n•contre  l’hépatite B et au VIH\nchez les femmes en âge de procréer\n[[plus de renseignements; https://cep.health/clinical-products/preconception/]]\n\nÂGE MATERNEL AVANCÉ: discuter de\n•La diminution de la fertilité chez les femmes après 32 ans\n•Les technologies d’aide à la reproduction ne peuvent garantir une naissance vivante. \n\n[[SOGC 2017; https://www.jogc.com/article/S1701-2163(16)39639-6/fulltext]]",
     "Gender": "f",
     "Minimum age": 18,
-    "Maximum age": 49
+    "Maximum age": 49,
+    "": ""
   },
   {
     "Button": "Needle in arm",
     "Topic heading": "Vaccination",
     "Subject": "Recommandations",
     "General Patient Text": "n/a",
-    "Health Provider Text": "Pour obtenir les meilleurs renseignements, télécharger [[l'application CanImmunize; https://www.canimmunize.ca/fr/home]]\n\nÂGE: 18 ans ou plus (TOUS LES ADULTES)\nLe calendrier suivant suppose que le patient a été vacciné dans son enfance\n•Td (tétanos/diphtérie) tous les 10 ans\n•DCaT (tétanos, diphtérie, coqueluche acellulaire ou toux coquelucheuse): une fois dans la vie\n•Rougeole, oreillons et rubéole: recommandé pour la plupart des adultes de recevoir 2 doses de ce vaccin\n•VPH: recommandé pour toutes les personnes de sexe féminin et de sexe masculin âgées de 9 à 26 ans. Le vaccin est également sûr chez les personnes de 26 ans ou plus. [[plus de renseignements; https://www.reframehealthlab.com/should-you-get-the-hpv-vaccine/]]\n•Vaccin contre la grippe: recommandé pour tous les adultes. Pour les groupes à risque élevé, voir l’application CanImmunize\n•Les vaccins contre les pneumocoques, la varicelle et les méningocoques sont recommandés pour certains groupes à risque élevé; voir l’application CANImmunize\n\nÂGE: 50 ans ou plus\nShingrix\nVaccin non remboursé dans de nombreuses provinces\n[[plus de renseignements; https://www.cdc.gov/vaccines/vpd/shingles/hcp/index.html\n\n\nAGE: 60 ans ou plus\nZostavax\nVaccin remboursé à différents âges dans certaines provinces\nVérifier le calendrier de vaccination de votre province\n\nÂGE: 65 ans ou plus\n•Pneumocoques\nLe vaccin PNEU-P-23 est recommandé pour tous les sujets immunocompétents,\nrépéter une fois tous les 5 ans seulement en cas de système immunitaire affaibli.\nLe vaccin PNEU-C-13 est recommandé aux sujets immunocompétents, mais il n’est pas remboursé dans la plupart des provinces.\nÊTRE ATTENTIF AUX PÉRIODES À RESPECTER ENTRE CES VACCINS\n[[voir la page Web; https://immunize.ca/sites/default/files/Resource%20and%20Product%20Uploads%20(PDFs)/Products%20and%20Resources/Adult%20Immunization/Adult%20Immunization%20Record/Adult_Immunization_Pocket_Card_R4_e.pdf]]\n\n•Vaccin contre la grippe tous les ans",
+    "Health Provider Text": "Pour obtenir les meilleurs renseignements, télécharger [[l'application CanImmunize; https://www.canimmunize.ca/fr/home]]\n\nÂGE: 18 ans ou plus (TOUS LES ADULTES)\nLe calendrier suivant suppose que le patient a été vacciné dans son enfance\n•Td (tétanos/diphtérie) tous les 10 ans\n•DCaT (tétanos, diphtérie, coqueluche acellulaire ou toux coquelucheuse): une fois dans la vie\n•Rougeole, oreillons et rubéole: recommandé pour la plupart des adultes de recevoir 2 doses de ce vaccin\n•VPH: recommandé pour toutes les personnes de sexe féminin et de sexe masculin âgées de 9 à 26 ans. Le vaccin est également sûr chez les personnes de 26 ans ou plus. [[plus de renseignements; https://www.reframehealthlab.com/should-you-get-the-hpv-vaccine/]]\n•Vaccin contre la grippe: recommandé pour tous les adultes. Pour les groupes à risque élevé, voir l’application CanImmunize\n•Les vaccins contre les pneumocoques, la varicelle et les méningocoques sont recommandés pour certains groupes à risque élevé; voir l’application CANImmunize\n\nÂGE: 50 ans ou plus\nShingrix\nVaccin non remboursé dans de nombreuses provinces\n[[plus de renseignements; https://www.cdc.gov/vaccines/vpd/shingles/hcp/index.html\n\n\nAGE: 60 ans ou plus\nZostavax\nVaccin remboursé à différents âges dans certaines provinces\nVérifier le calendrier de vaccination de votre province\n\nÂGE: 65 ans ou plus\n•Pneumocoques\nLe vaccin PNEU-P-23 est recommandé pour tous les sujets immunocompétents,\nrépéter une fois tous les 5 ans seulement en cas de système immunitaire affaibli.\nLe vaccin PNEU-C-13 est recommandé aux sujets immunocompétents, mais il n’est pas remboursé dans la plupart des provinces.\nÊTRE ATTENTIF AUX PÉRIODES À RESPECTER ENTRE CES VACCINS\n[[voir la page Web; https://immunize.ca/sites/default/files/Resource%20and%20Product%20Uploads%20(PDFs)/Products%20and%20Resources/Adult%20Immunization/Adult%20Immunization%20Record/Adult_Immunization_Pocket_Card_R4_e.pdf]]\n\n•Vaccin contre la grippe tous les ans",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Needle in arm",
     "Topic heading": "Vaccination",
     "Subject": "Faites-vous vacciner",
-    "General Patient Text": "Pour obtenir les meilleurs renseignements, télécharger [[application CanImmunize; https://www.canimmunize.ca/fr/home]]\n\nÂGE: 18-49 ans\nCe calendrier suppose que le patient a été vacciné dans son enfance\n•Td (tétanos/diphtérie) tous les 10 ans\n•DCaT (tétanos, diphtérie, coqueluche acellulaire ou toux coquelucheuse): une fois dans la vie\n•Rougeole, oreillons et rubéole: recommandé pour la plupart des adultes de recevoir 2 doses de ce vaccin\n•VPH: recommandé pour toutes les personnes de sexe féminin et de sexe masculin âgées de 9 à 26 ans. Le vaccin est également sûr chez les personnes de 26 ans ou plus. [[plus de renseignements; https://www.reframehealthlab.com/should-you-get-the-hpv-vaccine/]]\n•Vaccin contre la grippe: recommandé pour tous les adultes. Pour les groupes à risque élevé, voir l’application CanImmunize\n•Les vaccins contre les pneumocoques, la varicelle, méningocoques et le zona sont recommandés pour certains groupes à risque élevé; voir l’application CANImmunize",
+    "General Patient Text": "Pour obtenir les meilleurs renseignements, télécharger [[application CanImmunize; https://www.canimmunize.ca/fr/home]]\n\nÂGE: 18-49 ans\nCe calendrier suppose que le patient a été vacciné dans son enfance\n•Td (tétanos/diphtérie) tous les 10 ans\n•DCaT (tétanos, diphtérie, coqueluche acellulaire ou toux coquelucheuse): une fois dans la vie\n•Rougeole, oreillons et rubéole: recommandé pour la plupart des adultes de recevoir 2 doses de ce vaccin\n•VPH: recommandé pour toutes les personnes de sexe féminin et de sexe masculin âgées de 9 à 26 ans. Le vaccin est également sûr chez les personnes de 26 ans ou plus. [[plus de renseignements; https://www.reframehealthlab.com/should-you-get-the-hpv-vaccine/]]\n•Vaccin contre la grippe: recommandé pour tous les adultes. Pour les groupes à risque élevé, voir l’application CanImmunize\n•Les vaccins contre les pneumocoques, la varicelle, méningocoques et le zona sont recommandés pour certains groupes à risque élevé; voir l’application CANImmunize",
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 49
+    "Maximum age": 49,
+    "": ""
   },
   {
     "Button": "Needle in arm",
     "Topic heading": "Vaccination",
     "Subject": "Faites-vous vacciner",
-    "General Patient Text": "Pour obtenir les meilleurs renseignements, télécharger [[l'appli CanImmunize; https://www.canimmunize.ca/fr/home]]\n\nÂGE: 50 ans ou plus\nCe calendrier suppose que le patient a été vacciné dans sonenfance\n•Td (tétanos/diphtérie) tous les 10 ans\n•DCaT (tétanos, diphtérie, coqueluche acellulaire ou toux coquelucheuse): une fois dans la vie\n•Rougeole, oreillons et rubéole: recommandé pour la plupart des adultes de recevoir 2 doses de ce vaccin\n•Vaccin contre la grippe: recommandé pour tous les adultes. Pour les groupes à risque élevé, voir l’application CanImmunize\n•Les vaccins contre les pneumocoques, la varicelle et les méningocoques sont recommandés pour certains groupes à risque élevé; voir l’application CANImmunize\n•Vaccin contre le zona: \nShingrix est recommandé pour les personnes de 50 ans ou plus, mais il se peut que vous deviez le payer vous-même, car la plupart des provinces ne le remboursent pas encore [[Shingrix; https://www.cdc.gov/vaccines/vpd/shingles/public/shingrix/index.html]]\n\nÂge de 60 ans ou plus:\n•Vaccin contre le zona: Shingrix ou Zostavax; votre province pourrait rembourser Zostavax, mais pas Shingrix; en discuter avec votre professionnel de la santé [[plus de renseignements; https://www.cdc.gov/vaccines/vpd/shingles/public/shingrix/index.html]]\n\n\nÂGE de 65 ans ou plus: \n•Pneumocoques: Le vaccin Pneumococcal 23 est remboursé par votre province, mais Pneumococcal 13 pourrait ne pas l’être. En discuter avec votre médecin\n•Vaccin contre la grippe tous les ans",
+    "General Patient Text": "Pour obtenir les meilleurs renseignements, télécharger [[l'appli CanImmunize; https://www.canimmunize.ca/fr/home]]\n\nÂGE: 50 ans ou plus\nCe calendrier suppose que le patient a été vacciné dans sonenfance\n•Td (tétanos/diphtérie) tous les 10 ans\n•DCaT (tétanos, diphtérie, coqueluche acellulaire ou toux coquelucheuse): une fois dans la vie\n•Rougeole, oreillons et rubéole: recommandé pour la plupart des adultes de recevoir 2 doses de ce vaccin\n•Vaccin contre la grippe: recommandé pour tous les adultes. Pour les groupes à risque élevé, voir l’application CanImmunize\n•Les vaccins contre les pneumocoques, la varicelle et les méningocoques sont recommandés pour certains groupes à risque élevé; voir l’application CANImmunize\n•Vaccin contre le zona: \nShingrix est recommandé pour les personnes de 50 ans ou plus, mais il se peut que vous deviez le payer vous-même, car la plupart des provinces ne le remboursent pas encore [[Shingrix; https://www.cdc.gov/vaccines/vpd/shingles/public/shingrix/index.html]]\n\nÂge de 60 ans ou plus:\n•Vaccin contre le zona: Shingrix ou Zostavax; votre province pourrait rembourser Zostavax, mais pas Shingrix; en discuter avec votre professionnel de la santé [[plus de renseignements; https://www.cdc.gov/vaccines/vpd/shingles/public/shingrix/index.html]]\n\n\nÂGE de 65 ans ou plus: \n•Pneumocoques: Le vaccin Pneumococcal 23 est remboursé par votre province, mais Pneumococcal 13 pourrait ne pas l’être. En discuter avec votre médecin\n•Vaccin contre la grippe tous les ans",
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 50,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Needle in arm",
@@ -697,27 +766,30 @@
     "Health Provider Text": "•[[Information pour les professionels; https://www.msss.gouv.qc.ca/professionnels/covid-19/vaccination-contre-la-covid-19/]]\n\n•[[CCNI; https://www.canada.ca/fr/sante-publique/services/immunisation/comite-consultatif-national-immunisation-ccni/recommandations-utilisation-vaccins-covid-19.html]]\n\n•Canada: cliquez [[ici; https://www.canada.ca/fr/sante-publique/services/maladies/maladie-coronavirus-covid-19/vaccins/apercu.html]]\n\n•Provinces: cliquez [[ici; https://www.canada.ca/fr/sante-publique/services/maladies/maladie-coronavirus-covid-19/vaccins/apercu.html#a5]]\n\n•New England Journal of Medicine\n[[FAQ; https://www.nejm.org/covid-vaccine/faq]]\n[[Recherche; https://www.nejm.org/covid-vaccine]]\n\n• Vidéos: Comment les vaccins sont créés?\n[[3 minutes; https://www.canada.ca/fr/sante-publique/services/video/covid-19-comment-vaccins-crees.html]]\n[[7 minutes; https://www.youtube.com/watch?v=2t_mQwTY4WQ&feature=emb_logo]]",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Liver",
     "Topic heading": "Foie/Alcool/Drogues",
     "Subject": "Alcool",
-    "General Patient Text": "•Femmes: 10 consommations ou moins par semaine\n•Hommes: 15 consommations ou moins par semaine\nQu'est-ce qu'une consommation?\n\n[[image;images/size_of_drink_fr.jpg]]\n[[plus de renseignements; http://www.ccsa.ca/Resource%20Library/2012-Canada-Low-Risk-Alcohol-Drinking-Guidelines-Brochure-fr.pdf]]",
-    "Health Provider Text": "•Femmes: 10 consommations ou moins par semaine\n•Hommes: 15 consommations ou moins par semaine\nQu'est-ce qu'une consommation?\n\n[[image;images/size_of_drink_fr.jpg]]\n\n[[source; http://www.ccsa.ca/Resource%20Library/2012-Canada-Low-Risk-Alcohol-Drinking-Guidelines-Brochure-fr.pdf]]\nDépistage d’usage abusif et counselling en matière de comportement [[USPSTF B (2018); https://www.uspreventiveservicestaskforce.org/Page/Document/UpdateSummaryFinal/unhealthy-alcohol-use-in-adolescents-and-adults-screening-and-behavioral-counseling-interventions?ds=1&s=alcohol]]",
+    "General Patient Text": "•Femmes: 10 consommations ou moins par semaine\n•Hommes: 15 consommations ou moins par semaine\nQu'est-ce qu'une consommation?\n\n[[image;images/size_of_drink_fr.jpg]]\n[[plus de renseignements; http://www.ccsa.ca/Resource%20Library/2012-Canada-Low-Risk-Alcohol-Drinking-Guidelines-Brochure-fr.pdf]]",
+    "Health Provider Text": "•Femmes: 10 consommations ou moins par semaine\n•Hommes: 15 consommations ou moins par semaine\nQu'est-ce qu'une consommation?\n\n[[image;images/size_of_drink_fr.jpg]]\n\n[[source; http://www.ccsa.ca/Resource%20Library/2012-Canada-Low-Risk-Alcohol-Drinking-Guidelines-Brochure-fr.pdf]]\nDépistage d’usage abusif et counselling en matière de comportement [[USPSTF B (2018); https://www.uspreventiveservicestaskforce.org/Page/Document/UpdateSummaryFinal/unhealthy-alcohol-use-in-adolescents-and-adults-screening-and-behavioral-counseling-interventions?ds=1&s=alcohol]]",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Liver",
     "Topic heading": "Foie/Alcool/Drogues",
     "Subject": "Consommation de drogues",
-    "General Patient Text": "Obtenir de l’aide si vous êtes dépendants à une substance/au jeu.\nChaque province ou territoire dispose d’une ligne d’assistance: [[plus de renseignements; https://www.canada.ca/fr/sante-canada/services/dependance-aux-drogues/obtenir-aide/obtenir-aide-problemes-consommation-drogues.html]]",
-    "Health Provider Text": "De l’aide est offerte aux patients dépendants à une substance/au jeu:\nchaque province ou territoire dispose d’une ligne d’assistance: [[plus de renseignements; https://www.canada.ca/fr/sante-canada/services/dependance-aux-drogues/obtenir-aide/obtenir-aide-problemes-consommation-drogues.html]]:\ndépistage et counselling de l’USPSTF I (2018) en cours d’examen",
+    "General Patient Text": "Obtenir de l’aide si vous êtes dépendants à une substance/au jeu.\nChaque province ou territoire dispose d’une ligne d’assistance: [[plus de renseignements; https://www.canada.ca/en/health-canada/services/substance-use/get-help/get-help-problematic-substance-use.html]]",
+    "Health Provider Text": "De l’aide est offerte aux patients dépendants à une substance/au jeu:\nchaque province ou territoire dispose d’une ligne d’assistance: [[plus de renseignements;https://www.canada.ca/en/health-canada/services/substance-use/get-help/get-help-problematic-substance-use.html]]:\ndépistage et counselling de l’USPSTF I (2018) en cours d’examen",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Liver",
@@ -727,7 +799,8 @@
     "Health Provider Text": "Le GECSSP recommande le dépistage seulement si le patient présente des facteurs de risque:\n•[[GECSSP2017 voir les risques et la  carte des pays endémiques ; https://canadiantaskforce.ca/wp-content/uploads/2017/04/CTFPHC_Hepatitis-C_Clinician-FAQ_v10_FINAL_FRENCH-1.pdf]]\n•[[Article 2019; https://www.cfp.ca/content/cfp/65/3/195.full.pdf]]",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Liver",
@@ -737,7 +810,8 @@
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Lung",
@@ -747,47 +821,52 @@
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Lung",
     "Topic heading": "Poumon",
     "Subject": "Dépistage du cancer du poumon",
-    "General Patient Text": "Le dépistage à l’aide d’une \ntomodensitométrie (radiographie spéciale)\nchez certains fumeurs ou anciens fumeurs est suggéré par le Groupe de travail canadien,\nmais aucun programme à l’échelle des provinces ou des territoires n’a encore été mis en place.\nÉtant donné que cela pourrait causer des effets nocifs, son utilisation fait l’objet d’une étude attentive.\n[[plus de renseignements; http://www.cancer.ca/fr-ca/cancer-information/cancer-type/lung/finding-cancer-early/?region=on]]\nCertains projets pilotes son en cours; demander à votre professionnel de la santé.",
+    "General Patient Text": "Le dépistage à l’aide d’une \ntomodensitométrie (radiographie spéciale)\nchez certains fumeurs ou anciens fumeurs est suggéré par le Groupe de travail canadien,\nmais aucun programme à l’échelle des provinces ou des territoires n’a encore été mis en place.\nÉtant donné que cela pourrait causer des effets nocifs, son utilisation fait l’objet d’une étude attentive.\n[[plus de renseignements; http://www.cancer.ca/fr-ca/cancer-information/cancer-type/lung/finding-cancer-early/?region=on]]\nCertains projets pilotes son en cours; demander à votre professionnel de la santé.",
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 55,
-    "Maximum age": 74
+    "Maximum age": 74,
+    "": ""
   },
   {
     "Button": "Lung",
     "Topic heading": "Poumon",
     "Subject": "Tabagisme",
     "General Patient Text": "n/a",
-    "Health Provider Text": "•Demander à tous les patients s’ils consomment du tabac\n•Conseiller aux patients d’arrêter de fumer\n•Utiliser des interventions comportementales\n•Au besoin, utiliser une pharmacothérapie approuvée pour favoriser l’abandon du tabagisme.\n[[USPSTF A (2013); https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/tobacco-use-in-adults-and-pregnant-women-counseling-and-interventions]]\n[[vidéo; https://www.youtube.com/watch?v=URiKA7CKtfc]]",
+    "Health Provider Text": "•Demander à tous les patients s’ils consomment du tabac\n•Conseiller aux patients d’arrêter de fumer\n•Utiliser des interventions comportementales\n•Au besoin, utiliser une pharmacothérapie approuvée pour favoriser l’abandon du tabagisme.\n[[USPSTF A (2013); https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/tobacco-use-in-adults-and-pregnant-women-counseling-and-interventions]]\n[[vidéo; https://www.youtube.com/watch?v=URiKA7CKtfc]]",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Lung",
     "Topic heading": "Poumon",
     "Subject": "Dépistage du cancer du poumon",
     "General Patient Text": "n/a",
-    "Health Provider Text": "Le dépistage à l’aide d’une TDM à faible dose\nest recommandé par le Groupe d’étude canadien chez certains patients de 55 à 74 ans,\nMAIS aucun programme à l’échelle des provinces ou des territoires n’a encre été mis en place; seuls certains projets pilotes ont été mis en œuvre dans certaines régions.\nLes coûts et le rapport avantages/inconvénients sont en cours d’examen.\n\nCritères d’inclusion du Groupe d’étude canadien:\n•Âge: 55-74 ans\n•Antécédents de 30 paquets-années ou plus\n•Fumeur\n•Abandon du tabagisme remontant à moins de 15 ans\n•Dépistage annuel, jusqu’à 3 fois consécutives \n\n[[Recommandation du Groupe d’étude canadien; https://canadiantaskforce.ca/guidelines/published-guidelines/lung-cancer/]]",
+    "Health Provider Text": "Le dépistage à l’aide d’une TDM à faible dose\nest recommandé par le Groupe d’étude canadien chez certains patients de 55 à 74 ans,\nMAIS aucun programme à l’échelle des provinces ou des territoires n’a encre été mis en place; seuls certains projets pilotes ont été mis en œuvre dans certaines régions.\nLes coûts et le rapport avantages/inconvénients sont en cours d’examen.\n\nCritères d’inclusion du Groupe d’étude canadien:\n•Âge: 55-74 ans\n•Antécédents de 30 paquets-années ou plus\n•Fumeur\n•Abandon du tabagisme remontant à moins de 15 ans\n•Dépistage annuel, jusqu’à 3 fois consécutives \n\n[[Recommandation du Groupe d’étude canadien; https://canadiantaskforce.ca/guidelines/published-guidelines/lung-cancer/]]",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Brain",
     "Topic heading": "Troubles de la mémoire/Démence",
     "Subject": "Qu’est-ce que la démence?",
-    "General Patient Text": "La démence est un type de maladie\nqui touche la mémoire et la pensée. \nIl s’agit d’un trouble de la mémoire différent de celui lié au vieillissement normal.\n[[vieillissement normal par rapport à la maladie d’Alzheimer; http://alzheimer.ca/fr/Home/About-dementia/What-is-dementia/Normal-aging-vs-dementia]]\n Les causes de la démence peuvent être multiples:\n•Maladie d’Alzheimer\n•Démence vasculaire (attribuable à un AVC)\n•Causes modifiables: thyroïde, carences vitaminiques\n[[plus de renseignements; http://alzheimer.ca/fr/Home/About-dementia/What-is-dementia]];",
+    "General Patient Text": "La démence est un type de maladie\nqui touche la mémoire et la pensée. \nIl s’agit d’un trouble de la mémoire différent de celui lié au vieillissement normal.\n[[vieillissement normal par rapport à la maladie d’Alzheimer; http://alzheimer.ca/fr/Home/About-dementia/What-is-dementia/Normal-aging-vs-dementia]]\n Les causes de la démence peuvent être multiples:\n•Maladie d’Alzheimer\n•Démence vasculaire (attribuable à un AVC)\n•Causes modifiables: thyroïde, carences vitaminiques\n[[plus de renseignements; http://alzheimer.ca/fr/Home/About-dementia/What-is-dementia]];",
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Brain",
@@ -797,17 +876,19 @@
     "Health Provider Text": "À recommander à vos patients:\n•Être physiquement actif\n•Manger sainement\n•Maintenir un poids/IMC santé\n•Ne pas fumer ni consommer d’alcool de manière excessive\n•Maintenir sa tension artérielle, sa glycémie et son taux de cholestérol dans les intervalles jugés sains\n•Entretenir des liens sociaux\n•Mettre son cerveau au défi avec des jeux, l’acquisition de nouvelles connaissances\n•Réduire son niveau de stress\n•Protéger sa tête en utilisant un casque durant la pratique de sports\n[[plus de renseignements; https://alzheimer.ca/fr/Home/About-dementia/Alzheimer-s-disease/Risk-factors]]",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Brain",
     "Topic heading": "Troubles de la mémoire/Démence",
     "Subject": "Tests offerts dans certaines situations",
     "General Patient Text": "Des tests de mémoire\npeuvent être réalisés par votre professionnel de la santé\nlorsque vous avancez en âge,\nou encore que vous-même, des membres de votre famille ou vos amis vous inquiétez\npar rapport au déclin de votre mémoire.",
-    "Health Provider Text": "Dépister ce problème de santé à l’aide des échelles MOCA ou MMSE lorsque des amis, des membres de la famille ou le patient même signalent des troubles de la mémoire\n[[Groupe d’étude canadien; https://canadiantaskforce.ca/tools-resources/cognitive-impairment-2/cognitive-impairment-clinician-faq/]]",
+    "Health Provider Text": "Dépister ce problème de santé à l’aide des échelles MOCA ou MMSE lorsque des amis, des membres de la famille ou le patient même signalent des troubles de la mémoire\n[[Groupe d’étude canadien; https://canadiantaskforce.ca/tools-resources/cognitive-impairment-2/cognitive-impairment-clinician-faq/]]",
     "Gender": "all",
     "Minimum age": 50,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Stomach",
@@ -817,17 +898,19 @@
     "Health Provider Text": "[[Guide alimentaire canadien; https://guide-alimentaire.canada.ca/fr/]]\n[[Diabète; https://www.diabete.qc.ca/fr/vivre-avec-le-diabete/alimentation/]]\n[[ Coeur+AVC; https://www.coeuretavc.ca/vivez-sainement/saine-alimentation]]",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Stomach",
     "Topic heading": "Alimentation",
-    "Subject": "Manger au moins 5 portions de légumes et de fruits frais par jour",
-    "General Patient Text": "Certaines sources affirment qu’il faut 5 portions ou plus, alors que d’autres en recommandent 7.\n[[qu’est-ce qu’une portion?; http://www.unlockfood.ca/EatRightOntario/media/PDFs-new-website/Portions%20Toolkit/Handy-Servings-Guide-FR-v04.pdf]]",
-    "Health Provider Text": "Certaines sources affirment qu’il faut 5 portions ou plus, alors que d’autres en recommandent 7.\n[[Qu’est-ce qu’une portion?; http://www.unlockfood.ca/EatRightOntario/media/PDFs-new-website/Portions%20Toolkit/Handy-Servings-Guide-FR-v04.pdf]]\n[[voir les données probantes; http://jandonline.org/article/S2212-2672(14)01871-1/fulltext]]\nAucune ligne directrice propre au GECSSP, mais recommandation visant à prévenir le diabète, les maladies cardiaques, le cancer, etc.\nUSPSTF B 2014 pour un IMC >= 25",
+    "Subject": "Manger au moins 5 portions de légumes et de fruits frais par jour",
+    "General Patient Text": "Certaines sources affirment qu’il faut 5 portions ou plus, alors que d’autres en recommandent 7.\n[[qu’est-ce qu’une portion?; http://www.unlockfood.ca/EatRightOntario/media/PDFs-new-website/Portions%20Toolkit/Handy-Servings-Guide-FR-v04.pdf]]",
+    "Health Provider Text": "Certaines sources affirment qu’il faut 5 portions ou plus, alors que d’autres en recommandent 7.\n[[Qu’est-ce qu’une portion?; http://www.unlockfood.ca/EatRightOntario/media/PDFs-new-website/Portions%20Toolkit/Handy-Servings-Guide-FR-v04.pdf]]\n[[voir les données probantes; http://jandonline.org/article/S2212-2672(14)01871-1/fulltext]]\nAucune ligne directrice propre au GECSSP, mais recommandation visant à prévenir le diabète, les maladies cardiaques, le cancer, etc.\nUSPSTF B 2014 pour un IMC >= 25",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Stomach",
@@ -837,87 +920,96 @@
     "Health Provider Text": "utiliser une [[assiette bien manger; http://www.canadiensensante.gc.ca/eating-nutrition/healthy-eating-saine-alimentation/tips-conseils/interactive-tools-outils-interactifs/eat-well-bien-manger-fra.php]]:\n[[voir des données probantes; http://jandonline.org/article/S2212-2672(14)01871-1/fulltext]]",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Physical Exam",
     "Topic heading": "Examen physique",
     "Subject": "Fréquence et type d’examens physiques",
     "General Patient Text": "n/a",
-    "Health Provider Text": "CHEZ LES PATIENTS NE PRÉSENTANT AUCUN FACTEUR DE RISQUE NI SYMPTÔME, QUI NE SONT ATTEINTS D’AUCUNE MALADIE OU QUI NE PRENNENT AUCUN MÉDICAMENT:\n•Mesurer la tension artérielle, la taille, le poids et l’IMC\n•[[\"aux visites médicales appropriées\", selon le GECSSP; https://canadiantaskforce.ca/guidelines/published-guidelines/hypertension/]]\n•[[Lignes directrices CHEP pour le diagnostic de l' hypertension; https://guidelines.hypertension.ca/wp-content/uploads/2019/06/Diagnostic_Algorithm_2018-online.jpg]]\n•[[plus de renseignements; https://choisiravecsoin.org/medecine-familiale/]]\n\n•Chez les personnes de 18 à 39 ans, nous conseillons aux patients de consulter leur professionnel de la santé tous les 1 à 3 ans, conformément aux recommandations ci-dessus; cela n’est pas fondé sur des données probantes et il ne s’agit pas d’un examen de la tête aux pieds.\n•Chez les personnes de 40 ans ou plus, nous recommandons une visite tous les 1 à 2 ans, car il y a plus de tests de dépistage et de morbidité à partir de cet âge; cela n’est pas fondé sur des données probantes.\n\nCHEZ LES PATIENTS PRÉSENTANT DES FACTEURS DE RISQUE OU DES SYMPTÔMES, QUI SONT ATTEINTS DE MALADIES OU QUI PRENNENT DES MÉDICAMENTS:\nVOIR PLUS SOUVENT",
+    "Health Provider Text": "CHEZ LES PATIENTS NE PRÉSENTANT AUCUN FACTEUR DE RISQUE NI SYMPTÔME, QUI NE SONT ATTEINTS D’AUCUNE MALADIE OU QUI NE PRENNENT AUCUN MÉDICAMENT:\n•Mesurer la tension artérielle, la taille, le poids et l’IMC\n•[[\"aux visites médicales appropriées\", selon le GECSSP; https://canadiantaskforce.ca/guidelines/published-guidelines/hypertension/]]\n•[[Lignes directrices CHEP pour le diagnostic de l' hypertension; https://guidelines.hypertension.ca/wp-content/uploads/2019/06/Diagnostic_Algorithm_2018-online.jpg]]\n•[[plus de renseignements; https://choisiravecsoin.org/medecine-familiale/]]\n\n•Chez les personnes de 18 à 39 ans, nous conseillons aux patients de consulter leur professionnel de la santé tous les 1 à 3 ans, conformément aux recommandations ci-dessus; cela n’est pas fondé sur des données probantes et il ne s’agit pas d’un examen de la tête aux pieds.\n•Chez les personnes de 40 ans ou plus, nous recommandons une visite tous les 1 à 2 ans, car il y a plus de tests de dépistage et de morbidité à partir de cet âge; cela n’est pas fondé sur des données probantes.\n\nCHEZ LES PATIENTS PRÉSENTANT DES FACTEURS DE RISQUE OU DES SYMPTÔMES, QUI SONT ATTEINTS DE MALADIES OU QUI PRENNENT DES MÉDICAMENTS:\nVOIR PLUS SOUVENT",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Physical Exam",
     "Topic heading": "Examen physique",
     "Subject": "Fréquence",
-    "General Patient Text": "SI VOUS ÊTES EN BONNE SANTÉ ET NE PRÉSENTEZ AUCUN RISQUE DE MALADIE:\nconsulter votre professionnel de la santé tous les 1 à 3 ans",
+    "General Patient Text": "SI VOUS ÊTES EN BONNE SANTÉ ET NE PRÉSENTEZ AUCUN RISQUE DE MALADIE:\nconsulter votre professionnel de la santé tous les 1 à 3 ans",
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 39
+    "Maximum age": 39,
+    "": ""
   },
   {
     "Button": "Physical Exam",
     "Topic heading": "Examen physique",
     "Subject": "Fréquence",
-    "General Patient Text": "SI VOUS ÊTES EN BONNE SANTÉ ET NE PRÉSENTEZ AUCUN RISQUE DE MALADIE:\nconsulter votre professionnel de la santé tous les 1 à 2 ans",
+    "General Patient Text": "SI VOUS ÊTES EN BONNE SANTÉ ET NE PRÉSENTEZ AUCUN RISQUE DE MALADIE:\nconsulter votre professionnel de la santé tous les 1 à 2 ans",
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 40,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Physical Exam",
     "Topic heading": "Examen physique",
     "Subject": "Ce que ça comprend",
-    "General Patient Text": "•Tension artérielle\n•Taille, poids, indice de masse corporelle\n•Autres évaluations, telles que le test de Pap pour les femmes\n•Après 40 ans, un plus grand nombre de tests doivent être effectués (voir la fiche de renseignements dans notre application)\n\n•CONSULTER VOTRE PROFESSIONNEL DE LA SANTÉ PLUS SOUVENT EN CAS DE RÉSULTATS ANORMAUX\n\n•[[plus de renseignements; https://choisiravecsoin.org/lexamen-de-sante-annuel/]]\n\nSI VOUS AVEZ DES PROBLÈMES DE SANTÉ, DES SYMPTÔMES, DES FACTEURS DE RISQUE OU SI VOUS PRENEZ DES MÉDICAMENTS,\nvous devez vous prêter à un examen physique plus complet et plus souvent; en discuter avec votre professionnel de la santé",
+    "General Patient Text": "•Tension artérielle\n•Taille, poids, indice de masse corporelle\n•Autres évaluations, telles que le test de Pap pour les femmes\n•Après 40 ans, un plus grand nombre de tests doivent être effectués (voir la fiche de renseignements dans notre application)\n\n•CONSULTER VOTRE PROFESSIONNEL DE LA SANTÉ PLUS SOUVENT EN CAS DE RÉSULTATS ANORMAUX\n\n•[[plus de renseignements; https://choisiravecsoin.org/lexamen-de-sante-annuel/]]\n\nSI VOUS AVEZ DES PROBLÈMES DE SANTÉ, DES SYMPTÔMES, DES FACTEURS DE RISQUE OU SI VOUS PRENEZ DES MÉDICAMENTS,\nvous devez vous prêter à un examen physique plus complet et plus souvent; en discuter avec votre professionnel de la santé",
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Genitalia",
     "Topic heading": "Santé sexuelle et reproductive",
-    "Subject": "Prévenir les infections transmissibles sexuellement (ITS)",
+    "Subject": "Prévenir les infections transmissibles sexuellement (ITS)",
     "General Patient Text": "• Faites-vous tester pour les ITS  si vous avez été actif sexuellement\n[[Information sur les types d'activité sexuelle et les conseils; https://canadiantaskforce.ca/wp-content/uploads/2021/03/CTFPHC_CG-Screening_Patient-FAQ_Final_FR.pdf]]",
     "Health Provider Text": "n/a",
     "Gender": "f",
     "Minimum age": 18,
-    "Maximum age": 29
+    "Maximum age": 29,
+    "": ""
   },
   {
     "Button": "Genitalia",
     "Topic heading": "Santé sexuelle et reproductive",
-    "Subject": "Prévenir les infections transmissibles sexuellement (ITS)",
-    "General Patient Text": "• Pratiquez des relations sexuelles protégées :\nutiliser un [[condom ou autre protection ; https://www.cdc.gov/teenpregnancy/pdf/Teen-Condom-Fact_Sheet-English-March-2016.pdf]]\n\n• Faites-vous tester pour les ITS :\nsi vous avez un nouveau partenaire, plusieurs partenaires,\nsi vous n'utilisez pas de protection, si vous avez une ITS ou si vous êtes autrement en danger.\n\n•Faites un test de dépistage du VIH à tout âge.\n\nPlus d'informations:\n[[activité sexuelle;http://www.sexandu.ca/]]\n[[infections; https://www.canada.ca/fr/sante-publique/services/maladies-infectieuses/sante-sexuelle-infections-transmises-sexuelles/infections-transmises-sexuelles-sante-sexuelle-faits-information-public.html# infogén]]",
+    "Subject": "Prévenir les infections transmissibles sexuellement (ITS)",
+    "General Patient Text": "• Pratiquez des relations sexuelles protégées :\nutiliser un [[condom ou autre protection ; https://www.cdc.gov/teenpregnancy/pdf/Teen-Condom-Fact_Sheet-English-March-2016.pdf]]\n\n• Faites-vous tester pour les ITS :\nsi vous avez un nouveau partenaire, plusieurs partenaires,\nsi vous n'utilisez pas de protection, si vous avez une ITS ou si vous êtes autrement en danger.\n\n•Faites un test de dépistage du VIH à tout âge.\n\nPlus d'informations:\n[[activité sexuelle;http://www.sexandu.ca/]]\n[[infections; https://www.canada.ca/en/public-health/services/infectious-diseases/sexual-health-sexually-transmitted-infections/sexually-transmitted-infections-sexual-health-facts-information-public.html#geninfo]]",
     "Health Provider Text": "n/a",
     "Gender": "f",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Genitalia",
     "Topic heading": "Santé sexuelle et reproductive",
     "Subject": "Prévenir les infections transmissibles sexuellement (ITS)",
     "General Patient Text": "n/a",
-    "Health Provider Text": "• 30 ans et moins dépister  chaque année la chlamydia/la gonorrhée si sexuellement actif\n[[GECSSP 2021; https://canadiantaskforce.ca/lignesdirectrives/lignes-directrices-publiees/chlamydia-et-gonorrhee/?lang=fr]]\n•30 ans et plus dépister  selon le risque, voir ci-dessous\n• Dépistage des autres ITS en fonction du risque (nouveau partenaire, partenaires multiples, relations monogames en série, rapports sexuels non protégés, consommation de substances, rapports sexuels avec échange de sang, partage de jouets sexuels)\n• Offrir le dépistage du VIH à tous :\n[[Recommandation de l'Agence de la santé publique du Canada ; https://www.canada.ca/en/public-health/services/hiv-aids/hiv-screening-testing-guide.html]]; soutenu par USPSTF 2013 et CDC,\n[[Le GECSSP recommande seulement si à risque ; https://canadiantaskforce.ca/guidelines/appraised-guidelines/hiv/]]",
+    "Health Provider Text": "• 30 ans et moins dépister  chaque année la chlamydia/la gonorrhée si sexuellement actif\n[[GECSSP 2021; https://canadiantaskforce.ca/lignesdirectrives/lignes-directrices-publiees/chlamydia-et-gonorrhee/?lang=fr]]\n•30 ans et plus dépister  selon le risque, voir ci-dessous\n• Dépistage des autres ITS en fonction du risque (nouveau partenaire, partenaires multiples, relations monogames en série, rapports sexuels non protégés, consommation de substances, rapports sexuels avec échange de sang, partage de jouets sexuels)\n• Offrir le dépistage du VIH à tous :\n[[Recommandation de l'Agence de la santé publique du Canada ; https://www.canada.ca/en/public-health/services/hiv-aids/hiv-screening-testing-guide.html]]; soutenu par USPSTF 2013 et CDC,\n[[Le GECSSP recommande seulement si à risque ; https://canadiantaskforce.ca/guidelines/appraised-guidelines/hiv/]]",
     "Gender": "f",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Genitalia",
     "Topic heading": "Santé sexuelle et reproductive",
     "Subject": "Prévenir les infections transmissibles sexuellement (ITS)",
     "General Patient Text": "n/a",
-    "Health Provider Text": "• 30 ans et moins dépister  chaque année la chlamydia/la gonorrhée si sexuellement actif\n[[GECSSP 2021; https://canadiantaskforce.ca/lignesdirectrives/lignes-directrices-publiees/chlamydia-et-gonorrhee/?lang=fr]]\n•30 ans et plus dépister  selon le risque, voir ci-dessous\n• Dépistage des autres ITS en fonction du risque (nouveau partenaire, partenaires multiples, relations monogames en série, rapports sexuels non protégés, consommation de substances, rapports sexuels avec échange de sang, partage de jouets sexuels)\n• Offrir le dépistage du VIH à tous :\n[[Recommandation de l'Agence de la santé publique du Canada ; https://www.canada.ca/en/public-health/services/hiv-aids/hiv-screening-testing-guide.html]]; soutenu par USPSTF 2013 et CDC,\n[[Le GECSSP recommande seulement si à risque ; https://canadiantaskforce.ca/guidelines/appraised-guidelines/hiv/]]",
+    "Health Provider Text": "• 30 ans et moins dépister  chaque année la chlamydia/la gonorrhée si sexuellement actif\n[[GECSSP 2021; https://canadiantaskforce.ca/lignesdirectrives/lignes-directrices-publiees/chlamydia-et-gonorrhee/?lang=fr]]\n•30 ans et plus dépister  selon le risque, voir ci-dessous\n• Dépistage des autres ITS en fonction du risque (nouveau partenaire, partenaires multiples, relations monogames en série, rapports sexuels non protégés, consommation de substances, rapports sexuels avec échange de sang, partage de jouets sexuels)\n• Offrir le dépistage du VIH à tous :\n[[Recommandation de l'Agence de la santé publique du Canada ; https://www.canada.ca/en/public-health/services/hiv-aids/hiv-screening-testing-guide.html]]; soutenu par USPSTF 2013 et CDC,\n[[Le GECSSP recommande seulement si à risque ; https://canadiantaskforce.ca/guidelines/appraised-guidelines/hiv/]]",
     "Gender": "m",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Genitalia",
@@ -927,17 +1019,19 @@
     "Health Provider Text": "Conseils à donner:\n• Adoptez une alimentation saine.\n•Soyez actif la plupart des jours de la semaine.\n•Gardez un poids santé.",
     "Gender": "m",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Genitalia",
     "Topic heading": "Santé sexuelle et reproductive",
     "Subject": "Dépistage du cancer de la prostate",
     "General Patient Text": "n/a",
-    "Health Provider Text": "•Groupe de travail canadien (2014) : Aucun dépistage\n[[Outil  pour les patients ; https://canadiantaskforce.ca/wp-content/uploads/2016/12/CTFPHC_Prostate-Cancer_HarmsBenefits_FINAL.pdf]]\n\n• Groupe de travail américain (2018) : discutez des avantages et des inconvénients avec votre patient âgé de 55 à 69 ans. (Recommandation C)\nIntègre des recherches plus récentes.\n[[Excellente vidéo expliquant les avantages et les inconvénients ; https://www.youtube.com/watch?v=tYii98gcejA]]\n[[Document patient américain ; pdf/prostate-cancer-infographic-5.pdf]]",
+    "Health Provider Text": "•Groupe de travail canadien (2014) : Aucun dépistage\n[[Outil  pour les patients ; https://canadiantaskforce.ca/wp-content/uploads/2016/12/CTFPHC_Prostate-Cancer_HarmsBenefits_FINAL.pdf]]\n\n• Groupe de travail américain (2018) : discutez des avantages et des inconvénients avec votre patient âgé de 55 à 69 ans. (Recommandation C)\nIntègre des recherches plus récentes.\n[[Excellente vidéo expliquant les avantages et les inconvénients ; https://www.youtube.com/watch?v=tYii98gcejA]]\n[[Document patient américain ; pdf/prostate-cancer-infographic-5.pdf]]",
     "Gender": "m",
     "Minimum age": 55,
-    "Maximum age": 69
+    "Maximum age": 69,
+    "": ""
   },
   {
     "Button": "Genitalia",
@@ -947,47 +1041,52 @@
     "Health Provider Text": "n/a",
     "Gender": "m",
     "Minimum age": 18,
-    "Maximum age": 29
+    "Maximum age": 29,
+    "": ""
   },
   {
     "Button": "Genitalia",
     "Topic heading": "Santé sexuelle et reproductive",
     "Subject": "Prévenir les infections transmissibles sexuellement (ITS)",
-    "General Patient Text": "• Pratiquez des relations sexuelles protégées :\nutiliser un [[condom ou autre protection ; https://www.cdc.gov/teenpregnancy/pdf/Teen-Condom-Fact_Sheet-English-March-2016.pdf]]\n\n• Faites-vous tester pour les ITS :\nsi vous avez un nouveau partenaire, plusieurs partenaires,\nsi vous n'utilisez pas de protection, si vous avez une ITS ou si vous êtes autrement en danger.\n\n•Faites un test de dépistage du VIH à tout âge.\n\nPlus d'informations:\n[[activité sexuelle;http://www.sexandu.ca/]]\n[[infections; https://www.canada.ca/fr/sante-publique/services/maladies-infectieuses/sante-sexuelle-infections-transmises-sexuelles/infections-transmises-sexuelles-sante-sexuelle-faits-information-public.html# infogén]]",
+    "General Patient Text": "• Pratiquez des relations sexuelles protégées :\nutiliser un [[condom ou autre protection ; https://www.cdc.gov/teenpregnancy/pdf/Teen-Condom-Fact_Sheet-English-March-2016.pdf]]\n\n• Faites-vous tester pour les ITS :\nsi vous avez un nouveau partenaire, plusieurs partenaires,\nsi vous n'utilisez pas de protection, si vous avez une ITS ou si vous êtes autrement en danger.\n\n•Faites un test de dépistage du VIH à tout âge.\n\nPlus d'informations:\n[[activité sexuelle;http://www.sexandu.ca/]]\n[[infections; https://www.canada.ca/en/public-health/services/infectious-diseases/sexual-health-sexually-transmitted-infections/sexually-transmitted-infections-sexual-health-facts-information-public.html#geninfo]]",
     "Health Provider Text": "n/a",
     "Gender": "m",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Genitalia",
     "Topic heading": "Santé sexuelle et reproductive",
     "Subject": "Prévenir le cancer de la prostate",
-    "General Patient Text": "• Adoptez une alimentation saine.\n•Soyez actif la plupart des jours de la semaine.\n• Gardez votre poids à un niveau sain.\n[[Qu'est-ce que le cancer de la prostate ? ; http://www.cancer.ca/en/cancer-information/cancer-type/prostate/prostate-cancer/?region=on]]\n[[Des risques; http://www.cancer.ca/en/cancer-information/cancer-type/prostate/risks/?region=on]]",
+    "General Patient Text": "• Adoptez une alimentation saine.\n•Soyez actif la plupart des jours de la semaine.\n• Gardez votre poids à un niveau sain.\n[[Qu'est-ce que le cancer de la prostate ? ; http://www.cancer.ca/en/cancer-information/cancer-type/prostate/prostate-cancer/?region=on]]\n[[Des risques; http://www.cancer.ca/en/cancer-information/cancer-type/prostate/risks/?region=on]]",
     "Health Provider Text": "n/a",
     "Gender": "m",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Genitalia",
     "Topic heading": "Santé sexuelle et reproductive",
     "Subject": "Dépistage du cancer de la prostate",
-    "General Patient Text": "•Au Canada, le dépistage du cancer de la prostate n'est pas recommandé.\n[[Informations  pour les patients ; https://canadiantaskforce.ca/wp-content/uploads/2016/10/2014-prostate-cancer-patient-faq-french160111.pdf]]\n• Aux États-Unis, il est recommandé de discuter du dépistage du cancer de la prostate avec votre fournisseur de soins de santé. Il y a certains avantages et certains inconvénients.\n[[Excellente vidéo expliquant les avantages et les inconvénients ; https://www.youtube.com/watch?v=tYii98gcejA]]\n[[Document patient américain ; pdf/prostate-cancer-infographic-5.pdf]]",
+    "General Patient Text": "•Au Canada, le dépistage du cancer de la prostate n'est pas recommandé.\n[[Informations  pour les patients ; https://canadiantaskforce.ca/wp-content/uploads/2016/10/2014-prostate-cancer-patient-faq-french160111.pdf]]\n• Aux États-Unis, il est recommandé de discuter du dépistage du cancer de la prostate avec votre fournisseur de soins de santé. Il y a certains avantages et certains inconvénients.\n[[Excellente vidéo expliquant les avantages et les inconvénients ; https://www.youtube.com/watch?v=tYii98gcejA]]\n[[Document patient américain ; pdf/prostate-cancer-infographic-5.pdf]]",
     "Health Provider Text": "n/a",
     "Gender": "m",
     "Minimum age": 55,
-    "Maximum age": 69
+    "Maximum age": 69,
+    "": ""
   },
   {
     "Button": "Genitalia",
     "Topic heading": "Santé sexuelle et reproductive",
     "Subject": "Santé sexuelle",
-    "General Patient Text": "• Les condoms sont recommandés pour les relations sexuelles anales.\n• Le test du VIH est recommandé pour tous les Canadiens au moins une fois [[Lignes directrices de l'ASPC; https://www.canada.ca/fr/sante-publique/services/sida-vih/guide-dépistage-vih-dépistage.html]]\n• Selon vos pratiques et vos antécédents sexuels, le dépistage des infections sexuellement transmissibles et du VIH peut être recommandé à des moments différents. Discutez de toute préoccupation que vous pourriez avoir avec votre fournisseur de soins primaires.\n• Si vous avez été le partenaire réceptif pendant des relations sexuelles anales (« le derrière »), votre fournisseur de soins primaires peut vous recommander des tests Pap anaux réguliers.\n• Si vous avez des relations sexuelles avec des hommes, que vous vous inquiétez de la prévention du VIH et que vous aimeriez en savoir plus sur la prophylaxie pré-exposition (PrEP), discutez-en avec votre fournisseur de soins primaires.\n• [[Directives de l'OMS ; https://apps.who.int/iris/bitstream/handle/10665/128048/9789241507431_eng.pdf?sequence=1]]\n• [[Directives RHO ; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n• [[Directives UCSF Transcare ; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf]]",
-    "Health Provider Text": "• Les doncoms sont recommandés pour les relations sexuelles anales.\n•Recommandez  l'utilisation adéquate de lubrifiants pour les femmes trans et les hommes trans ayant des rapports sexuels avec des hommes.\n•Dépister tous les Canadiens pour le VIH au moins une fois conformément aux [[lignes directrices de l'ASPC; https://www.canada.ca/fr/sante-publique/services/sida-vih/guide-dépistage-vih-dépistage.html]]\n• Dépistage des ITS  en fonction des antécédents comportementaux et des pratiques sexuelles.\n• Envisagez un test Pap anal tous les 2-3 ans (ou tous les ans chez les personnes séropositives) pour celles qui ont des antécédents de relations sexuelles anales réceptives (RHO).\n\n• La prophylaxie pré-exposition orale quotidienne (PrEP) peut être considérée comme une intervention supplémentaire possible pour les femmes trans ayant des rapports sexuels avec des hommes (OMS).\n• La circoncision médicale volontaire (n'est pas recommandée pour la prévention du VIH chez les femmes transgenres (OMS).\n\n• Dans la communauté LGBTQ+, les termes « bas » et « haut » sont souvent utilisés pour décrire les partenaires réceptifs et pénétrants pendant l'activité sexuelle, respectivement. Le terme « polyvalent » est utilisé pour décrire une personne qui peut alterner entre ces rôles.\n• [[Directives de l'OMS ; https://apps.who.int/iris/bitstream/handle/10665/128048/9789241507431_eng.pdf?sequence=1]]\n• [[Directives RHO ; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n• [[Directives UCSF Transcare ; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf]]",
+    "General Patient Text": "• Le test du VIH est recommandé pour tous les Canadiens au moins une fois [[Lignes directrices de l'ASPC; https://www.canada.ca/en/public-health/services/hiv-aids/hiv-screening-testing-guide.html]]\n• Selon vos pratiques et vos antécédents sexuels, le dépistage des infections sexuellement transmissibles et du VIH peut être recommandé à des moments différents. Discutez de toute préoccupation que vous pourriez avoir avec votre fournisseur de soins primaires.\n• Les condoms sont recommandés pour les relations sexuelles anales.\n• Si vous avez été le partenaire réceptif pendant des relations sexuelles anales (« le derrière »), votre fournisseur de soins primaires peut vous recommander des tests Pap anaux réguliers.\n• Si vous avez des relations sexuelles avec des hommes, que vous vous inquiétez de la prévention du VIH et que vous aimeriez en savoir plus sur la prophylaxie pré-exposition (PrEP), discutez-en avec votre fournisseur de soins primaires.\n• [[Directives de l'OMS ; https://apps.who.int/iris/bitstream/handle/10665/128048/9789241507431_eng.pdf?sequence=1]]\n• [[Directives RHO ; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n• [[Directives UCSF Transcare ; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf]]",
+    "Health Provider Text": "•Recommandez  l'utilisation adéquate de lubrifiants pour les femmes trans et les hommes trans ayant des rapports sexuels avec des hommes.\n•Dépister tous les Canadiens pour le VIH au moins une fois conformément aux [[lignes directrices de l'ASPC; https://www.canada.ca/fr/sante-publique/services/sida-vih/guide-dépistage-vih-dépistage.html]]\n• Dépistage des ITS  en fonction des antécédents comportementaux et des pratiques sexuelles.\n• Les condoms sont recommandés pour les relations sexuelles anales.\n• Envisagez un test Pap anal tous les 2-3 ans (ou tous les ans chez les personnes séropositives) pour celles qui ont des antécédents de relations sexuelles anales réceptives (RHO).\n• La prophylaxie pré-exposition orale quotidienne (PrEP) peut être considérée comme une intervention supplémentaire possible pour les femmes trans ayant des rapports sexuels avec des hommes (OMS).\n• La circoncision médicale volontaire (n'est pas recommandée pour la prévention du VIH chez les femmes transgenres (OMS).\n• Dans la communauté LGBTQ+, les termes « bas » et « haut » sont souvent utilisés pour décrire les partenaires réceptifs et pénétrants pendant l'activité sexuelle, respectivement. Le terme « polyvalent » est utilisé pour décrire une personne qui peut alterner entre ces rôles.\n• [[Directives de l'OMS ; https://apps.who.int/iris/bitstream/handle/10665/128048/9789241507431_eng.pdf?sequence=1]]\n• [[Directives RHO ; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n• [[Directives UCSF Transcare ; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf]]",
     "Gender": "tf",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Genitalia",
@@ -997,47 +1096,52 @@
     "Health Provider Text": "Il est recommandé d'utiliser une méthode de barrière (et/ou de demander au partenaire d'utiliser une contraception hormonale) en l'absence de chirurgie du bas  et si la personne a  des rapports sexuels avec un partenaire susceptible de tomber enceinte.",
     "Gender": "tf",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Genitalia",
     "Topic heading": "Santé sexuelle et reproductive",
     "Subject": "Cancer du col de l'utérus",
-    "General Patient Text": "•La plupart des femmes trans et des personnes non binaires du spectre transféminin n'ont pas besoin de dépistage du cancer du col de l'utérus, qu'elles aient ou non subi une vaginoplastie.\n•Dans le cas très rare où vous auriez eu un col de l'utérus créé pendant la vaginoplastie, discutez de la nécessité d'un test Pap avec votre fournisseur de soins primaires.\n• Si vous avez subi une vaginoplastie, votre fournisseur de soins primaires peut suggérer un examen visuel annuel avec un spéculum.\n•[[Aperçu du dépistage du cancer du col de l'utérus chez les femmes trans au Canada; https://www.cancer.ca/fr/prevention-and-screening/reduce-cancer-risk/find-cancer-early/screening-in-lgbtq-communities/trans-women-and-cervical-cancer-screening/?région=on]]\n• [[Directives RHO ; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n• [[Directives UCSF Transcare ; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf]]\n• [[Directives de la Société d'endocrinologie ; https://academic.oup.com/jcem/article/102/11/3869/4157558]] (Peut être les mêmes suggestions que pour les patients cisgenres)",
-    "Health Provider Text": "• Les femmes trans et les personnes transféminines n'ont généralement pas besoin de dépistage du cancer du col de l'utérus, car la vaginoplastie n'implique généralement pas la création d'un néocol.\n•Le test de voûte du néovagin n'est pas recommandé.\n• Dans les cas très rares où un néocol peut avoir été créé pendant la vaginoplastie (comme à partir de la peau du gland du pénis), envisagez de suivre les directives actuelles de dépistage du cancer du col de l'utérus pour les femmes cis (des tests Pap sont recommandés tous les 3 ans à partir de 25 à 69 ans si la personne a déjà été sexuellement active).\n• Envisagez un examen annuel au spéculum néo-vaginal pour détecter visuellement toute anomalie (y compris la malignité) chez les personnes ayant subi une vaginoplastie (RHO).\n• Les néovagins peuvent avoir une orientation plus postérieure que celles des femmes cis, et l'utilisation d'un anoscope plutôt que d'un spéculum peut être plus appropriée pour l'examen (UCSF).\n• [[Aperçu du dépistage du cancer du col de l'utérus chez les femmes trans au Canada; https://www.cancer.ca/fr/prevention-and-screening/reduce-cancer-risk/find-cancer-early/screening-in-lgbtq-communities/trans-women-and-cervical-cancer-screening/?région=on]]\n• [[Conseils pour l'examen physique des patients trans; https://transcare.ucsf.edu/guidelines/examen-physique]]\n• [[Directives RHO ; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n• [[Directives UCSF Transcare ; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf]]\n• [[Directives de la Société d'endocrinologie ; https://academic.oup.com/jcem/article/102/11/3869/4157558]]",
+    "General Patient Text": "•La plupart des femmes trans et des personnes non binaires du spectre transféminin n'ont pas besoin de dépistage du cancer du col de l'utérus, qu'elles aient ou non subi une vaginoplastie.\n•Dans le cas très rare où vous auriez eu un col de l'utérus créé pendant la vaginoplastie, discutez de la nécessité d'un test Pap avec votre fournisseur de soins primaires.\n• Si vous avez subi une vaginoplastie, votre fournisseur de soins primaires peut suggérer un examen visuel annuel avec un spéculum.\n•[[Aperçu du dépistage du cancer du col de l'utérus chez les femmes trans au Canada; https://www.cancer.ca/en/prevention-and-screening/reduce-cancer-risk/find-cancer-early/screening-in-lgbtq-communities/trans-women-and-cervical-cancer-screening/?region=on]]\n• [[Directives RHO ; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n• [[Directives UCSF Transcare ; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf]]\n• [[Directives de la Société d'endocrinologie ; https://academic.oup.com/jcem/article/102/11/3869/4157558]] (Peut être les mêmes suggestions que pour les patients cisgenres)",
+    "Health Provider Text": "• Les femmes trans et les personnes transféminines n'ont généralement pas besoin de dépistage du cancer du col de l'utérus, car la vaginoplastie n'implique généralement pas la création d'un néocol.\n•Le test de voûte du néovagin n'est pas recommandé.\n• Dans les cas très rares où un néocol peut avoir été créé pendant la vaginoplastie (comme à partir de la peau du gland du pénis), envisagez de suivre les directives actuelles de dépistage du cancer du col de l'utérus pour les femmes cis (des tests Pap sont recommandés tous les 3 ans à partir de 25 à 69 ans si la personne a déjà été sexuellement active).\n• Envisagez un examen annuel au spéculum néo-vaginal pour détecter visuellement toute anomalie (y compris la malignité) chez les personnes ayant subi une vaginoplastie (RHO).\n• Les néovagins peuvent avoir une orientation plus postérieure que celles des femmes cis, et l'utilisation d'un anoscope plutôt que d'un spéculum peut être plus appropriée pour l'examen (UCSF).\n• [[Aperçu du dépistage du cancer du col de l'utérus chez les femmes trans au Canada; https://cancer.ca/en/cancer-information/find-cancer-early/screening-in-lgbtq-communities/as-a-trans-woman-do-i-need-to-get-screened-for-cervical-cancer]]\n• [[Conseils pour l'examen physique des patients trans; https://transcare.ucsf.edu/guidelines/physical-examination]]\n• [[Directives RHO ; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n• [[Directives UCSF Transcare ; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf]]\n• [[Directives de la Société d'endocrinologie ; https://academic.oup.com/jcem/article/102/11/3869/4157558]]",
     "Gender": "tf",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Genitalia",
     "Topic heading": "Santé sexuelle et reproductive",
     "Subject": "Prostate",
-    "General Patient Text": "Vous avez une prostate si on vous a assigné un sexe masculin à la naissance. La chirurgie du bas n'enlève pas la prostate.\nPour prévenir le cancer de la prostate :\n• Adoptez une alimentation saine.\n•Soyez actif la plupart des jours de la semaine.\n• Gardez votre poids à un niveau sain.\n[[Qu'est-ce que le cancer de la prostate ? ; http://www.cancer.ca/en/cancer-information/cancer-type/prostate/prostate-cancer/?region=on]]\n[[Des risques; http://www.cancer.ca/en/cancer-information/cancer-type/prostate/risks/?region=on]]\n  Le dépistage du cancer de la prostate avec le test de l'APS n'est pas recommandé au Canada à l'heure actuelle. Pour plus d'informations regardez sur cette appli les informations pour un: homme cis de 55 à 69 ans",
+    "General Patient Text": "Vous avez une prostate si on vous a assigné un sexe masculin à la naissance. La chirurgie du bas n'enlève pas la prostate.\nPour prévenir le cancer de la prostate :\n• Adoptez une alimentation saine.\n•Soyez actif la plupart des jours de la semaine.\n• Gardez votre poids à un niveau sain.\n[[Qu'est-ce que le cancer de la prostate ? ; http://www.cancer.ca/en/cancer-information/cancer-type/prostate/prostate-cancer/?region=on]]\n[[Des risques; http://www.cancer.ca/en/cancer-information/cancer-type/prostate/risks/?region=on]]\n  Le dépistage du cancer de la prostate avec le test de l'APS n'est pas recommandé au Canada à l'heure actuelle. Pour plus d'informations regardez sur cette appli les informations pour un: homme cis de 55 à 69 ans",
     "Health Provider Text": "Identique aux hommes cis (la chirurgie du bas n'enlève pas la prostate)",
     "Gender": "tf",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Genitalia",
     "Topic heading": "Santé sexuelle et reproductive",
     "Subject": "Planification familiale",
     "General Patient Text": "Si vous essayez ou pourriez devenir enceinte (en fonction de vos pratiques sexuelles), discutez-en avec votre fournisseur de soins primaires.\n• Prenez une vitamine appelée [[acide folique; https://www.canada.ca/fr/sante-publique/services/grossesse/acide-folique.html]] 0,4 mg à 1 mg par jour.\n• Parlez à votre fournisseur de soins de santé\nsur le fait de se faire tester avant d'être enceinte\npour les maladies importantes telles que : la rubéole, l'hépatite B, le VIH et la varicelle\n• Si vous voulez être enceinte au cours de votre vie, discutez avec votre fournisseur de l'augmentation de l'infertilité après 32 ans.\n[[Suite; https://www.jogc.com/article/S1701-2163(17)30936-2/abstract]]",
-    "Health Provider Text": "Si une personne sur le spectre transmasculin pourrait devenir enceinte ou souhaite devenir enceinte, les informations préconceptionnelles sont les mêmes que pour les patientes cis telles que : supplémentation en acide folique, tests préconceptionnels pour des maladies telles que la rubéole, l'hépatite B, le VIH, la varicelle, le conseil re augmentation de l'infertilité après 32 ans.\nConsultez les ressources dans notre application pour les femmes cis, sous le thème : Planification familiale.",
+    "Health Provider Text": "Si une personne sur le spectre transmasculin pourrait devenir enceinte ou souhaite devenir enceinte, les informations préconceptionnelles sont les mêmes que pour les patientes cis telles que : supplémentation en acide folique, tests préconceptionnels pour des maladies telles que la rubéole, l'hépatite B, le VIH, la varicelle, le conseil re augmentation de l'infertilité après 32 ans.\nConsultez les ressources dans notre application pour les femmes cis, sous le thème : Planification familiale.",
     "Gender": "tm",
     "Minimum age": 18,
-    "Maximum age": 55
+    "Maximum age": 55,
+    "": ""
   },
   {
     "Button": "Genitalia",
     "Topic heading": "Santé sexuelle et reproductive",
     "Subject": "Santé sexuelle",
-    "General Patient Text": "• Si vous prenez de la testostérone et n'avez pas subi d'hystérectomie  (chirurgie pour enlever l'utérus), vous devez utiliser une méthode de contraception fiable s'il existe un risque de grossesse en fonction de vos pratiques sexuelles, car la testostérone peut provoquer des malformations congénitales.\n• Si vous essayez ou pourriez devenir enceinte (en fonction de vos pratiques sexuelles), discutez-en avec votre fournisseur de soins primaires, car la prise d'une vitamine d'acide folique est importante\n• Les condoms sont recommandés pour les relations sexuelles anales.\n•Le test du VIH est recommandé pour tous les Canadiens au moins une fois [[Lignes directrices de l'ASPC; https://www.canada.ca/fr/sante-publique/services/sida-vih/guide-dépistage-vih-dépistage.html]]\n• Selon vos pratiques et vos antécédents sexuels, le dépistage des infections transmises sexuellement et du VIH peut être recommandé à des moments différents. Discutez de toute préoccupation que vous pourriez avoir avec votre fournisseur de soins primaires.\n• Si vous avez été le partenaire réceptif pendant les relations sexuelles anales , votre fournisseur de soins primaires peut vous recommander des tests Pap anaux réguliers.\n• [[Directives de l'OMS ; https://apps.who.int/iris/bitstream/handle/10665/128048/9789241507431_eng.pdf?sequence=1]]\n• [[Directives RHO ; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n• [[Directives UCSF Transcare ; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf]]",
-    "Health Provider Text": "• Les personnes sous testostérone qui n'ont pas subi d'hystérectomie ont besoin d'e contraception  fiable si la grossesse est un risque basé sur l'activité sexuelle, car la testostérone est un tératogène (RHO).\n• Si une grossesse est possible en raison de l'activité sexuelle, suivez les mêmes recommandations d'acide folique que pour les femmes cis.\n• Les condoms sont recommandés pour les relations sexuelles anales.\n• Recommandez l'utilisation adéquate de lubrifiants pour les femmes trans et les hommes trans ayant des rapports sexuels avec des hommes.\n•Dépister tous les Canadiens pour le VIH au moins une fois conformément aux [[lignes directrices de l'ASPC; https://www.canada.ca/fr/sante-publique/services/sida-vih/guide-dépistage-vih-dépistage.html]]\n•Dépistage des ITS  basé sur les antécédents comportementaux et les pratiques sexuelles.\n•Envisagez un test Pap anal tous les 2-3 ans (ou une fois par an chez les personnes séropositives) pour celles qui ont des antécédents de relations sexuelles anales réceptives (RHO).\n• Dans la communauté LGBTQ+, les termes « bas » et « haut » sont souvent utilisés pour décrire les partenaires réceptifs et pénétrants pendant l'activité sexuelle, respectivement. Le terme « polyvalent » est utilisé pour décrire une personne qui peut alterner entre ces rôles.\n• [[Directives de l'OMS ; https://apps.who.int/iris/bitstream/handle/10665/128048/9789241507431_e ng.pdf?sequence=1]]\n• [[Directives RHO ; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n• [[Directives UCSF Transcare ; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf]]",
+    "General Patient Text": "• Si vous prenez de la testostérone et n'avez pas subi d'hystérectomie  (chirurgie pour enlever l'utérus), vous devez utiliser une méthode de contraception fiable s'il existe un risque de grossesse en fonction de vos pratiques sexuelles, car la testostérone peut provoquer des malformations congénitales.\n• Si vous essayez ou pourriez devenir enceinte (en fonction de vos pratiques sexuelles), discutez-en avec votre fournisseur de soins primaires, car la prise d'une vitamine d'acide folique est importante\n• Les condoms sont recommandés pour les relations sexuelles anales.\n•Le test du VIH est recommandé pour tous les Canadiens au moins une fois [[Lignes directrices de l'ASPC; https://www.canada.ca/en/public-health/services/hiv-aids/hiv-screening-testing-guide.html]]\n• Selon vos pratiques et vos antécédents sexuels, le dépistage des infections transmises sexuellement et du VIH peut être recommandé à des moments différents. Discutez de toute préoccupation que vous pourriez avoir avec votre fournisseur de soins primaires.\n• Si vous avez été le partenaire réceptif pendant les relations sexuelles anales , votre fournisseur de soins primaires peut vous recommander des tests Pap anaux réguliers.\n• [[Directives de l'OMS ; https://apps.who.int/iris/bitstream/handle/10665/128048/9789241507431_eng.pdf?sequence=1]]\n• [[Directives RHO ; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n• [[Directives UCSF Transcare ; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf]]",
+    "Health Provider Text": "• Les personnes sous testostérone qui n'ont pas subi d'hystérectomie ont besoin d'e contraception  fiable si la grossesse est un risque basé sur l'activité sexuelle, car la testostérone est un tératogène (RHO).\n• Si une grossesse est possible en raison de l'activité sexuelle, suivez les mêmes recommandations d'acide folique que pour les femmes cis.\n• Les condoms sont recommandés pour les relations sexuelles anales.\n• Recommandez l'utilisation adéquate de lubrifiants pour les femmes trans et les hommes trans ayant des rapports sexuels avec des hommes.\n•Dépister tous les Canadiens pour le VIH au moins une fois conformément aux [[lignes directrices de l'ASPC; https://www.canada.ca/en/public-health/services/hiv-aids/hiv-screening-testing-guide.html]]\n•Dépistage des ITS  basé sur les antécédents comportementaux et les pratiques sexuelles.\n•Envisagez un test Pap anal tous les 2-3 ans (ou une fois par an chez les personnes séropositives) pour celles qui ont des antécédents de relations sexuelles anales réceptives (RHO).\n• Dans la communauté LGBTQ+, les termes « bas » et « haut » sont souvent utilisés pour décrire les partenaires réceptifs et pénétrants pendant l'activité sexuelle, respectivement. Le terme « polyvalent » est utilisé pour décrire une personne qui peut alterner entre ces rôles.\n• [[Directives de l'OMS ; https://apps.who.int/iris/bitstream/handle/10665/128048/9789241507431_e ng.pdf?sequence=1]]\n• [[Directives RHO ; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n• [[Directives UCSF Transcare ; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf]]",
     "Gender": "tm",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Genitalia",
@@ -1047,7 +1151,8 @@
     "Health Provider Text": "• Les personnes sous testostérone qui n'ont pas subi d'hystérectomie ont besoin d'une contraception fiable si la grossesse est un risque basé sur l'activité sexuelle, car la testostérone est un tératogène (RHO).\n• Toutes les méthodes hormonales peuvent être utilisées (pas de contre-indications avec la testostérone)",
     "Gender": "tm",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Genitalia",
@@ -1057,77 +1162,85 @@
     "Health Provider Text": "Les hommes trans et les personnes du spectre transmasculin n'ont généralement pas de prostate (sauf s'ils ont une condition intersexe). Une prostate n'est  pas créée pendant une intervention chirurgicale telle que la phalloplastie ou la métoidioplastie.",
     "Gender": "tm",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Genitalia",
     "Topic heading": "Santé sexuelle et reproductive",
     "Subject": "Cancer du col de l'utérus",
-    "General Patient Text": "•Si vous n'avez pas subi de chirurgie pour retirer le col de l'utérus (la partie inférieure de l'utérus menant au vagin), vous devez subir un dépistage régulier du cancer du col de l'utérus.\n• Des tests Pap sont recommandés tous les 3 ans de 25  à 69 ans si vous avez déjà été sexuellement actif.\n•Si vous pensez que votre col a été retiré pendant la chirurgie, discutez de la nécessité d'un test Pap avec votre fournisseur de soins primaires.\n• [[Aperçu du dépistage du cancer du col de l'utérus chez les hommes trans au Canada; https://www.cancer.ca/fr/prevention-and-screening/reduce-cancer-risk/find-cancer-early/screening-in-lgbtq-communities/trans-men-and-cervical-cancer-screening/?région=on]]\n• [[Directives RHO ; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n• [[Directives UCSF Transcare ; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf]]\n• [[Directives de la Société d'endocrinologie ; https://academic.oup.com/jcem/article/102/11/3869/4157558]]",
-    "Health Provider Text": "• Les hommes trans et les personnes du spectre transmasculin qui ont encore un col de l'utérus devraient subir un dépistage du cancer du col de l'utérus conformément aux directives actuelles.\n• Les tests Pap sont recommandés tous les 3 ans de 25 à 69 ans si la personne a déjà été sexuellement active.\n• Un essai d'œstrogènes vaginaux pendant 1 semaine avant l'examen peut être utile (RHO, UCSF) pour diminuer l'inconfort du patient.\n• Si l'examen au spéculum est douloureux ou difficile en raison d'une atrophie vaginale, envisagez d'appliquer de la gelée de lidocaïne topique à 2 % par voie vaginale 5 à 10 minutes avant l'intervention (RHO).\n• Envisager d'administrer un lorazépam à faible dose en pré-intervention si le patient est particulièrement anxieux à propos de l'examen (RHO, UCSF).\n• Utilisez un spéculum pédiatrique si possible pour réduire l'inconfort.\n• Si l'insertion du spéculum reste difficile, suggérez de laisser le patient insérer le spéculum lui-même ou de regarder la procédure à l'aide d'un miroir (UCSF).\n• Notez que les échantillons insatisfaisants de tests Pap sont beaucoup plus fréquents chez les hommes trans que chez les femmes cis et que des répétitions peuvent être nécessaires; assurez-vous de noter si le patient est/était sous testostérone sur la demande de cytologie (UCSF, RHO), car l'atrophie cervicale peut imiter une dysplasie (OMS).\n• [[Aperçu du dépistage du cancer du col de l'utérus chez les hommes trans au Canada; https://www.cancer.ca/fr/prevention-and-screening/reduce-cancer-risk/find-cancer-early/screening-in-lgbtq-communities/trans-men-and-cervical-cancer-screening/?région=on]]\n• [[Conseils pour l'examen physique des patients trans; https://transcare.ucsf.edu/guidelines/examen-physique]]\n• [[Conseils sur la réalisation de tests Pap pour les hommes trans; https://www.rainbowhealthontario.ca/wp-content/uploads/2015/07/Tips_Paps_TransMen-1.jpg]]\n•[[VIDÉO : À faire et à ne pas faire lors de l'exécution de Paps avec des hommes trans; https://www.youtube.com/watch?v=KIfSjX1ZEU4]]\n• [[Conseils pour améliorer les expériences des hommes trans avec les tests Pap ; https://transcare.ucsf.edu/guidelines/cervical-cancer]]\n\n• [[Directives RHO ; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n• [[Directives UCSF Transcare ; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf]]\n• [[Directives de la Société d'endocrinologie ; https://academic.oup.com/jcem/article/102/11/3869/4157558]]",
+    "General Patient Text": "•Si vous n'avez pas subi de chirurgie pour retirer le col de l'utérus (la partie inférieure de l'utérus menant au vagin), vous devez subir un dépistage régulier du cancer du col de l'utérus.\n• Des tests Pap sont recommandés tous les 3 ans de 25  à 69 ans si vous avez déjà été sexuellement actif.\n•Si vous pensez que votre col a été retiré pendant la chirurgie, discutez de la nécessité d'un test Pap avec votre fournisseur de soins primaires.\n• [[Aperçu du dépistage du cancer du col de l'utérus chez les hommes trans au Canada; https://www.cancer.ca/fr/prevention-and-screening/reduce-cancer-risk/find-cancer-early/screening-in-lgbtq-communities/trans-men-and-cervical-cancer-screening/ ?région=on]]\n• [[Directives RHO ; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n• [[Directives UCSF Transcare ; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf]]\n• [[Directives de la Société d'endocrinologie ; https://academic.oup.com/jcem/article/102/11/3869/4157558]]",
+    "Health Provider Text": "• Les hommes trans et les personnes du spectre transmasculin qui ont encore un col de l'utérus devraient subir un dépistage du cancer du col de l'utérus conformément aux directives actuelles.\n• Les tests Pap sont recommandés tous les 3 ans de 25 à 69 ans si la personne a déjà été sexuellement active.\n• Un essai d'œstrogènes vaginaux pendant 1 semaine avant l'examen peut être utile (RHO, UCSF) pour diminuer l'inconfort du patient.\n• Si l'examen au spéculum est douloureux ou difficile en raison d'une atrophie vaginale, envisagez d'appliquer de la gelée de lidocaïne topique à 2 % par voie vaginale 5 à 10 minutes avant l'intervention (RHO).\n• Envisager d'administrer un lorazépam à faible dose en pré-intervention si le patient est particulièrement anxieux à propos de l'examen (RHO, UCSF).\n• Utilisez un spéculum pédiatrique si possible pour réduire l'inconfort.\n• Si l'insertion du spéculum reste difficile, suggérez de laisser le patient insérer le spéculum lui-même ou de regarder la procédure à l'aide d'un miroir (UCSF).\n• Notez que les échantillons insatisfaisants de tests Pap sont beaucoup plus fréquents chez les hommes trans que chez les femmes cis et que des répétitions peuvent être nécessaires; assurez-vous de noter si le patient est/était sous testostérone sur la demande de cytologie (UCSF, RHO), car l'atrophie cervicale peut imiter une dysplasie (OMS).\n• [[Aperçu du dépistage du cancer du col de l'utérus chez les hommes trans au Canada; https://www.cancer.ca/fr/prevention-and-screening/reduce-cancer-risk/find-cancer-early/screening-in-lgbtq-communities/trans-men-and-cervical-cancer-screening/ ?région=on]]\n• [[Conseils pour l'examen physique des patients trans; https://transcare.ucsf.edu/guidelines/physical-examination]]\n• [[Conseils sur la réalisation de tests Pap pour les hommes trans; https://www.rainbowhealthontario.ca/wp-content/uploads/2015/07/Tips_Paps_TransMen-1.jpg]]\n•[[VIDÉO : À faire et à ne pas faire lors de l'exécution de Paps avec des hommes trans; https://www.youtube.com/watch?v=KIfSjX1ZEU4]]\n• [[Conseils pour améliorer les expériences des hommes trans avec les tests Pap ; https://transcare.ucsf.edu/guidelines/cervical-cancer]]\n\n• [[Directives RHO ; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n• [[Directives UCSF Transcare ; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf]]\n• [[Directives de la Société d'endocrinologie ; https://academic.oup.com/jcem/article/102/11/3869/4157558]]",
     "Gender": "tm",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Sun",
     "Topic heading": "Exposition au soleil",
     "Subject": "Prévention du cancer de la peau",
-    "General Patient Text": "•Portez des vêtements protecteurs\n•Limiter le temps passé au soleil (pire période: entre 10 h et 15 h)\n•Utiliser un écran solaire (FPS 30 au minimum)\n[[plus de renseignements; https://www.canada.ca/fr/sante-publique/services/securite-soleil/cancer-peau.html]]",
-    "Health Provider Text": "Prévention du mélanome:\nRéduire l’exposition au soleil à l’aide de vêtements de protection et d’un écran solaire FPS 30 au minimum\n[[Lignes directrices évaluées par le GECSSP (2014); https://canadiantaskforce.ca/lignesdirectrives/appraised-guidelines/melanome/?lang=fr]]",
+    "General Patient Text": "•Portez des vêtements protecteurs\n•Limiter le temps passé au soleil (pire période: entre 10 h et 15 h)\n•Utiliser un écran solaire (FPS 30 au minimum)\n[[plus de renseignements; https://www.canada.ca/fr/sante-publique/services/securite-soleil/cancer-peau.html]]",
+    "Health Provider Text": "Prévention du mélanome:\nRéduire l’exposition au soleil à l’aide de vêtements de protection et d’un écran solaire FPS 30 au minimum\n[[Lignes directrices évaluées par le GECSSP (2014); https://canadiantaskforce.ca/lignesdirectrives/appraised-guidelines/melanome/?lang=fr]]",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Eye",
     "Topic heading": "Vision",
     "Subject": "Consulter un optométriste",
     "General Patient Text": "n/a",
-    "Health Provider Text": "Dépistage de troubles de la vision:\nRecommandations consensuelles seulement de la part de la Société canadienne d’ophtalmologie (2007)\nActuellement, dans nombre de provinces, le dépistage serait effectué par des optométristes\nNouvelles lignes directrices bientôt disponibles.\n\nEn cas de risque élevé, l’on recommande un dépistage plus fréquent que celui indiqué ci-dessous.\nRisque élevé: origine afro-américaine, forte myopie, diabète ou hypertension.\n\n•De 18 à 40 ans: tous les 10 ans\n•De 41 à 55 ans: tous les 5 ans\n•De 56 à 64 ans: tous les 3 ans\n•65 ans ou plus: tous les ans\n\n\n[[lignes directrices actuelles en cours de révision; https://c2-preview.prosites.com/187380/wy/docs/COSVisionScreeningCPGEng_Feb07.pdf]]",
+    "Health Provider Text": "Dépistage de troubles de la vision:\nRecommandations consensuelles seulement de la part de la Société canadienne d’ophtalmologie (2007)\nActuellement, dans nombre de provinces, le dépistage serait effectué par des optométristes\nNouvelles lignes directrices bientôt disponibles.\n\nEn cas de risque élevé, l’on recommande un dépistage plus fréquent que celui indiqué ci-dessous.\nRisque élevé: origine afro-américaine, forte myopie, diabète ou hypertension.\n\n•De 18 à 40 ans: tous les 10 ans\n•De 41 à 55 ans: tous les 5 ans\n•De 56 à 64 ans: tous les 3 ans\n•65 ans ou plus: tous les ans\n\n\n[[lignes directrices actuelles en cours de révision; https://c2-preview.prosites.com/187380/wy/docs/COSVisionScreeningCPGEng_Feb07.pdf]]",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Eye",
     "Topic heading": "Vision",
     "Subject": "Consulter un optométriste",
-    "General Patient Text": "•De 18 à 40 ans: tous les 10 ans",
+    "General Patient Text": "•De 18 à 40 ans: tous les 10 ans",
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 40
+    "Maximum age": 40,
+    "": ""
   },
   {
     "Button": "Eye",
     "Topic heading": "Vision",
     "Subject": "Consulter un optométriste",
-    "General Patient Text": "•De 41 à 55 ans: tous les 5 ans",
+    "General Patient Text": "•De 41 à 55 ans: tous les 5 ans",
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 41,
-    "Maximum age": 55
+    "Maximum age": 55,
+    "": ""
   },
   {
     "Button": "Eye",
     "Topic heading": "Vision",
     "Subject": "Consulter un optométriste",
-    "General Patient Text": "•De 56 à 64 ans: tous les 3 ans",
+    "General Patient Text": "•De 56 à 64 ans: tous les 3 ans",
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 56,
-    "Maximum age": 64
+    "Maximum age": 64,
+    "": ""
   },
   {
     "Button": "Eye",
     "Topic heading": "Vision",
     "Subject": "Consulter un optométriste",
-    "General Patient Text": "Plus de 65 ans: tous les ans",
+    "General Patient Text": "Plus de 65 ans: tous les ans",
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 65,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Heart",
@@ -1137,7 +1250,8 @@
     "Health Provider Text": "•The current guidelines for general population should be followed when evaluating for cardiovascular risk factors in trans patients, such as diabetes and dyslipidemia screening.\n•Encourage physical activity,smoking cessation, weight loss, management of diabetes and hypertension.\n •When using a [[risk calculator; http://chd.bestsciencemedicine.com/calc2.html]]  depending on when and how long the patient has been on hormones, consider using either a calculator based on the patient’s sex assigned at birth, their affirmed gender or an average of the two [[UCSF; https://transcare.ucsf.edu/guidelines/cardiovascular]]",
     "Gender": "tf",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Heart",
@@ -1147,7 +1261,8 @@
     "Health Provider Text": "•The current guidelines for general population should be followed when evaluating for cardiovascular risk factors in trans patients, such as diabetes and dyslipidemia screening.\n•Encourage physical activity,smoking cessation, weight loss, management of diabetes and hypertension.\n•When using a [[risk calculator; http://chd.bestsciencemedicine.com/calc2.html]], depending on when and how long the patient has been on hormones, consider using either a calculator based on the patient’s sex assigned at birth, their affirmed gender or an average of the two [[UCSF; https://transcare.ucsf.edu/guidelines/cardiovascular]]",
     "Gender": "tm",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Heart",
@@ -1157,7 +1272,8 @@
     "Health Provider Text": "n/a",
     "Gender": "tf,tm",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Heart",
@@ -1167,7 +1283,8 @@
     "Health Provider Text": "•[[more info for age 18-64; http://www.csep.ca/CMFiles/Guidelines/CSEP_PAGuidelines_adults_en.pdf]]\n•[[more info for age 65+; http://csepguidelines.ca/wp-content/uploads/2018/03/CSEP_PAGuidelines_older-adults_en.pdf]]",
     "Gender": "tf,tm",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Heart",
@@ -1177,7 +1294,8 @@
     "Health Provider Text": "Recommend to quit or reduce.\nResources\n[[By province; https://www.canada.ca/en/health-canada/services/smoking-tobacco/quit-smoking/provincial-territorial-services.html]].\n[[More; http://www.smokershelpline.ca/]]",
     "Gender": "tf,tm",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Heart",
@@ -1187,7 +1305,8 @@
     "Health Provider Text": "CTFPHC recommends blood pressure measurement at all appropriate primary care visits.[[2012 Guideline; https://canadiantaskforce.ca/guidelines/published-guidelines/hypertension/]]\n(Strong recommendation; moderate quality evidence)\nUse CHEP criteria:\n[[Highlights; https://guidelines.hypertension.ca/wp-content/uploads/2020/08/2020-22-HT-Guidelines-E-WEB_v3b.pdf]]\n[[Full 2020 guideline; https://guidelines.hypertension.ca/wp-content/uploads/2020/08/Hypertension-Canada-2020-Comprehensive-Guidelines-for-Prevention-Diagnosis-Risk-Assessment-and-Treatment-of-Hypertension-in-Adults-and-Children.pdf]]",
     "Gender": "tf,tm",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Heart",
@@ -1197,7 +1316,8 @@
     "Health Provider Text": "n/a",
     "Gender": "tf,tm",
     "Minimum age": 18,
-    "Maximum age": 74
+    "Maximum age": 74,
+    "": ""
   },
   {
     "Button": "Heart",
@@ -1207,7 +1327,8 @@
     "Health Provider Text": "n/a",
     "Gender": "tf,tm",
     "Minimum age": 75,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Heart",
@@ -1217,7 +1338,8 @@
     "Health Provider Text": "Lipid screening: \nWe have simplified by using 40 as the age to start testing if no additional risks.\n\n•Before 40 if risk factors \n[[1) Risk factors according to Simplified lipid guidelines see Screening page 2; http://www.cfp.ca/content/cfp/61/10/857.full.pdf]]\n[[2) Risk factors according to CCS see Figure 1; http://www.onlinecjc.ca/article/S0828-282X(16)30732-2/pdf]]\n\n•For age 40 and above: repeat lipid testing every 3-5 years if normal\n•Age 75 + healthy: discouraged as have not studied primary prevention in this group.",
     "Gender": "tf,tm",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Heart",
@@ -1227,7 +1349,8 @@
     "Health Provider Text": "Diabetes is a risk factor for heart disease.\n[[Resource; https://www.diabetes.ca/managing-my-diabetes/tools---resources/reducing-vascular-risk]] from diabetes.ca to reduce vascular risk.",
     "Gender": "tf,tm",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Heart",
@@ -1237,7 +1360,8 @@
     "Health Provider Text": "n/a",
     "Gender": "m,f",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Heart",
@@ -1247,7 +1371,8 @@
     "Health Provider Text": "Physical activity\nmore potent than statins in preventing heart disease.\n•[[more info for age 18-64; http://www.csep.ca/CMFiles/Guidelines/CSEP_PAGuidelines_adults_en.pdf]]\n•[[more info for age 65+; http://csepguidelines.ca/wp-content/uploads/2018/03/CSEP_PAGuidelines_older-adults_en.pdf]]",
     "Gender": "m,f",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Heart",
@@ -1257,7 +1382,8 @@
     "Health Provider Text": "n/a",
     "Gender": "m,f",
     "Minimum age": 30,
-    "Maximum age": 74
+    "Maximum age": 74,
+    "": ""
   },
   {
     "Button": "Heart",
@@ -1267,7 +1393,8 @@
     "Health Provider Text": "Risk assessment \n[[modified Framingham or other; http://chd.bestsciencemedicine.com/calc2.html]]\nonly validated between age 30 and 74",
     "Gender": "m,f",
     "Minimum age": 30,
-    "Maximum age": 74
+    "Maximum age": 74,
+    "": ""
   },
   {
     "Button": "Heart",
@@ -1277,7 +1404,8 @@
     "Health Provider Text": "•Ask all patients about tobacco use, \n•Recommend to quit or reduce.\nResources\n[[By province; https://www.canada.ca/en/health-canada/services/smoking-tobacco/quit-smoking/provincial-territorial-services.html]].\n[[More; http://www.smokershelpline.ca/]]\n\n•Use behavioral  interventions\n•As needed use approved pharmacotherapy to promote cessation.\n[[USPSTF A (2013); https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/tobacco-use-in-adults-and-pregnant-women-counseling-and-interventions]]\n[[motivational interviewing video; https://www.youtube.com/watch?v=URiKA7CKtfc]]",
     "Gender": "m,f",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Heart",
@@ -1287,7 +1415,8 @@
     "Health Provider Text": "CTFPHC recommends blood pressure measurement at all appropriate primary care visits.[[2012 Guideline; https://canadiantaskforce.ca/guidelines/published-guidelines/hypertension/]]\n(Strong recommendation; moderate quality evidence)\nUse CHEP criteria:\n[[Highlights; https://guidelines.hypertension.ca/wp-content/uploads/2020/08/2020-22-HT-Guidelines-E-WEB_v3b.pdf]]\n[[Full 2020 guideline; https://guidelines.hypertension.ca/wp-content/uploads/2020/08/Hypertension-Canada-2020-Comprehensive-Guidelines-for-Prevention-Diagnosis-Risk-Assessment-and-Treatment-of-Hypertension-in-Adults-and-Children.pdf]]",
     "Gender": "m,f",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Heart",
@@ -1297,7 +1426,8 @@
     "Health Provider Text": "n/a",
     "Gender": "m,f",
     "Minimum age": 18,
-    "Maximum age": 39
+    "Maximum age": 39,
+    "": ""
   },
   {
     "Button": "Heart",
@@ -1307,7 +1437,8 @@
     "Health Provider Text": "n/a",
     "Gender": "m",
     "Minimum age": 40,
-    "Maximum age": 74
+    "Maximum age": 74,
+    "": ""
   },
   {
     "Button": "Heart",
@@ -1317,7 +1448,8 @@
     "Health Provider Text": "n/a",
     "Gender": "f",
     "Minimum age": 40,
-    "Maximum age": 74
+    "Maximum age": 74,
+    "": ""
   },
   {
     "Button": "Heart",
@@ -1327,7 +1459,8 @@
     "Health Provider Text": "n/a",
     "Gender": "m,f",
     "Minimum age": 75,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Heart",
@@ -1337,7 +1470,8 @@
     "Health Provider Text": "Lipid screening: \n•Before 40 in men and 50 in women if risk factors \n[[1) Risk factors according to Simplified lipid guidelines see Screening page 2; http://www.cfp.ca/content/cfp/61/10/857.full.pdf]]\n[[2) Risk factors according to CCS see Figure 1; http://www.onlinecjc.ca/article/S0828-282X(16)30732-2/pdf]]\nNOTE: in women Hypertensive diseases of pregnancy (including preeclampsia, pregnancy induced hypertension are considered additional cvs risk factors see [[link; https://www.jogc.com/article/S1701-2163(18)30836-3/abstract]]\n•For men age 40+:repeat every 3-5 years if N\n•For women age 50+ or at menopause:repeat every 3-5 years  if N\n•Age 75 + healthy: discouraged as have not been validated at this age\n•[[Canadian Simplified Lipid Guidelines by family physicans; http://www.cfp.ca/content/cfp/61/10/857.full.pdf ]]\n•[[Canadian Cardiology guideline; http://www.onlinecjc.ca/article/S0828-282X(16)30732-2/pdf]]",
     "Gender": "m,f",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   },
   {
     "Button": "Heart",
@@ -1347,6 +1481,7 @@
     "Health Provider Text": "Diabetes is a risk factor for heart disease.\n[[Resource; https://www.diabetes.ca/managing-my-diabetes/tools---resources/reducing-vascular-risk]] from diabetes.ca to reduce vascular risk.",
     "Gender": "m,f",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 150,
+    "": ""
   }
 ]
