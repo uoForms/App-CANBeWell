@@ -56,8 +56,8 @@ class BodyPage extends BasePage {
   }
 
   assertInstructionExists(locale) {
-    cy.getTestID('instruction')
-      .should('contain.text', this.localeFile[locale].body_general_instruction);
+    cy.getTestId('instruction')
+      .assertVisibleAndContainText(this.localeFile[locale].body_general_instruction);
   }
 }
 

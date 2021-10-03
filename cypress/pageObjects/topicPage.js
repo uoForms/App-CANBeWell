@@ -50,7 +50,7 @@ class TopicPage extends BasePage {
   assertSearchExists(locale) {
     cy.getTestId('searchBarInput')
       .should('be.visible')
-      .should('have.attr', 'placeholder', this.localeFile[locale].topic_search_bar_placeholder);
+      .assertAttribute('placeholder', this.localeFile[locale].topic_search_bar_placeholder);
   }
 
   openNthHeading(n) {
