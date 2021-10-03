@@ -105,7 +105,7 @@
     "Maximum age": 50
   },
   {
-    "Test": "Quand faut-il arrêter de faire passer des tests? ",
+    "Test": "Quand faut-il arrêter de faire passer des tests?",
     "Patient/Provider Text": "Avec le vieillissement, les tests de dépistage du cancer ou d’autres maladies peuvent causer plus de tort qu'autre chose.\nÉtant donné que cela dépend de votre état de santé général, parlez-en avec votre professionnel de la santé.",
     "Gender": "all",
     "Minimum age": 75,
