@@ -146,11 +146,17 @@ class BodyModal extends BasePage {
   }
 
   assertHeading(heading) {
-    // Using contains() to deal with the multiple headings scenario
     heading.split('\n')
       .forEach((part) => {
-        cy.contains('[test-id="heading"]', part)
-          .should('include.text', part);
+        if (part.includes(' ')) {
+          cy.getTestId('heading')
+            .filter(`:contains("${part.replace(' ;', '\u00a0')}")`)
+            .should('include.text', part);
+        } else {
+          // handle a random new line in the topic...
+          cy.contains(part.replace('\n', ' '))
+            .should('include.text', part);
+        }
       });
   }
 

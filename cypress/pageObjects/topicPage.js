@@ -32,14 +32,17 @@ class TopicPage extends BasePage {
   }
 
   assertHeadings(expectedHeadings, cacheId) {
+    // Handle NBSP
+    const cleanedHeadings = Array.from(expectedHeadings, (heading) => heading.replace(' ', ' '));
+
     function helper() {
       // https://glebbahmutov.com/cypress-examples/6.5.0/recipes/get-text-list.html
       cy.getTestId('topicRow')
         .then(($els) => (
           Cypress.$.makeArray($els)
-            .map((el) => el.innerText)
+            .map((el) => el.innerText.replace('\u00a0', ' '))
         ))
-        .should('deep.equalInAnyOrder', Array.from(expectedHeadings));
+        .should('deep.equalInAnyOrder', Array.from(cleanedHeadings));
     }
 
     if (Cypress.mocha.getRunner().suite.ctx.assertedConfigsForTopicHeadings === undefined) {
