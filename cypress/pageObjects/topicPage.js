@@ -2,9 +2,18 @@ import BasePage from './basePage';
 
 class TopicPage extends BasePage {
   clickTopic(topic) {
-    // handle a random new line in the topic...
-    cy.contains(topic.replace('\n', ' '))
-      .click();
+    // eslint-disable-next-line no-irregular-whitespace
+    // For whatever reason, there is   in the translation file...
+    if (topic.includes(' ')) {
+      cy.getTestId('topicRow')
+        .filter(`:contains("${topic.replace(' ;', '\u00a0')}")`)
+        .should('exist')
+        .click();
+    } else {
+      // handle a random new line in the topic...
+      cy.contains(topic.replace('\n', ' '))
+        .click();
+    }
   }
 
   assertAtLeastOneHeadingDisplayed() {

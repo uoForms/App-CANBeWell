@@ -47,6 +47,9 @@ devicesTestWrapper(
             it('Text Display', () => {
               modal.assertAllDisplayText(locale);
             });
+
+            //  Add test cases for : default values, cookies change, error, close modal, question mark and more
+            //   otherp pages with cookies change trigger events
           });
         }
       });

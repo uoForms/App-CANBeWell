@@ -59,9 +59,9 @@ function expectedSubjects(age, gender, user, locale, button) {
       topicGenderList.includes(gender) || topic.Gender === 'all' || (gender === 'nonbinary-m' && topicGenderList.includes('tf')) || (gender === 'nonbinary-f' && topicGenderList
         .includes('tm'))) && button === topic.Button) {
       if (user === 'patient' && topic['General Patient Text'] !== 'n/a') {
-        expectedSubjectSet.push(topic.Subject);
+        expectedSubjectSet.push(topic.Subject.replace(' \n', '\n'));
       } else if (user === 'provider' && topic['Health Provider Text'] !== 'n/a') {
-        expectedSubjectSet.push(topic.Subject);
+        expectedSubjectSet.push(topic.Subject.replace(' \n', '\n'));
       }
     }
   }
