@@ -4,6 +4,7 @@ import TestPage from '../../pageObjects/testPage';
 import TopicPage from '../../pageObjects/topicPage';
 import BodyPage from '../../pageObjects/bodyPage';
 import PostConfigUpdateModal from '../../pageObjects/postConfigUpdateModal';
+import InformationModal from '../../pageObjects/informationModal';
 
 devicesTestWrapper(
   'Post Config Update Modal', () => {
@@ -139,7 +140,147 @@ devicesTestWrapper(
                 });
             });
 
-            //  Add test cases for :  error, close modal, question mark and more
+            it('Error', () => {
+              cy.document()
+                .then((doc) => {
+                  if (doc.documentElement.clientHeight === 414) {
+                    // TODO: remove the skip once 435 is fixed
+                    cy.log('Skip due to https://github.com/uoForms/App-CANBeWell/issues/435');
+                  } else {
+                    modal.setValues(undefined, undefined, undefined, '160', true);
+                    modal.clickOk(false);
+                    modal.assertAgeErrorMessage(locale);
+                  }
+                });
+            });
+
+            it('Error 2', () => {
+              cy.document()
+                .then((doc) => {
+                  if (doc.documentElement.clientHeight === 414) {
+                    // TODO: remove the skip once 435 is fixed
+                    cy.log('Skip due to https://github.com/uoForms/App-CANBeWell/issues/435');
+                  } else {
+                    modal.setValues(undefined, undefined, undefined, '6', true);
+                    modal.clickOk(false);
+                    modal.assertAgeErrorMessage(locale);
+                  }
+                });
+            });
+
+            it('Error 3', () => {
+              cy.document()
+                .then((doc) => {
+                  if (doc.documentElement.clientHeight === 414) {
+                    // TODO: remove the skip once 435 is fixed
+                    cy.log('Skip due to https://github.com/uoForms/App-CANBeWell/issues/435');
+                  } else {
+                    modal.setValues(undefined, undefined, undefined, '%**&', true);
+                    modal.clickOk(false);
+                    modal.assertAgeErrorMessage(locale);
+                  }
+                });
+            });
+
+            it('Error 4', () => {
+              cy.document()
+                .then((doc) => {
+                  if (doc.documentElement.clientHeight === 414) {
+                    // TODO: remove the skip once 435 is fixed
+                    cy.log('Skip due to https://github.com/uoForms/App-CANBeWell/issues/435');
+                  } else {
+                    modal.setValues(undefined, undefined, undefined, 'aksjhdkjas', true);
+                    modal.clickOk(false);
+                    modal.assertAgeErrorMessage(locale);
+                  }
+                });
+            });
+
+            it('Error and Recover', () => {
+              cy.document()
+                .then((doc) => {
+                  if (doc.documentElement.clientHeight === 414) {
+                    // TODO: remove the skip once 435 is fixed
+                    cy.log('Skip due to https://github.com/uoForms/App-CANBeWell/issues/435');
+                  } else {
+                    modal.setValues(undefined, undefined, undefined, 'aksjhdkjas', true);
+                    modal.clickOk(false);
+                    modal.assertAgeErrorMessage(locale);
+                    modal.setValues(undefined, undefined, undefined, 20, true);
+                    modal.clickOk();
+                  }
+                });
+            });
+
+            it('Close Modal', () => {
+              cy.log('Skip, this feature is tested multiple times in the previous tests whenever we call modal.clickOk() with no argument');
+            });
+
+            it('Check Question Mark Message - Gender', () => {
+              modal.clickGenderQuestionMark();
+              const infoModal = new InformationModal();
+              infoModal.assertExist();
+              infoModal.assertContent(locale, infoModal.modalType.gender);
+              infoModal.assertHeader(locale, infoModal.modalType.gender);
+            });
+
+            it('Check Question Mark Message - Sex Assigned At Birth', () => {
+              modal.clickSexAssignedAtBirthQuestionMark();
+              const infoModal = new InformationModal();
+              infoModal.assertExist();
+              infoModal.assertContent(locale, infoModal.modalType.genderAtBirth);
+              infoModal.assertHeader(locale, infoModal.modalType.genderAtBirth);
+            });
+
+            it('Close Question Mark Message - Gender', () => {
+              modal.clickGenderQuestionMark();
+              const infoModal = new InformationModal();
+              infoModal.assertExist();
+              infoModal.clickX();
+              infoModal.assertNotExist();
+            });
+
+            it('Close Question Mark Message - Gender 2', () => {
+              modal.clickGenderQuestionMark();
+              const infoModal = new InformationModal();
+              infoModal.assertExist();
+              infoModal.clickBackdropRight();
+              infoModal.assertNotExist();
+            });
+
+            it('Close Question Mark Message - Gender 3', () => {
+              modal.clickGenderQuestionMark();
+              const infoModal = new InformationModal();
+              infoModal.assertExist();
+              infoModal.clickOk();
+              infoModal.assertNotExist();
+            });
+
+            it('Close Question Mark Message - Sex Assigned At Birth', () => {
+              modal.clickSexAssignedAtBirthQuestionMark();
+              const infoModal = new InformationModal();
+              infoModal.assertExist();
+              infoModal.clickX();
+              infoModal.assertNotExist();
+            });
+
+            it('Close Question Mark Message - Sex Assigned At Birth 2', () => {
+              modal.clickSexAssignedAtBirthQuestionMark();
+              const infoModal = new InformationModal();
+              infoModal.assertExist();
+              infoModal.clickBackdropRight();
+              infoModal.assertNotExist();
+            });
+
+            it('Close Question Mark Message - Sex Assigned At Birth 3', () => {
+              modal.clickSexAssignedAtBirthQuestionMark();
+              const infoModal = new InformationModal();
+              infoModal.assertExist();
+              infoModal.clickOk();
+              infoModal.assertNotExist();
+            });
+
+            //  Add test cases for : question mark and more
             //   otherp pages with cookies change trigger events
           });
         }

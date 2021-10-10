@@ -57,10 +57,27 @@ class PostConfigUpdateModal extends BasePage {
       .should('not.exist');
   }
 
-  clickOk() {
+  assertAgeErrorMessage(locale) {
+    cy.getTestId('ageError')
+      .assertVisibleAndContainText(this.localeFile[locale].age_help);
+  }
+
+  clickOk(postAssertion = true) {
     cy.getTestId('okButton')
       .click();
-    this.assertModalNotExist();
+    if (postAssertion) {
+      this.assertModalNotExist();
+    }
+  }
+
+  clickGenderQuestionMark() {
+    cy.getTestId('genderSelectHelp')
+      .click();
+  }
+
+  clickSexAssignedAtBirthQuestionMark() {
+    cy.getTestId('tGenderSelectHelp')
+      .click();
   }
 
   checkOnlyOneRadioButtonIsChecked(checked, all) {
@@ -114,6 +131,8 @@ class PostConfigUpdateModal extends BasePage {
         this.checkOnlyOneRadioButtonIsChecked('providerRadio', ['patientRadio', 'providerRadio']);
         cy.getTestId('ageInput')
           .should('have.value', this.localeFile[locale].all_ages);
+        cy.getTestId('ageInput')
+          .should('be.disabled');
       } else {
         cy.getTestId('ageInput')
           .should('have.value', age);
@@ -121,7 +140,7 @@ class PostConfigUpdateModal extends BasePage {
     }
   }
 
-  setValues(user, gender, tGender, age) {
+  setValues(user, gender, tGender, age, ignoreAgeCheck = false) {
     if (user !== undefined) {
       if (user === this.user.patient) {
         cy.getTestId('patientRadio')
@@ -154,7 +173,7 @@ class PostConfigUpdateModal extends BasePage {
     }
 
     if (age !== undefined) {
-      if (Number.isNaN(Number(age))) {
+      if (Number.isNaN(Number(age)) && !ignoreAgeCheck) {
         cy.getTestId('allAgeCheckbox')
           .check();
       } else {

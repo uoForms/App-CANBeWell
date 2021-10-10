@@ -53,7 +53,7 @@ devicesTestWrapper(
             topicPage.assertHeadings(['COVID-19'], String(Math.random())
               .substring(2, 11));
             topicPage.clearSearch();
-            topicPage.assertAtLeastTwoHeadingDisplayed();
+            topicPage.assertAtLeastNHeadingDisplayed(2);
           }
         });
 
@@ -62,7 +62,7 @@ devicesTestWrapper(
           topicPage.search('I DONT BELEVE THIS CNA EXISTA');
           topicPage.assertNoHeadingDisplayed();
           topicPage.clearSearch();
-          topicPage.assertAtLeastTwoHeadingDisplayed();
+          topicPage.assertAtLeastNHeadingDisplayed(2);
         });
 
         it('Open Modal and Close Modal', () => {

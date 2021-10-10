@@ -26,9 +26,9 @@ class TopicPage extends BasePage {
       .should('not.exist');
   }
 
-  assertAtLeastTwoHeadingDisplayed() {
+  assertAtLeastNHeadingDisplayed(n) {
     cy.getTestId('topicRow')
-      .should('have.length.at.least', 2);
+      .should('have.length.at.least', n);
   }
 
   assertHeadings(expectedHeadings, cacheId) {
