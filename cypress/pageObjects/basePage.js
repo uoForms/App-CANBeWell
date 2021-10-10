@@ -10,6 +10,10 @@ class BasePage {
       transFemale: 'tf',
       transMale: 'tm',
     };
+    this.user = {
+      patient: 'patient',
+      provider: 'provider',
+    };
     this.localeFile = localFile;
     this.localeFile.en = this.localeFile.english;
     this.localeFile.fr = this.localeFile.french;

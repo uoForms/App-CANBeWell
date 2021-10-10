@@ -5713,11 +5713,6 @@ cypress-failed-log@^2.9.2:
     debug "4.3.2"
     logdown "3.3.1"
 
-cypress-get-it@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/cypress-get-it/-/cypress-get-it-1.0.1.tgz#c5ab8ec45f690bbe8498c7bd099850ca2f22bd73"
-  integrity sha512-4EsserdV1qHYNmJNy4bcWRHKNS+1lfmRyzqH2UyMrd7Fq7iVAW8pQRohh2AR1xC1hDJN28SjgEABf/D22fVayA==
-
 cypress-mochawesome-reporter@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/cypress-mochawesome-reporter/-/cypress-mochawesome-reporter-2.2.1.tgz#05787ff742be4a73d1dbbb843253314ec51324b3"
