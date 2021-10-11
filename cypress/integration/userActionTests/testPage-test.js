@@ -80,7 +80,7 @@ devicesTestWrapper(
         });
 
         it('Search Gives Correct Result', () => {
-          const stringList = locale === testPage.locale.en ? ['Pros/ Cons of tests', 'Pros/', 'of tests'] : ['Dépistage des ITS', 'Dépistage des its', 'dépistage', 'des ITS'];
+          const stringList = locale === testPage.locale.en ? ['Pros/ Cons of tests', 'Pros/', 'of tests'] : ['Dépistage des ITS', 'Dépistage des its', 'dépistage de', 'des ITS'];
           const expectedHeading = locale === testPage.locale.en ? 'Pros/ Cons of tests' : 'Dépistage des ITS';
           for (const searchString of stringList) {
             // same search term for both en and fr
