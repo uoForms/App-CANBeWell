@@ -127,20 +127,20 @@ class MyModal extends React.Component {
     };
   
     return (
-      <div id="myBackdrop" onClick={this.props.onClose} className="backdrop" style={backdropStyle}>
-        <div className="myModal" style={myModalStyle}>
+      <div id="myBackdrop" onClick={this.props.onClose} className="backdrop" style={backdropStyle} test-id="myModalBackdrop">
+        <div className="myModal" style={myModalStyle} test-id="modalRoot">
           {this.props.children}
 
           <div>
           <div>
-            <button className="helpbuttonClose" onClick={this.props.onClose}>X</button>
+            <button className="helpbuttonClose" onClick={this.props.onClose} test-id="ModalXButton">X</button>
           </div>
-            <h1>{this.props.header}</h1>
+            <h1 test-id="modalHeader">{this.props.header}</h1>
             <div className="myModalBody">
-            <p>{this.props.body}</p>
+            <p test-id="modalText">{this.props.body}</p>
               {/*close button*/}
               <div className="myModalButton">
-                <button onClick={this.props.onClose}>{this.props.button}</button>
+                <button onClick={this.props.onClose} test-id="modalCloseButton">{this.props.button}</button>
               </div>
             </div>
           </div>

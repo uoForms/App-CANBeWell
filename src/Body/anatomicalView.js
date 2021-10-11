@@ -203,7 +203,7 @@ class Anatomy extends React.Component {
                     <div>
                         <div className="mainRunner">
                             {/*male body*/}
-                            <img className="body" src={Male} alt="Male"/>
+                            <img className="body" src={Male} alt="Male" test-id="maleBodyImg"/>
                             {/*male organ*/}
                             <img id="MaleGenitalia" className="organ" src={MaleGenitalia} alt="MaleGenitalia"/>
                             <img id="MaleAorta" className="organ" src={MaleAorta} alt="MaleAorta"/>
@@ -297,7 +297,7 @@ class Anatomy extends React.Component {
                 return (
                     <div>
                         <div className="mainRunner">
-                            <img className="body" src={Female} alt="Female"/>
+                            <img className="body" src={Female} alt="Female" test-id="femaleBodyImg"/>
                             <img id="FemaleGenitalia" className="organ" src={FemaleGenitalia} alt="FemaleGenitalia"/>
                             <img id="FemaleAorta" className="organ" src={FemaleAorta} alt="FemaleAorta"/>
                             <img id="FemaleBowel" className="organ" src={FemaleBowel} alt="FemaleBowel"/>
@@ -400,7 +400,7 @@ class Anatomy extends React.Component {
                 return (
                     <div>
                         <div className="mainRunner">
-                            <img className="body" src={TransBody} alt="transbody"/>
+                            <img className="body" src={TransBody} alt="transbody" test-id="transBodyImg"/>
                             {/*TODO find organs that fits the body*/}
                             <img id="Aorta" className="organ" src={TransAorta} alt="Aorta"/>
                             <img id="Bowel" className="organ" src={TransBowel} alt="Bowel"/>
@@ -502,7 +502,7 @@ class Anatomy extends React.Component {
                 return (
                     <div>
                         <div className="mainRunner">
-                            <img className="body" src={TransBody} alt="transbody"/>
+                            <img className="body" src={TransBody} alt="transbody" test-id="transBodyImg"/>
                             {/*TODO find organs that fits the body*/}
                             <img id="Aorta" className="organ" src={TransAorta} alt="Aorta"/>
                             <img id="Bowel" className="organ" src={TransBowel} alt="Bowel"/>

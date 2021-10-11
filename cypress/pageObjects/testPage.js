@@ -26,9 +26,14 @@ class TestPage extends BasePage {
       .should('exist');
   }
 
-  assertAtLeastTwoHeadingDisplayed() {
+  assertAtLeastNHeadingDisplayed(n) {
     cy.getTestId('test-details')
-      .should('have.length.at.least', 2);
+      .should('have.length.at.least', n);
+  }
+
+  assertAtMostNHeadingDisplayed(n) {
+    cy.getTestId('test-details')
+      .should('have.length.at.most', n);
   }
 
   assertHeadings(expectedHeadings, cacheId) {

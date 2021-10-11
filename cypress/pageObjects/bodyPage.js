@@ -59,6 +59,19 @@ class BodyPage extends BasePage {
     cy.getTestId('instruction')
       .assertVisibleAndContainText(this.localeFile[locale].body_general_instruction);
   }
+
+  assertBodyImage(gender) {
+    if (gender === this.gender.male) {
+      cy.getTestId('maleBodyImg')
+        .assertImageVisibleWithSource('/static/media/male_body.2fba4217.png');
+    } else if (gender === this.gender.female) {
+      cy.getTestId('femaleBodyImg')
+        .assertImageVisibleWithSource('/static/media/female_anatomy2.c429ead0.png');
+    } else {
+      cy.getTestId('transBodyImg')
+        .assertImageVisibleWithSource('/static/media/trans_body.5e0b6714.png');
+    }
+  }
 }
 
 export default BodyPage;

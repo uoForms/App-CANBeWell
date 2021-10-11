@@ -57,3 +57,15 @@ Cypress.Commands.add('setupCookies', (cookies) => {
       .replaceAll('"', ''));
   }
 });
+
+Cypress.Commands.add('checkCookies', (cookies) => {
+  for (const cookie in cookies) {
+    cy.getCookie(cookie)
+      .should('have.property', 'value', JSON.stringify(cookies[cookie])
+        .replaceAll('"', ''));
+  }
+});
+
+Cypress.Commands.add('getTestId', (id) => {
+  cy.get(`[test-id="${id}"]`);
+});

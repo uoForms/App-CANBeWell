@@ -22,6 +22,11 @@ class BodyModal extends BasePage {
       .should('not.have.attr', 'open');
   }
 
+  assertHaveAtLeastOneSubject() {
+    cy.getTestId('topicSummary')
+      .should('exist');
+  }
+
   assertModalExist() {
     cy.getTestId('bodyModal')
       .should('be.visible');
@@ -72,6 +77,16 @@ class BodyModal extends BasePage {
             .click();
         }
       });
+  }
+
+  assertContainSubject(subject) {
+    // https://glebbahmutov.com/cypress-examples/6.5.0/recipes/get-text-list.html
+    cy.getTestId('topicSummary')
+      .then(($els) => (
+        Cypress.$.makeArray($els)
+          .map((el) => el.innerText)
+      ))
+      .should('contain', subject);
   }
 
   assertSubjects(expectedSubjects, cacheId) {
