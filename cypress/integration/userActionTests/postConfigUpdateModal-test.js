@@ -279,9 +279,6 @@ devicesTestWrapper(
               infoModal.clickOk();
               infoModal.assertNotExist();
             });
-
-            //  Add test cases for : question mark and more
-            //   otherp pages with cookies change trigger events
           });
         }
       });
