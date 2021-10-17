@@ -35,6 +35,10 @@ devicesTestWrapper(
               }
             });
 
+            it('Close Modal', () => {
+              cy.log('Skip, tested in the below tests');
+            });
+
             it(`Verify All Buttons Clickable ${gender} ${tGender}`, () => {
               // Special case due to element covering
               const clickLocationDict = { lungsButton: 'bottomRight' };
@@ -47,12 +51,21 @@ devicesTestWrapper(
               } else {
                 buttonList = bodyPage.nonBinaryOrMaleTmOrFemaleTfInfoList;
               }
+              let count = 0;
               for (const buttonInfo of buttonList) {
+                count++;
                 cy.getTestId(buttonInfo.testId)
                   .click(clickLocationDict[buttonInfo.testId] || 'center');
                 const modal = new BodyModal();
                 modal.assertModalExist();
-                modal.closeModalWithX();
+                // Test different close methods since we are already here
+                if (count % 3 === 0) {
+                  modal.closeModalWithX();
+                } else if (count % 3 === 1) {
+                  modal.clickBackdropRight();
+                } else {
+                  modal.closeModalWithTextButton();
+                }
                 bodyPage.assertSelectedButton(locale, buttonInfo.localeId);
               }
             });
@@ -150,6 +163,39 @@ devicesTestWrapper(
 
         it('Verify Tabs exist', () => {
           bodyPage.assertThreeHeaders(locale);
+        });
+
+        it.only('Close Opened Topic Subjects', () => {
+          // Use covid button as the test subject since the code is reused across modals
+          cy.getTestId('covidButton')
+            .click();
+          const modal = new BodyModal();
+          cy.getTestId('topicSummary')
+            .then((subjects) => {
+              const subjectCount = Cypress.$(subjects).length;
+              // eslint-disable-next-line no-var,vars-on-top
+              for (var j = 0; j < Math.floor(subjectCount / 2); j++) {
+                // Open them one by one
+                modal.assertNthSubjectClosed(j);
+                modal.toggleNthSubject(j);
+                modal.assertNthSubjectOpen(j);
+                modal.toggleNthSubject(j);
+                modal.assertNthSubjectClosed(j);
+              }
+              // eslint-disable-next-line block-scoped-var
+              const secondHalfStart = j > 4 ? j + 1 : 0;
+              // Open all and close all
+              for (let k = secondHalfStart; k < subjectCount; k++) {
+                modal.assertNthSubjectClosed(k);
+                modal.toggleNthSubject(k);
+                modal.assertNthSubjectOpen(k);
+              }
+              for (let k = secondHalfStart; k < subjectCount; k++) {
+                modal.assertNthSubjectOpen(k);
+                modal.toggleNthSubject(k);
+                modal.assertNthSubjectClosed(k);
+              }
+            });
         });
 
         it('Go to Test Page', () => {
