@@ -6,9 +6,19 @@ class InitConfigModal extends BaseConfigModal {
       .should('be.visible');
   }
 
+  assertModalNotExist() {
+    cy.getTestId('instructionModalRoot')
+      .should('not.exist');
+  }
+
   clickTopOk() {
     cy.getTestId('okButtonTop')
       .click();
+  }
+
+  assertNoValueError(locale) {
+    cy.getTestId('noValueError')
+      .assertVisibleAndContainText(this.localeFile[locale].ageandgender_help);
   }
 
   clickBottomOk() {

@@ -57,27 +57,12 @@ class PostConfigUpdateModal extends BaseConfigModal {
       .should('not.exist');
   }
 
-  assertAgeErrorMessage(locale) {
-    cy.getTestId('ageError')
-      .assertVisibleAndContainText(this.localeFile[locale].age_help);
-  }
-
   clickOk(postAssertion = true) {
     cy.getTestId('okButton')
       .click();
     if (postAssertion) {
       this.assertModalNotExist();
     }
-  }
-
-  clickGenderQuestionMark() {
-    cy.getTestId('genderSelectHelp')
-      .click();
-  }
-
-  clickSexAssignedAtBirthQuestionMark() {
-    cy.getTestId('tGenderSelectHelp')
-      .click();
   }
 }
 

@@ -49,6 +49,21 @@ class BaseConfigModal extends BasePage {
     }
   }
 
+  clickGenderQuestionMark() {
+    cy.getTestId('genderSelectHelp')
+      .click();
+  }
+
+  clickSexAssignedAtBirthQuestionMark() {
+    cy.getTestId('tGenderSelectHelp')
+      .click();
+  }
+
+  assertAgeErrorMessage(locale) {
+    cy.getTestId('ageError')
+      .assertVisibleAndContainText(this.localeFile[locale].age_help);
+  }
+
   checkOnlyOneRadioButtonIsChecked(checked, all) {
     for (const radio of all) {
       if (checked === radio) {
@@ -65,30 +80,37 @@ class BaseConfigModal extends BasePage {
     if (user !== undefined) {
       if (user === this.user.patient) {
         cy.getTestId('patientRadio')
+          .scrollIntoView()
           .check();
       } else {
         cy.getTestId('providerRadio')
+          .scrollIntoView()
           .check();
       }
     }
     if (gender !== undefined) {
       if (gender === this.gender.male) {
         cy.getTestId('maleRadio')
+          .scrollIntoView()
           .check();
       } else if (gender === this.gender.female) {
         cy.getTestId('femaleRadio')
+          .scrollIntoView()
           .check();
       } else {
         cy.getTestId('nonBinaryRadio')
+          .scrollIntoView()
           .check();
       }
     }
     if (tGender !== undefined) {
       if (tGender === this.gender.transFemale) {
         cy.getTestId('birthMale')
+          .scrollIntoView()
           .check();
       } else {
         cy.getTestId('birthFemale')
+          .scrollIntoView()
           .check();
       }
     }
@@ -96,9 +118,11 @@ class BaseConfigModal extends BasePage {
     if (age !== undefined) {
       if (Number.isNaN(Number(age)) && !ignoreAgeCheck) {
         cy.getTestId('allAgeCheckbox')
+          .scrollIntoView()
           .check();
       } else {
         cy.getTestId('ageInput')
+          .scrollIntoView()
           .clear()
           .type(age);
       }
