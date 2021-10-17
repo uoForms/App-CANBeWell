@@ -11,6 +11,55 @@ devicesTestWrapper(
     const landingPage = new LandingPage();
     const bodyPage = new BodyPage();
     for (const locale of [landingPage.locale.en, landingPage.locale.fr]) {
+      for (const gender of [bodyPage.gender.male, bodyPage.gender.female, bodyPage.gender.nonBinary]) {
+        for (const tGender of [bodyPage.gender.transMale, bodyPage.gender.transFemale]) {
+          describe(`Locale: ${locale}`, () => {
+            beforeEach(() => {
+              cy.setupCookies({
+                _onboarded: 'true',
+                gender,
+                Tgender: tGender,
+                age: 18,
+                user: 'patient',
+              });
+              landingPage.clickRedirectButton(locale);
+            });
+
+            it(`Verify Body Image ${gender} ${tGender}`, () => {
+              if (gender === bodyPage.gender.male && tGender === bodyPage.gender.transFemale) {
+                bodyPage.assertBodyImage(bodyPage.gender.male);
+              } else if (gender === bodyPage.gender.female && tGender === bodyPage.gender.transMale) {
+                bodyPage.assertBodyImage(bodyPage.gender.female);
+              } else {
+                bodyPage.assertBodyImage(bodyPage.gender.nonBinary);
+              }
+            });
+
+            it(`Verify All Buttons Clickable ${gender} ${tGender}`, () => {
+              // Special case due to element covering
+              const clickLocationDict = { lungsButton: 'bottomRight' };
+
+              let buttonList;
+              if (gender === bodyPage.gender.male && tGender === bodyPage.gender.transFemale) {
+                buttonList = bodyPage.maleTfButtonInfoList;
+              } else if (gender === bodyPage.gender.female && tGender === bodyPage.gender.transMale) {
+                buttonList = bodyPage.femaleTmButtonInfoList;
+              } else {
+                buttonList = bodyPage.nonBinaryOrMaleTmOrFemaleTfInfoList;
+              }
+              for (const buttonInfo of buttonList) {
+                cy.getTestId(buttonInfo.testId)
+                  .click(clickLocationDict[buttonInfo.testId] || 'center');
+                const modal = new BodyModal();
+                modal.assertModalExist();
+                modal.closeModalWithX();
+                bodyPage.assertSelectedButton(locale, buttonInfo.localeId);
+              }
+            });
+          });
+        }
+      }
+
       describe(`Locale: ${locale}`, () => {
         beforeEach(() => {
           // This is to test some of the basic layout. Not config related
@@ -22,6 +71,10 @@ devicesTestWrapper(
             user: 'patient',
           });
           landingPage.clickRedirectButton(locale);
+        });
+
+        it('Verify "Tap any body part or icon"', () => {
+          bodyPage.assertInstructionExists(locale);
         });
 
         it('Update Config Triggers Content Update', () => {
