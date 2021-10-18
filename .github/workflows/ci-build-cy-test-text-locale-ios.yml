@@ -19,8 +19,7 @@ jobs:
         browser: chrome
         wait-on: http://localhost:3000
         spec: cypress/integration/textLocaleTests/testSet/ios-add-to-home-screen.js
-        config: userAgent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15
-          (KHTML, like Gecko) Mobile/15E148
+        config: userAgent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
         start: yarn start-with-cy-coverage
     - name: Cypress Upload Screenshots
       uses: actions/upload-artifact@v2
