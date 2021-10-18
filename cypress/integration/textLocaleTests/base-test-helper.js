@@ -2,6 +2,8 @@ import BodyModal from '../../pageObjects/bodyModal';
 import LandingPage from '../../pageObjects/landingPage';
 import BasePage from '../../pageObjects/basePage';
 
+const genderCombinedList = ['m', 'f', 'tm', 'tf', 'nonbinary-m', 'nonbinary-f'];
+
 function readTopicJsonData(props, user) {
   const button = props.Button;
   const heading = props['Topic heading'];
@@ -67,5 +69,5 @@ export {
   readTopicJsonData,
   assertTopicModal,
   cookiesSetupAndAccessBodyPage,
-
+  genderCombinedList,
 };

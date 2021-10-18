@@ -1,6 +1,7 @@
 import LandingPage from '../../../pageObjects/landingPage';
 import BodyPage from '../../../pageObjects/bodyPage';
 import { bodyPageNoTopicTestSteps } from '../bodyPage-test-helper';
+import { genderCombinedList } from '../base-test-helper';
 
 describe('Body Page Text Locale No Topic Modal', () => {
   const landingPage = new LandingPage();
@@ -11,7 +12,7 @@ describe('Body Page Text Locale No Topic Modal', () => {
 
   for (const user of [landingPage.user.patient, landingPage.user.provider]) {
     for (const locale of [landingPage.locale.en, landingPage.locale.fr]) {
-      for (const gender of ['m', 'f', 'tm', 'tf', 'nonbinary-m', 'nonbinary-f']) {
+      for (const gender of genderCombinedList) {
         const bodyPage = new BodyPage();
         const buttonInfoList = bodyPage.getButtonInfoListByGender(gender);
         for (const buttonInfo of buttonInfoList) {

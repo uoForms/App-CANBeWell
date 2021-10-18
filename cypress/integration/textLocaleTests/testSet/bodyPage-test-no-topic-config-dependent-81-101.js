@@ -1,6 +1,7 @@
 import LandingPage from '../../../pageObjects/landingPage';
 import BodyPage from '../../../pageObjects/bodyPage';
 import { bodyPageNoTopicTestSteps, expectedSubjects } from '../bodyPage-test-helper';
+import { genderCombinedList } from '../base-test-helper';
 
 describe('Body Page Text Locale No Topic Modal', () => {
   const landingPage = new LandingPage();
@@ -12,7 +13,7 @@ describe('Body Page Text Locale No Topic Modal', () => {
   // eslint-disable-next-line no-plusplus
   for (let age = 81; age <= 101; age++) {
     for (const user of [landingPage.user.patient, landingPage.user.provider]) {
-      for (const gender of ['m', 'f', 'tm', 'tf', 'nonbinary-m', 'nonbinary-f']) {
+      for (const gender of genderCombinedList) {
         for (const locale of [landingPage.locale.en, landingPage.locale.fr]) {
           const bodyPage = new BodyPage();
           const buttonInfoList = bodyPage.getButtonInfoListByGender(gender)
