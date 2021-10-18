@@ -5,6 +5,7 @@ import TopicPage from '../../pageObjects/topicPage';
 import BodyPage from '../../pageObjects/bodyPage';
 import PostConfigUpdateModal from '../../pageObjects/postConfigUpdateModal';
 import InformationModal from '../../pageObjects/informationModal';
+import BodyModal from '../../pageObjects/bodyModal';
 
 devicesTestWrapper(
   'Post Config Update Modal', () => {
@@ -109,6 +110,11 @@ devicesTestWrapper(
                     modal.setValues(modal.user.patient, modal.gender.female, modal.gender.transMale, 50);
                     modal.assertValues(modal.user.patient, modal.gender.female, modal.gender.transMale, 50, locale);
                     modal.clickOk();
+                    // The cookies are updated when a new button is clicked
+                    cy.getTestId('covidButton')
+                      .click();
+                    new BodyModal()
+                      .assertModalExist();
                     cy.checkCookies({
                       _onboarded: 'true',
                       gender: modal.gender.female,
@@ -130,6 +136,11 @@ devicesTestWrapper(
                     modal.setValues(undefined, undefined, undefined, 'all ages');
                     modal.assertValues(undefined, undefined, undefined, 'all ages', locale);
                     modal.clickOk();
+                    // The cookies are updated when a new button is clicked
+                    cy.getTestId('covidButton')
+                      .click();
+                    new BodyModal()
+                      .assertModalExist();
                     cy.checkCookies({
                       _onboarded: 'true',
                       _all_ages_selected: true,
