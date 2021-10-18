@@ -5,7 +5,6 @@ import TopicPage from '../../pageObjects/topicPage';
 import BodyPage from '../../pageObjects/bodyPage';
 import PostConfigUpdateModal from '../../pageObjects/postConfigUpdateModal';
 import InformationModal from '../../pageObjects/informationModal';
-import BodyModal from '../../pageObjects/bodyModal';
 
 devicesTestWrapper(
   'Post Config Update Modal', () => {
@@ -28,9 +27,18 @@ devicesTestWrapper(
             pageFn: () => {
             },
             instance: new BodyPage(),
+            refreshCheckId: 'covidButton',
           },
-          { pageFn: new BodyPage().clickTopicTab, instance: new TopicPage() },
-          { pageFn: new BodyPage().clickTestTab, instance: new TestPage() },
+          {
+            pageFn: new BodyPage().clickTopicTab,
+            instance: new TopicPage(),
+            refreshCheckId: 'topicRow',
+          },
+          {
+            pageFn: new BodyPage().clickTestTab,
+            instance: new TestPage(),
+            refreshCheckId: 'test-details',
+          },
         ];
         for (const pageInfo of pageList) {
           const page = pageInfo.instance;
@@ -110,11 +118,10 @@ devicesTestWrapper(
                     modal.setValues(modal.user.patient, modal.gender.female, modal.gender.transMale, 50);
                     modal.assertValues(modal.user.patient, modal.gender.female, modal.gender.transMale, 50, locale);
                     modal.clickOk();
-                    // The cookies are updated when a new button is clicked
-                    cy.getTestId('covidButton')
+                    // Cookies are only updated when information checking action is triggered
+                    cy.getTestId(pageInfo.refreshCheckId)
+                      .eq(0)
                       .click();
-                    new BodyModal()
-                      .assertModalExist();
                     cy.checkCookies({
                       _onboarded: 'true',
                       gender: modal.gender.female,
@@ -136,11 +143,10 @@ devicesTestWrapper(
                     modal.setValues(undefined, undefined, undefined, 'all ages');
                     modal.assertValues(undefined, undefined, undefined, 'all ages', locale);
                     modal.clickOk();
-                    // The cookies are updated when a new button is clicked
-                    cy.getTestId('covidButton')
+                    // Cookies are only updated when information checking action is triggered
+                    cy.getTestId(pageInfo.refreshCheckId)
+                      .eq(0)
                       .click();
-                    new BodyModal()
-                      .assertModalExist();
                     cy.checkCookies({
                       _onboarded: 'true',
                       _all_ages_selected: true,
