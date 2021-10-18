@@ -149,7 +149,7 @@ def generate_build_ios_homescreen_test():
         "Cypress(Development Build - Text Locale - IOS - Home Screen",
         ["push"],
         [cancel_previous_run_step, check_out_step,
-         generate_cypress_run_step(ci_build_json, local_host, spec=spec, config=f"'userAgent={ios_user_agent}'"),
+         generate_cypress_run_step(ci_build_json, local_host, spec=spec, config=f"userAgent={ios_user_agent}"),
          upload_screenshot_step, upload_report_step,upload_coverage_step])
 
 def generate_build_android_homescreen_test():
@@ -158,7 +158,7 @@ def generate_build_android_homescreen_test():
         "Cypress(Development Build - Text Locale - Android - Home Screen",
         ["push"],
         [cancel_previous_run_step, check_out_step,
-         generate_cypress_run_step(ci_build_json, local_host, spec=spec, config=f"'userAgent={android_user_agent}'"),
+         generate_cypress_run_step(ci_build_json, local_host, spec=spec, config=f"userAgent={android_user_agent}"),
          upload_screenshot_step, upload_report_step,upload_coverage_step])
 
 def generate_build_text_body_no_topic_config_dependent(start_age, end_age):
@@ -277,7 +277,7 @@ def generate_deploy_ios_homescreen_test():
         nightly_build,
         [check_out_step,
          generate_cypress_run_step(ci_deploy_json,
-                                   spec="cypress/integration/textLocaleTests/testSet/ios-add-to-home-screen.js",config=f"'userAgent={ios_user_agent}'"),
+                                   spec="cypress/integration/textLocaleTests/testSet/ios-add-to-home-screen.js",config=f"userAgent={ios_user_agent}"),
          upload_screenshot_step, upload_report_step])
 
 
@@ -287,7 +287,7 @@ def generate_deploy_android_homescreen_test():
         nightly_build,
         [check_out_step,
          generate_cypress_run_step(ci_deploy_json,
-                                   spec="cypress/integration/textLocaleTests/testSet/android-add-to-home-screen.js",config=f"'userAgent={android_user_agent}'"),
+                                   spec="cypress/integration/textLocaleTests/testSet/android-add-to-home-screen.js",config=f"userAgent={android_user_agent}"),
          upload_screenshot_step, upload_report_step])
 
 
