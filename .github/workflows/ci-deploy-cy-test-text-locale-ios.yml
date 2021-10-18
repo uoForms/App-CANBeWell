@@ -16,7 +16,7 @@ jobs:
         config-file: cypress/configs/ci-deploy.json
         browser: chrome
         spec: cypress/integration/textLocaleTests/testSet/ios-add-to-home-screen.js
-        config: userAgent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
+        config: userAgent='Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148'
     - name: Cypress Upload Screenshots
       uses: actions/upload-artifact@v2
       if: failure()
