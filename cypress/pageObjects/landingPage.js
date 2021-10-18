@@ -94,7 +94,7 @@ class LandingPage extends BasePage {
   }
 
   assertHomeScreenButton(locale, device) {
-    // Remove this once https://github.com/uoForms/App-CANBeWell/issues/447 is fixed
+    // TODO: Remove this once https://github.com/uoForms/App-CANBeWell/issues/447 is fixed
     const french = device === this.device.ios ? "Ajouter sur l'écran d'accueil" : "Ajouter à l'écran d'accueil";
     cy.getTestId(`homeScreenButton${capitalize(locale)}`)
       .assertVisibleAndContainText(locale === this.locale.en ? 'Add to Home Screen' : french);
