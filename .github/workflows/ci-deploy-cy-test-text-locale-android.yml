@@ -13,10 +13,9 @@ jobs:
     - name: Cypress Run
       uses: cypress-io/github-action@v2
       with:
-        config-file: cypress/configs/ci-deploy.json
+        config-file: cypress/configs/ci-deploy-ios.json
         browser: chrome
         spec: cypress/integration/textLocaleTests/testSet/android-add-to-home-screen.js
-        config: userAgent=Mozilla/5.0 (Linux; U; Android 2.2) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1
     - name: Cypress Upload Screenshots
       uses: actions/upload-artifact@v2
       if: failure()

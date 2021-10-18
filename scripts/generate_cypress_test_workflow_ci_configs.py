@@ -10,6 +10,14 @@ output_folder_path = os.path.join('.github', 'workflows')
 
 ci_build_json = "cypress/configs/ci-build.json"
 ci_deploy_json = "cypress/configs/ci-deploy.json"
+
+
+ci_build_ios_json = "cypress/configs/ci-build-ios.json"
+ci_deploy_ios_json = "cypress/configs/ci-deploy-ios.json"
+
+ci_build_android_json = "cypress/configs/ci-build-android.json"
+ci_deploy_android_json = "cypress/configs/ci-deploy-android.json"
+
 local_host = 'http://localhost:3000'
 
 nightly_build = {"schedule": [{'cron': '0 4 * * *'}], "workflow_dispatch": None}
@@ -17,10 +25,6 @@ SafeDumper.add_representer(
     type(None),
     lambda dumper, value: dumper.represent_scalar(u'tag:yaml.org,2002:null', '')
 )
-
-ios_user_agent ="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148"
-android_user_agent = "Mozilla/5.0 (Linux; U; Android 2.2) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
-
 
 def set_up():
     shutil.rmtree(str(output_folder_path), ignore_errors=True)
@@ -149,7 +153,7 @@ def generate_build_ios_homescreen_test():
         "Cypress(Development Build - Text Locale - IOS - Home Screen",
         ["push"],
         [cancel_previous_run_step, check_out_step,
-         generate_cypress_run_step(ci_build_json, local_host, spec=spec, config=f"userAgent={ios_user_agent}"),
+         generate_cypress_run_step(ci_build_ios_json, local_host, spec=spec),
          upload_screenshot_step, upload_report_step,upload_coverage_step])
 
 def generate_build_android_homescreen_test():
@@ -158,7 +162,7 @@ def generate_build_android_homescreen_test():
         "Cypress(Development Build - Text Locale - Android - Home Screen",
         ["push"],
         [cancel_previous_run_step, check_out_step,
-         generate_cypress_run_step(ci_build_json, local_host, spec=spec, config=f"userAgent={android_user_agent}"),
+         generate_cypress_run_step(ci_build_android_json, local_host, spec=spec),
          upload_screenshot_step, upload_report_step,upload_coverage_step])
 
 def generate_build_text_body_no_topic_config_dependent(start_age, end_age):
@@ -276,8 +280,8 @@ def generate_deploy_ios_homescreen_test():
         "Cypress(Deploy Build - Text Locale - IOS - Home Screen)",
         nightly_build,
         [check_out_step,
-         generate_cypress_run_step(ci_deploy_json,
-                                   spec="cypress/integration/textLocaleTests/testSet/ios-add-to-home-screen.js",config=f"userAgent={ios_user_agent}"),
+         generate_cypress_run_step(ci_deploy_android_json,
+                                   spec="cypress/integration/textLocaleTests/testSet/ios-add-to-home-screen.js"),
          upload_screenshot_step, upload_report_step])
 
 
@@ -286,8 +290,8 @@ def generate_deploy_android_homescreen_test():
         "Cypress(Deploy Build - Text Locale - Android - Home Screen)",
         nightly_build,
         [check_out_step,
-         generate_cypress_run_step(ci_deploy_json,
-                                   spec="cypress/integration/textLocaleTests/testSet/android-add-to-home-screen.js",config=f"userAgent={android_user_agent}"),
+         generate_cypress_run_step(ci_deploy_ios_json,
+                                   spec="cypress/integration/textLocaleTests/testSet/android-add-to-home-screen.js"),
          upload_screenshot_step, upload_report_step])
 
 
