@@ -1,5 +1,6 @@
 import TestPage from '../../pageObjects/testPage';
 import { cookiesSetupAndAccessBodyPage } from './base-test-helper';
+import BasePage from '../../pageObjects/basePage';
 
 function generateTestDataSet(props, user) {
   const test = props.Test;
@@ -11,7 +12,7 @@ function generateTestDataSet(props, user) {
   ageSet.add(minAge);
   ageSet.add(maxAge);
   ageSet.add(Math.round((minAge + maxAge) / 2));
-  if (user === 'provider' && minAge === 18 && maxAge === 150) {
+  if (user === new BasePage().user.provider && minAge === 18 && maxAge === 150) {
     ageSet.add('all ages');
   }
   const genderSet = new Set();

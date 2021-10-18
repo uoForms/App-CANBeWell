@@ -11,7 +11,7 @@ describe('Body Page Text Locale No Topic Modal', () => {
   // Join each topic by its fields and calculate what are the optimized test data is just to complex, bruce force here
   // eslint-disable-next-line no-plusplus
   for (let age = 126; age <= 150; age++) {
-    for (const user of ['patient', 'provider']) {
+    for (const user of [landingPage.user.patient, landingPage.user.provider]) {
       for (const gender of ['m', 'f', 'tm', 'tf', 'nonbinary-m', 'nonbinary-f']) {
         for (const locale of [landingPage.locale.en, landingPage.locale.fr]) {
           const bodyPage = new BodyPage();

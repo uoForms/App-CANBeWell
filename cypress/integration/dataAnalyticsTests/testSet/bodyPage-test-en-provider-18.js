@@ -10,7 +10,7 @@ describe('Body Page Analytics', () => {
   beforeEach(() => {
     cy.visit('/');
   });
-  const user = { user: 'provider' };
+  const user = { user: landingPage.user.provider };
   const locale = landingPage.locale.en;
   const localeDict = localFile.english;
   const age = { age: 18 };

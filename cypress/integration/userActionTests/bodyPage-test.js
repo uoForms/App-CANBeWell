@@ -20,7 +20,7 @@ devicesTestWrapper(
                 gender,
                 Tgender: tGender,
                 age: 18,
-                user: 'patient',
+                user: bodyPage.user.patient,
               });
               landingPage.clickRedirectButton(locale);
             });
@@ -81,7 +81,7 @@ devicesTestWrapper(
             gender: bodyPage.gender.male,
             Tgender: bodyPage.gender.transFemale,
             age: 18,
-            user: 'patient',
+            user: bodyPage.user.patient,
           });
           landingPage.clickRedirectButton(locale);
         });

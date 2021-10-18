@@ -59,7 +59,7 @@ devicesTestWrapper(
         gender: landingPage.gender.male,
         Tgender: landingPage.gender.transFemale,
         age: 18,
-        user: 'patient',
+        user: landingPage.user.patient,
       });
       landingPage.clickRedirectButton(landingPage.locale.en);
       const potentialInstructionModal = new InstructionModal();
@@ -75,7 +75,7 @@ devicesTestWrapper(
         gender: landingPage.gender.male,
         Tgender: landingPage.gender.transFemale,
         age: 18,
-        user: 'patient',
+        user: landingPage.user.patient,
       });
       landingPage.clickRedirectButton(landingPage.locale.fr);
       const potentialInstructionModal = new InstructionModal();

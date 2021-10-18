@@ -9,7 +9,7 @@ describe('Body Page Text Locale No Topic Modal', () => {
     cy.visit('/');
   });
 
-  for (const user of ['patient', 'provider']) {
+  for (const user of [landingPage.user.patient, landingPage.user.provider]) {
     for (const locale of [landingPage.locale.en, landingPage.locale.fr]) {
       for (const gender of ['m', 'f', 'tm', 'tf', 'nonbinary-m', 'nonbinary-f']) {
         const bodyPage = new BodyPage();
@@ -19,7 +19,7 @@ describe('Body Page Text Locale No Topic Modal', () => {
             it(`Run with setting: 18, ${gender}, ${locale}, ${user} ${buttonInfo.testId}`, () => {
               bodyPageNoTopicTestSteps(gender, 18, user, locale, buttonInfo.testId);
             });
-            if (user === 'provider') {
+            if (user === landingPage.user.provider) {
               it(`Run with setting: all ages, ${gender}, ${locale}, ${user} ${buttonInfo.testId}`, () => {
                 bodyPageNoTopicTestSteps(gender, 'all ages', user, locale, buttonInfo.testId);
               });

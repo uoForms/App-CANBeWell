@@ -21,7 +21,7 @@ devicesTestWrapper(
             gender: topicPage.gender.male,
             Tgender: topicPage.gender.transFemale,
             age: 18,
-            user: 'patient',
+            user: topicPage.user.patient,
           });
           landingPage.clickRedirectButton(locale);
           new BodyPage()

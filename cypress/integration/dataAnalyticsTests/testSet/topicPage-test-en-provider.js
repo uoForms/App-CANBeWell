@@ -5,7 +5,7 @@ const topics = require('../../../../src/JSONFolder/HtmlTopic-EN.json');
 
 describe('Topic Page Analytics', () => {
   const landingPage = new LandingPage();
-  const user = 'provider';
+  const user = landingPage.user.provider;
   const locale = landingPage.locale.en;
   beforeEach(() => {
     cy.visit('/');

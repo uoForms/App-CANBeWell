@@ -117,7 +117,7 @@ class BodyModal extends BasePage {
   assertAndClickSubject(subject, text, age, user, page) {
     //  Special cases: duplicated topic summaries
     const specialCondition1 = (text.includes('Practice safe sex') || text.includes('Pratiquez des relations sexuelles protégées')) && age <= 24 && age >= 18;
-    const specialCondition2 = text.includes("Il est recommandé d'être a") && user === 'provider' && page instanceof BodyPage;
+    const specialCondition2 = text.includes("Il est recommandé d'être a") && user === this.user.provider && page instanceof BodyPage;
     const clearnedSubject = subject.split(/\s+/)
       .join(' ');
     if (subject.includes('\n')) {

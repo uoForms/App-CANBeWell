@@ -5,7 +5,7 @@ const topics = require('../../../../src/JSONFolder/HtmlTopic-FR.json');
 
 describe('Body Page Text Locale', () => {
   const landingPage = new LandingPage();
-  const user = 'provider';
+  const user = landingPage.user.provider;
   const locale = landingPage.locale.fr;
   beforeEach(() => {
     cy.visit('/');
