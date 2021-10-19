@@ -119,16 +119,21 @@ devicesTestWrapper(
                     modal.assertValues(modal.user.patient, modal.gender.female, modal.gender.transMale, 50, locale);
                     modal.clickOk();
                     // Cookies are only updated when information checking action is triggered
+                    // eslint-disable-next-line cypress/no-unnecessary-waiting
                     cy.getTestId(pageInfo.refreshCheckId)
                       .eq(0)
-                      .click();
-                    cy.checkCookies({
-                      _onboarded: 'true',
-                      gender: modal.gender.female,
-                      Tgender: modal.gender.transMale,
-                      age: 50,
-                      user: modal.user.patient,
-                    });
+                      .click()
+                    // Wait 2 seconds to deflake deploy slowness
+                      .wait(2000)
+                      .then(() => {
+                        cy.checkCookies({
+                          _onboarded: 'true',
+                          gender: modal.gender.female,
+                          Tgender: modal.gender.transMale,
+                          age: 50,
+                          user: modal.user.patient,
+                        });
+                      });
                   }
                 });
             });
@@ -144,18 +149,20 @@ devicesTestWrapper(
                     modal.assertValues(undefined, undefined, undefined, 'all ages', locale);
                     modal.clickOk();
                     // Cookies are only updated when information checking action is triggered
+                    // eslint-disable-next-line cypress/no-unnecessary-waiting
                     cy.getTestId(pageInfo.refreshCheckId)
                       .eq(0)
-                      .click();
-                    // Wait two seconds due to deploy slowness
-                    // eslint-disable-next-line cypress/no-unnecessary-waiting
-                    cy.wait(2000);
-                    cy.checkCookies({
-                      _onboarded: 'true',
-                      _all_ages_selected: true,
-                      age: 'all%20ages',
-                      user: landingPage.user.provider,
-                    });
+                      .click()
+                    // Wait 2 seconds to deflake deploy slowness
+                      .wait(2000)
+                      .then(() => {
+                        cy.checkCookies({
+                          _onboarded: 'true',
+                          _all_ages_selected: true,
+                          age: 'all%20ages',
+                          user: landingPage.user.provider,
+                        });
+                      });
                   }
                 });
             });
