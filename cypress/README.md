@@ -2,9 +2,11 @@
 
 This README describes the setup and usage of testing framework for App-CANBeWell.
 
-Last updated: Sept 29 2021
+Last updated: Oct 19 2021
 
 ## Basic
+
+[Test Status](testStatus.md)
 
 The framework is built on top of Cypress.io. For basic usage, please see the following sources:
 
