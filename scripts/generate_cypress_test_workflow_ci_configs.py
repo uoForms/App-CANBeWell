@@ -424,7 +424,7 @@ def generate_status_page():
     with open(os.path.join('cypress','testStatus.md'), 'w') as f:
         for status_badge in status_badges:
             f.write(status_badge)
-            f.write('\n')
+            f.write('\n\n')
 
 
 
