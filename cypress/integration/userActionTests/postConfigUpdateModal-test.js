@@ -147,6 +147,9 @@ devicesTestWrapper(
                     cy.getTestId(pageInfo.refreshCheckId)
                       .eq(0)
                       .click();
+                    // Wait two seconds due to deploy slowness
+                    // eslint-disable-next-line cypress/no-unnecessary-waiting
+                    cy.wait(2000);
                     cy.checkCookies({
                       _onboarded: 'true',
                       _all_ages_selected: true,

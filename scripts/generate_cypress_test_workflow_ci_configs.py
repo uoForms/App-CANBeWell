@@ -280,7 +280,7 @@ def generate_deploy_ios_homescreen_test():
         "Cypress(Deploy Build - Text Locale - IOS - Home Screen)",
         nightly_build,
         [check_out_step,
-         generate_cypress_run_step(ci_deploy_android_json,
+         generate_cypress_run_step(ci_deploy_ios_json,
                                    spec="cypress/integration/textLocaleTests/testSet/ios-add-to-home-screen.js"),
          upload_screenshot_step, upload_report_step])
 
@@ -290,7 +290,7 @@ def generate_deploy_android_homescreen_test():
         "Cypress(Deploy Build - Text Locale - Android - Home Screen)",
         nightly_build,
         [check_out_step,
-         generate_cypress_run_step(ci_deploy_ios_json,
+         generate_cypress_run_step(ci_deploy_android_json,
                                    spec="cypress/integration/textLocaleTests/testSet/android-add-to-home-screen.js"),
          upload_screenshot_step, upload_report_step])
 

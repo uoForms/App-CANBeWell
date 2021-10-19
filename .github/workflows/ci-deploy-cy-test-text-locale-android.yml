@@ -13,7 +13,7 @@ jobs:
     - name: Cypress Run
       uses: cypress-io/github-action@v2
       with:
-        config-file: cypress/configs/ci-deploy-ios.json
+        config-file: cypress/configs/ci-deploy-android.json
         browser: chrome
         spec: cypress/integration/textLocaleTests/testSet/android-add-to-home-screen.js
     - name: Cypress Upload Screenshots
