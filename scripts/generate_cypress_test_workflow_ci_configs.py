@@ -408,4 +408,26 @@ def write_to_file(file_name, content):
     yaml.safe_dump(content, file, width=1000)
 
 
+
+def generate_status_page():
+    status_badges = []
+    for filename in os.listdir(output_folder_path):
+        status_badge ='[!'
+        with open(os.path.join(output_folder_path, filename), 'r') as f:
+            yaml_file = yaml.safe_load(f)
+            status_badge+=f'[{yaml_file["name"]}]'
+        status_badge+=f"(https://github.com/uoForms/App-CANBeWell/actions/workflows/{filename}/badge.svg)"
+        status_badge += ']'
+        status_badge +=f'(https://github.com/uoForms/App-CANBeWell/actions/workflows/{filename})'
+        status_badges.append(status_badge)
+
+    with open(os.path.join('cypress','testStatus.md'), 'w') as f:
+        for status_badge in status_badges:
+            f.write(status_badge)
+            f.write('\n')
+
+
+
+
 run()
+generate_status_page()
