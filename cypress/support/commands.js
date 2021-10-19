@@ -55,8 +55,12 @@ Cypress.Commands.add('assertImageVisibleWithSource', {
 
 Cypress.Commands.add('setupCookies', (cookies) => {
   for (const cookie in cookies) {
-    cy.setCookie(cookie, JSON.stringify(cookies[cookie])
-      .replaceAll('"', ''));
+    cy.document()
+      .then((doc) => {
+        // eslint-disable-next-line no-param-reassign
+        doc.cookie = `${cookie}=${JSON.stringify(cookies[cookie])
+          .replaceAll('"', '')}`;
+      });
   }
 });
 
