@@ -1,3 +1,4 @@
+import capitalize from 'capitalize';
 import BasePage from './basePage';
 
 class LandingPage extends BasePage {
@@ -20,6 +21,10 @@ class LandingPage extends BasePage {
     this.reliableResourceStatement = {
       [this.locale.en]: 'A reliable resource by Canadian health care providers to help you stay healthy',
       [this.locale.fr]: 'Rester en santé avec cette ressource créée par vos professionnels de la santé canadiens',
+    };
+    this.device = {
+      ios: 'ios',
+      android: 'android',
     };
 
     this.privacyStatement = {
@@ -86,6 +91,93 @@ class LandingPage extends BasePage {
       .then((href) => {
         cy.assertUrl(href);
       });
+  }
+
+  assertHomeScreenButton(locale, device) {
+    // TODO: Remove this once https://github.com/uoForms/App-CANBeWell/issues/447 is fixed
+    const french = device === this.device.ios ? "Ajouter sur l'écran d'accueil" : "Ajouter à l'écran d'accueil";
+    cy.getTestId(`homeScreenButton${capitalize(locale)}`)
+      .assertVisibleAndContainText(locale === this.locale.en ? 'Add to Home Screen' : french);
+  }
+
+  assertHomeScreenModalContent(locale, device) {
+    // TODO: Add image checks once https://github.com/uoForms/App-CANBeWell/issues/446 is fixed
+    if (locale === this.locale.en) {
+      if (device === this.device.ios) {
+        cy.getTestId('homeScreenTitle')
+          .assertVisibleAndContainText('For iPhone and iPad');
+        cy.getTestId('homeScreenContent')
+          .assertVisibleAndContainText('1. Launch icanbewell.ca via Safari');
+        cy.getTestId('homeScreenContent')
+          .assertVisibleAndContainText('2. Tap share icon');
+        cy.getTestId('homeScreenContent')
+          .assertVisibleAndContainText('3. Tap "Add to Home Screen');
+        cy.getTestId('homeScreenContent')
+          .assertVisibleAndContainText('4. Tap "Add" button');
+      } else {
+        cy.getTestId('homeScreenTitle')
+          .assertVisibleAndContainText('For Android');
+        cy.getTestId('homeScreenContent')
+          .assertVisibleAndContainText('1. Launch icanbewell.ca via Chrome');
+        cy.getTestId('homeScreenContent')
+          .assertVisibleAndContainText('2. Tap menu icon');
+        cy.getTestId('homeScreenContent')
+          .assertVisibleAndContainText('3. Tap "Add to Home Screen');
+      }
+    } else if (device === this.device.ios) {
+      cy.getTestId('homeScreenTitle')
+        .assertVisibleAndContainText('Pour iPhone et iPad');
+      cy.getTestId('homeScreenContent')
+        .assertVisibleAndContainText('1. Lancez icanbewell.ca via Safari');
+      cy.getTestId('homeScreenContent')
+        .assertVisibleAndContainText('2. Appuyez sur l\'icône de partage');
+      cy.getTestId('homeScreenContent')
+        .assertVisibleAndContainText('3. Appuyez sur "Ajouter sur l\'écran d\'accueil"');
+      cy.getTestId('homeScreenContent')
+        .assertVisibleAndContainText('4. Appuyez sur le bouton "Ajouter"');
+    } else {
+      cy.getTestId('homeScreenTitle')
+        .assertVisibleAndContainText('Pour Android');
+      cy.getTestId('homeScreenContent')
+        .assertVisibleAndContainText('1. Lancez icanbewell.ca via Chrome');
+      cy.getTestId('homeScreenContent')
+        .assertVisibleAndContainText('2. Appuyez sur l\'icône de menu');
+      cy.getTestId('homeScreenContent')
+        .assertVisibleAndContainText('3. Appuyez sur "Ajouter à l\'écran d\'accueil');
+    }
+    cy.getTestId('homeScreenCloseButton')
+      .assertVisibleAndContainText(locale === this.locale.en ? 'OK' : "D'accord");
+  }
+
+  clickHomeScreenButton(locale) {
+    cy.getTestId(`homeScreenButton${capitalize(locale)}`)
+      .click();
+  }
+
+  clickHomeScreenCloseButton() {
+    cy.getTestId('homeScreenCloseButton')
+      .click();
+  }
+
+  clickHomeScreenCloseIcon() {
+    cy.getTestId('homeScreenCloseIcon')
+      .click();
+  }
+
+  clickBackDrop() {
+    // third party code, cannot insert test-id
+    cy.get('[role="presentation"]')
+      .click('right');
+  }
+
+  assertHomeScreenModalNotExist() {
+    cy.getTestId('homeScreenTitle')
+      .should('not.exist');
+  }
+
+  assertHomeScreenModalExist() {
+    cy.getTestId('homeScreenTitle')
+      .should('exist');
   }
 }
 

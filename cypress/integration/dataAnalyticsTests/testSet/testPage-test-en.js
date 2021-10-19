@@ -5,12 +5,13 @@ import { generateTestDataSet } from '../../textLocaleTests/testPage-test-helper'
 const topics = require('../../../../src/JSONFolder/HtmlTest-EN.json');
 
 describe('Test Page Analytics', () => {
-  const locale = new LandingPage().locale.en;
+  const landingPage = new LandingPage();
+  const locale = landingPage.locale.en;
   beforeEach(() => {
     cy.visit('/');
   });
 
-  for (const user of ['patient', 'provider']) {
+  for (const user of [landingPage.user.patient, landingPage.user.provider]) {
     for (const topic of topics) {
       // Same data is generated as text locale tests, reuse the function
       const dataInputList = generateTestDataSet(topic, user);

@@ -60,6 +60,11 @@ class BodyPage extends BasePage {
       .assertVisibleAndContainText(this.localeFile[locale].body_general_instruction);
   }
 
+  assertSelectedButton(locale, localeId) {
+    cy.getTestId('selectedButton')
+      .should('have.text', this.localeFile[locale][localeId] || '');
+  }
+
   assertBodyImage(gender) {
     if (gender === this.gender.male) {
       cy.getTestId('maleBodyImg')

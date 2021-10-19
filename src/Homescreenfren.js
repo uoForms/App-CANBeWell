@@ -27,10 +27,10 @@ const DialogTitle = withStyles(styles)((props) => {
   const { children, classes, onClose, ...other } = props;
   return (
     <MuiDialogTitle disableTypography className={classes.root} {...other}>
-      <Typography variant="h5">{children}</Typography>
+      <Typography variant="h5" test-id="homeScreenTitle">{children}</Typography>
       {onClose ? (
         <IconButton aria-label="close" className={classes.closeButton} onClick={onClose}>
-          <CloseIcon />
+          <CloseIcon test-id="homeScreenCloseIcon"/>
         </IconButton>
       ) : null}
     </MuiDialogTitle>
@@ -70,13 +70,13 @@ export default function CustomizedDialogs() {
           if(clientOS == 'iOS'){
             return <div>
               <div className="homescreen-button-french">
-                &nbsp;<button onClick={handleClickOpen}>Ajouter sur l'écran d'accueil</button>
+                &nbsp;<button test-id="homeScreenButtonFr" onClick={handleClickOpen}>Ajouter sur l'écran d'accueil</button>
                 </div>
           <Dialog onClose={handleClose} aria-labelledby="customized-dialog-title" open={open}>
             <DialogTitle id="customized-dialog-title" onClose={handleClose}>
             Pour iPhone et iPad
             </DialogTitle>
-            <DialogContent dividers className="Diacontent">
+            <DialogContent test-id="homeScreenContent" dividers className="Diacontent">
             <h4>1. Lancez icanbewell.ca via Safari</h4>
               <img src={require('./images/instruction_1.png')} className="instructionimg" />
               <h4>2. Appuyez sur l'icône de partage</h4>
@@ -88,7 +88,7 @@ export default function CustomizedDialogs() {
             </DialogContent>
             <DialogActions>
               <div className="closeButton">
-                <button onClick={handleClose}>D'accord</button>
+                <button test-id="homeScreenCloseButton" onClick={handleClose}>D'accord</button>
               </div>
             </DialogActions>
           </Dialog>
@@ -97,13 +97,13 @@ export default function CustomizedDialogs() {
           else if(clientOS =='AndroidOS'){
             return <div>
               <div className="homescreen-button-french">
-              &nbsp;<button onClick={handleClickOpen}>Ajouter à l'écran d'accueil</button>
+              &nbsp;<button test-id="homeScreenButtonFr" onClick={handleClickOpen}>Ajouter à l'écran d'accueil</button>
                 </div>
           <Dialog onClose={handleClose} aria-labelledby="customized-dialog-title" open={open}>
           <DialogTitle id="customized-dialog-title" onClose={handleClose}>
           Pour Android
             </DialogTitle>
-            <DialogContent dividers className="Diacontent">
+            <DialogContent test-id="homeScreenContent" dividers className="Diacontent">
             <h4>1. Lancez icanbewell.ca via Chrome</h4>
               <img src={require('./images/android_1.jpg')} className="instructionimg" />
               <h4>2. Appuyez sur l'icône de menu</h4>
@@ -113,7 +113,7 @@ export default function CustomizedDialogs() {
             </DialogContent>
             <DialogActions>
               <div className="closeButton">
-                <button onClick={handleClose}>D'accord</button>
+                <button test-id="homeScreenCloseButton" onClick={handleClose}>D'accord</button>
               </div>
             </DialogActions>
           </Dialog>

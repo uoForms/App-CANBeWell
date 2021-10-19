@@ -28,10 +28,10 @@ const DialogTitle = withStyles(styles)((props) => {
   const { children, classes, onClose, ...other } = props;
   return (
     <MuiDialogTitle disableTypography className={classes.root} {...other}>
-      <Typography variant="h5">{children}</Typography>
+      <Typography test-id="homeScreenTitle" variant="h5">{children}</Typography>
       {onClose ? (
         <IconButton aria-label="close" className={classes.closeButton} onClick={onClose}>
-          <CloseIcon />
+          <CloseIcon test-id="homeScreenCloseIcon" />
         </IconButton>
       ) : null}
     </MuiDialogTitle>
@@ -71,13 +71,13 @@ export default function CustomizedDialogs() {
           if(clientOS == 'iOS'){
             return <div>
               <div className="homescreen-button-english">
-                <button onClick={handleClickOpen}>Add to Home Screen</button>&nbsp;
+                <button onClick={handleClickOpen} test-id="homeScreenButtonEn">Add to Home Screen</button>&nbsp;
                 </div>
           <Dialog onClose={handleClose} aria-labelledby="customized-dialog-title" open={open}>
             <DialogTitle id="customized-dialog-title" onClose={handleClose}>
               For iPhone and iPad
             </DialogTitle>
-            <DialogContent dividers className="Diacontent">
+            <DialogContent test-id="homeScreenContent" dividers className="Diacontent">
               <h4>1. Launch icanbewell.ca via Safari</h4>
               <img src={require('./images/instruction_1.png')} className="instructionimg" />
               <h4>2. Tap share icon</h4>
@@ -89,7 +89,7 @@ export default function CustomizedDialogs() {
             </DialogContent>
             <DialogActions>
               <div className="closeButton">
-                <button onClick={handleClose}>OK</button>
+                <button test-id="homeScreenCloseButton" onClick={handleClose}>OK</button>
               </div>
             </DialogActions>
           </Dialog>
@@ -98,13 +98,13 @@ export default function CustomizedDialogs() {
           else if(clientOS =='AndroidOS'){
             return <div>
               <div className="homescreen-button-english">
-                <button onClick={handleClickOpen}>Add to Home Screen</button>&nbsp;
+                <button test-id="homeScreenButtonEn" onClick={handleClickOpen}>Add to Home Screen</button>&nbsp;
                 </div>
           <Dialog onClose={handleClose} aria-labelledby="customized-dialog-title" open={open}>
           <DialogTitle id="customized-dialog-title" onClose={handleClose}>
               For Android
             </DialogTitle>
-            <DialogContent dividers className="Diacontent">
+            <DialogContent test-id="homeScreenContent" dividers className="Diacontent">
             <h4>1. Launch icanbewell.ca via Chrome</h4>
               <img src={require('./images/android_1.jpg')} className="instructionimg" />
               <h4>2. Tap menu icon</h4>
@@ -114,7 +114,7 @@ export default function CustomizedDialogs() {
             </DialogContent>
             <DialogActions>
               <div className="closeButton">
-                <button onClick={handleClose}>OK</button>
+                <button test-id="homeScreenCloseButton" onClick={handleClose}>OK</button>
               </div>
             </DialogActions>
           </Dialog>
