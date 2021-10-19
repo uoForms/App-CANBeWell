@@ -1,3 +1,5 @@
+import 'cypress-wait-until';
+
 Cypress.Commands.add('assertVisibleAndContainText', {
   prevSubject: 'element',
 }, (subject, text) => {
@@ -60,9 +62,12 @@ Cypress.Commands.add('setupCookies', (cookies) => {
 
 Cypress.Commands.add('checkCookies', (cookies) => {
   for (const cookie in cookies) {
+    const expectedValue = JSON.stringify(cookies[cookie])
+      .replaceAll('"', '');
+    cy.waitUntil(() => cy.getCookie(cookie)
+      .then((c) => c.value === expectedValue));
     cy.getCookie(cookie)
-      .should('have.property', 'value', JSON.stringify(cookies[cookie])
-        .replaceAll('"', ''));
+      .should('have.property', 'value', expectedValue);
   }
 });
 
