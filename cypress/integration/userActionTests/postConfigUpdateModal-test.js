@@ -123,8 +123,6 @@ devicesTestWrapper(
                     cy.getTestId(pageInfo.refreshCheckId)
                       .eq(0)
                       .click()
-                    // Wait 2 seconds to deflake deploy slowness
-                      .wait(2000)
                       .then(() => {
                         cy.checkCookies({
                           _onboarded: 'true',
@@ -153,8 +151,6 @@ devicesTestWrapper(
                     cy.getTestId(pageInfo.refreshCheckId)
                       .eq(0)
                       .click()
-                    // Wait 2 seconds to deflake deploy slowness
-                      .wait(2000)
                       .then(() => {
                         cy.checkCookies({
                           _onboarded: 'true',
