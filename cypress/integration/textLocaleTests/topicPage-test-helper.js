@@ -1,5 +1,6 @@
 import { assertTopicModal, cookiesSetupAndAccessBodyPage, readTopicJsonData } from './base-test-helper';
 import TopicPage from '../../pageObjects/topicPage';
+import BasePage from '../../pageObjects/basePage';
 
 function generateTestDataSet(props, user) {
   const {
@@ -34,9 +35,9 @@ function expectedHeadings(age, gender, user, locale) {
     if (((topic['Minimum age'] <= age && topic['Maximum age'] >= age) || age === 'all ages') && (
       topicGenderList.includes(gender) || topic.Gender === 'all' || (gender === 'nonbinary-m' && topicGenderList.includes('tf')) || (gender === 'nonbinary-f' && topicGenderList
         .includes('tm')))) {
-      if (user === 'patient' && topic['General Patient Text'] !== 'n/a') {
+      if (user === new BasePage().user.patient && topic['General Patient Text'] !== 'n/a') {
         expectedHeadingSet.add(topic['Topic heading'].replace('\n', ' '));
-      } else if (user === 'provider' && topic['Health Provider Text'] !== 'n/a') {
+      } else if (user === new BasePage().user.provider && topic['Health Provider Text'] !== 'n/a') {
         expectedHeadingSet.add(topic['Topic heading'].replace('\n', ' '));
       }
     }
@@ -59,9 +60,9 @@ function expectedSubjects(age, gender, user, locale, heading) {
     if (((topic['Minimum age'] <= age && topic['Maximum age'] >= age) || age === 'all ages') && (
       topicGenderList.includes(gender) || topic.Gender === 'all' || (gender === 'nonbinary-m' && topicGenderList.includes('tf')) || (gender === 'nonbinary-f' && topicGenderList
         .includes('tm'))) && heading === topic['Topic heading']) {
-      if (user === 'patient' && topic['General Patient Text'] !== 'n/a') {
+      if (user === new BasePage().user.patient && topic['General Patient Text'] !== 'n/a') {
         expectedSubjectSet.push(topic.Subject.replace(' \n', '\n'));
-      } else if (user === 'provider' && topic['Health Provider Text'] !== 'n/a') {
+      } else if (user === new BasePage().user.provider && topic['Health Provider Text'] !== 'n/a') {
         expectedSubjectSet.push(topic.Subject.replace(' \n', '\n'));
       }
     }

@@ -1,6 +1,6 @@
-import BasePage from './basePage';
+import BaseConfigModal from './baseConfigModal';
 
-class PostConfigUpdateModal extends BasePage {
+class PostConfigUpdateModal extends BaseConfigModal {
   assertAllDisplayText(locale) {
     cy.getTestId('PostConfigUpdateModalHeader')
       .assertVisibleAndContainText(this.localeFile[locale].configuration_header);
@@ -50,6 +50,19 @@ class PostConfigUpdateModal extends BasePage {
   assertModalExist() {
     cy.getTestId('PostConfigUpdateModalRoot')
       .should('be.visible');
+  }
+
+  assertModalNotExist() {
+    cy.getTestId('PostConfigUpdateModalRoot')
+      .should('not.exist');
+  }
+
+  clickOk(postAssertion = true) {
+    cy.getTestId('okButton')
+      .click();
+    if (postAssertion) {
+      this.assertModalNotExist();
+    }
   }
 }
 

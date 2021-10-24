@@ -10,7 +10,7 @@ describe('Body Page Analytics', () => {
     cy.visit('/');
   });
   const age = { age: 18 };
-  const user = { user: 'patient' };
+  const user = { user: landingPage.user.patient };
   const locale = landingPage.locale.en;
   const localeDict = localFile.english;
   genderList.forEach((gender) => {

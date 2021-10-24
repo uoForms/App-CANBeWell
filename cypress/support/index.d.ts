@@ -13,5 +13,7 @@ declare namespace Cypress {
 
         setupCookies(cookies)
 
+        checkCookies(cookies)
+
     }
 }

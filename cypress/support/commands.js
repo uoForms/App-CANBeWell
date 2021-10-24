@@ -1,3 +1,5 @@
+import 'cypress-wait-until';
+
 Cypress.Commands.add('assertVisibleAndContainText', {
   prevSubject: 'element',
 }, (subject, text) => {
@@ -53,7 +55,26 @@ Cypress.Commands.add('assertImageVisibleWithSource', {
 
 Cypress.Commands.add('setupCookies', (cookies) => {
   for (const cookie in cookies) {
-    cy.setCookie(cookie, JSON.stringify(cookies[cookie])
-      .replaceAll('"', ''));
+    cy.document()
+      .then((doc) => {
+        // eslint-disable-next-line no-param-reassign
+        doc.cookie = `${cookie}=${JSON.stringify(cookies[cookie])
+          .replaceAll('"', '')}`;
+      });
   }
+});
+
+Cypress.Commands.add('checkCookies', (cookies) => {
+  for (const cookie in cookies) {
+    const expectedValue = JSON.stringify(cookies[cookie])
+      .replaceAll('"', '');
+    cy.waitUntil(() => cy.getCookie(cookie)
+      .then((c) => c.value === expectedValue));
+    cy.getCookie(cookie)
+      .should('have.property', 'value', expectedValue);
+  }
+});
+
+Cypress.Commands.add('getTestId', (id) => {
+  cy.get(`[test-id="${id}"]`);
 });

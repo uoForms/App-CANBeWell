@@ -22,6 +22,11 @@ class BodyModal extends BasePage {
       .should('not.have.attr', 'open');
   }
 
+  assertHaveAtLeastOneSubject() {
+    cy.getTestId('topicSummary')
+      .should('exist');
+  }
+
   assertModalExist() {
     cy.getTestId('bodyModal')
       .should('be.visible');
@@ -74,6 +79,16 @@ class BodyModal extends BasePage {
       });
   }
 
+  assertContainSubject(subject) {
+    // https://glebbahmutov.com/cypress-examples/6.5.0/recipes/get-text-list.html
+    cy.getTestId('topicSummary')
+      .then(($els) => (
+        Cypress.$.makeArray($els)
+          .map((el) => el.innerText)
+      ))
+      .should('contain', subject);
+  }
+
   assertSubjects(expectedSubjects, cacheId) {
     function helper() {
       // https://glebbahmutov.com/cypress-examples/6.5.0/recipes/get-text-list.html
@@ -102,7 +117,7 @@ class BodyModal extends BasePage {
   assertAndClickSubject(subject, text, age, user, page) {
     //  Special cases: duplicated topic summaries
     const specialCondition1 = (text.includes('Practice safe sex') || text.includes('Pratiquez des relations sexuelles protégées')) && age <= 24 && age >= 18;
-    const specialCondition2 = text.includes("Il est recommandé d'être a") && user === 'provider' && page instanceof BodyPage;
+    const specialCondition2 = text.includes("Il est recommandé d'être a") && user === this.user.provider && page instanceof BodyPage;
     const clearnedSubject = subject.split(/\s+/)
       .join(' ');
     if (subject.includes('\n')) {

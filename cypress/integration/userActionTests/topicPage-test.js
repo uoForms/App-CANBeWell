@@ -4,11 +4,14 @@ import BodyPage from '../../pageObjects/bodyPage';
 import TopicPage from '../../pageObjects/topicPage';
 import TestPage from '../../pageObjects/testPage';
 import BodyModal from '../../pageObjects/bodyModal';
+import PostConfigUpdateModal from '../../pageObjects/postConfigUpdateModal';
 
 devicesTestWrapper(
   'Topic Page', () => {
     const landingPage = new LandingPage();
     const topicPage = new TopicPage();
+    // Manually counted with given cookies, update as needed
+    const DEFAULT_DISPLAYED_HEADING_COUNT = 16;
     for (const locale of [landingPage.locale.en, landingPage.locale.fr]) {
       describe(`Locale: ${locale}`, () => {
         beforeEach(() => {
@@ -18,11 +21,81 @@ devicesTestWrapper(
             gender: topicPage.gender.male,
             Tgender: topicPage.gender.transFemale,
             age: 18,
-            user: 'patient',
+            user: topicPage.user.patient,
           });
           landingPage.clickRedirectButton(locale);
           new BodyPage()
             .clickTopicTab();
+        });
+
+        it('Update Config Triggers Content Update', () => {
+          cy.document()
+            .then((doc) => {
+              if (doc.documentElement.clientHeight === 414) {
+                // TODO: remove the skip once 435 is fixed
+                cy.log('Skip due to https://github.com/uoForms/App-CANBeWell/issues/435');
+              } else {
+                topicPage.openPostConfigUpdateModal();
+                const modal = new PostConfigUpdateModal();
+                modal.setValues(undefined, topicPage.gender.female, undefined, undefined);
+                modal.clickOk();
+                topicPage.assertAtLeastNHeadingDisplayed(DEFAULT_DISPLAYED_HEADING_COUNT + 1);
+              }
+            });
+        });
+
+        it('Update Config Triggers Content Update 2', () => {
+          cy.document()
+            .then((doc) => {
+              if (doc.documentElement.clientHeight === 414) {
+                // TODO: remove the skip once 435 is fixed
+                cy.log('Skip due to https://github.com/uoForms/App-CANBeWell/issues/435');
+              } else {
+                topicPage.openPostConfigUpdateModal();
+                const modal = new PostConfigUpdateModal();
+                modal.setValues(undefined, undefined, topicPage.gender.transMale, undefined);
+                modal.clickOk();
+                topicPage.assertAtLeastNHeadingDisplayed(DEFAULT_DISPLAYED_HEADING_COUNT + 1);
+              }
+            });
+        });
+
+        it('Update Config Triggers Content Update 3', () => {
+          cy.document()
+            .then((doc) => {
+              if (doc.documentElement.clientHeight === 414) {
+                // TODO: remove the skip once 435 is fixed
+                cy.log('Skip due to https://github.com/uoForms/App-CANBeWell/issues/435');
+              } else {
+                topicPage.openPostConfigUpdateModal();
+                const modal = new PostConfigUpdateModal();
+                modal.setValues(undefined, undefined, undefined, 150);
+                modal.clickOk();
+                const topic = locale === topicPage.locale.en ? 'Falls in the Elderly' : 'Chutes chez les personnes âgées';
+                topicPage.search(topic);
+                // disable cache
+                topicPage.assertHeadings([topic], String(Math.random()));
+              }
+            });
+        });
+
+        it('Update Config Triggers Content Update 4', () => {
+          cy.document()
+            .then((doc) => {
+              if (doc.documentElement.clientHeight === 414) {
+                // TODO: remove the skip once 435 is fixed
+                cy.log('Skip due to https://github.com/uoForms/App-CANBeWell/issues/435');
+              } else {
+                topicPage.openPostConfigUpdateModal();
+                const modal = new PostConfigUpdateModal();
+                modal.setValues(topicPage.user.provider, undefined, undefined, undefined);
+                modal.clickOk();
+                // TODO: update fr search when the heart translation comes in
+                const topic = locale === topicPage.locale.en ? 'Be Active' : 'Be Active';
+                topicPage.search(topic);
+                topicPage.assertNoHeadingDisplayed();
+              }
+            });
         });
 
         it('Tabs Exist', () => {
@@ -53,7 +126,7 @@ devicesTestWrapper(
             topicPage.assertHeadings(['COVID-19'], String(Math.random())
               .substring(2, 11));
             topicPage.clearSearch();
-            topicPage.assertAtLeastTwoHeadingDisplayed();
+            topicPage.assertAtLeastNHeadingDisplayed(2);
           }
         });
 
@@ -62,7 +135,7 @@ devicesTestWrapper(
           topicPage.search('I DONT BELEVE THIS CNA EXISTA');
           topicPage.assertNoHeadingDisplayed();
           topicPage.clearSearch();
-          topicPage.assertAtLeastTwoHeadingDisplayed();
+          topicPage.assertAtLeastNHeadingDisplayed(2);
         });
 
         it('Open Modal and Close Modal', () => {

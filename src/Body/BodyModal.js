@@ -130,8 +130,8 @@ class BodyModal extends React.Component {
         }
         indexID = indexID.concat(itemID.toString());
         subjectArray.push(
-          <div className="topicBody" style={listItemStyle} test-id="topic">
-            <details id={indexID} class="mydetailsItem">
+          <div className="topicBody" style={listItemStyle}>
+            <details id={indexID} class="mydetailsItem" test-id="topic">
               <summary class="mysummaryItem" test-id="topicSummary">
                 <font size="+1">
                   {/*<p> <b> */}
@@ -187,16 +187,16 @@ class BodyModal extends React.Component {
 
     return (
       <div>
-        <div id="myBackdrop" onClick={this.props.onClose} className="backdrop" style={backdropStyle}>
+        <div id="myBackdrop" onClick={this.props.onClose} className="backdrop" style={backdropStyle} test-id="backdrop">
         </div>
         <div className="myModal" style={myModalStyle} test-id="bodyModal">
           <div>
-            <button className="button4" onClick={this.props.onClose}>X</button>
+            <button className="button4" onClick={this.props.onClose} test-id="xButton">X</button>
           </div>
           <div>
             {subject}
             <div className="myModalCloseButton">
-              <button className="button3" onClick={this.props.onClose}>{this.props.button}</button>
+              <button className="button3" test-id="closeTextButton" onClick={this.props.onClose}>{this.props.button}</button>
             </div>
           </div>
         </div>

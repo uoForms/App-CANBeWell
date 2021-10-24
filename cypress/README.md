@@ -2,9 +2,11 @@
 
 This README describes the setup and usage of testing framework for App-CANBeWell.
 
-Last updated: Sept 29 2021
+Last updated: Oct 19 2021
 
 ## Basic
+
+[Test Status](testStatus.md)
 
 The framework is built on top of Cypress.io. For basic usage, please see the following sources:
 
@@ -248,6 +250,15 @@ to merge reports manually.
 4. Apply [single-responsibility principle](https://en.wikipedia.org/wiki/Single-responsibility_principle) in both test
    and page object functions.
 5. Only use `cy.wait()` when absolutely necessary
-  
 
+## Future Work
+
+- [ ] Resolve all TODOs listed in the code base once related issues are fixed
+- [ ] There are duplicated/similar logics that can be merged/refactored
+- [ ] Make the code more readable
+- [ ] Support [visual testing](https://docs.cypress.io/guides/tooling/visual-testing#Functional-vs-visual-testing)
+- [ ] Better utilize test parallelization to reduce total test execution time
+- [ ] Identify and remove duplicated test cases
+- [ ] Merge and host test execution results
+- [ ] And more ...
 

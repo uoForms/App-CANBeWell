@@ -1,5 +1,8 @@
 import BodyModal from '../../pageObjects/bodyModal';
 import LandingPage from '../../pageObjects/landingPage';
+import BasePage from '../../pageObjects/basePage';
+
+const genderCombinedList = ['m', 'f', 'tm', 'tf', 'nonbinary-m', 'nonbinary-f'];
 
 function readTopicJsonData(props, user) {
   const button = props.Button;
@@ -14,7 +17,7 @@ function readTopicJsonData(props, user) {
   ageSet.add(minAge);
   ageSet.add(maxAge);
   ageSet.add(Math.round((minAge + maxAge) / 2));
-  if (user === 'provider' && minAge === 18 && maxAge === 150) {
+  if (user === new BasePage().user.provider && minAge === 18 && maxAge === 150) {
     ageSet.add('all ages');
   }
   const genderSet = new Set();
@@ -30,7 +33,7 @@ function readTopicJsonData(props, user) {
   if (genderSet.has('tm')) {
     genderSet.add('nonbinary-f');
   }
-  const text = user === 'patient' ? patientText : providerText;
+  const text = user === new BasePage().user.patient ? patientText : providerText;
   return {
     button, heading, subject, ageSet, genderSet, text,
   };
@@ -66,5 +69,5 @@ export {
   readTopicJsonData,
   assertTopicModal,
   cookiesSetupAndAccessBodyPage,
-
+  genderCombinedList,
 };
