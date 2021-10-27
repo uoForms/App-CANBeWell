@@ -224,6 +224,8 @@ class BodyModal extends BasePage {
           } else if (url.includes('www.sciencedirect.com/science/article/abs/pii/S1094695019301507') || url
             .includes('metisnation.ca/covid19')) {
             cy.log('Skip due to target site security measure. Those links will be tested manually');
+          } else if (url.includes('OC-Too-Fit-To-Fracture-Osteo-Exercise-Book-FRE.pdf')) {
+            cy.log('Skip to test manually, It is too large to hold in RAM');
           } else {
             // The checked url takes forever to load
             // eslint-disable-next-line chai-friendly/no-unused-expressions
