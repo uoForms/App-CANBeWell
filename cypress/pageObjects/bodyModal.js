@@ -182,17 +182,8 @@ class BodyModal extends BasePage {
   }
 
   assertLineInModal(line) {
-    // TODO: this list contains known broken links. Once they are addressed, they should be removed from this list
-    const skipList = ['http://www.csep.ca/CMFiles/Guidelines/CSEP_PAGuidelines_adults_en.pdf',
-      'http://www.csep.ca/CMFiles/Guidelines/CSEP_PAGuidelines_adults_fr.pdf',
-      'https://www.cancer.ca/fr/prevention-and-screening/reduce-cancer-risk/find-cancer-early/screening-in-lgbtq-communities/trans-men-and-cervical-cancer-screening/ ?région=on',
-      'http://www.osteoporosis.ca/multimedia/pdf/Quick_Reference_Guide_October_2010.pdf',
-      'https://osteoporosis.ca/bone-health-osteoporosis/calcium-and-vitamin-d/',
-      'http://cancer.ca/en/prevention-and-screening/reduce-cancer-risk/make-healthy-choices/have-a-healthy-body-weight/how-do-i-know-if-i-have-a-healthy-body-weight/',
-      'https://osteoporosis.ca/bone-health-osteoporosis/exercises-for-healthy-bones/',
-      'https://osteoporosecanada.ca/sante-des-os-et-osteoporose/calcium-et-vitamine-d/',
-      'http://cancer.ca/en/prevention-and-screening/reduce-cancer-risk/make-healthy-choices/have-a-healthy-body-weight/how-do-i-know-if-i-have-a-healthy-body-weight/?region=on',
-    ];
+    // If any known link is broken, it goes here until it is fixed
+    const skipList = [];
 
     if (line.includes('[[')) {
       if (line.includes('image;images/')) {

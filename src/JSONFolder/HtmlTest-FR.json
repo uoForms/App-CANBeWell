@@ -15,7 +15,7 @@
   },
   {
     "Test": "Densité minérale osseuse",
-    "Patient/Provider Text": "Si vous présentez des facteurs de risque avant l’aĝe de 65 ans, on pourrait vous faire passer cette évaluation. Un détecteur à rayons X examine votre colonne vertébrale et vos hanches.\nVous recevez une très petite quantité de\nradiation, soit environ la même que celle à laquelle vous seriez exposé lors d’un vol Toronto-Vancouver.\n[[Quel est votre risque?; https://osteoporosis.ca/risk/#page-1]]\n[[plus de renseignements; https://www.mayoclinic.org/diseases-conditions/osteoporosis/in-depth/osteoporosis-risks/art-20304597]]",
+    "Patient/Provider Text": "Si vous présentez des facteurs de risque avant l’aĝe de 65 ans, on pourrait vous faire passer cette évaluation. Un détecteur à rayons X examine votre colonne vertébrale et vos hanches.\nVous recevez une très petite quantité de\nradiation, soit environ la même que celle à laquelle vous seriez exposé lors d’un vol Toronto-Vancouver.\n[[Quel est votre risque?; https://osteoporosecanada.ca/evaluez-votre-risque/]]\n[[plus de renseignements; https://www.mayoclinic.org/diseases-conditions/osteoporosis/in-depth/osteoporosis-risks/art-20304597]]",
     "Gender": "all",
     "Minimum age": 50,
     "Maximum age": 64
@@ -64,7 +64,7 @@
   },
   {
     "Test": "Mammographie",
-    "Patient/Provider Text": "Une mammographie est une radiographie des seins.\nLa radiation a été réduite à une très [[petite dose; https://www.cancer.org/cancer/breast-cancer/screening-tests-and-early-detection/mammograms/mammogram-basics.html/]].\nTous les jours, vous recevez de la radiation provenant de votre milieu. Une mammographie de dépistage expose à une quantité de radiation à laquelle vous seriez exposé dans votre milieu naturel au cours d’une période de 7 semaines. \nOn la réalise à titre de prévention tous les 2 ans chez les patients de 50 à 74 ans qui ne présentent aucun symptôme ou risque.",
+    "Patient/Provider Text": "Une mammographie est une radiographie des seins.\nLa radiation a été réduite à une très [[petite dose; https://www.cancer.org/cancer-information-in-other-languages/french.html]].\nTous les jours, vous recevez de la radiation provenant de votre milieu. Une mammographie de dépistage expose à une quantité de radiation à laquelle vous seriez exposé dans votre milieu naturel au cours d’une période de 7 semaines. \nOn la réalise à titre de prévention tous les 2 ans chez les patients de 50 à 74 ans qui ne présentent aucun symptôme ou risque.",
     "Gender": "f",
     "Minimum age": 50,
     "Maximum age": 74
