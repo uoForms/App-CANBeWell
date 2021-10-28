@@ -183,8 +183,7 @@ class BodyModal extends BasePage {
 
   assertLineInModal(line) {
     // If any known link is broken, it goes here until it is fixed
-    // TODO: fix those links
-    const skipList = ['https://osteoporosis.ca/bone-health-osteoporosis/calcium-and-vitamin-d/'];
+    const skipList = [];
 
     if (line.includes('[[')) {
       if (line.includes('image;images/')) {
