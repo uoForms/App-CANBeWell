@@ -62,10 +62,8 @@ class TestPage extends BasePage {
   }
 
   assertLineInDropdown(line) {
-    // TODO: this list contains known broken links. Once they are addressed, they should be removed from this list
-    const skipList = [
-      'https://osteoporosis.ca/about-the-disease/diagnosis/why-should-i-get-tested/',
-    ];
+    // If any known link is broken, it goes here until it is fixed
+    const skipList = [];
     if (line.includes('[[')) {
       let parts = line.split(/[[\]]/g);
       parts = parts.filter((part) => part.length > 0);
