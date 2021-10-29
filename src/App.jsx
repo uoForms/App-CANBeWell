@@ -539,7 +539,7 @@ class App extends Component {
       maxWidth: '99%',
       minHeight: '95%',
       margin: '0 auto',
-      textAlign: 'center',
+      textAlign: 'left',
       padding: 10,
       fontSize: '20px',
       overflow: 'scroll',
@@ -561,9 +561,24 @@ class App extends Component {
     const termsOfUseStyle={
       'marginTop':'10px'
     };
+    const content={
+      'textAlign':'center',
+      'marginLeft': '40%'
+    };
+    const genderCss={
+      'textAlign':'left'
+    }
+    
+    const titleCSS={
+      'textAlign':'left',
+      'marginLeft': '12%'
+    }
     const underlineTextTermsOfUse={
       'textDecoration': 'underline',
       'fontWeight': '400'
+    }
+    const termOfUseCss={
+      'marginLeft':'40%'
     }
 
     if (this.state.user == "patient") {
@@ -598,20 +613,21 @@ class App extends Component {
           <div>
             </div>
             <div className="footer">
-              <p id="choose_mod" test-id="header"><strong>{this.state.lang.instruction_modal_header} </strong></p>
+              <div style={content}>
+              <p id="choose_mod" style={titleCSS}><strong>{this.state.lang.instruction_modal_header} </strong></p>
 
               {/*select user*/}
-              <div className="radio">
-                <form test-id="userForm">
+              <div className="radio" style={genderCss}>
+                <form>
                   <p id="user_mod">{this.state.lang.user_selector}</p>
-                   <label id="pat_mod" test-id="patientLabel">
-                    <input type="radio" test-id="patientRadio" value="patient" checked={this.state.user === 'patient'} onChange={this.handlePatientProviderChange} />
+                   <label id="pat_mod">
+                    <input type="radio" value="patient" checked={this.state.user === 'patient'} onChange={this.handlePatientProviderChange} />
                     {this.state.lang.patient}
                   </label>
                   <br/>
                    
-                  <label id="prov_mod" test-id="providerLabel">
-                    <input type="radio" test-id="providerRadio" value="provider" checked={this.state.user === 'provider'} onChange={this.handlePatientProviderChange} />
+                  <label id="prov_mod">
+                    <input type="radio" value="provider" checked={this.state.user === 'provider'} onChange={this.handlePatientProviderChange} />
                     {this.state.lang.provider}
                   </label>
                 </form>
@@ -619,39 +635,39 @@ class App extends Component {
               
               {/*select age*/}
               <div>
-                <form test-id="ageForm">
-                  <div>
+                <form>
+                  <div style={genderCss}>
                     {this.state.lang.age_selector}
                     {/* <input id='abcd' type="text" value={this.state.age == "all ages" ? this.state.lang.all_ages : this.state.age} onChange={this.handleChange} disabled={this.state.allAgesSelected} placeholder={this.state.lang.age_selector_place_holder} onKeyPress={e => { if (e.key === 'Enter') e.preventDefault();}} /> */}
-                    <input test-id="ageInput"  id='abc' type="text" value={this.state.age == "all ages" ? this.state.lang.all_ages : this.state.age} onChange={this.handleChange} disabled={this.state.allAgesSelected} placeholder={this.state.lang.age_selector_place_holder} onKeyPress={e => { if (e.key === 'Enter') e.preventDefault();}} />
-                    <label style={allagescheckboxStyle} test-id="allAgeCheckboxLabel">
-                      <input id='myCheck' test-id="allAgeCheckbox" type="checkbox" checked={this.state.allAgesSelected} onChange={this.handleAllAgesSelected} />{this.state.lang.all_ages}
+                    <input id='abc' type="text" value={this.state.age == "all ages" ? this.state.lang.all_ages : this.state.age} onChange={this.handleChange} disabled={this.state.allAgesSelected} placeholder={this.state.lang.age_selector_place_holder} onKeyPress={e => { if (e.key === 'Enter') e.preventDefault();}} />
+                    <label style={allagescheckboxStyle}>
+                      <input id='myCheck' type="checkbox" checked={this.state.allAgesSelected} onChange={this.handleAllAgesSelected} />{this.state.lang.all_ages}
                     </label>
                   </div>
                 </form>
               </div>
               {/*select gender*/}
               <div>
-                    <div id="genderSelector" className="radio" test-id="genderSelectRoot">
+                    <div id="genderSelector" className="radio" style={genderCss}>
                      <div className="gender_mod"> <strong>{this.state.lang.gender_selector}</strong>
                         {/* this is the original button, works fine 
                         but i have applied css zindex and positioned it over other div which is trick that doesnt aligns with screen size */}
                      {/* this button is crack takes me to the landing page */}
-                       <button test-id="genderSelectHelp" className="button button23" onClick={this.helpClicked}>?</button>
+                       <button className="button button23" onClick={this.helpClicked}>?</button> 
                      </div>                    
-                      <label id="male_radio" test-id="maleRadioLabel">
-                        <input type="radio" test-id="maleRadio" value="male" checked={this.state.gender == 'male'} onChange={this.handleGenderChange} />
+                      <label id="male_radio">
+                        <input type="radio" value="male" checked={this.state.gender == 'male'} onChange={this.handleGenderChange} />
                         {this.state.lang.male}
                       </label>
                       <br/>
-                      <label id="female_radio" test-id="femaleRadioLabel">
-                        <input test-id="femaleRadio" type="radio" value="female" checked={this.state.gender == 'female'} onChange={this.handleGenderChange} />
+                      <label id="female_radio">
+                        <input type="radio" value="female" checked={this.state.gender == 'female'} onChange={this.handleGenderChange} />
                         {this.state.lang.female}
                       </label>
                       <br/>
 
-                    <label id="nb_radio" test-id="nonBinaryRadioLabel">
-                      <input test-id="nonBinaryRadio" type="radio" value="nonbinary" checked={this.state.gender == 'nonbinary'} onChange={this.handleGenderChange} />
+                    <label id="nb_radio">
+                      <input  type="radio" value="nonbinary" checked={this.state.gender == 'nonbinary'} onChange={this.handleGenderChange} />
                       {this.state.lang.nonbinary}
                     </label>
                     <br/>
@@ -669,36 +685,36 @@ class App extends Component {
                     </div>
                   {/* {Are you a Transgender} */}
                    {/* {Are you a Transgender} */}
-                   <div id="TgenderSelector" className="radio" test-id="tGenderSelectRoot">
+                   <div id="TgenderSelector" className="radio" style={genderCss}>
                    <div className="Tgender_mod"><strong> {this.state.lang.Tgender_selector}</strong>
-                          <button test-id="tGenderSelectHelp" className="button button24" onClick={this.helpClicked2}>?</button>
+                          <button className="button button24" onClick={this.helpClicked2}>?</button> 
                    </div>
                       
-                      <label id="birth_male_mod" test-id="birthMaleLabel">
-                      <input type="radio" test-id="birthMale" value="tf" checked={this.state.Tgender == 'tf'} onChange={this.handleTransGenderChange} />
+                      <label id="birth_male_mod">
+                      <input type="radio" value="tf" checked={this.state.Tgender == 'tf'} onChange={this.handleTransGenderChange} />
                       {this.state.lang.tf}
                       </label>
                       <br/>
-                      <label id="female_male_mod" test-id="birthfemaleLabel">
-                      <input test-id="birthFemale"  type="radio" value="tm" checked={this.state.Tgender == 'tm'} onChange={this.handleTransGenderChange} />
+                      <label id="female_male_mod">
+                      <input type="radio" value="tm" checked={this.state.Tgender == 'tm'} onChange={this.handleTransGenderChange} />
                       {this.state.lang.tm}
                      </label>
                      </div>
-                    <label id="help" className="checkAge" test-id="noValueError">
+                    <label id="help" className="checkAge">
                         <h5>{this.state.lang.ageandgender_help}</h5>
                       </label>
-                      <label id="agehelp" className="checkAge" test-id="ageError">
+                      <label id="agehelp" className="checkAge">
                         <h5>{this.state.lang.age_help}</h5>
                       </label>
                 {/*Field selection based on gender*/}
-              
+              </div>
               </div>
               
-            <button test-id="okButtonTop" id="agree" className="buttonAgreeToTerms" onClick={this.toggleIntrutionModal}>{this.state.lang.agree}</button>
+            <button id="agree" className="buttonAgreeToTerms" style={termOfUseCss} onClick={this.toggleIntrutionModal}>{this.state.lang.agree}</button>
               <div className="termsOfUse" style={termsOfUseStyle}>
-              <b test-id="termOfUseLabel">{this.state.lang.disclaimer_header}</b>
+              <b>{this.state.lang.disclaimer_header}</b>
 
-              <div style={myDisclaimerStyle} test-id="termOfUseContent">
+              <div style={myDisclaimerStyle}>
                         <div>
                             <div dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(this.state.lang.disclaimerBeforeTermsOfUse)}}></div>
                             <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.accpetanceheading}</div>
@@ -768,7 +784,7 @@ class App extends Component {
               </div>             
               </div> 
               <div>
-                <button test-id="okButtonBottom" id="agree" className="buttonAgreeToTerms" onClick={this.toggleIntrutionModal}>{this.state.lang.agree}</button>
+                <button id="agree" className="buttonAgreeToTerms" style={termOfUseCss} onClick={this.toggleIntrutionModal}>{this.state.lang.agree}</button>
                 {/* <button onClick={this.goBack} type="button">{this.state.lang.disagree}</button> */}
               </div>
             </div>
@@ -963,6 +979,7 @@ class App extends Component {
                 </div>
 
                 <div>
+                  <form>
                     <div id="genderSelector" className="radio" test-id="genderSelectRoot">
                       {this.state.lang.gender_selector}<strong>
                         <button test-id="genderSelectHelp" className="button button22" onClick={this.helpClicked}>?</button></strong>
@@ -977,12 +994,11 @@ class App extends Component {
                         {this.state.lang.female}
                       </label>
                       <br/>
-
-                    <label test-id="nonBinaryRadioLabel">
-                      <input test-id="nonBinaryRadio" type="radio" value="nonbinary" checked={this.state.gender == 'nonbinary'} onChange={this.handleGenderChange} />
-                      {this.state.lang.nonbinary}
-                    </label>
-                    <br/>
+                      <label test-id="nonBinaryRadioLabel">
+                        <input test-id="nonBinaryRadio" type="radio" value="nonbinary" checked={this.state.gender == 'nonbinary'} onChange={this.handleGenderChange} />
+                        {this.state.lang.nonbinary}
+                      </label>
+                      <br/>
                    {/* <label>
                       <input type="radio" value="transgender" checked={this.state.gender == 'transgender'} onChange={this.handleGenderChange} />
                       {this.state.lang.transgender}
@@ -993,8 +1009,8 @@ class App extends Component {
                           {this.state.lang.all_genders}
                       </label>) : (<label></label>)
                       */}
-
                     </div>
+                  </form>
                      {/* {Are you a Transgender} */}
                      <div id="TgenderSelector" className="radio" test-id="tGenderSelectRoot">
                       {this.state.lang.Tgender_selector}<strong>
@@ -1051,7 +1067,7 @@ class App extends Component {
   
                   <div>
                     <form>
-                      <div id="genderSelector" className="radio">
+                      <div id="genderSelector" className="radio, test">
                         {this.state.lang.gender_selector}
                         <label>
                           <input type="radio" value="male" checked={this.state.gender == 'male'} onChange={this.handleGenderChange} />
