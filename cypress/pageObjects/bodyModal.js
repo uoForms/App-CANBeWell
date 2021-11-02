@@ -183,7 +183,7 @@ class BodyModal extends BasePage {
 
   assertLineInModal(line) {
     // If any known link is broken, it goes here until it is fixed
-    const skipList = [];
+    const skipList = ['https://www.cancer.ca/fr/prevention-and-screening/reduce-cancer-risk/find-cancer-early/screening-in-lgbtq-communities/trans-men-and-thest-cancer-screening/ ?région=on'];
 
     if (line.includes('[[')) {
       if (line.includes('image;images/')) {
