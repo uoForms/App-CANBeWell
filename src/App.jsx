@@ -979,7 +979,6 @@ class App extends Component {
                 </div>
 
                 <div>
-                  <form>
                     <div id="genderSelector" className="radio" test-id="genderSelectRoot">
                       {this.state.lang.gender_selector}<strong>
                         <button test-id="genderSelectHelp" className="button button22" onClick={this.helpClicked}>?</button></strong>
@@ -1010,7 +1009,6 @@ class App extends Component {
                       </label>) : (<label></label>)
                       */}
                     </div>
-                  </form>
                      {/* {Are you a Transgender} */}
                      <div id="TgenderSelector" className="radio" test-id="tGenderSelectRoot">
                       {this.state.lang.Tgender_selector}<strong>

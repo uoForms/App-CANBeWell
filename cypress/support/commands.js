@@ -25,11 +25,13 @@ Cypress.Commands.add('assertUrl', (url, requestType = 'GET', expectedStatusCode 
     })
       .should((res) => {
         expect(res.status).to.eq(expectedStatusCode);
+        if (res.status === expectedStatusCode) {
+          Object.defineProperty(Cypress.mocha.getRunner().suite.ctx, 'checkedUrls', {
+            value: [url],
+            writable: true,
+          });
+        }
       });
-    Object.defineProperty(Cypress.mocha.getRunner().suite.ctx, 'checkedUrls', {
-      value: [url],
-      writable: true,
-    });
   } else if (!Cypress.mocha.getRunner().suite.ctx.checkedUrls.includes(url)) {
     cy.request({
       url,
@@ -38,8 +40,10 @@ Cypress.Commands.add('assertUrl', (url, requestType = 'GET', expectedStatusCode 
     })
       .should((res) => {
         expect(res.status).to.eq(expectedStatusCode);
+        if (res.status === expectedStatusCode) {
+          Cypress.mocha.getRunner().suite.ctx.checkedUrls.push(url);
+        }
       });
-    Cypress.mocha.getRunner().suite.ctx.checkedUrls.push(url);
   } else {
     cy.log('The url is already checked in a previous test');
   }
