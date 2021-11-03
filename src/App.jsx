@@ -614,7 +614,7 @@ class App extends Component {
           <div>
             </div>
             <div className="footer">
-              {/*put other div to classname footer for solving the alignment problem and using titlecss style*/}
+              {/*put other div to classname footer for solving the alignment problem and using style=titleCss */}
               <div style={content}>
               <p id="choose_mod" style={titleCSS}><strong>{this.state.lang.instruction_modal_header} </strong></p>
               {/*select user*/}
