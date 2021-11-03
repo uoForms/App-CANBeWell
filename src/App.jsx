@@ -559,7 +559,8 @@ class App extends Component {
       fontWeight:'12px',
     };
     const termsOfUseStyle={
-      'marginTop':'10px'
+      'marginTop':'10px',
+      'textAlign':'center'
     };
     const content={
       'textAlign':'center',
