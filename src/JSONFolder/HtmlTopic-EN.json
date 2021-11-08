@@ -953,8 +953,8 @@
     "Button": "Stomach",
     "Topic heading": "Nutrition",
     "Subject": "Information sources",
-    "General Patient Text": "To prevent diabetes, obesity, heart disease, cancer and more\n[[Canadian Food Guide; https://food-guide.canada.ca/en/]]\n[[Heart and Stroke; https://www.heartandstroke.ca/get-healthy/healthy-eating]]\n[[Diabetes Canada; https://www.diabetes.ca/nutrition---fitness]]",
-    "Health Provider Text": "[[Canadian Food Guide; https://food-guide.canada.ca/en/]]\n[[Heart and Stroke; https://www.heartandstroke.ca/get-healthy/healthy-eating]]\n[[Diabetes Canada; https://www.diabetes.ca/nutrition---fitness]]",
+    "General Patient Text": "Eat healthy meals to prevent diabetes, obesity, heart disease, cancer and more\n[[Canadian Food Guide; https://food-guide.canada.ca/en/]]\n[[Heart and Stroke; https://www.heartandstroke.ca/get-healthy/healthy-eating]]\n[[Diabetes Canada; https://www.diabetes.ca/nutrition---fitness]]",
+    "Health Provider Text": "[[Canadian Food Guide; https://food-guide.canada.ca/en/]]\n[[Heart and Stroke; https://www.heartandstroke.ca/get-healthy/healthy-eating]]\n[[Diabetes Canada; https://www.diabetes.ca/nutrition---fitness]]\n[[Evidence; http://jandonline.org/article/S2212-2672(14)01871-1/fulltext]]",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
@@ -963,8 +963,8 @@
     "Button": "Stomach",
     "Topic heading": "Nutrition",
     "Subject": "Fill half your plate with vegetables and fruit",
-    "General Patient Text": "Some sources say 5 servings or more, some say 7\n[[what is a serving?; https://food-guide.canada.ca/en/]]",
-    "Health Provider Text": "Some sources say 5 or more servings, some say 7\n[[what is a serving?; https://food-guide.canada.ca/en/]] \n[[See evidence; http://jandonline.org/article/S2212-2672(14)01871-1/fulltext]]\nNo specific  CTFPHC guideline but recommended for preventing diabetes,heart disease, cancer etc \nUSPSTF B 2014 for BMI>=25",
+    "General Patient Text": "[[Information; https://food-guide.canada.ca/en/]]",
+    "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
@@ -974,7 +974,7 @@
     "Topic heading": "Nutrition",
     "Subject": "Eat whole grains and limit fat, salt, sugar",
     "General Patient Text": "Use a [[healthy plate; http://www.healthycanadians.gc.ca/eating-nutrition/healthy-eating-saine-alimentation/tips-conseils/interactive-tools-outils-interactifs/eat-well-bien-manger-eng.php]]",
-    "Health Provider Text": "Use a [[healthy plate; http://www.healthycanadians.gc.ca/eating-nutrition/healthy-eating-saine-alimentation/tips-conseils/interactive-tools-outils-interactifs/eat-well-bien-manger-eng.php]]:\n[[See evidence; http://jandonline.org/article/S2212-2672(14)01871-1/fulltext]]",
+    "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
@@ -1291,7 +1291,7 @@
   },
   {
     "Button": "Bone",
-    "Topic heading": "Vitamins, Minerals",
+    "Topic heading": "Nutrition, Vitamins",
     "Subject": "Age 18 only",
     "General Patient Text": "•Calcium: 1300 mg/day; Vitamin D: 600 IU/ day\nPregnant or lactating same as above\n•Folic acid: 0.4 to 1 mg a day for women 3 months before and after conception or always\n[[more information on folic acid; https://www.canada.ca/en/public-health/services/pregnancy/folic-acid.html]]\n[[take more folic acid if; https://www.canada.ca/en/public-health/services/pregnancy/folic-acid.html#a4]]",
     "Health Provider Text": "•Calcium: 1300 mg/day; Vitamin D: 600 IU/ day\nPregnant or lactating same as above\n•Folic acid: 0.4 to 1 mg a day for women 3 months before and after conception or always\n[[more information on folic acid; https://www.canada.ca/en/public-health/services/pregnancy/folic-acid.html]]\n[[take more folic acid if; https://www.canada.ca/en/public-health/services/pregnancy/folic-acid.html#a4]]\n[[SOGC guideline; https://www.jogc.com/article/S1701-2163(15)30230-9/pdf]]",
@@ -1301,7 +1301,7 @@
   },
   {
     "Button": "Bone",
-    "Topic heading": "Vitamins, Minerals",
+    "Topic heading": "Nutrition, Vitamins",
     "Subject": "Age 19-49",
     "General Patient Text": "•Calcium: 1000mg/day; Vitamin D: 400-1000 IU/day\nPregnant or lactating same as 18 year old\n•Folic acid: 0.4 to 1 mg a day for women 3 months before and after conception or always\n[[more information on folic acid; https://www.canada.ca/en/public-health/services/pregnancy/folic-acid.html]]\n[[take more folic acid if; https://www.canada.ca/en/public-health/services/pregnancy/folic-acid.html#a4]]",
     "Health Provider Text": "•Calcium: 1000mg/day; Vitamin D: 400-1000 IU/day\nPregnant or lactating same as 18 year old\n•Folic acid: 0.4 to 1 mg a day for women 3 months before and after conception or always\n[[more information on folic acid; https://www.canada.ca/en/public-health/services/pregnancy/folic-acid.html]]\n[[take more folic acid if; https://www.canada.ca/en/public-health/services/pregnancy/folic-acid.html#a4]]\n[[SOGC guideline; https://www.jogc.com/article/S1701-2163(15)30230-9/pdf]]",
@@ -1311,27 +1311,27 @@
   },
   {
     "Button": "Bone",
-    "Topic heading": "Vitamins, Minerals",
+    "Topic heading": "Nutrition, Vitamins",
     "Subject": "Age 18 only",
     "General Patient Text": "•Calcium: 1300 mg/day; Vitamin D: 600 IU/ day",
     "Health Provider Text": "•Calcium: 1300 mg/day; Vitamin D: 600 IU/ day",
-    "Gender": "m",
+    "Gender": "m,tm,tf",
     "Minimum age": 18,
     "Maximum age": 18
   },
   {
     "Button": "Bone",
-    "Topic heading": "Vitamins, Minerals",
+    "Topic heading": "Nutrition, Vitamins",
     "Subject": "Age 19-49",
     "General Patient Text": "•Calcium: 1000mg/day; Vitamin D: 400-1000 IU/day",
     "Health Provider Text": "•Calcium: 1000mg/day; Vitamin D: 400-1000 IU/day",
-    "Gender": "m",
+    "Gender": "m,tm,tf",
     "Minimum age": 19,
     "Maximum age": 49
   },
   {
     "Button": "Bone",
-    "Topic heading": "Vitamins, Minerals",
+    "Topic heading": "Nutrition, Vitamins",
     "Subject": "Age 50 and above",
     "General Patient Text": "•Calcium: 1200mg/day; Vitamin D: 800-2000 IU/day",
     "Health Provider Text": "•Calcium: 1200mg/day; Vitamin D: 800-2000 IU/day",
@@ -1343,10 +1343,10 @@
     "Button": "Bone",
     "Topic heading": "Nutrition, Vitamins",
     "Subject": "All ages",
-    "General Patient Text": "Better to get calcium from food rather than supplements.\n[[more info; https://osteoporosis.ca/bone-health-osteoporosis/calcium-calculator/#page-1]]\nIf you take a Calcium supplement take no more than 500 mg a day.\n\nVitamin D:\nTaking more than 2000 IU a day of vitamin D should be done under medical supervision \n[[more info; https://osteoporosis.ca/nutrition/]]",
-    "Health Provider Text": "Better to get Calcium from food rather than supplements.\nif supplement needed to consider to 500 mg max\ntaking more than 2000 IU a day of Vitamin D should be done under medical supervision \n\n[[more info; https://osteoporosis.ca/nutrition/]]",
+    "General Patient Text": "Eating healthy is important to build and keep strong bones\n[[More info; https://osteoporosis.ca/nutrition/]]\nTaking more than 2000 IU a day of vitamin D should be done under medical supervision \n[[more info; https://osteoporosis.ca/nutrition/]]\nBetter to get calcium from food rather than supplements.\n[[More info; https://osteoporosis.ca/bone-health-osteoporosis/calcium-calculator/#page-1]]",
+    "Health Provider Text": "A healthy diet prevents osteoporosis\n[[More info; https://osteoporosis.ca/nutrition/]]",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
   }
- ]
+]
