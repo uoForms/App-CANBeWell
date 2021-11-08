@@ -61,9 +61,11 @@ function expectedSubjects(age, gender, user, locale, heading) {
       topicGenderList.includes(gender) || topic.Gender === 'all' || (gender === 'nonbinary-m' && topicGenderList.includes('tf')) || (gender === 'nonbinary-f' && topicGenderList
         .includes('tm'))) && heading === topic['Topic heading']) {
       if (user === new BasePage().user.patient && topic['General Patient Text'] !== 'n/a') {
-        expectedSubjectSet.push(topic.Subject.replace(' \n', '\n'));
+        expectedSubjectSet.push(topic.Subject.replace(' \n', '\n')
+          .replace(/  +/g, ' '));
       } else if (user === new BasePage().user.provider && topic['Health Provider Text'] !== 'n/a') {
-        expectedSubjectSet.push(topic.Subject.replace(' \n', '\n'));
+        expectedSubjectSet.push(topic.Subject.replace(' \n', '\n')
+          .replace(/  +/g, ' '));
       }
     }
   }
