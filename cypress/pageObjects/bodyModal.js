@@ -92,7 +92,7 @@ class BodyModal extends BasePage {
   assertSubjects(expectedSubjects, cacheId) {
     function helper() {
       // https://glebbahmutov.com/cypress-examples/6.5.0/recipes/get-text-list.html
-      cy.getTestId('topicSummary')
+      return cy.getTestId('topicSummary')
         .then(($els) => (
           Cypress.$.makeArray($els)
             .map((el) => el.innerText)
@@ -101,14 +101,18 @@ class BodyModal extends BasePage {
     }
 
     if (Cypress.mocha.getRunner().suite.ctx.assertedConfigsForTopicSubjects === undefined) {
-      helper();
-      Object.defineProperty(Cypress.mocha.getRunner().suite.ctx, 'assertedConfigsForTopicSubjects', {
-        value: [cacheId],
-        writable: true,
-      });
+      helper()
+        .then(() => {
+          Object.defineProperty(Cypress.mocha.getRunner().suite.ctx, 'assertedConfigsForTopicSubjects', {
+            value: [cacheId],
+            writable: true,
+          });
+        });
     } else if (!Cypress.mocha.getRunner().suite.ctx.assertedConfigsForTopicSubjects.includes(cacheId)) {
-      helper();
-      Cypress.mocha.getRunner().suite.ctx.assertedConfigsForTopicSubjects.push(cacheId);
+      helper()
+        .then(() => {
+          Cypress.mocha.getRunner().suite.ctx.assertedConfigsForTopicSubjects.push(cacheId);
+        });
     } else {
       cy.log('This config is already checked, skip');
     }
