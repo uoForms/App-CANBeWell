@@ -15,7 +15,7 @@
   },
   {
     "Test": "Bone mineral density",
-    "Patient/Provider Text": "For patients age 65 and over.\nAn x-ray detector scans your spine and hip.\nYou receive a very small amount of radiation,\napproximately the same amount you are exposed to if you fly from Toronto to Vancouver.\n[[More info; https://osteoporosis.ca/about-the-disease/diagnosis/why-should-i-get-tested/]]",
+    "Patient/Provider Text": "For patients age 65 and over.\nAn x-ray detector scans your spine and hip.\nYou receive a very small amount of radiation,\napproximately the same amount you are exposed to if you fly from Toronto to Vancouver.\n[[More info; https://osteoporosis.ca/bone-mineral-density-testing/]]",
     "Gender": "all",
     "Minimum age": 65,
     "Maximum age": 150
@@ -36,7 +36,7 @@
   },
   {
     "Test": "Colorectal cancer screening",
-    "Patient/Provider Text": "Sometimes called the \"poop test\". \nYou collect a small sample of stool(feces) at home which is processed in a lab.\nIf blood is detected a colonoscopy is recommended to detect if there is cancer.\n[[more info; http://www.cancer.ca/en/cancer-information/cancer-type/colorectal/screening/?region=on#ixzz4vIhpstWx/]]\nFlexible sigmoidoscopy is another test available in some areas for cancer screening. It carries less risks than a colonoscopy.\n[[more info; https://my.clevelandclinic.org/health/diagnostics/4953-flexible-sigmoidoscopy]]",
+    "Patient/Provider Text": "Sometimes called the \"poop test\". \nYou collect a small sample of stool(feces) at home which is processed in a lab.\nIf blood is detected a colonoscopy is recommended to detect if there is cancer.\n[[more info; http://www.cancer.ca/en/cancer-information/cancer-type/colorectal/screening/?region=on#ixzz4vIhpstWx/]]\nFlexible sigmoidoscopy is another test available in some areas for cancer screening. It carries less risks than a colonoscopy.",
     "Gender": "all",
     "Minimum age": 50,
     "Maximum age": 74
