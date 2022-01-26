@@ -966,6 +966,7 @@ class Anatomy extends React.Component {
                                 <button className="phyActivity"
                                         onClick={(button, text) => this.iconClicked("figure outside body walking", this.props.lang.figure_outside_body_walking)}>
                                     <img src={phyactIcon} alt="physicalActivityIcon"/></button>
+                                {/* Dr Cleo asked to comment empty icons */}
                                 <button id="covidButton" className="covid"
                                         onClick={(button, text) => this.iconClicked("covid", this.props.lang.covid)}>
                                     <img src={covidIcon} alt="covidIcon"/></button>
