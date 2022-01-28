@@ -650,7 +650,7 @@ class App extends Component {
               {/*select gender*/}
               <div>
                     <div id="genderSelector" className="radio" style={genderCss} test-id="genderSelectRoot">
-                     <div className="gender_mod"> <strong>{this.state.lang.gender_selector}</strong>
+                     <div><strong>{this.state.lang.gender_selector}</strong>
                         {/* this is the original button, works fine 
                         but i have applied css zindex and positioned it over other div which is trick that doesnt aligns with screen size */}
                      {/* this button is crack takes me to the landing page */}
@@ -711,8 +711,8 @@ class App extends Component {
               </div>
               </div>
               
-            <button test-id="okButtonTop" id="agree" className="buttonAgreeToTerms" style={termOfUseCss} onClick={this.toggleIntrutionModal}>{this.state.lang.agree}</button>
               <div className="termsOfUse" style={termsOfUseStyle}>
+              <button test-id="okButtonTop" id="agree" onClick={this.toggleIntrutionModal}>{this.state.lang.agree}</button><br/>
               <b test-id="termOfUseLabel">{this.state.lang.disclaimer_header}</b>
 
               <div style={myDisclaimerStyle} test-id="termOfUseContent">
@@ -782,12 +782,10 @@ class App extends Component {
 
                             <div>{this.state.lang.dateofAgreement}</div>
                         </div>
-              </div>             
               </div> 
-              <div>
-                <button test-id="okButtonBottom" id="agree" className="buttonAgreeToTerms" style={termOfUseCss} onClick={this.toggleIntrutionModal}>{this.state.lang.agree}</button>
-                {/* <button onClick={this.goBack} type="button">{this.state.lang.disagree}</button> */}
-              </div>
+              <br/>
+              <button test-id="okButtonTop" id="agree" onClick={this.toggleIntrutionModal}>{this.state.lang.agree}</button><br/>            
+              </div> 
             </div>
             </div>
         </div>
