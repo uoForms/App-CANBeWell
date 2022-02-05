@@ -784,7 +784,7 @@ class App extends Component {
                         </div>
               </div> 
               <br/>
-              <button test-id="okButtonTop" id="agree" onClick={this.toggleIntrutionModal}>{this.state.lang.agree}</button><br/>            
+              <button test-id="okButtonBottom" id="agree" onClick={this.toggleIntrutionModal}>{this.state.lang.agree}</button><br/>            
               </div> 
             </div>
             </div>
