@@ -11,7 +11,7 @@ devicesTestWrapper(
     const landingPage = new LandingPage();
     const topicPage = new TopicPage();
     // Manually counted with given cookies, update as needed
-    const DEFAULT_DISPLAYED_HEADING_COUNT = 16;
+    const DEFAULT_DISPLAYED_HEADING_COUNT = 15;
     for (const locale of [landingPage.locale.en, landingPage.locale.fr]) {
       describe(`Locale: ${locale}`, () => {
         beforeEach(() => {
@@ -119,11 +119,11 @@ devicesTestWrapper(
         });
 
         it('Search Gives Correct Result', () => {
-          for (const searchString of ['covid-19', 'Covid-19', 'COVID-19', 'covid', 'CoVid', '-19']) {
+          for (const searchString of ['Nutrition']) {
             // same search term for both en and fr
             topicPage.search(searchString);
             // ignore cacheId
-            topicPage.assertHeadings(['COVID-19'], String(Math.random())
+            topicPage.assertHeadings(['Heart Disease'], String(Math.random())
               .substring(2, 11));
             topicPage.clearSearch();
             topicPage.assertAtLeastNHeadingDisplayed(2);
