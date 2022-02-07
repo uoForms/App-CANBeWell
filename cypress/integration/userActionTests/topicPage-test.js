@@ -119,11 +119,11 @@ devicesTestWrapper(
         });
 
         it('Search Gives Correct Result', () => {
-          for (const searchString of ['Nutrition']) {
+          for (const searchString of ['Nutrition', 'Nutrition, Vitamins']) {
             // same search term for both en and fr
             topicPage.search(searchString);
             // ignore cacheId
-            topicPage.assertHeadings(['Heart Disease'], String(Math.random())
+            topicPage.assertHeadings(['Nutrition', 'Nutrition, Vitamins'], String(Math.random())
               .substring(2, 11));
             topicPage.clearSearch();
             topicPage.assertAtLeastNHeadingDisplayed(2);
