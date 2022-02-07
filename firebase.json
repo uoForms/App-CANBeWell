@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "canbewell-uottawa",
+    "site": "canbewell-test",
     "public": "build",
     "ignore": [
       "firebase.json",
