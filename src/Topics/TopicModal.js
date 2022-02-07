@@ -84,7 +84,6 @@ getsubjectArray=(display)=>{
         else if (bodyArray[i] !== ']]') {
           bodyArrayToDisplay.push(bodyArray[i]);
         }
-
       }
       subjectArray.push(
         <div className="topicBody" style={listItemStyle}>
