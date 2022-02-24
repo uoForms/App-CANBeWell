@@ -4,7 +4,7 @@ import { instanceOf } from 'prop-types';
 import ReactGA from "react-ga";
 import { IoIosSettings } from "react-icons/io";
 import { AiOutlineExclamationCircle } from "react-icons/ai";
-import {Button, ButtonToolbar} from 'react-bootstrap'
+import {Button, ButtonToolbar, Media} from 'react-bootstrap'
 import { v4 as uuidv4 } from 'uuid';
 import DOMPurify from 'dompurify'
 
@@ -27,6 +27,7 @@ import { unstable_renderSubtreeIntoContainer } from 'react-dom';
 //import {setAge} from './UserInfo';
 import {getUserInfo} from './UserInfo';
 import {isTransgender} from './config';
+
 
 class App extends Component {
 
@@ -539,7 +540,7 @@ class App extends Component {
       maxWidth: '99%',
       minHeight: '95%',
       margin: '0 auto',
-      textAlign: 'left',
+      textAlign: 'center',
       padding: 10,
       fontSize: '20px',
       overflow: 'scroll',
@@ -562,16 +563,13 @@ class App extends Component {
       'marginTop':'10px',
       'textAlign':'center'
     };
-    const content={
-      'textAlign':'center',
-      'marginLeft': '40%'
-    };
+  
     const genderCss={
       'textAlign':'left'
     }
     
     const titleCSS={
-      'textAlign':'left',
+      'textAlign':'center',
       'marginLeft': '12%'
     }
     const underlineTextTermsOfUse={
@@ -609,12 +607,10 @@ class App extends Component {
       //Transgender Instruction modal
       instructionModal = [
         
-        <div key="1" className="backdrop" style={backdropStyle}>
+        <div key="1" className="backdrop" style={backdropStyle} myModal>
           <div className="myModal" style={myModalStyle} test-id="instructionModalRoot">
-          <div>
-            </div>
             <div className="footer">
-              <div style={content}>
+              <div className="content">
               <p id="choose_mod" test-id="header" style={titleCSS}><strong>{this.state.lang.instruction_modal_header} </strong></p>
 
               {/*select user*/}
@@ -844,7 +840,7 @@ class App extends Component {
             <form>
               <div>
                 {this.state.lang.age_selector}
-                <input id='abc' type="text" value={this.state.age == "all ages" ? this.state.lang.all_ages : this.state.age} onChange={this.handleChange} disabled={this.state.allAgesSelected} placeholder={this.state.lang.age_selector_place_holder} onKeyPress={e => { if (e.key === 'Enter') e.preventDefault();}} />
+                <input id='abc' type="text" style="width=5px" value={this.state.age == "all ages" ? this.state.lang.all_ages : this.state.age} onChange={this.handleChange} disabled={this.state.allAgesSelected} placeholder={this.state.lang.age_selector_place_holder} onKeyPress={e => { if (e.key === 'Enter') e.preventDefault();}} />
                 <label style={allagescheckboxStyle}>
                   <input id='myCheck' type="checkbox" checked={this.state.allAgesSelected} onChange={this.handleAllAgesSelected} />{this.state.lang.all_ages}
                 </label>
@@ -1041,6 +1037,7 @@ class App extends Component {
       if (this.state.configurationIsOpen == true) {
         //Master Configuration modal
         configurationModal = [
+          
           <div key="2" className="backdrop" >
             <div className="myModal">
   

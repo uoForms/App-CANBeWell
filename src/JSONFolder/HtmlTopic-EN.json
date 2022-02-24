@@ -1,23 +1,36 @@
 [
   {
-    "Button": "aorta",
+    "Button": "Aorta",
     "Topic heading": "Abdominal Aortic Aneurysm Screen",
     "Subject": "Screen men age 65-80 with ultrasound once",
     "General Patient Text": "n/a",
     "Health Provider Text": "[[Weak recommendation by canadian task force; https://canadiantaskforce.ca/guidelines/published-guidelines/abdominal-aortic-aneurysm/]]",
     "Gender": "m",
     "Minimum age": 65,
-    "Maximum age": 80
+    "Maximum age": 80 
+    
   },
   {
-    "Button": "aorta",
-    "Topic heading": "Aorta: The body's main blood vessel",
-    "Subject": "Talk to your provider to see if you need a test",
-    "General Patient Text": "Your provider may ask for an ultrasound of your belly\nto detect a bulge in the main blood vessel \n(the bulge is nicknamed AAA \nfor short or\nAbdominal Aortic Aneurysm)\nIf the bulge grows it can burst and cause death.",
-    "Health Provider Text": "n/a",
+    "Button": "Aorta",
+    "Topic heading": "Abdominal Aortic Aneurysm Screen",
+    "Subject": "Screening not recommended for men older than 80 years old",
+    "General Patient Text": "n/a",
+    "Health Provider Text": "[[Weak recommendation by canadian task force; https://canadiantaskforce.ca/guidelines/published-guidelines/abdominal-aortic-aneurysm/]]",
     "Gender": "m",
-    "Minimum age": 65,
-    "Maximum age": 80
+    "Minimum age": 81,
+    "Maximum age": 150
+   
+  },
+  {
+    "Button": "Aorta",
+    "Topic heading": "Abdominal Aortic Aneurysm Screen",
+    "Subject": "Screening not recommended for women of all ages.",
+    "General Patient Text": "n/a",
+    "Health Provider Text": "[[Strong recommendations, very low quality of evidence by canadian task force; https://canadiantaskforce.ca/guidelines/published-guidelines/abdominal-aortic-aneurysm/]]",
+    "Gender": "f",
+    "Minimum age": 18,
+    "Maximum age": 150
+    
   },
   {
     "Button": "Figure outside body walking",
@@ -28,6 +41,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Figure outside body walking",
@@ -38,6 +52,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Bone",
@@ -48,6 +63,7 @@
     "Gender": "tf",
     "Minimum age": 18,
     "Maximum age": 150
+ 
   },
   {
     "Button": "Bone",
@@ -58,6 +74,7 @@
     "Gender": "tf",
     "Minimum age": 18,
     "Maximum age": 150
+   
   },
   {
     "Button": "Bone",
@@ -68,6 +85,7 @@
     "Gender": "tf",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Bone",
@@ -78,6 +96,7 @@
     "Gender": "tm",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Bone",
@@ -88,6 +107,7 @@
     "Gender": "tm",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Bone",
@@ -98,6 +118,7 @@
     "Gender": "tm",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Bone",
@@ -108,6 +129,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Bone",
@@ -118,6 +140,7 @@
     "Gender": "m,f",
     "Minimum age": 18,
     "Maximum age": 64
+    
   },
   {
     "Button": "Bone",
@@ -128,6 +151,7 @@
     "Gender": "m,f",
     "Minimum age": 65,
     "Maximum age": 150
+    
   },
   {
     "Button": "Breast",
@@ -138,16 +162,18 @@
     "Gender": "f",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Breast",
     "Topic heading": "Breast Cancer",
     "Subject": "Get tested for Breast Cancer \nat age 50-74",
-    "General Patient Text": "Get a mammogram every 2 years:\nYou may need one earlier or more often\nif you have risks or symptoms.\n[[more; http://www.cancer.ca/en/cancer-information/cancer-type/breast/risks/?region=on]]",
+    "General Patient Text": "Get a mammogram every 2-3 years:\nYou may need one earlier or more often\nif you have risks or symptoms.\n[[more; http://www.cancer.ca/en/cancer-information/cancer-type/breast/risks/?region=on]]",
     "Health Provider Text": "n/a",
     "Gender": "f",
     "Minimum age": 50,
     "Maximum age": 74
+    
   },
   {
     "Button": "Breast",
@@ -158,16 +184,18 @@
     "Gender": "f",
     "Minimum age": 75,
     "Maximum age": 150
+    
   },
   {
     "Button": "Breast",
     "Topic heading": "Breast Cancer",
     "Subject": "Prevent and screen for Breast Cancer",
     "General Patient Text": "n/a",
-    "Health Provider Text": "Counsel patients to:\n•Limit alcohol (see our substance use info)\n•Not smoke\n•Control their weight\n•Be physically active (see our app info for this)\n•Breastfeed if able\n•Limit time on hormone therapy\n[[a risk calculator for patients; https://www.mycanceriq.ca/Cancers/Risk]]\n\nScreening Mammogram:\n•Below age 50: Not recommended\n[[canadiantaskforce recomendation; https://canadiantaskforce.ca/guidelines/published-guidelines/breast-cancer-update/]]\n[[tool to explain harms to patient; https://www.youtube.com/watch?v=UZlY6Q4m-MM]]\n[[tool to explain harms to patient; https://canadiantaskforce.ca/tools-resources/breast-cancer-2/breast-cancer-risks-benefits-age-40-49/]]\n•50-74:  Every 2 years\n[[weak recommendation; https://canadiantaskforce.ca/guidelines/published-guidelines/breast-cancer-update/]]\n•75+: Not recommended by canadiantaskforce.ca,but:\n[[CFP  article 2019 on when to stop screening; https://www.cfp.ca/content/cfp/65/8/543.full.pdf]]\n\nHigh risk patients:\n•Known to have a gene mutation that increases their risk for breast cancer (e.g., BRCA1, BRCA2, TP53, PTEN, CDH1)\n•First-degree relatives of someone who has a gene mutation that increases their risk for breast cancer (e.g., BRCA1, BRCA2, TP53, PTEN, CDH1), have already had genetic counselling and have chosen not to have genetic testing\n•Have been assessed by a genetics clinic (using the IBIS or BOADICEA tools) as having a 25% or greater lifetime risk of breast cancer based on personal and family history\n•Have had radiation therapy to the chest to treat another cancer or condition (e.g., Hodgkin lymphoma) before age 30 and at least 8 years ago\n•First-degree relative (parent, brother, sister or child) of a carrier of a gene mutation (e.g. BRCA1, BRCA2, TP53, PTEN, CDH1) and has not had genetic counselling or genetic testing\n•Personal or family history of breast or ovarian cancer suggestive of a hereditary breast cancer syndrome",
+    "Health Provider Text": "Counsel patients to:\n•Limit alcohol (see our substance use info)\n•Not smoke\n•Control their weight\n•Be physically active (see our app info for this)\n•Breastfeed if able\n•Limit time on hormone therapy\n[[a risk calculator for patients; https://www.mycanceriq.ca/Cancers/Risk]]\n\nScreening Mammogram:\n•Below age 50: Not recommended\n[[canadiantaskforce recomendation; https://canadiantaskforce.ca/guidelines/published-guidelines/breast-cancer-update/]]\n[[tool to explain harms to patient; https://www.youtube.com/watch?v=UZlY6Q4m-MM]]\n[[tool to explain harms to patient; https://canadiantaskforce.ca/tools-resources/breast-cancer-2/breast-cancer-risks-benefits-age-40-49/]]\n•50-74:  Every 2-3 years\n[[weak recommendation; https://canadiantaskforce.ca/guidelines/published-guidelines/breast-cancer-update/]]\n•75+: Not recommended by canadiantaskforce.ca,but:\n[[CFP  article 2019 on when to stop screening; https://www.cfp.ca/content/cfp/65/8/543.full.pdf]]\n\nHigh risk patients:\n•Known to have a gene mutation that increases their risk for breast cancer (e.g., BRCA1, BRCA2, TP53, PTEN, CDH1)\n•First-degree relatives of someone who has a gene mutation that increases their risk for breast cancer (e.g., BRCA1, BRCA2, TP53, PTEN, CDH1), have already had genetic counselling and have chosen not to have genetic testing\n•Have been assessed by a genetics clinic (using the IBIS or BOADICEA tools) as having a 25% or greater lifetime risk of breast cancer based on personal and family history\n•Have had radiation therapy to the chest to treat another cancer or condition (e.g., Hodgkin lymphoma) before age 30 and at least 8 years ago\n•First-degree relative (parent, brother, sister or child) of a carrier of a gene mutation (e.g. BRCA1, BRCA2, TP53, PTEN, CDH1) and has not had genetic counselling or genetic testing\n•Personal or family history of breast or ovarian cancer suggestive of a hereditary breast cancer syndrome",
     "Gender": "f",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Breast/Chest",
@@ -178,6 +206,7 @@
     "Gender": "tf",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Breast/Chest",
@@ -188,6 +217,7 @@
     "Gender": "tf",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Breast/Chest",
@@ -198,6 +228,7 @@
     "Gender": "tf",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Breast/Chest",
@@ -208,6 +239,7 @@
     "Gender": "tm",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Breast/Chest",
@@ -218,6 +250,7 @@
     "Gender": "tm",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Breast/Chest",
@@ -228,36 +261,7 @@
     "Gender": "tm",
     "Minimum age": 18,
     "Maximum age": 150
-  },
-  {
-    "Button": "Uterus",
-    "Topic heading": "Cervical Cancer",
-    "Subject": "Get tested for Cervical Cancer \n(Pap test)",
-    "General Patient Text": "•Women age 25 to 69  (21-69 in some provinces) if have ever been sexually active,\nneed to get a pap test every 3 years if results are normal.\n[[what is cervical cancer; http://www.cancer.ca/en/cancer-information/cancer-type/cervical/cervical-cancer/?region=on]]\n[[more; http://www.cancer.ca/en/cancer-information/cancer-type/cervical/screening/?region=on]]",
-    "Health Provider Text": "Women age 25 to 69 (21-69 in some provinces) if ever have been sexually active,\nneed to get a pap test every 3 years if results are normal.\n[[more; https://canadiantaskforce.ca/guidelines/published-guidelines/cervical-cancer/]]",
-    "Gender": "f",
-    "Minimum age": 21,
-    "Maximum age": 69
-  },
-  {
-    "Button": "Uterus",
-    "Topic heading": "Cervical Cancer",
-    "Subject": "A Pap test may or may not be needed",
-    "General Patient Text": "•After age 69 if 3 normal results in past 10 years can stop",
-    "Health Provider Text": "Stop after age 69 if 3 normal results in past 10 years.\n[[Can Task Force reference; https://canadiantaskforce.ca/guidelines/published-guidelines/cervical-cancer/]]\n[[CFP  article 2019 on when to stop screening; https://www.cfp.ca/content/cfp/65/8/543.full.pdf]]",
-    "Gender": "f",
-    "Minimum age": 70,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Uterus",
-    "Topic heading": "Cervical Cancer",
-    "Subject": "Other ways to prevent Cervical Cancer",
-    "General Patient Text": "•Get the HPV vaccine\nrecommended between age 9 and 26 \nbut can be given at any age\n•Don’t smoke\n•Use condoms\n•Limit your number of sexual partners\n[[more; http://www.cancer.ca/en/cancer-information/cancer-type/cervical/risks/reducing-your-risk/?region=on]]",
-    "Health Provider Text": "•Recommend the HPV vaccine\n(recommended between 9 and 26 \nbut can be given at any age).\n[[Canadian recommendation; https://www.canada.ca/en/public-health/services/publications/healthy-living/update-recommended-human-papillomavirus-vaccine-immunization-schedule.html#sum]]\n•Recommend no smoking, condom use,\nand limiting number of partners.",
-    "Gender": "f",
-    "Minimum age": 18,
-    "Maximum age": 150
+    
   },
   {
     "Button": "Colon",
@@ -268,6 +272,7 @@
     "Gender": "all",
     "Minimum age": 50,
     "Maximum age": 74
+    
   },
   {
     "Button": "Colon",
@@ -278,6 +283,7 @@
     "Gender": "all",
     "Minimum age": 50,
     "Maximum age": 74
+    
   },
   {
     "Button": "Colon",
@@ -288,6 +294,7 @@
     "Gender": "all",
     "Minimum age": 75,
     "Maximum age": 150
+    
   },
   {
     "Button": "Colon",
@@ -298,6 +305,227 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 49
+    
+  },
+  {
+    "Button": "Covid",
+    "Topic heading": "COVID-19",
+    "Subject": "Are you worried you have COVID-19?",
+    "General Patient Text": "Each province has teir own recommendations. Look up your province's COVID website or your local public health website.\nHere are some general resources: \n[[Confused about COVID; https://dfcm.utoronto.ca/confused-about-covid]]\n[[COVID Government of Canada; https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19.html]]",
+    "Health Provider Text": "n/a",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+    
+  },
+  {
+    "Button": "Covid",
+    "Topic heading": "COVID-19",
+    "Subject": "Vaccines",
+    "General Patient Text": "•Canada: click [[here; https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/vaccines/overview.html]]\n\n•Provinces: click [[here; https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/vaccines/overview.html#a5]]\n\n• Videos: how vaccines are developped \n[[3 minutes; https://www.canada.ca/en/public-health/services/video/covid-19-how-vaccines-developed.html]]\n[[7 minutes; https://www.youtube.com/watch?v=2t_mQwTY4WQ&feature=emb_logo]]",
+    "Health Provider Text": "•Info for professionals [[Centre for Effective Practice; https://cep.health/clinical-products/covid-19-vaccines/]] \n\n•[[NACI; https://www.canada.ca/en/public-health/services/immunization/national-advisory-committee-on-immunization-naci/recommendations-use-covid-19-vaccines.html]]\n\n•Canada: click [[here; https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/vaccines/overview.html]]\n\n•Provinces: click [[here; https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/vaccines/overview.html#a5]]\n\n•New England Journal of Medicine\n[[FAQ; https://www.nejm.org/covid-vaccine/faq]]\n[[Research; https://www.nejm.org/covid-vaccine]]\n\n• Videos: how vaccines are developped \n[[3 minutes; https://www.canada.ca/en/public-health/services/video/covid-19-how-vaccines-developed.html]]\n[[7 minutes; https://www.youtube.com/watch?v=2t_mQwTY4WQ&feature=emb_logo]]",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+    
+  },
+  {
+    "Button": "Covid",
+    "Topic heading": "COVID-19",
+    "Subject": "Elderly",
+    "General Patient Text": "•Click on: [[For the elderly and their caregivers; https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/resources-older-adults-caregivers.html]]\n\n•If you need food or other help \nPhone 211 or click on [[211 national website; https://211.ca]]\n\n\n•Or contact your local public health department,\nor municipality to find community services\n[[Public health info by province or territory; https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/symptoms/provincial-territorial-resources-covid-19.html]]",
+    "Health Provider Text": "n/a",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+    
+  },
+  {
+    "Button": "Covid",
+    "Topic heading": "COVID-19",
+    "Subject": "Do you need help with food, shelter or finances?",
+    "General Patient Text": "•If you need food:\nPhone 211 or \nClick on [[211.ca; https://211.ca]] and \nSearch by province and\nEnter the topic: food \nEnter your postal code\n\n•If you need help with money during COVID\n[[Government of Canada; https://www.canada.ca/en/department-finance/economic-response-plan.html]]\n[[Benefit finder; https://covid-benefits.alpha.canada.ca/en/start]]\n\n•If you need other services such as:\nHousing, Help with disabilities, or more\nPhone 211 or \nClick on [[211.ca; https://211.ca]] and \nSearch by province",
+    "Health Provider Text": "n/a",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+    
+  },
+  {
+    "Button": "Covid",
+    "Topic heading": "COVID-19",
+    "Subject": "First Nations, Métis, Inuit",
+    "General Patient Text": "•[[First Nations; https://www.afn.ca/coronavirus/#factsheet]]\n•[[Métis; https://metisnation.ca/covid19/]]\n•[[Inuit; https://www.itk.ca/what-we-do/covid19/]]\n•[[Native Women’s Association of Canada; https://www.nwac.ca/covid19/]]\n•[[National Collaboration on Indigenous Health; https://www.nccih.ca/485/NCCIH_in_the_News.nccih?id=450]]\n•[[Video 1; https://www.youtube.com/watch?v=jefCDf6ccJ4]]\n•[[Video 2; https://www.youtube.com/watch?v=bk2fp5rS-kg&feature=youtu.be]]\n•[[Diabetes and COVID-19; http://nada.ca/?page_id=3172]]",
+    "Health Provider Text": "n/a",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+    
+  },
+  {
+    "Button": "Covid",
+    "Topic heading": "COVID-19",
+    "Subject": "COVID-19 Español, Arabic, Mandarin and other languages",
+    "General Patient Text": "[[Click here; https://www.ottawapublichealth.ca/en/public-health-topics/multilingual-resources.aspx]]",
+    "Health Provider Text": "n/a",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+    
+  },
+  {
+    "Button": "Covid",
+    "Topic heading": "COVID-19",
+    "Subject": "Finances",
+    "General Patient Text": "If you need help with money:\n•[[Government of Canada; https://www.canada.ca/en/department-finance/economic-response-plan.html]]\n•[[Benefit finder; https://covid-benefits.alpha.canada.ca/en/start]]",
+    "Health Provider Text": "n/a",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+    
+  },
+  {
+    "Button": "Covid",
+    "Topic heading": "COVID-19",
+    "Subject": "All Canadians",
+    "General Patient Text": "•[[Info by province or territory; https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/symptoms/provincial-territorial-resources-covid-19.html]]\n•[[Public Health Agency of Canada; https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/prevention-risks.html?topic=tilelink]]\n•[[Kids and school during COVID; https://www.ementalhealth.ca/Toronto/Back-to-School-under-COVID-Tips-for-Parents-and-Caregivers/index.php?m=article&ID=70616]]",
+    "Health Provider Text": "n/a",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+    
+  },
+  {
+    "Button": "Covid",
+    "Topic heading": "COVID-19",
+    "Subject": "Mental Health",
+    "General Patient Text": "[[Mental Health and the COVID-19 Pandemic; https://www.camh.ca/en/health-info/mental-health-and-covid-19]]",
+    "Health Provider Text": "n/a",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+    
+  },
+  {
+    "Button": "Covid",
+    "Topic heading": "COVID-19",
+    "Subject": "Apps",
+    "General Patient Text": "[[Click here; https://www.canada.ca/en/government/system/digital-government/digital-government-response-to-covid-19.html]]",
+    "Health Provider Text": "n/a",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+    
+  },
+  {
+    "Button": "Covid",
+    "Topic heading": "COVID-19",
+    "Subject": "Risks of getting COVID-19",
+    "General Patient Text": "[[Click here; https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/prevention-risks.html#r]]",
+    "Health Provider Text": "n/a",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+    
+  },
+  {
+    "Button": "Covid",
+    "Topic heading": "COVID-19",
+    "Subject": "Cleaning",
+    "General Patient Text": "Clean high-touch hard surfaces often, using either regular household cleaners or diluted bleach.  \n•Click on [[list of approved disinfectants; https://www.canada.ca/en/health-canada/services/drugs-health-products/disinfectants/covid-19/list.html]]\n•Diluted bleach recipe: 250 mL (1 cup) of water per 5 mL (1 teaspoon) of bleach. Directions are based on bleach that is 5% sodium hypochlorite, to give a 0.1% sodium hypochlorite solution. Never mix bleach with other chemical products and use it in a well-ventilated area.",
+    "Health Provider Text": "n/a",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+    
+  },
+  {
+    "Button": "Covid",
+    "Topic heading": "COVID-19",
+    "Subject": "Masks",
+    "General Patient Text": "•[[VIDEO on how to wear a mask; https://www.canada.ca/en/public-health/services/video/covid-19-wear-non-medical-mask-face-covering-properly.html]]\n•[[DO's and DON'Ts; https://www.canada.ca/content/dam/hc-sc/documents/services/publications/diseases-and-conditions/covid-19-safely-use-non-medical-mask-face-covering/covid-19-safely-use-non-medical-mask-face-covering-en.pdf]]\n•[[LIMITATIONS; https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/prevention-risks/about-non-medical-masks-face-coverings.html#_Limitations]]\n•DO NOT wear a mask with an exhalation valve",
+    "Health Provider Text": "n/a",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+    
+  },
+  {
+    "Button": "Covid",
+    "Topic heading": "COVID-19",
+    "Subject": "Difference between quarantine and isolation",
+    "General Patient Text": "Click on [[Public Health Agency of Canada; https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/prevention-risks.html?topic=tilelink#self]]",
+    "Health Provider Text": "n/a",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+    
+  },
+  {
+    "Button": "Covid",
+    "Topic heading": "COVID-19",
+    "Subject": "Physical Distancing",
+    "General Patient Text": "Stay 2 metres or 6 feet apart, how far is this? 2 arms lengths or an adult hockey stick.\n[[Video; https://www.youtube.com/watch?v=UR1LPKDBTPw]]",
+    "Health Provider Text": "n/a",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+    
+  },
+  {
+    "Button": "Covid",
+    "Topic heading": "COVID-19",
+    "Subject": "Hygiene",
+    "General Patient Text": "Click on [[more; https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/prevention-risks.html?topic=tilelink]]",
+    "Health Provider Text": "n/a",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+    
+  },
+  {
+    "Button": "Covid",
+    "Topic heading": "COVID-19",
+    "Subject": "Vulnerable populations",
+    "General Patient Text": "n/a",
+    "Health Provider Text": "•Poverty screening question: “Do you ever have difficulty making ends meet at the end of the month?” [[reference; https://portal.cfpc.ca/resourcesdocs/uploadedFiles/CPD/Poverty_flow-Tool-Final-2016v4-Ontario.pdf\n\n•If your patient needs social, community or health services  phone 211 if available in your area  [[website; https://211.ca/]]\n\n•[[Government of Canada benefits; https://www.canada.ca/en/services/benefits/covid19-emergency-benefits.html]]\n\n•Check your local public health agency website for information for these groups\n\n•[[First Nations, Métis and Inuit; https://www.ottawapublichealth.ca/en/public-health-topics/resources-for-first-nations-inuit-and-m-tis-community-members.aspx]]\nNational and Ottawa-specific information\n\n•[[Different languages; https://www.ottawapublichealth.ca/en/public-health-topics/multilingual-resources.aspx]]",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+    
+  },
+  {
+    "Button": "Covid",
+    "Topic heading": "COVID-19",
+    "Subject": "Updated research",
+    "General Patient Text": "n/a",
+    "Health Provider Text": "APPRAISED EVIDENCE\n[[MCMASTER EBM; https://plus.mcmaster.ca/COVID-19]]\n[[OXFORD Evidence Service; https://www.cebm.net/oxford-covid-19-evidence-service/]]\n\nJOURNALS\n[[CMAJ; https://www.cmaj.ca/covid-19]]\n[[BMJ; https://www.bmj.com/coronavirus]]\n[[JAMA;https://jamanetwork.com/collections/46099/coronavirus-covid19]]\n[[NEJM; https://www.nejm.org/coronavirus]]\n[[The Lancet; https://www.thelancet.com/coronavirus/archive?]]\n\nPUBLIC HEALTH AGENCY OF CANADA\n[[For health professionals; https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/health-professionals.html]]",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+    
+  },
+  {
+    "Button": "Covid",
+    "Topic heading": "COVID-19",
+    "Subject": "Screening  during COVID-19",
+    "General Patient Text": "n/a",
+    "Health Provider Text": "[[Article in CFP Aug 2020; https://www.cfp.ca/content/cfp/66/8/571.full.pdf]]",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+    
+  },
+  {
+    "Button": "Pancreas",
+    "Topic heading": "Diabetes Type 2",
+    "Subject": "National Indigenous Diabetes Association",
+    "General Patient Text": "•[[National Indigenous Diabetes Association; http://nada.ca/]]\n•[[Food and Nutrition; http://nada.ca/?page_id=1563]]",
+    "Health Provider Text": "n/a",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+    
   },
   {
     "Button": "Pancreas",
@@ -308,6 +536,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Pancreas",
@@ -318,6 +547,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Pancreas",
@@ -328,56 +558,18 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Hip",
     "Topic heading": "Falls in the Elderly",
     "Subject": "Prevent falls",
     "General Patient Text": "Bathroom:\n•Make sure you have non slip surfaces or mats\n•Grab bars, bath seat\n•Raised toilet \n•Make sure path is clear from bedroom to bathroom\n\nHome:\n•Get rid of loose rugs or make non-slip\n•Have good lighting and night lights\n\nBe active:\nTai chi,walking, exercise classes etc\n\nMedications:\nDiscuss with your provider if your medications can cause falls\n\n\n[[more; https://www.canada.ca/content/dam/phac-aspc/migration/phac-aspc/seniors-aines/alt-formats/pdf/publications/public/injury-blessure/prevent-eviter/prevent-eviter-e.pdf]]",
-    "Health Provider Text": "The American Geriatrics Society\nand British Geriatrics Society recommend asking about\nfalls every year \n[[ref CFP article; http://www.cfp.ca/content/62/9/717]]\n[[more info; https://www.ajpmonline.org/article/S0749-3797(18)31759-8/fulltext]]\n\nFor advice to patients,\nsee in our app patient section on Falls.",
+    "Health Provider Text": "The American Geriatrics Society\nand British Geriatrics Society recommend asking about\nfalls every year \n[[ref CFP article; http://www.cfp.ca/content/62/9/717]]\n[[more info; https://www.ajpmonline.org/article/S0749-3797(18)31759-8/fulltext]]\n[[Ressources for health care professionnal: https://parachute.ca/en/professional-resource/seniors-falls-collection/]]\nFor advice to patients,\nsee in our app patient section on Falls.",
     "Gender": "all",
     "Minimum age": 65,
     "Maximum age": 150
-  },
-  {
-    "Button": "Ovary",
-    "Topic heading": "Family Planning",
-    "Subject": "Take folic acid",
-    "General Patient Text": "Take folic acid: 0.4 to 1 mg a day.\nA Vitamin available over the counter in pharmacies.\nFor women of childbearing age, whether planning a pregnancy or not.\n[[folic acid; https://www.canada.ca/en/public-health/services/pregnancy/folic-acid.html]]",
-    "Health Provider Text": "n/a",
-    "Gender": "f",
-    "Minimum age": 18,
-    "Maximum age": 49
-  },
-  {
-    "Button": "Ovary",
-    "Topic heading": "Family Planning",
-    "Subject": "Get tested for certain diseases",
-    "General Patient Text": "Talk to your health care provider \nabout getting tested before you are pregnant\nfor important diseases: \n•Rubella, Hepatitis B, HIV:can affect your unborn child.\n•Chicken pox: which can be very serious for you in pregnancy.",
-    "Health Provider Text": "n/a",
-    "Gender": "f",
-    "Minimum age": 18,
-    "Maximum age": 49
-  },
-  {
-    "Button": "Ovary",
-    "Topic heading": "Family Planning",
-    "Subject": "Discuss how your age affects fertility with your provider",
-    "General Patient Text": "Women who delay child-bearing are at increased risk of infertility.\nProspective parents, especially women, should know that their fecundity and fertility begin to decline significantly after 32 years of age. Prospective parents should know that assisted reproductive technologies cannot guarantee a live birth or completely compensate for age-related decline in fertility [[more; https://www.jogc.com/article/S1701-2163(17)30936-2/abstract]]",
-    "Health Provider Text": "n/a",
-    "Gender": "f",
-    "Minimum age": 18,
-    "Maximum age": 49
-  },
-  {
-    "Button": "Ovary",
-    "Topic heading": "Family Planning",
-    "Subject": "Preconception health for all women of childbearing age",
-    "General Patient Text": "n/a",
-    "Health Provider Text": "[[Complete preconception health care tool; https://med-fom-obgyn.sites.olt.ubc.ca/files/2019/02/Preconception-Tool_-Nov2015-CEP_.pdf]]\n\nAdvise folic acid 0.4-1 m/day \nfor all women of childbearing age,\nas many pregnancies unplanned \n[[more; https://www.jogc.com/article/S1701-2163(15)30230-9/pdf]]\n\nScreen for:\n•Rubella immunity\n•Varicella immunity\n•Hepatitis B and HIV disease\nin women of childbearing age,\n[[more; http://thehub.utoronto.ca/family/wp-content/uploads/2016/12/Preconception_Health_Care_Tool.pdf]]\n\nDelayed child-bearing: discuss\n•Decreasing fertility for women after age 32 \n•Assistive reproductive technologies cannot guarantee a live birth. \n[[more at SOGC guideline 2017; https://www.jogc.com/article/S1701-2163(17)30936-2/pdf]]",
-    "Gender": "f",
-    "Minimum age": 18,
-    "Maximum age": 49
+    
   },
   {
     "Button": "Heart",
@@ -388,6 +580,7 @@
     "Gender": "tf",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Heart",
@@ -398,6 +591,7 @@
     "Gender": "tm",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Heart",
@@ -408,6 +602,7 @@
     "Gender": "tf,tm",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Heart",
@@ -418,6 +613,7 @@
     "Gender": "tf,tm",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Heart",
@@ -428,16 +624,18 @@
     "Gender": "tf,tm",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Heart",
     "Topic heading": "Heart Disease",
     "Subject": "Blood pressure",
-    "General Patient Text": "Have your blood pressure measured regularly by your health provider. \nIf you have no other health problems it is recommended to have a blood pressure under 140/90.\n[[More info; https://hypertension.ca/hypertension-and-you/]]",
-    "Health Provider Text": "CTFPHC recommends blood pressure measurement at all appropriate primary care visits.[[2012 Guideline; https://canadiantaskforce.ca/guidelines/published-guidelines/hypertension/]]\n(Strong recommendation; moderate quality evidence)\nUse CHEP criteria:\n[[Highlights; https://guidelines.hypertension.ca/wp-content/uploads/2020/08/2020-22-HT-Guidelines-E-WEB_v3b.pdf]]\n[[Full 2020 guideline; https://guidelines.hypertension.ca/wp-content/uploads/2020/08/Hypertension-Canada-2020-Comprehensive-Guidelines-for-Prevention-Diagnosis-Risk-Assessment-and-Treatment-of-Hypertension-in-Adults-and-Children.pdf]]",
+    "General Patient Text": "During your visit to the doctor, ask for a measurement of your blood pressure. \nA normal blood pressure is under 140/90 mmHg or lower for some people .\nThe target blood pressure depends on factors like age and health conditions, and where readings are being taken. If you have diabetes, kidney disease or other health conditions, speak to your health care professional about your target blood pressure. \n\n[[How to appropriately measure your blood pressure at home; https://hypertension.ca/wp-content/uploads/2020/03/BPM-Postcard-Front.jpg]]\n[[Understanding and Managing Your Blood Pressure: https://guidelines.hypertension.ca/wp-content/uploads/2021/02/HTC_Brochure_UnderstandingBP_2018_R3.pdf]]",
+    "Health Provider Text": "CTFPHC recommends blood pressure measurement at all appropriate primary care visits.[[2012 Guideline; https://canadiantaskforce.ca/guidelines/published-guidelines/hypertension/]]\n(Strong recommendation; moderate quality evidence)\n\nIf the mean blood pressure measured in office [[As per recommended technique; https://guidelines.hypertension.ca/diagnosis-assessment/measuring-blood-pressure/]] is high during one visit, a history and physical examination should be performed and, if clinically indicated, diagnostic tests to search for target organ damage should be arranged within 2 visits. \n\nRoutine Lab Testing Recommended: urinalysis, blood chemistry (potassium, sodium and creatinine), fasting blood glucose and/or glycated hemoglobin (A1C), serum total cholesterol, LDL, HDL, non-HDL, triglycerides (fasting or non-fasting) and a standard 12-lead ECG. \n\nGlobal cardiovascular risk assessment should be done using [[risks calculators; www.ccs.ca/en/resources/calculators-forms]]",
     "Gender": "tf,tm",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Heart",
@@ -448,6 +646,7 @@
     "Gender": "tf,tm",
     "Minimum age": 18,
     "Maximum age": 74
+    
   },
   {
     "Button": "Heart",
@@ -458,6 +657,7 @@
     "Gender": "tf,tm",
     "Minimum age": 75,
     "Maximum age": 150
+    
   },
   {
     "Button": "Heart",
@@ -468,6 +668,7 @@
     "Gender": "tf,tm",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Heart",
@@ -478,6 +679,7 @@
     "Gender": "tf,tm",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Heart",
@@ -488,6 +690,7 @@
     "Gender": "m,f",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Heart",
@@ -498,6 +701,7 @@
     "Gender": "m,f",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Heart",
@@ -508,6 +712,7 @@
     "Gender": "m,f",
     "Minimum age": 30,
     "Maximum age": 74
+    
   },
   {
     "Button": "Heart",
@@ -518,16 +723,18 @@
     "Gender": "m,f",
     "Minimum age": 30,
     "Maximum age": 74
+    
   },
   {
     "Button": "Heart",
     "Topic heading": "Heart Disease",
     "Subject": "Smoking",
     "General Patient Text": "Recommended to quit or reduce.\nGet help with websites, groups, phone lines \n[[By province; https://www.canada.ca/en/health-canada/services/smoking-tobacco/quit-smoking/provincial-territorial-services.html]].\n[[More; http://www.smokershelpline.ca/]]",
-    "Health Provider Text": "•Ask all patients about tobacco use, \n•Recommend to quit or reduce.\nResources\n[[By province; https://www.canada.ca/en/health-canada/services/smoking-tobacco/quit-smoking/provincial-territorial-services.html]].\n[[More; http://www.smokershelpline.ca/]]\n\n•Use behavioral  interventions\n•As needed use approved pharmacotherapy to promote cessation.\n[[USPSTF A (2013); https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/tobacco-use-in-adults-and-pregnant-women-counseling-and-interventions]]\n[[motivational interviewing video; https://www.youtube.com/watch?v=URiKA7CKtfc]]",
+    "Health Provider Text": "•Ask all patients about tobacco use, \n•Recommend to quit or reduce.\nResources\n[[By province; https://www.canada.ca/en/health-canada/services/smoking-tobacco/quit-smoking/provincial-territorial-services.html]].\n[[More; http://www.smokershelpline.ca/]]\n\n•Use behavioral  interventions\n•As needed use approved pharmacotherapy to promote cessation.\n[[USPSTF A (2017); https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/tobacco-use-in-adults-and-pregnant-women-counseling-and-interventions]]\n[[motivational interviewing video; https://www.youtube.com/watch?v=URiKA7CKtfc]]",
     "Gender": "m,f",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Heart",
@@ -538,6 +745,7 @@
     "Gender": "m,f",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Heart",
@@ -548,6 +756,7 @@
     "Gender": "m,f",
     "Minimum age": 18,
     "Maximum age": 39
+    
   },
   {
     "Button": "Heart",
@@ -558,6 +767,7 @@
     "Gender": "m",
     "Minimum age": 40,
     "Maximum age": 74
+    
   },
   {
     "Button": "Heart",
@@ -568,6 +778,7 @@
     "Gender": "f",
     "Minimum age": 40,
     "Maximum age": 74
+    
   },
   {
     "Button": "Heart",
@@ -578,6 +789,7 @@
     "Gender": "m,f",
     "Minimum age": 75,
     "Maximum age": 150
+    
   },
   {
     "Button": "Heart",
@@ -588,6 +800,7 @@
     "Gender": "m,f",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Heart",
@@ -598,6 +811,7 @@
     "Gender": "m,f",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Needle in arm",
@@ -608,6 +822,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Needle in arm",
@@ -618,26 +833,40 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 49
+    
   },
   {
     "Button": "Needle in arm",
     "Topic heading": "Immunization",
     "Subject": "Get immunized",
-    "General Patient Text": "For best information download the [[app CanImmunize; https://www.canimmunize.ca/en/home]]\n\nAGE 50 and over:\nThis schedule assumes the patient has  been vaccinated in childhood\n•Td (Tetanus-diphtheria) every 10 years\n•Tdap(Tetanus,diphtheria, acellular pertussis or whooping cough):once in your lifetime\n•Measles Mumps Rubella:it is advised that  most adults should have  2 doses of this vaccine\n•Influenza: is recommended for all adults. For high risk groups see CanImmunize app\n•Pneumococcal, varicella,  meningococcal are recommended for some high risk groups seeCANImmunize app\n•Shingles vaccine: \nShingrix recommended for 50 and over but you may have to pay for this most provinces not funding yet [[Shingrix; https://www.cdc.gov/vaccines/vpd/shingles/public/shingrix/index.html]]\n\nAGE 60 and over:\n•Shingles vaccine: Shingrix or Zostavax, your province may cover Zostavax but not Shingrix,discuss with your provider [[more info; https://www.cdc.gov/vaccines/vpd/shingles/public/shingrix/index.html]]\n\n\nAGE 65 and over: \n•Pneumococca : Pneumococcal 23 is paid for by your province,Pneumococcal 13 may not be paid for by your province. Discuss with your doctor\n•Influenza yearly",
+    "General Patient Text": "For best information download the [[app CanImmunize; https://www.canimmunize.ca/en/home]]\n\nAGE 50 and over:\nThis schedule assumes the patient has  been vaccinated in childhood\n•Td (Tetanus-diphtheria) every 10 years\n•Tdap(Tetanus,diphtheria, acellular pertussis or whooping cough):once in your lifetime\n•Measles Mumps Rubella:it is advised that  most adults should have  2 doses of this vaccine\n•Influenza: is recommended for all adults. For high risk groups see CanImmunize app\n•Pneumococcal, varicella,  meningococcal are recommended for some high risk groups seeCANImmunize app\n•Shingles vaccine: \nShingrix recommended for 50 and over but you may have to pay for this most provinces not funding yet [[Shingrix; https://www.cdc.gov/vaccines/vpd/shingles/public/shingrix/index.html]]\n\nAGE 60 and over:\n•Shingles vaccine: Shingrix or Zostavax, your province may cover Zostavax but not Shingrix,discuss with your provider [[more info; https://www.cdc.gov/vaccines/vpd/shingles/public/shingrix/index.html]]\nAGE 65 and over: \n•Pneumococca : Pneumococcal 23 is paid for by your province,Pneumococcal 13 may not be paid for by your province. Discuss with your doctor\n•Influenza yearly",
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 50,
     "Maximum age": 150
+    
   },
   {
     "Button": "Needle in arm",
     "Topic heading": "Immunization",
     "Subject": "COVID vaccines",
-    "General Patient Text": "•Canada: click [[here; https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/vaccines/overview.html]]\n\n•Provinces: click [[here; https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/vaccines/overview.html#a5]]\n\n•New England Journal of Medicine [[FAQ; https://www.nejm.org/covid-vaccine/faq]]\n\n• Videos: how vaccines are developped \n[[3 minutes; https://www.canada.ca/en/public-health/services/video/covid-19-how-vaccines-developed.html]]\n[[7 minutes; https://www.youtube.com/watch?v=2t_mQwTY4WQ&feature=emb_logo]]",
-    "Health Provider Text": "•Info for professionals [[Centre for Effective Practice; https://cep.health/clinical-products/covid-19-vaccines/]] \n\n•[[NACI; https://www.canada.ca/en/public-health/services/immunization/national-advisory-committee-on-immunization-naci/recommendations-use-covid-19-vaccines.html]]\n\n•Canada: click [[here; https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/vaccines/overview.html]]\n\n•Provinces: click [[here; https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/vaccines/overview.html#a5]]\n\n•New England Journal of Medicine\n[[FAQ; https://www.nejm.org/covid-vaccine/faq]]\n[[Research; https://www.nejm.org/covid-vaccine]]\n\n• Videos: how vaccines are developped \n[[3 minutes; https://www.canada.ca/en/public-health/services/video/covid-19-how-vaccines-developed.html]]\n[[7 minutes; https://www.youtube.com/watch?v=2t_mQwTY4WQ&feature=emb_logo]]",
+    "General Patient Text": "• [[General information about Covid-19 vaccines (Goverment of Canada); https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/vaccines/overview.html]]\n\n• [[Frequently asked questions about COVID-19 vaccination; https://www.ottawapublichealth.ca/en/public-health-topics/frequently-asked-questions-about-covid-19-vaccination.aspx]]\n\n• Videos: how vaccines are developped \n[[3 minutes; https://www.canada.ca/en/public-health/services/video/covid-19-how-vaccines-developed.html]]\n[[7 minutes; https://www.youtube.com/watch?v=2t_mQwTY4WQ&feature=emb_logo]]",
+    "Health Provider Text": "•Info for professionals [[Centre for Effective Practice; https://cep.health/clinical-products/covid-19-vaccines/]] \n\n•[[National Advisory Committee on Immunization (NACI); https://www.canada.ca/en/public-health/services/publications/healthy-living/canadian-immunization-guide-part-4-active-vaccines/page-26-covid-19-vaccine.html]]\n\n• [[General informations about vaccine (Government of Canada); https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/vaccines/overview.html]]\n\n• [[New England Journal of Medicine, Covid-19 Vaccine Resource Center; https://www.nejm.org/covid-vaccine]]\n\n• Videos: how vaccines are developped \n[[3 minutes; https://www.canada.ca/en/public-health/services/video/covid-19-how-vaccines-developed.html]]\n[[7 minutes; https://www.youtube.com/watch?v=2t_mQwTY4WQ&feature=emb_logo]]",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
+    
+  },
+  {
+    "Button": "Needle in arm",
+    "Topic heading": "Immunization",
+    "Subject": "Get immunized",
+    "General Patient Text": "If you live in Ontario, you are eligible for the publicly funded Shingrix vaccine (two-dose series), if you have not received the Zostamax II vaccine through the Ontario publicly funded shingles immunization program.",
+    "Health Provider Text": "Ontario seniors ages 65 to 70 years are eligible for the publicly funded Shingrix vaccine (Two-doses series), provided they have not received the Zostavax® II vaccine through the Ontario publicly funded shingles immunization program.",
+    "Gender": "all",
+    "Minimum age": 65,
+    "Maximum age": 70
+    
   },
   {
     "Button": "Liver",
@@ -648,6 +877,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Liver",
@@ -658,6 +888,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Liver",
@@ -668,6 +899,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Liver",
@@ -678,6 +910,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Lung",
@@ -688,6 +921,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Lung",
@@ -698,6 +932,7 @@
     "Gender": "all",
     "Minimum age": 55,
     "Maximum age": 74
+    
   },
   {
     "Button": "Lung",
@@ -708,6 +943,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Lung",
@@ -718,6 +954,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Brain",
@@ -728,6 +965,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Brain",
@@ -738,6 +976,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Brain",
@@ -748,6 +987,7 @@
     "Gender": "all",
     "Minimum age": 50,
     "Maximum age": 150
+    
   },
   {
     "Button": "Stomach",
@@ -758,6 +998,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Stomach",
@@ -768,6 +1009,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Stomach",
@@ -778,6 +1020,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Figure outside body walking",
@@ -788,6 +1031,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Figure outside body walking",
@@ -798,6 +1042,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Physical Exam",
@@ -808,6 +1053,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Physical Exam",
@@ -818,6 +1064,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 39
+    
   },
   {
     "Button": "Physical Exam",
@@ -828,6 +1075,7 @@
     "Gender": "all",
     "Minimum age": 40,
     "Maximum age": 150
+    
   },
   {
     "Button": "Physical Exam",
@@ -838,46 +1086,106 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Genitalia",
     "Topic heading": "Sexual and reproductive health",
-    "Subject": "Prevent Sexually Transmitted Infections (STIs)",
-    "General Patient Text": "•Get tested for STIs every year under age 25",
+    "Subject": "Get tested for Cervical Cancer \n(Pap test)",
+    "General Patient Text": "•If you have ever been sexually active with another person ,female or male ,and are age 25 or over you need to be screened. See more information about\n[[What is considered sexual activity?; https://www.sexandu.ca/sexual-activity/what-is-sex/]]\n\n•Women age 25 to 69  (21-69 in some provinces) if they have ever been sexually active,need to get a pap test every 3 years if results are normal.\n[[What is cervical cancer; http://www.cancer.ca/en/cancer-information/cancer-type/cervical/cervical-cancer/?region=on]]\n[[more; http://www.cancer.ca/en/cancer-information/cancer-type/cervical/screening/?region=on]]\n\n• Age 69 or 70 will be the last year you have a pap test if you have had 3 normal Paps in the last 10 years. If not you should continue until you have had 3 normals in ther last 10 years.",
+    "Health Provider Text": "n/a",
+    "Gender": "f",
+    "Minimum age": 21,
+    "Maximum age": 74
+    
+  },
+  {
+    "Button": "Genitalia",
+    "Topic heading": "Sexual and reproductive health",
+    "Subject": "Cervical Cancer",
+    "General Patient Text": "A Pap test is not usually necessary over 75. Pap tests can be stopped at age 69 if you have had 3 normal tests in the last 10years",
+    "Health Provider Text": "n/a",
+    "Gender": "f",
+    "Minimum age": 75,
+    "Maximum age": 150
+    
+  },
+  {
+    "Button": "Genitalia",
+    "Topic heading": "Sexual and reproductive health",
+    "Subject": "Cervical Cancer",
+    "General Patient Text": "n/a",
+    "Health Provider Text": "Women age 25 to 69 (21-69 in some provinces) if ever have been sexually active,\nneed to get a pap test every 3 years if results are normal.\nStop after age 69 if 3 normal results in past 10 years.\n[[CTFPHC 2013; https://canadiantaskforce.ca/guidelines/published-guidelines/cervical-cancer/]]",
+    "Gender": "f",
+    "Minimum age": 21,
+    "Maximum age": 150
+    
+  },
+  {
+    "Button": "Genitalia",
+    "Topic heading": "Sexual and reproductive health",
+    "Subject": "Other ways to prevent Cervical Cancer",
+    "General Patient Text": "•Get the HPV vaccine\nrecommended between age 9 and 26 \nbut can be given at any age\n•Don’t smoke\n•Use condoms\n•Limit your number of sexual partners\n[[more; http://www.cancer.ca/en/cancer-information/cancer-type/cervical/risks/reducing-your-risk/?region=on]]",
+    "Health Provider Text": "•Recommend the HPV vaccine\n(recommended between 9 and 26 \nbut can be given at any age).\n[[Canadian recommendation; https://www.canada.ca/en/public-health/services/publications/healthy-living/update-recommended-human-papillomavirus-vaccine-immunization-schedule.html#sum]]\n•Recommend no smoking, condom use,\nand limiting number of partners.",
+    "Gender": "f",
+    "Minimum age": 18,
+    "Maximum age": 150
+    
+  },
+  {
+    "Button": "Genitalia",
+    "Topic heading": "Sexual and reproductive health",
+    "Subject": "Family planning",
+    "General Patient Text": "•Take folic acid: 0.4 to 1 mg a day.\nA vitamin available over the counter in pharmacies.\nFor women of childbearing age, whether planning a pregnancy or not.\n[[folic acid; https://www.canada.ca/en/public-health/services/pregnancy/folic-acid.html]]\n\n•Talk to your health care provider \nabout getting tested before you are pregnant\nfor important diseases: \n•Rubella, Hepatitis B, HIV:can affect your unborn child.\n•Chicken pox: which can be very serious for you in pregnancy.\n\n•If you are planning to have children  after age 32 talk to your health care provider about fertility decreasing after that age and what it means for you.",
     "Health Provider Text": "n/a",
     "Gender": "f",
     "Minimum age": 18,
-    "Maximum age": 24
+    "Maximum age": 49
+    
   },
   {
     "Button": "Genitalia",
     "Topic heading": "Sexual and reproductive health",
-    "Subject": "Prevent Sexually Transmitted Infections (STIs)",
-    "General Patient Text": "•Practice safe sex:\nuse a [[condom or other protection; https://www.cdc.gov/teenpregnancy/pdf/Teen-Condom-Fact_Sheet-English-March-2016.pdf]]\n\n•Get tested for STIs:\nif you have a new partner, multiple partners,\nif you do not use protection, have an STI, or are otherwise at risk.\n\n•Get tested for HIV at any age.\n\nMore info:\n[[sexual activity;http://www.sexandu.ca/]]\n[[infections; https://www.canada.ca/en/public-health/services/infectious-diseases/sexual-health-sexually-transmitted-infections/sexually-transmitted-infections-sexual-health-facts-information-public.html#geninfo]]",
-    "Health Provider Text": "n/a",
+    "Subject": "Family planning",
+    "General Patient Text": "n/a",
+    "Health Provider Text": "For women of childbearing age:\n\nAdvise folic acid 0.4-1 m/day \nfor all women of childbearing age,\nas many pregnancies unplanned [[ SOGC 2015; https://www.jogc.com/article/S1701-2163(15)30230-9/pdf]]\n\nScreen for:\n•Rubella immunity\n•Varicella immunity\n•Hepatitis B and HIV disease\nin women of childbearing age,\n[[Complete preconception heare tool; http://thehub.utoronto.ca/family/wp-content/uploads/2016/12/Preconception_Health_Care_Tool.pdf]]\n\nDelayed child-bearing: discuss\n•Decreasing fertility for women after age 32 \n•Assistive reproductive technologies cannot guarantee a live birth. \n[[more at SOGC guideline 2017; https://www.jogc.com/article/S1701-2163(17)30936-2/pdf]]",
     "Gender": "f",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 49
+    
   },
   {
     "Button": "Genitalia",
     "Topic heading": "Sexual and reproductive health",
-    "Subject": "Prevent Sexually Transmitted Infections (STIs)",
-    "General Patient Text": "n/a",
-    "Health Provider Text": "Safe sex and STI counselling for all sexually active patients.\nSee patient info for reliable websites.\n\nTesting\n•25 years and under screen yearly for chlamydia/gonorrhea if sexually active\n[[USPSTF 2014; https://www.uspreventiveservicestaskforce.org/Page/Document/UpdateSummaryFinal/chlamydia-and-gonorrhea-screening]]\n•25 and over screen according to risk, see below\n•Screen for other STIs according to risk (new partner, multiple partners, serial monogamous relationships,unprotected sex, substance use,sex with blood exchange,sharing sex toys)\n•Offer HIV testing to all:\n[[Public Health Agency of Canada recommendation; https://www.canada.ca/en/public-health/services/hiv-aids/hiv-screening-testing-guide.html]]; supported by USPSTF 2013 and CDC, \n[[CTFPHC recommends only if at risk; https://canadiantaskforce.ca/guidelines/appraised-guidelines/hiv/]]",
+    "Subject": "Infertility",
+    "General Patient Text": "A fertility evaluation should be initiated after 6 months of unprotected intercourse without conception in women 35 to 37 years of age, and earlier in women > 37 years of age",
+    "Health Provider Text": "A fertility evaluation should be initiated after 6 months of unprotected intercourse without conception in women 35 to 37 years of age, and earlier in women > 37 years of age \n[[SOGC guideline 2017; https://www.jogc.com/article/S1701-2163(16)39898-X/fulltext]]",
     "Gender": "f",
-    "Minimum age": 18,
-    "Maximum age": 150
+    "Minimum age": 35,
+    "Maximum age": 49
+    
   },
   {
     "Button": "Genitalia",
     "Topic heading": "Sexual and reproductive health",
     "Subject": "Prevent Sexually Transmitted Infections (STIs)",
-    "General Patient Text": "n/a",
-    "Health Provider Text": "Safe sex and STI counselling for all sexually active patients.\nSee patient info for reliable websites.\n\nTesting\n•25 years and under screen yearly for chlamydia/gonorrhea if sexually active\n[[USPSTF 2014; https://www.uspreventiveservicestaskforce.org/Page/Document/UpdateSummaryFinal/chlamydia-and-gonorrhea-screening]]\n•25 and over screen according to risk, see below\n•screen for other STIs according to risk (new partner, multiple partners, serial monogamous relationships,unprotected sex, substance use,sex with blood exchange,sharing sex toys)\n•offer HIV testing to all:\n[[Public Health Agency of Canada recommendation; https://www.canada.ca/en/public-health/services/hiv-aids/hiv-screening-testing-guide.html]]; supported by USPSTF 2013 and CDC, \n[[CTFPHC recommends only if at risk; https://canadiantaskforce.ca/guidelines/appraised-guidelines/hiv/]]",
-    "Gender": "m",
+    "General Patient Text": "•Practice safe sex:\nuse a [[condom or other protection; https://www.cdc.gov/teenpregnancy/pdf/Teen-Condom-Fact_Sheet-English-March-2016.pdf]]\n\n•Get tested for STIs: \nIf you are sexually active ((if you have ever had oral, vaginal or anal intercourse)\nUnder age 30 yearly for chlamydia and gonorrhea\nAge 30 and above : for all STI's if\nyou  have a new partner, multiple partners,\n you do not use protection, have an STI,\nor are otherwise at risk.\n\n•Get tested for HIV at any age.\n\nMore info:\n[[sexual activity;http://www.sexandu.ca/]]\n[[Chlamydia and gonorrhea; https://canadiantaskforce.ca/tools-resources/chlamydia-and-gonorrhea-patient-faq/]]\n[[infections; https://www.canada.ca/en/public-health/services/infectious-diseases/sexual-health-sexually-transmitted-infections/sexually-transmitted-infections-sexual-health-facts-information-public.html#geninfo]]",
+    "Health Provider Text": "",
+    "Gender": "m,f",
     "Minimum age": 18,
     "Maximum age": 150
+    
+  },
+  {
+    "Button": "Genitalia",
+    "Topic heading": "Sexual and reproductive health",
+    "Subject": "Prevent Sexually Transmitted Infections (STI)",
+    "General Patient Text": "",
+    "Health Provider Text": "Safe sex and STI counselling for all sexually active patients.\n\nTesting\n• Age 30 and under annual screening for chlamydia and gonorrhea\n [[ CTFPHC 2021; https://canadiantaskforce.ca/guidelines/published-guidelines/chlamydia-and-gonorrhea/]]\n•Age 30 and over screen according to risk, see below\n• screen for other STIs according to risk (new partner, multiple partners, serial monogamous relationships,unprotected sex, substance use,sex with blood exchange,sharing sex toys)\n•offer HIV testing to all:\n[[Public Health Agency of Canada recommendation; https://www.canada.ca/en/public-health/services/hiv-aids/hiv-screening-testing-guide.html]]; supported by USPSTF 2013 and CDC, \n[[CTFPHC recommends only if at risk; https://canadiantaskforce.ca/guidelines/appraised-guidelines/hiv/]]",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+    
   },
   {
     "Button": "Genitalia",
@@ -888,6 +1196,7 @@
     "Gender": "m",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Genitalia",
@@ -898,26 +1207,7 @@
     "Gender": "m",
     "Minimum age": 55,
     "Maximum age": 69
-  },
-  {
-    "Button": "Genitalia",
-    "Topic heading": "Sexual and reproductive health",
-    "Subject": "Prevent Sexually Transmitted Infections (STI)",
-    "General Patient Text": "•Get tested for STIs  every year under age 25.",
-    "Health Provider Text": "n/a",
-    "Gender": "m",
-    "Minimum age": 18,
-    "Maximum age": 24
-  },
-  {
-    "Button": "Genitalia",
-    "Topic heading": "Sexual and reproductive health",
-    "Subject": "Prevent Sexually Transmitted Infections (STI)",
-    "General Patient Text": "•Practice safe sex:\nuse a [[condom or other protection; https://www.cdc.gov/teenpregnancy/pdf/Teen-Condom-Fact_Sheet-English-March-2016.pdf]]\n\n•Get tested for STIs:\nif you have a new partner, multiple partners,\nif you do not use protection, have an STI,\nor are otherwise at risk.\n\n•Get tested for HIV at any age.\n\nMore info:\n[[sexual activity;http://www.sexandu.ca/]]\n[[infections; https://www.canada.ca/en/public-health/services/infectious-diseases/sexual-health-sexually-transmitted-infections/sexually-transmitted-infections-sexual-health-facts-information-public.html#geninfo]]",
-    "Health Provider Text": "n/a",
-    "Gender": "m",
-    "Minimum age": 18,
-    "Maximum age": 150
+    
   },
   {
     "Button": "Genitalia",
@@ -928,6 +1218,7 @@
     "Gender": "m",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Genitalia",
@@ -938,6 +1229,7 @@
     "Gender": "m",
     "Minimum age": 55,
     "Maximum age": 69
+    
   },
   {
     "Button": "Genitalia",
@@ -948,6 +1240,7 @@
     "Gender": "tm",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Genitalia",
@@ -958,6 +1251,7 @@
     "Gender": "tm",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Genitalia",
@@ -968,6 +1262,7 @@
     "Gender": "tm",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Genitalia",
@@ -978,6 +1273,7 @@
     "Gender": "tm",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Genitalia",
@@ -988,6 +1284,7 @@
     "Gender": "tm",
     "Minimum age": 18,
     "Maximum age": 55
+    
   },
   {
     "Button": "Genitalia",
@@ -998,6 +1295,7 @@
     "Gender": "tf",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Genitalia",
@@ -1008,6 +1306,7 @@
     "Gender": "tf",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Genitalia",
@@ -1018,6 +1317,7 @@
     "Gender": "tf",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Genitalia",
@@ -1028,16 +1328,18 @@
     "Gender": "tf",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Sun",
     "Topic heading": "Sun Exposure",
     "Subject": "Stop Skin Cancer",
-    "General Patient Text": "•Wear protective clothing\n•Limit time in the sun (worst time: between 10 am and 3 pm) \n•Wear sunscreen (minimum SPF 30) \n[[More info; https://www.canada.ca/en/public-health/services/sun-safety/skin-cancer.html]]",
-    "Health Provider Text": "To prevent Melanoma:\nDecrease exposure to sun with:protective clothing, sunscreen min SPF 30\n[[CTFPHC appraised guideline 2014;https://canadiantaskforce.ca/guidelines/appraised-guidelines/melanoma/]]",
+    "General Patient Text": "•Wear protective clothing\n•Limit time in the sun (worst time: between 10 am and 3 pm) \n•Wear sunscreen (minimum SPF 30) \n•[[Avoid tanning booth and sun beds; https://www.canada.ca/en/health-canada/services/sun-safety/tanning-beds-lamps.html]]\n[[More info; https://www.canada.ca/en/public-health/services/sun-safety/skin-cancer.html]]",
+    "Health Provider Text": "To prevent Melanoma:\nDecrease exposure to sun with:protective clothing, sunscreen min SPF 30\n[[CTFPHC appraised guideline 2014;https://canadiantaskforce.ca/guidelines/appraised-guidelines/melanoma/]]\nClinical assessment of future risk of melanoma take into account:\n- person’s age and sex\n- history of previous melanoma or non-melanoma skin cancer\n- family history of melanoma\n- number of naevi (common and atypical)\n- skin and hair pigmentation\n- response to sun exposure\n- evidence of actinic skin damage",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Eye",
@@ -1048,6 +1350,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
+    
   },
   {
     "Button": "Eye",
@@ -1058,6 +1361,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 40
+    
   },
   {
     "Button": "Eye",
@@ -1068,6 +1372,7 @@
     "Gender": "all",
     "Minimum age": 41,
     "Maximum age": 55
+    
   },
   {
     "Button": "Eye",
@@ -1078,6 +1383,7 @@
     "Gender": "all",
     "Minimum age": 56,
     "Maximum age": 64
+    
   },
   {
     "Button": "Eye",
@@ -1088,6 +1394,7 @@
     "Gender": "all",
     "Minimum age": 65,
     "Maximum age": 150
+
   },
   {
     "Button": "Bone",
@@ -1098,6 +1405,7 @@
     "Gender": "f",
     "Minimum age": 18,
     "Maximum age": 18
+    
   },
   {
     "Button": "Bone",
@@ -1108,6 +1416,7 @@
     "Gender": "f",
     "Minimum age": 19,
     "Maximum age": 49
+    
   },
   {
     "Button": "Bone",
@@ -1118,26 +1427,29 @@
     "Gender": "m,tm,tf",
     "Minimum age": 18,
     "Maximum age": 18
+    
   },
   {
     "Button": "Bone",
-    "Topic heading": "Nutrition, Vitamins",
+    "Topic heading": "Nutrition,Vitamins",
     "Subject": "Age 19-49",
     "General Patient Text": "•Calcium: 1000mg/day; Vitamin D: 400-1000 IU/day",
     "Health Provider Text": "•Calcium: 1000mg/day; Vitamin D: 400-1000 IU/day",
     "Gender": "m,tm,tf",
     "Minimum age": 19,
     "Maximum age": 49
+    
   },
   {
     "Button": "Bone",
-    "Topic heading": "Nutrition, Vitamins",
+    "Topic heading": "Nutrition,Vitamins",
     "Subject": "Age 50 and above",
     "General Patient Text": "•Calcium: 1200mg/day; Vitamin D: 800-2000 IU/day",
     "Health Provider Text": "•Calcium: 1200mg/day; Vitamin D: 800-2000 IU/day",
     "Gender": "all",
     "Minimum age": 50,
     "Maximum age": 150
+    
   },
   {
     "Button": "Bone",
@@ -1148,5 +1460,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
+   
+    
   }
 ]
