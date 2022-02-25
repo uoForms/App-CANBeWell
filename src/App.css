@@ -303,8 +303,18 @@ body {
   font-weight: normal;
 }
 
+.content{
+  display: inline-block;
+  margin: 0 auto;
+  padding: 3px;
+};
 
-
+@media only screen and (max-width: 375px) {
+   .content {
+    text-align: center;
+    background-color: green;
+  }
+}
 
 .sidenav a {
     padding: 8px 8px 8px 32px;
@@ -419,6 +429,5 @@ summary:after {
   .gender_mod{
     margin-right: 130px;
   }
-
   
 }
