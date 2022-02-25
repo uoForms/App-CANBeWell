@@ -129,5 +129,4 @@ class BaseConfigModal extends BasePage {
     }
   }
 }
-
 export default BaseConfigModal;
