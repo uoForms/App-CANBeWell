@@ -39,9 +39,9 @@ class BodyPage extends BasePage {
 
     this.femaleTmButtonInfoList = [
       ...this.commonButtonInfoList,
-      { testId: 'breastButton', localeId: 'breast', buttonText: 'Breast' },
-      { testId: 'uterusButton', localeId: 'uterus', buttonText: 'Uterus' },
-      { testId: 'ovaryButton', localeId: 'ovary', buttonText: 'Ovary' },
+      { testId: 'breastButton', localeId: 'breast', buttonText: 'Breast' }
+      // { testId: 'uterusButton', localeId: 'uterus', buttonText: 'Uterus' },
+      // { testId: 'ovaryButton', localeId: 'ovary', buttonText: 'Ovary' },
     ];
 
     this.nonBinaryOrMaleTmOrFemaleTfInfoList = [
