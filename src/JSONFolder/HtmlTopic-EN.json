@@ -7,7 +7,18 @@
     "Health Provider Text": "[[Weak recommendation by canadian task force; https://canadiantaskforce.ca/guidelines/published-guidelines/abdominal-aortic-aneurysm/]]",
     "Gender": "m",
     "Minimum age": 65,
-    "Maximum age": 80 
+    "Maximum age": 80
+    
+  },
+  {
+    "Button": "Aorta",
+    "Topic heading": "Aorta: The body's main blood vessel",
+    "Subject": "Talk to your provider to see if you need a test",
+    "General Patient Text": "Your provider may ask for an ultrasound of your belly\nto detect a bulge in the main blood vessel \n(the bulge is nicknamed AAA \nfor short or\nAbdominal Aortic Aneurysm)\nIf the bulge grows it can burst and cause death.",
+    "Health Provider Text": "n/a",
+    "Gender": "m",
+    "Minimum age": 65,
+    "Maximum age": 80
     
   },
   {
@@ -19,7 +30,7 @@
     "Gender": "m",
     "Minimum age": 81,
     "Maximum age": 150
-   
+    
   },
   {
     "Button": "Aorta",
@@ -42,6 +53,7 @@
     "Minimum age": 18,
     "Maximum age": 150
     
+    
   },
   {
     "Button": "Figure outside body walking",
@@ -53,6 +65,7 @@
     "Minimum age": 18,
     "Maximum age": 150
     
+    
   },
   {
     "Button": "Bone",
@@ -63,7 +76,8 @@
     "Gender": "tf",
     "Minimum age": 18,
     "Maximum age": 150
- 
+    
+    
   },
   {
     "Button": "Bone",
@@ -74,7 +88,8 @@
     "Gender": "tf",
     "Minimum age": 18,
     "Maximum age": 150
-   
+    
+    
   },
   {
     "Button": "Bone",
@@ -85,6 +100,7 @@
     "Gender": "tf",
     "Minimum age": 18,
     "Maximum age": 150
+    
     
   },
   {
@@ -97,6 +113,7 @@
     "Minimum age": 18,
     "Maximum age": 150
     
+    
   },
   {
     "Button": "Bone",
@@ -107,6 +124,7 @@
     "Gender": "tm",
     "Minimum age": 18,
     "Maximum age": 150
+    
     
   },
   {
@@ -119,6 +137,7 @@
     "Minimum age": 18,
     "Maximum age": 150
     
+    
   },
   {
     "Button": "Bone",
@@ -129,6 +148,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
+    
     
   },
   {
@@ -141,6 +161,7 @@
     "Minimum age": 18,
     "Maximum age": 64
     
+    
   },
   {
     "Button": "Bone",
@@ -151,6 +172,7 @@
     "Gender": "m,f",
     "Minimum age": 65,
     "Maximum age": 150
+    
     
   },
   {
@@ -163,6 +185,7 @@
     "Minimum age": 18,
     "Maximum age": 150
     
+    
   },
   {
     "Button": "Breast",
@@ -173,6 +196,7 @@
     "Gender": "f",
     "Minimum age": 50,
     "Maximum age": 74
+    
     
   },
   {
@@ -185,6 +209,7 @@
     "Minimum age": 75,
     "Maximum age": 150
     
+    
   },
   {
     "Button": "Breast",
@@ -195,6 +220,7 @@
     "Gender": "f",
     "Minimum age": 18,
     "Maximum age": 150
+    
     
   },
   {
@@ -207,6 +233,7 @@
     "Minimum age": 18,
     "Maximum age": 150
     
+    
   },
   {
     "Button": "Breast/Chest",
@@ -217,6 +244,7 @@
     "Gender": "tf",
     "Minimum age": 18,
     "Maximum age": 150
+    
     
   },
   {
@@ -229,6 +257,7 @@
     "Minimum age": 18,
     "Maximum age": 150
     
+    
   },
   {
     "Button": "Breast/Chest",
@@ -239,6 +268,7 @@
     "Gender": "tm",
     "Minimum age": 18,
     "Maximum age": 150
+    
     
   },
   {
@@ -251,6 +281,7 @@
     "Minimum age": 18,
     "Maximum age": 150
     
+    
   },
   {
     "Button": "Breast/Chest",
@@ -261,6 +292,7 @@
     "Gender": "tm",
     "Minimum age": 18,
     "Maximum age": 150
+    
     
   },
   {
@@ -273,6 +305,7 @@
     "Minimum age": 50,
     "Maximum age": 74
     
+    
   },
   {
     "Button": "Colon",
@@ -283,6 +316,7 @@
     "Gender": "all",
     "Minimum age": 50,
     "Maximum age": 74
+    
     
   },
   {
@@ -295,6 +329,7 @@
     "Minimum age": 75,
     "Maximum age": 150
     
+    
   },
   {
     "Button": "Colon",
@@ -305,6 +340,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 49
+    
     
   },
   {
@@ -317,6 +353,7 @@
     "Minimum age": 18,
     "Maximum age": 150
     
+    
   },
   {
     "Button": "Covid",
@@ -327,6 +364,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
+    
     
   },
   {
@@ -339,6 +377,7 @@
     "Minimum age": 18,
     "Maximum age": 150
     
+    
   },
   {
     "Button": "Covid",
@@ -349,6 +388,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
+    
     
   },
   {
@@ -361,6 +401,7 @@
     "Minimum age": 18,
     "Maximum age": 150
     
+    
   },
   {
     "Button": "Covid",
@@ -371,6 +412,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
+    
     
   },
   {
@@ -383,6 +425,7 @@
     "Minimum age": 18,
     "Maximum age": 150
     
+    
   },
   {
     "Button": "Covid",
@@ -393,6 +436,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
+    
     
   },
   {
@@ -405,6 +449,7 @@
     "Minimum age": 18,
     "Maximum age": 150
     
+    
   },
   {
     "Button": "Covid",
@@ -415,6 +460,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
+    
     
   },
   {
@@ -427,6 +473,7 @@
     "Minimum age": 18,
     "Maximum age": 150
     
+    
   },
   {
     "Button": "Covid",
@@ -437,6 +484,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
+    
     
   },
   {
@@ -449,6 +497,7 @@
     "Minimum age": 18,
     "Maximum age": 150
     
+    
   },
   {
     "Button": "Covid",
@@ -459,6 +508,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
+    
     
   },
   {
@@ -471,6 +521,7 @@
     "Minimum age": 18,
     "Maximum age": 150
     
+    
   },
   {
     "Button": "Covid",
@@ -481,6 +532,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
+    
     
   },
   {
@@ -493,6 +545,7 @@
     "Minimum age": 18,
     "Maximum age": 150
     
+    
   },
   {
     "Button": "Covid",
@@ -503,6 +556,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
+    
     
   },
   {
@@ -515,6 +569,7 @@
     "Minimum age": 18,
     "Maximum age": 150
     
+    
   },
   {
     "Button": "Pancreas",
@@ -525,6 +580,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
+    
     
   },
   {
@@ -537,6 +593,7 @@
     "Minimum age": 18,
     "Maximum age": 150
     
+    
   },
   {
     "Button": "Pancreas",
@@ -547,6 +604,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
+    
     
   },
   {
@@ -559,16 +617,18 @@
     "Minimum age": 18,
     "Maximum age": 150
     
+    
   },
   {
     "Button": "Hip",
     "Topic heading": "Falls in the Elderly",
     "Subject": "Prevent falls",
     "General Patient Text": "Bathroom:\n•Make sure you have non slip surfaces or mats\n•Grab bars, bath seat\n•Raised toilet \n•Make sure path is clear from bedroom to bathroom\n\nHome:\n•Get rid of loose rugs or make non-slip\n•Have good lighting and night lights\n\nBe active:\nTai chi,walking, exercise classes etc\n\nMedications:\nDiscuss with your provider if your medications can cause falls\n\n\n[[more; https://www.canada.ca/content/dam/phac-aspc/migration/phac-aspc/seniors-aines/alt-formats/pdf/publications/public/injury-blessure/prevent-eviter/prevent-eviter-e.pdf]]",
-    "Health Provider Text": "The American Geriatrics Society\nand British Geriatrics Society recommend asking about\nfalls every year \n[[ref CFP article; http://www.cfp.ca/content/62/9/717]]\n[[more info; https://www.ajpmonline.org/article/S0749-3797(18)31759-8/fulltext]]\n[[Ressources for health care professionnal: https://parachute.ca/en/professional-resource/seniors-falls-collection/]]\nFor advice to patients,\nsee in our app patient section on Falls.",
+    "Health Provider Text": "The American Geriatrics Society\nand British Geriatrics Society recommend asking about\nfalls every year \n[[ref CFP article; http://www.cfp.ca/content/62/9/717]]\n[[more info; https://www.ajpmonline.org/article/S0749-3797(18)31759-8/fulltext]]\n[[Ressources for health care professionnal; https://parachute.ca/en/professional-resource/seniors-falls-collection/]]\nFor advice to patients,\nsee in our app patient section on Falls.",
     "Gender": "all",
     "Minimum age": 65,
     "Maximum age": 150
+    
     
   },
   {
@@ -581,6 +641,7 @@
     "Minimum age": 18,
     "Maximum age": 150
     
+    
   },
   {
     "Button": "Heart",
@@ -592,6 +653,7 @@
     "Minimum age": 18,
     "Maximum age": 150
     
+    
   },
   {
     "Button": "Heart",
@@ -602,6 +664,7 @@
     "Gender": "tf,tm",
     "Minimum age": 18,
     "Maximum age": 150
+    
     
   },
   {
@@ -614,6 +677,7 @@
     "Minimum age": 18,
     "Maximum age": 150
     
+    
   },
   {
     "Button": "Heart",
@@ -625,16 +689,18 @@
     "Minimum age": 18,
     "Maximum age": 150
     
+    
   },
   {
     "Button": "Heart",
     "Topic heading": "Heart Disease",
     "Subject": "Blood pressure",
-    "General Patient Text": "During your visit to the doctor, ask for a measurement of your blood pressure. \nA normal blood pressure is under 140/90 mmHg or lower for some people .\nThe target blood pressure depends on factors like age and health conditions, and where readings are being taken. If you have diabetes, kidney disease or other health conditions, speak to your health care professional about your target blood pressure. \n\n[[How to appropriately measure your blood pressure at home; https://hypertension.ca/wp-content/uploads/2020/03/BPM-Postcard-Front.jpg]]\n[[Understanding and Managing Your Blood Pressure: https://guidelines.hypertension.ca/wp-content/uploads/2021/02/HTC_Brochure_UnderstandingBP_2018_R3.pdf]]",
+    "General Patient Text": "During your visit to the doctor, ask for a measurement of your blood pressure. \nA normal blood pressure is under 140/90 mmHg or lower for some people .\nThe target blood pressure depends on factors like age and health conditions, and where readings are being taken. If you have diabetes, kidney disease or other health conditions, speak to your health care professional about your target blood pressure. \n\n[[How to appropriately measure your blood pressure at home; https://hypertension.ca/wp-content/uploads/2020/03/BPM-Postcard-Front.jpg]]\n[[Understanding and Managing Your Blood Pressure; https://guidelines.hypertension.ca/wp-content/uploads/2021/02/HTC_Brochure_UnderstandingBP_2018_R3.pdf]]",
     "Health Provider Text": "CTFPHC recommends blood pressure measurement at all appropriate primary care visits.[[2012 Guideline; https://canadiantaskforce.ca/guidelines/published-guidelines/hypertension/]]\n(Strong recommendation; moderate quality evidence)\n\nIf the mean blood pressure measured in office [[As per recommended technique; https://guidelines.hypertension.ca/diagnosis-assessment/measuring-blood-pressure/]] is high during one visit, a history and physical examination should be performed and, if clinically indicated, diagnostic tests to search for target organ damage should be arranged within 2 visits. \n\nRoutine Lab Testing Recommended: urinalysis, blood chemistry (potassium, sodium and creatinine), fasting blood glucose and/or glycated hemoglobin (A1C), serum total cholesterol, LDL, HDL, non-HDL, triglycerides (fasting or non-fasting) and a standard 12-lead ECG. \n\nGlobal cardiovascular risk assessment should be done using [[risks calculators; www.ccs.ca/en/resources/calculators-forms]]",
     "Gender": "tf,tm",
     "Minimum age": 18,
     "Maximum age": 150
+    
     
   },
   {
@@ -647,6 +713,7 @@
     "Minimum age": 18,
     "Maximum age": 74
     
+    
   },
   {
     "Button": "Heart",
@@ -657,6 +724,7 @@
     "Gender": "tf,tm",
     "Minimum age": 75,
     "Maximum age": 150
+    
     
   },
   {
@@ -669,6 +737,7 @@
     "Minimum age": 18,
     "Maximum age": 150
     
+    
   },
   {
     "Button": "Heart",
@@ -679,6 +748,7 @@
     "Gender": "tf,tm",
     "Minimum age": 18,
     "Maximum age": 150
+    
     
   },
   {
@@ -691,6 +761,7 @@
     "Minimum age": 18,
     "Maximum age": 150
     
+    
   },
   {
     "Button": "Heart",
@@ -701,6 +772,7 @@
     "Gender": "m,f",
     "Minimum age": 18,
     "Maximum age": 150
+    
     
   },
   {
@@ -713,6 +785,7 @@
     "Minimum age": 30,
     "Maximum age": 74
     
+    
   },
   {
     "Button": "Heart",
@@ -723,6 +796,7 @@
     "Gender": "m,f",
     "Minimum age": 30,
     "Maximum age": 74
+    
     
   },
   {
@@ -735,6 +809,7 @@
     "Minimum age": 18,
     "Maximum age": 150
     
+    
   },
   {
     "Button": "Heart",
@@ -745,6 +820,7 @@
     "Gender": "m,f",
     "Minimum age": 18,
     "Maximum age": 150
+    
     
   },
   {
@@ -757,6 +833,7 @@
     "Minimum age": 18,
     "Maximum age": 39
     
+    
   },
   {
     "Button": "Heart",
@@ -767,6 +844,7 @@
     "Gender": "m",
     "Minimum age": 40,
     "Maximum age": 74
+    
     
   },
   {
@@ -779,6 +857,7 @@
     "Minimum age": 40,
     "Maximum age": 74
     
+    
   },
   {
     "Button": "Heart",
@@ -789,6 +868,7 @@
     "Gender": "m,f",
     "Minimum age": 75,
     "Maximum age": 150
+    
     
   },
   {
@@ -801,6 +881,7 @@
     "Minimum age": 18,
     "Maximum age": 150
     
+    
   },
   {
     "Button": "Heart",
@@ -811,6 +892,7 @@
     "Gender": "m,f",
     "Minimum age": 18,
     "Maximum age": 150
+    
     
   },
   {
@@ -823,6 +905,7 @@
     "Minimum age": 18,
     "Maximum age": 150
     
+    
   },
   {
     "Button": "Needle in arm",
@@ -834,6 +917,7 @@
     "Minimum age": 18,
     "Maximum age": 49
     
+    
   },
   {
     "Button": "Needle in arm",
@@ -843,7 +927,20 @@
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 50,
+    "Maximum age": 64
+    
+    
+  },
+  {
+    "Button": "Needle in arm",
+    "Topic heading": "Immunization",
+    "Subject": "Get immunized",
+    "General Patient Text": "For best information download the [[app CanImmunize; https://www.canimmunize.ca/en/home]]\n\nAGE 50 and over:\nThis schedule assumes the patient has  been vaccinated in childhood\n•Td (Tetanus-diphtheria) every 10 years\n•Tdap(Tetanus,diphtheria, acellular pertussis or whooping cough):once in your lifetime\n•Measles Mumps Rubella:it is advised that  most adults should have  2 doses of this vaccine\n•Influenza: is recommended for all adults. For high risk groups see CanImmunize app\n•Pneumococcal, varicella,  meningococcal are recommended for some high risk groups seeCANImmunize app\n•Shingles vaccine: \nShingrix recommended for 50 and over but you may have to pay for this most provinces not funding yet [[Shingrix; https://www.cdc.gov/vaccines/vpd/shingles/public/shingrix/index.html]]\n\nAGE 60 and over:\n•Shingles vaccine: Shingrix or Zostavax, your province may cover Zostavax but not Shingrix,discuss with your provider [[more info; https://www.cdc.gov/vaccines/vpd/shingles/public/shingrix/index.html]]\nAGE 65 and over: \n•Pneumococca : Pneumococcal 23 is paid for by your province,Pneumococcal 13 may not be paid for by your province. Discuss with your doctor\n•Influenza yearly",
+    "Health Provider Text": "n/a",
+    "Gender": "all",
+    "Minimum age": 71,
     "Maximum age": 150
+    
     
   },
   {
@@ -856,16 +953,18 @@
     "Minimum age": 18,
     "Maximum age": 150
     
+    
   },
   {
     "Button": "Needle in arm",
     "Topic heading": "Immunization",
     "Subject": "Get immunized",
-    "General Patient Text": "If you live in Ontario, you are eligible for the publicly funded Shingrix vaccine (two-dose series), if you have not received the Zostamax II vaccine through the Ontario publicly funded shingles immunization program.",
+    "General Patient Text": "For best information download the [[app CanImmunize; https://www.canimmunize.ca/en/home]]\n\nAGE 50 and over:\nThis schedule assumes the patient has  been vaccinated in childhood\n•Td (Tetanus-diphtheria) every 10 years\n•Tdap(Tetanus,diphtheria, acellular pertussis or whooping cough):once in your lifetime\n•Measles Mumps Rubella:it is advised that  most adults should have  2 doses of this vaccine\n•Influenza: is recommended for all adults. For high risk groups see CanImmunize app\n•Pneumococcal, varicella,  meningococcal are recommended for some high risk groups seeCANImmunize app\n•Shingles vaccine: \nShingrix recommended for 50 and over but you may have to pay for this most provinces not funding yet [[Shingrix; https://www.cdc.gov/vaccines/vpd/shingles/public/shingrix/index.html]]\n\nAGE 60 and over:\n•Shingles vaccine: Shingrix or Zostavax, your province may cover Zostavax but not Shingrix,discuss with your provider [[more info; https://www.cdc.gov/vaccines/vpd/shingles/public/shingrix/index.html]]\nAGE 65 and over: \n•Pneumococca : Pneumococcal 23 is paid for by your province,Pneumococcal 13 may not be paid for by your province. Discuss with your doctor\n•Influenza yearly\n\nIf you live in Ontario, you are eligible for the publicly funded Shingrix vaccine (two-dose series), if you have not received the Zostavax II vaccine through the Ontario publicly funded shingles immunization program.",
     "Health Provider Text": "Ontario seniors ages 65 to 70 years are eligible for the publicly funded Shingrix vaccine (Two-doses series), provided they have not received the Zostavax® II vaccine through the Ontario publicly funded shingles immunization program.",
     "Gender": "all",
     "Minimum age": 65,
     "Maximum age": 70
+    
     
   },
   {
@@ -878,6 +977,7 @@
     "Minimum age": 18,
     "Maximum age": 150
     
+    
   },
   {
     "Button": "Liver",
@@ -888,6 +988,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
+    
     
   },
   {
@@ -900,6 +1001,7 @@
     "Minimum age": 18,
     "Maximum age": 150
     
+    
   },
   {
     "Button": "Liver",
@@ -910,6 +1012,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
+    
     
   },
   {
@@ -922,6 +1025,7 @@
     "Minimum age": 18,
     "Maximum age": 150
     
+    
   },
   {
     "Button": "Lung",
@@ -932,6 +1036,7 @@
     "Gender": "all",
     "Minimum age": 55,
     "Maximum age": 74
+    
     
   },
   {
@@ -944,6 +1049,7 @@
     "Minimum age": 18,
     "Maximum age": 150
     
+    
   },
   {
     "Button": "Lung",
@@ -954,6 +1060,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
+    
     
   },
   {
@@ -966,6 +1073,7 @@
     "Minimum age": 18,
     "Maximum age": 150
     
+    
   },
   {
     "Button": "Brain",
@@ -976,6 +1084,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
+    
     
   },
   {
@@ -988,6 +1097,7 @@
     "Minimum age": 50,
     "Maximum age": 150
     
+    
   },
   {
     "Button": "Stomach",
@@ -998,6 +1108,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
+    
     
   },
   {
@@ -1010,6 +1121,7 @@
     "Minimum age": 18,
     "Maximum age": 150
     
+    
   },
   {
     "Button": "Stomach",
@@ -1020,6 +1132,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
+    
     
   },
   {
@@ -1032,6 +1145,7 @@
     "Minimum age": 18,
     "Maximum age": 150
     
+    
   },
   {
     "Button": "Figure outside body walking",
@@ -1042,6 +1156,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
+    
     
   },
   {
@@ -1054,6 +1169,7 @@
     "Minimum age": 18,
     "Maximum age": 150
     
+    
   },
   {
     "Button": "Physical Exam",
@@ -1064,6 +1180,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 39
+    
     
   },
   {
@@ -1076,6 +1193,7 @@
     "Minimum age": 40,
     "Maximum age": 150
     
+    
   },
   {
     "Button": "Physical Exam",
@@ -1086,6 +1204,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
+    
     
   },
   {
@@ -1098,6 +1217,7 @@
     "Minimum age": 21,
     "Maximum age": 74
     
+    
   },
   {
     "Button": "Genitalia",
@@ -1108,6 +1228,7 @@
     "Gender": "f",
     "Minimum age": 75,
     "Maximum age": 150
+    
     
   },
   {
@@ -1120,6 +1241,7 @@
     "Minimum age": 21,
     "Maximum age": 150
     
+    
   },
   {
     "Button": "Genitalia",
@@ -1130,6 +1252,7 @@
     "Gender": "f",
     "Minimum age": 18,
     "Maximum age": 150
+    
     
   },
   {
@@ -1142,6 +1265,7 @@
     "Minimum age": 18,
     "Maximum age": 49
     
+    
   },
   {
     "Button": "Genitalia",
@@ -1152,6 +1276,7 @@
     "Gender": "f",
     "Minimum age": 18,
     "Maximum age": 49
+    
     
   },
   {
@@ -1164,27 +1289,30 @@
     "Minimum age": 35,
     "Maximum age": 49
     
+    
   },
   {
     "Button": "Genitalia",
     "Topic heading": "Sexual and reproductive health",
     "Subject": "Prevent Sexually Transmitted Infections (STIs)",
     "General Patient Text": "•Practice safe sex:\nuse a [[condom or other protection; https://www.cdc.gov/teenpregnancy/pdf/Teen-Condom-Fact_Sheet-English-March-2016.pdf]]\n\n•Get tested for STIs: \nIf you are sexually active ((if you have ever had oral, vaginal or anal intercourse)\nUnder age 30 yearly for chlamydia and gonorrhea\nAge 30 and above : for all STI's if\nyou  have a new partner, multiple partners,\n you do not use protection, have an STI,\nor are otherwise at risk.\n\n•Get tested for HIV at any age.\n\nMore info:\n[[sexual activity;http://www.sexandu.ca/]]\n[[Chlamydia and gonorrhea; https://canadiantaskforce.ca/tools-resources/chlamydia-and-gonorrhea-patient-faq/]]\n[[infections; https://www.canada.ca/en/public-health/services/infectious-diseases/sexual-health-sexually-transmitted-infections/sexually-transmitted-infections-sexual-health-facts-information-public.html#geninfo]]",
-    "Health Provider Text": "",
+    "Health Provider Text": "n/a",
     "Gender": "m,f",
     "Minimum age": 18,
     "Maximum age": 150
+    
     
   },
   {
     "Button": "Genitalia",
     "Topic heading": "Sexual and reproductive health",
-    "Subject": "Prevent Sexually Transmitted Infections (STI)",
-    "General Patient Text": "",
+    "Subject": "Prevent Sexually Transmitted Infections (STIs)",
+    "General Patient Text": "n/a",
     "Health Provider Text": "Safe sex and STI counselling for all sexually active patients.\n\nTesting\n• Age 30 and under annual screening for chlamydia and gonorrhea\n [[ CTFPHC 2021; https://canadiantaskforce.ca/guidelines/published-guidelines/chlamydia-and-gonorrhea/]]\n•Age 30 and over screen according to risk, see below\n• screen for other STIs according to risk (new partner, multiple partners, serial monogamous relationships,unprotected sex, substance use,sex with blood exchange,sharing sex toys)\n•offer HIV testing to all:\n[[Public Health Agency of Canada recommendation; https://www.canada.ca/en/public-health/services/hiv-aids/hiv-screening-testing-guide.html]]; supported by USPSTF 2013 and CDC, \n[[CTFPHC recommends only if at risk; https://canadiantaskforce.ca/guidelines/appraised-guidelines/hiv/]]",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
+    
     
   },
   {
@@ -1197,6 +1325,7 @@
     "Minimum age": 18,
     "Maximum age": 150
     
+    
   },
   {
     "Button": "Genitalia",
@@ -1207,6 +1336,7 @@
     "Gender": "m",
     "Minimum age": 55,
     "Maximum age": 69
+    
     
   },
   {
@@ -1219,6 +1349,7 @@
     "Minimum age": 18,
     "Maximum age": 150
     
+    
   },
   {
     "Button": "Genitalia",
@@ -1229,6 +1360,7 @@
     "Gender": "m",
     "Minimum age": 55,
     "Maximum age": 69
+    
     
   },
   {
@@ -1241,6 +1373,7 @@
     "Minimum age": 18,
     "Maximum age": 150
     
+    
   },
   {
     "Button": "Genitalia",
@@ -1251,6 +1384,7 @@
     "Gender": "tm",
     "Minimum age": 18,
     "Maximum age": 150
+    
     
   },
   {
@@ -1263,6 +1397,7 @@
     "Minimum age": 18,
     "Maximum age": 150
     
+    
   },
   {
     "Button": "Genitalia",
@@ -1273,6 +1408,7 @@
     "Gender": "tm",
     "Minimum age": 18,
     "Maximum age": 150
+    
     
   },
   {
@@ -1285,6 +1421,7 @@
     "Minimum age": 18,
     "Maximum age": 55
     
+    
   },
   {
     "Button": "Genitalia",
@@ -1295,6 +1432,7 @@
     "Gender": "tf",
     "Minimum age": 18,
     "Maximum age": 150
+    
     
   },
   {
@@ -1307,6 +1445,7 @@
     "Minimum age": 18,
     "Maximum age": 150
     
+    
   },
   {
     "Button": "Genitalia",
@@ -1317,6 +1456,7 @@
     "Gender": "tf",
     "Minimum age": 18,
     "Maximum age": 150
+    
     
   },
   {
@@ -1329,6 +1469,7 @@
     "Minimum age": 18,
     "Maximum age": 150
     
+    
   },
   {
     "Button": "Sun",
@@ -1339,6 +1480,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
+    
     
   },
   {
@@ -1351,6 +1493,7 @@
     "Minimum age": 18,
     "Maximum age": 150
     
+    
   },
   {
     "Button": "Eye",
@@ -1361,6 +1504,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 40
+    
     
   },
   {
@@ -1373,6 +1517,7 @@
     "Minimum age": 41,
     "Maximum age": 55
     
+    
   },
   {
     "Button": "Eye",
@@ -1384,6 +1529,7 @@
     "Minimum age": 56,
     "Maximum age": 64
     
+    
   },
   {
     "Button": "Eye",
@@ -1394,7 +1540,8 @@
     "Gender": "all",
     "Minimum age": 65,
     "Maximum age": 150
-
+    
+    
   },
   {
     "Button": "Bone",
@@ -1405,6 +1552,7 @@
     "Gender": "f",
     "Minimum age": 18,
     "Maximum age": 18
+    
     
   },
   {
@@ -1417,6 +1565,7 @@
     "Minimum age": 19,
     "Maximum age": 49
     
+    
   },
   {
     "Button": "Bone",
@@ -1427,6 +1576,7 @@
     "Gender": "m,tm,tf",
     "Minimum age": 18,
     "Maximum age": 18
+    
     
   },
   {
@@ -1439,6 +1589,7 @@
     "Minimum age": 19,
     "Maximum age": 49
     
+    
   },
   {
     "Button": "Bone",
@@ -1450,6 +1601,7 @@
     "Minimum age": 50,
     "Maximum age": 150
     
+    
   },
   {
     "Button": "Bone",
@@ -1460,7 +1612,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-   
+    
     
   }
 ]
