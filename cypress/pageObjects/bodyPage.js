@@ -24,7 +24,7 @@ class BodyPage extends BasePage {
         localeId: 'figure_outside_body_walking',
         buttonText: 'Figure outside body walking',
       },
-      // { testId: 'covidButton', localeId: 'covid', buttonText: 'Covid' },
+       { testId: 'covidButton', localeId: 'covid', buttonText: 'Covid' },
       // { testId: 'brainGearButton', localeId: 'braingear', buttonText: 'N/A' },
       // { testId: 'moneyButton', localeId: 'money', buttonText: 'N/A' },
       // { testId: 'sleepButton', localeId: 'sleep', buttonText: 'N/A' },

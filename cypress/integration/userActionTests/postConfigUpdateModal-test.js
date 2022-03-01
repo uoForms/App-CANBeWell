@@ -23,12 +23,12 @@ devicesTestWrapper(
           landingPage.clickRedirectButton(locale);
         });
         const pageList = [
-          // {
-          //   pageFn: () => {
-          //   },
-          //   instance: new BodyPage(),
-          //   refreshCheckId: 'covidButton',
-          // },
+          {
+            pageFn: () => {
+            },
+            instance: new BodyPage(),
+            refreshCheckId: 'covidButton',
+          },
           {
             pageFn: new BodyPage().clickTopicTab,
             instance: new TopicPage(),
