@@ -167,7 +167,7 @@ devicesTestWrapper(
 
         it.only('Close Opened Topic Subjects', () => {
           // Use covid button as the test subject since the code is reused across modals
-          cy.getTestId('covidbutton')
+          cy.getTestId('covidButton')
             .click();
           const modal = new BodyModal();
           cy.getTestId('topicSummary')
