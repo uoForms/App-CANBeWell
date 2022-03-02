@@ -9,7 +9,6 @@ export const initGA = (trackingID) => {
     trackingID,
   ); 
 }
-
 /*export const sendOutbound = (event) => {
   event.preventDefault();
   ReactGA.event({
