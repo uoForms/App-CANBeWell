@@ -4,13 +4,15 @@ import 'firebase/database'
 
 //connecting to test database
 const firebaseConfig = {
-  apiKey: "AIzaSyA3szGH387ezJSfbaPJKs9QHzz4QYBSoFw",
-  authDomain: "export-csv-canbewell.firebaseapp.com",
-  databaseURL: "https://export-csv-canbewell.firebaseio.com",
-  projectId: "export-csv-canbewell",
-  storageBucket: "export-csv-canbewell.appspot.com",
-  messagingSenderId: "150585800085",
-  };
+  apiKey: "AIzaSyCl4wyKnUZRt25Vmxbt7-dDoR8tsG02kSk",
+  authDomain: "canbewell-2022-test.firebaseapp.com",
+  databaseURL: "https://canbewell-2022-test-default-rtdb.firebaseio.com",
+  projectId: "canbewell-2022-test",
+  storageBucket: "canbewell-2022-test.appspot.com",
+  messagingSenderId: "114580889906",
+  appId: "1:114580889906:web:97ea5a8d3c77628032f72b",
+  measurementId: "G-WLZKR9N34N"
+};
 if (!firebase.apps.length) {
   firebase.initializeApp(firebaseConfig)
 }
