@@ -19,6 +19,8 @@ export const initGA = (trackingID) => {
  <a href= {'https://www.canada.ca/en/public-health/services/video/covid-19-wear-non-medical-mask-face-covering-properly.html'} onClick={sendOutbound}></a>
 }*/
 
+//yseng083@uottawa.ca
+
 export const PageViewTimer = (prePage, preTime) => {
   let currTime = Date.now();
   if (prePage === null)
