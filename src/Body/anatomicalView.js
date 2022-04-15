@@ -365,7 +365,7 @@ class Anatomy extends React.Component {
                                 <button id="covidButton" className="covid" test-id="covidButton"
                                     onClick={(button, text) => this.iconClicked("covid", this.props.lang.covid)}>
                                     <img src={covidIcon} alt="covidIcon" /></button>
-                                 <button id="brainGearButton" className="brainGear" test-id="brainGearButton"
+                                 <button id="brainGearButton" className="braingear" test-id="brainGearButton"
                                         onClick={(button, text, organ) => this.iconClicked("braingear", this.props.lang.braingear)}>
                                     <img src={braingear} alt="braingear"/></button>
                                 {/*<button id="moneyButton" className="money" test-id="moneyButton"

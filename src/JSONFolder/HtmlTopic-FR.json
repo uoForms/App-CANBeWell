@@ -1,5 +1,4 @@
-[
-  {
+[{
   "Button": "Aorta",
   "Topic heading": "Dépistage d’un anévrisme de l’aorte abdominale",
   "Subject": "Dépister les hommes de 65 à 80 ans une fois à l’aide d’une échographie",
@@ -8,8 +7,7 @@
   "Gender": "m",
   "Minimum age": 65,
   "Maximum age": 80
-},
-{
+},{
   "Button": "Aorta",
   "Topic heading": "Aorte: principal vaisseau sanguin\ndu corps",
   "Subject": "Communiquer avec votre\nprofessionnel de la santé afin \nde vérifier si vous devez passer un test.",
@@ -18,8 +16,7 @@
   "Gender": "m",
   "Minimum age": 65,
   "Maximum age": 80
-},
-{
+},{
   "Button": "Aorta",
   "Topic heading": "Dépistage d’un anévrisme de l’aorte abdominale",
   "Subject": "Le dépistage n'est pas recommandé pour les hommes âgés de 80 ans et plus ",
@@ -28,8 +25,7 @@
   "Gender": "m",
   "Minimum age": 81,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Aorta",
   "Topic heading": "Dépistage d’un anévrisme de l’aorte abdominale",
   "Subject": "Le dépistage n'est pas recommandé pour les femmes de tout âge. ",
@@ -38,8 +34,7 @@
   "Gender": "f",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Figure outside body walking",
   "Topic heading": "Activité physique",
   "Subject": "Recommandations",
@@ -48,8 +43,7 @@
   "Gender": "all",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Figure outside body walking",
   "Topic heading": "Activité physique",
   "Subject": "Outils/Références",
@@ -58,8 +52,7 @@
   "Gender": "all",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Figure outside body walking",
   "Topic heading": "Être actif",
   "Subject": "Bénéfices",
@@ -68,8 +61,7 @@
   "Gender": "all",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Figure outside body walking",
   "Topic heading": "Être actif",
   "Subject": "Recommandations",
@@ -78,8 +70,7 @@
   "Gender": "all",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Bone",
   "Topic heading": "Santé des os",
   "Subject": "Informations",
@@ -88,8 +79,7 @@
   "Gender": "tf",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Bone",
   "Topic heading": "Santé des os",
   "Subject": "Ressources",
@@ -98,8 +88,7 @@
   "Gender": "tf",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Bone",
   "Topic heading": "Santé des os",
   "Subject": "Conseils et ressources",
@@ -108,8 +97,7 @@
   "Gender": "tf",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Bone",
   "Topic heading": "Santé des os",
   "Subject": "Informations",
@@ -118,8 +106,7 @@
   "Gender": "tm",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Bone",
   "Topic heading": "Santé des os",
   "Subject": "Ressources",
@@ -128,8 +115,7 @@
   "Gender": "tm",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Bone",
   "Topic heading": "Santé des os",
   "Subject": "Conseils et ressources",
@@ -138,8 +124,7 @@
   "Gender": "tm",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Bone",
   "Topic heading": "Santé des os",
   "Subject": "Exercices ",
@@ -148,8 +133,7 @@
   "Gender": "all",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Bone",
   "Topic heading": "Santé des os",
   "Subject": "Densité minerale osseuse",
@@ -158,8 +142,7 @@
   "Gender": "m,f",
   "Minimum age": 18,
   "Maximum age": 64
-},
-{
+},{
   "Button": "Bone",
   "Topic heading": "Santé des os",
   "Subject": "Densité minérale osseuse",
@@ -168,8 +151,7 @@
   "Gender": "m,f",
   "Minimum age": 65,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Bone",
   "Topic heading": "Nutrition,Vitamines",
   "Subject": "Âge: 18 ans",
@@ -178,8 +160,7 @@
   "Gender": "f",
   "Minimum age": 18,
   "Maximum age": 18
-},
-{
+},{
   "Button": "Bone",
   "Topic heading": "Nutrition,Vitamines",
   "Subject": "Âge: 19-49 ans",
@@ -188,8 +169,7 @@
   "Gender": "f",
   "Minimum age": 19,
   "Maximum age": 49
-},
-{
+},{
   "Button": "Bone",
   "Topic heading": "Nutrition,Vitamines",
   "Subject": "Âge 18 ans",
@@ -198,8 +178,7 @@
   "Gender": "m,tm,tf",
   "Minimum age": 18,
   "Maximum age": 18
-},
-{
+},{
   "Button": "Bone",
   "Topic heading": "Nutrition,Vitamines",
   "Subject": "Âge: 19-49 ans",
@@ -208,8 +187,7 @@
   "Gender": "m,tm,tf",
   "Minimum age": 19,
   "Maximum age": 49
-},
-{
+},{
   "Button": "Bone",
   "Topic heading": "Nutrition,Vitamines",
   "Subject": "Âge: 50 ans et plus",
@@ -218,8 +196,7 @@
   "Gender": "all",
   "Minimum age": 50,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Bone",
   "Topic heading": "Nutrition,Vitamines",
   "Subject": "Tous âges",
@@ -228,8 +205,7 @@
   "Gender": "all",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Breast",
   "Topic heading": "Cancer du sein",
   "Subject": "Prévenir le cancer du sein",
@@ -238,8 +214,7 @@
   "Gender": "f",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Breast",
   "Topic heading": "Cancer du sein",
   "Subject": "Passer un test de dépistage du cancer du sein\nentre 50 et 74 ans",
@@ -248,8 +223,7 @@
   "Gender": "f",
   "Minimum age": 50,
   "Maximum age": 74
-},
-{
+},{
   "Button": "Breast",
   "Topic heading": "Cancer du sein",
   "Subject": "Âge: 75 ans ou plus",
@@ -258,8 +232,7 @@
   "Gender": "f",
   "Minimum age": 75,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Breast",
   "Topic heading": "Cancer du sein",
   "Subject": "Prévention et de dépistage du\ncancer du sein",
@@ -268,8 +241,7 @@
   "Gender": "f",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Breast/Chest",
   "Topic heading": "Cancer du sein/de la poitrine",
   "Subject": "Informations",
@@ -278,8 +250,7 @@
   "Gender": "tf",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Breast/Chest",
   "Topic heading": "Cancer du sein/de la poitrine",
   "Subject": "Ressources",
@@ -288,8 +259,7 @@
   "Gender": "tf",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Breast/Chest",
   "Topic heading": "Cancer du sein/de la poitrine",
   "Subject": "Conseils et ressources",
@@ -298,8 +268,7 @@
   "Gender": "tf",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Breast/Chest",
   "Topic heading": "Cancer du sein/de la poitrine",
   "Subject": "Informations",
@@ -308,8 +277,7 @@
   "Gender": "tm",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Breast/Chest",
   "Topic heading": "Cancer du sein/de la poitrine",
   "Subject": "Ressources",
@@ -318,8 +286,7 @@
   "Gender": "tm",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Breast/Chest",
   "Topic heading": "Cancer du sein/de la poitrine",
   "Subject": "Conseils et ressources",
@@ -328,8 +295,7 @@
   "Gender": "tm",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Colon",
   "Topic heading": "Cancer colorectal",
   "Subject": "Dépistage",
@@ -338,8 +304,7 @@
   "Gender": "all",
   "Minimum age": 50,
   "Maximum age": 74
-},
-{
+},{
   "Button": "Colon",
   "Topic heading": "Cancer du côlon",
   "Subject": "Passer un test de dépistage du cancer du côlon",
@@ -348,8 +313,7 @@
   "Gender": "all",
   "Minimum age": 50,
   "Maximum age": 74
-},
-{
+},{
   "Button": "Colon",
   "Topic heading": "Cancer colorectal",
   "Subject": "Les tests de détection du cancer de stade précoce pourraient ne pas être utiles à 75 ans ou plus",
@@ -358,8 +322,7 @@
   "Gender": "all",
   "Minimum age": 75,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Colon",
   "Topic heading": "Cancer du côlon ou de l’intestin",
   "Subject": "Prévention du cancer du côlon",
@@ -368,8 +331,7 @@
   "Gender": "all",
   "Minimum age": 18,
   "Maximum age": 49
-},
-{
+},{
   "Button": "Covid",
   "Topic heading": "COVID-19",
   "Subject": "Êtes-vous inquiet d'avoir la COVID-19?",
@@ -378,8 +340,7 @@
   "Gender": "all",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Covid",
   "Topic heading": "COVID-19",
   "Subject": "Vaccins",
@@ -388,8 +349,7 @@
   "Gender": "all",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Covid",
   "Topic heading": "COVID-19",
   "Subject": "Pour les aînés",
@@ -398,8 +358,7 @@
   "Gender": "all",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Covid",
   "Topic heading": "COVID-19",
   "Subject": "Aide pour  la nourriture, le logement, les finances",
@@ -408,8 +367,7 @@
   "Gender": "all",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Covid",
   "Topic heading": "COVID-19",
   "Subject": "Premières Nations, Métis et Inuit",
@@ -418,8 +376,7 @@
   "Gender": "all",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Covid",
   "Topic heading": "COVID-19",
   "Subject": "COVID-19 Español, arabe,mandarin et autres lengues",
@@ -428,8 +385,7 @@
   "Gender": "all",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Covid",
   "Topic heading": "COVID-19",
   "Subject": "Finances",
@@ -438,8 +394,7 @@
   "Gender": "all",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Covid",
   "Topic heading": "COVID-19",
   "Subject": "Tous les Canadiens",
@@ -448,8 +403,7 @@
   "Gender": "all",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Covid",
   "Topic heading": "COVID-19",
   "Subject": "Santé mentale",
@@ -458,8 +412,7 @@
   "Gender": "all",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Covid",
   "Topic heading": "COVID-19",
   "Subject": "Applications mobiles",
@@ -468,8 +421,7 @@
   "Gender": "all",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Covid",
   "Topic heading": "COVID-19",
   "Subject": "Risques de contracter la COVID-19",
@@ -478,8 +430,7 @@
   "Gender": "all",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Covid",
   "Topic heading": "COVID-19",
   "Subject": "Nettoyage",
@@ -488,8 +439,7 @@
   "Gender": "all",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Covid",
   "Topic heading": "COVID-19",
   "Subject": "Masques",
@@ -498,8 +448,7 @@
   "Gender": "all",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Covid",
   "Topic heading": "COVID-19",
   "Subject": "Difference entre la quarantaine et l'lsolement",
@@ -508,8 +457,7 @@
   "Gender": "all",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Covid",
   "Topic heading": "COVID-19",
   "Subject": "Distanciation Physique",
@@ -518,8 +466,7 @@
   "Gender": "all",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Covid",
   "Topic heading": "COVID-19",
   "Subject": "Hygiène",
@@ -528,8 +475,7 @@
   "Gender": "all",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Covid",
   "Topic heading": "COVID-19",
   "Subject": "Populations vulnérables",
@@ -538,8 +484,7 @@
   "Gender": "all",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Covid",
   "Topic heading": "COVID-19",
   "Subject": "Recherche sur la COVID-19",
@@ -548,8 +493,7 @@
   "Gender": "all",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Covid",
   "Topic heading": "COVID-19",
   "Subject": "Le dépistage pendant et après la COVID-19",
@@ -558,8 +502,7 @@
   "Gender": "all",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Pancreas",
   "Topic heading": "Diabète de type 2",
   "Subject": "Association Nationale Autochtone Diabète",
@@ -568,8 +511,7 @@
   "Gender": "all",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Pancreas",
   "Topic heading": "Diabète de type 2",
   "Subject": "Prévenir le diabète",
@@ -578,8 +520,7 @@
   "Gender": "all",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Pancreas",
   "Topic heading": "Diabète de type 2",
   "Subject": "Se prêter à une analyse de sang pour le dépistage du diabète si vous présentez un risque",
@@ -588,8 +529,7 @@
   "Gender": "all",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Pancreas",
   "Topic heading": "Diabète de type 2",
   "Subject": "Dépistage du diabète",
@@ -598,8 +538,7 @@
   "Gender": "all",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Hip",
   "Topic heading": "Chutes chez les personnes âgées",
   "Subject": "Prévention des chutes",
@@ -608,8 +547,7 @@
   "Gender": "all",
   "Minimum age": 65,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Needle in arm",
   "Topic heading": "Vaccination",
   "Subject": "Recommandations",
@@ -618,8 +556,7 @@
   "Gender": "all",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Needle in arm",
   "Topic heading": "Vaccination",
   "Subject": "Recommandations",
@@ -628,8 +565,7 @@
   "Gender": "all",
   "Minimum age": 65,
   "Maximum age": 70
-},
-{
+},{
   "Button": "Needle in arm",
   "Topic heading": "Vaccination",
   "Subject": "Faites-vous vacciner",
@@ -638,8 +574,7 @@
   "Gender": "all",
   "Minimum age": 18,
   "Maximum age": 49
-},
-{
+},{
   "Button": "Needle in arm",
   "Topic heading": "Vaccination",
   "Subject": "Faites-vous vacciner",
@@ -648,8 +583,7 @@
   "Gender": "all",
   "Minimum age": 50,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Needle in arm",
   "Topic heading": "Vaccination",
   "Subject": "Vaccins contre la COVID",
@@ -658,8 +592,7 @@
   "Gender": "all",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Liver",
   "Topic heading": "Foie/Alcool/Drogues",
   "Subject": "Alcool",
@@ -668,8 +601,7 @@
   "Gender": "all",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Liver",
   "Topic heading": "Foie/Alcool/Drogues",
   "Subject": "Consommation de drogues",
@@ -678,8 +610,7 @@
   "Gender": "all",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Liver",
   "Topic heading": "Foie/Alcool/Drogues",
   "Subject": "Hepatite C",
@@ -688,8 +619,7 @@
   "Gender": "all",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Liver",
   "Topic heading": "Foie/Alcool/Drogues",
   "Subject": "Hepatite C-Informations supplémentaires",
@@ -698,8 +628,7 @@
   "Gender": "all",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Lung",
   "Topic heading": "Poumon",
   "Subject": "Tabagisme",
@@ -708,18 +637,16 @@
   "Gender": "all",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Lung",
   "Topic heading": "Poumon",
   "Subject": "Dépistage du cancer du poumon",
-  "General Patient Text": "Le dépistage à l’aide d’une \ntomodensitométrie (radiographie spéciale)\nchez certains fumeurs ou anciens fumeurs est suggéré par le Groupe de travail canadien,\nmais aucun programme à l’échelle des provinces ou des territoires n’a encore été mis en place.\nÉtant donné que cela pourrait causer des effets nocifs, son utilisation fait l’objet d’une étude attentive.\n[[plus de renseignements; http://www.cancer.ca/fr-ca/cancer-information/cancer-type/lung/finding-cancer-early/?region=on]]\nCertains projets pilotes son en cours; demander à votre professionnel de la santé.",
+  "General Patient Text": "Si vous fumez depuis de nombreuses années, vous pourriez être admissible à un dépistage du cancer du poumon par tomodensitométrie à faible dose. \n\nL'Ontario possède un [[programme de dépistage ; https://www.cancercareontario.ca/fr/propos-action-cancer-ontario/programmes/programmes-depistage/programme-ontarien-depistage-cancer-poumon]] dans certains hôpitaux.\n\nCliquez [[ici; https://www.mycanceriq.ca/Cancers/Lung]] pour évaluer votre niveau de risque et obtenir plus d'informations.\n\nIl existe des programmes pilotes en \n[[Colombie-Britannique ; http://www.bccancer.bc.ca/our-research/participate/lung-health]], au [[Québec ; https://www.quebec.ca/fr/sante/conseils-et-prevention/offre-depistage-et-depistage-des-porteurs/projet-demonstration-depistage-du-cancer-du-poumon]] \n[[Alberta; https://myhealth.alberta.ca/Health/aftercareinformation/pages/conditions.aspx?hwid=abq1915]].",
   "Health Provider Text": "n/a",
   "Gender": "all",
   "Minimum age": 55,
   "Maximum age": 74
-},
-{
+},{
   "Button": "Lung",
   "Topic heading": "Poumon",
   "Subject": "Tabagisme",
@@ -728,18 +655,16 @@
   "Gender": "all",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Lung",
   "Topic heading": "Poumon",
   "Subject": "Dépistage du cancer du poumon",
   "General Patient Text": "n/a",
-  "Health Provider Text": "Le dépistage à l’aide d’une TDM à faible dose\nest recommandé par le Groupe d’étude canadien chez certains patients de 55 à 74 ans,\nMAIS aucun programme à l’échelle des provinces ou des territoires n’a encre été mis en place; seuls certains projets pilotes ont été mis en œuvre dans certaines régions.\nLes coûts et le rapport avantages/inconvénients sont en cours d’examen.\n\nCritères d’inclusion du Groupe d’étude canadien:\n•Âge: 55-74 ans\n•Antécédents de 30 paquets-années ou plus\n•Fumeur\n•Abandon du tabagisme remontant à moins de 15 ans\n•Dépistage annuel, jusqu’à 3 fois consécutives \n\n[[Recommandation du Groupe d’étude canadien; https://canadiantaskforce.ca/guidelines/published-guidelines/lung-cancer/]]",
+  "Health Provider Text": "Le [[GECSSP (2016); https://canadiantaskforce.ca/lignesdirectrives/lignes-directrices-publiees/cancer-du-poumon/?lang=fr ]] recommande une tomographie à faible dose pour \n•\tles adultes âgés de 55 à 74 ans,\n•\t avec un historique de tabagisme d'au moins 30 paquets-années, \n•\tqui fument actuellement, ou qui ont cessé de fumer il y a moins de 15 ans.\n•\t Ils recommandent un dépistage annuel, jusqu’à 3 fois consécutives. (Recommandation faible ; données probantes de faible qualité)\n\nPour tous les autres adultes, quel que soit leur âge, leurs antécédents de tabagisme ou autres facteurs de risque, ils recommandent de ne pas dépister le cancer du poumon avec tomographie. (Recommandation forte ; données probantes de très faible qualité)\n\n•\tOntario :Il existe des [[programmes de dépistage officiel ; https://www.cancercareontario.ca/fr/directives-conseils/continuum-cancer/depistage/renseignements-depistage-du-cancer-du-poumon]] dans certains hôpitaux de l’Ontario. \n\nIl existe des programmes pilotes dans les provinces suivantes :\n[[Colombie-Britannique ; http://www.bccancer.bc.ca/our-research/participate/lung-health]], au [[Québec ; https://www.quebec.ca/fr/sante/conseils-et-prevention/offre-depistage-et-depistage-des-porteurs/projet-demonstration-depistage-du-cancer-du-poumon]] \n[[Alberta; https://myhealth.alberta.ca/Health/aftercareinformation/pages/conditions.aspx?hwid=abq1915]].",
   "Gender": "all",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Brain",
   "Topic heading": "Troubles de la mémoire/Démence",
   "Subject": "Qu’est-ce que la démence?",
@@ -748,8 +673,7 @@
   "Gender": "all",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Brain",
   "Topic heading": "Troubles de la mémoire/Démence",
   "Subject": "Prévention de la démence",
@@ -758,8 +682,7 @@
   "Gender": "all",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Brain",
   "Topic heading": "Troubles de la mémoire/Démence",
   "Subject": "Tests offerts dans certaines situations",
@@ -768,8 +691,7 @@
   "Gender": "all",
   "Minimum age": 50,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Stomach",
   "Topic heading": "Alimentation",
   "Subject": "Sources d'information",
@@ -778,8 +700,7 @@
   "Gender": "all",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Stomach",
   "Topic heading": "Alimentation",
   "Subject": "Remplir la moitié de votre assiette avec des légumes et fruits ",
@@ -788,8 +709,7 @@
   "Gender": "all",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Stomach",
   "Topic heading": "Alimentation",
   "Subject": "Manger des grains entiers et limiter la consommation de gras, de sel, de sucre",
@@ -798,8 +718,7 @@
   "Gender": "all",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Physical Exam",
   "Topic heading": "Examen physique",
   "Subject": "Fréquence et type d’examens physiques",
@@ -808,8 +727,7 @@
   "Gender": "all",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Physical Exam",
   "Topic heading": "Examen physique",
   "Subject": "Fréquence",
@@ -818,8 +736,7 @@
   "Gender": "all",
   "Minimum age": 18,
   "Maximum age": 39
-},
-{
+},{
   "Button": "Physical Exam",
   "Topic heading": "Examen physique",
   "Subject": "Fréquence",
@@ -828,8 +745,7 @@
   "Gender": "all",
   "Minimum age": 40,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Physical Exam",
   "Topic heading": "Examen physique",
   "Subject": "Ce que ça comprend",
@@ -838,8 +754,7 @@
   "Gender": "all",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Genitalia",
   "Topic heading": "Santé sexuelle et reproductive",
   "Subject": "Passez un test PAP ",
@@ -848,8 +763,7 @@
   "Gender": "f",
   "Minimum age": 18,
   "Maximum age": 74
-},
-{
+},{
   "Button": "Genitalia",
   "Topic heading": "Santé sexuelle et reproductive",
   "Subject": "Cancer du col de l'utérus",
@@ -858,8 +772,7 @@
   "Gender": "f",
   "Minimum age": 75,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Genitalia",
   "Topic heading": "Santé sexuelle et reproductive",
   "Subject": "Cancer du col de l'utérus",
@@ -868,8 +781,7 @@
   "Gender": "f",
   "Minimum age": 21,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Genitalia",
   "Topic heading": "Santé sexuelle et reproductive",
   "Subject": "Autres moyens de prévenir le cancer du col de l’utérus",
@@ -878,8 +790,7 @@
   "Gender": "f",
   "Minimum age": 25,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Genitalia",
   "Topic heading": "Santé sexuelle et reproductive",
   "Subject": "Plannification familiale",
@@ -888,8 +799,7 @@
   "Gender": "f",
   "Minimum age": 18,
   "Maximum age": 49
-},
-{
+},{
   "Button": "Genitalia",
   "Topic heading": "Santé sexuelle et reproductive",
   "Subject": "Planification familiale",
@@ -907,8 +817,7 @@
   "Gender": "f",
   "Minimum age": 35,
   "Maximum age": 49
-},
-{
+},{
   "Button": "Genitalia",
   "Topic heading": "Santé sexuelle et reproductive",
   "Subject": "Prévenir les infections transmissibles sexuellement (ITS)",
@@ -917,8 +826,7 @@
   "Gender": "m,f",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Genitalia",
   "Topic heading": "Santé sexuelle et reproductive",
   "Subject": "Prévenir les infections transmissibles sexuellement (ITS)",
@@ -927,8 +835,7 @@
   "Gender": "all",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Genitalia",
   "Topic heading": "Santé sexuelle et reproductive",
   "Subject": "Prevenir le cancer de la prostate",
@@ -937,8 +844,7 @@
   "Gender": "m",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Genitalia",
   "Topic heading": "Santé sexuelle et reproductive",
   "Subject": "Dépistage du cancer de la prostate",
@@ -947,8 +853,7 @@
   "Gender": "m",
   "Minimum age": 55,
   "Maximum age": 69
-},
-{
+},{
   "Button": "Genitalia",
   "Topic heading": "Santé sexuelle et reproductive",
   "Subject": "Prévenir le cancer de la prostate",
@@ -957,8 +862,7 @@
   "Gender": "m",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Genitalia",
   "Topic heading": "Santé sexuelle et reproductive",
   "Subject": "Dépistage du cancer de la prostate",
@@ -967,8 +871,7 @@
   "Gender": "m",
   "Minimum age": 55,
   "Maximum age": 69
-},
-{
+},{
   "Button": "Genitalia",
   "Topic heading": "Santé sexuelle et reproductive",
   "Subject": "Santé sexuelle",
@@ -977,8 +880,7 @@
   "Gender": "tf",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Genitalia",
   "Topic heading": "Santé sexuelle et reproductive",
   "Subject": "La contraception",
@@ -987,8 +889,7 @@
   "Gender": "tf",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Genitalia",
   "Topic heading": "Santé sexuelle et reproductive",
   "Subject": "Cancer du col de l'utérus",
@@ -997,8 +898,7 @@
   "Gender": "tf",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Genitalia",
   "Topic heading": "Santé sexuelle et reproductive",
   "Subject": "Prostate",
@@ -1007,8 +907,7 @@
   "Gender": "tf",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Genitalia",
   "Topic heading": "Santé sexuelle et reproductive",
   "Subject": "Planification familiale",
@@ -1017,8 +916,7 @@
   "Gender": "tm",
   "Minimum age": 18,
   "Maximum age": 55
-},
-{
+},{
   "Button": "Genitalia",
   "Topic heading": "Santé sexuelle et reproductive",
   "Subject": "Santé sexuelle",
@@ -1027,8 +925,7 @@
   "Gender": "tm",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Genitalia",
   "Topic heading": "Santé sexuelle et reproductive",
   "Subject": "La contraception",
@@ -1037,8 +934,7 @@
   "Gender": "tm",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Genitalia",
   "Topic heading": "Santé sexuelle et reproductive",
   "Subject": "Prostate ",
@@ -1047,8 +943,7 @@
   "Gender": "tm",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Genitalia",
   "Topic heading": "Santé sexuelle et reproductive",
   "Subject": "Cancer du col de l'utérus",
@@ -1057,8 +952,7 @@
   "Gender": "tm",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Sun",
   "Topic heading": "Exposition au soleil",
   "Subject": "Prévention du cancer de la peau",
@@ -1067,8 +961,7 @@
   "Gender": "all",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Eye",
   "Topic heading": "Vision",
   "Subject": "Consulter un optométriste",
@@ -1077,8 +970,7 @@
   "Gender": "all",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Eye",
   "Topic heading": "Vision",
   "Subject": "Consulter un optométriste",
@@ -1087,8 +979,7 @@
   "Gender": "all",
   "Minimum age": 18,
   "Maximum age": 40
-},
-{
+},{
   "Button": "Eye",
   "Topic heading": "Vision",
   "Subject": "Consulter un optométriste",
@@ -1097,8 +988,7 @@
   "Gender": "all",
   "Minimum age": 41,
   "Maximum age": 55
-},
-{
+},{
   "Button": "Eye",
   "Topic heading": "Vision",
   "Subject": "Consulter un optométriste",
@@ -1107,8 +997,7 @@
   "Gender": "all",
   "Minimum age": 56,
   "Maximum age": 64
-},
-{
+},{
   "Button": "Eye",
   "Topic heading": "Vision",
   "Subject": "Consulter un optométriste",
@@ -1117,8 +1006,7 @@
   "Gender": "all",
   "Minimum age": 65,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Heart",
   "Topic heading": "Maladie cardiaque",
   "Subject": "Informations générales",
@@ -1127,8 +1015,7 @@
   "Gender": "tf",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Heart",
   "Topic heading": "Maladie cardiaque",
   "Subject": "Informations générales",
@@ -1137,8 +1024,7 @@
   "Gender": "tm",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Heart",
   "Topic heading": "Maladie cardiaque",
   "Subject": "Être actif ",
@@ -1147,8 +1033,7 @@
   "Gender": "tf,tm",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Heart",
   "Topic heading": "Maladie cardiaque",
   "Subject": "Activité physique",
@@ -1157,8 +1042,7 @@
   "Gender": "tf,tm",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Heart",
   "Topic heading": "Maladie cardiaque",
   "Subject": "Tabagisme",
@@ -1167,8 +1051,7 @@
   "Gender": "tf,tm",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Heart",
   "Topic heading": "Maladie cardiaque",
   "Subject": "Tension artérielle",
@@ -1177,8 +1060,7 @@
   "Gender": "tf,tm",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Heart",
   "Topic heading": "Maladie cardiaque",
   "Subject": "Cholestérol ",
@@ -1187,8 +1069,7 @@
   "Gender": "tf,tm",
   "Minimum age": 18,
   "Maximum age": 74
-},
-{
+},{
   "Button": "Heart",
   "Topic heading": "Maladie cardiaque",
   "Subject": "Cholestérol ",
@@ -1197,8 +1078,7 @@
   "Gender": "tf,tm",
   "Minimum age": 75,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Heart",
   "Topic heading": "Maladie cardiaque",
   "Subject": "Lipides",
@@ -1207,8 +1087,7 @@
   "Gender": "tf,tm",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Heart ",
   "Topic heading": "Maladie cardiaque",
   "Subject": "Diabète",
@@ -1217,8 +1096,7 @@
   "Gender": "tf,tm",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Heart",
   "Topic heading": "Maladie cardiaque",
   "Subject": "Être actif ",
@@ -1227,8 +1105,7 @@
   "Gender": "m,f",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Heart",
   "Topic heading": "Maladie cardiaque",
   "Subject": "Activité physique",
@@ -1237,8 +1114,7 @@
   "Gender": "m,f",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Heart",
   "Topic heading": "Maladie cardiaque",
   "Subject": "Calculer votre risque cardiaque",
@@ -1247,8 +1123,7 @@
   "Gender": "m,f",
   "Minimum age": 18,
   "Maximum age": 74
-},
-{
+},{
   "Button": "Heart",
   "Topic heading": "Maladie cardiaque",
   "Subject": "Calculer le risque cardiaque",
@@ -1257,8 +1132,7 @@
   "Gender": "m,f",
   "Minimum age": 18,
   "Maximum age": 74
-},
-{
+},{
   "Button": "Heart",
   "Topic heading": "Maladie cardiaque",
   "Subject": "Tabagisme",
@@ -1267,18 +1141,16 @@
   "Gender": "m,f",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Heart",
   "Topic heading": "Maladie cardiaque",
   "Subject": "Tension artérielle",
   "General Patient Text": "Lors de votre visite chez le médecin ou autre clinicien,, demandez une mesure de votre tension artérielle.\nUne tension artérielle normale est de 120/80 mmHg.\nCependant, la pression artérielle cible dépend de facteurs tels que l'âge et l'état de santé, et de l'endroit où la lecture est effectuée. Si vous souffrez de diabète, d'une maladie rénale ou d'autres problèmes de santé, parlez à votre professionnel de la santé pour déterminer votre tension artérielle cible. \n\n[[Comment mesurer correctement votre tension artérielle à la maison ; https://guidelines.hypertension.ca/wp-content/uploads/2021/02/HTC_HomeBP_Postcard2019_FREFINAL.pdf]]\n[[Comprendre et gérer votre tension artérielle : https://guidelines.hypertension.ca/wp-content/uploads/2021/02/HTC_Brochure_UnderstandingBP_FRE.pdf]]",
   "Health Provider Text": "Le GECSSP recommande la mesure de la pression artérielle lors de toutes les visites de soins primaires appropriées.[[Ligne directrice 2012 ; https://canadiantaskforce.ca/guidelines/published-guidelines/hypertension/]]\n(Recommandation forte ; preuves de qualité moyenne)\n\nSi la tension artérielle moyenne mesurée au bureau [[Selon la technique recommandée ; https://guidelines.hypertension.ca/diagnosis-assessment/measuring-blood-pressure/]] est élevé lors d'une visite, il est recommendé de completer une anamnèse et un examen physique et, si cliniquement indiqué, des tests diagnostiques pour évaluer la présence de domage aux organes cibles doit être fait, d'ici 2 visites. \n\nTests de laboratoire de routine recommandés : analyse d'urine, chimie du sang (potassium, sodium et créatinine), glycémie à jeun et/ou hémoglobine glyquée (A1C), cholestérol total sérique, LDL, HDL, non-HDL, triglycérides (à jeun ou non à jeun) et un ECG standard à 12 dérivations.\n\nL'évaluation globale du risque cardiovasculaire doit être effectuée à l'aide de [[calculateurs de risques ; www.ccs.ca/fr/ressources/calculatrices-formulaires]]",
-  "Gender": "m,f",
+  "Gender": "all",
   "Minimum age": 18,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Heart",
   "Topic heading": "Maladie cardiaque",
   "Subject": "Cholestérol ",
@@ -1287,8 +1159,7 @@
   "Gender": "m,f",
   "Minimum age": 18,
   "Maximum age": 39
-},
-{
+},{
   "Button": "Heart",
   "Topic heading": "Maladie cardiaque",
   "Subject": "Cholestérol ",
@@ -1297,8 +1168,7 @@
   "Gender": "m",
   "Minimum age": 40,
   "Maximum age": 74
-},
-{
+},{
   "Button": "Heart",
   "Topic heading": "Maladie cardiaque",
   "Subject": "Cholestérol ",
@@ -1307,8 +1177,7 @@
   "Gender": "f",
   "Minimum age": 40,
   "Maximum age": 74
-},
-{
+},{
   "Button": "Heart",
   "Topic heading": "Maladie cardiaque",
   "Subject": "Cholestérol ",
@@ -1317,8 +1186,7 @@
   "Gender": "m,f",
   "Minimum age": 75,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Heart",
   "Topic heading": "Maladie cardiaque",
   "Subject": "Lipides",
@@ -1327,14 +1195,67 @@
   "Gender": "m,f",
   "Minimum age": 40,
   "Maximum age": 150
-},
-{
+},{
   "Button": "Heart",
   "Topic heading": "Maladie cardiaque",
   "Subject": "Diabète",
   "General Patient Text": "Si vous êtes diabétique, le bon contrôle de  votre taux de sucre dans le sang et vde votre pression peut aider à prévenir la maladie cardiaque.\nSi vous avez moins que 65 ans et vous êtes diabétique, visez une tension artérielle (pression) sous 130/70 \nDemandez de l'aide à votre fournisseur de soins de santé.",
   "Health Provider Text": "Le diabète est un facteur de risque\n[[Ressource pour les médicaments préventifs chez les diabétiques; https://www.diabetes.ca/managing-my-diabetes/tools---resources/reducing-vascular-risk]] ",
   "Gender": "m,f",
+  "Minimum age": 18,
+  "Maximum age": 150
+},{
+  "Button": "braingear",
+  "Topic heading": "Santé mentale",
+  "Subject": "Ligne directrice",
+  "General Patient Text": "N/A",
+  "Health Provider Text": "Selon [[la ligne directrice du GECSSP 2013 ; https://canadiantaskforce.ca/lignesdirectrives/lignes-directrices-publiees/depression/?lang=fr]], le dépistage de la dépression n’est pas recommandé pour les adultes à risque moyen de dépression qui se présentent dans un établissement de soins de santé primaire, sans aucun symptôme manifeste de dépression. (Recommandation faible; données probantes de très faible qualité) Ces lignes directrices ne s’appliquent pas aux personnes souffrant d’une dépression connue, ayant des antécédents de dépression ou en traitement pour une dépression. \nCependant les cliniciens en soins primaires reconnaissent l’influence de la santé mentale sur la santé de chaque patient. Voici quelques ressources :\n",
+  "Gender": "all",
+  "Minimum age": 18,
+  "Maximum age": 150
+},{
+  "Button": "braingear",
+  "Topic heading": "Santé mentale",
+  "Subject": "Ressources",
+  "General Patient Text": "N/A",
+  "Health Provider Text": "Outils pour mieux prendre soin de vos patients ; \n[[eSanté Mentale ; https://primarycare.esantementale.ca/index.php?m=fpStart]]\n[[Ressources du Collège des Médecins de Famille de l’Ontario ; https://www.ontariofamilyphysicians.ca/tools-resources/covid-19-resources/community-supports-special-populations/ocfp-mh-patient-resources.pdf]] (Liste en anglais seulement, certaines ressources sont bilingues). \n\n[[Outils de dépistage ; https://primarycare.esantementale.ca/index.php?m=surveyList]]\n[[Dépistage du TDAH chez l'adulte; https://www.caddra.ca/fr/public/adultes/l-evaluation/)\n\nApplications pour pratiquer la pleine conscience :\n[[Mindshift; https://www.anxietycanada.com/fr/ressources/mindshiftmc-tcc/]]; développer des compétences pour gérer l'anxiété et la dépression\n[[Namatata; https://www.namatata.com/]]\n[[Petit Bamboo; https://www.petitbambou.com/fr/]]",
+  "Gender": "all",
+  "Minimum age": 18,
+  "Maximum age": 150
+},{
+  "Button": "braingear",
+  "Topic heading": "Santé mentale",
+  "Subject": "Général",
+  "General Patient Text": "Prendre soin de votre santé mentale est aussi important que prendre soin de votre santé physique. Maintenir une alimentation saine, être physiquement actif et avoir suffisamment de sommeil contribue à réduire le stress, améliore la concentration et l’humeur. ",
+  "Health Provider Text": "N/A",
+  "Gender": "all",
+  "Minimum age": 18,
+  "Maximum age": 150
+},{
+  "Button": "braingear",
+  "Topic heading": "Santé mentale",
+  "Subject": "Prévention du suicide et soutien ",
+  "General Patient Text": "[[Services de crises du Canada ; https://www.crisisservicescanada.ca/fr/]]\n[[Ressources locales et soutien selon votre province ; https://www.crisisservicescanada.ca/fr/ressources-locales-et-soutien/]]",
+  "Health Provider Text": "N/A",
+  "Gender": "all",
+  "Minimum age": 18,
+  "Maximum age": 150
+},{
+  "Button": "braingear",
+  "Topic heading": "Santé mentale",
+  "Subject": "Premières Nations, Métis et Inuit",
+  "General Patient Text": "[[Information; https://www.sac-isc.gc.ca/fra/1576089278958/1576089333975]]\n[[Téléphone ou clavardage; espoirpourlemieuxetre.ca]]",
+  "Health Provider Text": "N/A",
+  "Gender": "all",
+  "Minimum age": 18,
+  "Maximum age": 150
+},{
+  "Button": "braingear",
+  "Topic heading": "Santé mentale",
+  "Subject": "Ressources pour la  pleine conscience ",
+  "General Patient Text": "[[Mindshift; https://www.anxietycanada.com/fr/ressources/mindshiftmc-tcc/]]; développer des compétences pour gérer l'anxiété et la dépression\n[[Namatata; https://www.namatata.com/]]\n[[Petit Bamboo; https://www.petitbambou.com/fr/]]",
+  "Health Provider Text": "N/A",
+  "Gender": "all",
   "Minimum age": 18,
   "Maximum age": 150
 }

@@ -19,7 +19,7 @@
     "Gender": "m",
     "Minimum age": 65,
     "Maximum age": 80
-    
+  
   },
   {
     "Button": "Aorta",
@@ -30,7 +30,7 @@
     "Gender": "m",
     "Minimum age": 81,
     "Maximum age": 150
-    
+  
   },
   {
     "Button": "Aorta",
@@ -41,7 +41,7 @@
     "Gender": "f",
     "Minimum age": 18,
     "Maximum age": 150
-    
+  
   },
   {
     "Button": "Figure outside body walking",
@@ -52,8 +52,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Figure outside body walking",
@@ -64,8 +63,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Bone",
@@ -76,8 +74,7 @@
     "Gender": "tf",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Bone",
@@ -88,8 +85,7 @@
     "Gender": "tf",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Bone",
@@ -100,8 +96,7 @@
     "Gender": "tf",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Bone",
@@ -112,8 +107,7 @@
     "Gender": "tm",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Bone",
@@ -124,8 +118,7 @@
     "Gender": "tm",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Bone",
@@ -136,8 +129,7 @@
     "Gender": "tm",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Bone",
@@ -148,8 +140,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Bone",
@@ -160,8 +151,7 @@
     "Gender": "m,f",
     "Minimum age": 18,
     "Maximum age": 64
-    
-    
+  
   },
   {
     "Button": "Bone",
@@ -172,8 +162,7 @@
     "Gender": "m,f",
     "Minimum age": 65,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Breast",
@@ -184,8 +173,7 @@
     "Gender": "f",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Breast",
@@ -196,8 +184,7 @@
     "Gender": "f",
     "Minimum age": 50,
     "Maximum age": 74
-    
-    
+  
   },
   {
     "Button": "Breast",
@@ -208,8 +195,7 @@
     "Gender": "f",
     "Minimum age": 75,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Breast",
@@ -220,8 +206,7 @@
     "Gender": "f",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Breast/Chest",
@@ -232,8 +217,7 @@
     "Gender": "tf",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Breast/Chest",
@@ -244,8 +228,7 @@
     "Gender": "tf",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Breast/Chest",
@@ -256,8 +239,7 @@
     "Gender": "tf",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Breast/Chest",
@@ -268,8 +250,7 @@
     "Gender": "tm",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Breast/Chest",
@@ -280,8 +261,7 @@
     "Gender": "tm",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Breast/Chest",
@@ -292,8 +272,7 @@
     "Gender": "tm",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Colon",
@@ -304,8 +283,7 @@
     "Gender": "all",
     "Minimum age": 50,
     "Maximum age": 74
-    
-    
+  
   },
   {
     "Button": "Colon",
@@ -316,8 +294,7 @@
     "Gender": "all",
     "Minimum age": 50,
     "Maximum age": 74
-    
-    
+  
   },
   {
     "Button": "Colon",
@@ -328,8 +305,7 @@
     "Gender": "all",
     "Minimum age": 75,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Colon",
@@ -340,8 +316,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 49
-    
-    
+  
   },
   {
     "Button": "Covid",
@@ -352,8 +327,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Covid",
@@ -364,8 +338,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Covid",
@@ -376,8 +349,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Covid",
@@ -388,8 +360,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Covid",
@@ -400,8 +371,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Covid",
@@ -412,8 +382,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Covid",
@@ -424,8 +393,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Covid",
@@ -436,8 +404,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Covid",
@@ -448,8 +415,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Covid",
@@ -460,8 +426,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Covid",
@@ -472,8 +437,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Covid",
@@ -484,8 +448,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Covid",
@@ -496,8 +459,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Covid",
@@ -508,8 +470,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Covid",
@@ -520,8 +481,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Covid",
@@ -532,8 +492,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Covid",
@@ -544,8 +503,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Covid",
@@ -556,8 +514,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Covid",
@@ -568,8 +525,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Pancreas",
@@ -580,8 +536,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Pancreas",
@@ -592,8 +547,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Pancreas",
@@ -604,8 +558,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Pancreas",
@@ -616,8 +569,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Hip",
@@ -628,8 +580,7 @@
     "Gender": "all",
     "Minimum age": 65,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Heart",
@@ -640,8 +591,7 @@
     "Gender": "tf",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Heart",
@@ -652,8 +602,7 @@
     "Gender": "tm",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Heart",
@@ -664,8 +613,7 @@
     "Gender": "tf,tm",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Heart",
@@ -676,8 +624,7 @@
     "Gender": "tf,tm",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Heart",
@@ -688,8 +635,7 @@
     "Gender": "tf,tm",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Heart",
@@ -700,8 +646,7 @@
     "Gender": "tf,tm",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Heart",
@@ -712,8 +657,7 @@
     "Gender": "tf,tm",
     "Minimum age": 18,
     "Maximum age": 74
-    
-    
+  
   },
   {
     "Button": "Heart",
@@ -724,8 +668,7 @@
     "Gender": "tf,tm",
     "Minimum age": 75,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Heart",
@@ -736,8 +679,7 @@
     "Gender": "tf,tm",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Heart",
@@ -748,8 +690,7 @@
     "Gender": "tf,tm",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Heart",
@@ -760,8 +701,7 @@
     "Gender": "m,f",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Heart",
@@ -772,8 +712,7 @@
     "Gender": "m,f",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Heart",
@@ -784,8 +723,7 @@
     "Gender": "m,f",
     "Minimum age": 30,
     "Maximum age": 74
-    
-    
+  
   },
   {
     "Button": "Heart",
@@ -796,8 +734,7 @@
     "Gender": "m,f",
     "Minimum age": 30,
     "Maximum age": 74
-    
-    
+  
   },
   {
     "Button": "Heart",
@@ -808,20 +745,18 @@
     "Gender": "m,f",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Heart",
     "Topic heading": "Heart Disease",
     "Subject": "Blood pressure",
-    "General Patient Text": "Have your blood pressure measured regularly by your health provider. \nIf you have no other health problems it is recommended to have a blood pressure under 140/90.\n[[More info; https://hypertension.ca/hypertension-and-you/]]",
-    "Health Provider Text": "CTFPHC recommends blood pressure measurement at all appropriate primary care visits.[[2012 Guideline; https://canadiantaskforce.ca/guidelines/published-guidelines/hypertension/]]\n(Strong recommendation; moderate quality evidence)\nUse CHEP criteria:\n[[Highlights; https://guidelines.hypertension.ca/wp-content/uploads/2020/08/2020-22-HT-Guidelines-E-WEB_v3b.pdf]]\n[[Full 2020 guideline; https://guidelines.hypertension.ca/wp-content/uploads/2020/08/Hypertension-Canada-2020-Comprehensive-Guidelines-for-Prevention-Diagnosis-Risk-Assessment-and-Treatment-of-Hypertension-in-Adults-and-Children.pdf]]",
+    "General Patient Text": "During your visit to the doctor, ask for a measurement of your blood pressure. \nA normal blood pressure is under 140/90 mmHg or lower for some people .\nThe target blood pressure depends on factors like age and health conditions, and where readings are being taken. If you have diabetes, kidney disease or other health conditions, speak to your health care professional about your target blood pressure. \n\n[[How to appropriately measure your blood pressure at home; https://hypertension.ca/wp-content/uploads/2020/03/BPM-Postcard-Front.jpg]]\n[[Understanding and Managing Your Blood Pressure; https://guidelines.hypertension.ca/wp-content/uploads/2021/02/HTC_Brochure_UnderstandingBP_2018_R3.pdf]]",
+    "Health Provider Text": "CTFPHC recommends blood pressure measurement at all appropriate primary care visits.[[2012 Guideline; https://canadiantaskforce.ca/guidelines/published-guidelines/hypertension/]]\n(Strong recommendation; moderate quality evidence)\n\nIf the mean blood pressure measured in office [[As per recommended technique; https://guidelines.hypertension.ca/diagnosis-assessment/measuring-blood-pressure/]] is high during one visit, a history and physical examination should be performed and, if clinically indicated, diagnostic tests to search for target organ damage should be arranged within 2 visits. \n\nRoutine Lab Testing Recommended: urinalysis, blood chemistry (potassium, sodium and creatinine), fasting blood glucose and/or glycated hemoglobin (A1C), serum total cholesterol, LDL, HDL, non-HDL, triglycerides (fasting or non-fasting) and a standard 12-lead ECG. \n\nGlobal cardiovascular risk assessment should be done using [[risks calculators; www.ccs.ca/en/resources/calculators-forms]]",
     "Gender": "m,f",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Heart",
@@ -832,8 +767,7 @@
     "Gender": "m,f",
     "Minimum age": 18,
     "Maximum age": 39
-    
-    
+  
   },
   {
     "Button": "Heart",
@@ -844,8 +778,7 @@
     "Gender": "m",
     "Minimum age": 40,
     "Maximum age": 74
-    
-    
+  
   },
   {
     "Button": "Heart",
@@ -856,8 +789,7 @@
     "Gender": "f",
     "Minimum age": 40,
     "Maximum age": 74
-    
-    
+  
   },
   {
     "Button": "Heart",
@@ -868,8 +800,7 @@
     "Gender": "m,f",
     "Minimum age": 75,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Heart",
@@ -880,8 +811,7 @@
     "Gender": "m,f",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Heart",
@@ -892,8 +822,7 @@
     "Gender": "m,f",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Needle in arm",
@@ -904,8 +833,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Needle in arm",
@@ -916,8 +844,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 49
-    
-    
+  
   },
   {
     "Button": "Needle in arm",
@@ -928,8 +855,7 @@
     "Gender": "all",
     "Minimum age": 50,
     "Maximum age": 64
-    
-    
+  
   },
   {
     "Button": "Needle in arm",
@@ -940,8 +866,7 @@
     "Gender": "all",
     "Minimum age": 71,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Needle in arm",
@@ -952,8 +877,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Needle in arm",
@@ -964,8 +888,7 @@
     "Gender": "all",
     "Minimum age": 65,
     "Maximum age": 70
-    
-    
+  
   },
   {
     "Button": "Liver",
@@ -976,8 +899,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Liver",
@@ -988,8 +910,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Liver",
@@ -1000,8 +921,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Liver",
@@ -1012,8 +932,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Lung",
@@ -1024,20 +943,18 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Lung",
     "Topic heading": "Lung",
     "Subject": "Testing for Lung Cancer",
-    "General Patient Text": "Testing with a CT scan (special xray)\nfor certain smokers or ex smokers\nis suggested by the Canadian Task Force,\nbut no province or territory-wide programs yet in place.\nThere can be harms so this is being studied carefully.\n[[More; http://www.cancer.ca/en/cancer-information/cancer-type/lung/finding-cancer-early/?region=on]]\nSome pilot projects underway, ask your provider.",
+    "General Patient Text": "If you have been smoking for many years, you may be eligible to be screened for lung cancer with a Low dose computed tomography (LDCT). Ask your primary care provider for more details. Not every area has a program.\n\nThe province of Ontario has a\n[[screening program ; https://www.cancercareontario.ca/en/cancer-care-ontario/programs/screening-programs/ontario-lung-screening-program]] in some hospitals or regions.\n\nClick [[here; https://www.mycanceriq.ca/Cancers/Lung]] to assess your level of risk and to get more information. \n\nThere are pilot programs in \n[[British Columbia; http://www.bccancer.bc.ca/our-research/participate/lung-health]]\n[[Quebec; https://www.quebec.ca/en/health/advice-and-prevention/screening-and-carrier-testing-offer/lung-cancer-screening-demonstration-project]] \n[[Alberta; https://myhealth.alberta.ca/Health/aftercareinformation/pages/conditions.aspx?hwid=abq1915]].",
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 55,
     "Maximum age": 74
-    
-    
+  
   },
   {
     "Button": "Lung",
@@ -1048,20 +965,18 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Lung",
     "Topic heading": "Lung",
     "Subject": "Lung Cancer screening",
     "General Patient Text": "n/a",
-    "Health Provider Text": "Low dose CT scan screening\nrecommended by Canadian Task Force (CTF)for certain patients 55-74 \nBUT no province or territory-wide programs yet,\nsome pilot projects only in certain areas.\nCosts and Harms/Benefits being studied.\n\nCriteria by CTF for inclusion:\n•Age 55-74\n•30 pack-year history or more\n•Currently smoke\n•Or have quit less than 15 years ago\n•Annual screening, up to 3 consecutive times. \n\n[[CTF recommendation; https://canadiantaskforce.ca/guidelines/published-guidelines/lung-cancer/]]",
+    "Health Provider Text": "The [[CTFPHC (2016); https://canadiantaskforce.ca/guidelines/published-guidelines/lung-cancer/]]  recommends a Low dose CT (LDCT) for\n•\tadults aged 55-74 years, \n•\twith at least a 30 pack-year smoking history \n•\twho currently smoke or quit less than 15 years ago. \n•\tThey recommend annual screening with LDCT up to three consecutive time. (Weak recommendation; low quality evidence)\n\nFor all other adults, regardless of age, smoking history or other risk factors, they do recommend not screening for lung cancer with LDCT. (Strong recommendation; very low quality evidence.)\n\nThere is an official screening program in some hospitals in [[Ontario; https://www.cancercareontario.ca/en/guidelines-advice/cancer-continuum/screening/lung-cancer-screening-information]].\n\nThere are pilot programs in \n[[British Columbia; http://www.bccancer.bc.ca/our-research/participate/lung-health]]\n[[Quebec; https://www.quebec.ca/en/health/advice-and-prevention/screening-and-carrier-testing-offer/lung-cancer-screening-demonstration-project]] \n[[Alberta; https://myhealth.alberta.ca/Health/aftercareinformation/pages/conditions.aspx?hwid=abq1915]].",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Brain",
@@ -1072,8 +987,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Brain",
@@ -1084,8 +998,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Brain",
@@ -1096,8 +1009,7 @@
     "Gender": "all",
     "Minimum age": 50,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Stomach",
@@ -1108,8 +1020,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Stomach",
@@ -1120,8 +1031,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Stomach",
@@ -1132,8 +1042,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Figure outside body walking",
@@ -1144,8 +1053,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Figure outside body walking",
@@ -1156,8 +1064,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Physical Exam",
@@ -1168,8 +1075,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Physical Exam",
@@ -1180,8 +1086,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 39
-    
-    
+  
   },
   {
     "Button": "Physical Exam",
@@ -1192,8 +1097,7 @@
     "Gender": "all",
     "Minimum age": 40,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Physical Exam",
@@ -1204,8 +1108,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Genitalia",
@@ -1216,8 +1119,7 @@
     "Gender": "f",
     "Minimum age": 21,
     "Maximum age": 74
-    
-    
+  
   },
   {
     "Button": "Genitalia",
@@ -1228,8 +1130,7 @@
     "Gender": "f",
     "Minimum age": 75,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Genitalia",
@@ -1240,8 +1141,7 @@
     "Gender": "f",
     "Minimum age": 21,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Genitalia",
@@ -1252,8 +1152,7 @@
     "Gender": "f",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Genitalia",
@@ -1264,8 +1163,7 @@
     "Gender": "f",
     "Minimum age": 18,
     "Maximum age": 49
-    
-    
+  
   },
   {
     "Button": "Genitalia",
@@ -1276,8 +1174,7 @@
     "Gender": "f",
     "Minimum age": 18,
     "Maximum age": 49
-    
-    
+  
   },
   {
     "Button": "Genitalia",
@@ -1288,8 +1185,7 @@
     "Gender": "f",
     "Minimum age": 35,
     "Maximum age": 49
-    
-    
+  
   },
   {
     "Button": "Genitalia",
@@ -1300,8 +1196,7 @@
     "Gender": "m,f",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Genitalia",
@@ -1312,8 +1207,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Genitalia",
@@ -1324,8 +1218,7 @@
     "Gender": "m",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Genitalia",
@@ -1336,8 +1229,7 @@
     "Gender": "m",
     "Minimum age": 55,
     "Maximum age": 69
-    
-    
+  
   },
   {
     "Button": "Genitalia",
@@ -1348,8 +1240,7 @@
     "Gender": "m",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Genitalia",
@@ -1360,8 +1251,7 @@
     "Gender": "m",
     "Minimum age": 55,
     "Maximum age": 69
-    
-    
+  
   },
   {
     "Button": "Genitalia",
@@ -1372,8 +1262,7 @@
     "Gender": "tm",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Genitalia",
@@ -1384,8 +1273,7 @@
     "Gender": "tm",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Genitalia",
@@ -1396,8 +1284,7 @@
     "Gender": "tm",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Genitalia",
@@ -1408,8 +1295,7 @@
     "Gender": "tm",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Genitalia",
@@ -1420,8 +1306,7 @@
     "Gender": "tm",
     "Minimum age": 18,
     "Maximum age": 55
-    
-    
+
   },
   {
     "Button": "Genitalia",
@@ -1432,8 +1317,7 @@
     "Gender": "tf",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Genitalia",
@@ -1444,8 +1328,7 @@
     "Gender": "tf",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Genitalia",
@@ -1456,8 +1339,7 @@
     "Gender": "tf",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Genitalia",
@@ -1468,8 +1350,7 @@
     "Gender": "tf",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Sun",
@@ -1480,8 +1361,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Eye",
@@ -1492,8 +1372,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Eye",
@@ -1504,8 +1383,7 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 40
-    
-    
+  
   },
   {
     "Button": "Eye",
@@ -1516,8 +1394,7 @@
     "Gender": "all",
     "Minimum age": 41,
     "Maximum age": 55
-    
-    
+  
   },
   {
     "Button": "Eye",
@@ -1528,8 +1405,7 @@
     "Gender": "all",
     "Minimum age": 56,
     "Maximum age": 64
-    
-    
+  
   },
   {
     "Button": "Eye",
@@ -1540,8 +1416,7 @@
     "Gender": "all",
     "Minimum age": 65,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Bone",
@@ -1552,8 +1427,7 @@
     "Gender": "f",
     "Minimum age": 18,
     "Maximum age": 18
-    
-    
+  
   },
   {
     "Button": "Bone",
@@ -1564,8 +1438,7 @@
     "Gender": "f",
     "Minimum age": 19,
     "Maximum age": 49
-    
-    
+  
   },
   {
     "Button": "Bone",
@@ -1576,8 +1449,7 @@
     "Gender": "m,tm,tf",
     "Minimum age": 18,
     "Maximum age": 18
-    
-    
+  
   },
   {
     "Button": "Bone",
@@ -1588,8 +1460,7 @@
     "Gender": "m,tm,tf",
     "Minimum age": 19,
     "Maximum age": 49
-    
-    
+  
   },
   {
     "Button": "Bone",
@@ -1600,8 +1471,7 @@
     "Gender": "all",
     "Minimum age": 50,
     "Maximum age": 150
-    
-    
+  
   },
   {
     "Button": "Bone",
@@ -1611,6 +1481,74 @@
     "Health Provider Text": "A healthy diet prevents osteoporosis\n[[More info; https://osteoporosis.ca/nutrition/]]",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150 
+    "Maximum age": 150
+  
+  },
+  {
+    "Button": "braingear",
+    "Topic heading": "Mental health",
+    "Subject": "General",
+    "General Patient Text": "Taking care of your mental health is as important as taking care of your physical health. Maintaining a healthy diet, being physically active and getting enough sleep helps reduce stress, improves concentration and mood.",
+    "Health Provider Text": "N/A",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  
+  },
+  {
+    "Button": "braingear",
+    "Topic heading": "Mental health",
+    "Subject": "Suicide prevention and support",
+    "General Patient Text": "[[Crisis Services Canada ; https://www.crisisservicescanada.ca/en/]]\n[[Local Resources and Support from your province; https://www.crisisservicescanada.ca/en/looking-for-local-resources-support/]]",
+    "Health Provider Text": "N/A",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  
+  },
+  {
+    "Button": "braingear",
+    "Topic heading": "Mental health",
+    "Subject": "First Nations, Métis, Inuit",
+    "General Patient Text": "[[Mental health and wellness in First Nations and Inuit communities; https://www.sac-isc.gc.ca/eng/1576089278958/1576089333975]]",
+    "Health Provider Text": "N/A",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  
+  },
+  {
+    "Button": "braingear",
+    "Topic heading": "Mental health",
+    "Subject": "Resources to practice mindfulness",
+    "General Patient Text": "[[Mindshift; anxietycanada.com/resources/mindshift-cbt]]; to build skills for managing anxiety and depression\n[[Headspace; https://www.headspace.com/mindfulness]]\n[[Insight timer; https://insighttimer.com/]]",
+    "Health Provider Text": "N/A",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  
+  },
+  {
+    "Button": "braingear",
+    "Topic heading": "Mental health",
+    "Subject": "Guidelines",
+    "General Patient Text": "N/A",
+    "Health Provider Text": "As per [[CTFPH 2013 guidelines; https://canadiantaskforce.ca/guidelines/published-guidelines/depression/]] : Screening for depression is not recommended for adults at average risk of depression who present to a primary care setting, with no apparent symptoms of depression. (Weak recommendation; very-low-quality evidence). These recommendations do not apply to people with known depression, with a history of depression or who are receiving treatment for depression.\nHowever primary care providers know the importance of mental health and how it influences overall health. Below are some resources.",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  
+  },
+  {
+    "Button": "braingear",
+    "Topic heading": "Mental health",
+    "Subject": "Resources",
+    "General Patient Text": "N/A",
+    "Health Provider Text": "Tools to help you care for your patients: \n[[eMental Health; https://primarycare.ementalhealth.ca/index.php?m=fpStart]]\n[[Assessment of ADHD in adults;  https://www.caddra.ca/public-information/adults/forms/]]\n[[Ressources from the Ontario College of Family Physician; https://www.ontariofamilyphysicians.ca/tools-resources/covid-19-resources/community-supports-special-populations/ocfp-mh-patient-resources.pdf]]\n\nMindfulness ressources; \n-\t[[Mindshift; anxietycanada.com/resources/mindshift-cbt]]; to build skills for managing anxiety and depression\n-\t[[Headspace; https://www.headspace.com/mindfulness]]\n-\t[[Insight timer; https://insighttimer.com/]]\n\n[[Screening tools ; https://primarycare.ementalhealth.ca/index.php?m=surveyList]]",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+   
+    
   }
 ]
