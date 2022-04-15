@@ -1205,7 +1205,7 @@
   "Minimum age": 18,
   "Maximum age": 150
 },{
-  "Button": "Santé mentale",
+  "Button": "braingear",
   "Topic heading": "Santé mentale",
   "Subject": "Ligne directrice",
   "General Patient Text": "N/A",
@@ -1214,7 +1214,7 @@
   "Minimum age": 18,
   "Maximum age": 150
 },{
-  "Button": "Santé mentale",
+  "Button": "braingear",
   "Topic heading": "Santé mentale",
   "Subject": "Ressources",
   "General Patient Text": "N/A",
@@ -1223,8 +1223,8 @@
   "Minimum age": 18,
   "Maximum age": 150
 },{
-  "Button": "Santé mentale",
-  "Topic heading": "Santé mentale ",
+  "Button": "braingear",
+  "Topic heading": "Santé mentale",
   "Subject": "Général",
   "General Patient Text": "Prendre soin de votre santé mentale est aussi important que prendre soin de votre santé physique. Maintenir une alimentation saine, être physiquement actif et avoir suffisamment de sommeil contribue à réduire le stress, améliore la concentration et l’humeur. ",
   "Health Provider Text": "N/A",
@@ -1232,8 +1232,8 @@
   "Minimum age": 18,
   "Maximum age": 150
 },{
-  "Button": "Santé mentale",
-  "Topic heading": "Santé mentale ",
+  "Button": "braingear",
+  "Topic heading": "Santé mentale",
   "Subject": "Prévention du suicide et soutien ",
   "General Patient Text": "[[Services de crises du Canada ; https://www.crisisservicescanada.ca/fr/]]\n[[Ressources locales et soutien selon votre province ; https://www.crisisservicescanada.ca/fr/ressources-locales-et-soutien/]]",
   "Health Provider Text": "N/A",
@@ -1241,8 +1241,8 @@
   "Minimum age": 18,
   "Maximum age": 150
 },{
-  "Button": "Santé mentale",
-  "Topic heading": "Santé mentale ",
+  "Button": "braingear",
+  "Topic heading": "Santé mentale",
   "Subject": "Premières Nations, Métis et Inuit",
   "General Patient Text": "[[Information; https://www.sac-isc.gc.ca/fra/1576089278958/1576089333975]]\n[[Téléphone ou clavardage; espoirpourlemieuxetre.ca]]",
   "Health Provider Text": "N/A",
@@ -1250,7 +1250,7 @@
   "Minimum age": 18,
   "Maximum age": 150
 },{
-  "Button": "Santé mentale",
+  "Button": "braingear",
   "Topic heading": "Santé mentale",
   "Subject": "Ressources pour la  pleine conscience ",
   "General Patient Text": "[[Mindshift; https://www.anxietycanada.com/fr/ressources/mindshiftmc-tcc/]]; développer des compétences pour gérer l'anxiété et la dépression\n[[Namatata; https://www.namatata.com/]]\n[[Petit Bamboo; https://www.petitbambou.com/fr/]]",
