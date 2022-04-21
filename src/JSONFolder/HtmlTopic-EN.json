@@ -1544,7 +1544,7 @@
     "Topic heading": "Mental health",
     "Subject": "Resources",
     "General Patient Text": "N/A",
-    "Health Provider Text": "Tools to help you care for your patients: \n[[eMental Health; https://primarycare.ementalhealth.ca/index.php?m=fpStart]]\n[[Assessment of ADHD in adults;  https://www.caddra.ca/public-information/adults/forms/]]\n[[Ressources from the Ontario College of Family Physician; https://www.ontariofamilyphysicians.ca/tools-resources/covid-19-resources/community-supports-special-populations/ocfp-mh-patient-resources.pdf]]\n\nMindfulness ressources; \n-\t[[Mindshift; anxietycanada.com/resources/mindshift-cbt]]; to build skills for managing anxiety and depression\n-\t[[Headspace; https://www.headspace.com/mindfulness]]\n-\t[[Insight timer; https://insighttimer.com/]]\n\n[[Screening tools ; https://primarycare.ementalhealth.ca/index.php?m=surveyList]]",
+    "Health Provider Text": "Tools to help you care for your patients: \n[[eMental Health; https://primarycare.ementalhealth.ca/index.php?m=fpStart]]\n[[Assessment of ADHD in adults;  https://www.caddra.ca/public-information/adults/forms/]]\n[[Ressources from the Ontario College of Family Physician; https://www.ontariofamilyphysicians.ca/tools-resources/covid-19-resources/community-supports-special-populations/ocfp-mh-patient-resources.pdf]]\n\nMindfulness ressources; \n-\t[[Mindshift; https://www.anxietycanada.com/resources/mindshift-cbt]]; to build skills for managing anxiety and depression\n-\t[[Headspace; https://www.headspace.com/mindfulness]]\n-\t[[Insight timer; https://insighttimer.com/]]\n\n[[Screening tools ; https://primarycare.ementalhealth.ca/index.php?m=surveyList]]",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
