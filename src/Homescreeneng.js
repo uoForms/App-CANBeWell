@@ -79,13 +79,13 @@ export default function CustomizedDialogs() {
             </DialogTitle>
             <DialogContent test-id="homeScreenContent" dividers className="Diacontent">
               <h4>1. Launch icanbewell.ca via Safari</h4>
-              <img src={require('./images/instruction_1.png')} className="instructionimg" />
+              <img src={require('./images/instruction_1.png').default} className="instructionimg" />
               <h4>2. Tap share icon</h4>
-              <img src={require('./images/instruction_2.png')} className="instructionimg" />
+              <img src={require('./images/instruction_2.png').default} className="instructionimg" />
               <h4>3. Tap "Add to Home Screen"</h4>
-              <img src={require('./images/instruction_3.png')} className="instructionimg" />
+              <img src={require('./images/instruction_3.png').default} className="instructionimg" />
               <h4>4. Tap "Add" button</h4>
-              <img src={require('./images/instruction_4.png')} className="instructionimg" />
+              <img src={require('./images/instruction_4.png').default} className="instructionimg" />
             </DialogContent>
             <DialogActions>
               <div className="closeButton">
@@ -106,11 +106,11 @@ export default function CustomizedDialogs() {
             </DialogTitle>
             <DialogContent test-id="homeScreenContent" dividers className="Diacontent">
             <h4>1. Launch icanbewell.ca via Chrome</h4>
-              <img src={require('./images/android_1.jpg')} className="instructionimg" />
+              <img src={require('./images/android_1.jpg').default} className="instructionimg" />
               <h4>2. Tap menu icon</h4>
-              <img src={require('./images/android_2.jpg')} className="instructionimg" />
+              <img src={require('./images/android_2.jpg').default} className="instructionimg" />
               <h4>3. Tap "Add to Home Screen"</h4>
-              <img src={require('./images/android_eng_1.jpg')} className="instructionimg" />
+              <img src={require('./images/android_eng_1.jpg').default} className="instructionimg" />
             </DialogContent>
             <DialogActions>
               <div className="closeButton">
