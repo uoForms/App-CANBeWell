@@ -78,13 +78,13 @@ export default function CustomizedDialogs() {
             </DialogTitle>
             <DialogContent test-id="homeScreenContent" dividers className="Diacontent">
             <h4>1. Lancez icanbewell.ca via Safari</h4>
-              <img src={require('./images/instruction_1.png')} className="instructionimg" />
+              <img src={require('./images/instruction_1.png').default} className="instructionimg" />
               <h4>2. Appuyez sur l'icône de partage</h4>
-              <img src={require('./images/instruction_2.png')} className="instructionimg" />
+              <img src={require('./images/instruction_2.png').default} className="instructionimg" />
               <h4>3. Appuyez sur "Ajouter sur l'écran d'accueil"</h4>
-              <img src={require('./images/instruction_fren_1.png')} className="instructionimg" />
+              <img src={require('./images/instruction_fren_1.png').default} className="instructionimg" />
               <h4>4. Appuyez sur le bouton "Ajouter"</h4>
-              <img src={require('./images/instruction_fren_2.png')} className="instructionimg" />
+              <img src={require('./images/instruction_fren_2.png').default} className="instructionimg" />
             </DialogContent>
             <DialogActions>
               <div className="closeButton">
@@ -105,11 +105,11 @@ export default function CustomizedDialogs() {
             </DialogTitle>
             <DialogContent test-id="homeScreenContent" dividers className="Diacontent">
             <h4>1. Lancez icanbewell.ca via Chrome</h4>
-              <img src={require('./images/android_1.jpg')} className="instructionimg" />
+              <img src={require('./images/android_1.jpg').default } className="instructionimg" />
               <h4>2. Appuyez sur l'icône de menu</h4>
-              <img src={require('./images/android_2.jpg')} className="instructionimg" />
+              <img src={require('./images/android_2.jpg').default} className="instructionimg" />
               <h4>3. Appuyez sur "Ajouter à l'écran d'accueil"</h4>
-              <img src={require('./images/android_fren_1.jpg')} className="instructionimg" />
+              <img src={require('./images/android_fren_1.jpg').default} className="instructionimg" />
             </DialogContent>
             <DialogActions>
               <div className="closeButton">
