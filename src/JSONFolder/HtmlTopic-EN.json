@@ -8,7 +8,6 @@
     "Gender": "m",
     "Minimum age": 65,
     "Maximum age": 80
-    
   },
   {
     "Button": "Aorta",
@@ -19,7 +18,6 @@
     "Gender": "m",
     "Minimum age": 65,
     "Maximum age": 80
-  
   },
   {
     "Button": "Aorta",
@@ -30,7 +28,6 @@
     "Gender": "m",
     "Minimum age": 81,
     "Maximum age": 150
-  
   },
   {
     "Button": "Aorta",
@@ -41,7 +38,6 @@
     "Gender": "f",
     "Minimum age": 18,
     "Maximum age": 150
-  
   },
   {
     "Button": "Figure outside body walking",
@@ -51,8 +47,7 @@
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Figure outside body walking",
@@ -62,8 +57,7 @@
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Bone",
@@ -73,8 +67,7 @@
     "Health Provider Text": "•All trans women and people on the transfeminine spectrum should undergo bone density screening as per the current guidelines for the general population.\n\n•For a low risk patient without additional risk factors in Canada, screening usually begins at age 65.\n\n•As per the current guidelines for the general population, screening with BMD should be considered for younger patients who have [[risk factors for osteoporosis; https://www.canada.ca/en/public-health/services/chronic-diseases/osteoporosis.html]]\n\n•For trans women and people on the transfeminine spectrum, this also includes anyone who, regardless of age:\n1)Has a history of hypogonadism/gonadectomy, and a history of insufficient (no/low-dose/intermittent) hormone replacement (UCSF recommends > 5 years without hormones to qualify; RHO recommends > 2 years; Endrocine Society, ISCD and TransCare BC do not specify a minimum amount of time).\n2)A history of taking an anti-androgen/GnRH analogue without exogenous hormones (RHO, ISCD).\n3)Is not adherent to hormone therapy or has taken it intermittently (Endocrine Society, TransCare BC).\n•On the other hand, the Endocrine Society suggests considering BMD testing at baseline in all trans feminine patients.\n•The RHO recommends that all patients on hormone therapy ensure a daily intake of 1200 mg of calcium and 1000 IU of vitamin D.",
     "Gender": "tf",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Bone",
@@ -84,8 +77,7 @@
     "Health Provider Text": "n/a",
     "Gender": "tf",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Bone",
@@ -95,8 +87,7 @@
     "Health Provider Text": "•When assessing for osteoporosis, consider assessing risk using an average of the results obtained using both a female and male calculator [[risk calculator; https://www.sheffield.ac.uk/FRAX/]] (UCSF).\n•The ISCD suggests that the Z-score should generally be derived from comparison to the reference data of the patient’s affirmed gender for binary transgender patients (i.e. who identify as solely male or female), and to the gender assigned at birth in non-binary patients (ISCD).\n• [[RHO guidelines; https://www.rainbowhealthontario.ca/product/4th-edition-sherbournes-guidelines-for-gender-affirming-primary-care-with-trans-and-non-binary-patients/]]\n• [[UCSF Transcare guidelines; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf]]\n• [[Endocrine Society guidelines; https://academic.oup.com/jcem/article/102/11/3869/4157558]]",
     "Gender": "tf",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Bone",
@@ -106,8 +97,7 @@
     "Health Provider Text": "•All trans men and people on the transmasculine spectrum should undergo bone density screening as per the current guidelines for the general population.\n•For a low risk patient without additional risk factors in Canada, screening usually begins at age 65.\n•As per the current guidelines for the general population, screening with BMD should be considered for younger patients who have risk factors for osteoporosis. For trans men and people on the transmasculine spectrum, this also includes anyone who, regardless of age:\n1)Has a history of hypogonadism/gonadectomy, and a history of insufficient (no/low-dose/intermittent) hormone replacement (UCSF recommends > 5 years without hormones to qualify; RHO recommends > 2 years; Endocrine Society, ISCD and TransCare BC do not specify a minimum amount of time).\n2)A history of taking a GnRH analogue without exogenous hormones (RHO, ISCD).\n3)Is not adherent to hormone therapy or has taken it intermittently (Endocrine Society, TransCare BC).\n•The RHO recommends that all patients on hormone therapy ensure a daily intake of 1200 mg of calcium and 1000 IU of vitamin D.",
     "Gender": "tm",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Bone",
@@ -117,8 +107,7 @@
     "Health Provider Text": "n/a",
     "Gender": "tm",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Bone",
@@ -128,8 +117,7 @@
     "Health Provider Text": "•When assessing for osteoporosis, consider assessing risk using an average of the results obtained using both a female and male calculator [[risk calculator; https://www.sheffield.ac.uk/FRAX/]] (TransCare BC).\n•The ISCD suggests that the Z-score should generally be derived from comparison to the reference data of the patient’s affirmed gender for binary transgender patients (i.e. who identify as solely male or female), and to the gender assigned at birth in non-binary patients (ISCD).\n• [[RHO guidelines; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n• [[UCSF Transcare guidelines; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf]]\n• [[Endocrine Society guidelines; https://academic.oup.com/jcem/article/102/11/3869/4157558]]",
     "Gender": "tm",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Bone",
@@ -139,8 +127,7 @@
     "Health Provider Text": "[[Recommendations; https://osteoporosis.ca/exercise/]] or use [[Videos; https://osteoporosis.ca/video-series-on-exercise-and-osteoporosis/]]",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Bone",
@@ -150,8 +137,7 @@
     "Health Provider Text": "If patient has  [[risk factors; https://www.canada.ca/en/public-health/services/chronic-diseases/osteoporosis.html]]",
     "Gender": "m,f",
     "Minimum age": 18,
-    "Maximum age": 64
-  
+    "Maximum age": 64  
   },
   {
     "Button": "Bone",
@@ -161,8 +147,7 @@
     "Health Provider Text": "Recommended for everyone 65 or older:\n•[[osteoporosis.ca; http://www.cmaj.ca/content/cmaj/early/2010/10/12/cmaj.100771.full.pdf]]\n•Or use [[OST; http://www.cfp.ca/content/61/7/612]]\n•Frequency of retesting [[not more than every 2 years; https://choosingwiselycanada.org/rheumatology/]]\n[[decision aid; https://osteoporosisdecisionaid.mayoclinic.org/]]",
     "Gender": "m,f",
     "Minimum age": 65,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Breast",
@@ -172,8 +157,7 @@
     "Health Provider Text": "n/a",
     "Gender": "f",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Breast",
@@ -183,8 +167,7 @@
     "Health Provider Text": "n/a",
     "Gender": "f",
     "Minimum age": 50,
-    "Maximum age": 74
-  
+    "Maximum age": 74  
   },
   {
     "Button": "Breast",
@@ -194,8 +177,7 @@
     "Health Provider Text": "n/a",
     "Gender": "f",
     "Minimum age": 75,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Breast",
@@ -205,8 +187,7 @@
     "Health Provider Text": "Counsel patients to:\n•Limit alcohol (see our substance use info)\n•Not smoke\n•Control their weight\n•Be physically active (see our app info for this)\n•Breastfeed if able\n•Limit time on hormone therapy\n[[a risk calculator for patients; https://www.mycanceriq.ca/Cancers/Risk]]\n\nScreening Mammogram:\n•Below age 50: Not recommended\n[[canadiantaskforce recomendation; https://canadiantaskforce.ca/guidelines/published-guidelines/breast-cancer-update/]]\n[[tool to explain harms to patient; https://www.youtube.com/watch?v=UZlY6Q4m-MM]]\n[[tool to explain harms to patient; https://canadiantaskforce.ca/tools-resources/breast-cancer-2/breast-cancer-risks-benefits-age-40-49/]]\n•50-74:  Every 2-3 years\n[[weak recommendation; https://canadiantaskforce.ca/guidelines/published-guidelines/breast-cancer-update/]]\n•75+: Not recommended by canadiantaskforce.ca,but:\n[[CFP  article 2019 on when to stop screening; https://www.cfp.ca/content/cfp/65/8/543.full.pdf]]\n\nHigh risk patients:\n•Known to have a gene mutation that increases their risk for breast cancer (e.g., BRCA1, BRCA2, TP53, PTEN, CDH1)\n•First-degree relatives of someone who has a gene mutation that increases their risk for breast cancer (e.g., BRCA1, BRCA2, TP53, PTEN, CDH1), have already had genetic counselling and have chosen not to have genetic testing\n•Have been assessed by a genetics clinic (using the IBIS or BOADICEA tools) as having a 25% or greater lifetime risk of breast cancer based on personal and family history\n•Have had radiation therapy to the chest to treat another cancer or condition (e.g., Hodgkin lymphoma) before age 30 and at least 8 years ago\n•First-degree relative (parent, brother, sister or child) of a carrier of a gene mutation (e.g. BRCA1, BRCA2, TP53, PTEN, CDH1) and has not had genetic counselling or genetic testing\n•Personal or family history of breast or ovarian cancer suggestive of a hereditary breast cancer syndrome",
     "Gender": "f",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Breast/Chest",
@@ -216,8 +197,7 @@
     "Health Provider Text": "•\tTrans women and people on the transfeminine spectrum who are on feminizing hormone therapy should undergo breast cancer screening as per current guidelines for cis women.\n•\tThe current recommendation is a mammogram every 2 years from age 50-74.\n•\tSome guidelines (such as those by RHO and UCSF) specify to only start once the patient has been on feminizing hormone therapy for > 5 years total (up to 10 years according to UCSF), whereas others do not specify a minimum hormone duration use.\n• Note that the presence of breast implants generally necessitates diagnostic mammography rather than routine screening mammography (RHO)",
     "Gender": "tf",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Breast/Chest",
@@ -227,8 +207,7 @@
     "Health Provider Text": "n/a",
     "Gender": "tf",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Breast/Chest",
@@ -238,8 +217,7 @@
     "Health Provider Text": "•\t[[Overview of breast cancer screening for trans women in Canada; https://www.cancer.ca/en/prevention-and-screening/reduce-cancer-risk/find-cancer-early/screening-in-lgbtq-communities/trans-women-and-breast-cancer-screening/?region=bc]]\n•\t[[RHO guidelines; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n•\t[[UCSF Transcare guidelines; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf]]\n•\t[[Endocrine Society guidelines; https://academic.oup.com/jcem/article/102/11/3869/4157558]]",
     "Gender": "tf",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Breast/Chest",
@@ -249,8 +227,7 @@
     "Health Provider Text": "•\tTrans men and people on the transmasculine spectrum who have not had a bilateral mastectomy should undergo breast cancer screening, as per the current guidelines for cis women.\n•\tThe current recommendation for cis women is a mammogram every 2 years from age 50-74.\n•\tThere is currently no reliable evidence on screening for trans men and people on the transmasculine spectrum patients who have had a mastectomy; consider discussing the unknown risks associated with residual breast tissue, as well as the possible technical limitations of mammography (UCSF).\n•\tConsider continuing regular monitoring for breast cancer even after mastectomy, as mastectomies usually do not remove breast tissue in its entirety; the Endocrine Society suggests conducting sub- and periareolar annual breast examinations if the patient has undergone a mastectomy, whereas UCSF cautions against it (not evidence-based).",
     "Gender": "tm",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Breast/Chest",
@@ -260,8 +237,7 @@
     "Health Provider Text": "n/a",
     "Gender": "tm",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Breast/Chest",
@@ -271,8 +247,7 @@
     "Health Provider Text": "•\tBe mindful of the language you use when referring to traditionally gendered body parts, as certain words may make patients feel uncomfortable — consider following the patients lead with regards to terminology (e.g. some trans men may prefer to refer to their breasts as their “chest”).\n•\tNote that mastectomy typically does not involve the removal of all breast tissue, and that some may still remain in place, meaning that patients could still be at risk of breast cancer (TransCare BC).\n•\tIf an abnormality is noted on the exam of a trans man who had a mastectomy, ultrasound +/- MRI is indicated as mammography is technically difficult or may be impossible (RHO).\n•\t[[Overview of breast cancer screening for trans men in Canada; https://www.cancer.ca/en/prevention-and-screening/reduce-cancer-risk/find-cancer-early/screening-in-lgbtq-communities/trans-men-and-chest-cancer-screening/?region=on]]\n•\t[[RHO guidelines; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n•\t[[UCSF Transcare guidelines; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf]]\n•\t[[Endocrine Society guidelines; https://academic.oup.com/jcem/article/102/11/3869/4157558]]",
     "Gender": "tm",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Colon",
@@ -282,8 +257,7 @@
     "Health Provider Text": "Age 50-74:\n•FOBT or FIT (depending on province) every 2y or\n•Flexible sigmoidoscopy every 10 years\n•Colonoscopy not recommended in Canada for low risk: 1/2000 risk of perforation, no evidence yet,ongoing RCTs\n[[canadian task force; https://canadiantaskforce.ca/guidelines/published-guidelines/colorectal-cancer/]]\n[[CFP article on when to stop screening; https://www.cfp.ca/content/cfp/65/8/543.full.pdf]]\nFOBT=Fecal occult blood test\nFIT= Fecal immunochemical test\n•Colonoscopy recommended for high risk patients\nClick to see [[Canadian association of gastroenterology guideline 2018; https://www.cag-acg.org/images/publications/CAG_CPG_CRC_Screening_Aug2018.pdf]]",
     "Gender": "all",
     "Minimum age": 50,
-    "Maximum age": 74
-  
+    "Maximum age": 74  
   },
   {
     "Button": "Colon",
@@ -293,8 +267,7 @@
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 50,
-    "Maximum age": 74
-  
+    "Maximum age": 74  
   },
   {
     "Button": "Colon",
@@ -304,8 +277,7 @@
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 75,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Colon",
@@ -315,8 +287,7 @@
     "Health Provider Text": "Recommend patients:\n•Be physically active\n•Maintain a healthy body weight, [[bmi; https://cancer.ca/en/cancer-information/reduce-your-risk/have-a-healthy-body-weight/reduce-your-risk-of-cancer-with-a-healthy-body-weight]]\n•Limit the amount of alcohol they drink (see healthy drinking guidelines)\n•Be a non-smoker and avoid second hand smoke\n•Limit the amount of red and processed meats eaten\n•Eat foods high in fiber \n•Limit sitting time\n[[Source; http://www.cancer.ca/en/cancer-information/cancer-type/colorectal/risks/reducing-your-risk/?region=on]]",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 49
-  
+    "Maximum age": 49  
   },
   {
     "Button": "Covid",
@@ -326,8 +297,7 @@
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Covid",
@@ -337,8 +307,7 @@
     "Health Provider Text": "•Info for professionals [[Centre for Effective Practice; https://cep.health/clinical-products/covid-19-vaccines/]] \n\n•[[NACI; https://www.canada.ca/en/public-health/services/immunization/national-advisory-committee-on-immunization-naci/recommendations-use-covid-19-vaccines.html]]\n\n•Canada: click [[here; https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/vaccines/overview.html]]\n\n•Provinces: click [[here; https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/vaccines/overview.html#a5]]\n\n•New England Journal of Medicine\n[[FAQ; https://www.nejm.org/covid-vaccine/faq]]\n[[Research; https://www.nejm.org/covid-vaccine]]\n\n• Videos: how vaccines are developped \n[[3 minutes; https://www.canada.ca/en/public-health/services/video/covid-19-how-vaccines-developed.html]]\n[[7 minutes; https://www.youtube.com/watch?v=2t_mQwTY4WQ&feature=emb_logo]]",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Covid",
@@ -348,8 +317,7 @@
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Covid",
@@ -359,8 +327,7 @@
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Covid",
@@ -370,8 +337,7 @@
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Covid",
@@ -381,8 +347,7 @@
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Covid",
@@ -392,8 +357,7 @@
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Covid",
@@ -403,8 +367,7 @@
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Covid",
@@ -414,8 +377,7 @@
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Covid",
@@ -425,8 +387,7 @@
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Covid",
@@ -436,8 +397,7 @@
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Covid",
@@ -447,8 +407,7 @@
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Covid",
@@ -458,8 +417,7 @@
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Covid",
@@ -469,8 +427,7 @@
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Covid",
@@ -480,8 +437,7 @@
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Covid",
@@ -491,8 +447,7 @@
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Covid",
@@ -502,8 +457,7 @@
     "Health Provider Text": "•Poverty screening question: “Do you ever have difficulty making ends meet at the end of the month?” [[reference; https://portal.cfpc.ca/resourcesdocs/uploadedFiles/CPD/Poverty_flow-Tool-Final-2016v4-Ontario.pdf\n\n•If your patient needs social, community or health services  phone 211 if available in your area  [[website; https://211.ca/]]\n\n•[[Government of Canada benefits; https://www.canada.ca/en/services/benefits/covid19-emergency-benefits.html]]\n\n•Check your local public health agency website for information for these groups\n\n•[[First Nations, Métis and Inuit; https://www.ottawapublichealth.ca/en/public-health-topics/resources-for-first-nations-inuit-and-m-tis-community-members.aspx]]\nNational and Ottawa-specific information\n\n•[[Different languages; https://www.ottawapublichealth.ca/en/public-health-topics/multilingual-resources.aspx]]",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Covid",
@@ -513,8 +467,7 @@
     "Health Provider Text": "APPRAISED EVIDENCE\n[[MCMASTER EBM; https://plus.mcmaster.ca/COVID-19]]\n[[OXFORD Evidence Service; https://www.cebm.net/oxford-covid-19-evidence-service/]]\n\nJOURNALS\n[[CMAJ; https://www.cmaj.ca/covid-19]]\n[[BMJ; https://www.bmj.com/coronavirus]]\n[[JAMA;https://jamanetwork.com/collections/46099/coronavirus-covid19]]\n[[NEJM; https://www.nejm.org/coronavirus]]\n[[The Lancet; https://www.thelancet.com/coronavirus/archive?]]\n\nPUBLIC HEALTH AGENCY OF CANADA\n[[For health professionals; https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/health-professionals.html]]",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Covid",
@@ -524,8 +477,7 @@
     "Health Provider Text": "[[Article in CFP Aug 2020; https://www.cfp.ca/content/cfp/66/8/571.full.pdf]]",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Pancreas",
@@ -535,8 +487,7 @@
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Pancreas",
@@ -546,8 +497,7 @@
     "Health Provider Text": "Recommend:\n•Healthy diet\n•Physically activity\n•Healthy BMI: 18.5-24\n[[bmi; https://www.diabetes.ca/static/bmi-calculator.html ]]",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Pancreas",
@@ -557,8 +507,7 @@
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Pancreas",
@@ -568,8 +517,7 @@
     "Health Provider Text": "Using a calculator is recommended by the Canadian Task Force and is evidence-based.\nYour patient can be emailed this questionnaire or it can be filled in the waiting room.\n•[[FINDRISC online calculator; https://qxmd.com/calculate/calculator_236/findrisc-diabetes-risk-calculator]]\n•[[FINDRISC pdf; https://canadiantaskforce.ca/tools-resources/type-2-diabetes-2/type-2-diabetes-patient-findrisc/]]\n\nor \n•[[CANRISK online calculator;  https://diabetes.ca/about-diabetes/take-the-test]]\n•[[CANRISK pdf  available in different languages; https://canadiantaskforce.ca/tools-resources/type-2-diabetes-2/type-2-diabetes-canrisk/]]",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Hip",
@@ -579,8 +527,7 @@
     "Health Provider Text": "The American Geriatrics Society\nand British Geriatrics Society recommend asking about\nfalls every year \n[[ref CFP article; http://www.cfp.ca/content/62/9/717]]\n[[more info; https://www.ajpmonline.org/article/S0749-3797(18)31759-8/fulltext]]\n[[Ressources for health care professionnal; https://parachute.ca/en/professional-resource/seniors-falls-collection/]]\nFor advice to patients,\nsee in our app patient section on Falls.",
     "Gender": "all",
     "Minimum age": 65,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Heart",
@@ -590,8 +537,7 @@
     "Health Provider Text": "•The current guidelines for general population should be followed when evaluating for cardiovascular risk factors in trans patients, such as diabetes and dyslipidemia screening.\n•Encourage physical activity,smoking cessation, weight loss, management of diabetes and hypertension.\n •When using a [[risk calculator; http://chd.bestsciencemedicine.com/calc2.html]]  depending on when and how long the patient has been on hormones, consider using either a calculator based on the patient’s sex assigned at birth, their affirmed gender or an average of the two [[UCSF; https://transcare.ucsf.edu/guidelines/cardiovascular]]",
     "Gender": "tf",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Heart",
@@ -601,8 +547,7 @@
     "Health Provider Text": "•The current guidelines for general population should be followed when evaluating for cardiovascular risk factors in trans patients, such as diabetes and dyslipidemia screening.\n•Encourage physical activity,smoking cessation, weight loss, management of diabetes and hypertension.\n•When using a [[risk calculator; http://chd.bestsciencemedicine.com/calc2.html]], depending on when and how long the patient has been on hormones, consider using either a calculator based on the patient’s sex assigned at birth, their affirmed gender or an average of the two [[UCSF; https://transcare.ucsf.edu/guidelines/cardiovascular]]",
     "Gender": "tm",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Heart",
@@ -612,8 +557,7 @@
     "Health Provider Text": "n/a",
     "Gender": "tf,tm",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Heart",
@@ -623,8 +567,7 @@
     "Health Provider Text": "•[[Guideline and handout for age 18-64; https://csepguidelines.ca/guidelines/adults-18-64/]]\n•[[Guideline and handout for age 65+; https://csepguidelines.ca/guidelines/adults-65/]]",
     "Gender": "tf,tm",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Heart",
@@ -634,8 +577,7 @@
     "Health Provider Text": "Recommend to quit or reduce.\nResources\n[[By province; https://www.canada.ca/en/health-canada/services/smoking-tobacco/quit-smoking/provincial-territorial-services.html]].\n[[More; http://www.smokershelpline.ca/]]",
     "Gender": "tf,tm",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Heart",
@@ -645,8 +587,7 @@
     "Health Provider Text": "CTFPHC recommends blood pressure measurement at all appropriate primary care visits.[[2012 Guideline; https://canadiantaskforce.ca/guidelines/published-guidelines/hypertension/]]\n(Strong recommendation; moderate quality evidence)\n\nIf the mean blood pressure measured in office [[As per recommended technique; https://guidelines.hypertension.ca/diagnosis-assessment/measuring-blood-pressure/]] is high during one visit, a history and physical examination should be performed and, if clinically indicated, diagnostic tests to search for target organ damage should be arranged within 2 visits. \n\nRoutine Lab Testing Recommended: urinalysis, blood chemistry (potassium, sodium and creatinine), fasting blood glucose and/or glycated hemoglobin (A1C), serum total cholesterol, LDL, HDL, non-HDL, triglycerides (fasting or non-fasting) and a standard 12-lead ECG. \n\nGlobal cardiovascular risk assessment should be done using [[risks calculators; www.ccs.ca/en/resources/calculators-forms]]",
     "Gender": "tf,tm",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Heart",
@@ -656,8 +597,7 @@
     "Health Provider Text": "n/a",
     "Gender": "tf,tm",
     "Minimum age": 18,
-    "Maximum age": 74
-  
+    "Maximum age": 74  
   },
   {
     "Button": "Heart",
@@ -667,8 +607,7 @@
     "Health Provider Text": "n/a",
     "Gender": "tf,tm",
     "Minimum age": 75,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Heart",
@@ -678,8 +617,7 @@
     "Health Provider Text": "Lipid screening: \nWe have simplified by using 40 as the age to start testing if no additional risks.\n\n•Before 40 if risk factors \n[[1) Risk factors according to Simplified lipid guidelines see Screening page 2; http://www.cfp.ca/content/cfp/61/10/857.full.pdf]]\n[[2) Risk factors according to CCS see Figure 1; http://www.onlinecjc.ca/article/S0828-282X(16)30732-2/pdf]]\n\n•For age 40 and above: repeat lipid testing every 3-5 years if normal\n•Age 75 + healthy: discouraged as have not studied primary prevention in this group.",
     "Gender": "tf,tm",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Heart",
@@ -689,8 +627,7 @@
     "Health Provider Text": "Diabetes is a risk factor for heart disease.\n[[Resource; https://www.diabetes.ca/managing-my-diabetes/tools---resources/reducing-vascular-risk]] from diabetes.ca to reduce vascular risk.",
     "Gender": "tf,tm",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Heart",
@@ -700,8 +637,7 @@
     "Health Provider Text": "n/a",
     "Gender": "m,f",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Heart",
@@ -711,8 +647,7 @@
     "Health Provider Text": "Physical activity\nmore potent than statins in preventing heart disease.\n•[[Guideline for age 18-64; https://csepguidelines.ca/guidelines/adults-18-64/]]\n•[[Guideline for age 65+; https://csepguidelines.ca/guidelines/adults-65/]]",
     "Gender": "m,f",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Heart",
@@ -722,8 +657,7 @@
     "Health Provider Text": "n/a",
     "Gender": "m,f",
     "Minimum age": 30,
-    "Maximum age": 74
-  
+    "Maximum age": 74  
   },
   {
     "Button": "Heart",
@@ -733,8 +667,7 @@
     "Health Provider Text": "Risk assessment \n[[modified Framingham or other; http://chd.bestsciencemedicine.com/calc2.html]]\nonly validated between age 30 and 74",
     "Gender": "m,f",
     "Minimum age": 30,
-    "Maximum age": 74
-  
+    "Maximum age": 74  
   },
   {
     "Button": "Heart",
@@ -744,8 +677,7 @@
     "Health Provider Text": "•Ask all patients about tobacco use, \n•Recommend to quit or reduce.\nResources\n[[By province; https://www.canada.ca/en/health-canada/services/smoking-tobacco/quit-smoking/provincial-territorial-services.html]].\n[[More; http://www.smokershelpline.ca/]]\n\n•Use behavioral  interventions\n•As needed use approved pharmacotherapy to promote cessation.\n[[USPSTF A (2017); https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/tobacco-use-in-adults-and-pregnant-women-counseling-and-interventions]]\n[[motivational interviewing video; https://www.youtube.com/watch?v=URiKA7CKtfc]]",
     "Gender": "m,f",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Heart",
@@ -755,8 +687,7 @@
     "Health Provider Text": "CTFPHC recommends blood pressure measurement at all appropriate primary care visits.[[2012 Guideline; https://canadiantaskforce.ca/guidelines/published-guidelines/hypertension/]]\n(Strong recommendation; moderate quality evidence)\n\nIf the mean blood pressure measured in office [[As per recommended technique; https://guidelines.hypertension.ca/diagnosis-assessment/measuring-blood-pressure/]] is high during one visit, a history and physical examination should be performed and, if clinically indicated, diagnostic tests to search for target organ damage should be arranged within 2 visits. \n\nRoutine Lab Testing Recommended: urinalysis, blood chemistry (potassium, sodium and creatinine), fasting blood glucose and/or glycated hemoglobin (A1C), serum total cholesterol, LDL, HDL, non-HDL, triglycerides (fasting or non-fasting) and a standard 12-lead ECG. \n\nGlobal cardiovascular risk assessment should be done using [[risks calculators; www.ccs.ca/en/resources/calculators-forms]]",
     "Gender": "m,f",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Heart",
@@ -766,8 +697,7 @@
     "Health Provider Text": "n/a",
     "Gender": "m,f",
     "Minimum age": 18,
-    "Maximum age": 39
-  
+    "Maximum age": 39  
   },
   {
     "Button": "Heart",
@@ -777,8 +707,7 @@
     "Health Provider Text": "n/a",
     "Gender": "m",
     "Minimum age": 40,
-    "Maximum age": 74
-  
+    "Maximum age": 74  
   },
   {
     "Button": "Heart",
@@ -788,8 +717,7 @@
     "Health Provider Text": "n/a",
     "Gender": "f",
     "Minimum age": 40,
-    "Maximum age": 74
-  
+    "Maximum age": 74  
   },
   {
     "Button": "Heart",
@@ -799,8 +727,7 @@
     "Health Provider Text": "n/a",
     "Gender": "m,f",
     "Minimum age": 75,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Heart",
@@ -810,8 +737,7 @@
     "Health Provider Text": "Lipid screening: \n•Before 40 in men and 50 in women if risk factors \n[[1) Risk factors according to Simplified lipid guidelines see Screening page 2; http://www.cfp.ca/content/cfp/61/10/857.full.pdf]]\n[[2) Risk factors according to CCS see Figure 1; http://www.onlinecjc.ca/article/S0828-282X(16)30732-2/pdf]]\nNOTE: in women Hypertensive diseases of pregnancy (including preeclampsia, pregnancy induced hypertension are considered additional cvs risk factors see [[link; https://www.jogc.com/article/S1701-2163(18)30836-3/abstract]]\n•For men age 40+:repeat every 3-5 years if N\n•For women age 50+ or at menopause:repeat every 3-5 years  if N\n•Age 75 + healthy: discouraged as have not been validated at this age\n•[[Canadian Simplified Lipid Guidelines by family physicans; http://www.cfp.ca/content/cfp/61/10/857.full.pdf ]]\n•[[Canadian Cardiology guideline; http://www.onlinecjc.ca/article/S0828-282X(16)30732-2/pdf]]",
     "Gender": "m,f",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Heart",
@@ -821,8 +747,7 @@
     "Health Provider Text": "Diabetes is a risk factor for heart disease.\n[[Resource; https://www.diabetes.ca/managing-my-diabetes/tools---resources/reducing-vascular-risk]] from diabetes.ca to reduce vascular risk.",
     "Gender": "m,f",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Needle in arm",
@@ -832,8 +757,7 @@
     "Health Provider Text": "Recommend the [[app CanImmunize; https://www.canimmunize.ca/en/home]]\n\nAGE 18 and above (ALL ADULTS)\nThe following schedule assumes the patient has  been vaccinated in childhood\n•Td (Tetanus-diphtheria) every 10 years\n•Tdap(Tetanus,diphtheria, acellular pertussis or whooping cough):once in your lifetime\n•Measles Mumps Rubella:it is advised that  most adults should have  2 doses of this vaccine\n•HPV: recommended for all females and males from ages 9 to 26. The vaccine is also safe over age 26. [[more; https://www.reframehealthlab.com/should-you-get-the-hpv-vaccine/]]\n•Influenza: is recommended for all adults. For high risk groups see CanImmunize app\n•Pneumococcal, varicella,  meningococcal are recommended for some high risk groups seeCANImmunize app\n\nAGE 50+\nShingrix,\nNot covered in many provinces\n[[more; https://www.cdc.gov/vaccines/vpd/shingles/hcp/index.html\n\n\nAGE 60+\nZostavax\nCovered at different ages in some provinces,\nCheck your province's immunization schedule\n\nAGE 65+ \n•Pneumococcal \nPNEU-P-23 advised for all immunocompetent,\nrepeat once in 5 years only if low immunity.\nPNEU-C-13 advised for immunocompetent but not covered in most provinces.\nBE AWARE OF SCHEDULING CORRECT TIME BETWEEN THESE VACCINES\n•Pneu-C-13 vaccine should be provided first followed by Pneu-P-23 vaccine at least 8 weeks later.\n•Adults aged 65 years and older who have previously received Pneu-P-23 can receive Pneu-C-13 vaccine if at least one year has passed since immunization with Pneu-P-23 vaccine.\n\n•Influenza yearly\n\nSOURCE: NACI: [[National Advisory Committe on Immunization; https://www.canada.ca/en/public-health/services/immunization/national-advisory-committee-on-immunization-naci.html]]",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Needle in arm",
@@ -843,8 +767,7 @@
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 49
-  
+    "Maximum age": 49  
   },
   {
     "Button": "Needle in arm",
@@ -854,8 +777,7 @@
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 50,
-    "Maximum age": 64
-  
+    "Maximum age": 64  
   },
   {
     "Button": "Needle in arm",
@@ -865,8 +787,7 @@
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 71,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Needle in arm",
@@ -876,8 +797,7 @@
     "Health Provider Text": "•Info for professionals [[Centre for Effective Practice; https://cep.health/clinical-products/covid-19-vaccines/]] \n\n•[[National Advisory Committee on Immunization (NACI); https://www.canada.ca/en/public-health/services/publications/healthy-living/canadian-immunization-guide-part-4-active-vaccines/page-26-covid-19-vaccine.html]]\n\n• [[General informations about vaccine (Government of Canada); https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/vaccines/overview.html]]\n\n• [[New England Journal of Medicine, Covid-19 Vaccine Resource Center; https://www.nejm.org/covid-vaccine]]\n\n• Videos: how vaccines are developped \n[[3 minutes; https://www.canada.ca/en/public-health/services/video/covid-19-how-vaccines-developed.html]]\n[[7 minutes; https://www.youtube.com/watch?v=2t_mQwTY4WQ&feature=emb_logo]]",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Needle in arm",
@@ -887,8 +807,7 @@
     "Health Provider Text": "Ontario seniors ages 65 to 70 years are eligible for the publicly funded Shingrix vaccine (Two-doses series), provided they have not received the Zostavax® II vaccine through the Ontario publicly funded shingles immunization program.",
     "Gender": "all",
     "Minimum age": 65,
-    "Maximum age": 70
-  
+    "Maximum age": 70  
   },
   {
     "Button": "Liver",
@@ -898,8 +817,7 @@
     "Health Provider Text": "•Women: have 10 or less drinks a week\n•Men: have 15 or less drinks per week\nWhat is a \"drink\"?\n\n[[image;images/size_of_drink.jpg]]\n\n[[Source; https://www.camh.ca/-/media/files/canadas-low-risk-guidelines-pdf.pdf]]\nScreening for misuse and behavioural counseling [[USPSTF B (2018); https://www.uspreventiveservicestaskforce.org/Page/Document/UpdateSummaryFinal/unhealthy-alcohol-use-in-adolescents-and-adults-screening-and-behavioral-counseling-interventions?ds=1&s=alcohol]]",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Liver",
@@ -909,8 +827,7 @@
     "Health Provider Text": "Help available for patients addicted to a substance/gambling:\neach province or territory has a help line: [[more; https://www.canada.ca/en/health-canada/services/substance-use/get-help/get-help-problematic-substance-use.html]]:\nScreening and counseling USPSTF I (2018) under review",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Liver",
@@ -920,8 +837,7 @@
     "Health Provider Text": "Screen individuals at risk \n•[[CTFPHC 2017; https://canadiantaskforce.ca/wp-content/uploads/2017/04/CTFPHC_Hepatitis-C_Clinician-FAQ_v10_FINAL-1.pdf]] See risks and map for endemic countries \n•[[Summary  CFP 2019 by Public Health Agency of Canada; https://www.cfp.ca/content/cfp/65/3/195.full.pdf]]",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Liver",
@@ -931,8 +847,7 @@
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Lung",
@@ -942,8 +857,7 @@
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Lung",
@@ -953,8 +867,7 @@
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 55,
-    "Maximum age": 74
-  
+    "Maximum age": 74  
   },
   {
     "Button": "Lung",
@@ -964,8 +877,7 @@
     "Health Provider Text": "•Ask all patients about tobacco use, \n•Advise stopping this,\n•Use behavioral  interventions\n•As needed use approved pharmacotherapy to promote cessation.\n[[USPSTF A (2013); https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/tobacco-use-in-adults-and-pregnant-women-counseling-and-interventions]]\n[[video; https://www.youtube.com/watch?v=URiKA7CKtfc]]",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Lung",
@@ -975,8 +887,7 @@
     "Health Provider Text": "The [[CTFPHC (2016); https://canadiantaskforce.ca/guidelines/published-guidelines/lung-cancer/]]  recommends a Low dose CT (LDCT) for\n•\tadults aged 55-74 years, \n•\twith at least a 30 pack-year smoking history \n•\twho currently smoke or quit less than 15 years ago. \n•\tThey recommend annual screening with LDCT up to three consecutive time. (Weak recommendation; low quality evidence)\n\nFor all other adults, regardless of age, smoking history or other risk factors, they do recommend not screening for lung cancer with LDCT. (Strong recommendation; very low quality evidence.)\n\nThere is an official screening program in some hospitals in [[Ontario; https://www.cancercareontario.ca/en/guidelines-advice/cancer-continuum/screening/lung-cancer-screening-information]].\n\nThere are pilot programs in \n[[British Columbia; http://www.bccancer.bc.ca/our-research/participate/lung-health]]\n[[Quebec; https://www.quebec.ca/en/health/advice-and-prevention/screening-and-carrier-testing-offer/lung-cancer-screening-demonstration-project]] \n[[Alberta; https://myhealth.alberta.ca/Health/aftercareinformation/pages/conditions.aspx?hwid=abq1915]].",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Brain",
@@ -986,8 +897,7 @@
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Brain",
@@ -997,8 +907,7 @@
     "Health Provider Text": "Recommend your patients:\n•Be physically active\n•Eat a healthy diet\n•Maintain a healthy weight/BMI\n•Don’t smoke or drink excessive alcohol\n•Keep their blood pressure, blood sugar and cholesterol in a healthy range\n•Stay connected socially\n•Challenge their brain with games, learning\n•Reduce stress\n•Protect their head with a helmet in sports \n[[more; http://alzheimer.ca/en/simcoecounty/About-dementia/Alzheimer-s-disease/Risk-factors]]",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Brain",
@@ -1008,8 +917,7 @@
     "Health Provider Text": "Screen with MOCA or MMSE if friends, family or patient report memory issues\n[[canadian task force; https://canadiantaskforce.ca/tools-resources/cognitive-impairment-2/cognitive-impairment-clinician-faq/]]",
     "Gender": "all",
     "Minimum age": 50,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Stomach",
@@ -1019,8 +927,7 @@
     "Health Provider Text": "[[Canadian Food Guide; https://food-guide.canada.ca/en/]]\n[[Heart and Stroke; https://www.heartandstroke.ca/get-healthy/healthy-eating]]\n[[Diabetes Canada; https://www.diabetes.ca/nutrition---fitness]]\n[[Evidence; http://jandonline.org/article/S2212-2672(14)01871-1/fulltext]]",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Stomach",
@@ -1030,8 +937,7 @@
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Stomach",
@@ -1041,8 +947,7 @@
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Figure outside body walking",
@@ -1052,8 +957,7 @@
     "Health Provider Text": "Physical activity\nprevents heart disease, cancer, depression and [[more; https://www.reframehealthlab.com/23-and-12-hours/]]\n\nThe recommended minimum amount of physical activity\nis 150 minutes a week of moderate intensity exercise. \nDefinition of moderate intensity:\nwhile you are active you have enough breath to say a short sentence but  not enough to sing",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Figure outside body walking",
@@ -1063,8 +967,7 @@
     "Health Provider Text": "•[[Guideline for age 18-64; https://csepguidelines.ca/guidelines/adults-18-64/]]\n•[[Guideline for age 65+; https://csepguidelines.ca/guidelines/adults-65/]]\n\n•[[medical reference; http://www.cmaj.ca/content/174/6/801.full.pdf+html]]",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Physical Exam",
@@ -1074,8 +977,7 @@
     "Health Provider Text": "IN PATIENTS WITH NO RISK FACTORS, SYMPTOMS, DISEASES OR MEDICATION:\n•Measure blood pressure, height, weight and BMI \n•[[\"at appropriate medical visits\" according to CTFPHC;  https://canadiantaskforce.ca/guidelines/published-guidelines/hypertension/]]\n•[[CHEP guidelines for diagnosis of hypertension; https://guidelines.hypertension.ca/wp-content/uploads/2019/06/Diagnostic_Algorithm_2018-online.jpg]]\n•[[more info on physical exams; https://choosingwiselycanada.org/family-medicine/]]\n\n•Age 18-39 we are recommending patients see their provider every 1-3 years based on above recommendations, this is not evidence-based, this is not for a head to toe exam.\n•Age 40 and above we recommend a visit every 1-2 years as there are more screening tests and  more morbidity, not evidence-based.\n\nIN PATIENTS WITH RISK FACTORS, SYMPTOMS,DISEASES OR MEDICATIONS:\nSEE MORE OFTEN",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Physical Exam",
@@ -1085,8 +987,7 @@
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 39
-  
+    "Maximum age": 39  
   },
   {
     "Button": "Physical Exam",
@@ -1096,8 +997,7 @@
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 40,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Physical Exam",
@@ -1107,8 +1007,7 @@
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Genitalia",
@@ -1118,8 +1017,7 @@
     "Health Provider Text": "n/a",
     "Gender": "f",
     "Minimum age": 21,
-    "Maximum age": 74
-  
+    "Maximum age": 74  
   },
   {
     "Button": "Genitalia",
@@ -1129,8 +1027,7 @@
     "Health Provider Text": "n/a",
     "Gender": "f",
     "Minimum age": 75,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Genitalia",
@@ -1140,8 +1037,7 @@
     "Health Provider Text": "Women age 25 to 69 (21-69 in some provinces) if ever have been sexually active,\nneed to get a pap test every 3 years if results are normal.\nStop after age 69 if 3 normal results in past 10 years.\n[[CTFPHC 2013; https://canadiantaskforce.ca/guidelines/published-guidelines/cervical-cancer/]]",
     "Gender": "f",
     "Minimum age": 21,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Genitalia",
@@ -1151,8 +1047,7 @@
     "Health Provider Text": "•Recommend the HPV vaccine\n(recommended between 9 and 26 \nbut can be given at any age).\n[[Canadian recommendation; https://www.canada.ca/en/public-health/services/publications/healthy-living/update-recommended-human-papillomavirus-vaccine-immunization-schedule.html#sum]]\n•Recommend no smoking, condom use,\nand limiting number of partners.",
     "Gender": "f",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Genitalia",
@@ -1162,8 +1057,7 @@
     "Health Provider Text": "n/a",
     "Gender": "f",
     "Minimum age": 18,
-    "Maximum age": 49
-  
+    "Maximum age": 49  
   },
   {
     "Button": "Genitalia",
@@ -1173,8 +1067,7 @@
     "Health Provider Text": "For women of childbearing age:\n\nAdvise folic acid 0.4-1 m/day \nfor all women of childbearing age,\nas many pregnancies unplanned [[ SOGC 2015; https://www.jogc.com/article/S1701-2163(15)30230-9/pdf]]\n\nScreen for:\n•Rubella immunity\n•Varicella immunity\n•Hepatitis B and HIV disease\nin women of childbearing age,\n[[Complete preconception heare tool; http://thehub.utoronto.ca/family/wp-content/uploads/2016/12/Preconception_Health_Care_Tool.pdf]]\n\nDelayed child-bearing: discuss\n•Decreasing fertility for women after age 32 \n•Assistive reproductive technologies cannot guarantee a live birth. \n[[more at SOGC guideline 2017; https://www.jogc.com/article/S1701-2163(17)30936-2/pdf]]",
     "Gender": "f",
     "Minimum age": 18,
-    "Maximum age": 49
-  
+    "Maximum age": 49  
   },
   {
     "Button": "Genitalia",
@@ -1184,8 +1077,7 @@
     "Health Provider Text": "A fertility evaluation should be initiated after 6 months of unprotected intercourse without conception in women 35 to 37 years of age, and earlier in women > 37 years of age \n[[SOGC guideline 2017; https://www.jogc.com/article/S1701-2163(16)39898-X/fulltext]]",
     "Gender": "f",
     "Minimum age": 35,
-    "Maximum age": 49
-  
+    "Maximum age": 49  
   },
   {
     "Button": "Genitalia",
@@ -1195,8 +1087,7 @@
     "Health Provider Text": "n/a",
     "Gender": "m,f",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Genitalia",
@@ -1206,8 +1097,7 @@
     "Health Provider Text": "Safe sex and STI counselling for all sexually active patients.\n\nTesting\n• Age 30 and under annual screening for chlamydia and gonorrhea\n [[ CTFPHC 2021; https://canadiantaskforce.ca/guidelines/published-guidelines/chlamydia-and-gonorrhea/]]\n•Age 30 and over screen according to risk, see below\n• screen for other STIs according to risk (new partner, multiple partners, serial monogamous relationships,unprotected sex, substance use,sex with blood exchange,sharing sex toys)\n•offer HIV testing to all:\n[[Public Health Agency of Canada recommendation; https://www.canada.ca/en/public-health/services/hiv-aids/hiv-screening-testing-guide.html]]; supported by USPSTF 2013 and CDC, \n[[CTFPHC recommends only if at risk; https://canadiantaskforce.ca/guidelines/appraised-guidelines/hiv/]]",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Genitalia",
@@ -1217,8 +1107,7 @@
     "Health Provider Text": "Advise to\n•Eat a healthy diet.\n•Be active most days of the week.\n•Keep a healthy weight.",
     "Gender": "m",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Genitalia",
@@ -1228,8 +1117,7 @@
     "Health Provider Text": "•Canadian task force (2014): Do not screen.\n[[Canadian patient handout;  https://canadiantaskforce.ca/wp-content/uploads/2016/12/CTFPHC_Prostate-Cancer_HarmsBenefits_FINAL.pdf]]\n\n•US Task Force(2018): Discuss pros and cons with your patient 55 to 69 years old.(C recommendation)\nIncorporates more recent research.\n[[Excellent video explaining benefits and harms; https://www.youtube.com/watch?v=tYii98gcejA]]\n[[US patient handout; pdf/prostate-cancer-infographic-5.pdf]]",
     "Gender": "m",
     "Minimum age": 55,
-    "Maximum age": 69
-  
+    "Maximum age": 69  
   },
   {
     "Button": "Genitalia",
@@ -1239,8 +1127,7 @@
     "Health Provider Text": "n/a",
     "Gender": "m",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Genitalia",
@@ -1250,8 +1137,7 @@
     "Health Provider Text": "n/a",
     "Gender": "m",
     "Minimum age": 55,
-    "Maximum age": 69
-  
+    "Maximum age": 69  
   },
   {
     "Button": "Genitalia",
@@ -1261,8 +1147,7 @@
     "Health Provider Text": "•\tThose on testosterone who have not undergone hysterectomy need reliable birth control if pregnancy is a risk based on sexual activity, as testosterone is a teratogen (RHO).\n•\tIf pregnancy is possible based on sexual activity, follow the same folic acid recommendations as for cis women.\n•\tCondoms are recommended for anal sex.\n•\tEmphasize adequate provision of lubricants for trans women and trans men who have sex with men.\n•Screen all Canadians for HIV at least once as per [[PHAC guidelines; https://www.canada.ca/en/public-health/services/hiv-aids/hiv-screening-testing-guide.html]] \n•Screen for STIs based on behavioural history and sexual practices.\n•Consider anal Pap tests every 2-3 years (or yearly in those who are HIV+) for those who have a history of receptive anal sex (RHO).\n•In the LGBTQ+ community, the terms “bottom” and “top” are often used to describe the receptive and penetrative partners during sexual activity, respectively. The term “versatile” is used to describe someone who may alternate between these roles.\n• [[WHO guidelines; https://apps.who.int/iris/bitstream/handle/10665/128048/9789241507431_e ng.pdf?sequence=1]]\n• [[RHO guidelines; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n• [[UCSF Transcare guidelines; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf]]",
     "Gender": "tm",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Genitalia",
@@ -1272,8 +1157,7 @@
     "Health Provider Text": "•Those on testosterone who have not undergone hysterectomy need reliable birth control if pregnancy is a risk based on sexual activity, as testosterone is a teratogen (RHO).\n•Any hormonal/methods can be used (no contraindications with testosterone)",
     "Gender": "tm",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Genitalia",
@@ -1283,8 +1167,7 @@
     "Health Provider Text": "•\tTrans men and people on the transmasculine spectrum who still have a cervix should undergo cervical cancer screening as per current guidelines.\n•\tPap tests are recommended every 3 years from age 21-69 if the person has ever been sexually active.\n• A trial of vaginal estrogens for 1 week prior to the exam may be helpful (RHO, UCSF).\n• Should speculum examination be painful or difficult due to vaginal atrophy, consider applying topical 2% lidocaine jelly vaginally 5-10 minutes prior to the procedure (RHO).\n• Consider administering a low-dose lorazepam pre-procedurally if the patient is particularly anxious about the exam (RHO, UCSF).\n• Use a paediatric speculum if possible to reduce discomfort.\n• If speculum insertion remains difficult, suggest allowing the patient to insert the speculum themselves or watching the procedure using a mirror (UCSF).\n• Note that unsatisfactory samples of Pap tests are far more common in trans men compared to cis women and that repeats may be required; ensure to note if the patient is/was on testosterone on the cytology requisition (UCSF, RHO), as cervical atrophy can mimic dysplasia (WHO).\n• [[Overview of cervical cancer screening for trans men in Canada; https://www.cancer.ca/en/prevention-and-screening/reduce-cancer-risk/find-cancer-early/screening-in-lgbtq-communities/trans-men-and-cervical-cancer-screening/?region=on]]\n• [[Tips for physical examination of trans patients; https://transcare.ucsf.edu/guidelines/physical-examination]]\n• [[Tips on performing Pap tests for  trans men; https://www.rainbowhealthontario.ca/wp-content/uploads/2015/07/Tips_Paps_TransMen-1.jpg]]\n•[[VIDEO: Do's and Dont's when performing  Paps with trans men; https://www.youtube.com/watch?v=KIfSjX1ZEU4]]\n•  [[Tips on improving trans men’s experiences with Pap tests; https://transcare.ucsf.edu/guidelines/cervical-cancer]]\n\n• [[RHO guidelines; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n• [[UCSF Transcare guidelines; https://transcare.ucsf.edu/guidelines/cervical-cancer]]\n• [[Endocrine Society guidelines; https://academic.oup.com/jcem/article/102/11/3869/4157558]]",
     "Gender": "tm",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Genitalia",
@@ -1294,8 +1177,7 @@
     "Health Provider Text": "Trans men and people on the transmasculine spectrum generally do not have prostates (unless they have an intersex condition) nor are any created during surgery such as phalloplasty or metoidioplasty.",
     "Gender": "tm",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Genitalia",
@@ -1305,8 +1187,7 @@
     "Health Provider Text": "If a person on the transmasculine spectrum could become pregnant or wants to become pregnant, preconception information is the same as for cis patients such as :folic acid supplementation , pre conception testing for diseases such as Rubella, Hep B, HIV, Varicella, counselling re increasing infertility after 32. \nSee resources in our app for cis women , under the topic : Familly planning.",
     "Gender": "tm",
     "Minimum age": 18,
-    "Maximum age": 55
-
+    "Maximum age": 55  
   },
   {
     "Button": "Genitalia",
@@ -1316,8 +1197,7 @@
     "Health Provider Text": "• Emphasize adequate provision of lubricants for trans women and trans men who have sex with men.\n•Screen all Canadians for HIV at least once as per [[PHAC guidelines; https://www.canada.ca/en/public-health/services/hiv-aids/hiv-screening-testing-guide.html]] \n• Screen for STIs based on behavioural history and sexual practices.\n• Condoms are recommended for anal sex.\n• Consider anal Pap tests every 2-3 years (or yearly in those who are HIV+) for those who have a history of receptive anal sex (RHO).\n• Daily oral pre-exposure prophylaxis (PrEP) may be considered as a possible additional intervention for trans women who have sex with men (WHO).\n• Voluntary medical circumcision (VMMC) is not recommended for HIV prevention among transgender women (WHO).       \n• In the LGBTQ+ community, the terms “bottom” and “top” are often used to describe the receptive and penetrative partners during sexual activity, respectively. The term “versatile” is used to describe someone who may alternate between these roles.\n• [[WHO guidelines; https://apps.who.int/iris/bitstream/handle/10665/128048/9789241507431_eng.pdf?sequence=1]]\n• [[RHO guidelines; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n• [[UCSF Transcare guidelines; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf]]",
     "Gender": "tf",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Genitalia",
@@ -1327,8 +1207,7 @@
     "Health Provider Text": "Recommendation is to use a barrier method (and/or have partner use hormonal contraception) if no bottom surgery and having intercourse with partner who could get pregnant.",
     "Gender": "tf",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Genitalia",
@@ -1338,8 +1217,7 @@
     "Health Provider Text": "Same as cis men (bottom surgery does not remove the prostate)",
     "Gender": "tf",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Genitalia",
@@ -1349,8 +1227,7 @@
     "Health Provider Text": "•Trans women and people on the transfeminine spectrum generally do not need any cervical cancer screening as vaginoplasty does not usually entail creation of a neocervix.\n•Neovagina vault testing is not recommended.\n•In the very rare instances where a neocervix may have been created during vaginoplasty (such as from the skin of the glans penis), consider following the current cervical cancer screening guidelines for cis women (ACOG) (Pap tests are recommended every 3 years from age 21 to 69 if the person has ever been sexually active).\n•Consider annual neovaginal speculum examination to visually detect any abnormalities (including malignancy) for those who have undergone vaginoplasty (RHO).\n•\tNeovaginas may have a more posterior orientation than those of cis women, and using an anoscope rather than a speculum may be more appropriate for examination (UCSF).\n•\t[[Overview of cervical cancer screening for trans women in Canada; https://www.cancer.ca/en/prevention-and-screening/reduce-cancer-risk/find-cancer-early/screening-in-lgbtq-communities/trans-women-and-cervical-cancer-screening/?region=on]]\n•\t[[Tips for physical examination of trans patients; https://transcare.ucsf.edu/guidelines/physical-examination]]\n•\t[[RHO guidelines; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n•\t[[UCSF Transcare guidelines; https://transcare.ucsf.edu/guidelines/cervical-cancer]]\n•\t[[Endocrine Society guidelines; https://academic.oup.com/jcem/article/102/11/3869/4157558]]",
     "Gender": "tf",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Sun",
@@ -1360,8 +1237,7 @@
     "Health Provider Text": "To prevent Melanoma:\nDecrease exposure to sun with:protective clothing, sunscreen min SPF 30\n[[CTFPHC appraised guideline 2014;https://canadiantaskforce.ca/guidelines/appraised-guidelines/melanoma/]]\nClinical assessment of future risk of melanoma take into account:\n- person’s age and sex\n- history of previous melanoma or non-melanoma skin cancer\n- family history of melanoma\n- number of naevi (common and atypical)\n- skin and hair pigmentation\n- response to sun exposure\n- evidence of actinic skin damage",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Eye",
@@ -1371,8 +1247,7 @@
     "Health Provider Text": "Vision screening:\nConsensus only recommendation from Canadian Ophthalmol Society 2007\nCurrently in many provinces this would be done by optometrists\nNew guideline available soon.\n\nIf high risk more frequent screening advised than below.\nHIgh risk:African American, high myopia,diabetes or hypertension.\n\n•18-40 every 10 years\n•41-55 every 5 years\n•56-64 every 3 years\n•65 and above every year\n\n\n[[current guideline under review; https://c2-preview.prosites.com/187380/wy/docs/COSVisionScreeningCPGEng_Feb07.pdf]]",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Eye",
@@ -1382,8 +1257,7 @@
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 40
-  
+    "Maximum age": 40  
   },
   {
     "Button": "Eye",
@@ -1393,8 +1267,7 @@
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 41,
-    "Maximum age": 55
-  
+    "Maximum age": 55  
   },
   {
     "Button": "Eye",
@@ -1404,8 +1277,7 @@
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 56,
-    "Maximum age": 64
-  
+    "Maximum age": 64  
   },
   {
     "Button": "Eye",
@@ -1415,8 +1287,7 @@
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 65,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Bone",
@@ -1426,8 +1297,7 @@
     "Health Provider Text": "•Calcium: 1300 mg/day; Vitamin D: 600 IU/ day\nPregnant or lactating same as above\n•Folic acid: 0.4 to 1 mg a day for women 3 months before and after conception or always\n[[more information on folic acid; https://www.canada.ca/en/public-health/services/pregnancy/folic-acid.html]]\n[[take more folic acid if; https://www.canada.ca/en/public-health/services/pregnancy/folic-acid.html#a4]]\n[[SOGC guideline; https://www.jogc.com/article/S1701-2163(15)30230-9/pdf]]",
     "Gender": "f",
     "Minimum age": 18,
-    "Maximum age": 18
-  
+    "Maximum age": 18  
   },
   {
     "Button": "Bone",
@@ -1437,8 +1307,7 @@
     "Health Provider Text": "•Calcium: 1000mg/day; Vitamin D: 400-1000 IU/day\nPregnant or lactating same as 18 year old\n•Folic acid: 0.4 to 1 mg a day for women 3 months before and after conception or always\n[[more information on folic acid; https://www.canada.ca/en/public-health/services/pregnancy/folic-acid.html]]\n[[take more folic acid if; https://www.canada.ca/en/public-health/services/pregnancy/folic-acid.html#a4]]\n[[SOGC guideline; https://www.jogc.com/article/S1701-2163(15)30230-9/pdf]]",
     "Gender": "f",
     "Minimum age": 19,
-    "Maximum age": 49
-  
+    "Maximum age": 49  
   },
   {
     "Button": "Bone",
@@ -1448,8 +1317,7 @@
     "Health Provider Text": "•Calcium: 1300 mg/day; Vitamin D: 600 IU/ day",
     "Gender": "m,tm,tf",
     "Minimum age": 18,
-    "Maximum age": 18
-  
+    "Maximum age": 18  
   },
   {
     "Button": "Bone",
@@ -1459,8 +1327,7 @@
     "Health Provider Text": "•Calcium: 1000mg/day; Vitamin D: 400-1000 IU/day",
     "Gender": "m,tm,tf",
     "Minimum age": 19,
-    "Maximum age": 49
-  
+    "Maximum age": 49  
   },
   {
     "Button": "Bone",
@@ -1470,8 +1337,7 @@
     "Health Provider Text": "•Calcium: 1200mg/day; Vitamin D: 800-2000 IU/day",
     "Gender": "all",
     "Minimum age": 50,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "Bone",
@@ -1481,8 +1347,7 @@
     "Health Provider Text": "A healthy diet prevents osteoporosis\n[[More info; https://osteoporosis.ca/nutrition/]]",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "braingear",
@@ -1492,8 +1357,7 @@
     "Health Provider Text": "N/A",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "braingear",
@@ -1503,19 +1367,17 @@
     "Health Provider Text": "N/A",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "braingear",
     "Topic heading": "Mental health",
     "Subject": "First Nations, Métis, Inuit",
-    "General Patient Text": "[[Mental health and wellness in First Nations and Inuit communities; https://www.sac-isc.gc.ca/eng/1576089278958/1576089333975]]",
+    "General Patient Text": "[[Help by phone or chat; https://hopeforwellness.ca/home.html]]\n[[Information on federal government programs; https://www.sac-isc.gc.ca/eng/1576089278958/1576089333975]]",
     "Health Provider Text": "N/A",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "braingear",
@@ -1525,8 +1387,7 @@
     "Health Provider Text": "N/A",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "braingear",
@@ -1536,8 +1397,7 @@
     "Health Provider Text": "As per [[CTFPH 2013 guidelines; https://canadiantaskforce.ca/guidelines/published-guidelines/depression/]] : Screening for depression is not recommended for adults at average risk of depression who present to a primary care setting, with no apparent symptoms of depression. (Weak recommendation; very-low-quality evidence). These recommendations do not apply to people with known depression, with a history of depression or who are receiving treatment for depression.\nHowever primary care providers know the importance of mental health and how it influences overall health. Below are some resources.",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
-  
+    "Maximum age": 150  
   },
   {
     "Button": "braingear",
@@ -1547,8 +1407,6 @@
     "Health Provider Text": "Tools to help you care for your patients: \n[[eMental Health; https://primarycare.ementalhealth.ca/index.php?m=fpStart]]\n[[Assessment of ADHD in adults;  https://www.caddra.ca/public-information/adults/forms/]]\n[[Ressources from the Ontario College of Family Physician; https://www.ontariofamilyphysicians.ca/tools-resources/covid-19-resources/community-supports-special-populations/ocfp-mh-patient-resources.pdf]]\n\nMindfulness ressources; \n-\t[[Mindshift; https://www.anxietycanada.com/resources/mindshift-cbt]]; to build skills for managing anxiety and depression\n-\t[[Headspace; https://www.headspace.com/mindfulness]]\n-\t[[Insight timer; https://insighttimer.com/]]\n\n[[Screening tools ; https://primarycare.ementalhealth.ca/index.php?m=surveyList]]",
     "Gender": "all",
     "Minimum age": 18,
-    "Maximum age": 150
-   
-    
-  }
+    "Maximum age": 150  
+  } 
 ]
