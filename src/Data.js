@@ -162,7 +162,7 @@ class Data {
         var text = Lang[userInfo.language];
 
 
-        if (!arra1.length) { //if the array is empty we whant to say that the topic not applicable to this user
+        if (!arra1.length || nonApplicaple.includes(arra1[0][pat_prov].toUpperCase())) { //if the array is empty we whant to say that the topic not applicable to this user
           TopicListItem.push({ name: text.topic_is_not_applicable, body: [] });
         }
 
