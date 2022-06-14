@@ -1,8 +1,11 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+.align-center{
+    text-align: center;
+}
 .parallax-background{
-    background-color: #90be6d;
+    background-color: #1c9ad6;
     text-align: center;
     padding-top: 120px;
     padding-bottom: 60px;
@@ -28,10 +31,10 @@ body {
     padding: 0 50px;
 }
 h2.br-section-title.mb-4 {
-    font-size: 3rem;
+    font-size: 2.4rem;
 }
 h3.br-section-subtitle {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
 }
 .mb-5.half-list {
     display: inline-block;
@@ -39,12 +42,88 @@ h3.br-section-subtitle {
     vertical-align: top;
     text-align: left;
 }
+.mb-5.half-list:nth-of-type(even) {
+    margin-left: 3%;
+}   
 h4.list-counter {
     float: left;
     margin-right: 15px;
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 h3.content-list-title {
     font-size: 1.5rem;
+}
+section.ab-ft-section {
+    background-color: #f4f8fa;
+    padding: 90px 0;
+}
+.ab-ft-section .row-item {
+    background-color: #fff;
+    padding: 2.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 30px rgb(115 128 157 / 10%);
+}
+.br-card-title{
+    text-align: center;
+    font-size: 1.2rem;
+}
+section.ab-vp-section {
+    background-color: #fff;
+    padding: 90px 0;
+}
+.vp-section-title {
+    font-size: 2.4rem;
+}
+.vp-figure img{
+    width: 100%;
+    height: auto;
+    display: block;
+
+}
+li.mb-4.vp-list-item {
+    list-style: none;
+}
+.vp-text ul li::before {
+    left: 0px;
+    padding-top: 3px;
+    display: inline-block;
+    text-align: center;
+    line-height: 20px;
+    color: rgb(255, 255, 255);
+    width: 25px;
+    height: 25px;
+    content: "✓";
+    margin: 5px 10px;
+    transition: all 0.2s ease 0s;
+    background: rgb(215 223 33);
+    border-radius: 50%;
+}
+
+section.ab-sl-section {
+    background-color: #f4f8fa;
+    padding: 90px 0;
+}
+.box-item.col-lg-3 {
+    padding: 2rem;
+}
+.box-item.col-lg-3:first-child {
+    background-color: #eceff1;
+}
+.box-item.col-lg-3:nth-child(2) {
+    background-color: #dbe7ef;
+}
+.box-item.col-lg-3:nth-child(3) {
+    background-color: #c4ddef;
+}
+.box-item.col-lg-3:last-child {
+    background-color: #9cc7e7;
+}
+
+
+
+section.ab-footer {
+    background-color: #e5e1e1;
+    padding: 15px 0;
+    margin-top: 90px;
 }
