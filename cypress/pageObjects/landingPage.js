@@ -37,6 +37,17 @@ class LandingPage extends BasePage {
         [this.locale.fr]: 'https://canbewell-uottawa.web.app/politiquedeconfidentialite.htm',
       },
     };
+
+    this.aboutusStatement = {
+      text: {
+        [this.locale.en]: 'About Us',
+        [this.locale.fr]: 'à propos de nous',
+      },
+      link: {
+        [this.locale.en]: 'https://canbewell-uottawa.web.app/iCanBeWell_PrivacyPolicy.htm',
+        [this.locale.fr]: 'https://canbewell-uottawa.web.app/politiquedeconfidentialite.htm',
+      },
+    };
   }
 
   assertUpdateBannerText() {

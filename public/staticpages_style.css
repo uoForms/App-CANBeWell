@@ -1,0 +1,50 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.parallax-background{
+    background-color: #90be6d;
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 60px;
+}
+.pagetitle h1 {
+    color: #fff;
+    font-size: 5rem;
+}
+
+.ab-br-section {
+    padding: 90px 0;
+    background-color: #fff;
+}
+.ab-br-section .media-container-row {
+    display: flex;
+}
+.br-figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.counter-container {
+    padding: 0 50px;
+}
+h2.br-section-title.mb-4 {
+    font-size: 3rem;
+}
+h3.br-section-subtitle {
+    font-size: 1.5rem;
+}
+.mb-5.half-list {
+    display: inline-block;
+    width: 48%;
+    vertical-align: top;
+    text-align: left;
+}
+h4.list-counter {
+    float: left;
+    margin-right: 15px;
+    font-weight: 600;
+    font-size: 2rem;
+}
+h3.content-list-title {
+    font-size: 1.5rem;
+}

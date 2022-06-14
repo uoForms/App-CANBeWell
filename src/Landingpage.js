@@ -76,11 +76,11 @@ class LandingPage extends React.Component {
               </div>
 
               <div className="landingpage-notice-row"></div>
-              <div className="landingpage-notice-row">
+              <div className="landingpage-notice-row d-flex justify-content-center">
                 <div className="landingpage-notice-column">
                   <div className="landing-notice-privacystmnt-english">
                     {/*<a href= "/iCanBeWell_PrivacyPolicy.htm" target="_blank">{"PrivacyStatement"}</a>*/}
-                    <a href="https://canbewell-uottawa.web.app/iCanBeWell_PrivacyPolicy.htm"
+                    <a href="/iCanBeWell_PrivacyPolicy.htm"
                        className="landing-notice-english" test-id="privacy-statement-en">{"Privacy Statement"} </a>
                     &nbsp;<a href="#" className="slash">{<h4>&#124;</h4>} </a>
                   </div>
@@ -91,12 +91,31 @@ class LandingPage extends React.Component {
                     {/* <a href= "https://canbewell-uottawa.web.app/politiquedeconfidentialite.htm" >{"Politique de confidentialité"}</a> */}
                     {/* </div> */}
                     {/* <div id="homescreen-french"></div> */}
-                    <a href="https://canbewell-uottawa.web.app/politiquedeconfidentialite.htm"
+                    <a href="/politiquedeconfidentialite.htm"
                        className="landing-notice-french"
                        test-id="privacy-statement-fr">{"Politique de confidentialité"}</a>
+                       &nbsp;<a href="#" className="slash">{<h4>&#124;</h4>} </a>
 
                   </div>
                 </div>
+
+                <div className="landingpage-notice-column">
+                  <div className="landing-notice-aboutus-english">
+                    <a href="/iCanBeWell_AboutUs.htm"
+                       className="landing-notice-english" test-id="aboutus-statement-en">{"About Us"} </a>
+                    &nbsp;<a href="#" className="slash">{<h4>&#124;</h4>} </a>
+                  </div>
+                </div>
+
+                <div className="landingpage-notice-column">
+                  <div className="landing-notice-aboutus-french">
+                    <a href="/iCanBeWell_proposdenous.htm"
+                       className="landing-notice-french"
+                       test-id="aboutus-statement-fr">{"à propos de nous"}</a>
+
+                  </div>
+                </div>
+
               </div>
 
               <div className="landing-notice-privacystmnt" test-id="fr-reliable-resource-statement">

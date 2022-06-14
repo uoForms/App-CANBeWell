@@ -70,9 +70,6 @@
     height: auto;
     width: 80%;
   }
-  .landingpage-notice-column a{
-    font-size: 10px;
-  }
   .landing-update {
     position: relative;
     text-align: center;
@@ -111,8 +108,11 @@
 
 .landingpage-notice-column {
     float: left;
-    width: 50%;
+    
   }
+  .landingpage-notice-column > div {
+    padding: 0 10px;
+}
   
   /* Clear floats after the columns */
   .landingpage-notice-row:after {
@@ -153,19 +153,29 @@
   /*margin-left: 35%;*/
   width: 100%;
   height: auto;
-  font-size: larger;
+  /* font-size: larger; */
+}
+.landing-notice-aboutus-english {
+  position: relative;
+  text-align: right;
+  /*margin-left: 35%;*/
+  width: 100%;
+  height: auto;
+  /* font-size: larger; */
 }
 
 .landingpage-notice-column a{
   display: inline-block;
+  font-size: larger;
 }
 
 .slash{
   position: absolute;
   margin-top: 0;
-  top: 5px;
+  top: 0px;
   color: #363636;
   cursor: text;
+  margin-left: 5px;
 }
 
 .slash:hover{
@@ -174,7 +184,7 @@
 }
 
 .landing-notice-english{
-  width: 60px;
+  /* width: 60px; */
   text-align: center;
 }
 
@@ -185,11 +195,19 @@ margin-left: auto;
 /*margin-right: auto;*/
 width: 100%;
 height: auto;
-font-size: larger;
+/* font-size: larger; */
 }
-
+.landing-notice-aboutus-french {
+  position: relative;
+  text-align: left;
+  margin-left: auto;
+  /*margin-right: auto;*/
+  width: 100%;
+  height: auto;
+  /* font-size: larger; */
+  }
 .landing-notice-french{
-  width: 95px;
+  /* width: 95px; */
   text-align: center;
 }
 

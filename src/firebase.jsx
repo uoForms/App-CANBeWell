@@ -4,14 +4,13 @@ import 'firebase/database'
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyCl4wyKnUZRt25Vmxbt7-dDoR8tsG02kSk",
-  authDomain: "canbewell-2022-test.firebaseapp.com",
-  databaseURL: "https://canbewell-2022-test-default-rtdb.firebaseio.com",
-  projectId: "canbewell-2022-test",
-  storageBucket: "canbewell-2022-test.appspot.com",
-  messagingSenderId: "114580889906",
-  appId: "1:114580889906:web:97ea5a8d3c77628032f72b",
-  measurementId: "G-WLZKR9N34N"
+  apiKey: "AIzaSyDlMCiRMFB5BQtgF4-JB0lFSju5g_HcLn8",
+  authDomain: "icanbewellv2.firebaseapp.com",
+  databaseURL: "https://icanbewellv2-default-rtdb.firebaseio.com",
+  projectId: "icanbewellv2",
+  storageBucket: "icanbewellv2.appspot.com",
+  messagingSenderId: "952618416302",
+  appId: "1:952618416302:web:2603298d2c19f2e1ea953f"
 };
 if (!firebase.apps.length) {
   firebase.initializeApp(firebaseConfig)

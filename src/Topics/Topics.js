@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 import { PageViewTimer, GaUserEvent } from '../Tracking';
 import '../Button.css';
 import TopicsModal from './TopicsModal';
-import TopicListFR from '../JSONFolder/HtmlTopic-FR.json';
-import TopicListEN from '../JSONFolder/HtmlTopic-EN.json';
+import TopicListFR from '../JSONFolder/filterTopic-FR.json';
+import TopicListEN from '../JSONFolder/filterTopic-EN.json';
 import TopicModal from './TopicModal';
 
 class Topics extends React.Component {
@@ -15,7 +15,8 @@ class Topics extends React.Component {
     this.state =
     {
       isOpen: false,
-      TopicList: this.props.userConfig.language == "french" ? TopicListFR : TopicListEN
+      TopicList: this.props.userConfig.language == "french" ? TopicListFR : TopicListEN,
+
     }
     this.pageViewStateUpdater = this.pageViewStateUpdater.bind(this);
   }
@@ -37,6 +38,7 @@ class Topics extends React.Component {
     });
   }
 
+
   render() {
 
     if (!this.props.showTopics) {
@@ -47,14 +49,14 @@ class Topics extends React.Component {
         {/*your help button in the right hand corner*/}
         {/*<button className="button button2" onClick={this.helpClicked}>?</button>*/}
 
-        <FilterableTopicTable 
-          topics={this.props.data(this.state.TopicList, this.props.userConfig)} 
+        <FilterableTopicTable
+          topics={this.props.data(this.state.TopicList, this.props.userConfig)}
           userConfig={this.props.userConfig}
-          text={this.props.lang.topic_search_bar_placeholder} 
-          pageViewStateUpdater = {this.pageViewStateUpdater}
+          text={this.props.lang.topic_search_bar_placeholder}
+          pageViewStateUpdater={this.pageViewStateUpdater}
           btnText={this.props.lang.close_body_modal}
           onClose={this.props.onClose}
-          />
+        />
 
         {/*help dialog box*/}
         <TopicsModal show={this.state.isOpen}
@@ -84,7 +86,7 @@ class TopicRow extends React.Component {
     this.state =
     {
       isOpen: false,
-      display: [],
+      //display: [],
     }
     this.pageViewStateUpdater = this.pageViewStateUpdater.bind(this);
   }
@@ -96,8 +98,8 @@ class TopicRow extends React.Component {
     this.setState({
       isOpen: !this.state.isOpen
     });
-  }  
-  rowClicked = ( title ) => {
+  }
+  rowClicked = (title) => {
     let timerResult = PageViewTimer(
       this.props.userInfo.preCat,
       this.props.userInfo.preTime);
@@ -107,21 +109,22 @@ class TopicRow extends React.Component {
     GaUserEvent(currNav, currCat, this.props.userInfo, timeDiff, this.props.userInfo.preTime, currTime);
     this.props.pageViewStateUpdater(currNav, currCat, currTime);
     this.setState({
-      isOpen: !this.state.isOpen,
-      display: this.props.topic.body
+      //isOpen: !this.state.isOpen,
+      //display: this.props.topic.body
     });
   }
-  render() {  
+  render() {
 
     return (
       <div>
-      <div
-        id={this.props.topic.name} class="mydetailsItemdiv"
-        onClick={() => this.rowClicked(this.props.topic.name)}
-        test-id="topicRow"
+        <div
+          id={this.props.topic.name} className="mydetailsItemdiv"
+          onClick={() => this.rowClicked(this.props.topic.name)}
+          test-id="topicRow"
         >{this.props.topic.name}</div>
 
-        <div>
+
+        {/* <div>
             <TopicModal 
               show={this.state.isOpen}
               onClose={this.toggleModal}
@@ -129,9 +132,11 @@ class TopicRow extends React.Component {
               button={this.props.btnText}
               getTopic={this.props.topic.name}>
             </TopicModal>
-          </div>
+          </div> */}
       </div>
     );
+
+
   }
 }
 
@@ -139,11 +144,19 @@ class TopicRow extends React.Component {
 class TopicTable extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      expanded: false
+
+    };
     this.pageViewStateUpdater = this.pageViewStateUpdater.bind(this);
   }
   pageViewStateUpdater = (nav, cat, time) => {
     this.props.pageViewStateUpdater(nav, cat, time);
   }
+  handlemoreitems = () => {
+    this.setState({ expanded: !this.state.expanded });
+  };
+
   render() {
     const backdroplistItemStyle = {
       padding: 5
@@ -173,20 +186,34 @@ class TopicTable extends React.Component {
       }
       rows.push(<div key={index} style={backdroplistItemStyle}>
         <div style={listItemStyle}>
-          <TopicRow 
+          <TopicRow
             topic={topic}
-            userInfo={this.props.userConfig} 
-            pageViewStateUpdater = {this.pageViewStateUpdater}
+            userInfo={this.props.userConfig}
+            pageViewStateUpdater={this.pageViewStateUpdater}
             btnText={this.props.btnText}
             onClose={this.props.onClose}
-            />
+          />
         </div>
       </div>);
       index++;
     });
+
+    const dataForDisplay = this.state.expanded ? rows : rows.slice(0, 5)
     return (
       <div className='table'>
-        {rows}
+
+        <div>
+          {
+            <div>
+              {dataForDisplay}
+            <button type="button" onClick={ this.handlemoreitems } className="userInfoStyle btn btn-outline-dark btn-lg">
+              {this.state.expanded ? 'Show Less' : 'Show More'} 
+            </button>
+            </div>
+          
+            }
+
+        </div>
       </div>
     );
   }
@@ -244,16 +271,16 @@ class FilterableTopicTable extends React.Component {
   render() {
     return (
       <div>
-        <SearchBar
+        {/* <SearchBar
           filterText={this.state.filterText}
           onFilterTextInput={this.handleFilterTextInput}
           text={this.props.text}
-        />
+        /> */}
         <TopicTable
           topics={this.props.topics}
           userConfig={this.props.userConfig}
           filterText={this.state.filterText}
-          pageViewStateUpdater = {this.pageViewStateUpdater}
+          pageViewStateUpdater={this.pageViewStateUpdater}
           btnText={this.props.btnText}
           onClose={this.props.onClose}
         />
