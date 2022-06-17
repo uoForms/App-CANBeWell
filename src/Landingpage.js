@@ -56,7 +56,7 @@ class LandingPage extends React.Component {
                 <button className="videoButton" src={videofr} onClick={this.openVideofr}
                         test-id="update-banner-fr-video">Vidéo
                 </button>
-                &nbsp;&nbsp;Mise à jour COVID Updated&nbsp;&nbsp;
+                &nbsp;&nbsp;Bienvenue Welcome&nbsp;&nbsp;
                 <button className="videoButton" src={videoen}
                         onClick={this.openVideoen} test-id="update-banner-en-video">Video
                 </button>
@@ -76,27 +76,50 @@ class LandingPage extends React.Component {
               </div>
 
               <div className="landingpage-notice-row"></div>
-              <div className="landingpage-notice-row">
+              <div className="landingpage-notice-row d-flex justify-content-center">
+
                 <div className="landingpage-notice-column">
                   <div className="landing-notice-privacystmnt-english">
                     {/*<a href= "/iCanBeWell_PrivacyPolicy.htm" target="_blank">{"PrivacyStatement"}</a>*/}
-                    <a href="https://canbewell-uottawa.web.app/iCanBeWell_PrivacyPolicy.htm"
+                    <a href="/iCanBeWell_PrivacyPolicy.htm"
                        className="landing-notice-english" test-id="privacy-statement-en">{"Privacy Statement"} </a>
                     &nbsp;<a href="#" className="slash">{<h4>&#124;</h4>} </a>
                   </div>
                 </div>
+
                 <div className="landingpage-notice-column">
                   <div className="landing-notice-privacystmnt-french">
                     {/*<a href= "/politiquedeconfidentialite.htm" target="_blank">{"Politique de confidentialité"}</a>*/}
                     {/* <a href= "https://canbewell-uottawa.web.app/politiquedeconfidentialite.htm" >{"Politique de confidentialité"}</a> */}
                     {/* </div> */}
                     {/* <div id="homescreen-french"></div> */}
-                    <a href="https://canbewell-uottawa.web.app/politiquedeconfidentialite.htm"
+                    <a href="/politiquedeconfidentialite.htm"
                        className="landing-notice-french"
                        test-id="privacy-statement-fr">{"Politique de confidentialité"}</a>
+                       &nbsp;<a href="#" className="slash">{<h4>&#124;</h4>} </a>
 
                   </div>
                 </div>
+
+                <div className="landingpage-notice-column">
+                  <div className="landing-notice-aboutus-english">
+                    <a href="/iCanBeWell_AboutUs.htm"
+                       className="landing-notice-english" test-id="aboutus-statement-en">{"About Us"} </a>
+                    &nbsp;<a href="#" className="slash">{<h4>&#124;</h4>} </a>
+                  </div>
+                </div>
+
+                <div className="landingpage-notice-column">
+                  <div className="landing-notice-aboutus-french">
+                    <a href="/iCanBeWell_àproposdenous.htm"
+                       className="landing-notice-french"
+                       test-id="aboutus-statement-fr">{"À propos de nous"}</a>
+
+                  </div>
+                </div>
+
+
+
               </div>
 
               <div className="landing-notice-privacystmnt" test-id="fr-reliable-resource-statement">
