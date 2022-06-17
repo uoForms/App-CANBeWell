@@ -116,7 +116,7 @@ class TopicRow extends React.Component {
     return (
       <div>
       <div
-        id={this.props.topic.name} class="mydetailsItemdiv"
+        id={this.props.topic.name} className="mydetailsItemdiv"
         onClick={() => this.rowClicked(this.props.topic.name)}
         test-id="topicRow"
         >{this.props.topic.name}</div>
