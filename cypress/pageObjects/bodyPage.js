@@ -24,7 +24,7 @@ class BodyPage extends BasePage {
       { testId: 'brainGearButton', localeId: 'braingear', buttonText: 'N/A' },
       // { testId: 'moneyButton', localeId: 'money', buttonText: 'N/A' },
       // { testId: 'sleepButton', localeId: 'sleep', buttonText: 'N/A' },
-      // { testId: 'bpButton', localeId: 'bp', buttonText: 'N/A' },
+      { testId: 'bpButton', localeId: 'bp', buttonText: 'N/A' },
       { testId: 'genitaliaButton', localeId: 'genitalia', buttonText: 'Genitalia' },
     ];
 
