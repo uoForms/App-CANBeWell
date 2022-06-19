@@ -165,7 +165,19 @@ class Data {
         if (!arra1.length) { //if the array is empty we whant to say that the topic not applicable to this user
           TopicListItem.push({ name: text.topic_is_not_applicable, body: [] });
         }
+        else if(arra1.length ==1){
+          
+          if(nonApplicaple.includes(arra1[0][pat_prov].toUpperCase())){
+            TopicListItem.push({ name: text.topic_is_not_applicable, body: [] });
 
+          }
+          else{
+              topicList.push(arra1[0]["Topic heading"]);
+              TopicListItem.push({ name: arra1[0]["Topic heading"], body: [] });
+              TopicListItem[0].body.push({ subject: arra1[0]['Subject'], text: arra1[0][pat_prov]});
+
+          }
+        }
         else {
 
           for (var i = 0; i < arra1.length; i++) {

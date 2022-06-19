@@ -4,8 +4,10 @@ import PropTypes from 'prop-types';
 import { PageViewTimer, GaUserEvent } from '../Tracking';
 import '../Button.css';
 import TopicsModal from './TopicsModal';
-import TopicListFR from '../JSONFolder/filterTopic-FR.json';
-import TopicListEN from '../JSONFolder/filterTopic-EN.json';
+import TopicListFR from '../JSONFolder/HtmlTopic-FR.json';
+import TopicListEN from '../JSONFolder/HtmlTopic-EN.json';
+import FilterTopicListFR from '../JSONFolder/filterTopic-FR.json';
+import FilterTopicListEN from '../JSONFolder/filterTopic-EN.json';
 import TopicModal from './TopicModal';
 
 class Topics extends React.Component {
@@ -16,6 +18,7 @@ class Topics extends React.Component {
     {
       isOpen: false,
       TopicList: this.props.userConfig.language == "french" ? TopicListFR : TopicListEN,
+      FilterTopicList: this.props.userConfig.language == "french" ? FilterTopicListFR : FilterTopicListEN
 
     }
     this.pageViewStateUpdater = this.pageViewStateUpdater.bind(this);
@@ -51,6 +54,7 @@ class Topics extends React.Component {
 
         <FilterableTopicTable
           topics={this.props.data(this.state.TopicList, this.props.userConfig)}
+          filters={this.state.FilterTopicList}
           userConfig={this.props.userConfig}
           text={this.props.lang.topic_search_bar_placeholder}
           pageViewStateUpdater={this.pageViewStateUpdater}
@@ -86,7 +90,7 @@ class TopicRow extends React.Component {
     this.state =
     {
       isOpen: false,
-      //display: [],
+      display: [],
     }
     this.pageViewStateUpdater = this.pageViewStateUpdater.bind(this);
   }
@@ -109,8 +113,8 @@ class TopicRow extends React.Component {
     GaUserEvent(currNav, currCat, this.props.userInfo, timeDiff, this.props.userInfo.preTime, currTime);
     this.props.pageViewStateUpdater(currNav, currCat, currTime);
     this.setState({
-      //isOpen: !this.state.isOpen,
-      //display: this.props.topic.body
+      isOpen: !this.state.isOpen,
+      display: this.props.topic.body
     });
   }
   render() {
@@ -124,7 +128,7 @@ class TopicRow extends React.Component {
         >{this.props.topic.name}</div>
 
 
-        {/* <div>
+        <div>
             <TopicModal 
               show={this.state.isOpen}
               onClose={this.toggleModal}
@@ -132,7 +136,7 @@ class TopicRow extends React.Component {
               button={this.props.btnText}
               getTopic={this.props.topic.name}>
             </TopicModal>
-          </div> */}
+          </div>
       </div>
     );
 
@@ -145,7 +149,8 @@ class TopicTable extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      expanded: false
+      expanded: false,
+      showTop: true
 
     };
     this.pageViewStateUpdater = this.pageViewStateUpdater.bind(this);
@@ -156,6 +161,9 @@ class TopicTable extends React.Component {
   handlemoreitems = () => {
     this.setState({ expanded: !this.state.expanded });
   };
+  handleshowtopict = () =>{
+    this.setState({ showTop: !this.state.showTop });
+  }
 
   render() {
     const backdroplistItemStyle = {
@@ -178,11 +186,24 @@ class TopicTable extends React.Component {
     };
 
     var rows = [];
+    var filterrows=[];
     var index = 0;
     /*This is where you filter the content to display by comparing the what the user enter and the contend of the json file*/
     this.props.topics.forEach((topic) => {
+      console.log('topic',topic)
+      console.log('FilterTopicList',this.props.FilterTopicList)
       if (topic.name.toLowerCase().indexOf(this.props.filterText.toLowerCase()) === -1) {
         return;
+      }
+      else if(this.showTop){
+
+        
+        
+        // this.props.FilterTopicList.forEach((row)=> {
+        //   if(topic.name===row['Topic heading'] && topic)
+
+        // });
+
       }
       rows.push(<div key={index} style={backdroplistItemStyle}>
         <div style={listItemStyle}>
@@ -196,9 +217,10 @@ class TopicTable extends React.Component {
         </div>
       </div>);
       index++;
+      
     });
 
-    const dataForDisplay = this.state.expanded ? rows : rows.slice(0, 5)
+    const dataForDisplay = this.state.showTop ? rows : rows
     return (
       <div className='table'>
 
@@ -206,8 +228,8 @@ class TopicTable extends React.Component {
           {
             <div>
               {dataForDisplay}
-            <button type="button" onClick={ this.handlemoreitems } className="userInfoStyle btn btn-outline-dark btn-lg">
-              {this.state.expanded ? 'Show Less' : 'Show More'} 
+            <button type="button" onClick={ this.handleshowtopict } className="button3">
+              {this.state.showTop ? 'Show All' : 'Show Top'} 
             </button>
             </div>
           
@@ -278,6 +300,7 @@ class FilterableTopicTable extends React.Component {
         /> */}
         <TopicTable
           topics={this.props.topics}
+          filters={this.props.FilterTopicList}
           userConfig={this.props.userConfig}
           filterText={this.state.filterText}
           pageViewStateUpdater={this.pageViewStateUpdater}
