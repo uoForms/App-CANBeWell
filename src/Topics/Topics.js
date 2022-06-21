@@ -54,7 +54,7 @@ class Topics extends React.Component {
 
         <FilterableTopicTable
           topics={this.props.data(this.state.TopicList, this.props.userConfig)}
-          filters={this.state.FilterTopicList}
+          filterdtopics={this.props.newdata(this.state.TopicList, this.props.userConfig,this.state.FilterTopicList)}
           userConfig={this.props.userConfig}
           text={this.props.lang.topic_search_bar_placeholder}
           pageViewStateUpdater={this.pageViewStateUpdater}
@@ -80,6 +80,7 @@ Topics.propTypes = {
   showTopics: PropTypes.bool,
   userConfig: PropTypes.object,
   data: PropTypes.func.isRequired,
+  newdata: PropTypes.func.isRequired,
   lang: PropTypes.object,
 };
 
@@ -188,17 +189,41 @@ class TopicTable extends React.Component {
     var rows = [];
     var filterrows=[];
     var index = 0;
+    var index1=0;
     /*This is where you filter the content to display by comparing the what the user enter and the contend of the json file*/
+
+    
+      this.props.filterdtopics.forEach((topic) =>{
+        if (topic.name.toLowerCase().indexOf(this.props.filterText.toLowerCase()) === -1) {
+          return;
+        }
+        filterrows.push(<div key={index1} style={backdroplistItemStyle}>
+          <div style={listItemStyle}>
+            <TopicRow
+              topic={topic}
+              userInfo={this.props.userConfig}
+              pageViewStateUpdater={this.pageViewStateUpdater}
+              btnText={this.props.btnText}
+              onClose={this.props.onClose}
+            />
+          </div>
+        </div>);
+        index1++;
+        //console.log("filterrows",filterrows)
+        
+  
+      });
+
+    
+    
+    
     this.props.topics.forEach((topic) => {
       console.log('topic',topic)
-      console.log('FilterTopicList',this.props.FilterTopicList)
+      console.log('FilterTopicList',this.props.filterdtopics)
       if (topic.name.toLowerCase().indexOf(this.props.filterText.toLowerCase()) === -1) {
         return;
       }
       else if(this.showTop){
-
-        
-        
         // this.props.FilterTopicList.forEach((row)=> {
         //   if(topic.name===row['Topic heading'] && topic)
 
@@ -220,7 +245,7 @@ class TopicTable extends React.Component {
       
     });
 
-    const dataForDisplay = this.state.showTop ? rows : rows
+    const dataForDisplay = this.state.showTop ? filterrows : rows
     return (
       <div className='table'>
 
@@ -300,7 +325,7 @@ class FilterableTopicTable extends React.Component {
         /> */}
         <TopicTable
           topics={this.props.topics}
-          filters={this.props.FilterTopicList}
+          filterdtopics={this.props.filterdtopics}
           userConfig={this.props.userConfig}
           filterText={this.state.filterText}
           pageViewStateUpdater={this.pageViewStateUpdater}

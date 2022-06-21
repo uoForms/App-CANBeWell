@@ -1161,7 +1161,7 @@
   "Maximum age": 150
 },{
   "Button": "Bone",
-  "Topic heading": "Nutrition, Vitamins",
+  "Topic heading": "Nutrition, vitamins",
   "Subject": "Age 18 only",
   "General Patient Text": "•Calcium: 1300 mg/day; Vitamin D: 600 IU/ day\nPregnant or lactating same as above\n•Folic acid: 0.4 to 1 mg a day for women 3 months before and after conception or always\n[[more information on folic acid; https://www.canada.ca/en/public-health/services/pregnancy/folic-acid.html]]\n[[take more folic acid if; https://www.canada.ca/en/public-health/services/pregnancy/folic-acid.html#a4]]",
   "Health Provider Text": "•Calcium: 1300 mg/day; Vitamin D: 600 IU/ day\nPregnant or lactating same as above\n•Folic acid: 0.4 to 1 mg a day for women 3 months before and after conception or always\n[[more information on folic acid; https://www.canada.ca/en/public-health/services/pregnancy/folic-acid.html]]\n[[take more folic acid if; https://www.canada.ca/en/public-health/services/pregnancy/folic-acid.html#a4]]\n[[SOGC guideline; https://www.jogc.com/article/S1701-2163(15)30230-9/pdf]]",
@@ -1170,7 +1170,7 @@
   "Maximum age": 18
 },{
   "Button": "Bone",
-  "Topic heading": "Nutrition, Vitamins",
+  "Topic heading": "Nutrition, vitamins",
   "Subject": "Age 19-49",
   "General Patient Text": "•Calcium: 1000mg/day; Vitamin D: 400-1000 IU/day\nPregnant or lactating same as 18 year old\n•Folic acid: 0.4 to 1 mg a day for women 3 months before and after conception or always\n[[more information on folic acid; https://www.canada.ca/en/public-health/services/pregnancy/folic-acid.html]]\n[[take more folic acid if; https://www.canada.ca/en/public-health/services/pregnancy/folic-acid.html#a4]]",
   "Health Provider Text": "•Calcium: 1000mg/day; Vitamin D: 400-1000 IU/day\nPregnant or lactating same as 18 year old\n•Folic acid: 0.4 to 1 mg a day for women 3 months before and after conception or always\n[[more information on folic acid; https://www.canada.ca/en/public-health/services/pregnancy/folic-acid.html]]\n[[take more folic acid if; https://www.canada.ca/en/public-health/services/pregnancy/folic-acid.html#a4]]\n[[SOGC guideline; https://www.jogc.com/article/S1701-2163(15)30230-9/pdf]]",
@@ -1179,7 +1179,7 @@
   "Maximum age": 49
 },{
   "Button": "Bone",
-  "Topic heading": "Nutrition, Vitamins",
+  "Topic heading": "Nutrition, vitamins",
   "Subject": "Age 18 only",
   "General Patient Text": "•Calcium: 1300 mg/day; Vitamin D: 600 IU/ day",
   "Health Provider Text": "•Calcium: 1300 mg/day; Vitamin D: 600 IU/ day",
@@ -1188,7 +1188,7 @@
   "Maximum age": 18
 },{
   "Button": "Bone",
-  "Topic heading": "Nutrition,Vitamins",
+  "Topic heading": "Nutrition, vitamins",
   "Subject": "Age 19-49",
   "General Patient Text": "•Calcium: 1000mg/day; Vitamin D: 400-1000 IU/day",
   "Health Provider Text": "•Calcium: 1000mg/day; Vitamin D: 400-1000 IU/day",
@@ -1197,7 +1197,7 @@
   "Maximum age": 49
 },{
   "Button": "Bone",
-  "Topic heading": "Nutrition,Vitamins",
+  "Topic heading": "Nutrition, vitamins",
   "Subject": "Age 50 and above",
   "General Patient Text": "•Calcium: 1200mg/day; Vitamin D: 800-2000 IU/day",
   "Health Provider Text": "•Calcium: 1200mg/day; Vitamin D: 800-2000 IU/day",
@@ -1206,7 +1206,7 @@
   "Maximum age": 150
 },{
   "Button": "Bone",
-  "Topic heading": "Nutrition, Vitamins",
+  "Topic heading": "Nutrition, vitamins",
   "Subject": "All ages",
   "General Patient Text": "Eating healthy is important to build and keep strong bones\n[[More info; https://osteoporosis.ca/nutrition/]]\nTaking more than 2000 IU a day of vitamin D should be done under medical supervision \n[[more info; https://osteoporosis.ca/nutrition/]]\nBetter to get calcium from food rather than supplements.\n[[More info; https://osteoporosis.ca/bone-health-osteoporosis/calcium-calculator/#page-1]]\n",
   "Health Provider Text": "A healthy diet prevents osteoporosis\n[[More info; https://osteoporosis.ca/nutrition/]]",
