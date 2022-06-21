@@ -543,8 +543,8 @@
     "Button": "Heart",
     "Topic heading": "Heart Disease",
     "Subject": "General information ",
-    "General Patient Text": "•\tFollow the same advice about preventing heart disease as for cis people AND\n•\tif you use a [[risk calculator; http://chd.bestsciencemedicine.com/calc2.html]]for heart disease:\ndepending how long you have been on hormones, consider using either a calculator based on your sex assigned at birth, your affirmed gender or an average of the  two [[UCSF; https://transcare.ucsf.edu/guidelines/cardiovascular]]",
-    "Health Provider Text": "•\tThe current guidelines for general population should be followed when evaluating for cardiovascular risk factors in trans patients, such as diabetes and dyslipidemia screening.\n•\tEncourage physical activity,smoking cessation, weight loss, management of diabetes and hypertension.\n•\tWhen using a [[risk calculator; http://chd.bestsciencemedicine.com/calc2.html]], depending on when and how long the patient has been on hormones, consider using either a calculator based on the patient’s sex assigned at birth, their affirmed gender or an average of the two [[UCSF; https://transcare.ucsf.edu/guidelines/cardiovascular]]",
+    "General Patient Text": "•\tFollow the same advice about preventing heart disease as for cis people AND\n•\t if you use a [[risk calculator; http://chd.bestsciencemedicine.com/calc2.html]] for heart disease:\ndepending how long you have been on hormones, consider using either a calculator based on your sex assigned at birth, your affirmed gender or an average of the  two [[UCSF; https://transcare.ucsf.edu/guidelines/cardiovascular]]\n•\t[[more risk calculators; https://ccs.ca/calculators-and-forms/]]\n",
+    "Health Provider Text": "•\tThe current guidelines for general population should be followed when evaluating for cardiovascular risk factors in trans patients, such as diabetes and dyslipidemia screening.\n•\tEncourage physical activity,smoking cessation, weight loss, management of diabetes and hypertension.\n•\tWhen using a [[risk calculator; http://chd.bestsciencemedicine.com/calc2.html]], depending on when and how long the patient has been on hormones, consider using either a calculator based on the patient’s sex assigned at birth, their affirmed gender or an average of the two [[UCSF; https://transcare.ucsf.edu/guidelines/cardiovascular]]\n•\t[[more risk calculators; https://ccs.ca/calculators-and-forms/]]",
     "Gender": "tm",
     "Minimum age": 18,
     "Maximum age": 150
@@ -583,8 +583,8 @@
     "Button": "Heart",
     "Topic heading": "Heart Disease",
     "Subject": "Blood pressure",
-    "General Patient Text": "•\tDuring your visit to the doctor, ask for a measurement of your blood pressure. \n•\tA normal blood pressure is under 140/90 mmHg or lower for some people .\n•\tThe target blood pressure depends on factors like age and health conditions, and where readings are being taken. \n•\tIf you have diabetes, kidney disease or other health conditions, speak to your health care professional about your target blood pressure. \n\n•\t[[How to appropriately measure your blood pressure at home; https://hypertension.ca/wp-content/uploads/2020/03/BPM-Postcard-Front.jpg]]\n•\t[[Understanding and Managing Your Blood Pressure; https://guidelines.hypertension.ca/wp-content/uploads/2021/02/HTC_Brochure_UnderstandingBP_2018_R3.pdf]]\n\n\n\n\n",
-    "Health Provider Text": "•\tDuring your visit to the doctor, ask for a measurement of your blood pressure.  A normal blood pressure is under 140/90 mmHg or lower for some people .\n•\tThe target blood pressure depends on factors like age and health conditions, and where readings are being taken. \n•\tIf you have diabetes, kidney disease or other health conditions, speak to your health care professional about your target blood pressure. \n\n•\t[[How to appropriately measure your blood pressure at home; https://hypertension.ca/wp-content/uploads/2020/03/BPM-Postcard-Front.jpg]]\n•\t[[Understanding and Managing Your Blood Pressure; https://guidelines.hypertension.ca/wp-content/uploads/2021/02/HTC_Brochure_UnderstandingBP_2018_R3.pdf]]\n\n\n\n",
+    "General Patient Text": "During your visit to the doctor, ask for a measurement of your blood pressure. \nA normal blood pressure is under 140/90 mmHg or lower for some people .\nThe target blood pressure depends on factors like age and health conditions, and where readings are being taken. If you have diabetes, kidney disease or other health conditions, speak to your health care professional about your target blood pressure. \n\n•\t[[How to appropriately measure your blood pressure at home; https://hypertension.ca/wp-content/uploads/2020/03/BPM-Postcard-Front.jpg]]\n•\t[[Understanding and Managing Your Blood Pressure; https://guidelines.hypertension.ca/wp-content/uploads/2021/02/HTC_Brochure_UnderstandingBP_2018_R3.pdf]]\n\n\n\n\n",
+    "Health Provider Text": "CTFPHC recommends blood pressure measurement at all appropriate primary care visits. [[2012 Guideline; https://canadiantaskforce.ca/guidelines/published-guidelines/hypertension/]]\n(Strong recommendation; moderate quality evidence)\n\nIf the mean blood pressure measured in office [[As per recommended technique; https://guidelines.hypertension.ca/diagnosis-assessment/measuring-blood-pressure/]] is high during one visit, a history and physical examination should be performed and, if clinically indicated, diagnostic tests to search for target organ damage should be arranged within 2 visits. \n\nRoutine Lab Testing Recommended: urinalysis, blood chemistry (potassium, sodium and creatinine), fasting blood glucose and/or glycated hemoglobin (A1C), serum total cholesterol, LDL, HDL, non-HDL, triglycerides (fasting or non-fasting) and a standard 12-lead ECG. \n\nGlobal cardiovascular risk assessment should be done using risks calculators see below:\n•[[risk calculator with happy faces; https://cvdcalculator.com/]]\n•[[more risk calculators; https://ccs.ca/calculators-and-forms/]]\n",
     "Gender": "tf,tm",
     "Minimum age": 18,
     "Maximum age": 150
@@ -664,7 +664,7 @@
     "Topic heading": "Heart Disease",
     "Subject": "Calculate cardiovascular risk",
     "General Patient Text": "n/a",
-    "Health Provider Text": "Risk assessment \n[[modified Framingham or other; http://chd.bestsciencemedicine.com/calc2.html]]\nonly validated between age 30 and 74.",
+    "Health Provider Text": "Risk calculators \nFramingham only validated between age 30 and 74\n•\t[[risk calculator with happy faces; https://cvdcalculator.com/]]\n•\t[[more risk calculators; https://ccs.ca/calculators-and-forms/]]\n",
     "Gender": "m,f",
     "Minimum age": 30,
     "Maximum age": 74
@@ -683,8 +683,8 @@
     "Button": "Heart",
     "Topic heading": "Heart Disease",
     "Subject": "Blood pressure",
-    "General Patient Text": "•\tDuring your visit to the doctor, ask for a measurement of your blood pressure. \n•\tA normal blood pressure is under 140/90 mmHg or lower for some people .\n•\tThe target blood pressure depends on factors like age and health conditions, and where readings are being taken. \n•\tIf you have diabetes, kidney disease or other health conditions, speak to your health care professional about your target blood pressure. \n\n•\t[[How to appropriately measure your blood pressure at home; https://hypertension.ca/wp-content/uploads/2020/03/BPM-Postcard-Front.jpg]]\n•\t[[Understanding and Managing Your Blood Pressure; https://guidelines.hypertension.ca/wp-content/uploads/2021/02/HTC_Brochure_UnderstandingBP_2018_R3.pdf]]\n",
-    "Health Provider Text": "CTFPHC recommends blood pressure measurement at all appropriate primary care visits: [[2012 Guideline; https://canadiantaskforce.ca/guidelines/published-guidelines/hypertension/]].\n(Strong recommendation; moderate quality evidence)\n\nIf the mean blood pressure measured in office [[As per recommended technique; https://guidelines.hypertension.ca/diagnosis-assessment/measuring-blood-pressure/]] is high during one visit, a history and physical examination should be performed and, if clinically indicated, diagnostic tests to search for target organ damage should be arranged within 2 visits. \n\nRoutine Lab Testing Recommended: urinalysis, blood chemistry (potassium, sodium and creatinine), fasting blood glucose and/or glycated hemoglobin (A1C), serum total cholesterol, LDL, HDL, non-HDL, triglycerides (fasting or non-fasting) and a standard 12-lead ECG. \n\nGlobal cardiovascular risk assessment should be done using [[risks calculators; www.ccs.ca/en/resources/calculators-forms]].",
+    "General Patient Text": "During your visit to the doctor, ask for a measurement of your blood pressure. \nA normal blood pressure is under 140/90 mmHg or lower for some people .\nThe target blood pressure depends on factors like age and health conditions, and where readings are being taken. If you have diabetes, kidney disease or other health conditions, speak to your health care professional about your target blood pressure. \n\n•\t[[How to appropriately measure your blood pressure at home; https://hypertension.ca/wp-content/uploads/2020/03/BPM-Postcard-Front.jpg]]\n•\t[[Understanding and Managing Your Blood Pressure; https://guidelines.hypertension.ca/wp-content/uploads/2021/02/HTC_Brochure_UnderstandingBP_2018_R3.pdf]]\n",
+    "Health Provider Text": "CTFPHC recommends blood pressure measurement at all appropriate primary care visits. [[2012 Guideline; https://canadiantaskforce.ca/guidelines/published-guidelines/hypertension/]]\n(Strong recommendation; moderate quality evidence)\n\nIf the mean blood pressure measured in office [[As per recommended technique; https://guidelines.hypertension.ca/diagnosis-assessment/measuring-blood-pressure/]] is high during one visit, a history and physical examination should be performed and, if clinically indicated, diagnostic tests to search for target organ damage should be arranged within 2 visits. \n\nRoutine Lab Testing Recommended: urinalysis, blood chemistry (potassium, sodium and creatinine), fasting blood glucose and/or glycated hemoglobin (A1C), serum total cholesterol, LDL, HDL, non-HDL, triglycerides (fasting or non-fasting) and a standard 12-lead ECG. \n\nGlobal cardiovascular risk assessment should be done using risks calculators:\nFramingham only validated between age 30 and 74\n•[[risk calculator with happy faces; https://cvdcalculator.com/]]\n•[[more risk calculators; https://ccs.ca/calculators-and-forms/]]\n",
     "Gender": "m,f",
     "Minimum age": 18,
     "Maximum age": 150
@@ -1321,7 +1321,7 @@
   },
   {
     "Button": "Bone",
-    "Topic heading": "Nutrition,Vitamins",
+    "Topic heading": "Nutrition, Vitamins",
     "Subject": "Age 19-49",
     "General Patient Text": "•\tCalcium: 1000mg/day; Vitamin D: 400-1000 IU/day",
     "Health Provider Text": "•\tCalcium: 1000mg/day; Vitamin D: 400-1000 IU/day",
@@ -1331,7 +1331,7 @@
   },
   {
     "Button": "Bone",
-    "Topic heading": "Nutrition,Vitamins",
+    "Topic heading": "Nutrition, Vitamins",
     "Subject": "Age 50 and above",
     "General Patient Text": "•\tCalcium: 1200mg/day; Vitamin D: 800-2000 IU/day",
     "Health Provider Text": "•\tCalcium: 1200mg/day; Vitamin D: 800-2000 IU/day",
@@ -1424,7 +1424,7 @@
     "Topic heading": "Blood pressure",
     "Subject": "Guidelines",
     "General Patient Text": "n/a",
-    "Health Provider Text": "•\tCTFPHC recommends blood pressure measurement at all appropriate primary care visits. [[2012 Guideline; https://canadiantaskforce.ca/guidelines/published-guidelines/hypertension/]]\n(Strong recommendation; moderate quality evidence)\n\n•\tIf the mean blood pressure measured in office [[As per recommended technique; https://guidelines.hypertension.ca/diagnosis-assessment/measuring-blood-pressure/]]  is high during one visit, a history and physical examination should be performed and, if clinically indicated, diagnostic tests to search for target organ damage should be arranged within 2 visits. \n\n•\tRoutine Lab Testing Recommended: urinalysis, blood chemistry (potassium, sodium and creatinine), fasting blood glucose and/or glycated hemoglobin (A1C), serum total cholesterol, LDL, HDL, non-HDL, triglycerides (fasting or non-fasting) and a standard 12-lead ECG. \n\n•\tGlobal cardiovascular risk assessment should be done using [[risks calculators; www.ccs.ca/en/resources/calculators-forms]]",
+    "Health Provider Text": "CTFPHC recommends blood pressure measurement at all appropriate primary care visits. [[2012 Guideline; https://canadiantaskforce.ca/guidelines/published-guidelines/hypertension/]]\n(Strong recommendation; moderate quality evidence)\n\nIf the mean blood pressure measured in office [[As per recommended technique; https://guidelines.hypertension.ca/diagnosis-assessment/measuring-blood-pressure/]] is high during one visit, a history and physical examination should be performed and, if clinically indicated, diagnostic tests to search for target organ damage should be arranged within 2 visits. \n\nRoutine Lab Testing Recommended: urinalysis, blood chemistry (potassium, sodium and creatinine), fasting blood glucose and/or glycated hemoglobin (A1C), serum total cholesterol, LDL, HDL, non-HDL, triglycerides (fasting or non-fasting) and a standard 12-lead ECG. \n\nGlobal cardiovascular risk assessment should be done using risks calculators: \nFramingham only validated between age 30 and 74\n•[[risk calculator with happy faces; https://cvdcalculator.com/]]\n•[[more risk calculators; https://ccs.ca/calculators-and-forms/]]",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
