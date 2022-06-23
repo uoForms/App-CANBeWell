@@ -218,8 +218,6 @@ class TopicTable extends React.Component {
     
     
     this.props.topics.forEach((topic) => {
-      console.log('topic',topic)
-      console.log('FilterTopicList',this.props.filterdtopics)
       if (topic.name.toLowerCase().indexOf(this.props.filterText.toLowerCase()) === -1) {
         return;
       }
@@ -245,17 +243,18 @@ class TopicTable extends React.Component {
       
     });
 
-    const dataForDisplay = this.state.showTop ? filterrows : rows
+    const dataForDisplay = this.state.showTop ? filterrows.slice(0,10) : rows
     return (
       <div className='table'>
 
         <div>
           {
             <div>
-              {dataForDisplay}
-            <button type="button" onClick={ this.handleshowtopict } className="button3">
-              {this.state.showTop ? 'Show All' : 'Show Top'} 
+              <button type="button" onClick={ this.handleshowtopict } className="button3">
+              {this.state.showTop ? 'Show All' : 'Show Top 10'} 
             </button>
+              {dataForDisplay}
+            
             </div>
           
             }

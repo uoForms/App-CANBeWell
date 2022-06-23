@@ -577,9 +577,70 @@ class Data {
         for (var i = 0; i < list.length; i++) {
           for( var k=0; k < filterlist.length; k++){
             if(list[i]['Topic heading'] == filterlist[k]['Topic heading'] ){
-              filteredLists.push(
-                list[i]
-              );
+              
+              if ((filterlist[k]['Minimum age'] <= UserInfo.age && UserInfo.age <= filterlist[k]['Maximum age']) || (UserInfo.age == "all ages") || (UserInfo.age == null)) {
+                var jsonGender = handleGenderString(filterlist[k]['Gender']);
+                if(!isTransgender){
+                  if((UserInfo.gender == "male" && jsonGender.male) || (UserInfo.gender == "female" && jsonGender.female) || (jsonGender.allGenders) || (UserInfo.gender == null)){
+                    list[i]['position']=k
+                    filteredLists.push(
+                      list[i]
+                    );
+                    
+                  }
+                }
+                if(isTransgender){
+                  if(UserInfo.Tgender == "tf" && UserInfo.gender == "male" && jsonGender.male){
+                    list[i]['position']=k
+                    filteredLists.push(
+                      list[i]
+                    );
+                    
+                  }
+                  if(UserInfo.Tgender == "tm" && UserInfo.gender == "female" && jsonGender.female){
+                    list[i]['position']=k
+                    filteredLists.push(
+                      list[i]
+                    );
+                    
+                  }
+                  if(UserInfo.Tgender == "tm" && UserInfo.gender == "male" && jsonGender.afab){
+                    list[i]['position']=k
+                    filteredLists.push(
+                      list[i]
+                    );
+                    
+                  }
+                  if(UserInfo.Tgender == "tf" && UserInfo.gender == "female" && jsonGender.amab){
+                    list[i]['position']=k
+                    filteredLists.push(
+                      list[i]
+                    );
+                   
+                  }
+                  if(UserInfo.Tgender == "tf" && UserInfo.gender == "nonbinary" && jsonGender.amab){
+                    list[i]['position']=k
+                    filteredLists.push(
+                      list[i]
+                    );
+                    
+                  }
+                  if(UserInfo.Tgender == "tm" && UserInfo.gender == "nonbinary" && jsonGender.afab){
+                    list[i]['position']=k
+                    filteredLists.push(
+                      list[i]
+                    );
+                    
+                  }
+                  if((jsonGender.allGenders) || (UserInfo.gender == null)){
+                    list[i]['position']=k
+                    filteredLists.push(
+                      list[i]
+                    );
+                    
+                  }
+                }
+              }
 
             }
 
@@ -590,12 +651,16 @@ class Data {
       catch (err) {
         //nothing
       }
+      
+      filteredLists.sort((a, b) => (a.position > b.position) ? 1 : -1 );  
+      
       return filteredLists;
+      
 
     }
 
 
-    TopicsItemList = filterListArray(listItem);
+    TopicsItemList = filterListArray(listItem);   
     FiltetredTopicsItemList= find_duplicate_in_array(filterlist(TopicsItemList,filterItem));
 
 
