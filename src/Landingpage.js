@@ -96,12 +96,12 @@ class LandingPage extends React.Component {
                     <a href="/politiquedeconfidentialite.htm"
                        className="landing-notice-french"
                        test-id="privacy-statement-fr">{"Politique de confidentialité"}</a>
-                       &nbsp;<a href="#" className="slash">{<h4>&#124;</h4>} </a>
+                       
 
                   </div>
                 </div>
 
-                <div className="landingpage-notice-column">
+                {/* <div className="landingpage-notice-column">
                   <div className="landing-notice-aboutus-english">
                     <a href="/iCanBeWell_AboutUs.htm"
                        className="landing-notice-english" test-id="aboutus-statement-en">{"About Us"} </a>
@@ -116,7 +116,7 @@ class LandingPage extends React.Component {
                        test-id="aboutus-statement-fr">{"À propos de nous"}</a>
 
                   </div>
-                </div>
+                </div> */}
 
 
 
