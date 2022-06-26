@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "canbewell-2022-test",
+    "site": "icanbewellanalytics-3f628",
     "public": "build",
     "ignore": [
       "firebase.json",
