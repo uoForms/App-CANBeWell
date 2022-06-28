@@ -120,6 +120,47 @@ section.ab-sl-section {
     background-color: #9cc7e7;
 }
 
+section.ab-en-video {
+    padding: 90px 0;
+}
+.rounded-xl {
+    border-radius: 30px;
+}
+img.card-image.img-fluid.loaded {
+    width: 100%;
+    border-radius: calc(0.25rem - 1px);
+    display: block;
+}
+.card-img-overlay {
+    background: rgb(151 151 151 / 50%);
+}
+a.card-link-play svg {
+    display: block;
+    height: 18px;
+    width: 16px;
+    fill: #fff;
+}
+a.card-link-play.video_inplace_toggle {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+}
+a.card-link-play {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 50%;
+    margin-top: -32px;
+    align-items: center;
+    justify-content: center;
+    background: rgb(28 154 214);
+    border-radius: 50%;
+    z-index: 100;
+}
 
 
 section.ab-footer {
