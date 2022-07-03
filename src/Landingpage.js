@@ -95,6 +95,10 @@ class LandingPage extends React.Component {
                        className="landing-notice-french"
                        test-id="privacy-statement-fr">{"Politique de confidentialité"}</a>
                        &nbsp;<a href="#" className="slash">{<h4>&#124;</h4>} </a>
+<<<<<<< Updated upstream
+=======
+                       
+>>>>>>> Stashed changes
 
                   </div>
                 </div>
@@ -115,6 +119,11 @@ class LandingPage extends React.Component {
 
                   </div>
                 </div>
+<<<<<<< Updated upstream
+=======
+
+
+>>>>>>> Stashed changes
 
               </div>
 
