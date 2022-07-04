@@ -244,3 +244,8 @@ section.ab-footer {
     padding: 15px 0;
     margin-top: 90px;
 }
+.statement-container-row{
+    background-color: #fff;
+    box-shadow: 0px 0px 30px rgb(115 128 157 / 10%);
+    padding: 20px;
+}
