@@ -56,7 +56,7 @@ class LandingPage extends React.Component {
                 <button className="videoButton" src={videofr} onClick={this.openVideofr}
                         test-id="update-banner-fr-video">Vidéo
                 </button>
-                &nbsp;&nbsp;Mise à jour COVID Updated&nbsp;&nbsp;
+                &nbsp;&nbsp;Bienvenue Welcome&nbsp;&nbsp;
                 <button className="videoButton" src={videoen}
                         onClick={this.openVideoen} test-id="update-banner-en-video">Video
                 </button>
