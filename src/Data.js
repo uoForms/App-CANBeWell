@@ -261,6 +261,18 @@ class Data {
         hormonet = "Hormone Therapy Text";
       }
 
+     // Added for sorting Topics Alphabetic
+     function compareStrings(a, b) {
+      a = a.toLowerCase();
+      b = b.toLowerCase();
+      //return (a < b) ? -1 : (a > b) ? 1 : 0;
+      return a.localeCompare(b)
+    }
+    
+    listItem.sort(function(a, b) {
+      return compareStrings(a["Topic heading"], b["Topic heading"]);
+    })
+
 
 
     
@@ -395,6 +407,7 @@ class Data {
       return TopicListBundle;
     }
     TopicsItemList = find_duplicate_in_array(filterListArray(listItem));
+   
 
     return (TopicsItemList);
   }
