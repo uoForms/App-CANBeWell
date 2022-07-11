@@ -786,7 +786,7 @@ class Anatomy extends React.Component {
                                     <img src={sleepIcon} alt="sleepIcon"/></button>*/}
                                 <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.bp}</h3>}><button id="bpButton" className="bp"
                                         onClick={(button, text, organ) => this.iconClicked("bp", this.props.lang.bp)}>
-                                    <img src={bpIcon} alt="bpIcon"/></button> </Tooltip>
+                                    <img src={bpIcon} alt="bpIcon"/></button></Tooltip>
                                 {/*<button id="genitaliaButton" className="maleGenital" onClick={(button, text) => this.iconClicked("genitalia", this.props.lang.genitalia)}><img src={genitaliaIcon} alt="genitaliaIcon" /> </button>*/}
 
                             </div>
@@ -890,7 +890,7 @@ class Anatomy extends React.Component {
                                     <img src={sleepIcon} alt="sleepIcon"/></button>*/}
                                 <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.bp}</h3>}><button id="bpButton" className="bp"
                                         onClick={(button, text, organ) => this.iconClicked("bp", this.props.lang.bp)}>
-                                    <img src={bpIcon} alt="bpIcon"/></button> </Tooltip>
+                                    <img src={bpIcon} alt="bpIcon"/></button></Tooltip>
                             </div>
                             <div className="fixSelectedOrgan" test-id="selectedButton"><h1 style={fixedStyle}>{this.state.organSelected}</h1>
                             </div>
@@ -1084,7 +1084,7 @@ class Anatomy extends React.Component {
                                     <img src={sleepIcon} alt="sleepIcon"/></button>*/}
                                 <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.bp}</h3>}><button id="bpButton" className="bp"
                                         onClick={(button, text, organ) => this.iconClicked("bp", this.props.lang.bp)}>
-                                    <img src={bpIcon} alt="bpIcon"/></button> </Tooltip>
+                                    <img src={bpIcon} alt="bpIcon"/></button></Tooltip>
                             </div>
                             <div className="fixSelectedOrgan" test-id="selectedButton"><h1 style={fixedStyle}>{this.state.organSelected}</h1>
                             </div>
