@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types';
 import TopicListFR from './JSONFolder/HtmlTopic-FR.json';
 import TopicListEN from './JSONFolder/HtmlTopic-EN.json';
+import FilterTopicListFR from './JSONFolder/FilterTopic-FR.json';
+import FilterTopicListEN from './JSONFolder/FilterTopic-EN.json';
 import Lang from './Lang/Lang.json';
 import {isTransgender} from './config';
 
@@ -10,11 +12,14 @@ class Data {
   getTopic(button, userInfo) {
     var app_language1 = userInfo.language;
     var topicList = "";
+    var filtertopiclist= "";
     if (app_language1 == "french") {
       topicList = TopicListFR;
+      filtertopiclist= FilterTopicListFR;
     }
     else if (app_language1 == "english") {
       topicList = TopicListEN;
+      filtertopiclist= FilterTopicListEN;
     }
 
 
@@ -265,7 +270,6 @@ class Data {
      function compareStrings(a, b) {
       a = a.toLowerCase();
       b = b.toLowerCase();
-      //return (a < b) ? -1 : (a > b) ? 1 : 0;
       return a.localeCompare(b)
     }
     
@@ -412,7 +416,262 @@ class Data {
     return (TopicsItemList);
   }
 
+  //////////////////////////////////////////////Get list of filtered topics ////////////////////////////////////////////
+  getListOfFilteredTopics(listItem, userInfo, filterItem) {
 
+    //var UserInfo = getUserInfo();
+    var UserInfo = userInfo;
+    //to get the corresponding text for patient and provider
+    var pat_prov = "General Patient Text";
+    if (UserInfo.patient_provider == "patient") {
+      pat_prov = "General Patient Text";
+    } else if (UserInfo.patient_provider == "provider") {
+      pat_prov = "Health Provider Text";
+    }
+
+    
+    //Added by Melika : for surgeries and hormone options
+      var top_surg;
+      var bot_surg;
+      var hormonet;
+      if ( UserInfo.isTopSurgery === true)
+      {
+        top_surg = "Top Surgeries Text";
+      }
+
+    if ( UserInfo.isBottomSurgery === true)
+      {
+        bot_surg = "Bottom Surgeries Text";
+      }
+
+    if ( UserInfo.isHormoneTherapy === true)
+      {
+        hormonet = "Hormone Therapy Text";
+      }
+
+    var TopicsItemList = [];
+    var FiltetredTopicsItemList=[];
+
+    function handleGenderString(genderString) {
+
+      var genderCharArray = genderString.split(';')[0].split(",");
+      var genderObj = {
+        female: genderCharArray.includes("f"),
+        male: genderCharArray.includes("m"),
+        transMale: genderCharArray.includes("fm"),
+        transFemale: genderCharArray.includes("mf"),
+        allGenders: genderCharArray.includes("all"),
+        nonbinary: genderCharArray.includes("nb"),
+        transgender: genderCharArray.includes("tg"),
+        afab:genderCharArray.includes("tm"),
+          amab:genderCharArray.includes("tf")
+
+      };
+      return genderObj;
+    }
+
+    function filterListArray(list) {
+      var filteredList = [];
+
+      try {
+        for (var i = 0; i < list.length; i++) {
+          if ((list[i]['Minimum age'] <= UserInfo.age && UserInfo.age <= list[i]['Maximum age']) || (UserInfo.age == "all ages") || (UserInfo.age == null)) {
+            var jsonGender = handleGenderString(list[i]['Gender']);
+            if(!isTransgender){
+              if((UserInfo.gender == "male" && jsonGender.male) || (UserInfo.gender == "female" && jsonGender.female) || (jsonGender.allGenders) || (UserInfo.gender == null)){
+                filteredList.push(
+                  list[i]
+                );
+              }
+            }
+            if(isTransgender){
+              if(UserInfo.Tgender == "tf" && UserInfo.gender == "male" && jsonGender.male){
+                filteredList.push(
+                  list[i]
+                );
+              }
+              if(UserInfo.Tgender == "tm" && UserInfo.gender == "female" && jsonGender.female){
+                filteredList.push(
+                  list[i]
+                );
+              }
+              if(UserInfo.Tgender == "tm" && UserInfo.gender == "male" && jsonGender.afab){
+                filteredList.push(
+                  list[i]
+                );
+              }
+              if(UserInfo.Tgender == "tf" && UserInfo.gender == "female" && jsonGender.amab){
+                filteredList.push(
+                  list[i]
+                );
+              }
+              if(UserInfo.Tgender == "tf" && UserInfo.gender == "nonbinary" && jsonGender.amab){
+                filteredList.push(
+                  list[i]
+                );
+              }
+              if(UserInfo.Tgender == "tm" && UserInfo.gender == "nonbinary" && jsonGender.afab){
+                filteredList.push(
+                  list[i]
+                );
+              }
+              if((jsonGender.allGenders) || (UserInfo.gender == null)){
+                filteredList.push(
+                  list[i]
+                );
+              }
+            }
+          }
+        }
+      }
+      catch (err) {
+        //nothing
+      }
+      return filteredList;
+
+    }
+
+    function find_duplicate_in_array(arra1) {
+      var j = 0,
+        result = [],
+        TopicListBundle = [];
+      const nonApplicaple = ["NA", "N/A", " NA", "NA ", " NA "];
+
+      for (var i = 0; i < arra1.length; i++) {
+        if (!result.includes(arra1[i]["Topic heading"]) && !nonApplicaple.includes(arra1[i][pat_prov].toUpperCase())) {
+          result.push(arra1[i]["Topic heading"]);
+          TopicListBundle.push({ name: arra1[i]["Topic heading"], body: [] });
+          TopicListBundle[j].body.push({ subject: arra1[i]['Subject'], text: arra1[i][pat_prov] });
+          
+          if ( UserInfo.isTopSurgery === true && !nonApplicaple.includes(arra1[i][top_surg].toUpperCase())){
+            TopicListBundle[j].body.push({ subject: arra1[i]['Subject'], text: arra1[i][top_surg]});
+          }
+
+          if ( UserInfo.isBottomSurgery === true && !nonApplicaple.includes(arra1[i][bot_surg].toUpperCase())){
+            TopicListBundle[j].body.push({ subject: arra1[i]['Subject'], text: arra1[i][bot_surg]});
+          }
+
+          if ( UserInfo.isHormoneTherapy === true && !nonApplicaple.includes(arra1[i][hormonet].toUpperCase())){
+            TopicListBundle[j].body.push({ subject: arra1[i]['Subject'], text: arra1[i][hormonet]});
+          }
+
+          j++;
+        }
+        else if (result.includes(arra1[i]["Topic heading"]) && !nonApplicaple.includes(arra1[i][pat_prov].toUpperCase())) {
+
+          let index = result.findIndex(topic => topic === arra1[i]["Topic heading"]);
+          TopicListBundle[index].body.push({ subject: arra1[i]['Subject'], text: arra1[i][pat_prov] });
+                    
+          if ( UserInfo.isTopSurgery === true && !nonApplicaple.includes(arra1[i][top_surg].toUpperCase())){
+            TopicListBundle[index].body.push({ subject: arra1[i]['Subject'], text: arra1[i][top_surg]});
+          }
+
+          if ( UserInfo.isBottomSurgery === true && !nonApplicaple.includes(arra1[i][bot_surg].toUpperCase())){
+            TopicListBundle[index].body.push({ subject: arra1[i]['Subject'], text: arra1[i][bot_surg]});
+          }
+
+          if ( UserInfo.isHormoneTherapy === true && !nonApplicaple.includes(arra1[i][hormonet].toUpperCase())){
+            TopicListBundle[index].body.push({ subject: arra1[i]['Subject'], text: arra1[i][hormonet]});
+          }
+          
+        }
+      }
+
+      return TopicListBundle;
+    }
+
+    function filterlist(list,filterlist){
+      var filteredLists = [];
+
+      try {
+        for (var i = 0; i < list.length; i++) {
+          for( var k=0; k < filterlist.length; k++){
+            if(list[i]['Topic heading'] == filterlist[k]['Topic heading'] ){
+              
+              if ((filterlist[k]['Minimum age'] <= UserInfo.age && UserInfo.age <= filterlist[k]['Maximum age']) || (UserInfo.age == "all ages") || (UserInfo.age == null)) {
+                var jsonGender = handleGenderString(filterlist[k]['Gender']);
+                if(!isTransgender){
+                  if((UserInfo.gender == "male" && jsonGender.male) || (UserInfo.gender == "female" && jsonGender.female) || (jsonGender.allGenders) || (UserInfo.gender == null)){
+                    list[i]['position']=k
+                    filteredLists.push(
+                      list[i]
+                    );
+                    
+                  }
+                }
+                if(isTransgender){
+                  if(UserInfo.Tgender == "tf" && UserInfo.gender == "male" && jsonGender.male){
+                    list[i]['position']=k
+                    filteredLists.push(
+                      list[i]
+                    );
+                    
+                  }
+                  if(UserInfo.Tgender == "tm" && UserInfo.gender == "female" && jsonGender.female){
+                    list[i]['position']=k
+                    filteredLists.push(
+                      list[i]
+                    );
+                    
+                  }
+                  if(UserInfo.Tgender == "tm" && UserInfo.gender == "male" && jsonGender.afab){
+                    list[i]['position']=k
+                    filteredLists.push(
+                      list[i]
+                    );
+                    
+                  }
+                  if(UserInfo.Tgender == "tf" && UserInfo.gender == "female" && jsonGender.amab){
+                    list[i]['position']=k
+                    filteredLists.push(
+                      list[i]
+                    );
+                  
+                  }
+                  if(UserInfo.Tgender == "tf" && UserInfo.gender == "nonbinary" && jsonGender.amab){
+                    list[i]['position']=k
+                    filteredLists.push(
+                      list[i]
+                    );
+                    
+                  }
+                  if(UserInfo.Tgender == "tm" && UserInfo.gender == "nonbinary" && jsonGender.afab){
+                    list[i]['position']=k
+                    filteredLists.push(
+                      list[i]
+                    );
+                    
+                  }
+                  if((jsonGender.allGenders) || (UserInfo.gender == null)){
+                    list[i]['position']=k
+                    filteredLists.push(
+                      list[i]
+                    );
+                    
+                  }
+                }
+              }
+
+            }
+
+          }
+          
+        }
+      }
+      catch (err) {
+        //nothing
+      }
+      
+      filteredLists.sort((a, b) => (a.position > b.position) ? 1 : -1 );  
+      console.log("filteredLists",filteredLists)
+      return filteredLists;
+    }
+    TopicsItemList = filterListArray(listItem);   
+    FiltetredTopicsItemList= find_duplicate_in_array(filterlist(TopicsItemList,filterItem));
+    return (FiltetredTopicsItemList);
+  }
+
+  //////////////////////////////////////////////Get list of Test ///////////////////////////////////////////////
   getListOfTests(listItem, userInfo) {
 
     //var UserInfo = getUserInfo();

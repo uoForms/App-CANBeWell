@@ -6,6 +6,8 @@ import '../Button.css';
 import TopicsModal from './TopicsModal';
 import TopicListFR from '../JSONFolder/HtmlTopic-FR.json';
 import TopicListEN from '../JSONFolder/HtmlTopic-EN.json';
+import FilterTopicListFR from '../JSONFolder/FilterTopic-FR.json';
+import FilterTopicListEN from '../JSONFolder/FilterTopic-EN.json';
 import TopicModal from './TopicModal';
 
 class Topics extends React.Component {
@@ -15,7 +17,8 @@ class Topics extends React.Component {
     this.state =
     {
       isOpen: false,
-      TopicList: this.props.userConfig.language == "french" ? TopicListFR : TopicListEN
+      TopicList: this.props.userConfig.language == "french" ? TopicListFR : TopicListEN,
+      FilterTopicList: this.props.userConfig.language == "french" ? FilterTopicListFR : FilterTopicListEN
     }
     this.pageViewStateUpdater = this.pageViewStateUpdater.bind(this);
   }
@@ -49,6 +52,7 @@ class Topics extends React.Component {
 
         <FilterableTopicTable 
           topics={this.props.data(this.state.TopicList, this.props.userConfig)} 
+          filterdtopics={this.props.newdata(this.state.TopicList, this.props.userConfig,this.state.FilterTopicList)}
           userConfig={this.props.userConfig}
           text={this.props.lang.topic_search_bar_placeholder} 
           pageViewStateUpdater = {this.pageViewStateUpdater}
@@ -74,6 +78,7 @@ Topics.propTypes = {
   showTopics: PropTypes.bool,
   userConfig: PropTypes.object,
   data: PropTypes.func.isRequired,
+  newdata: PropTypes.func.isRequired,
   lang: PropTypes.object,
 };
 
@@ -139,10 +144,21 @@ class TopicRow extends React.Component {
 class TopicTable extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      expanded: false,
+      showTop: true
+
+    };
     this.pageViewStateUpdater = this.pageViewStateUpdater.bind(this);
   }
   pageViewStateUpdater = (nav, cat, time) => {
     this.props.pageViewStateUpdater(nav, cat, time);
+  }
+  handlemoreitems = () => {
+    this.setState({ expanded: !this.state.expanded });
+  };
+  handleshowtopict = () =>{
+    this.setState({ showTop: !this.state.showTop });
   }
   render() {
     const backdroplistItemStyle = {
@@ -165,8 +181,27 @@ class TopicTable extends React.Component {
     };
 
     var rows = [];
+    var filterrows=[];
     var index = 0;
+    var index1=0;
     /*This is where you filter the content to display by comparing the what the user enter and the contend of the json file*/
+    this.props.filterdtopics.forEach((topic) =>{
+      if (topic.name.toLowerCase().indexOf(this.props.filterText.toLowerCase()) === -1) {
+        return;
+      }
+      filterrows.push(<div key={index1} style={backdroplistItemStyle}>
+        <div style={listItemStyle}>
+          <TopicRow
+            topic={topic}
+            userInfo={this.props.userConfig}
+            pageViewStateUpdater={this.pageViewStateUpdater}
+            btnText={this.props.btnText}
+            onClose={this.props.onClose}
+          />
+        </div>
+      </div>);
+      index1++;
+    });
     this.props.topics.forEach((topic) => {
       if (topic.name.toLowerCase().indexOf(this.props.filterText.toLowerCase()) === -1) {
         return;
@@ -184,9 +219,20 @@ class TopicTable extends React.Component {
       </div>);
       index++;
     });
+    const dataForDisplay = this.state.showTop ? filterrows.slice(0,10) : rows
     return (
       <div className='table'>
-        {rows}
+        <div>
+          {
+            <div>
+              <br/>
+              <button type="button" onClick={ this.handleshowtopict } className="button3-1">
+              {this.state.showTop ? 'Show All' : 'Show Top 10'} 
+              </button>
+              {dataForDisplay}
+            </div>
+            }
+        </div>
       </div>
     );
   }
@@ -244,13 +290,14 @@ class FilterableTopicTable extends React.Component {
   render() {
     return (
       <div>
-        <SearchBar
+        {/* <SearchBar
           filterText={this.state.filterText}
           onFilterTextInput={this.handleFilterTextInput}
           text={this.props.text}
-        />
+        /> */}
         <TopicTable
           topics={this.props.topics}
+          filterdtopics={this.props.filterdtopics}
           userConfig={this.props.userConfig}
           filterText={this.state.filterText}
           pageViewStateUpdater = {this.pageViewStateUpdater}
