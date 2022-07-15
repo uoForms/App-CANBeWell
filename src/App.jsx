@@ -1167,6 +1167,7 @@ class App extends Component {
           <Topics showTopics={this.state.topicsView} 
             userConfig={userInfo} 
             data={this.state.data.getListOfTopics} 
+            newdata={this.state.data.getListOfFilteredTopics}
             lang={this.state.lang} 
             pageViewStateUpdater = {this.pageViewStateUpdater}
             onClose={this.toggleModal}
