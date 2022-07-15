@@ -11,6 +11,8 @@ before_install:
 - curl -L -o ./src/JSONFolder/HtmlTopic-FR.json "https://drive.google.com/uc?export=download&id=1lru1LitepXYPCvdovo11xz8s7MdZhBzI"
 - curl -L -o ./src/JSONFolder/HtmlTest-FR.json "https://drive.google.com/uc?export=download&id=1iapSdfbUYnUDn6nrDavN536rey-1tiBD"
 - curl -L -o ./src/JSONFolder/HtmlTest-EN.json "https://drive.google.com/uc?export=download&id=1eNwhPOhb9koID2G_c53O7yu3iQ2pJJZR"
+- curl -L -o ./src/JSONFolder/FilterTopic-EN.json "https://drive.google.com/uc?export=download&id=1O2oQ1uxTyiaNg15ihf1Qi7C7H1iAbalY"
+- curl -L -o ./src/JSONFolder/FilterTopic-FR.json "https://drive.google.com/uc?export=download&id=1NcAl0Xjdm4lcKTRPz56PoFtm737_bm-B"
 
 
 install:
