@@ -181,9 +181,10 @@ class TopicTable extends React.Component {
       width: '99%',
       minHeight: 50,
       margin: '0 auto',
-      textAlign: 'left',
+      textAlign: 'center',
       padding: 10,
       color: 'white'
+      
     };
 
     var rows = [];
@@ -197,7 +198,7 @@ class TopicTable extends React.Component {
         if (topic.name.toLowerCase().indexOf(this.props.filterText.toLowerCase()) === -1) {
           return;
         }
-        filterrows.push(<div key={index1} style={backdroplistItemStyle}>
+        filterrows.push(<div key={index1} style={backdroplistItemStyle} className='col-lg-4 col-md-6'>
           <div style={listItemStyle}>
             <TopicRow
               topic={topic}
@@ -228,8 +229,8 @@ class TopicTable extends React.Component {
         // });
 
       }
-      rows.push(<div key={index} style={backdroplistItemStyle}>
-        <div style={listItemStyle}>
+      rows.push(<div key={index} style={backdroplistItemStyle} className='col-lg-4' >
+        <div style={listItemStyle} >
           <TopicRow
             topic={topic}
             userInfo={this.props.userConfig}
@@ -253,6 +254,7 @@ class TopicTable extends React.Component {
               <button type="button" onClick={ this.handleshowtopict } className="button3">
               {this.state.showTop ? 'Show All' : 'Show Top 10'} 
             </button>
+            <br></br>
               {dataForDisplay}
             
             </div>
