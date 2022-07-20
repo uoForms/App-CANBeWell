@@ -31,9 +31,10 @@
                     // generate a five digit number for the contact_number variable
                     this.contact_number.value = Math.random() * 100000 | 0;
                     // these IDs from the previous steps
-                    emailjs.sendForm('service_bx6p5w4', 'template_pf95btk', this)
+                    emailjs.sendForm('service_kuz1ymm', 'template_pf95btk', this)
                         .then(function() {
                             console.log('SUCCESS!');
+
                         }, function(error) {
                             console.log('FAILED...', error);
                         });
@@ -204,7 +205,7 @@
                 <div class="contact-heading mb-4">
                     <h2 class="mb-4 ab-contact-title">Feedback</h2>
                     <p class="contact-text">We are always looking to improve the app. If you have any feedback, ideas for improvement or anything is not working well email us at <span class="contact-email"> cmavriplis@bruyere.org</span> </p>
-                    <form id="contact-form">
+                    <!-- <form id="contact-form">
                         <input type="hidden" name="contact_number">
                         <label>Name</label>
                         <input type="text" name="user_name">
@@ -213,7 +214,48 @@
                         <label>Message</label>
                         <textarea name="message"></textarea>
                         <input type="submit" value="Send">
-                    </form>
+                    </form> -->
+                </div>
+
+                <div class="contact1">
+                    <div class="container-contact1">
+                        <div class="contact1-pic js-tilt" data-tilt>
+                            <img src="./images/contactform.png" alt="IMG">
+                        </div>
+            
+                        <form class="contact1-form validate-form" id="contact-form">
+                            <span class="contact1-form-title">
+                                Get in touch
+                            </span>
+                            <input type="hidden" name="contact_number">
+            
+                            <div class="wrap-input1 validate-input" data-validate = "Name is required">
+                                <input id="name" class="input1" type="text" name="name" placeholder="Name" required>
+                                <span class="shadow-input1"></span>
+                                <span class="name-error"></span>
+                            </div>
+            
+                            <div class="wrap-input1 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                                <input id="email" class="input1" type="text" name="email" placeholder="Email" required>
+                                <span class="shadow-input1"></span>
+                                <span class="name-error"></span>
+                            </div>
+
+                            <div class="wrap-input1 validate-input" data-validate = "Message is required">
+                                <textarea id="message" class="input1" name="message" placeholder="Message" required></textarea>
+                                <span class="shadow-input1"></span>
+                            </div>
+            
+                            <div class="container-contact1-form-btn">
+                                <button class="contact1-form-btn" type="submit" value="Send Email" onclick="checkValidations()">
+                                     <span>
+                                        Send Email
+                                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                                    </span>
+                                </button> 
+                            </div>
+                        </form>
+                    </div>
                 </div>
 
             </div>
@@ -230,7 +272,7 @@
             </div>
         </div>
     </section>
-
+    <script src="./contactus.js"></script>
 </body>
 
 </html>
