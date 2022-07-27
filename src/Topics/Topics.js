@@ -10,6 +10,7 @@ import FilterTopicListFR from '../JSONFolder/filterTopic-FR.json';
 import FilterTopicListEN from '../JSONFolder/filterTopic-EN.json';
 import TopicModal from './TopicModal';
 
+
 class Topics extends React.Component {
 
   constructor(props) {
@@ -85,7 +86,6 @@ Topics.propTypes = {
 };
 
 class TopicRow extends React.Component {
-
   constructor(props) {
     super(props);
     this.state =
@@ -94,6 +94,7 @@ class TopicRow extends React.Component {
       display: [],
     }
     this.pageViewStateUpdater = this.pageViewStateUpdater.bind(this);
+   
   }
 
   pageViewStateUpdater = (nav, cat, time) => {
@@ -118,10 +119,22 @@ class TopicRow extends React.Component {
       display: this.props.topic.body
     });
   }
-  render() {
 
+  
+  render() {
+    const tryRequire = (path) => {
+      try {
+       return require(`${path}`);
+      } catch (err) {
+       return null;
+      }
+    };
+    const imagename = this.props.topic.name.replace(/[^a-z0-9]/gi,'-');
+    const imageExist= tryRequire(`../assets/TopicIcons/${imagename}.png`);
+    console.log("imageExist",imageExist)
     return (
       <div>
+        <div> {imageExist ? <img  id= {this.props.topic.name} src={require(`../assets/TopicIcons/${imagename}.png`).default} className="topicsIcon"/> : <img  id= {this.props.topic.name} src={require('../assets/TopicIcons/defaultIcon.png').default}  className="topicsIcon"/>}</div>
         <div
           id={this.props.topic.name} className="mydetailsItemdiv"
           onClick={() => this.rowClicked(this.props.topic.name)}

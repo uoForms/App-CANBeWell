@@ -19,17 +19,17 @@ function hideValidate(input) {
 function checkValidations() {
   let letters = /^[a-zA-Z\s]*$/;
   const name = nameEl.value.trim();
-  const email = emailEl.value.trim();
+  const email = emailEl.value.trim();   
   const message = messageEl.value.trim();
   if (name === "") {
      document.querySelector(".name-error").classList.add("error");
       document.querySelector(".name-error").innerText =
-        "Please fill out this field!";
+        "**Please fill out this field!";
   } else {
     if (!letters.test(name)) {
       document.querySelector(".name-error").classList.add("error");
       document.querySelector(".name-error").innerText =
-        "Please enter only characters!";
+        "**Please enter only characters!";
     } else {
       
     }
@@ -37,7 +37,7 @@ function checkValidations() {
   if (email === "") {
      document.querySelector(".name-error").classList.add("error");
       document.querySelector(".name-error").innerText =
-        "Please fill out this field!";
+        "**Please fill out this field!";
   } else {
     if (!letters.test(name)) {
       document.querySelector(".name-error").classList.add("error");
