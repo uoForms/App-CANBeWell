@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
 import { PageViewTimer, GaUserEvent } from '../Tracking';
 import '../Button.css';
 import TopicsModal from './TopicsModal';
@@ -92,11 +91,11 @@ class TopicRow extends React.Component {
     {
       isOpen: false,
       display: [],
+      imagename: this.props.topic.name.replace(/[^a-z0-9]/gi,'-'),
+      imgSrc: require(`../assets/TopicIcons/${this.props.topic.name.replace(/[^a-z0-9]/gi,'-')}.png`).default
     }
     this.pageViewStateUpdater = this.pageViewStateUpdater.bind(this);
-   
   }
-
   pageViewStateUpdater = (nav, cat, time) => {
     this.props.pageViewStateUpdater(nav, cat, time);
   }
@@ -119,22 +118,20 @@ class TopicRow extends React.Component {
       display: this.props.topic.body
     });
   }
-
+  HandleimageError= ()=> {
+    console.log("error happend")
+    this.setState({ imgSrc:'../assets/TopicIcons/defaultIcon.png' })
+  }
   
-  render() {
-    const tryRequire = (path) => {
-      try {
-       return require(`${path}`);
-      } catch (err) {
-       return null;
-      }
-    };
-    const imagename = this.props.topic.name.replace(/[^a-z0-9]/gi,'-');
-    const imageExist= tryRequire(`../assets/TopicIcons/${imagename}.png`);
-    console.log("imageExist",imageExist)
+  render() {   
+    // const imagename = this.props.topic.name.replace(/[^a-z0-9]/gi,'-');
+    // const imageExist= `../assets/TopicIcons/${imagename}.png`;
+    console.log("imgSrc",this.state.imgSrc)
+    console.log("topic",this.props.topic.name)
     return (
       <div>
-        <div> {imageExist ? <img  id= {this.props.topic.name} src={require(`../assets/TopicIcons/${imagename}.png`).default} className="topicsIcon"/> : <img  id= {this.props.topic.name} src={require('../assets/TopicIcons/defaultIcon.png').default}  className="topicsIcon"/>}</div>
+        <div> <img  id= {this.props.topic.name} src={`${this.state.imgSrc}`} onError={this.HandleimageError} className="topicsIcon"/></div>
+        {/* <div> <img  id= {this.props.topic.name} src={require(`../assets/TopicIcons/${imagename}.png`).default} onError={this.HandleimageError} className="topicsIcon"/></div> */}
         <div
           id={this.props.topic.name} className="mydetailsItemdiv"
           onClick={() => this.rowClicked(this.props.topic.name)}
