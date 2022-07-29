@@ -91,8 +91,6 @@ class TopicRow extends React.Component {
     {
       isOpen: false,
       display: [],
-      imagename: this.props.topic.name.replace(/[^a-z0-9]/gi,'-'),
-      imgSrc: require(`../assets/TopicIcons/${this.props.topic.name.replace(/[^a-z0-9]/gi,'-')}.png`).default
     }
     this.pageViewStateUpdater = this.pageViewStateUpdater.bind(this);
   }
@@ -118,20 +116,20 @@ class TopicRow extends React.Component {
       display: this.props.topic.body
     });
   }
-  HandleimageError= ()=> {
-    console.log("error happend")
-    this.setState({ imgSrc:'../assets/TopicIcons/defaultIcon.png' })
-  }
   
-  render() {   
-    // const imagename = this.props.topic.name.replace(/[^a-z0-9]/gi,'-');
-    // const imageExist= `../assets/TopicIcons/${imagename}.png`;
-    console.log("imgSrc",this.state.imgSrc)
-    console.log("topic",this.props.topic.name)
+  render() {  
+
+    const  tryRequire = () => {
+      try {
+       return require(`../assets/TopicIcons/${this.props.topic.name.replace(/[^a-z0-9]/gi,'-')}.png`);
+      } catch (err) {
+       return null;
+      }
+    };
+    const imageExist= tryRequire()
     return (
       <div>
-        <div> <img  id= {this.props.topic.name} src={`${this.state.imgSrc}`} onError={this.HandleimageError} className="topicsIcon"/></div>
-        {/* <div> <img  id= {this.props.topic.name} src={require(`../assets/TopicIcons/${imagename}.png`).default} onError={this.HandleimageError} className="topicsIcon"/></div> */}
+        <div> { imageExist ? <img  id= {this.props.topic.name} src={require(`../assets/TopicIcons/${this.props.topic.name.replace(/[^a-z0-9]/gi,'-')}.png`).default}  className="topicsIcon"/> : <img  id= {this.props.topic.name} src={require('../assets/TopicIcons/defaultIcon.png').default}  className="topicsIcon"/>}</div>
         <div
           id={this.props.topic.name} className="mydetailsItemdiv"
           onClick={() => this.rowClicked(this.props.topic.name)}
