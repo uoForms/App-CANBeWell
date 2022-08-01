@@ -1,56 +1,48 @@
-import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
+import React, { useState } from 'react'
+import emailjs from 'emailjs-com'
 
-export const ContactUs = () => {
-    const form = useRef();
+import './ContactUs.css'
 
-    const sendEmail = (e) => {
-        e.preventDefault();
+const Contact = () => {
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+    const [emailSent, setEmailSent] = useState(false);
 
-        emailjs.sendForm('service_kuz1ymm', 'template_pf95btk', form.current, 'vrEPn-xWIBAgXNvbl')
-            .then((result) => {
-                console.log(result.text);
-            }, (error) => {
-                console.log(error.text);
-            });
-    };
+    const submit = () => {
+        if (name && email && message) {
+            const serviceId = 'service_id';
+            const templateId = 'template_id';
+            const userId = 'user_id';
+            const templateParams = {
+                name,
+                email,
+                message
+            };
+
+            emailjs.send(serviceId, templateId, templateParams, userId)
+                .then(response => console.log(response))
+                .then(error => console.log(error));
+
+            setName('');
+            setEmail('');
+            setMessage('');
+            setEmailSent(true);
+        } else {
+            alert('Please fill in all fields.');
+        }
+    }
 
     return (
-        <div>
-            <form class="contact1-form validate-form" id="contact-form" ref={form} onSubmit={sendEmail}>
-                            <span class="contact1-form-title">
-                                Get in touch
-                            </span>
-                            <input type="hidden" name="contact_number" />
-            
-                            <div class="wrap-input1 validate-input" data-validate = "Name is required">
-                                <input id="name" class="input1" type="text" name="name" placeholder="Name" required/>
-                                <span class="shadow-input1"></span>
-                                <span class="name-error"></span>
-                            </div>
-            
-                            <div class="wrap-input1 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-                                <input id="email" class="input1" type="text" name="email" placeholder="Email" required/>
-                                <span class="shadow-input1"></span>
-                                <span class="name-error"></span>
-                            </div>
+        <div id="contact-form">
+            <input type="text" placeholder="Your Name" value={name} onChange={e => setName(e.target.value)} />
+            <input type="email" placeholder="Your email address" value={email} onChange={e => setEmail(e.target.value)} />
+            <textarea placeholder="Your message" value={message} onChange={e => setMessage(e.target.value)}></textarea>
+            <button onClick={submit}>Send Message</button>
 
-                            <div class="wrap-input1 validate-input" data-validate = "Message is required">
-                                <textarea id="message" class="input1" name="message" placeholder="Message" required></textarea>
-                                <span class="shadow-input1"></span>
-                            </div>
-            
-                            <div class="container-contact1-form-btn">
-                                <button class="contact1-form-btn" type="submit" value="Send Email" onclick="checkValidations()">
-                                     <span>
-                                        Send Email
-                                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-                                    </span>
-                                </button> 
-                            </div>
-                        </form>
-
+            <span className={emailSent ? 'visible' : null}>Thank you for your message, we will be in touch in no time!</span>
         </div>
-
     );
 };
+
+export default Contact;
