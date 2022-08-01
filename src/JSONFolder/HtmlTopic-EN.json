@@ -1,7 +1,7 @@
 [
   {
     "Button": "Aorta",
-    "Topic heading": "Abdominal Aortic Aneurysm Screen",
+    "Topic heading": "Aorta",
     "Subject": "Screen men age 65-80 with ultrasound once",
     "General Patient Text": "n/a",
     "Health Provider Text": "[[Weak recommendation by canadian task force; https://canadiantaskforce.ca/guidelines/published-guidelines/abdominal-aortic-aneurysm/]]",
@@ -11,7 +11,7 @@
   },
   {
     "Button": "Aorta",
-    "Topic heading": "Aorta: The body's main blood vessel",
+    "Topic heading": "Aorta",
     "Subject": "Talk to your provider to see if you need a test",
     "General Patient Text": "•\tYour provider may ask for an ultrasound of your belly\nto detect a bulge in the main blood vessel \n(the bulge is nicknamed AAA for short or Abdominal Aortic Aneurysm)\n•\tIf the bulge grows it can burst and cause death.",
     "Health Provider Text": "n/a",
@@ -21,7 +21,7 @@
   },
   {
     "Button": "Aorta",
-    "Topic heading": "Abdominal Aortic Aneurysm Screen",
+    "Topic heading": "Aorta",
     "Subject": "Screening not recommended for men older than 80 years old",
     "General Patient Text": "n/a",
     "Health Provider Text": "[[Weak recommendation by canadian task force; https://canadiantaskforce.ca/guidelines/published-guidelines/abdominal-aortic-aneurysm/]]",
@@ -31,7 +31,7 @@
   },
   {
     "Button": "Aorta",
-    "Topic heading": "Abdominal Aortic Aneurysm Screen",
+    "Topic heading": "Aorta",
     "Subject": "Screening not recommended for women of all ages.",
     "General Patient Text": "n/a",
     "Health Provider Text": "[[Strong recommendations, very low quality of evidence by canadian task force; https://canadiantaskforce.ca/guidelines/published-guidelines/abdominal-aortic-aneurysm/]]",
@@ -281,7 +281,7 @@
   },
   {
     "Button": "Colon",
-    "Topic heading": "Colorectal Cancer or Bowel Cancer",
+    "Topic heading": "Colorectal Cancer",
     "Subject": "Prevent Colon Cancer",
     "General Patient Text": "•\tBe physically active\n•\tMaintain a healthy body weight, [[bmi; https://cancer.ca/en/cancer-information/reduce-your-risk/have-a-healthy-body-weight/reduce-your-risk-of-cancer-with-a-healthy-body-weight]]\n•\tBe a non-smoker and avoid second hand smoke\n[[more; http://www.cancer.ca/en/cancer-information/cancer-type/colorectal/risks/reducing-your-risk/?region=on]]",
     "Health Provider Text": "Recommend patients:\n•\tBe physically active\n•\tMaintain a healthy body weight, [[bmi; https://cancer.ca/en/cancer-information/reduce-your-risk/have-a-healthy-body-weight/reduce-your-risk-of-cancer-with-a-healthy-body-weight]]\n•\tLimit the amount of alcohol they drink (see healthy drinking guidelines)\n•\tBe a non-smoker and avoid second hand smoke\n•\tLimit the amount of red and processed meats eaten\n•\tEat foods high in fiber \n•\tLimit sitting time\n[[Source; http://www.cancer.ca/en/cancer-information/cancer-type/colorectal/risks/reducing-your-risk/?region=on]]",
@@ -1271,7 +1271,7 @@
   },
   {
     "Button": "Bone",
-    "Topic heading": "Nutrition,Vitamins",
+    "Topic heading": "Nutrition, Vitamins",
     "Subject": "Age 18 only",
     "General Patient Text": "•\tCalcium: 1300 mg/day; Vitamin D: 600 IU/ day\nPregnant or lactating same as above\n•\tFolic acid: 0.4 to 1 mg a day for women 3 months before and after conception or always\n•\t[[more information on folic acid; https://www.canada.ca/en/public-health/services/pregnancy/folic-acid.html]]\n•\t[[take more folic acid if; https://www.canada.ca/en/public-health/services/pregnancy/folic-acid.html#a4]]",
     "Health Provider Text": "•\tCalcium: 1300 mg/day; Vitamin D: 600 IU/ day\nPregnant or lactating same as above\n•\tFolic acid: 0.4 to 1 mg a day for women 3 months before and after conception or always\n•\t[[more information on folic acid; https://www.canada.ca/en/public-health/services/pregnancy/folic-acid.html]]\n•\t[[take more folic acid if; https://www.canada.ca/en/public-health/services/pregnancy/folic-acid.html#a4]]\n•\t[[SOGC guideline; https://www.jogc.com/article/S1701-2163(15)30230-9/pdf]]",
@@ -1281,7 +1281,7 @@
   },
   {
     "Button": "Bone",
-    "Topic heading": "Nutrition,Vitamins",
+    "Topic heading": "Nutrition, Vitamins",
     "Subject": "Age 19-49",
     "General Patient Text": "•\tCalcium: 1000mg/day; Vitamin D: 400-1000 IU/day\nPregnant or lactating same as 18 year old\n•\tFolic acid: 0.4 to 1 mg a day for women 3 months before and after conception or always\n•\t[[more information on folic acid; https://www.canada.ca/en/public-health/services/pregnancy/folic-acid.html]]\n•\t[[take more folic acid if; https://www.canada.ca/en/public-health/services/pregnancy/folic-acid.html#a4]]",
     "Health Provider Text": "•\tCalcium: 1000mg/day; Vitamin D: 400-1000 IU/day\nPregnant or lactating same as 18 year old\n•\tFolic acid: 0.4 to 1 mg a day for women 3 months before and after conception or always\n•\t[[more information on folic acid; https://www.canada.ca/en/public-health/services/pregnancy/folic-acid.html]]\n•\t[[take more folic acid if; https://www.canada.ca/en/public-health/services/pregnancy/folic-acid.html#a4]]\n•\t[[SOGC guideline; https://www.jogc.com/article/S1701-2163(15)30230-9/pdf]]",
@@ -1291,7 +1291,7 @@
   },
   {
     "Button": "Bone",
-    "Topic heading": "Nutrition,Vitamins",
+    "Topic heading": "Nutrition, Vitamins",
     "Subject": "Age 18 only",
     "General Patient Text": "•\tCalcium: 1300 mg/day; Vitamin D: 600 IU/ day",
     "Health Provider Text": "•\tCalcium: 1300 mg/day; Vitamin D: 600 IU/ day",
@@ -1301,7 +1301,7 @@
   },
   {
     "Button": "Bone",
-    "Topic heading": "Nutrition,Vitamins",
+    "Topic heading": "Nutrition, Vitamins",
     "Subject": "Age 19-49",
     "General Patient Text": "•\tCalcium: 1000mg/day; Vitamin D: 400-1000 IU/day",
     "Health Provider Text": "•\tCalcium: 1000mg/day; Vitamin D: 400-1000 IU/day",
@@ -1311,7 +1311,7 @@
   },
   {
     "Button": "Bone",
-    "Topic heading": "Nutrition,Vitamins",
+    "Topic heading": "Nutrition, Vitamins",
     "Subject": "Age 50 and above",
     "General Patient Text": "•\tCalcium: 1200mg/day; Vitamin D: 800-2000 IU/day",
     "Health Provider Text": "•\tCalcium: 1200mg/day; Vitamin D: 800-2000 IU/day",
@@ -1321,7 +1321,7 @@
   },
   {
     "Button": "Bone",
-    "Topic heading": "Nutrition,Vitamins",
+    "Topic heading": "Nutrition, Vitamins",
     "Subject": "All ages",
     "General Patient Text": "•\tEating healthy is important to build and keep strong bones\n[[Click here for more info; https://osteoporosis.ca/nutrition/]]\n\n•\tVitamin D: this vitamin is important for strong bones. Taking more than 2000 IU a day of vitamin D should be done under medical supervision \n[[Click here for more info; https://osteoporosis.ca/vitamin-d/]]\n\n•\tCalcium: Better to get calcium from food rather than supplements.\n[[Click here for more info; https://osteoporosis.ca/calcium/]]\n[[Click her for a calcium calculator; https://osteoporosis.ca/calcium-calculator/]]",
     "Health Provider Text": "•\tA healthy diet prevents osteoporosis\n[[More info; https://osteoporosis.ca/nutrition/]]\n\n•\t[[Vitamin D; https://osteoporosis.ca/vitamin-d/]]\n\n•\t[[Calcium; https://osteoporosis.ca/calcium/]]\n[[Calcium calculator; https://osteoporosis.ca/calcium-calculator/]]",
