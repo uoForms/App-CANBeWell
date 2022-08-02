@@ -14,11 +14,13 @@ class Topics extends React.Component {
 
   constructor(props) {
     super(props);
+    
     this.state =
     {
       isOpen: false,
       TopicList: this.props.userConfig.language == "french" ? TopicListFR : TopicListEN,
-      FilterTopicList: this.props.userConfig.language == "french" ? FilterTopicListFR : FilterTopicListEN
+      FilterTopicList: this.props.userConfig.language == "french" ? FilterTopicListFR : FilterTopicListEN,
+      language: this.props.userConfig.language,
     }
     this.pageViewStateUpdater = this.pageViewStateUpdater.bind(this);
   }
@@ -58,6 +60,8 @@ class Topics extends React.Component {
           pageViewStateUpdater = {this.pageViewStateUpdater}
           btnText={this.props.lang.close_body_modal}
           onClose={this.props.onClose}
+          filterallbtnText={this.props.lang.topic_filter_all}
+          filtertopbtnText={this.props.lang.topic_filter_top_10}
           />
 
         {/*help dialog box*/}
@@ -146,8 +150,8 @@ class TopicTable extends React.Component {
     super(props);
     this.state = {
       expanded: false,
-      showTop: true
-
+      showTop: true ,
+      showAll: false
     };
     this.pageViewStateUpdater = this.pageViewStateUpdater.bind(this);
   }
@@ -158,7 +162,13 @@ class TopicTable extends React.Component {
     this.setState({ expanded: !this.state.expanded });
   };
   handleshowtopict = () =>{
-    this.setState({ showTop: !this.state.showTop });
+    this.setState({ showTop: !this.state.showTop , showAll: !this.state.showTop  });
+  }
+  showAllclicked=()=>{
+    this.setState({ showTop: false , showAll: true  });
+  }
+  showTopclicked=()=>{
+    this.setState({ showTop: true , showAll: false  }); 
   }
   render() {
     const backdroplistItemStyle = {
@@ -197,6 +207,8 @@ class TopicTable extends React.Component {
             pageViewStateUpdater={this.pageViewStateUpdater}
             btnText={this.props.btnText}
             onClose={this.props.onClose}
+            filterallbtnText={this.props.filterallbtnText}
+            filtertopbtnText={this.props.filtertopbtnText}
           />
         </div>
       </div>);
@@ -226,9 +238,13 @@ class TopicTable extends React.Component {
           {
             <div>
               <br/>
-              <button type="button" onClick={ this.handleshowtopict } className="button3-1">
-              {this.state.showTop ? 'Show All' : 'Show Top 10'} 
+              <button id="filtershowall" type="button" style={{marginLeft: 15}} onClick={ this.showAllclicked } className={`button3-1 ${this.state.showAll ? "filteractive" : ""}`}>
+              {this.props.filterallbtnText} 
               </button>
+              <button id="filtershowtop" type="button" onClick={ this.showTopclicked } className={`button3-1 ${this.state.showTop ? "filteractive" : ""}`}>
+              {this.props.filtertopbtnText} 
+              </button>
+
               {dataForDisplay}
             </div>
             }
@@ -303,6 +319,8 @@ class FilterableTopicTable extends React.Component {
           pageViewStateUpdater = {this.pageViewStateUpdater}
           btnText={this.props.btnText}
           onClose={this.props.onClose}
+          filterallbtnText={this.props.filterallbtnText}
+          filtertopbtnText={this.props.filtertopbtnText}
         />
       </div>
     );
