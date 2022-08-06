@@ -3,121 +3,73 @@
     "Topic heading": "Être actif",
     "Gender": "m",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 64
   },
   {
     "Topic heading": "Être actif",
     "Gender": "f",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 64
   },
   {
     "Topic heading": "Être actif",
     "Gender": "tf",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 64
   },
   {
     "Topic heading": "Être actif",
     "Gender": "tm",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 64
   },
   {
     "Topic heading": "Activité physique",
     "Gender": "m",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 64
   },
   {
     "Topic heading": "Activité physique",
     "Gender": "f",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 64
   },
   {
     "Topic heading": "Activité physique",
     "Gender": "tm",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 64
   },
   {
     "Topic heading": "Activité physique",
     "Gender": "tf",
     "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Topic heading": "Examen physique",
-    "Gender": "m",
-    "Minimum age": 40,
-    "Maximum age": 150
-  },
-  {
-    "Topic heading": "Examen physique",
-    "Gender": "f",
-    "Minimum age": 40,
-    "Maximum age": 150
-  },
-  {
-    "Topic heading": "Examen physique",
-    "Gender": "tm",
-    "Minimum age": 40,
-    "Maximum age": 150
-  },
-  {
-    "Topic heading": "Examen physique",
-    "Gender": "tf",
-    "Minimum age": 40,
-    "Maximum age": 150
+    "Maximum age": 64
   },
   {
     "Topic heading": "Alimentation",
     "Gender": "m",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 64
   },
   {
     "Topic heading": "Alimentation",
     "Gender": "f",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 64
   },
   {
     "Topic heading": "Alimentation",
     "Gender": "tm",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 64
   },
   {
     "Topic heading": "Alimentation",
     "Gender": "tf",
     "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Topic heading": "Diabète de type 2",
-    "Gender": "m",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Topic heading": "Diabète de type 2",
-    "Gender": "f",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Topic heading": "Diabète de type 2",
-    "Gender": "tm",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Topic heading": "Diabète de type 2",
-    "Gender": "tf",
-    "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 64
   },
   {
     "Topic heading": "Vaccination",
@@ -144,6 +96,30 @@
     "Maximum age": 150
   },
   {
+    "Topic heading": "Tension artérielle",
+    "Gender": "m",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Topic heading": "Tension artérielle",
+    "Gender": "f",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Topic heading": "Tension artérielle",
+    "Gender": "tm",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Topic heading": "Tension artérielle",
+    "Gender": "tf",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
     "Topic heading": "Maladie cardiaque",
     "Gender": "m",
     "Minimum age": 40,
@@ -165,6 +141,30 @@
     "Topic heading": "Maladie cardiaque",
     "Gender": "tf",
     "Minimum age": 40,
+    "Maximum age": 150
+  },
+  {
+    "Topic heading": "Diabète de type 2",
+    "Gender": "m",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Topic heading": "Diabète de type 2",
+    "Gender": "f",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Topic heading": "Diabète de type 2",
+    "Gender": "tm",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Topic heading": "Diabète de type 2",
+    "Gender": "tf",
+    "Minimum age": 18,
     "Maximum age": 150
   },
   {
@@ -212,50 +212,50 @@
   {
     "Topic heading": "Cancer colorectal",
     "Gender": "m",
-    "Minimum age": 18,
+    "Minimum age": 50,
     "Maximum age": 150
   },
   {
     "Topic heading": "Cancer colorectal",
     "Gender": "f",
-    "Minimum age": 18,
+    "Minimum age": 50,
     "Maximum age": 150
   },
   {
     "Topic heading": "Cancer colorectal",
     "Gender": "tf",
-    "Minimum age": 18,
+    "Minimum age": 50,
     "Maximum age": 150
   },
   {
     "Topic heading": "Cancer colorectal",
     "Gender": "tm",
-    "Minimum age": 18,
+    "Minimum age": 50,
     "Maximum age": 150
   },
   {
     "Topic heading": "Santé sexuelle et reproductive",
     "Gender": "m",
     "Minimum age": 18,
-    "Maximum age": 69
+    "Maximum age": 64
   },
   {
     "Topic heading": "Santé sexuelle et reproductive",
     "Gender": "f",
     "Minimum age": 18,
-    "Maximum age": 70
+    "Maximum age": 64
   },
   {
     "Topic heading": "Santé sexuelle et reproductive",
     "Gender": "tm",
     "Minimum age": 18,
-    "Maximum age": 70
+    "Maximum age": 64
   },
   {
     "Topic heading": "Santé sexuelle et reproductive",
     "Gender": "tf",
     "Minimum age": 18,
-    "Maximum age": 69
+    "Maximum age": 64
   },
   {
     "Topic heading": "Poumon",
@@ -330,6 +330,12 @@
     "Maximum age": 150
   },
   {
+    "Topic heading": "Aorte",
+    "Gender": "m",
+    "Minimum age": 65,
+    "Maximum age": 80
+  },
+  {
     "Topic heading": "Chutes chez les personnes âgées",
     "Gender": "m",
     "Minimum age": 65,
@@ -450,6 +456,30 @@
     "Maximum age": 150
   },
   {
+    "Topic heading": "Examen physique",
+    "Gender": "m",
+    "Minimum age": 40,
+    "Maximum age": 150
+  },
+  {
+    "Topic heading": "Examen physique",
+    "Gender": "f",
+    "Minimum age": 40,
+    "Maximum age": 150
+  },
+  {
+    "Topic heading": "Examen physique",
+    "Gender": "tm",
+    "Minimum age": 40,
+    "Maximum age": 150
+  },
+  {
+    "Topic heading": "Examen physique",
+    "Gender": "tf",
+    "Minimum age": 40,
+    "Maximum age": 150
+  },
+  {
     "Topic heading": "COVID-19",
     "Gender": "m",
     "Minimum age": 18,
@@ -495,54 +525,6 @@
     "Topic heading": "Vision",
     "Gender": "tf",
     "Minimum age": 65,
-    "Maximum age": 150
-  },
-  {
-    "Topic heading": "Aorte",
-    "Gender": "m",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Topic heading": "Aorte",
-    "Gender": "f",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Topic heading": "Aorte",
-    "Gender": "tm",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Topic heading": "Aorte",
-    "Gender": "tf",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Topic heading": "Tension artérielle",
-    "Gender": "m",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Topic heading": "Tension artérielle",
-    "Gender": "f",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Topic heading": "Tension artérielle",
-    "Gender": "tm",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Topic heading": "Tension artérielle",
-    "Gender": "tf",
-    "Minimum age": 18,
     "Maximum age": 150
   }
 ]
