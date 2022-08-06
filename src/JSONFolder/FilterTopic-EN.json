@@ -3,121 +3,73 @@
     "Topic heading": "Be Active",
     "Gender": "m",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 64
   },
   {
     "Topic heading": "Be Active",
     "Gender": "f",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 64
   },
   {
     "Topic heading": "Be Active",
     "Gender": "tf",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 64
   },
   {
     "Topic heading": "Be Active",
     "Gender": "tm",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 64
   },
   {
     "Topic heading": "Physical Activity",
     "Gender": "m",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 64
   },
   {
     "Topic heading": "Physical Activity",
     "Gender": "f",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 64
   },
   {
     "Topic heading": "Physical Activity",
     "Gender": "tm",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 64
   },
   {
     "Topic heading": "Physical Activity",
     "Gender": "tf",
     "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Topic heading": "Physical Exam",
-    "Gender": "m",
-    "Minimum age": 40,
-    "Maximum age": 150
-  },
-  {
-    "Topic heading": "Physical Exam",
-    "Gender": "f",
-    "Minimum age": 40,
-    "Maximum age": 150
-  },
-  {
-    "Topic heading": "Physical Exam",
-    "Gender": "tm",
-    "Minimum age": 40,
-    "Maximum age": 150
-  },
-  {
-    "Topic heading": "Physical Exam",
-    "Gender": "tf",
-    "Minimum age": 40,
-    "Maximum age": 150
+    "Maximum age": 64
   },
   {
     "Topic heading": "Nutrition",
     "Gender": "m",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 64
   },
   {
     "Topic heading": "Nutrition",
     "Gender": "f",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 64
   },
   {
     "Topic heading": "Nutrition",
     "Gender": "tm",
     "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 64
   },
   {
     "Topic heading": "Nutrition",
     "Gender": "tf",
     "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Topic heading": "Diabetes Type 2",
-    "Gender": "m",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Topic heading": "Diabetes Type 2",
-    "Gender": "f",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Topic heading": "Diabetes Type 2",
-    "Gender": "tm",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Topic heading": "Diabetes Type 2",
-    "Gender": "tf",
-    "Minimum age": 18,
-    "Maximum age": 150
+    "Maximum age": 64
   },
   {
     "Topic heading": "Immunization",
@@ -144,6 +96,30 @@
     "Maximum age": 150
   },
   {
+    "Topic heading": "Blood pressure",
+    "Gender": "m",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Topic heading": "Blood pressure",
+    "Gender": "f",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Topic heading": "Blood pressure",
+    "Gender": "tm",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Topic heading": "Blood pressure",
+    "Gender": "tf",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
     "Topic heading": "Heart Disease",
     "Gender": "m",
     "Minimum age": 40,
@@ -165,6 +141,30 @@
     "Topic heading": "Heart Disease",
     "Gender": "tf",
     "Minimum age": 40,
+    "Maximum age": 150
+  },
+  {
+    "Topic heading": "Diabetes Type 2",
+    "Gender": "m",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Topic heading": "Diabetes Type 2",
+    "Gender": "f",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Topic heading": "Diabetes Type 2",
+    "Gender": "tm",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Topic heading": "Diabetes Type 2",
+    "Gender": "tf",
+    "Minimum age": 18,
     "Maximum age": 150
   },
   {
@@ -213,25 +213,25 @@
     "Topic heading": "Sexual and reproductive health",
     "Gender": "m",
     "Minimum age": 18,
-    "Maximum age": 69
+    "Maximum age": 64
   },
   {
     "Topic heading": "Sexual and reproductive health",
     "Gender": "f",
     "Minimum age": 18,
-    "Maximum age": 70
+    "Maximum age": 64
   },
   {
     "Topic heading": "Sexual and reproductive health",
     "Gender": "tm",
     "Minimum age": 18,
-    "Maximum age": 70
+    "Maximum age": 64
   },
   {
     "Topic heading": "Sexual and reproductive health",
     "Gender": "tf",
     "Minimum age": 18,
-    "Maximum age": 69
+    "Maximum age": 64
   },
   {
     "Topic heading": "Lung",
@@ -306,6 +306,12 @@
     "Maximum age": 150
   },
   {
+    "Topic heading": "Aorta",
+    "Gender": "m",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
     "Topic heading": "Falls in the Elderly",
     "Gender": "m",
     "Minimum age": 65,
@@ -426,6 +432,30 @@
     "Maximum age": 150
   },
   {
+    "Topic heading": "Physical Exam",
+    "Gender": "m",
+    "Minimum age": 40,
+    "Maximum age": 150
+  },
+  {
+    "Topic heading": "Physical Exam",
+    "Gender": "f",
+    "Minimum age": 40,
+    "Maximum age": 150
+  },
+  {
+    "Topic heading": "Physical Exam",
+    "Gender": "tm",
+    "Minimum age": 40,
+    "Maximum age": 150
+  },
+  {
+    "Topic heading": "Physical Exam",
+    "Gender": "tf",
+    "Minimum age": 40,
+    "Maximum age": 150
+  },
+  {
     "Topic heading": "COVID-19",
     "Gender": "m",
     "Minimum age": 18,
@@ -471,54 +501,6 @@
     "Topic heading": "Vision",
     "Gender": "tf",
     "Minimum age": 65,
-    "Maximum age": 150
-  },
-  {
-    "Topic heading": "Aorta",
-    "Gender": "m",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Topic heading": "Aorta",
-    "Gender": "f",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Topic heading": "Aorta",
-    "Gender": "tm",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Topic heading": "Aorta",
-    "Gender": "tf",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Topic heading": "Blood pressure",
-    "Gender": "m",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Topic heading": "Blood pressure",
-    "Gender": "f",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Topic heading": "Blood pressure",
-    "Gender": "tm",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Topic heading": "Blood pressure",
-    "Gender": "tf",
-    "Minimum age": 18,
     "Maximum age": 150
   }
 ]
