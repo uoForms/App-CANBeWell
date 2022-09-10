@@ -30,7 +30,7 @@ class BodyModal extends React.Component {
       padding: '10px',
       color: 'white'
     };
-    
+
     topicsToDisplay.forEach((topic) => {
       var bodys = topic.body;
       //var subject = body.subject;
@@ -41,8 +41,8 @@ class BodyModal extends React.Component {
       );
       var k = 0;
       bodys.forEach((body) => {
-        var bodyArray = body.text.split(/(\[\[|\]\]|\n)/g);
-        var subject = body.subject.split(/(\[\[|\]\]|\n)/g);
+        var bodyArray = body.text.split(/(\[\[|\]\]|\n|\(\<|\>\)|\{\{|\}\})/g);
+        var subject = body.subject.split(/(\[\[|\]\]|\n|\(\<|\>\)|\{\{|\}\})/g);
         var bodyArrayToDisplay = [];
         var subjectArrayToDisplay = [];
         var outerTextToDisplay = [];
@@ -63,20 +63,20 @@ class BodyModal extends React.Component {
                 </div>
               );
             } else {
-            /*else if(link[1].indexOf("topic") === 0 || link[1].indexOf("topic") === 1){
-              var id = topic.name + k;
-              k++;
-              var mTopic = link[1].replace("topic://", "").trim();
-              var outerText = this.getOuterText(mTopic);
-              subjectArrayToDisplay.push(<div onClick={(idTarget) => this.togglePopUp(id)}><font color="Yellow">{link[0]}</font><div id={id} className="popup"><span className="popuptext"><p>{outerText}</p></span></div></div>);
-            }
-            else if(link[1].indexOf("test") === 0 || link[1].indexOf("test") === 1){
-              var testId = topic.name + k;
-              k++;
-              var mTest = link[1].replace("test://", "").trim();
-              var testOuterText = this.getOuterText(mTest);
-              subjectArrayToDisplay.push(<div onClick={(idTarget) => this.togglePopUp(testId)}><font color="Yellow">{link[0]}</font><div id={testId} className="popup"><span className="popuptext"><p>{testOuterText}</p></span></div></div>);
-            }*/
+              /*else if(link[1].indexOf("topic") === 0 || link[1].indexOf("topic") === 1){
+                var id = topic.name + k;
+                k++;
+                var mTopic = link[1].replace("topic://", "").trim();
+                var outerText = this.getOuterText(mTopic);
+                subjectArrayToDisplay.push(<div onClick={(idTarget) => this.togglePopUp(id)}><font color="Yellow">{link[0]}</font><div id={id} className="popup"><span className="popuptext"><p>{outerText}</p></span></div></div>);
+              }
+              else if(link[1].indexOf("test") === 0 || link[1].indexOf("test") === 1){
+                var testId = topic.name + k;
+                k++;
+                var mTest = link[1].replace("test://", "").trim();
+                var testOuterText = this.getOuterText(mTest);
+                subjectArrayToDisplay.push(<div onClick={(idTarget) => this.togglePopUp(testId)}><font color="Yellow">{link[0]}</font><div id={testId} className="popup"><span className="popuptext"><p>{testOuterText}</p></span></div></div>);
+              }*/
               subjectArrayToDisplay.push(
                 <a href={link[1]} target="_blank" key={itemID}>
                   <font color="Yellow">{link[0]}</font>
@@ -85,7 +85,19 @@ class BodyModal extends React.Component {
             }
             i++;
             //}catch(err){}
-          } else if (subject[i] == "\n") {
+          }
+          else if (subject[i] == '(<') {
+            subjectArrayToDisplay.push(<b>{subject[i + 1]}</b>);
+            i++;
+          }
+          else if (subject[i] == '{{') {
+            subjectArrayToDisplay.push(<mark class="texthighlight">{subject[i + 1]}</mark>);
+            i++;
+          }
+          else if (subject[i] == '}}' || subject[i] == '>)') {
+            i++;
+          }
+          else if (subject[i] == "\n") {
             subjectArrayToDisplay.push(<br />);
           } else if (subject[i] !== "]]") {
             subjectArrayToDisplay.push(subject[i]);
@@ -104,16 +116,16 @@ class BodyModal extends React.Component {
                   </div>
                 );
               } else {
-              /*else if(link[1].indexOf("topic") === 0 || link[1].indexOf("topic") === 1){
-                var id = topic.name + k;
-                k++;
-                var mTopic = link[1].replace("topic://", "").trim();
-                var outerText = this.getOuterText(mTopic);
-                subjectArrayToDisplay.push(<div onClick={(idTarget) => this.togglePopUp(id)}><font color="Yellow">{link[0]}</font><div id={id} className="popup"><span className="popuptext"><p>{outerText}</p></span></div></div>);
-              }
-              else if(link[1].indexOf("test") === 0 || link[1].indexOf("test") === 1){
-                bodyArrayToDisplay.push(<a><font color="Yellow">{link[0]}</font></a>);
-              }*/
+                /*else if(link[1].indexOf("topic") === 0 || link[1].indexOf("topic") === 1){
+                  var id = topic.name + k;
+                  k++;
+                  var mTopic = link[1].replace("topic://", "").trim();
+                  var outerText = this.getOuterText(mTopic);
+                  subjectArrayToDisplay.push(<div onClick={(idTarget) => this.togglePopUp(id)}><font color="Yellow">{link[0]}</font><div id={id} className="popup"><span className="popuptext"><p>{outerText}</p></span></div></div>);
+                }
+                else if(link[1].indexOf("test") === 0 || link[1].indexOf("test") === 1){
+                  bodyArrayToDisplay.push(<a><font color="Yellow">{link[0]}</font></a>);
+                }*/
                 bodyArrayToDisplay.push(
                   <a href={link[1]} target="_blank" key={itemID}>
                     <font color="Yellow">{link[0]}</font>
@@ -121,8 +133,20 @@ class BodyModal extends React.Component {
                 );
               }
               i++;
-            } catch (err) {}
-          } else if (bodyArray[i] == "\n") {
+            } catch (err) { }
+          } 
+          else  if(bodyArray[i] == '(<'){
+            bodyArrayToDisplay.push(<b>{bodyArray[i+1]}</b>);
+            i++;
+          }
+          else  if(bodyArray[i] == '{{'){
+            bodyArrayToDisplay.push(<mark class="texthighlight">{bodyArray[i+1]}</mark>);
+            i++;
+          }
+          else if (bodyArray[i] == '}}' || bodyArray[i] == '>)') {
+            i++;
+          }          
+          else if (bodyArray[i] == "\n") {
             bodyArrayToDisplay.push(<br />);
           } else if (bodyArray[i] !== "]]") {
             bodyArrayToDisplay.push(bodyArray[i]);
