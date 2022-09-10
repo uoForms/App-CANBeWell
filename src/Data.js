@@ -276,11 +276,6 @@ class Data {
     listItem.sort(function(a, b) {
       return compareStrings(a["Topic heading"], b["Topic heading"]);
     })
-
-
-
-    
-
     var TopicsItemList = [];
 
     function handleGenderString(genderString) {
@@ -371,7 +366,7 @@ class Data {
       for (var i = 0; i < arra1.length; i++) {
         if (!result.includes(arra1[i]["Topic heading"]) && !nonApplicaple.includes(arra1[i][pat_prov].toUpperCase())) {
           result.push(arra1[i]["Topic heading"]);
-          TopicListBundle.push({ name: arra1[i]["Topic heading"], body: [] });
+          TopicListBundle.push({ button:arra1[i]["Button"] ,name: arra1[i]["Topic heading"], body: [] });
           TopicListBundle[j].body.push({ subject: arra1[i]['Subject'], text: arra1[i][pat_prov] });
           
           if ( UserInfo.isTopSurgery === true && !nonApplicaple.includes(arra1[i][top_surg].toUpperCase())){
@@ -412,7 +407,6 @@ class Data {
     }
     TopicsItemList = find_duplicate_in_array(filterListArray(listItem));
    
-
     return (TopicsItemList);
   }
 
@@ -540,7 +534,7 @@ class Data {
       for (var i = 0; i < arra1.length; i++) {
         if (!result.includes(arra1[i]["Topic heading"]) && !nonApplicaple.includes(arra1[i][pat_prov].toUpperCase())) {
           result.push(arra1[i]["Topic heading"]);
-          TopicListBundle.push({ name: arra1[i]["Topic heading"], body: [] });
+          TopicListBundle.push({button:arra1[i]["Button"] , name: arra1[i]["Topic heading"], body: [] });
           TopicListBundle[j].body.push({ subject: arra1[i]['Subject'], text: arra1[i][pat_prov] });
           
           if ( UserInfo.isTopSurgery === true && !nonApplicaple.includes(arra1[i][top_surg].toUpperCase())){
@@ -663,7 +657,6 @@ class Data {
       }
       
       filteredLists.sort((a, b) => (a.position > b.position) ? 1 : -1 );  
-      console.log("filteredLists",filteredLists)
       return filteredLists;
     }
     TopicsItemList = filterListArray(listItem);   

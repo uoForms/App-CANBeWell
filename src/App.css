@@ -431,3 +431,13 @@ summary:after {
   }
   
 }
+.topicsIcon{
+  max-width: 100%;
+    height: auto;
+    display: block;
+    width: 75px;
+    margin: 0 auto;
+    padding: 14px 0;}
+.topicicon-row{
+  align-items: center;
+}

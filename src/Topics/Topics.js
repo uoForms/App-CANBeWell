@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
 import { PageViewTimer, GaUserEvent } from '../Tracking';
 import '../Button.css';
 import TopicsModal from './TopicsModal';
@@ -121,11 +120,20 @@ class TopicRow extends React.Component {
     });
   }
   render() {  
-
+    const  tryRequire = () => {
+      try {
+       return require(`../assets/TopicIcons/${this.props.topic.button.replace(/[^a-z0-9]/gi,'-')}.png`);
+      } catch (err) {
+       return null;
+      }
+    };
+    const imageExist= tryRequire();
+    console.log("this.props.topic",this.props.topic)
     return (
-      <div>
+      <div className='row topicicon-row'>
+      <div className='col-lg-3 col-sm-12'> { imageExist ? <img  id= {this.props.topic.name} src={require(`../assets/TopicIcons/${this.props.topic.button.replace(/[^a-z0-9]/gi,'-')}.png`).default}  className="topicsIcon"/> : <img  id= {this.props.topic.name} src={require('../assets/TopicIcons/defaultIcon.png').default}  className="topicsIcon"/>}</div>
       <div
-        id={this.props.topic.name} className="mydetailsItemdiv"
+        id={this.props.topic.name} className="mydetailsItemdiv col-lg-9 col-sm-12"
         onClick={() => this.rowClicked(this.props.topic.name)}
         test-id="topicRow"
         >{this.props.topic.name}</div>
@@ -199,7 +207,7 @@ class TopicTable extends React.Component {
       if (topic.name.toLowerCase().indexOf(this.props.filterText.toLowerCase()) === -1) {
         return;
       }
-      filterrows.push(<div key={index1} style={backdroplistItemStyle}>
+      filterrows.push(<div key={index1} style={backdroplistItemStyle} className='col-lg-3 col-md-6'>
         <div style={listItemStyle}>
           <TopicRow
             topic={topic}
@@ -218,7 +226,7 @@ class TopicTable extends React.Component {
       if (topic.name.toLowerCase().indexOf(this.props.filterText.toLowerCase()) === -1) {
         return;
       }
-      rows.push(<div key={index} style={backdroplistItemStyle}>
+      rows.push(<div key={index} style={backdroplistItemStyle} className='col-lg-4 col-md-6'>
         <div style={listItemStyle}>
           <TopicRow 
             topic={topic}
@@ -244,7 +252,7 @@ class TopicTable extends React.Component {
               <button id="filtershowtop" type="button" onClick={ this.showTopclicked } className={`button3-1 ${this.state.showTop ? "filteractive" : ""}`}>
               {this.props.filtertopbtnText} 
               </button>
-
+              <br/><br/>
               {dataForDisplay}
             </div>
             }
