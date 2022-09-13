@@ -143,7 +143,7 @@ class TestRow extends React.Component {
           i++;
         }
         else if (bodyArray[i] == '}}' || bodyArray[i] == '>)') {
-          i++;
+          bodyArrayToDisplay.push('');
         }
         else if (bodyArray[i] == '\n') {
           bodyArrayToDisplay.push(<br />);

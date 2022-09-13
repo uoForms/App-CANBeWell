@@ -95,7 +95,7 @@ class BodyModal extends React.Component {
             i++;
           }
           else if (subject[i] == '}}' || subject[i] == '>)') {
-            i++;
+            subjectArrayToDisplay.push('');
           }
           else if (subject[i] == "\n") {
             subjectArrayToDisplay.push(<br />);
@@ -144,7 +144,7 @@ class BodyModal extends React.Component {
             i++;
           }
           else if (bodyArray[i] == '}}' || bodyArray[i] == '>)') {
-            i++;
+            bodyArrayToDisplay.push('');
           }          
           else if (bodyArray[i] == "\n") {
             bodyArrayToDisplay.push(<br />);
