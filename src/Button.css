@@ -251,3 +251,6 @@ div.fixed {
   width: 80px;
   height: 45px ;
 }
+mark.texthighlight {
+  background-color: yellow !important;
+}
