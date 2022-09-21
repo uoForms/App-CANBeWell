@@ -87,7 +87,7 @@ class BodyModal extends React.Component {
             //}catch(err){}
           }
           else if (subject[i] == '(<') {
-            subjectArrayToDisplay.push(<b>{subject[i + 1]}</b>);
+            subjectArrayToDisplay.push(<b className='boldtext'>{subject[i + 1]}</b>);
             i++;
           }
           else if (subject[i] == '{{') {
@@ -136,7 +136,7 @@ class BodyModal extends React.Component {
             } catch (err) { }
           } 
           else  if(bodyArray[i] == '(<'){
-            bodyArrayToDisplay.push(<b>{bodyArray[i+1]}</b>);
+            bodyArrayToDisplay.push(<b className='boldtext'>{bodyArray[i+1]}</b>);
             i++;
           }
           else  if(bodyArray[i] == '{{'){
