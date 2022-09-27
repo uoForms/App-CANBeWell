@@ -111,7 +111,7 @@ color: crimson;
   
 }
 .landingpage-notice-column > div {
-  padding: 0 10px;
+  padding: 0 5px;
 }
 
 /* Clear floats after the columns */
@@ -141,7 +141,7 @@ font-size: larger;
   }
 }
 .homescreen-button-french{
-text-align: left;
+text-align: right;
 }
 .closeButton{
 text-align: right;
@@ -213,7 +213,7 @@ text-align: center;
 
 .homescreen-eng{
 position: relative;
-width: 100%;
+width: 150%;
 height: auto;
 font-size: larger;
 }
@@ -229,7 +229,7 @@ text-align: right;
 .homescreen-fre{
 position: relative;
 text-align: left;
-width: 100%;
+width: 150%;
 height: auto;
 font-size: larger;
 }

@@ -31,9 +31,9 @@
     "uuid": "^7.0.3"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts --openssl-legacy-provider start",
     "start-with-cy-coverage": " react-scripts -r @cypress/instrument-cra start",
-    "build": "react-scripts build",
+    "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test --env=jsdom --passWithNoTests",
     "eject": "react-scripts eject",
     "cypress": "cypress open --config-file ./cypress/configs/local.json"
