@@ -23,6 +23,7 @@
   text-align: center;
   padding: 30px;
   font-weight: 300;
+  z-index: 50;
   /* font-weight: bold; */
 }
 

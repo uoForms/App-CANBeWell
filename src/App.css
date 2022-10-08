@@ -441,3 +441,23 @@ summary:after {
 .topicicon-row{
   align-items: center;
 }
+svg.MuiSvgIcon-root.arrow-left {
+  font-size: 31px !important;
+}
+@media only screen and (min-width:300px) and (max-width:850px){
+  .row.topicicon-row {
+    height: 35px !important;
+}
+.topicicon {
+  width: 35% !important;
+}
+.topictitle {
+  width: 65% !important;
+  font-size: 15px !important;
+}
+.topicsIcon{
+  width: 40px;
+  padding: 0 !important;
+}
+  
+}

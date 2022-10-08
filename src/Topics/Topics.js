@@ -61,6 +61,7 @@ class Topics extends React.Component {
           onClose={this.props.onClose}
           filterallbtnText={this.props.lang.topic_filter_all}
           filtertopbtnText={this.props.lang.topic_filter_top_10}
+          clickOnText={this.props.lang.clickOn_Text}
           />
 
         {/*help dialog box*/}
@@ -128,12 +129,11 @@ class TopicRow extends React.Component {
       }
     };
     const imageExist= tryRequire();
-    console.log("this.props.topic",this.props.topic)
     return (
       <div className='row topicicon-row'>
-      <div className='col-lg-3 col-sm-12'> { imageExist ? <img  id= {this.props.topic.name} src={require(`../assets/TopicIcons/${this.props.topic.button.replace(/[^a-z0-9]/gi,'-')}.png`).default}  className="topicsIcon"/> : <img  id= {this.props.topic.name} src={require('../assets/TopicIcons/defaultIcon.png').default}  className="topicsIcon"/>}</div>
+      <div className='col-lg-4 col-md-4 col-sm-4 col-xs-4 topicicon'> { imageExist ? <img  id= {this.props.topic.name} src={require(`../assets/TopicIcons/${this.props.topic.button.replace(/[^a-z0-9]/gi,'-')}.png`).default}  className="topicsIcon"/> : <img  id= {this.props.topic.name} src={require('../assets/TopicIcons/defaultIcon.png').default}  className="topicsIcon"/>}</div>
       <div
-        id={this.props.topic.name} className="mydetailsItemdiv col-lg-9 col-sm-12"
+        id={this.props.topic.name} className="mydetailsItemdiv col-lg-8 col-md-8 col-sm-8 col-xs-8 topictitle"
         onClick={() => this.rowClicked(this.props.topic.name)}
         test-id="topicRow"
         >{this.props.topic.name}</div>
@@ -144,7 +144,8 @@ class TopicRow extends React.Component {
               onClose={this.toggleModal}
               display={this.state.display}
               button={this.props.btnText}
-              getTopic={this.props.topic.name}>
+              getTopic={this.props.topic.name}
+              clickOnText={this.props.clickOnText}>  
             </TopicModal>
           </div>
       </div>
@@ -207,7 +208,7 @@ class TopicTable extends React.Component {
       if (topic.name.toLowerCase().indexOf(this.props.filterText.toLowerCase()) === -1) {
         return;
       }
-      filterrows.push(<div key={index1} style={backdroplistItemStyle} className='col-lg-3 col-md-6'>
+      filterrows.push(<div key={index1} style={backdroplistItemStyle} className='col-lg-3 col-md-6 icontopics'>
         <div style={listItemStyle}>
           <TopicRow
             topic={topic}
@@ -217,6 +218,7 @@ class TopicTable extends React.Component {
             onClose={this.props.onClose}
             filterallbtnText={this.props.filterallbtnText}
             filtertopbtnText={this.props.filtertopbtnText}
+            clickOnText={this.props.clickOnText}
           />
         </div>
       </div>);
@@ -226,7 +228,7 @@ class TopicTable extends React.Component {
       if (topic.name.toLowerCase().indexOf(this.props.filterText.toLowerCase()) === -1) {
         return;
       }
-      rows.push(<div key={index} style={backdroplistItemStyle} className='col-lg-4 col-md-6'>
+      rows.push(<div key={index} style={backdroplistItemStyle} className='col-lg-3 col-md-6 icontopics'>
         <div style={listItemStyle}>
           <TopicRow 
             topic={topic}
@@ -234,6 +236,9 @@ class TopicTable extends React.Component {
             pageViewStateUpdater = {this.pageViewStateUpdater}
             btnText={this.props.btnText}
             onClose={this.props.onClose}
+            filterallbtnText={this.props.filterallbtnText}
+            filtertopbtnText={this.props.filtertopbtnText}
+            clickOnText={this.props.clickOnText}
             />
         </div>
       </div>);
@@ -244,7 +249,7 @@ class TopicTable extends React.Component {
       <div className='table'>
         <div>
           {
-            <div>
+            <div className='container-fluid'>
               <br/>
               <button id="filtershowall" type="button" style={{marginLeft: 15}} onClick={ this.showAllclicked } className={`button3-1 ${this.state.showAll ? "filteractive" : ""}`}>
               {this.props.filterallbtnText} 
@@ -253,7 +258,9 @@ class TopicTable extends React.Component {
               {this.props.filtertopbtnText} 
               </button>
               <br/><br/>
+              <div className='row'>
               {dataForDisplay}
+              </div>
             </div>
             }
         </div>
@@ -329,6 +336,7 @@ class FilterableTopicTable extends React.Component {
           onClose={this.props.onClose}
           filterallbtnText={this.props.filterallbtnText}
           filtertopbtnText={this.props.filtertopbtnText}
+          clickOnText={this.props.clickOnText}
         />
       </div>
     );
