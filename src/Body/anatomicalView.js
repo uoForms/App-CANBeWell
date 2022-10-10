@@ -189,7 +189,7 @@ class Anatomy extends React.Component {
             organSelected: null
         });
     }
-
+    
     render() {
 
         const fixedStyle = {
@@ -198,7 +198,7 @@ class Anatomy extends React.Component {
             left: 0,
             zIndex: 3
         };
-
+        
         //Applying istrangender flag
         if (this.props.isTransgender) {
             //Transgender Body Options
@@ -291,7 +291,8 @@ class Anatomy extends React.Component {
                                 display={this.state.display}
                                 button={this.state.buttonText}
                                 displayConfig={this.state.displayConfigOption}
-                                getTopic={this.props.getDisplay}>
+                                getTopic={this.props.getDisplay}
+                                clickOnText={this.props.lang.clickOn_Text}> 
                             </BodyModal>
                         </div>
 
@@ -394,7 +395,8 @@ class Anatomy extends React.Component {
                             display={this.state.display}
                             button={this.state.buttonText}
                             displayConfig={this.state.displayConfigOption}
-                            getTopic={this.props.getDisplay}>
+                            getTopic={this.props.getDisplay}
+                            clickOnText={this.props.lang.clickOn_Text}>
                         </BodyModal>
 
                     </div>
@@ -494,7 +496,8 @@ class Anatomy extends React.Component {
                                 onClose={this.toggleModal}
                                 display={this.state.display}
                                 button={this.state.buttonText}
-                                getTopic={this.props.getDisplay}>
+                                getTopic={this.props.getDisplay}
+                                clickOnText={this.props.lang.clickOn_Text}>
                             </BodyModal>
                         </div>
 
@@ -596,7 +599,8 @@ class Anatomy extends React.Component {
                                 onClose={this.toggleModal}
                                 display={this.state.display}
                                 button={this.state.buttonText}
-                                getTopic={this.props.getDisplay}>
+                                getTopic={this.props.getDisplay}
+                                clickOnText={this.props.lang.clickOn_Text}>
                             </BodyModal>
                         </div>
 
@@ -699,7 +703,8 @@ class Anatomy extends React.Component {
                                 onClose={this.toggleModal}
                                 display={this.state.display}
                                 button={this.state.buttonText}
-                                getTopic={this.props.getDisplay}>
+                                getTopic={this.props.getDisplay}
+                                clickOnText={this.props.lang.clickOn_Text}>
                             </BodyModal>
                         </div>
 
@@ -800,7 +805,8 @@ class Anatomy extends React.Component {
                                 onClose={this.toggleModal}
                                 display={this.state.display}
                                 button={this.state.buttonText}
-                                getTopic={this.props.getDisplay}>
+                                getTopic={this.props.getDisplay}
+                                clickOnText={this.props.lang.clickOn_Text}>
                             </BodyModal>
                         </div>
 
@@ -903,7 +909,8 @@ class Anatomy extends React.Component {
                                 display={this.state.display}
                                 button={this.state.buttonText}
                                 displayConfig={this.state.displayConfigOption}
-                                getTopic={this.props.getDisplay}>
+                                getTopic={this.props.getDisplay}
+                                clickOnText={this.props.lang.clickOn_Text}>
                             </BodyModal>
                         </div>
 
@@ -1002,7 +1009,8 @@ class Anatomy extends React.Component {
                             display={this.state.display}
                             button={this.state.buttonText}
                             displayConfig={this.state.displayConfigOption}
-                            getTopic={this.props.getDisplay}>
+                            getTopic={this.props.getDisplay}
+                            clickOnText={this.props.lang.clickOn_Text}>
                         </BodyModal>
 
                     </div>
@@ -1096,7 +1104,8 @@ class Anatomy extends React.Component {
                                 onClose={this.toggleModal}
                                 display={this.state.display}
                                 button={this.state.buttonText}
-                                getTopic={this.props.getDisplay}>
+                                getTopic={this.props.getDisplay}
+                                clickOnText={this.props.lang.clickOn_Text}>
                             </BodyModal>
                         </div>
 
