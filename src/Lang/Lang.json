@@ -132,7 +132,8 @@
     "test_search_bar_placeholder": "Search test...",
     "topic_is_not_applicable": "Prevent disease with healthy living (healthy eating, physical activity, no smoking). No other specific recommendations at this time.",
     "topic_filter_all": "Show All",
-    "topic_filter_top_10": "Show Top 10"
+    "topic_filter_top_10": "Show Top 10",
+    "clickOn_Text": "Click on"
   },
   "french":{
     "instruction_modal_header": "Choisir:",
@@ -267,6 +268,7 @@
     "test_search_bar_placeholder": "Rechercher un test...",
     "topic_is_not_applicable": "Prévenir les maladies par des habitudes de vie saines (une alimentation saine de l'activité physique et aucun tabac). Aucune autre recommandation spécifique pour le moment.",
     "topic_filter_all": "Afficher tous",
-    "topic_filter_top_10": "Dix premiers"
+    "topic_filter_top_10": "Dix premiers",
+    "clickOn_Text": "cliquer sur"
   }
 }
