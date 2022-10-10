@@ -40,6 +40,26 @@
     "Maximum age": 150
   },
   {
+    "Button": "Aorta",
+    "Topic heading": "Aorte",
+    "Subject": "Dépistage de l'anevrysme de l'aorte abdominale chez les populations trans et non binaires.",
+    "General Patient Text": "n/a",
+    "Health Provider Text": "Nous n'avons pas trouvé une référence canadienne sur ce sujet. Au Royaume-Uni les patient trans féminins et non-binaires avec le sexe male attribué à la naissance sont recommandés de passer un ultrason abdominal pour dépister un anevrysme.\n[[Référence; https://www.gov.uk/government/publications/nhs-population-screening-information-for-transgender-people]]",
+    "Gender": "tf,tm",
+    "Minimum age": 65,
+    "Maximum age": 80
+  },
+  {
+    "Button": "Aorta",
+    "Topic heading": "Aorte",
+    "Subject": "Entre 65 et 80 ans vous avez possiblement besoin d'un examen.",
+    "General Patient Text": "Des recommandations canadiennes sur le dépistage de l'anevrysme de l'aorte abdominale (AAA: une dilatation du vaisseau sanguin principal du corps qui pourrait être dangereuse) n'ont pas été trouvées. \nAu Royaume-Uni les recommandations sont les suivantes: \n• Les femmes trans, et les personnes non binaires avec sexe masculin attribué à la naissance, sont conseillés de passer un ultrason de l'abdomen pour détecter un AAA possible .  Consultez votre clinicien .\n• Les hommes trans et les personnes non binaires avec sexe féminin attribué à la naissance sont considérées moins à risque donc l'ultason n'est pas recommandé.\n\nLa recherche peut changer ces recommandations, consultez votre clinicien.",
+    "Health Provider Text": "n/a",
+    "Gender": "tf,tm",
+    "Minimum age": 65,
+    "Maximum age": 80
+  },
+  {
     "Button": "Figure outside body walking",
     "Topic heading": "Activité physique",
     "Subject": "Recommandations",
@@ -534,7 +554,7 @@
     "Topic heading": "COVID-19",
     "Subject": "Populations vulnérables",
     "General Patient Text": "n/a",
-    "Health Provider Text": "• POUR DEPISTER  LA PAUVRETÉ: \nPoser la question: Avez-vous de la difficulté avec vos dépenses en fin de mois?\n\n• Trouver des services sociaux et de santé locaux pour votre patient:\nComposer le 211 sur votre téléphone dans certaines régions\nQuébec: [[http://www.211quebecregions.ca/;http://www.211quebecregions.ca/]]\nAilleurs au Canada: [[https://211.ca/;https://211.ca/]]\n\n• OU diriger vos patients vers leur unité de santé publique locale.\n\n• [[Aide financière du Canada; https://www.canada.ca/fr/services/prestations/covid-19-prestations-urgence.html]]\n\n• [[Premières nations, Métis et Inuit; https://www.santepubliqueottawa.ca/fr/public-health-topics/resources-for-first-nations-inuit-and-m-tis-community-members.aspx]]\ninformations nationales et pour Ottawa\n\n• [[Différentes langues; https://www.santepubliqueottawa.ca/fr/public-health-topics/multilingual-resources.aspx]]",
+    "Health Provider Text": "• POUR DEPISTER  LA PAUVRETÉ: \nPoser la question: Avez-vous parfois de la difficulté à boucler votre budget à la fin du mois?\n[[Informations supplémentaires: https://www.cqmf.qc.ca/wp-content/uploads/2020/01/PDF-10-CQMF-Outil-LaPauvrete_Final.pdf]]\n\n• Trouver des services sociaux et de santé locaux pour votre patient:\nComposer le 211 sur votre téléphone dans certaines régions\nQuébec: [[211 quebecregions; http://www.211quebecregions.ca/]]\nAilleurs au Canada: [[211; https://211.ca/]]\n\n• OU diriger vos patients vers leur unité de santé publique locale.\n\n• [[Aide financière du Canada; https://www.canada.ca/fr/services/prestations/covid-19-prestations-urgence.html]]\n\n• [[Premières nations, Métis et Inuit; https://www.santepubliqueottawa.ca/fr/public-health-topics/resources-for-first-nations-inuit-and-m-tis-community-members.aspx]]\ninformations nationales et pour Ottawa\n\n• [[Différentes langues; https://www.santepubliqueottawa.ca/fr/public-health-topics/multilingual-resources.aspx]]",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
@@ -574,7 +594,7 @@
     "Topic heading": "Diabète de type 2",
     "Subject": "Prévenir le diabète",
     "General Patient Text": "• Manger sainement\n• Être physiquement actif\n• Maintenir un IMC santé entre 18,5 et 24:\n[[IMC; https://www.diabetes.ca/static/bmi-calculator.html]]",
-    "Health Provider Text": "Recommander\n•Alimentation saine\n•Activité physique\n•IMC santé entre 18,5 et 24\n[[IMC; https://www.diabetes.ca/static/bmi-calculator.html]]",
+    "Health Provider Text": "Recommander\n• Alimentation saine\n• Activité physique\n• IMC santé entre 18,5 et 24\n[[IMC; https://www.diabetes.ca/static/bmi-calculator.html]]",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
@@ -913,9 +933,9 @@
     "Button": "Genitalia",
     "Topic heading": "Santé sexuelle et reproductive",
     "Subject": "Prévenir les infections transmissibles sexuellement (ITS)",
-    "General Patient Text": "• Pratiquez des relations sexuelles protégées :\nutiliser un condom ou autre protection:\n[[Infos en français; https://www.sexandu.ca/fr/contraception/non-hormonal-contraception/]] \n[[Infos en anglais; https://www.cdc.gov/teenpregnancy/pdf/Teen-Condom-Fact_Sheet-English-March-2016.pdf]]\n\n• Faites-vous tester pour  les ITS :\nSi vous avez été actif sexuellement avec un homme ou une femme ( si vous avez eu des rapports sexuels oraux, vaginaux ou anaux)\nPour les moins de 30 ans: annuellement pour la chlamydia et gonorrhée\nPour les 30 ans et plus: pour toutes les ITS si vous avez un nouveau partenaire, plusieurs partenaires, si vous n'utilisez pas de protection, si vous avez une ITS ou si vous êtes autrement en danger.\n\n• Faites un test de dépistage du VIH à tout âge.\n\nPlus d'informations:\n• [[Information sur les types d'activité sexuelle et les conseils; https://canadiantaskforce.ca/wp-content/uploads/2021/03/CTFPHC_CG-Screening_Patient-FAQ_Final_FR.pdf]]\n• [[Infections; https://www.canada.ca/fr/sante-publique/services/maladies-infectieuses/sante-sexuelle-infections-transmissibles-sexuellement/sante-sexuelle-infections-transmises-sexuellement-faits-information-public.html]]",
+    "General Patient Text": "• {{Pratiquez des relations sexuelles protégées}}:\nUtiliser un condom ou autre protection:\n[[Infos en français; https://www.canada.ca/fr/sante-publique/services/publications/maladies-et-affections/livret-infections-transmises-sexuellement.html#_4.5]]\n[[Infos en français: https://www.sexandu.ca/fr/contraception/non-hormonal-contraception/]] \n[[Infos en anglais; https://www.cdc.gov/teenpregnancy/pdf/Teen-Condom-Fact_Sheet-English-March-2016.pdf]]\n\n• {{Faites-vous tester pour les ITS}}:\nSi vous avez été actif sexuellement avec un homme ou une femme (si vous avez eu des rapports sexuels oraux, vaginaux ou anaux)\n(< Moins de 30 ans :annuellement>) pour la chlamydia et gonorrhée\n(<30 ans et plus :selon votre risque>)\nQuand vous faire tester pour les ITS à 30 ans et + dépend de vos risques. \nVoici certains risques: \nSi vous avez un nouveau partenaire, plusieurs partenaires, si vous n'utilisez pas de protection, si votre partenaire a ou a eu une ITS ou cliquer ce [[lien; https://www.canada.ca/fr/sante-publique/services/publications/maladies-et-affections/livret-infections-transmises-sexuellement.html#_7.1]]\n\n• (<Faites un test de dépistage du VIH à tout âge>)\n\nPlus d'informations:\n• [[Chlamydia et gonorrhée; https://canadiantaskforce.ca/wp-content/uploads/2021/03/CTFPHC_CG-Screening_Patient-FAQ_Final_FR.pdf]]\n• [[Livret sur les ITS; https://www.canada.ca/fr/sante-publique/services/publications/maladies-et-affections/livret-infections-transmises-sexuellement.html]]\n• [[Infections; https://www.canada.ca/fr/sante-publique/services/maladies-infectieuses/sante-sexuelle-infections-transmissibles-sexuellement/sante-sexuelle-infections-transmises-sexuellement-faits-information-public.html]]",
     "Health Provider Text": "n/a",
-    "Gender": "m,f",
+    "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
   },
@@ -924,7 +944,7 @@
     "Topic heading": "Santé sexuelle et reproductive",
     "Subject": "Prévenir les infections transmissibles sexuellement (ITS)",
     "General Patient Text": "n/a",
-    "Health Provider Text": "Discuter des relations sexuelles protégées et \n• 30 ans et moins dépister  chaque année la chlamydia/la gonorrhée si sexuellement actif\n[[GECSSP 2021; https://canadiantaskforce.ca/lignesdirectrives/lignes-directrices-publiees/chlamydia-et-gonorrhee/?lang=fr]]\n• 30 ans et plus dépister les ITS  selon le risque, voir ci-dessous\n• Additionnellement: le dépistage des autres ITS (autres que la chlamydia et gonorrhée) en fonction du risque (nouveau partenaire, partenaires multiples, relations monogames en série, rapports sexuels non protégés, consommation de substances, rapports sexuels avec échange de sang, partage de jouets sexuels)\n• Offrir le dépistage du VIH à tous :\n[[Recommandation de l'Agence de la santé publique du Canada ; https://www.canada.ca/en/public-health/services/hiv-aids/hiv-screening-testing-guide.html]]; soutenu par USPSTF 2013 et CDC,\n[[Le GECSSP recommande seulement si à risque ; https://canadiantaskforce.ca/guidelines/appraised-guidelines/hiv/]]",
+    "Health Provider Text": "(<Discuter des relations sexuelles protégées>)\n\n{{Dépistage}}:\n• {{30 ans et moins: annuel}} pour la chlamydia et la gonorrhée si sexuellement actif.\nSi à risque ajouter dépister aussi pour les autres ITS.\n[[GECSSP 2021; https://canadiantaskforce.ca/lignesdirectrives/lignes-directrices-publiees/chlamydia-et-gonorrhee/?lang=fr]]\n• {{30 ans et plus: selon le risque}} \nDépister la chlamydia, gonorrhée et autres ITS, voir ci-dessous:\nRIsques:nouveau partenaire, partenaires multiples, relations monogames en série, rapports sexuels non protégés, consommation de substances, rapports sexuels avec échange de sang, partage de jouets sexuels)\n• {{Offrir le dépistage du VIH à tous}}:\n[[Recommandation de l'Agence de la santé publique du Canada; https://www.canada.ca/en/public-health/services/hiv-aids/hiv-screening-testing-guide.html]]; soutenu par USPSTF 2013 et CDC,\n[[Le GECSSP recommande seulement si à risque; https://canadiantaskforce.ca/guidelines/appraised-guidelines/hiv/]]",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
@@ -953,7 +973,7 @@
     "Button": "Genitalia",
     "Topic heading": "Santé sexuelle et reproductive",
     "Subject": "Prévenir le cancer de la prostate",
-    "General Patient Text": "• Adoptez une alimentation saine.\n• Soyez actif la plupart des jours de la semaine.\n• Gardez votre poids à un niveau sain.\n\n[[Qu'est-ce que le cancer de la prostate? ; http://www.cancer.ca/en/cancer-information/cancer-type/prostate/prostate-cancer/?region=on]]\n[[Des risques; http://www.cancer.ca/en/cancer-information/cancer-type/prostate/risks/?region=on]]",
+    "General Patient Text": "• Adoptez une alimentation saine.\n• Soyez actif la plupart des jours de la semaine.\n• Gardez votre poids à un niveau sain.\n\n• [[Qu'est-ce que le cancer de la prostate?; https://cancer.ca/fr/cancer-information/cancer-types/prostate/what-is-prostate-cancer]]\n• [[Des risques; https://cancer.ca/fr/cancer-information/cancer-types/prostate/risks]]",
     "Health Provider Text": "n/a",
     "Gender": "m",
     "Minimum age": 18,
@@ -974,7 +994,7 @@
     "Topic heading": "Santé sexuelle et reproductive",
     "Subject": "Santé sexuelle",
     "General Patient Text": "• Les condoms sont recommandés pour les relations sexuelles anales.\n• Le test du VIH est recommandé pour tous les Canadiens au moins une fois [[Lignes directrices de l'ASPC; https://www.canada.ca/fr/sante-publique/services/vih-sida/guide-depistage-diagnostic-infection-vih.html]]\n• Selon vos pratiques et vos antécédents sexuels, le dépistage des infections sexuellement transmissibles et du VIH peut être recommandé à des moments différents. Discutez de toute préoccupation que vous pourriez avoir avec votre fournisseur de soins primaires.\n• Si vous avez été le partenaire réceptif pendant des relations sexuelles anales (« le derrière »), votre fournisseur de soins primaires peut vous recommander des tests Pap anaux réguliers.\n• Si vous avez des relations sexuelles avec des hommes, que vous vous inquiétez de la prévention du VIH et que vous aimeriez en savoir plus sur la prophylaxie pré-exposition (PrEP), discutez-en avec votre fournisseur de soins primaires.\n• [[Directives de l'OMS; https://apps.who.int/iris/bitstream/handle/10665/128048/9789241507431_eng.pdf?sequence=1]]\n• [[Directives RHO; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n• [[Directives UCSF Transcare; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf]]",
-    "Health Provider Text": "• Les doncoms sont recommandés pour les relations sexuelles anales.\n• Recommandez  l'utilisation adéquate de lubrifiants pour les femmes trans et les hommes trans ayant des rapports sexuels avec des hommes.\n• Dépister tous les Canadiens pour le VIH au moins une fois conformément aux [[lignes directrices de l'ASPC; https://www.canada.ca/fr/sante-publique/services/vih-sida/guide-depistage-diagnostic-infection-vih.html]]\n• Dépistage des ITS  en fonction des antécédents comportementaux et des pratiques sexuelles.\n• Envisagez un test Pap anal tous les 2-3 ans (ou tous les ans chez les personnes séropositives) pour celles qui ont des antécédents de relations sexuelles anales réceptives (RHO).\n• La prophylaxie pré-exposition orale quotidienne (PrEP) peut être considérée comme une intervention supplémentaire possible pour les femmes trans ayant des rapports sexuels avec des hommes (OMS).\n• La circoncision médicale volontaire (n'est pas recommandée pour la prévention du VIH chez les femmes transgenres (OMS).\n• Dans la communauté LGBTQ+, les termes « bas » et « haut » sont souvent utilisés pour décrire les partenaires réceptifs et pénétrants pendant l'activité sexuelle, respectivement. Le terme « polyvalent » est utilisé pour décrire une personne qui peut alterner entre ces rôles.\n• [[Directives de l'OMS; https://apps.who.int/iris/bitstream/handle/10665/128048/9789241507431_eng.pdf?sequence=1]]\n• [[Directives RHO; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n• [[Directives UCSF Transcare; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf]]",
+    "Health Provider Text": "• Les condoms  sont recommandés pour les relations sexuelles anales.\n• Recommandez  l'utilisation adéquate de lubrifiants pour les femmes trans et les hommes trans ayant des rapports sexuels avec des hommes.\n• Dépister tous les Canadiens pour le VIH au moins une fois conformément aux [[lignes directrices de l'ASPC; https://www.canada.ca/fr/sante-publique/services/vih-sida/guide-depistage-diagnostic-infection-vih.html]]\n• Dépistage des ITS  en fonction des antécédents comportementaux et des pratiques sexuelles.\n• Envisagez un test Pap anal tous les 2-3 ans (ou tous les ans chez les personnes séropositives) pour celles qui ont des antécédents de relations sexuelles anales réceptives (RHO).\n• La prophylaxie pré-exposition orale quotidienne (PrEP) peut être considérée comme une intervention supplémentaire possible pour les femmes trans ayant des rapports sexuels avec des hommes (OMS).\n• La circoncision médicale volontaire (n'est pas recommandée pour la prévention du VIH chez les femmes transgenres (OMS).\n• Dans la communauté LGBTQ+, les termes « bas » et « haut » sont souvent utilisés pour décrire les partenaires réceptifs et pénétrants pendant l'activité sexuelle, respectivement. Le terme « polyvalent » est utilisé pour décrire une personne qui peut alterner entre ces rôles.\n• [[Directives de l'OMS; https://apps.who.int/iris/bitstream/handle/10665/128048/9789241507431_eng.pdf?sequence=1]]\n• [[Directives RHO; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n• [[Directives UCSF Transcare; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf]]",
     "Gender": "tf",
     "Minimum age": 18,
     "Maximum age": 150
@@ -1094,7 +1114,7 @@
     "Topic heading": "Maladie cardiaque",
     "Subject": "Informations générales",
     "General Patient Text": "• Voir les conseils ci-dessous qui sont les mêmes que pour les personnes cis ET \n• Si vous utilisez un [[calculateur de risque; https://monbilansante.com/cvd/?lang=fr]] pour estimer votre risque de maladie cardiaque: selon la longueur de temps que vous avez pris des hormones, vous pouvez faire le calcul en utilisant votre sexe attribué à la naissance, votre genre ou faire les 2 calculs et prendre la moyenne des deux.\n• [[Référence UCSF; https://transcare.ucsf.edu/guidelines/cardiovascular]]\n• [[Autres calculateurs de risque;  https://ccs.ca/fr/calculators-and-forms/]]",
-    "Health Provider Text": "• Suivre les lignes directrices pour la population générale quand vous évaluez les facteurs de risque.\n• Encourager l'activité physique, l'arrêt du tabac, la perte de poids si nécessaire, le suivi du diabète et de l'hypertension (voir les onglets ci-dessous)\n• Quand vous utilisez ce [[calculateur de risque; http://chd.bestsciencemedicine.com/calc2.html]] \n1. Obtenir la version en français en choisissant Français en haut à droite\n2. selon la longueur de temps que le patient a pris des hormones, vous pouvez faire le calcul en utilisant le sexe attribué à la naissance,le genre ou faire les 2 calculs et prendre la moyenne des deux.\n• [[Référence UCSF; https://transcare.ucsf.edu/guidelines/cardiovascular]]\n• [[Autres calculateurs; https://ccs.ca/fr/calculators-and-forms/]]",
+    "Health Provider Text": "• Suivre les lignes directrices pour la population générale quand vous évaluez les facteurs de risque.\n• Encourager l'activité physique, l'arrêt du tabac, la perte de poids si nécessaire, le suivi du diabète et de l'hypertension (voir les onglets ci-dessous)\n• Quand vous utilisez ce [[calculateur de risque; https://cvdcalculator.com/]] \n1. Obtenir la version en français en choisissant Français en haut à droite\n2. selon la longueur de temps que le patient a pris des hormones, vous pouvez faire le calcul en utilisant le sexe attribué à la naissance,le genre ou faire les 2 calculs et prendre la moyenne des deux.\n• [[Référence UCSF; https://transcare.ucsf.edu/guidelines/cardiovascular]]\n• [[Autres calculateurs; https://ccs.ca/fr/calculators-and-forms/]]",
     "Gender": "tf",
     "Minimum age": 18,
     "Maximum age": 150
@@ -1104,7 +1124,7 @@
     "Topic heading": "Maladie cardiaque",
     "Subject": "Informations générales",
     "General Patient Text": "• Voir les conseils ci-dessous qui sont les mêmes que pour les personnes cis ET \n• Si vous utilisez un [[calculateur de risque; https://monbilansante.com/cvd/?lang=fr]] pour estimer votre risque de maladie cardiaque: selon la longueur de temps que vous avez pris des hormones, vous pouvez faire le calcul en utilisant votre sexe attribué à la naissance, votre genre ou faire les 2 calculs et prendre la moyenne des deux.\n• [[Référence UCSF; https://transcare.ucsf.edu/guidelines/cardiovascular]]\n• [[Autres calculateurs de risque;  https://ccs.ca/fr/calculators-and-forms/]]",
-    "Health Provider Text": "• Suivre les lignes directrices pour la population générale quand vous évaluez les facteurs de risque.\n• Encourager l'activité physique, l'arrêt du tabac, la perte de poids si nécessaire, le suivi du diabète et de l'hypertension (voir les onglets ci-dessous)\n• Quand vous utilisez ce [[calculateur de risque; http://chd.bestsciencemedicine.com/calc2.html]] \n1. Obtenir la version en français en choisissant Français en haut à droite\n2. selon la longueur de temps que le patient a pris des hormones, vous pouvez faire le calcul en utilisant le sexe attribué à la naissance,le genre ou faire les 2 calculs et prendre la moyenne des deux.\n• [[Référence UCSF; https://transcare.ucsf.edu/guidelines/cardiovascular]]\n• [[Autres calculateurs; https://ccs.ca/fr/calculators-and-forms/]]",
+    "Health Provider Text": "• Suivre les lignes directrices pour la population générale quand vous évaluez les facteurs de risque.\n• Encourager l'activité physique, l'arrêt du tabac, la perte de poids si nécessaire, le suivi du diabète et de l'hypertension (voir les onglets ci-dessous)\n• Quand vous utilisez ce [[calculateur de risque; https://csepguidelines.ca/language/fr/directives/adultes_18-64/]] \n1. Obtenir la version en français en choisissant Français en haut à droite\n2. selon la longueur de temps que le patient a pris des hormones, vous pouvez faire le calcul en utilisant le sexe attribué à la naissance,le genre ou faire les 2 calculs et prendre la moyenne des deux.\n• [[Référence UCSF; https://transcare.ucsf.edu/guidelines/cardiovascular]]\n• [[Autres calculateurs; https://ccs.ca/fr/calculators-and-forms/]]",
     "Gender": "tm",
     "Minimum age": 18,
     "Maximum age": 150
@@ -1113,7 +1133,7 @@
     "Button": "Heart",
     "Topic heading": "Maladie cardiaque",
     "Subject": "Être actif",
-    "General Patient Text": "• [[Conseils pour les personnes de 18 à 64ans; https://csepguidelines.ca/language/fr/directives/adultes_18-64/]]\n• [[Conseils pour les personnes de 65 ans et plus; https://csepguidelines.ca/language/fr/directives/adultes_65/]]",
+    "General Patient Text": "Si vous êtes actif vous diminuez vos chances d'avoir des maladies cardiaques. Si vous n'avez pas été actif et vous voulez débuter, commencer avec de la marche. Si vous avez de la difficulté avec des douleurs, de l'essouflement ou de l'étourdissement consultez votre clinicien. \n• [[Conseils pour les personnes de 18 à 64 ans; https://csepguidelines.ca/language/fr/directives/adultes_18-64/]]\n• [[Conseils pour les personnes de 65 ans et plus; https://csepguidelines.ca/language/fr/directives/adultes_65/]]",
     "Health Provider Text": "n/a",
     "Gender": "tf,tm",
     "Minimum age": 18,
@@ -1193,7 +1213,7 @@
     "Button": "Heart",
     "Topic heading": "Maladie cardiaque",
     "Subject": "Être actif",
-    "General Patient Text": "• [[Lignes directrices pour les personnes de 18 à 64ans; https://csepguidelines.ca/language/fr/directives/adultes_18-64/]]\n• [[Lignes directrices pour les personnes de 65 ans et plus; https://csepguidelines.ca/language/fr/directives/adultes_65/]]",
+    "General Patient Text": "Si vous êtes actif vous diminuez vos chances d'avoir des maladies cardiaques. Si vous n'avez pas été actif et vous voulez débuter, commencer avec de la marche. Si vous avez de la difficulté avec des douleurs, de l'essouflement ou de l'étourdissement consultez votre clinicien. \n• [[Conseils pour les personnes de 18 à 64 ans; https://csepguidelines.ca/language/fr/directives/adultes_18-64/]]\n• [[Conseils pour les personnes de 65 ans et plus; https://csepguidelines.ca/language/fr/directives/adultes_65/]]",
     "Health Provider Text": "n/a",
     "Gender": "m,f",
     "Minimum age": 18,
@@ -1213,7 +1233,7 @@
     "Button": "Heart",
     "Topic heading": "Maladie cardiaque",
     "Subject": "Calculer votre risque cardiaque",
-    "General Patient Text": "Utiliser les sites web ci-dessous et discutez-en  avec votre professionnel de la santé.\n• [[Mon bilan santé; https://monbilansante.com/cvd/?lang=fr]]\n• [[Calculateur; http://chd.bestsciencemedicine.com/calc2.html]] pour la version française cliquer en haut à droite",
+    "General Patient Text": "Utiliser les sites web ci-dessous et discutez-en  avec votre professionnel de la santé.\n• [[Mon bilan santé; https://monbilansante.com/cvd/?lang=fr]]\n• [[Calculateur; https://csepguidelines.ca/language/fr/directives/adultes_18-64/]] pour la version française cliquer en haut à droite",
     "Health Provider Text": "n/a",
     "Gender": "m,f",
     "Minimum age": 18,
@@ -1224,7 +1244,7 @@
     "Topic heading": "Maladie cardiaque",
     "Subject": "Calculer le risque cardiaque",
     "General Patient Text": "n/a",
-    "Health Provider Text": "Calculateurs:\nFramingham seulement validé pour les 30 à 74 ans\n• [[Framingham et autres; http://chd.bestsciencemedicine.com/calc2.html]] pour la version française cliquer en haut à droite\n• [[monbilansante.com; https://monbilansante.com/]]",
+    "Health Provider Text": "Calculateurs:\nFramingham seulement validé pour les 30 à 74 ans\n• [[Framingham et autres; https://csepguidelines.ca/language/fr/directives/adultes_18-64/]] pour la version française cliquer en haut à droite\n• [[monbilansante.com; https://monbilansante.com/]]",
     "Gender": "m,f",
     "Minimum age": 18,
     "Maximum age": 74
