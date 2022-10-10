@@ -8,12 +8,12 @@ class TopicModal extends React.Component {
     super(props);
   }
 
-getsubjectArray=(display)=>{
+  getsubjectArray = (display) => {
     const Image = "./";
     //all the subjects
     var subjectArray = [];
     var bodys = display;
-    
+
     const blueist = '#27AAE1';
 
     const listItemStyle = {
@@ -29,9 +29,8 @@ getsubjectArray=(display)=>{
     };
     subjectArray.push(<div><h2 test-id="heading">{this.props.getTopic}</h2> <h3>{this.props.clickOnText}<ArrowRightIcon className="arrow-left" sx={{ fontSize: 40 }}/></h3></div>);
     bodys.forEach((body) => {      
-
-      var bodyArray = body.text.split(/(\[\[|\]\]|\n)/g);
-      var subject = body.subject.split(/(\[\[|\]\]|\n)/g);
+      var bodyArray = body.text.split(/(\[\[|\]\]|\n|\(\<|\>\)|\{\{|\}\})/g);
+      var subject = body.subject.split(/(\[\[|\]\]|\n|\(\<|\>\)|\{\{|\}\})/g);
       var bodyArrayToDisplay = [];
       var subjectArrayToDisplay = [];
       var outerTextToDisplay = [];
@@ -49,6 +48,17 @@ getsubjectArray=(display)=>{
             }
             i++;
           } catch (err) { }
+        }
+        else  if(subject[i] == '(<'){
+          subjectArrayToDisplay.push(<b className='boldtext'>{subject[i+1]}</b>);
+          i++;
+        }
+        else  if(subject[i] == '{{'){
+          subjectArrayToDisplay.push(<mark class="texthighlight">{subject[i+1]}</mark>);
+          i++;
+        }
+        else if (subject[i] == '}}' || subject[i] == '>)') {
+          subjectArrayToDisplay.push('');
         }
         else if (subject[i] == '\n') {
           subjectArrayToDisplay.push(<br />);
@@ -79,6 +89,17 @@ getsubjectArray=(display)=>{
             i++;
           } catch (err) { }
         }
+        else  if(bodyArray[i] == '(<'){
+          bodyArrayToDisplay.push(<b className='boldtext'>{bodyArray[i+1]}</b>);
+          i++;
+        }
+        else  if(bodyArray[i] == '{{'){
+          bodyArrayToDisplay.push(<mark class="texthighlight">{bodyArray[i+1]}</mark>);
+          i++;
+        }
+        else if (bodyArray[i] == '}}' || bodyArray[i] == '>)') {
+          bodyArrayToDisplay.push('');
+        }
         else if (bodyArray[i] == '\n') {
           bodyArrayToDisplay.push(<br />);
         }
@@ -103,8 +124,8 @@ getsubjectArray=(display)=>{
         </div>
       );
     });
-return subjectArray;
-}
+    return subjectArray;
+  }
 
   render() {
     if (!this.props.show) {
