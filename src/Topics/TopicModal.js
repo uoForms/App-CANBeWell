@@ -49,6 +49,17 @@ getsubjectArray=(display)=>{
             i++;
           } catch (err) { }
         }
+        else  if(subject[i] == '(<'){
+          subjectArrayToDisplay.push(<b className='boldtext'>{subject[i+1]}</b>);
+          i++;
+        }
+        else  if(subject[i] == '{{'){
+          subjectArrayToDisplay.push(<mark class="texthighlight">{subject[i+1]}</mark>);
+          i++;
+        }
+        else if (subject[i] == '}}' || subject[i] == '>)') {
+          subjectArrayToDisplay.push('');
+        }
         else if (subject[i] == '\n') {
           subjectArrayToDisplay.push(<br />);
         }
@@ -78,6 +89,17 @@ getsubjectArray=(display)=>{
             i++;
           } catch (err) { }
         }
+        else  if(bodyArray[i] == '(<'){
+          bodyArrayToDisplay.push(<b className='boldtext'>{bodyArray[i+1]}</b>);
+          i++;
+        }
+        else  if(bodyArray[i] == '{{'){
+          bodyArrayToDisplay.push(<mark class="texthighlight">{bodyArray[i+1]}</mark>);
+          i++;
+        }
+        else if (bodyArray[i] == '}}' || bodyArray[i] == '>)') {
+          bodyArrayToDisplay.push('');
+        } 
         else if (bodyArray[i] == '\n') {
           bodyArrayToDisplay.push(<br />);
         }
