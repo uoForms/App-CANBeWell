@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 
 class TopicModal extends React.Component {
 
@@ -26,9 +27,8 @@ class TopicModal extends React.Component {
       padding: '10px',
       color: 'white'
     };
-    subjectArray.push(<div><h3 test-id="heading">{this.props.getTopic}</h3></div>);
-    bodys.forEach((body) => {
-
+    subjectArray.push(<div><h2 test-id="heading">{this.props.getTopic}</h2> <h3>{this.props.clickOnText}<ArrowRightIcon className="arrow-left" sx={{ fontSize: 40 }}/></h3></div>);
+    bodys.forEach((body) => {      
       var bodyArray = body.text.split(/(\[\[|\]\]|\n|\(\<|\>\)|\{\{|\}\})/g);
       var subject = body.subject.split(/(\[\[|\]\]|\n|\(\<|\>\)|\{\{|\}\})/g);
       var bodyArrayToDisplay = [];

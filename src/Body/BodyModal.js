@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 
 class BodyModal extends React.Component {
 
@@ -36,7 +37,7 @@ class BodyModal extends React.Component {
       //var subject = body.subject;
       subjectArray.push(
         <div>
-          <h3 test-id="heading">{topic.name}</h3>
+          <h2 test-id="heading">{topic.name}</h2> <h3>{this.props.clickOnText}<ArrowRightIcon className="arrow-left" sx={{ fontSize: 40 }}/></h3>
         </div>
       );
       var k = 0;

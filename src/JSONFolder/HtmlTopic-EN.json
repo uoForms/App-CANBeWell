@@ -44,7 +44,7 @@
     "Topic heading": "Aorta",
     "Subject": "Screening for trans and non binary patients",
     "General Patient Text": "n/a",
-    "Health Provider Text": "At this time we could not find a Canadian reference on this topic. In the UK trans females and non binary patients who were assigned male sex at birth are advised to have an abdominal ultrasound to detect AAA between ages 65 and 80. Trans males can have a screening ultrasound if they wish but the risk of an aneyrysm is fmentioned as  being less.\n[[Reference; https://www.gov.uk/government/publications/nhs-population-screening-information-for-transgender-people]]",
+    "Health Provider Text": "At this time we could not find a Canadian reference on this topic. In the UK trans females and non binary patients who were assigned male sex at birth are advised to have an abdominal ultrasound to detect AAA between ages 65 and 80. Trans males can have a screening ultrasound if they wish but the risk of an aneurysm is mentioned as  being less.\n[[Reference; https://www.gov.uk/government/publications/nhs-population-screening-information-for-transgender-people]]",
     "Gender": "tm,tf",
     "Minimum age": 65,
     "Maximum age": 80
@@ -553,8 +553,8 @@
     "Button": "Heart",
     "Topic heading": "Heart Disease",
     "Subject": "General information",
-    "General Patient Text": "•\tFollow the same advice about preventing heart disease as for cis people AND\n•\tif you use a [[risk calculator; http://chd.bestsciencemedicine.com/calc2.html]] for heart disease:\ndepending how long you have been on hormones, consider using either a calculator based on your sex assigned at birth, your affirmed gender or an average of the  two [[UCSF; https://transcare.ucsf.edu/guidelines/cardiovascular]]",
-    "Health Provider Text": "•\tThe current guidelines for general population should be followed when evaluating for cardiovascular risk factors in trans patients, such as diabetes and dyslipidemia screening.\n•\tEncourage physical activity,smoking cessation, weight loss, management of diabetes and hypertension.\n•\tWhen using a [[risk calculator; http://chd.bestsciencemedicine.com/calc2.html]]  depending on when and how long the patient has been on hormones, consider using either a calculator based on the patient’s sex assigned at birth, their affirmed gender or an average of the two [[UCSF; https://transcare.ucsf.edu/guidelines/cardiovascular]]",
+    "General Patient Text": "n/a",
+    "Health Provider Text": "•\tThe current guidelines for general population should be followed when evaluating for cardiovascular risk factors in trans patients, such as diabetes and dyslipidemia screening.\n•\tEncourage physical activity,smoking cessation, weight loss, management of diabetes and hypertension.\n•\tWhen using a [[risk calculator; https://cvdcalculator.com/]]  depending on when and how long the patient has been on hormones, consider using either a calculator based on the patient’s sex assigned at birth, their affirmed gender or an average of the two [[UCSF; https://transcare.ucsf.edu/guidelines/cardiovascular]]",
     "Gender": "tf",
     "Minimum age": 18,
     "Maximum age": 150
@@ -563,8 +563,8 @@
     "Button": "Heart",
     "Topic heading": "Heart Disease",
     "Subject": "General information",
-    "General Patient Text": "•\tFollow the same advice about preventing heart disease as for cis people AND\n•\t if you use a [[risk calculator; http://chd.bestsciencemedicine.com/calc2.html]] for heart disease:\ndepending how long you have been on hormones, consider using either a calculator based on your sex assigned at birth, your affirmed gender or an average of the  two [[UCSF; https://transcare.ucsf.edu/guidelines/cardiovascular]]\n•\t[[more risk calculators; https://ccs.ca/calculators-and-forms/]]",
-    "Health Provider Text": "•\tThe current guidelines for general population should be followed when evaluating for cardiovascular risk factors in trans patients, such as diabetes and dyslipidemia screening.\n•\tEncourage physical activity,smoking cessation, weight loss, management of diabetes and hypertension.\n•\tWhen using a [[risk calculator; http://chd.bestsciencemedicine.com/calc2.html]], depending on when and how long the patient has been on hormones, consider using either a calculator based on the patient’s sex assigned at birth, their affirmed gender or an average of the two [[UCSF; https://transcare.ucsf.edu/guidelines/cardiovascular]]\n•\t[[more risk calculators; https://ccs.ca/calculators-and-forms/]]",
+    "General Patient Text": "•\tFollow the same advice about preventing heart disease as for cis people AND\n•\t if you use a [[risk calculator; https://cvdcalculator.com/]] for heart disease:\ndepending how long you have been on hormones, consider using either a calculator based on your sex assigned at birth, your affirmed gender or an average of the  two [[UCSF; https://transcare.ucsf.edu/guidelines/cardiovascular]]\n•\t[[more risk calculators; https://ccs.ca/calculators-and-forms/]]",
+    "Health Provider Text": "•\tThe current guidelines for general population should be followed when evaluating for cardiovascular risk factors in trans patients, such as diabetes and dyslipidemia screening.\n•\tEncourage physical activity,smoking cessation, weight loss, management of diabetes and hypertension.\n•\tWhen using a [[risk calculator; https://cvdcalculator.com/]], depending on when and how long the patient has been on hormones, consider using either a calculator based on the patient’s sex assigned at birth, their affirmed gender or an average of the two [[UCSF; https://transcare.ucsf.edu/guidelines/cardiovascular]]\n•\t[[more risk calculators; https://ccs.ca/calculators-and-forms/]]",
     "Gender": "tm",
     "Minimum age": 18,
     "Maximum age": 150
@@ -673,7 +673,7 @@
     "Button": "Heart",
     "Topic heading": "Heart Disease",
     "Subject": "Get your heart risk score",
-    "General Patient Text": "See your provider and/ or use these online tools \n•\t[[myhealthcheckup; https://myhealthcheckup.com]]\n•\t[[bestscience; http://chd.bestsciencemedicine.com/calc2.html]]",
+    "General Patient Text": "See your provider and/ or use these online tools \n•\t[[myhealthcheckup; https://myhealthcheckup.com]]\n•\t[[bestscience; https://cvdcalculator.com/]]",
     "Health Provider Text": "n/a",
     "Gender": "m,f",
     "Minimum age": 30,
@@ -1093,7 +1093,7 @@
     "Button": "Genitalia",
     "Topic heading": "Sexual and reproductive health",
     "Subject": "Prevent Sexually Transmitted Infections (STIs)",
-    "General Patient Text": "•\t(<Practice safe sex>):\nUse a [[condom or other protection; https://www.cdc.gov/teenpregnancy/pdf/Teen-Condom-Fact_Sheet-English-March-2016.pdf]]\n\n•\t(<Get tested for STIs>): \nIf you are sexually active ((if you have ever had oral, vaginal or anal intercourse)\n{{Under age 30 yearly}} for chlamydia and gonorrhea\n{{Age 30 and above: according to your risk}}, for all STI's\n(<For example>): If you have a new partner, multiple partners, you do not use protection, have an STI, or are otherwise at risk.\n\n•(<Get tested for HIV at any age>)\n\nMore info:\n•\t[[Sexual activity; http://www.sexandu.ca/]]\n•\t[[Chlamydia and gonorrhea; https://canadiantaskforce.ca/tools-resources/chlamydia-and-gonorrhea-patient-faq/]]\n•\t[[Infections; https://www.canada.ca/en/public-health/services/infectious-diseases/sexual-health-sexually-transmitted-infections/sexually-transmitted-infections-sexual-health-facts-information-public.html#geninfo]]",
+    "General Patient Text": "•\t{{Practice safe sex}}:\nUse a [[condom or other protection; https://www.canada.ca/en/public-health/services/publications/diseases-conditions/booklet-sexually-transmitted-infections.html#_4.5]] \n[[more info; https://www.cdc.gov/teenpregnancy/pdf/Teen-Condom-Fact_Sheet-English-March-2016.pdf]]\n\n•\t{{Get tested for STIs}} \nIf you are sexually active ((if you have ever had oral, vaginal or anal intercourse)\n(<Under age 30: every year>) for chlamydia and gonorrhea\n(<Age 30 and above: read below>) :\nHow often you get tested depends on your risk.\nHere are some risks:\n if you have a new partner, multiple partners,\n you do not use protection, if your partner has or had an STI , for more risks see this [[link; https://www.canada.ca/en/public-health/services/publications/diseases-conditions/booklet-sexually-transmitted-infections.html#_7.0]]\n\n•(<Get tested for HIV at any age>)\n\nMore info:\n•\t[[Sexual activity; http://www.sexandu.ca/]]\n•\t[[Chlamydia and gonorrhea; https://canadiantaskforce.ca/tools-resources/chlamydia-and-gonorrhea-patient-faq/]]\n•     [[Booklet on STIs; https://www.canada.ca/en/public-health/services/publications/diseases-conditions/booklet-sexually-transmitted-infections.html]]\n•\t[[Infections; https://www.canada.ca/en/public-health/services/infectious-diseases/sexual-health-sexually-transmitted-infections/sexually-transmitted-infections-sexual-health-facts-information-public.html#geninfo]]",
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
@@ -1104,7 +1104,7 @@
     "Topic heading": "Sexual and reproductive health",
     "Subject": "Prevent Sexually Transmitted Infections (STIs)",
     "General Patient Text": "n/a",
-    "Health Provider Text": "(<Safe sex and STIcounselling>) for all sexually active patients.\n\n(<Testing>)\n• {{Age 30 and under: Annual screening for chlamydia and gonorrhea}} [[CTFPHC 2021; https://canadiantaskforce.ca/guidelines/published-guidelines/chlamydia-and-gonorrhea/]]\n• {{Age 30 and over screen according to risk}} for chlamydia and GC and other STIs, see below:\n• Screen for other STIs according to risk (new partner, multiple partners, serial monogamous relationships,unprotected sex, substance use,sex with blood exchange,sharing sex toys)\n• Offer HIV testing to all:\n[[Public Health Agency of Canada recommendation; https://www.canada.ca/en/public-health/services/hiv-aids/hiv-screening-testing-guide.html]], supported by USPSTF 2013 and CDC, \n[[CTFPHC recommends only if at risk; https://canadiantaskforce.ca/guidelines/appraised-guidelines/hiv/]]",
+    "Health Provider Text": "(<Safe sex and STIcounselling>) for all sexually active patients.\n\n{{Screening for STIs}}\n• {{age 30: annually}} for chlamydia and gonorrhea.\nAdd full STI testing if at risk, see risks below.\n [[CTFPHC 2021; https://canadiantaskforce.ca/guidelines/published-guidelines/chlamydia-and-gonorrhea/]]\n• {{Age 30 and above: according to risk}} for chlamydia and GC and other STIs, see below:\n•Risks: new partner, multiple partners, serial monogamous relationships, unprotected sex, substance use, sex with blood exchange, sharing sex toys, see [[link; https://www.canada.ca/en/public-health/services/publications/diseases-conditions/booklet-sexually-transmitted-infections.html#_7.0]]\n\n• {{Offer HIV testing to all}}:\n[[Public Health Agency of Canada recommendation; https://www.canada.ca/en/public-health/services/hiv-aids/hiv-screening-testing-guide.html]], supported by USPSTF 2013 and CDC, \n[[CTFPHC recommends only if at risk; https://canadiantaskforce.ca/guidelines/appraised-guidelines/hiv/]]",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
@@ -1400,3 +1400,6 @@
     "Maximum age": 150
   }
 ]
+
+
+
