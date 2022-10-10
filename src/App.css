@@ -462,3 +462,6 @@ svg.MuiSvgIcon-root.arrow-left {
 b.boldtext{
   font-size: 20px;
 }
+mark.texthighlight {
+  background-color: yellow !important;
+}

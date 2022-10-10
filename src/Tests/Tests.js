@@ -108,7 +108,7 @@ class TestRow extends React.Component {
     var bodys = this.props.test.body;
     var mIndex = 0;
     bodys.forEach((body) => {
-      var bodyArray = body.text.split(/(\[\[|\]\]|\n)/g);
+      var bodyArray = body.text.split(/(\[\[|\]\]|\n|\(\<|\>\)|\{\{|\}\})/g);
       var bodyArrayToDisplay = [];
 
       for (var i = 0; i < bodyArray.length; i++) {
@@ -133,6 +133,17 @@ class TestRow extends React.Component {
             }
             i++;
           } catch (err) { }
+        }
+        else  if(bodyArray[i] == '(<'){
+          bodyArrayToDisplay.push(<b className='boldtext'>{bodyArray[i+1]}</b>);
+          i++;
+        }
+        else  if(bodyArray[i] == '{{'){
+          bodyArrayToDisplay.push(<mark class="texthighlight">{bodyArray[i+1]}</mark>);
+          i++;
+        }
+        else if (bodyArray[i] == '}}' || bodyArray[i] == '>)') {
+          bodyArrayToDisplay.push('');
         }
         else if (bodyArray[i] == '\n') {
           bodyArrayToDisplay.push(<br />);
