@@ -111,7 +111,7 @@ color: crimson;
   
 }
 .landingpage-notice-column > div {
-  padding: 0 5px;
+  padding: 0 10px;
 }
 
 /* Clear floats after the columns */
@@ -213,7 +213,7 @@ text-align: center;
 
 .homescreen-eng{
 position: relative;
-width: 150%;
+width: 135%;
 height: auto;
 font-size: larger;
 }
@@ -229,7 +229,7 @@ text-align: right;
 .homescreen-fre{
 position: relative;
 text-align: left;
-width: 150%;
+width: 145%;
 height: auto;
 font-size: larger;
 }
