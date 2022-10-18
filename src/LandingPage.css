@@ -175,7 +175,7 @@ margin-top: 0;
 top: 0px;
 color: #363636;
 cursor: text;
-margin-left: 5px;
+margin:0 5px;
 }
 
 .slash:hover{
@@ -250,4 +250,14 @@ background-color:#D3D3D3
 }
 .nowrap{white-space:nowrap;}
 
+@media (max-width: 400px){
+  .landing-notice-french.privacyFr {
+    width: 90px;
+  }
+}
+@media only screen and (min-width:401px) and (max-width:420px){
+  .landing-notice-french.privacyFr {
+    width: 102px;
+  }
+}
 

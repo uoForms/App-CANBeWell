@@ -465,3 +465,8 @@ b.boldtext{
 mark.texthighlight {
   background-color: yellow !important;
 }
+svg.MuiSvgIcon-root.arrow-left {
+  background-color: #27aae1;
+  border-radius: 5px;
+  margin: 0 8px;
+}
