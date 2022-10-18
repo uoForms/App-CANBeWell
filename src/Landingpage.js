@@ -94,7 +94,7 @@ class LandingPage extends React.Component {
                     {/* </div> */}
                     {/* <div id="homescreen-french"></div> */}
                     <a href="/politiquedeconfidentialite.htm"
-                       className="landing-notice-french"
+                       className="landing-notice-french privacyFr"
                        test-id="privacy-statement-fr">{"Politique de confidentialité"}</a>
                        &nbsp;<a href="#" className="slash">{<h4>&#124;</h4>} </a>
                   </div>
@@ -125,7 +125,7 @@ class LandingPage extends React.Component {
                 Rester en santé avec cette ressource créée par vos professionnels de la santé canadiens
               </div>
               <div className="landingpage-notice-row"></div>
-              <div className="landingpage-notice-row">
+              <div className="landingpage-notice-row row justify-content-center">
                 <div className="landingpage-notice-column">
                   <div className="homescreen-eng">
                     <div id="homescreen-english"></div>
