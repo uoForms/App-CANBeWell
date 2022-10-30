@@ -31,87 +31,160 @@ class BodyModal extends React.Component {
       padding: '10px',
       color: 'white'
     };
-
-    topicsToDisplay.forEach((topic) => {
-      var bodys = topic.body;
-      //var subject = body.subject;
-      subjectArray.push(
-        <div>
-          <h2 test-id="heading">{topic.name}</h2> <h3>{this.props.clickOnText}<ArrowRightIcon className="arrow-left" sx={{ fontSize: 40 }}/></h3>
-        </div>
-      );
-      var k = 0;
-      bodys.forEach((body) => {
-        var bodyArray = body.text.split(/(\[\[|\]\]|\n|\(\<|\>\)|\{\{|\}\})/g);
-        var subject = body.subject.split(/(\[\[|\]\]|\n|\(\<|\>\)|\{\{|\}\})/g);
-        var bodyArrayToDisplay = [];
-        var subjectArrayToDisplay = [];
-        var outerTextToDisplay = [];
-        var itemID = 0;
-        var indexID = "item";
-        for (var i = 0; i < subject.length; i++) {
-          if (subject[i] == "[[") {
-            var link = subject[i + 1].split(";");
-            if (link[1] === undefined) {
-              link[1] = "undefined";
-            }
-            //try{
-            if (link[0] === "image" || link[0] === "images") {
-              var adress = Image + link[1].trim();
-              subjectArrayToDisplay.push(
-                <div key={itemID}>
-                  <img className="imageFromFolder" src={adress} alt="" />
-                </div>
-              );
-            } else {
-              /*else if(link[1].indexOf("topic") === 0 || link[1].indexOf("topic") === 1){
-                var id = topic.name + k;
-                k++;
-                var mTopic = link[1].replace("topic://", "").trim();
-                var outerText = this.getOuterText(mTopic);
-                subjectArrayToDisplay.push(<div onClick={(idTarget) => this.togglePopUp(id)}><font color="Yellow">{link[0]}</font><div id={id} className="popup"><span className="popuptext"><p>{outerText}</p></span></div></div>);
-              }
-              else if(link[1].indexOf("test") === 0 || link[1].indexOf("test") === 1){
-                var testId = topic.name + k;
-                k++;
-                var mTest = link[1].replace("test://", "").trim();
-                var testOuterText = this.getOuterText(mTest);
-                subjectArrayToDisplay.push(<div onClick={(idTarget) => this.togglePopUp(testId)}><font color="Yellow">{link[0]}</font><div id={testId} className="popup"><span className="popuptext"><p>{testOuterText}</p></span></div></div>);
-              }*/
-              subjectArrayToDisplay.push(
-                <a href={link[1]} target="_blank" key={itemID}>
-                  <font color="Yellow">{link[0]}</font>
-                </a>
-              );
-            }
-            i++;
-            //}catch(err){}
-          }
-          else if (subject[i] == '(<') {
-            subjectArrayToDisplay.push(<b className='boldtext'>{subject[i + 1]}</b>);
-            i++;
-          }
-          else if (subject[i] == '{{') {
-            subjectArrayToDisplay.push(<mark class="texthighlight">{subject[i + 1]}</mark>);
-            i++;
-          }
-          else if (subject[i] == '}}' || subject[i] == '>)') {
-            subjectArrayToDisplay.push('');
-          }
-          else if (subject[i] == "\n") {
-            subjectArrayToDisplay.push(<br />);
-          } else if (subject[i] !== "]]") {
-            subjectArrayToDisplay.push(subject[i]);
-          }
+    
+    if (topicsToDisplay.length > 1) {
+      topicsToDisplay.forEach((topic,idx) => {
+        var bodys = topic.body;
+        if(idx===0){
+          subjectArray.push(
+            <div>
+              <h2 test-id="heading">{topic.name}</h2> <h3>{topic.body.length > 0 ? <>{this.props.clickOnText}<ArrowRightIcon className="arrow-left" sx={{ fontSize: 40 }} /></> : ''}</h3>
+            </div>
+          );
         }
-
-        for (var i = 0; i < bodyArray.length; i++) {
-          if (bodyArray[i] == "[[") {
-            var link = bodyArray[i + 1].split(";");
-            try {
+        subjectArray.push(
+          <div>
+            <h2 test-id="heading">{topic.name}</h2>
+          </div>
+        );
+        var k = 0;
+        bodys.forEach((body) => {
+          var bodyArray = body.text.split(/(\[\[|\]\]|\n|\(\<|\>\)|\{\{|\}\})/g);
+          var subject = body.subject.split(/(\[\[|\]\]|\n|\(\<|\>\)|\{\{|\}\})/g);
+          var bodyArrayToDisplay = [];
+          var subjectArrayToDisplay = [];
+          var outerTextToDisplay = [];
+          var itemID = 0;
+          var indexID = "item";
+          for (var i = 0; i < subject.length; i++) {
+            if (subject[i] == "[[") {
+              var link = subject[i + 1].split(";");
+              if (link[1] === undefined) {
+                link[1] = "undefined";
+              }
               if (link[0] === "image" || link[0] === "images") {
                 var adress = Image + link[1].trim();
-                bodyArrayToDisplay.push(
+                subjectArrayToDisplay.push(
+                  <div key={itemID}>
+                    <img className="imageFromFolder" src={adress} alt="" />
+                  </div>
+                );
+              } else {
+
+                subjectArrayToDisplay.push(
+                  <a href={link[1]} target="_blank" key={itemID}>
+                    <font color="Yellow">{link[0]}</font>
+                  </a>
+                );
+              }
+              i++;
+
+            }
+            else if (subject[i] == '(<') {
+              subjectArrayToDisplay.push(<b className='boldtext'>{subject[i + 1]}</b>);
+              i++;
+            }
+            else if (subject[i] == '{{') {
+              subjectArrayToDisplay.push(<mark class="texthighlight">{subject[i + 1]}</mark>);
+              i++;
+            }
+            else if (subject[i] == '}}' || subject[i] == '>)') {
+              subjectArrayToDisplay.push('');
+            }
+            else if (subject[i] == "\n") {
+              subjectArrayToDisplay.push(<br />);
+            } else if (subject[i] !== "]]") {
+              subjectArrayToDisplay.push(subject[i]);
+            }
+          }
+
+          for (var i = 0; i < bodyArray.length; i++) {
+            if (bodyArray[i] == "[[") {
+              var link = bodyArray[i + 1].split(";");
+              try {
+                if (link[0] === "image" || link[0] === "images") {
+                  var adress = Image + link[1].trim();
+                  bodyArrayToDisplay.push(
+                    <div key={itemID}>
+                      <img className="imageFromFolder" src={adress} alt="" />
+                    </div>
+                  );
+                } else {
+
+                  bodyArrayToDisplay.push(
+                    <a href={link[1]} target="_blank" key={itemID}>
+                      <font color="Yellow">{link[0]}</font>
+                    </a>
+                  );
+                }
+                i++;
+              } catch (err) { }
+            }
+            else if (bodyArray[i] == '(<') {
+              bodyArrayToDisplay.push(<b className='boldtext'>{bodyArray[i + 1]}</b>);
+              i++;
+            }
+            else if (bodyArray[i] == '{{') {
+              bodyArrayToDisplay.push(<mark class="texthighlight">{bodyArray[i + 1]}</mark>);
+              i++;
+            }
+            else if (bodyArray[i] == '}}' || bodyArray[i] == '>)') {
+              bodyArrayToDisplay.push('');
+            }
+            else if (bodyArray[i] == "\n") {
+              bodyArrayToDisplay.push(<br />);
+            } else if (bodyArray[i] !== "]]") {
+              bodyArrayToDisplay.push(bodyArray[i]);
+            }
+          }
+          indexID = indexID.concat(itemID.toString());
+          subjectArray.push(
+            <div className="topicBody" style={listItemStyle}>
+              <details id={indexID} class="mydetailsItem" test-id="topic">
+                <summary class="mysummaryItem" test-id="topicSummary">
+                  <font size="+1">
+                    {/*<p> <b> */}
+                    {subjectArrayToDisplay}
+                    {/* </b> </p>*/}
+                  </font>
+                </summary>
+                <br />
+                {bodyArrayToDisplay}
+                {outerTextToDisplay}
+              </details>
+            </div>
+          );
+          itemID++;
+        });
+      });
+    }else{
+      topicsToDisplay.forEach((topic) => {
+        var bodys = topic.body;
+        //var subject = body.subject;
+        subjectArray.push(
+          <div>
+            <h2 test-id="heading">{topic.name}</h2> <h3>{topic.body.length > 0 ? <>{this.props.clickOnText}<ArrowRightIcon className="arrow-left" sx={{ fontSize: 40 }} /></> : ''}</h3>
+          </div>
+        );
+        var k = 0;
+        bodys.forEach((body) => {
+          var bodyArray = body.text.split(/(\[\[|\]\]|\n|\(\<|\>\)|\{\{|\}\})/g);
+          var subject = body.subject.split(/(\[\[|\]\]|\n|\(\<|\>\)|\{\{|\}\})/g);
+          var bodyArrayToDisplay = [];
+          var subjectArrayToDisplay = [];
+          var outerTextToDisplay = [];
+          var itemID = 0;
+          var indexID = "item";
+          for (var i = 0; i < subject.length; i++) {
+            if (subject[i] == "[[") {
+              var link = subject[i + 1].split(";");
+              if (link[1] === undefined) {
+                link[1] = "undefined";
+              }
+              //try{
+              if (link[0] === "image" || link[0] === "images") {
+                var adress = Image + link[1].trim();
+                subjectArrayToDisplay.push(
                   <div key={itemID}>
                     <img className="imageFromFolder" src={adress} alt="" />
                   </div>
@@ -125,54 +198,109 @@ class BodyModal extends React.Component {
                   subjectArrayToDisplay.push(<div onClick={(idTarget) => this.togglePopUp(id)}><font color="Yellow">{link[0]}</font><div id={id} className="popup"><span className="popuptext"><p>{outerText}</p></span></div></div>);
                 }
                 else if(link[1].indexOf("test") === 0 || link[1].indexOf("test") === 1){
-                  bodyArrayToDisplay.push(<a><font color="Yellow">{link[0]}</font></a>);
+                  var testId = topic.name + k;
+                  k++;
+                  var mTest = link[1].replace("test://", "").trim();
+                  var testOuterText = this.getOuterText(mTest);
+                  subjectArrayToDisplay.push(<div onClick={(idTarget) => this.togglePopUp(testId)}><font color="Yellow">{link[0]}</font><div id={testId} className="popup"><span className="popuptext"><p>{testOuterText}</p></span></div></div>);
                 }*/
-                bodyArrayToDisplay.push(
+                subjectArrayToDisplay.push(
                   <a href={link[1]} target="_blank" key={itemID}>
                     <font color="Yellow">{link[0]}</font>
                   </a>
                 );
               }
               i++;
-            } catch (err) { }
-          } 
-          else  if(bodyArray[i] == '(<'){
-            bodyArrayToDisplay.push(<b className='boldtext'>{bodyArray[i+1]}</b>);
-            i++;
+              //}catch(err){}
+            }
+            else if (subject[i] == '(<') {
+              subjectArrayToDisplay.push(<b className='boldtext'>{subject[i + 1]}</b>);
+              i++;
+            }
+            else if (subject[i] == '{{') {
+              subjectArrayToDisplay.push(<mark class="texthighlight">{subject[i + 1]}</mark>);
+              i++;
+            }
+            else if (subject[i] == '}}' || subject[i] == '>)') {
+              subjectArrayToDisplay.push('');
+            }
+            else if (subject[i] == "\n") {
+              subjectArrayToDisplay.push(<br />);
+            } else if (subject[i] !== "]]") {
+              subjectArrayToDisplay.push(subject[i]);
+            }
           }
-          else  if(bodyArray[i] == '{{'){
-            bodyArrayToDisplay.push(<mark class="texthighlight">{bodyArray[i+1]}</mark>);
-            i++;
+  
+          for (var i = 0; i < bodyArray.length; i++) {
+            if (bodyArray[i] == "[[") {
+              var link = bodyArray[i + 1].split(";");
+              try {
+                if (link[0] === "image" || link[0] === "images") {
+                  var adress = Image + link[1].trim();
+                  bodyArrayToDisplay.push(
+                    <div key={itemID}>
+                      <img className="imageFromFolder" src={adress} alt="" />
+                    </div>
+                  );
+                } else {
+                  /*else if(link[1].indexOf("topic") === 0 || link[1].indexOf("topic") === 1){
+                    var id = topic.name + k;
+                    k++;
+                    var mTopic = link[1].replace("topic://", "").trim();
+                    var outerText = this.getOuterText(mTopic);
+                    subjectArrayToDisplay.push(<div onClick={(idTarget) => this.togglePopUp(id)}><font color="Yellow">{link[0]}</font><div id={id} className="popup"><span className="popuptext"><p>{outerText}</p></span></div></div>);
+                  }
+                  else if(link[1].indexOf("test") === 0 || link[1].indexOf("test") === 1){
+                    bodyArrayToDisplay.push(<a><font color="Yellow">{link[0]}</font></a>);
+                  }*/
+                  bodyArrayToDisplay.push(
+                    <a href={link[1]} target="_blank" key={itemID}>
+                      <font color="Yellow">{link[0]}</font>
+                    </a>
+                  );
+                }
+                i++;
+              } catch (err) { }
+            }
+            else if (bodyArray[i] == '(<') {
+              bodyArrayToDisplay.push(<b className='boldtext'>{bodyArray[i + 1]}</b>);
+              i++;
+            }
+            else if (bodyArray[i] == '{{') {
+              bodyArrayToDisplay.push(<mark class="texthighlight">{bodyArray[i + 1]}</mark>);
+              i++;
+            }
+            else if (bodyArray[i] == '}}' || bodyArray[i] == '>)') {
+              bodyArrayToDisplay.push('');
+            }
+            else if (bodyArray[i] == "\n") {
+              bodyArrayToDisplay.push(<br />);
+            } else if (bodyArray[i] !== "]]") {
+              bodyArrayToDisplay.push(bodyArray[i]);
+            }
           }
-          else if (bodyArray[i] == '}}' || bodyArray[i] == '>)') {
-            bodyArrayToDisplay.push('');
-          }          
-          else if (bodyArray[i] == "\n") {
-            bodyArrayToDisplay.push(<br />);
-          } else if (bodyArray[i] !== "]]") {
-            bodyArrayToDisplay.push(bodyArray[i]);
-          }
-        }
-        indexID = indexID.concat(itemID.toString());
-        subjectArray.push(
-          <div className="topicBody" style={listItemStyle}>
-            <details id={indexID} class="mydetailsItem" test-id="topic">
-              <summary class="mysummaryItem" test-id="topicSummary">
-                <font size="+1">
-                  {/*<p> <b> */}
-                  {subjectArrayToDisplay}
-                  {/* </b> </p>*/}
-                </font>
-              </summary>
-              <br />
-              {bodyArrayToDisplay}
-              {outerTextToDisplay}
-            </details>
-          </div>
-        );
-        itemID++;
+          indexID = indexID.concat(itemID.toString());
+          subjectArray.push(
+            <div className="topicBody" style={listItemStyle}>
+              <details id={indexID} class="mydetailsItem" test-id="topic">
+                <summary class="mysummaryItem" test-id="topicSummary">
+                  <font size="+1">
+                    {/*<p> <b> */}
+                    {subjectArrayToDisplay}
+                    {/* </b> </p>*/}
+                  </font>
+                </summary>
+                <br />
+                {bodyArrayToDisplay}
+                {outerTextToDisplay}
+              </details>
+            </div>
+          );
+          itemID++;
+        });
       });
-    });
+
+    }    
     return subjectArray;
   }
 
