@@ -237,3 +237,16 @@ div.fixed {
   width: 80px;
   height: 45px ;
 }
+.button3-1 {
+  border: none;
+  background-color: #ddd;
+  color: grey;
+  padding: 8px 25px;
+  margin-bottom: 5px;
+  font-size: 18px;
+    font-weight: 600;
+}
+.filteractive {
+  background-color: #f57c00;
+  color: #fff;
+}

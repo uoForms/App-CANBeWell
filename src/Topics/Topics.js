@@ -129,14 +129,12 @@ class TopicRow extends React.Component {
     const imageExist= tryRequire()
     return (
       <div>
-        <div> { imageExist ? <img  id= {this.props.topic.name} src={require(`../assets/TopicIcons/${this.props.topic.name.replace(/[^a-z0-9]/gi,'-')}.png`).default}  className="topicsIcon"/> : <img  id= {this.props.topic.name} src={require('../assets/TopicIcons/defaultIcon.png').default}  className="topicsIcon"/>}</div>
+        
         <div
           id={this.props.topic.name} className="mydetailsItemdiv"
           onClick={() => this.rowClicked(this.props.topic.name)}
           test-id="topicRow"
         >{this.props.topic.name}</div>
-
-
         <div>
             <TopicModal 
               show={this.state.isOpen}
@@ -159,7 +157,8 @@ class TopicTable extends React.Component {
     super(props);
     this.state = {
       expanded: false,
-      showTop: true
+      showTop: true ,
+      showAll: false
 
     };
     this.pageViewStateUpdater = this.pageViewStateUpdater.bind(this);
@@ -171,7 +170,13 @@ class TopicTable extends React.Component {
     this.setState({ expanded: !this.state.expanded });
   };
   handleshowtopict = () =>{
-    this.setState({ showTop: !this.state.showTop });
+    this.setState({ showTop: !this.state.showTop , showAll: !this.state.showTop  });
+  }
+  showAllclicked=()=>{
+    this.setState({ showTop: false , showAll: true  });
+  }
+  showTopclicked=()=>{
+    this.setState({ showTop: true , showAll: false  }); 
   }
 
   render() {
@@ -189,7 +194,7 @@ class TopicTable extends React.Component {
       width: '99%',
       minHeight: 50,
       margin: '0 auto',
-      textAlign: 'center',
+      
       padding: 10,
       color: 'white'
       
@@ -206,7 +211,7 @@ class TopicTable extends React.Component {
         if (topic.name.toLowerCase().indexOf(this.props.filterText.toLowerCase()) === -1) {
           return;
         }
-        filterrows.push(<div key={index1} style={backdroplistItemStyle} className='col-lg-4 col-md-6'>
+        filterrows.push(<div key={index1} style={backdroplistItemStyle} >
           <div style={listItemStyle}>
             <TopicRow
               topic={topic}
@@ -237,7 +242,7 @@ class TopicTable extends React.Component {
         // });
 
       }
-      rows.push(<div key={index} style={backdroplistItemStyle} className='col-lg-4' >
+      rows.push(<div key={index} style={backdroplistItemStyle}  >
         <div style={listItemStyle} >
           <TopicRow
             topic={topic}
@@ -258,14 +263,19 @@ class TopicTable extends React.Component {
 
         <div>
           {
-            <div>
-              <button type="button" onClick={ this.handleshowtopict } className="button3">
-              {this.state.showTop ? 'Show All' : 'Show Top 10'} 
+            <div className='container-fluid'>
+            <br/>
+            <button id="filtershowall" type="button" style={{marginLeft: 15}} onClick={ this.showAllclicked } className={`button3-1 ${this.state.showAll ? "filteractive" : ""}`}>
+            show all 
             </button>
-            <br></br>
-              {dataForDisplay}
-            
+            <button id="filtershowtop" type="button" onClick={ this.showTopclicked } className={`button3-1 ${this.state.showTop ? "filteractive" : ""}`}>
+            show Top 10 
+            </button>
+            <br/><br/>
+            <div >
+            {dataForDisplay}
             </div>
+          </div>
           
             }
 
