@@ -15,7 +15,7 @@ class LandingPage extends BasePage {
       },
     };
     this.redirectButtonImageSrc = {
-      [this.locale.en]: '/static/media/canbewelleng.107fa0a3.png',
+      [this.locale.en]: '/static/media/icanbewelleng.107fa0a3.png',
       [this.locale.fr]: '/static/media/canbewellfren.301eb9d6.png',
     };
     this.reliableResourceStatement = {
