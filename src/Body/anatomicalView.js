@@ -63,8 +63,8 @@ import covidIcon from '../assets/Icons/icon_covid_new.png';
 import FemaleGenital from '../assets/Icons/female_genital.png';
 import MaleGenital from '../assets/Icons/male_genital.png';
 import braingear from '../assets/Icons/icon_braingear.png';
-import moneyIcon from '../assets/Icons/icon_money.png';
-import sleepIcon from '../assets/Icons/icon_sleep.png';
+import moneyIcon from '../assets/Icons/icon_money_1.png';
+import sleepIcon from '../assets/Icons/icon_sleep_1.png';
 import bpIcon from '../assets/Icons/icon_bp.png';
 
 import './Body.css';
