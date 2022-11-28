@@ -602,7 +602,7 @@
   {
     "Button": "Heart",
     "Topic heading": "Heart Disease",
-    "Subject": "Blood pressure",
+    "Subject": "Blood Pressure",
     "General Patient Text": "During your visit to the doctor, ask for a measurement of your blood pressure. \nA normal blood pressure is under 140/90 mmHg or lower for some people .\nThe target blood pressure depends on factors like age and health conditions, and where readings are being taken. If you have diabetes, kidney disease or other health conditions, speak to your health care professional about your target blood pressure. \n\n•\t[[How to appropriately measure your blood pressure at home; https://hypertension.ca/wp-content/uploads/2020/03/BPM-Postcard-Front.jpg]]\n•\t[[Understanding and Managing Your Blood Pressure; https://guidelines.hypertension.ca/wp-content/uploads/2022/09/HTC_Brochure_UnderstandingBP_2018_R3.pdf]]",
     "Health Provider Text": "CTFPHC recommends blood pressure measurement at all appropriate primary care visits.[[2012 Guideline; https://canadiantaskforce.ca/guidelines/published-guidelines/hypertension/]]\n(Strong recommendation; moderate quality evidence)\n\n[[Hypertension Canada guideline summary 2022; https://hypertension.ca/wp-content/uploads/2020/10/2020-22-HT-Guidelines-E-WEB_v3b.pdf]]\n\nIf the mean blood pressure measured in office [[As per recommended technique; https://guidelines.hypertension.ca/diagnosis-assessment/measuring-blood-pressure/]] is high during one visit, a history and physical examination should be performed and, if clinically indicated, diagnostic tests to search for target organ damage should be arranged within 2 visits. \n\nRoutine Lab Testing Recommended: urinalysis, blood chemistry (potassium, sodium and creatinine), fasting blood glucose and/or glycated hemoglobin (A1C), serum total cholesterol, LDL, HDL, non-HDL, triglycerides (fasting or non-fasting) and a standard 12-lead ECG. \n\nGlobal cardiovascular risk assessment should be done using risks calculators: \nFramingham only validated between age 30 and 74\n•[[risk calculator with happy faces; https://cvdcalculator.com/]]\n•[[more risk calculators; https://ccs.ca/calculators-and-forms/]]",
     "Gender": "tf,tm",
@@ -702,7 +702,7 @@
   {
     "Button": "Heart",
     "Topic heading": "Heart Disease",
-    "Subject": "Blood pressure",
+    "Subject": "Blood Pressure",
     "General Patient Text": "During your visit to the doctor, ask for a measurement of your blood pressure. \nA normal blood pressure is under 140/90 mmHg or lower for some people .\nThe target blood pressure depends on factors like age and health conditions, and where readings are being taken. If you have diabetes, kidney disease or other health conditions, speak to your health care professional about your target blood pressure. \n\n•\t[[How to appropriately measure your blood pressure at home; https://hypertension.ca/wp-content/uploads/2020/03/BPM-Postcard-Front.jpg]]\n•\t[[Understanding and Managing Your Blood Pressure; https://guidelines.hypertension.ca/wp-content/uploads/2022/09/HTC_Brochure_UnderstandingBP_2018_R3.pdf]]",
     "Health Provider Text": "CTFPHC recommends blood pressure measurement at all appropriate primary care visits.[[2012 Guideline; https://canadiantaskforce.ca/guidelines/published-guidelines/hypertension/]]\n(Strong recommendation; moderate quality evidence)\n\n[[Hypertension Canada guideline summary 2022; https://hypertension.ca/wp-content/uploads/2020/10/2020-22-HT-Guidelines-E-WEB_v3b.pdf]]\n\nIf the mean blood pressure measured in office [[As per recommended technique; https://guidelines.hypertension.ca/diagnosis-assessment/measuring-blood-pressure/]] is high during one visit, a history and physical examination should be performed and, if clinically indicated, diagnostic tests to search for target organ damage should be arranged within 2 visits. \n\nRoutine Lab Testing Recommended: urinalysis, blood chemistry (potassium, sodium and creatinine), fasting blood glucose and/or glycated hemoglobin (A1C), serum total cholesterol, LDL, HDL, non-HDL, triglycerides (fasting or non-fasting) and a standard 12-lead ECG. \n\nGlobal cardiovascular risk assessment should be done using risks calculators: \nFramingham only validated between age 30 and 74\n•[[risk calculator with happy faces; https://cvdcalculator.com/]]\n•[[more risk calculators; https://ccs.ca/calculators-and-forms/]]",
     "Gender": "m,f",
@@ -911,7 +911,7 @@
   },
   {
     "Button": "Brain",
-    "Topic heading": "Memory problems/Dementia",
+    "Topic heading": "Memory Problems/Dementia",
     "Subject": "What is Dementia?",
     "General Patient Text": "Dementia is a type of disease that affects memory and thinking. \nThis is different than memory loss from normal aging.\n[[normal aging vs dementia; http://alzheimer.ca/en/Home/About-dementia/What-is-dementia/Normal-aging-vs-dementia]]\nDementia can have different causes:\n•\tAlzheimer's disease\n•\tVascular Dementia (due to strokes)\n•\tCorrectable causes: Thyroid, Vitamin Deficiencies\n[[more; http://alzheimer.ca/en/Home/About-dementia/What-is-dementia]]",
     "Health Provider Text": "n/a",
@@ -921,7 +921,7 @@
   },
   {
     "Button": "Brain",
-    "Topic heading": "Memory problems/Dementia",
+    "Topic heading": "Memory Problems/Dementia",
     "Subject": "Prevention of Dementia",
     "General Patient Text": "•\tBe physically active\n•\tEat a healthy diet\n•\tMaintain a healthy weight/BMI\n•\tDon’t smoke or drink excessive alcohol\n•\tKeep your blood pressure, blood sugar and cholesterol in a healthy range\n•\tStay connected socially\n•\tChallenge your brain with games, learning\n•\tReduce stress\n•\tProtect your head with a helmet in sports \n\n[[more; http://alzheimer.ca/en/simcoecounty/About-dementia/Alzheimer-s-disease/Risk-factors]]",
     "Health Provider Text": "Recommend your patients:\n•\tBe physically active\n•\tEat a healthy diet\n•\tMaintain a healthy weight/BMI\n•\tDon’t smoke or drink excessive alcohol\n•\tKeep their blood pressure, blood sugar and cholesterol in a healthy range\n•\tStay connected socially\n•\tChallenge their brain with games, learning\n•\tReduce stress\n•\tProtect their head with a helmet in sports \n[[more; http://alzheimer.ca/en/simcoecounty/About-dementia/Alzheimer-s-disease/Risk-factors]]",
@@ -931,7 +931,7 @@
   },
   {
     "Button": "Brain",
-    "Topic heading": "Memory problems/Dementia",
+    "Topic heading": "Memory Problems/Dementia",
     "Subject": "Testing available in certain situations",
     "General Patient Text": "Memory testing may be done by your health care provider as you age, if you or family or friends are concerned.",
     "Health Provider Text": "Screen with MOCA or MMSE if friends, family or patient report memory issues.\n[[canadian task force; https://canadiantaskforce.ca/tools-resources/cognitive-impairment-2/cognitive-impairment-clinician-faq/]]",
@@ -1031,7 +1031,7 @@
   },
   {
     "Button": "Genitalia",
-    "Topic heading": "Sexual and reproductive health",
+    "Topic heading": "Sexual and Reproductive Health",
     "Subject": "Get tested for Cervical Cancer \n(Pap test)",
     "General Patient Text": "•\tIf you have ever been sexually active with another person, female or male, and are age 25 or over you need to be screened. See more information about:\n[[What is considered sexual activity?; https://www.sexandu.ca/sexual-activity/what-is-sex/]]\n\n•\tWomen age 25 to 69 (21-69 in some provinces) if they have ever been sexually active, need to get a pap test every 3 years if results are normal.\n•\t[[What is cervical cancer; http://www.cancer.ca/en/cancer-information/cancer-type/cervical/cervical-cancer/?region=on]]\n•\t[[more; http://www.cancer.ca/en/cancer-information/cancer-type/cervical/screening/?region=on]]\n\n•\tAge 69 or 70 will be the last year you have a pap test if you have had 3 normal Paps in the last 10 years. If not, you should continue until you have had 3 normal in their last 10 years.",
     "Health Provider Text": "n/a",
@@ -1041,7 +1041,7 @@
   },
   {
     "Button": "Genitalia",
-    "Topic heading": "Sexual and reproductive health",
+    "Topic heading": "Sexual and Reproductive Health",
     "Subject": "Cervical Cancer",
     "General Patient Text": "A Pap test is not usually necessary over 75. Pap tests can be stopped at age 69 if you have had 3 normal tests in the last 10 years.",
     "Health Provider Text": "n/a",
@@ -1051,7 +1051,7 @@
   },
   {
     "Button": "Genitalia",
-    "Topic heading": "Sexual and reproductive health",
+    "Topic heading": "Sexual and Reproductive Health",
     "Subject": "Cervical Cancer",
     "General Patient Text": "n/a",
     "Health Provider Text": "Women age 25 to 69 (21-69 in some provinces) if ever have been sexually active, need to get a pap test every 3 years if results are normal.\nStop after age 69 if 3 normal results in past 10 years.\n•\t[[CTFPHC 2013; https://canadiantaskforce.ca/guidelines/published-guidelines/cervical-cancer/]]",
@@ -1061,7 +1061,7 @@
   },
   {
     "Button": "Genitalia",
-    "Topic heading": "Sexual and reproductive health",
+    "Topic heading": "Sexual and Reproductive Health",
     "Subject": "Other ways to prevent Cervical Cancer",
     "General Patient Text": "•\tGet the HPV vaccine\nrecommended between age 9 and 26 \nbut can be given at any age\n•\tDon’t smoke\n•\tUse condoms\n•\tLimit your number of sexual partners\n[[more; http://www.cancer.ca/en/cancer-information/cancer-type/cervical/risks/reducing-your-risk/?region=on]]",
     "Health Provider Text": "•Recommend the HPV vaccine\n(recommended between 9 and 26 \nbut can be given at any age).\n[[Canadian recommendation; https://www.canada.ca/en/public-health/services/publications/healthy-living/update-recommended-human-papillomavirus-vaccine-immunization-schedule.html#sum]]\n•Recommend no smoking, condom use,\nand limiting number of partners.",
@@ -1071,7 +1071,7 @@
   },
   {
     "Button": "Genitalia",
-    "Topic heading": "Sexual and reproductive health",
+    "Topic heading": "Sexual and Reproductive Health",
     "Subject": "Family planning",
     "General Patient Text": "•\tTake folic acid: 0.4 to 1 mg a day.\nA vitamin available over the counter in pharmacies.\nFor women of childbearing age, whether planning a pregnancy or not.\n[[folic acid; https://www.canada.ca/en/public-health/services/pregnancy/folic-acid.html]]\n\n•\tTalk to your health care provider about getting tested before you are pregnant for important diseases: \n•\tRubella, Hepatitis B, HIV:can affect your unborn child.\n•\tChicken pox: which can be very serious for you in pregnancy.\n\n•\tIf you are planning to have children  after age 32 talk to your health care provider about fertility decreasing after that age and what it means for you.",
     "Health Provider Text": "For women of childbearing age:\n\nAdvise folic acid 0.4-1 m/day for all women of childbearing age, as many pregnancies unplanned [[ SOGC 2015; https://www.jogc.com/article/S1701-2163(15)30230-9/pdf]]\n\nScreen for:\n•\tRubella immunity\n•\tVaricella immunity\n•\tHepatitis B and HIV disease\nin women of childbearing age,\n[[Complete preconception heare tool; http://thehub.utoronto.ca/family/wp-content/uploads/2016/12/Preconception_Health_Care_Tool.pdf]]\n\nDelayed child-bearing: discuss\n•\tDecreasing fertility for women after age 32 \n•\tAssistive reproductive technologies cannot guarantee a live birth. \n[[more at SOGC guideline 2017; https://www.jogc.com/article/S1701-2163(17)30936-2/pdf]]",
@@ -1081,7 +1081,7 @@
   },
   {
     "Button": "Genitalia",
-    "Topic heading": "Sexual and reproductive health",
+    "Topic heading": "Sexual and Reproductive Health",
     "Subject": "Infertility",
     "General Patient Text": "A fertility evaluation should be initiated after 6 months of unprotected intercourse without conception in women 35 to 37 years of age, and earlier in women > 37 years of age",
     "Health Provider Text": "A fertility evaluation should be initiated after 6 months of unprotected intercourse without conception in women 35 to 37 years of age, and earlier in women > 37 years of age \n[[SOGC guideline 2017; https://www.jogc.com/article/S1701-2163(16)39898-X/fulltext]]",
@@ -1091,7 +1091,7 @@
   },
   {
     "Button": "Genitalia",
-    "Topic heading": "Sexual and reproductive health",
+    "Topic heading": "Sexual and Reproductive Health",
     "Subject": "Prevent Sexually Transmitted Infections (STIs)",
     "General Patient Text": "•\t{{Practice safe sex}}:\nUse a [[condom or other protection; https://www.canada.ca/en/public-health/services/publications/diseases-conditions/booklet-sexually-transmitted-infections.html#_4.5]] \n[[more info; https://www.cdc.gov/teenpregnancy/pdf/Teen-Condom-Fact_Sheet-English-March-2016.pdf]]\n\n•\t{{Get tested for STIs}} \nIf you are sexually active ((if you have ever had oral, vaginal or anal intercourse)\n(<Under age 30: every year>) for chlamydia and gonorrhea\n(<Age 30 and above: read below>) :\nHow often you get tested depends on your risk.\nHere are some risks:\n if you have a new partner, multiple partners,\n you do not use protection, if your partner has or had an STI , for more risks see this [[link; https://www.canada.ca/en/public-health/services/publications/diseases-conditions/booklet-sexually-transmitted-infections.html#_7.0]]\n\n•(<Get tested for HIV at any age>)\n\nMore info:\n•\t[[Sexual activity; http://www.sexandu.ca/]]\n•\t[[Chlamydia and gonorrhea; https://canadiantaskforce.ca/tools-resources/chlamydia-and-gonorrhea-patient-faq/]]\n•     [[Booklet on STIs; https://www.canada.ca/en/public-health/services/publications/diseases-conditions/booklet-sexually-transmitted-infections.html]]\n•\t[[Infections; https://www.canada.ca/en/public-health/services/infectious-diseases/sexual-health-sexually-transmitted-infections/sexually-transmitted-infections-sexual-health-facts-information-public.html#geninfo]]",
     "Health Provider Text": "n/a",
@@ -1101,7 +1101,7 @@
   },
   {
     "Button": "Genitalia",
-    "Topic heading": "Sexual and reproductive health",
+    "Topic heading": "Sexual and Reproductive Health",
     "Subject": "Prevent Sexually Transmitted Infections (STIs)",
     "General Patient Text": "n/a",
     "Health Provider Text": "(<Safe sex and STIcounselling>) for all sexually active patients.\n\n{{Screening for STIs}}\n• {{age 30: annually}} for chlamydia and gonorrhea.\nAdd full STI testing if at risk, see risks below.\n [[CTFPHC 2021; https://canadiantaskforce.ca/guidelines/published-guidelines/chlamydia-and-gonorrhea/]]\n• {{Age 30 and above: according to risk}} for chlamydia and GC and other STIs, see below:\n•Risks: new partner, multiple partners, serial monogamous relationships, unprotected sex, substance use, sex with blood exchange, sharing sex toys, see [[link; https://www.canada.ca/en/public-health/services/publications/diseases-conditions/booklet-sexually-transmitted-infections.html#_7.0]]\n\n• {{Offer HIV testing to all}}:\n[[Public Health Agency of Canada recommendation; https://www.canada.ca/en/public-health/services/hiv-aids/hiv-screening-testing-guide.html]], supported by USPSTF 2013 and CDC, \n[[CTFPHC recommends only if at risk; https://canadiantaskforce.ca/guidelines/appraised-guidelines/hiv/]]",
@@ -1111,7 +1111,7 @@
   },
   {
     "Button": "Genitalia",
-    "Topic heading": "Sexual and reproductive health",
+    "Topic heading": "Sexual and Reproductive Health",
     "Subject": "Prevent Prostate Cancer",
     "General Patient Text": "•\tEat a healthy diet.\n•\tBe active most days of the week.\n•\tKeep your weight at a healthy level.\n• [[What is prostate cancer?; http://www.cancer.ca/en/cancer-information/cancer-type/prostate/prostate-cancer/?region=on]]\n• [[Risks; http://www.cancer.ca/en/cancer-information/cancer-type/prostate/risks/?region=on]]",
     "Health Provider Text": "Advise to\n•\tEat a healthy diet.\n•\tBe active most days of the week.\n•\tKeep a healthy weight.",
@@ -1121,7 +1121,7 @@
   },
   {
     "Button": "Genitalia",
-    "Topic heading": "Sexual and reproductive health",
+    "Topic heading": "Sexual and Reproductive Health",
     "Subject": "Screening for Prostate Cancer",
     "General Patient Text": "n/a",
     "Health Provider Text": "•\tCanadian task force (2014): Do not screen.\n[[Canadian patient handout;  https://canadiantaskforce.ca/wp-content/uploads/2016/12/CTFPHC_Prostate-Cancer_HarmsBenefits_FINAL.pdf]]\n\n•\tUS Task Force (2018): Discuss pros and cons with your patient 55 to 69 years old. (C recommendation)\nIncorporates more recent research.\n[[Excellent video explaining benefits and harms; https://www.youtube.com/watch?v=tYii98gcejA]]\n[[US patient handout; pdf/prostate-cancer-infographic-5.pdf]]",
@@ -1131,7 +1131,7 @@
   },
   {
     "Button": "Genitalia",
-    "Topic heading": "Sexual and reproductive health",
+    "Topic heading": "Sexual and Reproductive Health",
     "Subject": "Testing for Prostate Cancer",
     "General Patient Text": "•\tIn Canada testing for finding prostate cancer early is not recommended.\n[[Canadian patient handout; https://canadiantaskforce.ca/wp-content/uploads/2016/05/2014-prostate-cancer-patient-faq-colour-en.pdf]]\n\n•\tIn the US it is recommended to discuss testing for prostate cancer with your health care provider. There are some benefits and some harms.\n•\t[[Excellent video explaIning pros and cons; https://www.youtube.com/watch?v=tYii98gcejA]]\n•\t[[US patient handout; pdf/prostate-cancer-infographic-5.pdf]]",
     "Health Provider Text": "n/a",
@@ -1141,7 +1141,7 @@
   },
   {
     "Button": "Genitalia",
-    "Topic heading": "Sexual and reproductive health",
+    "Topic heading": "Sexual and Reproductive Health",
     "Subject": "Sexual health",
     "General Patient Text": "•\tIf you are on testosterone and have not had a hysterectomy (removal of the uterus), you need to use reliable form of birth control if there is a risk pregnancy based on your sexual practices, as testosterone can cause birth defects.\n•\tIf you are trying to or could become pregnant (based on your sexual practices), discuss this with your primary care provider, as taking a folic acid vitamin is important\n•\tCondoms are recommended for anal sex.\n•\tHIV testing is recommended for all Canadians at least once [[PHAC guidelines; https://www.canada.ca/en/public-health/services/hiv-aids/hiv-screening-testing-guide.html]] \n•\tDepending on your sexual practices and history, screening for sexually transmitted infections and HIV may be recommended at different times. Discuss any concerns you may have with your primary care provider.\n•\tIf you have been the receptive partner during anal sex (“bottom”), your primary care provider may recommend regular anal Pap tests.\n•\t[[WHO guidelines; https://apps.who.int/iris/bitstream/handle/10665/128048/9789241507431_eng.pdf?sequence=1]]\n•\t[[RHO guidelines; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n•\t[[UCSF Transcare guidelines; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf]]",
     "Health Provider Text": "•\tThose on testosterone who have not undergone hysterectomy need reliable birth control if pregnancy is a risk based on sexual activity, as testosterone is a teratogen (RHO).\n•\tIf pregnancy is possible based on sexual activity, follow the same folic acid recommendations as for cis women.\n•\tCondoms are recommended for anal sex.\n•\tEmphasize adequate provision of lubricants for trans women and trans men who have sex with men.\n•\tScreen all Canadians for HIV at least once as per [[PHAC guidelines; https://www.canada.ca/en/public-health/services/hiv-aids/hiv-screening-testing-guide.html]] \n•\tScreen for STIs based on behavioural history and sexual practices.\n•\tConsider anal Pap tests every 2-3 years (or yearly in those who are HIV+) for those who have a history of receptive anal sex (RHO).\n•\tIn the LGBTQ+ community, the terms “bottom” and “top” are often used to describe the receptive and penetrative partners during sexual activity, respectively. The term “versatile” is used to describe someone who may alternate between these roles.\n•\t[[WHO guidelines; https://apps.who.int/iris/bitstream/handle/10665/128048/9789241507431_e ng.pdf?sequence=1]]\n•\t[[RHO guidelines; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n•\t[[UCSF Transcare guidelines; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf]]",
@@ -1151,7 +1151,7 @@
   },
   {
     "Button": "Genitalia",
-    "Topic heading": "Sexual and reproductive health",
+    "Topic heading": "Sexual and Reproductive Health",
     "Subject": "Contraception",
     "General Patient Text": "•\tIf you are on testosterone and have not had a hysterectomy (removal of the uterus), you need to use a reliable form of birth control if there is a risk pregnancy based on your sexual practices, as testosterone can cause birth defects.\n•\tFor contraception hormonal methods (such as the \"pill\") can be used when taking testosterone.\n•\tBarrier methods(condoms) are recommended for all.",
     "Health Provider Text": "•\tThose on testosterone who have not undergone hysterectomy need reliable birth control if pregnancy is a risk based on sexual activity, as testosterone is a teratogen (RHO).\n•\tAny hormonal/methods can be used (no contraindications with testosterone)",
@@ -1161,7 +1161,7 @@
   },
   {
     "Button": "Genitalia",
-    "Topic heading": "Sexual and reproductive health",
+    "Topic heading": "Sexual and Reproductive Health",
     "Subject": "Cervical Cancer",
     "General Patient Text": "•\tIf you have not had surgery to remove the cervix (the lower part of the uterus leading to the vagina), you need regular cervical cancer screening.\n•\tPap tests are recommended every 3 years from age 21-69 if you have ever been sexually active.\n•\tIf you think your cervix was removed during surgery, discuss the need for Pap tests with your primary care provider.\n•\t[[Overview of cervical cancer screening for trans men in Canada; https://www.cancer.ca/en/prevention-and-screening/reduce-cancer-risk/find-cancer-early/screening-in-lgbtq-communities/trans-men-and-cervical-cancer-screening/?region=on]]\n•\t[[RHO guidelines; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n•\t[[UCSF Transcare guidelines; https://transcare.ucsf.edu/guidelines/cervical-cancer]]\n•\t[[Endocrine Society guidelines; https://academic.oup.com/jcem/article/102/11/3869/4157558]]",
     "Health Provider Text": "•\tTrans men and people on the transmasculine spectrum who still have a cervix should undergo cervical cancer screening as per current guidelines.\n•\tPap tests are recommended every 3 years from age 21-69 if the person has ever been sexually active.\n•\tA trial of vaginal estrogens for 1 week prior to the exam may be helpful (RHO, UCSF).\n•\tShould speculum examination be painful or difficult due to vaginal atrophy, consider applying topical 2% lidocaine jelly vaginally 5-10 minutes prior to the procedure (RHO).\n•\tConsider administering a low-dose lorazepam pre-procedurally if the patient is particularly anxious about the exam (RHO, UCSF).\n•\tUse a paediatric speculum if possible to reduce discomfort.\n•\tIf speculum insertion remains difficult, suggest allowing the patient to insert the speculum themselves or watching the procedure using a mirror (UCSF).\n•\tNote that unsatisfactory samples of Pap tests are far more common in trans men compared to cis women and that repeats may be required; ensure to note if the patient is/was on testosterone on the cytology requisition (UCSF, RHO), as cervical atrophy can mimic dysplasia (WHO).\n•\t[[Overview of cervical cancer screening for trans men in Canada; https://www.cancer.ca/en/prevention-and-screening/reduce-cancer-risk/find-cancer-early/screening-in-lgbtq-communities/trans-men-and-cervical-cancer-screening/?region=on]]\n•\t[[Tips for physical examination of trans patients; https://transcare.ucsf.edu/guidelines/physical-examination]]\n•\t[[Tips on performing Pap tests for  trans men; https://www.rainbowhealthontario.ca/wp-content/uploads/2015/07/Tips_Paps_TransMen-1.jpg]]\n•\t[[VIDEO: Do's and Dont's when performing  Paps with trans men; https://www.youtube.com/watch?v=KIfSjX1ZEU4]]\n•\t[[Tips on improving trans men’s experiences with Pap tests; https://transcare.ucsf.edu/guidelines/cervical-cancer]]\n\n•\t[[RHO guidelines; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n•\t[[UCSF Transcare guidelines; https://transcare.ucsf.edu/guidelines/cervical-cancer]]\n•\t[[Endocrine Society guidelines; https://academic.oup.com/jcem/article/102/11/3869/4157558]]",
@@ -1171,7 +1171,7 @@
   },
   {
     "Button": "Genitalia",
-    "Topic heading": "Sexual and reproductive health",
+    "Topic heading": "Sexual and Reproductive Health",
     "Subject": "Prostate",
     "General Patient Text": "You may see information about testing for prostate cancer for men. If your sex assigned at birth is female, you do not have a prostate. “Bottom” or “lower” surgery (such as metoidioplasty or phalloplasty) does not create a prostate.Discuss with your provider if you have any questions.",
     "Health Provider Text": "Trans men and people on the transmasculine spectrum generally do not have prostates (unless they have an intersex condition) nor are any created during surgery such as phalloplasty or metoidioplasty.",
@@ -1181,7 +1181,7 @@
   },
   {
     "Button": "Genitalia",
-    "Topic heading": "Sexual and reproductive health",
+    "Topic heading": "Sexual and Reproductive Health",
     "Subject": "Family planning",
     "General Patient Text": "If you are trying to or could become pregnant (based on your sexual practices), discuss this with your primary care provider.\n•\tTake a vitamin called [[folic acid; https://www.canada.ca/en/public-health/services/pregnancy/folic-acid.html]] 0.4 mg to 1 mg daily.\n•\tTalk to your health care provider \nabout getting tested before you are pregnant\nfor important diseases such as: Rubella, Hepatitis B, HIV and Chicken pox\n•\tIf you want to be pregnant in your lifetime discuss with your provider increasing infertility after age 32.\n[[more; https://www.jogc.com/article/S1701-2163(17)30936-2/abstract]]",
     "Health Provider Text": "If a person on the transmasculine spectrum could become pregnant or wants to become pregnant, preconception information is the same as for cis patients such as :folic acid supplementation , pre conception testing for diseases such as Rubella, Hep B, HIV, Varicella, counselling re increasing infertility after 32. \nSee resources in our app for cis women , under the topic : Familly planning.",
@@ -1191,7 +1191,7 @@
   },
   {
     "Button": "Genitalia",
-    "Topic heading": "Sexual and reproductive health",
+    "Topic heading": "Sexual and Reproductive Health",
     "Subject": "Sexual health",
     "General Patient Text": "•  HIV testing is recommended for all Canadians at least once [[PHAC guidelines; https://www.canada.ca/en/public-health/services/hiv-aids/hiv-screening-testing-guide.html]] \n• Depending on your sexual practices and history, screening for sexually transmitted infections and HIV may be recommended at different times.  Discuss any concerns you may have with your primary care provider.\n• Condoms are recommended for anal sex.\n• If you have been the receptive partner during anal sex (“bottom”), your primary care provider may recommend regular anal Pap tests.\n• If you have sex with men, have concerns about HIV prevention and would like to know more about pre- exposure prophylaxis (PrEP), discuss this with your primary care provider.\n• [[WHO guidelines; https://apps.who.int/iris/bitstream/handle/10665/128048/9789241507431_eng.pdf?sequence=1]]\n• [[RHO guidelines; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n• [[UCSF Transcare guidelines; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf]]",
     "Health Provider Text": "•\tEmphasize adequate provision of lubricants for trans women and trans men who have sex with men.\n•\tScreen all Canadians for HIV at least once as per [[PHAC guidelines; https://www.canada.ca/en/public-health/services/hiv-aids/hiv-screening-testing-guide.html]] \n•\tScreen for STIs based on behavioural history and sexual practices.\n•\tCondoms are recommended for anal sex.\n•\tConsider anal Pap tests every 2-3 years (or yearly in those who are HIV+) for those who have a history of receptive anal sex (RHO).\n•\tDaily oral pre-exposure prophylaxis (PrEP) may be considered as a possible additional intervention for trans women who have sex with men (WHO).\n•\tVoluntary medical circumcision (VMMC) is not recommended for HIV prevention among transgender women (WHO).       \n•\tIn the LGBTQ+ community, the terms “bottom” and “top” are often used to describe the receptive and penetrative partners during sexual activity, respectively. The term “versatile” is used to describe someone who may alternate between these roles.\n•\t[[WHO guidelines; https://apps.who.int/iris/bitstream/handle/10665/128048/9789241507431_eng.pdf?sequence=1]]\n•\t[[RHO guidelines; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n•\t[[UCSF Transcare guidelines; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf]]",
@@ -1201,7 +1201,7 @@
   },
   {
     "Button": "Genitalia",
-    "Topic heading": "Sexual and reproductive health",
+    "Topic heading": "Sexual and Reproductive Health",
     "Subject": "Contraception",
     "General Patient Text": "Use barrier method (and/or have partner use hormonal contraception) if no bottom surgery and having intercourse with partner who could get pregnant",
     "Health Provider Text": "Recommendation is to use a barrier method (and/or have partner use hormonal contraception) if no bottom surgery and having intercourse with partner who could get pregnant.",
@@ -1211,7 +1211,7 @@
   },
   {
     "Button": "Genitalia",
-    "Topic heading": "Sexual and reproductive health",
+    "Topic heading": "Sexual and Reproductive Health",
     "Subject": "Prostate",
     "General Patient Text": "You have a prostate if you were assigned male sex at birth.Bottom surgery does not remove the prostate.\nTo prevent prostate cancer:\n•\tEat a healthy diet.\n•\tBe active most days of the week.\n•\tKeep your weight at a healthy level.\n[[What is prostate cancer?; http://www.cancer.ca/en/cancer-information/cancer-type/prostate/prostate-cancer/?region=on]]\n[[Risks; http://www.cancer.ca/en/cancer-information/cancer-type/prostate/risks/?region=on]]\n Testing for prostate cancer with the psa test is not recommended in Canada at this time . For more information choose : male age 55 to 69 on this app.",
     "Health Provider Text": "Same as cis men (bottom surgery does not remove the prostate)",
@@ -1221,7 +1221,7 @@
   },
   {
     "Button": "Genitalia",
-    "Topic heading": "Sexual and reproductive health",
+    "Topic heading": "Sexual and Reproductive Health",
     "Subject": "Cervical Cancer",
     "General Patient Text": "•\tMost trans women and non-binary people on the transfeminine spectrum do not need any cervical cancer screening, regardless of whether or not they have had a vaginoplasty.\n•\tIn the very rare instance where you would have had a cervix created during vaginoplasty, discuss the need for Pap tests with your primary care provider.\n•\tIf you have had a vaginoplasty, your primary care provider may suggest yearly visual examination with a speculum.\n•\t[[Overview of cervical cancer screening for trans women in Canada; https://www.cancer.ca/en/prevention-and-screening/reduce-cancer-risk/find-cancer-early/screening-in-lgbtq-communities/trans-women-and-cervical-cancer-screening/?region=on]]\n•\t[[RHO guidelines; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n•\t[[UCSF Transcare guidelines; https://transcare.ucsf.edu/guidelines/cervical-cancer]]\n•\t[[Endocrine Society guidelines; https://academic.oup.com/jcem/article/102/11/3869/4157558]] (Can be the same suggestions as for cisgender patients)",
     "Health Provider Text": "•\tTrans women and people on the transfeminine spectrum generally do not need any cervical cancer screening as vaginoplasty does not usually entail creation of a neocervix.\n•\tNeovagina vault testing is not recommended.\n•\tIn the very rare instances where a neocervix may have been created during vaginoplasty (such as from the skin of the glans penis), consider following the current cervical cancer screening guidelines for cis women (ACOG) (Pap tests are recommended every 3 years from age 21 to 69 if the person has ever been sexually active).\n•\tConsider annual neovaginal speculum examination to visually detect any abnormalities (including malignancy) for those who have undergone vaginoplasty (RHO).\n•\tNeovaginas may have a more posterior orientation than those of cis women, and using an anoscope rather than a speculum may be more appropriate for examination (UCSF).\n•\t[[Overview of cervical cancer screening for trans women in Canada; https://www.cancer.ca/en/prevention-and-screening/reduce-cancer-risk/find-cancer-early/screening-in-lgbtq-communities/trans-women-and-cervical-cancer-screening/?region=on]]\n•\t[[Tips for physical examination of trans patients; https://transcare.ucsf.edu/guidelines/physical-examination]]\n•\t[[RHO guidelines; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n•\t[[UCSF Transcare guidelines; https://transcare.ucsf.edu/guidelines/cervical-cancer]]\n•\t[[Endocrine Society guidelines; https://academic.oup.com/jcem/article/102/11/3869/4157558]]",
@@ -1321,7 +1321,7 @@
   },
   {
     "Button": "braingear",
-    "Topic heading": "Mental health",
+    "Topic heading": "Mental Health",
     "Subject": "General",
     "General Patient Text": "Taking care of your mental health is as important as taking care of your physical health. Maintaining a healthy diet, being physically active and getting enough sleep helps reduce stress, improves concentration and mood.",
     "Health Provider Text": "N/A",
@@ -1331,7 +1331,7 @@
   },
   {
     "Button": "braingear",
-    "Topic heading": "Mental health",
+    "Topic heading": "Mental Health",
     "Subject": "Suicide prevention and other support",
     "General Patient Text": "•\t[[Crisis Services Canada ; https://www.crisisservicescanada.ca/en/]]\n•\t[[Free help with mental health; https://www.wellnesstogether.ca/en-CA]]",
     "Health Provider Text": "N/A",
@@ -1341,7 +1341,7 @@
   },
   {
     "Button": "braingear",
-    "Topic heading": "Mental health",
+    "Topic heading": "Mental Health",
     "Subject": "First Nations, Métis, Inuit",
     "General Patient Text": "•\t[[Help by phone or chat; https://www.hopeforwellness.ca/]]\n•\t[[Information on federal government programs; https://www.sac-isc.gc.ca/eng/1576089278958/1576089333975]]",
     "Health Provider Text": "N/A",
@@ -1351,7 +1351,7 @@
   },
   {
     "Button": "braingear",
-    "Topic heading": "Mental health",
+    "Topic heading": "Mental Health",
     "Subject": "Resources to practice mindfulness",
     "General Patient Text": "•\t[[Mindshift; https://www.anxietycanada.com/resources/mindshift-cbt]]; to build skills for managing anxiety and depression\n•\t[[Headspace; https://www.headspace.com/mindfulness]]\n•\t[[Insight timer; https://insighttimer.com/]]",
     "Health Provider Text": "N/A",
@@ -1361,7 +1361,7 @@
   },
   {
     "Button": "braingear",
-    "Topic heading": "Mental health",
+    "Topic heading": "Mental Health",
     "Subject": "Guidelines",
     "General Patient Text": "N/A",
     "Health Provider Text": "As per [[CTFPH 2013 guidelines; https://canadiantaskforce.ca/guidelines/published-guidelines/depression/]] : Screening for depression is not recommended for adults at average risk of depression who present to a primary care setting, with no apparent symptoms of depression. (Weak recommendation; very-low-quality evidence). These recommendations do not apply to people with known depression, with a history of depression or who are receiving treatment for depression.\nHowever primary care providers know the importance of mental health and how it influences overall health. Below are some resources.",
@@ -1371,7 +1371,7 @@
   },
   {
     "Button": "braingear",
-    "Topic heading": "Mental health",
+    "Topic heading": "Mental Health",
     "Subject": "Resources",
     "General Patient Text": "N/A",
     "Health Provider Text": "Tools to help you care for your patients: \n•\t[[eMental Health; https://primarycare.ementalhealth.ca/index.php?m=fpStart]]\n•\t[[Assessment of ADHD in adults;  https://www.caddra.ca/public-information/adults/forms/]]\n\n\nMindfulness ressources; \n•\t[[Mindshift; https://www.anxietycanada.com/resources/mindshift-cbt]]; to build skills for managing anxiety and depression\n•\t[[Headspace; https://www.headspace.com/mindfulness]]\n•\t[[Insight timer; https://insighttimer.com/]]\n\n•\t[[Screening tools; https://primarycare.ementalhealth.ca/index.php?m=surveyList]]",
@@ -1381,7 +1381,7 @@
   },
   {
     "Button": "bp",
-    "Topic heading": "Blood pressure",
+    "Topic heading": "Blood Pressure",
     "Subject": "Get your blood pressure checked",
     "General Patient Text": "•\tDuring your visit with your health care provider, ask for a measurement of your blood pressure. \nA normal blood pressure is under 140/90 mmHg or lower for some people .\n•\tThe target blood pressure depends on factors like age and health conditions, and where readings are being taken. \n•\tIf you have diabetes, kidney disease or other health conditions, speak to your health care professional about your target blood pressure. \n\n•\t[[How to appropriately measure your blood pressure at home; https://hypertension.ca/wp-content/uploads/2020/03/BPM-Postcard-Front.jpg]]\n•\t[[Understanding and Managing Your Blood Pressure; https://guidelines.hypertension.ca/wp-content/uploads/2022/09/HTC_Brochure_UnderstandingBP_2018_R3.pdf]]",
     "Health Provider Text": "n/a",
@@ -1391,10 +1391,30 @@
   },
   {
     "Button": "bp",
-    "Topic heading": "Blood pressure",
+    "Topic heading": "Blood Pressure",
     "Subject": "Guidelines",
     "General Patient Text": "n/a",
     "Health Provider Text": "CTFPHC recommends blood pressure measurement at all appropriate primary care visits. [[2012 Guideline; https://canadiantaskforce.ca/guidelines/published-guidelines/hypertension/]]\n(Strong recommendation; moderate quality evidence)\n\n[[Hypertension Canada guideline summary 2022; https://hypertension.ca/wp-content/uploads/2020/10/2020-22-HT-Guidelines-E-WEB_v3b.pdf]]\n\nIf the mean blood pressure measured in office [[As per recommended technique; https://guidelines.hypertension.ca/diagnosis-assessment/measuring-blood-pressure/]] is high during one visit, a history and physical examination should be performed and, if clinically indicated, diagnostic tests to search for target organ damage should be arranged within 2 visits. \n\nRoutine Lab Testing Recommended: urinalysis, blood chemistry (potassium, sodium and creatinine), fasting blood glucose and/or glycated hemoglobin (A1C), serum total cholesterol, LDL, HDL, non-HDL, triglycerides (fasting or non-fasting) and a standard 12-lead ECG. \n\nGlobal cardiovascular risk assessment should be done using risks calculators: \nFramingham only validated between age 30 and 74\n• [[Risk calculator with happy faces; https://cvdcalculator.com/]]\n• [[More risk calculators; https://ccs.ca/calculators-and-forms/]]",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "money",
+    "Topic heading": "Money Issues",
+    "Subject": "Money Issues",
+    "General Patient Text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "Health Provider Text": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "sleep",
+    "Topic heading": "Sleep",
+    "Subject": "Sleep",
+    "General Patient Text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+    "Health Provider Text": "Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
