@@ -5,7 +5,7 @@ import './LandingPage.css';
 import calllogo from './assets/Logos/logo_21-02-02.png';
 import videoen from './videos/video_en.mp4';
 import videofr from './videos/video_fr.mp4';
-import calleng from './assets/Logos/canbewelleng.png';
+import calleng from './assets/Logos/icanbewelleng.png';
 import callfren from './assets/Logos/canbewellfren.png';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
