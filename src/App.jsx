@@ -4,7 +4,7 @@ import { instanceOf } from 'prop-types';
 import ReactGA from "react-ga";
 import { IoIosSettings } from "react-icons/io";
 import { AiOutlineExclamationCircle } from "react-icons/ai";
-import {Button, ButtonToolbar, Media} from 'react-bootstrap'
+import { Button, ButtonToolbar, Media } from 'react-bootstrap'
 import { v4 as uuidv4 } from 'uuid';
 import DOMPurify from 'dompurify'
 
@@ -25,8 +25,8 @@ import { unstable_renderSubtreeIntoContainer } from 'react-dom';
 //import {setGender} from './UserInfo';
 //import {setPatientProvider} from './UserInfo';
 //import {setAge} from './UserInfo';
-import {getUserInfo} from './UserInfo';
-import {isTransgender} from './config';
+import { getUserInfo } from './UserInfo';
+import { isTransgender } from './config';
 
 
 class App extends Component {
@@ -41,9 +41,9 @@ class App extends Component {
     const { cookies } = props;
     var userInfo = {
       userID: null,
-      sessionID:null,
+      sessionID: null,
       gender: null,
-      Tgender:null,
+      Tgender: null,
       patient_provider: null,
       age: null,
       language: null,
@@ -62,8 +62,8 @@ class App extends Component {
       sessionID: cookies.get('sessionID'),
       isOpen: false,
       configurationIsOpen: false, //used to be isOpen
-      bodyView: true,
-      topicsView: false,
+      bodyView: (cookies.get('user')== "provider")? false: true,
+      topicsView: (cookies.get('user')== "provider")? true: false,
       testsView: false,
       visible: true,
       language: app_language,
@@ -79,7 +79,7 @@ class App extends Component {
       user: cookies.get('user') || 'patient',
       gender: cookies.get('gender'),
       Tgender: cookies.get('Tgender'),
-      region: null, 
+      region: null,
       city: null,
       preNav: null,
       preCat: null,
@@ -99,15 +99,26 @@ class App extends Component {
     // this.onChangeTopSurgery=this.onChangeTopSurgery.bind(this);
     // this.onChangeBottomSurgery=this.onChangeBottomSurgery.bind(this);
     // this.onChangeHormoneTherapy=this.onChangeHormoneTherapy.bind(this);
-    this.onChangeisEstrogen=this.onChangeisEstrogen.bind(this);
-    this.onChangeisTestosterone=this.onChangeisTestosterone.bind(this);
-    this.onChangeisBreasts=this.onChangeisBreasts.bind(this);
-    this.onChangeisVaginaCervix=this.onChangeisVaginaCervix.bind(this);
-    this.onChangeisProstate=this.onChangeisProstate.bind(this);
+    this.onChangeisEstrogen = this.onChangeisEstrogen.bind(this);
+    this.onChangeisTestosterone = this.onChangeisTestosterone.bind(this);
+    this.onChangeisBreasts = this.onChangeisBreasts.bind(this);
+    this.onChangeisVaginaCervix = this.onChangeisVaginaCervix.bind(this);
+    this.onChangeisProstate = this.onChangeisProstate.bind(this);
   }
 
   componentDidMount() {
-    document.getElementById("body").classList = 'active';
+    
+    if (this.state.bodyView) {
+      document.getElementById("body").classList = 'active';
+    
+    } else if (this.state.topicsView) {
+      
+      document.getElementById("topic").classList = 'active';
+      
+    } else if (this.state.testsView) {
+     
+      document.getElementById("test").classList = 'active';
+    }
     try {
       if (this.state.user == "patient") {
         //document.getElementById("disclaimer").innerHTML = this.state.lang.patientDisclaimer;
@@ -118,7 +129,7 @@ class App extends Component {
         document.getElementById("genderSelector").style.display = "block";
       }
 
-     // this.fieldSelectionDisplayHandle(this.state.gender);
+      // this.fieldSelectionDisplayHandle(this.state.gender);
 
     } catch (err) { }
 
@@ -130,19 +141,17 @@ class App extends Component {
         clientId = tracker.get('clientId');
       }
     );
-    if( !cookies.get('userID') ) 
-    {
+    if (!cookies.get('userID')) {
       cookies.set('userID', clientId, { path: "/" });
     }
-      
-    if( !cookies.get('sessionID') ) 
-    {
-        cookies.set('sessionID', uuidv4().toString(), { path: "/" });
+
+    if (!cookies.get('sessionID')) {
+      cookies.set('sessionID', uuidv4().toString(), { path: "/" });
     }
     //setstate()
     this.setState({
-      userID:cookies.get('userID'),
-      sessionID:cookies.get('sessionID')
+      userID: cookies.get('userID'),
+      sessionID: cookies.get('sessionID')
     });
     //count a pageview of body 
     //ReactGA.pageview('body');
@@ -165,7 +174,7 @@ class App extends Component {
       );
   }
 
-  pageViewStateUpdater = ( nav, cat, time ) => {
+  pageViewStateUpdater = (nav, cat, time) => {
     this.setState({
       preNav: nav,
       preCat: cat,
@@ -176,74 +185,84 @@ class App extends Component {
   //toggle the config modif
   toggleConfigurationModal = () => {
     //Transgener configuration modal
-   if(this.state.isTransgender){
-    var genders = ["male", "female", "all_genders" , "nonbinary","transgender"]; 
-    var Tgenders =["tf","tm"];
-    if (genders.includes(this.state.gender) && ((this.state.age >= 18 && this.state.age <= 150) || this.state.allAgesSelected) && Tgenders.includes(this.state.Tgender)) {
-      this.setState({
-        configurationIsOpen: !this.state.configurationIsOpen
-      });
-      document.getElementById("config_agehelp").style.display = "none";
-    }
-    else{
-      document.getElementById("config_agehelp").style.display = "block";
-    }
-  }
-  else {
-    var genders = ["male", "female", "all_genders"];
-    if (genders.includes(this.state.gender) && ((this.state.age >= 18 && this.state.age <= 150) || this.state.allAgesSelected)) {
-      this.setState({
-        configurationIsOpen: !this.state.configurationIsOpen
-      });
-      document.getElementById("config_help").style.display = "none";
+    if (this.state.isTransgender) {
+      var genders = ["male", "female", "all_genders", "nonbinary", "transgender"];
+      var Tgenders = ["tf", "tm"];
+      if (genders.includes(this.state.gender) && ((this.state.age >= 18 && this.state.age <= 150) || this.state.allAgesSelected) && Tgenders.includes(this.state.Tgender)) {
+        this.setState({
+          configurationIsOpen: !this.state.configurationIsOpen
+        });
+        document.getElementById("config_agehelp").style.display = "none";
+      }
+      else {
+        document.getElementById("config_agehelp").style.display = "block";
+      }
     }
     else {
-      document.getElementById("config_help").style.display = "block";
+      var genders = ["male", "female", "all_genders"];
+      if (genders.includes(this.state.gender) && ((this.state.age >= 18 && this.state.age <= 150) || this.state.allAgesSelected)) {
+        this.setState({
+          configurationIsOpen: !this.state.configurationIsOpen
+        });
+        document.getElementById("config_help").style.display = "none";
+      }
+      else {
+        document.getElementById("config_help").style.display = "block";
+      }
     }
   }
-}
 
   //Trangender Intruction modal
   toggleIntrutionModal = () => {
     //Applying istransgender flag
-    if(this.state.isTransgender){
-    var genders = ["male", "female", "all_genders" , "nonbinary","transgender"];
-    var Tgenders =["tf","tm"];
-    if (genders.includes(this.state.gender) && ((this.state.age >= 18 && this.state.age <= 150) || this.state.allAgesSelected) && Tgenders.includes(this.state.Tgender) ) {
-      const { cookies } = this.props;
-      cookies.set('_onboarded', true, { path: '/' });
-      this.setState({
-        instructionIsOpen: !this.state.instructionIsOpen
-      });
-      document.getElementById("agehelp").style.display = "none";
-      document.getElementById("help").style.display = "none";
+    if (this.state.isTransgender) {
+      var genders = ["male", "female", "all_genders", "nonbinary", "transgender"];
+      var Tgenders = ["tf", "tm"];
+      if (genders.includes(this.state.gender) && ((this.state.age >= 18 && this.state.age <= 150) || this.state.allAgesSelected) && Tgenders.includes(this.state.Tgender)) {
+        const { cookies } = this.props;
+        if (this.state.user == "provider") {
+          this.setState({
+            bodyView: false,
+            topicsView: true,
+            testsView: false
+          });
+          document.getElementById("body").classList = '';
+          document.getElementById("topic").classList = 'active';
+          document.getElementById("test").classList = '';
+        }
+        cookies.set('_onboarded', true, { path: '/' });
+        this.setState({
+          instructionIsOpen: !this.state.instructionIsOpen
+        });
+        document.getElementById("agehelp").style.display = "none";
+        document.getElementById("help").style.display = "none";
+      }
+      else if (!genders.includes(this.state.gender) || (!Tgenders.includes(this.state.Tgender)) || (!this.state.allAgesSelected && (this.state.age == ''))) {
+        document.getElementById("agehelp").style.display = "none";
+        document.getElementById("help").style.display = "block";
+      }
+      else {
+        document.getElementById("agehelp").style.display = "block";
+        document.getElementById("help").style.display = "none";
+      }
     }
-    else if(!genders.includes(this.state.gender)  || (!Tgenders.includes(this.state.Tgender)) || (!this.state.allAgesSelected && (this.state.age ==''))){
-      document.getElementById("agehelp").style.display = "none";
-      document.getElementById("help").style.display = "block";
-    }
-    else{
-      document.getElementById("agehelp").style.display = "block";
-      document.getElementById("help").style.display = "none";
-    }
-  }
-  else {
-    var genders = ["male", "female", "all_genders"];
+    else {
+      var genders = ["male", "female", "all_genders"];
 
-  if (genders.includes(this.state.gender) && ((this.state.age >= 18 && this.state.age <= 150) || this.state.allAgesSelected)) {
-    const { cookies } = this.props;
-    cookies.set('_onboarded', true, { path: '/' });
-    this.setState({
-      instructionIsOpen: !this.state.instructionIsOpen
-    });
-    document.getElementById("help").style.display = "none";
-  }
-  else {
-    document.getElementById("help").style.display = "block";
-  }
+      if (genders.includes(this.state.gender) && ((this.state.age >= 18 && this.state.age <= 150) || this.state.allAgesSelected)) {
+        const { cookies } = this.props;
+        cookies.set('_onboarded', true, { path: '/' });
+        this.setState({
+          instructionIsOpen: !this.state.instructionIsOpen
+        });
+        document.getElementById("help").style.display = "none";
+      }
+      else {
+        document.getElementById("help").style.display = "block";
+      }
 
-  } 
-}
+    }
+  }
 
   //top nav func
   bodyClicked = (e) => {
@@ -299,19 +318,18 @@ class App extends Component {
   //Set age
   handleChange(event) {
     const { cookies } = this.props;
-    if (event.target.value>=18 && event.target.value<=150 )
-    {
-    cookies.set('age', event.target.value, { path: '/' });
-        }
-        this.setState({ age: event.target.value });
+    if (event.target.value >= 18 && event.target.value <= 150) {
+      cookies.set('age', event.target.value, { path: '/' });
+    }
+    this.setState({ age: event.target.value });
     //setAge(Number(event.target.value));
   }
 
-  handleSubmit(event){
+  handleSubmit(event) {
     event.
-    reventDefault();
-    
-    }
+      reventDefault();
+
+  }
 
   //set all ages
   handleAllAgesSelected(event) {
@@ -392,7 +410,7 @@ class App extends Component {
 
     const { cookies } = this.props;
     cookies.set('gender', changeEvent.target.value, { path: '/' });//curr gender //assigned sex
-    
+
     this.setState({
       gender: changeEvent.target.value
     });
@@ -421,7 +439,7 @@ class App extends Component {
 
   onChangeisTestosterone(event) {
     const { cookies } = this.props;
-    cookies.set('isTestosterone  ', !this.state.isTestosterone  , { path: '/' });
+    cookies.set('isTestosterone  ', !this.state.isTestosterone, { path: '/' });
 
     this.setState({
       isTestosterone: (!this.state.isTestosterone)
@@ -461,31 +479,31 @@ class App extends Component {
     });
   }
 
- helpClicked = () => {
-  
-  this.setState({
-    isOpen: !this.state.isOpen,
-    headerText: this.state.lang.config_modal_Gender_help_header,
-    bodyText: this.state.lang.config_modal_Gender_help_body,
-    buttonText: this.state.lang.config_modal_agree,
-  });
- }
- helpClicked2 = () => {
-  
-  this.setState({
-    isOpen: !this.state.isOpen,
-    headerText: this.state.lang.config_modal_SexAtBirth_help_header,
-    bodyText: this.state.lang.config_modal_SexAtBirth_help_body,
-    buttonText: this.state.lang.config_modal_agree,
-  });
- }
+  helpClicked = () => {
+
+    this.setState({
+      isOpen: !this.state.isOpen,
+      headerText: this.state.lang.config_modal_Gender_help_header,
+      bodyText: this.state.lang.config_modal_Gender_help_body,
+      buttonText: this.state.lang.config_modal_agree,
+    });
+  }
+  helpClicked2 = () => {
+
+    this.setState({
+      isOpen: !this.state.isOpen,
+      headerText: this.state.lang.config_modal_SexAtBirth_help_header,
+      bodyText: this.state.lang.config_modal_SexAtBirth_help_body,
+      buttonText: this.state.lang.config_modal_agree,
+    });
+  }
   render() {
     var userInfo = getUserInfo();
     var userInfo = {
       userID: this.state.userID,
       sessionID: this.state.sessionID,
       gender: this.state.gender,
-      Tgender:this.state.Tgender,
+      Tgender: this.state.Tgender,
       patient_provider: this.state.user,
       age: this.state.age,
       language: this.state.language, //TODO plese change that VERY important
@@ -494,12 +512,12 @@ class App extends Component {
       preNav: this.state.preNav,
       preCat: this.state.preCat,
       preTime: this.state.preTime,
-      isEstrogen:this.state.isEstrogen,
-      isTestosterone:this.state.isTestosterone,
-      isBreasts:this.state.isBreasts,
-      isVaginaCervix:this.state.isVaginaCervix,
-      isProstate:this.state.isProstate,
-      isTransgender:this.state.isTransgender
+      isEstrogen: this.state.isEstrogen,
+      isTestosterone: this.state.isTestosterone,
+      isBreasts: this.state.isBreasts,
+      isVaginaCervix: this.state.isVaginaCervix,
+      isProstate: this.state.isProstate,
+      isTransgender: this.state.isTransgender
     };
 
     const fixedStyle = {
@@ -518,7 +536,7 @@ class App extends Component {
 
     var allagescheckboxStyle = {
       display: 'block',
-      'marginRight':'140px',
+      'marginRight': '140px',
     };
     var fieldSelectionDiv = {
       display: 'block',
@@ -557,27 +575,27 @@ class App extends Component {
       overflowX: 'hidden',
       background: '#f2f2f2',
       fontSize: '16px',
-      fontWeight:'12px',
+      fontWeight: '12px',
     };
-    const termsOfUseStyle={
-      'marginTop':'10px',
-      'textAlign':'center'
+    const termsOfUseStyle = {
+      'marginTop': '10px',
+      'textAlign': 'center'
     };
-  
-    const genderCss={
-      'textAlign':'left'
+
+    const genderCss = {
+      'textAlign': 'left'
     }
-    
-    const titleCSS={
-      'textAlign':'center',
+
+    const titleCSS = {
+      'textAlign': 'center',
       'marginLeft': '12%'
     }
-    const underlineTextTermsOfUse={
+    const underlineTextTermsOfUse = {
       'textDecoration': 'underline',
       'fontWeight': '400'
     }
-    const termOfUseCss={
-      'marginLeft':'40%'
+    const termOfUseCss = {
+      'marginLeft': '40%'
     }
 
     if (this.state.user == "patient") {
@@ -586,89 +604,89 @@ class App extends Component {
     else if (this.state.user == "provider") {
       allagescheckboxStyle.display = "block";
     }
-    
-    if(this.state.isTransgender){
-    if(this.state.gender==="nonbinary"|| this.state.gender==="transgender"){
-      fieldSelectionDiv.display = "block";
+
+    if (this.state.isTransgender) {
+      if (this.state.gender === "nonbinary" || this.state.gender === "transgender") {
+        fieldSelectionDiv.display = "block";
+      }
+      else {
+        fieldSelectionDiv.display = "none";
+      }
     }
-    else {
-      fieldSelectionDiv.display = "none";
-    }
-  }
 
     var instructionModal = []; //first choose box/page
     var configurationModal = []; // top left choose which appears on main body page
-    
- //Applying the isTransgender flag for first pop up choose box
- console.log("print::::",isTransgender);
-  if(this.state.isTransgender){
-    //Transgender choose box
-      if (this.state.instructionIsOpen) {
-      //Transgender Instruction modal
-      instructionModal = [
-        
-        <div key="1" className="backdrop" style={backdropStyle} myModal>
-          <div className="myModal" style={myModalStyle} test-id="instructionModalRoot">
-            <div className="footer">
-              <div className="content">
-              <p id="choose_mod" test-id="header" style={titleCSS}><strong>{this.state.lang.instruction_modal_header} </strong></p>
 
-              {/*select user*/}
-              <div className="radio" style={genderCss}>
-                <form test-id="userForm">
-                  <p id="user_mod">{this.state.lang.user_selector}</p>
-                   <label id="pat_mod" test-id="patientLabel">
-                    <input type="radio" test-id="patientRadio" value="patient" checked={this.state.user === 'patient'} onChange={this.handlePatientProviderChange} />
-                    {this.state.lang.patient}
-                  </label>
-                  <br/>
-                   
-                  <label id="prov_mod" test-id="providerLabel">
-                    <input type="radio" test-id="providerRadio" value="provider" checked={this.state.user === 'provider'} onChange={this.handlePatientProviderChange} />
-                    {this.state.lang.provider}
-                  </label>
-                </form>
-              </div>
-              
-              {/*select age*/}
-              <div>
-                <form test-id="ageForm">
-                  <div style={genderCss}>
-                    {this.state.lang.age_selector}
-                    {/* <input id='abcd' type="text" value={this.state.age == "all ages" ? this.state.lang.all_ages : this.state.age} onChange={this.handleChange} disabled={this.state.allAgesSelected} placeholder={this.state.lang.age_selector_place_holder} onKeyPress={e => { if (e.key === 'Enter') e.preventDefault();}} /> */}
-                    <input test-id="ageInput" id='abc' type="text" value={this.state.age == "all ages" ? this.state.lang.all_ages : this.state.age} onChange={this.handleChange} disabled={this.state.allAgesSelected} placeholder={this.state.lang.age_selector_place_holder} onKeyPress={e => { if (e.key === 'Enter') e.preventDefault();}} />
-                    <label style={allagescheckboxStyle} test-id="allAgeCheckboxLabel">
-                      <input id='myCheck' test-id="allAgeCheckbox" type="checkbox" checked={this.state.allAgesSelected} onChange={this.handleAllAgesSelected} />{this.state.lang.all_ages}
-                    </label>
+    //Applying the isTransgender flag for first pop up choose box
+    console.log("print::::", isTransgender);
+    if (this.state.isTransgender) {
+      //Transgender choose box
+      if (this.state.instructionIsOpen) {
+        //Transgender Instruction modal
+        instructionModal = [
+
+          <div key="1" className="backdrop" style={backdropStyle} myModal>
+            <div className="myModal" style={myModalStyle} test-id="instructionModalRoot">
+              <div className="footer">
+                <div className="content">
+                  <p id="choose_mod" test-id="header" style={titleCSS}><strong>{this.state.lang.instruction_modal_header} </strong></p>
+
+                  {/*select user*/}
+                  <div className="radio" style={genderCss}>
+                    <form test-id="userForm">
+                      <p id="user_mod">{this.state.lang.user_selector}</p>
+                      <label id="pat_mod" test-id="patientLabel">
+                        <input type="radio" test-id="patientRadio" value="patient" checked={this.state.user === 'patient'} onChange={this.handlePatientProviderChange} />
+                        {this.state.lang.patient}
+                      </label>
+                      <br />
+
+                      <label id="prov_mod" test-id="providerLabel">
+                        <input type="radio" test-id="providerRadio" value="provider" checked={this.state.user === 'provider'} onChange={this.handlePatientProviderChange} />
+                        {this.state.lang.provider}
+                      </label>
+                    </form>
                   </div>
-                </form>
-              </div>
-              {/*select gender*/}
-              <div>
+
+                  {/*select age*/}
+                  <div>
+                    <form test-id="ageForm">
+                      <div style={genderCss}>
+                        {this.state.lang.age_selector}
+                        {/* <input id='abcd' type="text" value={this.state.age == "all ages" ? this.state.lang.all_ages : this.state.age} onChange={this.handleChange} disabled={this.state.allAgesSelected} placeholder={this.state.lang.age_selector_place_holder} onKeyPress={e => { if (e.key === 'Enter') e.preventDefault();}} /> */}
+                        <input test-id="ageInput" id='abc' type="text" value={this.state.age == "all ages" ? this.state.lang.all_ages : this.state.age} onChange={this.handleChange} disabled={this.state.allAgesSelected} placeholder={this.state.lang.age_selector_place_holder} onKeyPress={e => { if (e.key === 'Enter') e.preventDefault(); }} />
+                        <label style={allagescheckboxStyle} test-id="allAgeCheckboxLabel">
+                          <input id='myCheck' test-id="allAgeCheckbox" type="checkbox" checked={this.state.allAgesSelected} onChange={this.handleAllAgesSelected} />{this.state.lang.all_ages}
+                        </label>
+                      </div>
+                    </form>
+                  </div>
+                  {/*select gender*/}
+                  <div>
                     <div id="genderSelector" className="radio" style={genderCss} test-id="genderSelectRoot">
-                     <div><strong>{this.state.lang.gender_selector}</strong>
+                      <div><strong>{this.state.lang.gender_selector}</strong>
                         {/* this is the original button, works fine 
                         but i have applied css zindex and positioned it over other div which is trick that doesnt aligns with screen size */}
-                     {/* this button is crack takes me to the landing page */}
-                       <button test-id="genderSelectHelp" className="button button23" onClick={this.helpClicked}>?</button> 
-                     </div>                    
+                        {/* this button is crack takes me to the landing page */}
+                        <button test-id="genderSelectHelp" className="button button23" onClick={this.helpClicked}>?</button>
+                      </div>
                       <label id="male_radio" test-id="maleRadioLabel">
                         <input type="radio" test-id="maleRadio" value="male" checked={this.state.gender == 'male'} onChange={this.handleGenderChange} />
                         {this.state.lang.male}
                       </label>
-                      <br/>
+                      <br />
                       <label id="female_radio" test-id="femaleRadioLabel">
                         <input test-id="femaleRadio" type="radio" value="female" checked={this.state.gender == 'female'} onChange={this.handleGenderChange} />
                         {this.state.lang.female}
                       </label>
-                      <br/>
+                      <br />
 
-                    <label id="nb_radio" test-id="nonBinaryRadioLabel">
-                      <input test-id="nonBinaryRadio" type="radio" value="nonbinary" checked={this.state.gender == 'nonbinary'} onChange={this.handleGenderChange} />
-                      {this.state.lang.nonbinary}
-                    </label>
-                    <br/>
-                    {/* <label id="trans_radio">
+                      <label id="nb_radio" test-id="nonBinaryRadioLabel">
+                        <input test-id="nonBinaryRadio" type="radio" value="nonbinary" checked={this.state.gender == 'nonbinary'} onChange={this.handleGenderChange} />
+                        {this.state.lang.nonbinary}
+                      </label>
+                      <br />
+                      {/* <label id="trans_radio">
                       <input type="radio" value="transgender" checked={this.state.gender == 'transgender'} onChange={this.handleGenderChange} />
                       {this.state.lang.transgender}
                     </label> */}
@@ -680,320 +698,320 @@ class App extends Component {
                       */}
 
                     </div>
-                  {/* {Are you a Transgender} */}
-                   {/* {Are you a Transgender} */}
-                   <div id="TgenderSelector" className="radio" test-id="tGenderSelectRoot" style={genderCss}>
-                   <div className="Tgender_mod"><strong> {this.state.lang.Tgender_selector}</strong>
-                          <button test-id="tGenderSelectHelp" className="button button24" onClick={this.helpClicked2}>?</button> 
-                   </div>
-                      
+                    {/* {Are you a Transgender} */}
+                    {/* {Are you a Transgender} */}
+                    <div id="TgenderSelector" className="radio" test-id="tGenderSelectRoot" style={genderCss}>
+                      <div className="Tgender_mod"><strong> {this.state.lang.Tgender_selector}</strong>
+                        <button test-id="tGenderSelectHelp" className="button button24" onClick={this.helpClicked2}>?</button>
+                      </div>
+
                       <label id="birth_male_mod" test-id="birthMaleLabel">
-                      <input type="radio" test-id="birthMale" value="tf" checked={this.state.Tgender == 'tf'} onChange={this.handleTransGenderChange} />
-                      {this.state.lang.tf}
+                        <input type="radio" test-id="birthMale" value="tf" checked={this.state.Tgender == 'tf'} onChange={this.handleTransGenderChange} />
+                        {this.state.lang.tf}
                       </label>
-                      <br/>
+                      <br />
                       <label id="female_male_mod" test-id="birthfemaleLabel">
-                      <input test-id="birthFemale" type="radio" value="tm" checked={this.state.Tgender == 'tm'} onChange={this.handleTransGenderChange} />
-                      {this.state.lang.tm}
-                     </label>
-                     </div>
+                        <input test-id="birthFemale" type="radio" value="tm" checked={this.state.Tgender == 'tm'} onChange={this.handleTransGenderChange} />
+                        {this.state.lang.tm}
+                      </label>
+                    </div>
                     <label id="help" className="checkAge" test-id="noValueError">
-                        <h5>{this.state.lang.ageandgender_help}</h5>
-                      </label>
-                      <label id="agehelp" className="checkAge" test-id="ageError">
-                        <h5>{this.state.lang.age_help}</h5>
-                      </label>
-                {/*Field selection based on gender*/}
+                      <h5>{this.state.lang.ageandgender_help}</h5>
+                    </label>
+                    <label id="agehelp" className="checkAge" test-id="ageError">
+                      <h5>{this.state.lang.age_help}</h5>
+                    </label>
+                    {/*Field selection based on gender*/}
+                  </div>
+                </div>
+
+                <div className="termsOfUse" style={termsOfUseStyle}>
+                  <button test-id="okButtonTop" id="agree" onClick={this.toggleIntrutionModal}>{this.state.lang.agree}</button><br />
+                  <b test-id="termOfUseLabel">{this.state.lang.disclaimer_header}</b>
+
+                  <div style={myDisclaimerStyle} test-id="termOfUseContent">
+                    <div>
+                      <div dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(this.state.lang.disclaimerBeforeTermsOfUse) }}></div>
+                      <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.accpetanceheading}</div>
+                      <div dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(this.state.lang.acceptanceInitialStatement) }}></div>
+                      <div dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(this.state.lang.acceptanceAgreeStatement) }}></div>
+
+                      <div>{this.state.lang.acceptanceText}</div>
+                      <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.modificationHeading}</div>
+                      <div>{this.state.lang.modificationText1}</div>
+                      <div>{this.state.lang.modificationText2}</div>
+
+                      <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.websiteContentSpecificationHeading}</div>
+                      <div dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(this.state.lang.websiteContentSpecificationText) }}></div>
+
+                      <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.websiteSecurityHeading}</div>
+                      <div>{this.state.lang.websiteSecurityText1}</div>
+                      <div>{this.state.lang.websiteSecurityText2}</div>
+
+                      <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.rightsAndOwnershipHeading}</div>
+                      <div>{this.state.lang.rightsAndOwnershipText1}</div>
+                      <div>{this.state.lang.rightsAndOwnershipText2}</div>
+                      <div>{this.state.lang.rightsAndOwnershipText3}</div>
+                      <div>{this.state.lang.rightsAndOwnershipText4}</div>
+                      <div>{this.state.lang.rightsAndOwnershipText5}</div>
+                      <div>{this.state.lang.rightsAndOwnershipText6}</div>
+                      <div>{this.state.lang.rightsAndOwnershipText7}</div>
+
+                      <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.conditionsHeading}</div>
+                      <div>{this.state.lang.conditionsText}</div>
+
+                      <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.legalActionsHeading}</div>
+                      <div>{this.state.lang.legalActionsText}</div>
+
+                      <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.cookiesHeading}</div>
+                      <div>{this.state.lang.cookiesText}</div>
+
+                      <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.thirdPartyWebHeading}</div>
+                      <div>{this.state.lang.thirdPartyWebText}</div>
+
+                      <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.geographicRestricationsHeading}</div>
+                      <div dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(this.state.lang.geographicRestricationsText) }}></div>
+
+                      <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.noRelianceHeading}</div>
+                      <div>{this.state.lang.noRelianceText1}</div>
+                      <div>{this.state.lang.noRelianceText2}</div>
+                      <div>{this.state.lang.noRelianceText3}</div>
+
+                      <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.disclaimerWarrantiesHeading}</div>
+                      <div dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(this.state.lang.disclaimerWarrantiesText1) }}></div>
+                      <div>{this.state.lang.disclaimerWarrantiesText2}</div>
+
+                      <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.limitationHeading}</div>
+                      <div>{this.state.lang.limitationText}</div>
+
+                      <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.indemnificationHeading}</div>
+                      <div>{this.state.lang.indemnificationText}</div>
+
+                      <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.lawAndJurisdictionHeading}</div>
+                      <div>{this.state.lang.lawAndJurisdictionText1}</div>
+                      <div>{this.state.lang.lawAndJurisdictionText2}</div>
+
+                      <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.entireAgreementHeading}</div>
+                      <div>{this.state.lang.entireAgreementText}</div>
+
+                      <div>{this.state.lang.dateofAgreement}</div>
+                    </div>
+                  </div>
+                  <br />
+                  <button test-id="okButtonBottom" id="agree" onClick={this.toggleIntrutionModal}>{this.state.lang.agree}</button><br />
+                </div>
               </div>
-              </div>
-              
-              <div className="termsOfUse" style={termsOfUseStyle}>
-              <button test-id="okButtonTop" id="agree" onClick={this.toggleIntrutionModal}>{this.state.lang.agree}</button><br/>
-              <b test-id="termOfUseLabel">{this.state.lang.disclaimer_header}</b>
-
-              <div style={myDisclaimerStyle} test-id="termOfUseContent">
-                        <div>
-                            <div dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(this.state.lang.disclaimerBeforeTermsOfUse)}}></div>
-                            <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.accpetanceheading}</div>
-                            <div dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(this.state.lang.acceptanceInitialStatement)}}></div>
-                            <div dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(this.state.lang.acceptanceAgreeStatement)}}></div>
-                            
-                            <div>{this.state.lang.acceptanceText}</div>
-                            <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.modificationHeading}</div>
-                            <div>{this.state.lang.modificationText1}</div>
-                            <div>{this.state.lang.modificationText2}</div>
-
-                            <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.websiteContentSpecificationHeading}</div>
-                            <div dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(this.state.lang.websiteContentSpecificationText)}}></div>
-
-                            <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.websiteSecurityHeading}</div>
-                            <div>{this.state.lang.websiteSecurityText1}</div>
-                            <div>{this.state.lang.websiteSecurityText2}</div>
-
-                            <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.rightsAndOwnershipHeading}</div>
-                            <div>{this.state.lang.rightsAndOwnershipText1}</div>
-                            <div>{this.state.lang.rightsAndOwnershipText2}</div>
-                            <div>{this.state.lang.rightsAndOwnershipText3}</div>
-                            <div>{this.state.lang.rightsAndOwnershipText4}</div>
-                            <div>{this.state.lang.rightsAndOwnershipText5}</div>
-                            <div>{this.state.lang.rightsAndOwnershipText6}</div>
-                            <div>{this.state.lang.rightsAndOwnershipText7}</div>
-
-                            <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.conditionsHeading}</div>
-                            <div>{this.state.lang.conditionsText}</div>
-
-                            <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.legalActionsHeading}</div>
-                            <div>{this.state.lang.legalActionsText}</div>
-
-                            <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.cookiesHeading}</div>
-                            <div>{this.state.lang.cookiesText}</div>
-
-                            <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.thirdPartyWebHeading}</div>
-                            <div>{this.state.lang.thirdPartyWebText}</div>
-
-                            <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.geographicRestricationsHeading}</div>
-                            <div dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(this.state.lang.geographicRestricationsText)}}></div>
-
-                            <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.noRelianceHeading}</div>
-                            <div>{this.state.lang.noRelianceText1}</div>
-                            <div>{this.state.lang.noRelianceText2}</div>
-                            <div>{this.state.lang.noRelianceText3}</div>
-
-                            <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.disclaimerWarrantiesHeading}</div>
-                            <div dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(this.state.lang.disclaimerWarrantiesText1)}}></div>
-                            <div>{this.state.lang.disclaimerWarrantiesText2}</div>
-
-                            <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.limitationHeading}</div>
-                            <div>{this.state.lang.limitationText}</div>
-
-                            <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.indemnificationHeading}</div>
-                            <div>{this.state.lang.indemnificationText}</div>
-
-                            <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.lawAndJurisdictionHeading}</div>
-                            <div>{this.state.lang.lawAndJurisdictionText1}</div>
-                            <div>{this.state.lang.lawAndJurisdictionText2}</div>
-
-                            <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.entireAgreementHeading}</div>
-                            <div>{this.state.lang.entireAgreementText}</div>
-
-                            <div>{this.state.lang.dateofAgreement}</div>
-                        </div>
-              </div> 
-              <br/>
-              <button test-id="okButtonBottom" id="agree" onClick={this.toggleIntrutionModal}>{this.state.lang.agree}</button><br/>            
-              </div> 
             </div>
-            </div>
-        </div>
-      ];
-      } 
- }else {
+          </div>
+        ];
+      }
+    } else {
       //Master Choose box
       if (this.state.instructionIsOpen) {
         //Master Instruction modal
 
-      instructionModal = [
-      <div key="1" className="backdrop" style={backdropStyle}>
-      <div className="myModal" style={myModalStyle}>
+        instructionModal = [
+          <div key="1" className="backdrop" style={backdropStyle}>
+            <div className="myModal" style={myModalStyle}>
 
-        <div className="footer">
-          <p>{this.state.lang.instruction_modal_header}</p>
+              <div className="footer">
+                <p>{this.state.lang.instruction_modal_header}</p>
 
-          {/*select user*/}
-          <div className="radio">
-            <form>
-              {this.state.lang.user_selector}
-              <label >
-                <input type="radio" value="patient" checked={this.state.user === 'patient'} onChange={this.handlePatientProviderChange} />
-                {this.state.lang.patient}
-              </label>
-              <label>
-                <input type="radio" value="provider" checked={this.state.user === 'provider'} onChange={this.handlePatientProviderChange} />
-                {this.state.lang.provider}
-              </label>
-            </form>
-          </div>
-          {/*select gender*/}
-          <div>
-            <form>
-              <div id="genderSelector" className="radio">
-                {this.state.lang.gender_selector}
-                <label>
-                  <input type="radio" value="male" checked={this.state.gender == 'male'} onChange={this.handleGenderChange} />
-                  {this.state.lang.male}
-                </label>
-                <label>
-                  <input type="radio" value="female" checked={this.state.gender == 'female'} onChange={this.handleGenderChange} />
-                  {this.state.lang.female}
-                </label>
-                {/*this.state.user === 'provider' || null ?
+                {/*select user*/}
+                <div className="radio">
+                  <form>
+                    {this.state.lang.user_selector}
+                    <label >
+                      <input type="radio" value="patient" checked={this.state.user === 'patient'} onChange={this.handlePatientProviderChange} />
+                      {this.state.lang.patient}
+                    </label>
+                    <label>
+                      <input type="radio" value="provider" checked={this.state.user === 'provider'} onChange={this.handlePatientProviderChange} />
+                      {this.state.lang.provider}
+                    </label>
+                  </form>
+                </div>
+                {/*select gender*/}
+                <div>
+                  <form>
+                    <div id="genderSelector" className="radio">
+                      {this.state.lang.gender_selector}
+                      <label>
+                        <input type="radio" value="male" checked={this.state.gender == 'male'} onChange={this.handleGenderChange} />
+                        {this.state.lang.male}
+                      </label>
+                      <label>
+                        <input type="radio" value="female" checked={this.state.gender == 'female'} onChange={this.handleGenderChange} />
+                        {this.state.lang.female}
+                      </label>
+                      {/*this.state.user === 'provider' || null ?
                   (<label>
                     <input type="radio" value="all_genders" checked={this.state.gender == 'all_genders'} onChange={this.handleGenderChange} />
                       {this.state.lang.all_genders}
                   </label>) : (<label></label>)
                 */}
-              </div>
-            </form>
-          </div>
-          {/*select age*/}
-          <div>
-            <form>
-              <div>
-                {this.state.lang.age_selector}
-                <input id='abc' type="text" style="width=5px" value={this.state.age == "all ages" ? this.state.lang.all_ages : this.state.age} onChange={this.handleChange} disabled={this.state.allAgesSelected} placeholder={this.state.lang.age_selector_place_holder} onKeyPress={e => { if (e.key === 'Enter') e.preventDefault();}} />
-                <label style={allagescheckboxStyle}>
-                  <input id='myCheck' type="checkbox" checked={this.state.allAgesSelected} onChange={this.handleAllAgesSelected} />{this.state.lang.all_ages}
-                </label>
-                <label id="help" className="checkAge">
-                  <h5>{this.state.lang.age_help}</h5>
-                </label>
-              </div>
-            </form>
-          </div>
-
-          <div className="termsOfUse" style={termsOfUseStyle}>
-          <b>{this.state.lang.disclaimer_header}</b>
-
-          <div style={myDisclaimerStyle}>
-                    <p>
-                        <div dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(this.state.lang.disclaimerBeforeTermsOfUse)}}></div>
-                        <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.accpetanceheading}</div>
-                        <div dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(this.state.lang.acceptanceInitialStatement)}}></div>
-                        <div dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(this.state.lang.acceptanceAgreeStatement)}}></div>
-                        
-                        <div>{this.state.lang.acceptanceText}</div>
-                        <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.modificationHeading}</div>
-                        <div>{this.state.lang.modificationText1}</div>
-                        <div>{this.state.lang.modificationText2}</div>
-
-                        <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.websiteContentSpecificationHeading}</div>
-                        <div dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(this.state.lang.websiteContentSpecificationText)}}></div>
-
-                        <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.websiteSecurityHeading}</div>
-                        <div>{this.state.lang.websiteSecurityText1}</div>
-                        <div>{this.state.lang.websiteSecurityText2}</div>
-
-                        <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.rightsAndOwnershipHeading}</div>
-                        <div>{this.state.lang.rightsAndOwnershipText1}</div>
-                        <div>{this.state.lang.rightsAndOwnershipText2}</div>
-                        <div>{this.state.lang.rightsAndOwnershipText3}</div>
-                        <div>{this.state.lang.rightsAndOwnershipText4}</div>
-                        <div>{this.state.lang.rightsAndOwnershipText5}</div>
-                        <div>{this.state.lang.rightsAndOwnershipText6}</div>
-                        <div>{this.state.lang.rightsAndOwnershipText7}</div>
-
-                        <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.conditionsHeading}</div>
-                        <div>{this.state.lang.conditionsText}</div>
-
-                        <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.legalActionsHeading}</div>
-                        <div>{this.state.lang.legalActionsText}</div>
-
-                        <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.cookiesHeading}</div>
-                        <div>{this.state.lang.cookiesText}</div>
-
-                        <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.thirdPartyWebHeading}</div>
-                        <div>{this.state.lang.thirdPartyWebText}</div>
-
-                        <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.geographicRestricationsHeading}</div>
-                        <div dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(this.state.lang.geographicRestricationsText)}}></div>
-
-                        <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.noRelianceHeading}</div>
-                        <div>{this.state.lang.noRelianceText1}</div>
-                        <div>{this.state.lang.noRelianceText2}</div>
-                        <div>{this.state.lang.noRelianceText3}</div>
-
-                        <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.disclaimerWarrantiesHeading}</div>
-                        <div dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(this.state.lang.disclaimerWarrantiesText1)}}></div>
-                        <div>{this.state.lang.disclaimerWarrantiesText2}</div>
-
-                        <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.limitationHeading}</div>
-                        <div>{this.state.lang.limitationText}</div>
-
-                        <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.indemnificationHeading}</div>
-                        <div>{this.state.lang.indemnificationText}</div>
-
-                        <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.lawAndJurisdictionHeading}</div>
-                        <div>{this.state.lang.lawAndJurisdictionText1}</div>
-                        <div>{this.state.lang.lawAndJurisdictionText2}</div>
-
-                        <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.entireAgreementHeading}</div>
-                        <div>{this.state.lang.entireAgreementText}</div>
-
-                        <div>{this.state.lang.dateofAgreement}</div>
-                    </p>
-          </div>             
-          </div> 
-          <div>
-            <button id="agree" className="buttonAgreeToTerms" onClick={this.toggleIntrutionModal}>{this.state.lang.agree}</button>
-            {/* <button onClick={this.goBack} type="button">{this.state.lang.disagree}</button> */}
-          </div>
-        </div>
-        </div>
-    </div>
-    ];
-      }
-    }
-   
-  //Applying the isTransgender flag for second choose box
-  if(this.state.isTransgender){ 
-    if (this.state.configurationIsOpen == true) {
-      //Transgender configuration modal
-      configurationModal = [
-        <div key="2" className="backdrop" test-id="PostConfigUpdateModalBackdrop">
-          <div className="myModal" test-id="PostConfigUpdateModalRoot">
-            <div>
-              <h1 test-id="PostConfigUpdateModalHeader"><strong>{this.state.lang.configuration_header}</strong></h1>
-              <div className="myModalBody">
-                <div className="radio">                  
-                <form test-id="userForm">
-                    {this.state.lang.user_selector}
-                     <br/>
-                    <label test-id="patientLabel">
-                      <input test-id="patientRadio" type="radio" value="patient" checked={this.state.user === 'patient'} onChange={this.handlePatientProviderChangeFromConfig} />
-                      {this.state.lang.patient}
-                    </label>
-                     <br/>
-                    <label test-id="providerLabel">
-                      <input test-id="providerRadio" type="radio" value="provider" checked={this.state.user === 'provider'} onChange={this.handlePatientProviderChangeFromConfig} />
-                      {this.state.lang.provider}
-                    </label>
+                    </div>
                   </form>
                 </div>
                 {/*select age*/}
-                <div >
-                  <form test-id="ageForm">
+                <div>
+                  <form>
                     <div>
                       {this.state.lang.age_selector}
-
-                      <input test-id="ageInput" id='abc' type="text" value={this.state.age == "all ages" ? this.state.lang.all_ages : this.state.age} onChange={this.handleChange} disabled={this.state.allAgesSelected} placeholder={this.state.lang.age_selector_place_holder} />
-                      <label style={allagescheckboxStyle} test-id="allAgeCheckboxLabel">
-                        <input test-id="allAgeCheckbox" id='check' type="checkbox" checked={this.state.allAgesSelected} onChange={this.handleAllAgesSelected} />{this.state.lang.all_ages}
+                      <input id='abc' type="text" style="width=5px" value={this.state.age == "all ages" ? this.state.lang.all_ages : this.state.age} onChange={this.handleChange} disabled={this.state.allAgesSelected} placeholder={this.state.lang.age_selector_place_holder} onKeyPress={e => { if (e.key === 'Enter') e.preventDefault(); }} />
+                      <label style={allagescheckboxStyle}>
+                        <input id='myCheck' type="checkbox" checked={this.state.allAgesSelected} onChange={this.handleAllAgesSelected} />{this.state.lang.all_ages}
+                      </label>
+                      <label id="help" className="checkAge">
+                        <h5>{this.state.lang.age_help}</h5>
                       </label>
                     </div>
                   </form>
                 </div>
 
+                <div className="termsOfUse" style={termsOfUseStyle}>
+                  <b>{this.state.lang.disclaimer_header}</b>
+
+                  <div style={myDisclaimerStyle}>
+                    <p>
+                      <div dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(this.state.lang.disclaimerBeforeTermsOfUse) }}></div>
+                      <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.accpetanceheading}</div>
+                      <div dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(this.state.lang.acceptanceInitialStatement) }}></div>
+                      <div dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(this.state.lang.acceptanceAgreeStatement) }}></div>
+
+                      <div>{this.state.lang.acceptanceText}</div>
+                      <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.modificationHeading}</div>
+                      <div>{this.state.lang.modificationText1}</div>
+                      <div>{this.state.lang.modificationText2}</div>
+
+                      <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.websiteContentSpecificationHeading}</div>
+                      <div dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(this.state.lang.websiteContentSpecificationText) }}></div>
+
+                      <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.websiteSecurityHeading}</div>
+                      <div>{this.state.lang.websiteSecurityText1}</div>
+                      <div>{this.state.lang.websiteSecurityText2}</div>
+
+                      <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.rightsAndOwnershipHeading}</div>
+                      <div>{this.state.lang.rightsAndOwnershipText1}</div>
+                      <div>{this.state.lang.rightsAndOwnershipText2}</div>
+                      <div>{this.state.lang.rightsAndOwnershipText3}</div>
+                      <div>{this.state.lang.rightsAndOwnershipText4}</div>
+                      <div>{this.state.lang.rightsAndOwnershipText5}</div>
+                      <div>{this.state.lang.rightsAndOwnershipText6}</div>
+                      <div>{this.state.lang.rightsAndOwnershipText7}</div>
+
+                      <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.conditionsHeading}</div>
+                      <div>{this.state.lang.conditionsText}</div>
+
+                      <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.legalActionsHeading}</div>
+                      <div>{this.state.lang.legalActionsText}</div>
+
+                      <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.cookiesHeading}</div>
+                      <div>{this.state.lang.cookiesText}</div>
+
+                      <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.thirdPartyWebHeading}</div>
+                      <div>{this.state.lang.thirdPartyWebText}</div>
+
+                      <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.geographicRestricationsHeading}</div>
+                      <div dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(this.state.lang.geographicRestricationsText) }}></div>
+
+                      <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.noRelianceHeading}</div>
+                      <div>{this.state.lang.noRelianceText1}</div>
+                      <div>{this.state.lang.noRelianceText2}</div>
+                      <div>{this.state.lang.noRelianceText3}</div>
+
+                      <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.disclaimerWarrantiesHeading}</div>
+                      <div dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(this.state.lang.disclaimerWarrantiesText1) }}></div>
+                      <div>{this.state.lang.disclaimerWarrantiesText2}</div>
+
+                      <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.limitationHeading}</div>
+                      <div>{this.state.lang.limitationText}</div>
+
+                      <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.indemnificationHeading}</div>
+                      <div>{this.state.lang.indemnificationText}</div>
+
+                      <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.lawAndJurisdictionHeading}</div>
+                      <div>{this.state.lang.lawAndJurisdictionText1}</div>
+                      <div>{this.state.lang.lawAndJurisdictionText2}</div>
+
+                      <div className="underlineTextTermsOfUse" style={underlineTextTermsOfUse}>{this.state.lang.entireAgreementHeading}</div>
+                      <div>{this.state.lang.entireAgreementText}</div>
+
+                      <div>{this.state.lang.dateofAgreement}</div>
+                    </p>
+                  </div>
+                </div>
                 <div>
+                  <button id="agree" className="buttonAgreeToTerms" onClick={this.toggleIntrutionModal}>{this.state.lang.agree}</button>
+                  {/* <button onClick={this.goBack} type="button">{this.state.lang.disagree}</button> */}
+                </div>
+              </div>
+            </div>
+          </div>
+        ];
+      }
+    }
+
+    //Applying the isTransgender flag for second choose box
+    if (this.state.isTransgender) {
+      if (this.state.configurationIsOpen == true) {
+        //Transgender configuration modal
+        configurationModal = [
+          <div key="2" className="backdrop" test-id="PostConfigUpdateModalBackdrop">
+            <div className="myModal" test-id="PostConfigUpdateModalRoot">
+              <div>
+                <h1 test-id="PostConfigUpdateModalHeader"><strong>{this.state.lang.configuration_header}</strong></h1>
+                <div className="myModalBody">
+                  <div className="radio">
+                    <form test-id="userForm">
+                      {this.state.lang.user_selector}
+                      <br />
+                      <label test-id="patientLabel">
+                        <input test-id="patientRadio" type="radio" value="patient" checked={this.state.user === 'patient'} onChange={this.handlePatientProviderChangeFromConfig} />
+                        {this.state.lang.patient}
+                      </label>
+                      <br />
+                      <label test-id="providerLabel">
+                        <input test-id="providerRadio" type="radio" value="provider" checked={this.state.user === 'provider'} onChange={this.handlePatientProviderChangeFromConfig} />
+                        {this.state.lang.provider}
+                      </label>
+                    </form>
+                  </div>
+                  {/*select age*/}
+                  <div >
+                    <form test-id="ageForm">
+                      <div>
+                        {this.state.lang.age_selector}
+
+                        <input test-id="ageInput" id='abc' type="text" value={this.state.age == "all ages" ? this.state.lang.all_ages : this.state.age} onChange={this.handleChange} disabled={this.state.allAgesSelected} placeholder={this.state.lang.age_selector_place_holder} />
+                        <label style={allagescheckboxStyle} test-id="allAgeCheckboxLabel">
+                          <input test-id="allAgeCheckbox" id='check' type="checkbox" checked={this.state.allAgesSelected} onChange={this.handleAllAgesSelected} />{this.state.lang.all_ages}
+                        </label>
+                      </div>
+                    </form>
+                  </div>
+
+                  <div>
                     <div id="genderSelector" className="radio" test-id="genderSelectRoot">
                       {this.state.lang.gender_selector}<strong>
                         <button test-id="genderSelectHelp" className="button button22" onClick={this.helpClicked}>?</button></strong>
-                       <br/>
+                      <br />
                       <label id="male_radio" test-id="maleRadioLabel">
                         <input test-id="maleRadio" type="radio" value="male" checked={this.state.gender == 'male'} onChange={this.handleGenderChange} />
                         {this.state.lang.male}
                       </label>
-                      <br/>
+                      <br />
                       <label id="female_radio" test-id="femaleRadioLabel">
                         <input test-id="femaleRadio" type="radio" value="female" checked={this.state.gender == 'female'} onChange={this.handleGenderChange} />
                         {this.state.lang.female}
                       </label>
-                      <br/>
+                      <br />
                       <label test-id="nonBinaryRadioLabel">
                         <input test-id="nonBinaryRadio" type="radio" value="nonbinary" checked={this.state.gender == 'nonbinary'} onChange={this.handleGenderChange} />
                         {this.state.lang.nonbinary}
                       </label>
-                      <br/>
-                   {/* <label>
+                      <br />
+                      {/* <label>
                       <input type="radio" value="transgender" checked={this.state.gender == 'transgender'} onChange={this.handleGenderChange} />
                       {this.state.lang.transgender}
                     </label> */}
@@ -1004,45 +1022,45 @@ class App extends Component {
                       </label>) : (<label></label>)
                       */}
                     </div>
-                     {/* {Are you a Transgender} */}
-                     <div id="TgenderSelector" className="radio" test-id="tGenderSelectRoot">
+                    {/* {Are you a Transgender} */}
+                    <div id="TgenderSelector" className="radio" test-id="tGenderSelectRoot">
                       {this.state.lang.Tgender_selector}<strong>
-                      <button test-id="tGenderSelectHelp" className="button button25" onClick={this.helpClicked2}>?</button></strong>
-                      <br/>
+                        <button test-id="tGenderSelectHelp" className="button button25" onClick={this.helpClicked2}>?</button></strong>
+                      <br />
                       <label id="birth_male_mod" test-id="birthMaleLabel">
-                      <input test-id="birthMale" type="radio" value="tf" checked={this.state.Tgender == 'tf'} onChange={this.handleTransGenderChange} />
-                      {this.state.lang.tf}
+                        <input test-id="birthMale" type="radio" value="tf" checked={this.state.Tgender == 'tf'} onChange={this.handleTransGenderChange} />
+                        {this.state.lang.tf}
                       </label>
-                      <br/>
+                      <br />
                       <label id="female_male_mod" test-id="birthfemaleLabel">
-                      <input test-id="birthFemale" type="radio" value="tm" checked={this.state.Tgender == 'tm'} onChange={this.handleTransGenderChange} />
-                      {this.state.lang.tm}
-                     </label>
-                     </div>
-                      <label id="config_agehelp" className="checkAge" test-id="ageError">
-                        <h5>{this.state.lang.age_help}</h5>
+                        <input test-id="birthFemale" type="radio" value="tm" checked={this.state.Tgender == 'tm'} onChange={this.handleTransGenderChange} />
+                        {this.state.lang.tm}
                       </label>
+                    </div>
+                    <label id="config_agehelp" className="checkAge" test-id="ageError">
+                      <h5>{this.state.lang.age_help}</h5>
+                    </label>
                   </div>
-                {/*close button*/}
-                <div className="myModalButton">
-                  <button onClick={this.toggleConfigurationModal} test-id="okButton">{this.state.lang.config_modal_agree}</button>
+                  {/*close button*/}
+                  <div className="myModalButton">
+                    <button onClick={this.toggleConfigurationModal} test-id="okButton">{this.state.lang.config_modal_agree}</button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      ];
-     } 
-   }else {
+        ];
+      }
+    } else {
       if (this.state.configurationIsOpen == true) {
         //Master Configuration modal
         configurationModal = [
-          
+
           <div key="2" className="backdrop" >
             <div className="myModal">
-  
+
               <div>
-  
+
                 <h1>{this.state.lang.configuration_header}</h1>
                 <div className="myModalBody">
                   <div className="radio">
@@ -1058,7 +1076,7 @@ class App extends Component {
                       </label>
                     </form>
                   </div>
-  
+
                   <div>
                     <form>
                       <div id="genderSelector" className="radio, test">
@@ -1067,19 +1085,19 @@ class App extends Component {
                           <input type="radio" value="male" checked={this.state.gender == 'male'} onChange={this.handleGenderChange} />
                           {this.state.lang.male}
                         </label>
-  
+
                         <label>
                           <input type="radio" value="female" checked={this.state.gender == 'female'} onChange={this.handleGenderChange} />
                           {this.state.lang.female}
                         </label>
-  
+
                         {/*this.state.user === 'provider' || null ?
                         (<label>
                           <input type="radio" value="all_genders" checked={this.state.gender == 'all_genders'} onChange={this.handleGenderChange} />
                             {this.state.lang.all_genders}
                         </label>) : (<label></label>)
                         */}
-  
+
                       </div>
                     </form>
                   </div>
@@ -1088,7 +1106,7 @@ class App extends Component {
                     <form>
                       <div>
                         {this.state.lang.age_selector}
-                        <input id='abc' type="text" value={this.state.age == "all ages" ? this.state.lang.all_ages : this.state.age} onChange={this.handleChange} disabled={this.state.allAgesSelected} placeholder={this.state.lang.age_selector_place_holder} onKeyPress={e => { if (e.key === 'Enter') e.preventDefault();}} />
+                        <input id='abc' type="text" value={this.state.age == "all ages" ? this.state.lang.all_ages : this.state.age} onChange={this.handleChange} disabled={this.state.allAgesSelected} placeholder={this.state.lang.age_selector_place_holder} onKeyPress={e => { if (e.key === 'Enter') e.preventDefault(); }} />
                         <label style={allagescheckboxStyle}>
                           <input id='check' type="checkbox" checked={this.state.allAgesSelected} onChange={this.handleAllAgesSelected} />{this.state.lang.all_ages}
                         </label>
@@ -1107,69 +1125,70 @@ class App extends Component {
             </div>
           </div>
         ];
+      }
     }
-  } 
-  
+    
+
 
     return (
       <div test-info-locale={this.state.language}>
         {/*this is your header tab*/}
         <div className="topnav">
           <h3>
-            <a id="body"  test-id="body" onClick={this.bodyClicked}>{this.state.lang.top_nav_body}</a>
+            <a id="body" test-id="body" onClick={this.bodyClicked}>{this.state.lang.top_nav_body}</a>
             <a id="topic" test-id="topic" onClick={this.topicsClicked}>{this.state.lang.top_nav_topics}</a>
             <a id="test" test-id="test" onClick={this.testsClicked}>{this.state.lang.top_nav_tests}</a>
           </h3>
         </div>
-        
+
         <div className="userinfo-row">
           {/*display user's info*/}
           <Button variant="outline-dark" size='lg' onClick={this.genderIconClicked} className="userInfoStyle" test-id="postConfigUpdateModalOpenButton">
             <h4>
               <IoIosSettings /> {this.state.lang[this.state.user]}
-               {/*this.state.lang.display_gender*/} {[(this.state.gender == "male"  && this.state.Tgender == "tf") ?  this.state.lang[this.state.gender]
-               : (this.state.gender == "female" && this.state.Tgender == "tm") ? this.state.lang[this.state.gender]
-               : (!this.state.isTransgender && (this.state.gender == "male" || this.state.gender == "female" )) ? this.state.lang[this.state.gender]
-               : (this.state.language == 'french' && this.state.gender == "male" && this.state.Tgender == "tm") ? "Transmasculin"
-               : (this.state.language == 'french' && this.state.gender == "female" && this.state.Tgender == "tf") ? "Transféminine"
-               : (this.state.gender == "male" && this.state.Tgender == "tm") ? "Transmasculine"
-               : (this.state.gender == "female" && this.state.Tgender == "tf") ? "Transfeminine"
-               : (this.state.gender == "nonbinary" ? this.state.lang[this.state.gender] : this.state.Tgender)]} 
-               | {this.state.age == "all ages" ? this.state.lang.all_ages : this.state.age}
-              {/*this.state.lang.display_age*/} 
+              {/*this.state.lang.display_gender*/} {[(this.state.gender == "male" && this.state.Tgender == "tf") ? this.state.lang[this.state.gender]
+                : (this.state.gender == "female" && this.state.Tgender == "tm") ? this.state.lang[this.state.gender]
+                  : (!this.state.isTransgender && (this.state.gender == "male" || this.state.gender == "female")) ? this.state.lang[this.state.gender]
+                    : (this.state.language == 'french' && this.state.gender == "male" && this.state.Tgender == "tm") ? "Transmasculin"
+                      : (this.state.language == 'french' && this.state.gender == "female" && this.state.Tgender == "tf") ? "Transféminine"
+                        : (this.state.gender == "male" && this.state.Tgender == "tm") ? "Transmasculine"
+                          : (this.state.gender == "female" && this.state.Tgender == "tf") ? "Transfeminine"
+                            : (this.state.gender == "nonbinary" ? this.state.lang[this.state.gender] : this.state.Tgender)]}
+              | {this.state.age == "all ages" ? this.state.lang.all_ages : this.state.age}
+              {/*this.state.lang.display_age*/}
             </h4>
           </Button>
         </div>
 
         <div>
-          {this.state.configurationIsOpen && <MyBody 
-            showBody={this.state.bodyView} 
-            userConfig={userInfo} 
-            getText={this.state.data.getTopic} 
+          {this.state.configurationIsOpen && <MyBody
+            showBody={this.state.bodyView}
+            userConfig={userInfo}
+            getText={this.state.data.getTopic}
             lang={this.state.lang}
             isTransgender={this.state.isTransgender}
-            pageViewStateUpdater = {this.pageViewStateUpdater}></MyBody>}
+            pageViewStateUpdater={this.pageViewStateUpdater}></MyBody>}
 
-            {!this.state.configurationIsOpen && <MyBody 
-            showBody={this.state.bodyView} 
-            userConfig={userInfo} 
-            getText={this.state.data.getTopic} 
+          {!this.state.configurationIsOpen && <MyBody
+            showBody={this.state.bodyView}
+            userConfig={userInfo}
+            getText={this.state.data.getTopic}
             lang={this.state.lang}
             isTransgender={this.state.isTransgender}
-            pageViewStateUpdater = {this.pageViewStateUpdater}></MyBody>}
-          
-          <Tests 
-            showTests={this.state.testsView} 
-            userConfig={userInfo} 
-            data={this.state.data.getListOfTests} 
-            lang={this.state.lang} 
-            pageViewStateUpdater = {this.pageViewStateUpdater}></Tests>
-          <Topics showTopics={this.state.topicsView} 
-            userConfig={userInfo} 
-            data={this.state.data.getListOfTopics} 
+            pageViewStateUpdater={this.pageViewStateUpdater}></MyBody>}
+
+          <Tests
+            showTests={this.state.testsView}
+            userConfig={userInfo}
+            data={this.state.data.getListOfTests}
+            lang={this.state.lang}
+            pageViewStateUpdater={this.pageViewStateUpdater}></Tests>
+          <Topics showTopics={this.state.topicsView}
+            userConfig={userInfo}
+            data={this.state.data.getListOfTopics}
             newdata={this.state.data.getListOfFilteredTopics}
-            lang={this.state.lang} 
-            pageViewStateUpdater = {this.pageViewStateUpdater}
+            lang={this.state.lang}
+            pageViewStateUpdater={this.pageViewStateUpdater}
             onClose={this.toggleModal}
             button={this.state.buttonText}></Topics>
         </div>
