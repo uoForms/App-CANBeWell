@@ -602,7 +602,7 @@
   {
     "Button": "Heart",
     "Topic heading": "Heart Disease",
-    "Subject": "Blood Pressure",
+    "Subject": "Blood pressure",
     "General Patient Text": "During your visit to the doctor, ask for a measurement of your blood pressure. \nA normal blood pressure is under 140/90 mmHg or lower for some people .\nThe target blood pressure depends on factors like age and health conditions, and where readings are being taken. If you have diabetes, kidney disease or other health conditions, speak to your health care professional about your target blood pressure. \n\n•\t[[How to appropriately measure your blood pressure at home; https://hypertension.ca/wp-content/uploads/2020/03/BPM-Postcard-Front.jpg]]\n•\t[[Understanding and Managing Your Blood Pressure; https://guidelines.hypertension.ca/wp-content/uploads/2022/09/HTC_Brochure_UnderstandingBP_2018_R3.pdf]]",
     "Health Provider Text": "CTFPHC recommends blood pressure measurement at all appropriate primary care visits.[[2012 Guideline; https://canadiantaskforce.ca/guidelines/published-guidelines/hypertension/]]\n(Strong recommendation; moderate quality evidence)\n\n[[Hypertension Canada guideline summary 2022; https://hypertension.ca/wp-content/uploads/2020/10/2020-22-HT-Guidelines-E-WEB_v3b.pdf]]\n\nIf the mean blood pressure measured in office [[As per recommended technique; https://guidelines.hypertension.ca/diagnosis-assessment/measuring-blood-pressure/]] is high during one visit, a history and physical examination should be performed and, if clinically indicated, diagnostic tests to search for target organ damage should be arranged within 2 visits. \n\nRoutine Lab Testing Recommended: urinalysis, blood chemistry (potassium, sodium and creatinine), fasting blood glucose and/or glycated hemoglobin (A1C), serum total cholesterol, LDL, HDL, non-HDL, triglycerides (fasting or non-fasting) and a standard 12-lead ECG. \n\nGlobal cardiovascular risk assessment should be done using risks calculators: \nFramingham only validated between age 30 and 74\n•[[risk calculator with happy faces; https://cvdcalculator.com/]]\n•[[more risk calculators; https://ccs.ca/calculators-and-forms/]]",
     "Gender": "tf,tm",
@@ -702,7 +702,7 @@
   {
     "Button": "Heart",
     "Topic heading": "Heart Disease",
-    "Subject": "Blood Pressure",
+    "Subject": "Blood pressure",
     "General Patient Text": "During your visit to the doctor, ask for a measurement of your blood pressure. \nA normal blood pressure is under 140/90 mmHg or lower for some people .\nThe target blood pressure depends on factors like age and health conditions, and where readings are being taken. If you have diabetes, kidney disease or other health conditions, speak to your health care professional about your target blood pressure. \n\n•\t[[How to appropriately measure your blood pressure at home; https://hypertension.ca/wp-content/uploads/2020/03/BPM-Postcard-Front.jpg]]\n•\t[[Understanding and Managing Your Blood Pressure; https://guidelines.hypertension.ca/wp-content/uploads/2022/09/HTC_Brochure_UnderstandingBP_2018_R3.pdf]]",
     "Health Provider Text": "CTFPHC recommends blood pressure measurement at all appropriate primary care visits.[[2012 Guideline; https://canadiantaskforce.ca/guidelines/published-guidelines/hypertension/]]\n(Strong recommendation; moderate quality evidence)\n\n[[Hypertension Canada guideline summary 2022; https://hypertension.ca/wp-content/uploads/2020/10/2020-22-HT-Guidelines-E-WEB_v3b.pdf]]\n\nIf the mean blood pressure measured in office [[As per recommended technique; https://guidelines.hypertension.ca/diagnosis-assessment/measuring-blood-pressure/]] is high during one visit, a history and physical examination should be performed and, if clinically indicated, diagnostic tests to search for target organ damage should be arranged within 2 visits. \n\nRoutine Lab Testing Recommended: urinalysis, blood chemistry (potassium, sodium and creatinine), fasting blood glucose and/or glycated hemoglobin (A1C), serum total cholesterol, LDL, HDL, non-HDL, triglycerides (fasting or non-fasting) and a standard 12-lead ECG. \n\nGlobal cardiovascular risk assessment should be done using risks calculators: \nFramingham only validated between age 30 and 74\n•[[risk calculator with happy faces; https://cvdcalculator.com/]]\n•[[more risk calculators; https://ccs.ca/calculators-and-forms/]]",
     "Gender": "m,f",
@@ -1083,8 +1083,8 @@
     "Button": "Genitalia",
     "Topic heading": "Sexual and Reproductive Health",
     "Subject": "Infertility",
-    "General Patient Text": "A fertility evaluation should be initiated after 6 months of unprotected intercourse without conception in women 35 to 37 years of age, and earlier in women > 37 years of age",
-    "Health Provider Text": "A fertility evaluation should be initiated after 6 months of unprotected intercourse without conception in women 35 to 37 years of age, and earlier in women > 37 years of age \n[[SOGC guideline 2017; https://www.jogc.com/article/S1701-2163(16)39898-X/fulltext]]",
+    "General Patient Text": "A fertility evaluation should be initiated after 6 months of unprotected intercourse without conception in women 35 to 37 years of age, and earlier in women > 37 years of age",
+    "Health Provider Text": "A fertility evaluation should be initiated after 6 months of unprotected intercourse without conception in women 35 to 37 years of age, and earlier in women > 37 years of age \n[[SOGC guideline 2017; https://www.jogc.com/article/S1701-2163(16)39898-X/fulltext]]",
     "Gender": "f",
     "Minimum age": 35,
     "Maximum age": 49
@@ -1402,19 +1402,49 @@
   {
     "Button": "money",
     "Topic heading": "Money Issues",
-    "Subject": "Money Issues",
-    "General Patient Text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    "Health Provider Text": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.",
+    "Subject": "Food",
+    "General Patient Text": "Click on [[211.ca; https://211.ca]] or phone/text 211\nChoose your province or territory \nEnter your location by postal code or city/town \nChoose the topic: food \nYou can find food banks near you or meals.\n(<If you are having trouble online: call 211 and someone will help you find what you need.>)",
+    "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
   },
   {
-    "Button": "sleep",
+    "Button": "money",
+    "Topic heading": "Money Issues",
+    "Subject": "Housing",
+    "General Patient Text": "Click on [[211.ca; https://211.ca]] or phone/text 211\nChoose  your province or territory\nEnter your location by postal code or city/town \nChoose the topic housing.\n(<If you are having trouble online: call 211 and someone will help you find what you need.>)",
+    "Health Provider Text": "n/a",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "money",
+    "Topic heading": "Money Issues",
+    "Subject": "Other",
+    "General Patient Text": "211.ca has information for many other services such as :\n•Financial assistance\n•Employment/Training and more\n(<If you are having trouble online: call and someone will help you find what you need.>)",
+    "Health Provider Text": "n/a",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "money",
+    "Topic heading": "Money Issues",
+    "Subject": "Food, housing , other",
+    "General Patient Text": "n/a",
+    "Health Provider Text": "(<Go to 211.ca for info on food, housing, finanical assistance and more>).\nEnter patient's postal code to find local resources eg food banks.\nPatients can phone to get help navigating or text (time restrictions may apply to texting)\nNot all areas covered by 211. Investigate your local resources if 211 not available and keep a list or if possible refer to a social worker or other resourcce.",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Sleep",
     "Topic heading": "Sleep",
     "Subject": "Sleep",
-    "General Patient Text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
-    "Health Provider Text": "Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+    "General Patient Text": "Trusted evidence-based information on sleep and sleep problems:\n•[[ementalhealth.ca; https://www.ementalhealth.ca/index.php?m=headingInfoSheets&ID=189]]\n•[[A good night's sleep; https://www.camh.ca/-/media/files/covid19-booklet-good-nights-sleep-pdf.pdf]]\n•[[Sleep and electronics; https://www.ementalhealth.ca/Ottawa-Carleton/Sleep-Problems-Try-Cutting-Back-on-Your-Blue-Light/index.php?m=article&ID=62333]]\n•[[HealthlinkBC; https://www.healthlinkbc.ca/illnesses-conditions/fatigue-and-sleep/insomnia]]",
+    "Health Provider Text": "Evidence-based information on sleep problems:\n•[[ementalhealth.ca; https://www.ementalhealth.ca/index.php?m=headingInfoSheets&ID=189]]\n•[[A good night's sleep; https://www.camh.ca/-/media/files/covid19-booklet-good-nights-sleep-pdf.pdf]]\n•[[Sleep and electronics; https://www.ementalhealth.ca/Ottawa-Carleton/Sleep-Problems-Try-Cutting-Back-on-Your-Blue-Light/index.php?m=article&ID=62333]]\n•[[HealthlinkBC; https://www.healthlinkbc.ca/illnesses-conditions/fatigue-and-sleep/insomnia]]\n•[[MyHealth.Alberta.ca; https://myhealth.alberta.ca/health/pages/conditions.aspx?Hwid=abq4925]]",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150

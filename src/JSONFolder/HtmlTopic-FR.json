@@ -1412,19 +1412,49 @@
   {
     "Button": "money",
     "Topic heading": "Problèmes d'argent",
-    "Subject": "Problèmes d'argent",
-    "General Patient Text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    "Health Provider Text": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.",
+    "Subject": "Alimentation",
+    "General Patient Text": "Cliquez [[211.ca; https://211.ca/fr/]] ou appelez 211\nChoisissez votre province ou territoire.\nSi vous avez de la difficulté avec le site web, appelez 211 et une personne vous aidera.\n[[Au Québec; https://banquesalimentaires.org/ou-trouver-de-laide-alimentaire/]]",
+    "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
   },
   {
-    "Button": "sleep",
-    "Topic heading": "Dormir",
-    "Subject": "Dormir",
-    "General Patient Text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
-    "Health Provider Text": "Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+    "Button": "money",
+    "Topic heading": "Problèmes d'argent",
+    "Subject": "Logement",
+    "General Patient Text": "Cliquez [[211.ca; https://211.ca/fr/]] ou appelez 211\nChoisissez votre province ou territoire\nSi vous avez de la difficulté avec le site web, appelez 211 et une personne vous aidera.",
+    "Health Provider Text": "n/a",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "money",
+    "Topic heading": "Problèmes d'argent",
+    "Subject": "Autre",
+    "General Patient Text": "Cliquez [[211.ca; https://211.ca/fr/]] ou appelez 211 si vous avez d'autres besoins par exemple\n•Assistance financière\n•Emploi ou autre",
+    "Health Provider Text": "n/a",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "money",
+    "Topic heading": "Problèmes d'argent",
+    "Subject": "Alimentation, logement, autre",
+    "General Patient Text": "n/a",
+    "Health Provider Text": "[[211.ca; https://211.ca/fr/]] ou appelez 211 pour des informations sur \n•l'aide alimentaire\n•l'aide au logement\n•l'assistance financière et plus. \nPour certaines provinces vous pouvez inscrire le code postal et trouver les ressources les plus proches. \nPour d'autres il faut appeler 211 ou vérifier par région.",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Sleep",
+    "Topic heading": "Sommeil",
+    "Subject": "Sommeil",
+    "General Patient Text": "Information fiable sur le sommeil:\n•[[esantementale.ca; https://www.esantementale.ca/index.php?m=searchResults&searchString=sommeil&searchWhere=Toronto,%20ON&recordType=6]]\n•[[Une bonne nuit de sommeil; https://www.camh.ca/-/media/files/covid19-booklet-sommeil-pdf.pdf]]\n•[[Les appareils électroniques et le sommeil; https://www.esantementale.ca/Toronto/Des-problemes-de-sommeil-Essayez-de-reduire-votre-lumiere-bleue/index.php?m=article&ID=62333]]\n•[[Fondation du sommeil; https://fondationsommeil.com/]]",
+    "Health Provider Text": "Informations pour les patients à propos du sommeil basées sur les données probantes:\n•[[esantementale.ca; https://www.esantementale.ca/index.php?m=searchResults&searchString=sommeil&searchWhere=Toronto,%20ON&recordType=6]]\n•[[Une bonne nuit de sommeil; https://www.camh.ca/-/media/files/covid19-booklet-sommeil-pdf.pdf]]\n•[[Les appareils électroniques et le sommeil; https://www.esantementale.ca/Toronto/Des-problemes-de-sommeil-Essayez-de-reduire-votre-lumiere-bleue/index.php?m=article&ID=62333]]\n•[[Fondation du sommeil au Québec; https://fondationsommeil.com/]]",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
