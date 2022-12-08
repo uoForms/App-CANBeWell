@@ -63,7 +63,7 @@
     "Button": "Figure outside body walking",
     "Topic heading": "Be Active",
     "Subject": "Benefits of physical activity",
-    "General Patient Text": "I",
+    "General Patient Text": "Physical activity prevents heart disease, cancer, depression and [[more; https://www.reframehealthlab.com/23-and-12-hours/]]",
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
@@ -1084,7 +1084,7 @@
     "Topic heading": "Sexual and Reproductive Health",
     "Subject": "Infertility",
     "General Patient Text": "A fertility evaluation should be initiated after 6 months of unprotected intercourse without conception in women 35 to 37 years of age, and earlier in women > 37 years of age",
-    "Health Provider Text": "A fertility evaluation should be initiated after 6 months of unprotected intercourse without conception in women 35 to 37 years of age, and earlier in women > 37 years of age \n[[SOGC guideline 2017; https://www.jogc.com/article/S1701-2163(16)39898-X/fulltext]]",
+    "Health Provider Text": "A fertility evaluation should be initiated after 6 months of unprotected intercourse without conception in women 35 to 37 years of age, and earlier in women?>?37 years of age \n[[SOGC guideline 2017; https://www.jogc.com/article/S1701-2163(16)39898-X/fulltext]]",
     "Gender": "f",
     "Minimum age": 35,
     "Maximum age": 49
@@ -1434,7 +1434,7 @@
     "Topic heading": "Money Issues",
     "Subject": "Food, housing , other",
     "General Patient Text": "n/a",
-    "Health Provider Text": "(<Go to 211.ca for info on food, housing, finanical assistance and more>).\nEnter patient's postal code to find local resources eg food banks.\nPatients can phone to get help navigating or text (time restrictions may apply to texting)\nNot all areas covered by 211. Investigate your local resources if 211 not available and keep a list or if possible refer to a social worker or other resourcce.",
+    "Health Provider Text": "(<Go to [[211.ca; https://211.ca]] for info on food, housing, finanical assistance and more>).\nEnter patient's postal code to find local resources eg food banks.\nPatients can phone to get help navigating or text (time restrictions may apply to texting)\nNot all areas covered by 211. Investigate your local resources if 211 not available and keep a list or if possible refer to a social worker or other resourcce.",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
