@@ -1450,7 +1450,7 @@
     "Maximum age": 150
   },
   {
-    "Button": "Sleep",
+    "Button": "sleep",
     "Topic heading": "Sommeil",
     "Subject": "Sommeil",
     "General Patient Text": "Information fiable sur le sommeil:\n•[[esantementale.ca; https://www.esantementale.ca/index.php?m=searchResults&searchString=sommeil&searchWhere=Toronto,%20ON&recordType=6]]\n•[[Une bonne nuit de sommeil; https://www.camh.ca/-/media/files/covid19-booklet-sommeil-pdf.pdf]]\n•[[Les appareils électroniques et le sommeil; https://www.esantementale.ca/Toronto/Des-problemes-de-sommeil-Essayez-de-reduire-votre-lumiere-bleue/index.php?m=article&ID=62333]]\n•[[Fondation du sommeil; https://fondationsommeil.com/]]",
