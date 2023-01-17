@@ -4,27 +4,27 @@
     "Topic heading": "Aorta",
     "Subject": "Screen men age 65-80 with ultrasound once",
     "General Patient Text": "n/a",
-    "Health Provider Text": "[[Weak recommendation by canadian task force; https://canadiantaskforce.ca/guidelines/published-guidelines/abdominal-aortic-aneurysm/]]",
+    "Health Provider Text": "[[CTFPHC 2017; https://canadiantaskforce.ca/guidelines/published-guidelines/abdominal-aortic-aneurysm/]]",
     "Gender": "m",
-    "Minimum age": 65,
-    "Maximum age": 80
+    "Minimum age": 18,
+    "Maximum age": 150
   },
   {
     "Button": "Aorta",
     "Topic heading": "Aorta",
-    "Subject": "Talk to your provider to see if you need a test",
-    "General Patient Text": "•\tYour provider may ask for an ultrasound of your belly\nto detect a bulge in the main blood vessel \n(the bulge is nicknamed AAA for short or Abdominal Aortic Aneurysm)\n•\tIf the bulge grows it can burst and cause death.",
+    "Subject": "Between ages 65 and 80 ask your provider about an ultrasound to detect an AAA",
+    "General Patient Text": "• Your provider may ask for an ultrasound of your belly\nto detect a bulge in the main blood vessel \n(the bulge is nicknamed AAA for short or Abdominal Aortic Aneurysm)\n• If the bulge grows it can burst and cause death.\n• [[Recommendation; https://canadiantaskforce.ca/guidelines/published-guidelines/abdominal-aortic-aneurysm/]]",
     "Health Provider Text": "n/a",
     "Gender": "m",
-    "Minimum age": 65,
-    "Maximum age": 80
+    "Minimum age": 18,
+    "Maximum age": 150
   },
   {
     "Button": "Aorta",
     "Topic heading": "Aorta",
     "Subject": "Screening not recommended for men older than 80 years old",
     "General Patient Text": "n/a",
-    "Health Provider Text": "[[Weak recommendation by canadian task force; https://canadiantaskforce.ca/guidelines/published-guidelines/abdominal-aortic-aneurysm/]]",
+    "Health Provider Text": "[[Weak recommendation by CTFPHC 2017; https://canadiantaskforce.ca/guidelines/published-guidelines/abdominal-aortic-aneurysm/]]",
     "Gender": "m",
     "Minimum age": 81,
     "Maximum age": 150
@@ -34,7 +34,7 @@
     "Topic heading": "Aorta",
     "Subject": "Screening not recommended for women of all ages.",
     "General Patient Text": "n/a",
-    "Health Provider Text": "[[Strong recommendations, very low quality of evidence by canadian task force; https://canadiantaskforce.ca/guidelines/published-guidelines/abdominal-aortic-aneurysm/]]",
+    "Health Provider Text": "[[Strong recommendation, very low quality of evidence CTFPHC 2017; https://canadiantaskforce.ca/guidelines/published-guidelines/abdominal-aortic-aneurysm/]]",
     "Gender": "f",
     "Minimum age": 18,
     "Maximum age": 150
@@ -42,12 +42,12 @@
   {
     "Button": "Aorta",
     "Topic heading": "Aorta",
-    "Subject": "Screening for trans and non binary patients",
+    "Subject": "Screening for AAA in trans and non binary patients",
     "General Patient Text": "n/a",
     "Health Provider Text": "At this time we could not find a Canadian reference on this topic. In the UK trans females and non binary patients who were assigned male sex at birth are advised to have an abdominal ultrasound to detect AAA between ages 65 and 80. Trans males can have a screening ultrasound if they wish but the risk of an aneurysm is mentioned as  being less.\n[[Reference; https://www.gov.uk/government/publications/nhs-population-screening-information-for-transgender-people]]",
     "Gender": "tm,tf",
-    "Minimum age": 65,
-    "Maximum age": 80
+    "Minimum age": 18,
+    "Maximum age": 150
   },
   {
     "Button": "Aorta",
@@ -56,8 +56,8 @@
     "General Patient Text": "Canadian guidelines on screening for abdominal aortic aneurysm (AAA: a bulge in the main blood vessel of the body that can be dangerous) in trans and non binary people were not found. In the UK the following is recommended:\n• If you are a trans female or non binary with sex assigned at birth as male you are advised to have an ultrasound to detect an abdominal aortic aneurysm. Speak to your provider about this.\n\n• Currently trans males, and those who are non binary with sex assigned at birth as female, may not be advised to have this test.\n\n Research may change in this area. Speak to your health care provider.",
     "Health Provider Text": "n/a",
     "Gender": "tm,tf",
-    "Minimum age": 65,
-    "Maximum age": 80
+    "Minimum age": 18,
+    "Maximum age": 150
   },
   {
     "Button": "Figure outside body walking",
@@ -73,7 +73,7 @@
     "Button": "Figure outside body walking",
     "Topic heading": "Be Active",
     "Subject": "Recommended physical activity",
-    "General Patient Text": "•\tThe recommended minimum amount of physical activity\nis 150 minutes a week of moderate intensity exercise. \n•\tDefinition of moderate intensity:\nwhile you are active you have enough breath to say a short sentence but not enough to sing\n•\t[[Guideline for age 18-64; https://csepguidelines.ca/guidelines/adults-18-64/]]\n•\t[[Guideline for age 65+; https://csepguidelines.ca/guidelines/adults-65/]]",
+    "General Patient Text": "•\tThe recommended minimum amount of physical activity\nis 150 minutes a week of moderate intensity exercise. \n•\tDefinition of moderate intensity:\nwhile you are active you have enough breath to say a short sentence but not enough to sing\n•\t[[Guideline for age 18-64; https://csepguidelines.ca/wp-content/uploads/2020/11/PA-24HGuidelines-ENG-Adults-18-64-2.png]]\n•\t[[Guideline for age 65+; https://csepguidelines.ca/wp-content/uploads/2020/11/PA-24HGuidelines-ENG-Adults-65plus-2.png]]For more information visit [[csepguidelines.ca; https://csepguidelines.ca/]]                                        •    For more information visit [[csepguidelines.ca; https://csepguidelines.ca/]]",
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
@@ -153,8 +153,8 @@
     "Button": "Bone",
     "Topic heading": "Bone Health",
     "Subject": "Bone Density Test",
-    "General Patient Text": "Below age 65: only recommended if: you have [[risk factors; https://www.canada.ca/en/public-health/services/chronic-diseases/osteoporosis.html]]",
-    "Health Provider Text": "If patient has  [[risk factors; https://www.canada.ca/en/public-health/services/chronic-diseases/osteoporosis.html]]",
+    "General Patient Text": "Below age 65: only recommended if: you have [[risk factors; https://www.canada.ca/en/public-health/services/chronic-diseases/osteoporosis.html]]\n[[More info; https://choosingwiselycanada.org/pamphlet/bone-density-tests/]]",
+    "Health Provider Text": "<65 yo BDM only if the patient has  [[risk factors; https://www.canada.ca/en/public-health/services/chronic-diseases/osteoporosis.html]]",
     "Gender": "m,f",
     "Minimum age": 18,
     "Maximum age": 64
@@ -164,7 +164,7 @@
     "Topic heading": "Bone Health",
     "Subject": "Bone Density Test",
     "General Patient Text": "Recommended for everyone 65 or older\nYour provider will determine when to repeat it\n•\t[[more info; https://choosingwiselycanada.org/bone-density-tests/]]\n•\t[[calculator for 10 year fracture risk; https://www.sheffield.ac.uk/FRAX/tool.jsp?country=19 ]]",
-    "Health Provider Text": "Recommended for everyone 65 or older:\n•\t[[osteoporosis.ca; http://www.cmaj.ca/content/cmaj/early/2010/10/12/cmaj.100771.full.pdf]]\n•\tOr use [[OST; http://www.cfp.ca/content/61/7/612]]\n•\tFrequency of retesting [[not more than every 2 years; https://choosingwiselycanada.org/rheumatology/]]\n[[decision aid; https://osteoporosisdecisionaid.mayoclinic.org/]]",
+    "Health Provider Text": "Recommended for everyone 65 or older:\n• [[osteoporosis.ca 2010; http://www.cmaj.ca/content/cmaj/early/2010/10/12/cmaj.100771.full.pdf]]\n\n•Frequency of retesting [[not more than every 2 years; https://choosingwiselycanada.org/rheumatology/]]\n\n•[[Osteoporosis assessment form; https://osteostrategy.on.ca/wp-content/uploads/Osteoporosis-Assessment-Tool_REV7_Dec-2018.pdf]]",
     "Gender": "m,f",
     "Minimum age": 65,
     "Maximum age": 150
@@ -204,7 +204,7 @@
     "Topic heading": "Breast Cancer",
     "Subject": "Prevent and screen for Breast Cancer",
     "General Patient Text": "n/a",
-    "Health Provider Text": "Counsel patients to:\n•\tLimit alcohol (see our substance use info)\n•\tNot smoke\n•\tControl their weight\n•\tBe physically active (see our app info for this)\n•\tBreastfeed if able\n•\tLimit time on hormone therapy\n[[a risk calculator for patients; https://www.mycanceriq.ca/Cancers/Risk]]\n\nScreening Mammogram:\n•\tBelow age 50: Not recommended\n[[canadiantaskforce recomendation; https://canadiantaskforce.ca/guidelines/published-guidelines/breast-cancer-update/]]\n[[tool to explain harms to patient; https://www.youtube.com/watch?v=UZlY6Q4m-MM]]\n[[tool to explain harms to patient; https://canadiantaskforce.ca/tools-resources/breast-cancer-2/breast-cancer-risks-benefits-age-40-49/]]\n•\t50-74:  Every 2-3 years\n[[weak recommendation; https://canadiantaskforce.ca/guidelines/published-guidelines/breast-cancer-update/]]\n•\t75+: Not recommended by canadiantaskforce.ca, but:\n[[CFP  article 2019 on when to stop screening; https://www.cfp.ca/content/cfp/65/8/543.full.pdf]]\n\nHigh risk patients:\n•\tKnown to have a gene mutation that increases their risk for breast cancer (e.g., BRCA1, BRCA2, TP53, PTEN, CDH1)\n•\tFirst-degree relatives of someone who has a gene mutation that increases their risk for breast cancer (e.g., BRCA1, BRCA2, TP53, PTEN, CDH1), have already had genetic counselling and have chosen not to have genetic testing\n•\tHave been assessed by a genetics clinic (using the IBIS or BOADICEA tools) as having a 25% or greater lifetime risk of breast cancer based on personal and family history\n•\tHave had radiation therapy to the chest to treat another cancer or condition (e.g., Hodgkin lymphoma) before age 30 and at least 8 years ago\n•\tFirst-degree relative (parent, brother, sister or child) of a carrier of a gene mutation (e.g. BRCA1, BRCA2, TP53, PTEN, CDH1) and has not had genetic counselling or genetic testing\n•\tPersonal or family history of breast or ovarian cancer suggestive of a hereditary breast cancer syndrome",
+    "Health Provider Text": "Counsel patients to:\n•\tLimit alcohol (see our substance use info)\n•\tNot smoke\n•\tControl their weight\n•\tBe physically active (see our app info for this)\n•\tBreastfeed if able\n•\tLimit time on hormone therapy\n[[a risk calculator for patients; https://www.mycanceriq.ca/Cancers/Risk]]\n\nScreening Mammogram:\n•\tBelow age 50: Not recommended\n[[2018 CTFPHC; https://canadiantaskforce.ca/guidelines/published-guidelines/breast-cancer-update/]]\n[[tool to explain harms to patient; https://www.youtube.com/watch?v=UZlY6Q4m-MM]]\n[[tool to explain harms to patient; https://canadiantaskforce.ca/tools-resources/breast-cancer-2/breast-cancer-risks-benefits-age-40-49/]]\n•\t50-74:  Every 2-3 years\n[[2018 CTFPHC weak recommendation; https://canadiantaskforce.ca/guidelines/published-guidelines/breast-cancer-update/]]\n•\t75+: Not recommended by canadiantaskforce.ca, but:\n[[CFP  article 2019 on when to stop screening; https://www.cfp.ca/content/cfp/65/8/543.full.pdf]]\n\nHigh risk patients:\n•\tKnown to have a gene mutation that increases their risk for breast cancer (e.g., BRCA1, BRCA2, TP53, PTEN, CDH1)\n•\tFirst-degree relatives of someone who has a gene mutation that increases their risk for breast cancer (e.g., BRCA1, BRCA2, TP53, PTEN, CDH1), have already had genetic counselling and have chosen not to have genetic testing\n•\tHave been assessed by a genetics clinic (using the IBIS or BOADICEA tools) as having a 25% or greater lifetime risk of breast cancer based on personal and family history\n•\tHave had radiation therapy to the chest to treat another cancer or condition (e.g., Hodgkin lymphoma) before age 30 and at least 8 years ago\n•\tFirst-degree relative (parent, brother, sister or child) of a carrier of a gene mutation (e.g. BRCA1, BRCA2, TP53, PTEN, CDH1) and has not had genetic counselling or genetic testing\n•\tPersonal or family history of breast or ovarian cancer suggestive of a hereditary breast cancer syndrome",
     "Gender": "f",
     "Minimum age": 18,
     "Maximum age": 150
@@ -241,7 +241,7 @@
   },
   {
     "Button": "Breast/Chest",
-    "Topic heading": "Breast Cancer",
+    "Topic heading": "Chest or Breast Cancer",
     "Subject": "Information",
     "General Patient Text": "•\tIf you have not had top surgery to remove breast tissue in its entirety (also known as a mastectomy), you need a mammogram every 2 years from age 50 to 74.\n•\tYou still need mammograms even if you have had a breast reduction (and not a mastectomy).\n•\tIf you have had a mastectomy, discuss whether you need regular chest exams with your primary care provider; it is generally not the case.",
     "Health Provider Text": "•\tTrans men and people on the transmasculine spectrum who have not had a bilateral mastectomy should undergo breast cancer screening, as per the current guidelines for cis women.\n•\tThe current recommendation for cis women is a mammogram every 2 years from age 50-74.\n•\tThere is currently no reliable evidence on screening for trans men and people on the transmasculine spectrum patients who have had a mastectomy; consider discussing the unknown risks associated with residual breast tissue, as well as the possible technical limitations of mammography (UCSF).\n•\tConsider continuing regular monitoring for breast cancer even after mastectomy, as mastectomies usually do not remove breast tissue in its entirety; the Endocrine Society suggests conducting sub- and periareolar annual breast examinations if the patient has undergone a mastectomy, whereas UCSF cautions against it (not evidence-based).",
@@ -251,7 +251,7 @@
   },
   {
     "Button": "Breast/Chest",
-    "Topic heading": "Breast Cancer",
+    "Topic heading": "Chest or Breast Cancer",
     "Subject": "Resources",
     "General Patient Text": "•\t[[Overview of breast cancer screening for trans men in Canada; https://www.cancer.ca/en/prevention-and-screening/reduce-cancer-risk/find-cancer-early/screening-in-lgbtq-communities/trans-men-and-chest-cancer-screening/?region=on]]\n•\t[[RHO guidelines; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n•\t[[UCSF Transcare guidelines; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf]]\n•\t[[Endocrine Society guidelines; https://academic.oup.com/jcem/article/102/11/3869/4157558]]",
     "Health Provider Text": "n/a",
@@ -274,7 +274,7 @@
     "Topic heading": "Colorectal Cancer",
     "Subject": "Screen",
     "General Patient Text": "n/a",
-    "Health Provider Text": "Age 50-74:\n•\tFOBT or FIT (depending on province) every 2y or\n•\tFlexible sigmoidoscopy every 10 years\n•\tColonoscopy not recommended in Canada for low risk: 1/2000 risk of perforation, no evidence yet,ongoing RCTs\n[[canadian task force; https://canadiantaskforce.ca/guidelines/published-guidelines/colorectal-cancer/]]\n[[CFP article on when to stop screening; https://www.cfp.ca/content/cfp/65/8/543.full.pdf]]\nFOBT=Fecal occult blood test\nFIT= Fecal immunochemical test\n•\tColonoscopy recommended for high risk patients\nClick to see [[Canadian association of gastroenterology guideline 2018; https://www.cag-acg.org/images/publications/CAG_CPG_CRC_Screening_Aug2018.pdf]]",
+    "Health Provider Text": "Age 50-74:\n•\tFOBT or FIT (depending on province) every 2y or\n•\tFlexible sigmoidoscopy every 10 years\n•\tColonoscopy not recommended in Canada for low risk: 1/2000 risk of perforation, no evidence yet,ongoing RCTs\n[[Canadian task force 2016; https://canadiantaskforce.ca/guidelines/published-guidelines/colorectal-cancer/]]\n[[CFP article on when to stop screening; https://www.cfp.ca/content/cfp/65/8/543.full.pdf]]\nFOBT=Fecal occult blood test\nFIT= Fecal immunochemical test\n•\tColonoscopy recommended for high risk patients\nClick to see [[Canadian association of gastroenterology guideline 2018; https://www.cag-acg.org/images/publications/CAG_CPG_CRC_Screening_Aug2018.pdf]]",
     "Gender": "all",
     "Minimum age": 50,
     "Maximum age": 74
@@ -313,7 +313,7 @@
     "Button": "Covid",
     "Topic heading": "COVID-19",
     "Subject": "Are you worried you have COVID-19?",
-    "General Patient Text": "Each province has their own recommendations. Look up your province's COVID website or your local public health website.\nHere are some general resources: \n•\t[[Confused about COVID; https://dfcm.utoronto.ca/confused-about-covid]]\n•\t[[COVID Government of Canada; https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19.html]]",
+    "General Patient Text": "Each province has their own recommendations. Look up [[your province's COVID website; https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/symptoms/provincial-territorial-resources-covid-19.html]] or your local public health website.\nHere are some general resources: \n•\t[[Confused about COVID; https://dfcm.utoronto.ca/confused-about-covid]]\n•\t[[COVID Government of Canada; https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19.html]]",
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
@@ -323,8 +323,8 @@
     "Button": "Covid",
     "Topic heading": "COVID-19",
     "Subject": "Vaccines",
-    "General Patient Text": "•Canada: click [[here; https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/vaccines/overview.html]]\n\n•Provinces: click [[here; https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/vaccines/overview.html#a5]]\n\n• Videos: how vaccines are developped \n[[3 minutes; https://www.canada.ca/en/public-health/services/video/covid-19-how-vaccines-developed.html]]\n[[7 minutes; https://www.youtube.com/watch?v=2t_mQwTY4WQ&feature=emb_logo]]",
-    "Health Provider Text": "•Info for professionals [[Centre for Effective Practice; https://cep.health/clinical-products/covid-19-vaccines/]] \n\n•[[NACI; https://www.canada.ca/en/public-health/services/immunization/national-advisory-committee-on-immunization-naci/recommendations-use-covid-19-vaccines.html]]\n\n•Canada: click [[here; https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/vaccines/overview.html]]\n\n•Provinces: click [[here; https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/vaccines/overview.html#a5]]\n\n•New England Journal of Medicine\n[[FAQ; https://www.nejm.org/covid-vaccine/faq]]\n[[Research; https://www.nejm.org/covid-vaccine]]\n\n• Videos: how vaccines are developped \n[[3 minutes; https://www.canada.ca/en/public-health/services/video/covid-19-how-vaccines-developed.html]]\n[[7 minutes; https://www.youtube.com/watch?v=2t_mQwTY4WQ&feature=emb_logo]]",
+    "General Patient Text": "•To book a vaccine appointment by province click [[here; https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/vaccines/how-vaccinated.html#a1]]\n\n• Government of Canada information click [[here; https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/vaccines/overview.html]]\n\n• Videos: how vaccines are developped \n[[3 minutes; https://www.canada.ca/en/public-health/services/video/covid-19-how-vaccines-developed.html]]\n[[7 minutes; https://www.youtube.com/watch?v=2t_mQwTY4WQ&feature=emb_logo]]",
+    "Health Provider Text": "•[[NACI; https://www.canada.ca/en/public-health/services/publications/healthy-living/canadian-immunization-guide-part-4-active-vaccines/page-26-covid-19-vaccine.html]]\n\n•[[New England Journal of Medicine; https://www.nejm.org/covid-vaccine]]",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
@@ -342,8 +342,8 @@
   {
     "Button": "Covid",
     "Topic heading": "COVID-19",
-    "Subject": "Do you need help with food, shelter or finances?",
-    "General Patient Text": "•\tIf you need food:\nPhone 211 on click on [[211.ca; https://211.ca]] and Search by province and\nEnter the topic: food \nEnter your postal code\n\n•\tIf you need help with money during COVID:\n[[Government of Canada; https://www.canada.ca/en/department-finance/economic-response-plan.html]]\n[[Benefit finder; https://covid-benefits.alpha.canada.ca/en/start]]\n\n•\tIf you need other services such as:\nHousing, Help with disabilities, or more\nPhone 211 or click on [[211.ca; https://211.ca]] and search by province",
+    "Subject": "Indigenous",
+    "General Patient Text": "•\t[[First Nations; https://www.afn.ca/coronavirus/#factsheet]]\n•\t[[National Collaboration on Indigenous Health; https://www.nccih.ca/485/NCCIH_in_the_News.nccih?id=450]]",
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
@@ -352,129 +352,9 @@
   {
     "Button": "Covid",
     "Topic heading": "COVID-19",
-    "Subject": "First Nations, Métis, Inuit",
-    "General Patient Text": "•\t[[First Nations; https://www.afn.ca/coronavirus/#factsheet]]\n•\t[[Métis; https://metisnation.ca/covid19/]]\n•\t[[Inuit; https://www.itk.ca/what-we-do/covid19/]]\n•\t[[Native Women’s Association of Canada; https://www.nwac.ca/covid19/]]\n•\t[[National Collaboration on Indigenous Health; https://www.nccih.ca/485/NCCIH_in_the_News.nccih?id=450]]\n•\t[[Video 1; https://www.youtube.com/watch?v=jefCDf6ccJ4]]\n•\t[[Video 2; https://www.youtube.com/watch?v=bk2fp5rS-kg&feature=youtu.be]]\n•\t[[Diabetes and COVID-19; http://nada.ca/?page_id=3172]]",
+    "Subject": "Different languages",
+    "General Patient Text": "[[Ottawa public health; https://www.ottawapublichealth.ca/en/public-health-topics/multilingual-resources.aspx]]\n[[Ontario public health; https://www.publichealthontario.ca/en/diseases-and-conditions/infectious-diseases/respiratory-diseases/novel-coronavirus/public-resources]]\n[[Quebec multilingual; https://www.quebec.ca/sante/problemes-de-sante/a-z/coronavirus-2019/informations-allophones-covid-19]]-[[ Other Quebec multilingual; https://www.quebec.ca/sante/problemes-de-sante/a-z/coronavirus-2019/informations-allophones-covid-19]]\n[[UBC multilingual COVID resources; https://digem.med.ubc.ca/covid-19-multilingual-resources/]]",
     "Health Provider Text": "n/a",
-    "Gender": "all",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Covid",
-    "Topic heading": "COVID-19",
-    "Subject": "COVID-19 Español, Arabic, Mandarin and other languages",
-    "General Patient Text": "[[Click here; https://www.ottawapublichealth.ca/en/public-health-topics/multilingual-resources.aspx]]",
-    "Health Provider Text": "n/a",
-    "Gender": "all",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Covid",
-    "Topic heading": "COVID-19",
-    "Subject": "Finances",
-    "General Patient Text": "If you need help with money:\n•\t[[Government of Canada; https://www.canada.ca/en/department-finance/economic-response-plan.html]]\n•\t[[Benefit finder; https://covid-benefits.alpha.canada.ca/en/start]]",
-    "Health Provider Text": "n/a",
-    "Gender": "all",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Covid",
-    "Topic heading": "COVID-19",
-    "Subject": "All Canadians",
-    "General Patient Text": "•\t[[Info by province or territory; https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/symptoms/provincial-territorial-resources-covid-19.html]]\n•\t[[Public Health Agency of Canada; https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/prevention-risks.html?topic=tilelink]]\n•\t[[Kids and school during COVID; https://www.ementalhealth.ca/Toronto/Back-to-School-under-COVID-Tips-for-Parents-and-Caregivers/index.php?m=article&ID=70616]]",
-    "Health Provider Text": "n/a",
-    "Gender": "all",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Covid",
-    "Topic heading": "COVID-19",
-    "Subject": "Mental Health",
-    "General Patient Text": "[[Mental Health and the COVID-19 Pandemic; https://www.camh.ca/en/health-info/mental-health-and-covid-19]]",
-    "Health Provider Text": "n/a",
-    "Gender": "all",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Covid",
-    "Topic heading": "COVID-19",
-    "Subject": "Apps",
-    "General Patient Text": "[[Click here; https://www.canada.ca/en/government/system/digital-government/digital-government-response-to-covid-19.html]]",
-    "Health Provider Text": "n/a",
-    "Gender": "all",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Covid",
-    "Topic heading": "COVID-19",
-    "Subject": "Risks of getting COVID-19",
-    "General Patient Text": "[[Click here; https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/prevention-risks.html#r]]",
-    "Health Provider Text": "n/a",
-    "Gender": "all",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Covid",
-    "Topic heading": "COVID-19",
-    "Subject": "Cleaning",
-    "General Patient Text": "Clean high-touch hard surfaces often, using either regular household cleaners or diluted bleach.  \n•\tClick on [[list of approved disinfectants; https://www.canada.ca/en/health-canada/services/drugs-health-products/disinfectants/covid-19/list.html]]\n•\tDiluted bleach recipe: 250 mL (1 cup) of water per 5 mL (1 teaspoon) of bleach. Directions are based on bleach that is 5% sodium hypochlorite, to give a 0.1% sodium hypochlorite solution. Never mix bleach with other chemical products and use it in a well-ventilated area.",
-    "Health Provider Text": "n/a",
-    "Gender": "all",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Covid",
-    "Topic heading": "COVID-19",
-    "Subject": "Masks",
-    "General Patient Text": "•\t[[VIDEO on how to wear a mask; https://www.canada.ca/en/public-health/services/video/covid-19-wear-non-medical-mask-face-covering-properly.html]]\n•\t[[DO's and DON'Ts; https://www.canada.ca/content/dam/hc-sc/documents/services/publications/diseases-and-conditions/covid-19-safely-use-non-medical-mask-face-covering/covid-19-safely-use-non-medical-mask-face-covering-en.pdf]]\n•\t[[LIMITATIONS; https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/prevention-risks/about-non-medical-masks-face-coverings.html#_Limitations]]\n•\tDO NOT wear a mask with an exhalation valve",
-    "Health Provider Text": "n/a",
-    "Gender": "all",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Covid",
-    "Topic heading": "COVID-19",
-    "Subject": "Difference between quarantine and isolation",
-    "General Patient Text": "Click on [[Public Health Agency of Canada; https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/prevention-risks.html?topic=tilelink#self]]",
-    "Health Provider Text": "n/a",
-    "Gender": "all",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Covid",
-    "Topic heading": "COVID-19",
-    "Subject": "Physical Distancing",
-    "General Patient Text": "Stay 2 metres or 6 feet apart, how far is this? 2 arms lengths or an adult hockey stick.\n[[Video; https://www.youtube.com/watch?v=UR1LPKDBTPw]]",
-    "Health Provider Text": "n/a",
-    "Gender": "all",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Covid",
-    "Topic heading": "COVID-19",
-    "Subject": "Hygiene",
-    "General Patient Text": "Click on [[more; https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/prevention-risks.html?topic=tilelink]]",
-    "Health Provider Text": "n/a",
-    "Gender": "all",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Covid",
-    "Topic heading": "COVID-19",
-    "Subject": "Vulnerable populations",
-    "General Patient Text": "n/a",
-    "Health Provider Text": "•\tPoverty screening question: “Do you ever have difficulty making ends meet at the end of the month?” [[Reference; https://www.cfpc.ca/CFPC/media/Resources/Poverty/Poverty_flow-Tool-Final-2016v4-Ontario.pdf]]\n\n•\tIf your patient needs social, community or health services  phone 211 if available in your area [[website; https://211.ca/]]\n\n•\t[[Government of Canada benefits; https://www.canada.ca/en/services/benefits/covid19-emergency-benefits.html]]\n\n•\tCheck your local public health agency website for information for these groups\n\n•\t[[First Nations, Métis and Inuit; https://www.ottawapublichealth.ca/en/public-health-topics/resources-for-first-nations-inuit-and-m-tis-community-members.aspx]]\n\nNational and Ottawa-specific information\n\n•\t[[Different languages; https://www.ottawapublichealth.ca/en/public-health-topics/multilingual-resources.aspx]]",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
@@ -484,17 +364,7 @@
     "Topic heading": "COVID-19",
     "Subject": "Updated research",
     "General Patient Text": "n/a",
-    "Health Provider Text": "Appraised evidence\n•\t[[MCMASTER EBM; https://plus.mcmaster.ca/COVID-19]]\n•\t[[OXFORD Evidence Service; https://www.cebm.net/oxford-covid-19-evidence-service/]]\n\nJournals\n•\t[[CMAJ; https://www.cmaj.ca/covid-19]]\n•\t[[BMJ; https://www.bmj.com/coronavirus]]\n•\t[[JAMA;https://jamanetwork.com/collections/46099/coronavirus-covid19]]\n•\t[[NEJM; https://www.nejm.org/coronavirus]]\n•\t[[The Lancet; https://www.thelancet.com/coronavirus/archive?]]\n\nPublic Health Agency of Canada\n•\t[[For health professionals; https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/health-professionals.html]]",
-    "Gender": "all",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Covid",
-    "Topic heading": "COVID-19",
-    "Subject": "Screening  during COVID-19",
-    "General Patient Text": "n/a",
-    "Health Provider Text": "[[Article in CFP Aug 2020; https://www.cfp.ca/content/cfp/66/8/571.full.pdf]]",
+    "Health Provider Text": "Appraised evidence\n•\t[[MCMASTER EBM; https://plus.mcmaster.ca/COVID-19]]\n\nJournals\n•\t[[CMAJ; https://www.cmaj.ca/covid-19]]\n•\t[[BMJ; https://www.bmj.com/coronavirus]]\n•\t[[JAMA;https://jamanetwork.com/collections/46099/coronavirus-covid19]]\n•\t[[NEJM; https://www.nejm.org/coronavirus]]\n•\t[[The Lancet; https://www.thelancet.com/coronavirus/archive?]]\n\nPublic Health Agency of Canada\n•\t[[For health professionals; https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/health-professionals.html]]",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
@@ -534,7 +404,7 @@
     "Topic heading": "Diabetes Type 2",
     "Subject": "Screen for Diabetes",
     "General Patient Text": "n/a",
-    "Health Provider Text": "Using a calculator is recommended by the Canadian Task Force and is evidence-based.\nYour patient can be emailed this questionnaire or it can be filled in the waiting room.\n•\t[[FINDRISC online calculator; https://qxmd.com/calculate/calculator_236/findrisc-diabetes-risk-calculator]]\n•\t[[FINDRISC pdf; https://canadiantaskforce.ca/tools-resources/type-2-diabetes-2/type-2-diabetes-patient-findrisc/]]\n\nor \n•\t[[CANRISK online calculator;  https://diabetes.ca/about-diabetes/take-the-test]]\n•\t[[CANRISK pdf  available in different languages; https://canadiantaskforce.ca/tools-resources/type-2-diabetes-2/type-2-diabetes-canrisk/]]",
+    "Health Provider Text": "Using a calculator is evidence-based (2016 CTFPHC).\nYour patient can be emailed this questionnaire or it can be filled in the waiting room.\n•\t[[FINDRISC online calculator; https://qxmd.com/calculate/calculator_236/findrisc-diabetes-risk-calculator]]\n•\t[[FINDRISC pdf; https://canadiantaskforce.ca/tools-resources/type-2-diabetes-2/type-2-diabetes-patient-findrisc/]]\n\nor \n•\t[[CANRISK online calculator;  https://diabetes.ca/about-diabetes/take-the-test]]\n•\t[[CANRISK pdf  available in different languages; https://canadiantaskforce.ca/tools-resources/type-2-diabetes-2/type-2-diabetes-canrisk/]]",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
@@ -704,7 +574,7 @@
     "Topic heading": "Heart Disease",
     "Subject": "Blood pressure",
     "General Patient Text": "During your visit to the doctor, ask for a measurement of your blood pressure. \nA normal blood pressure is under 140/90 mmHg or lower for some people .\nThe target blood pressure depends on factors like age and health conditions, and where readings are being taken. If you have diabetes, kidney disease or other health conditions, speak to your health care professional about your target blood pressure. \n\n•\t[[How to appropriately measure your blood pressure at home; https://hypertension.ca/wp-content/uploads/2020/03/BPM-Postcard-Front.jpg]]\n•\t[[Understanding and Managing Your Blood Pressure; https://guidelines.hypertension.ca/wp-content/uploads/2022/09/HTC_Brochure_UnderstandingBP_2018_R3.pdf]]",
-    "Health Provider Text": "CTFPHC recommends blood pressure measurement at all appropriate primary care visits.[[2012 Guideline; https://canadiantaskforce.ca/guidelines/published-guidelines/hypertension/]]\n(Strong recommendation; moderate quality evidence)\n\n[[Hypertension Canada guideline summary 2022; https://hypertension.ca/wp-content/uploads/2020/10/2020-22-HT-Guidelines-E-WEB_v3b.pdf]]\n\nIf the mean blood pressure measured in office [[As per recommended technique; https://guidelines.hypertension.ca/diagnosis-assessment/measuring-blood-pressure/]] is high during one visit, a history and physical examination should be performed and, if clinically indicated, diagnostic tests to search for target organ damage should be arranged within 2 visits. \n\nRoutine Lab Testing Recommended: urinalysis, blood chemistry (potassium, sodium and creatinine), fasting blood glucose and/or glycated hemoglobin (A1C), serum total cholesterol, LDL, HDL, non-HDL, triglycerides (fasting or non-fasting) and a standard 12-lead ECG. \n\nGlobal cardiovascular risk assessment should be done using risks calculators: \nFramingham only validated between age 30 and 74\n•[[risk calculator with happy faces; https://cvdcalculator.com/]]\n•[[more risk calculators; https://ccs.ca/calculators-and-forms/]]",
+    "Health Provider Text": "CTFPHC (2012) recommends blood pressure measurement at all appropriate primary care visits.[[Guideline; https://canadiantaskforce.ca/guidelines/published-guidelines/hypertension/]]\n(Strong recommendation; moderate quality evidence)\n\n[[Hypertension Canada guideline summary 2022; https://hypertension.ca/wp-content/uploads/2020/10/2020-22-HT-Guidelines-E-WEB_v3b.pdf]]\n\nIf the mean blood pressure measured in office [[As per recommended technique; https://guidelines.hypertension.ca/diagnosis-assessment/measuring-blood-pressure/]] is high during one visit, a history and physical examination should be performed and, if clinically indicated, diagnostic tests to search for target organ damage should be arranged within 2 visits. \n\nRoutine Lab Testing Recommended: urinalysis, blood chemistry (potassium, sodium and creatinine), fasting blood glucose and/or glycated hemoglobin (A1C), serum total cholesterol, LDL, HDL, non-HDL, triglycerides (fasting or non-fasting) and a standard 12-lead ECG. \n\nGlobal cardiovascular risk assessment should be done using risks calculators: \nFramingham only validated between age 30 and 74\n•[[risk calculator with happy faces; https://cvdcalculator.com/]]\n•[[more risk calculators; https://ccs.ca/calculators-and-forms/]]",
     "Gender": "m,f",
     "Minimum age": 18,
     "Maximum age": 150
@@ -774,7 +644,7 @@
     "Topic heading": "Immunization",
     "Subject": "Recommendations",
     "General Patient Text": "n/a",
-    "Health Provider Text": "• Recommend the [[app CanImmunize; https://www.canimmunize.ca/en/home]]\n\nAGE 18 and above (ALL ADULTS)\nThe following schedule assumes the patient has  been vaccinated in childhood\n• Td (Tetanus-diphtheria) every 10 years\n• Tdap(Tetanus,diphtheria, acellular pertussis or whooping cough): once in your lifetime\n• Measles Mumps Rubella:it is advised that  most adults should have  2 doses of this vaccine\n• HPV: recommended for all females and males from ages 9 to 26. The vaccine is also safe over age 26. [[more; https://www.reframehealthlab.com/should-you-get-the-hpv-vaccine/]]\n• Influenza: is recommended for all adults. For high risk groups see CanImmunize app\n• Pneumococcal, varicella, meningococcal are recommended for some high risk groups seeCANImmunize app\n\nAGE 50+\nNACI recommends offering a Shingles vaccine starting at 50, Shingrix preferred, but in most provinces the patient will need to pay for this in this age group.\n[[NACI 2018; https://www.canada.ca/en/public-health/services/reports-publications/canada-communicable-disease-report-ccdr/monthly-issue/2018-44/issue-9-september-6-2018/article-6-2018-naci-update-herpes-zoster-vaccines.html]]\n\nAGE 60+\nShingles vaccine if not already received , see info above. Check if covered in your province.\n\nAGE 65+ \nShingles vaccine if not already given.\n• Yukon and Ontario cover Shingrix from 65-70. \n• For other provinces Zostavax  may be covered , check your provincial schedule\nPneumococcal \nPNEU-P-23 advised for all immunocompetent,\nrepeat once in 5 years only if low immunity.\n\n• Influenza yearly\n\nSOURCE: [[NACI; https://www.canada.ca/en/public-health/services/immunization/national-advisory-committee-on-immunization-naci.html]]",
+    "Health Provider Text": "• Recommend the [[app CanImmunize; https://www.canimmunize.ca/en/home]]\n\n{{AGE 18 and above (ALL ADULTS)}}\nThe following schedule assumes the patient has  been vaccinated in childhood\n• (<Td>) (Tetanus-diphtheria) every 10 years\n• (<Tdap>)(Tetanus,diphtheria, acellular pertussis or whooping cough): once in your lifetime\n• (<Measles Mumps Rubella>):it is advised that  most adults should have  2 doses of this vaccine\n• (<HPV>): recommended for all females and males from ages 9 to 26. The vaccine is also safe over age 26. [[more; https://www.reframehealthlab.com/should-you-get-the-hpv-vaccine/]]\n• (<Influenza>): is recommended for all adults. For high risk groups see CanImmunize app\n• (<Pneumococcal, varicella, meningococcal are recommended for some high risk groups>) seeCANImmunize app\n\n{{AGE 50+}}\nNACI recommends offering a Shingles vaccine starting at 50, Shingrix preferred, but in most provinces the patient will need to pay for this in this age group.\n[[NACI 2018; https://www.canada.ca/en/public-health/services/reports-publications/canada-communicable-disease-report-ccdr/monthly-issue/2018-44/issue-9-september-6-2018/article-6-2018-naci-update-herpes-zoster-vaccines.html]]\n\n{{AGE 60+}}\nShingles vaccine if not already received , see info above. Check if covered in your province.\n\n{{AGE 65+}}\n(<Shingles vaccine>) if not already given.\n• Yukon and Ontario cover Shingrix from 65-70. \n• For other provinces Zostavax  may be covered , check your provincial schedule\n(<Pneumococcal>)\nPNEU-P-23 advised for all immunocompetent,\nrepeat once in 5 years only if low immunity.\n\n(< Influenza>) yearly\n\nSOURCE: [[NACI; https://www.canada.ca/en/public-health/services/immunization/national-advisory-committee-on-immunization-naci.html]]",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
@@ -783,7 +653,7 @@
     "Button": "Needle in arm",
     "Topic heading": "Immunization",
     "Subject": "Get immunized",
-    "General Patient Text": "For best information download the [[app CanImmunize; https://www.canimmunize.ca/en/home]]\n\nAGE 18-49:\nThis schedule assumes the patient has  been vaccinated in childhood\n•\tTd (Tetanus-diphtheria) every 10 years\n•\tTdap(Tetanus,diphtheria, acellular pertussis or whooping cough):once in your lifetime\n•\tMeasles Mumps Rubella:it is advised that  most adults should have  2 doses of this vaccine\n•\tHPV: recommended for all females and males from ages 9 to 26. The vaccine is also safe over age 26. [[more; https://www.reframehealthlab.com/should-you-get-the-hpv-vaccine/]]\n•\tInfluenza: is recommended for all adults. For high risk groups see CanImmunize app\n•\tPneumococcal, varicella,  meningococcal,shingles are recommended for some high risk groups seeCANImmunize app",
+    "General Patient Text": "For best information download the [[app CanImmunize; https://www.canimmunize.ca/en/home]]\n\n{{AGE 18-49}}\nThis schedule assumes you have been vaccinated in childhood\n•\t(<Td>) (Tetanus-diphtheria)(<every 10 years>)\n•\t(<Tdap>)(Tetanus,diphtheria, acellular pertussis or whooping cough):(<once in your lifetime>)\n•\t(<Measles Mumps Rubella>):it is advised that  most adults should have  2 doses of this vaccine\n•\t(<HPV>): recommended for all females and males from ages 9 to 26. The vaccine is also safe over age 26. [[more; https://www.reframehealthlab.com/should-you-get-the-hpv-vaccine/]]\n•\t(<Influenza>): is recommended for all adults. For high risk groups see CanImmunize app\n•\tPneumococcal, varicella,  meningococcal,shingles are recommended for some high risk groups seeCANImmunize app",
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
@@ -793,7 +663,7 @@
     "Button": "Needle in arm",
     "Topic heading": "Immunization",
     "Subject": "Get immunized",
-    "General Patient Text": "•\tFor best information download the [[app CanImmunize; https://www.canimmunize.ca/en/home]]\n\nAGE 50 and over:\nThis schedule assumes the patient has  been vaccinated in childhood\n•\tTd (Tetanus-diphtheria) every 10 years\n•\tTdap(Tetanus,diphtheria, acellular pertussis or whooping cough): once in your lifetime\n•\tMeasles Mumps Rubella:it is advised that  most adults should have  2 doses of this vaccine\n•\tInfluenza: is recommended for all adults. For high risk groups see CanImmunize app\n•\tPneumococcal, varicella,  meningococcal are recommended for some high risk groups seeCANImmunize app\n•\tShingles vaccine: \nThere are 2 vaccines against shingles: Shingrix and Zostavax. These vaccines are recommended at age 50 and above, but many provinces only pay for one or the other at later ages. Check with your provider.\nStudies show that Shingrix lasts longer for 50 and over but you may have to pay for this asmost provinces not funding yet \n\nAGE 60 and over:\n•\tVaccines against Shingles: Shingrix or Zostavax\nSome studies show that Shingrix is more effective.\n2 provinces cover the costs of  Shingrix at this time: Yukon and Ontario: for patients aged 65 to 70. Check with your health care provider as this may change and it is important to get vaccinated against shingles to prevent complications.\n\nAGE 65 and over: \n•\tShingles vaccine: get it if you have not received it yet.\n•\tPneumococca : Pneumococcal 23 is paid for by your province,Pneumococcal 13 may not be paid for by your province. Discuss with your doctor\n•\tInfluenza yearly",
+    "General Patient Text": "•\tFor best information download the [[app CanImmunize; https://www.canimmunize.ca/en/home]]\n\n{{AGE 50 and over}}:\nThis schedule assumes the patient has  been vaccinated in childhood\n•\t(<Td>) (Tetanus-diphtheria) every 10 years\n•\t(<Tdap>)(Tetanus,diphtheria, acellular pertussis or whooping cough): once in your lifetime\n•\t(<Measles Mumps Rubella>):it is advised that  most adults should have  2 doses of this vaccine\n•\t(<Influenza>): is recommended for all adults. For high risk groups see CanImmunize app\n•\tPneumococcal, varicella,  meningococcal are recommended for some high risk groups seeCANImmunize app\n•\t(<Shingles vaccine>): \nThere are 2 vaccines against shingles: Shingrix and Zostavax. These vaccines are recommended at age 50 and above, but many provinces only pay for one or the other at later ages. Check with your provider.\nStudies show that Shingrix lasts longer for 50 and over but you may have to pay for this asmost provinces not funding yet \n\n{{AGE 60 and over}}:\n•\tVaccines against Shingles: Shingrix or Zostavax\nSome studies show that Shingrix is more effective.\n2 provinces cover the costs of  Shingrix at this time: Yukon and Ontario: for patients aged 65 to 70. Check with your health care provider as this may change and it is important to get vaccinated against shingles to prevent complications.\n\n{{AGE 65 and over}}: \n•\t(<Shingles vaccine>): get it if you have not received it yet.\n•\t(<Pneumococcal>) : Pneumococcal 23 is paid for by your province,Pneumococcal 13 may not be paid for by your province. Discuss with your doctor\n•\t(<Influenza yearly>)",
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 50,
@@ -802,7 +672,7 @@
   {
     "Button": "Needle in arm",
     "Topic heading": "Immunization",
-    "Subject": "Get immunized",
+    "Subject": "Shingles vaccine",
     "General Patient Text": "•\tShingles is a disease that can cause permanent pain and eye problems. There are 2 vaccines against shingles: Shingrix and Zostavax.\n\n•\tThese vaccines are recommended starting at 50 years old but most provinces pay for them only at later ages. Discuss this with your health care provider.\n\n•\tStudies show that Shingrix is more effective.\n2 provinces cover Shingrix currently: Yukon and Ontario for patients aged 65 to 70. Check with your health care provider which vaccine is covered in your province and when . It is mportant to get vaccinated to prevent complications",
     "Health Provider Text": "n/a",
     "Gender": "all",
@@ -974,7 +844,7 @@
     "Topic heading": "Physical Activity",
     "Subject": "Recommendations",
     "General Patient Text": "n/a",
-    "Health Provider Text": "Physical activity prevents heart disease, cancer, depression and [[more; https://www.reframehealthlab.com/23-and-12-hours/]].\n\nThe recommended minimum amount of physical activity\nis 150 minutes a week of moderate intensity exercise. \nDefinition of moderate intensity:\nwhile you are active you have enough breath to say a short sentence but  not enough to sing.",
+    "Health Provider Text": "Physical activity prevents heart disease, cancer, depression and [[more; https://www.reframehealthlab.com/23-and-12-hours/]].\n\nThe recommended minimum amount of physical activity\nis 150 minutes a week of moderate intensity exercise (CSEP 2019 ,see \"References\")\nDefinition of moderate intensity:\nwhile you are active you have enough breath to say a short sentence but  not enough to sing.",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
@@ -984,7 +854,7 @@
     "Topic heading": "Physical Activity",
     "Subject": "References/Handouts",
     "General Patient Text": "n/a",
-    "Health Provider Text": "•[[Guideline for age 18-64; https://csepguidelines.ca/guidelines/adults-18-64/]]\n•[[Guideline for age 65+; https://csepguidelines.ca/guidelines/adults-65/]]\n\n•[[medical reference; http://www.cmaj.ca/content/174/6/801.full.pdf+html]]",
+    "Health Provider Text": "•[[2019 Guideline for age 18-64; https://csepguidelines.ca/guidelines/adults-18-64/]]\n•[[2019 Guideline for age 65+ ; https://csepguidelines.ca/guidelines/adults-65/]]\n•[[Tool for primary care; https://csepguidelines.ca/wp-content/uploads/2022/09/Whole-Day-Matters-Toolkit-Primary-Care_EN.pdf]]\n•[[medical reference; http://www.cmaj.ca/content/174/6/801.full.pdf+html]]",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
@@ -1352,7 +1222,7 @@
   {
     "Button": "braingear",
     "Topic heading": "Mental Health",
-    "Subject": "Resources to practice mindfulness",
+    "Subject": "Free resources to practice mindfulness",
     "General Patient Text": "•\t[[Mindshift; https://www.anxietycanada.com/resources/mindshift-cbt]]; to build skills for managing anxiety and depression\n•\t[[Headspace; https://www.headspace.com/mindfulness]]\n•\t[[Insight timer; https://insighttimer.com/]]",
     "Health Provider Text": "N/A",
     "Gender": "all",
@@ -1434,7 +1304,7 @@
     "Topic heading": "Money Issues",
     "Subject": "Food, housing , other",
     "General Patient Text": "n/a",
-    "Health Provider Text": "(<Go to [[211.ca; https://211.ca]] for info on food, housing, finanical assistance and more>).\nEnter patient's postal code to find local resources eg food banks.\nPatients can phone to get help navigating or text (time restrictions may apply to texting)\nNot all areas covered by 211. Investigate your local resources if 211 not available and keep a list or if possible refer to a social worker or other resourcce.",
+    "Health Provider Text": "•Ask 1 screening question: \"Do you ever have difficulty making ends meet at the end of the month?\" \n[[Resource; https://www.cfpc.ca/CFPC/media/Resources/Poverty/Poverty_flow-Tool-Final-2016v4-Ontario.pdf]]\n\n•(<Go to [[211.ca; https://211.ca]] for info on food, housing, finanical assistance and more>).\nEnter patient's postal code to find local resources eg food banks.\nPatients can phone to get help navigating or text (time restrictions may apply to texting)\n\nNot all areas covered by 211. Investigate your local resources if 211 not available and keep a list or if possible refer to a social worker or other resource.\n\n•[[Ref on Social prescribing; https://www.cmaj.ca/content/cmaj/193/44/E1696.full.pdf]]",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
