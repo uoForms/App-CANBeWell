@@ -404,7 +404,7 @@
     "Topic heading": "Diabetes Type 2",
     "Subject": "Screen for Diabetes",
     "General Patient Text": "n/a",
-    "Health Provider Text": "Using a calculator is evidence-based (2016 CTFPHC).\nYour patient can be emailed this questionnaire or it can be filled in the waiting room.\n•\t[[FINDRISC online calculator; https://qxmd.com/calculate/calculator_236/findrisc-diabetes-risk-calculator]]\n•\t[[FINDRISC pdf; https://canadiantaskforce.ca/tools-resources/type-2-diabetes-2/type-2-diabetes-patient-findrisc/]]\n\nor \n•\t[[CANRISK online calculator;  https://diabetes.ca/about-diabetes/take-the-test]]\n•\t[[CANRISK pdf  available in different languages; https://canadiantaskforce.ca/tools-resources/type-2-diabetes-2/type-2-diabetes-canrisk/]]",
+    "Health Provider Text": "Using a calculator is evidence-based (2016 CTFPHC).\nYour patient can be emailed this questionnaire or it can be filled in the waiting room.\n•            [[FINDRISC online calculator; https://qxmd.com/calculate/calculator_236/findrisc-diabetes-risk-calculator]]\n•\t[[FINDRISC pdf; https://canadiantaskforce.ca/tools-resources/type-2-diabetes-2/type-2-diabetes-patient-findrisc/]]\n\nor \n•\t[[CANRISK online calculator;  https://diabetes.ca/about-diabetes/take-the-test]]\n•\t[[CANRISK pdf  available in different languages; https://canadiantaskforce.ca/tools-resources/type-2-diabetes-2/type-2-diabetes-canrisk/]]\n•\t[[Canadian Diabetes Assoc 2018 screening guideline; https://guidelines.diabetes.ca/cpg/chapter4]]",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
@@ -667,7 +667,7 @@
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 50,
-    "Maximum age": 64
+    "Maximum age": 150
   },
   {
     "Button": "Needle in arm",
@@ -676,7 +676,7 @@
     "General Patient Text": "•\tShingles is a disease that can cause permanent pain and eye problems. There are 2 vaccines against shingles: Shingrix and Zostavax.\n\n•\tThese vaccines are recommended starting at 50 years old but most provinces pay for them only at later ages. Discuss this with your health care provider.\n\n•\tStudies show that Shingrix is more effective.\n2 provinces cover Shingrix currently: Yukon and Ontario for patients aged 65 to 70. Check with your health care provider which vaccine is covered in your province and when . It is mportant to get vaccinated to prevent complications",
     "Health Provider Text": "n/a",
     "Gender": "all",
-    "Minimum age": 71,
+    "Minimum age": 50,
     "Maximum age": 150
   },
   {
@@ -688,16 +688,6 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-  },
-  {
-    "Button": "Needle in arm",
-    "Topic heading": "Immunization",
-    "Subject": "Get immunized",
-    "General Patient Text": "For best information download the [[app CanImmunize; https://www.canimmunize.ca/en/home]]\n\nAGE 50 and over:\nThis schedule assumes the patient has  been vaccinated in childhood\n•\tTd (Tetanus-diphtheria) every 10 years\n•\tTdap(Tetanus,diphtheria, acellular pertussis or whooping cough):once in your lifetime\n•\tMeasles Mumps Rubella:it is advised that  most adults should have  2 doses of this vaccine\n•\tInfluenza: is recommended for all adults. For high risk groups see CanImmunize app\n•\tPneumococcal, varicella,  meningococcal are recommended for some high risk groups seeCANImmunize app\n•\tShingles vaccine: \nShingrix recommended for 50 and over but you may have to pay for this most provinces not funding yet [[Shingrix; https://www.cdc.gov/vaccines/vpd/shingles/public/shingrix/index.html]]\n\nAGE 60 and over:\n•\tShingles vaccine: Shingrix or Zostavax, your province may cover Zostavax but not Shingrix,discuss with your provider [[more info; https://www.cdc.gov/vaccines/vpd/shingles/public/shingrix/index.html]]\nAGE 65 and over: \n•\tPneumococca : Pneumococcal 23 is paid for by your province,Pneumococcal 13 may not be paid for by your province. Discuss with your doctor\n•\tInfluenza yearly\n\nIf you live in Ontario, you are eligible for the publicly funded Shingrix vaccine (two-dose series), if you have not received the Zostavax II vaccine through the Ontario publicly funded shingles immunization program.",
-    "Health Provider Text": "Ontario seniors ages 65 to 70 years are eligible for the publicly funded Shingrix vaccine (Two-doses series), provided they have not received the Zostavax® II vaccine through the Ontario publicly funded shingles immunization program.",
-    "Gender": "all",
-    "Minimum age": 65,
-    "Maximum age": 70
   },
   {
     "Button": "Liver",
