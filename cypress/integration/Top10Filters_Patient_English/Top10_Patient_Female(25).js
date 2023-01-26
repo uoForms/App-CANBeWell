@@ -1,0 +1,37 @@
+it('icanbewell', () => {
+    cy.visit('http://localhost:3000/#');
+    cy.wait(3000);
+    cy.get('[test-id="en-redirect-button"]').click();
+    cy.wait(3000);
+    cy.get('[test-id="ageForm"]').type('25');
+    cy.wait(3000);
+    cy.get('[test-id="femaleRadioLabel"]').click();
+    cy.wait(3000);
+    cy.get('[test-id="birthfemaleLabel"]').click();
+    cy.wait(3000);
+    cy.get('[test-id="okButtonTop"]').click();
+    cy.wait(3000);
+
+    cy.get('[test-id="topic"]').click();
+    cy.contains('Be Active');
+    cy.wait(3000);
+    cy.contains('Nutrition');
+    cy.wait(3000);
+    cy.contains('Immunization');
+    cy.wait(3000);
+    cy.contains('Blood Pressure');
+    cy.wait(3000);
+    cy.contains('Diabetes Type 2');
+    cy.wait(3000);
+    cy.contains('Sexual and Reproductive Health');
+    cy.wait(3000);
+    cy.contains('Liver/Alcohol/Drugs');
+    cy.wait(3000);
+    cy.contains('Mental Health');
+    cy.wait(3000);
+    cy.contains('Sun Exposure');
+    cy.wait(3000);
+    cy.contains('Nutrition, Vitamins');
+    cy.wait(3000);
+    cy.clearCookies();
+});
