@@ -10,7 +10,7 @@
     "runMode": 3,
     "openMode": 0
   },
-  "fixturesFolder": false,
+  "fixturesFolder": "cypress/fixtures",
   "video": false,
   "defaultCommandTimeout": 10000,
   "responseTimeout": 120000
