@@ -1,15 +1,13 @@
-//broken-link1.cy.js
-
-describe('Test External Links', () => {
-    it('should verify links', () => {
-      cy.fixture('links').then((data) => {
-        for (var index in data) {
-          cy.log(data[index].url)
-          cy.request({
-            url:data[index].url,
-            failOnStatusCode: false
+describe('Check broken links', () => {
+  it('Validate URLs from JSON file', () => {
+    cy.fixture('links.json').then(links => {
+      links.forEach(link => {
+        cy.request({
+          method: 'GET',
+          url: link.url,
+          failOnStatusCode: false
+              })
           })
-        }
       })
-    })
   })
+})
