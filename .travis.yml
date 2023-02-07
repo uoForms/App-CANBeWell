@@ -1,11 +1,18 @@
+#We use node.js libraries of tools for testing, building and automating React applications.
 language: node_js
+
 node_js:
   - 14
+
 before_install:
+
+#install yarn package and firebase tools.
 - curl --compressed -o- -L https://yarnpkg.com/install.sh | bash
 - export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 # - yarn global add firebase-tools
 - npm install -g firebase-tools
+
+#Check for the JSON files for the content.
 - rm -r ./src/JSONFolder
 - mkdir ./src/JSONFolder
 - curl -L -o ./src/JSONFolder/HtmlTopic-EN.json "https://drive.google.com/uc?export=download&id=1KmTemPnVDmXcxMKrJ48y0jAoG5MYl58f"
@@ -15,13 +22,17 @@ before_install:
 - curl -L -o ./src/JSONFolder/FilterTopic-EN.json "https://drive.google.com/uc?export=download&id=1DjHKNvr8jD4GoZhqRmDwm9P1ZnWajGJ7"
 - curl -L -o ./src/JSONFolder/FilterTopic-FR.json "https://drive.google.com/uc?export=download&id=1NcAl0Xjdm4lcKTRPz56PoFtm737_bm-B"
 
-
+#install the dependencies (mentioned in yarn.lock file) with the right versions.
 install:
 - yarn install
 - CI=false yarn build
+
+#caching the modules required for node.
 cache:
   directories:
   - node_modules
+
+#deploying the web app by running commands from deploy.sh file whenever code is merged in master branch
 deploy:
   skip_cleanup: true
   provider: script
