@@ -1,27 +1,575 @@
 [
-
   {
-
-    "url": "http://alzheimer.ca/en/Home/About-dementia/What-is-dementia/Normal-aging-vs-dementia "
-
+    "url": "http://alzheimer.ca/en/Home/About-dementia/What-is-dementia/Normal-aging-vs-dementia"
   },
-
   {
-
-    "url": "http://alzheimer.ca/en/Home/About-dementia/What-is-dementia "
-
+    "url": "http://alzheimer.ca/en/Home/About-dementia/What-is-dementia"
   },
-
   {
-
     "url": "http://alzheimer.ca/en/simcoecounty/About-dementia/Alzheimer-s-disease/Risk-factors"
-
   },
-
   {
-
     "url": "http://jandonline.org/article/S2212-2672(14)01871-1/fulltext"
-
+  },
+  {
+    "url": "http://nada.ca/?page_id=1563"
+  },
+  {
+    "url": "http://nada.ca/"
+  },
+  {
+    "url": "http://thehub.utoronto.ca/family/wp-content/uploads/2016/12/Preconception_Health_Care_Tool.pdf"
+  },
+  {
+    "url": "http://www.bccancer.bc.ca/our-research/participate/lung-health"
+  },
+  {
+    "url": "http://www.cancer.ca/en/cancer-information/cancer-type/breast/risks/?region=on"
+  },
+  {
+    "url": "http://www.cancer.ca/en/cancer-information/cancer-type/cervical/cervical-cancer/?region=on"
+  },
+  {
+    "url": "http://www.cancer.ca/en/cancer-information/cancer-type/cervical/risks/reducing-your-risk/?region=on"
+  },
+  {
+    "url": "http://www.cancer.ca/en/cancer-information/cancer-type/cervical/screening/?region=on"
+  },
+  {
+    "url": "http://www.cancer.ca/en/cancer-information/cancer-type/colorectal/risks/reducing-your-risk/?region=on"
+  },
+  {
+    "url": "http://www.cancer.ca/en/cancer-information/cancer-type/prostate/prostate-cancer/?region=on"
+  },
+  {
+    "url": "http://www.cancer.ca/en/cancer-information/cancer-type/prostate/risks/?region=on"
+  },
+  {
+    "url": "http://www.cfp.ca/content/62/9/717"
+  },
+  {
+    "url": "http://www.cfp.ca/content/cfp/61/10/857.full.pdf"
+  },
+  {
+    "url": "http://www.cfp.ca/content/cfp/61/10/857.full.pdf"
+  },
+  {
+    "url": "http://www.cmaj.ca/content/174/6/801.full.pdf+html"
+  },
+  {
+    "url": "http://www.cmaj.ca/content/cmaj/early/2010/10/12/cmaj.100771.full.pdf"
+  },
+  {
+    "url": "http://www.healthycanadians.gc.ca/eating-nutrition/healthy-eating-saine-alimentation/tips-conseils/interactive-tools-outils-interactifs/eat-well-bien-manger-eng.php"
+  },
+  {
+    "url": "http://www.onlinecjc.ca/article/S0828-282X(16)30732-2/pdf"
+  },
+  {
+    "url": "http://www.sexandu.ca/"
+  },
+  {
+    "url": "http://www.smokershelpline.ca/"
+  },
+  {
+    "url": "https://211.ca"
+  },
+  {
+    "url": "https://academic.oup.com/jcem/article/102/11/3869/4157558"
+  },
+  {
+    "url": "https://apps.who.int/iris/bitstream/handle/10665/128048/9789241507431_e"
+  },
+  {
+    "url": "https://apps.who.int/iris/bitstream/handle/10665/128048/9789241507431_eng.pdf?sequence=1"
+  },
+  {
+    "url": "https://c2-preview.prosites.com/187380/wy/docs/COSVisionScreeningCPGEng_Feb07.pdf"
+  },
+  {
+    "url": "https://canadiantaskforce.ca/guidelines/appraised-guidelines/hiv/"
+  },
+  {
+    "url": "https://canadiantaskforce.ca/guidelines/appraised-guidelines/melanoma/"
+  },
+  {
+    "url": "https://canadiantaskforce.ca/guidelines/published-guidelines/abdominal-aortic-aneurysm/"
+  },
+  {
+    "url": "https://canadiantaskforce.ca/guidelines/published-guidelines/breast-cancer-update/"
+  },
+  {
+    "url": "https://canadiantaskforce.ca/guidelines/published-guidelines/cervical-cancer/"
+  },
+  {
+    "url": "https://canadiantaskforce.ca/guidelines/published-guidelines/chlamydia-and-gonorrhea/"
+  },
+  {
+    "url": "https://canadiantaskforce.ca/guidelines/published-guidelines/colorectal-cancer/"
+  },
+  {
+    "url": "https://canadiantaskforce.ca/guidelines/published-guidelines/depression/"
+  },
+  {
+    "url": "https://canadiantaskforce.ca/guidelines/published-guidelines/hypertension/"
+  },
+  {
+    "url": "https://canadiantaskforce.ca/guidelines/published-guidelines/lung-cancer/"
+  },
+  {
+    "url": "https://canadiantaskforce.ca/tools-resources/breast-cancer-2/breast-cancer-risks-benefits-age-40-49/"
+  },
+  {
+    "url": "https://canadiantaskforce.ca/tools-resources/chlamydia-and-gonorrhea-patient-faq/"
+  },
+  {
+    "url": "https://canadiantaskforce.ca/tools-resources/cognitive-impairment-2/cognitive-impairment-clinician-faq/"
+  },
+  {
+    "url": "https://canadiantaskforce.ca/tools-resources/colorectal-cancer-for-patients-2/"
+  },
+  {
+    "url": "https://canadiantaskforce.ca/tools-resources/type-2-diabetes-2/type-2-diabetes-canrisk/"
+  },
+  {
+    "url": "https://canadiantaskforce.ca/tools-resources/type-2-diabetes-2/type-2-diabetes-patient-findrisc/"
+  },
+  {
+    "url": "https://canadiantaskforce.ca/wp-content/uploads/2016/05/2014-prostate-cancer-patient-faq-colour-en.pdf"
+  },
+  {
+    "url": "https://canadiantaskforce.ca/wp-content/uploads/2016/12/CTFPHC_Prostate-Cancer_HarmsBenefits_FINAL.pdf"
+  },
+  {
+    "url": "https://canadiantaskforce.ca/wp-content/uploads/2017/04/CTFPHC_Hepatitis-C_Clinician-FAQ_v10_FINAL-1.pdf"
+  },
+  {
+    "url": "https://canadiantaskforce.ca/wp-content/uploads/2020/04/CTFPHC_Impaired-Vision_Clinican-FAQ_Final.pdf"
+  },
+  {
+    "url": "https://cancer.ca/en/cancer-information/reduce-your-risk/have-a-healthy-body-weight/reduce-your-risk-of-cancer-with-a-healthy-body-weight"
+  },
+  {
+    "url": "https://ccs.ca/calculators-and-forms/"
+  },
+  {
+    "url": "https://cep.health/clinical-products/covid-19-vaccines/"
+  },
+  {
+    "url": "https://choosingwiselycanada.org/bone-density-tests/"
+  },
+  {
+    "url": "https://choosingwiselycanada.org/family-medicine/"
+  },
+  {
+    "url": "https://choosingwiselycanada.org/health-check-ups/"
+  },
+  {
+    "url": "https://choosingwiselycanada.org/pamphlet/bone-density-tests/"
+  },
+  {
+    "url": "https://choosingwiselycanada.org/rheumatology/"
+  },
+  {
+    "url": "https://csepguidelines.ca/"
+  },
+  {
+    "url": "https://csepguidelines.ca/guidelines/adults-18-64/"
+  },
+  {
+    "url": "https://csepguidelines.ca/guidelines/adults-65/"
+  },
+  {
+    "url": "https://csepguidelines.ca/wp-content/uploads/2020/11/PA-24HGuidelines-ENG-Adults-18-64-2.png"
+  },
+  {
+    "url": "https://csepguidelines.ca/wp-content/uploads/2020/11/PA-24HGuidelines-ENG-Adults-65plus-2.png"
+  },
+  {
+    "url": "https://csepguidelines.ca/wp-content/uploads/2022/09/Whole-Day-Matters-Toolkit-Primary-Care_EN.pdf"
+  },
+  {
+    "url": "https://cvdcalculator.com/"
+  },
+  {
+    "url": "https://dfcm.utoronto.ca/confused-about-covid"
+  },
+  {
+    "url": "https://diabetes.ca/about-diabetes/take-the-test"
+  },
+  {
+    "url": "https://digem.med.ubc.ca/covid-19-multilingual-resources/"
+  },
+  {
+    "url": "https://food-guide.canada.ca/en/"
+  },
+  {
+    "url": "https://guidelines.diabetes.ca/cpg/chapter4"
+  },
+  {
+    "url": "https://guidelines.hypertension.ca/diagnosis-assessment/diagnosis-assessment-diagnosis/"
+  },
+  {
+    "url": "https://guidelines.hypertension.ca/diagnosis-assessment/measuring-blood-pressure/"
+  },
+  {
+    "url": "https://guidelines.hypertension.ca/wp-content/uploads/2022/09/HTC_Brochure_UnderstandingBP_2018_R3.pdf"
+  },
+  {
+    "url": "https://hypertension.ca/wp-content/uploads/2020/03/BPM-Postcard-Front.jpg"
+  },
+  {
+    "url": "https://hypertension.ca/wp-content/uploads/2020/10/2020-22-HT-Guidelines-E-WEB_v3b.pdf"
+  },
+  {
+    "url": "https://insighttimer.com/"
+  },
+  {
+    "url": "https://jamanetwork.com/collections/46099/coronavirus-covid19"
+  },
+  {
+    "url": "https://myhealth.alberta.ca/Health/aftercareinformation/pages/conditions.aspx?hwid=abq1915"
+  },
+  {
+    "url": "https://myhealth.alberta.ca/health/pages/conditions.aspx?Hwid=abq4925"
+  },
+  {
+    "url": "https://myhealthcheckup.com"
+  },
+  {
+    "url": "https://osteoporosis.ca/calcium-calculator/"
+  },
+  {
+    "url": "https://osteoporosis.ca/calcium/"
+  },
+  {
+    "url": "https://osteoporosis.ca/exercise/"
+  },
+  {
+    "url": "https://osteoporosis.ca/nutrition/"
+  },
+  {
+    "url": "https://osteoporosis.ca/video-series-on-exercise-and-osteoporosis/"
+  },
+  {
+    "url": "https://osteoporosis.ca/vitamin-d/"
+  },
+  {
+    "url": "https://osteostrategy.on.ca/wp-content/uploads/Osteoporosis-Assessment-Tool_REV7_Dec-2018.pdf"
+  },
+  {
+    "url": "https://parachute.ca/en/professional-resource/seniors-falls-collection/"
+  },
+  {
+    "url": "https://plus.mcmaster.ca/COVID-19"
+  },
+  {
+    "url": "https://primarycare.ementalhealth.ca/index.php?m=fpStart"
+  },
+  {
+    "url": "https://primarycare.ementalhealth.ca/index.php?m=surveyList"
+  },
+  {
+    "url": "https://qxmd.com/calculate/calculator_236/findrisc-diabetes-risk-calculator"
+  },
+  {
+    "url": "https://strwebstgmedia.blob.core.windows.net/media/libmnjci/transgender-people-and-osteoporosis-fact-sheet-march-2018.pdf"
+  },
+  {
+    "url": "https://transcare.ucsf.edu/guidelines/cardiovascular"
+  },
+  {
+    "url": "https://transcare.ucsf.edu/guidelines/cervical-cancer"
+  },
+  {
+    "url": "https://transcare.ucsf.edu/guidelines/physical-examination"
+  },
+  {
+    "url": "https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf"
+  },
+  {
+    "url": "https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf"
+  },
+  {
+    "url": "https://www.afn.ca/coronavirus/#factsheet"
+  },
+  {
+    "url": "https://www.ajpmonline.org/article/S0749-3797(18)31759-8/fulltext"
+  },
+  {
+    "url": "https://www.anxietycanada.com/resources/mindshift-cbt"
+  },
+  {
+    "url": "https://www.bmj.com/coronavirus"
+  },
+  {
+    "url": "https://www.caddra.ca/public-information/adults/forms/"
+  },
+  {
+    "url": "https://www.cag-acg.org/images/publications/CAG_CPG_CRC_Screening_Aug2018.pdf"
+  },
+  {
+    "url": "https://www.camh.ca/-/media/files/canadas-low-risk-guidelines-pdf.pdf"
+  },
+  {
+    "url": "https://www.camh.ca/-/media/files/covid19-booklet-good-nights-sleep-pdf.pdf"
+  },
+  {
+    "url": "https://www.canada.ca/content/dam/phac-aspc/migration/phac-aspc/seniors-aines/alt-formats/pdf/publications/public/injury-blessure/prevent-eviter/prevent-eviter-e.pdf"
+  },
+  {
+    "url": "https://www.canada.ca/en/health-canada/services/smoking-tobacco/quit-smoking/provincial-territorial-services.html"
+  },
+  {
+    "url": "https://www.canada.ca/en/health-canada/services/substance-use/get-help/get-help-problematic-substance-use.html"
+  },
+  {
+    "url": "https://www.canada.ca/en/health-canada/services/sun-safety/tanning-beds-lamps.html"
+  },
+  {
+    "url": "https://www.canada.ca/en/public-health/services/chronic-diseases/osteoporosis.html"
+  },
+  {
+    "url": "https://www.canada.ca/en/public-health/services/chronic-diseases/osteoporosis.html"
+  },
+  {
+    "url": "https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/health-professionals.html"
+  },
+  {
+    "url": "https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/symptoms/provincial-territorial-resources-covid-19.html"
+  },
+  {
+    "url": "https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19.html"
+  },
+  {
+    "url": "https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/resources-older-adults-caregivers.html"
+  },
+  {
+    "url": "https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/vaccines/how-vaccinated.html#a1"
+  },
+  {
+    "url": "https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/vaccines/overview.html"
+  },
+  {
+    "url": "https://www.canada.ca/en/public-health/services/hiv-aids/hiv-screening-testing-guide.html"
+  },
+  {
+    "url": "https://www.canada.ca/en/public-health/services/immunization/national-advisory-committee-on-immunization-naci.html"
+  },
+  {
+    "url": "https://www.canada.ca/en/public-health/services/infectious-diseases/sexual-health-sexually-transmitted-infections/sexually-transmitted-infections-sexual-health-facts-information-public.html#geninfo"
+  },
+  {
+    "url": "https://www.canada.ca/en/public-health/services/pregnancy/folic-acid.html#a4"
+  },
+  {
+    "url": "https://www.canada.ca/en/public-health/services/pregnancy/folic-acid.html"
+  },
+  {
+    "url": "https://www.canada.ca/en/public-health/services/publications/diseases-conditions/booklet-sexually-transmitted-infections.html#_4.5"
+  },
+  {
+    "url": "https://www.canada.ca/en/public-health/services/publications/diseases-conditions/booklet-sexually-transmitted-infections.html#_7.0"
+  },
+  {
+    "url": "https://www.canada.ca/en/public-health/services/publications/diseases-conditions/booklet-sexually-transmitted-infections.html"
+  },
+  {
+    "url": "https://www.canada.ca/en/public-health/services/publications/healthy-living/canadian-immunization-guide-part-4-active-vaccines/page-26-covid-19-vaccine.html"
+  },
+  {
+    "url": "https://www.canada.ca/en/public-health/services/publications/healthy-living/update-recommended-human-papillomavirus-vaccine-immunization-schedule.html#sum"
+  },
+  {
+    "url": "https://www.canada.ca/en/public-health/services/reports-publications/canada-communicable-disease-report-ccdr/monthly-issue/2018-44/issue-9-september-6-2018/article-6-2018-naci-update-herpes-zoster-vaccines.html"
+  },
+  {
+    "url": "https://www.canada.ca/en/public-health/services/sun-safety/skin-cancer.html"
+  },
+  {
+    "url": "https://www.canada.ca/en/public-health/services/video/covid-19-how-vaccines-developed.html"
+  },
+  {
+    "url": "https://www.cancer.ca/en/prevention-and-screening/reduce-cancer-risk/find-cancer-early/get-screened-for-breast-cancer/at-high-risk-for-breast-cancer/?region=on"
+  },
+  {
+    "url": "https://www.cancer.ca/en/prevention-and-screening/reduce-cancer-risk/find-cancer-early/screening-in-lgbtq-communities/trans-men-and-cervical-cancer-screening/?region=on"
+  },
+  {
+    "url": "https://www.cancer.ca/en/prevention-and-screening/reduce-cancer-risk/find-cancer-early/screening-in-lgbtq-communities/trans-men-and-chest-cancer-screening/?region=on"
+  },
+  {
+    "url": "https://www.cancer.ca/en/prevention-and-screening/reduce-cancer-risk/find-cancer-early/screening-in-lgbtq-communities/trans-women-and-breast-cancer-screening/?region=bc"
+  },
+  {
+    "url": "https://www.cancer.ca/en/prevention-and-screening/reduce-cancer-risk/find-cancer-early/screening-in-lgbtq-communities/trans-women-and-breast-cancer-screening/?region=on/"
+  },
+  {
+    "url": "https://www.cancer.ca/en/prevention-and-screening/reduce-cancer-risk/find-cancer-early/screening-in-lgbtq-communities/trans-women-and-cervical-cancer-screening/?region=on"
+  },
+  {
+    "url": "https://www.cancercareontario.ca/en/cancer-care-ontario/programs/screening-programs/ontario-lung-screening-program"
+  },
+  {
+    "url": "https://www.cancercareontario.ca/en/guidelines-advice/cancer-continuum/screening/lung-cancer-screening-information"
+  },
+  {
+    "url": "https://www.canimmunize.ca/en/home"
+  },
+  {
+    "url": "https://www.cdc.gov/teenpregnancy/pdf/Teen-Condom-Fact_Sheet-English-March-2016.pdf"
+  },
+  {
+    "url": "https://www.cfp.ca/content/cfp/65/3/195.full.pdf"
+  },
+  {
+    "url": "https://www.cfp.ca/content/cfp/65/8/543.full.pdf"
+  },
+  {
+    "url": "https://www.cfpc.ca/CFPC/media/Resources/Poverty/Poverty_flow-Tool-Final-2016v4-Ontario.pdf"
+  },
+  {
+    "url": "https://www.cmaj.ca/content/cmaj/193/44/E1696.full.pdf"
+  },
+  {
+    "url": "https://www.cmaj.ca/covid-19"
+  },
+  {
+    "url": "https://www.crisisservicescanada.ca/en/"
+  },
+  {
+    "url": "https://www.diabetes.ca/managing-my-diabetes/tools---resources/reducing-vascular-risk"
+  },
+  {
+    "url": "https://www.diabetes.ca/nutrition---fitness"
+  },
+  {
+    "url": "https://www.diabetes.ca/static/bmi-calculator.html"
+  },
+  {
+    "url": "https://www.ementalhealth.ca/Ottawa-Carleton/Sleep-Problems-Try-Cutting-Back-on-Your-Blue-Light/index.php?m=article&ID=62333"
+  },
+  {
+    "url": "https://www.ementalhealth.ca/index.php?m=headingInfoSheets&ID=189"
+  },
+  {
+    "url": "https://www.gov.uk/government/publications/nhs-population-screening-information-for-transgender-people"
+  },
+  {
+    "url": "https://www.headspace.com/mindfulness"
+  },
+  {
+    "url": "https://www.healthlinkbc.ca/illnesses-conditions/fatigue-and-sleep/insomnia"
+  },
+  {
+    "url": "https://www.heartandstroke.ca/get-healthy/healthy-eating"
+  },
+  {
+    "url": "https://www.heartandstroke.ca/heart/risk-and-prevention"
+  },
+  {
+    "url": "https://www.hopeforwellness.ca/"
+  },
+  {
+    "url": "https://www.jogc.com/article/S1701-2163(15)30230-9/pdf"
+  },
+  {
+    "url": "https://www.jogc.com/article/S1701-2163(16)39898-X/fulltext"
+  },
+  {
+    "url": "https://www.jogc.com/article/S1701-2163(17)30936-2/abstract"
+  },
+  {
+    "url": "https://www.jogc.com/article/S1701-2163(17)30936-2/pdf"
+  },
+  {
+    "url": "https://www.jogc.com/article/S1701-2163(18)30836-3/abstract"
+  },
+  {
+    "url": "https://www.mycanceriq.ca/Cancers/Lung"
+  },
+  {
+    "url": "https://www.mycanceriq.ca/Cancers/Risk"
+  },
+  {
+    "url": "https://www.nccih.ca/485/NCCIH_in_the_News.nccih?id=450"
+  },
+  {
+    "url": "https://www.nejm.org/coronavirus"
+  },
+  {
+    "url": "https://www.nejm.org/covid-vaccine"
+  },
+  {
+    "url": "https://www.ottawapublichealth.ca/en/public-health-topics/frequently-asked-questions-about-covid-19-vaccination.aspx"
+  },
+  {
+    "url": "https://www.ottawapublichealth.ca/en/public-health-topics/multilingual-resources.aspx"
+  },
+  {
+    "url": "https://www.publichealthontario.ca/en/diseases-and-conditions/infectious-diseases/respiratory-diseases/novel-coronavirus/public-resources"
+  },
+  {
+    "url": "https://www.quebec.ca/en/health/advice-and-prevention/screening-and-carrier-testing-offer/lung-cancer-screening-demonstration-project"
+  },
+  {
+    "url": "https://www.quebec.ca/sante/problemes-de-sante/a-z/coronavirus-2019/informations-allophones-covid-19"
+  },
+  {
+    "url": "https://www.quebec.ca/sante/problemes-de-sante/a-z/coronavirus-2019/informations-allophones-covid-19"
+  },
+  {
+    "url": "https://www.rainbowhealthontario.ca/product/4th-edition-sherbournes-guidelines-for-gender-affirming-primary-care-with-trans-and-non-binary-patients/"
+  },
+  {
+    "url": "https://www.rainbowhealthontario.ca/wp-content/uploads/2015/07/Tips_Paps_TransMen-1.jpg"
+  },
+  {
+    "url": "https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf"
+  },
+  {
+    "url": "https://www.reframehealthlab.com/23-and-12-hours/"
+  },
+  {
+    "url": "https://www.reframehealthlab.com/should-you-get-the-hpv-vaccine/"
+  },
+  {
+    "url": "https://www.sac-isc.gc.ca/eng/1576089278958/1576089333975"
+  },
+  {
+    "url": "https://www.sexandu.ca/sexual-activity/what-is-sex/"
+  },
+  {
+    "url": "https://www.sheffield.ac.uk/FRAX/"
+  },
+  {
+    "url": "https://www.sheffield.ac.uk/FRAX/tool.jsp?country=19"
+  },
+  {
+    "url": "https://www.thelancet.com/coronavirus/archive?"
+  },
+  {
+    "url": "https://www.uspreventiveservicestaskforce.org/Page/Document/UpdateSummaryFinal/unhealthy-alcohol-use-in-adolescents-and-adults-screening-and-behavioral-counseling-interventions?ds=1&s=alcohol"
+  },
+  {
+    "url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/tobacco-use-in-adults-and-pregnant-women-counseling-and-interventions"
+  },
+  {
+    "url": "https://www.wellnesstogether.ca/en-CA"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=2t_mQwTY4WQ&feature=emb_logo"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=KIfSjX1ZEU4"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=URiKA7CKtfc"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=UZlY6Q4m-MM"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=tYii98gcejA"
   }
-
 ]
