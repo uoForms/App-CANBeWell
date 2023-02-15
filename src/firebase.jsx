@@ -5,14 +5,15 @@ import 'firebase/database'
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 // For Test Website 
 const firebaseConfig = {
-  apiKey: "AIzaSyCl4wyKnUZRt25Vmxbt7-dDoR8tsG02kSk",
-  authDomain: "canbewell-2022-test.firebaseapp.com",
-  databaseURL: "https://canbewell-2022-test-default-rtdb.firebaseio.com",
-  projectId: "canbewell-2022-test",
-  storageBucket: "canbewell-2022-test.appspot.com",
-  messagingSenderId: "114580889906",
-  appId: "1:114580889906:web:97ea5a8d3c77628032f72b",
-  measurementId: "G-WLZKR9N34N"
+  apiKey: "AIzaSyBeGl_efZAusMgwnk1zbsekj3zO79Hg_gg",
+  authDomain: "icanbewell-firebase-events.firebaseapp.com",
+  databaseURL: "https://icanbewell-firebase-events-default-rtdb.firebaseio.com",
+  projectId: "icanbewell-firebase-events",
+  storageBucket: "icanbewell-firebase-events.appspot.com",
+  messagingSenderId: "415118709552",
+  appId: "1:415118709552:web:756ff03adba67bb9bdeef5",
+  measurementId: "G-GWFFM3TL3W",
+  // persistenceEnabled: false
 };
 //For Production website
 // const firebaseConfig = {
@@ -29,7 +30,13 @@ if (!firebase.apps.length) {
   firebase.initializeApp(firebaseConfig)
 }
 
+
 const db = firebase.database()
 //const auth = firebase.auth()
 
 export { db}
+
+// firebase.database().goOffline();
+firebase.database().ref().push()
+
+
