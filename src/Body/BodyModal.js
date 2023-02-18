@@ -344,7 +344,7 @@ class BodyModal extends React.Component {
         </div>
         <div className="myModal" style={myModalStyle} test-id="bodyModal">
           <div>
-            <button className="button4" onClick={this.props.onClose} test-id="xButton">X</button>
+            {/* <button className="button4" onClick={this.props.onClose} test-id="xButton">X</button> */}
           </div>
           <div>
             {subject}

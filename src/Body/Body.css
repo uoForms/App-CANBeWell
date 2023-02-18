@@ -20,9 +20,9 @@
     cursor: pointer;
   }
 
-  .mainRunner .fixSelectedOrgan {
+  /* .mainRunner .fixSelectedOrgan {
     position: fixed;
-  }
+  } */
   
   .mainRunner .femaleAorta {
     top: 32%;

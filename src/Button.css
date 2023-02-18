@@ -144,6 +144,8 @@
   color: white;
   font-size: 16px;
   font-weight: 500;
+  position: relative;
+  left: 400px;
 }
 .button3-1 {
   border: none;
