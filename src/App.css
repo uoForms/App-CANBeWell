@@ -440,9 +440,18 @@ summary:after {
 .topicicon-row{
   align-items: center;
 }
-svg.MuiSvgIcon-root.arrow-left {
+
+/* Removing the blue button sign */
+
+/* svg.MuiSvgIcon-root.arrow-left {
   font-size: 31px !important;
+} */
+
+/* Removing the arrow sign */
+.MuiSvgIcon-root {
+  display:none !important;
 }
+
 @media only screen and (min-width:300px) and (max-width:850px){
   .row.topicicon-row {
     height: 35px !important;
@@ -465,8 +474,8 @@ b.boldtext{
 mark.texthighlight {
   background-color: yellow !important;
 }
-svg.MuiSvgIcon-root.arrow-left {
+/* svg.MuiSvgIcon-root.arrow-left {
   background-color: #27aae1;
   border-radius: 5px;
   margin: 0 8px;
-}
+} */
