@@ -36,8 +36,13 @@ const db = firebase.database()
 
 export { db}
 
+// To disconnect firebase realtime database from the application
 // firebase.database().goOffline();
+
+// To start sending data from app to firebase realtime database
 firebase.database().ref().push()
+
+// After disconnecting the firebase realtime database from the app, if you want to sync/upload all the previous data (while offline) to firebase realtime database you have to use the following command 
 // firebase.database().goOnline();
 
 
