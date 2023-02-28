@@ -344,13 +344,13 @@ class BodyModal extends React.Component {
         </div>
         <div className="myModal" style={myModalStyle} test-id="bodyModal">
           <div>
-            {/* <button className="button4" onClick={this.props.onClose} test-id="xButton">X</button> */}
+            <button className="button4" onClick={this.props.onClose} test-id="xButton">X</button>
           </div>
           <div>
             {subject}
-            <div className="myModalCloseButton">
-              <button className="button3" test-id="closeTextButton" onClick={this.props.onClose}>{this.props.button}</button>
-            </div>
+            {/* <div className="myModalCloseButton"> */}
+              {/* <button className="button3" test-id="closeTextButton" onClick={this.props.onClose}>{this.props.button}</button> */}
+            {/* </div> */}
           </div>
         </div>
       </div>
