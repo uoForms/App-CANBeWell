@@ -73,7 +73,17 @@
     "Button": "Figure outside body walking",
     "Topic heading": "Be Active",
     "Subject": "Recommended physical activity",
-    "General Patient Text": "•\tThe recommended minimum amount of physical activity\nis 150 minutes a week of moderate intensity exercise. \n•\tDefinition of moderate intensity:\nwhile you are active you have enough breath to say a short sentence but not enough to sing\n•\t[[Guideline for age 18-64; https://csepguidelines.ca/wp-content/uploads/2020/11/PA-24HGuidelines-ENG-Adults-18-64-2.png]]\n•\t[[Guideline for age 65+; https://csepguidelines.ca/wp-content/uploads/2020/11/PA-24HGuidelines-ENG-Adults-65plus-2.png]]For more information visit [[csepguidelines.ca; https://csepguidelines.ca/]]                                        •    For more information visit [[csepguidelines.ca; https://csepguidelines.ca/]]",
+    "General Patient Text": "The recommended minimum amount of physical activity is:\n•150 minutes a week of moderate intensity exercise and \n•muscle strengthening 2 times a week.\n\n•\tDefinition of moderate intensity:\nwhile you are active you have enough breath to say a short sentence but not enough to sing\n•\t[[Guideline for age 18-64; https://csepguidelines.ca/wp-content/uploads/2020/11/PA-24HGuidelines-ENG-Adults-18-64-2.png]]\n•\t[[Guideline for age 65+; https://csepguidelines.ca/wp-content/uploads/2020/11/PA-24HGuidelines-ENG-Adults-65plus-2.png]]\n•[[Exercise is Medicine; https://exerciseismedicine.org/canada/patient-focused-tools/]]",
+    "Health Provider Text": "n/a",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Figure outside body walking",
+    "Topic heading": "Be Active",
+    "Subject": "More resources",
+    "General Patient Text": "Exercise videos \n•[[General; https://www.ymcahome.ca/fitness]]\n• [[chronic pain; https://www.youtube.com/@LEAPService/featured]]\n•[[Diabetes resistance exercise; https://www.diabetes.ca/managing-my-diabetes/tools---resources/resistance-exercise-videos]]",
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
@@ -151,10 +161,40 @@
   },
   {
     "Button": "Bone",
+    "Topic heading": "Bone health",
+    "Subject": "Nutrition",
+    "General Patient Text": "•Eating healthy is important to build and keep strong bones\n[[Click here for more info; https://osteoporosis.ca/nutrition/]]\n\n•[[Click her for a calcium calculator; https://osteoporosis.ca/calcium-calculator/]]",
+    "Health Provider Text": "•\tA healthy diet prevents osteoporosis\n[[Osteoporosis.ca; https://osteoporosis.ca/nutrition/]]\n•[[Calcium calculator; https://osteoporosis.ca/calcium-calculator/]]",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Bone",
+    "Topic heading": "Bone health",
+    "Subject": "Vitamin D-Calcium",
+    "General Patient Text": "•Calcium: 1000mg/day •Vitamin D: 400-1000 IU/day\n•Exception:\n if age 18 or pregnant or breastfeeding :you need \nCalcium: 1300 mg/day; Vitamin D: 600 IU/ day\n\n\n•[[Click here for more info; https://osteoporosis.ca/nutrition/]]\n•[[Calcium calculator; https://osteoporosis.ca/calcium-calculator/]]",
+    "Health Provider Text": "•Calcium: 1000mg/day; Vitamin D: 400-1000 IU/day\n•Exception: if age 18 or pregnant or breastfeeding :\nCalcium: 1300 mg/day; Vitamin D: 600 IU/ day\n•[[Osteoporosis.ca; https://osteoporosis.ca/nutrition/]]",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 49
+  },
+  {
+    "Button": "Bone",
+    "Topic heading": "Bone health",
+    "Subject": "Vitamin D-Calcium",
+    "General Patient Text": "•Calcium: 1200mg/day\n•Vitamin D: 800-2000 IU/day\n\n•Calcium: \nBetter to get calcium from food rather than supplements.\n[[Click here for more info; https://osteoporosis.ca/calcium/]]\nClick [[calcium calculator; https://osteoporosis.ca/calcium-calculator/]]\n•Vitamin D:\n Taking more than 2000 IU a day of vitamin D should be done under medical supervision \n[[Click here for more info; https://osteoporosis.ca/vitamin-d/]]",
+    "Health Provider Text": "•Calcium: 1200mg/day\n•Vitamin D: 800-2000 IU/day\n\n•\t[[Calcium; https://osteoporosis.ca/calcium/]]\n•\t[[Vitamin D; https://osteoporosis.ca/vitamin-d/]]\n•[[Calcium calculator; https://osteoporosis.ca/calcium-calculator/]]",
+    "Gender": "all",
+    "Minimum age": 50,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Bone",
     "Topic heading": "Bone Health",
     "Subject": "Bone Density Test",
     "General Patient Text": "Below age 65: only recommended if: you have [[risk factors; https://www.canada.ca/en/public-health/services/chronic-diseases/osteoporosis.html]]\n[[More info; https://choosingwiselycanada.org/pamphlet/bone-density-tests/]]",
-    "Health Provider Text": "<65 yo BDM only if the patient has  [[risk factors; https://www.canada.ca/en/public-health/services/chronic-diseases/osteoporosis.html]]",
+    "Health Provider Text": "<65 yo BDM only if the patient has  [[risk factors; https://www.cmaj.ca/content/cmaj/182/17/1864/F3.large.jpg]]\n[[BDM Choosing Wisely; https://choosingwiselycanada.org/pamphlet/bone-density-tests/]]",
     "Gender": "m,f",
     "Minimum age": 18,
     "Maximum age": 64
@@ -164,7 +204,7 @@
     "Topic heading": "Bone Health",
     "Subject": "Bone Density Test",
     "General Patient Text": "Recommended for everyone 65 or older\nYour provider will determine when to repeat it\n•\t[[more info; https://choosingwiselycanada.org/bone-density-tests/]]\n•\t[[calculator for 10 year fracture risk; https://www.sheffield.ac.uk/FRAX/tool.jsp?country=19 ]]",
-    "Health Provider Text": "Recommended for everyone 65 or older:\n• [[osteoporosis.ca 2010; http://www.cmaj.ca/content/cmaj/early/2010/10/12/cmaj.100771.full.pdf]]\n\n•Frequency of retesting [[not more than every 2 years; https://choosingwiselycanada.org/rheumatology/]]\n\n•[[Osteoporosis assessment form; https://osteostrategy.on.ca/wp-content/uploads/Osteoporosis-Assessment-Tool_REV7_Dec-2018.pdf]]",
+    "Health Provider Text": "Recommended for everyone 65 or older:\n•[[Summary; https://www.cmaj.ca/content/cmaj/182/17/1864/F3.large.jpg]]\n• [[Osteoporosis.ca 2010 guideline; http://www.cmaj.ca/content/cmaj/early/2010/10/12/cmaj.100771.full.pdf]]\n\n\n•Frequency of retesting not more than every 2 years\n[[ See Choosingwisely in rheumatology recommendations; https://choosingwiselycanada.org/rheumatology/]]\n\n•[[Osteoporosis assessment form; https://osteostrategy.on.ca/wp-content/uploads/Osteoporosis-Assessment-Tool_REV7_Dec-2018.pdf]]",
     "Gender": "m,f",
     "Minimum age": 65,
     "Maximum age": 150
@@ -173,7 +213,7 @@
     "Button": "Breast",
     "Topic heading": "Breast Cancer",
     "Subject": "Prevent Breast Cancer",
-    "General Patient Text": "•\tLimit alcohol (see our substance use info)\n•\tDon't smoke\n•\tControl your weight\n•\tBe physically active (see our physical activity info for this)\n•\tBreastfeed if you are able\n•\tLimit time on hormone therapy\n[[more; https://www.mycanceriq.ca/Cancers/Risk]]\n\nClick on this [[link to know if you are at high risk of breast cancer; https://www.cancer.ca/en/prevention-and-screening/reduce-cancer-risk/find-cancer-early/get-screened-for-breast-cancer/at-high-risk-for-breast-cancer/?region=on]]\n\nMammograms for healthy women below age 50 with no symptoms, no breast problems and no additional risks is not recommended.\n•\t[[risks; http://www.cancer.ca/en/cancer-information/cancer-type/breast/risks/?region=on]]\n•\t[[harms of mammograms; https://www.youtube.com/watch?v=UZlY6Q4m-MM]]\nDISCUSS WITH YOUR HEALTH CARE PROVIDER.",
+    "General Patient Text": "•[[Calculate risk mycanceriq; https://www.mycanceriq.ca/Cancers/Risk]]\n•\tLimit alcohol (see our substance use info)\n•\tDon't smoke\n•\tControl your weight\n•\tBe physically active (see our physical activity info for this)\n•\tBreastfeed if you are able\n•\tLimit time on hormone therapy\n\n\nClick on this [[link to know if you are at high risk of breast cancer; https://www.cancer.ca/en/prevention-and-screening/reduce-cancer-risk/find-cancer-early/get-screened-for-breast-cancer/at-high-risk-for-breast-cancer/?region=on]]\n\nMammograms for healthy women below age 50 with no symptoms, no breast problems and no additional risks is not recommended.\n•\t[[risks; http://www.cancer.ca/en/cancer-information/cancer-type/breast/risks/?region=on]]\n•\t[[harms of mammograms; https://www.youtube.com/watch?v=UZlY6Q4m-MM]]\nDISCUSS WITH YOUR HEALTH CARE PROVIDER.",
     "Health Provider Text": "n/a",
     "Gender": "f",
     "Minimum age": 18,
@@ -241,7 +281,7 @@
   },
   {
     "Button": "Breast/Chest",
-    "Topic heading": "Chest or Breast Cancer",
+    "Topic heading": "Chest Cancer",
     "Subject": "Information",
     "General Patient Text": "•\tIf you have not had top surgery to remove breast tissue in its entirety (also known as a mastectomy), you need a mammogram every 2 years from age 50 to 74.\n•\tYou still need mammograms even if you have had a breast reduction (and not a mastectomy).\n•\tIf you have had a mastectomy, discuss whether you need regular chest exams with your primary care provider; it is generally not the case.",
     "Health Provider Text": "•\tTrans men and people on the transmasculine spectrum who have not had a bilateral mastectomy should undergo breast cancer screening, as per the current guidelines for cis women.\n•\tThe current recommendation for cis women is a mammogram every 2 years from age 50-74.\n•\tThere is currently no reliable evidence on screening for trans men and people on the transmasculine spectrum patients who have had a mastectomy; consider discussing the unknown risks associated with residual breast tissue, as well as the possible technical limitations of mammography (UCSF).\n•\tConsider continuing regular monitoring for breast cancer even after mastectomy, as mastectomies usually do not remove breast tissue in its entirety; the Endocrine Society suggests conducting sub- and periareolar annual breast examinations if the patient has undergone a mastectomy, whereas UCSF cautions against it (not evidence-based).",
@@ -251,7 +291,7 @@
   },
   {
     "Button": "Breast/Chest",
-    "Topic heading": "Chest or Breast Cancer",
+    "Topic heading": "Chest Cancer",
     "Subject": "Resources",
     "General Patient Text": "•\t[[Overview of breast cancer screening for trans men in Canada; https://www.cancer.ca/en/prevention-and-screening/reduce-cancer-risk/find-cancer-early/screening-in-lgbtq-communities/trans-men-and-chest-cancer-screening/?region=on]]\n•\t[[RHO guidelines; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n•\t[[UCSF Transcare guidelines; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf]]\n•\t[[Endocrine Society guidelines; https://academic.oup.com/jcem/article/102/11/3869/4157558]]",
     "Health Provider Text": "n/a",
@@ -261,7 +301,7 @@
   },
   {
     "Button": "Breast/Chest",
-    "Topic heading": "Breast Cancer",
+    "Topic heading": "Chest Cancer",
     "Subject": "Tips and Resources",
     "General Patient Text": "n/a",
     "Health Provider Text": "•\tBe mindful of the language you use when referring to traditionally gendered body parts, as certain words may make patients feel uncomfortable — consider following the patients lead with regards to terminology (e.g. some trans men may prefer to refer to their breasts as their “chest”).\n•\tNote that mastectomy typically does not involve the removal of all breast tissue, and that some may still remain in place, meaning that patients could still be at risk of breast cancer (TransCare BC).\n•\tIf an abnormality is noted on the exam of a trans man who had a mastectomy, ultrasound +/- MRI is indicated as mammography is technically difficult or may be impossible (RHO).\n•\t[[Overview of breast cancer screening for trans men in Canada; https://www.cancer.ca/en/prevention-and-screening/reduce-cancer-risk/find-cancer-early/screening-in-lgbtq-communities/trans-men-and-chest-cancer-screening/?region=on]]\n•\t[[RHO guidelines; https://www.rainbowhealthontario.ca/wp-content/uploads/woocommerce_uploads/2019/12/Guidelines-FINAL-Dec-2019-iw2oti.pdf]]\n•\t[[UCSF Transcare guidelines; https://transcare.ucsf.edu/sites/transcare.ucsf.edu/files/Transgender-PGACG-6-17-16.pdf]]\n•\t[[Endocrine Society guidelines; https://academic.oup.com/jcem/article/102/11/3869/4157558]]",
@@ -404,7 +444,7 @@
     "Topic heading": "Diabetes Type 2",
     "Subject": "Screen for Diabetes",
     "General Patient Text": "n/a",
-    "Health Provider Text": "Using a calculator is evidence-based (2016 CTFPHC).\nYour patient can be emailed this questionnaire or it can be filled in the waiting room.\n•            [[FINDRISC online calculator; https://qxmd.com/calculate/calculator_236/findrisc-diabetes-risk-calculator]]\n•\t[[FINDRISC pdf; https://canadiantaskforce.ca/tools-resources/type-2-diabetes-2/type-2-diabetes-patient-findrisc/]]\n\nor \n•\t[[CANRISK online calculator;  https://diabetes.ca/about-diabetes/take-the-test]]\n•\t[[CANRISK pdf  available in different languages; https://canadiantaskforce.ca/tools-resources/type-2-diabetes-2/type-2-diabetes-canrisk/]]\n•\t[[Canadian Diabetes Assoc 2018 screening guideline; https://guidelines.diabetes.ca/cpg/chapter4]]",
+    "Health Provider Text": "Using a calculator is evidence-based (2016 CTFPHC).\nYour patient can be emailed this questionnaire or it can be filled in the waiting room.\n•            [[FINDRISC online calculator; https://qxmd.com/calculate/calculator_236/findrisc-diabetes-risk-calculator]]\n•\t[[FINDRISC pdf; https://canadiantaskforce.ca/tools-resources/type-2-diabetes-2/type-2-diabetes-patient-findrisc/]]\n\nor \n•\t[[CANRISK online calculator;  https://diabetes.ca/about-diabetes/take-the-test]]\n•\t[[CANRISK pdf  available in different languages; https://canadiantaskforce.ca/tools-resources/type-2-diabetes-2/type-2-diabetes-canrisk/]]                                         •            [[Canadian Diabetes Assoc 2018 screening guideline; https://guidelines.diabetes.ca/cpg/chapter4]]",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
@@ -693,8 +733,8 @@
     "Button": "Liver",
     "Topic heading": "Liver/Alcohol/Drugs",
     "Subject": "Alcohol",
-    "General Patient Text": "•\tWomen: have 10 or less drinks a week \n•\tMen: Have 15 or less drinks per week\nWhat is a “drink”?\n\n[[image;images/size_of_drink.jpg]]\n[[more;https://www.camh.ca/-/media/files/canadas-low-risk-guidelines-pdf.pdf]]",
-    "Health Provider Text": "•Women: have 10 or less drinks a week\n•Men: have 15 or less drinks per week\nWhat is a \"drink\"?\n\n[[image;images/size_of_drink.jpg]]\n\n[[Source; https://www.camh.ca/-/media/files/canadas-low-risk-guidelines-pdf.pdf]]\nScreening for misuse and behavioural counseling [[USPSTF B (2018); https://www.uspreventiveservicestaskforce.org/Page/Document/UpdateSummaryFinal/unhealthy-alcohol-use-in-adolescents-and-adults-screening-and-behavioral-counseling-interventions?ds=1&s=alcohol]]",
+    "General Patient Text": "Click on [[Canadian low risk drinking guidelines; https://ccsa.ca/sites/default/files/2023-01/CGAH-Drinking-Less-is-Better-en%20%28ID%2050809%29.pdf]]",
+    "Health Provider Text": "• [[Canadian low risk drinking guidelines 2023 PDF; https://ccsa.ca/sites/default/files/2023-01/CGAH-Drinking-Less-is-Better-en%20%28ID%2050809%29.pdf]]\n•[[Background; https://ccsa.ca/canadas-guidance-alcohol-and-health]]",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
@@ -812,6 +852,16 @@
   {
     "Button": "Stomach",
     "Topic heading": "Nutrition",
+    "Subject": "Saving money",
+    "General Patient Text": "[[10 tips; https://www.unlockfood.ca/EatRightOntario/media/Website-images-resized/10-tips-for-planning-meals-on-a-budget_NM-handout-2023_1.pdf]]",
+    "Health Provider Text": "[[10 tips; https://www.unlockfood.ca/EatRightOntario/media/Website-images-resized/10-tips-for-planning-meals-on-a-budget_NM-handout-2023_1.pdf]]",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Stomach",
+    "Topic heading": "Nutrition",
     "Subject": "Fill half your plate with vegetables and fruit",
     "General Patient Text": "[[Information; https://food-guide.canada.ca/en/]]",
     "Health Provider Text": "n/a",
@@ -822,9 +872,29 @@
   {
     "Button": "Stomach",
     "Topic heading": "Nutrition",
-    "Subject": "Eat whole grains and limit fat, salt, sugar",
-    "General Patient Text": "Use a [[healthy plate; http://www.healthycanadians.gc.ca/eating-nutrition/healthy-eating-saine-alimentation/tips-conseils/interactive-tools-outils-interactifs/eat-well-bien-manger-eng.php]]",
-    "Health Provider Text": "n/a",
+    "Subject": "Plant-based foods",
+    "General Patient Text": "[[Advice; https://www.unlockfood.ca/EatRightOntario/media/Website-images-resized/Benefits-of-eating-more-plant-based-proteins_NM-handout-2023_1.pdf]]",
+    "Health Provider Text": "[[Dietitians of Canada handout; https://www.unlockfood.ca/EatRightOntario/media/Website-images-resized/Benefits-of-eating-more-plant-based-proteins_NM-handout-2023_1.pdf]]",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Stomach",
+    "Topic heading": "Nutrition",
+    "Subject": "New! The Microbiome",
+    "General Patient Text": "•[[Food4guthealth; https://www.gutmicrobiotaforhealth.com/category/food-4-gut-health/]]\n[[Follow on instagram; https://www.instagram.com/food4gut_health/]]\n•[[Harvard Information; https://www.hsph.harvard.edu/nutritionsource/microbiome/]]",
+    "Health Provider Text": "•[[Food4guthealth; https://www.gutmicrobiotaforhealth.com/category/food-4-gut-health/]]\n[[Follow on instagram; https://www.instagram.com/food4gut_health/]]\n•[[Harvard Information; https://www.hsph.harvard.edu/nutritionsource/microbiome/]]",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Stomach",
+    "Topic heading": "Nutrition",
+    "Subject": "Food addiction",
+    "General Patient Text": "•Video[[ Ted talk; https://youtu.be/aqhzFd4NUPI]]\n•[[Obesity Canada article; https://obesitycanada.ca/oc-news/ask-the-expert-7-food-addiction-specialist-dr-vera-tarman-answers-your-questions-part-2/]]",
+    "Health Provider Text": "•Video[[ Ted talk; https://youtu.be/aqhzFd4NUPI]]\n•[[Obesity Canada article; https://obesitycanada.ca/oc-news/ask-the-expert-7-food-addiction-specialist-dr-vera-tarman-answers-your-questions-part-2/]]",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
@@ -834,7 +904,7 @@
     "Topic heading": "Physical Activity",
     "Subject": "Recommendations",
     "General Patient Text": "n/a",
-    "Health Provider Text": "Physical activity prevents heart disease, cancer, depression and [[more; https://www.reframehealthlab.com/23-and-12-hours/]].\n\nThe recommended minimum amount of physical activity\nis 150 minutes a week of moderate intensity exercise (CSEP 2019 ,see \"References\")\nDefinition of moderate intensity:\nwhile you are active you have enough breath to say a short sentence but  not enough to sing.",
+    "Health Provider Text": "Physical activity prevents heart disease, cancer, depression and [[more; https://www.reframehealthlab.com/23-and-12-hours/]].\n\nThe recommended minimum amount of physical activity is:\n•150 minutes a week of moderate intensity exercise (CSEP 2019 ,see \"References\")\n•muscle strengthening 2x a week.\nDefinition of moderate intensity:\nwhile you are active you have enough breath to say a short sentence but  not enough to sing.",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
@@ -844,7 +914,7 @@
     "Topic heading": "Physical Activity",
     "Subject": "References/Handouts",
     "General Patient Text": "n/a",
-    "Health Provider Text": "•[[2019 Guideline for age 18-64; https://csepguidelines.ca/guidelines/adults-18-64/]]\n•[[2019 Guideline for age 65+ ; https://csepguidelines.ca/guidelines/adults-65/]]\n•[[Tool for primary care; https://csepguidelines.ca/wp-content/uploads/2022/09/Whole-Day-Matters-Toolkit-Primary-Care_EN.pdf]]\n•[[medical reference; http://www.cmaj.ca/content/174/6/801.full.pdf+html]]",
+    "Health Provider Text": "•[[Exercise prescription PDF; https://www.exerciseismedicine.org/wp-content/uploads/2021/02/EIM-Prescription-2018-e-form.pdf]]\n•[[Patient-focused tools; https://exerciseismedicine.org/canada/patient-focused-tools/]]\n•[[Tool for primary care; https://csepguidelines.ca/wp-content/uploads/2022/09/Whole-Day-Matters-Toolkit-Primary-Care_EN.pdf]]\n•[[medical reference; http://www.cmaj.ca/content/174/6/801.full.pdf+html]]",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
@@ -984,19 +1054,19 @@
     "Topic heading": "Sexual and Reproductive Health",
     "Subject": "Screening for Prostate Cancer",
     "General Patient Text": "n/a",
-    "Health Provider Text": "•\tCanadian task force (2014): Do not screen.\n[[Canadian patient handout;  https://canadiantaskforce.ca/wp-content/uploads/2016/12/CTFPHC_Prostate-Cancer_HarmsBenefits_FINAL.pdf]]\n\n•\tUS Task Force (2018): Discuss pros and cons with your patient 55 to 69 years old. (C recommendation)\nIncorporates more recent research.\n[[Excellent video explaining benefits and harms; https://www.youtube.com/watch?v=tYii98gcejA]]\n[[US patient handout; pdf/prostate-cancer-infographic-5.pdf]]",
+    "Health Provider Text": "•\tCanadian task force (2014): Do not screen.\n[[Canadian patient handout;  https://canadiantaskforce.ca/wp-content/uploads/2016/12/CTFPHC_Prostate-Cancer_HarmsBenefits_FINAL.pdf]]\n\n•\tUS Task Force (2018): Discuss pros and cons with your patient 55 to 69 years old. (C recommendation)\nIncorporates more recent research.\n[[Excellent video explaining benefits and harms; https://www.youtube.com/watch?v=tYii98gcejA]]\n[[US patient handout; pdf/prostate-cancer-infographic-5.pdf]]\n\n•[[Canadian Urological Assoc 2022; https://www.cua.org/system/files/Guideline-Files/7851_v6_1.pdf]]",
     "Gender": "m",
-    "Minimum age": 55,
+    "Minimum age": 50,
     "Maximum age": 69
   },
   {
     "Button": "Genitalia",
     "Topic heading": "Sexual and Reproductive Health",
     "Subject": "Testing for Prostate Cancer",
-    "General Patient Text": "•\tIn Canada testing for finding prostate cancer early is not recommended.\n[[Canadian patient handout; https://canadiantaskforce.ca/wp-content/uploads/2016/05/2014-prostate-cancer-patient-faq-colour-en.pdf]]\n\n•\tIn the US it is recommended to discuss testing for prostate cancer with your health care provider. There are some benefits and some harms.\n•\t[[Excellent video explaIning pros and cons; https://www.youtube.com/watch?v=tYii98gcejA]]\n•\t[[US patient handout; pdf/prostate-cancer-infographic-5.pdf]]",
+    "General Patient Text": "•\tIn Canada testing for finding prostate cancer early is not recommended by the Canadian Task Force\n[[Canadian patient handout; https://canadiantaskforce.ca/wp-content/uploads/2016/05/2014-prostate-cancer-patient-faq-colour-en.pdf]]\n\n•\tIn the US it is recommended to discuss testing for prostate cancer with your health care provider. There are some benefits and some harms.\n•\t[[Excellent video explaIning pros and cons; https://www.youtube.com/watch?v=tYii98gcejA]]\n•\t[[US patient handout; pdf/prostate-cancer-infographic-5.pdf]]",
     "Health Provider Text": "n/a",
     "Gender": "m",
-    "Minimum age": 55,
+    "Minimum age": 50,
     "Maximum age": 69
   },
   {
@@ -1120,66 +1190,6 @@
     "Maximum age": 150
   },
   {
-    "Button": "Bone",
-    "Topic heading": "Nutrition, Vitamins",
-    "Subject": "Age 18 only",
-    "General Patient Text": "•\tCalcium: 1300 mg/day; Vitamin D: 600 IU/ day\nPregnant or lactating same as above\n•\tFolic acid: 0.4 to 1 mg a day for women 3 months before and after conception or always\n•\t[[more information on folic acid; https://www.canada.ca/en/public-health/services/pregnancy/folic-acid.html]]\n•\t[[take more folic acid if; https://www.canada.ca/en/public-health/services/pregnancy/folic-acid.html#a4]]",
-    "Health Provider Text": "•\tCalcium: 1300 mg/day; Vitamin D: 600 IU/ day\nPregnant or lactating same as above\n•\tFolic acid: 0.4 to 1 mg a day for women 3 months before and after conception or always\n•\t[[more information on folic acid; https://www.canada.ca/en/public-health/services/pregnancy/folic-acid.html]]\n•\t[[take more folic acid if; https://www.canada.ca/en/public-health/services/pregnancy/folic-acid.html#a4]]\n•\t[[SOGC guideline; https://www.jogc.com/article/S1701-2163(15)30230-9/pdf]]",
-    "Gender": "f",
-    "Minimum age": 18,
-    "Maximum age": 18
-  },
-  {
-    "Button": "Bone",
-    "Topic heading": "Nutrition, Vitamins",
-    "Subject": "Age 19-49",
-    "General Patient Text": "•\tCalcium: 1000mg/day; Vitamin D: 400-1000 IU/day\nPregnant or lactating same as 18 year old\n•\tFolic acid: 0.4 to 1 mg a day for women 3 months before and after conception or always\n•\t[[more information on folic acid; https://www.canada.ca/en/public-health/services/pregnancy/folic-acid.html]]\n•\t[[take more folic acid if; https://www.canada.ca/en/public-health/services/pregnancy/folic-acid.html#a4]]",
-    "Health Provider Text": "•\tCalcium: 1000mg/day; Vitamin D: 400-1000 IU/day\nPregnant or lactating same as 18 year old\n•\tFolic acid: 0.4 to 1 mg a day for women 3 months before and after conception or always\n•\t[[more information on folic acid; https://www.canada.ca/en/public-health/services/pregnancy/folic-acid.html]]\n•\t[[take more folic acid if; https://www.canada.ca/en/public-health/services/pregnancy/folic-acid.html#a4]]\n•\t[[SOGC guideline; https://www.jogc.com/article/S1701-2163(15)30230-9/pdf]]",
-    "Gender": "f",
-    "Minimum age": 19,
-    "Maximum age": 49
-  },
-  {
-    "Button": "Bone",
-    "Topic heading": "Nutrition, Vitamins",
-    "Subject": "Age 18 only",
-    "General Patient Text": "•\tCalcium: 1300 mg/day; Vitamin D: 600 IU/ day",
-    "Health Provider Text": "•\tCalcium: 1300 mg/day; Vitamin D: 600 IU/ day",
-    "Gender": "m,tm,tf",
-    "Minimum age": 18,
-    "Maximum age": 18
-  },
-  {
-    "Button": "Bone",
-    "Topic heading": "Nutrition, Vitamins",
-    "Subject": "Age 19-49",
-    "General Patient Text": "•\tCalcium: 1000mg/day; Vitamin D: 400-1000 IU/day",
-    "Health Provider Text": "•\tCalcium: 1000mg/day; Vitamin D: 400-1000 IU/day",
-    "Gender": "m,tm,tf",
-    "Minimum age": 19,
-    "Maximum age": 49
-  },
-  {
-    "Button": "Bone",
-    "Topic heading": "Nutrition, Vitamins",
-    "Subject": "Age 50 and above",
-    "General Patient Text": "•\tCalcium: 1200mg/day; Vitamin D: 800-2000 IU/day",
-    "Health Provider Text": "•\tCalcium: 1200mg/day; Vitamin D: 800-2000 IU/day",
-    "Gender": "all",
-    "Minimum age": 50,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Bone",
-    "Topic heading": "Nutrition, Vitamins",
-    "Subject": "All ages",
-    "General Patient Text": "•\tEating healthy is important to build and keep strong bones\n[[Click here for more info; https://osteoporosis.ca/nutrition/]]\n\n•\tVitamin D: this vitamin is important for strong bones. Taking more than 2000 IU a day of vitamin D should be done under medical supervision \n[[Click here for more info; https://osteoporosis.ca/vitamin-d/]]\n\n•\tCalcium: Better to get calcium from food rather than supplements.\n[[Click here for more info; https://osteoporosis.ca/calcium/]]\n[[Click her for a calcium calculator; https://osteoporosis.ca/calcium-calculator/]]",
-    "Health Provider Text": "•\tA healthy diet prevents osteoporosis\n[[More info; https://osteoporosis.ca/nutrition/]]\n\n•\t[[Vitamin D; https://osteoporosis.ca/vitamin-d/]]\n\n•\t[[Calcium; https://osteoporosis.ca/calcium/]]\n[[Calcium calculator; https://osteoporosis.ca/calcium-calculator/]]",
-    "Gender": "all",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
     "Button": "braingear",
     "Topic heading": "Mental Health",
     "Subject": "General",
@@ -1263,7 +1273,7 @@
     "Button": "money",
     "Topic heading": "Money Issues",
     "Subject": "Food",
-    "General Patient Text": "Click on [[211.ca; https://211.ca]] or phone/text 211\nChoose your province or territory \nEnter your location by postal code or city/town \nChoose the topic: food \nYou can find food banks near you or meals.\n(<If you are having trouble online: call 211 and someone will help you find what you need.>)",
+    "General Patient Text": "If you have trouble getting food :\nClick on [[211.ca; https://211.ca]] or phone/text 211\nChoose your province or territory \nEnter your location by postal code or city/town \nChoose the topic: food \nYou can find food banks near you or meals.\n(<If you are having trouble online: call 211 and someone will help you find what you need.>)",
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
@@ -1273,7 +1283,7 @@
     "Button": "money",
     "Topic heading": "Money Issues",
     "Subject": "Housing",
-    "General Patient Text": "Click on [[211.ca; https://211.ca]] or phone/text 211\nChoose  your province or territory\nEnter your location by postal code or city/town \nChoose the topic housing.\n(<If you are having trouble online: call 211 and someone will help you find what you need.>)",
+    "General Patient Text": "If you have trouble with housing :\nClick on [[211.ca; https://211.ca]] or phone/text 211\nChoose  your province or territory\nEnter your location by postal code or city/town \nChoose the topic housing.\n(<If you are having trouble online: call 211 and someone will help you find what you need.>)",
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
@@ -1303,8 +1313,8 @@
     "Button": "sleep",
     "Topic heading": "Sleep",
     "Subject": "Sleep",
-    "General Patient Text": "Trusted evidence-based information on sleep and sleep problems:\n•[[ementalhealth.ca; https://www.ementalhealth.ca/index.php?m=headingInfoSheets&ID=189]]\n•[[A good night's sleep; https://www.camh.ca/-/media/files/covid19-booklet-good-nights-sleep-pdf.pdf]]\n•[[Sleep and electronics; https://www.ementalhealth.ca/Ottawa-Carleton/Sleep-Problems-Try-Cutting-Back-on-Your-Blue-Light/index.php?m=article&ID=62333]]\n•[[HealthlinkBC; https://www.healthlinkbc.ca/illnesses-conditions/fatigue-and-sleep/insomnia]]",
-    "Health Provider Text": "Evidence-based information on sleep problems:\n•[[ementalhealth.ca; https://www.ementalhealth.ca/index.php?m=headingInfoSheets&ID=189]]\n•[[A good night's sleep; https://www.camh.ca/-/media/files/covid19-booklet-good-nights-sleep-pdf.pdf]]\n•[[Sleep and electronics; https://www.ementalhealth.ca/Ottawa-Carleton/Sleep-Problems-Try-Cutting-Back-on-Your-Blue-Light/index.php?m=article&ID=62333]]\n•[[HealthlinkBC; https://www.healthlinkbc.ca/illnesses-conditions/fatigue-and-sleep/insomnia]]\n•[[MyHealth.Alberta.ca; https://myhealth.alberta.ca/health/pages/conditions.aspx?Hwid=abq4925]]",
+    "General Patient Text": "Trusted evidence-based information on sleep and sleep problems:\n•[[mysleepwell.ca; https://mysleepwell.ca/]]\n•[[ementalhealth.ca; https://www.ementalhealth.ca/index.php?m=headingInfoSheets&ID=189]]\n•[[A good night's sleep; https://www.camh.ca/-/media/files/covid19-booklet-good-nights-sleep-pdf.pdf]]\n•[[Sleep and electronics; https://www.ementalhealth.ca/Ottawa-Carleton/Sleep-Problems-Try-Cutting-Back-on-Your-Blue-Light/index.php?m=article&ID=62333]]\n•[[HealthlinkBC; https://www.healthlinkbc.ca/illnesses-conditions/fatigue-and-sleep/insomnia]]",
+    "Health Provider Text": "Evidence-based information on sleep problems:\n•[[mysleepwell.ca; https://mysleepwell.ca/]]\n•[[ementalhealth.ca; https://www.ementalhealth.ca/index.php?m=headingInfoSheets&ID=189]]\n•[[A good night's sleep; https://www.camh.ca/-/media/files/covid19-booklet-good-nights-sleep-pdf.pdf]]\n•[[Sleep and electronics; https://www.ementalhealth.ca/Ottawa-Carleton/Sleep-Problems-Try-Cutting-Back-on-Your-Blue-Light/index.php?m=article&ID=62333]]\n•[[HealthlinkBC; https://www.healthlinkbc.ca/illnesses-conditions/fatigue-and-sleep/insomnia]]\n•[[MyHealth.Alberta.ca; https://myhealth.alberta.ca/health/pages/conditions.aspx?Hwid=abq4925]]",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150

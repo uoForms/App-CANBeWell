@@ -105,7 +105,7 @@ class Anatomy extends React.Component {
                 let currTime = timerResult.currTime,
                     timeDiff = timerResult.timeDiff;
                 let currNav = "body", currCat = text;
-                GaUserEvent(currNav, currCat, this.props.userInfo, timeDiff, this.props.userInfo.preTime, currTime);
+                GaUserEvent(currNav, currCat, this.props.userInfo, timeDiff, this.props.userInfo.preTime, currTime,"");
 
                 this.props.pageViewStateUpdater(currNav, currCat, currTime);
                 if (this.state.previousorganClicked != "") {
@@ -148,7 +148,7 @@ class Anatomy extends React.Component {
         let currTime = timerResult.currTime,
             timeDiff = timerResult.timeDiff;
         let currNav = "body", currCat = text;
-        GaUserEvent(currNav, currCat, this.props.userInfo, timeDiff, this.props.userInfo.preTime, currTime);
+        GaUserEvent(currNav, currCat, this.props.userInfo, timeDiff, this.props.userInfo.preTime, currTime,"");
 
         this.props.pageViewStateUpdater(currNav, currCat, currTime);
         if (this.state.previousorganClicked != "") {
@@ -280,8 +280,8 @@ class Anatomy extends React.Component {
 
                                 {/* <button id="genitaliaButton" className="maleGenital" onClick={(button, text, organ) => this.iconClicked("genitalia", this.props.lang.genitalia)}><img src={genitaliaIcon} alt="genitaliaIcon" /> </button> */}
                             </div>
-                            <div className="fixSelectedOrgan" test-id="selectedButton"><h1 style={fixedStyle}>{this.state.organSelected}</h1>
-                            </div>
+                            {/* <div className="fixSelectedOrgan" test-id="selectedButton"><h1 style={fixedStyle}>{this.state.organSelected}</h1>
+                            </div> */}
                         </div>
 
 
@@ -292,7 +292,8 @@ class Anatomy extends React.Component {
                                 button={this.state.buttonText}
                                 displayConfig={this.state.displayConfigOption}
                                 getTopic={this.props.getDisplay}
-                                clickOnText={this.props.lang.clickOn_Text}> 
+                                clickOnText={this.props.lang.clickOn_Text}
+                                userInfo={this.props.userInfo}> 
                             </BodyModal>
                         </div>
 
@@ -385,8 +386,8 @@ class Anatomy extends React.Component {
                                 {/*<button id="genitaliaButton" className="femaleGenital" onClick={(button, text) => this.iconClicked("genitalia", this.props.lang.genitalia)}><img src={fgenitaliaIcon} alt="fgenitaliaIcon" /> </button> */}
 
                             </div>
-                            <div className="fixSelectedOrgan" test-id="selectedButton"><h1 style={fixedStyle}>{this.state.organSelected}</h1>
-                            </div>
+                            {/* <div className="fixSelectedOrgan" test-id="selectedButton"><h1 style={fixedStyle}>{this.state.organSelected}</h1>
+                            </div> */}
                         </div>
 
 
@@ -396,7 +397,8 @@ class Anatomy extends React.Component {
                             button={this.state.buttonText}
                             displayConfig={this.state.displayConfigOption}
                             getTopic={this.props.getDisplay}
-                            clickOnText={this.props.lang.clickOn_Text}>
+                            clickOnText={this.props.lang.clickOn_Text}
+                            userInfo={this.props.userInfo}>
                         </BodyModal>
 
                     </div>
@@ -486,8 +488,8 @@ class Anatomy extends React.Component {
                                 {/*<button id="transButton" className="trans" onClick={(button, text) => this.iconClicked("trans", this.props.lang.covid)}><img src={transIcon} alt="transIcon" /></button>*/}
 
                             </div>
-                            <div className="fixSelectedOrgan" test-id="selectedButton"><h1 style={fixedStyle}>{this.state.organSelected}</h1>
-                            </div>
+                            {/* <div className="fixSelectedOrgan" test-id="selectedButton"><h1 style={fixedStyle}>{this.state.organSelected}</h1>
+                            </div> */}
                         </div>
 
 
@@ -497,7 +499,8 @@ class Anatomy extends React.Component {
                                 display={this.state.display}
                                 button={this.state.buttonText}
                                 getTopic={this.props.getDisplay}
-                                clickOnText={this.props.lang.clickOn_Text}>
+                                clickOnText={this.props.lang.clickOn_Text}
+                                userInfo={this.props.userInfo}>
                             </BodyModal>
                         </div>
 
@@ -589,8 +592,8 @@ class Anatomy extends React.Component {
                                 {/*<button id="transButton" className="trans" onClick={(button, text) => this.iconClicked("trans", this.props.lang.covid)}><img src={transIcon} alt="transIcon" /></button>*/}
 
                             </div>
-                            <div className="fixSelectedOrgan" test-id="selectedButton"><h1 style={fixedStyle}>{this.state.organSelected}</h1>
-                            </div>
+                            {/* <div className="fixSelectedOrgan" test-id="selectedButton"><h1 style={fixedStyle}>{this.state.organSelected}</h1>
+                            </div> */}
                         </div>
 
 
@@ -600,7 +603,8 @@ class Anatomy extends React.Component {
                                 display={this.state.display}
                                 button={this.state.buttonText}
                                 getTopic={this.props.getDisplay}
-                                clickOnText={this.props.lang.clickOn_Text}>
+                                clickOnText={this.props.lang.clickOn_Text}
+                                userInfo={this.props.userInfo}>
                             </BodyModal>
                         </div>
 
@@ -693,8 +697,8 @@ class Anatomy extends React.Component {
                                 {/*<button id="transButton" className="trans" onClick={(button, text) => this.iconClicked("trans", this.props.lang.covid)}><img src={transIcon} alt="transIcon" /></button>*/}
 
                             </div>
-                            <div className="fixSelectedOrgan" test-id="selectedButton"><h1 style={fixedStyle}>{this.state.organSelected}</h1>
-                            </div>
+                            {/* <div className="fixSelectedOrgan" test-id="selectedButton"><h1 style={fixedStyle}>{this.state.organSelected}</h1>
+                            </div> */}
                         </div>
 
 
@@ -704,7 +708,8 @@ class Anatomy extends React.Component {
                                 display={this.state.display}
                                 button={this.state.buttonText}
                                 getTopic={this.props.getDisplay}
-                                clickOnText={this.props.lang.clickOn_Text}>
+                                clickOnText={this.props.lang.clickOn_Text}
+                                userInfo={this.props.userInfo}>
                             </BodyModal>
                         </div>
 
@@ -795,8 +800,8 @@ class Anatomy extends React.Component {
                                 {/*<button id="genitaliaButton" className="maleGenital" onClick={(button, text) => this.iconClicked("genitalia", this.props.lang.genitalia)}><img src={genitaliaIcon} alt="genitaliaIcon" /> </button>*/}
 
                             </div>
-                            <div className="fixSelectedOrgan" test-id="selectedButton"><h1 style={fixedStyle}>{this.state.organSelected}</h1>
-                            </div>
+                            {/* <div className="fixSelectedOrgan" test-id="selectedButton"><h1 style={fixedStyle}>{this.state.organSelected}</h1>
+                            </div> */}
                         </div>
 
 
@@ -806,7 +811,8 @@ class Anatomy extends React.Component {
                                 display={this.state.display}
                                 button={this.state.buttonText}
                                 getTopic={this.props.getDisplay}
-                                clickOnText={this.props.lang.clickOn_Text}>
+                                clickOnText={this.props.lang.clickOn_Text}
+                                userInfo={this.props.userInfo}>
                             </BodyModal>
                         </div>
 
@@ -898,8 +904,8 @@ class Anatomy extends React.Component {
                                         onClick={(button, text, organ) => this.iconClicked("bp", this.props.lang.bp)}>
                                     <img src={bpIcon} alt="bpIcon"/></button></Tooltip>
                             </div>
-                            <div className="fixSelectedOrgan" test-id="selectedButton"><h1 style={fixedStyle}>{this.state.organSelected}</h1>
-                            </div>
+                            {/* <div className="fixSelectedOrgan" test-id="selectedButton"><h1 style={fixedStyle}>{this.state.organSelected}</h1>
+                            </div> */}
                         </div>
 
 
@@ -910,7 +916,8 @@ class Anatomy extends React.Component {
                                 button={this.state.buttonText}
                                 displayConfig={this.state.displayConfigOption}
                                 getTopic={this.props.getDisplay}
-                                clickOnText={this.props.lang.clickOn_Text}>
+                                clickOnText={this.props.lang.clickOn_Text}
+                                userInfo={this.props.userInfo}>
                             </BodyModal>
                         </div>
 
@@ -999,8 +1006,8 @@ class Anatomy extends React.Component {
                                         onClick={(button, text, organ) => this.iconClicked("bp", this.props.lang.bp)}>
                                     <img src={bpIcon} alt="bpIcon"/></button></Tooltip>
                             </div>
-                            <div className="fixSelectedOrgan" test-id="selectedButton"><h1 style={fixedStyle}>{this.state.organSelected}</h1>
-                            </div>
+                            {/* <div className="fixSelectedOrgan" test-id="selectedButton"><h1 style={fixedStyle}>{this.state.organSelected}</h1>
+                            </div> */}
                         </div>
 
 
@@ -1010,7 +1017,8 @@ class Anatomy extends React.Component {
                             button={this.state.buttonText}
                             displayConfig={this.state.displayConfigOption}
                             getTopic={this.props.getDisplay}
-                            clickOnText={this.props.lang.clickOn_Text}>
+                            clickOnText={this.props.lang.clickOn_Text}
+                            userInfo={this.props.userInfo}>
                         </BodyModal>
 
                     </div>
@@ -1094,8 +1102,8 @@ class Anatomy extends React.Component {
                                         onClick={(button, text, organ) => this.iconClicked("bp", this.props.lang.bp)}>
                                     <img src={bpIcon} alt="bpIcon"/></button></Tooltip>
                             </div>
-                            <div className="fixSelectedOrgan" test-id="selectedButton"><h1 style={fixedStyle}>{this.state.organSelected}</h1>
-                            </div>
+                            {/* <div className="fixSelectedOrgan" test-id="selectedButton"><h1 style={fixedStyle}>{this.state.organSelected}</h1>
+                            </div> */}
                         </div>
 
 
@@ -1105,7 +1113,8 @@ class Anatomy extends React.Component {
                                 display={this.state.display}
                                 button={this.state.buttonText}
                                 getTopic={this.props.getDisplay}
-                                clickOnText={this.props.lang.clickOn_Text}>
+                                clickOnText={this.props.lang.clickOn_Text}
+                                userInfo={this.props.userInfo}>
                             </BodyModal>
                         </div>
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
+import { GaUserEvent, PageViewTimer } from '../Tracking';
 
 class TopicModal extends React.Component {
 
@@ -27,6 +28,18 @@ getsubjectArray=(display)=>{
       padding: '10px',
       color: 'white'
     };
+
+    //function to handle the onClick event for external links
+    const handleTopicLinkClick=() =>{
+      let timerResult = PageViewTimer(
+        this.props.userInfo.preCat,
+        this.props.userInfo.preTime);
+      let currTime = timerResult.currTime,
+        timeDiff= timerResult.timeDiff;
+      let currNav= "topics", currCat= this.props.getTopic;
+      GaUserEvent(currNav, currCat, this.props.userInfo, timeDiff, this.props.userInfo.preTime, currTime, this.props.getTopic);
+    }
+
     subjectArray.push(<div><h2 test-id="heading">{this.props.getTopic}</h2> <h3>{this.props.clickOnText}<ArrowRightIcon className="arrow-left" sx={{ fontSize: 40 }}/></h3></div>);
     bodys.forEach((body) => {      
       var bodyArray = body.text.split(/(\[\[|\]\]|\n|\(\<|\>\)|\{\{|\}\})/g);
@@ -44,7 +57,7 @@ getsubjectArray=(display)=>{
               subjectArrayToDisplay.push(<div><img className="imageFromFolder" src={adress} alt="photo" /></div>);
             }
             else {
-              subjectArrayToDisplay.push(<a href={link[1]} target="_blank"><font color="Yellow">{link[0]}</font></a>);
+              subjectArrayToDisplay.push(<a href={link[1]} target="_blank" onClick={() =>handleTopicLinkClick()}><font color="Yellow">{link[0]}</font></a>);
             }
             i++;
           } catch (err) { }
@@ -80,10 +93,10 @@ getsubjectArray=(display)=>{
             }
             else {
               if (link[1] == null) {
-                bodyArrayToDisplay.push(<a href={link[0]} target="_blank"><font color="Yellow">{link[0]}</font></a>);
+                bodyArrayToDisplay.push(<a href={link[0]} target="_blank" onClick={() =>handleTopicLinkClick()}><font color="Yellow">{link[0]}</font></a>);
               }
               else {
-                bodyArrayToDisplay.push(<a href={link[1]} target="_blank"><font color="Yellow">{link[0]}</font></a>);
+                bodyArrayToDisplay.push(<a href={link[1]} target="_blank" onClick={() =>handleTopicLinkClick()}><font color="Yellow">{link[0]}</font></a>);
               }
             }
             i++;
@@ -182,7 +195,8 @@ TopicModal.propTypes = {
   show: PropTypes.bool,
   display: PropTypes.array,
   button: PropTypes.string,
-  getTopic: PropTypes.func.isRequired,
+  getTopic: PropTypes.string,
+  userInfo: PropTypes.object
 };
 
 export default TopicModal;

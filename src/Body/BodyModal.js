@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
+import { GaUserEvent, PageViewTimer } from '../Tracking';
 
 class BodyModal extends React.Component {
 
@@ -31,6 +32,17 @@ class BodyModal extends React.Component {
       padding: '10px',
       color: 'white'
     };
+
+    //function to handle the onClick event for external links
+    const handleLinkClick=(topicname, e) =>{
+      let timerResult = PageViewTimer(
+        this.props.userInfo.preCat,
+        this.props.userInfo.preTime);
+      let currTime = timerResult.currTime,
+        timeDiff= timerResult.timeDiff;
+      let currNav= "body", currCat= this.props.userInfo.preCat;
+      GaUserEvent(currNav, currCat, this.props.userInfo, timeDiff, this.props.userInfo.preTime, currTime, topicname);
+    }
     
     if (topicsToDisplay.length > 1) {
       topicsToDisplay.forEach((topic,idx) => {
@@ -72,7 +84,7 @@ class BodyModal extends React.Component {
               } else {
 
                 subjectArrayToDisplay.push(
-                  <a href={link[1]} target="_blank" key={itemID}>
+                  <a href={link[1]} target="_blank" key={itemID} onClick={(e)=>handleLinkClick(topic.name,e)}>
                     <font color="Yellow">{link[0]}</font>
                   </a>
                 );
@@ -112,7 +124,7 @@ class BodyModal extends React.Component {
                 } else {
 
                   bodyArrayToDisplay.push(
-                    <a href={link[1]} target="_blank" key={itemID}>
+                    <a href={link[1]} target="_blank" key={itemID} onClick={(e)=>handleLinkClick(topic.name,e)}>
                       <font color="Yellow">{link[0]}</font>
                     </a>
                   );
@@ -205,7 +217,7 @@ class BodyModal extends React.Component {
                   subjectArrayToDisplay.push(<div onClick={(idTarget) => this.togglePopUp(testId)}><font color="Yellow">{link[0]}</font><div id={testId} className="popup"><span className="popuptext"><p>{testOuterText}</p></span></div></div>);
                 }*/
                 subjectArrayToDisplay.push(
-                  <a href={link[1]} target="_blank" key={itemID}>
+                  <a href={link[1]} target="_blank" key={itemID} onClick={(e)=>handleLinkClick(topic.name,e)}>
                     <font color="Yellow">{link[0]}</font>
                   </a>
                 );
@@ -254,7 +266,7 @@ class BodyModal extends React.Component {
                     bodyArrayToDisplay.push(<a><font color="Yellow">{link[0]}</font></a>);
                   }*/
                   bodyArrayToDisplay.push(
-                    <a href={link[1]} target="_blank" key={itemID}>
+                    <a href={link[1]} target="_blank" key={itemID} onClick={(e)=>handleLinkClick(topic.name,e)}>
                       <font color="Yellow">{link[0]}</font>
                     </a>
                   );
@@ -364,6 +376,7 @@ BodyModal.propTypes = {
   display: PropTypes.array,
   button: PropTypes.string,
   getTopic: PropTypes.func.isRequired,
+  userInfo: PropTypes.object
 };
 
 export default BodyModal;
