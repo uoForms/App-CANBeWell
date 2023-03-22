@@ -105,7 +105,7 @@ class Anatomy extends React.Component {
                 let currTime = timerResult.currTime,
                     timeDiff = timerResult.timeDiff;
                 let currNav = "body", currCat = text;
-                GaUserEvent(currNav, currCat, this.props.userInfo, timeDiff, this.props.userInfo.preTime, currTime);
+                GaUserEvent(currNav, currCat, this.props.userInfo, timeDiff, this.props.userInfo.preTime, currTime,"");
 
                 this.props.pageViewStateUpdater(currNav, currCat, currTime);
                 if (this.state.previousorganClicked != "") {
@@ -148,7 +148,7 @@ class Anatomy extends React.Component {
         let currTime = timerResult.currTime,
             timeDiff = timerResult.timeDiff;
         let currNav = "body", currCat = text;
-        GaUserEvent(currNav, currCat, this.props.userInfo, timeDiff, this.props.userInfo.preTime, currTime);
+        GaUserEvent(currNav, currCat, this.props.userInfo, timeDiff, this.props.userInfo.preTime, currTime,"");
 
         this.props.pageViewStateUpdater(currNav, currCat, currTime);
         if (this.state.previousorganClicked != "") {
@@ -292,7 +292,8 @@ class Anatomy extends React.Component {
                                 button={this.state.buttonText}
                                 displayConfig={this.state.displayConfigOption}
                                 getTopic={this.props.getDisplay}
-                                clickOnText={this.props.lang.clickOn_Text}> 
+                                clickOnText={this.props.lang.clickOn_Text}
+                                userInfo={this.props.userInfo}> 
                             </BodyModal>
                         </div>
 
@@ -396,7 +397,8 @@ class Anatomy extends React.Component {
                             button={this.state.buttonText}
                             displayConfig={this.state.displayConfigOption}
                             getTopic={this.props.getDisplay}
-                            clickOnText={this.props.lang.clickOn_Text}>
+                            clickOnText={this.props.lang.clickOn_Text}
+                            userInfo={this.props.userInfo}>
                         </BodyModal>
 
                     </div>
@@ -497,7 +499,8 @@ class Anatomy extends React.Component {
                                 display={this.state.display}
                                 button={this.state.buttonText}
                                 getTopic={this.props.getDisplay}
-                                clickOnText={this.props.lang.clickOn_Text}>
+                                clickOnText={this.props.lang.clickOn_Text}
+                                userInfo={this.props.userInfo}>
                             </BodyModal>
                         </div>
 
@@ -600,7 +603,8 @@ class Anatomy extends React.Component {
                                 display={this.state.display}
                                 button={this.state.buttonText}
                                 getTopic={this.props.getDisplay}
-                                clickOnText={this.props.lang.clickOn_Text}>
+                                clickOnText={this.props.lang.clickOn_Text}
+                                userInfo={this.props.userInfo}>
                             </BodyModal>
                         </div>
 
@@ -704,7 +708,8 @@ class Anatomy extends React.Component {
                                 display={this.state.display}
                                 button={this.state.buttonText}
                                 getTopic={this.props.getDisplay}
-                                clickOnText={this.props.lang.clickOn_Text}>
+                                clickOnText={this.props.lang.clickOn_Text}
+                                userInfo={this.props.userInfo}>
                             </BodyModal>
                         </div>
 
@@ -806,7 +811,8 @@ class Anatomy extends React.Component {
                                 display={this.state.display}
                                 button={this.state.buttonText}
                                 getTopic={this.props.getDisplay}
-                                clickOnText={this.props.lang.clickOn_Text}>
+                                clickOnText={this.props.lang.clickOn_Text}
+                                userInfo={this.props.userInfo}>
                             </BodyModal>
                         </div>
 
@@ -910,7 +916,8 @@ class Anatomy extends React.Component {
                                 button={this.state.buttonText}
                                 displayConfig={this.state.displayConfigOption}
                                 getTopic={this.props.getDisplay}
-                                clickOnText={this.props.lang.clickOn_Text}>
+                                clickOnText={this.props.lang.clickOn_Text}
+                                userInfo={this.props.userInfo}>
                             </BodyModal>
                         </div>
 
@@ -1010,7 +1017,8 @@ class Anatomy extends React.Component {
                             button={this.state.buttonText}
                             displayConfig={this.state.displayConfigOption}
                             getTopic={this.props.getDisplay}
-                            clickOnText={this.props.lang.clickOn_Text}>
+                            clickOnText={this.props.lang.clickOn_Text}
+                            userInfo={this.props.userInfo}>
                         </BodyModal>
 
                     </div>
@@ -1105,7 +1113,8 @@ class Anatomy extends React.Component {
                                 display={this.state.display}
                                 button={this.state.buttonText}
                                 getTopic={this.props.getDisplay}
-                                clickOnText={this.props.lang.clickOn_Text}>
+                                clickOnText={this.props.lang.clickOn_Text}
+                                userInfo={this.props.userInfo}>
                             </BodyModal>
                         </div>
 

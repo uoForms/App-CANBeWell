@@ -97,7 +97,7 @@ class TestRow extends React.Component {
     let currTime = timerResult.currTime,
       timeDiff = timerResult.timeDiff;
     let currNav = "tests", currCat = title;
-    GaUserEvent(currNav, currCat ,this.props.userInfo, timeDiff, this.props.userInfo.preTime, currTime);
+    GaUserEvent(currNav, currCat ,this.props.userInfo, timeDiff, this.props.userInfo.preTime, currTime,"");
     this.props.pageViewStateUpdater(currNav, currCat, currTime);
   }
 
@@ -107,6 +107,19 @@ class TestRow extends React.Component {
     var sujectArray = [];
     var bodys = this.props.test.body;
     var mIndex = 0;
+
+    //function to handle the onClick event for external links
+    const handleTestsLinkClick=() =>{
+      let timerResult = PageViewTimer(
+        this.props.userInfo.preCat,
+        this.props.userInfo.preTime);
+      let currTime = timerResult.currTime,
+        timeDiff= timerResult.timeDiff;
+      let currNav= "tests", currCat= this.props.test.name;
+      GaUserEvent(currNav, currCat, this.props.userInfo, timeDiff, this.props.userInfo.preTime, currTime, this.props.test.name);
+      this.props.pageViewStateUpdater(currNav,currCat,currTime);
+    }
+
     bodys.forEach((body) => {
       var bodyArray = body.text.split(/(\[\[|\]\]|\n|\(\<|\>\)|\{\{|\}\})/g);
       var bodyArrayToDisplay = [];
@@ -129,7 +142,7 @@ class TestRow extends React.Component {
               bodyArrayToDisplay.push.push(<span onClick={(id) => this.openDetails(link[1])}><font color="Yellow">{link[0]}</font></span>);
             }*/
             else {
-              bodyArrayToDisplay.push(<a href={link[1]} target="_blank"><font color="Yellow">{link[0]}</font></a>);
+              bodyArrayToDisplay.push(<a href={link[1]} target="_blank" onClick={()=>handleTestsLinkClick()}><font color="Yellow">{link[0]}</font></a>);
             }
             i++;
           } catch (err) { }

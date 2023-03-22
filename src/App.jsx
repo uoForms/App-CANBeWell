@@ -583,7 +583,8 @@ class App extends Component {
     };
 
     const genderCss = {
-      'textAlign': 'left'
+      'textAlign': 'left',
+      'fontWeight':'400'
     }
 
     const titleCSS = {
@@ -664,7 +665,7 @@ class App extends Component {
                   {/*select gender*/}
                   <div>
                     <div id="genderSelector" className="radio" style={genderCss} test-id="genderSelectRoot">
-                      <div><strong>{this.state.lang.gender_selector}</strong>
+                      <div>{this.state.lang.gender_selector}
                         {/* this is the original button, works fine 
                         but i have applied css zindex and positioned it over other div which is trick that doesnt aligns with screen size */}
                         {/* this button is crack takes me to the landing page */}

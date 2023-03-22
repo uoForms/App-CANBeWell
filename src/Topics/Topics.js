@@ -113,7 +113,7 @@ class TopicRow extends React.Component {
     let currTime = timerResult.currTime,
       timeDiff = timerResult.timeDiff;
     let currNav = "topics", currCat = title;
-    GaUserEvent(currNav, currCat, this.props.userInfo, timeDiff, this.props.userInfo.preTime, currTime);
+    GaUserEvent(currNav, currCat, this.props.userInfo, timeDiff, this.props.userInfo.preTime, currTime,"");
     this.props.pageViewStateUpdater(currNav, currCat, currTime);
     this.setState({
       isOpen: !this.state.isOpen,
@@ -145,7 +145,8 @@ class TopicRow extends React.Component {
               display={this.state.display}
               button={this.props.btnText}
               getTopic={this.props.topic.name}
-              clickOnText={this.props.clickOnText}>  
+              clickOnText={this.props.clickOnText}
+              userInfo={this.props.userInfo}>  
             </TopicModal>
           </div>
       </div>

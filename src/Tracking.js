@@ -128,7 +128,7 @@ export const matchUserDevice = () => {
   }
 };
 
-export const GaUserEvent = (currNav, currCat, userInfo, timeDiff, preTime, currTime) => {
+export const GaUserEvent = (currNav, currCat, userInfo, timeDiff, preTime, currTime, externalLinkTopic) => {
   let pageviewURL = currNav + "/" + currCat;
   ReactGA.pageview(pageviewURL);
   var deviceInfo = matchUserDevice();
@@ -149,8 +149,10 @@ export const GaUserEvent = (currNav, currCat, userInfo, timeDiff, preTime, currT
     region: userInfo.region,
     city: userInfo.city,
     date: date,
-    gcheck: userInfo.gcheck
+    gcheck: userInfo.gcheck,
+    externallinktopic: externalLinkTopic
   }
+  console.log(label);
   let eventCatagory = getEventCatagory(label);
   let eventAction = getEventAction(label);
   let eventLabel = getEventLabel(label);
@@ -175,7 +177,8 @@ export const GaUserEvent = (currNav, currCat, userInfo, timeDiff, preTime, currT
       city: userInfo.city,
       date: date,
       pageviewtime: timeDiff,
-      gcheck: userInfo.gcheck
+      gcheck: userInfo.gcheck,
+      externallinktopic: externalLinkTopic
     }
     //commenting out this call to avoid rewriting the logging values in firebase db -- # issue -330.
     //writeClick(preLabel, preTime);
