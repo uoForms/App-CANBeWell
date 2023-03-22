@@ -71,7 +71,7 @@ export default function CustomizedDialogs() {
           if(clientOS == 'iOS'){
             return <div>
               <div className="homescreen-button-english">
-                <button onClick={handleClickOpen} test-id="homeScreenButtonEn">Add to Home Screen</button>&nbsp;
+                <button onClick={handleClickOpen} test-id="homeScreenButtonEn">Save App</button>&nbsp;
                 </div>
           <Dialog onClose={handleClose} aria-labelledby="customized-dialog-title" open={open}>
             <DialogTitle id="customized-dialog-title" onClose={handleClose}>
@@ -82,7 +82,7 @@ export default function CustomizedDialogs() {
               <img src={require('./images/instruction_1.png').default} className="instructionimg" />
               <h4>2. Tap share icon</h4>
               <img src={require('./images/instruction_2.png').default} className="instructionimg" />
-              <h4>3. Tap "Add to Home Screen"</h4>
+              <h4>3. Tap "Save App"</h4>
               <img src={require('./images/instruction_3.png').default} className="instructionimg" />
               <h4>4. Tap "Add" button</h4>
               <img src={require('./images/instruction_4.png').default} className="instructionimg" />
@@ -98,7 +98,7 @@ export default function CustomizedDialogs() {
           else if(clientOS =='AndroidOS'){
             return <div>
               <div className="homescreen-button-english">
-                <button test-id="homeScreenButtonEn" onClick={handleClickOpen}>Add to Home Screen</button>&nbsp;
+                <button test-id="homeScreenButtonEn" onClick={handleClickOpen}>Save app</button>&nbsp;
                 </div>
           <Dialog onClose={handleClose} aria-labelledby="customized-dialog-title" open={open}>
           <DialogTitle id="customized-dialog-title" onClose={handleClose}>
@@ -109,7 +109,7 @@ export default function CustomizedDialogs() {
               <img src={require('./images/android_1.jpg').default} className="instructionimg" />
               <h4>2. Tap menu icon</h4>
               <img src={require('./images/android_2.jpg').default} className="instructionimg" />
-              <h4>3. Tap "Add to Home Screen"</h4>
+              <h4>3. Tap "Save App"</h4>
               <img src={require('./images/android_eng_1.jpg').default} className="instructionimg" />
             </DialogContent>
             <DialogActions>

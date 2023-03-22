@@ -1,13 +1,4 @@
-.landing-logo {
-  position: relative;
-  display: block;
-  margin-top: 0;
-  margin-left: auto;
-  margin-right: auto;
-  height: auto;
-  overflow: hidden;
-  width: 35vmax;
-}
+/* Desktop / PC / Laptop */
 
 .landing-page {
   position: relative;
@@ -18,7 +9,231 @@
   height: auto;
 }
 
-.landing-trans {
+/* Green-grey logo */
+.landing-logo {
+  position: absolute;
+  width: 250px;
+  height: 220px;
+  left: 16px;
+  top: 10px;
+}
+
+/* choix sante */
+.landing-button-img-fr{
+  position: absolute;
+  width: 335px;
+  height: 72px;
+  left: 220px;
+  top: 50px;
+  }
+ 
+/* icanbewell */
+.landing-button-img-en{
+  position: absolute;
+  width: 335px;
+  height: 72px;
+  left: 215px;
+  top: 120px;
+  }
+
+/* EN */  
+.landing-button-EN{
+  position: absolute;
+  width: 75px;
+  height: 20px;
+  left: 77%;
+  top: 120px;
+  cursor: pointer;
+
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 16px;
+  color: #000000;
+  }
+
+.landing-button-EN::after {
+  content: "";
+  display: block;
+  position: relative;
+  right: 0px;
+  border-right: 3px solid #25AAE1;
+  height: 180%;
+  top: -26px;
+}
+
+
+/* FR */
+.landing-button-FR{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 83%;
+  top: 120px;
+  cursor: pointer;
+
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 16px;
+  color: #000000;
+  }
+
+/* cover image */
+.home-page-img{
+  position: fixed;
+  width: 393px;
+  height: 333px;
+  left: 575px;
+  top: 0px;
+  }
+
+.rectangle-blue{
+  position: absolute;
+  width: 100%;
+  height: 280px;
+  left: 0px;
+  top: 250px;
+  background: #25AAE1;
+  }
+
+.welcome-message-en{
+  position: absolute;
+  width: 500px;
+  height: 88px;
+  left: 40%;
+  top: 280px;
+  color: #FFFFFF;
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 44px;
+}
+
+.landing-notice-privacystmnt-en{
+  position: absolute;
+  width: 1200px;
+  height: 90px;
+  left: 15%;
+  top: 340px;
+  
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+  color: #FFFFFF;
+  }
+
+.videoButton-en{
+  position: absolute;
+  width: 250px;
+  height: 30px;
+  left: 1170px;
+  top: 340px;
+  cursor: pointer;
+
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #D7DF21;
+  }
+
+.welcome-message-fr{
+  position: absolute;
+  width: 500px;
+  height: 88px;
+  left: 40%;
+  top: 400px;
+  color: #FFFFFF;
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 44px;
+}
+
+.landing-notice-privacystmnt-fr{
+  position: absolute;
+  width: 1200px;
+  height: 90px;
+  left: 12%;
+  top: 460px;
+  
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+  color: #FFFFFF;
+  }
+
+.videoButton-fr{
+  position: absolute;
+  width: 123px;
+  height: 30px;
+  left: 1200px;
+  top: 460px;
+  cursor: pointer;
+
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #D7DF21;
+  }
+
+.landing-notice-privacystmnt-english {
+  position: relative;
+  text-align: right;
+  /*margin-left: 35%;*/
+  width: 100%;
+  height: auto;
+  top: 600px;
+  /* font-size: larger; */
+  font-size: 20px;
+  }
+  .landing-notice-aboutus-english {
+  position: relative;
+  text-align: right;
+  /*margin-left: 35%;*/
+  width: 100%;
+  height: auto;
+  /* font-size: larger; */
+  top: 600px;
+  font-size: 20px;
+  }
+
+.landing-notice-privacystmnt-french {
+  position: relative;
+  text-align: right;
+  margin-left: auto;
+  /*margin-right: auto;*/
+  width: 100%;
+  height: auto;
+  /* font-size: larger; */
+  top: 600px;
+  font-size: 20px;
+  }
+  .landing-notice-aboutus-french {
+  position: relative;
+  text-align: left;
+  margin-left: auto;
+  /*margin-right: auto;*/
+  width: 100%;
+  height: auto;
+  /* font-size: larger; */
+  top: 600px;
+  font-size: 20px;
+  }
+
+/* .landing-trans {
 position: relative;
 text-align: center;
 margin-top: 2vw;
@@ -30,7 +245,7 @@ font-size: normal;
 font-weight: bolder;
 font-style: unset;
 color: rgb(13, 194, 58);
-}
+} */
 
 .landing-update {
 position: relative;
@@ -41,35 +256,308 @@ position: relative;
 text-align: center;
 }
 
-.landing-button-img{
+/* .landing-button-img{
 width: 350px;
 height: auto ;
 border: 1px solid #fff;
 border-radius: 15px;
 overflow: hidden;
-}
+} */
 
-.landing-button-img:hover{
+/* .landing-button-img:hover{
 background-color: #D3D3D3;
 opacity: 0.9;
+} */
+
+
+/* Mobile Device */
+@media only screen and (min-width:200px) and (max-width:450px){
+
+.landing-page {
+  position: absolute;
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
+}  
+
+.landing-logo {
+  position: absolute;
+  width: 70px;
+  height: 57px;
+  left: 16px;
+  top: 10px;
 }
 
-@media only screen and (min-width:200px) and (max-width:450px){
-.landing-button-img{
+.landing-button-img-fr{
+  position: absolute;
+  width: 82px;
+  height: 18px;
+  left: 79px;
+  top: 22px;
+  }
+  
+.landing-button-img-en{
+  position: absolute;
+  width: 78px;
+  height: 16px;
+  left: 80px;
+  top: 40px;
+  }
+
+/* .landing-button-img{
   width: 280px;
   height: auto ;
   border: 1px solid #fff;
   border-radius: 15px;
   overflow: hidden;
+} */
+
+.landing-button-EN{
+  position: absolute;
+  width: 25px;
+  height: 16px;
+  left: 327px;
+  top: 34px;
+  cursor: pointer;
+  
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  /* identical to box height */
+  color: #000000;
+  }
+
+  .landing-button-EN::after {
+    content: "";
+    display: block;
+    position: relative;
+    right: 0px;
+    border-right: 1px solid #25AAE1;
+    height: 100%;
+    top: -15px;
+  }
+   
+  .landing-button-FR{
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 358px;
+  top: 34px;
+  cursor: pointer;
+  
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  /* identical to box height */
+  color: #000000;
+  }
+
+.home-page-img{
+  position: absolute;
+  width: 393px;
+  height: 333px;
+  left: 0px;
+  top: 97px;
 }
-.landing-notice-privacystmnt {
+
+.rectangle-blue{
+  position: absolute;
+  width: 391px;
+  height: 455px;
+  left: 0px;
+  top: 425px;
+  
+  background: #25AAE1;
+}
+
+.welcome-message-en{
+  position: absolute;
+  width: 343px;
+  height: 88px;
+  left: 24px;
+  top: 450px;
+  color: #FFFFFF;
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 44px;
+}
+
+.landing-notice-privacystmnt-en{
+  position: absolute;
+  width: 343px;
+  height: 90px;
+  left: 24px;
+  top: 500px;
+  
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  /* or 150% */
+  color: #FFFFFF;
+  }
+
+.videoButton-en{
+  position: absolute;
+  width: 123px;
+  height: 30px;
+  left: 210px;
+  top: 560px;
+
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #D7DF21;
+
+  }
+
+.welcome-message-fr{
+  position: absolute;
+  width: 343px;
+  height: 88px;
+  left: 24px;
+  top: 650px;
+  color: #FFFFFF;
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 44px;
+}
+
+.landing-notice-privacystmnt-fr{
+  position: absolute;
+  width: 343px;
+  height: 90px;
+  left: 24px;
+  top: 700px; 
+  
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  /* or 150% */
+  color: #FFFFFF;
+  }
+
+.videoButton-fr{
+  position: absolute;
+  width: 123px;
+  height: 30px;
+  left: 185px;
+  top: 761px;
+
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #D7DF21;
+  }
+
+.landing-notice-privacystmnt-english {
+  position: relative;
+  text-align: right;
+  /*margin-left: 35%;*/
+  width: 100%;
+  height: auto;
+  top: 900px;
+  font-size: larger;
+  }
+  .landing-notice-aboutus-english {
+  position: relative;
+  text-align: right;
+  /*margin-left: 35%;*/
+  width: 100%;
+  height: auto;
+  font-size: larger;
+  top: 900px;
+  }
+
+.landing-notice-privacystmnt-french {
+  position: relative;
+  text-align: right;
+  margin-left: auto;
+  /*margin-right: auto;*/
+  width: 100%;
+  height: auto;
+  font-size: larger;
+  top: 900px;
+  }
+  .landing-notice-aboutus-french {
+  position: relative;
+  text-align: left;
+  margin-left: auto;
+  /*margin-right: auto;*/
+  width: 100%;
+  height: auto;
+  font-size: larger;
+  top: 900px;
+  }
+
+.homescreen-eng{
+  position: relative;
+  width: 100%;
+  height: auto;
+  font-size: larger;
+  top: 560px;
+  margin-left:75%;
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  color: #0286bf;
+  }
+
+#homescreen-english{
+  width: 100%;
+  height: auto;
+  font-size: 15px;
+  }
+
+.homescreen-button-english{
+  width: 100%;
+  text-align: right;
+  }
+
+.homescreen-fre{
+  position: relative;
+  width: 100%;
+  height: auto;
+  font-size: larger;
+  top: 760px;
+  left: -50px;
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  color: #0286bf;
+  }
+#homescreen-french{
+  width: 100%;
+  height: auto;
+  font-size: 15px;
+  }
+
+/* .landing-notice-privacystmnt {
   position: relative;
   font-size: 10px!important;
   margin: 10px auto;
   text-align: center;
   height: auto;
   width: 80%;
-}
+} */
+
 .landing-update {
   position: relative;
   text-align: center;
@@ -85,6 +573,7 @@ opacity: 0.9;
   font-weight: bolder;
   font-style: unset;
   color: crimson;
+  top: 700px;
 }
 
 }
@@ -121,20 +610,21 @@ color: crimson;
   clear: both;
 }
 
-.landing-notice-privacystmnt{
+/* .landing-notice-privacystmnt{
 position: relative;
 margin: 10px auto;
 text-align: center;
 width: 80%;
 height: auto;
 font-size: larger;
-}
+} */
 
-@media (max-width: 375px){
+
+/* @media (max-width: 375px){
 .homescreen-button-english {
   text-align: right;
   }
-}
+} */
 @media (min-width: 376px){
 .homescreen-button-english {
   text-align: right;
@@ -147,22 +637,7 @@ text-align: left;
 text-align: right;
 }  
 
-.landing-notice-privacystmnt-english {
-position: relative;
-text-align: right;
-/*margin-left: 35%;*/
-width: 100%;
-height: auto;
-/* font-size: larger; */
-}
-.landing-notice-aboutus-english {
-position: relative;
-text-align: right;
-/*margin-left: 35%;*/
-width: 100%;
-height: auto;
-/* font-size: larger; */
-}
+
 
 .landingpage-notice-column a{
 display: inline-block;
@@ -172,7 +647,7 @@ font-size: larger;
 .slash{
 position: absolute;
 margin-top: 0;
-top: 0px;
+top: 9px;
 color: #363636;
 cursor: text;
 margin:0 5px;
@@ -188,55 +663,10 @@ color: #363636;
 text-align: center;
 }
 
-.landing-notice-privacystmnt-french {
-position: relative;
-text-align: right;
-margin-left: auto;
-/*margin-right: auto;*/
-width: 100%;
-height: auto;
-/* font-size: larger; */
-}
-.landing-notice-aboutus-french {
-position: relative;
-text-align: left;
-margin-left: auto;
-/*margin-right: auto;*/
-width: 100%;
-height: auto;
-/* font-size: larger; */
-}
+
 .landing-notice-french{
 /* width: 95px; */
 text-align: center;
-}
-
-.homescreen-eng{
-position: relative;
-width: 100%;
-height: auto;
-font-size: larger;
-}
-#homescreen-english{
-width: 100%;
-height: auto;
-font-size: 10px;
-}
-.homescreen-button-english{
-width: 100%;
-text-align: right;
-}
-.homescreen-fre{
-position: relative;
-text-align: left;
-width: 100%;
-height: auto;
-font-size: larger;
-}
-#homescreen-french{
-font-size: 10px;
-width: 100%;
-height: auto;
 }
 
 .instructionimg{

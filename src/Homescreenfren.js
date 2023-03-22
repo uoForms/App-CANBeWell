@@ -70,7 +70,7 @@ export default function CustomizedDialogs() {
           if(clientOS == 'iOS'){
             return <div>
               <div className="homescreen-button-french">
-                &nbsp;<button test-id="homeScreenButtonFr" onClick={handleClickOpen}>Ajouter sur l'écran d'accueil</button>
+                &nbsp;<button test-id="homeScreenButtonFr" onClick={handleClickOpen}>Enregister l’appli</button>
                 </div>
           <Dialog onClose={handleClose} aria-labelledby="customized-dialog-title" open={open}>
             <DialogTitle id="customized-dialog-title" onClose={handleClose}>
@@ -81,7 +81,7 @@ export default function CustomizedDialogs() {
               <img src={require('./images/instruction-2_french.png').default} className="instructionimg" />
               <h4>2. Appuyez sur l'icône de partage</h4>
               <img src={require('./images/instruction_2.png').default} className="instructionimg" />
-              <h4>3. Appuyez sur "Ajouter sur l'écran d'accueil"</h4>
+              <h4>3. Appuyez sur "Enregister l’appli"</h4>
               <img src={require('./images/instruction_fren_1.png').default} className="instructionimg" />
               <h4>4. Appuyez sur le bouton "Ajouter"</h4>
               <img src={require('./images/instruction-1_french.png').default} className="instructionimg" />

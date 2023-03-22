@@ -7,6 +7,7 @@ import videoen from './videos/video_en.mp4';
 import videofr from './videos/video_fr.mp4';
 import calleng from './assets/Logos/icanbewelleng.png';
 import callfren from './assets/Logos/canbewellfren.png';
+import homepageimg from './assets/Logos/homepageimage.png';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -52,29 +53,56 @@ class LandingPage extends React.Component {
             TRANSGENDER Branch
             </div>
             </div> */}
-              <div className="landing-update" test-id="update-banner">
-                <button className="videoButton" src={videofr} onClick={this.openVideofr}
-                        test-id="update-banner-fr-video">Vidéo
-                </button>
-                &nbsp;&nbsp;Bienvenue Welcome&nbsp;&nbsp;
-                <button className="videoButton" src={videoen}
-                        onClick={this.openVideoen} test-id="update-banner-en-video">Video
-                </button>
-              </div>
+
               <img className="landing-logo" src={calllogo} alt="CANBeWellLogo" test-id="logo"/>
-              <div className="landing-button">
+              {/* <div className="landing-button">
                 <a href="#"><img className="landing-button-img" src={callfren} onClick={this.handleChange2}
                                  test-id="fr-redirect-button"/></a>
-              </div>
-              <div className="landing-button">
-                <a href="#"><img className="landing-button-img" src={calleng} onClick={this.handleChange}
-                                 test-id="en-redirect-button"/></a>
+              </div>*/}
+              
+              <div className="landing-button-EN" test-id="landing-EN">
+                <a onClick={this.handleChange}>EN</a>
               </div>
 
-              <div className="landing-notice-privacystmnt" test-id="en-reliable-resource-statement">
+              <div className="landing-button-FR" test-id="landing-FR">
+                <a onClick={this.handleChange2}>FR</a>
+              </div>
+
+              {/* <button onClick={this.handleChange2}>FR</button> */}
+
+              <img className="landing-button-img-en" src={calleng} 
+                                test-id="en-redirect-button"/>
+              <img className="landing-button-img-fr" src={callfren} 
+                                test-id="fr-redirect-button"/>
+              <img className="home-page-img" src={homepageimg}
+                                test-id="img-home-page"/>
+
+              {/* <div className="landing-notice-privacystmnt" test-id="en-reliable-resource-statement">
                 A reliable resource by Canadian health care providers to help you stay healthy
+              </div> */}
+
+              <div className= "rectangle-blue"> </div>
+
+              <div className="landing-notice-privacystmnt-en" test-id="en-reliable-resource-statement">
+                Your free resource of preventive health information provided by Canadian clinicians.
               </div>
 
+              <div className="videoButton-en" test-id="en-video-button">
+                       <a onClick={this.openVideoen}>Watch Demo</a>
+              </div>
+
+              
+
+              <div className='welcome-message-en' test-id="en-welcome-message">
+                Welcome to icanbewell
+              </div>
+
+
+              <div className='welcome-message-fr' test-id="fr-welcome-message">
+                Bienvenue à choixsanté
+              </div>
+              
+              
               <div className="landingpage-notice-row"></div>
               <div className="landingpage-notice-row d-flex justify-content-center">
 
@@ -113,7 +141,7 @@ class LandingPage extends React.Component {
                     <a href="/iCanBeWell_àproposdenous.htm"
                        className="landing-notice-french"
                        test-id="aboutus-statement-fr">{"À propos de nous"}</a>
-
+ 
                   </div>
                 </div>
 
@@ -121,9 +149,15 @@ class LandingPage extends React.Component {
 
               </div>
 
-              <div className="landing-notice-privacystmnt" test-id="fr-reliable-resource-statement">
+              <div className="landing-notice-privacystmnt-fr" test-id="fr-reliable-resource-statement">
                 Rester en santé avec cette ressource créée par vos professionnels de la santé canadiens
               </div>
+              
+              <div className="videoButton-fr" test-id="fr-video-button">
+                       <a onClick={this.openVideofr}>Démonstration</a>
+              </div>
+
+
               <div className="landingpage-notice-row"></div>
               <div className="landingpage-notice-row row justify-content-center">
                 <div className="landingpage-notice-column">
@@ -137,6 +171,16 @@ class LandingPage extends React.Component {
                   </div>
               </div>
             </div>
+
+            {/* <div className="landing-update" test-id="update-banner">
+                <button className="videoButton" src={videofr} onClick={this.openVideofr}
+                        test-id="update-banner-fr-video">Vidéo
+                </button>
+                &nbsp;&nbsp;Bienvenue Welcome&nbsp;&nbsp;
+                <button className="videoButton" src={videoen}
+                        onClick={this.openVideoen} test-id="update-banner-en-video">Video
+                </button>
+              </div> */}
 
             <div className="landingButtons">
               <button className="langLandButtonStyle" onClick={this.handleChange} >English</button>
