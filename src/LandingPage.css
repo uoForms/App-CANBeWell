@@ -270,7 +270,8 @@ opacity: 0.9;
 } */
 
 
-/* Mobile Device */
+/* Mobile Device */ /* Mobile Device */ /* Mobile Device */ /* Mobile Device */ /* Mobile Device */
+
 @media only screen and (min-width:200px) and (max-width:450px){
 
 .landing-page {
@@ -284,26 +285,26 @@ opacity: 0.9;
 
 .landing-logo {
   position: absolute;
-  width: 70px;
-  height: 57px;
+  width: 87.5px;
+  height: 71.25px;
   left: 16px;
-  top: 10px;
+  top: 13px;
 }
 
 .landing-button-img-fr{
   position: absolute;
-  width: 82px;
-  height: 18px;
-  left: 79px;
-  top: 22px;
+  width: 102.5px;
+  height: 22.5px;
+  left: 90px;
+  top: 29px;
   }
   
 .landing-button-img-en{
   position: absolute;
-  width: 78px;
-  height: 16px;
-  left: 80px;
-  top: 40px;
+  width: 97.5px;
+  height: 20px;
+  left: 91px;
+  top: 52px;
   }
 
 /* .landing-button-img{
@@ -316,16 +317,16 @@ opacity: 0.9;
 
 .landing-button-EN{
   position: absolute;
-  width: 25px;
+  width: 26px;
   height: 16px;
-  left: 327px;
-  top: 34px;
+  left: 320px;
+  top: 40px;
   cursor: pointer;
   
   font-family: Arial, sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 13px;
+  font-size: 15px;
   line-height: 16px;
   /* identical to box height */
   color: #000000;
@@ -345,14 +346,14 @@ opacity: 0.9;
   position: absolute;
   width: 16px;
   height: 16px;
-  left: 358px;
-  top: 34px;
+  left: 351px;
+  top: 40px;
   cursor: pointer;
   
   font-family: Arial, sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 13px;
+  font-size: 15px;
   line-height: 16px;
   /* identical to box height */
   color: #000000;
@@ -512,8 +513,8 @@ opacity: 0.9;
   width: 100%;
   height: auto;
   font-size: larger;
-  top: 560px;
-  margin-left:75%;
+  top: 550px;
+  margin-left:100%;
   font-family: Arial, sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -536,8 +537,8 @@ opacity: 0.9;
   width: 100%;
   height: auto;
   font-size: larger;
-  top: 760px;
-  left: -50px;
+  top: 750px;
+  margin-left:-25%;
   font-family: Arial, sans-serif;
   font-style: normal;
   font-weight: 700;
