@@ -11,29 +11,30 @@
 
 /* Green-grey logo */
 .landing-logo {
-  position: absolute;
-  width: 250px;
-  height: 220px;
+  position: relative;
+  width: 120px;
+  height: 100px;
   left: 16px;
   top: 10px;
+  float: left;
 }
 
 /* choix sante */
 .landing-button-img-fr{
   position: absolute;
-  width: 335px;
-  height: 72px;
-  left: 220px;
-  top: 50px;
+  width: 150px;
+  height: 32px;
+  top: 30px;
+  float: left;
   }
  
 /* icanbewell */
 .landing-button-img-en{
   position: absolute;
-  width: 335px;
-  height: 72px;
-  left: 215px;
-  top: 120px;
+  width: 150px;
+  height: 32px;
+  float: left;
+  top: 60px;
   }
 
 /* EN */  
@@ -41,8 +42,8 @@
   position: absolute;
   width: 75px;
   height: 20px;
-  left: 77%;
-  top: 120px;
+  right: 200px;
+  top: 60px;
   cursor: pointer;
 
   font-family: Arial, sans-serif;
@@ -53,7 +54,7 @@
   color: #000000;
   }
 
-.landing-button-EN::after {
+/* .landing-button-EN::after {
   content: "";
   display: block;
   position: relative;
@@ -61,7 +62,7 @@
   border-right: 3px solid #25AAE1;
   height: 180%;
   top: -26px;
-}
+} */
 
 
 /* FR */
@@ -69,8 +70,8 @@
   position: absolute;
   width: 50px;
   height: 50px;
-  left: 83%;
-  top: 120px;
+  right: 135px;
+  top: 60px;
   cursor: pointer;
 
   font-family: Arial, sans-serif;
@@ -83,19 +84,20 @@
 
 /* cover image */
 .home-page-img{
-  position: fixed;
-  width: 393px;
-  height: 333px;
-  left: 575px;
-  top: 0px;
+  position: absolute;
+  top: 100px;
+  left: 370px;
+  width: 65%;
+  height: 500%;
+  z-index: -1;
   }
 
 .rectangle-blue{
   position: absolute;
   width: 100%;
-  height: 280px;
-  left: 0px;
-  top: 250px;
+  height: 250px;
+  left: 0;
+  top: 650px;
   background: #25AAE1;
   }
 
@@ -103,8 +105,8 @@
   position: absolute;
   width: 500px;
   height: 88px;
-  left: 40%;
-  top: 280px;
+  left: 950px;
+  top: 670px;
   color: #FFFFFF;
   font-family: Arial, sans-serif;
   font-style: normal;
@@ -115,10 +117,11 @@
 
 .landing-notice-privacystmnt-en{
   position: absolute;
-  width: 1200px;
+  width: 50%;
   height: 90px;
-  left: 15%;
-  top: 340px;
+  float: left;
+  top: 720px;
+  left: 500px;
   
   font-family: Arial, sans-serif;
   font-style: normal;
@@ -126,15 +129,16 @@
   font-size: 25px;
   line-height: 30px;
   color: #FFFFFF;
+  display: inline;
   }
 
 .videoButton-en{
   position: absolute;
   width: 250px;
   height: 30px;
-  left: 1170px;
-  top: 340px;
+  top: 720px;
   cursor: pointer;
+  right: 400px;
 
   font-family: Arial, sans-serif;
   font-style: normal;
@@ -148,8 +152,8 @@
   position: absolute;
   width: 500px;
   height: 88px;
-  left: 40%;
-  top: 400px;
+  left: 950px;
+  top: 770px;
   color: #FFFFFF;
   font-family: Arial, sans-serif;
   font-style: normal;
@@ -162,8 +166,8 @@
   position: absolute;
   width: 1200px;
   height: 90px;
-  left: 12%;
-  top: 460px;
+  left: 470px;
+  top: 820px;
   
   font-family: Arial, sans-serif;
   font-style: normal;
@@ -177,8 +181,8 @@
   position: absolute;
   width: 123px;
   height: 30px;
-  left: 1200px;
-  top: 460px;
+  right: 520px;
+  top: 820px;
   cursor: pointer;
 
   font-family: Arial, sans-serif;
@@ -195,7 +199,7 @@
   /*margin-left: 35%;*/
   width: 100%;
   height: auto;
-  top: 600px;
+  top: 820px;
   /* font-size: larger; */
   font-size: 20px;
   }
@@ -206,7 +210,7 @@
   width: 100%;
   height: auto;
   /* font-size: larger; */
-  top: 600px;
+  top:820px;
   font-size: 20px;
   }
 
@@ -218,7 +222,7 @@
   width: 100%;
   height: auto;
   /* font-size: larger; */
-  top: 600px;
+  top: 820px;
   font-size: 20px;
   }
   .landing-notice-aboutus-french {
@@ -229,7 +233,7 @@
   width: 100%;
   height: auto;
   /* font-size: larger; */
-  top: 600px;
+  top: 820px;
   font-size: 20px;
   }
 
@@ -332,15 +336,15 @@ opacity: 0.9;
   color: #000000;
   }
 
-  .landing-button-EN::after {
+  /* .landing-button-EN::after {
     content: "";
-    display: block;
+
     position: relative;
     right: 0px;
     border-right: 1px solid #25AAE1;
     height: 100%;
     top: -15px;
-  }
+  } */
    
   .landing-button-FR{
   position: absolute;
@@ -361,18 +365,18 @@ opacity: 0.9;
 
 .home-page-img{
   position: absolute;
-  width: 393px;
-  height: 333px;
+  width: 391px;
+  height: 200px;
   left: 0px;
-  top: 97px;
+  top: 90px;
 }
 
 .rectangle-blue{
   position: absolute;
   width: 391px;
-  height: 455px;
+  height: 430px;
   left: 0px;
-  top: 425px;
+  top: 290px;
   
   background: #25AAE1;
 }
@@ -382,7 +386,7 @@ opacity: 0.9;
   width: 343px;
   height: 88px;
   left: 24px;
-  top: 450px;
+  top: 300px;
   color: #FFFFFF;
   font-family: Arial, sans-serif;
   font-style: normal;
@@ -396,7 +400,7 @@ opacity: 0.9;
   width: 343px;
   height: 90px;
   left: 24px;
-  top: 500px;
+  top: 350px;
   
   font-family: Arial, sans-serif;
   font-style: normal;
@@ -411,8 +415,8 @@ opacity: 0.9;
   position: absolute;
   width: 123px;
   height: 30px;
-  left: 210px;
-  top: 560px;
+  left:130px;
+  top: 410px;
 
   font-family: Arial, sans-serif;
   font-style: normal;
@@ -428,7 +432,7 @@ opacity: 0.9;
   width: 343px;
   height: 88px;
   left: 24px;
-  top: 650px;
+  top: 500px;
   color: #FFFFFF;
   font-family: Arial, sans-serif;
   font-style: normal;
@@ -442,7 +446,7 @@ opacity: 0.9;
   width: 343px;
   height: 90px;
   left: 24px;
-  top: 700px; 
+  top: 550px; 
   
   font-family: Arial, sans-serif;
   font-style: normal;
@@ -458,7 +462,7 @@ opacity: 0.9;
   width: 123px;
   height: 30px;
   left: 185px;
-  top: 761px;
+  top: 610px;
 
   font-family: Arial, sans-serif;
   font-style: normal;
@@ -474,7 +478,7 @@ opacity: 0.9;
   /*margin-left: 35%;*/
   width: 100%;
   height: auto;
-  top: 900px;
+  top: 730px;
   font-size: larger;
   }
   .landing-notice-aboutus-english {
@@ -484,7 +488,7 @@ opacity: 0.9;
   width: 100%;
   height: auto;
   font-size: larger;
-  top: 900px;
+  top: 730px;
   }
 
 .landing-notice-privacystmnt-french {
@@ -495,7 +499,7 @@ opacity: 0.9;
   width: 100%;
   height: auto;
   font-size: larger;
-  top: 900px;
+  top: 730px;
   }
   .landing-notice-aboutus-french {
   position: relative;
@@ -505,7 +509,7 @@ opacity: 0.9;
   width: 100%;
   height: auto;
   font-size: larger;
-  top: 900px;
+  top: 730px;
   }
 
 .homescreen-eng{
@@ -513,7 +517,7 @@ opacity: 0.9;
   width: 100%;
   height: auto;
   font-size: larger;
-  top: 550px;
+  top: 400px;
   margin-left:100%;
   font-family: Arial, sans-serif;
   font-style: normal;
@@ -537,7 +541,7 @@ opacity: 0.9;
   width: 100%;
   height: auto;
   font-size: larger;
-  top: 750px;
+  top: 600px;
   margin-left:-25%;
   font-family: Arial, sans-serif;
   font-style: normal;
