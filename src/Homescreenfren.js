@@ -97,7 +97,7 @@ export default function CustomizedDialogs() {
           else if(clientOS =='AndroidOS'){
             return <div>
               <div className="homescreen-button-french">
-              &nbsp;<button test-id="homeScreenButtonFr" onClick={handleClickOpen}>Ajouter à l'écran d'accueil</button>
+              &nbsp;<button test-id="homeScreenButtonFr" onClick={handleClickOpen}>Enregistrer l'appli</button>
                 </div>
           <Dialog onClose={handleClose} aria-labelledby="customized-dialog-title" open={open}>
           <DialogTitle id="customized-dialog-title" onClose={handleClose}>
@@ -108,7 +108,7 @@ export default function CustomizedDialogs() {
               <img src={require('./images/android_1.jpg').default } className="instructionimg" />
               <h4>2. Appuyez sur l'icône de menu</h4>
               <img src={require('./images/android_2.jpg').default} className="instructionimg" />
-              <h4>3. Appuyez sur "Ajouter à l'écran d'accueil"</h4>
+              <h4>3. Appuyez sur "Enregistrer l'appli"</h4>
               <img src={require('./images/android_fren_1.jpg').default} className="instructionimg" />
             </DialogContent>
             <DialogActions>

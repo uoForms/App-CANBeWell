@@ -60,13 +60,13 @@ class LandingPage extends React.Component {
                                  test-id="fr-redirect-button"/></a>
               </div>*/}
               
-              <div className="landing-button-EN" test-id="landing-EN">
-                <a onClick={this.handleChange}>EN</a>
-              </div>
+              <button className="landing-button-EN" test-id="landing-EN">
+                <a onClick={this.handleChange}>Get Started</a>
+              </button>
 
-              <div className="landing-button-FR" test-id="landing-FR">
-                <a onClick={this.handleChange2}>FR</a>
-              </div>
+              <button className="landing-button-FR" test-id="landing-FR">
+                <a onClick={this.handleChange2}>Commencer</a>
+              </button>
 
               {/* <button onClick={this.handleChange2}>FR</button> */}
 

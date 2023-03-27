@@ -319,22 +319,7 @@ opacity: 0.9;
   overflow: hidden;
 } */
 
-.landing-button-EN{
-  position: absolute;
-  width: 26px;
-  height: 16px;
-  left: 320px;
-  top: 40px;
-  cursor: pointer;
-  
-  font-family: Arial, sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 16px;
-  /* identical to box height */
-  color: #000000;
-  }
+
 
   /* .landing-button-EN::after {
     content: "";
@@ -346,23 +331,6 @@ opacity: 0.9;
     top: -15px;
   } */
    
-  .landing-button-FR{
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  left: 351px;
-  top: 40px;
-  cursor: pointer;
-  
-  font-family: Arial, sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 16px;
-  /* identical to box height */
-  color: #000000;
-  }
-
 .home-page-img{
   position: absolute;
   width: 391px;
@@ -517,8 +485,8 @@ opacity: 0.9;
   width: 100%;
   height: auto;
   font-size: larger;
-  top: 400px;
-  margin-left:100%;
+  top: 398.5px;
+  left: 145px;
   font-family: Arial, sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -536,13 +504,31 @@ opacity: 0.9;
   text-align: right;
   }
 
+.landing-button-EN{
+  position: absolute;
+  width: 100px;
+  height: auto;
+  left: 80px;
+  top: 460.5px;
+  cursor: pointer;
+  
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22.5px;
+  /* identical to box height */
+  color: #0286bf;
+  z-index: +1;
+  }
+
 .homescreen-fre{
   position: relative;
   width: 100%;
   height: auto;
   font-size: larger;
-  top: 600px;
-  margin-left:-25%;
+  top: 597.5px;
+  left: 40px;
   font-family: Arial, sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -554,6 +540,24 @@ opacity: 0.9;
   font-size: 15px;
   }
 
+  .landing-button-FR{
+    position: absolute;
+    width: 100px;
+    height: auto;
+    left: 80px;
+    top: 660px;
+    cursor: pointer;
+    
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22.5px;
+    /* identical to box height */
+    color: #0286bf;
+    z-index: +1;
+  }
+  
 /* .landing-notice-privacystmnt {
   position: relative;
   font-size: 10px!important;

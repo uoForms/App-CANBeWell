@@ -95,7 +95,7 @@ class LandingPage extends BasePage {
 
   assertHomeScreenButton(locale, device) {
     // TODO: Remove this once https://github.com/uoForms/App-CANBeWell/issues/447 is fixed
-    const french = device === this.device.ios ? "Enregister l’appli" : "Ajouter à l'écran d'accueil";
+    const french = device === this.device.ios ? "Enregister l’appli" : "Enregistrer l'appli";
     cy.getTestId(`homeScreenButton${capitalize(locale)}`)
       .assertVisibleAndContainText(locale === this.locale.en ? 'Save App' : french);
   }
