@@ -613,14 +613,14 @@ class Data {
                     filteredLists.push(
                       list[i]
                     );
-                    
+                                  
                   }
                   if(UserInfo.Tgender == "tf" && UserInfo.gender == "female" && jsonGender.amab){
                     list[i]['position']=k
                     filteredLists.push(
                       list[i]
                     );
-                  
+            
                   }
                   if(UserInfo.Tgender == "tf" && UserInfo.gender == "nonbinary" && jsonGender.amab){
                     list[i]['position']=k
@@ -634,7 +634,7 @@ class Data {
                     filteredLists.push(
                       list[i]
                     );
-                    
+    
                   }
                   if((jsonGender.allGenders) || (UserInfo.gender == null)){
                     list[i]['position']=k
@@ -655,8 +655,8 @@ class Data {
       catch (err) {
         //nothing
       }
-      
-      filteredLists.sort((a, b) => (a.position > b.position) ? 1 : -1 );  
+
+      filteredLists.sort((a, b) => (a.position >= b.position) ? 1 : -1 );  
       return filteredLists;
     }
     TopicsItemList = filterListArray(listItem);   

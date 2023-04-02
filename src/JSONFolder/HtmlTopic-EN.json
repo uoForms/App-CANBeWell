@@ -161,7 +161,7 @@
   },
   {
     "Button": "Bone",
-    "Topic heading": "Bone health",
+    "Topic heading": "Bone Health",
     "Subject": "Nutrition",
     "General Patient Text": "•Eating healthy is important to build and keep strong bones\n[[Click here for more info; https://osteoporosis.ca/nutrition/]]\n\n•[[Click her for a calcium calculator; https://osteoporosis.ca/calcium-calculator/]]",
     "Health Provider Text": "•\tA healthy diet prevents osteoporosis\n[[Osteoporosis.ca; https://osteoporosis.ca/nutrition/]]\n•[[Calcium calculator; https://osteoporosis.ca/calcium-calculator/]]",
@@ -171,7 +171,7 @@
   },
   {
     "Button": "Bone",
-    "Topic heading": "Bone health",
+    "Topic heading": "Bone Health",
     "Subject": "Vitamin D-Calcium",
     "General Patient Text": "•Calcium: 1000mg/day •Vitamin D: 400-1000 IU/day\n•Exception:\n if age 18 or pregnant or breastfeeding :you need \nCalcium: 1300 mg/day; Vitamin D: 600 IU/ day\n\n\n•[[Click here for more info; https://osteoporosis.ca/nutrition/]]\n•[[Calcium calculator; https://osteoporosis.ca/calcium-calculator/]]",
     "Health Provider Text": "•Calcium: 1000mg/day; Vitamin D: 400-1000 IU/day\n•Exception: if age 18 or pregnant or breastfeeding :\nCalcium: 1300 mg/day; Vitamin D: 600 IU/ day\n•[[Osteoporosis.ca; https://osteoporosis.ca/nutrition/]]",
@@ -181,7 +181,7 @@
   },
   {
     "Button": "Bone",
-    "Topic heading": "Bone health",
+    "Topic heading": "Bone Health",
     "Subject": "Vitamin D-Calcium",
     "General Patient Text": "•Calcium: 1200mg/day\n•Vitamin D: 800-2000 IU/day\n\n•Calcium: \nBetter to get calcium from food rather than supplements.\n[[Click here for more info; https://osteoporosis.ca/calcium/]]\nClick [[calcium calculator; https://osteoporosis.ca/calcium-calculator/]]\n•Vitamin D:\n Taking more than 2000 IU a day of vitamin D should be done under medical supervision \n[[Click here for more info; https://osteoporosis.ca/vitamin-d/]]",
     "Health Provider Text": "•Calcium: 1200mg/day\n•Vitamin D: 800-2000 IU/day\n\n•\t[[Calcium; https://osteoporosis.ca/calcium/]]\n•\t[[Vitamin D; https://osteoporosis.ca/vitamin-d/]]\n•[[Calcium calculator; https://osteoporosis.ca/calcium-calculator/]]",
