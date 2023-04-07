@@ -4,6 +4,7 @@ import 'firebase/database'
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 // For Test Website 
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: "AIzaSyBeGl_efZAusMgwnk1zbsekj3zO79Hg_gg",
   authDomain: "icanbewell-firebase-events.firebaseapp.com",
@@ -12,7 +13,7 @@ const firebaseConfig = {
   storageBucket: "icanbewell-firebase-events.appspot.com",
   messagingSenderId: "415118709552",
   appId: "1:415118709552:web:756ff03adba67bb9bdeef5",
-  measurementId: "G-GWFFM3TL3W",
+  measurementId: "G-GWFFM3TL3W"
   // persistenceEnabled: false
 };
 //For Production website
