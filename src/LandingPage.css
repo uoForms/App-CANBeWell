@@ -21,11 +21,11 @@
 
 /* choix sante */
 .landing-button-img-fr{
-  position: absolute;
+  position: relative;
   width: 150px;
   height: 32px;
   top: 10px;
-  float: left;
+  float: 10px;
   }
  
 /* icanbewell */
@@ -43,15 +43,49 @@
   width: 75px;
   height: 20px;
   right: 200px;
-  top: 60px;
+  top: 40px;
   cursor: pointer;
 
-  font-family: Arial, sans-serif;
+  font-family:'Inter';
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 16px;
+  font-size: 13px;
+  line-height: 60px;
   color: #000000;
+  }
+
+  .landing-page-line{
+    position: absolute;
+    width: 75px;
+    height: 20px;
+    right: 150px;
+    top: 40px;
+    cursor: pointer;
+  
+    font-family:'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 60px;
+    color: #000000;
+  }
+
+  .landing-lang-switch{
+    width: fit-content;
+    position: absolute;
+    float: right;
+    right: 50px;
+    top: 35px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+  }
+ 
+  .landing-english-en{
+    font-weight: 700;
+  }
+
+  a:hover {
+    cursor: pointer;
   }
 
 /* .landing-button-EN::after {
@@ -84,11 +118,10 @@
 
 /* cover image */
 .home-page-img{
-  position: absolute;
-  top: 100px;
-  left: 370px;
-  width: 65%;
-  height: 500%;
+  position: relative;
+  top: 30px;
+  width: 100%;
+  height: 577px;
   z-index: -1;
   }
 
@@ -99,34 +132,35 @@
   left: 0;
   top: 650px;
   background: #25AAE1;
+  z-index: -1;
   }
 
 .welcome-message-en{
   position: absolute;
-  width: 500px;
-  height: 88px;
-  left: 950px;
+  width: 681px;
+  height: 42px;
+  left: 32px;
   top: 670px;
   color: #FFFFFF;
   font-family: Arial, sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 30px;
-  line-height: 44px;
+  font-size: 48px;
+  line-height: 58px;
 }
 
 .landing-notice-privacystmnt-en{
   position: absolute;
-  width: 50%;
-  height: 90px;
+  width: 1000px;
+  height: 30px;
   float: left;
-  top: 720px;
-  left: 500px;
+  top: 744px;
+  left: 32px;
   
   font-family: Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 25px;
+  font-size: 24px;
   line-height: 30px;
   color: #FFFFFF;
   display: inline;
@@ -134,11 +168,11 @@
 
 .videoButton-en{
   position: absolute;
-  width: 250px;
+  width: 190px;
   height: 30px;
-  top: 720px;
+  top: 744px;
+  left:925px;
   cursor: pointer;
-  right: 400px;
 
   font-family: Arial, sans-serif;
   font-style: normal;
@@ -160,6 +194,33 @@
   font-weight: 700;
   font-size: 30px;
   line-height: 44px;
+}
+
+button.btn-get-started{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 11px 16px;
+  gap: 10px;
+
+  position: absolute;
+  width: 144px;
+  height: 52px;
+  top:800px;
+  left: 32px;
+  background: #D7DF21;
+  color: #000000;
+  border-radius: 15px;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+button.btn-get-started:hover {
+  background-color: #C4CE1E;
+  color: black;
 }
 
 .landing-notice-privacystmnt-fr{
@@ -193,13 +254,17 @@
   color: #D7DF21;
   }
 
+ .landingpage-notice-row{
+    position: relative;
+    top: 300px;
+  }
 .landing-notice-privacystmnt-english {
   position: relative;
   text-align: right;
   /*margin-left: 35%;*/
   width: 100%;
   height: auto;
-  top: 820px;
+  top: 0px;
   /* font-size: larger; */
   font-size: 20px;
   }
@@ -210,10 +275,19 @@
   width: 100%;
   height: auto;
   /* font-size: larger; */
-  top:820px;
   font-size: 20px;
   }
-
+  .landing-notice-contactus-english {
+    position: relative;
+    text-align: right;
+    margin-left: auto;
+    /*margin-right: auto;*/
+    width: 100%;
+    height: auto;
+    /* font-size: larger; */
+    top: 0px;
+    font-size: 20px;
+    }
 .landing-notice-privacystmnt-french {
   position: relative;
   text-align: right;
@@ -250,6 +324,15 @@ font-weight: bolder;
 font-style: unset;
 color: rgb(13, 194, 58);
 } */
+
+.landingpage-copyright{
+  position: absolute;
+  bottom: 200px;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
 
 .landing-update {
 position: relative;
