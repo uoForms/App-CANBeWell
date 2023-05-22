@@ -83,6 +83,9 @@
   .landing-english-en{
     font-weight: 700;
   }
+  .landing-english-fr{
+    font-weight: 700;
+  }
 
   a:hover {
     cursor: pointer;
@@ -223,6 +226,33 @@ button.btn-get-started:hover {
   color: black;
 }
 
+button.btn-commencer{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 11px 16px;
+  gap: 10px;
+
+  position: absolute;
+  width: 144px;
+  height: 52px;
+  top:800px;
+  left: 32px;
+  background: #D7DF21;
+  color: #000000;
+  border-radius: 15px;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+button.btn-commencer:hover {
+  background-color: #C4CE1E;
+  color: black;
+}
+
 .landing-notice-privacystmnt-fr{
   position: absolute;
   width: 1200px;
@@ -242,8 +272,8 @@ button.btn-get-started:hover {
   position: absolute;
   width: 123px;
   height: 30px;
-  right: 520px;
-  top: 820px;
+  left: 992px;
+  top: 744px;
   cursor: pointer;
 
   font-family: Arial, sans-serif;
@@ -288,27 +318,36 @@ button.btn-get-started:hover {
     top: 0px;
     font-size: 20px;
     }
+
+    .landing-notice-contactus-french {
+    position: relative;
+    text-align: right;
+    margin-left: auto;
+    /*margin-right: auto;*/
+    width: 100%;
+    height: auto;
+    /* font-size: larger; */
+    top: 0px;
+    font-size: 20px;
+    }
 .landing-notice-privacystmnt-french {
   position: relative;
   text-align: right;
-  margin-left: auto;
-  /*margin-right: auto;*/
+  /*margin-left: 35%;*/
   width: 100%;
   height: auto;
+  top: 0px;
   /* font-size: larger; */
-  top: 820px;
   font-size: 20px;
   }
   .landing-notice-aboutus-french {
-  position: relative;
-  text-align: left;
-  margin-left: auto;
-  /*margin-right: auto;*/
-  width: 100%;
-  height: auto;
-  /* font-size: larger; */
-  top: 820px;
-  font-size: 20px;
+    position: relative;
+    text-align: right;
+    /*margin-left: 35%;*/
+    width: 100%;
+    height: auto;
+    /* font-size: larger; */
+    font-size: 20px;
   }
 
 /* .landing-trans {

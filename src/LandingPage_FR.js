@@ -20,6 +20,7 @@ class LandingPageFR extends React.Component {
     }
     this.handleChange = this.handleChange.bind(this);
     this.handleChange2 = this.handleChange2.bind(this);
+    this.handleRedirect = this.handleRedirect.bind(this);
   }
   handleChange() {
     this.setState({ language: "english" })
@@ -29,6 +30,11 @@ class LandingPageFR extends React.Component {
   handleChange2() {
     this.setState({ language: "french" })
     localStorage.setItem("app_language", this.state.language);
+  }
+
+  //Redirect to the "/fr" route
+  handleRedirect(){
+    this.props.history.push('/');
   }
 
   openVideoen(){
@@ -60,13 +66,17 @@ class LandingPageFR extends React.Component {
                                  test-id="fr-redirect-button"/></a>
               </div>*/}
               
-              <button className="landing-button-EN" test-id="landing-EN">
-                <a onClick={this.handleChange}>Get Started</a>
-              </button>
-
-              <button className="landing-button-FR" test-id="landing-FR">
-                <a onClick={this.handleChange2}>Commencer</a>
-              </button>
+              {/* <h3 className="landing-button-EN" test-id="landing-EN">
+                <b>EN</b>
+              </h3>
+            <h4 className="landing-page-line"> | </h4> */}
+            <div class="landing-lang-switch">
+                  <a  onClick={this.handleRedirect}>EN</a> | 
+                  <a class="landing-english-fr"> FR</a>
+              </div>  
+              {/* <h className="landing-button-FR" test-id="landing-FR">
+                <a onClick={this.handleRedirect}>FR</a>
+              </h> */}
 
               {/* <button onClick={this.handleChange2}>FR</button> */}
 
@@ -84,78 +94,89 @@ class LandingPageFR extends React.Component {
               <div className= "rectangle-blue"> </div>
 
               <div className="landing-notice-privacystmnt-en" test-id="en-reliable-resource-statement">
-                Your free resource of preventive health information provided by Canadian clinicians.
+                Rester en santé avec cette ressource créée par vos professionnels de la santé canadiens.
               </div>
 
-              <div className="videoButton-en" test-id="en-video-button">
+              {/* <div className="videoButton-en" test-id="en-video-button">
                        <a onClick={this.openVideoen}>Watch Demo</a>
-              </div>
+              </div> */}
+
+              <div className="videoButton-fr" test-id="fr-video-button">
+                       <a onClick={this.openVideofr}>Démonstration</a>
+              </div> 
 
               
 
               <div className='welcome-message-en' test-id="en-welcome-message">
-                Welcome to icanbewell
-              </div>
-
-
-              <div className='welcome-message-fr' test-id="fr-welcome-message">
                 Bienvenue à choixsanté
               </div>
+
+              <button type="button" class="btn btn-primary btn-lg btn-commencer" onClick={this.handleChange2}><b>Commencer</b></button>
+
+
+              {/* <div className='welcome-message-fr' test-id="fr-welcome-message">
+                Bienvenue à choixsanté
+              </div> */}
               
               
               <div className="landingpage-notice-row"></div>
               <div className="landingpage-notice-row d-flex justify-content-center">
 
                 <div className="landingpage-notice-column">
-                  <div className="landing-notice-privacystmnt-english">
+                <div className="landing-notice-privacystmnt-french">
                     {/*<a href= "/iCanBeWell_PrivacyPolicy.htm" target="_blank">{"PrivacyStatement"}</a>*/}
-                    <a href="/iCanBeWell_PrivacyPolicy.htm"
+                    {/* <a href="/iCanBeWell_PrivacyPolicy.htm"
                        className="landing-notice-english" test-id="privacy-statement-en">{"Privacy Statement"} </a>
+                    &nbsp;<a href="#" className="slash">{<h4>&#124;</h4>} </a> */}
+                    <a href= "/politiquedeconfidentialite.htm" target="_blank">{"Politique de confidentialité"}</a>
+                    &nbsp;<a href="#" className="slash">{<h4>&#124;</h4>} </a>
+                </div> 
+                </div>
+
+                <div className="landingpage-notice-column">
+                <div className="landing-notice-aboutus-french">
+                    <a href="/iCanBeWell_àproposdenous.htm"
+                       className="landing-notice-french"
+                       test-id="aboutus-statement-fr">{"À propos de nous"}</a>
                     &nbsp;<a href="#" className="slash">{<h4>&#124;</h4>} </a>
                   </div>
                 </div>
 
                 <div className="landingpage-notice-column">
-                  <div className="landing-notice-privacystmnt-french">
-                    {/*<a href= "/politiquedeconfidentialite.htm" target="_blank">{"Politique de confidentialité"}</a>*/}
-                    {/* <a href= "https://canbewell-uottawa.web.app/politiquedeconfidentialite.htm" >{"Politique de confidentialité"}</a> */}
-                    {/* </div> */}
-                    {/* <div id="homescreen-french"></div> */}
-                    <a href="/politiquedeconfidentialite.htm"
-                       className="landing-notice-french privacyFr"
-                       test-id="privacy-statement-fr">{"Politique de confidentialité"}</a>
-                       &nbsp;<a href="#" className="slash">{<h4>&#124;</h4>} </a>
+                <div className="landing-notice-contactus-french">
+                    
+                    <a href="#"
+                       className="landing-notice-english"
+                       test-id="contactus-statement-en">{"Contactez-nous"}</a>
+                       
                   </div>
+                  
                 </div>
 
-                <div className="landingpage-notice-column">
-                  <div className="landing-notice-aboutus-english">
-                    <a href="/iCanBeWell_AboutUs.htm"
-                       className="landing-notice-english" test-id="aboutus-statement-en">{"About Us"} </a>
-                    &nbsp;<a href="#" className="slash">{<h4>&#124;</h4>} </a>
-                  </div>
+                <div className="landingpage-copyright">
+                  <h4>&copy; 2023 choix santé  </h4>
                 </div>
 
-                <div className="landingpage-notice-column">
+                {/* <div className="landingpage-notice-column">
                   <div className="landing-notice-aboutus-french">
                     <a href="/iCanBeWell_àproposdenous.htm"
                        className="landing-notice-french"
                        test-id="aboutus-statement-fr">{"À propos de nous"}</a>
  
                   </div>
-                </div>
+                </div> */}
 
 
 
               </div>
 
-              <div className="landing-notice-privacystmnt-fr" test-id="fr-reliable-resource-statement">
+              {/* <div className="landing-notice-privacystmnt-fr" test-id="fr-reliable-resource-statement">
                 Rester en santé avec cette ressource créée par vos professionnels de la santé canadiens
-              </div>
+              </div> */}
               
-              <div className="videoButton-fr" test-id="fr-video-button">
+              {/* <div className="videoButton-fr" test-id="fr-video-button">
                        <a onClick={this.openVideofr}>Démonstration</a>
-              </div>
+              </div> */}
 
 
               <div className="landingpage-notice-row"></div>
