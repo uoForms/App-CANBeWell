@@ -4,7 +4,7 @@ import LandingPage from '../../../pageObjects/landingPage';
 devicesTestWrapper(
   //  This test file is mainly to test the translation in the modal, but since we are already here, user actions are also checked. Otherwise, we have to make a special run for it. It is really not worth the effort.
 
-  'Android Add to Home Screen', () => {
+  'Android Save App', () => {
     const page = new LandingPage();
     it('Buttons Exist', () => {
       page.assertHomeScreenButton(page.locale.en, undefined);

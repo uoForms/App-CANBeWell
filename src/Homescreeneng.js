@@ -51,14 +51,14 @@ const DialogActions = withStyles((theme) => ({
   },
 }))(MuiDialogActions);
 
-export default function CustomizedDialogs() {
-  const [open, setOpen] = React.useState(false);
+export default function CustomizedDialogs({ openDialog, setOpenDialog }) {
+
 
   const handleClickOpen = () => {
-    setOpen(true);
+    setOpenDialog(true);
   };
   const handleClose = () => {
-    setOpen(false);
+    setOpenDialog(false);
   };
   var clientNav = window.navigator;
   var md = new MobileDetect(clientNav.userAgent);
@@ -68,60 +68,60 @@ export default function CustomizedDialogs() {
     <div>
       {
         (() => {
-          if(clientOS == 'iOS'){
+          if (clientOS == 'iOS') {
             return <div>
-              <div className="homescreen-button-english">
-                <button onClick={handleClickOpen} test-id="homeScreenButtonEn">Add to Home Screen</button>&nbsp;
-                </div>
-          <Dialog onClose={handleClose} aria-labelledby="customized-dialog-title" open={open}>
-            <DialogTitle id="customized-dialog-title" onClose={handleClose}>
-              For iPhone and iPad
-            </DialogTitle>
-            <DialogContent test-id="homeScreenContent" dividers className="Diacontent">
-              <h4>1. Launch icanbewell.ca via Safari</h4>
-              <img src={require('./images/instruction_1.png').default} className="instructionimg" />
-              <h4>2. Tap share icon</h4>
-              <img src={require('./images/instruction_2.png').default} className="instructionimg" />
-              <h4>3. Tap "Add to Home Screen"</h4>
-              <img src={require('./images/instruction_3.png').default} className="instructionimg" />
-              <h4>4. Tap "Add" button</h4>
-              <img src={require('./images/instruction_4.png').default} className="instructionimg" />
-            </DialogContent>
-            <DialogActions>
-              <div className="closeButton">
-                <button test-id="homeScreenCloseButton" onClick={handleClose}>OK</button>
-              </div>
-            </DialogActions>
-          </Dialog>
-          </div>
+              {/* <div className="homescreen-button-english">
+                <button className='btn btn-outline-primary' onClick={handleClickOpen} test-id="homeScreenButtonEn">Save App</button>&nbsp;
+              </div> */}
+              <Dialog onClose={handleClose} aria-labelledby="customized-dialog-title" open={openDialog ? openDialog : false}>
+                <DialogTitle id="customized-dialog-title" onClose={handleClose}>
+                  For iPhone and iPad
+                </DialogTitle>
+                <DialogContent test-id="homeScreenContent" dividers className="Diacontent">
+                  <h4>1. Launch icanbewell.ca via Safari</h4>
+                  <img src={require('./images/instruction_1.png').default} className="instructionimg" />
+                  <h4>2. Tap share icon</h4>
+                  <img src={require('./images/instruction_2.png').default} className="instructionimg" />
+                  <h4>3. Tap "Save App"</h4>
+                  <img src={require('./images/instruction_3.png').default} className="instructionimg" />
+                  <h4>4. Tap "Add" button</h4>
+                  <img src={require('./images/instruction_4.png').default} className="instructionimg" />
+                </DialogContent>
+                <DialogActions>
+                  <div className="closeButton">
+                    <button test-id="homeScreenCloseButton" onClick={handleClose}>OK</button>
+                  </div>
+                </DialogActions>
+              </Dialog>
+            </div>
           }
-          else if(clientOS =='AndroidOS'){
+          else if (clientOS == 'AndroidOS') {
             return <div>
-              <div className="homescreen-button-english">
-                <button test-id="homeScreenButtonEn" onClick={handleClickOpen}>Add to Home Screen</button>&nbsp;
-                </div>
-          <Dialog onClose={handleClose} aria-labelledby="customized-dialog-title" open={open}>
-          <DialogTitle id="customized-dialog-title" onClose={handleClose}>
-              For Android
-            </DialogTitle>
-            <DialogContent test-id="homeScreenContent" dividers className="Diacontent">
-            <h4>1. Launch icanbewell.ca via Chrome</h4>
-              <img src={require('./images/android_1.jpg').default} className="instructionimg" />
-              <h4>2. Tap menu icon</h4>
-              <img src={require('./images/android_2.jpg').default} className="instructionimg" />
-              <h4>3. Tap "Add to Home Screen"</h4>
-              <img src={require('./images/android_eng_1.jpg').default} className="instructionimg" />
-            </DialogContent>
-            <DialogActions>
-              <div className="closeButton">
-                <button test-id="homeScreenCloseButton" onClick={handleClose}>OK</button>
-              </div>
-            </DialogActions>
-          </Dialog>
-          </div>
+              {/* <div className="homescreen-button-english">
+                <button test-id="homeScreenButtonEn" onClick={handleClickOpen}>Save App</button>&nbsp;
+              </div> */}
+              <Dialog onClose={handleClose} aria-labelledby="customized-dialog-title" open={openDialog ? openDialog : false}>
+                <DialogTitle id="customized-dialog-title" onClose={handleClose}>
+                  For Android
+                </DialogTitle>
+                <DialogContent test-id="homeScreenContent" dividers className="Diacontent">
+                  <h4>1. Launch icanbewell.ca via Chrome</h4>
+                  <img src={require('./images/android_1.jpg').default} className="instructionimg" />
+                  <h4>2. Tap menu icon</h4>
+                  <img src={require('./images/android_2.jpg').default} className="instructionimg" />
+                  <h4>3. Tap "Save App"</h4>
+                  <img src={require('./images/android_eng_1.jpg').default} className="instructionimg" />
+                </DialogContent>
+                <DialogActions>
+                  <div className="closeButton">
+                    <button test-id="homeScreenCloseButton" onClick={handleClose}>OK</button>
+                  </div>
+                </DialogActions>
+              </Dialog>
+            </div>
           }
-          })()
-        }
+        })()
+      }
     </div>
   );
 }

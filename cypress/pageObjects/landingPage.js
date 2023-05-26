@@ -95,9 +95,9 @@ class LandingPage extends BasePage {
 
   assertHomeScreenButton(locale, device) {
     // TODO: Remove this once https://github.com/uoForms/App-CANBeWell/issues/447 is fixed
-    const french = device === this.device.ios ? "Ajouter sur l'écran d'accueil" : "Ajouter à l'écran d'accueil";
+    const french = device === this.device.ios ? "Enregister l’appli" : "Enregistrer l'appli";
     cy.getTestId(`homeScreenButton${capitalize(locale)}`)
-      .assertVisibleAndContainText(locale === this.locale.en ? 'Add to Home Screen' : french);
+    .assertVisibleAndContainText(locale === this.locale.en ? 'Save App' : french);
   }
 
   assertHomeScreenModalContent(locale, device) {
@@ -111,7 +111,7 @@ class LandingPage extends BasePage {
         cy.getTestId('homeScreenContent')
           .assertVisibleAndContainText('2. Tap share icon');
         cy.getTestId('homeScreenContent')
-          .assertVisibleAndContainText('3. Tap "Add to Home Screen');
+          .assertVisibleAndContainText('3. Tap "Save App');
         cy.getTestId('homeScreenContent')
           .assertVisibleAndContainText('4. Tap "Add" button');
       } else {
@@ -122,7 +122,7 @@ class LandingPage extends BasePage {
         cy.getTestId('homeScreenContent')
           .assertVisibleAndContainText('2. Tap menu icon');
         cy.getTestId('homeScreenContent')
-          .assertVisibleAndContainText('3. Tap "Add to Home Screen');
+          .assertVisibleAndContainText('3. Tap "Save App');
       }
     } else if (device === this.device.ios) {
       cy.getTestId('homeScreenTitle')
