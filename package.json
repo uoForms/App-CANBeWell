@@ -17,7 +17,7 @@
     "mobile-detect": "^1.4.4",
     "node-pre-gyp": "^0.14.0",
     "react": "^16.13.0",
-    "react-bootstrap": "^1.6.7",
+    "react-bootstrap": "^1.0.0-beta.17",
     "react-cookie": "^4.0.1",
     "react-dom": "^16.13.0",
     "react-ga": "^2.7.0",
@@ -26,7 +26,6 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "4.0.3",
     "react-sidebar": "^3.0.2",
-    "react-slick": "^0.29.0",
     "react-test-renderer": "^16.13.0",
     "travis": "^0.1.1",
     "uuid": "^7.0.3"

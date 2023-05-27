@@ -3,14 +3,3 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
-
-.btn-outline-primary {
-  padding: 11px 16px;
-  gap: 10px;
-  border: 1.5px solid rgba(215, 223, 33);
-  color: #D7DF21;;
-  border-radius: 15px;
-  /* font-weight: 500; */
-  font-size: calc( 14px + (24 - 14) * (100vw - 320px) / (1920 - 320) ) !important;
-  line-height: calc(16px + (28 - 16) * (100vw - 320px) / (1920 - 320)) !important;
-}
