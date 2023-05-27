@@ -22,11 +22,7 @@ cypress/coverage
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-.yarn
-yarn.lock
-package-lock.json
 
 firebase.json
 .firebase/hosting.YnVpbGQ.cache
 src/firebase.jsx
-
