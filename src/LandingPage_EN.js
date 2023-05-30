@@ -25,6 +25,7 @@ class LandingPageEN extends React.Component {
     }
     this.handleChange = this.handleChange.bind(this);
     this.handleChange2 = this.handleChange2.bind(this);
+    this.handleRedirect = this.handleRedirect.bind(this);
   }
   handleChange() {
     this.setState({ language: "english" })
@@ -34,6 +35,10 @@ class LandingPageEN extends React.Component {
   handleChange2() {
     this.setState({ language: "french" })
     localStorage.setItem("app_language", this.state.language);
+  }
+  //Redirect to the "/fr" route
+  handleRedirect() {
+    this.props.history.push('/fr');
   }
 
   openVideoen(){
@@ -59,19 +64,21 @@ class LandingPageEN extends React.Component {
             </div>
             </div> */}
               <div className="landing-update" test-id="update-banner">
-                <button className="videoButton" src={videofr} onClick={this.openVideofr}
+                {/* <button className="videoButton" src={videofr} onClick={this.openVideofr}
                         test-id="update-banner-fr-video">Vidéo
-                </button>
-                &nbsp;&nbsp;Bienvenue Welcome&nbsp;&nbsp;
+                </button> */}
+                &nbsp;&nbsp; Welcome&nbsp;&nbsp;
                 <button className="videoButton" src={videoen}
                         onClick={this.openVideoen} test-id="update-banner-en-video">Video
                 </button>
+                <a href="#"
+                       className="landing-french-router" onClick={this.handleRedirect}>Français</a>
               </div>
               <img className="landing-logo" src={calllogo} alt="CANBeWellLogo" test-id="logo"/>
-              <div className="landing-button">
+              {/* <div className="landing-button">
                 <a href="#"><img className="landing-button-img" src={callfren} onClick={this.handleChange2}
                                  test-id="fr-redirect-button"/></a>
-              </div>
+              </div> */}
               <div className="landing-button">
                 <a href="#"><img className="landing-button-img" src={calleng} onClick={this.handleChange}
                                  test-id="en-redirect-button"/></a>
@@ -93,43 +100,43 @@ class LandingPageEN extends React.Component {
                   </div>
                 </div>
 
-                <div className="landingpage-notice-column">
-                  <div className="landing-notice-privacystmnt-french">
+                {/* <div className="landingpage-notice-column">
+                  <div className="landing-notice-privacystmnt-french"> */}
                     {/*<a href= "/politiquedeconfidentialite.htm" target="_blank">{"Politique de confidentialité"}</a>*/}
                     {/* <a href= "https://canbewell-uottawa.web.app/politiquedeconfidentialite.htm" >{"Politique de confidentialité"}</a> */}
                     {/* </div> */}
                     {/* <div id="homescreen-french"></div> */}
-                    <a href="/politiquedeconfidentialite.htm"
+                    {/* <a href="/politiquedeconfidentialite.htm"
                        className="landing-notice-french privacyFr"
                        test-id="privacy-statement-fr">{"Politique de confidentialité"}</a>
                        &nbsp;<a href="#" className="slash">{<h4>&#124;</h4>} </a>
                   </div>
-                </div>
+                </div> */}
 
                 <div className="landingpage-notice-column">
                   <div className="landing-notice-aboutus-english">
                     <a href="/iCanBeWell_AboutUs.htm"
                        className="landing-notice-english" test-id="aboutus-statement-en">{"About Us"} </a>
-                    &nbsp;<a href="#" className="slash">{<h4>&#124;</h4>} </a>
+                    {/* &nbsp;<a href="#" className="slash">{<h4>&#124;</h4>} </a> */}
                   </div>
                 </div>
 
-                <div className="landingpage-notice-column">
+                {/* <div className="landingpage-notice-column">
                   <div className="landing-notice-aboutus-french">
                     <a href="/iCanBeWell_àproposdenous.htm"
                        className="landing-notice-french"
                        test-id="aboutus-statement-fr">{"À propos de nous"}</a>
 
                   </div>
-                </div>
+                </div> */}
 
 
 
               </div>
 
-              <div className="landing-notice-privacystmnt" test-id="fr-reliable-resource-statement">
+              {/* <div className="landing-notice-privacystmnt" test-id="fr-reliable-resource-statement">
                 Rester en santé avec cette ressource créée par vos professionnels de la santé canadiens
-              </div>
+              </div> */}
               <div className="landingpage-notice-row"></div>
               <div className="landingpage-notice-row row justify-content-center">
                 <div className="landingpage-notice-column">
@@ -137,7 +144,7 @@ class LandingPageEN extends React.Component {
                     <div id="homescreen-english"></div>
                   </div>
                 </div>
-                <div className="landingpage-notice-column">
+                <div className="landingpage-notice-column d-none">
                   <div className="homescreen-fre">
                     <div id="homescreen-french"></div>
                   </div>

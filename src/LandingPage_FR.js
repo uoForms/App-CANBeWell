@@ -6,7 +6,8 @@ import calllogo from './assets/Logos/logo_21-02-02.png';
 import videoen from './videos/video_en.mp4';
 import videofr from './videos/video_fr.mp4';
 import calleng from './assets/Logos/icanbewelleng.png';
-import callfren from './assets/Logos/canbewellfren.png';
+// import callfren from './assets/Logos/canbewellfren.png';
+import callfren from './assets/Logos/choixsantefren.png'
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import homepageimg from './assets/Banner/homepageimage.png';
 
@@ -25,6 +26,7 @@ class LandingPageFR extends React.Component {
     }
     this.handleChange = this.handleChange.bind(this);
     this.handleChange2 = this.handleChange2.bind(this);
+    this.handleRedirect = this.handleRedirect.bind(this);
   }
   handleChange() {
     this.setState({ language: "english" })
@@ -34,6 +36,10 @@ class LandingPageFR extends React.Component {
   handleChange2() {
     this.setState({ language: "french" })
     localStorage.setItem("app_language", this.state.language);
+  }
+  //Redirect to the "/" route
+  handleRedirect() {
+    this.props.history.push('/');
   }
 
   openVideoen(){
@@ -59,39 +65,46 @@ class LandingPageFR extends React.Component {
             </div>
             </div> */}
               <div className="landing-update" test-id="update-banner">
+                
+                &nbsp;&nbsp;Bienvenue &nbsp;&nbsp;
                 <button className="videoButton" src={videofr} onClick={this.openVideofr}
                         test-id="update-banner-fr-video">Vidéo
                 </button>
-                &nbsp;&nbsp;Bienvenue Welcome&nbsp;&nbsp;
-                <button className="videoButton" src={videoen}
+                <a href="#"
+                       className="landing-english-router" onClick={this.handleRedirect}>English</a>
+                {/* <button className="videoButton" src={videoen}
                         onClick={this.openVideoen} test-id="update-banner-en-video">Video
-                </button>
+                </button> */}
               </div>
               <img className="landing-logo" src={calllogo} alt="CANBeWellLogo" test-id="logo"/>
               <div className="landing-button">
                 <a href="#"><img className="landing-button-img" src={callfren} onClick={this.handleChange2}
                                  test-id="fr-redirect-button"/></a>
               </div>
-              <div className="landing-button">
+              {/* <div className="landing-button">
                 <a href="#"><img className="landing-button-img" src={calleng} onClick={this.handleChange}
                                  test-id="en-redirect-button"/></a>
-              </div>
+              </div> */}
 
-              <div className="landing-notice-privacystmnt" test-id="en-reliable-resource-statement">
+              {/* <div className="landing-notice-privacystmnt" test-id="en-reliable-resource-statement">
                 A reliable resource by Canadian health care providers to help you stay healthy
+              </div> */}
+
+              <div className="landing-notice-privacystmnt" test-id="fr-reliable-resource-statement">
+                Rester en santé avec cette ressource créée par vos professionnels de la santé canadiens
               </div>
 
               <div className="landingpage-notice-row"></div>
               <div className="landingpage-notice-row d-flex justify-content-center">
 
-                <div className="landingpage-notice-column">
-                  <div className="landing-notice-privacystmnt-english">
+                {/* <div className="landingpage-notice-column">
+                  <div className="landing-notice-privacystmnt-english"> */}
                     {/*<a href= "/iCanBeWell_PrivacyPolicy.htm" target="_blank">{"PrivacyStatement"}</a>*/}
-                    <a href="/iCanBeWell_PrivacyPolicy.htm"
+                    {/* <a href="/iCanBeWell_PrivacyPolicy.htm"
                        className="landing-notice-english" test-id="privacy-statement-en">{"Privacy Statement"} </a>
                     &nbsp;<a href="#" className="slash">{<h4>&#124;</h4>} </a>
                   </div>
-                </div>
+                </div> */}
 
                 <div className="landingpage-notice-column">
                   <div className="landing-notice-privacystmnt-french">
@@ -106,13 +119,13 @@ class LandingPageFR extends React.Component {
                   </div>
                 </div>
 
-                <div className="landingpage-notice-column">
+                {/* <div className="landingpage-notice-column">
                   <div className="landing-notice-aboutus-english">
                     <a href="/iCanBeWell_AboutUs.htm"
                        className="landing-notice-english" test-id="aboutus-statement-en">{"About Us"} </a>
                     &nbsp;<a href="#" className="slash">{<h4>&#124;</h4>} </a>
                   </div>
-                </div>
+                </div> */}
 
                 <div className="landingpage-notice-column">
                   <div className="landing-notice-aboutus-french">
@@ -127,12 +140,10 @@ class LandingPageFR extends React.Component {
 
               </div>
 
-              <div className="landing-notice-privacystmnt" test-id="fr-reliable-resource-statement">
-                Rester en santé avec cette ressource créée par vos professionnels de la santé canadiens
-              </div>
+              
               <div className="landingpage-notice-row"></div>
               <div className="landingpage-notice-row row justify-content-center">
-                <div className="landingpage-notice-column">
+                <div className="landingpage-notice-column  d-none">
                   <div className="homescreen-eng">
                     <div id="homescreen-english"></div>
                   </div>

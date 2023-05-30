@@ -188,6 +188,32 @@ color: #363636;
 text-align: center;
 }
 
+.landing-french-router{
+  position: absolute;
+  right: 60px;
+  font-weight: 400;
+}
+@media only screen and (max-width:500px){
+  .landing-french-router {
+    position: absolute;
+    right: 15px;
+    font-weight: 400;
+  }
+}
+
+.landing-english-router{
+  position: absolute;
+  right: 60px;
+  font-weight: 400;
+}
+@media only screen and (max-width:500px){
+  .landing-english-router {
+    position: absolute;
+    right: 15px;
+    font-weight: 400;
+  }
+}
+
 .landing-notice-privacystmnt-french {
 position: relative;
 text-align: right;
