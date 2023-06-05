@@ -9,6 +9,31 @@
   width: 35vmax;
 }
 
+.landing-logo-header{
+  position: relative;
+  width: 55px;
+  height:  57px;
+  left: 16px;
+  top: 10px;
+  float: left;
+}
+
+.landing-button-img-en-header{
+  position: absolute;
+  width: 150px;
+  height: 32px;
+  float: left;
+  top: 40px;
+}
+
+.landing-button-img-fr-header{
+  position: relative;
+  width: 150px;
+  height: 32px;
+  top: 10px;
+  float: 10px;
+}
+
 .landing-page {
   position: relative;
   vertical-align: middle;
@@ -163,6 +188,14 @@ width: 100%;
 height: auto;
 /* font-size: larger; */
 }
+.landing-notice-video-english {
+  position: relative;
+  text-align: right;
+  /*margin-left: 35%;*/
+  width: 100%;
+  height: auto;
+  /* font-size: larger; */
+  }
 
 .landingpage-notice-column a{
 display: inline-block;
@@ -190,14 +223,16 @@ text-align: center;
 
 .landing-french-router{
   position: absolute;
-  right: 60px;
-  font-weight: 400;
+  font-weight: 500;
+  font-size: medium;
+  left: 30px
 }
 @media only screen and (max-width:500px){
   .landing-french-router {
     position: absolute;
     right: 15px;
     font-weight: 400;
+    
   }
 }
 

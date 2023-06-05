@@ -63,22 +63,41 @@ class LandingPageEN extends React.Component {
             TRANSGENDER Branch
             </div>
             </div> */}
+            <section id="landing-page-header">
+            <div>
+                <img className="landing-logo-header" src={calllogo} alt="CANBeWellLogo" test-id="logo" />
+                <img className="landing-button-img-en-header" src={calleng}
+                  test-id="en-redirect-button" />
+                <img className="landing-button-img-fr-header" src={callfren}
+                  test-id="fr-redirect-button" />
+              </div>
               <div className="landing-update" test-id="update-banner">
                 {/* <button className="videoButton" src={videofr} onClick={this.openVideofr}
                         test-id="update-banner-fr-video">Vidéo
                 </button> */}
                 &nbsp;&nbsp; Welcome&nbsp;&nbsp;
-                <button className="videoButton" src={videoen}
+                {/* <button className="videoButton" src={videoen}
                         onClick={this.openVideoen} test-id="update-banner-en-video">Video
-                </button>
+                </button> */}
                 <a href="#"
-                       className="landing-french-router" onClick={this.handleRedirect}>Français</a>
+                       className="landing-get-started" onClick={this.handleChange}>,click here to use the app</a>
+                
               </div>
+              
+
+              
+              </section>
+              <section className="landing-page-second-row">
+              <a href="#"
+                       className="landing-french-router" onClick={this.handleRedirect}>Disponible en français</a>
+              </section>
+              
               <img className="landing-logo" src={calllogo} alt="CANBeWellLogo" test-id="logo"/>
               {/* <div className="landing-button">
                 <a href="#"><img className="landing-button-img" src={callfren} onClick={this.handleChange2}
                                  test-id="fr-redirect-button"/></a>
               </div> */}
+              
               <div className="landing-button">
                 <a href="#"><img className="landing-button-img" src={calleng} onClick={this.handleChange}
                                  test-id="en-redirect-button"/></a>
@@ -90,7 +109,17 @@ class LandingPageEN extends React.Component {
 
               <div className="landingpage-notice-row"></div>
               <div className="landingpage-notice-row d-flex justify-content-center">
-
+                <div className="landingpage-notice-column">
+                  <div className="landing-notice-video-english">
+                      {/*<a href= "/iCanBeWell_PrivacyPolicy.htm" target="_blank">{"PrivacyStatement"}</a>*/}
+                      {/* <a href="/iCanBeWell_PrivacyPolicy.htm"
+                        className="landing-notice-english" test-id="privacy-statement-en">{"Privacy Statement"} </a> */}
+                      <a className="landing-notice-english" src={videoen} href=""
+                        onClick={this.openVideoen} test-id="update-banner-en-video">Video
+                      </a>
+                      &nbsp;<a href="#" className="slash">{<h4>&#124;</h4>} </a>
+                  </div>
+                </div>
                 <div className="landingpage-notice-column">
                   <div className="landing-notice-privacystmnt-english">
                     {/*<a href= "/iCanBeWell_PrivacyPolicy.htm" target="_blank">{"PrivacyStatement"}</a>*/}
