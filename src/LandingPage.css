@@ -196,6 +196,14 @@ height: auto;
   height: auto;
   /* font-size: larger; */
   }
+  .landing-notice-video-french{
+    position: relative;
+  text-align: right;
+  /*margin-left: 35%;*/
+  width: 100%;
+  height: auto;
+  /* font-size: larger; */
+  }
 
 .landingpage-notice-column a{
 display: inline-block;

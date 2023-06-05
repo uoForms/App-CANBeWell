@@ -64,18 +64,26 @@ class LandingPageFR extends React.Component {
             TRANSGENDER Branch
             </div>
             </div> */}
-              <div className="landing-update" test-id="update-banner">
-                
-                &nbsp;&nbsp;Bienvenue &nbsp;&nbsp;
-                <button className="videoButton" src={videofr} onClick={this.openVideofr}
-                        test-id="update-banner-fr-video">Vidéo
-                </button>
-                <a href="#"
-                       className="landing-english-router" onClick={this.handleRedirect}>English</a>
-                {/* <button className="videoButton" src={videoen}
-                        onClick={this.openVideoen} test-id="update-banner-en-video">Video
-                </button> */}
+            <section id="landing-page-header">
+            <div>
+                <img className="landing-logo-header" src={calllogo} alt="CANBeWellLogo" test-id="logo" />
+                <img className="landing-button-img-en-header" src={calleng}
+                  test-id="en-redirect-button" />
+                <img className="landing-button-img-fr-header" src={callfren}
+                  test-id="fr-redirect-button" />
               </div>
+              <div className="landing-update" test-id="update-banner">
+                &nbsp;&nbsp;Bienvenue &nbsp;&nbsp;
+                <a href="#"
+                       className="landing-get-started" onClick={this.handleChange2}>,cliquez ici pour utiliser l'application
+                       </a>
+                
+              </div>
+              </section>
+              <section className="landing-page-second-row">
+              <a href="#"
+                       className="landing-french-router" onClick={this.handleRedirect}>Available in English</a>
+              </section>
               <img className="landing-logo" src={calllogo} alt="CANBeWellLogo" test-id="logo"/>
               <div className="landing-button">
                 <a href="#"><img className="landing-button-img" src={callfren} onClick={this.handleChange2}
@@ -96,15 +104,20 @@ class LandingPageFR extends React.Component {
 
               <div className="landingpage-notice-row"></div>
               <div className="landingpage-notice-row d-flex justify-content-center">
-
-                {/* <div className="landingpage-notice-column">
-                  <div className="landing-notice-privacystmnt-english"> */}
-                    {/*<a href= "/iCanBeWell_PrivacyPolicy.htm" target="_blank">{"PrivacyStatement"}</a>*/}
-                    {/* <a href="/iCanBeWell_PrivacyPolicy.htm"
-                       className="landing-notice-english" test-id="privacy-statement-en">{"Privacy Statement"} </a>
-                    &nbsp;<a href="#" className="slash">{<h4>&#124;</h4>} </a>
+              <div className="landingpage-notice-column">
+                  <div className="landing-notice-video-french">
+                      {/*<a href= "/iCanBeWell_PrivacyPolicy.htm" target="_blank">{"PrivacyStatement"}</a>*/}
+                      {/* <a href="/iCanBeWell_PrivacyPolicy.htm"
+                        className="landing-notice-english" test-id="privacy-statement-en">{"Privacy Statement"} </a> */}
+                      <a className="landing-notice-french" src={videofr} href=""
+                        onClick={this.openVideofr} test-id="update-banner-fr-video">Vidéo
+                      </a>
+                      &nbsp;<a href="#" className="slash">{<h4>&#124;</h4>} </a>
                   </div>
-                </div> */}
+                </div>
+                {/* <button className="videoButton" src={videofr} onClick={this.openVideofr}
+                        test-id="update-banner-fr-video">Vidéo
+                </button> */}
 
                 <div className="landingpage-notice-column">
                   <div className="landing-notice-privacystmnt-french">
