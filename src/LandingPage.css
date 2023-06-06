@@ -9,6 +9,29 @@
   width: 35vmax;
 }
 
+img {
+  object-fit: contain;
+}
+
+/* .landing-page-header-row{
+  width: 260px;
+  height: 60px;
+} */
+
+.landing-logo-header{
+  position: relative;
+  width: 55px;
+  height:  57px;
+}
+
+.landing-button-img-en-header{
+  width: 150px;
+}
+
+.landing-button-img-fr-header{
+  width: 150px;
+}
+
 .landing-page {
   position: relative;
   vertical-align: middle;
@@ -87,6 +110,7 @@ opacity: 0.9;
   color: crimson;
 }
 
+
 }
 
 .landing-update {
@@ -134,7 +158,32 @@ font-size: larger;
 .homescreen-button-english {
   text-align: right;
   }
+  .landing-button-img-en-header{
+    width: 100px;
+  }
+
+  .landing-button-img-fr-header{
+    width: 100px;
+  }
 }
+
+@media (max-width: 375px){
+.homescreen-button-english {
+  text-align: right;
+  }
+  
+}
+
+@media (max-width: 425px){
+  .landing-button-img-en-header{
+    width: 100px;
+  }
+
+  .landing-button-img-fr-header{
+    width: 100px;
+  }
+}
+
 @media (min-width: 376px){
 .homescreen-button-english {
   text-align: right;
@@ -163,6 +212,22 @@ width: 100%;
 height: auto;
 /* font-size: larger; */
 }
+.landing-notice-video-english {
+  position: relative;
+  text-align: right;
+  /*margin-left: 35%;*/
+  width: 100%;
+  height: auto;
+  /* font-size: larger; */
+  }
+  .landing-notice-video-french{
+    position: relative;
+  text-align: right;
+  /*margin-left: 35%;*/
+  width: 100%;
+  height: auto;
+  /* font-size: larger; */
+  }
 
 .landingpage-notice-column a{
 display: inline-block;
@@ -189,29 +254,32 @@ text-align: center;
 }
 
 .landing-french-router{
-  position: absolute;
-  right: 60px;
-  font-weight: 400;
+  font-weight: 500;
+  font-size: medium;
 }
 @media only screen and (max-width:500px){
-  .landing-french-router {
-    position: absolute;
-    right: 15px;
-    font-weight: 400;
+  .landing-logo-header{
+    position: relative;
+    width: 55px;
   }
 }
 
 .landing-english-router{
-  position: absolute;
-  right: 60px;
   font-weight: 400;
 }
 @media only screen and (max-width:500px){
   .landing-english-router {
-    position: absolute;
-    right: 15px;
     font-weight: 400;
   }
+  .landing-french-router {
+    font-weight: 400;
+    
+  }
+
+  /* .landing-page-header-row{
+  width: 180px;
+  height: 60px;
+} */
 }
 
 .landing-notice-privacystmnt-french {
