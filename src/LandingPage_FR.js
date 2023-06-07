@@ -99,10 +99,11 @@ class LandingPageFR extends React.Component {
             </section>
             <section className="ml-5 pl-md-3 pl-xl-5 mt-md-4 d-block">
               <a href="#"
-                className="landing-french-router" onClick={this.handleRedirect}>Available in English</a>
+                className="landing-french-router" onClick={this.handleRedirect}>English</a>
             </section>
             <div className='d-flex justify-content-center'>
-              <img className="landing-logo" src={calllogo} alt="CANBeWellLogo" test-id="logo" />
+            <a href="#"><img className="landing-logo" src={calllogo} alt="CANBeWellLogo" onClick={this.handleChange2} 
+              test-id="logo" /></a>
             </div>
 
             <div className="landing-button">
@@ -119,7 +120,7 @@ class LandingPageFR extends React.Component {
               </div> */}
 
             <div className="landing-notice-privacystmnt" test-id="fr-reliable-resource-statement">
-              Rester en santé avec cette ressource créée par vos professionnels de la santé canadiens
+              Rester en santé avec cette ressource gratuite créée par vos professionnels de la santé canadiens
             </div>
 
             <div className="landingpage-notice-row"></div>
