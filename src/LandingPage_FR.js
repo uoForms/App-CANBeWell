@@ -81,26 +81,27 @@ class LandingPageFR extends React.Component {
                     </Col>
                   </Row>
                 </Col>
+                <section className="ml-5 pl-md-3 pl-xl-5 mt-md-4 d-block">
+              <a href="#"
+                className="landing-french-router" onClick={this.handleRedirect}>English</a>
+            </section>
                 <Col xs={6} md={8} lg={6}>
                   <div className="landing-update" test-id="update-banner">
                     {/* <button className="videoButton" src={videofr} onClick={this.openVideofr}
                         test-id="update-banner-fr-video">Vidéo
                 </button> */}
-                    &nbsp;&nbsp; Bienvenue
+                    {/*&nbsp;&nbsp; Bienvenue
                     {/* <button className="videoButton" src={videoen}
                         onClick={this.openVideoen} test-id="update-banner-en-video">Video
                 </button> */}
                     <a href="#"
-                      className="landing-get-started" onClick={this.handleChange2}>, cliquez ici pour utiliser l'application</a>
+                      className="landing-get-started" onClick={this.handleChange2}>Cliquez ici pour utiliser l'application</a>
 
                   </div>
                 </Col>
               </Row>
             </section>
-            <section className="ml-5 pl-md-3 pl-xl-5 mt-md-4 d-block">
-              <a href="#"
-                className="landing-french-router" onClick={this.handleRedirect}>English</a>
-            </section>
+            
             <div className='d-flex justify-content-center'>
             <a href="#"><img className="landing-logo" src={calllogo} alt="CANBeWellLogo" onClick={this.handleChange2} 
               test-id="logo" /></a>

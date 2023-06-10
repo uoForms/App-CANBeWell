@@ -56,9 +56,10 @@ color: rgb(13, 194, 58);
 }
 
 .landing-update {
-position: relative;
-text-align: center;
+  position: relative;
+  text-align: center;
 }
+
 .landing-button{
 position: relative;
 text-align: center;
@@ -128,6 +129,26 @@ font-size: large;
 font-weight: bolder;
 font-style: unset;
 color: crimson;
+}
+.landing-update {
+  position: relative;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  /* Styles spécifiques pour les téléphones */
+  .landing-update {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  /* Styles spécifiques pour les ordinateurs */
+  .landing-update {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .landingpage-notice-column {
@@ -256,6 +277,8 @@ text-align: center;
 .landing-french-router{
   font-weight: 500;
   font-size: medium;
+  position: absolute;
+  right: 60px;
 }
 @media only screen and (max-width:500px){
   .landing-logo-header{
