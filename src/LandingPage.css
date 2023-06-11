@@ -20,8 +20,9 @@ img {
 
 .landing-logo-header{
   position: relative;
-  width: 55px;
-  height:  57px;
+    width: 200px;
+    height: 57px;
+    left: 20px;
 }
 
 .landing-button-img-en-header{
@@ -55,10 +56,6 @@ font-style: unset;
 color: rgb(13, 194, 58);
 }
 
-.landing-update {
-position: relative;
-text-align: center;
-}
 .landing-button{
 position: relative;
 text-align: center;
@@ -109,8 +106,6 @@ opacity: 0.9;
   font-style: unset;
   color: crimson;
 }
-
-
 }
 
 .landing-update {
@@ -127,7 +122,24 @@ overflow: hidden;
 font-size: large;
 font-weight: bolder;
 font-style: unset;
-color: crimson;
+color:#25AAE1;
+;
+}
+
+@media only screen and (max-width: 768px) {
+  /* Styles spécifiques pour les téléphones */
+  .landing-update {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  /* Styles spécifiques pour les ordinateurs */
+  .landing-update {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .landingpage-notice-column {
@@ -233,6 +245,9 @@ height: auto;
 display: inline-block;
 font-size: larger;
 }
+.landing-get-started{
+  color: #25AAE1;
+}
 
 .slash{
 position: absolute;
@@ -251,35 +266,42 @@ color: #363636;
 .landing-notice-english{
 /* width: 60px; */
 text-align: center;
+color: #25AAE1;
 }
 
 .landing-french-router{
-  font-weight: 500;
+  /* font-weight: 500; */
   font-size: medium;
+  position: absolute;
+  right: 60px;
+  color: #25AAE1  ;
 }
 @media only screen and (max-width:500px){
   .landing-logo-header{
     position: relative;
-    width: 55px;
+    width: 125px;
+    left:10px
   }
 }
 
 .landing-english-router{
-  font-weight: 400;
+  color: #25AAE1;
 }
 @media only screen and (max-width:500px){
   .landing-english-router {
-    font-weight: 400;
+    position: absolute;
+    right: 20px;
+    color: #25AAE1;
+    font-size: small;
+    top: 15px
   }
   .landing-french-router {
-    font-weight: 400;
-    
+    position: absolute;
+    right: 20px;
+    color: #25AAE1;
+    font-size: small;
+    top: 15px
   }
-
-  /* .landing-page-header-row{
-  width: 180px;
-  height: 60px;
-} */
 }
 
 .landing-notice-privacystmnt-french {
@@ -303,6 +325,7 @@ height: auto;
 .landing-notice-french{
 /* width: 95px; */
 text-align: center;
+color: #25AAE1;
 }
 
 .homescreen-eng{
