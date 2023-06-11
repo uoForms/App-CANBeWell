@@ -3,6 +3,7 @@ import App from './App';
 import { PageView, initGA } from './Tracking';
 import './LandingPage.css';
 import calllogo from './assets/Logos/logo_21-02-02.png';
+import callcompletelogo from './assets/Logos/icanbewelllogo.png';
 import videoen from './videos/video_en.mp4';
 import videofr from './videos/video_fr.mp4';
 import calleng from './assets/Logos/icanbewelleng.png';
@@ -59,32 +60,18 @@ class LandingPageEN extends React.Component {
       <div className="landing-page">
         {this.state.language == "" || null ? (
           <div>
-            {/* <div className="center">
-            <div className="landing-trans">
-            TRANSGENDER Branch
-            </div>
-            </div> */}
             <section id="landing-page-header">
               <Row className='m-0 landing-page-header-row mt-3'>
                 <Col xs={6} md={4} lg={3}>
-                  <Row className='m-0'>
-                    <Col xs={5} sm={4} md={5} xl={5} className='p-0 d-flex justify-content-center align-items-center'>
-                      <img className="landing-logo-header w-100" src={calllogo} alt="CANBeWellLogo" test-id="logo" />
-                    </Col>
-                    <Col xs={7} sm={6} md={5} xl={3} className='p-0 d-flex flex-column justify-content-center align-items-center'>
-                      <img className="landing-button-img-fr-header" src={callfren}
-                        test-id="fr-redirect-button" />
-                      <img className="landing-button-img-en-header" src={calleng}
-                        test-id="en-redirect-button" />
-                    </Col>
-                  </Row>
+                      <img className="landing-logo-header" src={callcompletelogo} alt="CANBeWellLogo" test-id="logo" />
                 </Col>
                 <section className="ml-5 pl-md-3 pl-xl-5 mt-md-4 d-block">
               <a href="#"
                 className="landing-french-router" onClick={this.handleRedirect}>Français</a>
             </section>
-                <Col xs={6} md={8} lg={6}>
-                  <div className="landing-update" test-id="update-banner">
+              </Row>
+            </section>
+            <div className="landing-update" test-id="update-banner">
                     {/* <button className="videoButton" src={videofr} onClick={this.openVideofr}
                         test-id="update-banner-fr-video">Vidéo
                 </button> */}
@@ -96,9 +83,6 @@ class LandingPageEN extends React.Component {
                       className="landing-get-started" onClick={this.handleChange}>Click to get started</a>
 
                   </div>
-                </Col>
-              </Row>
-            </section>
             
             <div className='d-flex justify-content-center'>
             <a href="#"><img className="landing-logo" src={calllogo} alt="CANBeWellLogo"  onClick={this.handleChange} 
