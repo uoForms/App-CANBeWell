@@ -172,9 +172,9 @@
   {
     "Button": "Bone",
     "Topic heading": "Santé des os",
-    "Subject": "Densité minerale osseuse",
-    "General Patient Text": "Moins de 65 ans : recommandé uniquement si : vous avez [[facteurs de risque; https://www.canada.ca/fr/sante-publique/services/maladies-chroniques/osteoporose.html]]\n[[Informations supplémentaires; https://choisiravecsoin.org/pamphlet/osteodensitometrie/]]",
-    "Health Provider Text": "<65 ans seulement si le patient présente des [[facteurs de risque; https://www.canada.ca/fr/sante-publique/services/maladies-chroniques/osteoporose.html]] ou voir le [[résumé d'Osteoporose Canada 2010; https://www.cmaj.ca/content/cmaj/182/17/1864/F3.large.jpg]]\n\n[[Choisir avec soin; https://choisiravecsoin.org/pamphlet/osteodensitometrie/]]",
+    "Subject": "Ostéodensitométrie",
+    "General Patient Text": "Moins de 65 ans : recommandé uniquement si : vous avez [[facteurs de risque; https://www.canada.ca/fr/sante-publique/services/maladies-chroniques/osteoporose.html]]\n[[Informations supplémentaires; https://choisiravecsoin.org/pamphlet/osteodensitometrie/]]\n[[Calculateur; https://frax.canadiantaskforce.ca/index.php?r=site%2Findex&language=fr]]",
+    "Health Provider Text": "<65 ans seulement si le patient présente des [[facteurs de risque; https://frax.canadiantaskforce.ca/index.php?r=site%2Frisks&language=fr]]>\n•GECSSP 2023 [[Outil pour décision partagée; https://frax.canadiantaskforce.ca/index.php?r=site%2Findex&language=fr]]\n•GECSSP 2023 [[Ligne directrice; https://www.cmaj.ca/content/cmaj/195/21/E749.full.pdf]]\n[[Choisir avec soin; https://choisiravecsoin.org/pamphlet/osteodensitometrie/]]",
     "Gender": "m,f",
     "Minimum age": 18,
     "Maximum age": 64
@@ -182,9 +182,9 @@
   {
     "Button": "Bone",
     "Topic heading": "Santé des os",
-    "Subject": "Densité minérale osseuse",
-    "General Patient Text": "Recommandé pour tous les 65 ans ou plus:\nVotre clinicien déterminera quand le répéter\n• [[Plus d'informations; https://choosingwiselycanada.org/bone-density-tests/]]\n• [[Calculateur pour le risque de fracture à 10 ans ; https://www.sheffield.ac.uk/FRAX/tool.jsp?country=19 ]]",
-    "Health Provider Text": "Recommandé pour tous les 65 ans ou plus :\n• [[ostéoporose.ca 2010; http://www.cmaj.ca/content/cmaj/early/2010/10/12/cmaj.100771.full.pdf]]\n•[[Résumé; https://www.cmaj.ca/content/cmaj/182/17/1864/F3.large.jpg]]\n• Fréquence des nouveaux tests [[pas plus que  tous les 2 ans ; https://choosingwiselycanada.org/rhumatologie/]]",
+    "Subject": "Ostéodensitométrie",
+    "General Patient Text": "2 Recommandations différentes:\n(<Groupe d'étude canadien 2023>)\n•Les  femmes de 65 ans et plus :calculent leur risque avec cet [[outil; https://frax.groupeetudecanadien.ca/]] et avec leur clinicien décident si une ostéodensitométrie est nécessaire.\n•Le test n'est pas recommandé pour les hommes de tout âge ou les femmes âgées de moins de 65 ans , à moins qu'ils aient des[[ facteurs de risque; https://frax.groupeetudecanadien.ca/]]\n\n(<Ostéoporose Canada 2010>)\n•Les femmes et hommes de 65 ans et plus sont recommandés de passer une ostéodensitométrie :[[ informations; https://osteoporosecanada.ca/devaluation-de-densite-minerale-osseuse/?_gl=1*1etjx0v*_gcl_au*MjAxOTYxMTAyOS4xNjg1ODkxNTc5&_ga=2.150011572.383791026.1685891579-2023105155.1685891579]]",
+    "Health Provider Text": "2 Recommandations différentes:\n(<Groupe d'étude canadien 2023>)\n•Pour les  femmes de 65 ans et plus : calculer  leur risque avec cet [[outil; https://frax.groupeetudecanadien.ca/]] et ensuite  avec leur clinicien décident si une ostéodensitométrie est nécessaire.\n•Le test n'est pas recommandé pour les hommes de tout âge ou les femmes âgées de moins de 65 ans , à moins qu'ils aient des[[ facteurs de risque; https://frax.groupeetudecanadien.ca/]]\n•[[Ligne directrice complète; https://www.cmaj.ca/content/cmaj/195/21/E749.full.pdf]]\n\n(<Ostéoporose Canada 2010>)\nRecommandé pour tous les 65 ans ou plus :\n• [[Ligne directrice complète 2010; http://www.cmaj.ca/content/cmaj/early/2010/10/12/cmaj.100771.full.pdf]]\n•[[Résumé; https://www.cmaj.ca/content/cmaj/182/17/1864/F3.large.jpg]]",
     "Gender": "m,f",
     "Minimum age": 65,
     "Maximum age": 150
@@ -203,8 +203,8 @@
     "Button": "Bone",
     "Topic heading": "Santé des os",
     "Subject": "Vitamine D-Calcium",
-    "General Patient Text": "• Calcium: 1 000 mg/jour \n•Vitamine D: 400-1 000 UI/jour\n•Exception: \nSi vous avez 18 ans ou êtes enceinte ou allaitez:\nCalcium 1300mg/jour\nVitamine D 600 UI/jour\n\n•[[Informations supplémentaires; https://osteoporosecanada.ca/la-nutrition/]]\n•[[Calculez votre calcium; https://osteoporosecanada.ca/calculez-votre-calcium/]]",
-    "Health Provider Text": "• Calcium: 1 000 mg/jour \n•Vitamine D: 400-1 000 UI/jour\n•Exception: \nSi 18 ans ou enceinte ou allaite:\nCalcium 1300mg/jour\nVitamine D 600 UI/jour\n\n•[[Informations supplémentaires; https://osteoporosecanada.ca/la-nutrition/]]\n•[[Calculez votre calcium; https://osteoporosecanada.ca/calculez-votre-calcium/]]",
+    "General Patient Text": "• Calcium: 1 000 mg/jour \n•Vitamine D: 400-1 000 UI/jour\n•Exception: \nSi vous avez 18 ans ou êtes enceinte ou allaitez:\nCalcium 1300mg/jour\nVitamine D 600 UI/jour\n\n• [[Vitamine D; https://osteoporosecanada.ca/vitamine-d/]]\n\n• [[Calcium; https://osteoporosecanada.ca/le-calcium/]]\n\n• [[Calculateur de calcium; https://osteoporosecanada.ca/calculez-votre-calcium/]]",
+    "Health Provider Text": "• Calcium: 1 000 mg/jour \n•Vitamine D: 400-1 000 UI/jour\n•Exception: \nSi 18 ans ou enceinte ou allaite:\nCalcium 1300mg/jour\nVitamine D 600 UI/jour\n\n• [[Vitamine D; https://osteoporosecanada.ca/vitamine-d/]]\n\n• [[Calcium; https://osteoporosecanada.ca/le-calcium/]]\n\n• [[Calculateur de calcium; https://osteoporosecanada.ca/calculez-votre-calcium/]]",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 49
@@ -213,7 +213,7 @@
     "Button": "Bone",
     "Topic heading": "Santé des os",
     "Subject": "Vitamine D-Calcium",
-    "General Patient Text": "• Calcium: 1 200mg/jour\n•Vitamine D: 800-2 000 UI/jour\n\n•Calcium:\nC'est préférable d'obtenir votre calcium des aliments que de suppléments\n[[Information; https://osteoporosecanada.ca/le-calcium/]]\n\n\n• Vitamine  D: \nLa prise de plus de 2 000 UI de vitamine D par jour doit faire l’objet d’une surveillance médicale.\n[[Informations;  https://osteoporosecanada.ca/vitamine-d/]]",
+    "General Patient Text": "• Calcium: 1 200mg/jour\n•Vitamine D: 800-2 000 UI/jour\nLa prise de plus de 2 000 UI de vitamine D par jour doit faire l’objet d’une surveillance médicale.\n\n• [[Vitamine D; https://osteoporosecanada.ca/vitamine-d/]]\n\n• [[Calcium; https://osteoporosecanada.ca/le-calcium/]]\n\n• [[Calculateur de calcium; https://osteoporosecanada.ca/calculez-votre-calcium/]]",
     "Health Provider Text": "• Calcium: 1 200mg/jour; vitamine D: 800-2 000 UI/jour\n• [[Vitamine D; https://osteoporosecanada.ca/vitamine-d/]]\n\n• [[Calcium; https://osteoporosecanada.ca/le-calcium/]]\n\n• [[Calculateur de calcium; https://osteoporosecanada.ca/calculez-votre-calcium/]]",
     "Gender": "all",
     "Minimum age": 50,

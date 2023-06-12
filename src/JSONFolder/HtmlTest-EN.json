@@ -91,7 +91,7 @@
     "Maximum age": 150
   },
   {
-    "Test": "Sugar blood test",
+    "Test": "Blood sugar test",
     "Patient/Provider Text": "This measures your blood sugar level if you are at risk for diabetes.\nThis shows if you are diabetic, pre-diabetic or normal.",
     "Gender": "all",
     "Minimum age": 18,
@@ -111,4 +111,4 @@
     "Minimum age": 75,
     "Maximum age": 150
   }
-]  
+]
