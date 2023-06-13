@@ -15,10 +15,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { withRouter } from 'react-router-dom';
 
 import { Row, Col } from 'react-bootstrap';
-
-// import { Row, Col } from 'react-bootstrap';
-
-// import Homescreenfren from './Homescreenfren';
+import Homescreenfren from './Homescreenfren';
 
 class LandingPageFR extends React.Component {
   constructor(props) {
@@ -70,34 +67,34 @@ class LandingPageFR extends React.Component {
             <section id="landing-page-header">
               <Row className='m-0 landing-page-header-row mt-3'>
                 <Col xs={6} md={4} lg={3}>
-                      <img className="landing-logo-header" src={callcompletelogo} alt="CANBeWellLogo" test-id="logo" />
-                  
+                  <img className="landing-logo-header" src={callcompletelogo} alt="CANBeWellLogo" test-id="logo" />
+
                 </Col>
                 <section className="ml-5 pl-md-3 pl-xl-5 mt-md-4 d-block">
-              <a href="#"
-                className="landing-french-router" onClick={this.handleRedirect}>English</a>
-            </section>
+                  <a href="#"
+                    className="landing-french-router" onClick={this.handleRedirect}>English</a>
+                </section>
                 <Col xs={6} md={8} lg={6}>
-                  
+
                 </Col>
               </Row>
             </section>
             <div className="landing-update" test-id="update-banner">
-                    {/* <button className="videoButton" src={videofr} onClick={this.openVideofr}
+              {/* <button className="videoButton" src={videofr} onClick={this.openVideofr}
                         test-id="update-banner-fr-video">Vidéo
                 </button> */}
-                    {/*&nbsp;&nbsp; Bienvenue
+              {/*&nbsp;&nbsp; Bienvenue
                     {/* <button className="videoButton" src={videoen}
                         onClick={this.openVideoen} test-id="update-banner-en-video">Video
                 </button> */}
-                    <a href="#"
-                      className="landing-get-started" onClick={this.handleChange2}>Cliquez pour débuter</a>
+              <a href="#"
+                className="landing-get-started" onClick={this.handleChange2}>Cliquez pour débuter</a>
 
-                  </div>
-            
+            </div>
+
             <div className='d-flex justify-content-center'>
-            <a href="#"><img className="landing-logo" src={calllogo} alt="CANBeWellLogo" onClick={this.handleChange2} 
-              test-id="logo" /></a>
+              <a href="#"><img className="landing-logo" src={calllogo} alt="CANBeWellLogo" onClick={this.handleChange2}
+                test-id="logo" /></a>
             </div>
 
             <div className="landing-button">
@@ -169,19 +166,12 @@ class LandingPageFR extends React.Component {
             </div>
 
 
-            <div className="landingpage-notice-row"></div>
-            <div className="landingpage-notice-row row justify-content-center">
-              <div className="landingpage-notice-column  d-none">
-                <div className="homescreen-eng">
-                  <div id="homescreen-english"></div>
-                </div>
-              </div>
-              <div className="landingpage-notice-column">
-                <div className="homescreen-fre">
-                  <div id="homescreen-french"></div>
-                </div>
-              </div>
+            <div className="d-flex justify-content-center my-3">
+              <button type="button" className="d-inline-block d-md-none" onClick={() => this.props.setOpenDialog(true)} test-id="homeScreenButtonEn">
+                Ajouter sur l'écran d'accueil
+              </button>
             </div>
+            <Homescreenfren openDialog={this.props.openDialog} setOpenDialog={this.props.setOpenDialog} />
 
             <div className="landingButtons">
               <button className="langLandButtonStyle" onClick={this.handleChange} >English</button>

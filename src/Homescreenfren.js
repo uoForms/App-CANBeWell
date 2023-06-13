@@ -30,7 +30,7 @@ const DialogTitle = withStyles(styles)((props) => {
       <Typography variant="h5" test-id="homeScreenTitle">{children}</Typography>
       {onClose ? (
         <IconButton aria-label="close" className={classes.closeButton} onClick={onClose}>
-          <CloseIcon test-id="homeScreenCloseIcon"/>
+          <CloseIcon test-id="homeScreenCloseIcon" />
         </IconButton>
       ) : null}
     </MuiDialogTitle>
@@ -50,14 +50,13 @@ const DialogActions = withStyles((theme) => ({
   },
 }))(MuiDialogActions);
 
-export default function CustomizedDialogs() {
-  const [open, setOpen] = React.useState(false);
+export default function CustomizedDialogs({ openDialog, setOpenDialog }) {
 
   const handleClickOpen = () => {
-    setOpen(true);
+    setOpenDialog(true);
   };
   const handleClose = () => {
-    setOpen(false);
+    setOpenDialog(false);
   };
   var clientNav = window.navigator;
   var md = new MobileDetect(clientNav.userAgent);
@@ -67,60 +66,60 @@ export default function CustomizedDialogs() {
     <div>
       {
         (() => {
-          if(clientOS == 'iOS'){
+          if (clientOS == 'iOS') {
             return <div>
-              <div className="homescreen-button-french">
-                &nbsp;<button test-id="homeScreenButtonFr" onClick={handleClickOpen}>Ajouter sur l'écran d'accueil</button>
-                </div>
-          <Dialog onClose={handleClose} aria-labelledby="customized-dialog-title" open={open}>
-            <DialogTitle id="customized-dialog-title" onClose={handleClose}>
-            Pour iPhone et iPad
-            </DialogTitle>
-            <DialogContent test-id="homeScreenContent" dividers className="Diacontent">
-            <h4>1. Lancez choixsante.ca via Safari</h4>
-              <img src={require('./images/instruction-2_french.png').default} className="instructionimg" />
-              <h4>2. Appuyez sur l'icône de partage</h4>
-              <img src={require('./images/instruction_2.png').default} className="instructionimg" />
-              <h4>3. Appuyez sur "Ajouter sur l'écran d'accueil"</h4>
-              <img src={require('./images/instruction_fren_1.png').default} className="instructionimg" />
-              <h4>4. Appuyez sur le bouton "Ajouter"</h4>
-              <img src={require('./images/instruction-1_french.png').default} className="instructionimg" />
-            </DialogContent>
-            <DialogActions>
-              <div className="closeButton">
-                <button test-id="homeScreenCloseButton" onClick={handleClose}>D'accord</button>
-              </div>
-            </DialogActions>
-          </Dialog>
-          </div>
+              {/* <div className="homescreen-button-french">
+                &nbsp;<button test-id="homeScreenButtonFr" onClick={handleClickOpen}>Enregister l’appli</button>
+                </div> */}
+              <Dialog onClose={handleClose} aria-labelledby="customized-dialog-title" open={openDialog ? openDialog : false}>
+                <DialogTitle id="customized-dialog-title" onClose={handleClose}>
+                  Pour iPhone et iPad
+                </DialogTitle>
+                <DialogContent test-id="homeScreenContent" dividers className="Diacontent">
+                  <h4>1. Lancez choixsante.ca via Safari</h4>
+                  <img src={require('./images/instruction-2_french.png').default} className="instructionimg" />
+                  <h4>2. Appuyez sur l'icône de partage</h4>
+                  <img src={require('./images/instruction_2.png').default} className="instructionimg" />
+                  <h4>3. Appuyez sur "Enregister l’appli"</h4>
+                  <img src={require('./images/instruction_fren_1.png').default} className="instructionimg" />
+                  <h4>4. Appuyez sur le bouton "Ajouter"</h4>
+                  <img src={require('./images/instruction-1_french.png').default} className="instructionimg" />
+                </DialogContent>
+                <DialogActions>
+                  <div className="closeButton">
+                    <button test-id="homeScreenCloseButton" onClick={handleClose}>D'accord</button>
+                  </div>
+                </DialogActions>
+              </Dialog>
+            </div>
           }
-          else if(clientOS =='AndroidOS'){
+          else if (clientOS == 'AndroidOS') {
             return <div>
-              <div className="homescreen-button-french">
-              &nbsp;<button test-id="homeScreenButtonFr" onClick={handleClickOpen}>Ajouter à l'écran d'accueil</button>
-                </div>
-          <Dialog onClose={handleClose} aria-labelledby="customized-dialog-title" open={open}>
-          <DialogTitle id="customized-dialog-title" onClose={handleClose}>
-          Pour Android
-            </DialogTitle>
-            <DialogContent test-id="homeScreenContent" dividers className="Diacontent">
-            <h4>1. Lancez icanbewell.ca via Chrome</h4>
-              <img src={require('./images/android_1.jpg').default } className="instructionimg" />
-              <h4>2. Appuyez sur l'icône de menu</h4>
-              <img src={require('./images/android_2.jpg').default} className="instructionimg" />
-              <h4>3. Appuyez sur "Ajouter à l'écran d'accueil"</h4>
-              <img src={require('./images/android_fren_1.jpg').default} className="instructionimg" />
-            </DialogContent>
-            <DialogActions>
-              <div className="closeButton">
-                <button test-id="homeScreenCloseButton" onClick={handleClose}>D'accord</button>
-              </div>
-            </DialogActions>
-          </Dialog>
-          </div>
+              {/* <div className="homescreen-button-french">
+              &nbsp;<button test-id="homeScreenButtonFr" onClick={handleClickOpen}>Enregister l’appli</button>
+                </div> */}
+              <Dialog onClose={handleClose} aria-labelledby="customized-dialog-title" open={openDialog ? openDialog : false}>
+                <DialogTitle id="customized-dialog-title" onClose={handleClose}>
+                  Pour Android
+                </DialogTitle>
+                <DialogContent test-id="homeScreenContent" dividers className="Diacontent">
+                  <h4>1. Lancez icanbewell.ca via Chrome</h4>
+                  <img src={require('./images/android_1.jpg').default} className="instructionimg" />
+                  <h4>2. Appuyez sur l'icône de menu</h4>
+                  <img src={require('./images/android_2.jpg').default} className="instructionimg" />
+                  <h4>3. Appuyez sur "Enregister l’appli"</h4>
+                  <img src={require('./images/android_fren_1.jpg').default} className="instructionimg" />
+                </DialogContent>
+                <DialogActions>
+                  <div className="closeButton">
+                    <button test-id="homeScreenCloseButton" onClick={handleClose}>D'accord</button>
+                  </div>
+                </DialogActions>
+              </Dialog>
+            </div>
           }
-          })()
-        }
+        })()
+      }
     </div>
   );
 }
