@@ -3,6 +3,9 @@ import React from 'react';
 import './index.css';
 import App from './App';
 import { CookiesProvider } from 'react-cookie';
+import LandingPageEN from './LandingPage_EN.js';
+import LandingPageFR from './LandingPage_FR.js';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import LandingPage from './Landingpage';
 import Homescreeneng from './Homescreeneng';
 import Homescreenfren from './Homescreenfren';
@@ -17,6 +20,17 @@ import Homescreenfren from './Homescreenfren';
 
 //firebase.initializeApp(DB_CONFIG);
 //ReactDOM.render(<Router routes={routes} />, document.getElementById('root'));
-ReactDOM.render(<CookiesProvider><LandingPage /></CookiesProvider>, document.getElementById('root'));
+// ReactDOM.render(<CookiesProvider><LandingPage /></CookiesProvider>, document.getElementById('root'));
+ReactDOM.render(
+    <CookiesProvider>
+      <Router>
+        <Switch>
+          <Route exact path="/" component={LandingPageEN} />
+          <Route path="/fr" component={LandingPageFR} />
+        </Switch>
+      </Router>
+    </CookiesProvider>,
+    document.getElementById('root')
+  );
 // ReactDOM.render(<Homescreeneng />, document.getElementById('homescreen-english'));
 // ReactDOM.render(<Homescreenfren />, document.getElementById('homescreen-french'));

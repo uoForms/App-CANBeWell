@@ -1,38 +1,38 @@
-import React from 'react';
-import App from './App';
-// import { PageView, initGA } from './Tracking';
-import './LandingPage.css';
+// import React from 'react';
+// import App from './App';
+// // import { PageView, initGA } from './Tracking';
+// import './LandingPage.css';
 
-// import calllogo from './assets/Logos/logo_21-02-02.png';
-// import videoen from './videos/video_en.mp4';
-// import videofr from './videos/video_fr.mp4';
-// import calleng from './assets/Logos/icanbewelleng.png';
-// import callfren from './assets/Logos/canbewellfren.png';
-// import homepageimg from './assets/Logos/homepageimage.png';
-import { BrowserRouter as Router, Route, Switch, withRouter, Redirect } from "react-router-dom";
-import LandingPageEN from './LandingPage_EN.js';
-import LandingPageFR from './LandingPage_FR.js';
+// // import calllogo from './assets/Logos/logo_21-02-02.png';
+// // import videoen from './videos/video_en.mp4';
+// // import videofr from './videos/video_fr.mp4';
+// // import calleng from './assets/Logos/icanbewelleng.png';
+// // import callfren from './assets/Logos/canbewellfren.png';
+// // import homepageimg from './assets/Logos/homepageimage.png';
+// import { BrowserRouter as Router, Route, Switch, withRouter, Redirect } from "react-router-dom";
+// import LandingPageEN from './LandingPage_EN.js';
+// import LandingPageFR from './LandingPage_FR.js';
 
-// import Header from './components/Header';
-// import Footer from './components/Footer';
+// // import Header from './components/Header';
+// // import Footer from './components/Footer';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
-const LandingPage = () => {
-  const [openDialog, setOpenDialog] = React.useState(false);
-  return (
-    <>
-      <Router>
-        <Switch>
-          <Route exact path="/" component={() => <LandingPageEN openDialog={openDialog} setOpenDialog={setOpenDialog} />} />
-          <Route path="/fr" component={() => <LandingPageFR openDialog={openDialog} setOpenDialog={setOpenDialog} />} />
-        </Switch>
-      </Router>
-      {/* <Footer /> */}
-    </>
-  );
+// const LandingPage = () => {
+//   const [openDialog, setOpenDialog] = React.useState(false);
+//   return (
+//     <>
+//       <Router>
+//         <Switch>
+//           <Route exact path="/" component={() => <LandingPageEN openDialog={openDialog} setOpenDialog={setOpenDialog} />} />
+//           <Route path="/fr" component={() => <LandingPageFR openDialog={openDialog} setOpenDialog={setOpenDialog} />} />
+//         </Switch>
+//       </Router>
+//       {/* <Footer /> */}
+//     </>
+//   );
 // class LandingPage extends React.Component {
   // constructor(props) {
   //   super(props);
@@ -174,5 +174,5 @@ const LandingPage = () => {
   //     </div>
   //   );
   // }
-}
-export default LandingPage;
+// }
+// export default LandingPage;
