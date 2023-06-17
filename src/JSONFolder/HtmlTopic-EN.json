@@ -163,7 +163,7 @@
     "Button": "Bone",
     "Topic heading": "Bone Health",
     "Subject": "Nutrition",
-    "General Patient Text": "•Eating healthy is important to build and keep strong bones\n[[Click here for more info; https://osteoporosis.ca/nutrition/]]\n\n•[[Click her for a calcium calculator; https://osteoporosis.ca/calcium-calculator/]]",
+    "General Patient Text": "•Eating healthy is important to build and keep strong bones\n[[Click here for more info; https://osteoporosis.ca/nutrition/]]\n\n•[[Click here for a calcium calculator; https://osteoporosis.ca/calcium-calculator/]]",
     "Health Provider Text": "•\tA healthy diet prevents osteoporosis\n[[Osteoporosis.ca; https://osteoporosis.ca/nutrition/]]\n•[[Calcium calculator; https://osteoporosis.ca/calcium-calculator/]]",
     "Gender": "all",
     "Minimum age": 18,
@@ -194,7 +194,7 @@
     "Topic heading": "Bone Health",
     "Subject": "Bone Density Test",
     "General Patient Text": "Below age 65: only recommended if: you have [[risk factors; https://www.canada.ca/en/public-health/services/chronic-diseases/osteoporosis.html]]\n[[More info; https://choosingwiselycanada.org/pamphlet/bone-density-tests/]]\n[[Calculator; https://frax.canadiantaskforce.ca/]]",
-    "Health Provider Text": "•<65 yo BDM only if the patient has  [[risk factors; https://frax.canadiantaskforce.ca/index.php?r=site%2Frisks]]\n•[[Canadian Task Force 2023 Decision aid; https://frax.canadiantaskforce.ca/]]\n•[[Canadiant Task Force 2023 guideline; https://www.cmaj.ca/content/cmaj/195/18/E639.full.pdf]]\n[[BDM Choosing Wisely; https://choosingwiselycanada.org/pamphlet/bone-density-tests/]]",
+    "Health Provider Text": "•<65 yo BDM only if the patient has [[risk factors; https://frax.canadiantaskforce.ca/index.php?r=site%2Frisks]]\n•[[Canadian Task Force 2023 Decision aid; https://frax.canadiantaskforce.ca/]]\n•[[Canadiant Task Force 2023 guideline; https://www.cmaj.ca/content/cmaj/195/18/E639.full.pdf]]\n•[[BDM Choosing Wisely; https://choosingwiselycanada.org/pamphlet/bone-density-tests/]]",
     "Gender": "m,f",
     "Minimum age": 18,
     "Maximum age": 64
@@ -203,8 +203,8 @@
     "Button": "Bone",
     "Topic heading": "Bone Health",
     "Subject": "Bone Density Test",
-    "General Patient Text": "There are 2 different guidelines :\n(<Canadian Task Force 2023:>)\n• Women 65 and over can use this calculator [[ https://frax.canadiantaskforce.ca/]] and see their primary care provider to discuss if a bone density is necessary\n• Men of all ages  and women below 65 are not advised to have a bone density unless they have [[risk factors; https://frax.canadiantaskforce.ca/index.php?r=site%2Frisks]]\n\n(<Osteoporosis Canada 2010 guideline:>)\nBone density is recommended for everyone 65 or older\n•[[Bone density test; https://osteoporosis.ca/bone-mineral-density-testing/]]\n•\t[[more info; https://choosingwiselycanada.org/bone-density-tests/]]",
-    "Health Provider Text": "There are 2 different guidelines :\n(<Canadian Task Force 2023:>)\n• Women 65 and over: use this calculator [[ https://frax.canadiantaskforce.ca/]] and see their primary care provider to discuss if a bone density is necessary\n• Men of all ages  and women below 65 are not advised to have a bone density unless they have [[risk factors; https://frax.canadiantaskforce.ca/index.php?r=site%2Frisks]]\n•[[Guideline; https://www.cmaj.ca/content/cmaj/195/18/E639.full.pdf]]\n\n(<Osteoporosis Canada 2010 guideline:>)\nRecommended for everyone 65 or older:\n•[[Summary; https://www.cmaj.ca/content/cmaj/182/17/1864/F3.large.jpg]]\n• [[Osteoporosis.ca 2010 guideline; http://www.cmaj.ca/content/cmaj/early/2010/10/12/cmaj.100771.full.pdf]]",
+    "General Patient Text": "There are 2 different guidelines :\n(<Canadian Task Force 2023:>)\n• Women 65 and over can use this [[calculator; https://frax.canadiantaskforce.ca/]] and see their primary care provider to discuss if a bone density is necessary\n• Men of all ages  and women below 65 are not advised to have a bone density unless they have [[risk factors; https://frax.canadiantaskforce.ca/index.php?r=site%2Frisks]]\n\n(<Osteoporosis Canada 2010 guideline:>)\nBone density is recommended for everyone 65 or older\n•[[Bone density test; https://osteoporosis.ca/bone-mineral-density-testing/]]\n•\t[[more info; https://choosingwiselycanada.org/bone-density-tests/]]",
+    "Health Provider Text": "There are 2 different guidelines :\n(<Canadian Task Force 2023:>)\n• Women 65 and over: use this [[calculator; https://frax.canadiantaskforce.ca/]] and see their primary care provider to discuss if a bone density is necessary\n• Men of all ages  and women below 65 are not advised to have a bone density unless they have [[risk factors; https://frax.canadiantaskforce.ca/index.php?r=site%2Frisks]]\n•[[Guideline; https://www.cmaj.ca/content/cmaj/195/18/E639.full.pdf]]\n\n(<Osteoporosis Canada 2010 guideline:>)\nRecommended for everyone 65 or older:\n•[[Summary; https://www.cmaj.ca/content/cmaj/182/17/1864/F3.large.jpg]]\n• [[Osteoporosis.ca 2010 guideline; https://www.cmaj.ca/content/cmaj/early/2010/10/12/cmaj.100771.full.pdf]]",
     "Gender": "m,f",
     "Minimum age": 65,
     "Maximum age": 150
