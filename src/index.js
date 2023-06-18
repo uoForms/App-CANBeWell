@@ -17,6 +17,6 @@ import Homescreenfren from './Homescreenfren';
 
 //firebase.initializeApp(DB_CONFIG);
 //ReactDOM.render(<Router routes={routes} />, document.getElementById('root'));
-ReactDOM.render(<CookiesProvider><LandingPage /></CookiesProvider>, document.getElementById('root'));
+ReactDOM.render(<LandingPage />, document.getElementById('root'));
 // ReactDOM.render(<Homescreeneng />, document.getElementById('homescreen-english'));
 // ReactDOM.render(<Homescreenfren />, document.getElementById('homescreen-french'));
