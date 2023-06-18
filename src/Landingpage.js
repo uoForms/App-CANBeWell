@@ -26,8 +26,8 @@ const LandingPage = () => {
     <>
       <Router>
         <Switch>
-          <Route exact path="/" component={() => <LandingPageEN openDialog={openDialog} setOpenDialog={setOpenDialog} />} />
           <Route path="/fr" component={() => <LandingPageFR openDialog={openDialog} setOpenDialog={setOpenDialog} />} />
+          <Route path="/" component={() => <LandingPageEN openDialog={openDialog} setOpenDialog={setOpenDialog} />} />
         </Switch>
       </Router>
       {/* <Footer /> */}

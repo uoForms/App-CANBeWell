@@ -10,7 +10,7 @@ import calleng from './assets/Logos/icanbewelleng.png';
 import callfren from './assets/Logos/canbewellfren.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import homepageimg from './assets/Banner/homepageimage.png';
-import { withRouter } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import { Row, Col } from 'react-bootstrap';
 import Homescreeneng from './Homescreeneng';
 
@@ -64,8 +64,9 @@ class LandingPageEN extends React.Component {
                   <img className="landing-logo-header" src={callcompletelogo} alt="CANBeWellLogo" test-id="logo" />
                 </Col>
                 <section className="ml-5 pl-md-3 pl-xl-5 mt-md-4 d-block">
-                  <a href="#"
-                    className="landing-french-router" onClick={this.handleRedirect}>Français</a>
+                <Link to="fr" className="landing-french-router">Français</Link>
+                  {/* <a href="#"
+                    className="landing-french-router" onClick={this.handleRedirect}>Français</a> */}
                 </section>
               </Row>
             </section>
