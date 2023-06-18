@@ -12,7 +12,7 @@ import callchoixsante from './assets/Logos/choixsantefren.png'
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import homepageimg from './assets/Banner/homepageimage.png';
 
-import { withRouter } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 
 import { Row, Col } from 'react-bootstrap';
 import Homescreenfren from './Homescreenfren';
@@ -71,8 +71,9 @@ class LandingPageFR extends React.Component {
 
                 </Col>
                 <section className="ml-5 pl-md-3 pl-xl-5 mt-md-4 d-block">
-                  <a href="#"
-                    className="landing-french-router" onClick={this.handleRedirect}>English</a>
+                <Link to="/en" className="landing-french-router">English</Link>
+                  {/* <a href="#"
+                    className="landing-french-router" onClick={this.handleRedirect}>English</a> */}
                 </section>
                 <Col xs={6} md={8} lg={6}>
 
