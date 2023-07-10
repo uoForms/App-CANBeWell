@@ -6,6 +6,7 @@ import { CookiesProvider } from 'react-cookie';
 import LandingPage from './Landingpage';
 import Homescreeneng from './Homescreeneng';
 import Homescreenfren from './Homescreenfren';
+
 //import routes from './routes';
 //import registerServiceWorker from './registerServiceWorker';
 

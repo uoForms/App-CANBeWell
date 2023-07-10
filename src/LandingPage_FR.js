@@ -2,7 +2,7 @@ import React from 'react';
 import App from './App';
 import { PageView, initGA } from './Tracking';
 import './LandingPage.css';
-import calllogo from './assets/Logos/logo_21-02-02.png';
+import calllogo from './assets/Logos/homepageimage.png';
 import videoen from './videos/video_en.mp4';
 import videofr from './videos/video_fr.mp4';
 import calleng from './assets/Logos/icanbewelleng.png';
