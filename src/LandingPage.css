@@ -75,7 +75,10 @@ opacity: 0.9;
 }
 
 @media only screen and (min-width:200px) and (max-width:450px){
-.landing-button-img{
+  .landing-logo {
+    width: 100vw;
+  }
+  .landing-button-img{
   width: 280px;
   height: auto ;
   border: 1px solid #fff;
@@ -247,6 +250,7 @@ font-size: larger;
 }
 .landing-get-started{
   color: #25AAE1;
+  margin-bottom: 30px;
 }
 
 .slash{
