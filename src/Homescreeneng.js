@@ -82,10 +82,10 @@ export default function CustomizedDialogs({ openDialog, setOpenDialog }) {
                   <img src={require('./images/instruction_1.png').default} className="instructionimg" />
                   <h4>2. Tap share icon</h4>
                   <img src={require('./images/instruction_2.png').default} className="instructionimg" />
-                  <h4>3. Tap "Save App"</h4>
+                  <h4>3. Tap "Add to Home Screen"</h4>
                   <img src={require('./images/instruction_3.png').default} className="instructionimg" />
                   <h4>4. Tap "Add" button</h4>
-                  <img src={require('./images/instruction_4.png').default} className="instructionimg" />
+                  <img src={require('./images/ios_eng_4.png').default} className="instructionimg" />
                 </DialogContent>
                 <DialogActions>
                   <div className="closeButton">
@@ -108,9 +108,12 @@ export default function CustomizedDialogs({ openDialog, setOpenDialog }) {
                   <h4>1. Launch icanbewell.ca via Chrome</h4>
                   <img src={require('./images/android_1.jpg').default} className="instructionimg" />
                   <h4>2. Tap menu icon</h4>
-                  <img src={require('./images/android_2.jpg').default} className="instructionimg" />
-                  <h4>3. Tap "Save App"</h4>
-                  <img src={require('./images/android_eng_1.jpg').default} className="instructionimg" />
+                  <img src={require('./images/android_eng_2.jpg').default} className="instructionimg" />
+                  <h4>3. Tap "Install app" **</h4>
+                  <img src={require('./images/android_eng_3.jpg').default} className="instructionimg" />
+                  <h5>** In certain AndroidOS versions "Add to homescreen" replaces "Install app"</h5>
+                  <h4>4. Tap "Install"</h4>
+                  <img src={require('./images/android_eng_4.jpg').default} className="instructionimg" />
                 </DialogContent>
                 <DialogActions>
                   <div className="closeButton">
