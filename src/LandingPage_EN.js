@@ -164,7 +164,7 @@ class LandingPageEN extends React.Component {
               </div> */}
             <div className="d-flex justify-content-center my-3">
               <button type="button" className="d-inline-block d-md-none" onClick={() => this.props.setOpenDialog(true)} test-id="homeScreenButtonEn">
-                Add to home screen
+                Install App
               </button>
             </div>
             <Homescreeneng openDialog={this.props.openDialog} setOpenDialog={this.props.setOpenDialog} />
