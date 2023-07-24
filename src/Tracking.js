@@ -2,12 +2,13 @@ import ReactGA from "react-ga";
 import React from "react";
 import MobileDetect from 'mobile-detect';
 import { db } from './firebase';
+import { ref, set } from 'firebase/database';
 /*import $ from jQuery;*/
 
 export const initGA = (trackingID) => {
   ReactGA.initialize(
     trackingID,
-  ); 
+  );
 }
 /*export const sendOutbound = (event) => {
   event.preventDefault();
@@ -117,7 +118,7 @@ export const matchUserDevice = () => {
     clientOS = 'Windows';
     clientDevice = 'WindowsPC'
   }
-  if (clientOS === 'AndroidOS' ) {
+  if (clientOS === 'AndroidOS') {
     clientDevice = 'AndroidPhone'
   }
 
@@ -138,7 +139,7 @@ export const GaUserEvent = (currNav, currCat, userInfo, timeDiff, preTime, currT
     userid: userInfo.userID,
     sessionid: userInfo.sessionID,
     gender: userInfo.gender,
-    Tgender: ((userInfo.Tgender === "tm" && userInfo.gender === "female") || (userInfo.Tgender === "tf" && userInfo.gender === "male")) ? userInfo.gender: userInfo.Tgender,
+    Tgender: ((userInfo.Tgender === "tm" && userInfo.gender === "female") || (userInfo.Tgender === "tf" && userInfo.gender === "male")) ? userInfo.gender : userInfo.Tgender,
     age: userInfo.age,
     language: userInfo.language,
     role: userInfo.patient_provider,
@@ -228,7 +229,7 @@ export const getEventLabel = (label) => {
 
 export const writeClick = (label, currTime) => {
   let data = JSON.parse(JSON.stringify(label));
-  db.ref(data.date + '/' + currTime).set(data);
+  set(ref(db, data.date + '/' + currTime), data);
 }
 
 export const formatDate = (date) => {

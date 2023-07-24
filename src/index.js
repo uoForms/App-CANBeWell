@@ -1,11 +1,11 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
-import './index.css';
 import App from './App';
 import { CookiesProvider } from 'react-cookie';
 import LandingPage from './Landingpage';
 import Homescreeneng from './Homescreeneng';
 import Homescreenfren from './Homescreenfren';
+import './index.css';
 
 //import routes from './routes';
 //import registerServiceWorker from './registerServiceWorker';

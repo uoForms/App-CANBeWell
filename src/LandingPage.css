@@ -8,6 +8,11 @@
   overflow: hidden;
   width: 35vmax;
 }
+.landing-logo-slider {
+  width: 35vmax;
+  margin:auto;
+  margin-bottom: 30px;
+}
 
 img {
   object-fit: contain;
@@ -31,6 +36,14 @@ img {
 
 .landing-button-img-fr-header{
   width: 150px;
+}
+
+.text-brand-blue {
+  color: #25AAE1;
+}
+
+.text-brand-blue:hover, .text-brand-blue:focus, .text-brand-blue:active {
+  color: #25AAE1;
 }
 
 .landing-page {
@@ -77,6 +90,10 @@ opacity: 0.9;
 @media only screen and (min-width:200px) and (max-width:450px){
   .landing-logo {
     width: 100vw;
+  }
+  .landing-logo-slider {
+    width: 100vw;
+    margin:auto;
   }
   .landing-button-img{
   width: 280px;
@@ -244,10 +261,6 @@ height: auto;
   /* font-size: larger; */
   }
 
-.landingpage-notice-column a{
-display: inline-block;
-font-size: larger;
-}
 .landing-get-started{
   color: #25AAE1;
   margin-bottom: 30px;
