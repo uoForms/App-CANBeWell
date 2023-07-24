@@ -1452,8 +1452,8 @@ class App extends Component {
                           test-id="ageInput"
                           onChange={this.handleChange}
                         >
-                          {ages.map((age) => (
-                            <option key={age} value={this.state.age}>
+                          {ages.map((age, i) => (
+                            <option key={i} value={age}>
                               {age}
                             </option>
                           ))}
