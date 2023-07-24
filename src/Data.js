@@ -1,21 +1,15 @@
 import PropTypes from 'prop-types';
-// import TopicListFR from './JSONFolder/HtmlTopic-FR.json';
-// import TopicListEN from './JSONFolder/HtmlTopic-EN.json';
-// import FilterTopicListFR from './JSONFolder/FilterTopic-FR.json';
-// import FilterTopicListEN from './JSONFolder/FilterTopic-EN.json';
+import TopicListFR from './JSONFolder/HtmlTopic-FR.json';
+import TopicListEN from './JSONFolder/HtmlTopic-EN.json';
+import FilterTopicListFR from './JSONFolder/FilterTopic-FR.json';
+import FilterTopicListEN from './JSONFolder/FilterTopic-EN.json';
 import Lang from './Lang/Lang.json';
 import { isTransgender } from './config';
-
-import { firebaseStorage } from './firebase';
 
 class Data {
   ////////////////////////////////////////////Get One topics //////////////////////////////////////////////////
   getTopic(button, userInfo) {
 
-    const FilterTopicListFR = ref(firebaseStorage, 'json/FilterTopic-FR.json');
-    const FilterTopicListEN = ref(firebaseStorage, 'json/FilterTopic-EN.json');
-    const TopicListFR = ref(firebaseStorage, 'json/HtmlTopic-FR.json');
-    const TopicListEN = ref(firebaseStorage, 'json/HtmlTopic-EN.json');
     var app_language1 = userInfo.language;
     var topicList = "";
     var filtertopiclist = "";
