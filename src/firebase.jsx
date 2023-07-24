@@ -1,9 +1,10 @@
-import firebase from 'firebase/app'
-import 'firebase/auth'
-import 'firebase/database'
+import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
+import { getDatabase } from "firebase/database";
+import { getStorage } from "firebase/storage";
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-// For Test Website 
+// For Test Website
 const firebaseConfig = {
   apiKey: "AIzaSyCl4wyKnUZRt25Vmxbt7-dDoR8tsG02kSk",
   authDomain: "canbewell-2022-test.firebaseapp.com",
@@ -12,7 +13,7 @@ const firebaseConfig = {
   storageBucket: "canbewell-2022-test.appspot.com",
   messagingSenderId: "114580889906",
   appId: "1:114580889906:web:97ea5a8d3c77628032f72b",
-  measurementId: "G-WLZKR9N34N"
+  measurementId: "G-WLZKR9N34N",
 };
 //For Production website
 // const firebaseConfig = {
@@ -25,11 +26,10 @@ const firebaseConfig = {
 //   appId: "1:77472236262:web:21a39b1b2f1ba280393127",
 //   measurementId: "G-16GFHELNYK"
 // };
-if (!firebase.apps.length) {
-  firebase.initializeApp(firebaseConfig)
-}
 
-const db = firebase.database()
+const app = initializeApp(firebaseConfig);
 //const auth = firebase.auth()
 
-export { db}
+export const db = getDatabase(app);
+
+export const firebaseStorage = getStorage(app);

@@ -1,8 +1,6 @@
 import React from 'react';
 import App from './App';
 import { PageView, initGA } from './Tracking';
-import './LandingPage.css';
-import calllogo from './assets/Logos/homepageimage.png';
 import videoen from './videos/video_en.mp4';
 import videofr from './videos/video_fr.mp4';
 import calleng from './assets/Logos/icanbewelleng.png';
@@ -17,6 +15,10 @@ import { Link, withRouter } from 'react-router-dom';
 import { Row, Col } from 'react-bootstrap';
 import Homescreenfren from './Homescreenfren';
 
+// CSS classes
+import './LandingPage.css';
+// banner slider component file
+import BannerSlider from './components/bannerSlider';
 class LandingPageFR extends React.Component {
   constructor(props) {
     super(props);
@@ -71,7 +73,7 @@ class LandingPageFR extends React.Component {
 
                 </Col>
                 <section className="ml-5 pl-md-3 pl-xl-5 mt-md-4 d-block">
-                <Link to="/en" className="landing-french-router">English</Link>
+                  <Link to="/en" className="landing-french-router">English</Link>
                   {/* <a href="#"
                     className="landing-french-router" onClick={this.handleRedirect}>English</a> */}
                 </section>
@@ -87,16 +89,11 @@ class LandingPageFR extends React.Component {
               {/*&nbsp;&nbsp; Bienvenue
                     {/* <button className="videoButton" src={videoen}
                         onClick={this.openVideoen} test-id="update-banner-en-video">Video
-                </button> */}
-              <a href="#"
-                className="landing-get-started" onClick={this.handleChange2}>Cliquez pour débuter</a>
+              </button> */}
 
             </div>
 
-            <div className='d-flex justify-content-center'>
-              <a href="#"><img className="landing-logo" src={calllogo} alt="CANBeWellLogo" onClick={this.handleChange2}
-                test-id="logo" /></a>
-            </div>
+            <BannerSlider handleChange={this.handleChange} />
 
             <div className="landing-button">
               <a href="#"><img className="landing-button-img" src={callchoixsante} onClick={this.handleChange2}
@@ -111,73 +108,42 @@ class LandingPageFR extends React.Component {
                 A reliable resource by Canadian health care providers to help you stay healthy
               </div> */}
 
-            <div className="landing-notice-privacystmnt" test-id="fr-reliable-resource-statement">
+            <div className="landing-notice-privacystmnt font-subHeading" test-id="fr-reliable-resource-statement">
               Rester en santé avec cette ressource gratuite créée par vos professionnels de la santé canadiens
             </div>
 
-            <div className="landingpage-notice-row"></div>
-            <div className="landingpage-notice-row d-flex justify-content-center">
-              <div className="landingpage-notice-column">
-                <div className="landing-notice-video-french">
-                  {/*<a href= "/iCanBeWell_PrivacyPolicy.htm" target="_blank">{"PrivacyStatement"}</a>*/}
-                  {/* <a href="/iCanBeWell_PrivacyPolicy.htm"
-                        className="landing-notice-english" test-id="privacy-statement-en">{"Privacy Statement"} </a> */}
-                  <a className="landing-notice-french" src={videofr} href=""
-                    onClick={this.openVideofr} test-id="update-banner-fr-video">Vidéo
-                  </a>
-                  &nbsp;<a href="#" className="slash">{<h4>&#124;</h4>} </a>
-                </div>
-              </div>
-              {/* <button className="videoButton" src={videofr} onClick={this.openVideofr}
-                        test-id="update-banner-fr-video">Vidéo
-                </button> */}
-
-              <div className="landingpage-notice-column">
-                <div className="landing-notice-privacystmnt-french">
-                  {/*<a href= "/politiquedeconfidentialite.htm" target="_blank">{"Politique de confidentialité"}</a>*/}
-                  {/* <a href= "https://canbewell-uottawa.web.app/politiquedeconfidentialite.htm" >{"Politique de confidentialité"}</a> */}
-                  {/* </div> */}
-                  {/* <div id="homescreen-french"></div> */}
-                  <a href="/politiquedeconfidentialite.htm"
-                    className="landing-notice-french privacyFr"
-                    test-id="privacy-statement-fr">{"Politique de confidentialité"}</a>
-                  &nbsp;<a href="#" className="slash">{<h4>&#124;</h4>} </a>
-                </div>
-              </div>
-
-              {/* <div className="landingpage-notice-column">
-                  <div className="landing-notice-aboutus-english">
-                    <a href="/iCanBeWell_AboutUs.htm"
-                       className="landing-notice-english" test-id="aboutus-statement-en">{"About Us"} </a>
-                    &nbsp;<a href="#" className="slash">{<h4>&#124;</h4>} </a>
-                  </div>
-                </div> */}
-
-              <div className="landingpage-notice-column">
-                <div className="landing-notice-aboutus-french">
-                  <a href="/iCanBeWell_àproposdenous.htm"
-                    className="landing-notice-french"
-                    test-id="aboutus-statement-fr">{"À propos de nous"}</a>
-
-                </div>
-              </div>
-
-
-
-            </div>
-
-
             <div className="d-flex justify-content-center my-3">
-              <button type="button" className="d-inline-block d-md-none" onClick={() => this.props.setOpenDialog(true)} test-id="homeScreenButtonEn">
-                Ajouter sur l'écran d'accueil
+              <a href="#" type="button" className="btn btn-primary btn-lg" onClick={this.handleChange2}><b>Commencer</b></a>
+              <button type="button" className="ml-2 btn btn-primary btn-lg d-inline-block d-md-none" onClick={() => this.props.setOpenDialog(true)} test-id="homeScreenButtonEn">
+                <b>Installer l'application</b>
               </button>
             </div>
+
+            <section id="landing-page-footer">
+              <Row className="d-flex justify-content-center align-items-center m-0">
+                <Col xs={{ order: 1, span: 10 }} sm={{ order: 1, span: 8 }} md={{ order: 2, span: 9 }} className="d-flex justify-content-center align-items-center footer-text">
+                  <a className="text-brand-blue text-center" src={videofr} href="" target="_blank" rel="noopener noreferrer"
+                    onClick={this.openVideofr} test-id="update-banner-fr-video">Vidéo
+                  </a>
+                  <span className="mx-3"> &#124; </span>
+                  <a href="/politiquedeconfidentialite.htm" target="_blank" rel="noopener noreferrer"
+                    test-id="privacy-statement-fr" className='text-brand-blue privacyFr text-center'>
+                    Politique de confidentialité
+                  </a>
+                  <span className="mx-3"> &#124; </span>
+                  <a href="/iCanBeWell_àproposdenous.htm" target="_blank" rel="noopener noreferrer"
+                    test-id="aboutus-statement-fr" className='text-brand-blue text-center'>
+                    À propos de nous
+                  </a>
+                </Col>
+              </Row>
+            </section>
             <Homescreenfren openDialog={this.props.openDialog} setOpenDialog={this.props.setOpenDialog} />
 
-            <div className="landingButtons">
+            {/* <div className="landingButtons">
               <button className="langLandButtonStyle" onClick={this.handleChange} >English</button>
               <button className="langLandButtonStyle" onClick={this.handleChange2}>Français</button>
-            </div>
+            </div> */}
           </div>
         ) : (
           <div>
