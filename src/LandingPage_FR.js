@@ -41,7 +41,8 @@ class LandingPageFR extends React.Component {
   }
   //Redirect to the "/" route
   handleRedirect() {
-    this.props.history.push('/');
+    // this.props.history.push('/');
+    window.location.href = '/';
   }
 
   openVideoen() {
@@ -73,9 +74,9 @@ class LandingPageFR extends React.Component {
 
                 </Col>
                 <section className="ml-5 pl-md-3 pl-xl-5 mt-md-4 d-block">
-                  <Link to="/en" className="landing-french-router">English</Link>
-                  {/* <a href="#"
-                    className="landing-french-router" onClick={this.handleRedirect}>English</a> */}
+                  {/* <Link to="/en" className="landing-french-router">English</Link> */}
+                  <a href="/en"
+                    className="landing-french-router" onClick={this.handleRedirect}>English</a>
                 </section>
                 <Col xs={6} md={8} lg={6}>
 
