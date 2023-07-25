@@ -39,7 +39,8 @@ class LandingPageEN extends React.Component {
   }
   //Redirect to the "/fr" route
   handleRedirect() {
-    this.props.history.push('/fr');
+    // this.props.history.push('/fr');
+    window.location.href = '/fr';
   }
 
   openVideoen() {
@@ -65,9 +66,9 @@ class LandingPageEN extends React.Component {
                   <img className="landing-logo-header" src={callcompletelogo} alt="CANBeWellLogo" test-id="logo" />
                 </Col>
                 <section className="ml-5 pl-md-3 pl-xl-5 mt-md-4 d-block">
-                  <Link to="fr" className="landing-french-router">Français</Link>
-                  {/* <a href="#"
-                    className="landing-french-router" onClick={this.handleRedirect}>Français</a> */}
+                  {/* <Link to="fr" className="landing-french-router">Français</Link> */}
+                  <a href="/fr"
+                    className="landing-french-router" onClick={this.handleRedirect}>Français</a>
                 </section>
               </Row>
             </section>
