@@ -100,7 +100,7 @@ class LandingPageEN extends React.Component {
               Your free resource of preventive health information provided by Canadian clinicians.
             </div>
 
-            <div className="d-flex justify-content-center my-3">
+            <div className="d-flex justify-content-center my-5" >
               <a href="#" type="button" className="btn btn-primary btn-lg" onClick={this.handleChange}><b>Get started</b></a>
               <button type="button" className="ml-2 btn btn-primary btn-lg d-inline-block d-md-none" onClick={() => this.props.setOpenDialog(true)} test-id="homeScreenButtonEn">
                 <b>Install App</b>
@@ -129,6 +129,11 @@ class LandingPageEN extends React.Component {
                 </Col>
               </Row>
             </section>
+            <div className="d-flex justify-content-center my-5">
+              <div className="copyright">
+                &copy; 2023 icanbewell
+              </div>
+            </div>
 
             <Homescreeneng openDialog={this.props.openDialog} setOpenDialog={this.props.setOpenDialog} />
 

@@ -110,6 +110,11 @@ opacity: 0.9;
   height: auto;
   width: 80%;
 }
+
+.footer-text {
+  text-align: center;
+}
+
 .landing-update {
   position: relative;
   text-align: center;
