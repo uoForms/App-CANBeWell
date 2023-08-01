@@ -107,8 +107,8 @@ class LandingPageEN extends React.Component {
                   <b>Install App</b>
                 </button>
                 {/* <button type="button" className="d-inline-block d-md-none" onClick={() => this.props.setOpenDialog(true)} test-id="homeScreenButtonEn">
-                Install App
-              </button> */}
+                  Install App
+                </button> */}
               </div>
             </section>
 

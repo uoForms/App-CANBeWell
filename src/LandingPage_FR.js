@@ -108,21 +108,22 @@ class LandingPageFR extends React.Component {
             {/* <div className="landing-notice-privacystmnt" test-id="en-reliable-resource-statement">
                 A reliable resource by Canadian health care providers to help you stay healthy
               </div> */}
+            <section className='primary-background res-blue-width py-3'>
+              <div className="landing-notice-privacystmnt font-subHeading text-white" test-id="fr-reliable-resource-statement">
+                Rester en santé avec cette ressource gratuite créée par vos professionnels de la santé canadiens
+              </div>
 
-            <div className="landing-notice-privacystmnt font-subHeading" test-id="fr-reliable-resource-statement">
-              Rester en santé avec cette ressource gratuite créée par vos professionnels de la santé canadiens
-            </div>
-
-            <div className="d-flex justify-content-center my-5">
-              <a href="#" type="button" className="btn btn-primary btn-lg" onClick={this.handleChange2}><b>Commencer</b></a>
-              <button type="button" className="ml-2 btn btn-primary btn-lg d-inline-block d-md-none" onClick={() => this.props.setOpenDialog(true)} test-id="homeScreenButtonEn">
-                <b>Installer l'application</b>
-              </button>
-            </div>
+              <div className="d-flex justify-content-center my-5">
+                <a href="#" type="button" className="btn btn-primary btn-lg" onClick={this.handleChange2}><b>Commencer</b></a>
+                <button type="button" className="ml-2 btn btn-primary btn-lg d-inline-block d-md-none" onClick={() => this.props.setOpenDialog(true)} test-id="homeScreenButtonEn">
+                  <b>Installer l'application</b>
+                </button>
+              </div>
+            </section>
 
             <section id="landing-page-footer">
               <Row className="d-flex justify-content-center align-items-center m-0">
-                <Col xs={{ order: 1, span: 10 }} sm={{ order: 1, span: 8 }} md={{ order: 2, span: 9 }} className="d-flex justify-content-center align-items-center footer-text">
+                <Col xs={{ order: 1, span: 10 }} sm={{ order: 1, span: 8 }} md={{ order: 2, span: 9 }} className="d-flex justify-content-center align-items-center footer-text my-3 mx-0">
                   <a className="text-brand-blue text-center" src={videofr} href="" target="_blank" rel="noopener noreferrer"
                     onClick={this.openVideofr} test-id="update-banner-fr-video">Vidéo
                   </a>
