@@ -64,7 +64,7 @@ body {
   line-height: calc(18px + (22 - 18) * (100vw - 300px) / (1920 - 320)) !important;
 }
 .footer-text {
-  font-size: calc( 14px + (24 - 14) * (100vw - 320px) / (1920 - 320) ) !important;
+  font-size: calc( 14px + (18 - 14) * (100vw - 320px) / (1920 - 320) ) !important;
   line-height: calc(18px + (20 - 18) * (100vw - 320px) / (1920 - 320)) !important;
 }
 
