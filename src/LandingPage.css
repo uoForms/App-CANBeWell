@@ -14,6 +14,15 @@
   margin-bottom: 30px;
 }
 
+.res-blue-width {
+  width: 35vmax;
+  margin:auto;
+}
+
+.primary-background {
+  background-color: #25AAE1;
+}
+
 img {
   object-fit: contain;
 }
@@ -92,6 +101,10 @@ opacity: 0.9;
     width: 100vw;
   }
   .landing-logo-slider {
+    width: 100vw;
+    margin:auto;
+  }
+  .res-blue-width {
     width: 100vw;
     margin:auto;
   }

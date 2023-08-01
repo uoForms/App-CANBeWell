@@ -96,22 +96,26 @@ class LandingPageEN extends React.Component {
                 test-id="en-redirect-button" /></a>
             </div>
 
-            <div className="landing-notice-privacystmnt font-subHeading" test-id="en-reliable-resource-statement">
-              Your free resource of preventive health information provided by Canadian clinicians.
-            </div>
+            <section className='primary-background res-blue-width py-3'>
+              <div className="landing-notice-privacystmnt font-subHeading text-white" test-id="en-reliable-resource-statement">
+                Your free resource of preventive health information provided by Canadian clinicians.
+              </div>
 
-            <div className="d-flex justify-content-center my-5" >
-              <a href="#" type="button" className="btn btn-primary btn-lg" onClick={this.handleChange}><b>Get started</b></a>
-              <button type="button" className="ml-2 btn btn-primary btn-lg d-inline-block d-md-none" onClick={() => this.props.setOpenDialog(true)} test-id="homeScreenButtonEn">
-                <b>Install App</b>
-              </button>
-              {/* <button type="button" className="d-inline-block d-md-none" onClick={() => this.props.setOpenDialog(true)} test-id="homeScreenButtonEn">
+              <div className="d-flex justify-content-center mt-5 mb-4" >
+                <a href="#" type="button" className="btn btn-primary btn-lg" onClick={this.handleChange}><b>Get started</b></a>
+                <button type="button" className="ml-2 btn btn-outline-primary btn-lg d-inline-block d-md-none" onClick={() => this.props.setOpenDialog(true)} test-id="homeScreenButtonEn">
+                  <b>Install App</b>
+                </button>
+                {/* <button type="button" className="d-inline-block d-md-none" onClick={() => this.props.setOpenDialog(true)} test-id="homeScreenButtonEn">
                 Install App
               </button> */}
-            </div>
+              </div>
+            </section>
+
+
             <section id="landing-page-footer">
               <Row className="d-flex justify-content-center align-items-center m-0">
-                <Col xs={{ order: 1, span: 12 }} sm={{ order: 1, span: 8 }} md={{ order: 2, span: 9 }} className="d-flex justify-content-center align-items-center footer-text m-0">
+                <Col xs={{ order: 1, span: 12 }} sm={{ order: 1, span: 8 }} md={{ order: 2, span: 9 }} className="d-flex justify-content-center align-items-center footer-text my-3 mx-0">
                   <a className="text-brand-blue text-center" src={videoen} href="" target="_blank" rel="noopener noreferrer"
                     onClick={this.openVideoen} test-id="update-banner-en-video">
                     Video
