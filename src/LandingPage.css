@@ -14,6 +14,15 @@
   margin-bottom: 30px;
 }
 
+.res-blue-width {
+  width: 35vmax;
+  margin:auto;
+}
+
+.primary-background {
+  background-color: #25AAE1;
+}
+
 img {
   object-fit: contain;
 }
@@ -95,6 +104,10 @@ opacity: 0.9;
     width: 100vw;
     margin:auto;
   }
+  .res-blue-width {
+    width: 100vw;
+    margin:auto;
+  }
   .landing-button-img{
   width: 280px;
   height: auto ;
@@ -110,6 +123,11 @@ opacity: 0.9;
   height: auto;
   width: 80%;
 }
+
+.footer-text {
+  text-align: center;
+}
+
 .landing-update {
   position: relative;
   text-align: center;
