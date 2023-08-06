@@ -115,7 +115,7 @@ class LandingPageFR extends React.Component {
 
               <div className="d-flex justify-content-center my-5">
                 <a href="#" type="button" className="btn btn-primary btn-lg" onClick={this.handleChange2}><b>Commencer</b></a>
-                <button type="button" className="ml-2 btn btn-primary btn-lg d-inline-block d-md-none" onClick={() => this.props.setOpenDialog(true)} test-id="homeScreenButtonEn">
+                <button type="button" className="ml-2 btn btn-outline-primary btn-lg d-inline-block d-md-none" onClick={() => this.props.setOpenDialog(true)} test-id="homeScreenButtonEn">
                   <b>Installer l'application</b>
                 </button>
               </div>
