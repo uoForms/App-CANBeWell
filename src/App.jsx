@@ -697,11 +697,12 @@ class App extends Component {
                   <div>
                     <form test-id="ageForm">
                       <div style={genderCss}>
-                        {this.state.lang.age_selector} {console.log(this.state)}
+                        {this.state.lang.age_selector}
                         <select
                           id="abc"
                           name="age"
                           test-id="ageInput"
+                          value={this.state.age}
                           onChange={this.handleChange}
                         >
                           {ages.map((age, i) => (
@@ -1451,6 +1452,7 @@ class App extends Component {
                           id="abc"
                           name="age"
                           test-id="ageInput"
+                          value={this.state.age}
                           onChange={this.handleChange}
                         >
                           {ages.map((age, i) => (
