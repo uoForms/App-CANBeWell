@@ -728,10 +728,7 @@ class App extends Component {
                             if (e.key === "Enter") e.preventDefault();
                           }}
                         />
-                        <label
-                          style={allagescheckboxStyle}
-                          test-id="allAgeCheckboxLabel"
-                        >
+                        
                           <select
                             id="age"
                             value={this.state.age}
@@ -742,7 +739,11 @@ class App extends Component {
                                 {age}
                               </option>
                             ))}
-                          </select>
+                          </select>*/}
+                          <label
+                          style={allagescheckboxStyle}
+                          test-id="allAgeCheckboxLabel"
+                        >
                           <input
                             id="myCheck"
                             test-id="allAgeCheckbox"
@@ -751,7 +752,7 @@ class App extends Component {
                             onChange={this.handleAllAgesSelected}
                           />
                           {this.state.lang.all_ages}
-                        </label> */}
+                        </label> 
                       </div>
                     </form>
                   </div>
@@ -1458,6 +1459,9 @@ class App extends Component {
                             </option>
                           ))}
                         </select>
+                        <label style={allagescheckboxStyle} test-id="allAgeCheckboxLabel">
+                          <input test-id="allAgeCheckbox" id='check' type="checkbox" checked={this.state.allAgesSelected} onChange={this.handleAllAgesSelected} />{this.state.lang.all_ages}
+                        </label>
                       </div>
                     </form>
                   </div>
