@@ -62,11 +62,15 @@ color: rgb(13, 194, 58);
   height: auto;
   overflow: hidden;
   height: 38vh;
+  width: 100%;
+  max-width: 560px;
   object-fit: cover;
 
 }
 .landing-logo-slider {
   height: 38vh;
+  width: 100%;
+  max-width: 560px;
   margin:auto;
 }
 
@@ -93,7 +97,8 @@ opacity: 0.9;
 }
 
 .res-blue-width {
-  width: 38vmax;
+  width: 100%;
+  max-width: 560px;
   margin:auto;
 }
 .res-blue-height-fr {
