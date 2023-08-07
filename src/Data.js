@@ -1,13 +1,13 @@
-import PropTypes from 'prop-types';
 import TopicListFR from './JSONFolder/HtmlTopic-FR.json';
 import TopicListEN from './JSONFolder/HtmlTopic-EN.json';
 import FilterTopicListFR from './JSONFolder/FilterTopic-FR.json';
 import FilterTopicListEN from './JSONFolder/FilterTopic-EN.json';
 import Lang from './Lang/Lang.json';
 import { isTransgender } from './config';
-
 class Data {
-  ////////////////////////////////////////////Get One topics //////////////////////////////////////////////////
+
+  // ////////////////////////////////////////////Get One topics //////////////////////////////////////////////////
+
   getTopic(button, userInfo) {
 
     var app_language1 = userInfo.language;
@@ -223,7 +223,6 @@ class Data {
       }
 
       TopicItem = findTopicToDisplay(filterListArray(topicList));
-
 
       return (TopicItem);
     }

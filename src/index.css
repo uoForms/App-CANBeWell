@@ -37,14 +37,11 @@ body {
 
 
 .btn-link {
-  padding: 11px 16px;
-  gap: 10px;
-  color: #D7DF21;
+  padding: 0px 5px;
+  color: #D7DF21 !important;
   border-radius: 15px;
   font-weight: 500;
   border: none;
-  font-size: calc( 14px + (24 - 14) * (100vw - 320px) / (1920 - 320) ) !important;
-  line-height: calc(16px + (28 - 16) * (100vw - 320px) / (1920 - 320)) !important;
 }
 
 .btn-link:hover {
@@ -60,12 +57,26 @@ body {
   line-height: calc(24px + (28 - 24) * (100vw - 300px) / (1920 - 320)) !important;
 }
 .font-subHeading {
-  font-size: calc( 14px + (18 - 14) * (100vw - 320px) / (1920 - 320) ) !important;
-  line-height: calc(18px + (22 - 18) * (100vw - 300px) / (1920 - 320)) !important;
+  font-size: calc( 18px + (20 - 18) * (100vw - 320px) / (1920 - 320) ) !important;
+  line-height: calc(24px + (26 - 24) * (100vw - 300px) / (1920 - 320)) !important;
+}
+.font-description {
+  font-size: calc( 16px + (18 - 16) * (100vw - 320px) / (1920 - 320) ) !important;
+  line-height: calc(20px + (22 - 20) * (100vw - 300px) / (1920 - 320)) !important;
 }
 .footer-text {
   font-size: calc( 14px + (18 - 14) * (100vw - 320px) / (1920 - 320) ) !important;
   line-height: calc(18px + (20 - 18) * (100vw - 320px) / (1920 - 320)) !important;
+}
+
+.font-link {
+  font-size: calc( 16px + (18 - 16) * (100vw - 320px) / (1920 - 320) ) !important;
+  line-height: calc(20px + (22 - 20) * (100vw - 300px) / (1920 - 320)) !important;
+}
+
+.copywrite {
+  font-size: calc( 14px + (15 - 14) * (100vw - 320px) / (1920 - 320) ) !important;
+  line-height: calc(18px + (19 - 18) * (100vw - 320px) / (1920 - 320)) !important;
 }
 
 .slick-next {
@@ -92,7 +103,7 @@ body {
 }
 
 .slick-dots {
-  bottom: 8px !important;
+  bottom: 2vh !important;
 }
 
 .slick-dots li button::before {
