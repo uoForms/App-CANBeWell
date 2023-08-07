@@ -18,7 +18,7 @@ function BannerSlider(props) {
     pauseOnHover: false,
   };
   return (
-    <Slider {...bannerImageSettings} className='landing-logo-slider'>
+    <Slider {...bannerImageSettings} className={`landing-logo-slider ${props.className}`}>
       {bannerImages.map(bannerImage => {
         return (
           <div key={bannerImage.id}>

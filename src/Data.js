@@ -1,13 +1,56 @@
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import TopicListFR from './JSONFolder/HtmlTopic-FR.json';
 import TopicListEN from './JSONFolder/HtmlTopic-EN.json';
 import FilterTopicListFR from './JSONFolder/FilterTopic-FR.json';
 import FilterTopicListEN from './JSONFolder/FilterTopic-EN.json';
+// import { instanceOf } from 'prop-types';
+// import { withCookies, Cookies } from 'react-cookie';
 import Lang from './Lang/Lang.json';
 import { isTransgender } from './config';
 
+// // import { ref } from "firebase/storage";
+// import { firebaseStorage } from "./firebase";
+
+// // import { FilterTopicListFRRef, FilterTopicListENRef, TopicListFRRef, TopicListENRef } from './services/JSON_content_service.js';
+// import { getDownloadURL, ref } from 'firebase/storage';
+
+// getTopicsFirebaseStorage() {
+//   const FilterTopicListFR = await getDownloadURL(ref(firebaseStorage, 'json/FilterTopic-FR.json')).then(async (url) => {
+//     const result = await fetch(url).then(res => res.data)
+//     console.log("1", result)
+//     return result
+//   })
+//   console.log("1 - JSON", FilterTopicListFR)
+
+//   const FilterTopicListEN = await getDownloadURL(ref(firebaseStorage, 'json/FilterTopic-EN.json')).then(async (url) => {
+//     const result = await fetch(url).then(res => res.data)
+//     console.log("2", result)
+//     return result
+//   })
+//   console.log("2 - JSON", FilterTopicListEN)
+
+//   const TopicListFR = await getDownloadURL(ref(firebaseStorage, 'json/HtmlTopic-FR.json')).then(async (url) => {
+//     const result = await fetch(url).then(res => res.data)
+//     console.log("3", result)
+//     return result
+//   })
+//   console.log("3 - JSON", TopicListFR)
+
+//   const TopicListEN = await getDownloadURL(ref(firebaseStorage, 'json/HtmlTopic-EN.json')).then(async (url) => {
+//     const result = await fetch(url).then(res => res.data)
+//     console.log("4", result)
+//     return result
+//   })
+//   console.log("4 - JSON", TopicListEN)
+// }
+
 class Data {
-  ////////////////////////////////////////////Get One topics //////////////////////////////////////////////////
+  // static propTypes = {
+  //   cookies: instanceOf(Cookies).isRequired,
+  // };
+
+  // ////////////////////////////////////////////Get One topics //////////////////////////////////////////////////
+
   getTopic(button, userInfo) {
 
     var app_language1 = userInfo.language;
@@ -223,7 +266,6 @@ class Data {
       }
 
       TopicItem = findTopicToDisplay(filterListArray(topicList));
-
 
       return (TopicItem);
     }

@@ -57,9 +57,11 @@ class LandingPageFR extends React.Component {
   }
 
   render() {
+    const currentDate = new Date();
     // Render nothing if the "show" prop is false
+
     return (
-      <div className="landing-page">
+      <div className="landing-page pt-3">
         {this.state.language == "" || null ? (
           <div>
             {/* <div className="center">
@@ -68,31 +70,17 @@ class LandingPageFR extends React.Component {
             </div>
             </div> */}
             <section id="landing-page-header">
-              <Row className='m-0 landing-page-header-row mt-3'>
-                <Col xs={6} md={4} lg={3}>
+              <Row className='m-0 d-flex justify-content-around align-items-center'>
+                <Col>
                   <img className="landing-logo-header" src={callcompletelogo} alt="CANBeWellLogo" test-id="logo" />
-
                 </Col>
-                <section className="ml-5 pl-md-3 pl-xl-5 mt-md-4 d-block">
+                <Col className='d-flex justify-content-end'>
                   {/* <Link to="/en" className="landing-french-router">English</Link> */}
                   <a href="/en"
-                    className="landing-french-router" onClick={this.handleRedirect}>English</a>
-                </section>
-                <Col xs={6} md={8} lg={6}>
-
+                    className="font-description text-brand-blue" onClick={this.handleRedirect}>English</a>
                 </Col>
               </Row>
             </section>
-            <div className="landing-update" test-id="update-banner">
-              {/* <button className="videoButton" src={videofr} onClick={this.openVideofr}
-                        test-id="update-banner-fr-video">Vidéo
-                </button> */}
-              {/*&nbsp;&nbsp; Bienvenue
-                    {/* <button className="videoButton" src={videoen}
-                        onClick={this.openVideoen} test-id="update-banner-en-video">Video
-              </button> */}
-
-            </div>
 
             <BannerSlider handleChange={this.handleChange} />
 
@@ -100,20 +88,17 @@ class LandingPageFR extends React.Component {
               <a href="#"><img className="landing-button-img" src={callchoixsante} onClick={this.handleChange2}
                 test-id="fr-redirect-button" /></a>
             </div>
-            {/* <div className="landing-button">
-                <a href="#"><img className="landing-button-img" src={calleng} onClick={this.handleChange}
-                                 test-id="en-redirect-button"/></a>
-              </div> */}
 
-            {/* <div className="landing-notice-privacystmnt" test-id="en-reliable-resource-statement">
-                A reliable resource by Canadian health care providers to help you stay healthy
-              </div> */}
-            <section className='primary-background res-blue-width py-3'>
+            <section className='primary-background res-blue-width res-blue-height-fr py-3 d-flex flex-column justify-content-center'>
               <div className="landing-notice-privacystmnt font-subHeading text-white" test-id="fr-reliable-resource-statement">
                 Rester en santé avec cette ressource gratuite créée par vos professionnels de la santé canadiens
+                <a type="button" className="btn btn-link btn-lg font-subHeading text-center align-text-top" href={videoen} target="_blank"
+                  onClick={this.openVideoen} test-id="update-banner-en-video">
+                  Watch Demo
+                </a>
               </div>
 
-              <div className="d-flex justify-content-center my-5">
+              <div className="d-flex justify-content-center my-4">
                 <a href="#" type="button" className="btn btn-primary btn-lg" onClick={this.handleChange2}><b>Commencer</b></a>
                 <button type="button" className="ml-2 btn btn-outline-primary btn-lg d-inline-block d-md-none" onClick={() => this.props.setOpenDialog(true)} test-id="homeScreenButtonEn">
                   <b>Installer l'application</b>
@@ -122,9 +107,9 @@ class LandingPageFR extends React.Component {
             </section>
 
             <section id="landing-page-footer">
-              <Row className="d-flex justify-content-center align-items-center m-0">
-                <Col xs={{ order: 1, span: 10 }} sm={{ order: 1, span: 8 }} md={{ order: 2, span: 9 }} className="d-flex justify-content-center align-items-center footer-text my-3 mx-0">
-                  <a className="text-brand-blue text-center" src={videofr} href="" target="_blank" rel="noopener noreferrer"
+              <Row className="d-flex justify-content-center align-items-center m-0 py-1">
+                <Col xs={{ order: 1, span: 10 }} sm={{ order: 1, span: 8 }} md={{ order: 2, span: 9 }} className="d-flex justify-content-center align-items-center footer-text mt-3 mx-0">
+                  <a className="text-brand-blue text-center font-weight-bold" src={videofr} href="" target="_blank" rel="noopener noreferrer"
                     onClick={this.openVideofr} test-id="update-banner-fr-video">Vidéo
                   </a>
                   <span className="mx-3"> &#124; </span>
@@ -139,21 +124,13 @@ class LandingPageFR extends React.Component {
                   </a>
                 </Col>
               </Row>
-            </section>
-
-            <div className="d-flex justify-content-center my-5">
-              <div className="copyright">
-                &copy; 2023 icanbewell
+              <div className="d-flex justify-content-center my-2">
+                <div className="copyright">
+                  &copy; {currentDate.getFullYear()} choix santé
+                </div>
               </div>
-            </div>
-
-
+            </section>
             <Homescreenfren openDialog={this.props.openDialog} setOpenDialog={this.props.setOpenDialog} />
-
-            {/* <div className="landingButtons">
-              <button className="langLandButtonStyle" onClick={this.handleChange} >English</button>
-              <button className="langLandButtonStyle" onClick={this.handleChange2}>Français</button>
-            </div> */}
           </div>
         ) : (
           <div>
