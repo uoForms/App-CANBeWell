@@ -61,9 +61,9 @@ class LandingPageFR extends React.Component {
     // Render nothing if the "show" prop is false
 
     return (
-      <div className="landing-page pt-3">
+      <div className="landing-page">
         {this.state.language == "" || null ? (
-          <div>
+          <div className="pt-3">
             {/* <div className="center">
             <div className="landing-trans">
             TRANSGENDER Branch

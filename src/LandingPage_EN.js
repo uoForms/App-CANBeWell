@@ -56,9 +56,9 @@ class LandingPageEN extends React.Component {
     const currentDate = new Date();
     // Render nothing if the "show" prop is false
     return (
-      <div className="landing-page pt-3">
+      <div className="landing-page">
         {this.state.language == "" || null ? (
-          <div>
+          <div className="pt-3">
             <section id="landing-page-header">
               <Row className='m-0 d-flex justify-content-around align-items-center'>
                 <Col>
