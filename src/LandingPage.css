@@ -65,6 +65,7 @@ color: rgb(13, 194, 58);
   width: 100%;
   max-width: 560px;
   object-fit: cover;
+  object-position: 0 20%;
 
 }
 .landing-logo-slider {
@@ -84,7 +85,7 @@ color: rgb(13, 194, 58);
 }
 
 .landing-button-img{
-width: 350px;
+width: 40vh;
 height: auto ;
 border: 1px solid #fff;
 border-radius: 15px;
