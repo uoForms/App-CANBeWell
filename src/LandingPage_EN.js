@@ -25,15 +25,19 @@ class LandingPageEN extends React.Component {
     this.handleChange = this.handleChange.bind(this);
     this.handleChange2 = this.handleChange2.bind(this);
     this.handleRedirect = this.handleRedirect.bind(this);
+    this.handleHomePage = this.handleHomePage.bind(this);
   }
   handleChange() {
     this.setState({ language: "english" })
     localStorage.setItem("app_language", this.state.language);
-    //return (<App app_language={this.state.language} />)
   }
   handleChange2() {
     this.setState({ language: "french" })
     localStorage.setItem("app_language", this.state.language);
+  }
+  handleHomePage() {
+    this.setState({ language: "" })
+    localStorage.setItem("app_language", this.state.language)
   }
   //Redirect to the "/fr" route
   handleRedirect() {
@@ -126,7 +130,7 @@ class LandingPageEN extends React.Component {
           </div>
         ) : (
           <div>
-            <App appLanguage={this.state.language} />
+            <App appLanguage={this.state.language} setAppLanguage={this.handleHomePage} />
           </div>
         )}
       </div>

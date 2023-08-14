@@ -73,18 +73,18 @@ class MyBody extends React.Component {
 
         {/*<button className="button button2" onClick={this.helpClicked}>?</button> */}
 
-        <div align="center"><h3 className="instruction" test-id="instruction">{this.props.lang.body_general_instruction}</h3></div>
+        <div className='ml-5'><h3 className="instruction" test-id="instruction">{this.props.lang.body_general_instruction}</h3></div>
         <div>
-          <Anatomy 
+          <Anatomy
             gender={this.props.userConfig.gender}
-            Tgender={this.props.userConfig.Tgender} 
+            Tgender={this.props.userConfig.Tgender}
             //isTransgender flag
             isTransgender={this.props.isTransgender}
-            userInfo={this.props.userConfig} 
-            getDisplay={this.props.getText} 
+            userInfo={this.props.userConfig}
+            getDisplay={this.props.getText}
             lang={this.props.lang}
-            pageViewStateUpdater = {this.pageViewStateUpdater}
-            ></Anatomy>
+            pageViewStateUpdater={this.pageViewStateUpdater}
+          ></Anatomy>
         </div>
 
         <BodyHelpModal

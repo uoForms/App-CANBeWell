@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 //import {setGender} from './UserInfo';
 //import {setPatientProvider} from './UserInfo';
 //import {setAge} from './UserInfo';
-import {getUserInfo} from './UserInfo';
+import { getUserInfo } from './UserInfo';
 //import DisclaimerText from './Disclaimer.json';
 import './Style/checkbox.css';
 
@@ -54,7 +54,7 @@ class InstructionModal extends React.Component {
 
   }
 
-  handlegcheckChange(event){
+  handlegcheckChange(event) {
 
     this.setState({
       allAgesSelected: !this.state.allAgesSelected
@@ -159,7 +159,7 @@ class InstructionModal extends React.Component {
     this.state.selectedGender = UserInfo.gender;
     this.state.selectedcheckbox = UserInfo.gender;
     this.state.selectAge = UserInfo.age;
-    this.state.selectedcheckbox=UserInfo.gcheck;
+    this.state.selectedcheckbox = UserInfo.gcheck;
     var myBoolean_age = false;
     var myBoolean_gender = false;
     var myBoolean_allAge = false;
@@ -209,7 +209,23 @@ class InstructionModal extends React.Component {
         <div className="myModal" style={myModalStyle}>
 
           <div className="footer">
-            <p>{this.props.lang.instruction_modal_header}</p>
+            <div className="row d-flex align-items-center">
+              <div className="col-4 p-0 pl-5 text-left">
+                <BiArrowBack
+                  size={24}
+                  className="text-dark"
+                  onClick={this.toggleIntrutionModal}
+                />
+              </div>
+              <div
+                className="col-4 p-0 text-center"
+                id="choose_mod"
+                test-id="header"
+              >
+                <strong>{this.state.lang.instruction_modal_header} </strong>
+              </div>
+              <div className="col-4 p-0"></div>
+            </div>
 
             {/*select user*/}
             <div className="radio">
@@ -244,7 +260,7 @@ class InstructionModal extends React.Component {
                     <input type="radio" value="nonbinary" checked={this.state.selectedGender == 'nonbinary'} onChange={this.handleGenderChange} />
                     {this.props.lang.nonbinary}
                   </label>
-                  
+
                   <label>
                     <input type="radio" value="transgender" checked={this.state.selectedGender == 'transgender'} onChange={this.handleGenderChange} />
                     {this.props.lang.transgender}

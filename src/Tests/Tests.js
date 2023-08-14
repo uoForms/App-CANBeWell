@@ -28,18 +28,18 @@ class Tests extends React.Component {
 
     });
   }
-/* 
-Used for help icon that appeared on test tab which is no more needed
-  helpClicked = () => {
-    console.log(this.props.userConfig.gender);
-    this.setState({
-      isOpen: !this.state.isOpen,
-      headerText: this.props.lang.test_help_header,
-      bodyText: this.props.lang.test_help_body,
-      buttonText: this.props.lang.config_modal_agree,
-    });
-  }
-*/
+  /* 
+  Used for help icon that appeared on test tab which is no more needed
+    helpClicked = () => {
+      console.log(this.props.userConfig.gender);
+      this.setState({
+        isOpen: !this.state.isOpen,
+        headerText: this.props.lang.test_help_header,
+        bodyText: this.props.lang.test_help_body,
+        buttonText: this.props.lang.config_modal_agree,
+      });
+    }
+  */
   render() {
 
     if (!this.props.showTests) {
@@ -52,13 +52,13 @@ Used for help icon that appeared on test tab which is no more needed
         {/*Help button commented (on Test box)- 27 June 2020 */}
         {/*<button className="button button2" onClick={this.helpClicked}>?</button>*/}
 
-        <FilterableTestTable 
+        <FilterableTestTable
           tests={
             this.props.data(this.state.TestList, this.props.userConfig)
-            } 
-          userConfig = {this.props.userConfig}
+          }
+          userConfig={this.props.userConfig}
           text={this.props.lang.test_search_bar_placeholder}
-          pageViewStateUpdater = {this.pageViewStateUpdater} />
+          pageViewStateUpdater={this.pageViewStateUpdater} />
 
         <TestsModal show={this.state.isOpen}
           onClose={this.toggleModal}
@@ -90,14 +90,14 @@ class TestRow extends React.Component {
     this.props.pageViewStateUpdater(nav, cat, time);
   }
 
-  rowToggled = ( title ) => {
+  rowToggled = (title) => {
     let timerResult = PageViewTimer(
       this.props.userInfo.preCat,
       this.props.userInfo.preTime);
     let currTime = timerResult.currTime,
       timeDiff = timerResult.timeDiff;
     let currNav = "tests", currCat = title;
-    GaUserEvent(currNav, currCat ,this.props.userInfo, timeDiff, this.props.userInfo.preTime, currTime,"");
+    GaUserEvent(currNav, currCat, this.props.userInfo, timeDiff, this.props.userInfo.preTime, currTime, "");
     this.props.pageViewStateUpdater(currNav, currCat, currTime);
   }
 
@@ -109,15 +109,15 @@ class TestRow extends React.Component {
     var mIndex = 0;
 
     //function to handle the onClick event for external links
-    const handleTestsLinkClick=() =>{
+    const handleTestsLinkClick = () => {
       let timerResult = PageViewTimer(
         this.props.userInfo.preCat,
         this.props.userInfo.preTime);
       let currTime = timerResult.currTime,
-        timeDiff= timerResult.timeDiff;
-      let currNav= "tests", currCat= this.props.test.name;
+        timeDiff = timerResult.timeDiff;
+      let currNav = "tests", currCat = this.props.test.name;
       GaUserEvent(currNav, currCat, this.props.userInfo, timeDiff, this.props.userInfo.preTime, currTime, this.props.test.name);
-      this.props.pageViewStateUpdater(currNav,currCat,currTime);
+      this.props.pageViewStateUpdater(currNav, currCat, currTime);
     }
 
     bodys.forEach((body) => {
@@ -142,17 +142,17 @@ class TestRow extends React.Component {
               bodyArrayToDisplay.push.push(<span onClick={(id) => this.openDetails(link[1])}><font color="Yellow">{link[0]}</font></span>);
             }*/
             else {
-              bodyArrayToDisplay.push(<a href={link[1]} target="_blank" onClick={()=>handleTestsLinkClick()}><font color="Yellow">{link[0]}</font></a>);
+              bodyArrayToDisplay.push(<a href={link[1]} target="_blank" onClick={() => handleTestsLinkClick()}><font color="Yellow">{link[0]}</font></a>);
             }
             i++;
           } catch (err) { }
         }
-        else  if(bodyArray[i] == '(<'){
-          bodyArrayToDisplay.push(<b className='boldtext'>{bodyArray[i+1]}</b>);
+        else if (bodyArray[i] == '(<') {
+          bodyArrayToDisplay.push(<b className='boldtext'>{bodyArray[i + 1]}</b>);
           i++;
         }
-        else  if(bodyArray[i] == '{{'){
-          bodyArrayToDisplay.push(<mark class="texthighlight">{bodyArray[i+1]}</mark>);
+        else if (bodyArray[i] == '{{') {
+          bodyArrayToDisplay.push(<mark class="texthighlight">{bodyArray[i + 1]}</mark>);
           i++;
         }
         else if (bodyArray[i] == '}}' || bodyArray[i] == '>)') {
@@ -174,7 +174,7 @@ class TestRow extends React.Component {
     return (
       <details test-id="test-details"
         id={this.props.test.name}
-        onToggle = { () => this.rowToggled(this.props.test.name) }
+        onToggle={() => this.rowToggled(this.props.test.name)}
       >
         <summary test-id="test-summary"><font size="+1"><b>{this.props.test.name}</b></font></summary>
         <div test-id="test-content">{sujectArray}</div>
@@ -219,10 +219,10 @@ class TestTable extends React.Component {
       rows.push(<div key={index} style={backdroplistItemStyle}>
         <div style={listItemStyle}>
           <TestRow
-            test={test} 
-            userInfo = {this.props.userConfig}
-            pageViewStateUpdater = {this.pageViewStateUpdater}
-            />
+            test={test}
+            userInfo={this.props.userConfig}
+            pageViewStateUpdater={this.pageViewStateUpdater}
+          />
         </div>
       </div>);
       index++;
@@ -249,7 +249,7 @@ class SearchBar extends React.Component {
     return (
       <form>
         <input
-          className="form-control searchbar"
+          className="form-control searchbar font-input-lg"
           type="text"
           placeholder={this.props.text}
           value={this.props.filterText}
@@ -271,7 +271,7 @@ class FilterableTestTable extends React.Component {
     this.handleFilterTextInput = this.handleFilterTextInput.bind(this);
     this.pageViewStateUpdater = this.pageViewStateUpdater.bind(this);
   }
-  
+
 
   handleFilterTextInput(filterText) {
     //Call to setState to update the UI
@@ -297,7 +297,7 @@ class FilterableTestTable extends React.Component {
           tests={this.props.tests}
           filterText={this.state.filterText}
           userConfig={this.props.userConfig}
-          pageViewStateUpdater = {this.pageViewStateUpdater}
+          pageViewStateUpdater={this.pageViewStateUpdater}
         />
       </div>
     );
