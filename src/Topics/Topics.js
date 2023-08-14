@@ -13,7 +13,7 @@ class Topics extends React.Component {
 
   constructor(props) {
     super(props);
-    
+
     this.state =
     {
       isOpen: false,
@@ -51,18 +51,18 @@ class Topics extends React.Component {
         {/*your help button in the right hand corner*/}
         {/*<button className="button button2" onClick={this.helpClicked}>?</button>*/}
 
-        <FilterableTopicTable 
-          topics={this.props.data(this.state.TopicList, this.props.userConfig)} 
-          filterdtopics={this.props.newdata(this.state.TopicList, this.props.userConfig,this.state.FilterTopicList)}
+        <FilterableTopicTable
+          topics={this.props.data(this.state.TopicList, this.props.userConfig)}
+          filterdtopics={this.props.newdata(this.state.TopicList, this.props.userConfig, this.state.FilterTopicList)}
           userConfig={this.props.userConfig}
-          text={this.props.lang.topic_search_bar_placeholder} 
-          pageViewStateUpdater = {this.pageViewStateUpdater}
+          text={this.props.lang.topic_search_bar_placeholder}
+          pageViewStateUpdater={this.pageViewStateUpdater}
           btnText={this.props.lang.close_body_modal}
           onClose={this.props.onClose}
           filterallbtnText={this.props.lang.topic_filter_all}
           filtertopbtnText={this.props.lang.topic_filter_top_10}
           clickOnText={this.props.lang.clickOn_Text}
-          />
+        />
 
         {/*help dialog box*/}
         <TopicsModal show={this.state.isOpen}
@@ -105,50 +105,50 @@ class TopicRow extends React.Component {
     this.setState({
       isOpen: !this.state.isOpen
     });
-  }  
-  rowClicked = ( title ) => {
+  }
+  rowClicked = (title) => {
     let timerResult = PageViewTimer(
       this.props.userInfo.preCat,
       this.props.userInfo.preTime);
     let currTime = timerResult.currTime,
       timeDiff = timerResult.timeDiff;
     let currNav = "topics", currCat = title;
-    GaUserEvent(currNav, currCat, this.props.userInfo, timeDiff, this.props.userInfo.preTime, currTime,"");
+    GaUserEvent(currNav, currCat, this.props.userInfo, timeDiff, this.props.userInfo.preTime, currTime, "");
     this.props.pageViewStateUpdater(currNav, currCat, currTime);
     this.setState({
       isOpen: !this.state.isOpen,
       display: this.props.topic.body
     });
   }
-  render() {  
-    const  tryRequire = () => {
+  render() {
+    const tryRequire = () => {
       try {
-       return require(`../assets/TopicIcons/${this.props.topic.button.replace(/[^a-z0-9]/gi,'-')}.png`);
+        return require(`../assets/TopicIcons/${this.props.topic.button.replace(/[^a-z0-9]/gi, '-')}.png`);
       } catch (err) {
-       return null;
+        return null;
       }
     };
-    const imageExist= tryRequire();
+    const imageExist = tryRequire();
     return (
       <div className='row topicicon-row'>
-      <div className='col-lg-4 col-md-4 col-sm-4 col-xs-4 topicicon'> { imageExist ? <img  id= {this.props.topic.name} src={require(`../assets/TopicIcons/${this.props.topic.button.replace(/[^a-z0-9]/gi,'-')}.png`).default}  className="topicsIcon"/> : <img  id= {this.props.topic.name} src={require('../assets/TopicIcons/defaultIcon.png').default}  className="topicsIcon"/>}</div>
-      <div
-        id={this.props.topic.name} className="mydetailsItemdiv col-lg-8 col-md-8 col-sm-8 col-xs-8 topictitle"
-        onClick={() => this.rowClicked(this.props.topic.name)}
-        test-id="topicRow"
+        <div className='col-lg-4 col-md-4 col-sm-4 col-xs-4 topicicon'> {imageExist ? <img id={this.props.topic.name} src={require(`../assets/TopicIcons/${this.props.topic.button.replace(/[^a-z0-9]/gi, '-')}.png`).default} className="topicsIcon" /> : <img id={this.props.topic.name} src={require('../assets/TopicIcons/defaultIcon.png').default} className="topicsIcon" />}</div>
+        <div
+          id={this.props.topic.name} className="mydetailsItemdiv col-lg-8 col-md-8 col-sm-8 col-xs-8 topictitle"
+          onClick={() => this.rowClicked(this.props.topic.name)}
+          test-id="topicRow"
         >{this.props.topic.name}</div>
 
         <div>
-            <TopicModal 
-              show={this.state.isOpen}
-              onClose={this.toggleModal}
-              display={this.state.display}
-              button={this.props.btnText}
-              getTopic={this.props.topic.name}
-              clickOnText={this.props.clickOnText}
-              userInfo={this.props.userInfo}>  
-            </TopicModal>
-          </div>
+          <TopicModal
+            show={this.state.isOpen}
+            onClose={this.toggleModal}
+            display={this.state.display}
+            button={this.props.btnText}
+            getTopic={this.props.topic.name}
+            clickOnText={this.props.clickOnText}
+            userInfo={this.props.userInfo}>
+          </TopicModal>
+        </div>
       </div>
     );
   }
@@ -160,7 +160,7 @@ class TopicTable extends React.Component {
     super(props);
     this.state = {
       expanded: false,
-      showTop: true ,
+      showTop: true,
       showAll: false
     };
     this.pageViewStateUpdater = this.pageViewStateUpdater.bind(this);
@@ -171,14 +171,14 @@ class TopicTable extends React.Component {
   handlemoreitems = () => {
     this.setState({ expanded: !this.state.expanded });
   };
-  handleshowtopict = () =>{
-    this.setState({ showTop: !this.state.showTop , showAll: !this.state.showTop  });
+  handleshowtopict = () => {
+    this.setState({ showTop: !this.state.showTop, showAll: !this.state.showTop });
   }
-  showAllclicked=()=>{
-    this.setState({ showTop: false , showAll: true  });
+  showAllclicked = () => {
+    this.setState({ showTop: false, showAll: true });
   }
-  showTopclicked=()=>{
-    this.setState({ showTop: true , showAll: false  }); 
+  showTopclicked = () => {
+    this.setState({ showTop: true, showAll: false });
   }
   render() {
     const backdroplistItemStyle = {
@@ -201,11 +201,11 @@ class TopicTable extends React.Component {
     };
 
     var rows = [];
-    var filterrows=[];
+    var filterrows = [];
     var index = 0;
-    var index1=0;
+    var index1 = 0;
     /*This is where you filter the content to display by comparing the what the user enter and the contend of the json file*/
-    this.props.filterdtopics.forEach((topic) =>{
+    this.props.filterdtopics.forEach((topic) => {
       if (topic.name.toLowerCase().indexOf(this.props.filterText.toLowerCase()) === -1) {
         return;
       }
@@ -231,39 +231,39 @@ class TopicTable extends React.Component {
       }
       rows.push(<div key={index} style={backdroplistItemStyle} className='col-lg-3 col-md-6 icontopics'>
         <div style={listItemStyle}>
-          <TopicRow 
+          <TopicRow
             topic={topic}
-            userInfo={this.props.userConfig} 
-            pageViewStateUpdater = {this.pageViewStateUpdater}
+            userInfo={this.props.userConfig}
+            pageViewStateUpdater={this.pageViewStateUpdater}
             btnText={this.props.btnText}
             onClose={this.props.onClose}
             filterallbtnText={this.props.filterallbtnText}
             filtertopbtnText={this.props.filtertopbtnText}
             clickOnText={this.props.clickOnText}
-            />
+          />
         </div>
       </div>);
       index++;
     });
-    const dataForDisplay = this.state.showTop ? filterrows.slice(0,10) : rows
+    const dataForDisplay = this.state.showTop ? filterrows.slice(0, 10) : rows
     return (
       <div className='table'>
         <div>
           {
             <div className='container-fluid'>
-              <br/>
-              <button id="filtershowall" type="button" style={{marginLeft: 15}} onClick={ this.showAllclicked } className={`button3-1 ${this.state.showAll ? "filteractive" : ""}`}>
-              {this.props.filterallbtnText} 
+              <br />
+              <button id="filtershowall" type="button" onClick={this.showAllclicked} className={`button3-1 ${this.state.showAll ? "filteractive" : ""}`}>
+                {this.props.filterallbtnText}
               </button>
-              <button id="filtershowtop" type="button" onClick={ this.showTopclicked } className={`button3-1 ${this.state.showTop ? "filteractive" : ""}`}>
-              {this.props.filtertopbtnText} 
+              <button id="filtershowtop" type="button" onClick={this.showTopclicked} className={`button3-1 ${this.state.showTop ? "filteractive" : ""}`}>
+                {this.props.filtertopbtnText}
               </button>
-              <br/><br/>
+              <br /><br />
               <div className='row'>
-              {dataForDisplay}
+                {dataForDisplay}
               </div>
             </div>
-            }
+          }
         </div>
       </div>
     );
@@ -332,7 +332,7 @@ class FilterableTopicTable extends React.Component {
           filterdtopics={this.props.filterdtopics}
           userConfig={this.props.userConfig}
           filterText={this.state.filterText}
-          pageViewStateUpdater = {this.pageViewStateUpdater}
+          pageViewStateUpdater={this.pageViewStateUpdater}
           btnText={this.props.btnText}
           onClose={this.props.onClose}
           filterallbtnText={this.props.filterallbtnText}

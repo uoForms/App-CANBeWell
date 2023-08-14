@@ -28,6 +28,10 @@ import { unstable_renderSubtreeIntoContainer } from "react-dom";
 import { getUserInfo } from "./UserInfo";
 import { isTransgender } from "./config";
 
+// Home and arrow back icon logo
+import { FaHome } from "react-icons/fa";
+import { BiArrowBack } from "react-icons/bi";
+
 class App extends Component {
   static propTypes = {
     cookies: instanceOf(Cookies).isRequired,
@@ -109,6 +113,9 @@ class App extends Component {
     this.onChangeisBreasts = this.onChangeisBreasts.bind(this);
     this.onChangeisVaginaCervix = this.onChangeisVaginaCervix.bind(this);
     this.onChangeisProstate = this.onChangeisProstate.bind(this);
+
+    //handle home redirect
+    this.handleHomeRedirect = this.handleHomeRedirect.bind(this);
   }
 
   componentDidMount() {
@@ -522,6 +529,11 @@ class App extends Component {
       buttonText: this.state.lang.config_modal_agree,
     });
   };
+
+  // handle home redirect with language selection
+  handleHomeRedirect() {
+    // this.props.setAppLanguage();
+  }
   render() {
     var userInfo = getUserInfo();
     var userInfo = {
@@ -585,7 +597,7 @@ class App extends Component {
       textAlign: "center",
       padding: 10,
       fontSize: "20px",
-      overflow: "scroll",
+      overflow: "hidden scroll",
     };
 
     // The modal "window"
@@ -659,11 +671,22 @@ class App extends Component {
               test-id="instructionModalRoot"
             >
               <div className="footer">
+                <div className="row d-flex align-items-center">
+                  <div className="col-4 p-0 pl-5 text-left">
+                    <BiArrowBack
+                      size={24}
+                      className="text-brand-blue"
+                      onClick={this.props.setAppLanguage}
+                    />
+                  </div>
+                  <div
+                    className="col-4 p-0 text-center font-subHeading font-weight-bold"
+                    test-id="header"
+                  >
+                    {this.state.lang.instruction_modal_header}
+                  </div>
+                </div>
                 <div className="content">
-                  <p id="choose_mod" test-id="header" style={titleCSS}>
-                    <strong>{this.state.lang.instruction_modal_header} </strong>
-                  </p>
-
                   {/*select user*/}
                   <div className="radio" style={genderCss}>
                     <form test-id="userForm">
@@ -741,7 +764,7 @@ class App extends Component {
                               </option>
                             ))}
                           </select>*/}
-                          <label
+                        <label
                           style={allagescheckboxStyle}
                           test-id="allAgeCheckboxLabel"
                         >
@@ -753,7 +776,7 @@ class App extends Component {
                             onChange={this.handleAllAgesSelected}
                           />
                           {this.state.lang.all_ages}
-                        </label> 
+                        </label>
                       </div>
                     </form>
                   </div>
@@ -879,13 +902,14 @@ class App extends Component {
                 </div>
 
                 <div className="termsOfUse" style={termsOfUseStyle}>
-                  <button
+                  <Button
+                    variant="primary"
                     test-id="okButtonTop"
                     id="agree"
                     onClick={this.toggleIntrutionModal}
                   >
                     {this.state.lang.agree}
-                  </button>
+                  </Button>
                   <br />
                   <b test-id="termOfUseLabel">
                     {this.state.lang.disclaimer_header}
@@ -1076,13 +1100,14 @@ class App extends Component {
                     </div>
                   </div>
                   <br />
-                  <button
+                  <Button
+                    variant="primary"
                     test-id="okButtonBottom"
                     id="agree"
                     onClick={this.toggleIntrutionModal}
                   >
                     {this.state.lang.agree}
-                  </button>
+                  </Button>
                   <br />
                 </div>
               </div>
@@ -1099,7 +1124,21 @@ class App extends Component {
           <div key="1" className="backdrop" style={backdropStyle}>
             <div className="myModal" style={myModalStyle}>
               <div className="footer">
-                <p>{this.state.lang.instruction_modal_header}</p>
+                <div className="row d-flex align-items-center">
+                  <div className="col-4 p-0 pl-5 text-left">
+                    <BiArrowBack
+                      size={24}
+                      className="text-brand-blue"
+                      onClick={this.props.setAppLanguage}
+                    />
+                  </div>
+                  <div
+                    className="col-4 p-0 text-center font-subHeading font-weight-bold"
+                    test-id="header"
+                  >
+                    {this.state.lang.instruction_modal_header}
+                  </div>
+                </div>
 
                 {/*select user*/}
                 <div className="radio">
@@ -1411,9 +1450,25 @@ class App extends Component {
           >
             <div className="myModal" test-id="PostConfigUpdateModalRoot">
               <div>
-                <h1 test-id="PostConfigUpdateModalHeader">
-                  <strong>{this.state.lang.configuration_header}</strong>
-                </h1>
+                <div className="row d-flex align-items-center">
+                  <div className="col-4 p-0 pl-3 text-left">
+                    <BiArrowBack
+                      size={24}
+                      className="text-brand-blue"
+                      onClick={() =>
+                        this.setState({
+                          configurationIsOpen: !this.state.configurationIsOpen,
+                        })
+                      }
+                    />
+                  </div>
+                  <div
+                    className="col-4 p-0 text-center font-subHeading font-weight-bold"
+                    test-id="PostConfigUpdateModalHeader"
+                  >
+                    <strong>{this.state.lang.configuration_header} </strong>
+                  </div>
+                </div>
                 <div className="myModalBody">
                   <div className="radio">
                     <form test-id="userForm">
@@ -1461,8 +1516,18 @@ class App extends Component {
                             </option>
                           ))}
                         </select>
-                        <label style={allagescheckboxStyle} test-id="allAgeCheckboxLabel">
-                          <input test-id="allAgeCheckbox" id='check' type="checkbox" checked={this.state.allAgesSelected} onChange={this.handleAllAgesSelected} />{this.state.lang.all_ages}
+                        <label
+                          style={allagescheckboxStyle}
+                          test-id="allAgeCheckboxLabel"
+                        >
+                          <input
+                            test-id="allAgeCheckbox"
+                            id="check"
+                            type="checkbox"
+                            checked={this.state.allAgesSelected}
+                            onChange={this.handleAllAgesSelected}
+                          />{" "}
+                          {this.state.lang.all_ages}
                         </label>
                       </div>
                     </form>
@@ -1578,12 +1643,13 @@ class App extends Component {
                   </div>
                   {/*close button*/}
                   <div className="myModalButton">
-                    <button
+                    <Button
+                      variant="primary"
                       onClick={this.toggleConfigurationModal}
                       test-id="okButton"
                     >
                       {this.state.lang.config_modal_agree}
-                    </button>
+                    </Button>
                   </div>
                 </div>
               </div>
@@ -1598,7 +1664,22 @@ class App extends Component {
           <div key="2" className="backdrop">
             <div className="myModal">
               <div>
-                <h1>{this.state.lang.configuration_header}</h1>
+                <div className="row d-flex align-items-center">
+                  <div className="col-4 p-0 pl-3 text-left">
+                    <BiArrowBack
+                      size={24}
+                      className="text-brand-blue"
+                      onClick={() =>
+                        this.setState({
+                          configurationIsOpen: !this.state.configurationIsOpen,
+                        })
+                      }
+                    />
+                  </div>
+                  <div className="col-4 p-0 text-center font-subHeading font-weight-bold">
+                    <strong>{this.state.lang.configuration_header} </strong>
+                  </div>
+                </div>
                 <div className="myModalBody">
                   <div className="radio">
                     <form>
@@ -1725,16 +1806,24 @@ class App extends Component {
           </h3>
         </div>
 
-        <div className="userinfo-row">
+        <div className="row d-flex my-4 mx-5 align-items-center">
           {/*display user's info*/}
-          <Button
-            variant="outline-dark"
-            size="lg"
-            onClick={this.genderIconClicked}
-            className="userInfoStyle"
-            test-id="postConfigUpdateModalOpenButton"
-          >
-            <h4>
+
+          <div className="col-2 p-0 text-left">
+            <FaHome
+              size={32}
+              className="text-brand-blue home-icon"
+              onClick={this.props.setAppLanguage}
+            />
+          </div>
+          <div className="col-8 p-0 text-center">
+            <Button
+              variant="primary"
+              size="lg"
+              onClick={this.genderIconClicked}
+              className="font-button-lg"
+              test-id="postConfigUpdateModalOpenButton"
+            >
               <IoIosSettings /> {this.state.lang[this.state.user]}
               {/*this.state.lang.display_gender*/}{" "}
               {[
@@ -1767,8 +1856,8 @@ class App extends Component {
                 ? this.state.lang.all_ages
                 : this.state.age}
               {/*this.state.lang.display_age*/}
-            </h4>
-          </Button>
+            </Button>
+          </div>
         </div>
 
         <div>
