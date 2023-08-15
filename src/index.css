@@ -4,48 +4,73 @@ body {
   /* font-family: sans-serif; */
 }
 
+.text-brand-blue {
+  color: #25AAE1;
+}
+
+.text-brand-blue:hover, .text-brand-blue:focus, .text-brand-blue:active {
+  color: #25AAE1;
+}
+
+.text-brand-green {
+  color: #D7DF21;
+}
+
+.text-brand-blue:hover, .text-brand-blue:focus, .text-brand-blue:active {
+  color: #D7DF21;
+}
+
 
 .btn-primary {
-  padding: 11px 16px;
-  gap: 10px;
-  background: #D7DF21;
-  border-color: #D7DF21;
-  color: #000000;
-  border-radius: 15px;
+  padding: 11px 16px !important;
+  gap: 10px !important;
+  background: #D7DF21 !important;
+  border-color: #D7DF21 !important;
+  color: #000000 !important;
+  border-radius: 15px !important;
   /* font-weight: 500; */
   font-size: calc( 14px + (24 - 14) * (100vw - 320px) / (1920 - 320) ) !important;
   line-height: calc(16px + (28 - 16) * (100vw - 320px) / (1920 - 320)) !important;
 }
 
 .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
-  background: rgba(215, 223, 33, 0.5);
-  border-color: #D7DF21;
-  color: #000000;
-  box-shadow: 0 0;
+  background: rgba(215, 223, 33, 0.5) !important;
+  border-color: #D7DF21 !important;
+  color: #000000 !important;
+  box-shadow: 0 0 !important;
 }
 
 .btn-outline-primary {
-  padding: 11px 16px;
-  gap: 10px;
-  border: 1.5px solid rgba(215, 223, 33);
-  color: #D7DF21;;
-  border-radius: 15px;
-  /* font-weight: 500; */
+  padding: 11px 16px !important;
+  gap: 10px !important;
+  border: 1.5px solid rgba(215, 223, 33) !important;
+  color: #D7DF21 !important;
+  border-radius: 15px !important;
   font-size: calc( 14px + (24 - 14) * (100vw - 320px) / (1920 - 320) ) !important;
   line-height: calc(16px + (28 - 16) * (100vw - 320px) / (1920 - 320)) !important;
 }
 
 
 .btn-link {
-  padding: 0px 5px;
+  padding: 0px 5px !important;
   color: #D7DF21 !important;
-  border-radius: 15px;
-  font-weight: 500;
-  border: none;
+  border-radius: 15px !important;
+  font-weight: 500 !important;
+  border: none !important;
 }
 
-.btn-link:hover {
-  color: rgba(215, 223, 33);
+.btn-link:hover .btn-link:active, .btn-link:focus{
+  color: rgba(215, 223, 33) !important;
+}
+
+.font-input {
+  font-size: calc( 14px + (24 - 14) * (100vw - 320px) / (1920 - 320) ) !important;
+  line-height: calc(16px + (28 - 16) * (100vw - 320px) / (1920 - 320)) !important;
+}
+
+.font-input-lg {
+  font-size: calc( 18px + (20 - 18) * (100vw - 320px) / (1920 - 320) ) !important;
+  line-height: calc(24px + (26 - 24) * (100vw - 300px) / (1920 - 320)) !important;
 }
 
 .font-title {

@@ -17,14 +17,6 @@ img {
   width: 150px;
 }
 
-.text-brand-blue {
-  color: #25AAE1;
-}
-
-.text-brand-blue:hover, .text-brand-blue:focus, .text-brand-blue:active {
-  color: #25AAE1;
-}
-
 .landing-page {
   position: relative;
   vertical-align: middle;
@@ -65,6 +57,7 @@ color: rgb(13, 194, 58);
   width: 100%;
   max-width: 560px;
   object-fit: cover;
+  object-position: 0 20%;
 
 }
 .landing-logo-slider {
@@ -84,7 +77,7 @@ color: rgb(13, 194, 58);
 }
 
 .landing-button-img{
-width: 350px;
+width: 40vh;
 height: auto ;
 border: 1px solid #fff;
 border-radius: 15px;
@@ -122,6 +115,7 @@ opacity: 0.9;
 @media only screen and (min-width:200px) and (max-width:450px){
   .landing-logo {
     width: 100vw;
+    object-position: center;
   }
   .landing-logo-slider {
     width: 100vw;

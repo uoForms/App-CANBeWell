@@ -29,6 +29,7 @@ class LandingPageFR extends React.Component {
     this.handleChange = this.handleChange.bind(this);
     this.handleChange2 = this.handleChange2.bind(this);
     this.handleRedirect = this.handleRedirect.bind(this);
+    this.handleHomePage = this.handleHomePage.bind(this);
   }
   handleChange() {
     this.setState({ language: "english" })
@@ -39,10 +40,14 @@ class LandingPageFR extends React.Component {
     this.setState({ language: "french" })
     localStorage.setItem("app_language", this.state.language);
   }
+  handleHomePage() {
+    this.setState({ language: "" })
+    localStorage.setItem("app_language", this.state.language)
+  }
   //Redirect to the "/" route
   handleRedirect() {
     // this.props.history.push('/');
-    window.location.href = '/';
+    window.location.href = '/en';
   }
 
   openVideoen() {
@@ -82,7 +87,7 @@ class LandingPageFR extends React.Component {
               </Row>
             </section>
 
-            <BannerSlider handleChange={this.handleChange} />
+            <BannerSlider handleChange={this.handleChange2} />
 
             <div className="landing-button">
               <a href="#"><img className="landing-button-img" src={callchoixsante} onClick={this.handleChange2}
@@ -134,7 +139,7 @@ class LandingPageFR extends React.Component {
           </div>
         ) : (
           <div>
-            <App appLanguage={this.state.language} />
+            <App appLanguage={this.state.language} setAppLanguage={this.handleHomePage} />
           </div>
         )}
       </div>
