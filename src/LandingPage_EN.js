@@ -88,7 +88,7 @@ class LandingPageEN extends React.Component {
                 Your free resource of preventive health information provided by Canadian clinicians.
                 <a type="button" className="btn btn-link btn-lg font-subHeading text-center align-text-top" href={videoen} target="_blank"
                   onClick={this.openVideoen} test-id="update-banner-en-video">
-                  Watch Demo
+                  Watch Demoo
                 </a>
               </div>
 
