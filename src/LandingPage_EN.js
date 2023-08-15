@@ -106,7 +106,7 @@ class LandingPageEN extends React.Component {
                 <Col xs={{ order: 1, span: 12 }} sm={{ order: 1, span: 8 }} md={{ order: 2, span: 9 }} className="d-flex justify-content-center align-items-center footer-text mx-0">
                   <a className="text-brand-blue text-center font-weight-bold" href={videoen} target="_blank"
                     onClick={this.openVideoen} test-id="update-banner-en-video">
-                    Video
+                    Watch Demo
                   </a>
                   <span className="mx-3"> &#124; </span>
                   <a href="/iCanBeWell_PrivacyPolicy.htm" target="_blank"
