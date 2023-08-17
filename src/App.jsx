@@ -76,7 +76,7 @@ class App extends Component {
       firstTime: true,
       onboarded: cookies.get("_onboarded"),
       instructionIsOpen: cookies.get("_onboarded") == "true" ? false : true,
-      age: cookies.get("age"),
+      age: !cookies.get("age") ? 18 : cookies.get("age"),
       allAgesSelectedCookie: cookies.get("_all_ages_selected"), //a string for some reason
       allAgesSelected:
         cookies.get("_all_ages_selected") == "true" ? true : false,

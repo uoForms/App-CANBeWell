@@ -96,10 +96,10 @@ class LandingPageFR extends React.Component {
 
             <section className='primary-background res-blue-width res-blue-height-fr py-3 d-flex flex-column justify-content-center'>
               <div className="landing-notice-privacystmnt font-subHeading text-white" test-id="fr-reliable-resource-statement">
-                Rester en santé avec cette ressource gratuite créée par vos professionnels de la santé canadiens
-                <a type="button" className="btn btn-link btn-lg font-subHeading text-center align-text-top" href={videoen} target="_blank"
-                  onClick={this.openVideoen} test-id="update-banner-en-video">
-                  Watch Demo
+                Rester en santé avec cette ressource gratuite créée par vos professionnels de la santé canadiens.
+                <a type="button" className="btn btn-link btn-lg font-subHeading text-center align-text-top" href={videofr} target="_blank"
+                  onClick={this.openVideofr} test-id="update-banner-en-video">
+                  Voir vidéo
                 </a>
               </div>
 
