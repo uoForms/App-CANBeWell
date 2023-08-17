@@ -30,7 +30,7 @@ a:hover, a:focus, a:active, a:focus-visible {
 }
 
 .btn {
-  padding: 6px 16px !important;
+  padding: 8px 16px !important;
   border-radius: 12px !important;
   font-size: calc( 14px + (24 - 14) * (100vw - 320px) / (1920 - 320) ) !important;
   line-height: calc(18px + (28 - 18) * (100vw - 320px) / (1920 - 320)) !important;

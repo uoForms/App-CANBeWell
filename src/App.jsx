@@ -1807,12 +1807,12 @@ class App extends Component {
           </h3>
         </div>
 
-        <div className="row d-flex my-4 mx-5 align-items-center">
+        <div className="row d-flex my-4 mx-2 mx-md-3 mx-lg-4 align-items-center">
           {/*display user's info*/}
 
           <div className="col-2 p-0 text-left">
             <FaHome
-              size={40}
+              size={window.innerWidth < 768 ? 32 : 40}
               className="icon-brand-color"
               onClick={this.props.setAppLanguage}
             />
