@@ -249,7 +249,7 @@ class SearchBar extends React.Component {
     return (
       <form>
         <input
-          className="form-control searchbar font-input-lg"
+          className="form-control searchbar mt-5 font-input-lg"
           type="text"
           placeholder={this.props.text}
           value={this.props.filterText}

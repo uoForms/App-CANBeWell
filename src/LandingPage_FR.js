@@ -82,7 +82,7 @@ class LandingPageFR extends React.Component {
                 <Col className='d-flex justify-content-end'>
                   {/* <Link to="/en" className="landing-french-router">English</Link> */}
                   <a href="/en"
-                    className="font-description text-brand-blue" onClick={this.handleRedirect}>English</a>
+                    className="font-description" onClick={this.handleRedirect}>English</a>
                 </Col>
               </Row>
             </section>
@@ -114,17 +114,17 @@ class LandingPageFR extends React.Component {
             <section id="landing-page-footer">
               <Row className="d-flex justify-content-center align-items-center m-0 py-1">
                 <Col xs={{ order: 1, span: 10 }} sm={{ order: 1, span: 8 }} md={{ order: 2, span: 9 }} className="d-flex justify-content-center align-items-center footer-text mt-3 mx-0">
-                  <a className="text-brand-blue text-center font-weight-bold" src={videofr} href="" target="_blank" rel="noopener noreferrer"
+                  <a className="text-center font-weight-bold" src={videofr} href="" target="_blank" rel="noopener noreferrer"
                     onClick={this.openVideofr} test-id="update-banner-fr-video">Vidéo
                   </a>
                   <span className="mx-3"> &#124; </span>
                   <a href="/politiquedeconfidentialite.htm" target="_blank" rel="noopener noreferrer"
-                    test-id="privacy-statement-fr" className='text-brand-blue privacyFr text-center'>
+                    test-id="privacy-statement-fr" className='privacyFr text-center'>
                     Politique de confidentialité
                   </a>
                   <span className="mx-3"> &#124; </span>
                   <a href="/iCanBeWell_àproposdenous.htm" target="_blank" rel="noopener noreferrer"
-                    test-id="aboutus-statement-fr" className='text-brand-blue text-center'>
+                    test-id="aboutus-statement-fr" className='text-center'>
                     À propos de nous
                   </a>
                 </Col>

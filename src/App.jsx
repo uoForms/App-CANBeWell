@@ -29,8 +29,7 @@ import { getUserInfo } from "./UserInfo";
 import { isTransgender } from "./config";
 
 // Home and arrow back icon logo
-import { FaHome } from "react-icons/fa";
-import { BiArrowBack } from "react-icons/bi";
+import { FaHome, FaArrowLeft } from "react-icons/fa";
 
 class App extends Component {
   static propTypes = {
@@ -602,7 +601,6 @@ class App extends Component {
 
     // The modal "window"
     const myDisclaimerStyle = {
-      maxWidth: "90%",
       maxHeight: "250px",
       margin: "0 auto",
       textAlign: "left",
@@ -670,12 +668,12 @@ class App extends Component {
               style={myModalStyle}
               test-id="instructionModalRoot"
             >
-              <div className="footer">
-                <div className="row d-flex align-items-center">
-                  <div className="col-4 p-0 pl-5 text-left">
-                    <BiArrowBack
+              <div className="instructionModalCss">
+                <div className="row m-0 d-flex align-items-center">
+                  <div className="col-4 p-0 text-left">
+                    <FaArrowLeft
                       size={24}
-                      className="text-brand-blue"
+                      className="icon-brand-color"
                       onClick={this.props.setAppLanguage}
                     />
                   </div>
@@ -903,17 +901,20 @@ class App extends Component {
 
                 <div className="termsOfUse" style={termsOfUseStyle}>
                   <Button
-                    variant="primary"
+                    variant="secondary"
                     test-id="okButtonTop"
                     id="agree"
                     onClick={this.toggleIntrutionModal}
                   >
                     {this.state.lang.agree}
                   </Button>
-                  <br />
-                  <b test-id="termOfUseLabel">
+
+                  <div
+                    className="my-3 font-weight-bold font-subHeading"
+                    test-id="termOfUseLabel"
+                  >
                     {this.state.lang.disclaimer_header}
-                  </b>
+                  </div>
 
                   <div style={myDisclaimerStyle} test-id="termOfUseContent">
                     <div>
@@ -1101,7 +1102,7 @@ class App extends Component {
                   </div>
                   <br />
                   <Button
-                    variant="primary"
+                    variant="secondary"
                     test-id="okButtonBottom"
                     id="agree"
                     onClick={this.toggleIntrutionModal}
@@ -1124,11 +1125,11 @@ class App extends Component {
           <div key="1" className="backdrop" style={backdropStyle}>
             <div className="myModal" style={myModalStyle}>
               <div className="footer">
-                <div className="row d-flex align-items-center">
-                  <div className="col-4 p-0 pl-5 text-left">
-                    <BiArrowBack
+                <div className="row m-0 d-flex align-items-center">
+                  <div className="col-4 p-0 text-left">
+                    <FaArrowLeft
                       size={24}
-                      className="text-brand-blue"
+                      className="icon-brand-color"
                       onClick={this.props.setAppLanguage}
                     />
                   </div>
@@ -1450,11 +1451,11 @@ class App extends Component {
           >
             <div className="myModal" test-id="PostConfigUpdateModalRoot">
               <div>
-                <div className="row d-flex align-items-center">
-                  <div className="col-4 p-0 pl-3 text-left">
-                    <BiArrowBack
+                <div className="row m-0 d-flex align-items-center">
+                  <div className="col-4 p-0 text-left">
+                    <FaArrowLeft
                       size={24}
-                      className="text-brand-blue"
+                      className="icon-brand-color"
                       onClick={() =>
                         this.setState({
                           configurationIsOpen: !this.state.configurationIsOpen,
@@ -1644,7 +1645,7 @@ class App extends Component {
                   {/*close button*/}
                   <div className="myModalButton">
                     <Button
-                      variant="primary"
+                      variant="secondary"
                       onClick={this.toggleConfigurationModal}
                       test-id="okButton"
                     >
@@ -1664,11 +1665,11 @@ class App extends Component {
           <div key="2" className="backdrop">
             <div className="myModal">
               <div>
-                <div className="row d-flex align-items-center">
-                  <div className="col-4 p-0 pl-3 text-left">
-                    <BiArrowBack
+                <div className="row m-0 d-flex align-items-center">
+                  <div className="col-4 p-0 text-left">
+                    <FaArrowLeft
                       size={24}
-                      className="text-brand-blue"
+                      className="icon-brand-color"
                       onClick={() =>
                         this.setState({
                           configurationIsOpen: !this.state.configurationIsOpen,
@@ -1811,20 +1812,20 @@ class App extends Component {
 
           <div className="col-2 p-0 text-left">
             <FaHome
-              size={32}
-              className="text-brand-blue home-icon"
+              size={40}
+              className="icon-brand-color"
               onClick={this.props.setAppLanguage}
             />
           </div>
           <div className="col-8 p-0 text-center">
             <Button
-              variant="primary"
+              variant="secondary"
               size="lg"
               onClick={this.genderIconClicked}
-              className="font-button-lg"
               test-id="postConfigUpdateModalOpenButton"
             >
-              <IoIosSettings /> {this.state.lang[this.state.user]}
+              <IoIosSettings className="font-icon mb-1" />{" "}
+              {this.state.lang[this.state.user]}
               {/*this.state.lang.display_gender*/}{" "}
               {[
                 this.state.gender == "male" && this.state.Tgender == "tf"
@@ -1850,8 +1851,7 @@ class App extends Component {
                   : this.state.gender == "nonbinary"
                   ? this.state.lang[this.state.gender]
                   : this.state.Tgender,
-              ]}
-              |{" "}
+              ]}{" "}
               {this.state.age == "all ages"
                 ? this.state.lang.all_ages
                 : this.state.age}

@@ -71,7 +71,7 @@ class LandingPageEN extends React.Component {
                 <Col className='d-flex justify-content-end'>
                   {/* <Link to="fr" className="landing-french-router">Français</Link> */}
                   <a href="/fr"
-                    className="font-description text-brand-blue" onClick={this.handleRedirect}>Français</a>
+                    className="font-description" onClick={this.handleRedirect}>Français</a>
                 </Col>
               </Row>
             </section>
@@ -104,18 +104,18 @@ class LandingPageEN extends React.Component {
             <section id="landing-page-footer">
               <Row className="d-flex justify-content-center align-items-center m-0 py-3">
                 <Col xs={{ order: 1, span: 12 }} sm={{ order: 1, span: 8 }} md={{ order: 2, span: 9 }} className="d-flex justify-content-center align-items-center footer-text mx-0">
-                  <a className="text-brand-blue text-center font-weight-bold" href={videoen} target="_blank"
+                  <a className="text-center font-weight-bold" href={videoen} target="_blank" rel="noopener"
                     onClick={this.openVideoen} test-id="update-banner-en-video">
                     Video
                   </a>
                   <span className="mx-3"> &#124; </span>
-                  <a href="/iCanBeWell_PrivacyPolicy.htm" target="_blank"
-                    test-id="privacy-statement-en" className='text-brand-blue text-center'>
+                  <a href="/iCanBeWell_PrivacyPolicy.htm" target="_blank" rel="noopener"
+                    test-id="privacy-statement-en" className='text-center'>
                     Privacy Statement
                   </a>
                   <span className="mx-3"> &#124; </span>
-                  <a href="/iCanBeWell_AboutUs.htm" target="_blank"
-                    test-id="aboutus-statement-en" className='text-brand-blue text-center'>
+                  <a href="/iCanBeWell_AboutUs.htm" target="_blank" rel="noopener"
+                    test-id="aboutus-statement-en" className='text-center'>
                     About Us
                   </a>
                 </Col>
