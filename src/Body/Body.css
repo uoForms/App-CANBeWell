@@ -1,6 +1,14 @@
 .mainRunner {
-    position: absolute;
+    /* position: absolute;
     width: 100%;
+    overflow: auto;
+    background-color: inherit;
+    display: block;
+    height: auto; */
+    position: absolute;
+    left: 50%; /*(added to move the body to left by 50%)*/
+    transform: translateX(-50%); /*(translated the x-dimension to center it to the page)*/
+    width: 35%; /*(resized the image from 100% to 50%)*/
     overflow: auto;
     background-color: inherit;
     display: block;
@@ -12,8 +20,8 @@
   }
   .mainRunner button {
     position: absolute;
-    transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     background: inherit;
     border: none !important;
     font-size: 0;
@@ -111,7 +119,7 @@
   .mainRunner .femaleGenitalia {
     top: 49.5%;
     left: 49.5%;
-    width: 7%;
+    width: 9%;
     height: 4%;
   }
   
@@ -181,7 +189,7 @@
   .mainRunner .maleGenitalia {
     top: 50.2%;
     left: 47.5%;
-    width: 7%;
+    width: 9%;
     height: 4%;
   }
   
@@ -265,83 +273,83 @@
   .mainRunner .brain {
     top: 6%;
     left: 31%;
-    width: 7.5%;
+    width: 9%;
   }
 
   .mainRunner .brainGear {
     top: 6%;
     left: 15%;
-    width: 9%;
+    width: 10.5%;
   }
   
   .mainRunner .exam {
     top: 12%;
     left: 64%;
-    width: 7%;
+    width: 9%;
   }
   
   .mainRunner .falls {
     top: 46%;
     left: 59%;
-    width: 7%;
+    width: 9%;
   }
   
   .mainRunner .immunization {
     top: 22%;
     left: 64%;
-    width: 7%;
+    width: 9%;
   }
   
   .mainRunner .sunExposure {
     top: 12%;
     left: 15%;
-    width: 7.5%;
+    width: 9%;
   }
   
   .mainRunner .covid {
     top: 12%;
     left: 31%;
-    width: 7.75%;
+    width: 9%;
   }
   
   .mainRunner .phyActivity {
     top: 12%;
     left: 79%;
-    width: 7%;
+    width: 9%;
   }
 
   .mainRunner .money {
     top: 6%;
     left: 79%;
-    width: 7%;
+    width: 9%;
   }
 
   .mainRunner .sleep {
     top: 6%;
     left: 64%;
-    width: 7%;
+    width: 9%;
   }
 
   .mainRunner .bp {
     top: 30.4%;
     left: 69.7%;
-    width: 17.4%;
+    width: 19.4%;
   }
 
   .mainRunner .bpfemale {
     top: 31%;
     left: 70.3%;
-    width: 15.7%;
+    width: 16.7%;
   }
   .mainRunner .bpnb {
     top: 30%;
     left: 71.6%;
-    width: 15.7%;
+    width: 16.7%;
   }
   .mainRunner .bptg {
     top: 30%;
     left: 71.6%;
-    width: 15.7%;
+    width: 16.7%;
   }
 
   #icons img:hover > div#organ {
@@ -386,18 +394,30 @@
   .mainRunner .maleGenital {
     top: 51%;
     left: 47.8%;
-    width: 7.8%;
+    width: 9%;
   }
   
   .mainRunner .transGenital {
     top: 49%;
     left: 49.5%;
-    width: 7.8%;
+    width: 9%;
   }
   
   .mainRunner .femaleGenital {
     top: 50%;
     left: 50%;
-    width: 7.4%;
+    width: 9%;
   }
   
+  
+@media only screen and (max-width: 480px) {
+  .mainRunner {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1000px) {
+  .mainRunner {
+    width: 70%;
+  }
+}

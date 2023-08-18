@@ -11,6 +11,18 @@ body {
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji","Lato";
 }
 
+#body {
+    text-decoration: none !important;
+}
+
+#topic {
+  text-decoration: none !important;
+}
+
+#test {
+  text-decoration: none !important;
+}
+
 /*text-align: center;*/
 .App {
     position: relative;
@@ -47,6 +59,7 @@ body {
 
 .instruction{
   margin: 0px;
+  font-weight: 500;
 }
 
 .checkAge{
@@ -334,6 +347,12 @@ body {
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+}
+
+.instructionModalCss {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (max-height: 450px) {
