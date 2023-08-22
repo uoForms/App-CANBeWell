@@ -97,8 +97,7 @@ class LandingPageFR extends React.Component {
             <section className='primary-background res-blue-width res-blue-height-fr py-3 d-flex flex-column justify-content-center'>
               <div className="landing-notice-privacystmnt font-subHeading text-white" test-id="fr-reliable-resource-statement">
                 Rester en santé avec cette ressource gratuite créée par vos professionnels de la santé canadiens.
-                <a type="button" className="btn btn-link btn-lg font-subHeading text-center align-text-top" href={videofr} target="_blank"
-                  onClick={this.openVideofr} test-id="update-banner-en-video">
+                <a type="button" className="btn btn-link btn-lg font-subHeading text-center align-text-top" href={videofr} target="_blank" test-id="update-banner-en-video">
                   Voir vidéo
                 </a>
               </div>
@@ -114,8 +113,8 @@ class LandingPageFR extends React.Component {
             <section id="landing-page-footer">
               <Row className="d-flex justify-content-center align-items-center m-0 py-1">
                 <Col xs={{ order: 1, span: 10 }} sm={{ order: 1, span: 8 }} md={{ order: 2, span: 9 }} className="d-flex justify-content-center align-items-center footer-text mt-3 mx-0">
-                  <a className="text-center font-weight-bold" src={videofr} href="" target="_blank" rel="noopener noreferrer"
-                    onClick={this.openVideofr} test-id="update-banner-fr-video">Vidéo
+                  <a className="text-center font-weight-bold" src={videofr} href={videofr} target="_blank" rel="noopener noreferrer"
+                     test-id="update-banner-fr-video"> Vidéo
                   </a>
                   <span className="mx-3"> &#124; </span>
                   <a href="/politiquedeconfidentialite.htm" target="_blank" rel="noopener noreferrer"

@@ -87,7 +87,7 @@ class LandingPageEN extends React.Component {
               <div className="landing-notice-privacystmnt font-subHeading text-white" test-id="en-reliable-resource-statement">
                 Your free resource of preventive health information provided by Canadian clinicians.
                 <a type="button" className="btn btn-link btn-lg font-subHeading text-center align-text-top" href={videoen} target="_blank"
-                  onClick={this.openVideoen} test-id="update-banner-en-video">
+                  test-id="update-banner-en-video">
                   Watch Demo
                 </a>
               </div>
@@ -105,7 +105,7 @@ class LandingPageEN extends React.Component {
               <Row className="d-flex justify-content-center align-items-center m-0 py-3">
                 <Col xs={{ order: 1, span: 12 }} sm={{ order: 1, span: 8 }} md={{ order: 2, span: 9 }} className="d-flex justify-content-center align-items-center footer-text mx-0">
                   <a className="text-center font-weight-bold" href={videoen} target="_blank" rel="noopener"
-                    onClick={this.openVideoen} test-id="update-banner-en-video">
+                     test-id="update-banner-en-video">
                     Watch Demo
                   </a>
                   <span className="mx-3"> &#124; </span>
