@@ -194,7 +194,7 @@
     "Topic heading": "Bone Health",
     "Subject": "Bone Density Test",
     "General Patient Text": "Below age 65: only recommended if: you have [[risk factors; https://www.canada.ca/en/public-health/services/chronic-diseases/osteoporosis.html]]\n[[More info; https://choosingwiselycanada.org/pamphlet/bone-density-tests/]]\n[[Calculator; https://frax.canadiantaskforce.ca/]]",
-    "Health Provider Text": "•<65 yo BDM only if the patient has [[risk factors; https://frax.canadiantaskforce.ca/index.php?r=site%2Frisks]]\n•[[Canadian Task Force 2023 Decision aid; https://frax.canadiantaskforce.ca/]]\n•[[Canadiant Task Force 2023 guideline; https://www.cmaj.ca/content/cmaj/195/18/E639.full.pdf]]\n•[[BDM Choosing Wisely; https://choosingwiselycanada.org/pamphlet/bone-density-tests/]]",
+    "Health Provider Text": "•<65 yo BDM only if the patient has  [[risk factors; https://frax.canadiantaskforce.ca/index.php?r=site%2Frisks]]\n•[[Canadian Task Force 2023 Decision aid; https://frax.canadiantaskforce.ca/]]\n•[[Canadiant Task Force 2023 guideline; https://www.cmaj.ca/content/cmaj/195/18/E639.full.pdf]]\n•[[BDM Choosing Wisely; https://choosingwiselycanada.org/pamphlet/bone-density-tests/]]",
     "Gender": "m,f",
     "Minimum age": 18,
     "Maximum age": 64
@@ -393,7 +393,7 @@
     "Button": "Covid",
     "Topic heading": "COVID-19",
     "Subject": "Different languages",
-    "General Patient Text": "[[Ottawa public health; https://www.ottawapublichealth.ca/en/public-health-topics/multilingual-resources.aspx]]\n[[Ontario public health; https://www.publichealthontario.ca/en/diseases-and-conditions/infectious-diseases/respiratory-diseases/novel-coronavirus/public-resources]]\n[[Quebec multilingual; https://www.quebec.ca/sante/problemes-de-sante/a-z/coronavirus-2019/informations-allophones-covid-19]]-[[ Other Quebec multilingual; https://www.quebec.ca/sante/problemes-de-sante/a-z/coronavirus-2019/informations-allophones-covid-19]]\n[[UBC multilingual COVID resources; https://digem.med.ubc.ca/covid-19-multilingual-resources/]]",
+    "General Patient Text": "[[Ottawa public health; https://www.ottawapublichealth.ca/en/public-health-topics/multilingual-resources.aspx]]\n[[Ontario public health; https://www.publichealthontario.ca/en/diseases-and-conditions/infectious-diseases/respiratory-diseases/novel-coronavirus/public-resources]]\n[[Quebec multilingual; https://www.quebec.ca/sante/problemes-de-sante/a-z/coronavirus-2019/informations-allophones-covid-19]]",
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
@@ -413,7 +413,7 @@
     "Button": "Pancreas",
     "Topic heading": "Diabetes Type 2",
     "Subject": "National Indigenous Diabetes Association",
-    "General Patient Text": "•\t[[National Indigenous Diabetes Association; http://nada.ca/]]\n•\t[[Food and Nutrition; http://nada.ca/?page_id=1563]]",
+    "General Patient Text": "•\t[[National Indigenous Diabetes Association; http://nada.ca/]]\n•\t[[Resources; https://nada.ca/resources/]]",
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 18,
@@ -885,16 +885,6 @@
     "Subject": "New! The Microbiome",
     "General Patient Text": "•[[Food4guthealth; https://www.gutmicrobiotaforhealth.com/category/food-4-gut-health/]]\n[[Follow on instagram; https://www.instagram.com/food4gut_health/]]\n•[[Harvard Information; https://www.hsph.harvard.edu/nutritionsource/microbiome/]]",
     "Health Provider Text": "•[[Food4guthealth; https://www.gutmicrobiotaforhealth.com/category/food-4-gut-health/]]\n[[Follow on instagram; https://www.instagram.com/food4gut_health/]]\n•[[Harvard Information; https://www.hsph.harvard.edu/nutritionsource/microbiome/]]",
-    "Gender": "all",
-    "Minimum age": 18,
-    "Maximum age": 150
-  },
-  {
-    "Button": "Stomach",
-    "Topic heading": "Nutrition",
-    "Subject": "Food addiction",
-    "General Patient Text": "•Video[[ Ted talk; https://youtu.be/aqhzFd4NUPI]]\n•[[Obesity Canada article; https://obesitycanada.ca/oc-news/ask-the-expert-7-food-addiction-specialist-dr-vera-tarman-answers-your-questions-part-2/]]",
-    "Health Provider Text": "•Video[[ Ted talk; https://youtu.be/aqhzFd4NUPI]]\n•[[Obesity Canada article; https://obesitycanada.ca/oc-news/ask-the-expert-7-food-addiction-specialist-dr-vera-tarman-answers-your-questions-part-2/]]",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150

@@ -8,7 +8,7 @@
   },
   {
     "Test": "Bone mineral density",
-    "Patient/Provider Text": "If you have risk factors below age 65 this may be done.\nAn x-ray detector scans your spine and hip.\n You receive a very small amount of radiation,\napproximately the same amount you are exposed to if you fly from Toronto to Vancouver.\n[[What is your risk; https://osteoporosis.ca/risk/#page-1]]\n[[More;https://www.mayoclinic.org/diseases-conditions/osteoporosis/in-depth/osteoporosis-risks/art-20304597]]",
+    "Patient/Provider Text": "If you have risk factors below age 65 this may be done.\nAn x-ray detector scans your spine and hip.\n You receive a very small amount of radiation,\napproximately the same amount you are exposed to if you fly from Toronto to Vancouver.\n[[What is your risk; https://osteoporosis.ca/risk/#page-1]]\n[[More;https://choosingwiselycanada.org/pamphlet/bone-density-tests/]]",
     "Gender": "all",
     "Minimum age": 50,
     "Maximum age": 64
