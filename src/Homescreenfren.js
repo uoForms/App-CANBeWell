@@ -80,9 +80,10 @@ export default function CustomizedDialogs({ openDialog, setOpenDialog }) {
                   <img src={require('./images/instruction-2_french.png').default} className="instructionimg" /> */}
                   <h4>1. Appuyez sur l'icône de partage</h4>
                   <img src={require('./images/instruction_2.png').default} className="instructionimg" />
-                  <h4>2. Appuyez sur "Enregister l’appli"</h4>
+                  <h4>2. Déroulez vers le bas </h4>
+                  <h4>3. Appuyez sur "Ajouter sur l'écran d'accueil"</h4>
                   <img src={require('./images/instruction_fren_1.png').default} className="instructionimg" />
-                  <h4>3. Appuyez sur le bouton "Ajouter"</h4>
+                  <h4>4. Appuyez sur le bouton "Ajouter"</h4>
                   <img src={require('./images/instruction-1_french.png').default} className="instructionimg" />
                 </DialogContent>
                 <DialogActions>
@@ -107,7 +108,7 @@ export default function CustomizedDialogs({ openDialog, setOpenDialog }) {
                   <img src={require('./images/android_1.jpg').default} className="instructionimg" /> */}
                   <h4>1. Appuyez sur l'icône de menu</h4>
                   <img src={require('./images/android_2.jpg').default} className="instructionimg" />
-                  <h4>2. Appuyez sur "Enregister l’appli"</h4>
+                  <h4>2. Appuyez sur "Ajouter sur l'écran d'accueil"</h4>
                   <img src={require('./images/android_fren_1.jpg').default} className="instructionimg" />
                 </DialogContent>
                 <DialogActions>

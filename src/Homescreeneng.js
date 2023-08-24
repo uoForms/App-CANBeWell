@@ -82,7 +82,7 @@ export default function CustomizedDialogs({ openDialog, setOpenDialog }) {
                   <img src={require('./images/instruction_1.png').default} className="instructionimg" /> */}
                   <h4>1. Tap share icon</h4>
                   <img src={require('./images/instruction_2.png').default} className="instructionimg" />
-                  <h4>2. Tap "Add to Home Screen"</h4>
+                  <h4>2. Scroll down & Tap "Add to Home Screen"</h4>
                   <img src={require('./images/instruction_3.png').default} className="instructionimg" />
                   <h4>3. Tap "Add" button</h4>
                   <img src={require('./images/ios_eng_4.png').default} className="instructionimg" />
