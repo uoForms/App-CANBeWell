@@ -895,7 +895,6 @@ class App extends Component {
                     >
                       {this.state.lang.agree}
                     </Button>
-                    <br />
                   </div>
                 </div>
               </div>
