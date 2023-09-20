@@ -241,30 +241,30 @@ body {
 
 
 
-#male_radio{
+/* #male_radio{
   margin-right:  186px;
-}
+} */
 
-#birth_male_mod{
+/* #birth_male_mod{
   margin-right:  184px;
 }
 
 #female_male_mod{
   margin-right:  164px;
-}
+} */
 
 
-#female_radio{
+/* #female_radio{
   margin-right:  166px;
-}
+} */
 
-#trans_radio{
+/* #trans_radio{
   margin-right:  118px;
-}
+} */
 
-#nb_radio{
+/* #nb_radio{
   margin-right:  129px;
-}
+} */
 
 .gender_mod{
   margin-right: 156px;
@@ -290,14 +290,14 @@ body {
 #opt_mod{
   margin-right: 192px;
 }
-
+/* 
 #pat_mod{
   margin-right: 170px;
 }
 
 #prov_mod{
   margin-right: 159px;
-}
+} */
 
 
 #horm_mod{
@@ -320,6 +320,7 @@ body {
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 0;
+  padding: 10px;
 };
 
 @media only screen and (max-width: 375px) {
@@ -489,4 +490,22 @@ svg.MuiSvgIcon-root.arrow-left {
   background-color: #27aae1;
   border-radius: 5px;
   margin: 0 8px;
+}
+
+.radio-flex-container {
+  display: flex;
+  flex-direction: row; /* Horizontal layout by default */
+  flex-wrap: wrap; /* Wrap to the next line when there's not enough space */
+}
+
+/* Add some spacing between labels for better readability */
+.radio-flex-container label { 
+  margin-right: 10px; /* Adjust the margin as needed */
+}
+
+/* Media query for vertical layout on smaller screens */
+@media (max-width: 400px) {
+  .radio-flex-container {
+    flex-direction: column; /* Vertical layout */
+  }
 }

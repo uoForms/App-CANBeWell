@@ -917,7 +917,7 @@ class App extends Component {
               >
                 <div className="instructionModalCss">
                   <div className="row m-0 d-flex align-items-center">
-                    <div className="col-4 p-0 text-left">
+                    <div className="col-2 p-0 text-left"> {/* Adjust the column width as needed */}
                       <FaArrowLeft
                         size={24}
                         className="icon-brand-color"
@@ -925,41 +925,44 @@ class App extends Component {
                       />
                     </div>
 
-                    <div
-                      className="col-4 p-0 text-center font-subHeading font-weight-bold"
-                      test-id="header"
-                    >
+                    <div className="col-8 p-0 text-center font-subHeading font-weight-bold" test-id="header">
                       {this.state.lang.instruction_modal_header}
                     </div>
+
+                    <div className="col-2"></div> {/* Empty column to take up space on the right */}
                   </div>
+
 
                   <div className="content">
                     {/*select user*/}
                     <div className="radio">
                       <form test-id="userForm">
                         <p id="user_mod">{this.state.lang.user_selector}</p>
-                        <label id="pat_mod" test-id="patientLabel">
-                          <input
-                            type="radio"
-                            test-id="patientRadio"
-                            value="patient"
-                            checked={this.state.user === "patient"}
-                            onChange={this.handlePatientProviderChange}
-                          />
-                          {this.state.lang.patient}
-                        </label>
-                        <br />
+                        {/* harshank */}
+                        <div className="radio-flex-container">
+                          <label id="pat_mod" test-id="patientLabel">
+                            <input
+                              type="radio"
+                              test-id="patientRadio"
+                              value="patient"
+                              checked={this.state.user === "patient"}
+                              onChange={this.handlePatientProviderChange}
+                            />
+                            {this.state.lang.patient}
+                          </label>
 
-                        <label id="prov_mod" test-id="providerLabel">
-                          <input
-                            type="radio"
-                            test-id="providerRadio"
-                            value="provider"
-                            checked={this.state.user === "provider"}
-                            onChange={this.handlePatientProviderChange}
-                          />
-                          {this.state.lang.provider}
-                        </label>
+                          <label id="prov_mod" test-id="providerLabel">
+                            <input
+                              type="radio"
+                              test-id="providerRadio"
+                              value="provider"
+                              checked={this.state.user === "provider"}
+                              onChange={this.handlePatientProviderChange}
+                            />
+                            {this.state.lang.provider}
+                          </label>
+                        </div>
+
                       </form>
                     </div>
 
@@ -1047,40 +1050,41 @@ class App extends Component {
                             ?
                           </button>
                         </div>
-                        <label id="male_radio" test-id="maleRadioLabel">
-                          <input
-                            type="radio"
-                            test-id="maleRadio"
-                            value="male"
-                            checked={this.state.gender == "male"}
-                            onChange={this.handleGenderChange}
-                          />
-                          {this.state.lang.male}
-                        </label>
-                        <br />
-                        <label id="female_radio" test-id="femaleRadioLabel">
-                          <input
-                            test-id="femaleRadio"
-                            type="radio"
-                            value="female"
-                            checked={this.state.gender == "female"}
-                            onChange={this.handleGenderChange}
-                          />
-                          {this.state.lang.female}
-                        </label>
-                        <br />
+                        <div className="radio-flex-container">
+                          <label id="male_radio" test-id="maleRadioLabel">
+                            <input
+                              type="radio"
+                              test-id="maleRadio"
+                              value="male"
+                              checked={this.state.gender === "male"}
+                              onChange={this.handleGenderChange}
+                            />
+                            {this.state.lang.male}
+                          </label>
 
-                        <label id="nb_radio" test-id="nonBinaryRadioLabel">
-                          <input
-                            test-id="nonBinaryRadio"
-                            type="radio"
-                            value="nonbinary"
-                            checked={this.state.gender == "nonbinary"}
-                            onChange={this.handleGenderChange}
-                          />
-                          {this.state.lang.nonbinary}
-                        </label>
-                        <br />
+                          <label id="female_radio" test-id="femaleRadioLabel">
+                            <input
+                              test-id="femaleRadio"
+                              type="radio"
+                              value="female"
+                              checked={this.state.gender === "female"}
+                              onChange={this.handleGenderChange}
+                            />
+                            {this.state.lang.female}
+                          </label>
+
+                          <label id="nb_radio" test-id="nonBinaryRadioLabel">
+                            <input
+                              test-id="nonBinaryRadio"
+                              type="radio"
+                              value="nonbinary"
+                              checked={this.state.gender === "nonbinary"}
+                              onChange={this.handleGenderChange}
+                            />
+                            {this.state.lang.nonbinary}
+                          </label>
+                        </div>
+
                         {/* <label id="trans_radio">
                       <input type="radio" value="transgender" checked={this.state.gender == 'transgender'} onChange={this.handleGenderChange} />
                       {this.state.lang.transgender}
@@ -1109,28 +1113,30 @@ class App extends Component {
                             ?
                           </button>
                         </div>
+                        <div className="radio-flex-container">
+                          <label id="birth_male_mod" test-id="birthMaleLabel">
+                            <input
+                              type="radio"
+                              test-id="birthMale"
+                              value="tf"
+                              checked={this.state.Tgender === "tf"}
+                              onChange={this.handleTransGenderChange}
+                            />
+                            {this.state.lang.tf}
+                          </label>
 
-                        <label id="birth_male_mod" test-id="birthMaleLabel">
-                          <input
-                            type="radio"
-                            test-id="birthMale"
-                            value="tf"
-                            checked={this.state.Tgender == "tf"}
-                            onChange={this.handleTransGenderChange}
-                          />
-                          {this.state.lang.tf}
-                        </label>
-                        <br />
-                        <label id="female_male_mod" test-id="birthfemaleLabel">
-                          <input
-                            test-id="birthFemale"
-                            type="radio"
-                            value="tm"
-                            checked={this.state.Tgender == "tm"}
-                            onChange={this.handleTransGenderChange}
-                          />
-                          {this.state.lang.tm}
-                        </label>
+                          <label id="female_male_mod" test-id="birthfemaleLabel">
+                            <input
+                              test-id="birthFemale"
+                              type="radio"
+                              value="tm"
+                              checked={this.state.Tgender === "tm"}
+                              onChange={this.handleTransGenderChange}
+                            />
+                            {this.state.lang.tm}
+                          </label>
+                        </div>
+
                       </div>
                       <label
                         id="help"
@@ -1150,7 +1156,7 @@ class App extends Component {
                           id="agree"
                           onClick={this.toggleIntrutionModal}
                         >
-                          Continue
+                          {this.state.lang.continue}
                         </Button>
                       </div>
 
