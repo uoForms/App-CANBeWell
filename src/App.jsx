@@ -683,21 +683,21 @@ class App extends Component {
               >
                 <div className="instructionModalCss">
                   <div className="row m-0 d-flex align-items-center">
-                    <div className="col-4 p-0 text-left">
+                    <div className="col-2 p-0 text-left">
                       <FaArrowLeft
                         size={24}
                         className="icon-brand-color"
                         onClick={this.props.setAppLanguage}
                       />
                     </div>
-                      
-                    <div
-                      className="my-3 font-weight-bold font-subHeading"
-                      test-id="termOfUseLabel"
-                    >
+
+                    <div className="col-8 p-0 text-center font-subHeading font-weight-bold" test-id="termOfUseLabel">
                       {this.state.lang.disclaimer_header}
                     </div>
+
+                    <div className="col-2"></div>
                   </div>
+
 
                   <div className="termsOfUse" style={termsOfUseStyle}>
 
