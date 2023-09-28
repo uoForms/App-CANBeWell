@@ -968,36 +968,7 @@ class App extends Component {
 
 
                   <div className="content">
-                    {/*select user*/}
-                    <div className="radio">
-                      <form test-id="userForm">
-                        <p id="user_mod">{this.state.lang.user_selector}</p>
-                        <div className="radio-flex-container">
-                          <label id="pat_mod" test-id="patientLabel">
-                            <input
-                              type="radio"
-                              test-id="patientRadio"
-                              value="patient"
-                              checked={this.state.user === "patient"}
-                              onChange={this.handlePatientProviderChange}
-                            />
-                            {this.state.lang.patient}
-                          </label>
-
-                          <label id="prov_mod" test-id="providerLabel">
-                            <input
-                              type="radio"
-                              test-id="providerRadio"
-                              value="provider"
-                              checked={this.state.user === "provider"}
-                              onChange={this.handlePatientProviderChange}
-                            />
-                            {this.state.lang.provider}
-                          </label>
-                        </div>
-                      </form>
-                    </div>
-
+                    
                     {/*select age*/}
                     <div>
                       <form test-id="ageForm">
@@ -1181,6 +1152,37 @@ class App extends Component {
                         <h5>{this.state.lang.age_help}</h5>
                       </label>
                       {/*Field selection based on gender*/}
+                      {/*select user*/}
+                      <div className="radio">
+                        <form test-id="userForm">
+                          <p id="user_mod">{this.state.lang.user_selector}</p>
+                          <div className="radio-flex-container">
+                            <label id="pat_mod" test-id="patientLabel">
+                              <input
+                                type="radio"
+                                test-id="patientRadio"
+                                value="patient"
+                                checked={this.state.user === "patient"}
+                                onChange={this.handlePatientProviderChange}
+                              />
+                              {this.state.lang.patient}
+                            </label>
+
+                            <label id="prov_mod" test-id="providerLabel">
+                              <input
+                                type="radio"
+                                test-id="providerRadio"
+                                value="provider"
+                                checked={this.state.user === "provider"}
+                                onChange={this.handlePatientProviderChange}
+                              />
+                              {this.state.lang.provider}
+                            </label>
+                          </div>
+                        </form>
+                      </div>
+
+
                       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                         <Button
                           variant="secondary"
@@ -1557,34 +1559,7 @@ class App extends Component {
                     <div className="col-2"></div> 
                 </div>
                 <div className="myModalBody" style={{padding: "10px"}}>
-                  <div className="radio">
-                    <form test-id="userForm">
-                      <p id="user_mod">{this.state.lang.user_selector}</p>
-                      <div className="radio-flex-container">
-                        <label test-id="patientLabel">
-                          <input
-                            test-id="patientRadio"
-                            type="radio"
-                            value="patient"
-                            checked={this.state.user === "patient"}
-                            onChange={this.handlePatientProviderChangeFromConfig}
-                          />
-                          {this.state.lang.patient}
-                        </label>
-
-                      <label test-id="providerLabel">
-                        <input
-                          test-id="providerRadio"
-                          type="radio"
-                          value="provider"
-                          checked={this.state.user === "provider"}
-                          onChange={this.handlePatientProviderChangeFromConfig}
-                        />
-                        {this.state.lang.provider}
-                        </label>
-                      </div>
-                    </form>
-                  </div>
+                  
                   {/*select age*/}
                   <div>
                     <form test-id="ageForm">
@@ -1733,6 +1708,34 @@ class App extends Component {
                     </label>
                   </div>
                   {/*close button*/}
+                  <div className="radio">
+                    <form test-id="userForm">
+                      <p id="user_mod">{this.state.lang.user_selector}</p>
+                      <div className="radio-flex-container">
+                        <label test-id="patientLabel">
+                          <input
+                            test-id="patientRadio"
+                            type="radio"
+                            value="patient"
+                            checked={this.state.user === "patient"}
+                            onChange={this.handlePatientProviderChangeFromConfig}
+                          />
+                          {this.state.lang.patient}
+                        </label>
+
+                        <label test-id="providerLabel">
+                          <input
+                            test-id="providerRadio"
+                            type="radio"
+                            value="provider"
+                            checked={this.state.user === "provider"}
+                            onChange={this.handlePatientProviderChangeFromConfig}
+                          />
+                          {this.state.lang.provider}
+                        </label>
+                      </div>
+                    </form>
+                  </div>
                   <div  style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                     <Button
                       variant="secondary"
