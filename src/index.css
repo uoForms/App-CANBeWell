@@ -25,6 +25,14 @@ a:hover, a:focus, a:active, a:focus-visible {
   color: #25AAE1;
 }
 
+#termsButton .icon-brand-color {
+  color: white; 
+}
+
+#termsButton .icon-brand-color:hover, .icon-brand-color:focus, .icon-brand-color:active {
+  color: #D7DF21;
+}
+
 .icon-brand-color:hover, .icon-brand-color:focus, .icon-brand-color:active {
   color: #D7DF21;
 }

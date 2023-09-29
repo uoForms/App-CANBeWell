@@ -625,6 +625,7 @@ class App extends Component {
       color: "#fff",
       fontFamily: "'Lato', 'Source Sans Pro', sans-serif",
       fontSize: "2rem",
+      fontWeight: "bold",
     }
     const termsOfUseText = {
       fontFamily: "Calibri Light, sans-serif"
@@ -696,13 +697,14 @@ class App extends Component {
               >
                 <div className="instructionModalCss">
                   <div className="row m-0 d-flex align-items-center" style={{ background: 'linear-gradient(to right, #1b55a4 1%, #1b63b0 46%, #1a7ec6 87%)', padding: '30px' }}>
-                    <div className="col-2 p-0 text-left">
+                    <div className="col-2 p-0 text-left" id="termsButton">
                       <FaArrowLeft
                         size={24}
                         className="icon-brand-color"
                         onClick={this.props.setAppLanguage}
                       />
                     </div>
+
 
                     <div className="col-8 text-center" style={termsofUseLabel} test-id="termOfUseLabel">
                       {this.state.lang.disclaimer_header}
@@ -777,7 +779,13 @@ class App extends Component {
                         </div>
                         <div style={termsOfUseText}>{this.state.lang.websiteSecurityText1}</div>
                         <p></p>
-                        <div style={termsOfUseText}>{this.state.lang.websiteSecurityText2}</div>
+                        <div
+                          style={termsOfUseText}
+                          dangerouslySetInnerHTML={{
+                          __html: DOMPurify.sanitize(
+                            this.state.lang.websiteSecurityText2
+                          ),
+                        }}></div>
 
                         <div
                           className="underlineTextTermsOfUse"
@@ -1612,7 +1620,6 @@ class App extends Component {
                           ?
                         </button>
                       </strong>
-                      <br />
                       <div className="radio-flex-container">
                       <label id="male_radio" test-id="maleRadioLabel">
                         <input
@@ -1624,7 +1631,6 @@ class App extends Component {
                         />
                         {this.state.lang.male}
                       </label>
-                      <br />
                       <label id="female_radio" test-id="femaleRadioLabel">
                         <input
                           test-id="femaleRadio"
@@ -1635,7 +1641,6 @@ class App extends Component {
                         />
                         {this.state.lang.female}
                       </label>
-                      <br />
                       <label test-id="nonBinaryRadioLabel">
                         <input
                           test-id="nonBinaryRadio"
@@ -1674,7 +1679,6 @@ class App extends Component {
                           ?
                         </button>
                       </strong>
-                      <br />
                       <div className="radio-flex-container">
                         <label id="birth_male_mod" test-id="birthMaleLabel">
                           <input
@@ -1686,7 +1690,6 @@ class App extends Component {
                           />
                           {this.state.lang.tf}
                         </label>
-                        <br />
                         <label id="female_male_mod" test-id="birthfemaleLabel">
                           <input
                             test-id="birthFemale"
