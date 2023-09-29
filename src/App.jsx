@@ -697,14 +697,14 @@ class App extends Component {
               >
                 <div className="instructionModalCss">
                   <div className="row m-0 d-flex align-items-center" style={{ background: 'linear-gradient(to right, #1b55a4 1%, #1b63b0 46%, #1a7ec6 87%)', padding: '30px' }}>
-                    {/* <div className="col-2 p-0 text-left"> */}
-                      <div className="col-2 p-0 text-left" style={{color: "white"}}>
+                    <div className="col-2 p-0 text-left" id="termsButton">
                       <FaArrowLeft
                         size={24}
                         className="icon-brand-color"
                         onClick={this.props.setAppLanguage}
                       />
                     </div>
+
 
                     <div className="col-8 text-center" style={termsofUseLabel} test-id="termOfUseLabel">
                       {this.state.lang.disclaimer_header}
