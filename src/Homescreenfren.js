@@ -84,7 +84,7 @@ export default function CustomizedDialogs({ openDialog, setOpenDialog }) {
                   <h4>3. Appuyez sur "Ajouter sur l'écran d'accueil"</h4>
                   <img src={require('./images/instruction_fren_1.png').default} className="instructionimg" />
                   <h4>4. Appuyez sur le bouton "Ajouter"</h4>
-                  <img src={require('./images/instruction-1_french.png').default} className="instructionimg" />
+                  <img src={require('./images/iphone_fr_pwa.png').default} className="instructionimg" />
                 </DialogContent>
                 <DialogActions>
                   <div className="closeButton">
@@ -110,6 +110,8 @@ export default function CustomizedDialogs({ openDialog, setOpenDialog }) {
                   <img src={require('./images/android_2.jpg').default} className="instructionimg" />
                   <h4>2. Appuyez sur "Ajouter sur l'écran d'accueil"</h4>
                   <img src={require('./images/android_fren_1.jpg').default} className="instructionimg" />
+                  <h4>3. Appuyez sur le bouton "Ajouter"</h4>
+                  <img src={require('./images/android_fr_pwa.png').default} className="instructionimg" />
                 </DialogContent>
                 <DialogActions>
                   <div className="closeButton">
