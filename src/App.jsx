@@ -343,9 +343,9 @@ class App extends Component {
   
 
   changeGetStartedFormID = () => {
-    this.setState({
-      getStartedFormID: 1,
-    });
+    this.setState((prevState) => ({
+      getStartedFormID: prevState.getStartedFormID === 0 ? 1 : 0,
+    }));
   };
 
 
@@ -611,7 +611,7 @@ class App extends Component {
 
     // The modal "window"
     const myDisclaimerStyle = {
-      height: "65vh",
+      height: "63vh",
       margin: "0 auto",
       textAlign: "left",
       padding: 10,
@@ -621,10 +621,23 @@ class App extends Component {
       fontSize: "16px",
       fontWeight: "12px",
     };
-    const termsOfUseStyle = {
-      marginTop: "10px",
-      textAlign: "center",
+    const termsofUseLabel = {
+      color: "#fff",
+      fontFamily: "'Lato', 'Source Sans Pro', sans-serif",
+      fontSize: "2rem",
+    }
+    const termsOfUseText = {
+      fontFamily: "Calibri Light, sans-serif"
     };
+    const termsOfUseHead = {
+      fontSize: '14pt',
+      lineHeight: '115%',
+      fontFamily: 'Calibri Light, sans-serif',
+      fontWeight: 'bold', 
+      margin: '10px 0',
+      color: '#1b55a4'
+    };
+
 
     const genderCss = {
       textAlign: "left",
@@ -682,7 +695,7 @@ class App extends Component {
                 test-id="instructionModalRoot"
               >
                 <div className="instructionModalCss">
-                  <div className="row m-0 d-flex align-items-center">
+                  <div className="row m-0 d-flex align-items-center" style={{ background: 'linear-gradient(to right, #1b55a4 1%, #1b63b0 46%, #1a7ec6 87%)', padding: '30px' }}>
                     <div className="col-2 p-0 text-left">
                       <FaArrowLeft
                         size={24}
@@ -691,7 +704,7 @@ class App extends Component {
                       />
                     </div>
 
-                    <div className="col-8 p-0 text-center font-subHeading font-weight-bold" test-id="termOfUseLabel">
+                    <div className="col-8 text-center" style={termsofUseLabel} test-id="termOfUseLabel">
                       {this.state.lang.disclaimer_header}
                     </div>
 
@@ -699,12 +712,10 @@ class App extends Component {
                   </div>
 
 
-                  <div className="termsOfUse" style={termsOfUseStyle}>
-
-
+                  <div className="termsOfUse" style={{ "line-height": "normal" }}>
                     <div style={myDisclaimerStyle} test-id="termOfUseContent">
                       <div>
-                        <div
+                        <div style={termsOfUseText}
                           dangerouslySetInnerHTML={{
                             __html: DOMPurify.sanitize(
                               this.state.lang.disclaimerBeforeTermsOfUse
@@ -713,42 +724,44 @@ class App extends Component {
                         ></div>
                         <div
                           className="underlineTextTermsOfUse"
-                          style={underlineTextTermsOfUse}
+                          style={termsOfUseHead}
                         >
                           {this.state.lang.accpetanceheading}
                         </div>
-                        <div
+                        <div style={termsOfUseText}
                           dangerouslySetInnerHTML={{
                             __html: DOMPurify.sanitize(
                               this.state.lang.acceptanceInitialStatement
                             ),
                           }}
                         ></div>
-                        <div
+                        <p></p>
+                        <div style={termsOfUseText}
                           dangerouslySetInnerHTML={{
                             __html: DOMPurify.sanitize(
                               this.state.lang.acceptanceAgreeStatement
                             ),
                           }}
                         ></div>
-
-                        <div>{this.state.lang.acceptanceText}</div>
+                        <p></p>
+                        <div style={termsOfUseText}>{this.state.lang.acceptanceText}</div>
                         <div
                           className="underlineTextTermsOfUse"
-                          style={underlineTextTermsOfUse}
+                          style={termsOfUseHead}
                         >
                           {this.state.lang.modificationHeading}
                         </div>
-                        <div>{this.state.lang.modificationText1}</div>
-                        <div>{this.state.lang.modificationText2}</div>
+                        <div style={termsOfUseText}>{this.state.lang.modificationText1}</div>
+                        <p></p>
+                        <div style={termsOfUseText}>{this.state.lang.modificationText2}</div>
 
                         <div
                           className="underlineTextTermsOfUse"
-                          style={underlineTextTermsOfUse}
+                          style={termsOfUseHead}
                         >
                           {this.state.lang.websiteContentSpecificationHeading}
                         </div>
-                        <div
+                        <div style={termsOfUseText}
                           dangerouslySetInnerHTML={{
                             __html: DOMPurify.sanitize(
                               this.state.lang.websiteContentSpecificationText
@@ -758,66 +771,81 @@ class App extends Component {
 
                         <div
                           className="underlineTextTermsOfUse"
-                          style={underlineTextTermsOfUse}
+                          style={termsOfUseHead}
                         >
                           {this.state.lang.websiteSecurityHeading}
                         </div>
-                        <div>{this.state.lang.websiteSecurityText1}</div>
-                        <div>{this.state.lang.websiteSecurityText2}</div>
+                        <div style={termsOfUseText}>{this.state.lang.websiteSecurityText1}</div>
+                        <p></p>
+                        <div style={termsOfUseText}>{this.state.lang.websiteSecurityText2}</div>
 
                         <div
                           className="underlineTextTermsOfUse"
-                          style={underlineTextTermsOfUse}
+                          style={termsOfUseHead}
                         >
                           {this.state.lang.rightsAndOwnershipHeading}
                         </div>
-                        <div>{this.state.lang.rightsAndOwnershipText1}</div>
+                        <div 
+                          style={termsOfUseText}
+                        >
+                          <div>{this.state.lang.rightsAndOwnershipText1}</div>
+                          <p></p>
                         <div>{this.state.lang.rightsAndOwnershipText2}</div>
+                          <p></p>
                         <div>{this.state.lang.rightsAndOwnershipText3}</div>
+                          <p></p>
                         <div>{this.state.lang.rightsAndOwnershipText4}</div>
-                        <div>{this.state.lang.rightsAndOwnershipText5}</div>
-                        <div>{this.state.lang.rightsAndOwnershipText6}</div>
+                          <p></p>
+                          <div>{this.state.lang.rightsAndOwnershipText5}</div>
+                          <p></p>
+                          <div>{this.state.lang.rightsAndOwnershipText6}</div>
+                          <p></p>
                         <div>{this.state.lang.rightsAndOwnershipText7}</div>
-
+                        </div>
                         <div
                           className="underlineTextTermsOfUse"
-                          style={underlineTextTermsOfUse}
+                          style={termsOfUseHead}
                         >
                           {this.state.lang.conditionsHeading}
                         </div>
-                        <div>{this.state.lang.conditionsText}</div>
+                        <div
+                          style={termsOfUseText}
+                        >{this.state.lang.conditionsText}</div>
 
                         <div
                           className="underlineTextTermsOfUse"
-                          style={underlineTextTermsOfUse}
+                          style={termsOfUseHead}
                         >
                           {this.state.lang.legalActionsHeading}
                         </div>
-                        <div>{this.state.lang.legalActionsText}</div>
+                        <div style={termsOfUseText}>{this.state.lang.legalActionsText}</div>
 
                         <div
                           className="underlineTextTermsOfUse"
-                          style={underlineTextTermsOfUse}
+                          style={termsOfUseHead}
                         >
                           {this.state.lang.cookiesHeading}
                         </div>
-                        <div>{this.state.lang.cookiesText}</div>
+                        <p></p>
+                        <div style={termsOfUseText}>{this.state.lang.cookiesText}</div>
 
                         <div
                           className="underlineTextTermsOfUse"
-                          style={underlineTextTermsOfUse}
+                          style={termsOfUseHead}
                         >
                           {this.state.lang.thirdPartyWebHeading}
                         </div>
-                        <div>{this.state.lang.thirdPartyWebText}</div>
+                        <p></p>
+                        <div style={termsOfUseText}>{this.state.lang.thirdPartyWebText}</div>
 
                         <div
                           className="underlineTextTermsOfUse"
-                          style={underlineTextTermsOfUse}
+                          style={termsOfUseHead}
                         >
                           {this.state.lang.geographicRestricationsHeading}
                         </div>
                         <div
+                          style={termsOfUseText}
                           dangerouslySetInnerHTML={{
                             __html: DOMPurify.sanitize(
                               this.state.lang.geographicRestricationsText
@@ -827,63 +855,69 @@ class App extends Component {
 
                         <div
                           className="underlineTextTermsOfUse"
-                          style={underlineTextTermsOfUse}
+                          style={termsOfUseHead}
                         >
                           {this.state.lang.noRelianceHeading}
                         </div>
+                        <div style={termsOfUseText}>
                         <div>{this.state.lang.noRelianceText1}</div>
+                          <p></p>
                         <div>{this.state.lang.noRelianceText2}</div>
+                          <p></p>
                         <div>{this.state.lang.noRelianceText3}</div>
-
+                        </div>
                         <div
                           className="underlineTextTermsOfUse"
-                          style={underlineTextTermsOfUse}
+                          style={termsOfUseHead}
                         >
                           {this.state.lang.disclaimerWarrantiesHeading}
                         </div>
                         <div
+                          style={termsOfUseText}
                           dangerouslySetInnerHTML={{
                             __html: DOMPurify.sanitize(
                               this.state.lang.disclaimerWarrantiesText1
                             ),
                           }}
                         ></div>
-                        <div>{this.state.lang.disclaimerWarrantiesText2}</div>
+                        <p></p>
+                        <div style={termsOfUseText}>{this.state.lang.disclaimerWarrantiesText2}</div>
 
                         <div
                           className="underlineTextTermsOfUse"
-                          style={underlineTextTermsOfUse}
+                          style={termsOfUseHead}
                         >
                           {this.state.lang.limitationHeading}
                         </div>
-                        <div>{this.state.lang.limitationText}</div>
+                        <div style={termsOfUseText}>{this.state.lang.limitationText}</div>
 
                         <div
                           className="underlineTextTermsOfUse"
-                          style={underlineTextTermsOfUse}
+                          style={termsOfUseHead}
                         >
                           {this.state.lang.indemnificationHeading}
                         </div>
-                        <div>{this.state.lang.indemnificationText}</div>
+                        <div style={termsOfUseText}>{this.state.lang.indemnificationText}</div>
 
                         <div
                           className="underlineTextTermsOfUse"
-                          style={underlineTextTermsOfUse}
+                          style={termsOfUseHead}
                         >
                           {this.state.lang.lawAndJurisdictionHeading}
                         </div>
-                        <div>{this.state.lang.lawAndJurisdictionText1}</div>
-                        <div>{this.state.lang.lawAndJurisdictionText2}</div>
+                        <div style={termsOfUseText}>{this.state.lang.lawAndJurisdictionText1}</div>
+                        <p></p>
+                        <div style={termsOfUseText}>{this.state.lang.lawAndJurisdictionText2}</div>
 
                         <div
                           className="underlineTextTermsOfUse"
-                          style={underlineTextTermsOfUse}
+                          style={termsOfUseHead}
                         >
                           {this.state.lang.entireAgreementHeading}
                         </div>
-                        <div>{this.state.lang.entireAgreementText}</div>
-
-                        <div>{this.state.lang.dateofAgreement}</div>
+                        <div style={termsOfUseText}>{this.state.lang.entireAgreementText}</div>
+                          <p></p>
+                        <div style={{ termsOfUseHead, color: "#1b55a4", fontSize:'10pt', fontWeight: 'bold'}}>{this.state.lang.dateofAgreement}</div>
                       </div>
                     </div>
                     <br />
@@ -914,57 +948,27 @@ class App extends Component {
                 // style={myModalStyle}
                 test-id="instructionModalRoot"
               >
+
                 <div className="instructionModalCss">
                   <div className="row m-0 d-flex align-items-center">
                     <div className="col-2 p-0 text-left"> {/* Adjust the column width as needed */}
                       <FaArrowLeft
                         size={24}
                         className="icon-brand-color"
-                        onClick={this.props.setAppLanguage}
+                        onClick={this.changeGetStartedFormID}
                       />
                     </div>
 
                     <div className="col-8 p-0 text-center font-subHeading font-weight-bold" test-id="header">
-                      {this.state.lang.instruction_modal_header}
+                      <strong>{this.state.lang.instruction_modal_header}</strong>
                     </div>
 
-                    <div className="col-2"></div> {/* Empty column to take up space on the right */}
+                    <div className="col-2"></div> 
                   </div>
 
 
                   <div className="content">
-                    {/*select user*/}
-                    <div className="radio">
-                      <form test-id="userForm">
-                        <p id="user_mod">{this.state.lang.user_selector}</p>
-                        {/* harshank */}
-                        <div className="radio-flex-container">
-                          <label id="pat_mod" test-id="patientLabel">
-                            <input
-                              type="radio"
-                              test-id="patientRadio"
-                              value="patient"
-                              checked={this.state.user === "patient"}
-                              onChange={this.handlePatientProviderChange}
-                            />
-                            {this.state.lang.patient}
-                          </label>
-
-                          <label id="prov_mod" test-id="providerLabel">
-                            <input
-                              type="radio"
-                              test-id="providerRadio"
-                              value="provider"
-                              checked={this.state.user === "provider"}
-                              onChange={this.handlePatientProviderChange}
-                            />
-                            {this.state.lang.provider}
-                          </label>
-                        </div>
-
-                      </form>
-                    </div>
-
+                    
                     {/*select age*/}
                     <div>
                       <form test-id="ageForm">
@@ -1148,6 +1152,37 @@ class App extends Component {
                         <h5>{this.state.lang.age_help}</h5>
                       </label>
                       {/*Field selection based on gender*/}
+                      {/*select user*/}
+                      <div className="radio">
+                        <form test-id="userForm">
+                          <p id="user_mod">{this.state.lang.user_selector}</p>
+                          <div className="radio-flex-container">
+                            <label id="pat_mod" test-id="patientLabel">
+                              <input
+                                type="radio"
+                                test-id="patientRadio"
+                                value="patient"
+                                checked={this.state.user === "patient"}
+                                onChange={this.handlePatientProviderChange}
+                              />
+                              {this.state.lang.patient}
+                            </label>
+
+                            <label id="prov_mod" test-id="providerLabel">
+                              <input
+                                type="radio"
+                                test-id="providerRadio"
+                                value="provider"
+                                checked={this.state.user === "provider"}
+                                onChange={this.handlePatientProviderChange}
+                              />
+                              {this.state.lang.provider}
+                            </label>
+                          </div>
+                        </form>
+                      </div>
+
+
                       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                         <Button
                           variant="secondary"
@@ -1155,7 +1190,7 @@ class App extends Component {
                           id="agree"
                           onClick={this.toggleIntrutionModal}
                         >
-                          {this.state.lang.continue}
+                          {this.state.lang.config_modal_agree}
                         </Button>
                       </div>
 
@@ -1504,52 +1539,27 @@ class App extends Component {
             <div className="myModal" test-id="PostConfigUpdateModalRoot">
               <div>
                 <div className="row m-0 d-flex align-items-center">
-                  <div className="col-4 p-0 text-left">
+                  <div className="col-2 p-0 text-left">
                     <FaArrowLeft
                       size={24}
                       className="icon-brand-color"
-                      onClick={() =>
+                        onClick={() =>
                         this.setState({
                           configurationIsOpen: !this.state.configurationIsOpen,
                         })
                       }
                     />
-                  </div>
-                  <div
-                    className="col-4 p-0 text-center font-subHeading font-weight-bold"
-                    test-id="PostConfigUpdateModalHeader"
-                  >
-                    <strong>{this.state.lang.configuration_header} </strong>
-                  </div>
+                    </div>
+                    <div
+                      className="col-8 p-0 text-center font-subHeading font-weight-bold"
+                      test-id="PostConfigUpdateModalHeader"
+                    >
+                      <strong>{this.state.lang.configuration_header}</strong>
+                    </div>
+                    <div className="col-2"></div> 
                 </div>
-                <div className="myModalBody">
-                  <div className="radio">
-                    <form test-id="userForm">
-                      {this.state.lang.user_selector}
-                      <br />
-                      <label test-id="patientLabel">
-                        <input
-                          test-id="patientRadio"
-                          type="radio"
-                          value="patient"
-                          checked={this.state.user === "patient"}
-                          onChange={this.handlePatientProviderChangeFromConfig}
-                        />
-                        {this.state.lang.patient}
-                      </label>
-                      <br />
-                      <label test-id="providerLabel">
-                        <input
-                          test-id="providerRadio"
-                          type="radio"
-                          value="provider"
-                          checked={this.state.user === "provider"}
-                          onChange={this.handlePatientProviderChangeFromConfig}
-                        />
-                        {this.state.lang.provider}
-                      </label>
-                    </form>
-                  </div>
+                <div className="myModalBody" style={{padding: "10px"}}>
+                  
                   {/*select age*/}
                   <div>
                     <form test-id="ageForm">
@@ -1603,6 +1613,7 @@ class App extends Component {
                         </button>
                       </strong>
                       <br />
+                      <div className="radio-flex-container">
                       <label id="male_radio" test-id="maleRadioLabel">
                         <input
                           test-id="maleRadio"
@@ -1634,8 +1645,8 @@ class App extends Component {
                           onChange={this.handleGenderChange}
                         />
                         {this.state.lang.nonbinary}
-                      </label>
-                      <br />
+                        </label>
+                        </div>
                       {/* <label>
                       <input type="radio" value="transgender" checked={this.state.gender == 'transgender'} onChange={this.handleGenderChange} />
                       {this.state.lang.transgender}
@@ -1664,27 +1675,29 @@ class App extends Component {
                         </button>
                       </strong>
                       <br />
-                      <label id="birth_male_mod" test-id="birthMaleLabel">
-                        <input
-                          test-id="birthMale"
-                          type="radio"
-                          value="tf"
-                          checked={this.state.Tgender == "tf"}
-                          onChange={this.handleTransGenderChange}
-                        />
-                        {this.state.lang.tf}
-                      </label>
-                      <br />
-                      <label id="female_male_mod" test-id="birthfemaleLabel">
-                        <input
-                          test-id="birthFemale"
-                          type="radio"
-                          value="tm"
-                          checked={this.state.Tgender == "tm"}
-                          onChange={this.handleTransGenderChange}
-                        />
-                        {this.state.lang.tm}
-                      </label>
+                      <div className="radio-flex-container">
+                        <label id="birth_male_mod" test-id="birthMaleLabel">
+                          <input
+                            test-id="birthMale"
+                            type="radio"
+                            value="tf"
+                            checked={this.state.Tgender == "tf"}
+                            onChange={this.handleTransGenderChange}
+                          />
+                          {this.state.lang.tf}
+                        </label>
+                        <br />
+                        <label id="female_male_mod" test-id="birthfemaleLabel">
+                          <input
+                            test-id="birthFemale"
+                            type="radio"
+                            value="tm"
+                            checked={this.state.Tgender == "tm"}
+                            onChange={this.handleTransGenderChange}
+                          />
+                          {this.state.lang.tm}
+                        </label>
+                        </div>
                     </div>
                     <label
                       id="config_agehelp"
@@ -1695,7 +1708,35 @@ class App extends Component {
                     </label>
                   </div>
                   {/*close button*/}
-                  <div className="myModalButton">
+                  <div className="radio">
+                    <form test-id="userForm">
+                      <p id="user_mod">{this.state.lang.user_selector}</p>
+                      <div className="radio-flex-container">
+                        <label test-id="patientLabel">
+                          <input
+                            test-id="patientRadio"
+                            type="radio"
+                            value="patient"
+                            checked={this.state.user === "patient"}
+                            onChange={this.handlePatientProviderChangeFromConfig}
+                          />
+                          {this.state.lang.patient}
+                        </label>
+
+                        <label test-id="providerLabel">
+                          <input
+                            test-id="providerRadio"
+                            type="radio"
+                            value="provider"
+                            checked={this.state.user === "provider"}
+                            onChange={this.handlePatientProviderChangeFromConfig}
+                          />
+                          {this.state.lang.provider}
+                        </label>
+                      </div>
+                    </form>
+                  </div>
+                  <div  style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                     <Button
                       variant="secondary"
                       onClick={this.toggleConfigurationModal}
