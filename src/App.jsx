@@ -611,7 +611,7 @@ class App extends Component {
 
     // The modal "window"
     const myDisclaimerStyle = {
-      height: "63vh",
+      height: "60vh",
       margin: "0 auto",
       textAlign: "left",
       padding: 10,
