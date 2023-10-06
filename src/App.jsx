@@ -1951,7 +1951,7 @@ class App extends Component {
               test-id="postConfigUpdateModalOpenButton"
             >
               <IoIosSettings className="font-icon mb-1" />{" "}
-              {this.state.lang[this.state.user]}
+              {/* {this.state.lang[this.state.user]} */}
               {/*this.state.lang.display_gender*/}{" "}
               {[
                 this.state.gender == "male" && this.state.Tgender == "tf"
