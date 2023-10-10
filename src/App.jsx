@@ -956,7 +956,6 @@ class App extends Component {
                 // style={myModalStyle}
                 test-id="instructionModalRoot"
               >
-                {/* harshank */}
                 <div className="instructionModalCss">
                   <div className="row m-0 d-flex align-items-center">
                     <div className="col-1 p-0 text-left">
