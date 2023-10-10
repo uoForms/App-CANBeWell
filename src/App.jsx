@@ -969,7 +969,7 @@ class App extends Component {
                     <div
                       className="col-11 p-0 text-center"
                       style={{
-                        fontFamily: "Inter",
+                        // fontFamily: "Inter",
                         fontSize: "17px",
                         fontWeight: "700",
                         lineHeight: "29px",
@@ -1568,7 +1568,7 @@ class App extends Component {
             <div className="myModal" test-id="PostConfigUpdateModalRoot">
               <div>
                 <div className="row m-0 d-flex align-items-center">
-                  <div className="col-2 p-0 text-left">
+                  <div className="col-1 p-0 text-left">
                     <FaArrowLeft
                       size={24}
                       className="icon-brand-color"
@@ -1579,9 +1579,9 @@ class App extends Component {
                       }
                     />
                   </div>
-                  <div className="col-8 p-0 text-center" style={{
-                    "font-family": "Inter",
-                    "font-size": "24px",
+                  <div className="col-11 p-0 text-center" style={{
+                    // "font-family": "Inter",
+                    "font-size": "17px",
                     "font-weight": "700",
                     "line-height": "29px",
                     "letter-spacing": "0em",
@@ -1589,7 +1589,6 @@ class App extends Component {
                   }} test-id="header">
                     {this.state.lang.instruction_modal_header}
                   </div>
-                  <div className="col-2"></div>
                 </div>
                 <div className="myModalBody" style={{ padding: "10px" }}>
                   <div style={{
