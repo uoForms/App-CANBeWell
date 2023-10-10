@@ -956,61 +956,67 @@ class App extends Component {
                 // style={myModalStyle}
                 test-id="instructionModalRoot"
               >
-
+                {/* harshank */}
                 <div className="instructionModalCss">
                   <div className="row m-0 d-flex align-items-center">
-                    <div className="col-2 p-0 text-left"> {/* Adjust the column width as needed */}
+                    <div className="col-1 p-0 text-left">
                       <FaArrowLeft
                         size={24}
                         className="icon-brand-color"
                         onClick={this.changeGetStartedFormID}
                       />
                     </div>
-                    <div className="col-8 p-0 text-center" style={{ "font-family": "Inter",
-                    "font-size": "24px",
-                    "font-weight": "700",
-                    "line-height": "29px",
-                    "letter-spacing": "0em",
-                    "text-align": "left",
-                    }} test-id="header">
-                    {this.state.lang.instruction_modal_header}
+                    <div
+                      className="col-11 p-0 text-center"
+                      style={{
+                        fontFamily: "Inter",
+                        fontSize: "17px",
+                        fontWeight: "700",
+                        lineHeight: "29px",
+                        letterSpacing: "0em",
+                        textAlign: "left",
+                      }}
+                      test-id="header"
+                    >
+                      {this.state.lang.instruction_modal_header}
+                    </div>
                   </div>
 
-                  <div className="col-2"></div>
-                </div>
 
 
-                <div className="content">
-                    <div style={{ "font-family": "Inter",
-                    "font-size": "14px",
-                    "font-weight": "400",
-                    "line-height": "20px",
-                    "letter-spacing": "0em",
-                    "text-align": "left",
-                    "margin-bottom": "1rem",
- }}>
-                    {this.state.lang.header_description}
-                  </div>
-                  
-                  {/*select age*/}
-                  <div>
-                    <form test-id="ageForm">
-                      <div>
-                        {this.state.lang.age_selector}
-                        <select
-                          id="abc"
-                          name="age"
-                          test-id="ageInput"
-                          value={this.state.age}
-                          onChange={this.handleChange}
-                        >
-                          {ages.map((age, i) => (
-                            <option key={i} value={age}>
-                              {age}
-                            </option>
-                          ))}
-                        </select>
-                        {/* <input
+
+                  <div className="content">
+                    <div style={{
+                      "font-family": "Inter",
+                      "font-size": "14px",
+                      "font-weight": "400",
+                      "line-height": "20px",
+                      "letter-spacing": "0em",
+                      "text-align": "left",
+                      "margin-bottom": "1rem",
+                    }}>
+                      {this.state.lang.header_description}
+                    </div>
+
+                    {/*select age*/}
+                    <div>
+                      <form test-id="ageForm">
+                        <div>
+                          {this.state.lang.age_selector}
+                          <select
+                            id="abc"
+                            name="age"
+                            test-id="ageInput"
+                            value={this.state.age}
+                            onChange={this.handleChange}
+                          >
+                            {ages.map((age, i) => (
+                              <option key={i} value={age}>
+                                {age}
+                              </option>
+                            ))}
+                          </select>
+                          {/* <input
                           test-id="ageInput"
                           id="abc"
                           type="text"
@@ -1040,142 +1046,142 @@ class App extends Component {
                               </option>
                             ))}
                           </select>*/}
-                        <label
-                          style={allagescheckboxStyle}
-                          test-id="allAgeCheckboxLabel"
-                        >
-                          <input
-                            id="myCheck"
-                            test-id="allAgeCheckbox"
-                            type="checkbox"
-                            checked={this.state.allAgesSelected}
-                            onChange={this.handleAllAgesSelected}
-                          />
-                          {this.state.lang.all_ages}
-                        </label>
-                      </div>
-                    </form>
-                  </div>
-                  {/*select gender*/}
-                  <div>
-                    <div
-                      id="genderSelector"
-                      className="radio"
-                      test-id="genderSelectRoot"
-                    >
-                      <div>
-                        {this.state.lang.gender_selector}
-                        {/* this is the original button, works fine 
+                          <label
+                            style={allagescheckboxStyle}
+                            test-id="allAgeCheckboxLabel"
+                          >
+                            <input
+                              id="myCheck"
+                              test-id="allAgeCheckbox"
+                              type="checkbox"
+                              checked={this.state.allAgesSelected}
+                              onChange={this.handleAllAgesSelected}
+                            />
+                            {this.state.lang.all_ages}
+                          </label>
+                        </div>
+                      </form>
+                    </div>
+                    {/*select gender*/}
+                    <div>
+                      <div
+                        id="genderSelector"
+                        className="radio"
+                        test-id="genderSelectRoot"
+                      >
+                        <div>
+                          {this.state.lang.gender_selector}
+                          {/* this is the original button, works fine 
                         but i have applied css zindex and positioned it over other div which is trick that doesnt aligns with screen size */}
-                        {/* this button is crack takes me to the landing page */}
-                        <button
-                          test-id="genderSelectHelp"
-                          className="button button23"
-                          onClick={this.helpClicked}
-                        >
-                          ?
-                        </button>
-                      </div>
-                      <div className="radio-flex-container">
-                        <label id="male_radio" test-id="maleRadioLabel">
-                          <input
-                            type="radio"
-                            test-id="maleRadio"
-                            value="male"
-                            checked={this.state.gender === "male"}
-                            onChange={this.handleGenderChange}
-                          />
-                          {this.state.lang.male}
-                        </label>
+                          {/* this button is crack takes me to the landing page */}
+                          <button
+                            test-id="genderSelectHelp"
+                            className="button button23"
+                            onClick={this.helpClicked}
+                          >
+                            ?
+                          </button>
+                        </div>
+                        <div className="radio-flex-container">
+                          <label id="male_radio" test-id="maleRadioLabel">
+                            <input
+                              type="radio"
+                              test-id="maleRadio"
+                              value="male"
+                              checked={this.state.gender === "male"}
+                              onChange={this.handleGenderChange}
+                            />
+                            {this.state.lang.male}
+                          </label>
 
-                        <label id="female_radio" test-id="femaleRadioLabel">
-                          <input
-                            test-id="femaleRadio"
-                            type="radio"
-                            value="female"
-                            checked={this.state.gender === "female"}
-                            onChange={this.handleGenderChange}
-                          />
-                          {this.state.lang.female}
-                        </label>
+                          <label id="female_radio" test-id="femaleRadioLabel">
+                            <input
+                              test-id="femaleRadio"
+                              type="radio"
+                              value="female"
+                              checked={this.state.gender === "female"}
+                              onChange={this.handleGenderChange}
+                            />
+                            {this.state.lang.female}
+                          </label>
 
-                        <label id="nb_radio" test-id="nonBinaryRadioLabel">
-                          <input
-                            test-id="nonBinaryRadio"
-                            type="radio"
-                            value="nonbinary"
-                            checked={this.state.gender === "nonbinary"}
-                            onChange={this.handleGenderChange}
-                          />
-                          {this.state.lang.nonbinary}
-                        </label>
-                      </div>
+                          <label id="nb_radio" test-id="nonBinaryRadioLabel">
+                            <input
+                              test-id="nonBinaryRadio"
+                              type="radio"
+                              value="nonbinary"
+                              checked={this.state.gender === "nonbinary"}
+                              onChange={this.handleGenderChange}
+                            />
+                            {this.state.lang.nonbinary}
+                          </label>
+                        </div>
 
-                      {/* <label id="trans_radio">
+                        {/* <label id="trans_radio">
                       <input type="radio" value="transgender" checked={this.state.gender == 'transgender'} onChange={this.handleGenderChange} />
                       {this.state.lang.transgender}
                     </label> */}
-                      {/*this.state.user === 'provider' || null ?
+                        {/*this.state.user === 'provider' || null ?
                       (<label>
                         <input type="radio" value="all_genders" checked={this.state.gender == 'all_genders'} onChange={this.handleGenderChange} />
                           {this.state.lang.all_genders}
                       </label>) : (<label></label>)
                       */}
-                    </div>
-                    {/* {Are you a Transgender} */}
-                    {/* {Are you a Transgender} */}
-                    <div
-                      id="TgenderSelector"
-                      className="radio"
-                      test-id="tGenderSelectRoot"
-                    >
-                      <div className="Tgender_mod">
-                        <strong> {this.state.lang.Tgender_selector}</strong>
-                        <button
-                          test-id="tGenderSelectHelp"
-                          className="button button24"
-                          onClick={this.helpClicked2}
-                        >
-                          ?
-                        </button>
                       </div>
-                      <div className="radio-flex-container">
-                        <label id="birth_male_mod" test-id="birthMaleLabel">
-                          <input
-                            type="radio"
-                            test-id="birthMale"
-                            value="tf"
-                            checked={this.state.Tgender === "tf"}
-                            onChange={this.handleTransGenderChange}
-                          />
-                          {this.state.lang.tf}
-                        </label>
+                      {/* {Are you a Transgender} */}
+                      {/* {Are you a Transgender} */}
+                      <div
+                        id="TgenderSelector"
+                        className="radio"
+                        test-id="tGenderSelectRoot"
+                      >
+                        <div className="Tgender_mod">
+                          <strong> {this.state.lang.Tgender_selector}</strong>
+                          <button
+                            test-id="tGenderSelectHelp"
+                            className="button button24"
+                            onClick={this.helpClicked2}
+                          >
+                            ?
+                          </button>
+                        </div>
+                        <div className="radio-flex-container">
+                          <label id="birth_male_mod" test-id="birthMaleLabel">
+                            <input
+                              type="radio"
+                              test-id="birthMale"
+                              value="tf"
+                              checked={this.state.Tgender === "tf"}
+                              onChange={this.handleTransGenderChange}
+                            />
+                            {this.state.lang.tf}
+                          </label>
 
-                        <label id="female_male_mod" test-id="birthfemaleLabel">
-                          <input
-                            test-id="birthFemale"
-                            type="radio"
-                            value="tm"
-                            checked={this.state.Tgender === "tm"}
-                            onChange={this.handleTransGenderChange}
-                          />
-                          {this.state.lang.tm}
-                        </label>
+                          <label id="female_male_mod" test-id="birthfemaleLabel">
+                            <input
+                              test-id="birthFemale"
+                              type="radio"
+                              value="tm"
+                              checked={this.state.Tgender === "tm"}
+                              onChange={this.handleTransGenderChange}
+                            />
+                            {this.state.lang.tm}
+                          </label>
+                        </div>
+
                       </div>
-
-                    </div>
-                    <label
-                      id="help"
-                      className="checkAge"
-                      test-id="noValueError"
-                    >
-                      <h5>{this.state.lang.ageandgender_help}</h5>
-                    </label>
-                    <label id="agehelp" className="checkAge" test-id="ageError">
-                      <h5>{this.state.lang.age_help}</h5>
-                    </label>
-                    {/*Field selection based on gender*/}
-                    {/*select user*/}
+                      <label
+                        id="help"
+                        className="checkAge"
+                        test-id="noValueError"
+                      >
+                        <h5>{this.state.lang.ageandgender_help}</h5>
+                      </label>
+                      <label id="agehelp" className="checkAge" test-id="ageError">
+                        <h5>{this.state.lang.age_help}</h5>
+                      </label>
+                      {/*Field selection based on gender*/}
+                      {/*select user*/}
                       <div className="radio">
                         <form test-id="userForm">
                           <p id="user_mod">{this.state.lang.user_selector}</p>
@@ -1206,21 +1212,21 @@ class App extends Component {
                       </div>
 
 
-                    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                      <Button
-                        variant="secondary"
-                        test-id="okButtonBottom"
-                        id="agree"
-                        onClick={this.toggleIntrutionModal}
-                      >
-                        {this.state.lang.config_modal_agree}
-                      </Button>
-                    </div>
+                      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                        <Button
+                          variant="secondary"
+                          test-id="okButtonBottom"
+                          id="agree"
+                          onClick={this.toggleIntrutionModal}
+                        >
+                          {this.state.lang.config_modal_agree}
+                        </Button>
+                      </div>
 
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
             </div >,
           ];
 
