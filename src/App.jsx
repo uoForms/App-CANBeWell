@@ -230,6 +230,7 @@ class App extends Component {
   //Trangender Intruction modal
   toggleIntrutionModal = () => {
     //Applying istransgender flag
+   
     if (this.state.isTransgender) {
       var genders = [
         "male",
@@ -334,18 +335,29 @@ class App extends Component {
 
   genderIconClicked = () => {
     this.setState({
-      configurationIsOpen: !this.state.configurationIsOpen,
       headerText: this.state.lang.configuration_header,
       buttonText: this.state.lang.config_modal_agree,
+      instructionIsOpen: true,
     });
   };
 
 
 
-  changeGetStartedFormID = () => {
-    this.setState((prevState) => ({
-      getStartedFormID: prevState.getStartedFormID === 0 ? 1 : 0,
-    }));
+  changeGetStartedFormID = (direction) => {
+    if (direction === 'forward') {
+      this.setState((prevState) => ({
+        getStartedFormID: prevState.getStartedFormID + 1,
+      }));
+    } else if (direction === 'back') {
+      this.setState((prevState) => ({
+        getStartedFormID: prevState.getStartedFormID - 1,
+      }));
+    } else if (direction === 'close') {
+      // Close the form when on "Details" by setting getStartedFormID to -1
+      this.setState({
+        instructionIsOpen: false,
+      });
+    }
   };
 
 
@@ -933,7 +945,7 @@ class App extends Component {
                       variant="secondary"
                       test-id="okButtonBottom"
                       id="agree"
-                      onClick={this.changeGetStartedFormID}
+                      onClick={() => this.changeGetStartedFormID('forward')}
                     >
                       {this.state.lang.agree}
                     </Button>
@@ -944,7 +956,7 @@ class App extends Component {
           ];
 
         }
-      } else if (this.state.getStartedFormID === 1) {
+      } else {
 
         if (this.state.instructionIsOpen) {
           //Transgender Instruction modal
@@ -962,7 +974,7 @@ class App extends Component {
                       <FaArrowLeft
                         size={24}
                         className="icon-brand-color"
-                        onClick={this.changeGetStartedFormID}
+                        onClick={this.state.getStartedFormID === 1 ? () => this.changeGetStartedFormID('back') : 'close'}
                       />
                     </div>
                     <div
@@ -980,10 +992,6 @@ class App extends Component {
                       {this.state.lang.instruction_modal_header}
                     </div>
                   </div>
-
-
-
-
                   <div className="content">
                     <div style={{
                       "font-family": "Inter",
@@ -1015,36 +1023,6 @@ class App extends Component {
                               </option>
                             ))}
                           </select>
-                          {/* <input
-                          test-id="ageInput"
-                          id="abc"
-                          type="text"
-                          value={
-                            this.state.age == "all ages"
-                              ? this.state.lang.all_ages
-                              : this.state.age
-                          }
-                          onChange={this.handleChange}
-                          disabled={this.state.allAgesSelected}
-                          placeholder={
-                            this.state.lang.age_selector_place_holder
-                          }
-                          onKeyPress={(e) => {
-                            if (e.key === "Enter") e.preventDefault();
-                          }}
-                        />
-                        
-                          <select
-                            id="age"
-                            value={this.state.age}
-                            onChange={this.handleAllAgesSelected}
-                          >
-                            {ages.map((age) => (
-                              <option key={age} value={age}>
-                                {age}
-                              </option>
-                            ))}
-                          </select>*/}
                           <label
                             style={allagescheckboxStyle}
                             test-id="allAgeCheckboxLabel"
@@ -1115,19 +1093,7 @@ class App extends Component {
                             {this.state.lang.nonbinary}
                           </label>
                         </div>
-
-                        {/* <label id="trans_radio">
-                      <input type="radio" value="transgender" checked={this.state.gender == 'transgender'} onChange={this.handleGenderChange} />
-                      {this.state.lang.transgender}
-                    </label> */}
-                        {/*this.state.user === 'provider' || null ?
-                      (<label>
-                        <input type="radio" value="all_genders" checked={this.state.gender == 'all_genders'} onChange={this.handleGenderChange} />
-                          {this.state.lang.all_genders}
-                      </label>) : (<label></label>)
-                      */}
                       </div>
-                      {/* {Are you a Transgender} */}
                       {/* {Are you a Transgender} */}
                       <div
                         id="TgenderSelector"
@@ -1216,7 +1182,7 @@ class App extends Component {
                           variant="secondary"
                           test-id="okButtonBottom"
                           id="agree"
-                          onClick={this.toggleIntrutionModal}
+                          onClick={() => { this.setState({ getStartedFormID: 2 }); this.toggleIntrutionModal(); }}
                         >
                           {this.state.lang.config_modal_agree}
                         </Button>
@@ -1231,695 +1197,8 @@ class App extends Component {
 
         }
       }
-    } else {
-      //Master Choose box
-      if (this.state.instructionIsOpen) {
-        //Master Instruction modal
-
-        instructionModal = [
-          <div key="1" className="backdrop" style={backdropStyle}>
-            <div className="myModal" style={myModalStyle}>
-              <div className="footer">
-                <div className="row m-0 d-flex align-items-center">
-                  <div className="col-4 p-0 text-left">
-                    <FaArrowLeft
-                      size={24}
-                      className="icon-brand-color"
-                      onClick={this.props.setAppLanguage}
-                    />
-                  </div>
-                  <div
-                    className="col-4 p-0 text-center font-subHeading font-weight-bold"
-                    test-id="header"
-                  >
-                    {this.state.lang.instruction_modal_header}
-                  </div>
-                </div>
-
-                {/*select user*/}
-                <div className="radio">
-                  <form>
-                    {this.state.lang.user_selector}
-                    <label>
-                      <input
-                        type="radio"
-                        value="patient"
-                        checked={this.state.user === "patient"}
-                        onChange={this.handlePatientProviderChange}
-                      />
-                      {this.state.lang.patient}
-                    </label>
-                    <label>
-                      <input
-                        type="radio"
-                        value="provider"
-                        checked={this.state.user === "provider"}
-                        onChange={this.handlePatientProviderChange}
-                      />
-                      {this.state.lang.provider}
-                    </label>
-                  </form>
-                </div>
-                {/*select gender*/}
-                <div>
-                  <form>
-                    <div id="genderSelector" className="radio">
-                      {this.state.lang.gender_selector}
-                      <label>
-                        <input
-                          type="radio"
-                          value="male"
-                          checked={this.state.gender == "male"}
-                          onChange={this.handleGenderChange}
-                        />
-                        {this.state.lang.male}
-                      </label>
-                      <label>
-                        <input
-                          type="radio"
-                          value="female"
-                          checked={this.state.gender == "female"}
-                          onChange={this.handleGenderChange}
-                        />
-                        {this.state.lang.female}
-                      </label>
-                      {/*this.state.user === 'provider' || null ?
-                  (<label>
-                    <input type="radio" value="all_genders" checked={this.state.gender == 'all_genders'} onChange={this.handleGenderChange} />
-                      {this.state.lang.all_genders}
-                  </label>) : (<label></label>)
-                */}
-                    </div>
-                  </form>
-                </div>
-                {/*select age*/}
-                <div>
-                  <form>
-                    <div>
-                      {this.state.lang.age_selector}
-                      <input
-                        id="abc"
-                        type="text"
-                        style="width=5px"
-                        value={
-                          this.state.age == "all ages"
-                            ? this.state.lang.all_ages
-                            : this.state.age
-                        }
-                        onChange={this.handleChange}
-                        disabled={this.state.allAgesSelected}
-                        placeholder={this.state.lang.age_selector_place_holder}
-                        onKeyPress={(e) => {
-                          if (e.key === "Enter") e.preventDefault();
-                        }}
-                      />
-                      <label style={allagescheckboxStyle}>
-                        <input
-                          id="myCheck"
-                          type="checkbox"
-                          checked={this.state.allAgesSelected}
-                          onChange={this.handleAllAgesSelected}
-                        />
-                        {this.state.lang.all_ages}
-                      </label>
-                      <label id="help" className="checkAge">
-                        <h5>{this.state.lang.age_help}</h5>
-                      </label>
-                    </div>
-                  </form>
-                </div>
-
-                <div className="termsOfUse" style={termsOfUseStyle}>
-                  <b>{this.state.lang.disclaimer_header}</b>
-
-                  <div style={myDisclaimerStyle}>
-                    <p>
-                      <div
-                        dangerouslySetInnerHTML={{
-                          __html: DOMPurify.sanitize(
-                            this.state.lang.disclaimerBeforeTermsOfUse
-                          ),
-                        }}
-                      ></div>
-                      <div
-                        className="underlineTextTermsOfUse"
-                        style={underlineTextTermsOfUse}
-                      >
-                        {this.state.lang.accpetanceheading}
-                      </div>
-                      <div
-                        dangerouslySetInnerHTML={{
-                          __html: DOMPurify.sanitize(
-                            this.state.lang.acceptanceInitialStatement
-                          ),
-                        }}
-                      ></div>
-                      <div
-                        dangerouslySetInnerHTML={{
-                          __html: DOMPurify.sanitize(
-                            this.state.lang.acceptanceAgreeStatement
-                          ),
-                        }}
-                      ></div>
-
-                      <div>{this.state.lang.acceptanceText}</div>
-                      <div
-                        className="underlineTextTermsOfUse"
-                        style={underlineTextTermsOfUse}
-                      >
-                        {this.state.lang.modificationHeading}
-                      </div>
-                      <div>{this.state.lang.modificationText1}</div>
-                      <div>{this.state.lang.modificationText2}</div>
-
-                      <div
-                        className="underlineTextTermsOfUse"
-                        style={underlineTextTermsOfUse}
-                      >
-                        {this.state.lang.websiteContentSpecificationHeading}
-                      </div>
-                      <div
-                        dangerouslySetInnerHTML={{
-                          __html: DOMPurify.sanitize(
-                            this.state.lang.websiteContentSpecificationText
-                          ),
-                        }}
-                      ></div>
-
-                      <div
-                        className="underlineTextTermsOfUse"
-                        style={underlineTextTermsOfUse}
-                      >
-                        {this.state.lang.websiteSecurityHeading}
-                      </div>
-                      <div>{this.state.lang.websiteSecurityText1}</div>
-                      <div>{this.state.lang.websiteSecurityText2}</div>
-
-                      <div
-                        className="underlineTextTermsOfUse"
-                        style={underlineTextTermsOfUse}
-                      >
-                        {this.state.lang.rightsAndOwnershipHeading}
-                      </div>
-                      <div>{this.state.lang.rightsAndOwnershipText1}</div>
-                      <div>{this.state.lang.rightsAndOwnershipText2}</div>
-                      <div>{this.state.lang.rightsAndOwnershipText3}</div>
-                      <div>{this.state.lang.rightsAndOwnershipText4}</div>
-                      <div>{this.state.lang.rightsAndOwnershipText5}</div>
-                      <div>{this.state.lang.rightsAndOwnershipText6}</div>
-                      <div>{this.state.lang.rightsAndOwnershipText7}</div>
-
-                      <div
-                        className="underlineTextTermsOfUse"
-                        style={underlineTextTermsOfUse}
-                      >
-                        {this.state.lang.conditionsHeading}
-                      </div>
-                      <div>{this.state.lang.conditionsText}</div>
-
-                      <div
-                        className="underlineTextTermsOfUse"
-                        style={underlineTextTermsOfUse}
-                      >
-                        {this.state.lang.legalActionsHeading}
-                      </div>
-                      <div>{this.state.lang.legalActionsText}</div>
-
-                      <div
-                        className="underlineTextTermsOfUse"
-                        style={underlineTextTermsOfUse}
-                      >
-                        {this.state.lang.cookiesHeading}
-                      </div>
-                      <div>{this.state.lang.cookiesText}</div>
-
-                      <div
-                        className="underlineTextTermsOfUse"
-                        style={underlineTextTermsOfUse}
-                      >
-                        {this.state.lang.thirdPartyWebHeading}
-                      </div>
-                      <div>{this.state.lang.thirdPartyWebText}</div>
-
-                      <div
-                        className="underlineTextTermsOfUse"
-                        style={underlineTextTermsOfUse}
-                      >
-                        {this.state.lang.geographicRestricationsHeading}
-                      </div>
-                      <div
-                        dangerouslySetInnerHTML={{
-                          __html: DOMPurify.sanitize(
-                            this.state.lang.geographicRestricationsText
-                          ),
-                        }}
-                      ></div>
-
-                      <div
-                        className="underlineTextTermsOfUse"
-                        style={underlineTextTermsOfUse}
-                      >
-                        {this.state.lang.noRelianceHeading}
-                      </div>
-                      <div>{this.state.lang.noRelianceText1}</div>
-                      <div>{this.state.lang.noRelianceText2}</div>
-                      <div>{this.state.lang.noRelianceText3}</div>
-
-                      <div
-                        className="underlineTextTermsOfUse"
-                        style={underlineTextTermsOfUse}
-                      >
-                        {this.state.lang.disclaimerWarrantiesHeading}
-                      </div>
-                      <div
-                        dangerouslySetInnerHTML={{
-                          __html: DOMPurify.sanitize(
-                            this.state.lang.disclaimerWarrantiesText1
-                          ),
-                        }}
-                      ></div>
-                      <div>{this.state.lang.disclaimerWarrantiesText2}</div>
-
-                      <div
-                        className="underlineTextTermsOfUse"
-                        style={underlineTextTermsOfUse}
-                      >
-                        {this.state.lang.limitationHeading}
-                      </div>
-                      <div>{this.state.lang.limitationText}</div>
-
-                      <div
-                        className="underlineTextTermsOfUse"
-                        style={underlineTextTermsOfUse}
-                      >
-                        {this.state.lang.indemnificationHeading}
-                      </div>
-                      <div>{this.state.lang.indemnificationText}</div>
-
-                      <div
-                        className="underlineTextTermsOfUse"
-                        style={underlineTextTermsOfUse}
-                      >
-                        {this.state.lang.lawAndJurisdictionHeading}
-                      </div>
-                      <div>{this.state.lang.lawAndJurisdictionText1}</div>
-                      <div>{this.state.lang.lawAndJurisdictionText2}</div>
-
-                      <div
-                        className="underlineTextTermsOfUse"
-                        style={underlineTextTermsOfUse}
-                      >
-                        {this.state.lang.entireAgreementHeading}
-                      </div>
-                      <div>{this.state.lang.entireAgreementText}</div>
-
-                      <div>{this.state.lang.dateofAgreement}</div>
-                    </p>
-                  </div>
-                </div>
-                <div>
-                  <button
-                    id="agree"
-                    className="buttonAgreeToTerms"
-                    onClick={this.toggleIntrutionModal}
-                  >
-                    {this.state.lang.agree}
-                  </button>
-                  {/* <button onClick={this.goBack} type="button">{this.state.lang.disagree}</button> */}
-                </div>
-              </div>
-            </div>
-          </div>,
-        ];
-      }
-    }
-
-    //Applying the isTransgender flag for second choose box
-    if (this.state.isTransgender) {
-      if (this.state.configurationIsOpen == true) {
-        //Transgender configuration modal
-        configurationModal = [
-          <div
-            key="2"
-            className="backdrop"
-            test-id="PostConfigUpdateModalBackdrop"
-          >
-            <div className="myModal" test-id="PostConfigUpdateModalRoot">
-              <div>
-                <div className="row m-0 d-flex align-items-center">
-                  <div className="col-1 p-0 text-left">
-                    <FaArrowLeft
-                      size={24}
-                      className="icon-brand-color"
-                      onClick={() =>
-                        this.setState({
-                          configurationIsOpen: !this.state.configurationIsOpen,
-                        })
-                      }
-                    />
-                  </div>
-                  <div className="col-11 p-0 text-center" style={{
-                    // "font-family": "Inter",
-                    "font-size": "17px",
-                    "font-weight": "700",
-                    "line-height": "29px",
-                    "letter-spacing": "0em",
-                    "text-align": "left",
-                  }} test-id="header">
-                    {this.state.lang.instruction_modal_header}
-                  </div>
-                </div>
-                <div className="myModalBody" style={{ padding: "10px" }}>
-                  <div style={{
-                    "font-family": "Inter",
-                    "font-size": "14px",
-                    "font-weight": "400",
-                    "line-height": "20px",
-                    "letter-spacing": "0em",
-                    "text-align": "left",
-                    "margin-bottom": "1rem",
-                  }}>
-                    {this.state.lang.header_description}
-                  </div>
-
-                  {/*select age*/}
-                  <div>
-                    <form test-id="ageForm">
-                      <div>
-                        {this.state.lang.age_selector}
-
-                        <select
-                          id="abc"
-                          name="age"
-                          test-id="ageInput"
-                          value={this.state.age}
-                          onChange={this.handleChange}
-                        >
-                          {ages.map((age, i) => (
-                            <option key={i} value={age}>
-                              {age}
-                            </option>
-                          ))}
-                        </select>
-                        <label
-                          style={allagescheckboxStyle}
-                          test-id="allAgeCheckboxLabel"
-                        >
-                          <input
-                            test-id="allAgeCheckbox"
-                            id="check"
-                            type="checkbox"
-                            checked={this.state.allAgesSelected}
-                            onChange={this.handleAllAgesSelected}
-                          />{" "}
-                          {this.state.lang.all_ages}
-                        </label>
-                      </div>
-                    </form>
-                  </div>
-
-                  <div>
-                    <div
-                      id="genderSelector"
-                      className="radio"
-                      test-id="genderSelectRoot"
-                    >
-                      {this.state.lang.gender_selector}
-                      <strong>
-                        <button
-                          test-id="genderSelectHelp"
-                          className="button button22"
-                          onClick={this.helpClicked}
-                        >
-                          ?
-                        </button>
-                      </strong>
-                      <div className="radio-flex-container">
-                        <label id="male_radio" test-id="maleRadioLabel">
-                          <input
-                            test-id="maleRadio"
-                            type="radio"
-                            value="male"
-                            checked={this.state.gender == "male"}
-                            onChange={this.handleGenderChange}
-                          />
-                          {this.state.lang.male}
-                        </label>
-                        <label id="female_radio" test-id="femaleRadioLabel">
-                          <input
-                            test-id="femaleRadio"
-                            type="radio"
-                            value="female"
-                            checked={this.state.gender == "female"}
-                            onChange={this.handleGenderChange}
-                          />
-                          {this.state.lang.female}
-                        </label>
-                        <label test-id="nonBinaryRadioLabel">
-                          <input
-                            test-id="nonBinaryRadio"
-                            type="radio"
-                            value="nonbinary"
-                            checked={this.state.gender == "nonbinary"}
-                            onChange={this.handleGenderChange}
-                          />
-                          {this.state.lang.nonbinary}
-                        </label>
-                      </div>
-                      {/* <label>
-                      <input type="radio" value="transgender" checked={this.state.gender == 'transgender'} onChange={this.handleGenderChange} />
-                      {this.state.lang.transgender}
-                    </label> */}
-                      {/*this.state.user === 'provider' || null ?
-                      (<label>
-                        <input type="radio" value="all_genders" checked={this.state.gender == 'all_genders'} onChange={this.handleGenderChange} />
-                          {this.state.lang.all_genders}
-                      </label>) : (<label></label>)
-                      */}
-                    </div>
-                    {/* {Are you a Transgender} */}
-                    <div
-                      id="TgenderSelector"
-                      className="radio"
-                      test-id="tGenderSelectRoot"
-                    >
-                      {this.state.lang.Tgender_selector}
-                      <strong>
-                        <button
-                          test-id="tGenderSelectHelp"
-                          className="button button25"
-                          onClick={this.helpClicked2}
-                        >
-                          ?
-                        </button>
-                      </strong>
-                      <div className="radio-flex-container">
-                        <label id="birth_male_mod" test-id="birthMaleLabel">
-                          <input
-                            test-id="birthMale"
-                            type="radio"
-                            value="tf"
-                            checked={this.state.Tgender == "tf"}
-                            onChange={this.handleTransGenderChange}
-                          />
-                          {this.state.lang.tf}
-                        </label>
-                        <label id="female_male_mod" test-id="birthfemaleLabel">
-                          <input
-                            test-id="birthFemale"
-                            type="radio"
-                            value="tm"
-                            checked={this.state.Tgender == "tm"}
-                            onChange={this.handleTransGenderChange}
-                          />
-                          {this.state.lang.tm}
-                        </label>
-                      </div>
-                    </div>
-                    <label
-                      id="config_agehelp"
-                      className="checkAge"
-                      test-id="ageError"
-                    >
-                      <h5>{this.state.lang.age_help}</h5>
-                    </label>
-                  </div>
-                  {/*close button*/}
-                  <div className="radio">
-                    <form test-id="userForm">
-                      <p id="user_mod">{this.state.lang.user_selector}</p>
-                      <div className="radio-flex-container">
-                        <label test-id="patientLabel">
-                          <input
-                            test-id="patientRadio"
-                            type="radio"
-                            value="patient"
-                            checked={this.state.user === "patient"}
-                            onChange={this.handlePatientProviderChangeFromConfig}
-                          />
-                          {this.state.lang.patient}
-                        </label>
-
-                        <label test-id="providerLabel">
-                          <input
-                            test-id="providerRadio"
-                            type="radio"
-                            value="provider"
-                            checked={this.state.user === "provider"}
-                            onChange={this.handlePatientProviderChangeFromConfig}
-                          />
-                          {this.state.lang.provider}
-                        </label>
-                      </div>
-                    </form>
-                  </div>
-                  <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                    <Button
-                      variant="secondary"
-                      onClick={this.toggleConfigurationModal}
-                      test-id="okButton"
-                    >
-                      {this.state.lang.config_modal_agree}
-                    </Button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>,
-        ];
-      }
-    } else {
-      if (this.state.configurationIsOpen == true) {
-        //Master Configuration modal
-        configurationModal = [
-          <div key="2" className="backdrop">
-            <div className="myModal">
-              <div>
-                <div className="row m-0 d-flex align-items-center">
-                  <div className="col-4 p-0 text-left">
-                    <FaArrowLeft
-                      size={24}
-                      className="icon-brand-color"
-                      onClick={() =>
-                        this.setState({
-                          configurationIsOpen: !this.state.configurationIsOpen,
-                        })
-                      }
-                    />
-                  </div>
-                  <div className="col-4 p-0 text-center font-subHeading font-weight-bold">
-                    <strong>{this.state.lang.configuration_header} </strong>
-                  </div>
-                </div>
-                <div className="myModalBody">
-                  <div className="radio">
-                    <form>
-                      {this.state.lang.user_selector}
-                      <label>
-                        <input
-                          type="radio"
-                          value="patient"
-                          checked={this.state.user === "patient"}
-                          onChange={this.handlePatientProviderChangeFromConfig}
-                        />
-                        {this.state.lang.patient}
-                      </label>
-                      <label>
-                        <input
-                          type="radio"
-                          value="provider"
-                          checked={this.state.user === "provider"}
-                          onChange={this.handlePatientProviderChangeFromConfig}
-                        />
-                        {this.state.lang.provider}
-                      </label>
-                    </form>
-                  </div>
-
-                  <div>
-                    <form>
-                      <div id="genderSelector" className="radio, test">
-                        {this.state.lang.gender_selector}
-                        <label>
-                          <input
-                            type="radio"
-                            value="male"
-                            checked={this.state.gender == "male"}
-                            onChange={this.handleGenderChange}
-                          />
-                          {this.state.lang.male}
-                        </label>
-
-                        <label>
-                          <input
-                            type="radio"
-                            value="female"
-                            checked={this.state.gender == "female"}
-                            onChange={this.handleGenderChange}
-                          />
-                          {this.state.lang.female}
-                        </label>
-
-                        {/*this.state.user === 'provider' || null ?
-                        (<label>
-                          <input type="radio" value="all_genders" checked={this.state.gender == 'all_genders'} onChange={this.handleGenderChange} />
-                            {this.state.lang.all_genders}
-                        </label>) : (<label></label>)
-                        */}
-                      </div>
-                    </form>
-                  </div>
-                  {/*select age*/}
-                  <div>
-                    <form>
-                      <div>
-                        {this.state.lang.age_selector}
-                        <input
-                          id="abc"
-                          type="text"
-                          value={
-                            this.state.age == "all ages"
-                              ? this.state.lang.all_ages
-                              : this.state.age
-                          }
-                          onChange={this.handleChange}
-                          disabled={this.state.allAgesSelected}
-                          placeholder={
-                            this.state.lang.age_selector_place_holder
-                          }
-                          onKeyPress={(e) => {
-                            if (e.key === "Enter") e.preventDefault();
-                          }}
-                        />
-                        <label style={allagescheckboxStyle}>
-                          <input
-                            id="check"
-                            type="checkbox"
-                            checked={this.state.allAgesSelected}
-                            onChange={this.handleAllAgesSelected}
-                          />
-                          {this.state.lang.all_ages}
-                        </label>
-                        <label id="config_help" className="checkAge">
-                          <h5>{this.state.lang.age_help}</h5>
-                        </label>
-                      </div>
-                    </form>
-                  </div>
-                  {/*close button*/}
-                  <div className="myModalButton">
-                    <button onClick={this.toggleConfigurationModal}>
-                      {this.state.lang.config_modal_agree}
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>,
-        ];
-      }
-    }
-
+    } 
+   
     return (
       <div test-info-locale={this.state.language}>
         {/*this is your header tab*/}
@@ -1983,7 +1262,6 @@ class App extends Component {
               {this.state.age == "all ages"
                 ? this.state.lang.all_ages
                 : this.state.age}
-              {/*this.state.lang.display_age*/}
             </Button>
           </div>
         </div>
@@ -2030,12 +1308,7 @@ class App extends Component {
           ></Topics>
         </div>
 
-        {/* <button style={fixedStyle}>
-          <img id="genderIcon" src={IconGender} className="drop-down" alt="IconGender" onClick={this.genderIconClicked} width="75" height="75" />
-        </button> */}
-        {/*modals*/}
         <div>{instructionModal}</div>
-        <div>{configurationModal}</div>
 
         <MyModal
           show={this.state.isOpen}
@@ -2046,11 +1319,6 @@ class App extends Component {
           lang={this.state.lang}
         ></MyModal>
 
-        {/*<InstructionModal show={this.state.instructionIsOpen}
-          onClose={this.toggleIntrutionModal}
-          onSelectLang ={this.selectLanguage}
-          lang = {this.state.lang}>
-        </InstructionModal>*/}
       </div>
     );
   }
