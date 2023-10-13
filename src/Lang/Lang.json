@@ -136,7 +136,7 @@
     "clickOn_Text": "Click on blue button below"
   },
   "french":{
-      "instruction_modal_header": "Please input details below to receive customized preventive health information:",
+      "instruction_modal_header": "Veuillez saisir les informations ci-dessous pour recevoir des conseils personnalisés pour rester en santé.",
       "config_modal_Gender_help_header": "Plus d'information",
       "config_modal_SexAtBirth_help_header": "Plus d'information",
       "config_modal_Gender_help_body": "L'identité de genre est le sentiment interne d'une personne d'être femme, homme, les deux ou aucun des deux. Les personnes transgenres (« trans ») sont des personnes dont l'identité de genre diffère du genre qui leur a été assigné à la naissance. Par exemple, une femme trans peut avoir été assignée « garçon » à la naissance mais s'identifie comme, et est réellement, une femme. Les personnes non binaires sont des personnes dont l'identité de genre n'est pas uniquement masculine ou féminine; elles peuvent s'identifier comme ayant plusieurs genres, ayant un genre qui mélange des éléments masculins et féminins, n'ayant pas de genre du tout, ou passant d'un genre à l'autre à travers le temps. Les personnes qui ne sont pas trans sont dites cisgenres (« cis »).",
@@ -150,7 +150,7 @@
       "providerDisclaimer": "Les informations médicales contenues dans cette application sont fournies à titre d'information seulement aux professionnels de la santé. Cette application et les informations qu'elle contient peuvent compléter, mais ne doivent pas remplacer, le jugement clinique d'un professionnel de la santé qualifié. Par conséquence, l’application et son contenu ne doivent pas être utilisés pour le diagnostic ou le traitement.",
       "important": "L'application et tout le contenu sont protégés par les droits d'auteur. Vous n'êtes pas autorisé de copier, partager ou distribuer l’application ou son contenu. Aucune partie de l'application ne peut être utilisée pour la vente.",
       "user_selector": "Je suis un",
-      "patient": "Membre du public",
+      "patient": "Public",
       "provider": "Professionnel de la santé",
       "gender_selector": "Genre: ",
       "Tgender_selector": "Sexe attribué à la naissance: ",
