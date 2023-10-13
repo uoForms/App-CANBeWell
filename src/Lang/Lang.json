@@ -136,7 +136,7 @@
     "clickOn_Text": "Click on blue button below"
   },
   "french":{
-      "instruction_modal_header": "Veuillez saisir les informations ci-dessous pour recevoir des conseils personnalisés pour rester en santé.",
+      "instruction_modal_header": "Veuillez saisir les informations ci-dessous pour recevoir des conseils personnalisés pour rester en santé:",
       "config_modal_Gender_help_header": "Plus d'information",
       "config_modal_SexAtBirth_help_header": "Plus d'information",
       "config_modal_Gender_help_body": "L'identité de genre est le sentiment interne d'une personne d'être femme, homme, les deux ou aucun des deux. Les personnes transgenres (« trans ») sont des personnes dont l'identité de genre diffère du genre qui leur a été assigné à la naissance. Par exemple, une femme trans peut avoir été assignée « garçon » à la naissance mais s'identifie comme, et est réellement, une femme. Les personnes non binaires sont des personnes dont l'identité de genre n'est pas uniquement masculine ou féminine; elles peuvent s'identifier comme ayant plusieurs genres, ayant un genre qui mélange des éléments masculins et féminins, n'ayant pas de genre du tout, ou passant d'un genre à l'autre à travers le temps. Les personnes qui ne sont pas trans sont dites cisgenres (« cis »).",
