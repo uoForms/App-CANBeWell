@@ -48,8 +48,8 @@ import TransPancreas from '../assets/TransBody/trans_pancreas.png';
 import TransStomach from '../assets/TransBody/trans_stomach.png';
 
 //import TransGenital from '../assets/Icons/male_genital.png';
-//Import male/female
-import MaleFemale from '../assets/Male-Female/femManV1.png';
+//Use following import and variable to show image on starting page (behind the Choose form)
+// import MaleFemale from '../assets/Male-Female/(insert_name).png';
 
 //Import icons
 import brainIcon from '../assets/Icons/icon_brain.png';
@@ -723,7 +723,7 @@ class Anatomy extends React.Component {
                 return (
                     <div>
                         <div className="mainRunner">
-                            <img className="body" src={MaleFemale} alt="allGenders" />
+                            {/* <img className="body" src={MaleFemale} alt="allGenders" /> */}
                             {/*TODO find organs that fits the body*/}
                             {/*<img id="Aorta" className="organ" src={FemaleAorta} alt="Aorta" />
             <img id="Bowel" className="organ" src={FemaleBowel} alt="Bowel" />
@@ -822,7 +822,7 @@ class Anatomy extends React.Component {
                 return (
                     <div>
                         <div className="mainRunner">
-                            <img className="body" src={MaleFemale} alt="MaleFemale" />;
+                            {/* <img className="body" src={MaleFemale} alt="MaleFemale" />; */}
                         </div>
                     </div>
                 );
@@ -1027,7 +1027,7 @@ class Anatomy extends React.Component {
                 return (
                     <div>
                         <div className="mainRunner">
-                            <img className="body" src={MaleFemale} alt="allGenders" />
+                            {/* <img className="body" src={MaleFemale} alt="allGenders" /> */}
                             {/*TODO find organs that fits the body*/}
                             {/*<img id="Aorta" className="organ" src={FemaleAorta} alt="Aorta" />
           <img id="Bowel" className="organ" src={FemaleBowel} alt="Bowel" />
@@ -1124,7 +1124,7 @@ class Anatomy extends React.Component {
                 return (
                     <div>
                         <div className="mainRunner">
-                            <img className="body" src={MaleFemale} alt="MaleFemale" />;
+                            {/* <img className="body" src={MaleFemale} alt="MaleFemale" />; */}
                         </div>
                     </div>
                 );
