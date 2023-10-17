@@ -15,12 +15,12 @@ before_install:
 #Check for the JSON files for the content.
 - rm -r ./src/JSONFolder
 - mkdir ./src/JSONFolder
-- curl -L -o ./src/JSONFolder/HtmlTopic-EN.json "https://uottawa-my.sharepoint.com/personal/pnikb070_uottawa_ca/_layouts/15/download.aspx?docid=010006bc6cb5547048b392f4fa1ae051a&authkey=AVmdcowwOit9nySWiSSg7eg&e=FiAV4y"
-- curl -L -o ./src/JSONFolder/HtmlTopic-FR.json "https://uottawa-my.sharepoint.com/personal/pnikb070_uottawa_ca/_layouts/15/download.aspx?docid=09568807f5d30464c8ef83fe3a3166c14&authkey=AS-rPS1lzTN_tVa855I0hi8&e=ypWPRE"
-- curl -L -o ./src/JSONFolder/HtmlTest-FR.json "https://uottawa-my.sharepoint.com/personal/pnikb070_uottawa_ca/_layouts/15/download.aspx?docid=0751dcbe8ab3347fc8e5cc7e550f2d597&authkey=AZT33uDQJ1fqI2hlyAfnAyo&e=vTmm6t"
-- curl -L -o ./src/JSONFolder/HtmlTest-EN.json "https://uottawa-my.sharepoint.com/personal/pnikb070_uottawa_ca/_layouts/15/download.aspx?docid=094725481943d4baab3bfa4baa3a4c434&authkey=Aff7VvFS9N9WU6HiHnr1tQE&e=1uOVgZ"
-- curl -L -o ./src/JSONFolder/FilterTopic-EN.json "https://uottawa-my.sharepoint.com/personal/pnikb070_uottawa_ca/_layouts/15/download.aspx?docid=0a5c90dcbb7114d07931a8fdc86c9dc49&authkey=AXJaoTC6AD1Iwtv5wVUYEXI&e=InhYwg"
-- curl -L -o ./src/JSONFolder/FilterTopic-FR.json "https://uottawa-my.sharepoint.com/personal/pnikb070_uottawa_ca/_layouts/15/download.aspx?docid=055cb9381da974af5a3ec7361021c5954&authkey=AdKb0z-0e6Hubbb5voVYr1Q&e=Hrgtdw"
+- curl -L -o ./src/JSONFolder/HtmlTopic-EN.json "https://uottawa-my.sharepoint.com/personal/pnikb070_uottawa_ca/_layouts/15/guestaccess.aspx?share=EQGwcZcNR5VBi1-KUhetg1IBkf7gmt-xhyKZLOmNDrNzjQ&e=hVg61X"
+- curl -L -o ./src/JSONFolder/HtmlTopic-FR.json "https://uottawa-my.sharepoint.com/personal/pnikb070_uottawa_ca/_layouts/15/guestaccess.aspx?share=Ed3ws-SFtmhAgN8QMiggKQsBSDsfObvFLemvmaMkhJgmEg&e=J3B2z4"
+- curl -L -o ./src/JSONFolder/HtmlTest-FR.json "https://uottawa-my.sharepoint.com/personal/pnikb070_uottawa_ca/_layouts/15/guestaccess.aspx?share=EcVB_bR3i3dLt6OkaylUdwkBIpn8TPKa3KijYbdMw6XDxw&e=lwq6B0"
+- curl -L -o ./src/JSONFolder/HtmlTest-EN.json "https://uottawa-my.sharepoint.com/personal/pnikb070_uottawa_ca/_layouts/15/guestaccess.aspx?share=EZ5Pvqfwq-pPl2lpwqGzicAB9xz89vw98x45-GphBSmzvw&e=GhckmI"
+- curl -L -o ./src/JSONFolder/FilterTopic-EN.json "https://uottawa-my.sharepoint.com/personal/pnikb070_uottawa_ca/_layouts/15/guestaccess.aspx?share=EdYrDL1dSNNLgemgKUPEj4wBWPua8Orp-bNNCLxcJILa0A&e=c08Pon"
+- curl -L -o ./src/JSONFolder/FilterTopic-FR.json "https://uottawa-my.sharepoint.com/personal/pnikb070_uottawa_ca/_layouts/15/guestaccess.aspx?share=EdYrDL1dSNNLgemgKUPEj4wBWPua8Orp-bNNCLxcJILa0A&e=unUJWk"
 
 #install the dependencies (mentioned in yarn.lock file) with the right versions.
 install:
