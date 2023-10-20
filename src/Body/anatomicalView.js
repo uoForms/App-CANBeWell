@@ -16,7 +16,7 @@ import MaleLiver from '../assets/MaleBody/male_liver-01.png';
 import MaleLungs from '../assets/MaleBody/male_lungs-01.png';
 import MalePancreas from '../assets/MaleBody/male_pancreas-01.png';
 import MaleStomach from '../assets/MaleBody/male_stomach-01.png';
-import MaleGenitalia from '../assets/MaleBody/male_genitalia-01.png';
+// import MaleGenitalia from '../assets/MaleBody/male_genitalia-01.png';
 
 //Import Female PNG
 import Female from '../assets/FemaleBody/female_anatomy2.png';
@@ -32,7 +32,7 @@ import FemalePancreas from '../assets/FemaleBody/female_pancreas-01.png';
 import FemaleStomach from '../assets/FemaleBody/female_stomach-01.png';
 import FemaleUterus from '../assets/FemaleBody/female_uterus-01.png';
 import FemaleOvary from '../assets/FemaleBody/female_ovary.png';
-import FemaleGenitalia from '../assets/FemaleBody/female_genitalia-01.png';
+// import FemaleGenitalia from '../assets/FemaleBody/female_genitalia-01.png';
 
 //Import Trans and non-binary PNG
 import TransBody from '../assets/TransBody/trans_body.png';
@@ -58,10 +58,12 @@ import fallsIcon from '../assets/Icons/icon_falls.png';
 import immunizationIcon from '../assets/Icons/icon_immunization.png';
 import phyactIcon from '../assets/Icons/icon_physact.png';
 import sunExposureIcon from '../assets/Icons/icon_sunexposure.png';
-import transGenital from '../assets/TransBody/icon_trans.png';
 import covidIcon from '../assets/Icons/icon_covid_new.png';
+
+import transGenital from '../assets/TransBody/icon_trans.png';
 import FemaleGenital from '../assets/Icons/female_genital.png';
 import MaleGenital from '../assets/Icons/male_genital.png';
+
 import braingear from '../assets/Icons/icon_braingear.png';
 import moneyIcon from '../assets/Icons/icon_money_1.png';
 import sleepIcon from '../assets/Icons/icon_sleep_1.png';
@@ -209,7 +211,7 @@ class Anatomy extends React.Component {
                             {/*male body*/}
                             <img className="body" src={Male} alt="Male" test-id="maleBodyImg" />
                             {/*male organ*/}
-                            <img id="MaleGenitalia" className="organ" src={MaleGenitalia} alt="MaleGenitalia" />
+                            {/* <img id="MaleGenitalia" className="organ" src={MaleGenitalia} alt="MaleGenitalia" /> */}
                             <img id="MaleAorta" className="organ" src={MaleAorta} alt="MaleAorta" />
                             <img id="MaleBowel" className="organ" src={MaleBowel} alt="MaleBowel" />
                             <img id="MaleEyes" className="organ" src={MaleEyes} alt="MaleEyes" />
@@ -304,7 +306,7 @@ class Anatomy extends React.Component {
                     <div>
                         <div className="mainRunner">
                             <img className="body" src={Female} alt="Female" test-id="femaleBodyImg" />
-                            <img id="FemaleGenitalia" className="organ" src={FemaleGenitalia} alt="FemaleGenitalia" />
+                            {/* <img id="FemaleGenitalia" className="organ" src={FemaleGenitalia} alt="FemaleGenitalia" /> */}
                             <img id="FemaleAorta" className="organ" src={FemaleAorta} alt="FemaleAorta" />
                             <img id="FemaleBowel" className="organ" src={FemaleBowel} alt="FemaleBowel" />
                             <img id="FemaleBreast" className="organ" src={FemaleBreast} alt="FemaleBreast" />
@@ -836,7 +838,7 @@ class Anatomy extends React.Component {
                             {/*male body*/}
                             <img className="body" src={Male} alt="Male" />
                             {/*male organ*/}
-                            <img id="MaleGenitalia" className="organ" src={MaleGenitalia} alt="MaleGenitalia" />
+                            {/* <img id="MaleGenitalia" className="organ" src={MaleGenitalia} alt="MaleGenitalia" /> */}
                             <img id="MaleAorta" className="organ" src={MaleAorta} alt="MaleAorta" />
                             <img id="MaleBowel" className="organ" src={MaleBowel} alt="MaleBowel" />
                             <img id="MaleEyes" className="organ" src={MaleEyes} alt="MaleEyes" />
@@ -928,7 +930,7 @@ class Anatomy extends React.Component {
                     <div>
                         <div className="mainRunner">
                             <img className="body" src={Female} alt="Female" />
-                            <img id="FemaleGenitalia" className="organ" src={FemaleGenitalia} alt="FemaleGenitalia" />
+                            {/* <img id="FemaleGenitalia" className="organ" src={FemaleGenitalia} alt="FemaleGenitalia" /> */}
                             <img id="FemaleAorta" className="organ" src={FemaleAorta} alt="FemaleAorta" />
                             <img id="FemaleBowel" className="organ" src={FemaleBowel} alt="FemaleBowel" />
                             <img id="FemaleBreast" className="organ" src={FemaleBreast} alt="FemaleBreast" />
