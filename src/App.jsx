@@ -91,7 +91,7 @@ class App extends Component {
       showMe: true,
       isTransgender: isTransgender, //isTransgender -- Flag
       //allowToClose: false, //obselete! we use to make the user agree before they could press agree
-      getStartedFormID: 0
+      getStartedFormID: !cookies.get("_onboarded") ? 0 : 1,
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -136,7 +136,7 @@ class App extends Component {
       }
 
       // this.fieldSelectionDisplayHandle(this.state.gender);
-    } catch (err) { }
+    } catch (err) {}
 
     /// The following steps is to get clientID from google analytics and save it to cookies
     const { cookies } = this.props;
@@ -230,7 +230,7 @@ class App extends Component {
   //Trangender Intruction modal
   toggleIntrutionModal = () => {
     //Applying istransgender flag
-   
+
     if (this.state.isTransgender) {
       var genders = [
         "male",
@@ -341,25 +341,23 @@ class App extends Component {
     });
   };
 
-
-
   changeGetStartedFormID = (direction) => {
-    if (direction === 'forward') {
+    const { cookies } = this.props;
+    if (direction === "forward") {
       this.setState((prevState) => ({
         getStartedFormID: prevState.getStartedFormID + 1,
       }));
-    } else if (direction === 'back') {
+    } else if (direction === "back") {
       this.setState((prevState) => ({
         getStartedFormID: prevState.getStartedFormID - 1,
       }));
-    } else if (direction === 'close') {
+    } else if (direction === "close") {
       // Close the form when on "Details" by setting getStartedFormID to -1
       this.setState({
         instructionIsOpen: false,
       });
     }
   };
-
 
   goBack() {
     window.location.href = "./index.html"; //go back to canBeWell Logo
@@ -638,19 +636,18 @@ class App extends Component {
       fontFamily: "'Lato', 'Source Sans Pro', sans-serif",
       fontSize: "2rem",
       fontWeight: "bold",
-    }
+    };
     const termsOfUseText = {
-      fontFamily: "Calibri Light, sans-serif"
+      fontFamily: "Calibri Light, sans-serif",
     };
     const termsOfUseHead = {
-      fontSize: '14pt',
-      lineHeight: '115%',
-      fontFamily: 'Calibri Light, sans-serif',
-      fontWeight: 'bold',
-      margin: '10px 0',
-      color: '#1b55a4'
+      fontSize: "14pt",
+      lineHeight: "115%",
+      fontFamily: "Calibri Light, sans-serif",
+      fontWeight: "bold",
+      margin: "10px 0",
+      color: "#1b55a4",
     };
-
 
     const genderCss = {
       textAlign: "left",
@@ -696,11 +693,9 @@ class App extends Component {
     if (this.state.isTransgender) {
       //Transgender choose box
       if (this.state.getStartedFormID === 0) {
-
         if (this.state.instructionIsOpen) {
           //Transgender Instruction modal
           instructionModal = [
-
             <div key="1" className="backdrop" style={backdropStyle}>
               <div
                 className="myModal"
@@ -708,7 +703,14 @@ class App extends Component {
                 test-id="instructionModalRoot"
               >
                 <div className="instructionModalCss">
-                  <div className="row m-0 d-flex align-items-center" style={{ background: 'linear-gradient(to right, #1b55a4 1%, #1b63b0 46%, #1a7ec6 87%)', padding: '30px' }}>
+                  <div
+                    className="row m-0 d-flex align-items-center"
+                    style={{
+                      background:
+                        "linear-gradient(to right, #1b55a4 1%, #1b63b0 46%, #1a7ec6 87%)",
+                      padding: "30px",
+                    }}
+                  >
                     <div className="col-2 p-0 text-left" id="termsButton">
                       <FaArrowLeft
                         size={24}
@@ -717,19 +719,25 @@ class App extends Component {
                       />
                     </div>
 
-
-                    <div className="col-8 text-center" style={termsofUseLabel} test-id="termOfUseLabel">
+                    <div
+                      className="col-8 text-center"
+                      style={termsofUseLabel}
+                      test-id="termOfUseLabel"
+                    >
                       {this.state.lang.disclaimer_header}
                     </div>
 
                     <div className="col-2"></div>
                   </div>
 
-
-                  <div className="termsOfUse" style={{ "line-height": "normal" }}>
+                  <div
+                    className="termsOfUse"
+                    style={{ "line-height": "normal" }}
+                  >
                     <div style={myDisclaimerStyle} test-id="termOfUseContent">
                       <div>
-                        <div style={termsOfUseText}
+                        <div
+                          style={termsOfUseText}
                           dangerouslySetInnerHTML={{
                             __html: DOMPurify.sanitize(
                               this.state.lang.disclaimerBeforeTermsOfUse
@@ -742,7 +750,8 @@ class App extends Component {
                         >
                           {this.state.lang.accpetanceheading}
                         </div>
-                        <div style={termsOfUseText}
+                        <div
+                          style={termsOfUseText}
                           dangerouslySetInnerHTML={{
                             __html: DOMPurify.sanitize(
                               this.state.lang.acceptanceInitialStatement
@@ -750,7 +759,8 @@ class App extends Component {
                           }}
                         ></div>
                         <p></p>
-                        <div style={termsOfUseText}
+                        <div
+                          style={termsOfUseText}
                           dangerouslySetInnerHTML={{
                             __html: DOMPurify.sanitize(
                               this.state.lang.acceptanceAgreeStatement
@@ -758,16 +768,22 @@ class App extends Component {
                           }}
                         ></div>
                         <p></p>
-                        <div style={termsOfUseText}>{this.state.lang.acceptanceText}</div>
+                        <div style={termsOfUseText}>
+                          {this.state.lang.acceptanceText}
+                        </div>
                         <div
                           className="underlineTextTermsOfUse"
                           style={termsOfUseHead}
                         >
                           {this.state.lang.modificationHeading}
                         </div>
-                        <div style={termsOfUseText}>{this.state.lang.modificationText1}</div>
+                        <div style={termsOfUseText}>
+                          {this.state.lang.modificationText1}
+                        </div>
                         <p></p>
-                        <div style={termsOfUseText}>{this.state.lang.modificationText2}</div>
+                        <div style={termsOfUseText}>
+                          {this.state.lang.modificationText2}
+                        </div>
 
                         <div
                           className="underlineTextTermsOfUse"
@@ -775,7 +791,8 @@ class App extends Component {
                         >
                           {this.state.lang.websiteContentSpecificationHeading}
                         </div>
-                        <div style={termsOfUseText}
+                        <div
+                          style={termsOfUseText}
                           dangerouslySetInnerHTML={{
                             __html: DOMPurify.sanitize(
                               this.state.lang.websiteContentSpecificationText
@@ -789,7 +806,9 @@ class App extends Component {
                         >
                           {this.state.lang.websiteSecurityHeading}
                         </div>
-                        <div style={termsOfUseText}>{this.state.lang.websiteSecurityText1}</div>
+                        <div style={termsOfUseText}>
+                          {this.state.lang.websiteSecurityText1}
+                        </div>
                         <p></p>
                         <div
                           style={termsOfUseText}
@@ -797,7 +816,8 @@ class App extends Component {
                             __html: DOMPurify.sanitize(
                               this.state.lang.websiteSecurityText2
                             ),
-                          }}></div>
+                          }}
+                        ></div>
 
                         <div
                           className="underlineTextTermsOfUse"
@@ -805,9 +825,7 @@ class App extends Component {
                         >
                           {this.state.lang.rightsAndOwnershipHeading}
                         </div>
-                        <div
-                          style={termsOfUseText}
-                        >
+                        <div style={termsOfUseText}>
                           <div>{this.state.lang.rightsAndOwnershipText1}</div>
                           <p></p>
                           <div>{this.state.lang.rightsAndOwnershipText2}</div>
@@ -828,9 +846,9 @@ class App extends Component {
                         >
                           {this.state.lang.conditionsHeading}
                         </div>
-                        <div
-                          style={termsOfUseText}
-                        >{this.state.lang.conditionsText}</div>
+                        <div style={termsOfUseText}>
+                          {this.state.lang.conditionsText}
+                        </div>
 
                         <div
                           className="underlineTextTermsOfUse"
@@ -838,7 +856,9 @@ class App extends Component {
                         >
                           {this.state.lang.legalActionsHeading}
                         </div>
-                        <div style={termsOfUseText}>{this.state.lang.legalActionsText}</div>
+                        <div style={termsOfUseText}>
+                          {this.state.lang.legalActionsText}
+                        </div>
 
                         <div
                           className="underlineTextTermsOfUse"
@@ -847,7 +867,9 @@ class App extends Component {
                           {this.state.lang.cookiesHeading}
                         </div>
                         <p></p>
-                        <div style={termsOfUseText}>{this.state.lang.cookiesText}</div>
+                        <div style={termsOfUseText}>
+                          {this.state.lang.cookiesText}
+                        </div>
 
                         <div
                           className="underlineTextTermsOfUse"
@@ -856,7 +878,9 @@ class App extends Component {
                           {this.state.lang.thirdPartyWebHeading}
                         </div>
                         <p></p>
-                        <div style={termsOfUseText}>{this.state.lang.thirdPartyWebText}</div>
+                        <div style={termsOfUseText}>
+                          {this.state.lang.thirdPartyWebText}
+                        </div>
 
                         <div
                           className="underlineTextTermsOfUse"
@@ -901,7 +925,9 @@ class App extends Component {
                           }}
                         ></div>
                         <p></p>
-                        <div style={termsOfUseText}>{this.state.lang.disclaimerWarrantiesText2}</div>
+                        <div style={termsOfUseText}>
+                          {this.state.lang.disclaimerWarrantiesText2}
+                        </div>
 
                         <div
                           className="underlineTextTermsOfUse"
@@ -909,7 +935,9 @@ class App extends Component {
                         >
                           {this.state.lang.limitationHeading}
                         </div>
-                        <div style={termsOfUseText}>{this.state.lang.limitationText}</div>
+                        <div style={termsOfUseText}>
+                          {this.state.lang.limitationText}
+                        </div>
 
                         <div
                           className="underlineTextTermsOfUse"
@@ -917,7 +945,9 @@ class App extends Component {
                         >
                           {this.state.lang.indemnificationHeading}
                         </div>
-                        <div style={termsOfUseText}>{this.state.lang.indemnificationText}</div>
+                        <div style={termsOfUseText}>
+                          {this.state.lang.indemnificationText}
+                        </div>
 
                         <div
                           className="underlineTextTermsOfUse"
@@ -925,9 +955,13 @@ class App extends Component {
                         >
                           {this.state.lang.lawAndJurisdictionHeading}
                         </div>
-                        <div style={termsOfUseText}>{this.state.lang.lawAndJurisdictionText1}</div>
+                        <div style={termsOfUseText}>
+                          {this.state.lang.lawAndJurisdictionText1}
+                        </div>
                         <p></p>
-                        <div style={termsOfUseText}>{this.state.lang.lawAndJurisdictionText2}</div>
+                        <div style={termsOfUseText}>
+                          {this.state.lang.lawAndJurisdictionText2}
+                        </div>
 
                         <div
                           className="underlineTextTermsOfUse"
@@ -935,9 +969,20 @@ class App extends Component {
                         >
                           {this.state.lang.entireAgreementHeading}
                         </div>
-                        <div style={termsOfUseText}>{this.state.lang.entireAgreementText}</div>
+                        <div style={termsOfUseText}>
+                          {this.state.lang.entireAgreementText}
+                        </div>
                         <p></p>
-                        <div style={{ termsOfUseHead, color: "#1b55a4", fontSize: '10pt', fontWeight: 'bold' }}>{this.state.lang.dateofAgreement}</div>
+                        <div
+                          style={{
+                            termsOfUseHead,
+                            color: "#1b55a4",
+                            fontSize: "10pt",
+                            fontWeight: "bold",
+                          }}
+                        >
+                          {this.state.lang.dateofAgreement}
+                        </div>
                       </div>
                     </div>
                     <br />
@@ -945,7 +990,7 @@ class App extends Component {
                       variant="secondary"
                       test-id="okButtonBottom"
                       id="agree"
-                      onClick={() => this.changeGetStartedFormID('forward')}
+                      onClick={() => this.changeGetStartedFormID("forward")}
                     >
                       {this.state.lang.agree}
                     </Button>
@@ -954,14 +999,11 @@ class App extends Component {
               </div>
             </div>,
           ];
-
         }
       } else {
-
         if (this.state.instructionIsOpen) {
           //Transgender Instruction modal
           instructionModal = [
-
             <div key="1" className="backdrop" style={backdropStyle}>
               <div
                 className="myModal"
@@ -974,7 +1016,11 @@ class App extends Component {
                       <FaArrowLeft
                         size={24}
                         className="icon-brand-color"
-                        onClick={this.state.getStartedFormID === 1 ? () => this.changeGetStartedFormID('back') : 'close'}
+                        onClick={
+                          this.props.cookies.get("_onboarded")
+                            ? () => this.changeGetStartedFormID("close")
+                            : () => this.changeGetStartedFormID("back")
+                        }
                       />
                     </div>
                     <div
@@ -993,15 +1039,17 @@ class App extends Component {
                     </div>
                   </div>
                   <div className="content">
-                    <div style={{
-                      "font-family": "Inter",
-                      "font-size": "14px",
-                      "font-weight": "400",
-                      "line-height": "20px",
-                      "letter-spacing": "0em",
-                      "text-align": "left",
-                      "margin-bottom": "1rem",
-                    }}>
+                    <div
+                      style={{
+                        "font-family": "Inter",
+                        "font-size": "14px",
+                        "font-weight": "400",
+                        "line-height": "20px",
+                        "letter-spacing": "0em",
+                        "text-align": "left",
+                        "margin-bottom": "1rem",
+                      }}
+                    >
                       {this.state.lang.header_description}
                     </div>
 
@@ -1122,7 +1170,10 @@ class App extends Component {
                             {this.state.lang.tf}
                           </label>
 
-                          <label id="female_male_mod" test-id="birthfemaleLabel">
+                          <label
+                            id="female_male_mod"
+                            test-id="birthfemaleLabel"
+                          >
                             <input
                               test-id="birthFemale"
                               type="radio"
@@ -1133,7 +1184,6 @@ class App extends Component {
                             {this.state.lang.tm}
                           </label>
                         </div>
-
                       </div>
                       <label
                         id="help"
@@ -1142,7 +1192,11 @@ class App extends Component {
                       >
                         <h5>{this.state.lang.ageandgender_help}</h5>
                       </label>
-                      <label id="agehelp" className="checkAge" test-id="ageError">
+                      <label
+                        id="agehelp"
+                        className="checkAge"
+                        test-id="ageError"
+                      >
                         <h5>{this.state.lang.age_help}</h5>
                       </label>
                       {/*Field selection based on gender*/}
@@ -1176,29 +1230,35 @@ class App extends Component {
                         </form>
                       </div>
 
-
-                      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                      <div
+                        style={{
+                          display: "flex",
+                          justifyContent: "center",
+                          alignItems: "center",
+                        }}
+                      >
                         <Button
                           variant="secondary"
                           test-id="okButtonBottom"
                           id="agree"
-                          onClick={() => { this.setState({ getStartedFormID: 2 }); this.toggleIntrutionModal(); }}
+                          onClick={() => {
+                            this.setState({ getStartedFormID: 2 });
+                            this.toggleIntrutionModal();
+                          }}
                         >
                           {this.state.lang.config_modal_agree}
                         </Button>
                       </div>
-
                     </div>
                   </div>
                 </div>
               </div>
-            </div >,
+            </div>,
           ];
-
         }
       }
-    } 
-   
+    }
+
     return (
       <div test-info-locale={this.state.language}>
         {/*this is your header tab*/}
@@ -1238,26 +1298,26 @@ class App extends Component {
                 this.state.gender == "male" && this.state.Tgender == "tf"
                   ? this.state.lang[this.state.gender]
                   : this.state.gender == "female" && this.state.Tgender == "tm"
-                    ? this.state.lang[this.state.gender]
-                    : !this.state.isTransgender &&
-                      (this.state.gender == "male" ||
-                        this.state.gender == "female")
-                      ? this.state.lang[this.state.gender]
-                      : this.state.language == "french" &&
-                        this.state.gender == "male" &&
-                        this.state.Tgender == "tm"
-                        ? "Transmasculin"
-                        : this.state.language == "french" &&
-                          this.state.gender == "female" &&
-                          this.state.Tgender == "tf"
-                          ? "Transféminine"
-                          : this.state.gender == "male" && this.state.Tgender == "tm"
-                            ? "Transmasculine"
-                            : this.state.gender == "female" && this.state.Tgender == "tf"
-                              ? "Transfeminine"
-                              : this.state.gender == "nonbinary"
-                                ? this.state.lang[this.state.gender]
-                                : this.state.Tgender,
+                  ? this.state.lang[this.state.gender]
+                  : !this.state.isTransgender &&
+                    (this.state.gender == "male" ||
+                      this.state.gender == "female")
+                  ? this.state.lang[this.state.gender]
+                  : this.state.language == "french" &&
+                    this.state.gender == "male" &&
+                    this.state.Tgender == "tm"
+                  ? "Transmasculin"
+                  : this.state.language == "french" &&
+                    this.state.gender == "female" &&
+                    this.state.Tgender == "tf"
+                  ? "Transféminine"
+                  : this.state.gender == "male" && this.state.Tgender == "tm"
+                  ? "Transmasculine"
+                  : this.state.gender == "female" && this.state.Tgender == "tf"
+                  ? "Transfeminine"
+                  : this.state.gender == "nonbinary"
+                  ? this.state.lang[this.state.gender]
+                  : this.state.Tgender,
               ]}{" "}
               {this.state.age == "all ages"
                 ? this.state.lang.all_ages
@@ -1318,7 +1378,6 @@ class App extends Component {
           button={this.state.buttonText}
           lang={this.state.lang}
         ></MyModal>
-
       </div>
     );
   }
