@@ -7,17 +7,14 @@
     text-align: center;
 }
 .parallax-background{
-    background: #1b55a4; 
-    background: -moz-linear-gradient(left, #1b55a4 1%, #1b63b0 46%, #1a7ec6 87%);
-    background: -webkit-linear-gradient(left, #1b55a4 1%,#1b63b0 46%,#1a7ec6 87%);
     background: linear-gradient(to right, #1b55a4 1%,#1b63b0 46%,#1a7ec6 87%);
     text-align: center;
-    padding-top: 120px;
-    padding-bottom: 60px;
+    padding-top: 30px;
+    padding-bottom: 20px;
 }
 .pagetitle h1 {
     color: #fff;
-    font-size: 5rem;
+    font-size: 3rem;
 }
 
 .ab-br-section {
@@ -28,7 +25,7 @@
     display: flex;
 }
 .br-figure img {
-    width: 100%;
+    width: 100px;
     height: auto;
     display: block;
 }
