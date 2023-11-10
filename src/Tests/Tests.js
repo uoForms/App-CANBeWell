@@ -247,16 +247,19 @@ class SearchBar extends React.Component {
 
   render() {
     return (
-      <form>
-        <input
-          className="form-control searchbar mt-5 font-input-lg"
-          type="text"
-          placeholder={this.props.text}
-          value={this.props.filterText}
-          onChange={this.handleFilterTextInputChange}
-          test-id="searchBarInput"
-        />
-      </form>
+        <form>
+            <input
+                className="form-control searchbar mt-5 font-input-lg"
+                type="text"
+                placeholder={this.props.text}
+                value={this.props.filterText}
+                onChange={this.handleFilterTextInputChange}
+                onKeyPress={(e) => {
+                    if (e.key === "Enter") e.preventDefault();
+                }}
+                test-id="searchBarInput"
+            />
+        </form>
     );
   }
 }
