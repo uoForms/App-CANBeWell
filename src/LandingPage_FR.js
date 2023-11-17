@@ -66,82 +66,147 @@ class LandingPageFR extends React.Component {
     // Render nothing if the "show" prop is false
 
     return (
-      <div className="landing-page">
-        {this.state.language == "" || null ? (
-          <div className="pt-3">
-            {/* <div className="center">
+        <div className="landing-page">
+            {this.state.language == "" || null ? (
+                <div className="pt-3">
+                    {/* <div className="center">
             <div className="landing-trans">
             TRANSGENDER Branch
             </div>
             </div> */}
-            <section id="landing-page-header">
-              <Row className='m-0 d-flex justify-content-around align-items-center'>
-                <Col>
-                  <img className="landing-logo-header" src={callcompletelogo} alt="CANBeWellLogo" test-id="logo" />
-                </Col>
-                <Col className='d-flex justify-content-end'>
-                  {/* <Link to="/en" className="landing-french-router">English</Link> */}
-                  <a href="/en"
-                    className="font-description" onClick={this.handleRedirect}>English</a>
-                </Col>
-              </Row>
-            </section>
+                    <section id="landing-page-header">
+                        <Row className="m-0 d-flex justify-content-around align-items-center">
+                            <Col>
+                                <img
+                                    className="landing-logo-header"
+                                    src={callcompletelogo}
+                                    alt="CANBeWellLogo"
+                                    test-id="logo"
+                                />
+                            </Col>
+                            <Col className="d-flex justify-content-end">
+                                {/* <Link to="/en" className="landing-french-router">English</Link> */}
+                                <a
+                                    href="/en"
+                                    className="font-description"
+                                    onClick={this.handleRedirect}
+                                >
+                                    English
+                                </a>
+                            </Col>
+                        </Row>
+                    </section>
 
-            <BannerSlider handleChange={this.handleChange2} />
+                    <BannerSlider handleChange={this.handleChange2} />
 
-            <div className="landing-button">
-              <a href="#"><img className="landing-button-img" src={callchoixsante} onClick={this.handleChange2}
-                test-id="fr-redirect-button" /></a>
-            </div>
+                    <div className="landing-button">
+                        <a href="#">
+                            <img
+                                className="landing-button-img"
+                                src={callchoixsante}
+                                onClick={this.handleChange2}
+                                test-id="fr-redirect-button"
+                            />
+                        </a>
+                    </div>
 
-            <section className='primary-background res-blue-width res-blue-height-fr py-3 d-flex flex-column justify-content-center'>
-              <div className="landing-notice-privacystmnt font-subHeading text-white" test-id="fr-reliable-resource-statement">
-                Rester en santé avec cette ressource gratuite créée par vos professionnels de la santé canadiens.
-                <a type="button" className="btn btn-link btn-lg font-subHeading text-center align-text-top" href={videofr} target="_blank" test-id="update-banner-en-video">
-                  Voir vidéo
-                </a>
-              </div>
+                    <section className="primary-background res-blue-width res-blue-height-fr py-3 d-flex flex-column justify-content-center">
+                        <div
+                            className="landing-notice-privacystmnt font-subHeading text-white"
+                            test-id="fr-reliable-resource-statement"
+                        >
+                            Rester en santé avec cette ressource gratuite créée
+                            par vos professionnels de la santé canadiens.
+                            <a
+                                type="button"
+                                className="btn btn-link btn-lg font-subHeading text-center align-text-top"
+                                href={videofr}
+                                target="_blank"
+                                test-id="update-banner-en-video"
+                            >
+                                Voir vidéo
+                            </a>
+                        </div>
 
-              <div className="d-flex justify-content-center my-4">
-                <a href="#" type="button" className="btn btn-primary btn-lg" onClick={this.handleChange2}><b>Commencer</b></a>
-                <button type="button" className="ml-2 btn btn-outline-primary btn-lg d-inline-block d-md-none" onClick={() => this.props.setOpenDialog(true)} test-id="homeScreenButtonEn">
-                  <b>Installer l'application</b>
-                </button>
-              </div>
-            </section>
+                        <div className="d-flex justify-content-center my-4">
+                            <a
+                                href="#"
+                                type="button"
+                                className="btn btn-primary btn-lg"
+                                onClick={this.handleChange2}
+                            >
+                                <b>Commencer</b>
+                            </a>
+                            <button
+                                type="button"
+                                className="ml-2 btn btn-outline-primary btn-lg d-inline-block d-md-none"
+                                onClick={() => this.props.setOpenDialog(true)}
+                                test-id="homeScreenButtonEn"
+                            >
+                                <b>Installer l'application</b>
+                            </button>
+                        </div>
+                    </section>
 
-            <section id="landing-page-footer">
-              <Row className="d-flex justify-content-center align-items-center m-0 py-1">
-                <Col xs={{ order: 1, span: 10 }} sm={{ order: 1, span: 8 }} md={{ order: 2, span: 9 }} className="d-flex justify-content-center align-items-center footer-text mt-3 mx-0">
-                  <a className="text-center font-weight-bold" src={videofr} href={videofr} target="_blank" rel="noopener noreferrer"
-                     test-id="update-banner-fr-video"> Vidéo
-                  </a>
-                  <span className="mx-3"> &#124; </span>
-                  <a href="/politiquedeconfidentialite.htm" rel="noopener noreferrer"
-                    test-id="privacy-statement-fr" className='privacyFr text-center'>
-                    Politique de confidentialité
-                  </a>
-                  <span className="mx-3"> &#124; </span>
-                  <a href="/iCanBeWell_àproposdenous.htm" rel="noopener noreferrer"
-                    test-id="aboutus-statement-fr" className='text-center'>
-                    À propos de nous
-                  </a>
-                </Col>
-              </Row>
-              <div className="d-flex justify-content-center my-2">
-                <div className="copyright">
-                  &copy; {currentDate.getFullYear()} choix santé
+                    <section id="landing-page-footer">
+                        <Row className="d-flex justify-content-center align-items-center m-0 py-1">
+                            <Col
+                                xs={{ order: 1, span: 10 }}
+                                sm={{ order: 1, span: 8 }}
+                                md={{ order: 2, span: 9 }}
+                                className="d-flex justify-content-center align-items-center footer-text mt-3 mx-0"
+                            >
+                                <a
+                                    className="text-center font-weight-bold"
+                                    src={videofr}
+                                    href={videofr}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    test-id="update-banner-fr-video"
+                                >
+                                    {" "}
+                                    Vidéo
+                                </a>
+                                <span className="mx-3"> &#124; </span>
+                                <a
+                                    href="/iCanBeWell_PrivacyPolicy.htm?lang=fr"
+                                    rel="noopener noreferrer"
+                                    test-id="privacy-statement-fr"
+                                    className="privacyFr text-center"
+                                >
+                                    Politique de confidentialité
+                                </a>
+                                <span className="mx-3"> &#124; </span>
+                                <a
+                                    href="/iCanBeWell_àproposdenous.htm"
+                                    rel="noopener noreferrer"
+                                    test-id="aboutus-statement-fr"
+                                    className="text-center"
+                                >
+                                    À propos de nous
+                                </a>
+                            </Col>
+                        </Row>
+                        <div className="d-flex justify-content-center my-2">
+                            <div className="copyright">
+                                &copy; {currentDate.getFullYear()} choix santé
+                            </div>
+                        </div>
+                    </section>
+                    <Homescreenfren
+                        openDialog={this.props.openDialog}
+                        setOpenDialog={this.props.setOpenDialog}
+                    />
                 </div>
-              </div>
-            </section>
-            <Homescreenfren openDialog={this.props.openDialog} setOpenDialog={this.props.setOpenDialog} />
-          </div>
-        ) : (
-          <div>
-            <App appLanguage={this.state.language} setAppLanguage={this.handleHomePage} />
-          </div>
-        )}
-      </div>
+            ) : (
+                <div>
+                    <App
+                        appLanguage={this.state.language}
+                        setAppLanguage={this.handleHomePage}
+                    />
+                </div>
+            )}
+        </div>
     );
   }
 }
