@@ -16,7 +16,6 @@
 
 .ab-br-section {
     padding: 90px 0 0;
-    background-color: #fff;
 }
 .ab-br-section .media-container-row {
     display: flex;
@@ -37,6 +36,22 @@
     border-color: #d7df21;
     color: #000000;
 }
+.flex-container {
+    display: flex;
+}
+
+/* Media query for small screens */
+ @media (max-width: 770px) {
+    .flex-container {
+        flex-direction: column;
+    }
+    .ab-br-section {
+        padding: 0;
+    }
+    .body-content-mobile-view {
+        padding: 20px;
+    }
+} 
 
 .container {
     margin: 0px 0px 0px 0px ;
