@@ -117,12 +117,12 @@ class LandingPageFR extends React.Component {
                      test-id="update-banner-fr-video"> Vidéo
                   </a>
                   <span className="mx-3"> &#124; </span>
-                  <a href="/politiquedeconfidentialite.htm" target="_blank" rel="noopener noreferrer"
+                  <a href="/politiquedeconfidentialite.htm" rel="noopener noreferrer"
                     test-id="privacy-statement-fr" className='privacyFr text-center'>
                     Politique de confidentialité
                   </a>
                   <span className="mx-3"> &#124; </span>
-                  <a href="/iCanBeWell_àproposdenous.htm" target="_blank" rel="noopener noreferrer"
+                  <a href="/iCanBeWell_àproposdenous.htm" rel="noopener noreferrer"
                     test-id="aboutus-statement-fr" className='text-center'>
                     À propos de nous
                   </a>

@@ -109,12 +109,12 @@ class LandingPageEN extends React.Component {
                     Watch Demo
                   </a>
                   <span className="mx-3"> &#124; </span>
-                  <a href="/iCanBeWell_PrivacyPolicy.htm" target="_blank" rel="noopener"
+                  <a href="/iCanBeWell_PrivacyPolicy.htm" rel="noopener"
                     test-id="privacy-statement-en" className='text-center'>
                     Privacy Statement
                   </a>
                   <span className="mx-3"> &#124; </span>
-                  <a href="/iCanBeWell_AboutUs.htm" target="_blank" rel="noopener"
+                  <a href="/iCanBeWell_AboutUs.htm" rel="noopener"
                     test-id="aboutus-statement-en" className='text-center'>
                     About Us
                   </a>
