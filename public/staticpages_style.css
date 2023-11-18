@@ -15,7 +15,7 @@
 }
 
 .ab-br-section {
-    padding: 90px 0 0;
+    padding: 20px 0 0;
 }
 .ab-br-section .media-container-row {
     display: flex;
@@ -67,7 +67,7 @@
         flex-direction: column;
     }
     .ab-br-section {
-        padding: 0;
+        padding: 0px;
     }
     .body-content-mobile-view {
         padding: 20px;
@@ -105,26 +105,18 @@ h2.br-section-title {
     font-weight: bold;
 }
 h3.br-section-subtitle {
-    font-size: 21px;
+    font-size: 18px;
     line-height: 27px;
     text-align: justify;
 }
-.mb-5.half-list {
-    /* display: inline-block;
-    width: 48%;
-    vertical-align: top;
-    text-align: left; */
-}
-.mb-5.half-list:nth-of-type(even) {
-    /* margin-left: 3%; */
-}
+
 h3.content-list-title {
-    font-size: 20px;
+    font-size: 18px;
     text-align: justify;
-    line-height: 27px;
+    line-height: 27px   ;
 }
 span.list-counter {
-    font-size: 23px;
+    font-size: 20px;
     font-weight: 600;
     padding-right: 19px;
 }
@@ -144,9 +136,7 @@ span.list-counter::before {
     background: rgb(215 223 33);
     border-radius: 50%;
 }
-section.ab-en-video {
-    padding: 90px 0;
-}
+
 video[poster] {
     width: 100%;
     height: 100%;
@@ -191,7 +181,7 @@ a.card-link-play {
 }
 section.ab-ft-section {
     background-color: #f4f8fa;
-    padding: 90px 0;
+    padding: 20px 0;
 }
 span.br-iconfont i {
     font-size: 50px;
@@ -199,17 +189,18 @@ span.br-iconfont i {
 }
 .br-card-title {
     text-align: center;
-    font-size: 32px;
+    font-size: 1.7rem;
     color: #1b56a5;
     font-weight: 600;
 }
 .br-card-text {
     color: #1b56a5;
-    font-size: 23px;
+    font-size: 18px;
+    padding: 0 20px;
 }
 section.ab-vp-section {
     background-color: #fff;
-    padding: 90px 0;
+    padding: 10px 0;
 }
 .vp-section-title {
     font-size: 2.4rem;
@@ -231,7 +222,7 @@ span.list-heading {
 
 section.ab-sl-section {
     background-color: #f4f8fa;
-    padding: 90px 0;
+    padding: 90px 0 0 0;
 }
 .box-item {
     padding: 2rem;
@@ -246,7 +237,7 @@ section.ab-sl-section {
     background-color: #9cc7e7;
 }
 section.ab-en-video {
-    padding: 0 0 90px 0;
+    padding: 0 0 30px 0;
 }
 .rounded-xl {
     border-radius: 30px;
@@ -297,9 +288,6 @@ h4.box-item-title {
 p.box-item-text {
     font-size: 20px;
     line-height: 30px;
-}
-section.ab-contact {
-    padding: 90px 0;
 }
 h2.mb-4.ab-contact-title {
     font-size: 2.4rem;

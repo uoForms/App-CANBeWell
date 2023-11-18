@@ -178,7 +178,7 @@ class LandingPageFR extends React.Component {
                                 </a>
                                 <span className="mx-3"> &#124; </span>
                                 <a
-                                    href="/iCanBeWell_àproposdenous.htm"
+                                    href="iCanBeWell_AboutUs.htm?lang=fr"
                                     rel="noopener noreferrer"
                                     test-id="aboutus-statement-fr"
                                     className="text-center"
