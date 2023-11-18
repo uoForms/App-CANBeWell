@@ -1,224 +1,736 @@
 <html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="Generator" content="Microsoft Word 15 (filtered)" />
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="About Us" />
 
-<head>
-<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
-<meta name=Generator content="Microsoft Word 15 (filtered)">
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="About Us">
+        <title>About Us</title>
 
-<title>About Us</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous"
+        />
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-<link rel="stylesheet" href="staticpages_style.css">
+        <link rel="stylesheet" href="staticpages_style.css" />
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                // Parse the URL to get the 'lang' parameter
+                const urlParams = new URLSearchParams(window.location.search);
+                const lang = urlParams.get("lang");
 
-</head>
+                // Display the content based on the selected language
+                if (lang === "fr") {
+                    // Display French content and hide English content
+                    document.getElementById("englishContent").style.display =
+                        "none";
+                    document.getElementById("frenchContent").style.display =
+                        "block";
+                } else {
+                    // Display English content and hide French content
+                    document.getElementById("englishContent").style.display =
+                        "block";
+                    document.getElementById("frenchContent").style.display =
+                        "none";
+                }
+            });
+        </script>
+    </head>
 
-<body lang=EN-CA link="#0563C1" vlink="#954F72" style='word-wrap:break-word'>
+    <body
+        lang="EN-CA"
+        link="#0563C1"
+        vlink="#954F72"
+        style="word-wrap: break-word"
+    >
+        <div class="WordSection1">
+            <div id="englishContent">
+                    <div class="flex-container">
+                    <a href="/#" class="flex-item side-div">
+                        <img
+                            src="./images/icanbewelllogo.png"
+                            alt="icanbewell"
+                            style="width: 180px; height: 75px; padding: 10px"
+                        />
+                    </a>
 
-<div class=WordSection1>
-    <div class="flex-container">
-        <a href="/#">
-            <img src="./images/icanbewelllogo.png" alt="icanbewell" style="width: 180px; height: 75px; padding: 10px;">
-        </a>
+                    <div class="flex-item middle-div">
+                        <div >
+                            <section class="">
+                                <div
+                                    class="container parallax-background"
+                                    style="
+                                        display: flex;
+                                        align-items: center;
+                                        padding-top: 20px;
+                                        padding-bottom: 10px;
+                                    "
+                                >
+                                    <div
+                                        class="media-container-row"
+                                        style="flex: 1"
+                                    >
+                                        <div class="br-figure"></div>
+                                        <div class="pagetitle">
+                                            <h1 class="align-center">
+                                                About Us
+                                            </h1>
+                                        </div>
+                                        <div></div>
+                                    </div>
+                                </section>
+                                <div class="body-content-mobile-view">
+                                <section class="ab-br-section">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div
+                                                class="col-lg-12 col-md-12 col-sm-12 col-xs-12 media-content mb-4"
+                                            >
+                                                <h2 class="br-section-title">
+                                                    What is icanbewell.ca?
+                                                </h2>
+                                                <h3 class="br-section-subtitle">
+                                                    It is a digital solution to improve
+                                                    health care. 30-70% of health
+                                                    problems can be prevented. This
+                                                    webapp puts reliable information to
+                                                    stay healthy in the hand of every
+                                                    Canadian. It is intended for
+                                                    residents of Canada only, as health
+                                                    recommendations change depending on
+                                                    the country you live in. Watch the
+                                                    video on this page to see how to use
+                                                    the app.
+                                                </h3>
+                                                <div class="row">
+                                                    <div
+                                                        class="col-lg-6 col-md-6 col-sm-12 col-xs-12 half-list"
+                                                    >
+                                                        <h3 class="content-list-title">
+                                                            <span class="list-counter"
+                                                                >For the public</span
+                                                            >Take charge of your health!
+                                                            Check the app to see what
+                                                            you need to do at your age
+                                                            to stay healthy. Information
+                                                            on the app is backed by
+                                                            research. We provide links
+                                                            to tools and videos. You can
+                                                            find what tests you need to
+                                                            do to detect cancer or other
+                                                            conditions early, before
+                                                            they become difficult to
+                                                            treat. Check the app before
+                                                            you see your primary health
+                                                            care provider so you can
+                                                            discuss what’s right for
+                                                            you.
+                                                        </h3>
+                                                    </div>
+                                                    <div
+                                                        class="col-lg-6 col-md-6 col-sm-12 col-xs-12 half-list"
+                                                    >
+                                                        <h3 class="content-list-title">
+                                                            <span class="list-counter"
+                                                                >For health care
+                                                                providers</span
+                                                            >This app will save you
+                                                            time. Search for up-to-date
+                                                            evidence-based
+                                                            recommendations in
+                                                            prevention and screening
+                                                            with links to the source.
+                                                            The app provides a bilingual
+                                                            interface for patients and
+                                                            providers. Do you want to
+                                                            explain a preventive
+                                                            maneuver to a patient?
+                                                            User-friendly calculators,
+                                                            tools and videos will help.
+                                                            These can be shared with the
+                                                            patient before, during or
+                                                            after an appointment.
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
 
-        <div >
-            <section class="">
-                <div class="container parallax-background" style="display: flex; align-items: center; padding-top: 20px; padding-bottom: 10px;">
-                    <div class="media-container-row" style="flex: 1;">
-                        <div class="br-figure">
+                                <section class="ab-en-video">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div
+                                                class="col-lg-12 col-md-12 col-sm-12 col-xs-12"
+                                            >
+                                                <div
+                                                    class="rounded-xl overflow-hidden video_inplace position-relative align-center"
+                                                >
+                                                    <video
+                                                        width="900"
+                                                        height="500"
+                                                        class="videos video-js ab-video"
+                                                        id="player"
+                                                        poster="./images/videocover.png"
+                                                        controls
+                                                    >
+                                                        <source
+                                                            src="/static/media/video_en.3d94c066.mp4"
+                                                            type="video/mp4"
+                                                        />
+                                                    </video>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <section class="ab-ft-section">
+                                    <div class="container">
+                                        <div class="row justify-content-center">
+                                            <div class="col-md-12 col-lg-12">
+                                                <div class="row-item">
+                                                        <span class="br-iconfont"
+                                                            ><i
+                                                                class="fa fa-thin fa-hand-holding-medical"
+                                                                style="
+                                                                    font-size: 50px;
+                                                                    color: #1b56a5;
+                                                                "
+                                                            ></i
+                                                        ></span>
+                                                    <h4
+                                                        class="br-card-title align-center pb-2"
+                                                    >
+                                                        Apps in healthcare
+                                                    </h4>
+                                                    <div
+                                                        class="br-card-text align-center"
+                                                    >
+                                                        Many countries are using health
+                                                        apps and electronic resources to
+                                                        help patients access information
+                                                        and change their health
+                                                        behaviours more quickly. Some
+                                                        examples are the Netherlands,
+                                                        Germany, France and the UK.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <section class="ab-vp-section">
+                                    <div class="container">
+                                        <div class="row main-row">
+                                            <div
+                                                class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-content"
+                                            >
+                                                <h2 class="br-section-title">
+                                                    Our Background
+                                                </h2>
+                                                <div class="br-section-subtitle">
+                                                    <p class="text-justify">
+                                                        icanbewell.ca was developed by
+                                                        Dr. Cleo Mavriplis in
+                                                        collaboration with a team of
+                                                        Engineering and Computer Science
+                                                        students from University of
+                                                        Ottawa, primary health care
+                                                        providers, family medicine
+                                                        residents, and researchers. Dr.
+                                                        Mavriplis is a family physician
+                                                        with interests in preventive
+                                                        care, equity in access to health
+                                                        care, and medical education. She
+                                                        is Adjunct professor in the
+                                                        Department of Family Medicine at
+                                                        the University of Ottawa and
+                                                        Assistant Professor in the
+                                                        Department of Family Medicine of
+                                                        McGill University.
+                                                    </p>
+
+                                                    <p class="vp-list-item text-justify">
+                                                        <span class="list-heading"
+                                                            >Grants:</span
+                                                        > initial phase of the app
+                                                        was supported by a PRIME grant
+                                                        from the Department of Family
+                                                        Medicine of University of Ottawa
+                                                        (Primary Care Research in
+                                                        Innovation and Medical
+                                                        Education). The programming and
+                                                        technological development was
+                                                        supported by an NSERC grant
+                                                        called
+                                                        <a href="http://create-best.com"
+                                                        >create-best</a
+                                                        >
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <section class="ab-sl-section mb-3">
+                                    <div class="container">
+                                        <div>
+                                            <div
+                                                class="mb-5 ab-sl-heading col-12 col-md-12"
+                                            >
+                                                <h2
+                                                    class="box-block-title align-center"
+                                                >
+                                                    Our value proposition
+                                                </h2>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="row">
+                                                    <div
+                                                        class="box-item col-lg-4 col-md-4 col-sm-12 col-xs-12"
+                                                    >
+                                                        <div
+                                                            class="icon-block-top pb-4 align-center"
+                                                        >
+                                                            <span class="br-iconfont"
+                                                                ><i
+                                                                    class="fa fa-thin fa-hand-holding-medical"
+                                                                    style="
+                                                                        font-size: 50;
+                                                                    "
+                                                                ></i
+                                                            ></span>
+                                                        </div>
+                                                        <h4
+                                                            class="box-item-title pb-3 align-center"
+                                                        >
+                                                            Patients Self-manage
+                                                        </h4>
+                                                        <p
+                                                            class="box-item-text align-center"
+                                                        >
+                                                            We help patients self-manage
+                                                            by providing access to
+                                                            trusted tailored
+                                                            information 
+                                                        </p>
+                                                    </div>
+                                                    <div
+                                                        class="box-item col-lg-4 col-md-4 col-sm-12 col-xs-12"
+                                                    >
+                                                        <div
+                                                            class="icon-block-top pb-4 align-center"
+                                                        >
+                                                            <span class="br-iconfont"
+                                                                ><i
+                                                                    class="fa fa-thin fa-clock"
+                                                                    style="
+                                                                        font-size: 50;
+                                                                    "
+                                                                ></i
+                                                            ></span>
+                                                        </div>
+                                                        <h4
+                                                            class="box-item-title pb-3 align-center"
+                                                        >
+                                                            Save Time
+                                                        </h4>
+                                                        <p
+                                                            class="box-item-text align-center"
+                                                        >
+                                                            We help health care
+                                                            providers save time and
+                                                            provide more preventive care
+                                                            with one-stop shopping.
+                                                        </p>
+                                                    </div>
+                                                    <div
+                                                        class="box-item col-lg-4 col-md-4 col-sm-12 col-xs-12"
+                                                    >
+                                                        <div
+                                                            class="icon-block-top pb-4 align-center"
+                                                        >
+                                                            <span class="br-iconfont"
+                                                                ><i
+                                                                    class="fa fa-thin fa-dollar-sign"
+                                                                    style="
+                                                                        font-size: 50;
+                                                                    "
+                                                                ></i
+                                                            ></span>
+                                                        </div>
+                                                        <h4
+                                                            class="box-item-title pb-3 align-center"
+                                                        >
+                                                            Save Money
+                                                        </h4>
+                                                        <p
+                                                            class="box-item-text align-center"
+                                                        >
+                                                            We help decrease costs by
+                                                            recommending only
+                                                            evidence-based tests.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <section class="ab-contact">
+                                    <div class="container">
+                                        <div class="row main-row">
+                                            <div
+                                                class="contact-heading col-lg-12 col-md-12 col-sm-12 col-xs-12"
+                                            >
+                                                <h2 class="ab-contact-title font-weight-bold    ">
+                                                    Feedback
+                                                </h2>
+                                                <p class="contact-text">
+                                                    We are always looking to improve the
+                                                    app. If you have any feedback, ideas
+                                                    for improvement or anything is not
+                                                    working well email us at
+                                                    <span class="contact-email">
+                                                        cmavriplis@bruyere.org</span
+                                                    >
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="button-container">
+                                        <a href="/" class="btn btn-primary"
+                                            ><b>Back</b></a
+                                        >
+                                    </div>
+                                </section>
+                                <section class="ab-footer">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div
+                                                class="copyright align-center col-lg-12 col-md-12 col-sm-12 col-xs-12"
+                                            >
+                                                <span class="text-copyright">
+                                                    © Copyright 2022 - All Rights
+                                                    Reserved
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
                         </div>
-                        <div class="pagetitle"> 
-                            <h1 class="align-center">About Us</h1>
-                        </div>
-                        <div></div>
                     </div>
+
+                    <div class="flex-item side-div"></div>
                 </div>
-            </section>
-
-            <div class="body-content-mobile-view">
-                <section class="ab-br-section">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 media-content mb-4">
-                            <h2 class="mb-4 br-section-title">What is icanbewell.ca?</h2>
-                            <h3 class="br-section-subtitle mb-5">It is a digital solution to improve health care. 30-70% of
-                                health problems can be prevented. This webapp puts reliable information to stay healthy in the hand
-                                of every Canadian. It is intended for residents of Canada only, as health recommendations change
-                                depending on the country you live in. Watch the video on this page to see how to use the app. &nbsp;
-                            </h3>
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mb-5 half-list">
-                                    <h3 class="content-list-title "> <span class="list-counter">For the public</span>Take charge
-                                        of your health! Check the app to see what you need to do at your age to stay healthy.
-                                        Information on the app is backed by research. We provide links to tools and videos. You can
-                                        find what tests you need to do to detect cancer or other conditions early, before they become
-                                        difficult to treat. Check the app before you see your primary health care provider so you can
-                                        discuss what’s right for you. </h3>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mb-5 half-list">
-                                    <h3 class="content-list-title "><span class="list-counter">For health care providers</span>This
-                                        app will save you time. Search for up-to-date evidence-based recommendations in prevention
-                                        and screening with links to the source. The app provides a bilingual interface for patients
-                                        and providers. Do you want to explain a preventive maneuver to a patient? User-friendly
-                                        calculators, tools and videos will help. These can be shared with the patient before, during
-                                        or after an appointment. </h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                </section>
-
-                <section class="ab-en-video">
-                    <div class="container ">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <div class="rounded-xl overflow-hidden video_inplace position-relative align-center">
-                                <video width="900" height="500" class="videos video-js ab-video" id="player" poster="./images/videocover.png" controls><source src="/static/media/video_en.3d94c066.mp4" type="video/mp4"></video>
-                            
-                                </div>
-
-                        </div>
-                    </div>    
-                
-                    </div>
-                    </section>
-
-                <section class="ab-ft-section">
-
-
-
-
-                    <div class="container">
-
-
-
-                        <div class="row justify-content-center">
-                            
-
-                            
-
-                            <div class="col-md-12 col-lg-12">
-                                <div class="row-item">
-                                    <div class="card-img pb-3 align-center">
-                                        <span class="br-iconfont"><i class="fa fa-thin fa-hand-holding-medical" style="font-size: 50px;color: #1b56a5;"></i></span>
-                                    </div>
-                                    <h4 class="br-card-title align-center pb-2">Apps in healthcare</h4>
-                                    <p class="br-card-text align-center">Many countries are using health apps and electronic resources to help patients access information and change their health behaviours more quickly. Some examples are the Netherlands, Germany, France and the UK. </p>
-                                </div>
-                            </div>
-
-                            
-                        </div>
-                    </div>
-                </section>
-
-                <section class="ab-vp-section">
-
-
-
-
-                    <div class="container">
-                        <div class="row main-row">
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-content mb-4">
-                                <h2 class="mb-4 vp-section-title">Our Background</h2>
-                                <div class="vp-text ">
-                                    
-                                        <p class="mb-4 vp-list-item"> icanbewell.ca was developed by Dr. Cleo Mavriplis in collaboration with a team of Engineering and Computer Science students from University of Ottawa, primary health care providers, family medicine residents, and researchers. Dr. Mavriplis is a family physician with interests in preventive care, equity in access to health care, and medical education. She is Adjunct professor in the Department of Family Medicine at the University of Ottawa and Assistant Professor in the Department of Family Medicine of McGill University.  </p>
-                                        
-                                        <p class="mb-4 vp-list-item "><span class="list-heading">Grants:</span>The initial phase of the app was supported by a PRIME grant from the Department of Family Medicine of University of Ottawa (Primary Care Research in Innovation and Medical Education). The programming and technological development was supported by an NSERC grant called <a href="http://create-best.com">create-best</a>  </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="ab-sl-section">
-                    <div class="container">
-                        <div class="row">
-                            <div class="mb-5 ab-sl-heading col-12 col-md-12">
-                                <h2 class="box-block-title align-center">Our value proposition</h2>
-                            </div>
-                            <div class="col-12">
-                                <div class="row">
-                                    <div class="box-item col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                                        <div class="icon-block-top pb-4 align-center">
-                                            <span class="br-iconfont "><i class="fa fa-thin fa-hand-holding-medical"
-                                                    style="font-size:50 ;"></i></span>
-                                        </div>
-                                        <h4 class="box-item-title pb-3 align-center ">Patients Self-manage</h4>
-                                        <p class="box-item-text align-center ">We help patients self-manage by providing access to trusted tailored information </p>
-                                    </div>
-                                    <div class="box-item col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                                        <div class="icon-block-top pb-4 align-center">
-                                            <span class="br-iconfont "><i class="fa fa-thin fa-clock"
-                                                    style="font-size:50 ;"></i></span>
-                                        </div>
-                                        <h4 class="box-item-title pb-3 align-center ">Save Time</h4>
-                                        <p class="box-item-text align-center ">We help health care providers save time and provide more preventive care with one-stop shopping.</p>
-                                    </div>
-                                    <div class="box-item col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                                        <div class="icon-block-top pb-4 align-center">
-                                            <span class="br-iconfont"><i class="fa fa-thin fa-dollar-sign"
-                                                    style="font-size:50 ;"></i></span>
-                                        </div>
-                                        <h4 class="box-item-title pb-3 align-center ">Save Money</h4>
-                                        <p class="box-item-text  align-center ">We help decrease costs by recommending only evidence-based tests.</p>
-                                    </div>
-
-
-                                </div>
-
-                                
-                                
-
-                            </div>
-
-
-                        </div>
-                    </div>
-                </section>
-
-                <section class="ab-contact">
-                    <div class="container">
-                        <div class="row main-row">
-                            <div class="contact-heading mb-4 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <h2 class="mb-4 ab-contact-title">Feedback</h2>
-                                <p class="contact-text">We are always looking to improve the app. If you have any feedback, ideas for improvement or anything is not working well email us at <span class="contact-email"> cmavriplis@bruyere.org</span> </p>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="button-container">
-                        <a href="/" class="btn btn-primary"><b>Back</b></a>
-                    </div>
-                </section>
-                <section class="ab-footer">
-                    <div class="container">
-                        <div class="row">
-                            <div class="copyright align-center col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <span class="text-copyright ">
-                                    © Copyright 2022 - All Rights Reserved
-                                </span>
-                            </div>
-
-                        </div>
-                    
-                    </div>
-                </section>
-            </div>
         </div>
 
-        <div style="width: 200px;"></div>
+                <div id="frenchContent" style="display: none">
+                    <div class="flex-container">
+                     <a href="/#" class="flex-item side-div">
+                    <img
+                        src="./images/icanbewelllogo.png"
+                        alt="icanbewell"
+                        style="width: 180px; height: 75px; padding: 10px"
+                    />
+                    </a>
 
-    </div>
-  
-</div>
+                    <div class="flex-item middle-div">
+                        <div >
+                            <section class="">
+                                <div
+                                    class="container parallax-background"
+                                    style="
+                                        display: flex;
+                                        align-items: center;
+                                        padding-top: 20px;
+                                        padding-bottom: 10px;
+                                    "
+                                >
+                                    <div
+                                        class="media-container-row"
+                                        style="flex: 1"
+                                    >
+                                        <div class="br-figure"></div>
+                                        <div class="pagetitle">
+                                            <h1 class="align-center">
+                                                À propos de nous
+                                            </h1>
+                                        </div>
+                                        <div></div>
+                                    </div>
+                                </section>
+                                <div class="body-content-mobile-view">
+                                <section class="ab-br-section">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div
+                                                class="col-lg-12 col-md-12 col-sm-12 col-xs-12 media-content mb-4"
+                                            >
+                                                <h2 class="br-section-title">
+                                                    Qu'est-ce que choixsante.ca ?
+                                                </h2>
+                                                <h3 class="br-section-subtitle">
+                                                    Il s'agit d'une solution numérique pour améliorer les soins de santé. 30 à 70 % des problèmes de santé peuvent être évités. Cette application Web met à la portée de chaque Canadien des informations fiables pour rester en bonne santé.  Elle est destinée aux résidents du Canada uniquement, car les recommandations en matière de santé changent en fonction du pays dans lequel vous vivez. Regardez la vidéo sur cette page pour voir comment utiliser l'application.
+                                                </h3>
+                                                <div class="row">
+                                                    <div
+                                                        class="col-lg-6 col-md-6 col-sm-12 col-xs-12 half-list"
+                                                    >
+                                                        <h3 class="content-list-title">
+                                                            <span class="list-counter"
+                                                                >Pour le public</span>Prenez votre santé en main ! Consultez l'application pour savoir ce que vous devez faire à votre âge pour rester en bonne santé. Les informations contenues dans l'application sont étayées par des recherches. Nous fournissons des liens vers des outils et des vidéos. Vous pouvez trouver les tests que vous devez faire pour détecter le cancer ou d'autres maladies à un stade précoce, avant qu'elles ne deviennent très difficiles à traiter. Consultez l'application avant de vous rendre chez votre professionnel de la santé afin de pouvoir discuter de ce qui vous convient le mieux.
+                                                        </h3>
+                                                    </div>
+                                                    <div
+                                                        class="col-lg-6 col-md-6 col-sm-12 col-xs-12 half-list"
+                                                    >
+                                                        <h3 class="content-list-title">
+                                                            <span class="list-counter"
+                                                                >Pour les prestataires de soins de santé </span>Gagnez du temps! Recherchez des recommandations actualisées fondées sur des données probantes en matière de prévention et de dépistage, avec des liens vers la source. L'application offre une interface bilingue pour les patients et les professionnels de la santé. Vous voulez expliquer une manœuvre de prévention à un patient ? Des calculatrices, des outils et des vidéos conviviaux vous aideront. Ils peuvent être partagés avec le patient avant, pendant ou après un rendez-vous.
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
 
-</body>
+                                <section class="ab-en-video">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div
+                                                class="col-lg-12 col-md-12 col-sm-12 col-xs-12"
+                                            >
+                                                <div
+                                                    class="rounded-xl overflow-hidden video_inplace position-relative align-center"
+                                                >
+                                                    <video
+                                                        width="900"
+                                                        height="500"
+                                                        class="videos video-js ab-video"
+                                                        id="player"
+                                                        poster="./images/videocover.png"
+                                                        controls
+                                                    >
+                                                        <source
+                                                            src="/static/media/video_en.3d94c066.mp4"
+                                                            type="video/mp4"
+                                                        />
+                                                    </video>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
 
+                                <section class="ab-ft-section">
+                                    <div class="container">
+                                        <div class="row justify-content-center">
+                                            <div class="col-md-12 col-lg-12">
+                                                <div class="row-item">
+                                                        <span class="br-iconfont"
+                                                            ><i
+                                                                class="fa fa-thin fa-hand-holding-medical"
+                                                                style="
+                                                                    font-size: 50px;
+                                                                    color: #1b56a5;
+                                                                "
+                                                            ></i
+                                                        ></span>
+                                                    <h4
+                                                        class="br-card-title align-center pb-2"
+                                                    >
+                                                        Les applications dans les soins de santé
+                                                    </h4>
+                                                    <div
+                                                        class="br-card-text align-center"
+                                                    >
+                                                        De nombreux pays utilisent des applications mobiles de santé et des ressources électroniques pour aider les patients à accéder aux informations et à modifier plus rapidement leurs comportements de santé. Les Pays-Bas, l'Allemagne, la France et le Royaume-Uni en sont quelques exemples.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <section class="ab-vp-section">
+                                    <div class="container">
+                                        <div class="row main-row">
+                                            <div
+                                                class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-content"
+                                            >
+                                                <h2 class="br-section-title">
+                                                    Notre contexte
+                                                </h2>
+                                                <div class="br-section-subtitle">
+                                                    <p class="text-justify">
+                                                        Choixsante.ca a été développé par le Dr Cleo Mavriplis en collaboration avec une équipe d'étudiants en génie et en informatique de l'Université d'Ottawa, des cliniciens de soins de santé primaires, des résidents en médecine familiale et des chercheurs. La Dre Mavriplis est médecin de famille et s'intéresse aux soins préventifs, à l'équité dans l'accès aux soins de santé et à l'éducation médicale. Elle est professeure auxiliaire au Département de médecine familiale de l'Université d'Ottawa et professeure adjointe au Département de médecine familiale de l'Université McGill.   
+                                                    </p>
+
+                                                    <p class="vp-list-item text-justify">
+                                                        <span class="list-heading"
+                                                            >Subventions :</span
+                                                        > La phase initiale de l'application a été soutenue par une subvention PRIME du département de médecine familiale de l'Université d'Ottawa (Primary Care Research in Innovation and Medical Education). La programmation et le développement technologique ont été soutenus par une subvention du CRSNG appelée <a href="http://create-best.com/">create-best</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <section class="ab-sl-section mb-3">
+                                    <div class="container">
+                                        <div>
+                                            <div
+                                                class="mb-5 ab-sl-heading col-12 col-md-12"
+                                            >
+                                                <h2
+                                                    class="box-block-title align-center"
+                                                >
+                                                    Notre proposition de valeur
+                                                </h2>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="row">
+                                                    <div
+                                                        class="box-item col-lg-4 col-md-4 col-sm-12 col-xs-12"
+                                                    >
+                                                        <div
+                                                            class="icon-block-top pb-4 align-center"
+                                                        >
+                                                            <span class="br-iconfont"
+                                                                ><i
+                                                                    class="fa fa-thin fa-hand-holding-medical"
+                                                                    style="
+                                                                        font-size: 50;
+                                                                    "
+                                                                ></i
+                                                            ></span>
+                                                        </div>
+                                                        <h4
+                                                            class="box-item-title pb-3 align-center"
+                                                        >
+                                                            Autogestion des patients
+                                                        </h4>
+                                                        <p
+                                                            class="box-item-text align-center"
+                                                        >
+                                                            Nous aidons les patients à s'autogérer en leur donnant accès à des informations fiables et adaptées. 
+                                                        </p>
+                                                    </div>
+                                                    <div
+                                                        class="box-item col-lg-4 col-md-4 col-sm-12 col-xs-12"
+                                                    >
+                                                        <div
+                                                            class="icon-block-top pb-4 align-center"
+                                                        >
+                                                            <span class="br-iconfont"
+                                                                ><i
+                                                                    class="fa fa-thin fa-clock"
+                                                                    style="
+                                                                        font-size: 50;
+                                                                    "
+                                                                ></i
+                                                            ></span>
+                                                        </div>
+                                                        <h4
+                                                            class="box-item-title pb-3 align-center"
+                                                        >
+                                                            Gagner du temps
+                                                        </h4>
+                                                        <p
+                                                            class="box-item-text align-center"
+                                                        >
+                                                            Nous aidons les fournisseurs de soins de santé à gagner du temps et à fournir davantage de soins préventifs grâce à un guichet unique.
+                                                        </p>
+                                                    </div>
+                                                    <div
+                                                        class="box-item col-lg-4 col-md-4 col-sm-12 col-xs-12"
+                                                    >
+                                                        <div
+                                                            class="icon-block-top pb-4 align-center"
+                                                        >
+                                                            <span class="br-iconfont"
+                                                                ><i
+                                                                    class="fa fa-thin fa-dollar-sign"
+                                                                    style="
+                                                                        font-size: 50;
+                                                                    "
+                                                                ></i
+                                                            ></span>
+                                                        </div>
+                                                        <h4
+                                                            class="box-item-title pb-3 align-center"
+                                                        >
+                                                            Faire des économies
+                                                        </h4>
+                                                        <p
+                                                            class="box-item-text align-center"
+                                                        >
+                                                            Nous contribuons à réduire les coûts en recommandant uniquement des tests fondés sur des preuves.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <section class="ab-contact">
+                                    <div class="container">
+                                        <div class="row main-row">
+                                            <div
+                                                class="contact-heading col-lg-12 col-md-12 col-sm-12 col-xs-12"
+                                            >
+                                                <h2 class="ab-contact-title font-weight-bold    ">
+                                                    Commentaires
+                                                </h2>
+                                                <p class="contact-text">
+                                                    Nous cherchons toujours à améliorer l'application. Si vous avez des commentaires, des idées d'amélioration ou si quelque chose ne fonctionne pas bien, envoyez-nous un courriel à <span class="contact-email"> cmavriplis@bruyere.org</span
+                                                    >
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="button-container">
+                                        <a href="/" class="btn btn-primary"
+                                            ><b>Back</b></a
+                                        >
+                                    </div>
+                                </section>
+                                <section class="ab-footer">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div
+                                                class="copyright align-center col-lg-12 col-md-12 col-sm-12 col-xs-12"
+                                            >
+                                                <span class="text-copyright">
+                                                    © Copyright 2022 - All Rights
+                                                    Reserved
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex-item side-div"></div>
+                </div>
+            </div>
+    </body>
 </html>
