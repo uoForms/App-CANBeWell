@@ -159,13 +159,13 @@ class LandingPageFR extends React.Component {
                                 <a
                                     className="text-center font-weight-bold"
                                     src={videofr}
-                                    href="https://forms.gle/vWsrJ1yk7TRH79UT9"
+                                    href="https://forms.gle/uJApr8qousrgEboX6"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     test-id="update-banner-fr-video"
                                 >
                                     {" "}
-                                    Feedback
+                                    Votre avis
                                 </a>
                                 <span className="mx-3"> &#124; </span>
                                 <a
