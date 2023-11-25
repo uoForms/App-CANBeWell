@@ -49,6 +49,8 @@ import TransLiver from '../assets/TransBody/trans_liver.png';
 import TransLungs from '../assets/TransBody/trans_lung.png';
 import TransPancreas from '../assets/TransBody/trans_pancreas.png';
 import TransStomach from '../assets/TransBody/trans_stomach.png';
+import TransKidney from '../assets/TransBody/trans_kidney.png';
+
 
 //import TransGenital from '../assets/Icons/male_genital.png';
 //Use following import and variable to show image on starting page (behind the Choose form)
@@ -436,6 +438,8 @@ class Anatomy extends React.Component {
                         <img id="Pancreas" className="organ" src={TransPancreas} alt="Pancreas" />
                         <img id="Stomach" className="organ" src={TransStomach} alt="Stomach" />
                         <img id="Genital" className="organ" src={transGenital} alt="Genitalt" />
+                        <img id="Kidney" className="organ" src={TransKidney} alt="Kidney" />
+
 
 
                         <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.bowel}</h3>}><button id="bowelButton" className="bowel" test-id="bowelButton"
@@ -458,8 +462,13 @@ class Anatomy extends React.Component {
                             onClick={(button, text, organ) => this.organClicked("aorta", this.props.lang.aorta, "Aorta")} /></Tooltip>
                         <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.heart}</h3>}><button id="heartButton" className="heart" test-id="heartButton"
                             onClick={(button, text, oran) => this.organClicked("heart", this.props.lang.heart, "Heart")} /></Tooltip>
+                        <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.kidney}</h3>}><button id="kidneyButton" className="kidneyLeft" test-id="kidneyButton"
+                            onClick={(button, text, oran) => this.organClicked("kidney", this.props.lang.kidney, "Kidney")} /></Tooltip>
+                        <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.kidney}</h3>}><button id="kidneyButton" className="kidneyRight" test-id="kidneyButton"
+                            onClick={(button, text, oran) => this.organClicked("kidney", this.props.lang.kidney, "Kidney")} /></Tooltip>
                         <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.genitalia}</h3>}><button className="genitalia"
                             onClick={(button, text, organ) => this.organClicked("genitalia", this.props.lang.genitalia, "")} /></Tooltip>
+                       
                         <div className="icons">
                             <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.brain}</h3>}><button id="brainButton" className="brain" test-id="brainButton"
                                 onClick={(button, text) => this.iconClicked("brain", this.props.lang.brain)}>
@@ -540,6 +549,7 @@ class Anatomy extends React.Component {
                         <img id="Pancreas" className="organ" src={TransPancreas} alt="Pancreas" />
                         <img id="Stomach" className="organ" src={TransStomach} alt="Stomach" />
                         <img id="Genital" className="organ" src={transGenital} alt="Genitalt" />
+                        <img id="Kidney" className="organ" src={TransKidney} alt="Kidney" />
 
 
                         <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.bowel}</h3>}><button id="bowelButton" className="bowel" test-id="bowelButton"
@@ -564,6 +574,11 @@ class Anatomy extends React.Component {
                             onClick={(button, text, oran) => this.organClicked("heart", this.props.lang.heart, "Heart")} /></Tooltip>
                         <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.genitalia}</h3>}><button className="genitalia"
                             onClick={(button, text, organ) => this.organClicked("genitalia", this.props.lang.genitalia, "")} /></Tooltip>
+                         <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.kidney}</h3>}><button id="kidneyButton" className="kidneyLeft" test-id="kidneyButton"
+                            onClick={(button, text, oran) => this.organClicked("kidney", this.props.lang.kidney, "Kidney")} /></Tooltip>
+                        <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.kidney}</h3>}><button id="kidneyButton" className="kidneyRight" test-id="kidneyButton"
+                            onClick={(button, text, oran) => this.organClicked("kidney", this.props.lang.kidney, "Kidney")} /></Tooltip>
+
                         <div className="icons">
                             <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.brain}</h3>}><button id="brainButton" className="brain" test-id="brainButton"
                                 onClick={(button, text) => this.iconClicked("brain", this.props.lang.brain)}>
