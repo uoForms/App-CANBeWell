@@ -1330,13 +1330,13 @@
         "Maximum age": 150
     },
     {
-        "Button": "kidney",
+        "Button": "Kidney",
         "Topic heading": "Kidney",
         "Subject": "Prevent kidney disease",
         "General Patient Text": "How do kidneys work\n• [[Video 2; https://www.youtube.com/watch?v=FN3MFhYPWWo]]",
         "Health Provider Text": "",
-        "Gender": "",
-        "Minimum age": "",
-        "Maximum age": ""
+        "Gender": "all",
+        "Minimum age": 18,
+        "Maximum age": 150
     }
 ]

@@ -159,10 +159,17 @@
   }
   
   .mainRunner .maleLiver {
-    top: 35%;
-    left: 41%;
-    width: 10%;
-    height: 3%;
+    top: 32.5%;
+    left: 42%;
+    width: 11%;
+    height: 4%;
+  }
+
+  .mainRunner .maleKidney {
+    top: 36%;
+    left: 42%;
+    width: 8%;
+    height: 4%;
   }
   
   .mainRunner .maleLungs {
