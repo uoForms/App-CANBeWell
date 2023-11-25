@@ -34,6 +34,7 @@ import FemalePancreas from '../assets/FemaleBody/female_pancreas-01.png';
 import FemaleStomach from '../assets/FemaleBody/female_stomach-01.png';
 import FemaleUterus from '../assets/FemaleBody/female_uterus-01.png';
 import FemaleOvary from '../assets/FemaleBody/female_ovary.png';
+import FemaleKidney from '../assets/FemaleBody/female_kidney.png';
 // import FemaleGenitalia from '../assets/FemaleBody/female_genitalia-01.png';
 
 //Import Trans and non-binary PNG
@@ -331,6 +332,8 @@ class Anatomy extends React.Component {
                         <img id="FemaleStomach" className="organ" src={FemaleStomach} alt="FemaleStomach" />
                         <img id="FemaleUterus" className="organ" src={FemaleUterus} alt="FemaleUterus" />
                         <img id="FemaleOvary" className="organ" src={FemaleOvary} alt="FemaleOvary" />
+                        <img id="FemaleKidney" className="organ" src={FemaleKidney} alt="FemaleKidney" />
+
 
                         <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.bowel}</h3>}><button className="femaleBowel" test-id="bowelButton"
                             onClick={(button, text, organ) => this.organClicked("colon", this.props.lang.bowel, "FemaleBowel")} /></Tooltip>
@@ -352,13 +355,9 @@ class Anatomy extends React.Component {
                             onClick={(button, text, organ) => this.organClicked("aorta", this.props.lang.aorta, "FemaleAorta")} /></Tooltip>
                         <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.heart}</h3>}><button className="femaleHeart" test-id="heartButton"
                             onClick={(button, text, organ) => this.organClicked("heart", this.props.lang.heart, "FemaleHeart")} /></Tooltip>
-                        {/* <button className="uterus" test-id="uterusButton"/> */}
-                        {/* <button className="uterus" test-id="uterusButton"
-                            onClick={(button, text, organ) => this.organClicked("uterus", this.props.lang.uterus, "FemaleUterus")} /> */}
-                        {/* <button className="ovary" test-id="ovaryButton" /> */}
-                        {/* <button className="ovary" test-id="ovaryButton"
-                            onClick={(button, text, organ) => this.organClicked("ovary", this.props.lang.ovary, "FemaleOvary")} /> */}
-                        {/* <button id="genitaliaButton" className="femaleGenitalia" onClick={(button, text, organ) => this.organClicked("genitalia", this.props.lang.genitalia, "FemaleGenitalia")} /> */}
+                        <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.kidney}</h3>}><button className="femaleKidney" test-id="kidneyButton"
+                            onClick={(button, text, organ) => this.organClicked("kidney", this.props.lang.kidney, "FemaleKidney")} /></Tooltip>
+
                         <div className="icons">
                             <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.brain}</h3>}><button className="brain" test-id="brainButton"
                                 onClick={(button, text) => this.iconClicked("brain", this.props.lang.brain)}>
@@ -400,8 +399,7 @@ class Anatomy extends React.Component {
                             {/*<button id="genitaliaButton" className="femaleGenital" onClick={(button, text) => this.iconClicked("genitalia", this.props.lang.genitalia)}><img src={fgenitaliaIcon} alt="fgenitaliaIcon" /> </button> */}
 
                         </div>
-                        {/* <div className="fixSelectedOrgan" test-id="selectedButton"><h1 style={fixedStyle}>{this.state.organSelected}</h1>
-                        </div> */}
+                        
                     </div>
 
 

@@ -40,10 +40,17 @@
   }
   
   .mainRunner .femaleBowel {
-    top: 41%;
+    top: 42%;
     left: 50%;
     width: 23%;
-    height: 7%;
+    height: 5%;
+  }
+  
+  .mainRunner .femaleKidney {
+    top: 38%;
+    left: 44%;
+    width: 8%;
+    height: 4%;
   }
   
   .mainRunner .breast {
