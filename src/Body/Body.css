@@ -40,10 +40,17 @@
   }
   
   .mainRunner .femaleBowel {
-    top: 41%;
+    top: 42%;
     left: 50%;
     width: 23%;
-    height: 7%;
+    height: 5%;
+  }
+  
+  .mainRunner .femaleKidney {
+    top: 38%;
+    left: 44%;
+    width: 8%;
+    height: 4%;
   }
   
   .mainRunner .breast {
@@ -159,10 +166,17 @@
   }
   
   .mainRunner .maleLiver {
-    top: 35%;
-    left: 41%;
-    width: 10%;
-    height: 3%;
+    top: 32.5%;
+    left: 42%;
+    width: 11%;
+    height: 4%;
+  }
+
+  .mainRunner .maleKidney {
+    top: 36%;
+    left: 42%;
+    width: 8%;
+    height: 4%;
   }
   
   .mainRunner .maleLungs {
@@ -219,7 +233,7 @@
     top: 42%;
     left: 50%;
     width: 23%;
-    height: 10%;
+    height: 7%;
   }
   
   .mainRunner .eyes {
@@ -235,6 +249,20 @@
     width: 11%;
     height: 6%;
   }
+
+   .mainRunner .kidneyLeft {
+    top: 37%;
+    left: 44%;
+    width: 8%;
+    height: 4%;
+  }
+
+  .mainRunner .kidneyRight {
+    top: 37%;
+    left: 55%;
+    width: 7%;
+    height: 3%;
+  }
   
   .mainRunner .bone {
     top: 65%;
@@ -244,7 +272,7 @@
   }
   
   .mainRunner .liver {
-    top: 34.5%;
+    top: 33.5%;
     left: 43%;
     width: 10%;
     height: 4%;
@@ -258,7 +286,7 @@
   }
   
   .mainRunner .pancreas {
-    top: 35%;
+    top: 34%;
     left: 56%;
     width: 11%;
     height: 3.5%;
