@@ -138,10 +138,10 @@
   }
   
   .mainRunner .maleBowel {
-    top: 42.8%;
+    top: 44.8%;
     left: 48%;
     width: 22%;
-    height: 9%;
+    height: 8%;
   }
   
   .mainRunner .maleEyes {
@@ -172,11 +172,18 @@
     height: 4%;
   }
 
-  .mainRunner .maleKidney {
-    top: 36%;
+  .mainRunner .maleKidneyLeft {
+    top: 39%;
     left: 42%;
     width: 8%;
     height: 4%;
+  }
+
+  .mainRunner .maleKidneyRight {
+    top: 39%;
+    left: 53%;
+    width: 6%;
+    height: 2%;
   }
   
   .mainRunner .maleLungs {
