@@ -238,9 +238,10 @@ class Anatomy extends React.Component {
                             onClick={(button, text, organ) => this.organClicked("liver", this.props.lang.liver, "MaleLiver")} /></Tooltip>
                         
 
-                        <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.kidney}</h3>}><button id="kidneyButtom" test-id="kidneyButtom" className="maleKidney"
+                        <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.kidney}</h3>}><button id="kidneyButtom" test-id="kidneyButtom" className="maleKidneyLeft"
                             onClick={(button, text, organ) => this.organClicked("kidney", this.props.lang.kidney, "MaleKidney")} /></Tooltip>
-                        
+                        <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.kidney}</h3>}><button id="kidneyButtom" test-id="kidneyButtom" className="maleKidneyRight"
+                            onClick={(button, text, organ) => this.organClicked("kidney", this.props.lang.kidney, "MaleKidney")} /></Tooltip>
 
                         <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.lungs}</h3>}><button id="lungsButton" test-id="lungsButton" className="maleLungs"
                             onClick={(button, text, organ) => this.organClicked("lung", this.props.lang.lungs, "MaleLungs")} /></Tooltip>
