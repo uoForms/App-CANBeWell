@@ -96,12 +96,10 @@ class App extends Component {
 
     this.handleChange = this.handleChange.bind(this);
     this.handleGenderChange = this.handleGenderChange.bind(this);
-    this.handlePatientProviderChange = this.handlePatientProviderChange.bind(
-      this
-    );
-    this.handlePatientProviderChangeFromConfig = this.handlePatientProviderChangeFromConfig.bind(
-      this
-    );
+    this.handlePatientProviderChange =
+      this.handlePatientProviderChange.bind(this);
+    this.handlePatientProviderChangeFromConfig =
+      this.handlePatientProviderChangeFromConfig.bind(this);
     this.handleAllAgesSelected = this.handleAllAgesSelected.bind(this);
     this.pageViewStateUpdater = this.pageViewStateUpdater.bind(this);
     this.handleTransGenderChange = this.handleTransGenderChange.bind(this);
@@ -1276,17 +1274,17 @@ class App extends Component {
           </h3>
         </div>
 
-        <div className="row d-flex my-4 mx-2 mx-md-3 mx-lg-4 align-items-center">
+        <div className="my-4 mx-2 mx-md-3 mx-lg-4 d-flex justify-content-between">
           {/*display user's info*/}
 
-          <div className="col-2 p-0 text-left">
+          <div>
             <FaHome
               size={window.innerWidth < 768 ? 32 : 40}
               className="icon-brand-color"
               onClick={this.props.setAppLanguage}
             />
           </div>
-          <div className="col-8 p-0 text-center">
+          <div>
             <Button
               variant="secondary"
               size="lg"
@@ -1324,6 +1322,16 @@ class App extends Component {
                 : this.state.age}
             </Button>
           </div>
+          <a
+            className="font-weight-bold font-size-xl"
+            href="https://forms.gle/nzRAFRCTNo62T4fh6"
+            target="_blank"
+            style={{ fontSize: "1.7em" }}
+            rel="noopener"
+            test-id="update-banner-en-video"
+          >
+            {this.state.lang.feedback}
+          </a>
         </div>
 
         <div>
