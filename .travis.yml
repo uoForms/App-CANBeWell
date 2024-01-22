@@ -15,8 +15,8 @@ before_install:
 #Check for the JSON files for the content.
 - rm -r ./src/JSONFolder
 - mkdir ./src/JSONFolder
-- curl -L -o ./src/JSONFolder/HtmlTopic-EN.json "https://uottawa-my.sharepoint.com/personal/pnikb070_uottawa_ca/_layouts/15/download.aspx?share=EQGwcZcNR5VBi1-KUhetg1IBkf7gmt-xhyKZLOmNDrNzjQ&e=hVg61X"
-- curl -L -o ./src/JSONFolder/HtmlTopic-FR.json "https://uottawa-my.sharepoint.com/personal/pnikb070_uottawa_ca/_layouts/15/download.aspx?share=Ed3ws-SFtmhAgN8QMiggKQsBSDsfObvFLemvmaMkhJgmEg&e=J3B2z4"
+- curl -L -o ./src/JSONFolder/HtmlTopic-EN.json "https://uottawa-my.sharepoint.com/personal/pnikb070_uottawa_ca/_layouts/15/download.aspx?share=EaGvwT2_4mRPqlsb6dHg-2wBozqtvrAlIT_7GZQFprvVEA&e=Tcstul"
+- curl -L -o ./src/JSONFolder/HtmlTopic-FR.json "https://uottawa-my.sharepoint.com/personal/pnikb070_uottawa_ca/_layouts/15/download.aspx?share=EcDKpQdtktVIp7LnRVzfkPoB1lKx5upGYfZMGz70M8QYkA&e=xI2waY"
 - curl -L -o ./src/JSONFolder/HtmlTest-FR.json "https://uottawa-my.sharepoint.com/personal/pnikb070_uottawa_ca/_layouts/15/download.aspx?share=EcVB_bR3i3dLt6OkaylUdwkBIpn8TPKa3KijYbdMw6XDxw&e=lwq6B0"
 - curl -L -o ./src/JSONFolder/HtmlTest-EN.json "https://uottawa-my.sharepoint.com/personal/pnikb070_uottawa_ca/_layouts/15/download.aspx?share=EZ5Pvqfwq-pPl2lpwqGzicAB9xz89vw98x45-GphBSmzvw&e=vUw5EQ"
 - curl -L -o ./src/JSONFolder/FilterTopic-EN.json "https://uottawa-my.sharepoint.com/personal/pnikb070_uottawa_ca/_layouts/15/download.aspx?share=ESNUIKA54uhIpnbPbwD5OIgBrZVr_-E78tGGI13ykoP4fw&e=ynXOdT"
