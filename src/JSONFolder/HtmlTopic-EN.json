@@ -743,7 +743,7 @@
     "Button": "Needle in arm",
     "Topic heading": "Immunization",
     "Subject": "Shingles vaccine",
-    "General Patient Text": "•\tShingles is a disease that can cause permanent pain and eye problems. There are 2 vaccines against shingles: Shingrix and Zostavax.\n\n•\tThese vaccines are recommended starting at 50 years old but most provinces pay for them only at later ages. Discuss this with your health care provider.\n\n•\tStudies show that Shingrix is more effective.\n2 provinces cover Shingrix currently: Yukon and Ontario for patients aged 65 to 70. Check with your health care provider which vaccine is covered in your province and when . It is mportant to get vaccinated to prevent complications",
+    "General Patient Text": "•\tShingles is a disease that can cause permanent pain and eye problems. There are 2 vaccines against shingles: Shingrix and Zostavax.\n\n•\tThese vaccines are recommended starting at 50 years old but most provinces pay for them only at later ages. Discuss this with your health care provider.\n\n•\tStudies show that Shingrix is more effective.\n2 provinces cover Shingrix currently: Yukon and Ontario for patients aged 65 to 70. Check with your health care provider which vaccine is covered in your province and when . It is important to get vaccinated to prevent complications",
     "Health Provider Text": "n/a",
     "Gender": "all",
     "Minimum age": 50,
@@ -1335,6 +1335,126 @@
     "Subject": "Prevent kidney disease",
     "General Patient Text": "How do kidneys work?\n•[[Video; https://www.youtube.com/watch?v=FN3MFhYPWWo]]\n\nKeep your kidneys healthy:\n[[Kidney.ca; https://kidney.ca/Kidney-Health/Your-Kidneys/Keeping-Your-Kidneys-Healthy]]\n[[Prevent kidney disease UK; https://www.nhs.uk/conditions/kidney-disease/prevention/]]",
     "Health Provider Text": "[[Kidney wise tookit 2020; https://www.ontariorenalnetwork.ca/sites/renalnetwork/files/assets/Clinical_Toolkit.pdf]]\n[[Prevent kidney disease UK; https://www.nhs.uk/conditions/kidney-disease/prevention/]]\n[[Chronic kidney disease CMAJ 2023; https://www.cmaj.ca/content/195/17/E612]]",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "symptomchecker",
+    "Topic heading": "Check Your Symptoms",
+    "Subject": "Alberta",
+    "General Patient Text": "[[Check your symptoms; https://myhealth.alberta.ca/health/Pages/conditions.aspx?hwid=hwsxchk]]\nThe advice obtained with this link does not replace that of a qualified medical professional.",
+    "Health Provider Text": "To see patient resources: enter the app as a member of the public",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "symptomchecker",
+    "Topic heading": "Check Your Symptoms",
+    "Subject": "British Columbia",
+    "General Patient Text": "[[Check your symptoms; https://www.healthlinkbc.ca/illnesses-conditions/check-your-symptoms]]\nThe advice obtained with this link does not replace that of a qualified medical professional.",
+    "Health Provider Text": "To see patient resources: enter the app as a member of the public",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "symptomchecker",
+    "Topic heading": "Check Your Symptoms",
+    "Subject": "New Brunswick",
+    "General Patient Text": "[[Check your symptoms; https://www2.gnb.ca/content/gnb/en/departments/health/patientinformation/PrimaryHealthCare/What_is_Primary_Health_Care/symptom-checker.html]]\nThe advice obtained with this link does not replace that of a qualified medical professional.",
+    "Health Provider Text": "To see patient resources: enter the app as a member of the public",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "symptomchecker",
+    "Topic heading": "Check Your Symptoms",
+    "Subject": "Ontario",
+    "General Patient Text": "•[[Check your symptoms; https://health811.ontario.ca/static/guest/symptom-assessment]] This is powerec by AI\n•[[Explore the medical library; https://health811.ontario.ca/static/guest/medical-library?search=&searchPage=1&letter=a&azPage=1]]\n\nThe advice obtained with this link does not replace that of a qualified medical professional.\nThis is not for emergencies, if urgent call 911.\nYou can use the online tools below or phone 811 or do an online chat with a nurse at [[health811.ontario.ca; https://health811.ontario.ca/static/guest/home]]",
+    "Health Provider Text": "To see patient resources: enter the app as a member of the public",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "symptomchecker",
+    "Topic heading": "Check Your Symptoms",
+    "Subject": "Saskatchewan",
+    "General Patient Text": "[[Check your symptoms; https://www.saskhealthauthority.ca/your-health/conditions-diseases-services/healthline-online/hwsxchk]]\nThe advice obtained with this link does not replace that of a qualified medical professional.",
+    "Health Provider Text": "To see patient resources: enter the app as a member of the public",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "symptomchecker",
+    "Topic heading": "Check Your Symptoms",
+    "Subject": "Other provinces and territories",
+    "General Patient Text": "•You can use the symptom checker of any province but ifthe text suggests to call a  number, check if this service is exists in your province.\n•IF there is an emergency call 911.\n•In most provinces and territories you can call 811 24/7 to speak to a nurse. \n•In Manitoba call 1-888-315-9257 or in Winnipeg call 204-788-8200",
+    "Health Provider Text": "To see patient resources: enter the app as a member of the public",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "symptomchecker",
+    "Topic heading": "Check Your Symptoms",
+    "Subject": "Speak to a nurse",
+    "General Patient Text": "• You can call 811 or In some provinces or territories you can access online resources or chat online at the 811 website of your province :Google 811 with your province name.\n• In Manitoba call 1-888-315-9257 or in Winnipeg call 204-788-8200.",
+    "Health Provider Text": "To see patient resources: enter the app as a member of the public",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "familydoctor",
+    "Topic heading": "No Family MD/NP",
+    "Subject": "I have a health problem",
+    "General Patient Text": "• Dial 811 or go to the 811 website of your province , except in Manitoba go to https://www.gov.mb.ca/betterhealth/index.html\n• Use the symptom checkers to see how to deal with your problem.\n•For Ontario: Free virtual urgent care by a nurse practitioner is available if needed after discussing on the phone with a nurse at 811\nSome regions have direct links to free virtual urgent care:\n[[Ontario East; https://www.virtualcareontario.ca/?gclid=Cj0KCQiA2KitBhCIARIsAPPMEhK90tQ2RKTjEsDKWF567nO6hg6bJh4JGAQZ8RfYZceXt2FzwhRFHLgaAkDNEALw_wcB]]\n[[Central Ontario; https://regional-virtual-urgent-care.ca/]]\n[[Southwestern Ontario; https://www.urgentcareontario.ca/]]",
+    "Health Provider Text": "To see patient resources: enter the app as a member of the public",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "familydoctor",
+    "Topic heading": "No Family MD/NP",
+    "Subject": "I want to find a health professional",
+    "General Patient Text": "•Phone 811 or for Manitoba to this [[link; https://www.gov.mb.ca/betterhealth/index.html]]\n\n•Some provinces have websites to register to find a practitioner:this information is subject to change and wait times may be long. This app only provides links to provincial resources.\n[[Alberta; https://www.albertahealthservices.ca/info/Page13253.aspx]]\n[[British Columbia; https://www.healthlinkbc.ca/health-connect-registry]]\n[[Manitoba; https://www.gov.mb.ca/health/familydoctorfinder/]]\n[[Nova Scotia; https://needafamilypractice.nshealth.ca/]]\n[[Ontario; https://www.ontario.ca/page/find-family-doctor-or-nurse-practitioner]]\n[[PEI; https://www.princeedwardisland.ca/en/service/find-a-family-doctor-or-nurse-practitioner]]",
+    "Health Provider Text": "To see patient resources: enter the app as a member of the public",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Oral Health",
+    "Topic heading": "Oral Health",
+    "Subject": "Government of Canada",
+    "General Patient Text": "•[[Oral health; https://www.canada.ca/en/public-health/topics/oral-health.html]]\n•[[Canadian dental plan; https://www.canada.ca/en/services/benefits/dental/dental-care-plan.html]]",
+    "Health Provider Text": "•[[Oral health; https://www.canada.ca/en/public-health/topics/oral-health.html]]\n•[[Canadian dental plan; https://www.canada.ca/en/services/benefits/dental/dental-care-plan.html]]",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Oral Health",
+    "Topic heading": "Oral Health",
+    "Subject": "Canadian Dental Association",
+    "General Patient Text": "[[Your oral health; https://www.cda-adc.ca/en/oral_health/index.asp]]",
+    "Health Provider Text": "[[Oral health; https://www.cda-adc.ca/en/oral_health/index.asp]]",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Oral Health",
+    "Topic heading": "Oral Health",
+    "Subject": "Indigenous Dental Association of Canada",
+    "General Patient Text": "•[[Dental benefits guide; https://www.idac.agency/non-insured-health-benefit-program]]\n•[[Indigenous Dental Association of Canada website; https://www.idac.agency/]]",
+    "Health Provider Text": "[[Resources for professionals and the public; https://www.idac.agency/]]",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150

@@ -73,6 +73,8 @@ import braingear from '../assets/Icons/icon_braingear.png';
 import moneyIcon from '../assets/Icons/icon_money_1.png';
 import sleepIcon from '../assets/Icons/icon_sleep_1.png';
 import bpIcon from '../assets/Icons/icon_bp.png';
+import symptomcheckerIcon from '../assets/Icons/icon_symptomchecker.png';
+import familydoctorIcon from '../assets/Icons/icon_familydoctor.png';
 
 import './Body.css';
 import '../App.css';
@@ -292,6 +294,12 @@ class Anatomy extends React.Component {
                             <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.bp}</h3>}><button id="bpButton" test-id="bpButton" className="bp"
                                     onClick={(button, text, organ) => this.iconClicked("bp", this.props.lang.bp)}>
                                 <img src={bpIcon} alt="bpIcon"/></button></Tooltip>
+                            <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.symptomchecker}</h3>}><button id="symptomcheckerButton" test-id="symptomcheckerButton" className="symptomchecker"
+                                    onClick={(button, text, organ) => this.iconClicked("symptomchecker", this.props.lang.symptomchecker)}>
+                                <img src={symptomcheckerIcon} alt="symptomchecker"/></button></Tooltip>
+                            <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.familydoctor}</h3>}><button id="familydoctorButton" test-id="familydoctorButton" className="familydoctor"
+                                    onClick={(button, text, organ) => this.iconClicked("familydoctor", this.props.lang.familydoctor)}>
+                                <img src={familydoctorIcon} alt="familydoctor"/></button></Tooltip>
 
 
                             {/* <button id="genitaliaButton" className="maleGenital" onClick={(button, text, organ) => this.iconClicked("genitalia", this.props.lang.genitalia)}><img src={genitaliaIcon} alt="genitaliaIcon" /> </button> */}
@@ -399,6 +407,12 @@ class Anatomy extends React.Component {
                             <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.bp}</h3>}><button id="bpButton" className="bpfemale" test-id="bpButton"
                                     onClick={(button, text, organ) => this.iconClicked("bp", this.props.lang.bp)}>
                                 <img src={bpIcon} alt="bpIcon"/></button></Tooltip>
+                                <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.symptomchecker}</h3>}><button id="symptomcheckerButton" test-id="symptomcheckerButton" className="symptomchecker"
+                                    onClick={(button, text, organ) => this.iconClicked("symptomchecker", this.props.lang.symptomchecker)}>
+                                <img src={symptomcheckerIcon} alt="symptomchecker"/></button></Tooltip>
+                            <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.familydoctor}</h3>}><button id="familydoctorButton" test-id="familydoctorButton" className="familydoctor"
+                                    onClick={(button, text, organ) => this.iconClicked("familydoctor", this.props.lang.familydoctor)}>
+                                <img src={familydoctorIcon} alt="familydoctor"/></button></Tooltip>
                             {/*<button id="genitaliaButton" className="femaleGenital" onClick={(button, text) => this.iconClicked("genitalia", this.props.lang.genitalia)}><img src={fgenitaliaIcon} alt="fgenitaliaIcon" /> </button> */}
 
                         </div>
@@ -507,6 +521,12 @@ class Anatomy extends React.Component {
                             <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.bp}</h3>}><button id="bpButton" className="bpnb" test-id="bpButton"
                                     onClick={(button, text, organ) => this.iconClicked("bp", this.props.lang.bp)}>
                                 <img src={bpIcon} alt="bpIcon"/></button></Tooltip>
+                            <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.symptomchecker}</h3>}><button id="symptomcheckerButton" test-id="symptomcheckerButton" className="symptomchecker"
+                                    onClick={(button, text, organ) => this.iconClicked("symptomchecker", this.props.lang.symptomchecker)}>
+                                <img src={symptomcheckerIcon} alt="symptomchecker"/></button></Tooltip>
+                            <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.familydoctor}</h3>}><button id="familydoctorButton" test-id="familydoctorButton" className="familydoctor"
+                                    onClick={(button, text, organ) => this.iconClicked("familydoctor", this.props.lang.familydoctor)}>
+                                <img src={familydoctorIcon} alt="familydoctor"/></button></Tooltip>
                             {/*<button id="transButton" className="trans" onClick={(button, text) => this.iconClicked("trans", this.props.lang.covid)}><img src={transIcon} alt="transIcon" /></button>*/}
 
                         </div>
@@ -617,6 +637,12 @@ class Anatomy extends React.Component {
                             <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.bp}</h3>}><button id="bpButton" className="bptg" test-id="bpButton"
                                     onClick={(button, text, organ) => this.iconClicked("bp", this.props.lang.bp)}>
                                 <img src={bpIcon} alt="bpIcon"/></button></Tooltip>
+                            <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.symptomchecker}</h3>}><button id="symptomcheckerButton" test-id="symptomcheckerButton" className="symptomchecker"
+                                    onClick={(button, text, organ) => this.iconClicked("symptomchecker", this.props.lang.symptomchecker)}>
+                                <img src={symptomcheckerIcon} alt="symptomchecker"/></button></Tooltip>
+                            <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.familydoctor}</h3>}><button id="familydoctorButton" test-id="familydoctorButton" className="familydoctor"
+                                    onClick={(button, text, organ) => this.iconClicked("familydoctor", this.props.lang.familydoctor)}>
+                                <img src={familydoctorIcon} alt="familydoctor"/></button></Tooltip>
                             {/*<button id="transButton" className="trans" onClick={(button, text) => this.iconClicked("trans", this.props.lang.covid)}><img src={transIcon} alt="transIcon" /></button>*/}
 
                         </div>
