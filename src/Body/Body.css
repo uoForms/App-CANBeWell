@@ -407,11 +407,6 @@
     transform: scale(1.5, 1.5);
     transition: 0.5s;
   }
-
-  .icons img {
-    height: 38px;
-    width: 38px;
-   }
   
   .organ {
     width: 100%;
