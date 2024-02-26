@@ -311,9 +311,9 @@
     width: 9%;
   }
 
-  .mainRunner .brainGear {
+  .mainRunner .symptomchecker {
     top: 6%;
-    left: 15%;
+    left: 16%;
     width: 10.5%;
   }
   
@@ -335,15 +335,27 @@
     width: 9%;
   }
   
-  .mainRunner .sunExposure {
+  .mainRunner .familydoctor {
     top: 12%;
-    left: 15%;
+    left: 16%;
     width: 9%;
   }
   
   .mainRunner .covid {
     top: 12%;
     left: 31%;
+    width: 9%;
+  }
+
+  .mainRunner .brainGear {
+    top: 18%;
+    left: 16%;
+    width: 9%;
+  }
+
+  .mainRunner .sunExposure {
+    top: 18%;
+    left: 79%;
     width: 9%;
   }
   
