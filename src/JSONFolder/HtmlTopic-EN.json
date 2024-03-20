@@ -1338,15 +1338,5 @@
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150
-  },
-  {
-    "Button": "Mouth",
-    "Topic heading": "Dental",
-    "Subject": "Prevent dental disease",
-    "General Patient Text": "•\tBrush your teeth twice a day with fluoride toothpaste.\n•\tFloss daily.\n•\tEat a healthy diet.\n•\tAvoid tobacco.\n•\tLimit alcohol.\n•\tSee your dentist regularly.\n[[More; https://www.cda-adc.ca/en/oral_health/cfyt/dental_care/]]",
-    "Health Provider Text": "•\tBrush your teeth twice a day with fluoride toothpaste.\n•\tFloss daily.\n•\tEat a healthy diet.\n•\tAvoid tobacco.\n•\tLimit alcohol.\n•\tSee your dentist regularly.\n[[More; https://www.cda-adc.ca/en/oral_health/cfyt/dental_care/]]",
-    "Gender": "all",
-    "Minimum age": 18,
-    "Maximum age": 150
   }
 ]
