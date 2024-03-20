@@ -184,7 +184,7 @@
     "Topic heading": "Santé des os",
     "Subject": "Prévenir les fractures de fragilité",
     "General Patient Text": "2 Recommandations différentes:\n(<Groupe d'étude canadien GECSSP 2023>)\n•Les  femmes de 65 ans et plus :calculent leur risque avec cet [[outil; https://frax.groupeetudecanadien.ca/]] et avec leur clinicien décident si une ostéodensitométrie est nécessaire.\n•Le test n'est pas recommandé pour les hommes de tout âge ou les femmes âgées de moins de 65 ans , à moins qu'ils aient des[[ facteurs de risque; https://frax.groupeetudecanadien.ca/]]\n\n(<Ostéoporose Canada 2023>)\n•Les femmes et hommes de 70 ans et plus sont recommandés de passer une ostéodensitométrie \n[[Référence médicale; https://www.cmaj.ca/content/cmaj/195/46/E1585.full.pdf]]",
-    "Health Provider Text": "2 Recommandations différentes:\n(<Groupe d'étude canadien 2023>)\n•Pour les  femmes de 65 ans et plus : calculer  leur risque avec cet [[outil; https://frax.groupeetudecanadien.ca/]] et ensuite  avec leur clinicien elles décident si une ostéodensitométrie est nécessaire.\n•Le test n'est pas recommandé pour les hommes de tout âge ou les femmes âgées de moins de 65 ans , à moins qu'ils aient des[[ facteurs de risque; https://frax.groupeetudecanadien.ca/]]\n•Multiples revues systématiques à l'appui, sauve du temps et des ressources.\n•[[Ligne directrice complète; https://www.cmaj.ca/content/cmaj/195/21/E749.full.pdf]]\n\n(<Ostéoporose Canada 2023>)\nRecommandé pour tous les 70 ans et plus :\n• [[Référence: https://www.cmaj.ca/content/cmaj/195/46/E1585.full.pdf]]",
+    "Health Provider Text": "2 Recommandations différentes:\n(<Groupe d'étude canadien 2023>)\n•Pour les  femmes de 65 ans et plus : calculer  leur risque avec cet [[outil; https://frax.groupeetudecanadien.ca/]] et ensuite  avec leur clinicien elles décident si une ostéodensitométrie est nécessaire.\n•Le test n'est pas recommandé pour les hommes de tout âge ou les femmes âgées de moins de 65 ans , à moins qu'ils aient des[[ facteurs de risque; https://frax.groupeetudecanadien.ca/]]\n•Multiples revues systématiques à l'appui, sauve du temps et des ressources.\n•[[Ligne directrice complète; https://www.cmaj.ca/content/cmaj/195/21/E749.full.pdf]]\n\n(<Ostéoporose Canada 2023>)\nRecommandé pour tous les 70 ans et plus :\n• [[Référence; https://www.cmaj.ca/content/cmaj/195/46/E1585.full.pdf]]",
     "Gender": "m,f",
     "Minimum age": 65,
     "Maximum age": 150
@@ -1325,6 +1325,106 @@
     "Subject": "Prévenir les maladies du rein",
     "General Patient Text": "Garder vos reins en santé:\n[[La fondation du rein; https://rein.ca/La-sante-renale]]\n\n[[Santé des reins CHU de Québec; https://www.chudequebec.ca/patient/maladies-soins-et-services/m-informer-sur-ma-maladie-ou-ma-condition/insuffisance-renale.aspx]]\n\n[[Gestion de votre santé rénale; https://www.princeedwardisland.ca/fr/information/sante-i-p-e/gestion-votre-sante-renale]]",
     "Health Provider Text": "Lignes directrices\n•[[Insuffisance rénale chronique 2023; https://www.cmaj.ca/content/195/27/E936]]\n•Liens utiles [[ Société de nephrologie du Québec; https://sqn.qc.ca/la-societe/liens-utiles/]]",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "symptomchecker",
+    "Topic heading": "Vérifier vos symptômes",
+    "Subject": "Avant de vérifier",
+    "General Patient Text": "•Certaines provinces  offrent des outils en ligne pour vérifier les symptômes. Si votre province n'en offre pas, vous pouvez consulter ceux des autres provinces mais  les ressources provinciales mentionnées ne s'appliquent pas à vous (ex: clavardage)\n•Nous avons inclus les sites francophones. Cette page est mise à jour régulièrement. \n•Ces outils ne remplacent pas l'avis d'un professionnel de la santé\n•Si c'est un problème urgent appeler 911",
+    "Health Provider Text": "n/a",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "symptomchecker",
+    "Topic heading": "Vérifier vos symptômes",
+    "Subject": "Outils  de vérificaton des symptômes",
+    "General Patient Text": "•[[Ontario-vérificateur de symptômes; https://health811.ontario.ca/static/fr-ca/guest/symptom-assessment]]\n[[Ontario-Bibliothèque médicale; https://health811.ontario.ca/static/fr-ca/guest/medical-library?search=&searchPage=1&letter=a&azPage=1]]\n•[[Nouveau Brunswick-vérificateur de symptômes; https://www2.gnb.ca/content/gnb/fr/ministeres/sante/patients/SoinsDeSantePrimaires/En-quoi-consistent-les-soins-de-sante-primaires/verificateur-de-symptomes.html]]",
+    "Health Provider Text": "n/a",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "symptomchecker",
+    "Topic heading": "Vérifier vos symptômes",
+    "Subject": "Parler  à une infirmière ou infirmier",
+    "General Patient Text": "•Signaler le 811 \n•Sauf  au Manitoba appelez 1-888-315-9257",
+    "Health Provider Text": "n/a",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "symptomchecker",
+    "Topic heading": "Outil de vérification des symptômes",
+    "Subject": "Avant d'utiliser l'outil",
+    "General Patient Text": "n/a",
+    "Health Provider Text": "•Certaines provinces  offrent des outils en ligne pour vérifier les symptômes.\n•Nous avons inclus les sites francophones. Cette page est mise à jour régulièrement. \n•Ces outils ne remplacent pas l'avis d'un professionnel de la santé",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "symptomchecker",
+    "Topic heading": "Outil de vérification des symptômes",
+    "Subject": "Outils  de vérificaton des symptômes",
+    "General Patient Text": "n/a",
+    "Health Provider Text": "•[[Ontario-vérificateur de symptômes; https://health811.ontario.ca/static/fr-ca/guest/symptom-assessment]]\n[[Ontario-Bibliothèque médicale; https://health811.ontario.ca/static/fr-ca/guest/medical-library?search=&searchPage=1&letter=a&azPage=1]]\n•[[Nouveau Brunswick-vérificateur de symptômes; https://www2.gnb.ca/content/gnb/fr/ministeres/sante/patients/SoinsDeSantePrimaires/En-quoi-consistent-les-soins-de-sante-primaires/verificateur-de-symptomes.html]]",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "familydoctor",
+    "Topic heading": "Pas de MD ou IPS",
+    "Subject": "J'ai un problème de santé",
+    "General Patient Text": "Si vous n'avez pas de médecin de famille ou d'infirmière praticienne spécialisée (IPS)\n•Signaler le 811 \n•Sauf  au Manitoba appelez 1-888-315-9257\n•Ou accéder au site web 811 de votre province sauf au Manitoba  voir le [[site de meilleure santé; https://www.gov.mb.ca/betterhealth/index.fr.html]]",
+    "Health Provider Text": "•Signaler le 811 \n•Sauf  au Manitoba appelez 1-888-315-9257\n•Ou accéder au site web 811 de votre province sauf au Manitoba  voir le [[site de meilleure santé; https://www.gov.mb.ca/betterhealth/index.fr.html]]",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "familydoctor",
+    "Topic heading": "Pas de MD ou IPS",
+    "Subject": "Je veux  trouver un MD ou IPS ( infirmière praticienne spécialisée)",
+    "General Patient Text": "La plupart des provinces ont des listes d'attentes où l'on peut s'inscrire.\nConsultez le site web 811 de votre province ou au Manitoba [[ici; https://www.gov.mb.ca/betterhealth/index.fr.html]]",
+    "Health Provider Text": "La plupart des provinces ont des listes d'attentes où l'on peut s'inscrire\nConsultez le site web 811 de votre province ou au Manitoba [[ici; https://www.gov.mb.ca/betterhealth/index.fr.html]]",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Oral Health",
+    "Topic heading": "Santé buccodentaire",
+    "Subject": "Gouvernement du Canada",
+    "General Patient Text": "•[[Santé]] buccodentaire; https://www.canada.ca/fr/sante-publique/sujets/sante-buccodentaire.html]]\n•[[ Régime canadien de soins dentaires; https://www.canada.ca/fr/services/prestations/dentaire/regime-soins-dentaires.html",
+    "Health Provider Text": "•[[Santé]] buccodentaire; https://www.canada.ca/fr/sante-publique/sujets/sante-buccodentaire.html]]\n•[[ Régime canadien de soins dentaires; https://www.canada.ca/fr/services/prestations/dentaire/regime-soins-dentaires.html",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Oral Health",
+    "Topic heading": "Santé buccodentaire",
+    "Subject": "Association dentaire canadienne",
+    "General Patient Text": "[[Votre santé buccodentaire; https://www.cda-adc.ca/fr/oral_health/index.asp]]",
+    "Health Provider Text": "[[Votre santé buccodentaire; https://www.cda-adc.ca/fr/oral_health/index.asp]]",
+    "Gender": "all",
+    "Minimum age": 18,
+    "Maximum age": 150
+  },
+  {
+    "Button": "Oral Health",
+    "Topic heading": "Santé buccodentaire",
+    "Subject": "Santé dentaire des autochtones",
+    "General Patient Text": "•[[Informations du programme dentaire fédéral pour les Premières Nations et les Inuit; https://www.sac-isc.gc.ca/fra/1574192221735/1574192306943]]\n•Non disponible en français [[Indigenous Dental Association of Canada; https://www.idac.agency/]]",
+    "Health Provider Text": "•[[Informations du programme dentaire fédéral pour les Premières Nations et les Inuit; https://www.sac-isc.gc.ca/fra/1574192221735/1574192306943]]\n•Non disponible en français [[Indigenous Dental Association of Canada; https://www.idac.agency/]]",
     "Gender": "all",
     "Minimum age": 18,
     "Maximum age": 150

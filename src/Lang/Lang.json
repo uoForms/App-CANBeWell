@@ -136,7 +136,9 @@
     "topic_is_not_applicable": "Prevent disease with healthy living (healthy eating, physical activity, no smoking). No other specific recommendations at this time.",
     "topic_filter_all": "Show All",
     "topic_filter_top_10": "Show Top 10",
-    "clickOn_Text": "Click on blue button below"
+    "clickOn_Text": "Click on blue button below",
+    "symptomchecker": "Check Symptoms",
+    "familydoctor": "No Family MD/NP"
   },
   "french": {
     "instruction_modal_header": "Veuillez saisir les informations ci-dessous pour recevoir des conseils personnalisés pour rester en santé:",
@@ -275,6 +277,8 @@
     "topic_filter_top_10": "Dix premiers",
     "clickOn_Text": "Cliquez sur un bouton bleu ci-dessous",
     "kidney": "Rein",
-    "mouth": "dentaire"
+    "mouth": "dentaire",
+    "symptomchecker": "Vérifier vos symptoms",
+    "familydoctor": "Sans MD Famille/IP"
   }
 }
