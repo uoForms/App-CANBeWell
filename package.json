@@ -1,82 +1,82 @@
 {
-  "name": "web-app-can_be_well",
-  "version": "0.1.0",
-  "private": true,
-  "homepage": "https://canbewell-uottawa.firebaseapp.com/",
-  "dependencies": {
-    "@material-ui/core": "^4.11.2",
-    "@material-ui/icons": "^4.11.2",
-    "bootstrap": "^4.4.1",
-    "build": "^0.1.4",
-    "dompurify": "^2.2.0",
-    "enzyme": "^3.10.0",
-    "enzyme-adapter-react-16": "^1.15.1",
-    "firebase": "^10.1.0",
-    "firebase-tools": "^7.12.1",
-    "jquery": "^3.5.1",
-    "mobile-detect": "^1.4.4",
-    "node-pre-gyp": "^0.14.0",
-    "react": "^16.13.0",
-    "react-bootstrap": "^1.0.0-beta.17",
-    "react-cookie": "^4.0.1",
-    "react-dom": "^16.13.0",
-    "react-ga": "^2.7.0",
-    "react-icons": "^3.9.0",
-    "react-native-popup-dialog": "^0.18.3",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "4.0.3",
-    "react-sidebar": "^3.0.2",
-    "react-slick": "^0.29.0",
-    "react-test-renderer": "^16.13.0",
-    "slick-carousel": "^1.8.1",
-    "travis": "^0.1.1",
-    "uuid": "^7.0.3"
-  },
-  "scripts": {
-    "start": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
-    "build": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts build",
-    "test": "react-scripts test --env=jsdom --passWithNoTests",
-    "eject": "react-scripts eject",
-    "cypress": "cypress open --config-file ./cypress/configs/local.json"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "nyc": {
-    "all": true,
-    "include": "src/**/*.js",
-    "report-dir": "cypress/coverage"
-  },
-  "devDependencies": {
-    "@bahmutov/cypress-extends": "^1.1.0",
-    "@cypress/code-coverage": "^3.9.11",
-    "@cypress/instrument-cra": "^1.4.0",
-    "babel-plugin-istanbul": "^6.0.0",
-    "capitalize": "^2.0.3",
-    "cy-view": "^1.0.11",
-    "cypress": "^8.3.1",
-    "cypress-failed-log": "^2.9.2",
-    "cypress-mochawesome-reporter": "^2.2.1",
-    "cypress-real-events": "^1.5.1",
-    "cypress-wait-until": "^1.7.1",
-    "deep-equal-in-any-order": "^1.1.13",
-    "eslint": "^7.32.0",
-    "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-loader": "^4.0.2",
-    "eslint-plugin-chai-friendly": "^0.7.2",
-    "eslint-plugin-cypress": "^2.11.3",
-    "eslint-plugin-import": "^2.24.2",
-    "istanbul-lib-coverage": "^3.0.1",
-    "nyc": "^15.1.0",
-    "react-native-testing-library": "^1.11.1",
-    "sass": "^1.64.1"
-  }
+    "name": "web-app-can_be_well",
+    "version": "0.1.0",
+    "private": true,
+    "homepage": "https://canbewell-uottawa.firebaseapp.com/",
+    "dependencies": {
+        "@material-ui/core": "^4.11.2",
+        "@material-ui/icons": "^4.11.2",
+        "bootstrap": "^4.4.1",
+        "build": "^0.1.4",
+        "dompurify": "^2.2.0",
+        "enzyme": "^3.10.0",
+        "enzyme-adapter-react-16": "^1.15.1",
+        "firebase": "^10.1.0",
+        "firebase-tools": "^7.12.1",
+        "jquery": "^3.5.1",
+        "mobile-detect": "^1.4.4",
+        "node-pre-gyp": "^0.14.0",
+        "react": "^16.13.0",
+        "react-bootstrap": "^1.0.0-beta.17",
+        "react-cookie": "^4.0.1",
+        "react-dom": "^16.13.0",
+        "react-ga": "^2.7.0",
+        "react-icons": "^3.9.0",
+        "react-native-popup-dialog": "^0.18.3",
+        "react-router-dom": "^5.1.2",
+        "react-scripts": "4.0.3",
+        "react-sidebar": "^3.0.2",
+        "react-slick": "^0.29.0",
+        "react-test-renderer": "^16.13.0",
+        "slick-carousel": "^1.8.1",
+        "travis": "^0.1.1",
+        "uuid": "^7.0.3"
+    },
+    "scripts": {
+        "start": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
+        "build": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts build",
+        "test": "react-scripts test --env=jsdom --passWithNoTests",
+        "eject": "react-scripts eject",
+        "cypress": "cypress open --config-file ./cypress/configs/local.json"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "nyc": {
+        "all": true,
+        "include": "src/**/*.js",
+        "report-dir": "cypress/coverage"
+    },
+    "devDependencies": {
+        "@bahmutov/cypress-extends": "^1.1.0",
+        "@cypress/code-coverage": "^3.9.11",
+        "@cypress/instrument-cra": "^1.4.0",
+        "babel-plugin-istanbul": "^6.0.0",
+        "capitalize": "^2.0.3",
+        "cy-view": "^1.0.11",
+        "cypress": "^8.3.1",
+        "cypress-failed-log": "^2.9.2",
+        "cypress-mochawesome-reporter": "^2.2.1",
+        "cypress-real-events": "^1.5.1",
+        "cypress-wait-until": "^1.7.1",
+        "deep-equal-in-any-order": "^1.1.13",
+        "eslint": "^7.32.0",
+        "eslint-config-airbnb-base": "^14.2.1",
+        "eslint-loader": "^4.0.2",
+        "eslint-plugin-chai-friendly": "^0.7.2",
+        "eslint-plugin-cypress": "^2.11.3",
+        "eslint-plugin-import": "^2.24.2",
+        "istanbul-lib-coverage": "^3.0.1",
+        "nyc": "^15.1.0",
+        "react-native-testing-library": "^1.11.1",
+        "sass": "^1.64.1"
+    }
 }
