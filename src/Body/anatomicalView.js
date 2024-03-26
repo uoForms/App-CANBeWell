@@ -676,7 +676,7 @@ class Anatomy extends React.Component {
             >
               <button
                 className="femaleMouth"
-                test-id="mouthButton"
+                test-id="eyesButton"
                 onClick={(button, text, organ) =>
                   this.organClicked(
                     "mouth",
