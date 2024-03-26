@@ -676,10 +676,10 @@ class Anatomy extends React.Component {
             >
               <button
                 className="femaleMouth"
-                test-id="eyesButton"
+                test-id="mouthButton"
                 onClick={(button, text, organ) =>
                   this.organClicked(
-                    "Mouth",
+                    "mouth",
                     this.props.lang.mouth,
                     "FemaleMouth"
                   )
@@ -963,7 +963,7 @@ class Anatomy extends React.Component {
                 className="mouth"
                 test-id="mouthButton"
                 onClick={(button, text, organ) =>
-                  this.organClicked("Mouth", this.props.lang.mouth, "Mouth")
+                  this.organClicked("mouth", this.props.lang.mouth, "Mouth")
                 }
               />
             </Tooltip>
@@ -1265,7 +1265,7 @@ class Anatomy extends React.Component {
                 className="mouth"
                 test-id="mouthButton"
                 onClick={(button, text, organ) =>
-                  this.organClicked("Mouth", this.props.lang.mouth, "Mouth")
+                  this.organClicked("mouth", this.props.lang.mouth, "Mouth")
                 }
               />
             </Tooltip>

@@ -113,7 +113,7 @@
     "heart": "Heart",
     "liver": "Liver",
     "kidney": "Kidney",
-    "mouth": "Dental",
+    "mouth": "Oral Health",
     "lungs": "Lungs",
     "ovary": "Ovary",
     "pancreas": "Pancreas",
@@ -277,7 +277,7 @@
     "topic_filter_top_10": "Dix premiers",
     "clickOn_Text": "Cliquez sur un bouton bleu ci-dessous",
     "kidney": "Rein",
-    "mouth": "dentaire",
+    "mouth": "Santé buccodentaire",
     "symptomchecker": "Vérifier vos symptoms",
     "familydoctor": "Sans MD Famille/IP"
   }
