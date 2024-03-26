@@ -1,470 +1,491 @@
 .mainRunner {
-    /* position: absolute;
-    width: 100%;
-    overflow: auto;
-    background-color: inherit;
-    display: block;
-    height: auto; */
-    position: absolute;
-    left: 50%; /*(added to move the body to left by 50%)*/
-    transform: translateX(-50%); /*(translated the x-dimension to center it to the page)*/
-    width: 35%; /*(resized the image from 100% to 50%)*/
-    overflow: auto;
-    background-color: inherit;
-    display: block;
-    height: auto;
-  }
-  .mainRunner img {
-    width: 100%;
-    /*top:80%;*/
-  }
-  .mainRunner button {
-    position: absolute;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    background: inherit;
-    border: none !important;
-    font-size: 0;
-    cursor: pointer;
-  }
+  /* position: absolute;
+  width: 100%;
+  overflow: auto;
+  background-color: inherit;
+  display: block;
+  height: auto; */
+  position: absolute;
+  left: 50%; /*(added to move the body to left by 50%)*/
+  transform: translateX(-50%); /*(translated the x-dimension to center it to the page)*/
+  width: 35%; /*(resized the image from 100% to 50%)*/
+  overflow: auto;
+  background-color: inherit;
+  display: block;
+  height: auto;
+}
+.mainRunner img {
+  width: 100%;
+  /*top:80%;*/
+}
+.mainRunner button {
+  position: absolute;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: inherit;
+  border: none !important;
+  font-size: 0;
+  cursor: pointer;
+}
 
-  /* .mainRunner .fixSelectedOrgan {
-    position: fixed;
-  } */
-  
-  .mainRunner .femaleAorta {
-    top: 32%;
-    left: 49.75%;
-    width: 4%;
-    height: 13%;
-  }
-  
-  .mainRunner .femaleBowel {
-    top: 42%;
-    left: 50%;
-    width: 23%;
-    height: 5%;
-  }
-  
-  .mainRunner .femaleKidney {
-    top: 38%;
-    left: 44%;
-    width: 8%;
-    height: 4%;
-  }
-  
-  .mainRunner .breast {
-    top: 27%;
-    left: 43%;
-    width: 10%;
-    height: 7%;
-  }
-  
-  .mainRunner .femaleEyes {
-    top: 9.75%;
-    left: 49.5%;
-    width: 11%;
-    height: 2.5%;
-  }
-  
-  .mainRunner .femaleHeart {
-    top: 25.5%;
-    left: 54%;
-    width: 8%;
-    height: 6%;
-  }
-  
-  .mainRunner .femaleBone {
-    top: 65%;
-    left: 56%;
-    width: 8%;
-    height: 8%;
-  }
-  
-  .mainRunner .femaleLiver {
-    top: 34.5%;
-    left: 43%;
-    width: 9%;
-    height: 4%;
-  }
-  
-  .mainRunner .femaleLungs {
-    top: 25%;
-    left: 50%;
-    width: 23%;
-    height: 8%;
-  }
-  
-  .mainRunner .femalePancreas {
-    top: 36%;
-    left: 56%;
-    width: 9%;
-    height: 3%;
-  }
-  
-  .mainRunner .femaleStomach {
-    top: 32%;
-    left: 56%;
-    width: 8%;
-    height: 4%;
-  }
-  
-  .mainRunner .ovary {
-    top: 44%;
-    left: 49%;
-    width: 13%;
-    height: 3%;
-  }
-  
-  .mainRunner .uterus {
-    top: 46%;
-    left: 49%;
-    width: 5%;
-    height: 5%;
-  }
-  
-  .mainRunner .femaleGenitalia {
-    top: 49.5%;
-    left: 49.5%;
-    width: 9%;
-    height: 4%;
-  }
-  
-  .mainRunner .maleAorta {
-    top: 32%;
-    left: 47.5%;
-    width: 2%;
-    height: 13%;
-  }
-  
-  .mainRunner .maleBowel {
-    top: 44.8%;
-    left: 48%;
-    width: 22%;
-    height: 8%;
-  }
-  
-  .mainRunner .maleEyes {
-    top: 9.5%;
-    left: 47.5%;
-    width: 12%;
-    height: 2%;
-  }
-  
-  .mainRunner .maleHeart {
-    top: 25.5%;
-    left: 52%;
-    width: 7%;
-    height: 7%;
-  }
-  
-  .mainRunner .maleBone {
-    top: 65%;
-    left: 55%;
-    width: 10%;
-    height: 10%;
-  }
-  
-  .mainRunner .maleLiver {
-    top: 32.5%;
-    left: 42%;
-    width: 11%;
-    height: 4%;
-  }
+/* .mainRunner .fixSelectedOrgan {
+  position: fixed;
+} */
 
-  .mainRunner .maleKidneyLeft {
-    top: 39%;
-    left: 42%;
-    width: 8%;
-    height: 4%;
-  }
+.mainRunner .femaleAorta {
+  top: 32%;
+  left: 49.75%;
+  width: 4%;
+  height: 13%;
+}
 
-  .mainRunner .maleKidneyRight {
-    top: 39%;
-    left: 53%;
-    width: 6%;
-    height: 2%;
-  }
-  
-  .mainRunner .maleLungs {
-    top: 25%;
-    left: 48%;
-    width: 25%;
-    height: 10%;
-  }
-  
-  .mainRunner .malePancreas {
-    top: 36.5%;
-    left: 54%;
-    width: 9%;
-    height: 3%;
-  }
-  
-  .mainRunner .maleStomach {
-    top: 32.9%;
-    left: 54%;
-    width: 9%;
-    height: 4%;
-  }
-  
-  .mainRunner .maleGenitalia {
-    top: 50.2%;
-    left: 47.5%;
-    width: 9%;
-    height: 4%;
-  }
-  
-  .mainRunner .genitalia {
-    /*content: "";
-     background: grey;*/
-    /*box-shadow: inset 0 0 0 200px rgba(255,255,255,0.05);
-     filter: blur(10px);*/
-    /*opacity: 0.8;
-     filter: blur(15px);*/
-    /* background: grey; */
-    border-radius: 40px;
-    top: 50%;
-    left: 49.5%;
-    width: 7%;
-    height: 4%;
-  }
-  
-  .mainRunner .aorta {
-    top: 30%;
-    left: 49.75%;
-    width: 3%;
-    height: 20%;
-  }
-  
-  .mainRunner .bowel {
-    top: 42%;
-    left: 50%;
-    width: 23%;
-    height: 7%;
-  }
-  
-  .mainRunner .eyes {
-    top: 9%;
-    left: 49.5%;
-    width: 11%;
-    height: 2.5%;
-  }
-  
-  .mainRunner .heart {
-    top: 25.5%;
-    left: 53%;
-    width: 11%;
-    height: 6%;
-  }
+.mainRunner .femaleBowel {
+  top: 42%;
+  left: 50%;
+  width: 23%;
+  height: 5%;
+}
 
-   .mainRunner .kidneyLeft {
-    top: 37%;
-    left: 44%;
-    width: 8%;
-    height: 4%;
-  }
+.mainRunner .femaleKidney {
+  top: 38%;
+  left: 44%;
+  width: 8%;
+  height: 4%;
+}
 
-  .mainRunner .kidneyRight {
-    top: 37%;
-    left: 55%;
-    width: 7%;
-    height: 3%;
-  }
-  
-  .mainRunner .bone {
-    top: 65%;
-    left: 58%;
-    width: 8%;
-    height: 8%;
-  }
-  
-  .mainRunner .liver {
-    top: 33.5%;
-    left: 43%;
-    width: 10%;
-    height: 4%;
-  }
-  
-  .mainRunner .lungs {
-    top: 25%;
-    left: 50%;
-    width: 25%;
-    height: 10%;
-  }
-  
-  .mainRunner .pancreas {
-    top: 34%;
-    left: 56%;
-    width: 11%;
-    height: 3.5%;
-  }
-  
-  .mainRunner .stomach {
-    top: 31%;
-    left: 56%;
-    width: 9%;
-    height: 4%;
-  }
-  .mainRunner .brain {
-    top: 6%;
-    left: 31%;
-    width: 9%;
-  }
+.mainRunner .breast {
+  top: 27%;
+  left: 43%;
+  width: 10%;
+  height: 7%;
+}
 
-  .mainRunner .symptomchecker {
-    top: 6%;
-    left: 16%;
-    width: 9%;
-  }
-  
-  .mainRunner .exam {
-    top: 12%;
-    left: 64%;
-    width: 9%;
-  }
-  
-  .mainRunner .falls {
-    top: 46%;
-    left: 59%;
-    width: 9%;
-  }
-  
-  .mainRunner .immunization {
-    top: 22%;
-    left: 64%;
-    width: 9%;
-  }
-  
-  .mainRunner .familydoctor {
-    top: 12%;
-    left: 16%;
-    width: 9%;
-  }
-  
-  .mainRunner .covid {
-    top: 12%;
-    left: 31%;
-    width: 9%;
-  }
+.mainRunner .femaleEyes {
+  top: 9.75%;
+  left: 49.5%;
+  width: 11%;
+  height: 2.5%;
+}
 
-  .mainRunner .brainGear {
-    top: 18%;
-    left: 16%;
-    width: 10%;
-  }
+.mainRunner .femaleMouth {
+  top: 12.5%;
+  left: 50%;
+  width: 10%;
+  height: 2%;
+}
 
-  .mainRunner .sunExposure {
-    top: 18%;
-    left: 79%;
-    width: 9%;
-  }
-  
-  .mainRunner .phyActivity {
-    top: 12%;
-    left: 79%;
-    width: 9%;
-  }
+.mainRunner .femaleHeart {
+  top: 25.5%;
+  left: 54%;
+  width: 8%;
+  height: 6%;
+}
 
-  .mainRunner .money {
-    top: 6%;
-    left: 79%;
-    width: 9%;
-  }
+.mainRunner .femaleBone {
+  top: 65%;
+  left: 56%;
+  width: 8%;
+  height: 8%;
+}
 
-  .mainRunner .sleep {
-    top: 6%;
-    left: 64%;
-    width: 9%;
-  }
+.mainRunner .femaleLiver {
+  top: 34.5%;
+  left: 43%;
+  width: 9%;
+  height: 4%;
+}
 
-  .mainRunner .bp {
-    top: 30.4%;
-    left: 69.7%;
-    width: 19.4%;
-  }
+.mainRunner .femaleLungs {
+  top: 25%;
+  left: 50%;
+  width: 23%;
+  height: 8%;
+}
 
-  .mainRunner .bpfemale {
-    top: 31%;
-    left: 70.3%;
-    width: 16.7%;
-  }
-  .mainRunner .bpnb {
-    top: 30%;
-    left: 71.6%;
-    width: 16.7%;
-  }
-  .mainRunner .bptg {
-    top: 30%;
-    left: 71.6%;
-    width: 16.7%;
-  }
+.mainRunner .femalePancreas {
+  top: 36%;
+  left: 56%;
+  width: 9%;
+  height: 3%;
+}
 
-  #icons img:hover > div#organ {
-    width: 3000%;
-  }
-  
-  .icons img:hover {
-    transform: scale(1.5, 1.5);
-    transition: 0.5s;
-  }
-  
-  .organ {
-    width: 100%;
-    position: absolute;
-    left: 0px;
-    /*top:1.5%;
-         left:1.5%;*/
-    visibility: hidden;
-  }
-  
-  .body {
-    width: 100%;
-  }
-  
-  .img2 {
-    border: 1px solid #0f0;
-    position: relative;
-  }
-  
-  .img3 {
-    border: 1px solid #0f0;
-    position: relative;
-    /*left: 30px;*/
-  }
-  
-  .mainRunner .trans {
-    top: 6%;
-    left: 31%;
-    width: 7%;
-  }
-  
-  .mainRunner .maleGenital {
-    top: 51%;
-    left: 47.8%;
-    width: 9%;
-  }
-  
-  .mainRunner .transGenital {
-    top: 49%;
-    left: 49.5%;
-    width: 9%;
-  }
-  
-  .mainRunner .femaleGenital {
-    top: 50%;
-    left: 50%;
-    width: 9%;
-  }
-  
-  
+.mainRunner .femaleStomach {
+  top: 32%;
+  left: 56%;
+  width: 8%;
+  height: 4%;
+}
+
+.mainRunner .ovary {
+  top: 44%;
+  left: 49%;
+  width: 13%;
+  height: 3%;
+}
+
+.mainRunner .uterus {
+  top: 46%;
+  left: 49%;
+  width: 5%;
+  height: 5%;
+}
+
+.mainRunner .femaleGenitalia {
+  top: 49.5%;
+  left: 49.5%;
+  width: 9%;
+  height: 4%;
+}
+
+.mainRunner .maleAorta {
+  top: 32%;
+  left: 47.5%;
+  width: 2%;
+  height: 13%;
+}
+
+.mainRunner .maleBowel {
+  top: 44.8%;
+  left: 48%;
+  width: 22%;
+  height: 8%;
+}
+
+.mainRunner .maleEyes {
+  top: 9.5%;
+  left: 47.5%;
+  width: 12%;
+  height: 2%;
+}
+
+.mainRunner .maleMouth {
+  top: 12.5%;
+  left: 47.5%;
+  width: 10%;
+  height: 2%;
+}
+
+.mainRunner .maleHeart {
+  top: 25.5%;
+  left: 52%;
+  width: 7%;
+  height: 7%;
+}
+
+.mainRunner .maleBone {
+  top: 65%;
+  left: 55%;
+  width: 10%;
+  height: 10%;
+}
+
+.mainRunner .maleLiver {
+  top: 32.5%;
+  left: 42%;
+  width: 11%;
+  height: 4%;
+}
+
+.mainRunner .maleKidneyLeft {
+  top: 39%;
+  left: 42%;
+  width: 8%;
+  height: 4%;
+}
+
+.mainRunner .maleKidneyRight {
+  top: 39%;
+  left: 53%;
+  width: 6%;
+  height: 2%;
+}
+
+.mainRunner .maleLungs {
+  top: 25%;
+  left: 48%;
+  width: 25%;
+  height: 10%;
+}
+
+.mainRunner .malePancreas {
+  top: 36.5%;
+  left: 54%;
+  width: 9%;
+  height: 3%;
+}
+
+.mainRunner .maleStomach {
+  top: 32.9%;
+  left: 54%;
+  width: 9%;
+  height: 4%;
+}
+
+.mainRunner .maleGenitalia {
+  top: 50.2%;
+  left: 47.5%;
+  width: 9%;
+  height: 4%;
+}
+
+.mainRunner .genitalia {
+  /*content: "";
+   background: grey;*/
+  /*box-shadow: inset 0 0 0 200px rgba(255,255,255,0.05);
+   filter: blur(10px);*/
+  /*opacity: 0.8;
+   filter: blur(15px);*/
+  /* background: grey; */
+  border-radius: 40px;
+  top: 50%;
+  left: 49.5%;
+  width: 7%;
+  height: 4%;
+}
+
+.mainRunner .aorta {
+  top: 30%;
+  left: 49.75%;
+  width: 3%;
+  height: 20%;
+}
+
+.mainRunner .bowel {
+  top: 42%;
+  left: 50%;
+  width: 23%;
+  height: 7%;
+}
+
+.mainRunner .eyes {
+  top: 9%;
+  left: 49.5%;
+  width: 11%;
+  height: 2.5%;
+}
+
+.mainRunner .mouth {
+  top: 11.7%;
+  left: 50%;
+  width: 10%;
+  height: 2%;
+}
+
+.mainRunner .heart {
+  top: 25.5%;
+  left: 53%;
+  width: 11%;
+  height: 6%;
+}
+
+ .mainRunner .kidneyLeft {
+  top: 37%;
+  left: 44%;
+  width: 8%;
+  height: 4%;
+}
+
+.mainRunner .kidneyRight {
+  top: 37%;
+  left: 55%;
+  width: 7%;
+  height: 3%;
+}
+
+.mainRunner .bone {
+  top: 65%;
+  left: 58%;
+  width: 8%;
+  height: 8%;
+}
+
+.mainRunner .liver {
+  top: 33.5%;
+  left: 43%;
+  width: 10%;
+  height: 4%;
+}
+
+.mainRunner .lungs {
+  top: 25%;
+  left: 50%;
+  width: 25%;
+  height: 10%;
+}
+
+.mainRunner .pancreas {
+  top: 34%;
+  left: 56%;
+  width: 11%;
+  height: 3.5%;
+}
+
+.mainRunner .stomach {
+  top: 31%;
+  left: 56%;
+  width: 9%;
+  height: 4%;
+}
+.mainRunner .brain {
+  top: 6%;
+  left: 31%;
+  width: 9%;
+}
+
+.mainRunner .symptomchecker {
+  top: 6%;
+  left: 16%;
+  width: 9%;
+}
+
+.mainRunner .exam {
+  top: 12%;
+  left: 64%;
+  width: 9%;
+}
+
+.mainRunner .falls {
+  top: 46%;
+  left: 59%;
+  width: 9%;
+}
+
+.mainRunner .immunization {
+  top: 22%;
+  left: 64%;
+  width: 9%;
+}
+
+.mainRunner .familydoctor {
+  top: 12%;
+  left: 16%;
+  width: 9%;
+}
+
+.mainRunner .covid {
+  top: 12%;
+  left: 31%;
+  width: 9%;
+}
+
+.mainRunner .brainGear {
+  top: 18%;
+  left: 16%;
+  width: 10%;
+}
+
+.mainRunner .sunExposure {
+  top: 18%;
+  left: 79%;
+  width: 9%;
+}
+
+.mainRunner .phyActivity {
+  top: 12%;
+  left: 79%;
+  width: 9%;
+}
+
+.mainRunner .money {
+  top: 6%;
+  left: 79%;
+  width: 9%;
+}
+
+.mainRunner .sleep {
+  top: 6%;
+  left: 64%;
+  width: 9%;
+}
+
+.mainRunner .bp {
+  top: 30.4%;
+  left: 69.7%;
+  width: 19.4%;
+}
+
+.mainRunner .bpfemale {
+  top: 31%;
+  left: 70.3%;
+  width: 16.7%;
+}
+.mainRunner .bpnb {
+  top: 30%;
+  left: 71.6%;
+  width: 16.7%;
+}
+.mainRunner .bptg {
+  top: 30%;
+  left: 71.6%;
+  width: 16.7%;
+}
+
+#icons img:hover > div#organ {
+  width: 3000%;
+}
+
+.icons img:hover {
+  transform: scale(1.5, 1.5);
+  transition: 0.5s;
+}
+
+.organ {
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  /*top:1.5%;
+       left:1.5%;*/
+  visibility: hidden;
+}
+
+.body {
+  width: 100%;
+}
+
+.img2 {
+  border: 1px solid #0f0;
+  position: relative;
+}
+
+.img3 {
+  border: 1px solid #0f0;
+  position: relative;
+  /*left: 30px;*/
+}
+
+.mainRunner .trans {
+  top: 6%;
+  left: 31%;
+  width: 7%;
+}
+
+.mainRunner .maleGenital {
+  top: 51%;
+  left: 47.8%;
+  width: 9%;
+}
+
+.mainRunner .transGenital {
+  top: 49%;
+  left: 49.5%;
+  width: 9%;
+}
+
+.mainRunner .femaleGenital {
+  top: 50%;
+  left: 50%;
+  width: 9%;
+}
+
+
 @media only screen and (max-width: 480px) {
-  .mainRunner {
-    width: 100%;
-  }
+.mainRunner {
+  width: 100%;
+}
 }
 
 @media only screen and (min-width: 481px) and (max-width: 1000px) {
-  .mainRunner {
-    width: 70%;
-  }
+.mainRunner {
+  width: 70%;
+}
 }
