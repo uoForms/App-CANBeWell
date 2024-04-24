@@ -9,6 +9,69 @@ img {
     left: 20px;
 }
 
+.btn_started {
+  width: 100%;
+  height: 100PX;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.flex_btn{
+padding: 15px;
+display: flex !important;
+justify-content: space-evenly;
+}
+
+
+.ml-10
+{
+  margin-left: 10px;
+}
+
+.btn_new{
+  width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pad_15{
+  padding: 15px;
+}
+
+.btn_alginment{
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.ht_450{
+  height: 450px !important;
+}
+.justify-content-space-between 
+{
+  justify-content: space-between;
+}
+
+.container_button {
+  background-color: transparent !important;
+  color: #afe125  !important;
+  border: 2px solid #afe125  !important;
+  border-radius: 10px;
+  
+}
+
+.container_button1 {
+  background-color: transparent !important;
+  color: white  !important;
+  border: 2px solid white !important;
+  border-radius: 10px;
+  
+}
+
 .landing-button-img-en-header{
   width: 150px;
 }
