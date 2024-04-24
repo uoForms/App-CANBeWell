@@ -24,6 +24,50 @@
     text-align: right;
 }
 
+.d-flex-row{
+    display: flex !important;
+    flex-direction: row;
+    margin-left:25px;
+
+
+}
+
+.outer_div{
+    margin: 22;
+    margin-top: 50px;
+    border-radius: 10px;
+    background-color: #dae2eb;
+    padding: 15px;
+
+}
+
+.outer_div_symptoms {
+    margin: 22;
+    margin-top: 50px;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: transparent;
+    border: 2px solid #d7df21 ;                                   
+                                        
+
+}
+
+.d-flex-col{
+
+    display: flex;
+    flex-direction: column;
+
+}
+.mt-15{
+    margin-top: 50px;
+    margin-left:25px;
+}
+
+.ul_align{
+    margin-bottom: 0 !important;
+    
+}
+
 .btn {
     padding: 8px 36px;
     border-radius: 12px;
