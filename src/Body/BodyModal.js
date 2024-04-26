@@ -19,7 +19,7 @@ class BodyModal extends React.Component {
     var topicsToDisplay = display;
 
     //I dont think this is a word
-    const blueist = '#27AAE1';
+    const blueist = '#0089B5';
 
     const listItemStyle = {
       backgroundColor: blueist,

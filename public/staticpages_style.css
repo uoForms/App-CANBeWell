@@ -6,7 +6,7 @@
     text-align: center;
 }
 .parallax-background {
-    background-color: #25AAE1;
+    background-color: #0089B5;
     text-align: center;
 }
 .pagetitle h1 {
@@ -273,7 +273,7 @@ a.card-link-play {
     margin-top: -32px;
     align-items: center;
     justify-content: center;
-    background: rgb(28 154 214);
+    background: #0089B5;
     border-radius: 50%;
     z-index: 100;
 }
