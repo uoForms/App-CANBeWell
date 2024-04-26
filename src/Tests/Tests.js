@@ -197,7 +197,7 @@ class TestTable extends React.Component {
     const backdroplistItemStyle = {
       padding: 5
     };
-    const blueist = '#27AAE1';
+    const blueist = '#0089B5';
     const listItemStyle = {
       backgroundColor: blueist,
       fontWeight: 300,
