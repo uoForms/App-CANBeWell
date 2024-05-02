@@ -159,10 +159,10 @@ class LandingPageEN extends React.Component {
                         <div className='pad_15'>
 
                          <a
-                                // href="#"
+                               
                                 type="button"
                                 className="btn  btn_new btn-lg btn_alginment container_button1"
-                                // onClick={this.handleChange}
+                                
                                 
                                     href="/iCanBeWell_CheckYourSymptoms.htm"
                                     rel="noopener"
