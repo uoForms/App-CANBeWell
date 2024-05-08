@@ -115,7 +115,7 @@ class LandingPageEN extends React.Component {
                                 className="btn btn-primary btn-lg btn_started btn_alginment"
                                 onClick={this.handleChange}
                             >
-                                <b>Get started</b>
+                                <b>Get Started</b>
                             </a>
 {/* New code */}
                              {/* <a
@@ -193,7 +193,7 @@ class LandingPageEN extends React.Component {
                                 Watch Demo
                             </a> */}
                                 <a
-                                    className="text-center font-weight-bold"
+                                    className="text-center font-weight-bold col_grey"
                                      href={videoen}
                                      target="_blank"
                                      test-id="update-banner-en-video"
@@ -205,7 +205,7 @@ class LandingPageEN extends React.Component {
                                     href="/iCanBeWell_PrivacyPolicy.htm"
                                     rel="noopener"
                                     test-id="privacy-statement-en"
-                                    className="text-center"
+                                    className="text-center col_grey"
                                 >
                                     Privacy Statement
                                 </a>
@@ -214,7 +214,7 @@ class LandingPageEN extends React.Component {
                                     href="/iCanBeWell_AboutUs.htm"
                                     rel="noopener"
                                     test-id="aboutus-statement-en"
-                                    className="text-center"
+                                    className="text-center col_grey"
                                 >
                                     About Us
                                 </a>

@@ -110,14 +110,15 @@ class LandingPageFR extends React.Component {
                         </a>
                     </div>
 
-                    <section className="primary-background res-blue-width res-blue-height-fr py-3 d-flex flex-column justify-content-center">
+                    <section className="primary-background res-blue-width res-blue-height-en py-3 d-flex flex-column justify-content-center ht_450">
                         <div
                             className="landing-notice-privacystmnt font-subHeading text-white"
                             test-id="fr-reliable-resource-statement"
                         >
-                            Rester en santé avec cette ressource gratuite créée
-                            par vos professionnels de la santé canadiens.
-                            <a
+                            Votre ressource fiable pour la santé
+
+
+                            {/* <a
                                 type="button"
                                 className="btn btn-link btn-lg font-subHeading text-center align-text-top"
                                 href={videofr}
@@ -125,38 +126,84 @@ class LandingPageFR extends React.Component {
                                 test-id="update-banner-en-video"
                             >
                                 Voir vidéo
-                            </a>
+                            </a> */}
                         </div>
 
-                        <div className="d-flex justify-content-center my-4">
+                        <div className="flex_btn">
                             <a
                                 href="#"
                                 type="button"
-                                className="btn btn-primary btn-lg"
+                                className="btn btn-primary btn-lg btn_started btn_alginment"
                                 onClick={this.handleChange2}
                             >
                                 <b>Commencer</b>
                             </a>
                             <button
                                 type="button"
-                                className="ml-2 btn btn-outline-primary btn-lg d-inline-block d-md-none"
+                                className="btn btn-lg btn_started ml-10 btn_alginment container_button"
                                 onClick={() => this.props.setOpenDialog(true)}
                                 test-id="homeScreenButtonEn"
                             >
                                 <b>Installer l'application</b>
                             </button>
                         </div>
+
+                        <div className='pad_15'>
+                        <a
+                                // href="#"
+                                type="button"
+                                className="btn btn_new btn-lg btn_alginment container_button1"
+                                // onClick={this.handleChange}
+                                href="/iCanBeWell_NoFamilyMD_NP.htm"
+                                rel="noopener"
+                                test-id="nofamilymd/np-statement-en"
+                                
+                                
+                            >
+                                <b>Sans MD Famille/IP?</b>
+                            </a>
+
+                        </div>
+
+                        <div className='pad_15'>
+
+                         <a
+                               
+                                type="button"
+                                className="btn  btn_new btn-lg btn_alginment container_button1"
+                                
+                                
+                                    href="/iCanBeWell_CheckYourSymptoms.htm"
+                                    rel="noopener"
+                                    test-id="nofamilymd/np-statement-en"
+                                
+                            >
+                                <b>Vérifier vos symptômes</b>
+                            </a>
+                         </div>
+
+
+
                     </section>
 
                     <section id="landing-page-footer">
-                        <Row className="d-flex justify-content-center align-items-center m-0 py-1">
+                        <Row className="d-flex justify-content-center align-items-center m-0 py-3">
                             <Col
-                                xs={{ order: 1, span: 10 }}
+                                xs={{ order: 1, span: 12 }}
                                 sm={{ order: 1, span: 8 }}
                                 md={{ order: 2, span: 9 }}
-                                className="d-flex justify-content-center align-items-center footer-text mt-3 mx-0"
+                                className="d-flex justify-content-center align-items-center footer-text mx-0"
                             >
-                                <a
+                            <a
+                                
+                                className="text-center font-weight-bold col_grey"
+                                href={videofr}
+                                target="_blank"
+                                test-id="update-banner-en-video"
+                            >
+                                Voir vidéo
+                            </a>
+                                {/* <a
                                     className="text-center font-weight-bold"
                                     src={videofr}
                                     href="https://forms.gle/uJApr8qousrgEboX6"
@@ -166,13 +213,13 @@ class LandingPageFR extends React.Component {
                                 >
                                     {" "}
                                     Votre avis
-                                </a>
+                                </a> */}
                                 <span className="mx-3"> &#124; </span>
                                 <a
                                     href="/iCanBeWell_PrivacyPolicy.htm?lang=fr"
                                     rel="noopener noreferrer"
                                     test-id="privacy-statement-fr"
-                                    className="privacyFr text-center"
+                                    className="privacyFr text-center col_grey"
                                 >
                                     Politique de confidentialité
                                 </a>
@@ -181,7 +228,7 @@ class LandingPageFR extends React.Component {
                                     href="iCanBeWell_AboutUs.htm?lang=fr"
                                     rel="noopener noreferrer"
                                     test-id="aboutus-statement-fr"
-                                    className="text-center"
+                                    className="text-center col_grey"
                                 >
                                     À propos de nous
                                 </a>
