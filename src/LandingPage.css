@@ -56,6 +56,9 @@ justify-content: space-evenly;
   justify-content: space-between;
 }
 
+.col_grey{
+  color:grey;
+}
 .container_button {
   background-color: transparent !important;
   color: #afe125  !important;
