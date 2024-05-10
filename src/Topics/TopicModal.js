@@ -15,7 +15,7 @@ getsubjectArray=(display)=>{
     var subjectArray = [];
     var bodys = display;
     
-    const blueist = '#27AAE1';
+    const blueist = '#0089B5';
 
     const listItemStyle = {
       backgroundColor: blueist,
