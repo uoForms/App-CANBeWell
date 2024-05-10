@@ -154,7 +154,7 @@ class LandingPageFR extends React.Component {
                                 type="button"
                                 className="btn btn_new btn-lg btn_alginment container_button1"
                                 // onClick={this.handleChange}
-                                href="/iCanBeWell_NoFamilyMD_NP.htm"
+                                href="/iCanBeWell_NoFamilyMD_NP_FR.htm"
                                 rel="noopener"
                                 test-id="nofamilymd/np-statement-en"
                                 
@@ -173,7 +173,7 @@ class LandingPageFR extends React.Component {
                                 className="btn  btn_new btn-lg btn_alginment container_button1"
                                 
                                 
-                                    href="/iCanBeWell_CheckYourSymptoms.htm"
+                                    href="/iCanBeWell_CheckYourSymptoms_FR.htm"
                                     rel="noopener"
                                     test-id="nofamilymd/np-statement-en"
                                 

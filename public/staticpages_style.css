@@ -40,23 +40,47 @@ h5{
 
 .outer_div{
     margin: 22;
-    margin-top: 50px;
+    margin-top: 20px;
     border-radius: 10px;
-    background-color: #dae2eb;
+    background-color: #F4F8FA;
     padding: 15px;
 
 }
 
-.outer_div_symptoms {
+.outer_divpro{
+    margin: 22;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: transparent;
+    /* background-color:rgb(39, 170, 225); */
+    padding: 15px;
+    border: 1px solid #125296
+
+}
+.outer_div_symptoms{
     margin: 22;
     margin-top: 50px;
     border-radius: 10px;
     padding: 15px;
     background-color: transparent;
-    border: 2px solid #d7df21 ;                                   
+    border: 2px solid #d7df21 ;  
+    height: 60px;                                 
                                         
 
 }
+
+.outer_div_symptoms_fr{
+    margin: 22;
+    margin-top: 50px;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: transparent;
+    border: 2px solid #d7df21 ;  
+    height: 80px;                                 
+                                        
+
+}
+
 
 .d-flex-col{
 
@@ -65,7 +89,7 @@ h5{
 
 }
 .mt-15{
-    margin-top: 50px;
+    margin-top: 20px;
     margin-left:25px;
 }
 
@@ -128,7 +152,7 @@ h5{
         margin: 0px;
     }
     .pagetitle h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
         padding: 0px 10px;
     }
 } 
