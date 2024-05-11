@@ -104,7 +104,7 @@ class LandingPageEN extends React.Component {
                             className="landing-notice-privacystmnt font-subHeading text-white"
                             test-id="en-reliable-resource-statement"
                         >
-                            The Trusted App For Health Information
+                            The Trusted App for Health Information
                             
                         </div>
 
