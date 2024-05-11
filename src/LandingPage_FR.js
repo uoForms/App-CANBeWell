@@ -160,7 +160,7 @@ class LandingPageFR extends React.Component {
                                 
                                 
                             >
-                                <b>Sans MD Famille/IP?</b>
+                                <b>Sans MD de famille ou IP?</b>
                             </a>
 
                         </div>
