@@ -388,7 +388,7 @@ color: #0089B5;
   font-size: medium;
   position: absolute;
   right: 60px;
-  color: #0089B5;
+  color: #0089B5  ;
 }
 @media only screen and (max-width:500px){
   .landing-logo-header{

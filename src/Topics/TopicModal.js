@@ -17,7 +17,6 @@ getsubjectArray=(display)=>{
     
     const blueist = '#0089B5';
 
-
     const listItemStyle = {
       backgroundColor: blueist,
       fontWeight: 300,
