@@ -239,7 +239,7 @@ overflow: hidden;
 font-size: large;
 font-weight: bolder;
 font-style: unset;
-color:#25AAE1;
+color:#0089B5;
 ;
 }
 
@@ -359,7 +359,7 @@ height: auto;
   }
 
 .landing-get-started{
-  color: #25AAE1;
+  color: #0089B5;
   margin-bottom: 30px;
 }
 
@@ -380,7 +380,7 @@ color: #363636;
 .landing-notice-english{
 /* width: 60px; */
 text-align: center;
-color: #25AAE1;
+color: #0089B5;
 }
 
 .landing-french-router{
@@ -388,7 +388,7 @@ color: #25AAE1;
   font-size: medium;
   position: absolute;
   right: 60px;
-  color: #25AAE1  ;
+  color: #0089B5;
 }
 @media only screen and (max-width:500px){
   .landing-logo-header{
@@ -399,20 +399,20 @@ color: #25AAE1;
 }
 
 .landing-english-router{
-  color: #25AAE1;
+  color: #0089B5;
 }
 @media only screen and (max-width:500px){
   .landing-english-router {
     position: absolute;
     right: 20px;
-    color: #25AAE1;
+    color: #0089B5;
     font-size: small;
     top: 15px
   }
   .landing-french-router {
     position: absolute;
     right: 20px;
-    color: #25AAE1;
+    color: #0089B5;
     font-size: small;
     top: 15px
   }
@@ -439,7 +439,7 @@ height: auto;
 .landing-notice-french{
 /* width: 95px; */
 text-align: center;
-color: #25AAE1;
+color: #0089B5;
 }
 
 .homescreen-eng{
