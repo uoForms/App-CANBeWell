@@ -6,7 +6,7 @@ body {
 
 a {
     text-decoration: none;
-    color: #25aae1;
+    color: #0089B5;
 }
 
 a:hover,
@@ -17,7 +17,7 @@ a:focus-visible {
 }
 
 .text-brand-blue {
-    color: #25aae1;
+    color: #0089B5;
 }
 
 .text-brand-green {
@@ -25,7 +25,7 @@ a:focus-visible {
 }
 
 .icon-brand-color {
-    color: #25aae1;
+    color: #0089B5;
 }
 
 #termsButton .icon-brand-color {
@@ -72,8 +72,8 @@ a:focus-visible {
 
 /* secondary button is in blue theme, that transitions to green color when hovered */
 .btn-secondary {
-    background: #25aae1 !important;
-    border-color: #25aae1 !important;
+    background: #0089B5 !important;
+    border-color: #0089B5 !important;
     color: white !important;
 }
 
@@ -200,7 +200,7 @@ a:focus-visible {
     color: black !important;
 }
 .slick-next:hover::before {
-    color: #25aae1 !important;
+    color: #0089B5 !important;
 }
 
 .slick-prev {
@@ -212,7 +212,7 @@ a:focus-visible {
     color: black !important;
 }
 .slick-prev:hover::before {
-    color: #25aae1 !important;
+    color: #0089B5 !important;
 }
 
 .slick-dots {
@@ -220,7 +220,7 @@ a:focus-visible {
 }
 
 .slick-dots li button::before {
-    color: #25aae1 !important;
+    color: #0089B5 !important;
     font-size: 15px !important;
     text-shadow:
         -1px 1px 0 white,

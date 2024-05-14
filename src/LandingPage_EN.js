@@ -104,34 +104,34 @@ class LandingPageEN extends React.Component {
                             className="landing-notice-privacystmnt font-subHeading text-white"
                             test-id="en-reliable-resource-statement"
                         >
-                            The Trusted App For Health Information
+                            The Trusted App for Health Information
                             
                         </div>
 
-                        <div className="flex_btn my-4">
+                        <div className="flex_btn">
                             <a
                                  href="#"
                                 type="button"
                                 className="btn btn-primary btn-lg btn_started btn_alginment"
                                 onClick={this.handleChange}
                             >
-                                <b>Get started</b>
+                                <b>Get Started</b>
                             </a>
 {/* New code */}
-                             <a
+                             {/* <a
                                 // href="#"
                                 type="button"
                                 className="btn btn-lg btn_started ml-10 btn_alginment container_button"
                                 // onClick={this.handleChange}
                             >
                                 <b>Install App</b>
-                            </a> 
+                            </a>  */}
 
 
 
                             <button
                                 type="button"
-                                className="ml-2 btn btn-outline-primary btn-lg d-inline-block d-md-none"
+                                className="btn btn-lg btn_started ml-10 btn_alginment container_button"
                                  onClick={() => this.props.setOpenDialog(true)}
                                 test-id="homeScreenButtonEn"
                             >
@@ -146,6 +146,11 @@ class LandingPageEN extends React.Component {
                                 type="button"
                                 className="btn btn_new btn-lg btn_alginment container_button1"
                                 // onClick={this.handleChange}
+                                href="/iCanBeWell_NoFamilyMD_NP.htm"
+                                rel="noopener"
+                                test-id="nofamilymd/np-statement-en"
+                                
+                                
                             >
                                 <b>No Family MD/NP?</b>
                             </a>
@@ -154,10 +159,15 @@ class LandingPageEN extends React.Component {
                         <div className='pad_15'>
 
                          <a
-                                // href="#"
+                               
                                 type="button"
                                 className="btn  btn_new btn-lg btn_alginment container_button1"
-                                // onClick={this.handleChange}
+                                
+                                
+                                    href="/iCanBeWell_CheckYourSymptoms.htm"
+                                    rel="noopener"
+                                    test-id="nofamilymd/np-statement-en"
+                                
                             >
                                 <b>Check Your Symptoms</b>
                             </a>
@@ -173,21 +183,29 @@ class LandingPageEN extends React.Component {
                                 md={{ order: 2, span: 9 }}
                                 className="d-flex justify-content-center align-items-center footer-text mx-0"
                             >
+                            {/* <a
+                                type="button"
+                                className="btn btn-link btn-lg font-subHeading text-center align-text-top"
+                                href={videoen}
+                                target="_blank"
+                                test-id="update-banner-en-video"
+                            >
+                                Watch Demo
+                            </a> */}
                                 <a
-                                    className="text-center font-weight-bold"
-                                    href="https://forms.gle/nzRAFRCTNo62T4fh6"
-                                    target="_blank"
-                                    rel="noopener"
-                                    test-id="update-banner-en-video"
+                                    className="text-center font-weight-bold col_grey"
+                                     href={videoen}
+                                     target="_blank"
+                                     test-id="update-banner-en-video"
                                 >
-                                    Feedback
+                                    Watch Demo
                                 </a>
                                 <span className="mx-3"> &#124; </span>
                                 <a
                                     href="/iCanBeWell_PrivacyPolicy.htm"
                                     rel="noopener"
                                     test-id="privacy-statement-en"
-                                    className="text-center"
+                                    className="text-center col_grey"
                                 >
                                     Privacy Statement
                                 </a>
@@ -196,11 +214,11 @@ class LandingPageEN extends React.Component {
                                     href="/iCanBeWell_AboutUs.htm"
                                     rel="noopener"
                                     test-id="aboutus-statement-en"
-                                    className="text-center"
+                                    className="text-center col_grey"
                                 >
                                     About Us
                                 </a>
-                                <span className="mx-3"> &#124; </span>
+                                {/* <span className="mx-3"> &#124; </span>
                                 <a
                                     href="/iCanBeWell_NoFamilyMD_NP.htm"
                                     rel="noopener"
@@ -208,7 +226,7 @@ class LandingPageEN extends React.Component {
                                     className="text-center"
                                 >
                                     No Family MD/NP
-                                </a>
+                                </a> */}
                             </Col>
                         </Row>
                         <div className="d-flex justify-content-center my-2">
