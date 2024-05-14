@@ -11,7 +11,7 @@ img {
 
 .btn_started {
   width: 100%;
-  height: 50PX;
+  height: 100PX;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,7 +19,7 @@ img {
 }
 
 .flex_btn{
-padding: 5px 25px;
+padding: 15px;
 display: flex !important;
 justify-content: space-evenly;
 }
@@ -32,14 +32,14 @@ justify-content: space-evenly;
 
 .btn_new{
   width: 100%;
-    height: 50px;
+    height: 75px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .pad_15{
-  padding: 5px 25px;
+  padding: 15px;
 }
 
 .btn_alginment{
@@ -49,7 +49,7 @@ justify-content: space-evenly;
 }
 
 .ht_450{
-  height: auto !important;
+  height: 450px !important;
 }
 .justify-content-space-between 
 {
@@ -168,7 +168,7 @@ opacity: 0.9;
 }
 
 .primary-background {
-  background-color: rgb(0, 137, 181);
+  background-color: #25AAE1;
 }
 
 #landing-page-footer {
