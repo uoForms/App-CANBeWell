@@ -4,6 +4,8 @@ language: node_js
 node_js:
   - 18
 
+dist: jammy
+
 before_install:
 
 #install yarn package and firebase tools.
