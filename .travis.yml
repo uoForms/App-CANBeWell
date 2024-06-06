@@ -4,7 +4,7 @@ language: node_js
 node_js:
   - 18
 
-dist: jammy
+dist: bionic
 
 before_install:
 
