@@ -4,15 +4,13 @@ language: node_js
 node_js:
   - 18
 
-dist: bionic
-
 before_install:
 
 #install yarn package and firebase tools.
 - curl --compressed -o- -L https://yarnpkg.com/install.sh | bash
 - export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-# - yarn global add firebase-tools
-- npm install -g firebase-tools
+- yarn global add firebase-tools
+# - npm install -g firebase-tools
 
 #Check for the JSON files for the content.
 - rm -r ./src/JSONFolder
