@@ -96,7 +96,16 @@ class Anatomy extends React.Component {
     };
   }
 
-  toggleModal = () => {
+  toggleModal = () =>
+  {
+    if (sessionStorage.getItem('firstVisit') != 'true')
+    {
+      sessionStorage.setItem('firstVisit', 'true');
+      const finalLink = this.state.language == "french"
+        ? "https://forms.gle/uJApr8qousrgEboX6"
+        : "https://forms.gle/nzRAFRCTNo62T4fh6";
+        window.open(finalLink, "_blank");
+    }
     this.setState({
       isOpen: !this.state.isOpen,
     });

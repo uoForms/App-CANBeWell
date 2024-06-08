@@ -29,6 +29,7 @@ class LandingPageEN extends React.Component {
   }
   handleChange() {
     this.setState({ language: "english" })
+    sessionStorage.setItem('firstVisit', 'false');
     localStorage.setItem("app_language", this.state.language);
   }
   handleChange2() {
