@@ -71,18 +71,20 @@ import transGenital from "../assets/TransBody/icon_trans.png";
 import FemaleGenital from "../assets/Icons/female_genital.png";
 import MaleGenital from "../assets/Icons/male_genital.png";
 
-import braingear from '../assets/Icons/icon_braingear.png';
-import moneyIcon from '../assets/Icons/icon_money_1.png';
-import sleepIcon from '../assets/Icons/icon_sleep_1.png';
-import bpIcon from '../assets/Icons/icon_bp.png';
-import symptomcheckerIcon from '../assets/Icons/icon_symptomchecker.png';
-import familydoctorIcon from '../assets/Icons/icon_familydoctor.png';
-
-import './Body.css';
-import '../App.css';
+import braingear from "../assets/Icons/icon_braingear.png";
+import moneyIcon from "../assets/Icons/icon_money_1.png";
+import sleepIcon from "../assets/Icons/icon_sleep_1.png";
+import bpIcon from "../assets/Icons/icon_bp.png";
+import symptomcheckerIcon from "../assets/Icons/icon_symptomchecker.png";
+import familydoctorIcon from "../assets/Icons/icon_familydoctor.png";
 
 import "./Body.css";
 import "../App.css";
+
+import "./Body.css";
+import "../App.css";
+import DialogBox from "../components/DialogBox";
+import { englishForm, frenchForm } from "../constants";
 
 class Anatomy extends React.Component {
   constructor(props) {
@@ -93,22 +95,27 @@ class Anatomy extends React.Component {
       display: [], //{name: "" , body: [{subject: "", text: ""}]}
       previousorganClicked: "",
       organSelected: "",
+      feedbackDialog: false,
     };
   }
 
-  toggleModal = () =>
-  {
-    if (sessionStorage.getItem('firstVisit') != 'true')
-    {
-      sessionStorage.setItem('firstVisit', 'true');
-      const finalLink = this.state.language == "french"
-        ? "https://forms.gle/uJApr8qousrgEboX6"
-        : "https://forms.gle/nzRAFRCTNo62T4fh6";
-        window.open(finalLink, "_blank");
+  toggleModal = () => {
+    if (sessionStorage.getItem("firstVisit") != "true") {
+      this.setState({ feedbackDialog: true });
     }
     this.setState({
       isOpen: !this.state.isOpen,
     });
+  };
+
+  handleFeedBackToggle = (type) => {
+    if (type === "agree") {
+      sessionStorage.setItem("firstVisit", "true");
+      const finalLink =
+        this.state.language === "french" ? frenchForm : englishForm;
+      window.open(finalLink, "_blank");
+    }
+    this.setState({ feedbackDialog: !this.state.feedbackDialog });
   };
 
   /*button correspont to the name of the button being press (all lowercase)
@@ -491,54 +498,254 @@ class Anatomy extends React.Component {
               />
             </Tooltip>
 
-          {/* For icons around body - Covid, Brain, Genatelia, etc. */}
+            {/* For icons around body - Covid, Brain, Genatelia, etc. */}
             <div className="icons">
-              <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.brain}</h3>}><button id="brainButton" test-id="brainButton" className="brain"
-                  onClick={(button, text, organ) => this.iconClicked("brain", this.props.lang.brain)}>
-                  <img src={brainIcon} alt="brainIcon" /></button></Tooltip>
-              <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.stethoscope}</h3>}><button id="examButton" test-id="examButton" className="exam"
-                  onClick={(button, text, organ) => this.iconClicked("physical exam", this.props.lang.stethoscope)}>
-                  <img src={examIcon} alt="examIcon" /></button></Tooltip>
-              <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.hip}</h3>}><button id="fallsButton" test-id="fallsButton" className="falls"
-                  onClick={(button, text, organ) => this.iconClicked("hip", this.props.lang.hip)}>
-                  <img src={fallsIcon} alt="fallsIcon" /></button></Tooltip>
-              <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.needle_in_arm}</h3>}><button id="immunizationButton" test-id="immunizationButton" className="immunization"
-                  onClick={(button, text, organ) => this.iconClicked("needle in arm", this.props.lang.needle_in_arm)}>
-                  <img src={immunizationIcon} alt="immunizationIcon" /></button></Tooltip>
-              <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.sun}</h3>}><button id="sunExposureButton" test-id="sunExposureButton" className="sunExposure" 
-                  onClick={(button, text, organ) => this.iconClicked("sun", this.props.lang.sun)}>
-                  <img src={sunExposureIcon} alt="sunExposureIcon" /></button></Tooltip>
-              <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.figure_outside_body_walking}</h3>}><button id="phyActivityButton" test-id="phyActivityButton" className="phyActivity"
-                  onClick={(button, text, organ) => this.iconClicked("figure outside body walking", this.props.lang.figure_outside_body_walking)}>
-                  <img src={phyactIcon} alt="physicalActivityIcon" /></button></Tooltip>
-              <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.genitalia}</h3>}><button id="maleGenitalia" test-id="genitaliaButton" className="maleGenitalia"
-                  onClick={(button, text) => this.iconClicked("genitalia", this.props.lang.genitalia)}>
-                  <img src={MaleGenital} alt="MaleGenitalia" /></button></Tooltip>
-              <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.covid}</h3>}><button id="covidButton" test-id="covidButton" className="covid"
-                  onClick={(button, text, organ) => this.iconClicked("covid", this.props.lang.covid)}>
-                  <img src={covidIcon} alt="covidIcon" /></button></Tooltip>
-              <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.braingear}</h3>}><button id="brainGearButton" test-id="brainGearButton" className="brainGear"
-                      onClick={(button, text, organ) => this.iconClicked("braingear", this.props.lang.braingear)}>
-                  <img src={braingear} alt="braingear"/></button></Tooltip>
-              <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.money}</h3>}><button id="moneyButton" test-id="moneyButton" className="money"
-                      onClick={(button, text, organ) => this.iconClicked("money", this.props.lang.money)}>
-                  <img src={moneyIcon} alt="moneyIcon"/></button></Tooltip>
-              <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.sleep}</h3>}><button id="sleepButton" test-id="sleepButton" className="sleep"
-                      onClick={(button, text, organ) => this.iconClicked("sleep", this.props.lang.sleep)}>
-                  <img src={sleepIcon} alt="sleepIcon"/></button></Tooltip>
-              <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.bp}</h3>}><button id="bpButton" test-id="bpButton" className="bp"
-                      onClick={(button, text, organ) => this.iconClicked("bp", this.props.lang.bp)}>
-                  <img src={bpIcon} alt="bpIcon"/></button></Tooltip>
-              <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.symptomchecker}</h3>}><button id="symptomcheckerButton" test-id="symptomcheckerButton" className="symptomchecker"
-                      onClick={(button, text, organ) => this.iconClicked("symptomchecker", this.props.lang.symptomchecker)}>
-                  <img src={symptomcheckerIcon} alt="symptomchecker"/></button></Tooltip>
-              <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.familydoctor}</h3>}><button id="familydoctorButton" test-id="familydoctorButton" className="familydoctor"
-                      onClick={(button, text, organ) => this.iconClicked("familydoctor", this.props.lang.familydoctor)}>
-                  <img src={familydoctorIcon} alt="familydoctor"/></button></Tooltip>
-
+              <Tooltip
+                title={
+                  <h3 style={{ color: "#fff" }}>{this.props.lang.brain}</h3>
+                }
+              >
+                <button
+                  id="brainButton"
+                  test-id="brainButton"
+                  className="brain"
+                  onClick={(button, text, organ) =>
+                    this.iconClicked("brain", this.props.lang.brain)
+                  }
+                >
+                  <img src={brainIcon} alt="brainIcon" />
+                </button>
+              </Tooltip>
+              <Tooltip
+                title={
+                  <h3 style={{ color: "#fff" }}>
+                    {this.props.lang.stethoscope}
+                  </h3>
+                }
+              >
+                <button
+                  id="examButton"
+                  test-id="examButton"
+                  className="exam"
+                  onClick={(button, text, organ) =>
+                    this.iconClicked(
+                      "physical exam",
+                      this.props.lang.stethoscope
+                    )
+                  }
+                >
+                  <img src={examIcon} alt="examIcon" />
+                </button>
+              </Tooltip>
+              <Tooltip
+                title={<h3 style={{ color: "#fff" }}>{this.props.lang.hip}</h3>}
+              >
+                <button
+                  id="fallsButton"
+                  test-id="fallsButton"
+                  className="falls"
+                  onClick={(button, text, organ) =>
+                    this.iconClicked("hip", this.props.lang.hip)
+                  }
+                >
+                  <img src={fallsIcon} alt="fallsIcon" />
+                </button>
+              </Tooltip>
+              <Tooltip
+                title={
+                  <h3 style={{ color: "#fff" }}>
+                    {this.props.lang.needle_in_arm}
+                  </h3>
+                }
+              >
+                <button
+                  id="immunizationButton"
+                  test-id="immunizationButton"
+                  className="immunization"
+                  onClick={(button, text, organ) =>
+                    this.iconClicked(
+                      "needle in arm",
+                      this.props.lang.needle_in_arm
+                    )
+                  }
+                >
+                  <img src={immunizationIcon} alt="immunizationIcon" />
+                </button>
+              </Tooltip>
+              <Tooltip
+                title={<h3 style={{ color: "#fff" }}>{this.props.lang.sun}</h3>}
+              >
+                <button
+                  id="sunExposureButton"
+                  test-id="sunExposureButton"
+                  className="sunExposure"
+                  onClick={(button, text, organ) =>
+                    this.iconClicked("sun", this.props.lang.sun)
+                  }
+                >
+                  <img src={sunExposureIcon} alt="sunExposureIcon" />
+                </button>
+              </Tooltip>
+              <Tooltip
+                title={
+                  <h3 style={{ color: "#fff" }}>
+                    {this.props.lang.figure_outside_body_walking}
+                  </h3>
+                }
+              >
+                <button
+                  id="phyActivityButton"
+                  test-id="phyActivityButton"
+                  className="phyActivity"
+                  onClick={(button, text, organ) =>
+                    this.iconClicked(
+                      "figure outside body walking",
+                      this.props.lang.figure_outside_body_walking
+                    )
+                  }
+                >
+                  <img src={phyactIcon} alt="physicalActivityIcon" />
+                </button>
+              </Tooltip>
+              <Tooltip
+                title={
+                  <h3 style={{ color: "#fff" }}>{this.props.lang.genitalia}</h3>
+                }
+              >
+                <button
+                  id="maleGenitalia"
+                  test-id="genitaliaButton"
+                  className="maleGenitalia"
+                  onClick={(button, text) =>
+                    this.iconClicked("genitalia", this.props.lang.genitalia)
+                  }
+                >
+                  <img src={MaleGenital} alt="MaleGenitalia" />
+                </button>
+              </Tooltip>
+              <Tooltip
+                title={
+                  <h3 style={{ color: "#fff" }}>{this.props.lang.covid}</h3>
+                }
+              >
+                <button
+                  id="covidButton"
+                  test-id="covidButton"
+                  className="covid"
+                  onClick={(button, text, organ) =>
+                    this.iconClicked("covid", this.props.lang.covid)
+                  }
+                >
+                  <img src={covidIcon} alt="covidIcon" />
+                </button>
+              </Tooltip>
+              <Tooltip
+                title={
+                  <h3 style={{ color: "#fff" }}>{this.props.lang.braingear}</h3>
+                }
+              >
+                <button
+                  id="brainGearButton"
+                  test-id="brainGearButton"
+                  className="brainGear"
+                  onClick={(button, text, organ) =>
+                    this.iconClicked("braingear", this.props.lang.braingear)
+                  }
+                >
+                  <img src={braingear} alt="braingear" />
+                </button>
+              </Tooltip>
+              <Tooltip
+                title={
+                  <h3 style={{ color: "#fff" }}>{this.props.lang.money}</h3>
+                }
+              >
+                <button
+                  id="moneyButton"
+                  test-id="moneyButton"
+                  className="money"
+                  onClick={(button, text, organ) =>
+                    this.iconClicked("money", this.props.lang.money)
+                  }
+                >
+                  <img src={moneyIcon} alt="moneyIcon" />
+                </button>
+              </Tooltip>
+              <Tooltip
+                title={
+                  <h3 style={{ color: "#fff" }}>{this.props.lang.sleep}</h3>
+                }
+              >
+                <button
+                  id="sleepButton"
+                  test-id="sleepButton"
+                  className="sleep"
+                  onClick={(button, text, organ) =>
+                    this.iconClicked("sleep", this.props.lang.sleep)
+                  }
+                >
+                  <img src={sleepIcon} alt="sleepIcon" />
+                </button>
+              </Tooltip>
+              <Tooltip
+                title={<h3 style={{ color: "#fff" }}>{this.props.lang.bp}</h3>}
+              >
+                <button
+                  id="bpButton"
+                  test-id="bpButton"
+                  className="bp"
+                  onClick={(button, text, organ) =>
+                    this.iconClicked("bp", this.props.lang.bp)
+                  }
+                >
+                  <img src={bpIcon} alt="bpIcon" />
+                </button>
+              </Tooltip>
+              <Tooltip
+                title={
+                  <h3 style={{ color: "#fff" }}>
+                    {this.props.lang.symptomchecker}
+                  </h3>
+                }
+              >
+                <button
+                  id="symptomcheckerButton"
+                  test-id="symptomcheckerButton"
+                  className="symptomchecker"
+                  onClick={(button, text, organ) =>
+                    this.iconClicked(
+                      "symptomchecker",
+                      this.props.lang.symptomchecker
+                    )
+                  }
+                >
+                  <img src={symptomcheckerIcon} alt="symptomchecker" />
+                </button>
+              </Tooltip>
+              <Tooltip
+                title={
+                  <h3 style={{ color: "#fff" }}>
+                    {this.props.lang.familydoctor}
+                  </h3>
+                }
+              >
+                <button
+                  id="familydoctorButton"
+                  test-id="familydoctorButton"
+                  className="familydoctor"
+                  onClick={(button, text, organ) =>
+                    this.iconClicked(
+                      "familydoctor",
+                      this.props.lang.familydoctor
+                    )
+                  }
+                >
+                  <img src={familydoctorIcon} alt="familydoctor" />
+                </button>
+              </Tooltip>
 
               {/* <button id="genitaliaButton" className="maleGenital" onClick={(button, text, organ) => this.iconClicked("genitalia", this.props.lang.genitalia)}><img src={genitaliaIcon} alt="genitaliaIcon" /> </button> */}
-          </div>
+            </div>
           </div>
 
           <div>
@@ -552,6 +759,16 @@ class Anatomy extends React.Component {
               clickOnText={this.props.lang.clickOn_Text}
               userInfo={this.props.userInfo}
             ></BodyModal>
+          </div>
+          <div>
+            <DialogBox
+              open={this.state.feedbackDialog}
+              setOpen={this.handleFeedBackToggle}
+              title={this.props.lang.feedback_dialog_title}
+              text={this.props.lang.feedback_text}
+              cancelButtonText={this.props.lang.cancel_feedback}
+              agreeButtonText={this.props.lang.agree_feedback}
+            />
           </div>
         </div>
       );
@@ -832,53 +1049,246 @@ class Anatomy extends React.Component {
             </Tooltip>
 
             <div className="icons">
-              <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.brain}</h3>}><button className="brain" test-id="brainButton"
-                  onClick={(button, text) => this.iconClicked("brain", this.props.lang.brain)}>
-                  <img src={brainIcon} alt="brainIcon" /></button></Tooltip>
-              <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.stethoscope}</h3>}><button className="exam" test-id="examButton"
-                  onClick={(button, text) => this.iconClicked("physical exam", this.props.lang.stethoscope)}>
-                  <img src={examIcon} alt="examIcon" /></button></Tooltip>
-              <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.hip}</h3>}><button className="falls" test-id="fallsButton"
-                  onClick={(button, text) => this.iconClicked("hip", this.props.lang.hip)}><img
-                      src={fallsIcon} alt="fallsIcon" /></button></Tooltip>
-              <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.needle_in_arm}</h3>}><button className="immunization" test-id="immunizationButton"
-                  onClick={(button, text) => this.iconClicked("needle in arm", this.props.lang.needle_in_arm)}>
-                  <img src={immunizationIcon} alt="immunizationIcon" /></button></Tooltip>
-              <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.sun}</h3>}><button className="sunExposure" test-id="sunExposureButton"
-                  onClick={(button, text) => this.iconClicked("sun", this.props.lang.sun)}><img
-                      src={sunExposureIcon} alt="sunExposureIcon" /></button></Tooltip>
-              <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.figure_outside_body_walking}</h3>}><button className="phyActivity" test-id="phyActivityButton"
-                  onClick={(button, text) => this.iconClicked("figure outside body walking", this.props.lang.figure_outside_body_walking)}>
-                  <img src={phyactIcon} alt="physicalActivityIcon" /></button></Tooltip>
-              <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.genitalia}</h3>}><button id="femaleGenitalian" className="femaleGenitalia"
+              <Tooltip
+                title={
+                  <h3 style={{ color: "#fff" }}>{this.props.lang.brain}</h3>
+                }
+              >
+                <button
+                  className="brain"
+                  test-id="brainButton"
+                  onClick={(button, text) =>
+                    this.iconClicked("brain", this.props.lang.brain)
+                  }
+                >
+                  <img src={brainIcon} alt="brainIcon" />
+                </button>
+              </Tooltip>
+              <Tooltip
+                title={
+                  <h3 style={{ color: "#fff" }}>
+                    {this.props.lang.stethoscope}
+                  </h3>
+                }
+              >
+                <button
+                  className="exam"
+                  test-id="examButton"
+                  onClick={(button, text) =>
+                    this.iconClicked(
+                      "physical exam",
+                      this.props.lang.stethoscope
+                    )
+                  }
+                >
+                  <img src={examIcon} alt="examIcon" />
+                </button>
+              </Tooltip>
+              <Tooltip
+                title={<h3 style={{ color: "#fff" }}>{this.props.lang.hip}</h3>}
+              >
+                <button
+                  className="falls"
+                  test-id="fallsButton"
+                  onClick={(button, text) =>
+                    this.iconClicked("hip", this.props.lang.hip)
+                  }
+                >
+                  <img src={fallsIcon} alt="fallsIcon" />
+                </button>
+              </Tooltip>
+              <Tooltip
+                title={
+                  <h3 style={{ color: "#fff" }}>
+                    {this.props.lang.needle_in_arm}
+                  </h3>
+                }
+              >
+                <button
+                  className="immunization"
+                  test-id="immunizationButton"
+                  onClick={(button, text) =>
+                    this.iconClicked(
+                      "needle in arm",
+                      this.props.lang.needle_in_arm
+                    )
+                  }
+                >
+                  <img src={immunizationIcon} alt="immunizationIcon" />
+                </button>
+              </Tooltip>
+              <Tooltip
+                title={<h3 style={{ color: "#fff" }}>{this.props.lang.sun}</h3>}
+              >
+                <button
+                  className="sunExposure"
+                  test-id="sunExposureButton"
+                  onClick={(button, text) =>
+                    this.iconClicked("sun", this.props.lang.sun)
+                  }
+                >
+                  <img src={sunExposureIcon} alt="sunExposureIcon" />
+                </button>
+              </Tooltip>
+              <Tooltip
+                title={
+                  <h3 style={{ color: "#fff" }}>
+                    {this.props.lang.figure_outside_body_walking}
+                  </h3>
+                }
+              >
+                <button
+                  className="phyActivity"
+                  test-id="phyActivityButton"
+                  onClick={(button, text) =>
+                    this.iconClicked(
+                      "figure outside body walking",
+                      this.props.lang.figure_outside_body_walking
+                    )
+                  }
+                >
+                  <img src={phyactIcon} alt="physicalActivityIcon" />
+                </button>
+              </Tooltip>
+              <Tooltip
+                title={
+                  <h3 style={{ color: "#fff" }}>{this.props.lang.genitalia}</h3>
+                }
+              >
+                <button
+                  id="femaleGenitalian"
+                  className="femaleGenitalia"
                   test-id="genitaliaButton"
-                  onClick={(button, text) => this.iconClicked("genitalia", this.props.lang.genitalia)}>
-                  <img src={FemaleGenital} alt="GenitalF" /></button></Tooltip>
-              <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.covid}</h3>}><button id="covidButton" className="covid" test-id="covidButton"
-                  onClick={(button, text) => this.iconClicked("covid", this.props.lang.covid)}>
-                  <img src={covidIcon} alt="covidIcon" /></button></Tooltip>
-              <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.braingear}</h3>}><button id="brainGearButton" className="brainGear" test-id="brainGearButton"
-                      onClick={(button, text, organ) => this.iconClicked("braingear", this.props.lang.braingear)}>
-                  <img src={braingear} alt="braingear"/></button></Tooltip>
-              <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.money}</h3>}><button id="moneyButton" test-id="moneyButton" className="money"
-                      onClick={(button, text, organ) => this.iconClicked("money", this.props.lang.money)}>
-                  <img src={moneyIcon} alt="moneyIcon"/></button></Tooltip>
-              <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.sleep}</h3>}><button id="sleepButton" test-id="sleepButton" className="sleep"
-                      onClick={(button, text, organ) => this.iconClicked("sleep", this.props.lang.sleep)}>
-                  <img src={sleepIcon} alt="sleepIcon"/></button></Tooltip>
-              <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.bp}</h3>}><button id="bpButton" className="bpfemale" test-id="bpButton"
-                      onClick={(button, text, organ) => this.iconClicked("bp", this.props.lang.bp)}>
-                  <img src={bpIcon} alt="bpIcon"/></button></Tooltip>
-                  <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.symptomchecker}</h3>}><button id="symptomcheckerButton" test-id="symptomcheckerButton" className="symptomchecker"
-                      onClick={(button, text, organ) => this.iconClicked("symptomchecker", this.props.lang.symptomchecker)}>
-                  <img src={symptomcheckerIcon} alt="symptomchecker"/></button></Tooltip>
-              <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.familydoctor}</h3>}><button id="familydoctorButton" test-id="familydoctorButton" className="familydoctor"
-                      onClick={(button, text, organ) => this.iconClicked("familydoctor", this.props.lang.familydoctor)}>
-                  <img src={familydoctorIcon} alt="familydoctor"/></button></Tooltip>
+                  onClick={(button, text) =>
+                    this.iconClicked("genitalia", this.props.lang.genitalia)
+                  }
+                >
+                  <img src={FemaleGenital} alt="GenitalF" />
+                </button>
+              </Tooltip>
+              <Tooltip
+                title={
+                  <h3 style={{ color: "#fff" }}>{this.props.lang.covid}</h3>
+                }
+              >
+                <button
+                  id="covidButton"
+                  className="covid"
+                  test-id="covidButton"
+                  onClick={(button, text) =>
+                    this.iconClicked("covid", this.props.lang.covid)
+                  }
+                >
+                  <img src={covidIcon} alt="covidIcon" />
+                </button>
+              </Tooltip>
+              <Tooltip
+                title={
+                  <h3 style={{ color: "#fff" }}>{this.props.lang.braingear}</h3>
+                }
+              >
+                <button
+                  id="brainGearButton"
+                  className="brainGear"
+                  test-id="brainGearButton"
+                  onClick={(button, text, organ) =>
+                    this.iconClicked("braingear", this.props.lang.braingear)
+                  }
+                >
+                  <img src={braingear} alt="braingear" />
+                </button>
+              </Tooltip>
+              <Tooltip
+                title={
+                  <h3 style={{ color: "#fff" }}>{this.props.lang.money}</h3>
+                }
+              >
+                <button
+                  id="moneyButton"
+                  test-id="moneyButton"
+                  className="money"
+                  onClick={(button, text, organ) =>
+                    this.iconClicked("money", this.props.lang.money)
+                  }
+                >
+                  <img src={moneyIcon} alt="moneyIcon" />
+                </button>
+              </Tooltip>
+              <Tooltip
+                title={
+                  <h3 style={{ color: "#fff" }}>{this.props.lang.sleep}</h3>
+                }
+              >
+                <button
+                  id="sleepButton"
+                  test-id="sleepButton"
+                  className="sleep"
+                  onClick={(button, text, organ) =>
+                    this.iconClicked("sleep", this.props.lang.sleep)
+                  }
+                >
+                  <img src={sleepIcon} alt="sleepIcon" />
+                </button>
+              </Tooltip>
+              <Tooltip
+                title={<h3 style={{ color: "#fff" }}>{this.props.lang.bp}</h3>}
+              >
+                <button
+                  id="bpButton"
+                  className="bpfemale"
+                  test-id="bpButton"
+                  onClick={(button, text, organ) =>
+                    this.iconClicked("bp", this.props.lang.bp)
+                  }
+                >
+                  <img src={bpIcon} alt="bpIcon" />
+                </button>
+              </Tooltip>
+              <Tooltip
+                title={
+                  <h3 style={{ color: "#fff" }}>
+                    {this.props.lang.symptomchecker}
+                  </h3>
+                }
+              >
+                <button
+                  id="symptomcheckerButton"
+                  test-id="symptomcheckerButton"
+                  className="symptomchecker"
+                  onClick={(button, text, organ) =>
+                    this.iconClicked(
+                      "symptomchecker",
+                      this.props.lang.symptomchecker
+                    )
+                  }
+                >
+                  <img src={symptomcheckerIcon} alt="symptomchecker" />
+                </button>
+              </Tooltip>
+              <Tooltip
+                title={
+                  <h3 style={{ color: "#fff" }}>
+                    {this.props.lang.familydoctor}
+                  </h3>
+                }
+              >
+                <button
+                  id="familydoctorButton"
+                  test-id="familydoctorButton"
+                  className="familydoctor"
+                  onClick={(button, text, organ) =>
+                    this.iconClicked(
+                      "familydoctor",
+                      this.props.lang.familydoctor
+                    )
+                  }
+                >
+                  <img src={familydoctorIcon} alt="familydoctor" />
+                </button>
+              </Tooltip>
               {/*<button id="genitaliaButton" className="femaleGenital" onClick={(button, text) => this.iconClicked("genitalia", this.props.lang.genitalia)}><img src={fgenitaliaIcon} alt="fgenitaliaIcon" /> </button> */}
             </div>
           </div>
-
           <BodyModal
             show={this.state.isOpen}
             onClose={this.toggleModal}
@@ -886,9 +1296,20 @@ class Anatomy extends React.Component {
             button={this.state.buttonText}
             displayConfig={this.state.displayConfigOption}
             getTopic={this.props.getDisplay}
-            clickOnText={this.props.lang.clickOn_Text}
+            clickOnText={"hii"}
             userInfo={this.props.userInfo}
           ></BodyModal>
+
+          <div>
+            <DialogBox
+              open={this.state.feedbackDialog}
+              setOpen={this.handleFeedBackToggle}
+              title={this.props.lang.feedback_dialog_title}
+              text={this.props.lang.feedback_text}
+              cancelButtonText={this.props.lang.cancel_feedback}
+              agreeButtonText={this.props.lang.agree_feedback}
+            />
+          </div>
         </div>
       );
     }
@@ -1127,50 +1548,250 @@ class Anatomy extends React.Component {
             </Tooltip>
 
             <div className="icons">
-                <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.brain}</h3>}><button id="brainButton" className="brain" test-id="brainButton"
-                    onClick={(button, text) => this.iconClicked("brain", this.props.lang.brain)}>
-                    <img src={brainIcon} alt="brainIcon" /></button></Tooltip>
-                <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.stethoscope}</h3>}><button id="examButton" className="exam" test-id="examButton"
-                    onClick={(button, text) => this.iconClicked("physical exam", this.props.lang.stethoscope)}>
-                    <img src={examIcon} alt="examIcon" /></button></Tooltip>
-                <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.hip}</h3>}><button id="fallsButton" className="falls" test-id="fallsButton"
-                    onClick={(button, text) => this.iconClicked("hip", this.props.lang.hip)}><img
-                        src={fallsIcon} alt="fallsIcon" /></button></Tooltip>
-                <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.needle_in_arm}</h3>}><button id="immunizationButton" className="immunization" test-id="immunizationButton"
-                    onClick={(button, text) => this.iconClicked("needle in arm", this.props.lang.needle_in_arm)}>
-                    <img src={immunizationIcon} alt="immunizationIcon" /></button></Tooltip>
-                <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.sun}</h3>}><button id="sunExposureButton" className="sunExposure" test-id="sunExposureButton"
-                    onClick={(button, text) => this.iconClicked("sun", this.props.lang.sun)}><img
-                        src={sunExposureIcon} alt="sunExposureIcon" /></button></Tooltip>
-                <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.figure_outside_body_walking}</h3>}><button id="phyActivityButton" className="phyActivity" test-id="phyActivityButton"
-                    onClick={(button, text) => this.iconClicked("figure outside body walking", this.props.lang.figure_outside_body_walking)}>
-                    <img src={phyactIcon} alt="physicalActivityIcon" /></button></Tooltip>
-                <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.covid}</h3>}><button id="covidButton" className="covid" test-id="covidButton"
-                    onClick={(button, text) => this.iconClicked("covid", this.props.lang.covid)}><img src={covidIcon} alt="covidIcon" /></button></Tooltip>
-                <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.genitalia}</h3>}><button id="genitaliaButton" className="transGenital" test-id="genitaliaButton"
-                    onClick={(button, text) => this.iconClicked("genitalia", this.props.lang.genitalia)}>
-                    <img src={transGenital} alt="GenitalT" />
-                </button></Tooltip>
-                <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.braingear}</h3>}><button id="brainGearButton" className="brainGear" test-id="brainGearButton"
-                        onClick={(button, text, organ) => this.iconClicked("braingear", this.props.lang.braingear)}>
-                    <img src={braingear} alt="braingear"/></button></Tooltip>
-                <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.money}</h3>}><button id="moneyButton" test-id="moneyButton" className="money"
-                        onClick={(button, text, organ) => this.iconClicked("money", this.props.lang.money)}>
-                    <img src={moneyIcon} alt="moneyIcon"/></button></Tooltip>
-                <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.sleep}</h3>}><button id="sleepButton" test-id="sleepButton" className="sleep"
-                        onClick={(button, text, organ) => this.iconClicked("sleep", this.props.lang.sleep)}>
-                    <img src={sleepIcon} alt="sleepIcon"/></button></Tooltip>
-                <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.bp}</h3>}><button id="bpButton" className="bpnb" test-id="bpButton"
-                        onClick={(button, text, organ) => this.iconClicked("bp", this.props.lang.bp)}>
-                    <img src={bpIcon} alt="bpIcon"/></button></Tooltip>
-                <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.symptomchecker}</h3>}><button id="symptomcheckerButton" test-id="symptomcheckerButton" className="symptomchecker"
-                        onClick={(button, text, organ) => this.iconClicked("symptomchecker", this.props.lang.symptomchecker)}>
-                    <img src={symptomcheckerIcon} alt="symptomchecker"/></button></Tooltip>
-                <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.familydoctor}</h3>}><button id="familydoctorButton" test-id="familydoctorButton" className="familydoctor"
-                        onClick={(button, text, organ) => this.iconClicked("familydoctor", this.props.lang.familydoctor)}>
-                    <img src={familydoctorIcon} alt="familydoctor"/></button></Tooltip>
-                {/*<button id="transButton" className="trans" onClick={(button, text) => this.iconClicked("trans", this.props.lang.covid)}><img src={transIcon} alt="transIcon" /></button>*/}
-
+              <Tooltip
+                title={
+                  <h3 style={{ color: "#fff" }}>{this.props.lang.brain}</h3>
+                }
+              >
+                <button
+                  id="brainButton"
+                  className="brain"
+                  test-id="brainButton"
+                  onClick={(button, text) =>
+                    this.iconClicked("brain", this.props.lang.brain)
+                  }
+                >
+                  <img src={brainIcon} alt="brainIcon" />
+                </button>
+              </Tooltip>
+              <Tooltip
+                title={
+                  <h3 style={{ color: "#fff" }}>
+                    {this.props.lang.stethoscope}
+                  </h3>
+                }
+              >
+                <button
+                  id="examButton"
+                  className="exam"
+                  test-id="examButton"
+                  onClick={(button, text) =>
+                    this.iconClicked(
+                      "physical exam",
+                      this.props.lang.stethoscope
+                    )
+                  }
+                >
+                  <img src={examIcon} alt="examIcon" />
+                </button>
+              </Tooltip>
+              <Tooltip
+                title={<h3 style={{ color: "#fff" }}>{this.props.lang.hip}</h3>}
+              >
+                <button
+                  id="fallsButton"
+                  className="falls"
+                  test-id="fallsButton"
+                  onClick={(button, text) =>
+                    this.iconClicked("hip", this.props.lang.hip)
+                  }
+                >
+                  <img src={fallsIcon} alt="fallsIcon" />
+                </button>
+              </Tooltip>
+              <Tooltip
+                title={
+                  <h3 style={{ color: "#fff" }}>
+                    {this.props.lang.needle_in_arm}
+                  </h3>
+                }
+              >
+                <button
+                  id="immunizationButton"
+                  className="immunization"
+                  test-id="immunizationButton"
+                  onClick={(button, text) =>
+                    this.iconClicked(
+                      "needle in arm",
+                      this.props.lang.needle_in_arm
+                    )
+                  }
+                >
+                  <img src={immunizationIcon} alt="immunizationIcon" />
+                </button>
+              </Tooltip>
+              <Tooltip
+                title={<h3 style={{ color: "#fff" }}>{this.props.lang.sun}</h3>}
+              >
+                <button
+                  id="sunExposureButton"
+                  className="sunExposure"
+                  test-id="sunExposureButton"
+                  onClick={(button, text) =>
+                    this.iconClicked("sun", this.props.lang.sun)
+                  }
+                >
+                  <img src={sunExposureIcon} alt="sunExposureIcon" />
+                </button>
+              </Tooltip>
+              <Tooltip
+                title={
+                  <h3 style={{ color: "#fff" }}>
+                    {this.props.lang.figure_outside_body_walking}
+                  </h3>
+                }
+              >
+                <button
+                  id="phyActivityButton"
+                  className="phyActivity"
+                  test-id="phyActivityButton"
+                  onClick={(button, text) =>
+                    this.iconClicked(
+                      "figure outside body walking",
+                      this.props.lang.figure_outside_body_walking
+                    )
+                  }
+                >
+                  <img src={phyactIcon} alt="physicalActivityIcon" />
+                </button>
+              </Tooltip>
+              <Tooltip
+                title={
+                  <h3 style={{ color: "#fff" }}>{this.props.lang.covid}</h3>
+                }
+              >
+                <button
+                  id="covidButton"
+                  className="covid"
+                  test-id="covidButton"
+                  onClick={(button, text) =>
+                    this.iconClicked("covid", this.props.lang.covid)
+                  }
+                >
+                  <img src={covidIcon} alt="covidIcon" />
+                </button>
+              </Tooltip>
+              <Tooltip
+                title={
+                  <h3 style={{ color: "#fff" }}>{this.props.lang.genitalia}</h3>
+                }
+              >
+                <button
+                  id="genitaliaButton"
+                  className="transGenital"
+                  test-id="genitaliaButton"
+                  onClick={(button, text) =>
+                    this.iconClicked("genitalia", this.props.lang.genitalia)
+                  }
+                >
+                  <img src={transGenital} alt="GenitalT" />
+                </button>
+              </Tooltip>
+              <Tooltip
+                title={
+                  <h3 style={{ color: "#fff" }}>{this.props.lang.braingear}</h3>
+                }
+              >
+                <button
+                  id="brainGearButton"
+                  className="brainGear"
+                  test-id="brainGearButton"
+                  onClick={(button, text, organ) =>
+                    this.iconClicked("braingear", this.props.lang.braingear)
+                  }
+                >
+                  <img src={braingear} alt="braingear" />
+                </button>
+              </Tooltip>
+              <Tooltip
+                title={
+                  <h3 style={{ color: "#fff" }}>{this.props.lang.money}</h3>
+                }
+              >
+                <button
+                  id="moneyButton"
+                  test-id="moneyButton"
+                  className="money"
+                  onClick={(button, text, organ) =>
+                    this.iconClicked("money", this.props.lang.money)
+                  }
+                >
+                  <img src={moneyIcon} alt="moneyIcon" />
+                </button>
+              </Tooltip>
+              <Tooltip
+                title={
+                  <h3 style={{ color: "#fff" }}>{this.props.lang.sleep}</h3>
+                }
+              >
+                <button
+                  id="sleepButton"
+                  test-id="sleepButton"
+                  className="sleep"
+                  onClick={(button, text, organ) =>
+                    this.iconClicked("sleep", this.props.lang.sleep)
+                  }
+                >
+                  <img src={sleepIcon} alt="sleepIcon" />
+                </button>
+              </Tooltip>
+              <Tooltip
+                title={<h3 style={{ color: "#fff" }}>{this.props.lang.bp}</h3>}
+              >
+                <button
+                  id="bpButton"
+                  className="bpnb"
+                  test-id="bpButton"
+                  onClick={(button, text, organ) =>
+                    this.iconClicked("bp", this.props.lang.bp)
+                  }
+                >
+                  <img src={bpIcon} alt="bpIcon" />
+                </button>
+              </Tooltip>
+              <Tooltip
+                title={
+                  <h3 style={{ color: "#fff" }}>
+                    {this.props.lang.symptomchecker}
+                  </h3>
+                }
+              >
+                <button
+                  id="symptomcheckerButton"
+                  test-id="symptomcheckerButton"
+                  className="symptomchecker"
+                  onClick={(button, text, organ) =>
+                    this.iconClicked(
+                      "symptomchecker",
+                      this.props.lang.symptomchecker
+                    )
+                  }
+                >
+                  <img src={symptomcheckerIcon} alt="symptomchecker" />
+                </button>
+              </Tooltip>
+              <Tooltip
+                title={
+                  <h3 style={{ color: "#fff" }}>
+                    {this.props.lang.familydoctor}
+                  </h3>
+                }
+              >
+                <button
+                  id="familydoctorButton"
+                  test-id="familydoctorButton"
+                  className="familydoctor"
+                  onClick={(button, text, organ) =>
+                    this.iconClicked(
+                      "familydoctor",
+                      this.props.lang.familydoctor
+                    )
+                  }
+                >
+                  <img src={familydoctorIcon} alt="familydoctor" />
+                </button>
+              </Tooltip>
+              {/*<button id="transButton" className="trans" onClick={(button, text) => this.iconClicked("trans", this.props.lang.covid)}><img src={transIcon} alt="transIcon" /></button>*/}
             </div>
             {/* <div className="fixSelectedOrgan" test-id="selectedButton"><h1 style={fixedStyle}>{this.state.organSelected}</h1>
                         </div> */}
@@ -1183,9 +1804,20 @@ class Anatomy extends React.Component {
               display={this.state.display}
               button={this.state.buttonText}
               getTopic={this.props.getDisplay}
-              clickOnText={this.props.lang.clickOn_Text}
+              clickOnText={"Hii"}
               userInfo={this.props.userInfo}
             ></BodyModal>
+          </div>
+
+          <div>
+            <DialogBox
+              open={this.state.feedbackDialog}
+              setOpen={this.handleFeedBackToggle}
+              title={this.props.lang.feedback_dialog_title}
+              text={this.props.lang.feedback_text}
+              cancelButtonText={this.props.lang.cancel_feedback}
+              agreeButtonText={this.props.lang.agree_feedback}
+            />
           </div>
         </div>
       );
@@ -1430,51 +2062,251 @@ class Anatomy extends React.Component {
             </Tooltip>
 
             <div className="icons">
-              <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.brain}</h3>}><button id="brainButton" className="brain" test-id="brainButton"
-                  onClick={(button, text) => this.iconClicked("brain", this.props.lang.brain)}>
-                  <img src={brainIcon} alt="brainIcon" /></button></Tooltip>
-              <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.stethoscope}</h3>}><button id="examButton" className="exam" test-id="examButton"
-                  onClick={(button, text) => this.iconClicked("physical exam", this.props.lang.stethoscope)}>
-                  <img src={examIcon} alt="examIcon" /></button></Tooltip>
-              <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.hip}</h3>}><button id="fallsButton" className="falls" test-id="fallsButton"
-                  onClick={(button, text) => this.iconClicked("hip", this.props.lang.hip)}><img
-                      src={fallsIcon} alt="fallsIcon" /></button></Tooltip>
-              <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.needle_in_arm}</h3>}><button id="immunizationButton" className="immunization" test-id="immunizationButton"
-                  onClick={(button, text) => this.iconClicked("needle in arm", this.props.lang.needle_in_arm)}>
-                  <img src={immunizationIcon} alt="immunizationIcon" /></button></Tooltip>
-              <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.sun}</h3>}><button id="sunExposureButton" className="sunExposure" test-id="sunExposureButton"
-                  onClick={(button, text) => this.iconClicked("sun", this.props.lang.sun)}><img
-                      src={sunExposureIcon} alt="sunExposureIcon" /></button></Tooltip>
-              <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.figure_outside_body_walking}</h3>}><button id="phyActivityButton" className="phyActivity" test-id="phyActivityButton"
-                  onClick={(button, text) => this.iconClicked("figure outside body walking", this.props.lang.figure_outside_body_walking)}>
-                  <img src={phyactIcon} alt="physicalActivityIcon" /></button></Tooltip>
-              <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.covid}</h3>}><button id="covidButton" className="covid" test-id="covidButton"
-                  onClick={(button, text) => this.iconClicked("covid", this.props.lang.covid)}>
-                  <img src={covidIcon} alt="covidIcon" /></button></Tooltip>
-              <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.genitalia}</h3>}><button id="genitaliaButton" className="transGenital" test-id="genitaliaButton"
-                  onClick={(button, text) => this.iconClicked("genitalia", this.props.lang.genitalia)}>
-                  <img src={transGenital} alt="GenitalT" /></button></Tooltip>
-              <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.braingear}</h3>}><button id="brainGearButton" className="brainGear" test-id="brainGearButton"
-                      onClick={(button, text, organ) => this.iconClicked("braingear", this.props.lang.braingear)}>
-                  <img src={braingear} alt="braingear"/></button></Tooltip>
-              <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.money}</h3>}><button id="moneyButton" test-id="moneyButton" className="money"
-                      onClick={(button, text, organ) => this.iconClicked("money", this.props.lang.money)}>
-                  <img src={moneyIcon} alt="moneyIcon"/></button></Tooltip>
-              <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.sleep}</h3>}><button id="sleepButton" test-id="sleepButton" className="sleep"
-                      onClick={(button, text, organ) => this.iconClicked("sleep", this.props.lang.sleep)}>
-                  <img src={sleepIcon} alt="sleepIcon"/></button></Tooltip>
-              <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.bp}</h3>}><button id="bpButton" className="bptg" test-id="bpButton"
-                      onClick={(button, text, organ) => this.iconClicked("bp", this.props.lang.bp)}>
-                  <img src={bpIcon} alt="bpIcon"/></button></Tooltip>
-              <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.symptomchecker}</h3>}><button id="symptomcheckerButton" test-id="symptomcheckerButton" className="symptomchecker"
-                      onClick={(button, text, organ) => this.iconClicked("symptomchecker", this.props.lang.symptomchecker)}>
-                  <img src={symptomcheckerIcon} alt="symptomchecker"/></button></Tooltip>
-              <Tooltip title={<h3 style={{ color: "#fff" }}>{this.props.lang.familydoctor}</h3>}><button id="familydoctorButton" test-id="familydoctorButton" className="familydoctor"
-                      onClick={(button, text, organ) => this.iconClicked("familydoctor", this.props.lang.familydoctor)}>
-                  <img src={familydoctorIcon} alt="familydoctor"/></button></Tooltip>
+              <Tooltip
+                title={
+                  <h3 style={{ color: "#fff" }}>{this.props.lang.brain}</h3>
+                }
+              >
+                <button
+                  id="brainButton"
+                  className="brain"
+                  test-id="brainButton"
+                  onClick={(button, text) =>
+                    this.iconClicked("brain", this.props.lang.brain)
+                  }
+                >
+                  <img src={brainIcon} alt="brainIcon" />
+                </button>
+              </Tooltip>
+              <Tooltip
+                title={
+                  <h3 style={{ color: "#fff" }}>
+                    {this.props.lang.stethoscope}
+                  </h3>
+                }
+              >
+                <button
+                  id="examButton"
+                  className="exam"
+                  test-id="examButton"
+                  onClick={(button, text) =>
+                    this.iconClicked(
+                      "physical exam",
+                      this.props.lang.stethoscope
+                    )
+                  }
+                >
+                  <img src={examIcon} alt="examIcon" />
+                </button>
+              </Tooltip>
+              <Tooltip
+                title={<h3 style={{ color: "#fff" }}>{this.props.lang.hip}</h3>}
+              >
+                <button
+                  id="fallsButton"
+                  className="falls"
+                  test-id="fallsButton"
+                  onClick={(button, text) =>
+                    this.iconClicked("hip", this.props.lang.hip)
+                  }
+                >
+                  <img src={fallsIcon} alt="fallsIcon" />
+                </button>
+              </Tooltip>
+              <Tooltip
+                title={
+                  <h3 style={{ color: "#fff" }}>
+                    {this.props.lang.needle_in_arm}
+                  </h3>
+                }
+              >
+                <button
+                  id="immunizationButton"
+                  className="immunization"
+                  test-id="immunizationButton"
+                  onClick={(button, text) =>
+                    this.iconClicked(
+                      "needle in arm",
+                      this.props.lang.needle_in_arm
+                    )
+                  }
+                >
+                  <img src={immunizationIcon} alt="immunizationIcon" />
+                </button>
+              </Tooltip>
+              <Tooltip
+                title={<h3 style={{ color: "#fff" }}>{this.props.lang.sun}</h3>}
+              >
+                <button
+                  id="sunExposureButton"
+                  className="sunExposure"
+                  test-id="sunExposureButton"
+                  onClick={(button, text) =>
+                    this.iconClicked("sun", this.props.lang.sun)
+                  }
+                >
+                  <img src={sunExposureIcon} alt="sunExposureIcon" />
+                </button>
+              </Tooltip>
+              <Tooltip
+                title={
+                  <h3 style={{ color: "#fff" }}>
+                    {this.props.lang.figure_outside_body_walking}
+                  </h3>
+                }
+              >
+                <button
+                  id="phyActivityButton"
+                  className="phyActivity"
+                  test-id="phyActivityButton"
+                  onClick={(button, text) =>
+                    this.iconClicked(
+                      "figure outside body walking",
+                      this.props.lang.figure_outside_body_walking
+                    )
+                  }
+                >
+                  <img src={phyactIcon} alt="physicalActivityIcon" />
+                </button>
+              </Tooltip>
+              <Tooltip
+                title={
+                  <h3 style={{ color: "#fff" }}>{this.props.lang.covid}</h3>
+                }
+              >
+                <button
+                  id="covidButton"
+                  className="covid"
+                  test-id="covidButton"
+                  onClick={(button, text) =>
+                    this.iconClicked("covid", this.props.lang.covid)
+                  }
+                >
+                  <img src={covidIcon} alt="covidIcon" />
+                </button>
+              </Tooltip>
+              <Tooltip
+                title={
+                  <h3 style={{ color: "#fff" }}>{this.props.lang.genitalia}</h3>
+                }
+              >
+                <button
+                  id="genitaliaButton"
+                  className="transGenital"
+                  test-id="genitaliaButton"
+                  onClick={(button, text) =>
+                    this.iconClicked("genitalia", this.props.lang.genitalia)
+                  }
+                >
+                  <img src={transGenital} alt="GenitalT" />
+                </button>
+              </Tooltip>
+              <Tooltip
+                title={
+                  <h3 style={{ color: "#fff" }}>{this.props.lang.braingear}</h3>
+                }
+              >
+                <button
+                  id="brainGearButton"
+                  className="brainGear"
+                  test-id="brainGearButton"
+                  onClick={(button, text, organ) =>
+                    this.iconClicked("braingear", this.props.lang.braingear)
+                  }
+                >
+                  <img src={braingear} alt="braingear" />
+                </button>
+              </Tooltip>
+              <Tooltip
+                title={
+                  <h3 style={{ color: "#fff" }}>{this.props.lang.money}</h3>
+                }
+              >
+                <button
+                  id="moneyButton"
+                  test-id="moneyButton"
+                  className="money"
+                  onClick={(button, text, organ) =>
+                    this.iconClicked("money", this.props.lang.money)
+                  }
+                >
+                  <img src={moneyIcon} alt="moneyIcon" />
+                </button>
+              </Tooltip>
+              <Tooltip
+                title={
+                  <h3 style={{ color: "#fff" }}>{this.props.lang.sleep}</h3>
+                }
+              >
+                <button
+                  id="sleepButton"
+                  test-id="sleepButton"
+                  className="sleep"
+                  onClick={(button, text, organ) =>
+                    this.iconClicked("sleep", this.props.lang.sleep)
+                  }
+                >
+                  <img src={sleepIcon} alt="sleepIcon" />
+                </button>
+              </Tooltip>
+              <Tooltip
+                title={<h3 style={{ color: "#fff" }}>{this.props.lang.bp}</h3>}
+              >
+                <button
+                  id="bpButton"
+                  className="bptg"
+                  test-id="bpButton"
+                  onClick={(button, text, organ) =>
+                    this.iconClicked("bp", this.props.lang.bp)
+                  }
+                >
+                  <img src={bpIcon} alt="bpIcon" />
+                </button>
+              </Tooltip>
+              <Tooltip
+                title={
+                  <h3 style={{ color: "#fff" }}>
+                    {this.props.lang.symptomchecker}
+                  </h3>
+                }
+              >
+                <button
+                  id="symptomcheckerButton"
+                  test-id="symptomcheckerButton"
+                  className="symptomchecker"
+                  onClick={(button, text, organ) =>
+                    this.iconClicked(
+                      "symptomchecker",
+                      this.props.lang.symptomchecker
+                    )
+                  }
+                >
+                  <img src={symptomcheckerIcon} alt="symptomchecker" />
+                </button>
+              </Tooltip>
+              <Tooltip
+                title={
+                  <h3 style={{ color: "#fff" }}>
+                    {this.props.lang.familydoctor}
+                  </h3>
+                }
+              >
+                <button
+                  id="familydoctorButton"
+                  test-id="familydoctorButton"
+                  className="familydoctor"
+                  onClick={(button, text, organ) =>
+                    this.iconClicked(
+                      "familydoctor",
+                      this.props.lang.familydoctor
+                    )
+                  }
+                >
+                  <img src={familydoctorIcon} alt="familydoctor" />
+                </button>
+              </Tooltip>
               {/*<button id="transButton" className="trans" onClick={(button, text) => this.iconClicked("trans", this.props.lang.covid)}><img src={transIcon} alt="transIcon" /></button>*/}
-
-          </div>
+            </div>
             {/* <div className="fixSelectedOrgan" test-id="selectedButton"><h1 style={fixedStyle}>{this.state.organSelected}</h1>
                         </div> */}
           </div>
@@ -1486,9 +2318,19 @@ class Anatomy extends React.Component {
               display={this.state.display}
               button={this.state.buttonText}
               getTopic={this.props.getDisplay}
-              clickOnText={this.props.lang.clickOn_Text}
+              clickOnText={"hii"}
               userInfo={this.props.userInfo}
             ></BodyModal>
+          </div>
+          <div>
+            <DialogBox
+              open={this.state.feedbackDialog}
+              setOpen={this.handleFeedBackToggle}
+              title={this.props.lang.feedback_dialog_title}
+              text={this.props.lang.feedback_text}
+              cancelButtonText={this.props.lang.cancel_feedback}
+              agreeButtonText={this.props.lang.agree_feedback}
+            />
           </div>
         </div>
       );
