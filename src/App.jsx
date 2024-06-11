@@ -30,6 +30,7 @@ import { isTransgender } from "./config";
 
 // Home and arrow back icon logo
 import { FaHome, FaArrowLeft } from "react-icons/fa";
+import { englishForm, frenchForm } from "./constants.js";
 
 class App extends Component {
   static propTypes = {
@@ -1324,11 +1325,7 @@ class App extends Component {
           </div>
           <a
             className="font-weight-bold font-size-xl"
-            href={
-              this.state.language == "french"
-                ? "https://forms.gle/uJApr8qousrgEboX6"
-                : "https://forms.gle/nzRAFRCTNo62T4fh6"
-            }
+            href={this.state.language === "french" ? frenchForm : englishForm}
             target="_blank"
             style={{ fontSize: "1.7em" }}
             rel="noopener"

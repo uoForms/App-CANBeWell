@@ -138,7 +138,11 @@
     "topic_filter_top_10": "Show Top 10",
     "clickOn_Text": "Click on blue button below",
     "symptomchecker": "Check Symptoms",
-    "familydoctor": "No Family MD/NP"
+    "familydoctor": "No Family MD/NP",
+    "feedback_dialog_title" : "We want to hear what you think!",
+    "feedback_text" : "Please take this 1 minute anonymous survey to help us improve the app",
+    "agree_feedback" : "Take Survey" , 
+    "cancel_feedback" : "No, Thank You"
   },
   "french": {
     "instruction_modal_header": "Veuillez saisir les informations ci-dessous pour recevoir des conseils personnalisés pour rester en santé:",
@@ -279,6 +283,10 @@
     "kidney": "Rein",
     "mouth": "Santé buccodentaire",
     "symptomchecker": "Vérifier vos symptoms",
-    "familydoctor": "Sans MD Famille/IP"
+    "familydoctor": "Sans MD Famille/IP",
+    "feedback_dialog_title" : "Nous voulons savoir ce que vous pensez!",
+    "feedback_text" : "SVP répondre à ce sondage anonyme d’1 minute, et nous aider à améliorer l’ application pour tout le monde.",
+    "agree_feedback" : "Répondre au sondage" , 
+    "cancel_feedback" : "Non merci"
   }
 }
