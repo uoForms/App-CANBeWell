@@ -172,6 +172,23 @@
   background-color: #F57C00;
   font-size: 15px;
 }
+
+.buttonDialogClose{
+  position: absolute;
+  right : 10px;
+  top : 10px;
+  /*margin-right: 2px;*/
+  margin-top: -8px;
+  /*top: 1%;
+  right: 1%;*/
+  color: white;
+  float: right;
+  border-radius: 50%;
+  background-color: #F57C00;
+  font-size: 15px;
+  width : fit-content;
+}
+
 .helpbuttonClose{
   margin-right: -90%;
   margin-top: -20%;
