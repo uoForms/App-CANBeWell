@@ -1,0 +1,24 @@
+June 14, 2024
+
+CHANGELOG
+
+Global:
+
+- Reduced the width of the back button.
+- Reduced title text sizes for better readability on smaller screens.
+
+No Family MD/NP Page EN & FR:
+
+- Changed the display of links of provincial healthcare providers from buttons to lists. 
+- Changed the "Check Your Symptoms" button to make it centered and adjustable to accommodate smaller screens. 
+
+
+TO DO
+
+No Family MD/NP Page EN & FR:
+
+- Change the introduction (Here are some links to help you if...) to a more arranged formatting. (Similar to the Check Your Symptoms page.)
+
+Check Your Symptoms EN & FR:
+
+- Reduce padding before the "If this is an emergency call 911" box.

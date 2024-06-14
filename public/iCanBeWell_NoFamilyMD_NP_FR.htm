@@ -50,7 +50,7 @@
                       <img style="height: 60px; width:60px;" src="images/icon_familydoctor.png" alt="Checkupimage">
                       <ul class="ul_align">
                         <li>Vous avez un problème de santé maintenant</li>
-                        <li>Vous voulez trouver un médecin de famille ou infirmier ère praticienne</li>
+                        <li>Vous voulez trouver un médecin de famille ou une infirmier ère praticienne</li>
                         
                       </ul>
                     </div>
@@ -65,9 +65,10 @@
                         practicienne en passant par le 811. pour une
                         prescription ou des conseils.</p>
                     </div>
-                    <!-- <p><a href="iCanBeWell_CheckYourSymptoms.htm" class="btn btn-primary">Check Your Symptoms</a></p> -->
-                    <a href="iCanBeWell_CheckYourSymptoms_FR.htm" style=" margin-left:25px; display: inline-block; padding: 10px 82px; border: 1px solid #125296; background-color: transparent; color: #125296; text-decoration: none; border-radius: 5px; font-size: 16px; font-weight: bold;">
-                       Vérifier vos symptômes </a>
+                    <div class="d-flex-col">
+                      <a href="iCanBeWell_CheckYourSymptoms_FR.htm" style="text-align: center; margin-top:10px;margin-bottom: 4px;margin-left:25px;margin-right:25px; display: inline-block; padding: 10px 20px; border: 1px solid #125296; background-color: transparent; color: #125296; text-decoration: none; border-radius: 5px; font-size: 16px; font-weight: bold;">
+                        Vérifier vos symptômes</a>
+                    </div>
                     <div class="outer_div">
                       <b style="color: #125296;">Je veux trouver un MD ou IP (infirmière praticienne)</b>
                       <p>La plupart des provinces ont des listes
@@ -81,103 +82,35 @@
                         ces sites donnent des informations pour
                         obtenir des soins en attendant de trouver un
                         professionnel de la santé:</p>
-                      <div class="container d-flex-center">
-                        <style>
-                          .container table {
-                            border-collapse: collapse;
-                            width: 50%;
-                          }
-
-                          .container th,
-                          .container td {
-                            border: none;
-                            padding: 10px;
-                            text-align: center;
-                            width: 50%;
-                            box-sizing: border-box;
-                          }
-
-                          .container button {
-                            background-color: transparent;
-                            color: #125296;
-                            border: 2px solid #125296;
-                            border-radius: 10px;
-                            padding: 10px 20px;
-                            text-align: center;
-                            text-decoration: none;
-                            display: inline-block;
-                            font-size: 16px;
-                            margin: 4px 2px;
-                            cursor: pointer;
-                            width: 100%;
-                            box-sizing: border-box;
-                            height: 100px;
-                            width:155px;
-                          }
-
-                          .d-flex-center {
-                            display: flex;
-                            justify-content: center;
-                          }
-                        </style>
-                       <table>
-                        <tr>
-                          <td>
-                            <button onclick="window.open('https://www.albertahealthservices.ca/info/Page13253.aspx', '_blank')">
-                              <b>Alberta</b>
-                            </button>
-                          </td>
-                          <td>
-                            <button onclick="window.open('https://www.healthlinkbc.ca/health-connect-registry', '_blank')">
-                              <b>Colombie Britannique</b>
-                            </button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <button onclick="window.open('https://www.gov.mb.ca/betterhealth/index.fr.html', '_blank')">
-                              <b>Manitoba</b>
-                            </button>
-                          </td>
-                          <td>
-                            <button onclick="window.open('https://www2.gnb.ca/content/gnb/fr/corporate/promo/acces-aux-soins-de-sante/etre-jumele.html', '_blank')">
-                              <b>Nouveau Brunswick</b>
-                            </button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <button onclick="window.open('https://needafamilypractice.nshealth.ca/', '_blank')">
-                              <b>Nouvelle Écosse</b>
-                            </button>
-                          </td>
-                          <td>
-                            <button onclick="window.open('https://patientconnect.nlchi.nl.ca/', '_blank')">
-                              <b>Terre-Neuve et Labrador</b>
-                            </button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <button onclick="window.open('https://www.ontario.ca/fr/page/trouver-un-medecin-de-famille-ou-une-infirmiere-praticienne', '_blank')">
-                              <b>Ontario</b>
-                            </button>
-                          </td>
-                          <td>
-                            <button onclick="window.open('https://www.princeedwardisland.ca/fr/service/trouver-medecin-famille-ou-infirmiere-praticienne', '_blank')">
-                              <b>Île du Prince Édouard</b>
-                            </button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td colspan="1">
-                            <button onclick="window.open('https://www.quebec.ca/sante/trouver-une-ressource/inscription-aupres-dun-medecin-de-famille', '_blank')">
-                              <b>Québec</b>
-                            </button>
-                          </td>
-                        </tr>
-                      </table>
-                      </div>
+                        <div class="container">
+                          <style>
+                            .container ul {
+                              list-style-type: none;
+                              padding: 0;
+                            }
+                            .container li {
+                              margin: 20px 0;
+                            }
+                            .container a {
+                              color: #125296;
+                              text-decoration: none;
+                              font-size: 16px;
+                            }
+                          </style>
+                          <div>
+                            <ul>
+                              <li><a href="https://www.albertahealthservices.ca/info/Page13253.aspx"><b>Alberta</b></a></li>
+                              <li><a href="https://www.healthlinkbc.ca/health-connect-registry"><b>Colombie Britannique</b></a></li>
+                              <li><a href="https://www.gov.mb.ca/betterhealth/index.fr.html"><b>Manitoba</b></a></li>
+                              <li><a href="https://www2.gnb.ca/content/gnb/fr/corporate/promo/acces-aux-soins-de-sante/etre-jumele.html"><b>Nouveau Brunswick</b></a></li>
+                              <li><a href="https://needafamilypractice.nshealth.ca/"><b>Nouvelle Écosse</b></a></li>
+                              <li><a href="https://patientconnect.nlchi.nl.ca/"><b>Terre-Neuve et Labrador</b></a></li>
+                              <li><a href="https://www.ontario.ca/fr/page/trouver-un-medecin-de-famille-ou-une-infirmiere-praticienne"><b>Ontario</b></a></li>
+                              <li><a href="https://www.princeedwardisland.ca/fr/service/trouver-medecin-famille-ou-infirmiere-praticienne"><b>Île du Prince Édouard</b></a></li>
+                              <li><a href="https://www.quebec.ca/sante/trouver-une-ressource/inscription-aupres-dun-medecin-de-famille"><b>Québec</b></a></li>
+                            </ul>          
+                          </div>
+                        </div>
                     </div>
                     <div class="d-block" style="margin-left: 20px; margin-bottom: 9px;">
                       <a href="/fr" class="btn btn-primary">

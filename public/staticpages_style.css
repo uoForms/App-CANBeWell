@@ -13,13 +13,9 @@
     color: #fff;
     font-size: 3rem;
 }
-
-h5{
+.pagetitle h5 {
     color: #fff;
-    margin-left: 2px;
-    
 }
-
 .ab-br-section {
     padding: 20px 0 0;
 }
@@ -81,6 +77,14 @@ h5{
 
 }
 
+.outer_div_intro{
+    margin: 22;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 1px;
+
+}
 
 .d-flex-col{
 
@@ -99,7 +103,7 @@ h5{
 }
 
 .btn {
-    padding: 8px 36px;
+    padding: 8px 20px;
     border-radius: 12px;
     font-size: calc(14px + (24 - 14) * (100vw - 320px) / (1920 - 320)) !important;
     line-height: calc(18px + (28 - 18) * (100vw - 320px) / (1920 - 320)) !important;
