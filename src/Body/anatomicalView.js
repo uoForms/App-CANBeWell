@@ -1296,7 +1296,7 @@ class Anatomy extends React.Component {
             button={this.state.buttonText}
             displayConfig={this.state.displayConfigOption}
             getTopic={this.props.getDisplay}
-            clickOnText={"hii"}
+            clickOnText={this.props.lang.clickOn_Text}
             userInfo={this.props.userInfo}
           ></BodyModal>
 
@@ -1804,7 +1804,7 @@ class Anatomy extends React.Component {
               display={this.state.display}
               button={this.state.buttonText}
               getTopic={this.props.getDisplay}
-              clickOnText={"Hii"}
+              clickOnText={this.props.lang.clickOn_Text}
               userInfo={this.props.userInfo}
             ></BodyModal>
           </div>
@@ -2318,7 +2318,7 @@ class Anatomy extends React.Component {
               display={this.state.display}
               button={this.state.buttonText}
               getTopic={this.props.getDisplay}
-              clickOnText={"hii"}
+              clickOnText={this.props.lang.clickOn_Text}
               userInfo={this.props.userInfo}
             ></BodyModal>
           </div>
