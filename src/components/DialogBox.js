@@ -26,13 +26,16 @@ export default function DialogBox(props) {
         onClose={handleClose}
         aria-labelledby="responsive-dialog-title"
       >
-        <DialogTitle id="responsive-dialog-title">
-          {title}
-        </DialogTitle>
+        <DialogTitle id="responsive-dialog-title">{title}</DialogTitle>
+        <button
+          className="buttonDialogClose"
+          test-id="xButton"
+          onClick={handleClose}
+        >
+          X
+        </button>
         <DialogContent>
-          <DialogContentText>
-            {text}
-          </DialogContentText>
+          <DialogContentText>{text}</DialogContentText>
         </DialogContent>
         <DialogActions>
           <Button autoFocus onClick={handleAgree}>
