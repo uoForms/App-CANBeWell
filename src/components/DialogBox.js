@@ -7,9 +7,12 @@ import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
+import Styles from "../Style/dialog-box.module.scss";
+import logo from "../assets/Logos/logo_21-02-02.png";
 
 export default function DialogBox(props) {
-  const { open, setOpen , title , text , cancelButtonText , agreeButtonText } = props;
+  const { open, setOpen, title, text, cancelButtonText, agreeButtonText } =
+    props;
   const theme = useTheme();
   const handleAgree = () => {
     setOpen("agree");
@@ -25,8 +28,18 @@ export default function DialogBox(props) {
         open={open}
         onClose={handleClose}
         aria-labelledby="responsive-dialog-title"
+        fullWidth={true}
+        className={Styles.dialogBox}
       >
-        <DialogTitle id="responsive-dialog-title">{title}</DialogTitle>
+        <div className={Styles.title}>
+          <img src={logo} width="50px" />
+          <DialogTitle
+            id="responsive-dialog-title"
+            className={Styles.dialogTitle}
+          >
+            {title}
+          </DialogTitle>
+        </div>
         <button
           className="buttonDialogClose"
           test-id="xButton"
@@ -38,10 +51,18 @@ export default function DialogBox(props) {
           <DialogContentText>{text}</DialogContentText>
         </DialogContent>
         <DialogActions>
-          <Button autoFocus onClick={handleAgree}>
+          <Button
+            autoFocus
+            onClick={handleAgree}
+            className={Styles.agreeButton}
+          >
             {agreeButtonText}
           </Button>
-          <Button onClick={handleClose} autoFocus>
+          <Button
+            onClick={handleClose}
+            autoFocus
+            className={Styles.cancelButton}
+          >
             {cancelButtonText}
           </Button>
         </DialogActions>
