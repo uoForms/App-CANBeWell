@@ -185,16 +185,22 @@ div.fixed {
   position: absolute;
   right: 2px;
   top: 10px;
-  /*margin-right: 2px;*/
   margin-top: -8px;
-  /*top: 1%;
-  right: 1%;*/
   color: white;
   float: right;
   border-radius: 50%;
-  background-color: #f57c00;
   font-size: 15px;
   width: fit-content;
+  color: #1485a9;
+  text-align: right;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px; /* 100% */
+  background-color: #d8df23;
+  stroke-width: 1px;
+  flex-shrink: 0;
+  stroke: #1485a9;
 }
 
 .notesBody {
