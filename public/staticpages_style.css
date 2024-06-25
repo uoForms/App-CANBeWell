@@ -13,9 +13,14 @@
     color: #fff;
     font-size: 3rem;
 }
-.pagetitle h5 {
+
+h5{
     color: #fff;
+    margin-left: 6px;
+    text-align: center;
+    font-size: 18px;
 }
+
 .ab-br-section {
     padding: 20px 0 0;
 }
@@ -35,56 +40,52 @@
 }
 
 .outer_div{
-    margin: 22;
+    margin: 16;
     margin-top: 20px;
     border-radius: 10px;
     background-color: #F4F8FA;
-    padding: 15px;
+    padding: 16px;
 
 }
 
 .outer_divpro{
-    margin: 22;
+    margin: 16;
     margin-top: 20px;
     border-radius: 10px;
     background-color: transparent;
     /* background-color:rgb(39, 170, 225); */
-    padding: 15px;
+    padding: 16px;
     border: 1px solid #125296
 
 }
 .outer_div_symptoms{
-    margin: 22;
-    margin-top: 50px;
+    margin: 16;
+    margin-top: 30px;
     border-radius: 10px;
-    padding: 15px;
+    padding: 16px;
+    padding-top: 8px;
+    padding-bottom: 0px;
     background-color: transparent;
     border: 2px solid #d7df21 ;  
-    height: 60px;                                 
+    height: auto;                                 
                                         
 
 }
 
 .outer_div_symptoms_fr{
-    margin: 22;
-    margin-top: 50px;
+    margin: 16;
+    margin-top: 30px;
     border-radius: 10px;
-    padding: 15px;
+    padding: 16px;
+    padding-top: 8px;
+    padding-bottom: 0px;
     background-color: transparent;
     border: 2px solid #d7df21 ;  
-    height: 80px;                                 
+    height: auto;                                 
                                         
 
 }
 
-.outer_div_intro{
-    margin: 22;
-    margin-top: 20px;
-    border-radius: 10px;
-    background-color: transparent;
-    padding: 1px;
-
-}
 
 .d-flex-col{
 
@@ -93,8 +94,9 @@
 
 }
 .mt-15{
-    margin-top: 20px;
-    margin-left:25px;
+    margin-top: 16px;
+    margin-left:16px;
+    margin:8px;
 }
 
 .ul_align{
@@ -103,8 +105,8 @@
 }
 
 .btn {
-    padding: 8px 20px;
-    border-radius: 12px;
+    padding: 8px 28px;
+    border-radius: 10px;
     font-size: calc(14px + (24 - 14) * (100vw - 320px) / (1920 - 320)) !important;
     line-height: calc(18px + (28 - 18) * (100vw - 320px) / (1920 - 320)) !important;
 }
