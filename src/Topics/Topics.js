@@ -9,6 +9,8 @@ import FilterTopicListFR from "../JSONFolder/FilterTopic-FR.json";
 import FilterTopicListEN from "../JSONFolder/FilterTopic-EN.json";
 import TopicModal from "./TopicModal";
 import DialogBox from "../components/DialogBox";
+import FeedbackDialogEn from "../components/feedback-components/FeedbackDialogEn";
+import FeedbackDialogFr from "../components/feedback-components/FeedbackDialogFr";
 
 class Topics extends React.Component {
   constructor(props) {
@@ -96,9 +98,15 @@ class Topics extends React.Component {
           open={this.state.feedbackDialog}
           setOpen={this.handleFeedBackToggle}
           title={this.props.lang.feedback_dialog_title}
-          text={this.props.lang.feedback_text}
           cancelButtonText={this.props.lang.cancel_feedback}
           agreeButtonText={this.props.lang.agree_feedback}
+          textComponent={
+            this.props.language === "french" ? (
+              <FeedbackDialogFr />
+            ) : (
+              <FeedbackDialogEn />
+            )
+          }
         />
       </div>
     );

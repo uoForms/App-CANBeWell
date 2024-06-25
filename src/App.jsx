@@ -1374,6 +1374,7 @@ class App extends Component {
             pageViewStateUpdater={this.pageViewStateUpdater}
             onClose={this.toggleModal}
             button={this.state.buttonText}
+            language={userInfo.language}
           ></Topics>
         </div>
 

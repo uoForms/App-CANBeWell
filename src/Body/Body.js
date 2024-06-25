@@ -83,6 +83,7 @@ class MyBody extends React.Component {
             userInfo={this.props.userConfig}
             getDisplay={this.props.getText}
             lang={this.props.lang}
+            language = {this.props.userConfig.language}
             pageViewStateUpdater={this.pageViewStateUpdater}
           ></Anatomy>
         </div>

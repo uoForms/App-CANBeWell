@@ -85,6 +85,8 @@ import "./Body.css";
 import "../App.css";
 import DialogBox from "../components/DialogBox";
 import { englishForm, frenchForm } from "../constants";
+import FeedbackDialogFr from "../components/feedback-components/FeedbackDialogFr";
+import FeedbackDialogEn from "../components/feedback-components/FeedbackDialogEn";
 
 class Anatomy extends React.Component {
   constructor(props) {
@@ -112,7 +114,7 @@ class Anatomy extends React.Component {
     if (type === "agree") {
       sessionStorage.setItem("firstVisit", "true");
       const finalLink =
-        this.state.language === "french" ? frenchForm : englishForm;
+        this.props.language === "french" ? frenchForm : englishForm;
       window.open(finalLink, "_blank");
     }
     this.setState({ feedbackDialog: !this.state.feedbackDialog });
@@ -765,9 +767,15 @@ class Anatomy extends React.Component {
               open={this.state.feedbackDialog}
               setOpen={this.handleFeedBackToggle}
               title={this.props.lang.feedback_dialog_title}
-              text={this.props.lang.feedback_text}
               cancelButtonText={this.props.lang.cancel_feedback}
               agreeButtonText={this.props.lang.agree_feedback}
+              textComponent={
+                this.props.language === "french" ? (
+                  <FeedbackDialogFr />
+                ) : (
+                  <FeedbackDialogEn />
+                )
+              }
             />
           </div>
         </div>
@@ -1305,9 +1313,15 @@ class Anatomy extends React.Component {
               open={this.state.feedbackDialog}
               setOpen={this.handleFeedBackToggle}
               title={this.props.lang.feedback_dialog_title}
-              text={this.props.lang.feedback_text}
               cancelButtonText={this.props.lang.cancel_feedback}
               agreeButtonText={this.props.lang.agree_feedback}
+              textComponent={
+                this.props.language === "french" ? (
+                  <FeedbackDialogFr />
+                ) : (
+                  <FeedbackDialogEn />
+                )
+              }
             />
           </div>
         </div>
@@ -1814,9 +1828,15 @@ class Anatomy extends React.Component {
               open={this.state.feedbackDialog}
               setOpen={this.handleFeedBackToggle}
               title={this.props.lang.feedback_dialog_title}
-              text={this.props.lang.feedback_text}
               cancelButtonText={this.props.lang.cancel_feedback}
               agreeButtonText={this.props.lang.agree_feedback}
+              textComponent={
+                this.props.language === "french" ? (
+                  <FeedbackDialogFr />
+                ) : (
+                  <FeedbackDialogEn />
+                )
+              }
             />
           </div>
         </div>
@@ -2327,9 +2347,15 @@ class Anatomy extends React.Component {
               open={this.state.feedbackDialog}
               setOpen={this.handleFeedBackToggle}
               title={this.props.lang.feedback_dialog_title}
-              text={this.props.lang.feedback_text}
               cancelButtonText={this.props.lang.cancel_feedback}
               agreeButtonText={this.props.lang.agree_feedback}
+              textComponent={
+                this.props.language === "french" ? (
+                  <FeedbackDialogFr />
+                ) : (
+                  <FeedbackDialogEn />
+                )
+              }
             />
           </div>
         </div>

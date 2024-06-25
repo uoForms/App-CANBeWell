@@ -5,14 +5,19 @@ import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
-import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
 import Styles from "../Style/dialog-box.module.scss";
 import logo from "../assets/Logos/logo_21-02-02.png";
 
 export default function DialogBox(props) {
-  const { open, setOpen, title, text, cancelButtonText, agreeButtonText } =
-    props;
+  const {
+    open,
+    setOpen,
+    title,
+    cancelButtonText,
+    agreeButtonText,
+    textComponent,
+  } = props;
   const theme = useTheme();
   const handleAgree = () => {
     setOpen("agree");
@@ -47,9 +52,7 @@ export default function DialogBox(props) {
         >
           X
         </button>
-        <DialogContent>
-          <DialogContentText>{text}</DialogContentText>
-        </DialogContent>
+        <DialogContent>{textComponent}</DialogContent>
         <DialogActions>
           <Button
             autoFocus
