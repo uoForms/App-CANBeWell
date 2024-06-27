@@ -201,6 +201,7 @@ div.fixed {
   stroke-width: 1px;
   flex-shrink: 0;
   stroke: #1485a9;
+  border: 1.5px solid #1485a9;
 }
 
 .notesBody {

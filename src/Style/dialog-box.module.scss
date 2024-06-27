@@ -3,12 +3,11 @@
     .MuiPaper-root {
       padding: 28px 18px 18px 21px;
       border-radius: 10px;
-      border: 1px solid #1485a9;
       background: #f6f6f6;
     }
     .MuiDialogTitle-root {
       color: #1485a9;
-      font-family: Roboto;
+      font-family: Lato, sans-serif;
       font-size: 18px;
       font-style: normal;
       font-weight: 700;
@@ -41,7 +40,7 @@
   border: 1px solid #d7df21 !important;
   background: #d7df21 !important;
   text-align: center !important;
-  font-family: Inter !important;
+  font-family: Lato, sans-serif !important;
   font-size: 16px !important;
   font-style: normal !important;
   font-weight: 700 !important;
@@ -52,7 +51,7 @@
 .cancelButton {
   color: #1485a9 !important;
   text-align: center !important;
-  font-family: Inter !important;
+  font-family: Lato, sans-serif !important;
   font-size: 16px !important;
   font-style: normal !important;
   font-weight: 700 !important;
@@ -69,7 +68,7 @@
 }
 
 .feedbackDialog {
-  font-family: Roboto;
+  font-family: Lato, sans-serif;
   font-weight: 400;
   font-style: normal;
   line-height: 22px; /* 137.5% */
