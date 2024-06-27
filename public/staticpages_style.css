@@ -88,9 +88,13 @@ h5{
 
 
 .d-flex-col{
-
-    display: flex;
+    display: flex !important;
     flex-direction: column;
+    margin-top:20px; 
+    margin-left:16px;
+    margin-right:16px;
+    margin-bottom: 20px;
+    gap: 10px;
 
 }
 .mt-15{
@@ -106,8 +110,8 @@ h5{
 }
 
 .btn {
-    padding: 8px 28px;
-    border-radius: 10px;
+    padding: 8px 20px;
+    border-radius: 12px;
     font-size: calc(14px + (24 - 14) * (100vw - 320px) / (1920 - 320)) !important;
     line-height: calc(18px + (28 - 18) * (100vw - 320px) / (1920 - 320)) !important;
 }
@@ -140,7 +144,6 @@ h5{
 .side-div {
     flex-basis: 10%;
 }
-
 
 /* Media query for small screens */
  @media (max-width: 1000px) {

@@ -1,24 +1,30 @@
-June 14, 2024
+June 27, 2024
 
 CHANGELOG
 
-Global:
+---------------------------------
 
-- Reduced the width of the back button.
-- Reduced title text sizes for better readability on smaller screens.
+GLOBAL:
 
-No Family MD/NP Page EN & FR:
+1. Added `rel="noopener"` attribute behind every link to improve security.
+2. Reduced the size of the back button.
+3. Adjusted class `.d-flex-col` in staticpages_style.css for it to control the paddings and margins of the buttons within it, instead of setting individual styles of the buttons.
+4. In-app redirect links now open in the current browser tab. (used to open in a new tab)
 
-- Changed the display of links of provincial healthcare providers from buttons to lists. 
-- Changed the "Check Your Symptoms" button to make it centered and adjustable to accommodate smaller screens. 
-
-
-TO DO
+---------------------------------
 
 No Family MD/NP Page EN & FR:
 
-- Change the introduction (Here are some links to help you if...) to a more arranged formatting. (Similar to the Check Your Symptoms page.)
+1. Removed (commented out) `div class="row` and `div class="col-md-12"` to fix the issue mentioned in #870, "The HTML pages won't center correctly & have a white bar at the right edge."
+2. Removed individual styles that control the paddings and margins of the buttons.
+3. Fixed that there's no blank space before "ici" on the FR page under "Virtual Care in Ontario" section.
+4. Minor adjustment to the paddings between elements.
 
-Check Your Symptoms EN & FR:
+---------------------------------
 
-- Reduce padding before the "If this is an emergency call 911" box.
+Check Your Symptoms Page EN & FR:
+
+1. Put back the hidden third column in the title bar to center the title text.
+2. Removed individual styles that control the paddings and margins of the buttons.
+3. Minor adjustment to the paddings between elements.
+
