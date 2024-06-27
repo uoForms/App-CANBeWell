@@ -37,7 +37,7 @@ export default function DialogBox(props) {
         className={Styles.dialogBox}
       >
         <div className={Styles.title}>
-          <img src={logo} width="50px" />
+          <img src={logo} width="44px" height="43px" />
           <DialogTitle
             id="responsive-dialog-title"
             className={Styles.dialogTitle}

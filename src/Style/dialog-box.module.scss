@@ -1,22 +1,26 @@
 .dialogBox {
   :global {
     .MuiPaper-root {
-      padding: 25px;
+      padding: 28px 18px 18px 21px;
+      border-radius: 10px;
+      border: 1px solid #1485a9;
+      background: #f6f6f6;
     }
     .MuiDialogTitle-root {
       color: #1485a9;
-      text-align: right;
       font-family: Roboto;
+      font-size: 18px;
       font-style: normal;
       font-weight: 700;
       line-height: 28px; /* 155.556% */
+      color: #1485a9;
+      line-height: 28px; /* 155.556% */
       margin-top: 10px;
       padding: 0px 0 12px 0;
-      font-size: 22px;
-      width: 60%;
       word-wrap: break-word;
       overflow-wrap: break-word; /* Modern property */
       word-break: break-word; /* Fallback for older browsers */
+      flex: 1;
     }
 
     .MuiDialogContent-root {
@@ -24,6 +28,9 @@
     }
     .MuiDialogContent-root {
       overflow-y: visible;
+    }
+    .MuiDialogActions-root {
+      justify-content: space-evenly;
     }
   }
 }
@@ -44,7 +51,6 @@
 
 .cancelButton {
   color: #1485a9 !important;
-  border-radius: 10px !important;
   text-align: center !important;
   font-family: Inter !important;
   font-size: 16px !important;
@@ -52,20 +58,30 @@
   font-weight: 700 !important;
   line-height: 30px !important; /* 187.5% */
   text-transform: capitalize !important;
-  border: 1px solid #1485a9 !important;
 }
 
 .title {
   display: flex;
   flex-direction: row;
   align-items: center;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .feedbackDialog {
+  font-family: Roboto;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 22px; /* 137.5% */
   color: #000;
   font-size: 16px;
-  font-weight: 400;
+  color: #000;
+  li {
+    color: #818285;
+    font-size: 14px;
+  }
   span {
-    background-color: yellow;
+    color: #1485a9;
+    font-weight: 700;
   }
 }
