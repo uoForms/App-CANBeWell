@@ -28,3 +28,31 @@ Check Your Symptoms Page EN & FR:
 2. Removed individual styles that control the paddings and margins of the buttons.
 3. Minor adjustment to the paddings between elements.
 
+
+
+July 03, 2024
+
+CHANGELOG
+
+---------------------------------
+
+No Family MD/NP Page EN & FR:
+
+1. Changed content according to Dr. Cleo's instruction. The detailed changes are listed below:
+
+EN:
+No family MD/NP?
+If urgent call 911, otherwise call 811 ….territory to speak to a nurse. In Manitoba…
+In Quebec to access further care call 811 option 3 or click here 
+
+FR:
+Sans MD de famille ou IP?
+•	Vous avez un problème de santé :
+Si urgent composez le 911, sinon composez le 811 ou consultez le site web 811 de votre province ou territoire pour parler à une infirmière. Au Manitoba site Meilleure Santé. 
+Au Québec : pour le GAP signalez le 811 option 3 ou cliquez ici
+Ou vérifiez vos symptômes ici
+
+•	 Vous voulez trouver un médecin de famille ou une infirmière praticienne :
+•	Soins virtuels en Ontario :
+Si vous ne voyez pas votre région ci-dessous, composez le 811
+Pour l’est de l’Ontario….
