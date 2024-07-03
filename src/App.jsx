@@ -3,7 +3,6 @@ import { withCookies, Cookies } from "react-cookie";
 import { instanceOf } from "prop-types";
 import ReactGA from "react-ga";
 import { IoIosSettings } from "react-icons/io";
-import { AiOutlineExclamationCircle } from "react-icons/ai";
 import { Button, ButtonToolbar, Media } from "react-bootstrap";
 import { v4 as uuidv4 } from "uuid";
 import DOMPurify from "dompurify";
@@ -14,14 +13,11 @@ import "./Button.css";
 import "./Style/checkbox.css";
 import "./Style/Modal.css";
 import MyModal from "./MyModal";
-import SideBar from "./sideBar";
 import Data from "./Data.js";
 //import InstructionModal from './InstructionModal.js';
 import MyBody from "./Body/Body.js";
 import Tests from "./Tests/Tests.js";
 import Topics from "./Topics/Topics.js";
-import IconGender from "./listicon.png";
-import { unstable_renderSubtreeIntoContainer } from "react-dom";
 //import {setGender} from './UserInfo';
 //import {setPatientProvider} from './UserInfo';
 //import {setAge} from './UserInfo';
@@ -31,6 +27,9 @@ import { isTransgender } from "./config";
 // Home and arrow back icon logo
 import { FaHome, FaArrowLeft } from "react-icons/fa";
 import { englishForm, frenchForm } from "./constants.js";
+import FeedbackDialogEn from "./components/feedback-components/FeedbackDialogEn.js";
+import FeedbackDialogFr from "./components/feedback-components/FeedbackDialogFr";
+import DialogBox from "./components/DialogBox.js";
 
 class App extends Component {
   static propTypes = {
@@ -93,6 +92,7 @@ class App extends Component {
       isTransgender: isTransgender, //isTransgender -- Flag
       //allowToClose: false, //obselete! we use to make the user agree before they could press agree
       getStartedFormID: !cookies.get("_onboarded") ? 0 : 1,
+      feedbackDialog: false,
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -112,6 +112,7 @@ class App extends Component {
     this.onChangeisBreasts = this.onChangeisBreasts.bind(this);
     this.onChangeisVaginaCervix = this.onChangeisVaginaCervix.bind(this);
     this.onChangeisProstate = this.onChangeisProstate.bind(this);
+    this.feedbackHandle = this.feedbackHandle.bind(this);
 
     //handle home redirect
     this.handleHomeRedirect = this.handleHomeRedirect.bind(this);
@@ -183,6 +184,20 @@ class App extends Component {
       preTime: time,
     });
   };
+
+  handleFeedBackToggle = (type) => {
+    if (type === "agree") {
+      sessionStorage.setItem("firstVisit", "true");
+      const finalLink =
+        this.props.language === "french" ? frenchForm : englishForm;
+      window.open(finalLink, "_blank");
+    }
+    this.setState({ feedbackDialog: !this.state.feedbackDialog });
+  };
+
+  feedbackHandle() {
+    this.setState({ feedbackDialog: true });
+  }
 
   //toggle the config modif
   toggleConfigurationModal = () => {
@@ -1323,17 +1338,33 @@ class App extends Component {
                 : this.state.age}
             </Button>
           </div>
-          <a
-            className="font-weight-bold font-size-xl"
-            href={this.state.language === "french" ? frenchForm : englishForm}
-            target="_blank"
+          <p
+            className="font-weight-bold font-size-xl feedback"
+            // href={this.state.language === "french" ? frenchForm : englishForm}
+            // target="_blank"
             style={{ fontSize: "1.7em" }}
             rel="noopener"
             test-id="update-banner-en-video"
+            onClick={this.feedbackHandle}
           >
             {this.state.lang.feedback}
-          </a>
+          </p>
         </div>
+
+        <DialogBox
+          open={this.state.feedbackDialog}
+          setOpen={this.handleFeedBackToggle}
+          title={this.state.lang.feedback_dialog_title}
+          cancelButtonText={this.state.lang.cancel_feedback}
+          agreeButtonText={this.state.lang.agree_feedback}
+          textComponent={
+            this.state.language === "french" ? (
+              <FeedbackDialogFr />
+            ) : (
+              <FeedbackDialogEn />
+            )
+          }
+        />
 
         <div>
           {this.state.configurationIsOpen && (

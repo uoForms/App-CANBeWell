@@ -11,6 +11,7 @@ import TopicModal from "./TopicModal";
 import DialogBox from "../components/DialogBox";
 import FeedbackDialogEn from "../components/feedback-components/FeedbackDialogEn";
 import FeedbackDialogFr from "../components/feedback-components/FeedbackDialogFr";
+import { englishForm, frenchForm } from "../constants";
 
 class Topics extends React.Component {
   constructor(props) {
@@ -42,8 +43,14 @@ class Topics extends React.Component {
       isOpen: !this.state.isOpen,
     });
   };
-  handleFeedBackToggle = () => {
-    this.setState({ feedBackDialog: !this.state.feedbackDialog });
+  handleFeedBackToggle = (type) => {
+    if (type === "agree") {
+      sessionStorage.setItem("firstVisit", "true");
+      const finalLink =
+        this.props.language === "french" ? frenchForm : englishForm;
+      window.open(finalLink, "_blank");
+    }
+    this.setState({ feedbackDialog: !this.state.feedbackDialog });
   };
   pageViewStateUpdater = (nav, cat, time) => {
     this.props.pageViewStateUpdater(nav, cat, time);
