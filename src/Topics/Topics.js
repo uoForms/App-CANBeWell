@@ -26,31 +26,13 @@ class Topics extends React.Component {
           ? FilterTopicListFR
           : FilterTopicListEN,
       language: this.props.userConfig.language,
-      feedbackDialog: false,
     };
     this.pageViewStateUpdater = this.pageViewStateUpdater.bind(this);
   }
   toggleModal = () => {
-    if (sessionStorage.getItem("firstVisit") != "true") {
-      sessionStorage.setItem("firstVisit", "true");
-      // const finalLink =
-      //   this.state.language == "french"
-      //     ? "https://forms.gle/uJApr8qousrgEboX6"
-      //     : "https://forms.gle/nzRAFRCTNo62T4fh6";
-      // window.open(finalLink, "_blank");
-    }
     this.setState({
       isOpen: !this.state.isOpen,
     });
-  };
-  handleFeedBackToggle = (type) => {
-    if (type === "agree") {
-      sessionStorage.setItem("firstVisit", "true");
-      const finalLink =
-        this.props.language === "french" ? frenchForm : englishForm;
-      window.open(finalLink, "_blank");
-    }
-    this.setState({ feedbackDialog: !this.state.feedbackDialog });
   };
   pageViewStateUpdater = (nav, cat, time) => {
     this.props.pageViewStateUpdater(nav, cat, time);
@@ -89,6 +71,8 @@ class Topics extends React.Component {
           filterallbtnText={this.props.lang.topic_filter_all}
           filtertopbtnText={this.props.lang.topic_filter_top_10}
           clickOnText={this.props.lang.clickOn_Text}
+          language={this.state.language}
+          lang = {this.props.lang}
         />
 
         {/*help dialog box*/}
@@ -100,21 +84,6 @@ class Topics extends React.Component {
           button={this.state.buttonText}
           displayConfig={this.state.displayConfigOption}
         ></TopicsModal>
-
-        <DialogBox
-          open={this.state.feedbackDialog}
-          setOpen={this.handleFeedBackToggle}
-          title={this.props.lang.feedback_dialog_title}
-          cancelButtonText={this.props.lang.cancel_feedback}
-          agreeButtonText={this.props.lang.agree_feedback}
-          textComponent={
-            this.props.language === "french" ? (
-              <FeedbackDialogFr />
-            ) : (
-              <FeedbackDialogEn />
-            )
-          }
-        />
       </div>
     );
   }
@@ -135,17 +104,31 @@ class TopicRow extends React.Component {
     this.state = {
       isOpen: false,
       display: [],
+      feedbackDialog: false,
     };
     this.pageViewStateUpdater = this.pageViewStateUpdater.bind(this);
+    this.handleFeedBackToggle = this.handleFeedBackToggle.bind(this);
   }
 
   pageViewStateUpdater = (nav, cat, time) => {
     this.props.pageViewStateUpdater(nav, cat, time);
   };
   toggleModal = () => {
+    if (sessionStorage.getItem("firstVisit") != "true") {
+      this.setState({ feedbackDialog: true });
+    }
     this.setState({
       isOpen: !this.state.isOpen,
     });
+  };
+  handleFeedBackToggle = (type) => {
+    if (type === "agree") {
+      sessionStorage.setItem("firstVisit", "true");
+      const finalLink =
+        this.props.language === "french" ? frenchForm : englishForm;
+      window.open(finalLink, "_blank");
+    }
+    this.setState({ feedbackDialog: !this.state.feedbackDialog });
   };
   rowClicked = (title) => {
     let timerResult = PageViewTimer(
@@ -225,6 +208,21 @@ class TopicRow extends React.Component {
             clickOnText={this.props.clickOnText}
             userInfo={this.props.userInfo}
           ></TopicModal>
+
+          <DialogBox
+            open={this.state.feedbackDialog}
+            setOpen={this.handleFeedBackToggle}
+            title={this.props.lang.feedback_dialog_title}
+            cancelButtonText={this.props.lang.cancel_feedback}
+            agreeButtonText={this.props.lang.agree_feedback}
+            textComponent={
+              this.props.language === "french" ? (
+                <FeedbackDialogFr />
+              ) : (
+                <FeedbackDialogEn />
+              )
+            }
+          />
         </div>
       </div>
     );
@@ -308,6 +306,8 @@ class TopicTable extends React.Component {
               filterallbtnText={this.props.filterallbtnText}
               filtertopbtnText={this.props.filtertopbtnText}
               clickOnText={this.props.clickOnText}
+              language={this.props.language}
+              lang = {this.props.lang}
             />
           </div>
         </div>
@@ -451,6 +451,8 @@ class FilterableTopicTable extends React.Component {
           filterallbtnText={this.props.filterallbtnText}
           filtertopbtnText={this.props.filtertopbtnText}
           clickOnText={this.props.clickOnText}
+          language={this.props.language}
+          lang = {this.props.lang}
         />
       </div>
     );
