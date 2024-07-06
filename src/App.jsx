@@ -189,7 +189,7 @@ class App extends Component {
     if (type === "agree") {
       sessionStorage.setItem("firstVisit", "true");
       const finalLink =
-        this.props.language === "french" ? frenchForm : englishForm;
+        this.state.language === "french" ? frenchForm : englishForm;
       window.open(finalLink, "_blank");
     }
     this.setState({ feedbackDialog: !this.state.feedbackDialog });
