@@ -72,7 +72,7 @@ class Topics extends React.Component {
           filtertopbtnText={this.props.lang.topic_filter_top_10}
           clickOnText={this.props.lang.clickOn_Text}
           language={this.state.language}
-          lang = {this.props.lang}
+          lang={this.props.lang}
         />
 
         {/*help dialog box*/}
@@ -212,9 +212,9 @@ class TopicRow extends React.Component {
           <DialogBox
             open={this.state.feedbackDialog}
             setOpen={this.handleFeedBackToggle}
-            title={this.props.lang.feedback_dialog_title}
             cancelButtonText={this.props.lang.cancel_feedback}
             agreeButtonText={this.props.lang.agree_feedback}
+            title={this.props.lang.feedback_dialog_title}
             textComponent={
               this.props.language === "french" ? (
                 <FeedbackDialogFr />
@@ -307,7 +307,7 @@ class TopicTable extends React.Component {
               filtertopbtnText={this.props.filtertopbtnText}
               clickOnText={this.props.clickOnText}
               language={this.props.language}
-              lang = {this.props.lang}
+              lang={this.props.lang}
             />
           </div>
         </div>
@@ -338,6 +338,8 @@ class TopicTable extends React.Component {
               filterallbtnText={this.props.filterallbtnText}
               filtertopbtnText={this.props.filtertopbtnText}
               clickOnText={this.props.clickOnText}
+              language={this.props.language}
+              lang={this.props.lang}
             />
           </div>
         </div>
@@ -452,7 +454,7 @@ class FilterableTopicTable extends React.Component {
           filtertopbtnText={this.props.filtertopbtnText}
           clickOnText={this.props.clickOnText}
           language={this.props.language}
-          lang = {this.props.lang}
+          lang={this.props.lang}
         />
       </div>
     );
