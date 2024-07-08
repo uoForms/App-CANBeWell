@@ -19,6 +19,7 @@ export default function DialogBox(props) {
     textComponent,
   } = props;
   const theme = useTheme();
+  
   const handleAgree = () => {
     setOpen("agree");
   };
