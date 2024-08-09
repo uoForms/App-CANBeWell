@@ -27,7 +27,7 @@ import { unstable_renderSubtreeIntoContainer } from "react-dom";
 //import {setAge} from './UserInfo';
 import { getUserInfo } from "./UserInfo";
 import { isTransgender } from "./config";
-
+import Feedback from "./Feedback/feedback.jsx";
 // Home and arrow back icon logo
 import { FaHome, FaArrowLeft } from "react-icons/fa";
 
@@ -1322,7 +1322,7 @@ class App extends Component {
                 : this.state.age}
             </Button>
           </div>
-          <a
+          {/* <a
             className="font-weight-bold font-size-xl"
             href={
               this.state.language == "french"
@@ -1335,7 +1335,8 @@ class App extends Component {
             test-id="update-banner-en-video"
           >
             {this.state.lang.feedback}
-          </a>
+          </a> */}
+          <Feedback />
         </div>
 
         <div>
