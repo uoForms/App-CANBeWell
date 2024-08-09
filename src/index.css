@@ -72,8 +72,8 @@ a:focus-visible {
 
 /* secondary button is in blue theme, that transitions to green color when hovered */
 .btn-secondary {
-    background: #0089B5 !important;
-    border-color: #0089B5 !important;
+    background: #d7df21 !important;
+    border-color: #d7df21 !important;
     color: white !important;
 }
 

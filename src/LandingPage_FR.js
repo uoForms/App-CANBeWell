@@ -97,7 +97,7 @@ class LandingPageFR extends React.Component {
                         </Row>
                     </section>
 
-                    <BannerSlider handleChange={this.handleChange2} />
+            <BannerSlider language = {'french'} handleChange={this.handleChange2} />
 
                     <div className="landing-button">
                         <a href="#">
@@ -110,15 +110,13 @@ class LandingPageFR extends React.Component {
                         </a>
                     </div>
 
-                    <section className="primary-background res-blue-width res-blue-height-en py-3 d-flex flex-column justify-content-center ht_450">
-                        <div
-                            className="landing-notice-privacystmnt font-subHeading text-white"
-                            test-id="fr-reliable-resource-statement"
-                        >
-                            Votre ressource fiable pour la santé
-
-
-                            {/* <a
+            <section className="primary-background res-blue-width res-blue-height-en py-3 d-flex flex-column justify-content-center ht_450">
+              <div
+                className="landing-notice-privacystmnt font-subHeading text-white"
+                test-id="fr-reliable-resource-statement"
+              >
+                Voici des ressources pour améliorer votre bien-être 
+                {/* <a
                                 type="button"
                                 className="btn btn-link btn-lg font-subHeading text-center align-text-top"
                                 href={videofr}

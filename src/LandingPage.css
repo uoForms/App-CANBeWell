@@ -22,6 +22,10 @@ img {
 padding: 5px 25px;
 display: flex !important;
 justify-content: space-evenly;
+
+}
+.text_color{
+  color: #0089B5;
 }
 
 
@@ -72,6 +76,26 @@ justify-content: space-evenly;
   color: white  !important;
   border: 2px solid white !important;
   border-radius: 10px;
+  
+}
+.image-container {
+  position: relative;
+  
+}
+
+/* .image {
+  display: block;
+ 
+} */
+
+.overlay-text {
+  position: absolute;
+  bottom: 30px; /* Adjust as needed */
+  left: 10px; /* Adjust as needed */
+  color: white;
+  font-size: 16px;
+  padding: 10px; /* Optional: for better text visibility */
+  border-radius: 5px; /* Optional: for rounded corners */
   
 }
 

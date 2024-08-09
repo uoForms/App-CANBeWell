@@ -86,39 +86,40 @@ class LandingPageEN extends React.Component {
                         </Row>
                     </section>
 
-                    <BannerSlider handleChange={this.handleChange} />
+            <BannerSlider language = {'english'} handleChange={this.handleChange} />
 
-                    <section className="landing-button">
-                        <a href="#">
-                            <img
-                                className="landing-button-img"
-                                src={calleng}
-                                onClick={this.handleChange}
-                                test-id="en-redirect-button"
-                            />
-                        </a>
-                    </section>
+            <section className="landing-button">
+              <a href="#">
+             
+                <img
+                  className="landing-button-img"
+                  src={calleng}
+                  onClick={this.handleChange}
+                  test-id="en-redirect-button"
+                />
+                
+              </a>
+            </section>
 
-                    <section className="primary-background res-blue-width res-blue-height-en py-3 d-flex flex-column justify-content-center ht_450">
-                        <div
-                            className="landing-notice-privacystmnt font-subHeading text-white"
-                            test-id="en-reliable-resource-statement"
-                        >
-                            The Trusted App for Health Information
-                            
-                        </div>
+            <section className="primary-background res-blue-width res-blue-height-en py-3 d-flex flex-column justify-content-center ht_450">
+              <div
+                className="landing-notice-privacystmnt font-subHeading text-white"
+                test-id="en-reliable-resource-statement"
+              >
+                We provide resources to improve your well-being 
+              </div>
 
-                        <div className="flex_btn">
-                            <a
-                                 href="#"
-                                type="button"
-                                className="btn btn-primary btn-lg btn_started btn_alginment"
-                                onClick={this.handleChange}
-                            >
-                                <b>Get Started</b>
-                            </a>
-{/* New code */}
-                             {/* <a
+              <div className="flex_btn">
+                <a
+                  href="#"
+                  type="button"
+                  className="btn btn-primary btn-lg btn_started btn_alginment"
+                  onClick={this.handleChange}
+                >
+                  <b className="text_color">Get Started</b>
+                </a>
+                {/* New code */}
+                {/* <a
                                 // href="#"
                                 type="button"
                                 className="btn btn-lg btn_started ml-10 btn_alginment container_button"
