@@ -34,7 +34,7 @@
     "age_help": "Please select a gender and age between 18 and 150",
     "age_void": "Please enter details and click Accept",
     "age_selector_place_holder": "Enter patient age",
-    "agree": "I accept the terms of use",
+    "agree": "Accept and Continue",
     "disclaimerBeforeTermsOfUse": "<b>The Content of this website is not intended to be a substitute for professional medical advice, diagnosis, or treatment. The information provided through the Website applies only to Canadian adults and is not valid for use outside of Canada.</b>",
     "accpetanceheading": "Acceptance of the Website Terms of Use",
     "acceptanceInitialStatement": "The following terms and conditions (these “<b>Terms of Use</b>”), govern your access to and use of <br /><a href='http://icanbewell.ca'>https://icanbewell.ca</a><br />(the “<b>Website</b>”), including any content, functionality, and services offered on or through the Website.",
@@ -141,7 +141,8 @@
     "familydoctor": "No Family MD/NP",
     "feedback_dialog_title": "We want to hear what you think!",
     "agree_feedback": "Take Survey",
-    "cancel_feedback": "No, Thank You"
+    "cancel_feedback": "No, Thank You",
+    "cancel" : "Cancel"
   },
   "french": {
     "instruction_modal_header": "Veuillez saisir les informations ci-dessous pour recevoir des conseils personnalisés pour rester en santé:",
@@ -178,7 +179,7 @@
     "age_help": "Veuillez choisir un genre et un âge entre 18 et 150 ans",
     "age_void": "Please enter details and click Accept",
     "age_selector_place_holder": "Entrez l'âge du patient",
-    "agree": "J'accepte les conditions d'utilisation",
+    "agree": "Accepter et continuer",
     "disclaimerBeforeTermsOfUse": "<b>Le contenu de ce site Web ne vise pas à remplacer l’avis médical, le diagnostic ou le traitement recommandé par un professionnel de la santé. Les informations partagées par le biais du site Web s'appliquent uniquement aux adultes canadiens et ne sont pas valables pour une utilisation ailleurs qu’au Canada.</b>",
     "accpetanceheading": "Acceptation des conditions d'utilisation du site Web",
     "acceptanceInitialStatement": "Les modalités et conditions suivantes  (« <b>conditions d'utilisation</b> ») régissent votre accès et votre utilisation de<br /><a href='http://choixsante.ca'>https://choixsante.ca</a><br />(« <b>site Web</b> »), notamment le contenu, les fonctionnalités et les services offerts sur le site Web ou par le biais du site Web.",
@@ -285,6 +286,7 @@
     "familydoctor": "Sans MD Famille/IP",
     "feedback_dialog_title": "Nous voulons savoir ce que vous pensez!",
     "agree_feedback": "Répondre au sondage",
-    "cancel_feedback": "Non merci"
+    "cancel_feedback": "Non merci",
+    "cancel" : "Annuler"
   }
 }

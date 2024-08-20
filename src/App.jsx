@@ -703,7 +703,6 @@ class App extends Component {
     const ages = Array.from({ length: 133 }, (_, index) => index + 18);
 
     //Applying the isTransgender flag for first pop up choose box
-    console.log("print::::", isTransgender);
     if (this.state.isTransgender) {
       //Transgender choose box
       if (this.state.getStartedFormID === 0) {
@@ -720,12 +719,11 @@ class App extends Component {
                   <div
                     className="row m-0 d-flex align-items-center"
                     style={{
-                      background:
-                        "linear-gradient(to right, #1b55a4 1%, #1b63b0 46%, #1a7ec6 87%)",
+                      background: "#1485a9",
                       padding: "30px",
                     }}
                   >
-                    <div className="col-2 p-0 text-left" id="termsButton">
+                    <div className="text-left" id="termsButton">
                       <FaArrowLeft
                         size={24}
                         className="icon-brand-color"
@@ -1000,14 +998,20 @@ class App extends Component {
                       </div>
                     </div>
                     <br />
-                    <Button
-                      variant="secondary"
-                      test-id="okButtonBottom"
-                      id="agree"
-                      onClick={() => this.changeGetStartedFormID("forward")}
-                    >
-                      {this.state.lang.agree}
-                    </Button>
+                    <div className="termsOfUseButtonContainer">
+                      <Button
+                        onClick={() => this.changeGetStartedFormID("forward")}
+                        className="agreeButton"
+                      >
+                        {this.state.lang.agree}
+                      </Button>
+                      <Button
+                        onClick={this.props.setAppLanguage}
+                        className="cancelButton"
+                      >
+                        {this.state.lang.cancel}
+                      </Button>
+                    </div>
                   </div>
                 </div>
               </div>
