@@ -53,7 +53,7 @@ class App extends Component {
       preNav: null,
       preCat: null,
       preTime: null,
-    }; // = getUserInfo();
+    };
     let DataToDisplay = new Data(this.props.appLanguage);
     var app_language = this.props.appLanguage;
 
