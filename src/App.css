@@ -189,6 +189,9 @@ body {
 .topnav {
   overflow: hidden;
   background-color: #cccccc;
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 
 /* Style the topnav links */
@@ -310,7 +313,6 @@ body {
   margin-bottom: 0;
   padding: 10px;
 }
-
 
 .sidenav a {
   padding: 8px 8px 8px 32px;

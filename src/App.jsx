@@ -1278,8 +1278,7 @@ class App extends Component {
     }
 
     return (
-      <div test-info-locale={this.state.language}>
-        {/*this is your header tab*/}
+      <>
         <div className="topnav">
           <h3>
             <a id="body" test-id="body" onClick={this.bodyClicked}>
@@ -1293,137 +1292,140 @@ class App extends Component {
             </a>
           </h3>
         </div>
+        <div test-info-locale={this.state.language}>
+          <div className="my-4 mx-2 mx-md-3 mx-lg-4 d-flex justify-content-between">
+            {/*display user's info*/}
 
-        <div className="my-4 mx-2 mx-md-3 mx-lg-4 d-flex justify-content-between">
-          {/*display user's info*/}
-
-          <div>
-            <FaHome
-              size={window.innerWidth < 768 ? 32 : 40}
-              className="icon-brand-color"
-              onClick={this.props.setAppLanguage}
-            />
-          </div>
-          <div>
-            <Button
-              variant="secondary"
-              size="lg"
-              onClick={this.genderIconClicked}
-              test-id="postConfigUpdateModalOpenButton"
+            <div>
+              <FaHome
+                size={window.innerWidth < 768 ? 32 : 40}
+                className="icon-brand-color"
+                onClick={this.props.setAppLanguage}
+              />
+            </div>
+            <div>
+              <Button
+                variant="secondary"
+                size="lg"
+                onClick={this.genderIconClicked}
+                test-id="postConfigUpdateModalOpenButton"
+              >
+                <IoIosSettings className="font-icon mb-1" />{" "}
+                {[
+                  this.state.gender == "male" && this.state.Tgender == "tf"
+                    ? this.state.lang[this.state.gender]
+                    : this.state.gender == "female" &&
+                      this.state.Tgender == "tm"
+                    ? this.state.lang[this.state.gender]
+                    : !this.state.isTransgender &&
+                      (this.state.gender == "male" ||
+                        this.state.gender == "female")
+                    ? this.state.lang[this.state.gender]
+                    : this.state.language == "french" &&
+                      this.state.gender == "male" &&
+                      this.state.Tgender == "tm"
+                    ? "Transmasculin"
+                    : this.state.language == "french" &&
+                      this.state.gender == "female" &&
+                      this.state.Tgender == "tf"
+                    ? "Transféminine"
+                    : this.state.gender == "male" && this.state.Tgender == "tm"
+                    ? "Transmasculine"
+                    : this.state.gender == "female" &&
+                      this.state.Tgender == "tf"
+                    ? "Transfeminine"
+                    : this.state.gender == "nonbinary"
+                    ? this.state.lang[this.state.gender]
+                    : this.state.Tgender,
+                ]}{" "}
+                {this.state.age == "all ages"
+                  ? this.state.lang.all_ages
+                  : this.state.age}
+              </Button>
+            </div>
+            <p
+              className="font-weight-bold font-size-xl feedback"
+              // href={this.state.language === "french" ? frenchForm : englishForm}
+              // target="_blank"
+              style={{ fontSize: "1.7em" }}
+              rel="noopener"
+              test-id="update-banner-en-video"
+              onClick={this.feedbackHandle}
             >
-              <IoIosSettings className="font-icon mb-1" />{" "}
-              {[
-                this.state.gender == "male" && this.state.Tgender == "tf"
-                  ? this.state.lang[this.state.gender]
-                  : this.state.gender == "female" && this.state.Tgender == "tm"
-                  ? this.state.lang[this.state.gender]
-                  : !this.state.isTransgender &&
-                    (this.state.gender == "male" ||
-                      this.state.gender == "female")
-                  ? this.state.lang[this.state.gender]
-                  : this.state.language == "french" &&
-                    this.state.gender == "male" &&
-                    this.state.Tgender == "tm"
-                  ? "Transmasculin"
-                  : this.state.language == "french" &&
-                    this.state.gender == "female" &&
-                    this.state.Tgender == "tf"
-                  ? "Transféminine"
-                  : this.state.gender == "male" && this.state.Tgender == "tm"
-                  ? "Transmasculine"
-                  : this.state.gender == "female" && this.state.Tgender == "tf"
-                  ? "Transfeminine"
-                  : this.state.gender == "nonbinary"
-                  ? this.state.lang[this.state.gender]
-                  : this.state.Tgender,
-              ]}{" "}
-              {this.state.age == "all ages"
-                ? this.state.lang.all_ages
-                : this.state.age}
-            </Button>
+              {this.state.lang.feedback}
+            </p>
           </div>
-          <p
-            className="font-weight-bold font-size-xl feedback"
-            // href={this.state.language === "french" ? frenchForm : englishForm}
-            // target="_blank"
-            style={{ fontSize: "1.7em" }}
-            rel="noopener"
-            test-id="update-banner-en-video"
-            onClick={this.feedbackHandle}
-          >
-            {this.state.lang.feedback}
-          </p>
-        </div>
 
-        <DialogBox
-          open={this.state.feedbackDialog}
-          setOpen={this.handleFeedBackToggle}
-          title={this.state.lang.feedback_dialog_title}
-          cancelButtonText={this.state.lang.cancel_feedback}
-          agreeButtonText={this.state.lang.agree_feedback}
-          textComponent={
-            this.state.language === "french" ? (
-              <FeedbackDialogFr />
-            ) : (
-              <FeedbackDialogEn />
-            )
-          }
-        />
+          <DialogBox
+            open={this.state.feedbackDialog}
+            setOpen={this.handleFeedBackToggle}
+            title={this.state.lang.feedback_dialog_title}
+            cancelButtonText={this.state.lang.cancel_feedback}
+            agreeButtonText={this.state.lang.agree_feedback}
+            textComponent={
+              this.state.language === "french" ? (
+                <FeedbackDialogFr />
+              ) : (
+                <FeedbackDialogEn />
+              )
+            }
+          />
 
-        <div>
-          {this.state.configurationIsOpen && (
-            <MyBody
-              showBody={this.state.bodyView}
+          <div>
+            {this.state.configurationIsOpen && (
+              <MyBody
+                showBody={this.state.bodyView}
+                userConfig={userInfo}
+                getText={this.state.data.getTopic}
+                lang={this.state.lang}
+                isTransgender={this.state.isTransgender}
+                pageViewStateUpdater={this.pageViewStateUpdater}
+              ></MyBody>
+            )}
+
+            {!this.state.configurationIsOpen && (
+              <MyBody
+                showBody={this.state.bodyView}
+                userConfig={userInfo}
+                getText={this.state.data.getTopic}
+                lang={this.state.lang}
+                isTransgender={this.state.isTransgender}
+                pageViewStateUpdater={this.pageViewStateUpdater}
+              ></MyBody>
+            )}
+
+            <Tests
+              showTests={this.state.testsView}
               userConfig={userInfo}
-              getText={this.state.data.getTopic}
+              data={this.state.data.getListOfTests}
               lang={this.state.lang}
-              isTransgender={this.state.isTransgender}
               pageViewStateUpdater={this.pageViewStateUpdater}
-            ></MyBody>
-          )}
-
-          {!this.state.configurationIsOpen && (
-            <MyBody
-              showBody={this.state.bodyView}
+            ></Tests>
+            <Topics
+              showTopics={this.state.topicsView}
               userConfig={userInfo}
-              getText={this.state.data.getTopic}
+              data={this.state.data.getListOfTopics}
+              newdata={this.state.data.getListOfFilteredTopics}
               lang={this.state.lang}
-              isTransgender={this.state.isTransgender}
               pageViewStateUpdater={this.pageViewStateUpdater}
-            ></MyBody>
-          )}
+              onClose={this.toggleModal}
+              button={this.state.buttonText}
+              language={userInfo.language}
+            ></Topics>
+          </div>
 
-          <Tests
-            showTests={this.state.testsView}
-            userConfig={userInfo}
-            data={this.state.data.getListOfTests}
-            lang={this.state.lang}
-            pageViewStateUpdater={this.pageViewStateUpdater}
-          ></Tests>
-          <Topics
-            showTopics={this.state.topicsView}
-            userConfig={userInfo}
-            data={this.state.data.getListOfTopics}
-            newdata={this.state.data.getListOfFilteredTopics}
-            lang={this.state.lang}
-            pageViewStateUpdater={this.pageViewStateUpdater}
+          <div>{instructionModal}</div>
+
+          <MyModal
+            show={this.state.isOpen}
             onClose={this.toggleModal}
+            header={this.state.headerText}
+            body={this.state.bodyText}
             button={this.state.buttonText}
-            language={userInfo.language}
-          ></Topics>
+            lang={this.state.lang}
+          ></MyModal>
         </div>
-
-        <div>{instructionModal}</div>
-
-        <MyModal
-          show={this.state.isOpen}
-          onClose={this.toggleModal}
-          header={this.state.headerText}
-          body={this.state.bodyText}
-          button={this.state.buttonText}
-          lang={this.state.lang}
-        ></MyModal>
-      </div>
+      </>
     );
   }
 }
