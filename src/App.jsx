@@ -30,6 +30,7 @@ import { englishForm, frenchForm } from "./constants.js";
 import FeedbackDialogEn from "./components/feedback-components/FeedbackDialogEn.js";
 import FeedbackDialogFr from "./components/feedback-components/FeedbackDialogFr";
 import DialogBox from "./components/DialogBox.js";
+import Feedback from "./Feedback/feedback.js";
 
 class App extends Component {
   static propTypes = {
@@ -1355,7 +1356,7 @@ class App extends Component {
               {this.state.lang.feedback}
             </p>
           </div>
-
+              
           <DialogBox
             open={this.state.feedbackDialog}
             setOpen={this.handleFeedBackToggle}
@@ -1370,7 +1371,7 @@ class App extends Component {
               )
             }
           />
-
+          <Feedback />
           <div>
             {this.state.configurationIsOpen && (
               <MyBody
