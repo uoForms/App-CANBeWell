@@ -1,14 +1,12 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import '../Button.css';
+import React from "react";
+import PropTypes from "prop-types";
+import "../Button.css";
 //import BodyModal from './BodyModal';
-import BodyHelpModal from './BodyHelpModal';
-import Anatomy from './anatomicalView';
-import '../App.css';
-
+import BodyHelpModal from "./BodyHelpModal";
+import Anatomy from "./anatomicalView";
+import "../App.css";
 
 class MyBody extends React.Component {
-
   constructor(props) {
     super(props);
     this.state = {
@@ -23,11 +21,11 @@ class MyBody extends React.Component {
   }
   componentDidMount() {
     this.updateWindowDimensions();
-    window.addEventListener('resize', this.updateWindowDimensions);
+    window.addEventListener("resize", this.updateWindowDimensions);
   }
 
   componentWillUnmount() {
-    window.removeEventListener('resize', this.updateWindowDimensions);
+    window.removeEventListener("resize", this.updateWindowDimensions);
   }
 
   updateWindowDimensions() {
@@ -36,19 +34,19 @@ class MyBody extends React.Component {
 
   pageViewStateUpdater = (nav, cat, time) => {
     this.props.pageViewStateUpdater(nav, cat, time);
-  }
+  };
 
   toggleModal = () => {
     this.setState({
-      isOpen: !this.state.isOpen
+      isOpen: !this.state.isOpen,
     });
-  }
+  };
 
   toggleHelp = () => {
     this.setState({
-      help: !this.state.help
+      help: !this.state.help,
     });
-  }
+  };
 
   helpClicked = () => {
     this.setState({
@@ -56,24 +54,23 @@ class MyBody extends React.Component {
       headerText: "Help",
       bodyText: "Here what you need to do on page Body",
       buttonText: "Got It?",
-      displayConfigOption: false
+      displayConfigOption: false,
     });
-  }
-
+  };
 
   render() {
-
     if (!this.props.showBody) {
       return null;
     }
 
     return (
-
       <div>
-
-        {/*<button className="button button2" onClick={this.helpClicked}>?</button> */}
-
-        <div className='text-center instruction font-input-lg' test-id="instruction">{this.props.lang.body_general_instruction}</div>
+        <div
+          className="text-center instruction font-input-lg"
+          test-id="instruction"
+        >
+          {this.props.lang.body_general_instruction}
+        </div>
         <div>
           <Anatomy
             gender={this.props.userConfig.gender}
@@ -83,7 +80,7 @@ class MyBody extends React.Component {
             userInfo={this.props.userConfig}
             getDisplay={this.props.getText}
             lang={this.props.lang}
-            language = {this.props.userConfig.language}
+            language={this.props.userConfig.language}
             pageViewStateUpdater={this.pageViewStateUpdater}
           ></Anatomy>
         </div>
@@ -93,10 +90,8 @@ class MyBody extends React.Component {
           onClose={this.toggleHelp}
           header={this.state.headerText}
           body={this.state.bodyText}
-          button={this.state.buttonText}>
-        </BodyHelpModal>
-
-
+          button={this.state.buttonText}
+        ></BodyHelpModal>
       </div>
     );
   }
@@ -106,7 +101,7 @@ MyBody.propTypes = {
   showBody: PropTypes.bool,
   userConfig: PropTypes.object,
   getText: PropTypes.func.isRequired,
-  lang: PropTypes.object
+  lang: PropTypes.object,
 };
 
 export default MyBody;

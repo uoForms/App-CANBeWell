@@ -28,18 +28,6 @@ class Tests extends React.Component {
 
     });
   }
-  /* 
-  Used for help icon that appeared on test tab which is no more needed
-    helpClicked = () => {
-      console.log(this.props.userConfig.gender);
-      this.setState({
-        isOpen: !this.state.isOpen,
-        headerText: this.props.lang.test_help_header,
-        bodyText: this.props.lang.test_help_body,
-        buttonText: this.props.lang.config_modal_agree,
-      });
-    }
-  */
   render() {
 
     if (!this.props.showTests) {

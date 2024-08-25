@@ -1280,73 +1280,62 @@ class App extends Component {
     return (
       <>
         <div className="topnav">
-          <h3>
-            <a id="body" test-id="body" onClick={this.bodyClicked}>
+          <div className="primaryTitle">
+            <div id="body" test-id="body" onClick={this.bodyClicked}>
               {this.state.lang.top_nav_body}
-            </a>
-            <a id="topic" test-id="topic" onClick={this.topicsClicked}>
+            </div>
+            <div id="topic" test-id="topic" onClick={this.topicsClicked}>
               {this.state.lang.top_nav_topics}
-            </a>
-            <a id="test" test-id="test" onClick={this.testsClicked}>
+            </div>
+            <div id="test" test-id="test" onClick={this.testsClicked}>
               {this.state.lang.top_nav_tests}
-            </a>
-          </h3>
-        </div>
-        <div test-info-locale={this.state.language}>
-          <div className="my-4 mx-2 mx-md-3 mx-lg-4 d-flex justify-content-between">
-            {/*display user's info*/}
+            </div>
+          </div>
 
-            <div>
-              <FaHome
-                size={window.innerWidth < 768 ? 32 : 40}
-                className="icon-brand-color"
-                onClick={this.props.setAppLanguage}
-              />
-            </div>
-            <div>
-              <Button
-                variant="secondary"
-                size="lg"
-                onClick={this.genderIconClicked}
-                test-id="postConfigUpdateModalOpenButton"
-              >
-                <IoIosSettings className="font-icon mb-1" />{" "}
-                {[
-                  this.state.gender == "male" && this.state.Tgender == "tf"
-                    ? this.state.lang[this.state.gender]
-                    : this.state.gender == "female" &&
-                      this.state.Tgender == "tm"
-                    ? this.state.lang[this.state.gender]
-                    : !this.state.isTransgender &&
-                      (this.state.gender == "male" ||
-                        this.state.gender == "female")
-                    ? this.state.lang[this.state.gender]
-                    : this.state.language == "french" &&
-                      this.state.gender == "male" &&
-                      this.state.Tgender == "tm"
-                    ? "Transmasculin"
-                    : this.state.language == "french" &&
-                      this.state.gender == "female" &&
-                      this.state.Tgender == "tf"
-                    ? "Transféminine"
-                    : this.state.gender == "male" && this.state.Tgender == "tm"
-                    ? "Transmasculine"
-                    : this.state.gender == "female" &&
-                      this.state.Tgender == "tf"
-                    ? "Transfeminine"
-                    : this.state.gender == "nonbinary"
-                    ? this.state.lang[this.state.gender]
-                    : this.state.Tgender,
-                ]}{" "}
-                {this.state.age == "all ages"
-                  ? this.state.lang.all_ages
-                  : this.state.age}
-              </Button>
-            </div>
+          <div className="secondaryTitle">
+            <FaHome
+              size={window.innerWidth < 768 ? 32 : 40}
+              className="icon-brand-color"
+              onClick={this.props.setAppLanguage}
+            />
+            <Button
+              variant="secondary"
+              size="lg"
+              onClick={this.genderIconClicked}
+              test-id="postConfigUpdateModalOpenButton"
+            >
+              <IoIosSettings className="font-icon mb-1" />{" "}
+              {[
+                this.state.gender == "male" && this.state.Tgender == "tf"
+                  ? this.state.lang[this.state.gender]
+                  : this.state.gender == "female" && this.state.Tgender == "tm"
+                  ? this.state.lang[this.state.gender]
+                  : !this.state.isTransgender &&
+                    (this.state.gender == "male" ||
+                      this.state.gender == "female")
+                  ? this.state.lang[this.state.gender]
+                  : this.state.language == "french" &&
+                    this.state.gender == "male" &&
+                    this.state.Tgender == "tm"
+                  ? "Transmasculin"
+                  : this.state.language == "french" &&
+                    this.state.gender == "female" &&
+                    this.state.Tgender == "tf"
+                  ? "Transféminine"
+                  : this.state.gender == "male" && this.state.Tgender == "tm"
+                  ? "Transmasculine"
+                  : this.state.gender == "female" && this.state.Tgender == "tf"
+                  ? "Transfeminine"
+                  : this.state.gender == "nonbinary"
+                  ? this.state.lang[this.state.gender]
+                  : this.state.Tgender,
+              ]}{" "}
+              {this.state.age == "all ages"
+                ? this.state.lang.all_ages
+                : this.state.age}
+            </Button>
             <p
               className="font-weight-bold font-size-xl feedback"
-              // href={this.state.language === "french" ? frenchForm : englishForm}
-              // target="_blank"
               style={{ fontSize: "1.7em" }}
               rel="noopener"
               test-id="update-banner-en-video"
@@ -1355,7 +1344,8 @@ class App extends Component {
               {this.state.lang.feedback}
             </p>
           </div>
-
+        </div>
+        <div test-info-locale={this.state.language}>
           <DialogBox
             open={this.state.feedbackDialog}
             setOpen={this.handleFeedBackToggle}

@@ -348,38 +348,31 @@ class TopicTable extends React.Component {
     });
     const dataForDisplay = this.state.showTop ? filterrows.slice(0, 10) : rows;
     return (
-      <div className="table">
-        <div>
-          {
-            <div className="container-fluid">
-              <br />
-              <button
-                id="filtershowall"
-                type="button"
-                onClick={this.showAllclicked}
-                className={`button3-1 ${
-                  this.state.showAll ? "filteractive" : ""
-                }`}
-              >
-                {this.props.filterallbtnText}
-              </button>
-              <button
-                id="filtershowtop"
-                type="button"
-                onClick={this.showTopclicked}
-                className={`button3-1 ${
-                  this.state.showTop ? "filteractive" : ""
-                }`}
-              >
-                {this.props.filtertopbtnText}
-              </button>
-              <br />
-              <br />
-              <div className="row">{dataForDisplay}</div>
-            </div>
-          }
+      <>
+        <div className="mt-2 mx-3">
+          <button
+            id="filtershowall"
+            type="button"
+            onClick={this.showAllclicked}
+            className={`button3-1 ${this.state.showAll ? "filteractive" : ""}`}
+          >
+            {this.props.filterallbtnText}
+          </button>
+          <button
+            id="filtershowtop"
+            type="button"
+            onClick={this.showTopclicked}
+            className={`button3-1 ${this.state.showTop ? "filteractive" : ""}`}
+          >
+            {this.props.filtertopbtnText}
+          </button>
         </div>
-      </div>
+        <div className="table">
+          <div className="container-fluid">
+            <div className="row">{dataForDisplay}</div>
+          </div>
+        </div>
+      </>
     );
   }
 }
@@ -437,11 +430,6 @@ class FilterableTopicTable extends React.Component {
   render() {
     return (
       <div>
-        {/* <SearchBar
-          filterText={this.state.filterText}
-          onFilterTextInput={this.handleFilterTextInput}
-          text={this.props.text}
-        /> */}
         <TopicTable
           topics={this.props.topics}
           filterdtopics={this.props.filterdtopics}
