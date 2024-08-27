@@ -101,6 +101,59 @@ class Anatomy extends React.Component {
     };
   }
 
+  componentDidUpdate(prevProps) {
+    // This runs after the component is updated
+    //Not proud of this change
+    if (prevProps.gender !== this.props.gender) {
+      const idArray = [
+        "MaleAorta",
+        "MaleBowel",
+        "MaleEyes",
+        "MaleMouth",
+        "MaleHeart",
+        "MaleBone",
+        "MaleLiver",
+        "MaleLungs",
+        "MalePancreas",
+        "MaleStomach",
+        "MaleKidney",
+        "FemaleAorta",
+        "FemaleBowel",
+        "FemaleBreast",
+        "FemaleEyes",
+        "FemaleMouth",
+        "FemaleHeart",
+        "FemaleBone",
+        "FemaleLiver",
+        "FemaleLungs",
+        "FemalePancreas",
+        "FemaleStomach",
+        "FemaleUterus",
+        "FemaleOvary",
+        "FemaleKidney",
+        "Aorta",
+        "Bowel",
+        "Breast",
+        "Breast/Chest",
+        "Eyes",
+        "Mouth",
+        "Heart",
+        "Bone",
+        "Liver",
+        "Lungs",
+        "Pancreas",
+        "Stomach",
+        "Genital",
+        "Kidney",
+      ];
+      idArray.forEach((item) => {
+        if (document.getElementById(item)) {
+          document.getElementById(item).style.visibility = "hidden";
+        }
+      });
+    }
+  }
+  3;
   toggleModal = () => {
     if (sessionStorage.getItem("firstVisit") != "true") {
       this.setState({ feedbackDialog: true });
@@ -120,9 +173,6 @@ class Anatomy extends React.Component {
     this.setState({ feedbackDialog: !this.state.feedbackDialog });
   };
 
-  /*button correspont to the name of the button being press (all lowercase)
-    text is what is display on the screen
-    and organ is the id of the organ you want to highlight*/
   organClicked = (button, text, organ) => {
     if (organ !== "") {
       try {
@@ -165,11 +215,6 @@ class Anatomy extends React.Component {
 
     setTimeout(
       function () {
-        // if (organ != "") {
-        //   try {
-        //       document.getElementById(organ).style.visibility = "hidden";
-        //   } catch (err) { }
-        // }
         this.setState({
           isOpen: !this.state.isOpen,
           display: this.props.getDisplay(button, this.props.userInfo),
@@ -214,6 +259,7 @@ class Anatomy extends React.Component {
       organSelected: text,
       previousorganClicked: "",
     });
+
     if (this.state.previousorganClicked != "") {
       document.getElementById(
         this.state.previousorganClicked
@@ -230,20 +276,6 @@ class Anatomy extends React.Component {
       }.bind(this),
       100
     );
-  };
-  //not used anymore, caused the "double click" problem on phone
-  mouseOverOrgans = (button, text) => {
-    document.getElementById(button).style.visibility = "visible";
-    this.setState({
-      organSelected: text,
-    });
-  };
-  //not used anymore, caused the "double click" problem on phone
-  mouseOutOrgans = (organ) => {
-    document.getElementById(organ).style.visibility = "hidden";
-    this.setState({
-      organSelected: null,
-    });
   };
 
   render() {
@@ -793,7 +825,6 @@ class Anatomy extends React.Component {
               alt="Female"
               test-id="femaleBodyImg"
             />
-            {/* <img id="FemaleGenitalia" className="organ" src={FemaleGenitalia} alt="FemaleGenitalia" /> */}
             <img
               id="FemaleAorta"
               className="organ"
