@@ -3,7 +3,6 @@ import { withCookies, Cookies } from "react-cookie";
 import { instanceOf } from "prop-types";
 import ReactGA from "react-ga";
 import { IoIosSettings } from "react-icons/io";
-import { AiOutlineExclamationCircle } from "react-icons/ai";
 import { Button, ButtonToolbar, Media } from "react-bootstrap";
 import { v4 as uuidv4 } from "uuid";
 import DOMPurify from "dompurify";
@@ -14,14 +13,11 @@ import "./Button.css";
 import "./Style/checkbox.css";
 import "./Style/Modal.css";
 import MyModal from "./MyModal";
-import SideBar from "./sideBar";
 import Data from "./Data.js";
 //import InstructionModal from './InstructionModal.js';
 import MyBody from "./Body/Body.js";
 import Tests from "./Tests/Tests.js";
 import Topics from "./Topics/Topics.js";
-import IconGender from "./listicon.png";
-import { unstable_renderSubtreeIntoContainer } from "react-dom";
 //import {setGender} from './UserInfo';
 //import {setPatientProvider} from './UserInfo';
 //import {setAge} from './UserInfo';
@@ -30,6 +26,10 @@ import { isTransgender } from "./config";
 
 // Home and arrow back icon logo
 import { FaHome, FaArrowLeft } from "react-icons/fa";
+import { englishForm, frenchForm } from "./constants.js";
+import FeedbackDialogEn from "./components/feedback-components/FeedbackDialogEn.js";
+import FeedbackDialogFr from "./components/feedback-components/FeedbackDialogFr";
+import DialogBox from "./components/DialogBox.js";
 
 class App extends Component {
   static propTypes = {
@@ -92,6 +92,7 @@ class App extends Component {
       isTransgender: isTransgender, //isTransgender -- Flag
       //allowToClose: false, //obselete! we use to make the user agree before they could press agree
       getStartedFormID: !cookies.get("_onboarded") ? 0 : 1,
+      feedbackDialog: false,
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -111,6 +112,7 @@ class App extends Component {
     this.onChangeisBreasts = this.onChangeisBreasts.bind(this);
     this.onChangeisVaginaCervix = this.onChangeisVaginaCervix.bind(this);
     this.onChangeisProstate = this.onChangeisProstate.bind(this);
+    this.feedbackHandle = this.feedbackHandle.bind(this);
 
     //handle home redirect
     this.handleHomeRedirect = this.handleHomeRedirect.bind(this);
@@ -182,6 +184,20 @@ class App extends Component {
       preTime: time,
     });
   };
+
+  handleFeedBackToggle = (type) => {
+    if (type === "agree") {
+      sessionStorage.setItem("firstVisit", "true");
+      const finalLink =
+        this.state.language === "french" ? frenchForm : englishForm;
+      window.open(finalLink, "_blank");
+    }
+    this.setState({ feedbackDialog: !this.state.feedbackDialog });
+  };
+
+  feedbackHandle() {
+    this.setState({ feedbackDialog: true });
+  }
 
   //toggle the config modif
   toggleConfigurationModal = () => {
@@ -687,7 +703,6 @@ class App extends Component {
     const ages = Array.from({ length: 133 }, (_, index) => index + 18);
 
     //Applying the isTransgender flag for first pop up choose box
-    console.log("print::::", isTransgender);
     if (this.state.isTransgender) {
       //Transgender choose box
       if (this.state.getStartedFormID === 0) {
@@ -704,12 +719,11 @@ class App extends Component {
                   <div
                     className="row m-0 d-flex align-items-center"
                     style={{
-                      background:
-                        "linear-gradient(to right, #1b55a4 1%, #1b63b0 46%, #1a7ec6 87%)",
+                      background: "#1485a9",
                       padding: "30px",
                     }}
                   >
-                    <div className="col-2 p-0 text-left" id="termsButton">
+                    <div className="text-left" id="termsButton">
                       <FaArrowLeft
                         size={24}
                         className="icon-brand-color"
@@ -984,14 +998,20 @@ class App extends Component {
                       </div>
                     </div>
                     <br />
-                    <Button
-                      variant="secondary"
-                      test-id="okButtonBottom"
-                      id="agree"
-                      onClick={() => this.changeGetStartedFormID("forward")}
-                    >
-                      {this.state.lang.agree}
-                    </Button>
+                    <div className="termsOfUseButtonContainer">
+                      <Button
+                        onClick={() => this.changeGetStartedFormID("forward")}
+                        className="agreeButton"
+                      >
+                        {this.state.lang.agree}
+                      </Button>
+                      <Button
+                        onClick={this.props.setAppLanguage}
+                        className="cancelButton"
+                      >
+                        {this.state.lang.cancel}
+                      </Button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1258,33 +1278,26 @@ class App extends Component {
     }
 
     return (
-      <div test-info-locale={this.state.language}>
-        {/*this is your header tab*/}
+      <>
         <div className="topnav">
-          <h3>
-            <a id="body" test-id="body" onClick={this.bodyClicked}>
+          <div className="primaryTitle">
+            <div id="body" test-id="body" onClick={this.bodyClicked}>
               {this.state.lang.top_nav_body}
-            </a>
-            <a id="topic" test-id="topic" onClick={this.topicsClicked}>
+            </div>
+            <div id="topic" test-id="topic" onClick={this.topicsClicked}>
               {this.state.lang.top_nav_topics}
-            </a>
-            <a id="test" test-id="test" onClick={this.testsClicked}>
+            </div>
+            <div id="test" test-id="test" onClick={this.testsClicked}>
               {this.state.lang.top_nav_tests}
-            </a>
-          </h3>
-        </div>
+            </div>
+          </div>
 
-        <div className="my-4 mx-2 mx-md-3 mx-lg-4 d-flex justify-content-between">
-          {/*display user's info*/}
-
-          <div>
+          <div className="secondaryTitle">
             <FaHome
               size={window.innerWidth < 768 ? 32 : 40}
               className="icon-brand-color"
               onClick={this.props.setAppLanguage}
             />
-          </div>
-          <div>
             <Button
               variant="secondary"
               size="lg"
@@ -1321,76 +1334,88 @@ class App extends Component {
                 ? this.state.lang.all_ages
                 : this.state.age}
             </Button>
+            <p
+              className="font-weight-bold font-size-xl feedback"
+              style={{ fontSize: "1.7em" }}
+              rel="noopener"
+              test-id="update-banner-en-video"
+              onClick={this.feedbackHandle}
+            >
+              {this.state.lang.feedback}
+            </p>
           </div>
-          <a
-            className="font-weight-bold font-size-xl"
-            href={
-              this.state.language == "french"
-                ? "https://forms.gle/uJApr8qousrgEboX6"
-                : "https://forms.gle/nzRAFRCTNo62T4fh6"
+        </div>
+        <div test-info-locale={this.state.language}>
+          <DialogBox
+            open={this.state.feedbackDialog}
+            setOpen={this.handleFeedBackToggle}
+            title={this.state.lang.feedback_dialog_title}
+            cancelButtonText={this.state.lang.cancel_feedback}
+            agreeButtonText={this.state.lang.agree_feedback}
+            textComponent={
+              this.state.language === "french" ? (
+                <FeedbackDialogFr />
+              ) : (
+                <FeedbackDialogEn />
+              )
             }
-            target="_blank"
-            style={{ fontSize: "1.7em" }}
-            rel="noopener"
-            test-id="update-banner-en-video"
-          >
-            {this.state.lang.feedback}
-          </a>
-        </div>
+          />
 
-        <div>
-          {this.state.configurationIsOpen && (
-            <MyBody
-              showBody={this.state.bodyView}
+          <div>
+            {this.state.configurationIsOpen && (
+              <MyBody
+                showBody={this.state.bodyView}
+                userConfig={userInfo}
+                getText={this.state.data.getTopic}
+                lang={this.state.lang}
+                isTransgender={this.state.isTransgender}
+                pageViewStateUpdater={this.pageViewStateUpdater}
+              ></MyBody>
+            )}
+
+            {!this.state.configurationIsOpen && (
+              <MyBody
+                showBody={this.state.bodyView}
+                userConfig={userInfo}
+                getText={this.state.data.getTopic}
+                lang={this.state.lang}
+                isTransgender={this.state.isTransgender}
+                pageViewStateUpdater={this.pageViewStateUpdater}
+              ></MyBody>
+            )}
+
+            <Tests
+              showTests={this.state.testsView}
               userConfig={userInfo}
-              getText={this.state.data.getTopic}
+              data={this.state.data.getListOfTests}
               lang={this.state.lang}
-              isTransgender={this.state.isTransgender}
               pageViewStateUpdater={this.pageViewStateUpdater}
-            ></MyBody>
-          )}
-
-          {!this.state.configurationIsOpen && (
-            <MyBody
-              showBody={this.state.bodyView}
+            ></Tests>
+            <Topics
+              showTopics={this.state.topicsView}
               userConfig={userInfo}
-              getText={this.state.data.getTopic}
+              data={this.state.data.getListOfTopics}
+              newdata={this.state.data.getListOfFilteredTopics}
               lang={this.state.lang}
-              isTransgender={this.state.isTransgender}
               pageViewStateUpdater={this.pageViewStateUpdater}
-            ></MyBody>
-          )}
+              onClose={this.toggleModal}
+              button={this.state.buttonText}
+              language={userInfo.language}
+            ></Topics>
+          </div>
 
-          <Tests
-            showTests={this.state.testsView}
-            userConfig={userInfo}
-            data={this.state.data.getListOfTests}
-            lang={this.state.lang}
-            pageViewStateUpdater={this.pageViewStateUpdater}
-          ></Tests>
-          <Topics
-            showTopics={this.state.topicsView}
-            userConfig={userInfo}
-            data={this.state.data.getListOfTopics}
-            newdata={this.state.data.getListOfFilteredTopics}
-            lang={this.state.lang}
-            pageViewStateUpdater={this.pageViewStateUpdater}
+          <div>{instructionModal}</div>
+
+          <MyModal
+            show={this.state.isOpen}
             onClose={this.toggleModal}
+            header={this.state.headerText}
+            body={this.state.bodyText}
             button={this.state.buttonText}
-          ></Topics>
+            lang={this.state.lang}
+          ></MyModal>
         </div>
-
-        <div>{instructionModal}</div>
-
-        <MyModal
-          show={this.state.isOpen}
-          onClose={this.toggleModal}
-          header={this.state.headerText}
-          body={this.state.bodyText}
-          button={this.state.buttonText}
-          lang={this.state.lang}
-        ></MyModal>
-      </div>
+      </>
     );
   }
 }

@@ -5,9 +5,11 @@
   background-color: inherit;
   display: block;
   height: auto; */
-  position: absolute;
+  position: relative;
   left: 50%; /*(added to move the body to left by 50%)*/
-  transform: translateX(-50%); /*(translated the x-dimension to center it to the page)*/
+  transform: translateX(
+    -50%
+  ); /*(translated the x-dimension to center it to the page)*/
   width: 35%; /*(resized the image from 100% to 50%)*/
   overflow: auto;
   background-color: inherit;
@@ -278,7 +280,7 @@
   height: 6%;
 }
 
- .mainRunner .kidneyLeft {
+.mainRunner .kidneyLeft {
   top: 37%;
   left: 44%;
   width: 8%;
@@ -477,15 +479,14 @@
   width: 9%;
 }
 
-
 @media only screen and (max-width: 480px) {
-.mainRunner {
-  width: 100%;
-}
+  .mainRunner {
+    width: 100%;
+  }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 1000px) {
-.mainRunner {
-  width: 70%;
-}
+  .mainRunner {
+    width: 70%;
+  }
 }

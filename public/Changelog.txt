@@ -1,0 +1,58 @@
+June 27, 2024
+
+CHANGELOG
+
+---------------------------------
+
+GLOBAL:
+
+1. Added `rel="noopener"` attribute behind every link to improve security.
+2. Reduced the size of the back button.
+3. Adjusted class `.d-flex-col` in staticpages_style.css for it to control the paddings and margins of the buttons within it, instead of setting individual styles of the buttons.
+4. In-app redirect links now open in the current browser tab. (used to open in a new tab)
+
+---------------------------------
+
+No Family MD/NP Page EN & FR:
+
+1. Removed (commented out) `div class="row` and `div class="col-md-12"` to fix the issue mentioned in #870, "The HTML pages won't center correctly & have a white bar at the right edge."
+2. Removed individual styles that control the paddings and margins of the buttons.
+3. Fixed that there's no blank space before "ici" on the FR page under "Virtual Care in Ontario" section.
+4. Minor adjustment to the paddings between elements.
+
+---------------------------------
+
+Check Your Symptoms Page EN & FR:
+
+1. Put back the hidden third column in the title bar to center the title text.
+2. Removed individual styles that control the paddings and margins of the buttons.
+3. Minor adjustment to the paddings between elements.
+
+
+
+July 03, 2024
+
+CHANGELOG
+
+---------------------------------
+
+No Family MD/NP Page EN & FR:
+
+1. Changed content according to Dr. Cleo's instruction. The detailed changes are listed below:
+
+EN:
+No family MD/NP?
+If urgent call 911, otherwise call 811 ….territory to speak to a nurse. In Manitoba…
+In Quebec to access further care call 811 option 3 or click here 
+
+FR:
+Sans MD de famille ou IP?
+•	Vous avez un problème de santé :
+Si urgent composez le 911, sinon composez le 811 ou consultez le site web 811 de votre province ou territoire pour parler à une infirmière. Au Manitoba site Meilleure Santé. 
+Au Québec : pour le GAP signalez le 811 option 3 ou cliquez ici
+Ou vérifiez vos symptômes ici
+
+•	 Vous voulez trouver un médecin de famille ou une infirmière praticienne :
+•	Soins virtuels en Ontario :
+Si vous ne voyez pas votre région ci-dessous, composez le 811
+Pour l’est de l’Ontario….

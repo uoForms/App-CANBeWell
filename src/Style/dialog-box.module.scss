@@ -1,0 +1,86 @@
+.dialogBox {
+  :global {
+    .MuiPaper-root {
+      padding: 28px 18px 18px 21px;
+      border-radius: 10px;
+      background: #f6f6f6;
+    }
+    .MuiDialogTitle-root {
+      color: #1485a9;
+      font-family: Lato, sans-serif;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 28px; /* 155.556% */
+      color: #1485a9;
+      line-height: 28px; /* 155.556% */
+      margin-top: 10px;
+      padding: 0px 0 12px 0;
+      word-wrap: break-word;
+      overflow-wrap: break-word; /* Modern property */
+      word-break: break-word; /* Fallback for older browsers */
+      flex: 1;
+    }
+
+    .MuiDialogContent-root {
+      padding: 0;
+    }
+    .MuiDialogContent-root {
+      overflow-y: visible;
+    }
+    .MuiDialogActions-root {
+      justify-content: space-evenly;
+    }
+  }
+}
+
+.agreeButton {
+  color: #1485a9 !important;
+  border-radius: 10px !important;
+  border: 1px solid #d7df21 !important;
+  background: #d7df21 !important;
+  text-align: center !important;
+  font-family: Lato, sans-serif !important;
+  font-size: 16px !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  line-height: 30px !important; /* 187.5% */
+  text-transform: capitalize !important;
+}
+
+.cancelButton {
+  color: #1485a9 !important;
+  text-align: center !important;
+  font-family: Lato, sans-serif !important;
+  font-size: 16px !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  line-height: 30px !important; /* 187.5% */
+  text-transform: capitalize !important;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.feedbackDialog {
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 22px; /* 137.5% */
+  color: #000;
+  font-size: 16px;
+  color: #000;
+  li {
+    color: #818285;
+    font-size: 14px;
+  }
+  span {
+    color: #1485a9;
+    font-weight: 700;
+  }
+}

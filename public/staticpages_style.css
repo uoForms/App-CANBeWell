@@ -16,8 +16,9 @@
 
 h5{
     color: #fff;
-    margin-left: 2px;
-    
+    margin-left: 6px;
+    text-align: center;
+    font-size: 18px;
 }
 
 .ab-br-section {
@@ -39,58 +40,68 @@ h5{
 }
 
 .outer_div{
-    margin: 22;
+    margin: 16;
     margin-top: 20px;
     border-radius: 10px;
     background-color: #F4F8FA;
-    padding: 15px;
+    padding: 16px;
 
 }
 
 .outer_divpro{
-    margin: 22;
+    margin: 16;
     margin-top: 20px;
     border-radius: 10px;
     background-color: transparent;
     /* background-color:rgb(39, 170, 225); */
-    padding: 15px;
+    padding: 16px;
     border: 1px solid #125296
 
 }
 .outer_div_symptoms{
-    margin: 22;
-    margin-top: 50px;
+    margin: 16;
+    margin-top: 30px;
     border-radius: 10px;
-    padding: 15px;
+    padding: 16px;
+    padding-top: 8px;
+    padding-bottom: 0px;
     background-color: transparent;
     border: 2px solid #d7df21 ;  
-    height: 60px;                                 
+    height: auto;                                 
                                         
 
 }
 
 .outer_div_symptoms_fr{
-    margin: 22;
-    margin-top: 50px;
+    margin: 16;
+    margin-top: 30px;
     border-radius: 10px;
-    padding: 15px;
+    padding: 16px;
+    padding-top: 8px;
+    padding-bottom: 0px;
     background-color: transparent;
     border: 2px solid #d7df21 ;  
-    height: 80px;                                 
+    height: auto;                                 
                                         
 
 }
 
 
 .d-flex-col{
-
-    display: flex;
+    display: flex !important;
     flex-direction: column;
+    margin-top:20px; 
+    margin-left:16px;
+    margin-right:16px;
+    margin-bottom: 20px;
+    gap: 10px;
 
 }
 .mt-15{
-    margin-top: 20px;
-    margin-left:25px;
+    margin-top: 16px;
+    margin-left:16px;
+    margin:8px;
+    padding-right: 16px;
 }
 
 .ul_align{
@@ -99,7 +110,7 @@ h5{
 }
 
 .btn {
-    padding: 8px 36px;
+    padding: 8px 20px;
     border-radius: 12px;
     font-size: calc(14px + (24 - 14) * (100vw - 320px) / (1920 - 320)) !important;
     line-height: calc(18px + (28 - 18) * (100vw - 320px) / (1920 - 320)) !important;
@@ -133,7 +144,6 @@ h5{
 .side-div {
     flex-basis: 10%;
 }
-
 
 /* Media query for small screens */
  @media (max-width: 1000px) {

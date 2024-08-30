@@ -1,18 +1,18 @@
 .button {
-    border: none;
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
+  border: none;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
 .button1 {
-  background-color: #F57C00;
+  background-color: #f57c00;
   border-radius: 5px;
-  position:absolute;
+  position: absolute;
   /*transition: .5s ease;*/
   right: 50%;
   bottom: 50%;
@@ -22,14 +22,13 @@
 }
 
 .button2 {
-
   /*background-color: #BCDBEA;*/
   background: #808080;
-  background-image: -webkit-linear-gradient(top, #F0F0F0, #808080);
-  background-image: -moz-linear-gradient(top, #F0F0F0, #808080);
-  background-image: -ms-linear-gradient(top, #F0F0F0, #808080);
-  background-image: -o-linear-gradient(top, #F0F0F0, #808080);
-  background-image: linear-gradient(to bottom, #F0F0F0, #808080);
+  background-image: -webkit-linear-gradient(top, #f0f0f0, #808080);
+  background-image: -moz-linear-gradient(top, #f0f0f0, #808080);
+  background-image: -ms-linear-gradient(top, #f0f0f0, #808080);
+  background-image: -o-linear-gradient(top, #f0f0f0, #808080);
+  background-image: linear-gradient(to bottom, #f0f0f0, #808080);
   border-radius: 50%;
   font-family: Arial;
   color: #000000;
@@ -43,14 +42,13 @@
 }
 
 .button22 {
-
   /*background-color: #BCDBEA;*/
   background: #808080;
-  background-image: -webkit-linear-gradient(top, #F0F0F0, #808080);
-  background-image: -moz-linear-gradient(top, #F0F0F0, #808080);
-  background-image: -ms-linear-gradient(top, #F0F0F0, #808080);
-  background-image: -o-linear-gradient(top, #F0F0F0, #808080);
-  background-image: linear-gradient(to bottom, #F0F0F0, #808080);
+  background-image: -webkit-linear-gradient(top, #f0f0f0, #808080);
+  background-image: -moz-linear-gradient(top, #f0f0f0, #808080);
+  background-image: -ms-linear-gradient(top, #f0f0f0, #808080);
+  background-image: -o-linear-gradient(top, #f0f0f0, #808080);
+  background-image: linear-gradient(to bottom, #f0f0f0, #808080);
   border-radius: 50%;
   font-family: Arial;
   color: #000000;
@@ -64,14 +62,13 @@
 }
 
 .button23 {
-
   /*background-color: #BCDBEA;*/
   background: #808080;
-  background-image: -webkit-linear-gradient(top, #F0F0F0, #808080);
-  background-image: -moz-linear-gradient(top, #F0F0F0, #808080);
-  background-image: -ms-linear-gradient(top, #F0F0F0, #808080);
-  background-image: -o-linear-gradient(top, #F0F0F0, #808080);
-  background-image: linear-gradient(to bottom, #F0F0F0, #808080);
+  background-image: -webkit-linear-gradient(top, #f0f0f0, #808080);
+  background-image: -moz-linear-gradient(top, #f0f0f0, #808080);
+  background-image: -ms-linear-gradient(top, #f0f0f0, #808080);
+  background-image: -o-linear-gradient(top, #f0f0f0, #808080);
+  background-image: linear-gradient(to bottom, #f0f0f0, #808080);
   border-radius: 50%;
   font-family: Arial;
   color: #000000;
@@ -83,7 +80,6 @@
   /* left: 45.5%; */
   top: auto;
   /* z-index: 5; */
-  
 }
 
 /* @media only screen and (max-width: 291px) {
@@ -96,11 +92,11 @@
 .button25 {
   /*background-color: #BCDBEA;*/
   background: #808080;
-  background-image: -webkit-linear-gradient(top, #F0F0F0, #808080);
-  background-image: -moz-linear-gradient(top, #F0F0F0, #808080);
-  background-image: -ms-linear-gradient(top, #F0F0F0, #808080);
-  background-image: -o-linear-gradient(top, #F0F0F0, #808080);
-  background-image: linear-gradient(to bottom, #F0F0F0, #808080);
+  background-image: -webkit-linear-gradient(top, #f0f0f0, #808080);
+  background-image: -moz-linear-gradient(top, #f0f0f0, #808080);
+  background-image: -ms-linear-gradient(top, #f0f0f0, #808080);
+  background-image: -o-linear-gradient(top, #f0f0f0, #808080);
+  background-image: linear-gradient(to bottom, #f0f0f0, #808080);
   border-radius: 50%;
   font-family: Arial;
   color: #000000;
@@ -114,14 +110,13 @@
 }
 
 .button24 {
-
   /*background-color: #BCDBEA;*/
   background: #808080;
-  background-image: -webkit-linear-gradient(top, #F0F0F0, #808080);
-  background-image: -moz-linear-gradient(top, #F0F0F0, #808080);
-  background-image: -ms-linear-gradient(top, #F0F0F0, #808080);
-  background-image: -o-linear-gradient(top, #F0F0F0, #808080);
-  background-image: linear-gradient(to bottom, #F0F0F0, #808080);
+  background-image: -webkit-linear-gradient(top, #f0f0f0, #808080);
+  background-image: -moz-linear-gradient(top, #f0f0f0, #808080);
+  background-image: -ms-linear-gradient(top, #f0f0f0, #808080);
+  background-image: -o-linear-gradient(top, #f0f0f0, #808080);
+  background-image: linear-gradient(to bottom, #f0f0f0, #808080);
   border-radius: 50%;
   font-family: Arial;
   color: #000000;
@@ -133,14 +128,13 @@
   /* left: 45.5%; */
   top: auto;
   /* z-index: 5; */
-  
 }
 .button3 {
   padding: 5px 10px;
   border: none;
   cursor: pointer;
   border-radius: 5px;
-  background-color: #d7df21 !important;
+  background-color: #f57c00;
   color: white;
   font-size: 16px;
   font-weight: 500;
@@ -155,12 +149,12 @@
   padding: 8px 25px;
   margin-bottom: 5px;
 }
-.filteractive{
-  background-color: #F57C00;
+.filteractive {
+  background-color: #f57c00;
   color: white;
 }
 
-.button4{
+.button4 {
   position: relative;
   /*margin-right: 2px;*/
   margin-top: -8px;
@@ -169,22 +163,45 @@
   color: white;
   float: right;
   border-radius: 50%;
-  background-color:  #d7df21 !important;
+  background-color: #f57c00;
   font-size: 15px;
 }
-.helpbuttonClose{
+.helpbuttonClose {
   margin-right: -90%;
   margin-top: -20%;
 }
 
-.buttonAgreeToTerms{
+.buttonAgreeToTerms {
   margin-top: 18px;
 }
 div.fixed {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    width: 300px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+}
+
+.buttonDialogClose {
+  position: absolute;
+  right: 2px;
+  top: 10px;
+  margin-top: -8px;
+  color: white;
+  float: right;
+  border-radius: 50%;
+  font-size: 15px;
+  width: fit-content;
+  color: #1485a9;
+  text-align: right;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px; /* 100% */
+  background-color: #d8df23;
+  stroke-width: 1px;
+  flex-shrink: 0;
+  stroke: #1485a9;
+  border: 1.5px solid #1485a9;
 }
 
 .notesBody {
@@ -197,17 +214,17 @@ div.fixed {
   overflow: auto;
 }
 
-.landingButtons{
+.landingButtons {
   text-align: center;
   position: relative;
   width: 100%;
-  overflow:auto;
+  overflow: auto;
   background-color: white;
   display: block;
   height: auto;
 }
 
-.videoButton{
+.videoButton {
   position: relative;
   text-align: center;
   background-color: #e7f120;
@@ -220,34 +237,34 @@ div.fixed {
   overflow: hidden;
   width: min-content;
   font-size: 12px;
+}
+@media only screen and (min-width: 200px) and (max-width: 450px) {
+  .videoButton {
+    position: relative;
+    text-align: center;
+    background-color: #e7f120;
+    border-color: #d7df21;
+    color: rgb(14, 145, 200);
+    text-shadow: black;
+    border-radius: 14px;
+    font-weight: bold;
+    height: 22px;
+    overflow: hidden;
+    width: min-content;
+    font-size: 12px;
   }
-  @media only screen and (min-width:200px) and (max-width:450px){
-    .videoButton{
-      position: relative;
-      text-align: center;
-      background-color: #e7f120;
-      border-color: #d7df21;
-      color: rgb(14, 145, 200);
-      text-shadow: black;
-      border-radius: 14px;
-      font-weight: bold;
-      height: 22px;
-      overflow: hidden;
-      width: min-content;
-      font-size: 12px;
-      }
-  }
+}
 
-.langLandButtonStyle{
+.langLandButtonStyle {
   display: none;
   background-color: #0a99ecc9;
   border-color: #0a99ecc9;
   font-size: larger;
   font-weight: bolder;
-  color: #F0F0F0;
+  color: #f0f0f0;
   padding: 10px 15px 10px 15px;
   margin: 5px 20px 5px 10px;
   border-radius: 25px;
   width: 80px;
-  height: 45px ;
+  height: 45px;
 }
