@@ -215,7 +215,7 @@ body {
     border-right: 1px solid rgba(0, 0, 0, 0.5);
   }
   div.active {
-    background-color: #f57c00 !important;
+    background-color:#0089b5 !important;
     color: white;
   }
 }

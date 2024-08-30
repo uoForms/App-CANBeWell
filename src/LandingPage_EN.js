@@ -87,7 +87,7 @@ class LandingPageEN extends React.Component {
               </Row>
             </section>
 
-            <BannerSlider handleChange={this.handleChange} />
+            <BannerSlider language = {'english'} handleChange={this.handleChange} />
 
             <section className="landing-button">
               <a href="#">
@@ -105,7 +105,7 @@ class LandingPageEN extends React.Component {
                 className="landing-notice-privacystmnt font-subHeading text-white"
                 test-id="en-reliable-resource-statement"
               >
-                The Trusted App for Health Information
+                 We provide resources to improve your well-being 
               </div>
 
               <div className="flex_btn">
