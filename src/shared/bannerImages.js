@@ -39,6 +39,8 @@ const bannerImages = [
     description_en:"Covers topics for both young and older ages",
     description_fr: "Des sujets pour les jeunes et les moins jeunes"
   }
+  
 ]
 
+// exporting
 export default bannerImages;
