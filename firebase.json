@@ -2,7 +2,7 @@
   "hosting": {
     "site": "canbewell-2022-prod",
     "public" : "build",
-    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "ignore": ["firebase.json", "**/node_modules/**"],
     "headers": [
       {
         "source": "/.well-known/assetlinks.json",
