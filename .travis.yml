@@ -44,10 +44,3 @@ deploy:
   on:
     branch: 
     - master
-
-
-uses: FirebaseExtended/action-hosting-deploy@v0
-  with:
-    #
-  env:
-    FIREBASE_CLI_EXPERIMENTS: webframeworks
