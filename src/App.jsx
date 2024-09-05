@@ -569,6 +569,7 @@ class App extends Component {
   }
   render() {
     var userInfo = getUserInfo();
+    
     var userInfo = {
       userID: this.state.userID,
       sessionID: this.state.sessionID,
