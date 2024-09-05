@@ -6,6 +6,8 @@ node_js:
 
 dist: focal
 
+include: [.well-known]
+
 before_install:
 
 #install yarn package and firebase tools.
