@@ -1,6 +1,7 @@
 {
   "hosting": {
-    "site": "canbewell-2022-test",
+    "site": "canbewell-2022-prod",
+    "source": "/.well-known/assetlinks.json",
     "public": "build",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [
