@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "app.web.canbewell_2022_prod.twa",
+        "sha256_cert_fingerprints": ["B1:FE:4B:D4:23:8F:05:FB:78:E1:4E:96:A3:87:97:D2:61:E6:15:C7:DD:40:07:03:AE:40:F8:9E:A5:CE:BF:65"]
+      }
+    }]
