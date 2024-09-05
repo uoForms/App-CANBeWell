@@ -36,6 +36,9 @@ cache:
   directories:
   - node_modules
 
+env:
+  FIREBASE_CLI_EXPERIMENTS: webframeworks
+
 #deploying the web app by running commands from deploy.sh file whenever code is merged in master branch
 deploy:
   skip_cleanup: true
@@ -44,8 +47,3 @@ deploy:
   on:
     branch: 
     - master
-  uses: FirebaseExtended/action-hosting-deploy@v0
-     with:
-       # ...
-     env:
-       FIREBASE_CLI_EXPERIMENTS: webframeworks
