@@ -41,6 +41,9 @@ deploy:
   skip_cleanup: true
   provider: script
   script: bash scripts/deploy.sh
+  uses: FirebaseExtended/action-hosting-deploy@v0
+     env:
+       FIREBASE_CLI_EXPERIMENTS: webframeworks
   on:
     branch: 
     - master
