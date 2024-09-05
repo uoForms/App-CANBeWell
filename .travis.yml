@@ -44,3 +44,12 @@ deploy:
   on:
     branch: 
     - master
+
+
+uses: FirebaseExtended/action-hosting-deploy@v0
+  with:
+    # Specify your firebase project ID and hosting site here
+    projectId: ${{ secrets.FIREBASE_PROJECT_ID }}
+    repoToken: ${{ secrets.GITHUB_TOKEN }}
+  env:
+    FIREBASE_CLI_EXPERIMENTS: webframeworks
