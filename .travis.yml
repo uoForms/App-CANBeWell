@@ -9,7 +9,6 @@ dist: focal
 include: [.well-known]
 
 before_install:
-
 #install yarn package and firebase tools.
 - curl --compressed -o- -L https://yarnpkg.com/install.sh | bash
 - export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
