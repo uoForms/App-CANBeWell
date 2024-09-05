@@ -4,8 +4,9 @@
     "target": {
       "namespace": "android_app",
       "package_name": "app.web.canbewell_2022_prod.twa",
-      "sha256_cert_fingerprints":
-        ["9A:BE:76:CC:02:6A:9C:19:2A:F8:A1:B7:D6:76:FA:5A:4A:F4:21:DA:46:B3:D4:62:A3:65:E7:0F:BB:9E:2F:4E"]
+      "sha256_cert_fingerprints": [
+        "9A:BE:76:CC:02:6A:9C:19:2A:F8:A1:B7:D6:76:FA:5A:4A:F4:21:DA:46:B3:D4:62:A3:65:E7:0F:BB:9E:2F:4E"
+      ]
     }
   }
 ]
