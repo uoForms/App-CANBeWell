@@ -6,7 +6,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #0089b5;
+  color: #0089B5;
 }
 
 a:hover,
@@ -17,7 +17,7 @@ a:focus-visible {
 }
 
 .text-brand-blue {
-  color: #0089b5;
+  color: #0089B5;
 }
 
 .text-brand-green {
@@ -25,24 +25,17 @@ a:focus-visible {
 }
 
 .icon-brand-color {
-  color: #0089b5;
+  color: #0089B5;
 }
 
 #termsButton .icon-brand-color {
-  color: black;
-}
-
-#termsButton {
-  background: #d7df21 !important;
-  padding: 2px 15px;
-  border-radius: 3px;
-  cursor: pointer;
+  color: white;
 }
 
 #termsButton .icon-brand-color:hover,
 .icon-brand-color:focus,
 .icon-brand-color:active {
-  color: black;
+  color: #d7df21;
 }
 
 .icon-brand-color:hover,
@@ -54,49 +47,18 @@ a:focus-visible {
 .btn {
   padding: 8px 16px !important;
   border-radius: 12px !important;
-  font-size: calc(14px + (24 - 14) * (100vw - 320px) / (1920 - 320)) !important;
+  font-size: calc(
+      14px + (24 - 14) * (100vw - 320px) / (1920 - 320)
+  ) !important;
   line-height: calc(
-    18px + (28 - 18) * (100vw - 320px) / (1920 - 320)
+      18px + (28 - 18) * (100vw - 320px) / (1920 - 320)
   ) !important;
 }
 
 .btn-primary {
   background: #d7df21 !important;
   border-color: #d7df21 !important;
-  color: #000000 !important;
-}
-
-.termsOfUseButtonContainer {
-  display: flex;
-  flex-direction: column;
-  row-gap: 5px;
-}
-
-.agreeButton {
-  color: #1485a9 !important;
-  border-radius: 10px !important;
-  border: 1px solid #d7df21 !important;
-  background: #d7df21 !important;
-  text-align: center !important;
-  font-family: Lato, sans-serif !important;
-  font-size: 16px !important;
-  font-style: normal !important;
-  font-weight: 700 !important;
-  line-height: 30px !important; /* 187.5% */
-  text-transform: capitalize !important;
-}
-
-.cancelButton {
-  color: #1485a9 !important;
-  text-align: center !important;
-  font-family: Lato, sans-serif !important;
-  font-size: 16px !important;
-  font-style: normal !important;
-  font-weight: 700 !important;
-  line-height: 30px !important; /* 187.5% */
-  text-transform: capitalize !important;
-  background-color: white !important;
-  border-color: #1485a9 !important;
+  color:#0089B5;
 }
 
 .btn-primary:hover,
@@ -108,28 +70,10 @@ a:focus-visible {
   box-shadow: 0 0 !important;
 }
 
-.agreeButton:hover,
-.agreeButton:active,
-.agreeButton:focus {
-  background: rgba(215, 223, 33, 0.5) !important;
-  border-color: #d7df21 !important;
-  color: #000000 !important;
-  box-shadow: 0 0 !important;
-}
-
-.cancelButton:hover,
-.cancelButton:active,
-.cancelButton:focus {
-  background: white !important;
-  border-color: #1485a9 !important;
-  color: #000000 !important;
-  box-shadow: 0 0 !important;
-}
-
 /* secondary button is in blue theme, that transitions to green color when hovered */
 .btn-secondary {
-  background: #0089b5 !important;
-  border-color: #0089b5 !important;
+  background: #d7df21 !important;
+  border-color: #d7df21 !important;
   color: white !important;
 }
 
@@ -168,67 +112,83 @@ a:focus-visible {
 }
 
 .font-icon {
-  font-size: calc(18px + (26 - 18) * (100vw - 320px) / (1920 - 320)) !important;
+  font-size: calc(
+      18px + (26 - 18) * (100vw - 320px) / (1920 - 320)
+  ) !important;
   line-height: calc(
-    22px + (20 - 22) * (100vw - 320px) / (1920 - 320)
+      22px + (20 - 22) * (100vw - 320px) / (1920 - 320)
   ) !important;
 }
 .font-input {
-  font-size: calc(14px + (24 - 14) * (100vw - 320px) / (1920 - 320)) !important;
+  font-size: calc(
+      14px + (24 - 14) * (100vw - 320px) / (1920 - 320)
+  ) !important;
   line-height: calc(
-    16px + (28 - 16) * (100vw - 320px) / (1920 - 320)
+      16px + (28 - 16) * (100vw - 320px) / (1920 - 320)
   ) !important;
 }
 
 .font-input-lg {
-  font-size: calc(18px + (20 - 18) * (100vw - 320px) / (1920 - 320)) !important;
+  font-size: calc(
+      18px + (20 - 18) * (100vw - 320px) / (1920 - 320)
+  ) !important;
   line-height: calc(
-    24px + (26 - 24) * (100vw - 300px) / (1920 - 320)
+      24px + (26 - 24) * (100vw - 300px) / (1920 - 320)
   ) !important;
 }
 
 .font-title {
-  font-size: calc(36px + (54 - 36) * (100vw - 320px) / (1920 - 320)) !important;
+  font-size: calc(
+      36px + (54 - 36) * (100vw - 320px) / (1920 - 320)
+  ) !important;
   line-height: calc(
-    40px + (58 - 40) * (100vw - 300px) / (1920 - 320)
+      40px + (58 - 40) * (100vw - 300px) / (1920 - 320)
   ) !important;
 }
 .font-heading {
-  font-size: calc(24px + (32 - 24) * (100vw - 320px) / (1920 - 320)) !important;
+  font-size: calc(
+      24px + (32 - 24) * (100vw - 320px) / (1920 - 320)
+  ) !important;
   line-height: calc(
-    24px + (28 - 24) * (100vw - 300px) / (1920 - 320)
+      24px + (28 - 24) * (100vw - 300px) / (1920 - 320)
   ) !important;
 }
 .font-subHeading {
-  font-size: calc(18px + (20 - 18) * (100vw - 320px) / (1920 - 320)) !important;
-  line-height: calc(
-    24px + (26 - 24) * (100vw - 300px) / (1920 - 320)
-  ) !important;
+  font-size: calc( 18px + (20 - 18) * (100vw - 320px) / (1920 - 320) ) !important;
+  line-height: calc(24px + (26 - 24) * (100vw - 300px) / (1920 - 320)) !important;
 }
 .font-description {
-  font-size: calc(16px + (18 - 16) * (100vw - 320px) / (1920 - 320)) !important;
+  font-size: calc(
+      16px + (18 - 16) * (100vw - 320px) / (1920 - 320)
+  ) !important;
   line-height: calc(
-    20px + (22 - 20) * (100vw - 300px) / (1920 - 320)
+      20px + (22 - 20) * (100vw - 300px) / (1920 - 320)
   ) !important;
 }
 .footer-text {
-  font-size: calc(14px + (18 - 14) * (100vw - 320px) / (1920 - 320)) !important;
+  font-size: calc(
+      14px + (18 - 14) * (100vw - 320px) / (1920 - 320)
+  ) !important;
   line-height: calc(
-    18px + (20 - 18) * (100vw - 320px) / (1920 - 320)
+      18px + (20 - 18) * (100vw - 320px) / (1920 - 320)
   ) !important;
 }
 
 .font-link {
-  font-size: calc(16px + (18 - 16) * (100vw - 320px) / (1920 - 320)) !important;
+  font-size: calc(
+      16px + (18 - 16) * (100vw - 320px) / (1920 - 320)
+  ) !important;
   line-height: calc(
-    20px + (22 - 20) * (100vw - 300px) / (1920 - 320)
+      20px + (22 - 20) * (100vw - 300px) / (1920 - 320)
   ) !important;
 }
 
 .copywrite {
-  font-size: calc(14px + (15 - 14) * (100vw - 320px) / (1920 - 320)) !important;
+  font-size: calc(
+      14px + (15 - 14) * (100vw - 320px) / (1920 - 320)
+  ) !important;
   line-height: calc(
-    18px + (19 - 18) * (100vw - 320px) / (1920 - 320)
+      18px + (19 - 18) * (100vw - 320px) / (1920 - 320)
   ) !important;
 }
 
@@ -240,7 +200,7 @@ a:focus-visible {
   color: black !important;
 }
 .slick-next:hover::before {
-  color: #0089b5 !important;
+  color: #0089B5 !important;
 }
 
 .slick-prev {
@@ -252,7 +212,7 @@ a:focus-visible {
   color: black !important;
 }
 .slick-prev:hover::before {
-  color: #0089b5 !important;
+  color: #0089B5 !important;
 }
 
 .slick-dots {
@@ -260,10 +220,13 @@ a:focus-visible {
 }
 
 .slick-dots li button::before {
-  color: #0089b5 !important;
+  color: #0089B5 !important;
   font-size: 15px !important;
-  text-shadow: -1px 1px 0 white, 1px 1px 0 white, 1px -1px 0 white,
-    -1px -1px 0 white;
+  text-shadow:
+      -1px 1px 0 white,
+      1px 1px 0 white,
+      1px -1px 0 white,
+      -1px -1px 0 white;
   position: relative !important;
   display: block !important;
 }
