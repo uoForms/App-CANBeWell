@@ -63,7 +63,7 @@ class Topics extends React.Component {
           filtertopbtnText={this.props.lang.topic_filter_top_10}
           clickOnText={this.props.lang.clickOn_Text}
         />
-
+        
         {/*help dialog box*/}
         <TopicsModal show={this.state.isOpen}
           onClose={this.toggleModal}

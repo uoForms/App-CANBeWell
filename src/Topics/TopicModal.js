@@ -4,6 +4,8 @@ import ArrowRightIcon from "@material-ui/icons/ArrowRight";
 import { GaUserEvent, PageViewTimer } from "../Tracking";
 import { Button } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close"; // Import CloseIcon from MUI
+import sleepIcon from "../assets/TopicIcons/sleep.png";
+import { blue } from "@material-ui/core/colors";
 
 class TopicModal extends React.Component {
   constructor(props) {
@@ -244,7 +246,24 @@ class TopicModal extends React.Component {
       cursor: "pointer",
       fontSize: "1.5rem",
     };
+    const containerStyle = {
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      width: "100%", // Size of the circular background
+      height: "100px",
+      // backgroundColor: "gray",
+      borderRadius: "50%", // Makes the background circular
+      overflow: "hidden", // Ensures the image fits inside the circular background
+    };
 
+    const imageStyle = {
+      width: '90px', // Adjust size as needed
+      height: '90px',
+      objectFit: 'cover', // Ensures the image covers the container without distortion
+      borderRadius: '100%', // Makes the image circular
+      backgroundColor: 'gray', // Background color of the image
+    };
     return (
       <div>
         <div
@@ -256,7 +275,10 @@ class TopicModal extends React.Component {
         ></div>
         <div className="myModal" style={myModalStyle} test-id="bodyModal">
           <div>
-            {/* <button className="button4" onClick={this.props.onClose} test-id="xButton">X</button> */}
+            <div style={containerStyle}>
+              <img src={sleepIcon} style={imageStyle} alt="Sleep Icon" />
+            </div>
+
             <Button
               sx={{
                 position: "absolute",
