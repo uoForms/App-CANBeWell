@@ -30,6 +30,7 @@ import { isTransgender } from "./config";
 
 // Home and arrow back icon logo
 import { FaHome, FaArrowLeft } from "react-icons/fa";
+import Feedback from "./Feedback/feedback.jsx";
 
 class App extends Component {
   static propTypes = {
@@ -1336,6 +1337,7 @@ class App extends Component {
           >
             {this.state.lang.feedback}
           </a>
+          <Feedback />
         </div>
 
         <div>
