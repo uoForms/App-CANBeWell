@@ -112,7 +112,7 @@ class LandingPageEN extends React.Component {
                 <a
                   href="#"
                   type="button"
-                  className="btn btn-primary btn-lg btn_started btn_alginment"
+                  className="btn btn-primary-get-started btn-lg btn_started btn_alginment"
                   onClick={this.handleChange}
                 >
                   <b>Get Started</b>

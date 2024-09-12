@@ -66,6 +66,13 @@ a:focus-visible {
   color: #000000 !important;
 }
 
+
+.btn-primary-get-started {
+  background: #d7df21 !important;
+  border-color: #d7df21 !important;
+  color: #0089b5 !important;
+}
+
 .termsOfUseButtonContainer {
   display: flex;
   flex-direction: column;
