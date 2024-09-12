@@ -165,6 +165,7 @@
   border-radius: 50%;
   background-color: #f57c00;
   font-size: 15px;
+  top: -20px;
 }
 .helpbuttonClose {
   margin-right: -90%;

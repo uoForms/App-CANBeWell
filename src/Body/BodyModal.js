@@ -26,7 +26,6 @@ class BodyModal extends React.Component {
       borderRadius: 15,
       width: "100%",
       minHeight: 50,
-      margin: "3px",
       textAlign: "left",
       padding: "10px",
       color: "white",
@@ -58,20 +57,18 @@ class BodyModal extends React.Component {
         var bodys = topic.body;
         if (idx === 0) {
           subjectArray.push(
-            <div>
-              <h2 test-id="heading">{topic.name}</h2>{" "}
+            <div className="sticky-header">
+              <h2 test-id="heading">{this.props.getTopic}</h2>
+              <button
+                className="button4"
+                onClick={this.props.onClose}
+                test-id="xButton"
+              >
+                X
+              </button>
               <h3>
-                {topic.body.length > 0 ? (
-                  <>
-                    {this.props.clickOnText}
-                    <ArrowRightIcon
-                      className="arrow-left"
-                      sx={{ fontSize: 40 }}
-                    />
-                  </>
-                ) : (
-                  ""
-                )}
+                {this.props.clickOnText}
+                <ArrowRightIcon className="arrow-left" sx={{ fontSize: 40 }} />
               </h3>
             </div>
           );
@@ -207,8 +204,15 @@ class BodyModal extends React.Component {
         var bodys = topic.body;
         //var subject = body.subject;
         subjectArray.push(
-          <div>
+          <div className="sticky-header">
             <h2 test-id="heading">{topic.name}</h2>{" "}
+            <button
+              className="button4"
+              onClick={this.props.onClose}
+              test-id="xButton"
+            >
+              X
+            </button>
             <h3>
               {topic.body.length > 0 ? (
                 <>
@@ -331,9 +335,7 @@ class BodyModal extends React.Component {
             <div className="topicBody" style={listItemStyle}>
               <details id={indexID} class="mydetailsItem" test-id="topic">
                 <summary class="mysummaryItem" test-id="topicSummary">
-                  <font size="+1">
-                    {subjectArrayToDisplay}
-                  </font>
+                  <font size="+1">{subjectArrayToDisplay}</font>
                 </summary>
                 <br />
                 {bodyArrayToDisplay}
@@ -375,7 +377,7 @@ class BodyModal extends React.Component {
       //minHeight: '40%',
       margin: "0 auto",
       textAlign: "left",
-      padding: 20,
+      padding: "0px 20px 20px 20px",
       color: "white",
       overflowY: "auto",
     };
@@ -390,15 +392,7 @@ class BodyModal extends React.Component {
           test-id="backdrop"
         ></div>
         <div className="myModal" style={myModalStyle} test-id="bodyModal">
-          <div>
-            <button
-              className="button4"
-              onClick={this.props.onClose}
-              test-id="xButton"
-            >
-              X
-            </button>
-          </div>
+          <div></div>
           <div>
             {subject}
             <div className="myModalCloseButton">

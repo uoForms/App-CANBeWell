@@ -54,6 +54,14 @@ body {
   max-width: 500px;
 }
 
+.sticky-header {
+  position: sticky;
+  top: 0px;
+  padding: 30px 0;
+  height: 100px;
+  background-color: rgb(128, 128, 128);
+}
+
 .topicBody {
   margin-bottom: 12px;
   font-size: medium;
