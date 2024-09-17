@@ -18,6 +18,7 @@ function BannerSlider(props) {
     slidesToScroll: 1,
     pauseOnHover: false,
   };
+  
   return (
     <Slider
       {...bannerImageSettings}
