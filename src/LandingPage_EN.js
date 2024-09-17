@@ -87,7 +87,7 @@ class LandingPageEN extends React.Component {
               </Row>
             </section>
 
-            <BannerSlider handleChange={this.handleChange} />
+            <BannerSlider language = {'english'} handleChange={this.handleChange} />
 
             <section className="landing-button">
               <a href="#">
@@ -105,7 +105,7 @@ class LandingPageEN extends React.Component {
                 className="landing-notice-privacystmnt font-subHeading text-white"
                 test-id="en-reliable-resource-statement"
               >
-                The Trusted App for Health Information
+                  We provide resources to improve your well-being 
               </div>
 
               <div className="flex_btn">
@@ -117,16 +117,6 @@ class LandingPageEN extends React.Component {
                 >
                   <b>Get Started</b>
                 </a>
-                {/* New code */}
-                {/* <a
-                                // href="#"
-                                type="button"
-                                className="btn btn-lg btn_started ml-10 btn_alginment container_button"
-                                // onClick={this.handleChange}
-                            >
-                                <b>Install App</b>
-                            </a>  */}
-
                 <button
                   type="button"
                   className="btn btn-lg btn_started ml-10 btn_alginment container_button"
@@ -171,15 +161,6 @@ class LandingPageEN extends React.Component {
                   md={{ order: 2, span: 9 }}
                   className="d-flex justify-content-center align-items-center footer-text mx-0"
                 >
-                  {/* <a
-                                type="button"
-                                className="btn btn-link btn-lg font-subHeading text-center align-text-top"
-                                href={videoen}
-                                target="_blank"
-                                test-id="update-banner-en-video"
-                            >
-                                Watch Demo
-                            </a> */}
                   <a
                     className="text-center font-weight-bold col_grey"
                     href={videoen}

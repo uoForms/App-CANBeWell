@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  /* font-family: sans-serif; */
 }
 
 a {
@@ -29,20 +28,13 @@ a:focus-visible {
 }
 
 #termsButton .icon-brand-color {
-  color: black;
-}
-
-#termsButton {
-  background: #d7df21 !important;
-  padding: 2px 15px;
-  border-radius: 3px;
-  cursor: pointer;
+  color: white;
 }
 
 #termsButton .icon-brand-color:hover,
 .icon-brand-color:focus,
 .icon-brand-color:active {
-  color: black;
+  color: #d7df21;
 }
 
 .icon-brand-color:hover,
@@ -63,47 +55,7 @@ a:focus-visible {
 .btn-primary {
   background: #d7df21 !important;
   border-color: #d7df21 !important;
-  color: #000000 !important;
-}
-
-
-.btn-primary-get-started {
-  background: #d7df21 !important;
-  border-color: #d7df21 !important;
-  color: #0089b5 !important;
-}
-
-.termsOfUseButtonContainer {
-  display: flex;
-  flex-direction: column;
-  row-gap: 5px;
-}
-
-.agreeButton {
-  color: #1485a9 !important;
-  border-radius: 10px !important;
-  border: 1px solid #d7df21 !important;
-  background: #d7df21 !important;
-  text-align: center !important;
-  font-family: Lato, sans-serif !important;
-  font-size: 16px !important;
-  font-style: normal !important;
-  font-weight: 700 !important;
-  line-height: 30px !important; /* 187.5% */
-  text-transform: capitalize !important;
-}
-
-.cancelButton {
-  color: #1485a9 !important;
-  text-align: center !important;
-  font-family: Lato, sans-serif !important;
-  font-size: 16px !important;
-  font-style: normal !important;
-  font-weight: 700 !important;
-  line-height: 30px !important; /* 187.5% */
-  text-transform: capitalize !important;
-  background-color: white !important;
-  border-color: #1485a9 !important;
+  color: #0089b5;
 }
 
 .btn-primary:hover,
@@ -115,29 +67,16 @@ a:focus-visible {
   box-shadow: 0 0 !important;
 }
 
-.agreeButton:hover,
-.agreeButton:active,
-.agreeButton:focus {
-  background: rgba(215, 223, 33, 0.5) !important;
-  border-color: #d7df21 !important;
-  color: #000000 !important;
-  box-shadow: 0 0 !important;
-}
-
-.cancelButton:hover,
-.cancelButton:active,
-.cancelButton:focus {
-  background: white !important;
-  border-color: #1485a9 !important;
-  color: #000000 !important;
-  box-shadow: 0 0 !important;
-}
-
 /* secondary button is in blue theme, that transitions to green color when hovered */
 .btn-secondary {
-  background: #0089b5 !important;
-  border-color: #0089b5 !important;
+  background: #d7df21 !important;
+  border-color: #d7df21 !important;
   color: white !important;
+}
+
+.btn-primary-get-started {
+  background: #d7df21 !important;
+  border-color: #d7df21 !important;
 }
 
 .btn-secondary:hover,
