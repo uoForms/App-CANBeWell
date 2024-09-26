@@ -34,13 +34,7 @@ a:focus-visible {
 #termsButton .icon-brand-color:hover,
 .icon-brand-color:focus,
 .icon-brand-color:active {
-  color: #d7df21;
-}
-
-.icon-brand-color:hover,
-.icon-brand-color:focus,
-.icon-brand-color:active {
-  color: #d7df21;
+  color: #f57c00 !important;
 }
 
 .btn {
@@ -69,21 +63,26 @@ a:focus-visible {
 
 /* secondary button is in blue theme, that transitions to green color when hovered */
 .btn-secondary {
-  background: #d7df21 !important;
-  border-color: #d7df21 !important;
+  background: #f57c00 !important;
+  border-color: #f57c00 !important;
   color: white !important;
 }
 
 .btn-primary-get-started {
+  color: #0089ab;
   background: #d7df21 !important;
   border-color: #d7df21 !important;
+}
+
+.btn-primary-get-started:hover {
+  color: #0089ab;
 }
 
 .btn-secondary:hover,
 .btn-secondary:active,
 .btn-secondary:focus {
-  background: #d7df21 !important;
-  border-color: #d7df21 !important;
+  background: #f57c00 !important;
+  border-color: #f57c00 !important;
   color: #000000 !important;
   box-shadow: 0 0 !important;
 }

@@ -10,7 +10,7 @@
 }
 
 .button1 {
-  background-color: #F57C00;
+  background-color: #f57c00;
   border-radius: 5px;
   position: absolute;
   /*transition: .5s ease;*/
@@ -24,11 +24,11 @@
 .button2 {
   /*background-color: #BCDBEA;*/
   background: #808080;
-  background-image: -webkit-linear-gradient(top, #F0F0F0, #808080);
-  background-image: -moz-linear-gradient(top, #F0F0F0, #808080);
-  background-image: -ms-linear-gradient(top, #F0F0F0, #808080);
-  background-image: -o-linear-gradient(top, #F0F0F0, #808080);
-  background-image: linear-gradient(to bottom, #F0F0F0, #808080);
+  background-image: -webkit-linear-gradient(top, #f0f0f0, #808080);
+  background-image: -moz-linear-gradient(top, #f0f0f0, #808080);
+  background-image: -ms-linear-gradient(top, #f0f0f0, #808080);
+  background-image: -o-linear-gradient(top, #f0f0f0, #808080);
+  background-image: linear-gradient(to bottom, #f0f0f0, #808080);
   border-radius: 50%;
   font-family: Arial;
   color: #000000;
@@ -44,11 +44,11 @@
 .button22 {
   /*background-color: #BCDBEA;*/
   background: #808080;
-  background-image: -webkit-linear-gradient(top, #F0F0F0, #808080);
-  background-image: -moz-linear-gradient(top, #F0F0F0, #808080);
-  background-image: -ms-linear-gradient(top, #F0F0F0, #808080);
-  background-image: -o-linear-gradient(top, #F0F0F0, #808080);
-  background-image: linear-gradient(to bottom, #F0F0F0, #808080);
+  background-image: -webkit-linear-gradient(top, #f0f0f0, #808080);
+  background-image: -moz-linear-gradient(top, #f0f0f0, #808080);
+  background-image: -ms-linear-gradient(top, #f0f0f0, #808080);
+  background-image: -o-linear-gradient(top, #f0f0f0, #808080);
+  background-image: linear-gradient(to bottom, #f0f0f0, #808080);
   border-radius: 50%;
   font-family: Arial;
   color: #000000;
@@ -141,7 +141,6 @@
 }
 .button3-1 {
   border: none;
-  background-color: #d7df21 !important;
   background-color: #ddd;
   color: grey;
   font-size: 16px;
@@ -163,7 +162,7 @@
   color: white;
   float: right;
   border-radius: 50%;
-  background-color:  #d7df21 !important;
+  background-color: #d7df21 !important;
   font-size: 15px;
   top: -20px;
 }
