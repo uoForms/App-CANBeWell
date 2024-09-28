@@ -1,0 +1,59 @@
+
+HtmlTest-EN.json
+----------------
+
+
+HtmlTest-FR.json
+----------------
+
+
+
+HtmlTopic-EN.json
+-----------------
+
+
+
+
+
+
+{"Button":"Pancreas","Topic heading":"Diabetes Type 2","Subject":"Prevent Diabetes","General Patient Text":"•\tEat a healthy diet\r\n•\tBe physically active\r\n•\tKeep your BMI healthy:18.5-24\r\n[[bmi; https://www.diabetes.ca/static/bmi-calculator.html ]]","Health Provider Text":"Recommend:\r\n•\tHealthy diet\r\n•\tPhysical activity\r\n•\tHealthy BMI: 18.5-24\r\n[[bmi; https://www.diabetes.ca/static/bmi-calculator.html ]]","Gender":"all","Minimum age":18,"Maximum age":150}
+{"Button":"Pancreas","Topic heading":"Diabetes Type 2","Subject":"Prevent Diabetes","General Patient Text":"•\tEat a healthy diet\r\n•\tBe physically active\r\n•\tKeep your BMI healthy:18.5-24\r\n[[bmi; https://www.diabetes.ca/static/bmi-calculator.html ]]","Health Provider Text":"Recommend:\r\n•\tHealthy diet\r\n•\tPhysical activity\r\n•\tHealthy BMI: 18.5-24\r\n[[bmi; https://www.diabetes.ca/static/bmi-calculator.html ]]","Gender":"all","Minimum age":18,"Maximum age":150}
+
+
+
+
+{"Button":"Heart","Topic heading":"Heart Disease","Subject":"Diabetes","General Patient Text":"If you have diabetes, keeping your blood sugar and blood pressure under control will prevent heart disease. Blood pressure target for diabetics under 65 years old is under 130/70.\r\nAsk your provider for help.","Health Provider Text":"Diabetes is a risk factor for heart disease.\r\n[[Resource; https://www.diabetes.ca/managing-my-diabetes/tools---resources/reducing-vascular-risk]] from diabetes.ca to reduce vascular risk.","Gender":"m,f","Minimum age":18,"Maximum age":150}
+
+{"Button":"Heart","Topic heading":"Heart Disease","Subject":"Diabetes","General Patient Text":"If you have diabetes, keeping your blood sugar and blood pressure under control will prevent heart disease. Blood pressure target for diabetics under 65 years old is under 130/70.\r\nAsk your provider for help.","Health Provider Text":"Diabetes is a risk factor for heart disease.\r\n[[Resource; https://www.diabetes.ca/managing-my-diabetes/tools---resources/reducing-vascular-risk]] from diabetes.ca to reduce vascular risk.","Gender":"m,f","Minimum age":18,"Maximum age":150}
+
+
+{"Button":"Pancreas","Topic heading":"Diabetes Type 2","Subject":"Prevent Diabetes","General Patient Text":"•\tEat a healthy diet\r\n•\tBe physically active\r\n•\tKeep your BMI healthy:18.5-24\r\n[[bmi; https://www.diabetes.ca/static/bmi-calculator.html ]]","Health Provider Text":"Recommend:\r\n•\tHealthy diet\r\n•\tPhysical activity\r\n•\tHealthy BMI: 18.5-24\r\n[[bmi; https://www.diabetes.ca/static/bmi-calculator.html ]]","Gender":"all","Minimum age":18,"Maximum age":150}
+
+
+
+{"Button":"symptomchecker","Topic heading":"Check Your Symptoms","Subject":"Saskatchewan","General Patient Text":"[[Check your symptoms; https://www.saskhealthauthority.ca/your-health/conditions-diseases-services/healthline-online/hwsxchk]]\r\nThe advice obtained with this link does not replace that of a qualified medical professional.","Health Provider Text":"n/a","Gender":"all","Minimum age":18,"Maximum age":150}
+{"Button":"symptomchecker","Topic heading":"Check Your Symptoms","Subject":"Saskatchewan","General Patient Text":"[[Check your symptoms; https://www.saskhealthauthority.ca/your-health/conditions-diseases-services/healthline-online/hwsxchk]]\r\nThe advice obtained with this link does not replace that of a qualified medical professional.","Health Provider Text":"n/a","Gender":"all","Minimum age":18,"Maximum age":150}
+
+
+HtmlTopic-FR.json
+-----------------
+
+
+
+
+
+
+
+
+
+{"Button":"Pancreas","Topic heading":"Diabète de type 2","Subject":"Prévenir le diabète","General Patient Text":"• Manger sainement\r\n• Être physiquement actif\r\n• Maintenir un IMC santé entre 18,5 et 24:\r\n[[IMC; https://www.diabetes.ca/static/bmi-calculator.html]]","Health Provider Text":"Recommander\r\n• Alimentation saine\r\n• Activité physique\r\n• IMC santé entre 18,5 et 24\r\n[[IMC; https://www.diabetes.ca/static/bmi-calculator.html]]","Gender":"all","Minimum age":18,"Maximum age":150}
+{"Button":"Pancreas","Topic heading":"Diabète de type 2","Subject":"Prévenir le diabète","General Patient Text":"• Manger sainement\r\n• Être physiquement actif\r\n• Maintenir un IMC santé entre 18,5 et 24:\r\n[[IMC; https://www.diabetes.ca/static/bmi-calculator.html]]","Health Provider Text":"Recommander\r\n• Alimentation saine\r\n• Activité physique\r\n• IMC santé entre 18,5 et 24\r\n[[IMC; https://www.diabetes.ca/static/bmi-calculator.html]]","Gender":"all","Minimum age":18,"Maximum age":150}
+{"Button":"Heart","Topic heading":"Maladie cardiaque","Subject":"Diabète","General Patient Text":"Si vous êtes diabétique, le bon contrôle de  votre taux de sucre dans le sang et vde votre pression peut aider à prévenir la maladie cardiaque. Si vous avez moins que 65 ans et vous êtes diabétique, visez une tension artérielle (pression) sous 130/70. Demandez de l'aide à votre fournisseur de soins de santé.","Health Provider Text":"Le diabète est un facteur de risque\r\n[[Ressource pour les médicaments préventifs chez les diabétiques; https://www.diabetes.ca/managing-my-diabetes/tools---resources/reducing-vascular-risk]] ","Gender":"m,f","Minimum age":18,"Maximum age":150}
+{"Button":"Heart","Topic heading":"Maladie cardiaque","Subject":"Diabète","General Patient Text":"Si vous êtes diabétique, le bon contrôle de  votre taux de sucre dans le sang et vde votre pression peut aider à prévenir la maladie cardiaque. Si vous avez moins que 65 ans et vous êtes diabétique, visez une tension artérielle (pression) sous 130/70. Demandez de l'aide à votre fournisseur de soins de santé.","Health Provider Text":"Le diabète est un facteur de risque\r\n[[Ressource pour les médicaments préventifs chez les diabétiques; https://www.diabetes.ca/managing-my-diabetes/tools---resources/reducing-vascular-risk]] ","Gender":"m,f","Minimum age":18,"Maximum age":150}
+
+
+
+
+
+
+

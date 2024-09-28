@@ -47,18 +47,18 @@ a:focus-visible {
 }
 
 .btn-primary {
-  background: #d7df21 !important;
-  border-color: #d7df21 !important;
+  background: #d7df21;
+  border-color: #d7df21;
   color: #0089b5;
 }
 
 .btn-primary:hover,
 .btn-primary:active,
 .btn-primary:focus {
-  background: rgba(215, 223, 33, 0.5) !important;
-  border-color: #d7df21 !important;
-  color: #000000 !important;
-  box-shadow: 0 0 !important;
+  background: rgba(215, 223, 33, 0.5);
+  border-color: #d7df21;
+  color: #000000;
+  box-shadow: 0 0;
 }
 
 /* secondary button is in blue theme, that transitions to green color when hovered */

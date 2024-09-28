@@ -205,6 +205,17 @@ body {
   background-color: white;
 }
 
+.termsOfUseButtonContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.cancelButton {
+  background: white !important;
+  border: 1px solid #0089b5 !important;
+}
+
 .primaryTitle {
   display: flex;
   align-items: center;

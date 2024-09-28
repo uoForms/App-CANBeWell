@@ -1,6 +1,8 @@
 const fs = require("fs");
 const axios = require("axios");
 
+let urlObject = {};
+
 // Function to read JSON from a file
 function readJSONFromFile(filePath) {
   try {
@@ -23,6 +25,7 @@ function extractLinks(data) {
         const foundLinks = value.match(linkPattern);
         if (foundLinks) {
           links.push(...foundLinks);
+          urlObject = { ...urlObject, [foundLinks]: item };
         }
       }
     });
@@ -51,6 +54,7 @@ async function isLinkWorking(url) {
 
 // Function to process multiple JSON files
 async function processFiles(filePaths) {
+  let allLinksObject = [];
   let allLinks = [];
 
   for (const filePath of filePaths) {
@@ -58,12 +62,13 @@ async function processFiles(filePaths) {
     if (jsonArray) {
       const links = extractLinks(jsonArray);
       if (links.length > 0) {
-        allLinks.push(`\n${filePath}\n${"-".repeat(filePath.length)}\n`);
+        allLinksObject.push(`\n${filePath}\n${"-".repeat(filePath.length)}\n`);
 
         // Check all links in parallel
         const linkChecks = links.map(async (link) => {
           const working = await isLinkWorking(link);
           if (!working) {
+            allLinksObject.push(JSON.stringify(urlObject[link]));
             allLinks.push(link);
           }
         });
@@ -73,8 +78,17 @@ async function processFiles(filePaths) {
     }
   }
 
-  const fileContent = allLinks.join("\n");
-  fs.writeFile("extractedLinks.txt", fileContent, (err) => {
+  const fileContent = allLinksObject.join("\n");
+  const fileContenTxt = allLinks.join("\n");
+  fs.writeFile("extractedLinksJSON.txt", fileContent, (err) => {
+    if (err) {
+      console.error("Error writing to file", err);
+    } else {
+      console.log("Links successfully written to extractedLinks.txt");
+    }
+  });
+
+  fs.writeFile("extractedLinks.txt", fileContenTxt, (err) => {
     if (err) {
       console.error("Error writing to file", err);
     } else {

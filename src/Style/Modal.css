@@ -5,7 +5,7 @@
   bottom: 0px;
   left: 0px;
   right: 0px;
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0, 0, 0, 0.3);
   padding: 25px;
   z-index: 1;
 }
@@ -19,7 +19,7 @@
   border-radius: 15px;
   width: 99%;
   max-width: 500px;
-  max-height: 95%;
+  height: 95%;
   margin: 0px auto;
   text-align: center;
   padding: 30px;
@@ -28,8 +28,7 @@
   /* font-weight: bold; */
 }
 
-
-h1{
+h1 {
   margin: 10px;
 }
 
@@ -44,18 +43,18 @@ h1{
   text-align: center;
   padding: 10px;
 }
-.mydetailsItem{
+.mydetailsItem {
   font-size: 1em;
   font-weight: normal;
 }
-.mysummaryItem{
+.mysummaryItem {
   font-size: 1em;
   font-weight: normal;
 }
-.myModalCloseButton{
+.myModalCloseButton {
   padding-top: 15px;
 }
-.mydetailsItemdiv{
+.mydetailsItemdiv {
   font-size: medium;
   font-weight: bold;
   cursor: pointer;
