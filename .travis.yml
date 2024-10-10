@@ -14,7 +14,6 @@ before_install:
 - export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 - yarn global add firebase-tools
 # - npm install -g firebase-tools
-
 #Check for the JSON files for the content.
 - rm -r ./src/JSONFolder
 - mkdir ./src/JSONFolder
