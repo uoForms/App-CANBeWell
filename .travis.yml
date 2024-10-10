@@ -15,6 +15,7 @@ before_install:
 - yarn global add firebase-tools
 # - npm install -g firebase-tools
 #Check for the JSON files for the content.
+
 - rm -r ./src/JSONFolder
 - mkdir ./src/JSONFolder
 - curl -L -o ./src/JSONFolder/HtmlTopic-EN.json "https://uottawa-my.sharepoint.com/personal/pnikb070_uottawa_ca/_layouts/15/download.aspx?share=EYA0_P4gW7NOkHAGvjZLpwwBQlvTMYAnrFsP9QhzZvsoUg&e=OlefhO"
