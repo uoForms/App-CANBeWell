@@ -115,6 +115,8 @@ class TopicRow extends React.Component {
   };
   toggleModal = () => {
     if (sessionStorage.getItem("firstVisit") != "true") {
+      sessionStorage.setItem("firstVisit", "true");
+
       this.setState({ feedbackDialog: true });
     }
     this.setState({

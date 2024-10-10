@@ -156,6 +156,7 @@ class Anatomy extends React.Component {
   3;
   toggleModal = () => {
     if (sessionStorage.getItem("firstVisit") != "true") {
+      sessionStorage.setItem("firstVisit", "true");
       this.setState({ feedbackDialog: true });
     }
     this.setState({
