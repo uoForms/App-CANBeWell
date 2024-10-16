@@ -35,11 +35,11 @@ function BannerSlider(props) {
                 onClick={props.handleChange}
                 test-id="logo"
               />
-              <div className="overlay-text">
+              {/* <div className="overlay-text">
                 {props.language === "english"
                   ? bannerImage.description_en
                   : bannerImage.description_fr}
-              </div>
+              </div> */}
             </a>
           </div>
         );
