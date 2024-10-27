@@ -222,7 +222,6 @@ class TopicModal extends React.Component {
             </button>
             <h3>
               {this.props.clickOnText}
-              <ArrowRightIcon className="arrow-left" sx={{ fontSize: 40 }} />
             </h3>
           </div>
           <div>

@@ -68,7 +68,6 @@ class BodyModal extends React.Component {
               </button>
               <h3>
                 {this.props.clickOnText}
-                <ArrowRightIcon className="arrow-left" sx={{ fontSize: 40 }} />
               </h3>
             </div>
           );
@@ -217,10 +216,6 @@ class BodyModal extends React.Component {
               {topic.body.length > 0 ? (
                 <>
                   {this.props.clickOnText}
-                  <ArrowRightIcon
-                    className="arrow-left"
-                    sx={{ fontSize: 40 }}
-                  />
                 </>
               ) : (
                 ""
