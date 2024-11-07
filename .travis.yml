@@ -59,4 +59,4 @@ deploy:
     #for test
     # - test 
     #for production
-    - prod 
+    - master
