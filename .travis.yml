@@ -18,12 +18,23 @@ before_install:
 
 - rm -r ./src/JSONFolder
 - mkdir ./src/JSONFolder
-- curl -L -o ./src/JSONFolder/HtmlTopic-EN.json "https://uottawa-my.sharepoint.com/personal/pnikb070_uottawa_ca/_layouts/15/download.aspx?share=EYA0_P4gW7NOkHAGvjZLpwwBQlvTMYAnrFsP9QhzZvsoUg&e=snKUH8"
-- curl -L -o ./src/JSONFolder/HtmlTopic-FR.json "https://uottawa-my.sharepoint.com/personal/pnikb070_uottawa_ca/_layouts/15/download.aspx?share=EV2fA5dGeqRAmMfTIPt6HikBmPJ2kvKi-MRlI61N8fA_eQ&e=ApHeGe"
-- curl -L -o ./src/JSONFolder/HtmlTest-FR.json "https://uottawa-my.sharepoint.com/personal/pnikb070_uottawa_ca/_layouts/15/download.aspx?share=EYDV2TLG3oBOp8sCq0GG2esB42R38t0jJ3oXEk0he5NKPQ&e=jof9r5"
-- curl -L -o ./src/JSONFolder/HtmlTest-EN.json "https://uottawa-my.sharepoint.com/personal/pnikb070_uottawa_ca/_layouts/15/download.aspx?share=ERRHeZSq6uZIo9ReG_v6nuUBH0fd9i3DqhnMZ5jdBelE2A&e=1qyU2T"
-- curl -L -o ./src/JSONFolder/FilterTopic-EN.json "https://uottawa-my.sharepoint.com/personal/pnikb070_uottawa_ca/_layouts/15/download.aspx?share=EUgo5j83WEhBikbsiBqCKMEB8Dn3Msbkkz7kiJa_fY3wJg&e=bGQ3Cs"
-- curl -L -o ./src/JSONFolder/FilterTopic-FR.json "https://uottawa-my.sharepoint.com/personal/pnikb070_uottawa_ca/_layouts/15/download.aspx?share=ETYyB_DeQwBHhM-GiSVLYBgBf8g6hBa1ep4BvJ4wLgh5KQ&e=p8hyN6"
+#Links for test deployment - Comment out when pushing to production
+# - curl -L -o ./src/JSONFolder/HtmlTopic-EN.json "https://uottawa-my.sharepoint.com/personal/pnikb070_uottawa_ca/_layouts/15/download.aspx?share=ERg-cg6mFjBFqOkJ7wNzRGkBr8mnyWkgDyZAP7VF2jhc1g&e=fL37dK"
+# - curl -L -o ./src/JSONFolder/HtmlTopic-FR.json "https://uottawa-my.sharepoint.com/personal/pnikb070_uottawa_ca/_layouts/15/download.aspx?share=EcBQBFId59tGswGyAheMXc4BF765HWtS0Z0NfC7p8g-zIQ&e=jQGgSJ"
+# - curl -L -o ./src/JSONFolder/HtmlTest-FR.json "https://uottawa-my.sharepoint.com/personal/pnikb070_uottawa_ca/_layouts/15/download.aspx?share=EWKQZlkx4DxDpfn2ItP9oSgBc_suTzKuXgbx1BZloe-_BA&e=vLIJEv"
+# - curl -L -o ./src/JSONFolder/HtmlTest-EN.json "https://uottawa-my.sharepoint.com/personal/pnikb070_uottawa_ca/_layouts/15/download.aspx?share=EXpjJ8Xc8BNInwG4FyBCcosBfjjJw801nYjqgausCkNuLQ&e=hfXFKu"
+# - curl -L -o ./src/JSONFolder/FilterTopic-EN.json "https://uottawa-my.sharepoint.com/personal/pnikb070_uottawa_ca/_layouts/15/download.aspx?share=ER_xjWsW8BdCie_Y4kFBdCQBU60tDIe4frkPj__C6HDsJQ&e=NbVPQS"
+# - curl -L -o ./src/JSONFolder/FilterTopic-FR.json "https://uottawa-my.sharepoint.com/personal/pnikb070_uottawa_ca/_layouts/15/download.aspx?share=EXCfclAD3ztNnB5zDrw3sngBs381yLU_cgYdN2gaWa0MOw&e=MYcIBm"
+
+
+#Links for production deployment
+- curl -L -o ./src/JSONFolder/HtmlTopic-EN.json "https://uottawa-my.sharepoint.com/personal/pnikb070_uottawa_ca/_layouts/15/download.aspx?share=Eb_0p60t8rNIkajnU6iekvoBvzG-eSLopXiPIQ4TKvHHhg&e=DD41xh"
+- curl -L -o ./src/JSONFolder/HtmlTopic-FR.json "https://uottawa-my.sharepoint.com/personal/pnikb070_uottawa_ca/_layouts/15/download.aspx?share=EXzu8zd0AgFAmeJ3ClVsSEsB2aDkfFqRfDVZaqMVCjQCwg&e=f2RItQ"
+- curl -L -o ./src/JSONFolder/HtmlTest-FR.json "https://uottawa-my.sharepoint.com/personal/pnikb070_uottawa_ca/_layouts/15/download.aspx?share=EXuSu4nlw_lDjxEMuNX3VlABcZ-3QTQEZbwtj4HJaw1M_g&e=BqAD4F"
+- curl -L -o ./src/JSONFolder/HtmlTest-EN.json "https://uottawa-my.sharepoint.com/personal/pnikb070_uottawa_ca/_layouts/15/download.aspx?share=EVn7b2mkcD5AhUYA5T6xetwBHQHKIpeWSqwLrWp4k16iqg&e=VFyBeV"
+- curl -L -o ./src/JSONFolder/FilterTopic-EN.json "https://uottawa-my.sharepoint.com/personal/pnikb070_uottawa_ca/_layouts/15/download.aspx?share=EesuEU-3d6VOlmOimE6L7IEBFwKUjpDgG-KEb6XauHDiEw&e=hpVYs7"
+- curl -L -o ./src/JSONFolder/FilterTopic-FR.json "https://uottawa-my.sharepoint.com/personal/pnikb070_uottawa_ca/_layouts/15/download.aspx?share=EdLr7PmlV2JBjlkFB-z_MP0BT0N_DVRFFIpBwcNj3IbQzQ&e=6gaj1D"
+
 
 #install the dependencies (mentioned in yarn.lock file) with the right versions.
 install:
@@ -45,4 +56,7 @@ deploy:
   script: bash scripts/deploy.sh
   on:
     branch: 
-    - master
+    #for test
+    # - test 
+    #for production
+    - prod 
