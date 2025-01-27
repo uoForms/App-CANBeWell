@@ -72,6 +72,7 @@ a:focus-visible {
   color: #0089ab;
   background: #d7df21 !important;
   border-color: #d7df21 !important;
+  display: flex;
 }
 
 .btn-primary-get-started:hover {

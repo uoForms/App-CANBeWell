@@ -8,6 +8,9 @@ import callcompletelogo from "./assets/Logos/icanbewelllogo.png";
 import callfren from "./assets/Logos/canbewellfren.png";
 import callchoixsante from "./assets/Logos/choixsantefren.png";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Divider } from "@material-ui/core";
+import PlayArrowIcon from "@material-ui/icons/PlayArrow";
+
 // import homepageimg from './assets/Banner/homepageimage.png';
 
 import { Link, withRouter } from "react-router-dom";
@@ -71,11 +74,6 @@ class LandingPageFR extends React.Component {
       <div className="landing-page">
         {this.state.language == "" || null ? (
           <div className="pt-3">
-            {/* <div className="center">
-            <div className="landing-trans">
-            TRANSGENDER Branch
-            </div>
-            </div> */}
             <section id="landing-page-header">
               <Row className="m-0 d-flex justify-content-around align-items-center">
                 <Col>
@@ -87,7 +85,6 @@ class LandingPageFR extends React.Component {
                   />
                 </Col>
                 <Col className="d-flex justify-content-end">
-                  {/* <Link to="/en" className="landing-french-router">English</Link> */}
                   <a
                     href="/en"
                     className="font-description"
@@ -101,80 +98,73 @@ class LandingPageFR extends React.Component {
 
             <BannerSlider handleChange={this.handleChange2} />
 
-            <div className="landing-button">
-              <a href="#">
-                <img
-                  className="landing-button-img"
-                  src={callchoixsante}
-                  onClick={this.handleChange2}
-                  test-id="fr-redirect-button"
-                />
-              </a>
-            </div>
-
             <section className="primary-background res-blue-width res-blue-height-en py-3 d-flex flex-column justify-content-center ht_450">
               <div
                 className="landing-notice-privacystmnt font-subHeading text-white"
                 test-id="fr-reliable-resource-statement"
               >
-                Votre ressource fiable pour la santé
-                {/* <a
-                                type="button"
-                                className="btn btn-link btn-lg font-subHeading text-center align-text-top"
-                                href={videofr}
-                                target="_blank"
-                                test-id="update-banner-en-video"
-                            >
-                                Voir vidéo
-                            </a> */}
+                DÉCOUVREZ LES RESSOURCES POUR LE BIEN-ÊTRE ET LA PRÉVENTION
               </div>
 
               <div className="flex_btn">
                 <a
                   href="#"
                   type="button"
-                  className="btn btn-primary btn-lg btn_started btn_alginment"
+                  className="btn btn-primary-get-started btn-lg btn_started btn_alginment"
                   onClick={this.handleChange2}
                 >
-                  <b>Commencer</b>
-                </a>
-                <button
-                  type="button"
-                  className="btn btn-lg btn_started ml-10 btn_alginment container_button"
-                  onClick={() => this.props.setOpenDialog(true)}
-                  test-id="homeScreenButtonEn"
-                >
-                  <b>Installer l'application</b>
-                </button>
-              </div>
-
-              <div className="pad_15">
-                <a
-                  // href="#"
-                  type="button"
-                  className="btn btn_new btn-lg btn_alginment container_button1"
-                  // onClick={this.handleChange}
-                  href="/iCanBeWell_NoFamilyMD_NP_FR.htm"
-                  rel="noopener"
-                  test-id="nofamilymd/np-statement-en"
-                >
-                  <b>Sans MD de famille ou IP?</b>
-                </a>
-              </div>
-
-              <div className="pad_15">
-                <a
-                  type="button"
-                  className="btn  btn_new btn-lg btn_alginment container_button1"
-                  href="/iCanBeWell_CheckYourSymptoms_FR.htm"
-                  rel="noopener"
-                  test-id="nofamilymd/np-statement-en"
-                >
-                  <b>Vérifier vos symptômes</b>
+                  <b>COMMENCEZ À EXPLORER</b>
                 </a>
               </div>
             </section>
 
+            <div className="link-container">
+              <h3>Quick Links:</h3>
+              <section className="intro-page-links d-flex flex-column flex-start">
+                <div className="pad_15">
+                  <a className="link" rel="noopener">
+                    <PlayArrowIcon fontSize="large" />
+                    <p>Découvrez comment fonctionne l'application</p>
+                  </a>
+                </div>
+
+                <div className="pad_15">
+                  <a
+                    type="button"
+                    className="link"
+                    href="/iCanBeWell_CheckYourSymptoms_FR.htm"
+                    rel="noopener"
+                  >
+                    <PlayArrowIcon fontSize="large" />
+                    <p>Ressources pour vérifier vos symptômes</p>
+                  </a>
+                </div>
+
+                <div className="pad_15">
+                  <a
+                    type="button"
+                    className="link"
+                    href="/iCanBeWell_NoFamilyMD_NP_FR.htm"
+                    rel="noopener"
+                  >
+                    <PlayArrowIcon fontSize="large" />
+                    <p>Explorez vos options de soins primaires</p>
+                  </a>
+                </div>
+
+                <div className="pad_15 container_button">
+                  <a
+                    className="link"
+                    rel="noopener"
+                    onClick={() => this.props.setOpenDialog(true)}
+                  >
+                    <PlayArrowIcon fontSize="large" />
+                    <p>Ajoutez «icanbewell» à votre écran d'accueil</p>
+                  </a>
+                </div>
+              </section>
+            </div>
+            <Divider className="main-page-divider" />
             <section id="landing-page-footer">
               <Row className="d-flex justify-content-center align-items-center m-0 py-3">
                 <Col
@@ -191,17 +181,6 @@ class LandingPageFR extends React.Component {
                   >
                     Voir vidéo
                   </a>
-                  {/* <a
-                                    className="text-center font-weight-bold"
-                                    src={videofr}
-                                    href="https://forms.gle/uJApr8qousrgEboX6"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    test-id="update-banner-fr-video"
-                                >
-                                    {" "}
-                                    Votre avis
-                                </a> */}
                   <span className="mx-3"> &#124; </span>
                   <a
                     href="/iCanBeWell_PrivacyPolicy.htm?lang=fr"
